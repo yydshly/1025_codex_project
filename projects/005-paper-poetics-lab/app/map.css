@@ -7,3 +7,8 @@ body{height:100dvh;display:grid;grid-template-rows:auto minmax(0,1fr) auto;overf
 main{min-height:0;display:grid;grid-template-rows:minmax(0,1fr) 22px}
 .map-viewport{height:auto;min-height:0}
 @media(max-width:780px){.map-actions{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:6px}.map-actions button{padding-inline:4px}.map-actions #map-read{font-size:9px}.map-actions #map-save-png{grid-column:1/4}.map-actions #map-save-svg{grid-column:4/7}.map-viewport{height:auto;min-height:0}}
+
+.map-entry-links{display:flex;align-items:center;flex-wrap:wrap;gap:8px 18px;flex-basis:100%}
+.map-entry-links a{display:inline-flex;align-items:center;min-height:36px;font-size:11px}
+.map-entry-links .map-original-link{padding:6px 12px;border:1px solid #9ba98b;background:#dfe5d6;border-radius:2px;color:#31442d}
+@media(max-width:780px){.map-entry-links{gap:6px 18px}.map-entry-links a{font-size:10px;min-height:36px}.map-entry-links .map-original-link{padding:6px 10px}}

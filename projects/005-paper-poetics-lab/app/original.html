@@ -1,10 +1,11 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#e9e4d6"><link rel="icon" href="data:,"><title>未完 · 原有演示 — 纸间</title></head><body class="original-page">
-<header class="original-header"><a href="./index.html">返回纸间</a><span>未完 · 原有九章演示</span><a href="./research.html">研究回顾</a></header>
-<iframe id="original-frame" title="未完 · 参考原作独立重写的水墨叙事演示" src="./original/" allow="autoplay; fullscreen"></iframe>
+<!doctype html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#e9e4d6"><link rel="icon" href="data:,"><title>002 · 未完 · 效果实现 — 纸间</title></head><body class="original-page">
+<header class="original-header"><a href="./index.html">005 · 纸间</a><span>002 · 未完 · 九章重写</span><a href="./map.html">返回总览图</a></header>
+<iframe id="original-frame" title="002 · 未完 · 参考原作独立重写的水墨叙事演示" allow="autoplay; fullscreen"></iframe>
 <script type="module">
 import './styles.css';
 const chapters=new Set(['cover','rain','tape','rose','forest','seasons','roots','lotus','enso','still']);
-function openChapter(){const chapter=location.hash.slice(1);document.querySelector('#original-frame').src='./original/'+(chapters.has(chapter)?'#'+chapter:'');}
-if(location.hash)openChapter();
+const preview=new URLSearchParams(location.search).get('preview')==='static'?'?preview=static':'';
+function openChapter(){const chapter=location.hash.slice(1);document.querySelector('#original-frame').src='./original/'+preview+(chapters.has(chapter)?'#'+chapter:'');}
+openChapter();
 addEventListener('hashchange',openChapter);
 </script></body></html>

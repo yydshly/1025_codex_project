@@ -51,6 +51,7 @@ jobs:
           npm --prefix projects/003-unified-learning-design test
           npm --prefix projects/003-unified-learning-design run test:publication
           npm --prefix projects/002-ink-rain-alley run check
+          npm --prefix projects/002-ink-rain-alley test
           npm --prefix projects/005-paper-poetics-lab run check
       - name: Prepare BaoCut research page and public media
         run: npm --prefix projects/004-baocut-effects-atlas run build:site

@@ -10,6 +10,10 @@
 
 [项目首页](https://yydshly.github.io/1025_codex_project/005-paper-poetics-lab/) · [可点击研究总览](https://yydshly.github.io/1025_codex_project/005-paper-poetics-lab/map.html) · [研究回顾](https://yydshly.github.io/1025_codex_project/005-paper-poetics-lab/research.html) · [AI雨窗茶寮](https://yydshly.github.io/1025_codex_project/005-paper-poetics-lab/cinema.html) · [原有九章](https://yydshly.github.io/1025_codex_project/005-paper-poetics-lab/original.html)
 
+**002 是效果实现，005 是研究与扩展入口。** 总览图顶部的“002 · 原始效果实现”直接进入最初的002重写作品；旁边“原作录屏参考”链接作者的原演示，二者分别标注。图内卡片和九章直达入口继续保留，演示页可直接返回总览图。
+
+002在WebGL无法创建、上下文中断或绘制失败时，自动进入真实运行截图浏览，提供十个章节及四季切换，明确标注非实时且默认无声。[直接进入兼容浏览](https://yydshly.github.io/1025_codex_project/005-paper-poetics-lab/original.html?preview=static#rain)；`original.html` 仅透传允许的 `preview=static` 和章节hash。详细边界见[002兼容处理记录](../002-ink-rain-alley/research/browser-compatibility-2026-10-27.md)。
+
 已通过GitHub Actions发布并核对线上入口、指定引导图、图内链接、莲花章节和影片实际播放。部署过程与检查范围见[发布记录](research/deployment.md)。引导图使用用户确认的现有研究总览图，未重新生成。
 
 [返回总索引](../../README.md#项目索引) · [研究笔记](research/notes.md) · [验证记录](design-qa.md) · [已有演示项目](../002-ink-rain-alley/README.md)

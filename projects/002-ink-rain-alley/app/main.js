@@ -8,6 +8,8 @@ import { tracks, totalUnits, locate, seasons } from './story-data.js';
 import { sceneCreators } from './story-scenes.js';
 import { createSoundscape } from './audio.js';
 import { createFrameStats } from './frame-stats.js';
+import { startStaticPreview } from './static-preview.js';
+import { createStoryRenderer, drawingPixelRatio, WebGLUnavailableError } from './renderer-startup.js';
 
 // The chapter hash is the bookmark; native scroll restoration must not override it.
 history.scrollRestoration='manual';
@@ -17,6 +19,17 @@ const clamp=THREE.MathUtils.clamp;
 const smooth=(a,b,value)=>{const t=clamp((value-a)/(b-a),0,1);return t*t*(3-2*t);};
 const state={index:0,progress:0,units:0,time:0,paused:reduced.matches,auto:false,autoUnits:0,side:0,rain:.65,season:null,pointer:{x:0,y:0},strokeCycle:0,enteredAt:0,jump:null,dirty:true,hidden:document.hidden,last:performance.now()};
 const sound=createSoundscape();
+const runtimeEvents=new AbortController();
+const listen=(target,type,handler,options={})=>target.addEventListener(type,handler,{...options,signal:runtimeEvents.signal});
+let staticPreviewActive=false,bootStage='context-create',contextMessage='',runtimeCleanup=()=>{};
+listen(canvas,'webglcontextcreationerror',event=>{contextMessage=event.statusMessage||'';});
+function enterStaticPreview(reason,error){
+  if(staticPreviewActive)return;
+  staticPreviewActive=true;state.auto=false;state.paused=true;runtimeEvents.abort();sound.suspend(true);
+  try{runtimeCleanup();}catch(cleanupError){console.warn('Renderer cleanup failed',cleanupError);}
+  runtimeCleanup=()=>{};
+  startStaticPreview({reason,stage:bootStage,message:error?`${error.name}: ${error.message}`:undefined,contextMessage});
+}
 let audioBusy=false,audioFailure='';
 function updateAudioControls(audio=sound.state){
   $('#audio').textContent=audio.loading?'声音 加载中':audio.enabled?'声音 开':'声音 关';
@@ -67,13 +80,14 @@ function updateCopy(index){
   history.replaceState(null,'',index===0?location.pathname+location.search:`#${track.id}`);
 }
 function readScroll(){
-  if(state.jump)return;
+  if(staticPreviewActive||state.jump)return;
   state.units=clamp(scrollY/innerHeight,0,totalUnits);const position=locate(state.units);
   if(position.index!==state.index){state.index=position.index;state.enteredAt=state.time;updateCopy(state.index);}
   state.progress=position.progress;state.dirty=true;
   const percent=Math.round(state.units/totalUnits*1000);$('#story-progress').value=percent;$('#progress-value').value=`${Math.round(percent/10).toString().padStart(2,'0')}%`;
 }
 function go(index,instant=false){
+  if(staticPreviewActive)return;
   index=clamp(index,0,tracks.length-1);state.auto=false;state.season=null;
   document.querySelectorAll('[data-season]').forEach(button=>button.setAttribute('aria-pressed','false'));$('#season-follow').setAttribute('aria-pressed','true');
   const units=tracks[index].start+(index===0?0:tracks[index].span*.065);
@@ -86,9 +100,12 @@ function flip(restart=false){
 
 function boot(){
   initializeMarkup();
-  const renderer=new THREE.WebGLRenderer({canvas,antialias:true,powerPreference:'high-performance'});renderer.outputColorSpace=THREE.SRGBColorSpace;
+  const renderer=createStoryRenderer(canvas,THREE.WebGLRenderer);renderer.outputColorSpace=THREE.SRGBColorSpace;
+  const ownedTargets=[];
+  runtimeCleanup=()=>{renderer.setAnimationLoop(null);ownedTargets.forEach(target=>target.dispose());renderer.dispose();};
+  bootStage='scene-init';
   const frameStats=createFrameStats();
-  const renderTarget=(w=1,h=1)=>new THREE.WebGLRenderTarget(w,h,{minFilter:THREE.LinearFilter,magFilter:THREE.LinearFilter});
+  const renderTarget=(w=1,h=1)=>{const target=new THREE.WebGLRenderTarget(w,h,{minFilter:THREE.LinearFilter,magFilter:THREE.LinearFilter});ownedTargets.push(target);return target;};
   const previewRain=renderTarget(320,512),previewForest=renderTarget(256,512);
   const shared={rainTexture:previewRain.texture,forestTexture:previewForest.texture};
   const instances=new Map();
@@ -105,9 +122,12 @@ function boot(){
   const compositeScene=new THREE.Scene(),compositeCamera=new THREE.OrthographicCamera(-1,1,1,-1,0,1);
   compositeScene.add(new THREE.Mesh(new THREE.PlaneGeometry(2,2),new THREE.ShaderMaterial({uniforms,vertexShader:fullscreenVertex,fragmentShader:storyFragment,depthTest:false,depthWrite:false})));
   let viewportAspect=1,rainAspect=1,lastPreviews=-100,lastSeason=-1,contextLost=false,lastPaint=-Infinity;
+  const bufferSize=new THREE.Vector2();
   function resize(){
-    const ratio=Math.min(devicePixelRatio||1,1.5),w=innerWidth,h=innerHeight;
-    renderer.setPixelRatio(ratio);renderer.setSize(w,h,false);targetA.setSize(Math.min(1600,Math.round(w*ratio)),Math.min(1100,Math.round(h*ratio)));targetB.setSize(targetA.width,targetA.height);
+    if(staticPreviewActive)return;
+    const w=Math.max(1,innerWidth),h=Math.max(1,innerHeight),ratio=drawingPixelRatio(w,h,devicePixelRatio);
+    renderer.setDrawingBufferSize(w,h,ratio);renderer.getDrawingBufferSize(bufferSize);
+    targetA.setSize(bufferSize.x,bufferSize.y);targetB.setSize(bufferSize.x,bufferSize.y);
     viewportAspect=w/h;uniforms.uResolution.value.set(w,h);
     const rect=$('#rain-aperture').getBoundingClientRect();rainAspect=rect.width/rect.height;
     uniforms.uRainRect.value.set(rect.x/w,1-(rect.y+rect.height)/h,rect.width/w,rect.height/h);drawBranch($('#botanical'),rect);state.dirty=true;readScroll();
@@ -123,6 +143,7 @@ function boot(){
     renderer.setRenderTarget(target);renderer.render(instance.scene,instance.camera);
   }
   function tick(now){
+    if(staticPreviewActive)return;
     // Quiet scenes do not need to render at a 144/240 Hz display's full rate.
     // Gate before advancing simulation time so rain and auto-tour keep real speed.
     if(!state.paused&&!state.hidden&&!contextLost){
@@ -161,7 +182,7 @@ function boot(){
     if(state.jump&&now-state.jump.start>=state.jump.duration){state.jump=null;go(1,true);readScroll();}
   }
   const raycaster=new THREE.Raycaster();
-  document.addEventListener('click',event=>{
+  listen(document,'click',event=>{
     if(event.target.closest('button,input,a,dialog,label'))return;
     const instance=instances.get(state.index);if(!instance?.interactive)return;
     raycaster.setFromCamera(new THREE.Vector2(event.clientX/innerWidth*2-1,1-event.clientY/innerHeight*2),instance.camera);
@@ -169,35 +190,36 @@ function boot(){
     let object=hit.object;while(object&&!object.userData.track&&!object.userData.action)object=object.parent;
     if(object?.userData.action==='flip')flip();else if(object?.userData.track)go(object.userData.track);
   });
-  addEventListener('scroll',readScroll,{passive:true});
-  addEventListener('resize',resize);document.fonts.ready.then(resize);
-  addEventListener('pointermove',event=>{if(event.pointerType==='touch')return;state.pointer.x=(event.clientX/innerWidth-.5)*2;state.pointer.y=(.5-event.clientY/innerHeight)*2;$('#cursor').style.transform=`translate(${event.clientX}px,${event.clientY}px)`;},{passive:true});
-  document.documentElement.addEventListener('pointerleave',()=>{state.pointer={x:0,y:0};});
+  listen(window,'scroll',readScroll,{passive:true});
+  const safeResize=()=>{try{resize();}catch(error){enterStaticPreview('render-error',error);}};
+  listen(window,'resize',safeResize);document.fonts.ready.then(safeResize);
+  listen(window,'pointermove',event=>{if(event.pointerType==='touch')return;state.pointer.x=(event.clientX/innerWidth-.5)*2;state.pointer.y=(.5-event.clientY/innerHeight)*2;$('#cursor').style.transform=`translate(${event.clientX}px,${event.clientY}px)`;},{passive:true});
+  listen(document.documentElement,'pointerleave',()=>{state.pointer={x:0,y:0};});
   const stopAuto=()=>{if(state.auto){state.auto=false;updateControls();}};
-  addEventListener('wheel',stopAuto,{passive:true});addEventListener('touchstart',stopAuto,{passive:true});
-  $('#home').addEventListener('click',()=>go(0));$('#enter-story').addEventListener('click',()=>go(1));
-  addEventListener('hashchange',()=>{const target=tracks.findIndex(track=>track.id===location.hash.slice(1));go(target<0?0:target,true);readScroll();});
-  $('#previous').addEventListener('click',()=>go(state.index-1));$('#next').addEventListener('click',()=>go(state.index+1));
-  document.querySelectorAll('[data-track]').forEach(button=>button.addEventListener('click',()=>{$('#contents').close();go(Number(button.dataset.track));}));
-  $('#contents-open').addEventListener('click',()=>$('#contents').showModal());$('#contents-close').addEventListener('click',()=>$('#contents').close());
-  $('#contents').addEventListener('click',event=>{if(event.target===$('#contents'))$('#contents').close();});
-  $('#pause').addEventListener('click',()=>{state.paused=!state.paused;if(state.paused)state.auto=false;state.dirty=true;updateControls();});
-  $('#auto-tour').addEventListener('click',()=>{state.auto=!state.auto;if(state.auto){state.paused=false;if(state.index===9)go(0,true);state.autoUnits=scrollY/innerHeight;state.auto=true;}state.dirty=true;updateControls();});
-  $('#story-progress').addEventListener('input',()=>{stopAuto();scrollTo({top:Number($('#story-progress').value)/1000*totalUnits*innerHeight,behavior:'instant'});readScroll();});
-  $('#rain').addEventListener('input',()=>{state.rain=Number($('#rain').value)/100;$('#rain-value').value=$('#rain').value;state.dirty=true;updateSound();});
-  $('#audio').addEventListener('click',toggleSound);$('#sound-play').addEventListener('click',toggleSound);
-  $('#audio-settings').addEventListener('click',()=>$('#sound-panel').showModal());$('#sound-close').addEventListener('click',()=>$('#sound-panel').close());
-  $('#sound-panel').addEventListener('click',event=>{if(event.target===$('#sound-panel'))$('#sound-panel').close();});
-  $('#volume').addEventListener('input',()=>{sound.setVolume(Number($('#volume').value)/100);$('#volume-value').value=`${$('#volume').value}%`;});
-  $('#music-level').addEventListener('input',()=>{sound.setMusicLevel(Number($('#music-level').value)/100);$('#music-value').value=`${$('#music-level').value}%`;});
-  $('#nature-level').addEventListener('input',()=>{sound.setNatureLevel(Number($('#nature-level').value)/100);$('#nature-value').value=`${$('#nature-level').value}%`;});
-  document.querySelectorAll('[data-sound-mode]').forEach(button=>button.addEventListener('click',async()=>{try{await sound.setMode(button.dataset.soundMode);}catch(error){console.warn('Score loading failed',error);}updateAudioControls();}));
+  listen(window,'wheel',stopAuto,{passive:true});listen(window,'touchstart',stopAuto,{passive:true});
+  listen($('#home'),'click',()=>go(0));listen($('#enter-story'),'click',()=>go(1));
+  listen(window,'hashchange',()=>{const target=tracks.findIndex(track=>track.id===location.hash.slice(1));go(target<0?0:target,true);readScroll();});
+  listen($('#previous'),'click',()=>go(state.index-1));listen($('#next'),'click',()=>go(state.index+1));
+  document.querySelectorAll('[data-track]').forEach(button=>listen(button,'click',()=>{$('#contents').close();go(Number(button.dataset.track));}));
+  listen($('#contents-open'),'click',()=>$('#contents').showModal());listen($('#contents-close'),'click',()=>$('#contents').close());
+  listen($('#contents'),'click',event=>{if(event.target===$('#contents'))$('#contents').close();});
+  listen($('#pause'),'click',()=>{state.paused=!state.paused;if(state.paused)state.auto=false;state.dirty=true;updateControls();});
+  listen($('#auto-tour'),'click',()=>{state.auto=!state.auto;if(state.auto){state.paused=false;if(state.index===9)go(0,true);state.autoUnits=scrollY/innerHeight;state.auto=true;}state.dirty=true;updateControls();});
+  listen($('#story-progress'),'input',()=>{stopAuto();scrollTo({top:Number($('#story-progress').value)/1000*totalUnits*innerHeight,behavior:'instant'});readScroll();});
+  listen($('#rain'),'input',()=>{state.rain=Number($('#rain').value)/100;$('#rain-value').value=$('#rain').value;state.dirty=true;updateSound();});
+  listen($('#audio'),'click',toggleSound);listen($('#sound-play'),'click',toggleSound);
+  listen($('#audio-settings'),'click',()=>$('#sound-panel').showModal());listen($('#sound-close'),'click',()=>$('#sound-panel').close());
+  listen($('#sound-panel'),'click',event=>{if(event.target===$('#sound-panel'))$('#sound-panel').close();});
+  listen($('#volume'),'input',()=>{sound.setVolume(Number($('#volume').value)/100);$('#volume-value').value=`${$('#volume').value}%`;});
+  listen($('#music-level'),'input',()=>{sound.setMusicLevel(Number($('#music-level').value)/100);$('#music-value').value=`${$('#music-level').value}%`;});
+  listen($('#nature-level'),'input',()=>{sound.setNatureLevel(Number($('#nature-level').value)/100);$('#nature-value').value=`${$('#nature-level').value}%`;});
+  document.querySelectorAll('[data-sound-mode]').forEach(button=>listen(button,'click',async()=>{try{await sound.setMode(button.dataset.soundMode);}catch(error){console.warn('Score loading failed',error);}updateAudioControls();}));
   sound.subscribe(updateAudioControls);
-  document.querySelectorAll('[data-season]').forEach(button=>button.addEventListener('click',()=>{state.season=Number(button.dataset.season);state.dirty=true;document.querySelectorAll('[data-season]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));$('#season-follow').setAttribute('aria-pressed','false');}));
-  $('#season-follow').addEventListener('click',()=>{state.season=null;state.dirty=true;document.querySelectorAll('[data-season]').forEach(b=>b.setAttribute('aria-pressed','false'));$('#season-follow').setAttribute('aria-pressed','true');});
-  $('#redraw').addEventListener('click',()=>{state.strokeCycle++;state.progress=0;state.enteredAt=state.time;state.paused=reduced.matches;state.dirty=true;updateControls();});
-  $('#tape-flip').addEventListener('click',()=>flip());$('#flip-tape').addEventListener('click',()=>flip(true));$('#replay').addEventListener('click',()=>go(0));
-  addEventListener('keydown',event=>{
+  document.querySelectorAll('[data-season]').forEach(button=>listen(button,'click',()=>{state.season=Number(button.dataset.season);state.dirty=true;document.querySelectorAll('[data-season]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));$('#season-follow').setAttribute('aria-pressed','false');}));
+  listen($('#season-follow'),'click',()=>{state.season=null;state.dirty=true;document.querySelectorAll('[data-season]').forEach(b=>b.setAttribute('aria-pressed','false'));$('#season-follow').setAttribute('aria-pressed','true');});
+  listen($('#redraw'),'click',()=>{state.strokeCycle++;state.progress=0;state.enteredAt=state.time;state.paused=reduced.matches;state.dirty=true;updateControls();});
+  listen($('#tape-flip'),'click',()=>flip());listen($('#flip-tape'),'click',()=>flip(true));listen($('#replay'),'click',()=>go(0));
+  listen(window,'keydown',event=>{
     if(event.target.closest('input,dialog'))return;
     if(event.key==='ArrowDown'||event.key==='PageDown'){event.preventDefault();go(state.index+1);}
     if(event.key==='ArrowUp'||event.key==='PageUp'){event.preventDefault();go(state.index-1);}
@@ -205,12 +227,15 @@ function boot(){
     if(event.key==='Home'){event.preventDefault();go(0);}
     if(event.key==='End'){event.preventDefault();go(9);}
   });
-  document.addEventListener('visibilitychange',()=>{state.hidden=document.hidden;state.last=performance.now();state.dirty=true;frameStats.reset(state.hidden?'Background paused':'Resuming');sound.suspend(state.hidden);});
-  reduced.addEventListener('change',event=>{state.paused=event.matches;state.auto=false;state.dirty=true;updateControls();});
-  canvas.addEventListener('webglcontextlost',event=>{event.preventDefault();contextLost=true;frameStats.reset('WebGL context lost');$('#fallback').hidden=false;});
-  canvas.addEventListener('webglcontextrestored',()=>location.reload());
+  listen(document,'visibilitychange',()=>{state.hidden=document.hidden;state.last=performance.now();state.dirty=true;frameStats.reset(state.hidden?'Background paused':'Resuming');sound.suspend(state.hidden);});
+  listen(reduced,'change',event=>{state.paused=event.matches;state.auto=false;state.dirty=true;updateControls();});
+  listen(canvas,'webglcontextlost',event=>{event.preventDefault();contextLost=true;frameStats.reset('WebGL context lost');bootStage='context-lost';enterStaticPreview('context-lost',new Error('WebGL context lost'));});
   const hash=location.hash.slice(1),initial=tracks.findIndex(track=>track.id===hash);
-  resize();go(initial<0?0:initial,true);readScroll();updateCopy(state.index);updatePreviews(true);
-  renderer.setAnimationLoop(tick);
+  resize();go(initial<0?0:initial,true);readScroll();updateCopy(state.index);bootStage='first-frame';
+  renderer.setAnimationLoop(now=>{
+    try{tick(now);if(canvas.dataset.ready==='true')bootStage='running';}
+    catch(error){console.error('Story rendering failed',error);enterStaticPreview(bootStage==='running'?'render-error':'scene-init',error);}
+  });
 }
-try{boot();}catch(error){console.error('Story initialization failed',error);$('#fallback').hidden=false;}
+if(new URLSearchParams(location.search).get('preview')==='static'){bootStage='manual';enterStaticPreview('manual');}
+else try{boot();}catch(error){console.error('Story initialization failed',error);enterStaticPreview(error instanceof WebGLUnavailableError?'context-unavailable':'scene-init',error);}

@@ -1,0 +1,137 @@
+body.static-preview-mode {
+  min-height: 100svh;
+  height: auto;
+  overflow: auto;
+  background: #e9e5d9;
+  color: #302f29;
+  cursor: auto;
+}
+.static-preview-mode :is(#world, #botanical, #cursor, #story-shell, .transport, #timeline, #frame-stats, dialog, .grain) {
+  display: none !important;
+}
+#fallback.static-preview {
+  position: relative;
+  inset: auto;
+  z-index: 1;
+  width: min(1180px, calc(100% - 64px));
+  max-width: none;
+  margin: 0 auto;
+  padding: 28px 0 36px;
+  border: 0;
+  background: transparent;
+  font: 14px/1.7 'Microsoft YaHei', 'PingFang SC', sans-serif;
+}
+.static-preview * { box-sizing: border-box; }
+.static-preview [hidden] { display: none !important; }
+.static-preview :is(a, button, select) {
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  letter-spacing: normal;
+}
+.static-preview :is(a, button, select):focus-visible {
+  outline: 2px solid #934344;
+  outline-offset: 4px;
+}
+.static-preview a { text-underline-offset: 5px; }
+.static-preview a:hover, .static-preview button:hover { color: #8a343a; }
+.static-preview-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+.static-preview .static-preview-kicker {
+  margin: 0 0 5px;
+  font: 11px/1.6 'Courier New', monospace;
+  letter-spacing: .1em;
+  color: #655e50;
+}
+.static-preview h1 {
+  margin: 0;
+  font: 400 clamp(23px, 3vw, 34px)/1.4 SimSun, 'Songti SC', serif;
+  letter-spacing: .04em;
+}
+.static-preview-retry {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  flex-shrink: 0;
+}
+.static-preview-notice {
+  margin: 20px 0 16px;
+  padding-left: 14px;
+  border-left: 2px solid #967b61;
+  color: #5e574b;
+  font-size: 12px;
+}
+.static-preview-notice p { margin: 3px 0; }
+.static-preview-notice .static-preview-reason { font-size: 14px; color: #302f29; }
+.static-preview-navigation {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: end;
+  gap: 24px;
+  margin: 20px 0 16px;
+}
+.static-preview button, .static-preview select {
+  min-height: 44px;
+  padding: 10px 14px;
+  border: 1px solid #aaa28f;
+  border-radius: 2px;
+  background: #f1eee3;
+  font-size: 13px;
+}
+.static-preview button:disabled {
+  opacity: .45;
+  color: #5e574b;
+  cursor: default;
+}
+.static-preview-select { display: flex; align-items: center; gap: 12px; }
+.static-preview-select > span { font-size: 12px; color: #5e574b; white-space: nowrap; }
+.static-preview select { min-width: 0; width: 100%; }
+.static-preview-figure { margin: 0; }
+.static-preview-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 70svh;
+  object-fit: contain;
+  background: #ded9cb;
+  border: 1px solid #c4bcaa;
+}
+.static-preview-figure figcaption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px 20px;
+  padding-top: 6px;
+  font-size: 12px;
+  color: #5e574b;
+}
+.static-preview-figure figcaption a { display: inline-flex; min-height: 44px; align-items: center; }
+.static-preview-seasons { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin: 8px 0 20px; }
+.static-preview-seasons > span { margin-right: 4px; font-size: 12px; color: #5e574b; }
+.static-preview-seasons button { min-width: 48px; }
+.static-preview-seasons button[aria-pressed=true] { border-color: #8a343a; color: #8a343a; background: #e7dcd0; }
+.static-preview-image-error { color: #843d38; }
+.static-preview-diagnostics { margin-top: 18px; border-top: 1px solid #b9b09f; padding-top: 6px; color: #5e574b; font-size: 12px; }
+.static-preview-diagnostics summary { width: fit-content; min-height: 44px; padding: 10px 0; cursor: pointer; }
+.static-preview-diagnostics summary:focus-visible { outline: 2px solid #934344; outline-offset: 4px; }
+.static-preview-diagnostics p { margin: 0 0 14px; }
+.static-preview-diagnostics dl { display: grid; grid-template-columns: 130px minmax(0, 1fr); gap: 8px 16px; margin: 12px 0; }
+.static-preview-diagnostics dt { color: #302f29; }
+.static-preview-diagnostics dd { margin: 0; white-space: pre-wrap; overflow-wrap: anywhere; }
+@media (max-width: 640px) {
+  #fallback.static-preview { width: calc(100% - 32px); padding-top: 20px; }
+  .static-preview-header { gap: 8px; align-items: flex-start; flex-wrap: wrap; }
+  .static-preview-retry { font-size: 12px !important; }
+  .static-preview-notice { margin-top: 14px; }
+  .static-preview-navigation { gap: 10px; grid-template-columns: 1fr 1fr; }
+  .static-preview-select { grid-column: 1 / -1; grid-row: 1; }
+  .static-preview-navigation > button { width: 100%; }
+  .static-preview-figure img { max-height: none; }
+  .static-preview-diagnostics dl { grid-template-columns: 1fr; gap: 4px; }
+  .static-preview-diagnostics dd { margin-bottom: 10px; }
+}
