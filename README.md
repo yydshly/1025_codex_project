@@ -12,11 +12,12 @@
 
 ## 项目索引
 
-已收录 **1** 个项目 · 按固定编号升序排列
+已收录 **2** 个项目 · 按固定编号升序排列
 
 | 编号 | 项目 | 简介 / 研究重点 | 阶段 | 演示 |
 | --- | --- | --- | --- | --- |
 | 001 | [早期方向档案](projects/001-early-directions-atlas/README.md) | 我们早期思考与尝试留下的十二个方向：需求与变现、内容获客、轻量产品、价格册、音频局部修改、3D咖啡、共想室、岗位观察、跨设备、论文、艺术短片与AI室友。按候选、方案、原型、阶段作品及停止项保存进展、依据和待验证问题。 | 已总结 | [在线访问](<https://yydshly.github.io/1025_codex_project/001-early-directions-atlas/>) |
+| 006 | [PromptHub · AI 工作资产与复用](projects/006-prompthub-ai-assets/README.md) | 集中管理提示词、Skills、MCP、插件与规则，通过模板、技能分发和配置适配供 AI 复用。对我的价值是借鉴其方法，把每日笔记中验证有效的经验沉淀为工作资产，减少重复说明与跨工具配置；笔记自动提炼和结果回写需另接入。 | 已总结 | — |
 
 ## 项目速览
 
@@ -29,6 +30,16 @@
 [研究说明](projects/001-early-directions-atlas/README.md) · [原始仓库](https://github.com/yydshly/1025_codex_project) · [在线演示](<https://yydshly.github.io/1025_codex_project/001-early-directions-atlas/>)
 
 **阶段：** 已总结 · **标签：** 早期思考 / 遗留方向 / AI产品 / 创作 / 历史回溯
+
+### 006 · PromptHub · AI 工作资产与复用
+
+![PromptHub · AI 工作资产与复用 项目配图](projects/006-prompthub-ai-assets/assets/images/prompthub-capabilities-overview.png)
+
+集中管理提示词、Skills、MCP、插件与规则，通过模板、技能分发和配置适配供 AI 复用。对我的价值是借鉴其方法，把每日笔记中验证有效的经验沉淀为工作资产，减少重复说明与跨工具配置；笔记自动提炼和结果回写需另接入。
+
+[研究说明](projects/006-prompthub-ai-assets/README.md) · [原始仓库](https://github.com/legeling/PromptHub)
+
+**阶段：** 已总结 · **标签：** PromptHub / AI工作流 / Skill / 提示词管理 / 笔记到工具
 
 <!-- PROJECTS:END -->
 

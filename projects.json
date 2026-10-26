@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "nextId": 2,
+  "nextId": 7,
   "projects": [
     {
       "id": "001",
@@ -9,10 +9,34 @@
       "summary": "我们早期思考与尝试留下的十二个方向：需求与变现、内容获客、轻量产品、价格册、音频局部修改、3D咖啡、共想室、岗位观察、跨设备、论文、艺术短片与AI室友。按候选、方案、原型、阶段作品及停止项保存进展、依据和待验证问题。",
       "source": "https://github.com/yydshly/1025_codex_project",
       "status": "completed",
-      "tags": ["早期思考", "遗留方向", "AI产品", "创作", "历史回溯"],
+      "tags": [
+        "早期思考",
+        "遗留方向",
+        "AI产品",
+        "创作",
+        "历史回溯"
+      ],
       "cover": "assets/images/directions-map-v1.png",
       "demoUrl": "https://yydshly.github.io/1025_codex_project/001-early-directions-atlas/",
       "createdAt": "2026-10-26"
+    },
+    {
+      "id": "006",
+      "slug": "prompthub-ai-assets",
+      "name": "PromptHub · AI 工作资产与复用",
+      "summary": "集中管理提示词、Skills、MCP、插件与规则，通过模板、技能分发和配置适配供 AI 复用。对我的价值是借鉴其方法，把每日笔记中验证有效的经验沉淀为工作资产，减少重复说明与跨工具配置；笔记自动提炼和结果回写需另接入。",
+      "source": "https://github.com/legeling/PromptHub",
+      "status": "completed",
+      "tags": [
+        "PromptHub",
+        "AI工作流",
+        "Skill",
+        "提示词管理",
+        "笔记到工具"
+      ],
+      "cover": "assets/images/prompthub-capabilities-overview.png",
+      "demoUrl": "",
+      "createdAt": "2026-10-27"
     }
   ]
 }
