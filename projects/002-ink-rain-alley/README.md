@@ -135,7 +135,7 @@ app/
 - 未取得原演示源码。场景几何、镜头、文案细节和合成声音为本项目实现，与原演示存在差异；声音没有使用原作录音；2.2.0 新增本项目原创的程序配乐，音符与渲染脚本见 assets/audio/。
 - 玫瑰的连续曲面数学构造参考 Zhaoxu Liu / slandarer 的 [How To Draw A Rose Ball In MATLAB](https://www.mathworks.com/matlabcentral/discussions/tips/847771-how-to-draw-a-rose-ball-in-matlab)，在本项目中以 Three.js 网格重新实现，并调整比例、着色与动态；该来源不是原演示的花朵源码。
 - `reference-rain-alley.png` 与 `reference-storyboard-*.jpg` 为研究用原视频截帧，版权归原作者；`story-comparison.jpg` 将参考截帧与实现并列用于检查。它们不参与运行时渲染。
-- Three.js `0.186.1`：MIT；[引擎仓库](https://github.com/mrdoob/three.js)。总索引中的源仓库指向渲染引擎，不表示原演示源码仓库。
+- Three.js `0.186.1`：MIT；[引擎仓库](https://github.com/mrdoob/three.js)。总索引的“源库”关联 Bee 的原始演示并注明未取得源库；Three.js 是本实现的运行依赖。
 - Vite `8.3.5`：MIT。Cormorant Garamond，通过 `@fontsource/cormorant-garamond` `5.3.0` 本地加载：OFL-1.1。中文使用系统字体。
 - 本总库尚未选择统一许可证；各依赖保留自身许可证。
 

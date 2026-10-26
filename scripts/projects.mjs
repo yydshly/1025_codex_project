@@ -33,9 +33,18 @@ function httpsUrl(value, label) {
   return url;
 }
 
-function validateSource(value) {
+function githubRepoName(value) {
   const url = httpsUrl(value, 'source');
-  assert(url.hostname === 'github.com' && !url.port && !url.search && !url.hash && /^\/[A-Za-z0-9_-]+\/[A-Za-z0-9_.-]+\/?$/.test(url.pathname), 'source 必须指向一个 GitHub 仓库，例如 https://github.com/owner/repo。');
+  if (url.hostname === 'github.com' && !url.port && !url.search && !url.hash && /^\/[A-Za-z0-9_-]+\/[A-Za-z0-9_.-]+\/?$/.test(url.pathname)) {
+    return url.pathname.split('/')[2].replace(/\.git$/, '');
+  }
+  return null;
+}
+
+function validateSource(value, name) {
+  const repository = githubRepoName(value);
+  if (name !== undefined) singleLine(name, 'sourceName', 120);
+  assert(repository || name, '非 GitHub 仓库来源须填写 sourceName，注明原作品或演示名称。');
 }
 
 // Reject linked paths as well as traversal; generated files stay in this repository.
@@ -73,7 +82,7 @@ function loadRegistry() {
     assert(!slugs.has(project.slug), `重复短名：${project.slug}`);
     singleLine(project.name, `${project.id} name`, 120);
     singleLine(project.summary, `${project.id} summary`);
-    validateSource(project.source);
+    validateSource(project.source, project.sourceName);
     assert(Object.hasOwn(statuses, project.status), `${project.id} 的 status 无效。`);
     assert(Array.isArray(project.tags), `${project.id} 的 tags 必须是数组。`);
     for (const tag of project.tags) singleLine(tag, 'tag', 40);
@@ -110,6 +119,9 @@ function markdown(value) {
 }
 
 const demoHref = (value) => httpsUrl(value, 'demoUrl').href.replaceAll('|', '%7C');
+const sourceName = (project) => project.sourceName ?? githubRepoName(project.source);
+const sourceHref = (value) => httpsUrl(value, 'source').href.replaceAll('|', '%7C').replaceAll('(', '%28').replaceAll(')', '%29');
+const sourceLink = (project) => `[${markdown(sourceName(project))}](<${sourceHref(project.source)}>)`;
 
 function renderIndex(data) {
   const projects = [...data.projects].sort((a, b) => Number(a.id) - Number(b.id));
@@ -118,15 +130,15 @@ function renderIndex(data) {
     '',
     `已收录 **${projects.length}** 个项目 · 按固定编号升序排列`,
     '',
-    '| 编号 | 项目 | 简介 / 研究重点 | 阶段 | 演示 |',
-    '| --- | --- | --- | --- | --- |',
+    '| 编号 | 项目 | 源库 | 简介 / 研究重点 | 阶段 | 演示 |',
+    '| --- | --- | --- | --- | --- | --- |',
   ];
   for (const project of projects) {
     const link = `projects/${folderOf(project)}/README.md`;
     const demo = project.demoUrl ? `[在线访问](<${demoHref(project.demoUrl)}>)` : '—';
-    lines.push(`| ${project.id} | [${markdown(project.name)}](${link}) | ${markdown(project.summary)} | ${statuses[project.status]} | ${demo} |`);
+    lines.push(`| ${project.id} | [${markdown(project.name)}](${link}) | ${sourceLink(project)} | ${markdown(project.summary)} | ${statuses[project.status]} | ${demo} |`);
   }
-  if (!projects.length) lines.push('| — | 暂无项目 | 添加第一个真实研究项目后，这里会自动生成索引。 | — | — |');
+  if (!projects.length) lines.push('| — | 暂无项目 | — | 添加第一个真实研究项目后，这里会自动生成索引。 | — | — |');
   lines.push('', '## 项目速览', '');
   if (!projects.length) lines.push('等待第一个研究项目。添加项目并设置封面后，这里会展示项目图片、摘要和入口。');
   for (const project of projects) {
@@ -134,7 +146,7 @@ function renderIndex(data) {
     lines.push(`### ${project.id} · ${markdown(project.name)}`, '');
     if (project.cover) lines.push(`![${markdown(project.name)} 项目配图](${directory}/${project.cover})`, '');
     lines.push(markdown(project.summary), '');
-    const links = [`[研究说明](${directory}/README.md)`, `[原始仓库](${project.source})`];
+    const links = [`[研究说明](${directory}/README.md)`, `源库：${sourceLink(project)}`];
     if (project.demoUrl) links.push(`[在线演示](<${demoHref(project.demoUrl)}>)`);
     lines.push(links.join(' · '), '');
     lines.push(`**阶段：** ${statuses[project.status]}${project.tags.length ? ` · **标签：** ${project.tags.map(markdown).join(' / ')}` : ''}`, '');
@@ -163,7 +175,7 @@ function check(data) {
 
 function parseOptions(args) {
   const options = {};
-  const allowed = new Set(['slug', 'name', 'source', 'summary', 'tags']);
+  const allowed = new Set(['slug', 'name', 'source', 'source-name', 'summary', 'tags']);
   for (let i = 0; i < args.length; i += 2) {
     const key = args[i].startsWith('--') ? args[i].slice(2) : '';
     assert(allowed.has(key) && args[i + 1] !== undefined && !args[i + 1].startsWith('--'), `参数无效：${args[i]}。参数格式为 --name "值"。`);
@@ -172,7 +184,7 @@ function parseOptions(args) {
   }
   for (const key of ['slug', 'name', 'source', 'summary']) singleLine(options[key], `--${key}`, key === 'source' ? 2048 : key === 'name' ? 120 : 240);
   assert(slugPattern.test(options.slug) && options.slug.length <= 64, '--slug 仅可使用小写字母、数字和单个连字符，以字母开头，最多 64 个字符。');
-  validateSource(options.source);
+  validateSource(options.source, options['source-name']);
   options.tags = options.tags === undefined ? [] : options.tags.split(',').map((tag) => tag.trim());
   for (const tag of options.tags) singleLine(tag, '--tags 中的标签', 40);
   assert(new Set(options.tags).size === options.tags.length, '--tags 中不能有重复标签。');
@@ -199,7 +211,8 @@ function createProject(data, args) {
     slug: options.slug,
     name: options.name,
     summary: options.summary,
-    source: options.source.replace(/\/$/, '').replace(/\.git$/, ''),
+    source: githubRepoName(options.source) ? options.source.replace(/\/$/, '').replace(/\.git$/, '') : options.source,
+    ...(options['source-name'] !== undefined ? { sourceName: options['source-name'] } : {}),
     status: 'planned',
     tags: options.tags,
     cover: '',
@@ -209,10 +222,10 @@ function createProject(data, args) {
   const destination = path.join(root, 'projects', folderOf(project));
   assert(!fs.existsSync(destination), `目录已存在，不覆盖：${destination}`);
   const template = plainPath('templates/project');
-  const values = { ID: project.id, NAME: markdown(project.name), SUMMARY: markdown(project.summary), SOURCE: project.source, DATE: project.createdAt };
+  const values = { ID: project.id, NAME: markdown(project.name), SUMMARY: markdown(project.summary), SOURCE: sourceHref(project.source), SOURCE_NAME: markdown(sourceName(project)), DATE: project.createdAt };
   const files = templateFiles(template).map((relative) => ({
     relative,
-    content: fs.readFileSync(path.join(template, relative), 'utf8').replace(/\{\{(ID|NAME|SUMMARY|SOURCE|DATE)\}\}/g, (_, key) => values[key]),
+    content: fs.readFileSync(path.join(template, relative), 'utf8').replace(/\{\{(ID|NAME|SUMMARY|SOURCE|SOURCE_NAME|DATE)\}\}/g, (_, key) => values[key]),
   }));
   // Read and validate all inputs before creating anything; never overwrite an existing project.
   fs.mkdirSync(destination);

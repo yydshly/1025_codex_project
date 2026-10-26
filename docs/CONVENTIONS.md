@@ -19,7 +19,8 @@
 | `slug` | 目录短名 | `repo-name` |
 | `name` | 展示名称 | `项目名称` |
 | `summary` | 一句话能力说明与研究重点 | `研究它的核心交互与实现方式` |
-| `source` | 原始 GitHub 仓库 URL | `https://github.com/owner/repo` |
+| `source` | 研究时的原始来源 URL，优先关联原 GitHub 仓库 | `https://github.com/owner/repo` |
+| `sourceName` | 可选的来源名称；GitHub 仓库默认从 URL 提取仓库名，其他来源须填写 | `Bee 原演示（未取得源库）` |
 | `status` | 当前研究阶段 | `planned` |
 | `tags` | 主题标签数组 | `["AI", "Web"]` |
 | `cover` | 相对子项目目录的图片路径；无图留空 | `assets/images/cover.png` |
@@ -28,11 +29,15 @@
 
 状态依次可用：`planned`（待研究）、`researching`（研究中）、`building`（实践中）、`completed`（已总结）、`archived`（已归档）。研究状态与上线状态分别记录，不能将“已总结”视为“已部署”。
 
+总 README 的“源库”列使用来源名称作为链接文字，关联 `source`，项目速览同步显示。来源应指向研究对象的原仓库；仅有作品、网页或录屏时，登记原始链接并用 `sourceName` 说明来源性质，不以本研究总库或运行依赖代替原作。原创档案明确标注无上游源库。
+
 ## 新建与更新
 
 ```powershell
 npm run project:new -- --slug repo-name --name "项目名称" --source "https://github.com/owner/repo" --summary "研究目标" --tags "AI,Web"
 ```
+
+来源为网页或演示时，额外传入 `--source-name "原作品名称（未取得源库）"`；`--source` 必须使用无凭据的 HTTPS 链接。
 
 创建后编辑对应 README 和笔记；修改登记数据后运行：
 

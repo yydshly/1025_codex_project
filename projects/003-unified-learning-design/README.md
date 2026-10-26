@@ -123,6 +123,6 @@ npm.cmd run dev
 
 灵感来自 Techartist 的 [Every Joule](https://iamtechartist.com/every-joule/) 及其[教师说明](https://iamtechartist.com/Apps/every-joule/teachers.html)。其中的物理课本把概念、立体图示、预测、操作和解释组织在一起；本项目据此提出跨主题的设计工作方法。
 
-索引中的源仓库指向[本研究总库](https://github.com/yydshly/1025_codex_project)，因为这套方法在此整理；该链接不代表 Every Joule 的源码仓库。已找到作者公开的 [every-joule-lesson1](https://github.com/iamtechartist/every-joule-lesson1) 发布仓库；截至 2026-10-26，该仓库没有声明开源许可证。本项目没有引入其发布代码或运行素材；`reference-*.png` 为仅用于视觉研究的原站截图，版权属于原作者。
+总索引的“源库”关联作者公开的 [every-joule-lesson1](https://github.com/iamtechartist/every-joule-lesson1) 发布仓库，便于回到原始研究对象；本项目的方法与三课样章在本研究总库中独立实现。截至 2026-10-26，该发布仓库没有声明开源许可证。本项目没有引入其发布代码或运行素材；`reference-*.png` 为仅用于视觉研究的原站截图，版权属于原作者。
 
 运行依赖 Three.js 0.180.0 使用 MIT 许可证，Source Serif 4 与 Caveat 字体使用 OFL；许可文本随静态依赖保留在 `app/vendor/`。具体版本见 `package-lock.json`。方法文档与独立实现未额外声明统一开源许可证。

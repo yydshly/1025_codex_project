@@ -1,6 +1,6 @@
 # {{ID}} · {{NAME}} 研究笔记
 
-[项目说明](../README.md) · [原始仓库]({{SOURCE}})
+[项目说明](../README.md) · [原始来源：{{SOURCE_NAME}}](<{{SOURCE}}>)
 
 ## 研究问题
 

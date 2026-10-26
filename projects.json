@@ -8,6 +8,7 @@
       "name": "早期方向档案",
       "summary": "我们早期思考与尝试留下的十二个方向：需求与变现、内容获客、轻量产品、价格册、音频局部修改、3D咖啡、共想室、岗位观察、跨设备、论文、艺术短片与AI室友。按候选、方案、原型、阶段作品及停止项保存进展、依据和待验证问题。",
       "source": "https://github.com/yydshly/1025_codex_project",
+      "sourceName": "本库原创档案（无上游源库）",
       "status": "completed",
       "tags": [
         "早期思考",
@@ -25,7 +26,8 @@
       "slug": "ink-rain-alley",
       "name": "未完 · 水墨叙事",
       "summary": "依据Bee录屏独立重写纸墨九章叙事：雨巷、拼贴、森林、四季湖景、莲花与墨圈，以滚动、画幅变化和自然微动组织观看。沉淀场景进度、遮罩与声音实现；未取得原作源码，视觉仍有差异。",
-      "source": "https://github.com/yydshly/1025_codex_project",
+      "source": "https://x.com/thtbee_/status/2114030630887641448",
+      "sourceName": "Bee 原演示（未取得源库）",
       "status": "completed",
       "tags": [
         "Three.js",
@@ -43,7 +45,7 @@
       "slug": "unified-learning-design",
       "name": "连续主题体验设计",
       "summary": "以 Every Joule 为参照独立实现三课三维物理书：翻页、立体器材与能量变化同屏呈现，支持调参实验、预测反馈、MiniMax逐句导览、文字放大和连续阅读。通过共享实验状态联动模型、数值、镜头与讲解，阅读后恢复原上下文。沉淀内容、展示、操作和解释统一设计的方法，供互动教材、原理说明与实验平台复用；扩展布局仍为设想。",
-      "source": "https://github.com/yydshly/1025_codex_project",
+      "source": "https://github.com/iamtechartist/every-joule-lesson1",
       "status": "completed",
       "tags": [
         "Three.js",
@@ -79,7 +81,8 @@
       "slug": "paper-poetics-lab",
       "name": "纸间 · 诗性风格实验室",
       "summary": "原参考以纸墨、画幅转换和自然微事件串起多场景诗性叙事。本研究用独立重写、实时茶庭与AI雨窗样片，沉淀氛围组织、载体选型和可复用工程方法；可扩展声画事件、纸墨与写实融合及文化展陈入口，仍需验证。",
-      "source": "https://github.com/yydshly/1025_codex_project",
+      "source": "https://x.com/thtbee_/status/2114030630887641448",
+      "sourceName": "Bee 原演示（未取得源库）",
       "status": "researching",
       "tags": [
         "视频氛围",
