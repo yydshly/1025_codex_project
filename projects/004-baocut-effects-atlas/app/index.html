@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="BaoCut 是 AI 可操作的视频编辑器与制作工作流：用代码动画、AI 静图运镜和素材剪辑组合成片，支持字幕、配音、检索与可编辑工程。通过总览图、24 个方向和 20 段官方预览理解效果、原理与集成价值。">
+  <title>BaoCut · 能力、原理与效果研究</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./implementation.css">
+  <link rel="stylesheet" href="./learning.css">
+  <link rel="stylesheet" href="./overview.css">
+  <script defer src="./data.js"></script>
+  <script defer src="./overview.js"></script>
+  <script defer src="./app.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="#top"><span class="brand-icon" aria-hidden="true">B<span>↗</span></span><span>BaoCut <small>能力与效果研究</small></span></a>
+    <nav aria-label="主导航"><a href="#overview">一图总览</a><a href="#gallery">浏览全部效果</a><a href="#how">实现原理</a><a href="#learn">动手理解</a><a href="https://github.com/JimLiu/baocut" target="_blank" rel="noreferrer">原始仓库 ↗</a><span class="study-label">研究集 / 004</span></nav>
+  </header>
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> EFFECTS / CAPABILITIES / PRINCIPLES / VALUE</p>
+        <h1 id="hero-heading">看清效果，<br>理解能力与价值<span class="accent">。</span></h1>
+        <p class="hero-description">BaoCut 把 AI 与视频编辑接在一起：用代码动画、AI 静图运镜和已有素材剪辑组合成片，再组织字幕、配音与可编辑工程。</p>
+        <p class="hero-value">它的增量主要在工具衔接、反复修改和人工接手；对一次性代码效果，收益可能有限。质量、成本与效率尚未对照实测。</p>
+        <div class="stats" aria-label="样片统计"><div><strong id="preview-count">20</strong><span>段视频预览</span></div><div><strong id="template-count">24</strong><span>个场景方向</span></div><div><strong>05</strong><span>类创作场景</span></div></div>
+        <a class="primary-link" href="#overview">一张图看懂能力与价值 <span>↓</span></a><a class="hero-overview-link" href="#gallery">直接看效果 ↗</a>
+        <p class="credit">引导图：我们的能力与价值总览；样片：Jim Liu / BaoCut。<br>本页为固定版本研究，尚未安装 BaoCut 或复现样片。</p>
+      </div>
+      <div class="spotlight">
+        <div class="player-topline"><span><i></i> 样片放映室</span><span id="featured-kind">图形与动效</span></div>
+        <div class="feature-video-wrap"><video id="feature-video" controls playsinline preload="metadata" aria-label="官方效果预览"></video></div>
+        <p id="feature-video-error" class="media-error" role="status" hidden>这段预览暂时无法读取。可以打开详情核对来源，或检查本地预览文件是否完整。</p>
+        <div class="player-caption"><div><span class="small-label" id="featured-index">01 / 06</span><h2 id="featured-title">动效设计展示</h2><p id="featured-summary">正在载入官方样片…</p><p id="featured-method" class="featured-method"></p></div><button class="round-button" id="feature-details" type="button" aria-label="查看当前样片详情">↗</button></div>
+        <div id="featured-strip" class="featured-strip" aria-label="切换代表样片"></div>
+      </div>
+    </section>
+    <section class="overview-section" id="overview" aria-labelledby="overview-title">
+      <div class="section-heading"><div><p class="eyebrow">THE WHOLE PICTURE / 我们的研究理解</p><h2 id="overview-title">一张图，理清它能做什么。</h2></div><div class="overview-actions"><a href="../assets/images/capability-map.svg" target="_blank" rel="noreferrer">打开完整图 ↗</a><a href="../assets/images/capability-map.svg" download="BaoCut-能力与价值总览.svg">下载 SVG ↓</a></div></div>
+      <p class="overview-intro">整体定位、五类用途、三条制作路径、具体技巧与配套能力放在一起看。它对我们的增量主要在工具衔接和可持续编辑；实际节省多少工作，仍需同任务对照实测。</p>
+      <figure class="capability-map" id="capability-map" aria-label="BaoCut 从用途、制作路径、技巧到配套能力、工程与价值的完整总览"><p class="map-unavailable">正在载入总览。也可<a href="../assets/images/capability-map.svg">直接打开完整图 ↗</a>。</p></figure>
+      <details class="map-sources" id="overview-sources"><summary>来源与判断依据</summary></details>
+    </section>
+    <section class="how-section" id="how" aria-labelledby="how-title">
+      <div class="section-heading"><div><p class="eyebrow">HOW IT IS MADE</p><h2 id="how-title">画面相似，做法可以不同。</h2></div><p>先看画面从哪里来，再看动作由谁产生。</p></div>
+      <p class="how-intro">按这批官方制作记录，24 个方向归为三条实际路径。AI 可以写代码、生成静图或合成旁白，画面的运动还需要单独判断。</p>
+      <div id="method-overview" class="method-overview"></div>
+      <div class="generation-note"><div><span class="generation-count">0</span><span>条已记录的视频生成路径</span></div><p><strong>这里的电影感与舞蹈，需要具体看做法。</strong>电影感样片使用一张 AI 静图加代码推拉；舞蹈模板要求生成视频，实际因能力不可用改成代码机器人。固定版本制作说明明确写着“没有视频生成”。</p><a id="production-source" target="_blank" rel="noreferrer">核对原始说明 ↗</a></div>
+      <div class="pipeline-note"><span>制作链路</span><p>创作要求 → AI 规划与调用工具 → 生成或选取画面 → 代码渲染或直接剪辑 → 时间线、声音与字幕 → 导出</p></div>
+      <details class="rendering-note"><summary>同样是代码动画，旧样片与当前代码包流程有什么区别？</summary><p>这些官方测试中，多数代码镜头先由本机脚本渲染成视频，再导入时间线。因此有些文字、转场和包装已经成为视频像素，改动时要重新渲染。固定版本制作说明另外提供 HTML / Canvas / SVG 代码包导入方式：制作时可实时预览，确认后再烘焙导出。模板历史样片和后来提供的流程分别看，不能假定旧样片已经采用新方式。</p><p>声音也独立处理：知识讲解用了 Gemini TTS 配音，小球动画按碰撞事件用代码合成音效，混剪与 Vlog 使用已有音乐或现场声；其余多条预览没有声音。</p></details>
+    </section>
+    <section class="learn-section" id="learn" aria-labelledby="learn-title">
+      <div class="section-heading"><div><p class="eyebrow">MOVE THE TIME, SEE THE DIFFERENCE</p><h2 id="learn-title">拖动时间，看动作从哪里来。</h2></div><span class="teaching-label">本研究制作的教学示意</span></div>
+      <p class="how-intro">同一个 6 秒时间轴，三种方式改变的对象不同。下面用于解释机制，不是 BaoCut 样片复现，也没有调用生成模型。</p>
+      <div class="demo-controls"><button id="demo-play" type="button" aria-pressed="false">播放示意 ▶</button><label for="demo-time">示意时间</label><input id="demo-time" type="range" min="0" max="6000" step="10" value="0" aria-label="示意时间，0 到 6 秒" aria-describedby="demo-description"><output id="demo-output" for="demo-time">0.0 / 6.0 秒</output></div>
+      <p id="demo-description" class="sr-only">拖动时间滑块，同时观察代码绘图的位置变化、静图取景变化，以及已有镜头的切换。</p>
+      <div class="demo-grid">
+        <article class="demo-card"><div class="demo-stage"><svg viewBox="0 0 300 160" role="img" aria-label="代码计算位置的小球示意"><path d="M30 125H270" stroke="#c4d4c6" stroke-width="1"/><path d="M30 45H270M30 85H270" stroke="#e2e9dd" stroke-dasharray="4 6"/><circle id="demo-ball" cx="40" cy="100" r="17" fill="#39775b"/><text x="30" y="148" fill="#819384" font-size="9">起点</text><text x="250" y="148" fill="#819384" font-size="9">终点</text></svg></div><h3>01 · 改变绘制状态</h3><p>小球的位置由时间函数计算；每一帧重新画图。</p><code id="demo-code-value">x = 40 + 220 × 0.00</code><button class="demo-scene-link" type="button" data-open-scene="physics-ball-escape">对照小球动画的官方记录 ↗</button></article>
+        <article class="demo-card"><div class="demo-stage demo-image-stage"><img id="demo-image" src="../assets/official/cinematic-scene/cover.jpg" alt="用官方电影感场景封面解释静图取景" width="640" height="360"><span class="demo-frame" aria-hidden="true"></span><span class="demo-overlay">同一张图片</span></div><h3>02 · 改变静图取景</h3><p>图中的物体没有新增动作，程序只改变缩放与位置。</p><code id="demo-image-value">缩放 1.00× · 平移 0%</code><button class="demo-scene-link" type="button" data-open-scene="cinematic-scene">对照电影感场景的官方记录 ↗</button></article>
+        <article class="demo-card"><div class="demo-stage demo-cut-stage"><span id="demo-shot-name">镜头 A</span><p>原有画面的内容保持不变</p><div class="demo-clips" aria-label="三个已有镜头的时间轴"><span data-demo-clip="0">A</span><span data-demo-clip="1">B</span><span data-demo-clip="2">C</span><i id="demo-playhead" aria-hidden="true"></i></div></div><h3>03 · 改变素材呈现</h3><p>按剪点切换镜头；真实动作已经存在于原素材里。</p><code id="demo-cut-value">0–2 秒：镜头 A</code><button class="demo-scene-link" type="button" data-open-scene="vlog-edit">对照 Vlog 的官方记录 ↗</button></article>
+      </div>
+      <p class="demo-footnote">公式、镜头 A/B/C 和播放控件均为解释原理而制作；静图示意使用官方场景封面。小球不是物理模拟，镜头条也没有播放原视频。</p>
+      <div class="preparation-heading"><h3>准备复现之前，先把这四件事定下来。</h3><p>每条样片详情里的“修改与复现”会进一步列出输入、修改位置和检查点。</p></div><div id="preparation-grid" class="preparation-grid"></div>
+    </section>
+    <section class="gallery-section" id="gallery" aria-labelledby="gallery-title">
+      <div class="section-heading"><div><p class="eyebrow">FIND YOUR SCENE</p><h2 id="gallery-title">你想做哪一种？</h2></div><p>点开样片看效果，再看输入材料与制作方向。</p></div>
+      <div class="gallery-toolbar">
+        <div id="category-filters" class="filters" role="group" aria-label="筛选场景"></div>
+        <label class="search-box"><span aria-hidden="true">⌕</span><span class="sr-only">搜索场景、风格或效果</span><input id="search" type="search" placeholder="搜索：排版、科普、混剪…" autocomplete="off"></label>
+      </div>
+      <div class="method-filter-row"><span>实际画面来源</span><div id="method-filters" class="filters" role="group" aria-label="筛选实际制作方式"></div><label class="availability-label">样片<select id="availability-filter" aria-label="筛选预览与声音"><option value="all">全部资料</option><option value="video">有视频预览 · 20</option><option value="audio">预览含音轨 · 4</option><option value="notes">仅模板与记录 · 4</option></select></label><button id="reset-filters" class="reset-filters" type="button">清空筛选</button></div>
+      <div class="result-bar"><p id="result-count" aria-live="polite">正在整理样片…</p><span>▶ 有真实预览 <i></i> ○ 仅模板说明</span></div>
+      <div id="scene-grid" class="scene-grid"></div>
+      <p id="empty-state" class="empty-state" hidden>当前场景、制作方式与搜索词没有交集。可以清空筛选后重新选择。</p>
+      <noscript><p>请启用 JavaScript 浏览分类与播放器，也可直接访问 <a href="https://baocut.com/zh-hans/#templates">BaoCut 官方样片</a>。</p></noscript>
+    </section>
+    <section class="reading-note" aria-label="如何理解这些效果">
+      <div class="note-number">↳</div><div><h2>一种样片，是一个创作方向。</h2><p>同一种工具可以组织不同的素材、画面和声音。这里展示的是特定简报下的官方结果；模板给出方向和制作要求，每次制作仍可能需要修改。</p><div class="note-links"><a href="https://baocut.com/zh-hans/" target="_blank" rel="noreferrer">官方效果页 ↗</a><a id="template-source" href="https://github.com/JimLiu/baocut/tree/main/templates" target="_blank" rel="noreferrer">模板与制作提示 ↗</a><a href="../README.md">研究说明</a></div></div>
+    </section>
+  </main>
+  <footer><span>004 / BaoCut · 能力、原理与效果研究</span><span>资料固定于 2026.10.26 · 页面整理于 2026.10.27</span><a href="https://github.com/yydshly/1025_codex_project/blob/main/projects/004-baocut-effects-atlas/NOTICE.md" target="_blank" rel="noreferrer">素材署名与许可 ↗</a><a href="#top">回到顶部 ↑</a></footer>
+  <dialog id="scene-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-header"><span id="dialog-category" class="eyebrow">场景详情</span><div class="dialog-navigation"><span id="dialog-position"></span><button id="dialog-prev" type="button" aria-label="上一个场景">←</button><button id="dialog-next" type="button" aria-label="下一个场景">→</button><button id="dialog-close" class="close-button" type="button" aria-label="关闭场景详情">×</button></div></div>
+    <div class="dialog-layout">
+      <div class="dialog-media"><video id="dialog-video" controls playsinline preload="metadata" aria-label="所选场景官方预览"></video><div id="dialog-no-preview" hidden><span>○</span><h3>这个方向还没有公开预览</h3><p>当前固定版本提供了模板说明，没有附带视频。可先阅读制作方向和输入要求。</p></div><p id="dialog-preview-meta" class="preview-meta"></p><div id="dialog-route-summary" class="dialog-route-summary"></div></div>
+      <div class="dialog-info"><p id="dialog-kind" class="small-label"></p><h2 id="dialog-title"></h2>
+        <div class="dialog-tabs" role="tablist" aria-label="场景详情内容"><button id="tab-actual" type="button" role="tab" data-tab="actual" aria-controls="panel-actual" aria-selected="true">效果与做法</button><button id="tab-guide" type="button" role="tab" data-tab="guide" aria-controls="panel-guide" aria-selected="false" tabindex="-1">修改与复现</button><button id="tab-source" type="button" role="tab" data-tab="source" aria-controls="panel-source" aria-selected="false" tabindex="-1">原始记录</button></div>
+        <section id="panel-actual" class="dialog-panel" role="tabpanel" aria-labelledby="tab-actual" tabindex="0"><section class="implementation-detail" aria-labelledby="implementation-title"><h3 id="implementation-title">这条实际怎样做</h3><p class="evidence-label">依据官方制作记录整理 · 尚未本机复现</p><ol id="dialog-pipeline" class="detail-pipeline"></ol><dl id="dialog-mechanism" class="mechanism-list"></dl><div class="implementation-limits"><strong>与模板的差异 / 边界</strong><p id="dialog-limits"></p></div><blockquote id="dialog-evidence"></blockquote><a id="dialog-evidence-source" class="evidence-source" target="_blank" rel="noreferrer">查看对应原始记录 ↗</a></section></section>
+        <section id="panel-guide" class="dialog-panel" role="tabpanel" aria-labelledby="tab-guide" tabindex="0" hidden><p class="guide-disclaimer">以下为本研究的复现建议，不是新增的官方测试结果。</p><div class="scene-first-note"><strong>这一条先注意</strong><p id="guide-scene-note"></p></div><h3>可以改变什么</h3><ul id="guide-can-change"></ul><p id="guide-edit-location" class="guide-edit-location"></p><h3>模板需要你提供</h3><div id="dialog-inputs" class="input-tags"></div><p id="dialog-defaults" class="defaults"></p><h3>还需准备</h3><ul id="guide-prepare"></ul><h3>先做一个小样</h3><ol id="guide-first-test" class="guide-steps"></ol><h3>怎样判断做对了</h3><ul id="guide-check"></ul><p id="guide-effort" class="guide-effort"></p></section>
+        <section id="panel-source" class="dialog-panel" role="tabpanel" aria-labelledby="tab-source" tabindex="0" hidden><p class="descriptor-label">模板设想</p><p id="dialog-description"></p><h3>模板的效果方向</h3><ul id="dialog-beats"></ul><h3 id="verification-title">官方制作记录</h3><p id="verification-notes" class="source-notes"></p><details class="original-prompt"><summary>展开官方原始制作提示</summary><pre id="dialog-original-prompt"></pre></details><div class="dialog-links"><a id="dialog-prompt" class="primary-link" target="_blank" rel="noreferrer">查看原始提示文件 ↗</a><a id="dialog-source" target="_blank" rel="noreferrer">官方原始文件 ↗</a></div></section>
+        <div class="dialog-share"><button id="copy-scene-link" type="button">复制当前入口 ↗</button><span id="share-status" role="status" aria-live="polite"></span><input id="share-fallback" aria-label="可复制的当前场景链接" readonly hidden></div><p class="dialog-credit">样片与模板来自 BaoCut 官方目录；本页没有运行模型或复现样片。</p>
+      </div>
+    </div>
+  </dialog>
+</body>
+</html>

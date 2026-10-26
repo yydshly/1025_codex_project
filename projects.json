@@ -21,6 +21,24 @@
       "createdAt": "2026-10-26"
     },
     {
+      "id": "004",
+      "slug": "baocut-effects-atlas",
+      "name": "BaoCut · 能力、原理与效果研究",
+      "summary": "BaoCut 是 AI 可操作的视频编辑器与制作工作流。效果覆盖动效、讲解、产品片、混剪和故事；以代码动画、AI 静图运镜、已有素材剪辑组合成片，支持字幕、配音、检索与可编辑工程。价值主要在工具集成、反复修改和人工接手；附 24 个方向、20 段预览及原理说明，效率收益未实测。",
+      "source": "https://github.com/JimLiu/baocut",
+      "status": "researching",
+      "tags": [
+        "BaoCut",
+        "视频制作",
+        "代码动画",
+        "素材剪辑",
+        "工作流研究"
+      ],
+      "cover": "assets/images/capability-map.png",
+      "demoUrl": "",
+      "createdAt": "2026-10-26"
+    },
+    {
       "id": "006",
       "slug": "prompthub-ai-assets",
       "name": "PromptHub · AI 工作资产与复用",

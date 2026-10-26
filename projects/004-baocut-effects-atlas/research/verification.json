@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-26",
+  "story": "浏览场景分类，打开官方预览，播放与跳转进度，再查看输入要求和官方制作记录。",
+  "sourceCommit": "228c6aecf91ee2e3235b72a93223b0dd7cbb92fa",
+  "httpFilesChecked": 89,
+  "httpFailures": [],
+  "mediaDecode": "20/20 passed; see media-verification.json",
+  "browser": {
+    "desktop": "1265px-wide screenshot inspected",
+    "narrowPanel": "765px-wide viewport inspected; documentWidth=750; no horizontal overflow",
+    "categoryFilter": "讲解与教学 => 6 scenes, 3 previews, 3 template-only",
+    "search": "数据 => 1 result; unmatched text => explicit empty state",
+    "templateOnly": "热点趣闻讲解 opens explanation with no video element visible",
+    "playback": "动效设计展示 time advanced to 6.0617s, readyState=4, no media error; knowledge-explainer played to 15s, readyState=4",
+    "seek": "知识讲解视频 native seek reached 11.027711s, then playback completed normally",
+    "brokenImages": 0,
+    "officialNotes": "Expanded and inspected original notes",
+    "screenshots": [
+      "../assets/images/cover.png",
+      "../assets/images/gallery.png"
+    ]
+  },
+  "notVerified": [
+    "mobile-device hardware",
+    "subjective audio quality",
+    "local BaoCut reproduction",
+    "public deployment"
+  ]
+}

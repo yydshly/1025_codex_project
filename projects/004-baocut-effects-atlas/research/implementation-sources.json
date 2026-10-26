@@ -1,0 +1,20 @@
+{
+  "commit": "228c6aecf91ee2e3235b72a93223b0dd7cbb92fa",
+  "basis": "24 original verification.notes plus matching template prompts",
+  "productionSkill": {
+    "sourceUrl": "https://github.com/JimLiu/baocut/blob/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/skills/baocut/built-in-skills/video-production/SKILL.md",
+    "snapshotPath": "upstream/video-production-SKILL.md",
+    "sha256": "337b51098505cc3014a7336ab4810a8c625f66c2fd252946cdbde38af2504513",
+    "format": "text snapshot with LF line endings"
+  },
+  "annotationsPath": "../app/implementation.json",
+  "evidenceExcerptChecks": {
+    "checked": 24,
+    "matched": 24
+  },
+  "counts": {
+    "code": 14,
+    "image": 5,
+    "footage": 5
+  }
+}

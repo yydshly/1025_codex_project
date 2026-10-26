@@ -1,0 +1,3 @@
+# Keep the pinned source snapshot and official media byte-identical on checkout.
+research/upstream/** -text whitespace=-blank-at-eof
+assets/official/** -text

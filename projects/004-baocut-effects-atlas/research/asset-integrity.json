@@ -1,0 +1,717 @@
+{
+  "commit": "228c6aecf91ee2e3235b72a93223b0dd7cbb92fa",
+  "files": [
+    {
+      "sourcePath": "LICENSE",
+      "localPath": "research/upstream/LICENSE.txt",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/LICENSE",
+      "bytes": 9572,
+      "sha256": "9e444402a9e57b6b09e13816921d68eb29c25019fa3f4af023929df2a4d7d2e9",
+      "gitBlobSha": "70adecee34d60948a1856f12912fe708d75a720d"
+    },
+    {
+      "sourcePath": "templates/ai-news-take/prompt.md",
+      "localPath": "research/upstream/templates/ai-news-take/prompt.md",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/ai-news-take/prompt.md",
+      "bytes": 523,
+      "sha256": "179b3dec383698cbdf140360e43aed7eb3931e93ec41babc3ee57922736bdf76",
+      "gitBlobSha": "c8ec53022c3f893aeb32a261b453ae79a49c8bda"
+    },
+    {
+      "sourcePath": "templates/ai-news-take/template.json",
+      "localPath": "research/upstream/templates/ai-news-take/template.json",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/ai-news-take/template.json",
+      "bytes": 3021,
+      "sha256": "93173f6ab2ba7faac26e7998d9e3453d50b329ce373f5591c0b70f9d2a9b137a",
+      "gitBlobSha": "410c7474aa047ca0e14e705c2ba376f01e5f17d2"
+    },
+    {
+      "sourcePath": "templates/chaos-to-harmony/cover.jpg",
+      "localPath": "assets/official/chaos-to-harmony/cover.jpg",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/chaos-to-harmony/cover.jpg",
+      "bytes": 14438,
+      "sha256": "86007df8d26f5457a2002d5d2468a8326c4431b2ca00ebfe5a0f3b00bb4b82c8",
+      "gitBlobSha": "f44416310e98909c3cbbf08e9d175aaf346b2f6c"
+    },
+    {
+      "sourcePath": "templates/chaos-to-harmony/preview.mp4",
+      "localPath": "assets/official/chaos-to-harmony/preview.mp4",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/chaos-to-harmony/preview.mp4",
+      "bytes": 799000,
+      "sha256": "5e53e961ce86df564be15984c1c098508edfc0f98258e93feeffaf5795c63fa8",
+      "gitBlobSha": "f918cd9041e3d6428cbe3ccce9db24cdfb713edc"
+    },
+    {
+      "sourcePath": "templates/chaos-to-harmony/prompt.md",
+      "localPath": "research/upstream/templates/chaos-to-harmony/prompt.md",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/chaos-to-harmony/prompt.md",
+      "bytes": 444,
+      "sha256": "298332920f75f43eb90b774bf5c9378be91f6f67f61fab0525e4e7d3e856173d",
+      "gitBlobSha": "c726269a20c2fa9a84249cdb51cd1eae006ac56e"
+    },
+    {
+      "sourcePath": "templates/chaos-to-harmony/template.json",
+      "localPath": "research/upstream/templates/chaos-to-harmony/template.json",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/chaos-to-harmony/template.json",
+      "bytes": 2723,
+      "sha256": "4486b737e0825f7959d0323c37e410d12a074a318307c7886d979ee08db3ea7e",
+      "gitBlobSha": "10522c4422f9e60c53bb094f3174ed720535adfc"
+    },
+    {
+      "sourcePath": "templates/cinematic-scene/cover.jpg",
+      "localPath": "assets/official/cinematic-scene/cover.jpg",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/cinematic-scene/cover.jpg",
+      "bytes": 55079,
+      "sha256": "abe6d90ab9f61d8fcc1cee2b54f7fa4c579bd2488bc5aa68eef29d36f3c4e4d6",
+      "gitBlobSha": "b3a3142ab4ec97c83b52bf23b756025d0109bfea"
+    },
+    {
+      "sourcePath": "templates/cinematic-scene/preview.mp4",
+      "localPath": "assets/official/cinematic-scene/preview.mp4",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/cinematic-scene/preview.mp4",
+      "bytes": 585078,
+      "sha256": "4b37893683ab5561b4ba0bb59ca17356634bfac9e62f22a3af557bb8e317f46d",
+      "gitBlobSha": "0ffedff08f037ddee0646761c4f8aad025e2cf82"
+    },
+    {
+      "sourcePath": "templates/cinematic-scene/prompt.md",
+      "localPath": "research/upstream/templates/cinematic-scene/prompt.md",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/cinematic-scene/prompt.md",
+      "bytes": 770,
+      "sha256": "6a35d50d4fcddfd2d194ace215f75d058d9864f1b251b7148c47da7c11589657",
+      "gitBlobSha": "3f0c79db08099d03a8c00550a7d7de7bcfd87619"
+    },
+    {
+      "sourcePath": "templates/cinematic-scene/template.json",
+      "localPath": "research/upstream/templates/cinematic-scene/template.json",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/cinematic-scene/template.json",
+      "bytes": 3827,
+      "sha256": "ee7dd23e569ec48955b1d0f634dd7e179c085a5e9de788ba471fab115cd09d75",
+      "gitBlobSha": "93e844c98300014315b2987808d573d19013544b"
+    },
+    {
+      "sourcePath": "templates/creative-montage/cover.jpg",
+      "localPath": "assets/official/creative-montage/cover.jpg",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/creative-montage/cover.jpg",
+      "bytes": 23030,
+      "sha256": "e3541c14085d2e2b6c4e62baf14eddfbc571b63bea89e6cd0d3944c608e842b9",
+      "gitBlobSha": "eeac5e5de5a57246d238c4ef4e62e74351932dd1"
+    },
+    {
+      "sourcePath": "templates/creative-montage/preview.mp4",
+      "localPath": "assets/official/creative-montage/preview.mp4",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/creative-montage/preview.mp4",
+      "bytes": 745269,
+      "sha256": "47ad8830c5719b8cd36adfc1ff1a66a6a00cc55c9b999be45ace145184d5a1c2",
+      "gitBlobSha": "8922b66a5524f22f25bb19e3505bd165d79415c4"
+    },
+    {
+      "sourcePath": "templates/creative-montage/prompt.md",
+      "localPath": "research/upstream/templates/creative-montage/prompt.md",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/creative-montage/prompt.md",
+      "bytes": 402,
+      "sha256": "3145a53278eee9745f53f5dca3a464ec5de08ea4f23a995a0ca58a3cf9f235c2",
+      "gitBlobSha": "8af1b2ed501ab51f3d5fb1d778880f69eee92bc4"
+    },
+    {
+      "sourcePath": "templates/creative-montage/template.json",
+      "localPath": "research/upstream/templates/creative-montage/template.json",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/creative-montage/template.json",
+      "bytes": 6873,
+      "sha256": "6a5cbc93d1bbc04296a775012254c585046ac1b4fdf5876a50fc602d407aeae2",
+      "gitBlobSha": "618e88aa209218cd6a9bcd5dc2c0dd31c470ac04"
+    },
+    {
+      "sourcePath": "templates/data-story/cover.jpg",
+      "localPath": "assets/official/data-story/cover.jpg",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/data-story/cover.jpg",
+      "bytes": 25206,
+      "sha256": "a87cafdbc0305e958268aaff058d7b1dcf0033c84d12d8d99efe5733961117e9",
+      "gitBlobSha": "998d5226b71955f893cf33ae401b97d2f4882553"
+    },
+    {
+      "sourcePath": "templates/data-story/preview.mp4",
+      "localPath": "assets/official/data-story/preview.mp4",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/data-story/preview.mp4",
+      "bytes": 59466,
+      "sha256": "bfe98828ded8aea31f45053a388e23635e2aa5de243deb944ef26f4ba42fe19c",
+      "gitBlobSha": "426e3b5844aab4985c901c92b8aa0ba84f15e6b2"
+    },
+    {
+      "sourcePath": "templates/data-story/prompt.md",
+      "localPath": "research/upstream/templates/data-story/prompt.md",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/data-story/prompt.md",
+      "bytes": 896,
+      "sha256": "c98c12fbf42079cc25e41e36db6b485f79be8560d666a26908c642addba08440",
+      "gitBlobSha": "f03afce5c92a8d5b725ddd07dcc45410b7c7089c"
+    },
+    {
+      "sourcePath": "templates/data-story/template.json",
+      "localPath": "research/upstream/templates/data-story/template.json",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/data-story/template.json",
+      "bytes": 3562,
+      "sha256": "36266f4b27d88304de4e879e7be94c0b3e29918297beff6b874c1c39a50e383b",
+      "gitBlobSha": "1a98154f93135d5e9bb10a765c0136ada3197a95"
+    },
+    {
+      "sourcePath": "templates/epic-mood-trailer/cover.jpg",
+      "localPath": "assets/official/epic-mood-trailer/cover.jpg",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/epic-mood-trailer/cover.jpg",
+      "bytes": 13130,
+      "sha256": "9f4fe755d68b384fd55df2d9914fefab3dafb1f8a0a093e217c531f6026b93b4",
+      "gitBlobSha": "7c09847bad9422200c476a143669608c357fa8ff"
+    },
+    {
+      "sourcePath": "templates/epic-mood-trailer/preview.mp4",
+      "localPath": "assets/official/epic-mood-trailer/preview.mp4",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/epic-mood-trailer/preview.mp4",
+      "bytes": 118124,
+      "sha256": "3faab6b18496e4e66032ec1b659d88f18699cdfec8b4f7029db9d518f99d453c",
+      "gitBlobSha": "131244ad91a8bea4079edfb77c70aab21b568d59"
+    },
+    {
+      "sourcePath": "templates/epic-mood-trailer/prompt.md",
+      "localPath": "research/upstream/templates/epic-mood-trailer/prompt.md",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/epic-mood-trailer/prompt.md",
+      "bytes": 201,
+      "sha256": "cd9507d9f24e98a78927e0a3d8c348e0f233551a5044bdbb0b9c9950a38d54bd",
+      "gitBlobSha": "a0cf03d5412beb5a62b31ba89f8fd078c8a731fc"
+    },
+    {
+      "sourcePath": "templates/epic-mood-trailer/template.json",
+      "localPath": "research/upstream/templates/epic-mood-trailer/template.json",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/epic-mood-trailer/template.json",
+      "bytes": 2825,
+      "sha256": "8c05f1b4c472cd79c15a2e07dd3982409de5b62221ecc6fa881f24129020ad43",
+      "gitBlobSha": "0537f5c30537d93464923a69dfe81ccf6bd72eb3"
+    },
+    {
+      "sourcePath": "templates/event-recap/cover.jpg",
+      "localPath": "assets/official/event-recap/cover.jpg",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/event-recap/cover.jpg",
+      "bytes": 37174,
+      "sha256": "971c027190615bbae2b69678544cbad879659dba27f7def06cf0bd7fc80a5dfc",
+      "gitBlobSha": "6e2fdcbc8d825b534b4bba078daad738b15db0cc"
+    },
+    {
+      "sourcePath": "templates/event-recap/preview.mp4",
+      "localPath": "assets/official/event-recap/preview.mp4",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/event-recap/preview.mp4",
+      "bytes": 159290,
+      "sha256": "e6cff5d023392c0eb43264b6d7148c35136a5852d9845a774246efb37cee3d1a",
+      "gitBlobSha": "4788d1839dc46c5643afd3d114ab6e8c14604b38"
+    },
+    {
+      "sourcePath": "templates/event-recap/prompt.md",
+      "localPath": "research/upstream/templates/event-recap/prompt.md",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/event-recap/prompt.md",
+      "bytes": 830,
+      "sha256": "a22bf7435760eef29389aab7115ae05f71fc40181055df2bd15aad7b566f4aa3",
+      "gitBlobSha": "845a5e4f97fc3325a4acb2a5d2ed0334eb1cd5eb"
+    },
+    {
+      "sourcePath": "templates/event-recap/template.json",
+      "localPath": "research/upstream/templates/event-recap/template.json",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/event-recap/template.json",
+      "bytes": 6848,
+      "sha256": "088cfd66b998a2f252bfb8b3caa745799df9d5c6e035031ba4b3264902eaec82",
+      "gitBlobSha": "6a11dc7357f60bd0d623114e0b70d023b536920a"
+    },
+    {
+      "sourcePath": "templates/game-trailer/cover.jpg",
+      "localPath": "assets/official/game-trailer/cover.jpg",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/game-trailer/cover.jpg",
+      "bytes": 26789,
+      "sha256": "b6b15f967428c941f9fab127b36f7c28bb54417861a89a31dc51fade47e38955",
+      "gitBlobSha": "1381fde565281290c47c9adb77e9e8ec5b96de00"
+    },
+    {
+      "sourcePath": "templates/game-trailer/preview.mp4",
+      "localPath": "assets/official/game-trailer/preview.mp4",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/game-trailer/preview.mp4",
+      "bytes": 630824,
+      "sha256": "f0c7210d473aabc69e223610a64750dc875b8ed38aefe06cdb0ed6bfcfe71dec",
+      "gitBlobSha": "5c6671b67f7908882abe54ebda1536c75d284191"
+    },
+    {
+      "sourcePath": "templates/game-trailer/prompt.md",
+      "localPath": "research/upstream/templates/game-trailer/prompt.md",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/game-trailer/prompt.md",
+      "bytes": 422,
+      "sha256": "3fda4fd1e695d2c4cfb81f87f216f9ff75e98df786226cfc48ad29d016463c36",
+      "gitBlobSha": "a049ebb75b8d01268744fe42c2e70556130d6bcf"
+    },
+    {
+      "sourcePath": "templates/game-trailer/template.json",
+      "localPath": "research/upstream/templates/game-trailer/template.json",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/game-trailer/template.json",
+      "bytes": 2743,
+      "sha256": "4f056196cd7f11210b4fd5883cdd8fdd4e8dac1f50708fdaff89bbc9a4be81a1",
+      "gitBlobSha": "92b85573654e885ed6f37c11279955c39d3f18e5"
+    },
+    {
+      "sourcePath": "templates/knowledge-explainer/cover.jpg",
+      "localPath": "assets/official/knowledge-explainer/cover.jpg",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/knowledge-explainer/cover.jpg",
+      "bytes": 19736,
+      "sha256": "3aec65e1c4abcbd89d6ee94784f808263b2ba02c1716d5cf14c57db471adbd1e",
+      "gitBlobSha": "d8e8aec064608bbf036d032d5d7d18b928714950"
+    },
+    {
+      "sourcePath": "templates/knowledge-explainer/preview.mp4",
+      "localPath": "assets/official/knowledge-explainer/preview.mp4",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/knowledge-explainer/preview.mp4",
+      "bytes": 214559,
+      "sha256": "00b91914a5105ee00da8294d123480552c7ef4c4c1b43534948d8103763b6270",
+      "gitBlobSha": "f85e204c027cdea948163ca5d9d151e5212c03b0"
+    },
+    {
+      "sourcePath": "templates/knowledge-explainer/prompt.md",
+      "localPath": "research/upstream/templates/knowledge-explainer/prompt.md",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/knowledge-explainer/prompt.md",
+      "bytes": 2217,
+      "sha256": "e31bcf6931095598441372fd07775355daef1245bff5a4643c4877f85b6c204b",
+      "gitBlobSha": "35579280079207de8f0f77da14887b2b3ce23eef"
+    },
+    {
+      "sourcePath": "templates/knowledge-explainer/template.json",
+      "localPath": "research/upstream/templates/knowledge-explainer/template.json",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/knowledge-explainer/template.json",
+      "bytes": 6050,
+      "sha256": "c0d5abcba732d6a9b1918413508986fb9f2c36189f9aa8661c26464a7a3e94f3",
+      "gitBlobSha": "ad3dcad4f8e2e5f8ee8719f56ff071fdd7b7b2f0"
+    },
+    {
+      "sourcePath": "templates/launch-film/cover.jpg",
+      "localPath": "assets/official/launch-film/cover.jpg",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/launch-film/cover.jpg",
+      "bytes": 21930,
+      "sha256": "5e5c8edd45c4903748499d1cee7fdb5cc6e1b5cfeec3f0b54bb7369450eb5779",
+      "gitBlobSha": "0d4a5fa8130e507232e19aa4e8eec9a60d25cffc"
+    },
+    {
+      "sourcePath": "templates/launch-film/preview.mp4",
+      "localPath": "assets/official/launch-film/preview.mp4",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/launch-film/preview.mp4",
+      "bytes": 156991,
+      "sha256": "15d8e081201cdd16b7a08f977b024bd3b77b524d129656508dbbf9de9c824ffd",
+      "gitBlobSha": "01ab518f8cd726383b10977d34bf798266954c2a"
+    },
+    {
+      "sourcePath": "templates/launch-film/prompt.md",
+      "localPath": "research/upstream/templates/launch-film/prompt.md",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/launch-film/prompt.md",
+      "bytes": 887,
+      "sha256": "f124aabe4f6f109cf357825098e5ad57d34426331350512e1384995334b05842",
+      "gitBlobSha": "d0a49ce1b6e015ba9e410db748ad968b7bb3f00d"
+    },
+    {
+      "sourcePath": "templates/launch-film/template.json",
+      "localPath": "research/upstream/templates/launch-film/template.json",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/launch-film/template.json",
+      "bytes": 3566,
+      "sha256": "173603a05602d4c7331a4d69d97fa8b16c2f7e9e38c354cd1c3276bdb9729ff9",
+      "gitBlobSha": "c26f1ca3b28c887c26d88331e3bec343e32a6edc"
+    },
+    {
+      "sourcePath": "templates/motion-design-showreel/cover.jpg",
+      "localPath": "assets/official/motion-design-showreel/cover.jpg",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/motion-design-showreel/cover.jpg",
+      "bytes": 17474,
+      "sha256": "7ec34d23b20c5de345ec581c07827d96e22fba94577ad078bc91df95b825dbcc",
+      "gitBlobSha": "b9fdd8591a79c8808ccb3c76c10b8e448fd6144b"
+    },
+    {
+      "sourcePath": "templates/motion-design-showreel/preview.mp4",
+      "localPath": "assets/official/motion-design-showreel/preview.mp4",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/motion-design-showreel/preview.mp4",
+      "bytes": 203260,
+      "sha256": "edda0014654abee83e5690594b4198f89638cce8d5ccf61aca5a873c602d3b03",
+      "gitBlobSha": "55c6e284449ef3d406b1f0f625bf8a04877c878a"
+    },
+    {
+      "sourcePath": "templates/motion-design-showreel/prompt.md",
+      "localPath": "research/upstream/templates/motion-design-showreel/prompt.md",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/motion-design-showreel/prompt.md",
+      "bytes": 444,
+      "sha256": "0ad9dd2110c858448707504b53c2923673d19d67e5ba2bc85999554b3b2fcfb6",
+      "gitBlobSha": "b186465881d2bce4786d6c87f0fae2c798fe33f4"
+    },
+    {
+      "sourcePath": "templates/motion-design-showreel/template.json",
+      "localPath": "research/upstream/templates/motion-design-showreel/template.json",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/motion-design-showreel/template.json",
+      "bytes": 2351,
+      "sha256": "2f1f1f13f6058cfb2bfeed0c197ac25d964026bb36d889a845f01fd04e9cb823",
+      "gitBlobSha": "b3f02b47bda9cc0d886328b324c1d7a5b6fab571"
+    },
+    {
+      "sourcePath": "templates/news-explainer/prompt.md",
+      "localPath": "research/upstream/templates/news-explainer/prompt.md",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/news-explainer/prompt.md",
+      "bytes": 368,
+      "sha256": "94e0e6be4002dbce314fa203f52d72ded70f3a2f88b893f5d63b7ba3370220b1",
+      "gitBlobSha": "45f032c15f012be184ce1b2ecf4b1bcd087ef4da"
+    },
+    {
+      "sourcePath": "templates/news-explainer/template.json",
+      "localPath": "research/upstream/templates/news-explainer/template.json",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/news-explainer/template.json",
+      "bytes": 3116,
+      "sha256": "9be43ab10851a3ba20162ef3fdcc6ec9befef452ce8dbfabd1a1bb390f3eac8a",
+      "gitBlobSha": "5270e16aba03b570b3d2d46e6b8c554b4a284db6"
+    },
+    {
+      "sourcePath": "templates/physics-ball-escape/cover.jpg",
+      "localPath": "assets/official/physics-ball-escape/cover.jpg",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/physics-ball-escape/cover.jpg",
+      "bytes": 26518,
+      "sha256": "66db2b37792a621fa9eea9ae7397da0976df90e26c65bf105f697dd59a21c4e3",
+      "gitBlobSha": "38090373668ddc515d8ba33ede3c19462224774a"
+    },
+    {
+      "sourcePath": "templates/physics-ball-escape/preview.mp4",
+      "localPath": "assets/official/physics-ball-escape/preview.mp4",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/physics-ball-escape/preview.mp4",
+      "bytes": 244131,
+      "sha256": "e591971b4d531b6ed66b74e1d6f5e8198129b83934a5da92757bb26872fca5e4",
+      "gitBlobSha": "770a0e0ad79f265823e1043b83d732ef2ee988c6"
+    },
+    {
+      "sourcePath": "templates/physics-ball-escape/prompt.md",
+      "localPath": "research/upstream/templates/physics-ball-escape/prompt.md",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/physics-ball-escape/prompt.md",
+      "bytes": 458,
+      "sha256": "7a16cf28fb82080e74c66cc67f1dce77beca6fceb4494d321969c8970a5be901",
+      "gitBlobSha": "83743ac3629d2f0de4dea75f8bdd77014eb8f46c"
+    },
+    {
+      "sourcePath": "templates/physics-ball-escape/template.json",
+      "localPath": "research/upstream/templates/physics-ball-escape/template.json",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/physics-ball-escape/template.json",
+      "bytes": 2705,
+      "sha256": "742318b06c92dbf3c5884356191bcd88494d09b51af1d2811baad0129ecfd25d",
+      "gitBlobSha": "e45ae7f4e5106f26023620664413b8c0f58aadc8"
+    },
+    {
+      "sourcePath": "templates/product-showcase/cover.jpg",
+      "localPath": "assets/official/product-showcase/cover.jpg",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/product-showcase/cover.jpg",
+      "bytes": 15541,
+      "sha256": "9de52e08d1016cfc0808213aea03c5c859812306ee088b8a639353f453750708",
+      "gitBlobSha": "ebb244277e6ea3019b70eaa126e3233257af59c4"
+    },
+    {
+      "sourcePath": "templates/product-showcase/preview.mp4",
+      "localPath": "assets/official/product-showcase/preview.mp4",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/product-showcase/preview.mp4",
+      "bytes": 103643,
+      "sha256": "ddc38f1f01a12da50cc3372a9cec3095fe06ef80df0aafc42eb478a36e96f05b",
+      "gitBlobSha": "cc45c102bde04ab755ca41111ec8468eb036f387"
+    },
+    {
+      "sourcePath": "templates/product-showcase/prompt.md",
+      "localPath": "research/upstream/templates/product-showcase/prompt.md",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/product-showcase/prompt.md",
+      "bytes": 908,
+      "sha256": "ece89293e6a7e25ec5b9dab798b621027538596c1b6de217b3d293aca4fa41eb",
+      "gitBlobSha": "ece3d1b9948f2f460a20b7b41eb7bbf9e4e89385"
+    },
+    {
+      "sourcePath": "templates/product-showcase/template.json",
+      "localPath": "research/upstream/templates/product-showcase/template.json",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/product-showcase/template.json",
+      "bytes": 4014,
+      "sha256": "df3b86471208f8aa4f24e9cf18d1f137c4189d5074ecdb6a2ab6e4c5b7337570",
+      "gitBlobSha": "a0fd9a6fc39b0a7ebd98f7d0b34873aa2b0f4543"
+    },
+    {
+      "sourcePath": "templates/promo-ad/cover.jpg",
+      "localPath": "assets/official/promo-ad/cover.jpg",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/promo-ad/cover.jpg",
+      "bytes": 23444,
+      "sha256": "4356ab1391ddb6c16ad49926ed546386c9a4133885980a31c5de4a088a786896",
+      "gitBlobSha": "65d17457e8b6021ce06d1cdc9f1127b264cdf577"
+    },
+    {
+      "sourcePath": "templates/promo-ad/preview.mp4",
+      "localPath": "assets/official/promo-ad/preview.mp4",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/promo-ad/preview.mp4",
+      "bytes": 104913,
+      "sha256": "086e7f8dbb44e5967066ae33a910c8b1f6b79c9cde940045d4a8bfce24176162",
+      "gitBlobSha": "302c25724a60726dee1459fce5d157fd8b0a97ce"
+    },
+    {
+      "sourcePath": "templates/promo-ad/prompt.md",
+      "localPath": "research/upstream/templates/promo-ad/prompt.md",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/promo-ad/prompt.md",
+      "bytes": 1078,
+      "sha256": "64dec8e07a90bfb0804385984dd32b172a051078d48daebfc3e256c921c82df6",
+      "gitBlobSha": "6b92c8cc03145da94978af0d4351ddedc4d530d2"
+    },
+    {
+      "sourcePath": "templates/promo-ad/template.json",
+      "localPath": "research/upstream/templates/promo-ad/template.json",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/promo-ad/template.json",
+      "bytes": 5769,
+      "sha256": "91493baa9b186fbee147341e6bb2b9c897b384590d852b38f2abfb1faae7a52d",
+      "gitBlobSha": "5ef6fd7b69b748f90c1bf07d38538c2a8223e2a4"
+    },
+    {
+      "sourcePath": "templates/rhythm-dance-video/cover.jpg",
+      "localPath": "assets/official/rhythm-dance-video/cover.jpg",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/rhythm-dance-video/cover.jpg",
+      "bytes": 28564,
+      "sha256": "098a718bd305a29a18c58b9f2e124dac8067f3a1be221e712bc53ddf00c818ad",
+      "gitBlobSha": "ac9dd87a50c76b717c1d7e71771d3d8a42345f55"
+    },
+    {
+      "sourcePath": "templates/rhythm-dance-video/preview.mp4",
+      "localPath": "assets/official/rhythm-dance-video/preview.mp4",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/rhythm-dance-video/preview.mp4",
+      "bytes": 521870,
+      "sha256": "fe81e7e1c3206bba55a457c60d928b305327c9ef9fa76608f0d4733d327ebd2e",
+      "gitBlobSha": "64f5512ccfc663c61ab0942aa430a95913f9509c"
+    },
+    {
+      "sourcePath": "templates/rhythm-dance-video/prompt.md",
+      "localPath": "research/upstream/templates/rhythm-dance-video/prompt.md",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/rhythm-dance-video/prompt.md",
+      "bytes": 256,
+      "sha256": "4e73f4d0edd0b5e9b8b1c982b949c93c0123cc36dbbc8ebab2a6df3faa6c21ad",
+      "gitBlobSha": "580f9cf73deb3cac23d063946d151aa090c8a7f8"
+    },
+    {
+      "sourcePath": "templates/rhythm-dance-video/template.json",
+      "localPath": "research/upstream/templates/rhythm-dance-video/template.json",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/rhythm-dance-video/template.json",
+      "bytes": 2591,
+      "sha256": "76067b847046bed0f91186e704d27b588822daf677531ba6f56a7296546f9553",
+      "gitBlobSha": "890a6af89bd565eb5be491c60deca4e17c934023"
+    },
+    {
+      "sourcePath": "templates/software-demo/cover.jpg",
+      "localPath": "assets/official/software-demo/cover.jpg",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/software-demo/cover.jpg",
+      "bytes": 23481,
+      "sha256": "634fa9442027446210ae1b41fd0554e340ea78b52eb3ca6f5edab7d6a59a8120",
+      "gitBlobSha": "6946d76d109361dc025220661d76fd01cac4556b"
+    },
+    {
+      "sourcePath": "templates/software-demo/preview.mp4",
+      "localPath": "assets/official/software-demo/preview.mp4",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/software-demo/preview.mp4",
+      "bytes": 64930,
+      "sha256": "04fa14768e333649e825814575c1cacf29b5e0a12693945246c9e8d48d73f76d",
+      "gitBlobSha": "e6190e8f075adafd0e0594c261900134f1ac81e5"
+    },
+    {
+      "sourcePath": "templates/software-demo/prompt.md",
+      "localPath": "research/upstream/templates/software-demo/prompt.md",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/software-demo/prompt.md",
+      "bytes": 860,
+      "sha256": "b22d0571fa3a81b463cbfc17f4b5158336aa0570b25c0146eba1daaeea9c8baf",
+      "gitBlobSha": "824bb7e4010a0d840aeaf7322a2cdb583b4ee874"
+    },
+    {
+      "sourcePath": "templates/software-demo/template.json",
+      "localPath": "research/upstream/templates/software-demo/template.json",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/software-demo/template.json",
+      "bytes": 3875,
+      "sha256": "2dfceba016a9136104d5a0b12e7e4643605bbbb08320d50071737bcaec455b30",
+      "gitBlobSha": "e2367cb0566fa87ddf232212245b578bae0ae0d6"
+    },
+    {
+      "sourcePath": "templates/step-tutorial/cover.jpg",
+      "localPath": "assets/official/step-tutorial/cover.jpg",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/step-tutorial/cover.jpg",
+      "bytes": 24168,
+      "sha256": "8c775dc9dfef39f42afb42df9d8bb3caff584569d038c25c228640066d854304",
+      "gitBlobSha": "7df69aa26e9a45241af5e78b107977b4205c22f2"
+    },
+    {
+      "sourcePath": "templates/step-tutorial/preview.mp4",
+      "localPath": "assets/official/step-tutorial/preview.mp4",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/step-tutorial/preview.mp4",
+      "bytes": 42579,
+      "sha256": "9363a19fc4ee776c02c3561d1bd56e73ae0b5f4b66cf98c57ae68fbabc79190d",
+      "gitBlobSha": "2cadbb43e190e6d201998d435f2f2cfc0b0866d8"
+    },
+    {
+      "sourcePath": "templates/step-tutorial/prompt.md",
+      "localPath": "research/upstream/templates/step-tutorial/prompt.md",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/step-tutorial/prompt.md",
+      "bytes": 827,
+      "sha256": "b23e9bacbe464657751b1aa0a8fc78389884fa72c2fb6596eb5bf7a2bcc63926",
+      "gitBlobSha": "8b3f1420e0289f7632f4738e5616b992620080c1"
+    },
+    {
+      "sourcePath": "templates/step-tutorial/template.json",
+      "localPath": "research/upstream/templates/step-tutorial/template.json",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/step-tutorial/template.json",
+      "bytes": 4187,
+      "sha256": "aa88244cc34fc0c58f3cef430dc07b1c7456df2abd152fc3f4a42a15e8e6579b",
+      "gitBlobSha": "1914cd19778ba355af79fc728952ede8a37c22ad"
+    },
+    {
+      "sourcePath": "templates/story-short/cover.jpg",
+      "localPath": "assets/official/story-short/cover.jpg",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/story-short/cover.jpg",
+      "bytes": 44040,
+      "sha256": "99b8e011f0608d8e9d93321fdd1c75ae2e5fed40fa0d72ccc94bf7df986482e6",
+      "gitBlobSha": "a3b0535ec8973a9261cb1c71140b15ea76336f42"
+    },
+    {
+      "sourcePath": "templates/story-short/preview.mp4",
+      "localPath": "assets/official/story-short/preview.mp4",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/story-short/preview.mp4",
+      "bytes": 285831,
+      "sha256": "4ca1beca1824d3d55c1645d7b20785f12eaa9732fc2947382c447677b3eab59f",
+      "gitBlobSha": "5590a492a6932daa9f50866b331891f5c1500e02"
+    },
+    {
+      "sourcePath": "templates/story-short/prompt.md",
+      "localPath": "research/upstream/templates/story-short/prompt.md",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/story-short/prompt.md",
+      "bytes": 863,
+      "sha256": "3bd2341571c24925cc19fbdc5ce6532f3afea8414d5cb75650fbe1880c3b0e85",
+      "gitBlobSha": "9baebafe3c973b439e748f9d216ec930b6e9a6e1"
+    },
+    {
+      "sourcePath": "templates/story-short/template.json",
+      "localPath": "research/upstream/templates/story-short/template.json",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/story-short/template.json",
+      "bytes": 3636,
+      "sha256": "1dd1b6a981c6fcd8d1df9224a1898fdad91656c72e668174eb447755fe398796",
+      "gitBlobSha": "55493205b8b1d06b4af68b94123368879ece3eaa"
+    },
+    {
+      "sourcePath": "templates/talking-head-highlights/prompt.md",
+      "localPath": "research/upstream/templates/talking-head-highlights/prompt.md",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/talking-head-highlights/prompt.md",
+      "bytes": 869,
+      "sha256": "56e3134171d4f5ecfc6d299029d2f121a8ca5124d363e53eb5808ffebafaf305",
+      "gitBlobSha": "0a1a3ae1ec659b7376d4ff0011e7788e4d51993f"
+    },
+    {
+      "sourcePath": "templates/talking-head-highlights/template.json",
+      "localPath": "research/upstream/templates/talking-head-highlights/template.json",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/talking-head-highlights/template.json",
+      "bytes": 5019,
+      "sha256": "8dbc9f16243ba559f50002bb6bd6a2a5c88f7eaa70a489e8c638deac8c6da2b1",
+      "gitBlobSha": "c47754b1c2989e037ea604114b5660d442259228"
+    },
+    {
+      "sourcePath": "templates/tech-history-explainer/prompt.md",
+      "localPath": "research/upstream/templates/tech-history-explainer/prompt.md",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/tech-history-explainer/prompt.md",
+      "bytes": 294,
+      "sha256": "8497116558a3ad489646dc51609b2fb545a8b1d69b585709b9da05471000b9d3",
+      "gitBlobSha": "09b71a575889086a78529ad562aef53b1fa51700"
+    },
+    {
+      "sourcePath": "templates/tech-history-explainer/template.json",
+      "localPath": "research/upstream/templates/tech-history-explainer/template.json",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/tech-history-explainer/template.json",
+      "bytes": 3004,
+      "sha256": "ad1a5280b36958f93caca56dd7de7cff626c99664ab0b67c091475cc03ce3445",
+      "gitBlobSha": "8402249d573848c7f6dfc4bfe39c4a26f558cd52"
+    },
+    {
+      "sourcePath": "templates/typography-motion/cover.jpg",
+      "localPath": "assets/official/typography-motion/cover.jpg",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/typography-motion/cover.jpg",
+      "bytes": 16444,
+      "sha256": "6994e766b92f5df6bb25584e054f3a2115c478e4c0e1a35179b3a7876ebb67f5",
+      "gitBlobSha": "04ebc5aee06e6bcb80a40daba236544720cf798e"
+    },
+    {
+      "sourcePath": "templates/typography-motion/preview.mp4",
+      "localPath": "assets/official/typography-motion/preview.mp4",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/typography-motion/preview.mp4",
+      "bytes": 166724,
+      "sha256": "9c490a4c6ff374798aad7aa60c679f5b4ad42bf5aa8545025f09baf2c2425c0a",
+      "gitBlobSha": "d8fe1523666e83cb36f62247fa029c657a4e1024"
+    },
+    {
+      "sourcePath": "templates/typography-motion/prompt.md",
+      "localPath": "research/upstream/templates/typography-motion/prompt.md",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/typography-motion/prompt.md",
+      "bytes": 502,
+      "sha256": "0ca1f4bd504c5317f79f0efcda8c10c5f29217fa831c8ad9d696547febfc9d0b",
+      "gitBlobSha": "575c451409d705022ac9d13c311b971fbc715519"
+    },
+    {
+      "sourcePath": "templates/typography-motion/template.json",
+      "localPath": "research/upstream/templates/typography-motion/template.json",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/typography-motion/template.json",
+      "bytes": 2690,
+      "sha256": "8a175cdcfb5dee08aa83172db11b3884f6626f4eacd940e9a7c083eb928dbcb9",
+      "gitBlobSha": "34d83e8f27778d17acf9cef891aac7678628519b"
+    },
+    {
+      "sourcePath": "templates/vlog-edit/cover.jpg",
+      "localPath": "assets/official/vlog-edit/cover.jpg",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/vlog-edit/cover.jpg",
+      "bytes": 16349,
+      "sha256": "5b73f53515c55cfdf33f5bd4dd6ae510c40e58b2b98c32ebddb79d1c4ab1f870",
+      "gitBlobSha": "354c6d88463c3d9d7ccbf51df1d8c73860c8053e"
+    },
+    {
+      "sourcePath": "templates/vlog-edit/preview.mp4",
+      "localPath": "assets/official/vlog-edit/preview.mp4",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/vlog-edit/preview.mp4",
+      "bytes": 1878087,
+      "sha256": "f3d992b1d4de5b0ae2bb29c7de69b65b2eb316d8105164db8f33ae8d678ac4e9",
+      "gitBlobSha": "63ed0b1217cd44117c82401e3fb6b2fa395152ce"
+    },
+    {
+      "sourcePath": "templates/vlog-edit/prompt.md",
+      "localPath": "research/upstream/templates/vlog-edit/prompt.md",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/vlog-edit/prompt.md",
+      "bytes": 780,
+      "sha256": "844d9a7c1c7a22d7d97fe7516d5b08427539ab33dc7eecf156d519f2e23fa84e",
+      "gitBlobSha": "0b64580e2ef67a7a181304ac1ee97ab4c20229a1"
+    },
+    {
+      "sourcePath": "templates/vlog-edit/template.json",
+      "localPath": "research/upstream/templates/vlog-edit/template.json",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/vlog-edit/template.json",
+      "bytes": 7150,
+      "sha256": "66e5ef30b06567ed6060f5b1f2a0ef303addae2d1eb4236257316b3c2afa6a43",
+      "gitBlobSha": "ef0723e021f5582666501fc0e259d2150fc40ca0"
+    },
+    {
+      "sourcePath": "templates/white-ui-launch/cover.jpg",
+      "localPath": "assets/official/white-ui-launch/cover.jpg",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/white-ui-launch/cover.jpg",
+      "bytes": 10525,
+      "sha256": "ceaa7d873b77b3bc9681b3b909ceff543ede0ff4512c7bca64d9f37f0d399b89",
+      "gitBlobSha": "a3361ea082746f680152f3bcb8b0ed8ce8e7ba22"
+    },
+    {
+      "sourcePath": "templates/white-ui-launch/preview.mp4",
+      "localPath": "assets/official/white-ui-launch/preview.mp4",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/white-ui-launch/preview.mp4",
+      "bytes": 112981,
+      "sha256": "e55bdc685f55c08971fc0f57f257949f6fe126368dc2e8421eb6f2b2c41776bf",
+      "gitBlobSha": "4ff19486e874a695bd19129a760743a7a5038747"
+    },
+    {
+      "sourcePath": "templates/white-ui-launch/prompt.md",
+      "localPath": "research/upstream/templates/white-ui-launch/prompt.md",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/white-ui-launch/prompt.md",
+      "bytes": 321,
+      "sha256": "538eedb448751ac06c248b43fc25ed5021ce408088f446c94805b1ee2feabb66",
+      "gitBlobSha": "51bbebaa2f4c5b56d621ef57d421fcda9b3b101a"
+    },
+    {
+      "sourcePath": "templates/white-ui-launch/template.json",
+      "localPath": "research/upstream/templates/white-ui-launch/template.json",
+      "sourceUrl": "https://raw.githubusercontent.com/JimLiu/baocut/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates/white-ui-launch/template.json",
+      "bytes": 2450,
+      "sha256": "80692809991337cdea5f55df055c7be1474cdeda371ed0c0170345ef55e4af96",
+      "gitBlobSha": "4bbc077ab5bbb21f1528c259712baa692d0a5c09"
+    }
+  ]
+}

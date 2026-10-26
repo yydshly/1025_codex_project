@@ -12,7 +12,7 @@
 
 - 公开项目必须先登记在 `projects.json`，再明确列入 `pages.config.json`。
 - `publicDirectory` 指定该项目可公开的静态目录；框架项目需要先构建出静态结果。
-- `extraAssets` 只复制逐项声明的 `assets/` 资源。001 当前仅额外复制生成的方向引导图。
+- `extraAssets` 只复制逐项声明的 `assets/` 资源。001 额外复制生成的方向引导图；004 先生成 `dist/site`，其公开素材随该目录发布。
 - 项目名称、摘要及封面来自项目登记。封面也必须存在于公开资源中。
 - 构建器拒绝链接、路径跳转和重复产物目录，跳过隐藏文件。没有声明发布的项目、研究笔记和仓库其他文件不进入站点。
 
@@ -26,6 +26,7 @@
 npm.cmd run index:update
 npm.cmd run check
 npm.cmd run check:pages
+npm.cmd --prefix projects/004-baocut-effects-atlas run build:site
 npm.cmd run build:pages
 python -m http.server 4327 --bind 127.0.0.1 --directory dist/pages
 ```
@@ -69,6 +70,12 @@ node scripts/build-pages.mjs --out dist/pages-review
 ```
 
 同时更新工作流的 `paths`，让后续项目变动触发站点构建。资源引用采用相对路径；有客户端详情或路由时，优先使用 hash，避免静态托管中的深层路径刷新问题。部署需要的构建步骤随项目添加，不自动运行或上线所有子项目。
+
+## 004 · BaoCut 研究页
+
+004 的本地页面位于 `app/`，媒体位于同级的 `assets/`。`npm --prefix projects/004-baocut-effects-atlas run build:site` 会校验研究数据与 24 份原始提示，将媒体地址改为编号子路径内的相对地址，生成 `dist/site/`。原始提示文本保持不变；研究说明和原始文件入口改为固定版本或本库的 GitHub 链接。
+
+该目录只包含静态界面、目录数据、20 组官方预览与封面、我们的 PNG / SVG 能力总览图、署名与许可证。构建器不复制研究笔记、验收文件或运行脚本，也不自动清理既有目录。总库封面使用 `assets/images/capability-map.png`。
 
 ## 需要后端的项目
 

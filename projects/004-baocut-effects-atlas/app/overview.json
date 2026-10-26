@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "commit": "228c6aecf91ee2e3235b72a93223b0dd7cbb92fa",
+  "title": "BaoCut 能力与价值总览",
+  "positioning": "AI 可操作的视频编辑器与制作工作流",
+  "summary": "按用途定内容，按材料选做法，把画面、声音与文稿组织成可继续修改的视频工程。",
+  "skill": "Skill 提供方法：简报 → 分镜 → 风格与样段 → 制作 → 验收",
+  "runtime": "BaoCut 提供执行环境：素材库、时间线、编辑器、任务与导出",
+  "groups": [
+    { "id": "motion", "title": "图形与动效", "note": "排版 / 形变 / 物理 / 程序化 3D", "sceneIds": ["motion-design-showreel", "typography-motion", "chaos-to-harmony", "physics-ball-escape", "rhythm-dance-video"] },
+    { "id": "explain", "title": "讲解与教学", "note": "机制图解 / 数据故事 / 操作教程", "sceneIds": ["knowledge-explainer", "news-explainer", "ai-news-take", "tech-history-explainer", "data-story", "step-tutorial"] },
+    { "id": "product", "title": "产品与推广", "note": "发布片 / 产品展示 / 界面演示", "sceneIds": ["launch-film", "product-showcase", "promo-ad", "software-demo", "white-ui-launch"] },
+    { "id": "edit", "title": "素材与剪辑", "note": "混剪 / 活动回顾 / Vlog / 口播", "sceneIds": ["creative-montage", "event-recap", "talking-head-highlights", "vlog-edit"] },
+    { "id": "story", "title": "故事与氛围", "note": "电影感 / 预告 / 绘本故事", "sceneIds": ["cinematic-scene", "epic-mood-trailer", "game-trailer", "story-short"] }
+  ],
+  "routeNote": "五类是用途，三条是画面制作路径；同一用途可以混用多条路径。数量按 24 份制作记录的主要画面来源统计。",
+  "routes": [
+    {
+      "id": "code", "title": "代码绘图与动画", "actor": "AI 写程序，程序计算每一帧。",
+      "flow": ["文字、图形、数据与规则", "按时间绘制或模拟", "渲染成镜头 / 导入代码包"],
+      "techniques": ["排版、遮罩、形变、缓动", "图表与机制图解、界面示意", "碰撞事件、节拍同步、程序化 3D"],
+      "limit": "效果取决于动画设计与代码；具体绘图库以记录为准。",
+      "exampleIds": ["physics-ball-escape", "typography-motion"]
+    },
+    {
+      "id": "image", "title": "AI 静图与代码运镜", "actor": "AI 生成外观，程序移动取景框。",
+      "flow": ["生成关键静图 / 多格分镜", "裁图、平移、缩放与叠字", "把静图组织成连续镜头"],
+      "techniques": ["风格与角色参考、分镜拆图", "推近、拉远、平移、裁切", "标题包装、镜头节奏与衔接"],
+      "limit": "静图运镜没有新增角色表演或真实物体转动。",
+      "exampleIds": ["cinematic-scene", "story-short"]
+    },
+    {
+      "id": "footage", "title": "已有素材与剪辑包装", "actor": "动作来自原视频，AI 选段和编排。",
+      "flow": ["拍摄视频、录屏、照片与声音", "选段、裁切、重排与变速", "转场、字幕、包装与混音"],
+      "techniques": ["按内容选段、剪口与去长停顿", "画幅重构、照片运镜、图文叠层", "音乐剪点、原声桥接、淡入淡出"],
+      "limit": "内容与动作受原素材限制；部分包装需要先渲染。",
+      "exampleIds": ["creative-montage", "vlog-edit"]
+    }
+  ],
+  "supportNote": "以下为固定版本文档说明的能力；模型、索引或服务需要相应配置。本研究尚未安装并逐项运行验证。",
+  "supports": [
+    { "title": "文稿与字幕", "lines": ["语音转写、逐词时间与说话人", "翻译、原文 / 译文 / 双语字幕"], "condition": "精度依赖转写、翻译与对齐能力。" },
+    { "title": "素材查找与选段", "lines": ["按语义或画面描述找候选片段", "口播剪辑提案、章节与高光选段"], "condition": "语义 / 画面检索需要模型与索引，候选需核对。" },
+    { "title": "配音与声音", "lines": ["TTS、跨语言配音、人声分离", "配乐 / 音效、混音与人声闪避"], "condition": "配音与配乐依赖可用模型；音效可由内置配方合成。" },
+    { "title": "合成与输出", "lines": ["时间线剪辑、转场、文字与内置声波", "视频、字幕、音频、便携工程导出"], "condition": "媒体准备与视频导出仍需 FFmpeg / FFprobe。" }
+  ],
+  "project": {
+    "title": "汇入同一个可编辑视频工程",
+    "objects": "素材 ＋ 镜头 ＋ 时间线 ＋ 文稿 ＋ 字幕 ＋ 配音",
+    "mechanisms": ["图形界面 / CLI / MCP 共用运行时", "事务、版本检查、回执与撤销", "按对象修改、人工接手、制作计划增量更新"],
+    "caveat": "依赖关系有明确适用范围；已经烧进画面的文字和效果，修改仍需重新渲染。"
+  },
+  "workflow": ["需求与材料", "分镜与样段", "按需组合制作", "预览与修改", "导出与交付"],
+  "values": [
+    { "title": "已有技术能完成什么", "lines": ["代码动画＋FFmpeg 可完成同类画面与合成。", "生图、转写、配音和剪辑也可自行集成。"] },
+    { "title": "BaoCut 主要额外解决什么", "lines": ["把多种工具、项目状态和编辑入口接在一起。", "减少反复修改、素材管理和人工接手的配套工作。"] },
+    { "title": "对我们什么时候更有用", "lines": ["一次性代码效果：新增收益可能有限。", "多素材、多轮修改、多人接手：更值得实测。"] }
+  ],
+  "boundaries": [
+    "固定版本明确没有 AI 视频生成；本批制作记录没有成功的视频模型生成路径。",
+    "24 个方向和 20 段预览展示特定结果；不等于 24 种技术，也不等于稳定复现。",
+    "本研究未运行 BaoCut；质量提升、速度、成本与修改效率均未作对照实测。"
+  ],
+  "sources": [
+    { "id": "records", "title": "样片路径与技巧：24 份制作记录", "label": "记录核实", "url": "https://github.com/JimLiu/baocut/tree/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/templates" },
+    { "id": "readme", "title": "总体能力与编辑器定位", "label": "文档说明", "url": "https://github.com/JimLiu/baocut/blob/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/README.zh-Hans.md" },
+    { "id": "production", "title": "制作流程、代码包与能力限制", "label": "文档说明", "url": "https://github.com/JimLiu/baocut/blob/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/skills/baocut/built-in-skills/video-production/SKILL.md" },
+    { "id": "editing", "title": "时间线、事务、撤销与增量装配", "label": "文档说明", "url": "https://github.com/JimLiu/baocut/blob/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/skills/baocut/references/catalog/editing.md" },
+    { "id": "system", "title": "语义与画面检索的条件", "label": "文档说明", "url": "https://github.com/JimLiu/baocut/blob/228c6aecf91ee2e3235b72a93223b0dd7cbb92fa/skills/baocut/references/catalog/system.md" }
+  ]
+}

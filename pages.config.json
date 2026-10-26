@@ -5,6 +5,11 @@
       "directory": "001-early-directions-atlas",
       "publicDirectory": "app",
       "extraAssets": ["assets/images/directions-map-v1.png"]
+    },
+    {
+      "directory": "004-baocut-effects-atlas",
+      "publicDirectory": "dist/site",
+      "extraAssets": []
     }
   ]
 }

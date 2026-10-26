@@ -1,0 +1,107 @@
+{
+  "date": "2026-10-26",
+  "commit": "228c6aecf91ee2e3235b72a93223b0dd7cbb92fa",
+  "decodedPreviews": [
+    {
+      "id": "chaos-to-harmony",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "cinematic-scene",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "creative-montage",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "data-story",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "epic-mood-trailer",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "event-recap",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "game-trailer",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "knowledge-explainer",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "launch-film",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "motion-design-showreel",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "physics-ball-escape",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "product-showcase",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "promo-ad",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "rhythm-dance-video",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "software-demo",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "step-tutorial",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "story-short",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "typography-motion",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "vlog-edit",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "white-ui-launch",
+      "ok": true,
+      "error": ""
+    }
+  ],
+  "localReproduction": false
+}

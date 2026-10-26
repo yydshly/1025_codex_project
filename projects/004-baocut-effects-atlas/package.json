@@ -1,0 +1,11 @@
+{
+  "name": "baocut-effects-atlas",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "sync": "python scripts/sync_upstream.py",
+    "build:data": "node scripts/build-data.mjs",
+    "build:site": "node scripts/build-site.mjs"
+  }
+}

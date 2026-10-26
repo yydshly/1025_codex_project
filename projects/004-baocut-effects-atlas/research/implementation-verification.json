@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-26",
+  "sourceCommit": "228c6aecf91ee2e3235b72a93223b0dd7cbb92fa",
+  "coverage": 24,
+  "matchingEvidenceExcerpts": 24,
+  "visualRouteCounts": {
+    "code": 14,
+    "image": 5,
+    "footage": 5
+  },
+  "servedFiles": {
+    "app/index.html": 200,
+    "app/app.js": 200,
+    "app/implementation.css": 200,
+    "app/implementation.json": 200,
+    "research/implementation.md": 200,
+    "research/upstream/video-production-SKILL.md": 200
+  },
+  "browserChecks": {
+    "imageFilter": "5 directions / 5 previews",
+    "footageFilter": "5 directions / 4 previews / 1 template-only",
+    "codeFilter": "14 directions / 11 previews / 3 template-only",
+    "combinedFilter": "motion + image => 0, explicit empty state",
+    "reset": "restores 24 directions",
+    "danceDetail": "template requests video generation; actual code robot + 150 BPM + unavailable capability shown",
+    "vlogDetail": "original footage + native timeline edits + original sound shown",
+    "sourceLinks": "pinned blob URLs shown"
+  },
+  "localBaoCutReproduction": false,
+  "uiScreenshot": "../assets/images/implementation.png"
+}

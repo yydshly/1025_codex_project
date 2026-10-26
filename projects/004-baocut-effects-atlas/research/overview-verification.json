@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-26",
+  "commit": "228c6aecf91ee2e3235b72a93223b0dd7cbb92fa",
+  "scope": "Authored capability overview; no BaoCut installation, model invocation or production benchmark.",
+  "data": {
+    "purposeGroups": 5,
+    "sceneMemberships": 24,
+    "eachSceneAssignedExactlyOnce": true,
+    "productionRoutes": 3,
+    "routeCounts": { "code": 14, "image": 5, "footage": 5 },
+    "routePreviewCounts": { "code": 11, "image": 5, "footage": 4 },
+    "groupCounts": { "motion": 5, "explain": 6, "product": 5, "edit": 4, "story": 4 },
+    "pinnedSources": 5,
+    "originalPromptsBundled": 24
+  },
+  "browser": {
+    "page": "http://127.0.0.1:8054/app/#overview",
+    "actualViewportWidths": [643, 1280],
+    "horizontalPageOverflow": false,
+    "overviewContentOverflow": false,
+    "fivePurposeButtons": "Each verified against its resulting gallery count, group URL and focused heading.",
+    "threeRouteButtons": "Each verified against its resulting gallery count and method URL; other filters cleared.",
+    "sixSampleButtons": "Each opened the expected modal, local MP4 and implementation steps with no media error observed.",
+    "sampleIds": ["physics-ball-escape", "typography-motion", "cinematic-scene", "story-short", "creative-montage", "vlog-edit"],
+    "allSixCoversLoaded": true,
+    "sourceDisclosure": "Expanded; all five links use the pinned commit.",
+    "noConsoleWarningsOrErrorsObserved": true,
+    "screenshot": "../assets/images/overview.png"
+  },
+  "standaloneDiagram": {
+    "svg": "../assets/images/capability-map.svg",
+    "png": "../assets/images/capability-map.png",
+    "viewBox": "0 0 1200 2266",
+    "embeddedJpegCovers": 6,
+    "externalImageDependencies": 0,
+    "foreignObjects": 0,
+    "textElements": 127,
+    "textOverlapPairs": 0,
+    "textImageOverlapPairs": 0,
+    "pngDimensions": [1264, 2266],
+    "pngMethod": "Full-page browser screenshot of the standalone SVG, after final regeneration; screenshot bytes re-encoded as PNG without visual edits."
+  },
+  "isolatedChecks": {
+    "indexTool": "Fresh isolated repository: project creation produced IDs 001 and 002, nextId 3; generated index passed check.",
+    "overviewBuild": "Fresh isolated fixture produced bundled data, standalone SVG and research text from 24 prompts and six covers.",
+    "invalidGroupCoverage": "Duplicate scene membership rejected.",
+    "invalidRouteExample": "Example assigned to the wrong route rejected."
+  },
+  "limits": [
+    "No phone hardware test; widths refer to actual browser viewport sizes.",
+    "Direct file: opening remains unverified under the browser URL policy.",
+    "SVG open and rendering verified; download uses a native download link and was not tested by changing browser download settings.",
+    "Documentation support and historical sample evidence do not establish local reproduction, performance or quality."
+  ]
+}

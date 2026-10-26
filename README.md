@@ -12,11 +12,12 @@
 
 ## 项目索引
 
-已收录 **2** 个项目 · 按固定编号升序排列
+已收录 **3** 个项目 · 按固定编号升序排列
 
 | 编号 | 项目 | 简介 / 研究重点 | 阶段 | 演示 |
 | --- | --- | --- | --- | --- |
 | 001 | [早期方向档案](projects/001-early-directions-atlas/README.md) | 我们早期思考与尝试留下的十二个方向：需求与变现、内容获客、轻量产品、价格册、音频局部修改、3D咖啡、共想室、岗位观察、跨设备、论文、艺术短片与AI室友。按候选、方案、原型、阶段作品及停止项保存进展、依据和待验证问题。 | 已总结 | [在线访问](<https://yydshly.github.io/1025_codex_project/001-early-directions-atlas/>) |
+| 004 | [BaoCut · 能力、原理与效果研究](projects/004-baocut-effects-atlas/README.md) | BaoCut 是 AI 可操作的视频编辑器与制作工作流。效果覆盖动效、讲解、产品片、混剪和故事；以代码动画、AI 静图运镜、已有素材剪辑组合成片，支持字幕、配音、检索与可编辑工程。价值主要在工具集成、反复修改和人工接手；附 24 个方向、20 段预览及原理说明，效率收益未实测。 | 研究中 | — |
 | 006 | [PromptHub · AI 工作资产与复用](projects/006-prompthub-ai-assets/README.md) | 集中管理提示词、Skills、MCP、插件与规则，通过模板、技能分发和配置适配供 AI 复用。对我的价值是借鉴其方法，把每日笔记中验证有效的经验沉淀为工作资产，减少重复说明与跨工具配置；笔记自动提炼和结果回写需另接入。 | 已总结 | — |
 
 ## 项目速览
@@ -30,6 +31,16 @@
 [研究说明](projects/001-early-directions-atlas/README.md) · [原始仓库](https://github.com/yydshly/1025_codex_project) · [在线演示](<https://yydshly.github.io/1025_codex_project/001-early-directions-atlas/>)
 
 **阶段：** 已总结 · **标签：** 早期思考 / 遗留方向 / AI产品 / 创作 / 历史回溯
+
+### 004 · BaoCut · 能力、原理与效果研究
+
+![BaoCut · 能力、原理与效果研究 项目配图](projects/004-baocut-effects-atlas/assets/images/capability-map.png)
+
+BaoCut 是 AI 可操作的视频编辑器与制作工作流。效果覆盖动效、讲解、产品片、混剪和故事；以代码动画、AI 静图运镜、已有素材剪辑组合成片，支持字幕、配音、检索与可编辑工程。价值主要在工具集成、反复修改和人工接手；附 24 个方向、20 段预览及原理说明，效率收益未实测。
+
+[研究说明](projects/004-baocut-effects-atlas/README.md) · [原始仓库](https://github.com/JimLiu/baocut)
+
+**阶段：** 研究中 · **标签：** BaoCut / 视频制作 / 代码动画 / 素材剪辑 / 工作流研究
 
 ### 006 · PromptHub · AI 工作资产与复用
 

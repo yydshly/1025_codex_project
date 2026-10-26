@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-26",
+  "commit": "228c6aecf91ee2e3235b72a93223b0dd7cbb92fa",
+  "coverage": {
+    "scenes": 24,
+    "prompts": 24,
+    "sceneGuides": 24,
+    "routeGuides": 3
+  },
+  "verified": {
+    "dataBundle": "VM loaded; catalog matches version and all 24 original prompt strings",
+    "demo": "End => 6.0s, ball x=260, image scale=1.20, clip C; play/pause advanced 0.47s to 0.57s",
+    "tabs": "guide to source via ArrowRight; original prompt expanded",
+    "navigation": "next scene kept source tab and updated URL",
+    "refresh": "restored data-story/source with paused video; restored footage/audio filter with 2 results",
+    "availability": "audio = 4; footage + audio = 2"
+  },
+  "limits": {
+    "fileProtocol": "Browser security policy rejected file: navigation; no alternate browser or workaround attempted. Direct-file browsing remains unverified.",
+    "clipboard": "Copy action implemented; no automatic clipboard write was performed.",
+    "baoCutReproduction": "Not performed; educational demo is authored code."
+  },
+  "screenshot": "../assets/images/learning.png"
+}

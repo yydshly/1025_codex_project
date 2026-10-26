@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'projects/001-early-directions-atlas/**'
+      - 'projects/004-baocut-effects-atlas/**'
       - 'projects.json'
       - 'pages.config.json'
       - 'scripts/build-pages.mjs'
@@ -35,6 +36,8 @@ jobs:
           npm run check
           npm run check:pages
           npm --prefix projects/001-early-directions-atlas run check
+      - name: Prepare BaoCut research page and public media
+        run: npm --prefix projects/004-baocut-effects-atlas run build:site
       - name: Prepare GitHub Pages
         uses: actions/configure-pages@v5
       - name: Build selected public files

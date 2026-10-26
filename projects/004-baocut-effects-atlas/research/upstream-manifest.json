@@ -1,0 +1,452 @@
+{
+  "repository": "JimLiu/baocut",
+  "commit": "228c6aecf91ee2e3235b72a93223b0dd7cbb92fa",
+  "capturedAt": "2026-10-26",
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha": "70adecee34d60948a1856f12912fe708d75a720d",
+      "size": 9572
+    },
+    {
+      "path": "templates/ai-news-take/prompt.md",
+      "sha": "c8ec53022c3f893aeb32a261b453ae79a49c8bda",
+      "size": 523
+    },
+    {
+      "path": "templates/ai-news-take/template.json",
+      "sha": "410c7474aa047ca0e14e705c2ba376f01e5f17d2",
+      "size": 3021
+    },
+    {
+      "path": "templates/chaos-to-harmony/cover.jpg",
+      "sha": "f44416310e98909c3cbbf08e9d175aaf346b2f6c",
+      "size": 14438
+    },
+    {
+      "path": "templates/chaos-to-harmony/preview.mp4",
+      "sha": "f918cd9041e3d6428cbe3ccce9db24cdfb713edc",
+      "size": 799000
+    },
+    {
+      "path": "templates/chaos-to-harmony/prompt.md",
+      "sha": "c726269a20c2fa9a84249cdb51cd1eae006ac56e",
+      "size": 444
+    },
+    {
+      "path": "templates/chaos-to-harmony/template.json",
+      "sha": "10522c4422f9e60c53bb094f3174ed720535adfc",
+      "size": 2723
+    },
+    {
+      "path": "templates/cinematic-scene/cover.jpg",
+      "sha": "b3a3142ab4ec97c83b52bf23b756025d0109bfea",
+      "size": 55079
+    },
+    {
+      "path": "templates/cinematic-scene/preview.mp4",
+      "sha": "0ffedff08f037ddee0646761c4f8aad025e2cf82",
+      "size": 585078
+    },
+    {
+      "path": "templates/cinematic-scene/prompt.md",
+      "sha": "3f0c79db08099d03a8c00550a7d7de7bcfd87619",
+      "size": 770
+    },
+    {
+      "path": "templates/cinematic-scene/template.json",
+      "sha": "93e844c98300014315b2987808d573d19013544b",
+      "size": 3827
+    },
+    {
+      "path": "templates/creative-montage/cover.jpg",
+      "sha": "eeac5e5de5a57246d238c4ef4e62e74351932dd1",
+      "size": 23030
+    },
+    {
+      "path": "templates/creative-montage/preview.mp4",
+      "sha": "8922b66a5524f22f25bb19e3505bd165d79415c4",
+      "size": 745269
+    },
+    {
+      "path": "templates/creative-montage/prompt.md",
+      "sha": "8af1b2ed501ab51f3d5fb1d778880f69eee92bc4",
+      "size": 402
+    },
+    {
+      "path": "templates/creative-montage/template.json",
+      "sha": "618e88aa209218cd6a9bcd5dc2c0dd31c470ac04",
+      "size": 6873
+    },
+    {
+      "path": "templates/data-story/cover.jpg",
+      "sha": "998d5226b71955f893cf33ae401b97d2f4882553",
+      "size": 25206
+    },
+    {
+      "path": "templates/data-story/preview.mp4",
+      "sha": "426e3b5844aab4985c901c92b8aa0ba84f15e6b2",
+      "size": 59466
+    },
+    {
+      "path": "templates/data-story/prompt.md",
+      "sha": "f03afce5c92a8d5b725ddd07dcc45410b7c7089c",
+      "size": 896
+    },
+    {
+      "path": "templates/data-story/template.json",
+      "sha": "1a98154f93135d5e9bb10a765c0136ada3197a95",
+      "size": 3562
+    },
+    {
+      "path": "templates/epic-mood-trailer/cover.jpg",
+      "sha": "7c09847bad9422200c476a143669608c357fa8ff",
+      "size": 13130
+    },
+    {
+      "path": "templates/epic-mood-trailer/preview.mp4",
+      "sha": "131244ad91a8bea4079edfb77c70aab21b568d59",
+      "size": 118124
+    },
+    {
+      "path": "templates/epic-mood-trailer/prompt.md",
+      "sha": "a0cf03d5412beb5a62b31ba89f8fd078c8a731fc",
+      "size": 201
+    },
+    {
+      "path": "templates/epic-mood-trailer/template.json",
+      "sha": "0537f5c30537d93464923a69dfe81ccf6bd72eb3",
+      "size": 2825
+    },
+    {
+      "path": "templates/event-recap/cover.jpg",
+      "sha": "6e2fdcbc8d825b534b4bba078daad738b15db0cc",
+      "size": 37174
+    },
+    {
+      "path": "templates/event-recap/preview.mp4",
+      "sha": "4788d1839dc46c5643afd3d114ab6e8c14604b38",
+      "size": 159290
+    },
+    {
+      "path": "templates/event-recap/prompt.md",
+      "sha": "845a5e4f97fc3325a4acb2a5d2ed0334eb1cd5eb",
+      "size": 830
+    },
+    {
+      "path": "templates/event-recap/template.json",
+      "sha": "6a11dc7357f60bd0d623114e0b70d023b536920a",
+      "size": 6848
+    },
+    {
+      "path": "templates/game-trailer/cover.jpg",
+      "sha": "1381fde565281290c47c9adb77e9e8ec5b96de00",
+      "size": 26789
+    },
+    {
+      "path": "templates/game-trailer/preview.mp4",
+      "sha": "5c6671b67f7908882abe54ebda1536c75d284191",
+      "size": 630824
+    },
+    {
+      "path": "templates/game-trailer/prompt.md",
+      "sha": "a049ebb75b8d01268744fe42c2e70556130d6bcf",
+      "size": 422
+    },
+    {
+      "path": "templates/game-trailer/template.json",
+      "sha": "92b85573654e885ed6f37c11279955c39d3f18e5",
+      "size": 2743
+    },
+    {
+      "path": "templates/knowledge-explainer/cover.jpg",
+      "sha": "d8e8aec064608bbf036d032d5d7d18b928714950",
+      "size": 19736
+    },
+    {
+      "path": "templates/knowledge-explainer/preview.mp4",
+      "sha": "f85e204c027cdea948163ca5d9d151e5212c03b0",
+      "size": 214559
+    },
+    {
+      "path": "templates/knowledge-explainer/prompt.md",
+      "sha": "35579280079207de8f0f77da14887b2b3ce23eef",
+      "size": 2217
+    },
+    {
+      "path": "templates/knowledge-explainer/template.json",
+      "sha": "ad3dcad4f8e2e5f8ee8719f56ff071fdd7b7b2f0",
+      "size": 6050
+    },
+    {
+      "path": "templates/launch-film/cover.jpg",
+      "sha": "0d4a5fa8130e507232e19aa4e8eec9a60d25cffc",
+      "size": 21930
+    },
+    {
+      "path": "templates/launch-film/preview.mp4",
+      "sha": "01ab518f8cd726383b10977d34bf798266954c2a",
+      "size": 156991
+    },
+    {
+      "path": "templates/launch-film/prompt.md",
+      "sha": "d0a49ce1b6e015ba9e410db748ad968b7bb3f00d",
+      "size": 887
+    },
+    {
+      "path": "templates/launch-film/template.json",
+      "sha": "c26f1ca3b28c887c26d88331e3bec343e32a6edc",
+      "size": 3566
+    },
+    {
+      "path": "templates/motion-design-showreel/cover.jpg",
+      "sha": "b9fdd8591a79c8808ccb3c76c10b8e448fd6144b",
+      "size": 17474
+    },
+    {
+      "path": "templates/motion-design-showreel/preview.mp4",
+      "sha": "55c6e284449ef3d406b1f0f625bf8a04877c878a",
+      "size": 203260
+    },
+    {
+      "path": "templates/motion-design-showreel/prompt.md",
+      "sha": "b186465881d2bce4786d6c87f0fae2c798fe33f4",
+      "size": 444
+    },
+    {
+      "path": "templates/motion-design-showreel/template.json",
+      "sha": "b3f02b47bda9cc0d886328b324c1d7a5b6fab571",
+      "size": 2351
+    },
+    {
+      "path": "templates/news-explainer/prompt.md",
+      "sha": "45f032c15f012be184ce1b2ecf4b1bcd087ef4da",
+      "size": 368
+    },
+    {
+      "path": "templates/news-explainer/template.json",
+      "sha": "5270e16aba03b570b3d2d46e6b8c554b4a284db6",
+      "size": 3116
+    },
+    {
+      "path": "templates/physics-ball-escape/cover.jpg",
+      "sha": "38090373668ddc515d8ba33ede3c19462224774a",
+      "size": 26518
+    },
+    {
+      "path": "templates/physics-ball-escape/preview.mp4",
+      "sha": "770a0e0ad79f265823e1043b83d732ef2ee988c6",
+      "size": 244131
+    },
+    {
+      "path": "templates/physics-ball-escape/prompt.md",
+      "sha": "83743ac3629d2f0de4dea75f8bdd77014eb8f46c",
+      "size": 458
+    },
+    {
+      "path": "templates/physics-ball-escape/template.json",
+      "sha": "e45ae7f4e5106f26023620664413b8c0f58aadc8",
+      "size": 2705
+    },
+    {
+      "path": "templates/product-showcase/cover.jpg",
+      "sha": "ebb244277e6ea3019b70eaa126e3233257af59c4",
+      "size": 15541
+    },
+    {
+      "path": "templates/product-showcase/preview.mp4",
+      "sha": "cc45c102bde04ab755ca41111ec8468eb036f387",
+      "size": 103643
+    },
+    {
+      "path": "templates/product-showcase/prompt.md",
+      "sha": "ece3d1b9948f2f460a20b7b41eb7bbf9e4e89385",
+      "size": 908
+    },
+    {
+      "path": "templates/product-showcase/template.json",
+      "sha": "a0fd9a6fc39b0a7ebd98f7d0b34873aa2b0f4543",
+      "size": 4014
+    },
+    {
+      "path": "templates/promo-ad/cover.jpg",
+      "sha": "65d17457e8b6021ce06d1cdc9f1127b264cdf577",
+      "size": 23444
+    },
+    {
+      "path": "templates/promo-ad/preview.mp4",
+      "sha": "302c25724a60726dee1459fce5d157fd8b0a97ce",
+      "size": 104913
+    },
+    {
+      "path": "templates/promo-ad/prompt.md",
+      "sha": "6b92c8cc03145da94978af0d4351ddedc4d530d2",
+      "size": 1078
+    },
+    {
+      "path": "templates/promo-ad/template.json",
+      "sha": "5ef6fd7b69b748f90c1bf07d38538c2a8223e2a4",
+      "size": 5769
+    },
+    {
+      "path": "templates/rhythm-dance-video/cover.jpg",
+      "sha": "ac9dd87a50c76b717c1d7e71771d3d8a42345f55",
+      "size": 28564
+    },
+    {
+      "path": "templates/rhythm-dance-video/preview.mp4",
+      "sha": "64f5512ccfc663c61ab0942aa430a95913f9509c",
+      "size": 521870
+    },
+    {
+      "path": "templates/rhythm-dance-video/prompt.md",
+      "sha": "580f9cf73deb3cac23d063946d151aa090c8a7f8",
+      "size": 256
+    },
+    {
+      "path": "templates/rhythm-dance-video/template.json",
+      "sha": "890a6af89bd565eb5be491c60deca4e17c934023",
+      "size": 2591
+    },
+    {
+      "path": "templates/software-demo/cover.jpg",
+      "sha": "6946d76d109361dc025220661d76fd01cac4556b",
+      "size": 23481
+    },
+    {
+      "path": "templates/software-demo/preview.mp4",
+      "sha": "e6190e8f075adafd0e0594c261900134f1ac81e5",
+      "size": 64930
+    },
+    {
+      "path": "templates/software-demo/prompt.md",
+      "sha": "824bb7e4010a0d840aeaf7322a2cdb583b4ee874",
+      "size": 860
+    },
+    {
+      "path": "templates/software-demo/template.json",
+      "sha": "e2367cb0566fa87ddf232212245b578bae0ae0d6",
+      "size": 3875
+    },
+    {
+      "path": "templates/step-tutorial/cover.jpg",
+      "sha": "7df69aa26e9a45241af5e78b107977b4205c22f2",
+      "size": 24168
+    },
+    {
+      "path": "templates/step-tutorial/preview.mp4",
+      "sha": "2cadbb43e190e6d201998d435f2f2cfc0b0866d8",
+      "size": 42579
+    },
+    {
+      "path": "templates/step-tutorial/prompt.md",
+      "sha": "8b3f1420e0289f7632f4738e5616b992620080c1",
+      "size": 827
+    },
+    {
+      "path": "templates/step-tutorial/template.json",
+      "sha": "1914cd19778ba355af79fc728952ede8a37c22ad",
+      "size": 4187
+    },
+    {
+      "path": "templates/story-short/cover.jpg",
+      "sha": "a3b0535ec8973a9261cb1c71140b15ea76336f42",
+      "size": 44040
+    },
+    {
+      "path": "templates/story-short/preview.mp4",
+      "sha": "5590a492a6932daa9f50866b331891f5c1500e02",
+      "size": 285831
+    },
+    {
+      "path": "templates/story-short/prompt.md",
+      "sha": "9baebafe3c973b439e748f9d216ec930b6e9a6e1",
+      "size": 863
+    },
+    {
+      "path": "templates/story-short/template.json",
+      "sha": "55493205b8b1d06b4af68b94123368879ece3eaa",
+      "size": 3636
+    },
+    {
+      "path": "templates/talking-head-highlights/prompt.md",
+      "sha": "0a1a3ae1ec659b7376d4ff0011e7788e4d51993f",
+      "size": 869
+    },
+    {
+      "path": "templates/talking-head-highlights/template.json",
+      "sha": "c47754b1c2989e037ea604114b5660d442259228",
+      "size": 5019
+    },
+    {
+      "path": "templates/tech-history-explainer/prompt.md",
+      "sha": "09b71a575889086a78529ad562aef53b1fa51700",
+      "size": 294
+    },
+    {
+      "path": "templates/tech-history-explainer/template.json",
+      "sha": "8402249d573848c7f6dfc4bfe39c4a26f558cd52",
+      "size": 3004
+    },
+    {
+      "path": "templates/typography-motion/cover.jpg",
+      "sha": "04ebc5aee06e6bcb80a40daba236544720cf798e",
+      "size": 16444
+    },
+    {
+      "path": "templates/typography-motion/preview.mp4",
+      "sha": "d8fe1523666e83cb36f62247fa029c657a4e1024",
+      "size": 166724
+    },
+    {
+      "path": "templates/typography-motion/prompt.md",
+      "sha": "575c451409d705022ac9d13c311b971fbc715519",
+      "size": 502
+    },
+    {
+      "path": "templates/typography-motion/template.json",
+      "sha": "34d83e8f27778d17acf9cef891aac7678628519b",
+      "size": 2690
+    },
+    {
+      "path": "templates/vlog-edit/cover.jpg",
+      "sha": "354c6d88463c3d9d7ccbf51df1d8c73860c8053e",
+      "size": 16349
+    },
+    {
+      "path": "templates/vlog-edit/preview.mp4",
+      "sha": "63ed0b1217cd44117c82401e3fb6b2fa395152ce",
+      "size": 1878087
+    },
+    {
+      "path": "templates/vlog-edit/prompt.md",
+      "sha": "0b64580e2ef67a7a181304ac1ee97ab4c20229a1",
+      "size": 780
+    },
+    {
+      "path": "templates/vlog-edit/template.json",
+      "sha": "ef0723e021f5582666501fc0e259d2150fc40ca0",
+      "size": 7150
+    },
+    {
+      "path": "templates/white-ui-launch/cover.jpg",
+      "sha": "a3361ea082746f680152f3bcb8b0ed8ce8e7ba22",
+      "size": 10525
+    },
+    {
+      "path": "templates/white-ui-launch/preview.mp4",
+      "sha": "4ff19486e874a695bd19129a760743a7a5038747",
+      "size": 112981
+    },
+    {
+      "path": "templates/white-ui-launch/prompt.md",
+      "sha": "51bbebaa2f4c5b56d621ef57d421fcda9b3b101a",
+      "size": 321
+    },
+    {
+      "path": "templates/white-ui-launch/template.json",
+      "sha": "4bbc077ab5bbb21f1528c259712baa692d0a5c09",
+      "size": 2450
+    }
+  ]
+}
