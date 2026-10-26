@@ -1,0 +1,29 @@
+{
+  "verified_date": "2026-10-27",
+  "first_deployment_commit": "1c901c1454087510502b2ce32c2661632d41cfdb",
+  "workflow_run": 40368730500,
+  "workflow_conclusion": "success",
+  "base_url": "https://yydshly.github.io/1025_codex_project/005-paper-poetics-lab/",
+  "guide_image": "assets/images/v1.4/research-map.png",
+  "guide_sha256": "5f49448e04441c8a39faad4dcfed30e5a20732263c0732f958fa0e28e141b003",
+  "online_guide_matches_source": true,
+  "effect_links": 5,
+  "chapter_links": 9,
+  "lotus_bookmark_verified": true,
+  "video": {
+    "played": true,
+    "duration_seconds": 15.046009,
+    "width": 1920,
+    "height": 1080,
+    "muted": true
+  },
+  "mobile": {
+    "viewport": [
+      390,
+      844
+    ],
+    "client_width": 390,
+    "scroll_width": 390
+  },
+  "audio_content_review": "not_auditioned"
+}

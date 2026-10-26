@@ -6,6 +6,12 @@
 - **我们做了什么、留下什么**：002 独立重写、两项原创实时练习、AI 单幕影片与有许可的实拍对照，共同形成可运行的比较材料。研究价值在于氛围组织方法、实时与影片载体的选型依据，以及场景、播放器、声音与验证记录等工程资产；不宣称与源作 1:1。
 - **还可往哪里扩展**：继续验证声画事件的前后关系、纸墨与写实影像的融合及更多具体场景；也可试作展览或文化内容入口。这些是待检验的潜力，尚未证明商业效果。
 
+## 线上访问 · 2026-10-27
+
+[项目首页](https://yydshly.github.io/1025_codex_project/005-paper-poetics-lab/) · [可点击研究总览](https://yydshly.github.io/1025_codex_project/005-paper-poetics-lab/map.html) · [研究回顾](https://yydshly.github.io/1025_codex_project/005-paper-poetics-lab/research.html) · [AI雨窗茶寮](https://yydshly.github.io/1025_codex_project/005-paper-poetics-lab/cinema.html) · [原有九章](https://yydshly.github.io/1025_codex_project/005-paper-poetics-lab/original.html)
+
+已通过GitHub Actions发布并核对线上入口、指定引导图、图内链接、莲花章节和影片实际播放。部署过程与检查范围见[发布记录](research/deployment.md)。引导图使用用户确认的现有研究总览图，未重新生成。
+
 [返回总索引](../../README.md#项目索引) · [研究笔记](research/notes.md) · [验证记录](design-qa.md) · [已有演示项目](../002-ink-rain-alley/README.md)
 
 ![纸间研究总览图：源效果、氛围与技术、五项实践、价值与边界](assets/images/v1.4/research-map.png)
@@ -78,7 +84,7 @@
 - [月下花庭 · 实时练习](http://127.0.0.1:4176/theme.html?theme=moon)：入夜 → 绽放 → 随光；月洞门内外的庭院、月影水面、玉兰与萤光回应。
 - [原有九章演示](http://127.0.0.1:4176/original.html)：在本入口同一站点中打开 002 的构建产物，外层提供返回入口。
 
-这些是本机地址，未部署公网。当前 4176 使用后台生产预览。原有 4174 地址可以继续独立使用，新入口的原演示链接不依赖 4174 服务是否开启。
+上列为本机开发预览地址，正式线上地址见文首。当前4176保留后台生产预览。原有 4174 地址可以继续独立使用，新入口的原演示链接不依赖 4174 服务是否开启。
 
 ## 本地运行
 
@@ -189,7 +195,7 @@ app/original.html    原演示容器与返回入口
 
 ## 来源与版本
 
-- 当前源码位于本总库，版本 **1.4.0**；登记的 GitHub 地址指向总库，不代表已经推送或发布。生产预览端口仍为 4176，未部署公网。
+- 当前源码位于本总库，版本 **1.4.0**；源码已提交总库并通过GitHub Pages发布，正式地址见文首；本机预览端口仍为4176。
 - 《雨窗茶寮》的首帧由内置 imagegen 创建；首次 Seedance2.0 生成失败，随后经另行确认的 Kling V3 生成已完成。实际消耗264 credits，本地提交前估算180 credits，保留两者记录。
 - 实拍对照的视频来自 [Mixkit《Window on a rainy day》](https://mixkit.co/free-stock-video/window-on-a-rainy-day-2846/)，按 [Stock Video Free License](https://mixkit.co/license/#videoFree) 使用；雨声来自 [Shizhao《SV100344.ogg》](https://commons.wikimedia.org/wiki/File:SV100344.ogg#Licensing)，标记为 PD-author。两者经过裁剪与合成，音画不是同步现场录制。
 - 原有演示来自项目 002 v2.2.0，是参考 [Bee 的录屏](https://x.com/thtbee_/status/2114030630887641448) 独立重写的练习；未取得原作源码，不声称完整一致。

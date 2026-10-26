@@ -58,6 +58,8 @@ node scripts/build-pages.mjs --out dist/pages-review
 
 ### 005 · 纸间：纸墨叙事与氛围网页研究
 
+2026-10-27已完成发布并核对[纸间首页](https://yydshly.github.io/1025_codex_project/005-paper-poetics-lab/)与[可点击总览](https://yydshly.github.io/1025_codex_project/005-paper-poetics-lab/map.html)，总入口使用已生成的研究总览图。首次Actions运行40368730500的build／deploy均成功；完整实测与边界见[005发布记录](../projects/005-paper-poetics-lab/research/deployment.md)。
+
 005使用 `dist/` 作为公开目录，002作为构建依赖，其完整产物复制在005的 `original/` 子目录，不另建公开站点。005的工作流步骤安装并构建002／005；其他项目仍以发布清单逐项声明，不自动上线未声明的本地研究。
 
 站点总入口的引导图使用用户确认的 `assets/images/v1.4/research-map.png`，完整保留纵向图解；`guidePage: "map.html"` 让点图与“放大阅读引导图”进入可交互版本，项目名称及“查看网页”进入005首页。原图作为逐项声明的 `extraAssets` 公开，源稿、生成任务记录与原始下载不因发布目录而自动进入网站。
