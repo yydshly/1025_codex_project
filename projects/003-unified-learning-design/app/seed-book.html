@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#e8e5db">
+  <meta name="description" content="打开一本书，跟随同一颗种子穿过四个章节。用连续的书页、插图和交互，体验一个主题如何慢慢展开。">
+  <title>知行之间 · 让一个主题慢慢生长</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./book.css">
+  <script src="./book.js" type="module"></script>
+</head>
+<body>
+  <div class="desk-grain" aria-hidden="true"></div>
+  <header class="app-header">
+    <a class="brand" href="./" aria-label="知行之间，回到封面"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M3 6c5-1 9 1 13 4 4-3 8-5 13-4v20c-5-1-9 1-13 4-4-3-8-5-13-4V6Z" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M10 3v9l6 4 6-4V3l-6 4-6-4Z" fill="#b9864a"/></svg><span>知行之间<small>一段连续的主题体验</small></span></a>
+    <div class="header-center"><span class="small-spark">✳</span> 一 个 主 题 · 一 本 书 · 一 段 旅 程</div>
+    <nav aria-label="工具与资料"><button id="show-contents" class="header-button" disabled>目录 <span aria-hidden="true">☰</span></button><a href="./handbook.html">方法总览 <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main class="reading-room" id="main">
+    <div class="desk-note" id="desk-note"><span>一本关于主题体验的小书</span><p>从打开的那一刻，开始建立联系。</p></div>
+    <div class="book-stage" id="book-stage">
+      <div class="book" id="book">
+        <div class="book-board" aria-hidden="true"></div><div class="page-edges" aria-hidden="true"></div>
+        <div class="spread" id="spread" inert aria-hidden="true"><article class="page page-left" id="page-left" aria-label="左页讲解"></article><article class="page page-right" id="page-right" aria-label="右页展示与交互"></article><div class="book-gutter" aria-hidden="true"></div></div>
+        <div class="turning-leaf" id="turning-leaf" hidden inert aria-hidden="true"><div class="leaf-face leaf-front" id="leaf-front"></div><div class="leaf-face leaf-back" id="leaf-back"></div></div>
+        <div class="front-cover" id="front-cover">
+          <div class="cover-face cover-front">
+            <div class="cover-binding" aria-hidden="true"></div><div class="cover-border" aria-hidden="true"></div>
+            <span class="cover-series">知行之间 · 主题体验手记</span><span class="cover-issue">VOLUME 003</span>
+            <h1>让一个主题<br>慢慢<span>生长</span></h1><div class="cover-rule" aria-hidden="true"></div><p class="cover-subtitle">在每一页，遇见新的联系</p>
+            <svg class="cover-botanical" viewBox="0 0 300 220" aria-hidden="true"><g fill="none" stroke="#c4aa72" stroke-linecap="round" stroke-linejoin="round"><path d="M148 194c6-32-1-60 9-89 6-19 5-42 3-67" stroke-width="1.5"/><path d="M151 160c-23-3-42-22-39-43 23 4 35 18 39 43Zm4-35c18-4 36-17 36-38-22 4-32 18-36 38Zm5-34c-18-4-32-17-31-35 20 4 29 18 31 35Zm1-37c14-9 19-23 13-37-13 9-17 22-13 37Z" fill="#c4aa72" fill-opacity=".08"/><path d="m151 159-30-32m34-3 28-28m-23-7-23-24m23-13 10-26" stroke-width=".6"/><ellipse cx="150" cy="196" rx="34" ry="6" stroke-width=".6"/><path d="M77 178h21m-10-10v20M210 64h16m-8-8v16M213 162h9m-4-4v8" stroke-width=".7"/><circle cx="106" cy="54" r="2"/><circle cx="197" cy="198" r="1"/></g></svg>
+            <button class="open-book-button" id="open-book">打开这本书 <span aria-hidden="true">↗</span></button><span class="cover-footer">一个主题 · 四次发现</span>
+          </div>
+          <div class="cover-face cover-back" aria-hidden="true"><div class="endpaper-pattern"></div><span>每一次翻页<br>都让故事继续</span></div>
+        </div>
+        <div class="ribbon" aria-hidden="true"></div>
+      </div>
+      <nav class="chapter-tabs" id="chapter-tabs" aria-label="章节书签" hidden><button data-page="0" aria-current="page"><span>01</span>起点</button><button data-page="1"><span>02</span>关联</button><button data-page="2"><span>03</span>回应</button><button data-page="3"><span>04</span>延伸</button></nav>
+    </div>
+    <div class="reading-controls" id="reading-controls" hidden><button id="prev-page" class="page-nav" disabled><span aria-hidden="true">←</span> 上一页</button><div class="page-progress"><span class="chapter-name" id="chapter-name">第一章 · 一颗想法</span><div class="progress-dots" role="group" aria-label="跳转章节"><button data-page="0" aria-label="第一章：一颗想法" aria-current="page"></button><button data-page="1" aria-label="第二章：页与页之间"></button><button data-page="2" aria-label="第三章：亲手改变"></button><button data-page="3" aria-label="第四章：新的天地"></button></div><span class="page-count" id="page-count">01 — 02 / 08</span></div><button id="next-page" class="page-nav">下一页 <span aria-hidden="true">→</span></button></div>
+    <div class="closed-note" id="closed-note"><span class="note-line"></span> 打开，然后慢慢翻阅 <span class="note-line"></span></div>
+  </main>
+  <footer class="app-footer"><span>研究 003 <i></i> 连续主题体验原型</span><span id="keyboard-hint">纸页承载内容，翻页连接发现。</span><button id="close-book" hidden>合上书本 <span aria-hidden="true">↙</span></button></footer>
+  <div class="sr-only" id="reading-status" role="status" aria-live="polite"></div>
+  <dialog id="contents-dialog" aria-labelledby="contents-title"><div class="dialog-header"><div><span class="eyebrow">这段旅程</span><h2 id="contents-title">翻到你想去的一页</h2></div><button id="close-contents" aria-label="关闭目录">×</button></div><div class="contents-list"><button data-page="0"><span>01</span><div><strong>一颗想法</strong><small>确定一个主题，认识贯穿全书的对象</small></div><i>01—02</i></button><button data-page="1"><span>02</span><div><strong>页与页之间</strong><small>让上一页的对象，在下一页继续生长</small></div><i>03—04</i></button><button data-page="2"><span>03</span><div><strong>亲手改变</strong><small>做一个动作，看到画面和讲解一起回应</small></div><i>05—06</i></button><button data-page="3"><span>04</span><div><strong>新的天地</strong><small>换一个主题，延续同样的探索方式</small></div><i>07—08</i></button></div><p class="dialog-note">也可以使用键盘 ← → 翻页。调节滑块时，方向键用于调整数值。</p></dialog>
+  <noscript><p class="noscript">互动书需要 JavaScript。你仍可阅读<a href="./handbook.html">方法总览</a>或<a href="../method.md">完整文档</a>。</p></noscript>
+</body>
+</html>

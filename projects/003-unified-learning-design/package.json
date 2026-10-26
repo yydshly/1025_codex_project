@@ -1,0 +1,25 @@
+{
+  "name": "unified-learning-design",
+  "version": "4.4.0",
+  "private": true,
+  "type": "module",
+  "description": "Independent Three.js study of a spatial physics book, with preserved design handbook",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "check": "node --check scripts/generate-minimax-voice.mjs && node --check app/narration-source.js && node --check app/replica-physics.js && node --check app/replica-director.js && node --check app/replica-script.js && node --check app/replica-camera.js && node --check app/replica-reading-session.js && node --check app/replica-reading.js && node --check app/replica-magnifier.js && node --check app/research-summary.js && node --check app/replica.js && node --check app/replica-models.js && node --check app/replica-pages.js && node --check app/book.js && node --check app/book-scenes.js && node --check app/main.js && node --check scripts/prepare-assets.mjs && node --check scripts/serve.mjs",
+    "assets": "node scripts/prepare-assets.mjs",
+    "test": "node --test scripts/physics.test.mjs scripts/director.test.mjs scripts/voice.test.mjs scripts/reading.test.mjs scripts/reading-session.test.mjs",
+    "voice": "node scripts/generate-minimax-voice.mjs",
+    "voice:windows": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/generate-voice.ps1",
+    "prepare:pages": "node scripts/prepare-pages.mjs",
+    "test:publication": "node --test scripts/publication.test.mjs"
+  },
+  "dependencies": {
+    "@fontsource-variable/caveat": "5.2.7",
+    "@fontsource-variable/source-serif-4": "5.2.8",
+    "three": "0.180.0"
+  }
+}

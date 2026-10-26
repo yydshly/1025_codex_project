@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-26",
+  "scope": "研究汇总网页与单张总览图；不修改实验和导演行为",
+  "page": "app/research-summary.html",
+  "poster": {
+    "png": "assets/images/understanding-atlas.png",
+    "svg": "assets/images/understanding-atlas.svg",
+    "size": [
+      3200,
+      7450
+    ],
+    "textCharacters": 2266,
+    "imagesEmbedded": 4,
+    "outsideCanvasText": 0
+  },
+  "checks": [
+    "49 local references exist; no duplicate HTML IDs",
+    "All SVG images embedded; no remote image dependencies",
+    "PNG/SVG dimensions match",
+    "JS and Python syntax pass",
+    "Repository index check passes",
+    "Desktop and 390×844 page layouts inspected; no page horizontal overflow",
+    "Capability future filter displays3 entries",
+    "Dual-screen and physical-hybrid controls update diagram/title/context",
+    "Concept image and poster dialogs open and close with Escape",
+    "First-click lazy poster loading fixed",
+    "Image zoom controls verified 44%→66%→fit11%; full PNG3200×7450 loaded"
+  ],
+  "conceptImage": "Built-in ImageGen; future ideas, not implemented screenshots; prompt in research/summary-assets.json",
+  "limits": [
+    "Layouts and product directions are design concepts",
+    "No new teaching-effectiveness validation",
+    "Existing37 application tests are prior v4.4 evidence; summary changes do not alter simulation"
+  ]
+}

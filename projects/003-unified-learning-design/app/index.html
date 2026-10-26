@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>能量之书 · 3D 效果复刻</title><link rel="icon" href="./favicon.svg"><link rel="stylesheet" href="./replica.css"><link rel="stylesheet" href="./replica-magnifier.css"></head><body>
+<div id="loading" role="status"><strong>Every joule, in space.</strong><span>正在展开立体书页</span></div>
+<canvas id="stage" tabindex="0" aria-label="三维能量之书。移到文字可放大，触屏可长按文字；拖动旋转视角，滚轮缩放，左右方向键翻页。M键打开大字阅读，Esc关闭。"></canvas>
+<div id="identity"><a href="https://iamtechartist.com/every-joule/" target="_blank" rel="noreferrer">原作 ↗</a><span>3D 效果复刻 · 三课样章</span><a href="./research-summary.html">研究总览 ↗</a></div><div id="help">文字处悬停放大 · 拖动环视 · ← → 翻页</div>
+<nav id="view-presets" aria-label="观察视角"><button data-view="overview" aria-pressed="true">全景</button><button data-view="experiment" aria-pressed="false">实验</button><button data-view="reading" aria-pressed="false">阅读</button></nav>
+<div id="tooltip"></div><div id="experiment" hidden></div>
+<section id="director" aria-label="有声导览" data-state="intro">
+ <div id="guide-intro"><div class="guide-eyebrow">一本可以听、可以动手的物理书</div><h1>跟着能量，<br>走一小段旅程。</h1><p>镜头带你看，声音讲清原因。<br>在关键时刻停下来，再由你亲手继续。</p><button id="guide-start" class="guide-primary">开始有声导览 <span>→</span></button><button id="guide-explore" class="guide-text">我想自由探索</button><small>MiniMax 中文配音 · 三个场景 · 约 3 分钟</small></div>
+ <div id="guide-story" hidden>
+  <div class="guide-topline"><div class="guide-position"><span id="guide-count"></span><span id="guide-cue"></span></div><div class="guide-top-actions"><button id="guide-pause" class="guide-text">暂停</button><button id="guide-exit" class="guide-text">自由探索</button></div></div>
+  <progress id="guide-progress" max="9" value="1" aria-label="导览进度"></progress>
+  <h2 id="guide-title"></h2><p id="guide-subtitle" aria-live="off"></p>
+  <div id="guide-question" aria-label="先做出你的预测" hidden></div><div id="guide-feedback" role="status" hidden></div>
+  <div id="guide-balance" aria-label="实时能量"></div><div id="guide-status" role="status"></div>
+  <div class="guide-nav"><button id="guide-back">上一步</button><button id="guide-next" class="guide-primary">继续</button></div>
+  <details id="guide-details"><summary>讲解全文 · 重播与声音</summary><p id="guide-fulltext"></p><div class="guide-tools"><button id="guide-replay">重播这一段</button><button id="guide-mute" aria-pressed="false">静音</button></div></details>
+ </div>
+</section>
+<audio id="narration" preload="auto" data-provider="MiniMax" src="./voice/minimax/types-e696e455796b.wav"></audio><div id="focus-marker" hidden><span></span><b></b></div><div id="context-hint" hidden></div>
+<button id="mobile-read" aria-controls="read-panel">展开本页讲解</button>
+<nav id="toolbar" aria-label="书本控制">
+<button id="contents" aria-label="目录" title="目录"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 11h13M4 16h9"/></svg></button>
+<button id="previous" aria-label="上一页" title="上一页"><svg viewBox="0 0 24 24"><path d="m14 6-6 6 6 6"/></svg></button>
+<button id="watch" aria-label="播放镜头演示" title="播放镜头演示"><svg viewBox="0 0 24 24"><path d="m8 5 10 7-10 7Z"/></svg></button>
+<div id="where" aria-live="polite"></div>
+<button id="next" aria-label="下一页" title="下一页"><svg viewBox="0 0 24 24"><path d="m10 6 6 6-6 6"/></svg></button><span class="divider"></span>
+<button id="reset-view" aria-label="恢复全景" title="恢复全景"><svg viewBox="0 0 24 24"><path d="M4 10a8 8 0 1 1 1 7M4 4v6h6"/></svg></button>
+<button id="still" aria-label="暂停场景运动" title="暂停场景运动" aria-pressed="false"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 4v16"/></svg></button>
+<button id="text-zoom" aria-label="固定文字并连续阅读" aria-controls="text-lens-card" title="固定当前文字并连续阅读（M）" aria-pressed="false" aria-expanded="false"><svg viewBox="0 0 24 24"><circle cx="10" cy="10" r="6"/><path d="m14.5 14.5 5 5M7 10h6M10 7v6"/></svg></button>
+<button id="read" aria-label="阅读与操作" title="阅读与操作" aria-expanded="false"><svg viewBox="0 0 24 24"><path d="M12 6C8 3 4 4 3 5v14c3-2 6-1 9 1 3-2 6-3 9-1V5c-3-2-6-1-9 1Zm0 0v14"/></svg></button>
+</nav><div id="credit">独立实现 · 原作 Techartist</div><aside id="read-panel" hidden aria-label="本页讲解与操作"></aside><div id="sr-status" role="status" aria-live="polite"></div>
+<noscript><div class="noscript">请启用 JavaScript 体验 3D 书籍，或阅读<a href="./handbook.html">方法总览</a>。</div></noscript>
+<script type="module" src="./replica.js"></script></body></html>
+

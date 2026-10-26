@@ -9,6 +9,11 @@
       ]
     },
     {
+      "directory": "003-unified-learning-design",
+      "publicDirectory": "public",
+      "extraAssets": []
+    },
+    {
       "directory": "004-baocut-effects-atlas",
       "publicDirectory": "dist/site",
       "extraAssets": []

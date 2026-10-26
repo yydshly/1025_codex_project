@@ -1,0 +1,156 @@
+{
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentle_Senior",
+  "speed": 0.95,
+  "format": "wav",
+  "sampleRate": 32000,
+  "updatedAt": "2026-10-26T10:44:30.768Z",
+  "complete": true,
+  "clips": {
+    "types": {
+      "file": "types-e696e455796b.wav",
+      "inputHash": "f70742697820d6daaba05de297c71fff60c2e7b798eed5940150c18aff7cad3b",
+      "sha256": "e696e455796be22326a996705a3cb0ddebe9c01515e2b4812df3c7aeef6ca4ea",
+      "bytes": 845964,
+      "channels": 1,
+      "sampleRate": 32000,
+      "byteRate": 64000,
+      "bits": 16,
+      "durationSeconds": 13.2
+    },
+    "legend": {
+      "file": "legend-9c38c46e16a5.wav",
+      "inputHash": "908bd3c1a9848bc25c275c2e68297d742e39baf4e1a7db40861c0ec8590c95a6",
+      "sha256": "9c38c46e16a5cc906a93c8222a3407154ba632fd444142c97fd8552723353d99",
+      "bytes": 858764,
+      "channels": 1,
+      "sampleRate": 32000,
+      "byteRate": 64000,
+      "bits": 16,
+      "durationSeconds": 13.4
+    },
+    "ramp-ready": {
+      "file": "ramp-ready-53ecbd5b052e.wav",
+      "inputHash": "6125452d3eceaeb77643d9e615a5a9ae97ac919b9355bfd55219a4f7ccbb419a",
+      "sha256": "53ecbd5b052e7d46b17707c26266debd1a14dcfe2b17da9258fd7303b511ac11",
+      "bytes": 762764,
+      "channels": 1,
+      "sampleRate": 32000,
+      "byteRate": 64000,
+      "bits": 16,
+      "durationSeconds": 11.9
+    },
+    "ramp-bottom-1": {
+      "file": "ramp-bottom-1-c5a247e4deba.wav",
+      "inputHash": "eb1bc7238e1fb20231ff048781986e72a2c16b39066f4bbe2a105195a38e42fd",
+      "sha256": "c5a247e4debae8c299451922c012f4692072bbdfc558bd4752a8d4977ce4a9f1",
+      "bytes": 545164,
+      "channels": 1,
+      "sampleRate": 32000,
+      "byteRate": 64000,
+      "bits": 16,
+      "durationSeconds": 8.5
+    },
+    "ramp-bottom-2": {
+      "file": "ramp-bottom-2-d87167bda3f2.wav",
+      "inputHash": "da44e114205666941bf672108315a6c213ee0f8b00f1f6af0b0dcbde57bd7e65",
+      "sha256": "d87167bda3f2449ee7eee606456026f24fb9c8955ad30b805ea6ffd876467fcb",
+      "bytes": 602764,
+      "channels": 1,
+      "sampleRate": 32000,
+      "byteRate": 64000,
+      "bits": 16,
+      "durationSeconds": 9.4
+    },
+    "ramp-bottom-3": {
+      "file": "ramp-bottom-3-297d6f4b7e47.wav",
+      "inputHash": "408451e9bfedb1390f8ce334b2c112063722f214a74783ce6fcb7f864d24feb3",
+      "sha256": "297d6f4b7e4731cc18895f5eebb1674a046a796a5d1a92cf94477d1b2aeeee47",
+      "bytes": 570764,
+      "channels": 1,
+      "sampleRate": 32000,
+      "byteRate": 64000,
+      "bits": 16,
+      "durationSeconds": 8.9
+    },
+    "ramp-loss-1": {
+      "file": "ramp-loss-1-f22d72a44326.wav",
+      "inputHash": "e59afbcac7dbbd9665315124d8a1159b28912504a1efd0c2fed2aad3ba45b736",
+      "sha256": "f22d72a44326acdb73a64db6d52759a77a637932dfa8f13b4fda3bb4e9d75785",
+      "bytes": 551564,
+      "channels": 1,
+      "sampleRate": 32000,
+      "byteRate": 64000,
+      "bits": 16,
+      "durationSeconds": 8.6
+    },
+    "ramp-loss-2": {
+      "file": "ramp-loss-2-6160359f4e1a.wav",
+      "inputHash": "c49d77cf2ca172494d5b58519f116464a181b20944c6ce2918220b536e31df2f",
+      "sha256": "6160359f4e1ab1708e5d1adc513d65488119c353c29c2b462bb97d1845187659",
+      "bytes": 717964,
+      "channels": 1,
+      "sampleRate": 32000,
+      "byteRate": 64000,
+      "bits": 16,
+      "durationSeconds": 11.2
+    },
+    "ramp-loss-3": {
+      "file": "ramp-loss-3-26ec13103c5e.wav",
+      "inputHash": "0a377d7b84329b68f449c931c970ea8c5641f4f7064b97de5d8de04af71625ce",
+      "sha256": "26ec13103c5e459e068d29c61831c05065d15a9e5a582851f53166aaca3a575e",
+      "bytes": 596364,
+      "channels": 1,
+      "sampleRate": 32000,
+      "byteRate": 64000,
+      "bits": 16,
+      "durationSeconds": 9.3
+    },
+    "spring-ready": {
+      "file": "spring-ready-f3341b0c62e2.wav",
+      "inputHash": "3e564086699d2aed59fe403ea07ed5d76c872f0680e180ef75792157d29dbd8e",
+      "sha256": "f3341b0c62e22352a4ab582390b66b07bbc951fa07189a814b9e54a8bdddba31",
+      "bytes": 961164,
+      "channels": 1,
+      "sampleRate": 32000,
+      "byteRate": 64000,
+      "bits": 16,
+      "durationSeconds": 15
+    },
+    "spring-apex": {
+      "file": "spring-apex-1b660f3f14c3.wav",
+      "inputHash": "5ac4a3281c3bd90da260ff519992065deb089f996c87233ed4deda9a502c7860",
+      "sha256": "1b660f3f14c3d52fd5fb2e9cd3bd9fd76907ba259a4c41ead3325d1eda89aab6",
+      "bytes": 973964,
+      "channels": 1,
+      "sampleRate": 32000,
+      "byteRate": 64000,
+      "bits": 16,
+      "durationSeconds": 15.2
+    },
+    "spring-land": {
+      "file": "spring-land-b963bc6bf447.wav",
+      "inputHash": "5fedf7fb47389b0dae7f660b77e1ffe7b2b2e2bb8ba6ad24f3b1c4c7176cce90",
+      "sha256": "b963bc6bf447c78af16b9a0d5221c5bc67e990300de915a6754491711322b1b6",
+      "bytes": 980364,
+      "channels": 1,
+      "sampleRate": 32000,
+      "byteRate": 64000,
+      "bits": 16,
+      "durationSeconds": 15.3
+    },
+    "outro": {
+      "file": "outro-b79f02b99183.wav",
+      "inputHash": "65ec42e61dd999a59aaa4370e0999679acc1c19f3fa7b596dd4a42845abee704",
+      "sha256": "b79f02b991830e3b4d488967c96432ed34589d0c93a72d4a7f6113ea4a03ac88",
+      "bytes": 743564,
+      "channels": 1,
+      "sampleRate": 32000,
+      "byteRate": 64000,
+      "bits": 16,
+      "durationSeconds": 11.6
+    }
+  },
+  "totalDurationSeconds": 151.5
+}

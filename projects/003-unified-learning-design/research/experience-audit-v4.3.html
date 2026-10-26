@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>v4.3 体验复查 · 下一步优化</title><style>
+:root{color-scheme:light;--paper:#f5f2e8;--ink:#293f35;--muted:#59695e;--line:#cbd1c0;--accent:#8e533b}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.8 system-ui,"Microsoft YaHei",sans-serif}main{max-width:1100px;margin:auto;padding:40px 24px 80px}a{color:#365d48;text-underline-offset:4px}h1{font-size:clamp(28px,5vw,44px);line-height:1.3}h2{font-size:24px;line-height:1.4}h3{font-size:19px}p{max-width:85ch}.intro{font-size:19px}.tag{font-size:12px;letter-spacing:.08em;color:var(--accent);font-weight:650}section{border-top:1px solid var(--line);padding:25px 0;margin-top:24px}.pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.mobile{max-width:390px}figure{margin:18px 0}img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:9px}figcaption{font-size:13px;color:var(--muted);margin-top:8px}table{border-collapse:collapse;width:100%;font-size:15px}th,td{text-align:left;vertical-align:top;padding:12px;border-bottom:1px solid var(--line)}th{background:#e7ebdd}.note{border-left:4px solid var(--accent);padding:10px 16px;background:#eee9da}li{margin:9px 0}footer{margin-top:32px;color:var(--muted)}@media(max-width:650px){main{padding:24px 16px 60px}.pair{grid-template-columns:1fr}th,td{padding:9px 6px;font-size:13px}}
+</style></head><body><main>
+<a href="../app/">← 返回互动样章</a><p class="tag">V4.3 · 当前版本复查 · 2026-10-26</p>
+<h1>把阅读、实验与导演连成一次完整体验。</h1><p class="note">v4.4已落实本报告中的当前段落固定、连续阅读、小屏阅读空间与状态恢复，见<a href="../design-qa.md">最新验收记录</a>。下方截图和问题保留为v4.3历史审查，其他扩展仍是后续建议。</p><p class="intro">三维书本、实验、MiniMax讲解和文字放大镜已经能配合运行。下一轮最有价值的工作是减少阅读与操作之间的中断，再精修纸本真实感、实验解释和挑战反馈。</p>
+<p>范围：当前独立三课样章，重点第二课的全景、公式阅读、M键固定阅读、390×667预测页与阅读共存。使用实际浏览器截图、DOM尺寸与代码检查；本轮没有修改应用行为。所有本地截图均在本次审查重新采集并打开检查。</p>
+<section><h2>优先顺序</h2><table><thead><tr><th>优先级</th><th>先做什么</th><th>做完应看到什么</th></tr></thead><tbody>
+<tr><td>先修</td><td>小屏阅读与导演切换显示</td><td>正文不再挤进约80px的小窗口；返回后保留刚才的预测、暂停点和讲解位置。</td></tr>
+<tr><td>先修</td><td>固定当前段落、连续阅读</td><td>在公式上按M仍是公式；上一段／下一段可完整阅读本页，键盘和触屏都不依赖重新定位细小印刷区。</td></tr>
+<tr><td>随后</td><td>可读性与纸本细节</td><td>纸面印刷更清楚，瓶签近景可读；书脊、页边厚度、翻盖接触阴影、翻页弯曲与落纸节奏更自然。</td></tr>
+<tr><td>随后</td><td>按内容点播、实验对象联动</td><td>点一段即可听相应讲解，镜头与高亮指向该段说的对象，退出后明确“继续刚才的讲解”。</td></tr>
+<tr><td>随后</td><td>计算展开与两次实验对照</td><td>高度／速度／压缩量能代入公式；无耗散和有耗散、不同起点或压缩量的结果可放在一起比较。</td></tr>
+<tr><td>完成基准页后</td><td>进度、印章、章节索引与内容配置</td><td>知道读到哪、做过什么；章节导航带学习状态。把成熟的一页规则用于后续章节和其他主题。</td></tr>
+</tbody></table></section>
+<section><p class="tag">STEP 1 · 可用，需精修</p><h2>全景与原作对照</h2><p>三维空间关系、书页厚度和立体器材已成立。当前全景的中文小字和瓶签偏淡、偏小，阅读需要依赖放大镜；原作与本地的模型轮廓、光照、纸面层次仍有明显差异。原作使用正面视角，本地保留用户此前要求的斜侧视角，不能把二者角度不同直接判成错误。</p><p>建议先为第二课建立一致的全景／阅读／实验基准：保证器材和文字各自清楚，再细调书脊弧度、翻盖贴合和接触阴影。可读性优先于增加纸纹。</p><div class="pair"><figure><img src="../assets/images/audit-v4.3/01-overview.png" alt="本地第二课全景，纸面文字较小且偏淡"><figcaption>本地：942×871，第二课全景。</figcaption></figure><figure><img src="../assets/images/audit-v4.3/reference-02-book.png" alt="原作第二课，正面书本与墨线轨道"><figcaption>原作：942×873，当前相同章节；相机角度不同，仅作风格与机制参考。截图版权属于Techartist，不是本地运行素材。</figcaption></figure></div></section>
+<section><p class="tag">STEP 2 · 核心功能可用，有操作限制</p><h2>公式放大</h2><p>公式卡能显示正确的公式与解释，圆镜采样实际书页，画面未跳走。代码检查同时确认：悬停卡无法接收滚动，滚轮会落到画布并关闭卡片、缩放镜头。长内容如果被限高，悬停方式没有直接的阅读完毕路径。</p><p>建议提供“固定这一段”，固定后可滚动，并加入公式含义、变量、单位和当前实验数值的逐层展开。</p><figure><img src="../assets/images/audit-v4.3/02-formula.png" alt="圆形放大镜与第二课动能公式阅读卡"><figcaption>原位看清公式，不必先改变整本书的角度。</figcaption></figure></section>
+<section><p class="tag">STEP 3 · 已确认体验缺口</p><h2>从公式按M固定阅读</h2><p>实际操作顺序为“公式卡可见 → 按M”。固定卡变成章节导语，未保留正在看的公式，还会切换阅读镜头。固定卡没有上一段／下一段或分区目录；当前只有关闭按钮，也没有“听这一段”。</p><p>建议默认固定刚才的内容；没有当前内容时再进入导语。补上连续阅读与按段点播。预测选项目前是只读列表，后续应允许直接在固定阅读中作答，解释仍遵守揭盖规则。</p><figure><img src="../assets/images/audit-v4.3/03-pinned-reading.png" alt="按M后固定卡变成第二课章节导语"><figcaption>与步骤2相比，公式内容丢失，固定阅读回到导语。</figcaption></figure></section>
+<section><p class="tag">STEP 4 · 可完成预测，画面与控件偏拥挤</p><h2>390×667矮屏预测页</h2><p>从第二课进入导览，正确到达本课预测段；不是强制从第一课开始。问题、三个选项与下一步状态清楚。导演卡高度315.44px，约占视口47%；实验装置只剩较小的上方区域。字幕12px，暂停按钮约34.67×28px，底栏放大镜约32×34px，触摸舒适度仍需改进。</p><p>建议把预测选项、当前一句讲解和展开全文分层呈现，扩大重要按钮的点击区域，减少同屏重复信息。这里尚未做WCAG对比度计算，视觉偏淡与小目标属于风险观察。</p><figure class="mobile"><img src="../assets/images/audit-v4.3/04-mobile-prediction.png" alt="矮屏第二课预测页面，导演面板占屏幕近一半"><figcaption>390×667，第二课预测阶段。</figcaption></figure></section>
+<section><p class="tag">STEP 5 · 优先修正阅读空间</p><h2>导演暂停时打开大字阅读</h2><p>暂停、关闭与恢复都能工作，稳定后没有挡住主要按钮；但避让算法把固定阅读卡压到79.56px，内部正文总高度163px。结果是标题占去大部分空间，正文只能在狭小区域里滚动。此前较短讲解卡的验收不能代表这个预测页组合。</p><p>建议窄屏进入阅读时暂时收起导演卡，以同一个面板切换“阅读／讲解”，保留“返回刚才的讲解”入口。不要只靠进一步缩小字体、圆镜或卡片来塞下更多层。</p><figure class="mobile"><img src="../assets/images/audit-v4.3/05-mobile-reading-space.png" alt="阅读卡只剩约80像素，正文被压到标题下方狭小区域"><figcaption>稳定状态的实际截图。正文可滚动，但可用阅读高度不足。</figcaption></figure></section>
+<section><h2>再补哪些能力最有价值</h2><ol>
+<li><strong>解释过程可视化：</strong>已有逐句镜头和对象高亮，下一步在少量关键时刻加入导槽剖面、受力／速度箭头、轨迹与局部慢放。新增表现必须对应现有计算，避免让装饰暗示额外的力或能量。</li>
+<li><strong>有过程的计算：</strong>显示当前条件、代入值与单位；选择变量时高亮相应物体。把静态公式变成“为什么是这个数”的解释。</li>
+<li><strong>挑战与对照：</strong>保留A/B两次实验的起点、阻力、最大高度和能量变化；设置一个可观察的目标，并给出成功原因、失败原因与重试入口。</li>
+<li><strong>轻量声音：</strong>翻页、掀盖、滚动与碰撞的声音随动作触发，独立于MiniMax讲解开关；避免盖过讲解。这里是后续建议，本轮未做声音听审。</li>
+<li><strong>读过之后能回来：</strong>保存章节、预测、挑战完成与阅读位置；目录显示状态，支持清晰重置。此前已有页内完成反馈，不应把它说成完全没有进度表现。</li>
+</ol><p class="note">建议先把第二课做成精修基准：读得清 → 固定当前段 → 听这段并看对象 → 改条件做对照 → 收到解释 → 回到原位置。走通之后再扩充课程与通用内容配置。</p></section>
+<footer><h2>验证边界与资料</h2><p>桌面与390×667均为本次实际浏览器观察。未实测真实触屏、手机GPU、完整屏幕阅读器流程或教学效果；截图无法证明完整可访问性。当前27项自动测试的既有记录仍在，但本轮为只读审查，未重跑数值模型，也没有把测试通过当作布局通过。</p><p>本地代码复核：replica.js、replica-reading.js、replica-magnifier.js与样式；相关模型和验证见<a href="../design-qa.md">验收记录</a>。原作页面：<a href="https://iamtechartist.com/every-joule/">Every Joule</a>。原作文字版列有五步演示、完整数值代入与挑战描述，属于来源说明；本轮没有把文字说明中的每项都声称为已亲自操作验证。</p></footer>
+</main></body></html>

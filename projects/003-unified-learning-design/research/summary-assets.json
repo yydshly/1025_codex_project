@@ -1,0 +1,26 @@
+{
+  "createdAt": "2026-10-26",
+  "tool": "Built-in image_gen",
+  "mode": "concept generation; no original artwork or screenshots supplied to generation",
+  "asset": "../assets/images/future-layout-concepts.png",
+  "status": "Future concept illustration; not implemented product screenshot; schematic interfaces and physical mechanisms are not engineering drawings",
+  "gridOrder": [
+    "教材与实验并排",
+    "实验主屏＋按需教材",
+    "双屏协作",
+    "数字实验记录本",
+    "主题工作台",
+    "虚实结合实验台"
+  ],
+  "prompt": "Use case: ui-mockup and infographic-diagram. Create a polished landscape concept board showing SIX DISTINCT FUTURE INTERACTIVE LEARNING PRODUCT FORMATS in a clear 3 columns × 2 rows grid. This is a speculative presentation concept asset, not a screenshot of a finished product. Aspect ratio 3:2, highest practical resolution, crisp readable miniature compositions, generous separation between panels. Each panel should have a clean warm ivory background, deep forest green interface accents, restrained copper and sage details, elegant product-design aesthetic, slight isometric physicality and thin ink outlines inspired by a paper science laboratory. No logos, no people, NO readable text or fake lettering; use abstract short horizontal lines for textbook prose. Panel1 top-left: a large desktop display split left textbook pages, right physically plausible U-shaped ball track lab and linked parameter controls, tiny live graph below. Panel2 top-middle: experiment-first big 3D elastic spring launcher on an ivory platform, small contextual explanation drawer beside it, arrows linking mechanism to formula glyphs (simple mathematical symbols allowed). Panel3 top-right: two clearly separate screens, one tablet with textbook pages, one wide monitor with same rolling-ball experiment, a thin sage connection line between selected paragraph and ball. Panel4 bottom-left: digital experiment notebook on a tablet, visible ordered question, prediction options, A/B small graphs with two different curves, conclusion space and evidence thumbnail. Panel5 bottom-middle: topic workbench canvas with a text source sheet, two small experiment frames, one plot, one sticky note linked spatially, organized and readable not cluttered. Panel6 bottom-right: real tabletop hybrid experiment bench with a mechanical track, physical steel ball, a small measuring sensor, textbook screen standing behind it, a tablet showing measured chart; distinguish actual apparatus from displayed simulation. All six subjects must be large enough to understand. Cohesive science-book/learning-platform visual language. This asset will be placed in an annotated Chinese research-summary webpage and a master infographic; do not add titles or captions because they will be typeset separately. Render real designed screens and apparatus, not generic glowing AI dashboards.",
+  "masterPoster": {
+    "png": "../assets/images/understanding-atlas.png",
+    "svg": "../assets/images/understanding-atlas.svg",
+    "method": "Deterministic editable diagram and Chinese typesetting with own real screenshots and generated future concept asset",
+    "script": "../scripts/create-understanding-atlas.py",
+    "width": 3200,
+    "height": 7450,
+    "font": "Microsoft YaHei",
+    "rendering": "Pillow11.3 PNG and standalone SVG with embedded raster images and editable text"
+  }
+}

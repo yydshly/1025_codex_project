@@ -95,3 +95,9 @@ GitHub Pages 只能提供静态内容。模型服务、采集任务、密钥和�
 
 - [使用自定义 GitHub Actions 工作流发布 Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages)
 - [GitHub Pages REST API](https://docs.github.com/en/rest/pages/pages)
+
+## 003 · 连续主题体验的发布准备
+
+003采用 `publicDirectory: public`。CI先执行 `npm --prefix projects/003-unified-learning-design run prepare:pages`，由项目脚本创建新的派生目录，再交给总库发布器。编号根入口直接显示研究总览，`app/index.html`保留三维样章，`app/handbook.html`保留方法手册。
+
+发布准备仅复制静态应用、六项明确图像及当前映射的13段MiniMax音频；不发布旧音频、语音生成工具、配置或本地依赖。研究文档链接改指同仓库对应源码。既有 `understanding-atlas.png` 作为项目登记和网页引导图，发布时逐字节保留。`test:publication`在独立目录检查根入口路径、文档改写、资源白名单和越界／链接拒绝。

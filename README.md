@@ -12,12 +12,13 @@
 
 ## 项目索引
 
-已收录 **5** 个项目 · 按固定编号升序排列
+已收录 **6** 个项目 · 按固定编号升序排列
 
 | 编号 | 项目 | 简介 / 研究重点 | 阶段 | 演示 |
 | --- | --- | --- | --- | --- |
 | 001 | [早期方向档案](projects/001-early-directions-atlas/README.md) | 我们早期思考与尝试留下的十二个方向：需求与变现、内容获客、轻量产品、价格册、音频局部修改、3D咖啡、共想室、岗位观察、跨设备、论文、艺术短片与AI室友。按候选、方案、原型、阶段作品及停止项保存进展、依据和待验证问题。 | 已总结 | [在线访问](<https://yydshly.github.io/1025_codex_project/001-early-directions-atlas/>) |
 | 002 | [未完 · 水墨叙事](projects/002-ink-rain-alley/README.md) | 依据Bee录屏独立重写纸墨九章叙事：雨巷、拼贴、森林、四季湖景、莲花与墨圈，以滚动、画幅变化和自然微动组织观看。沉淀场景进度、遮罩与声音实现；未取得原作源码，视觉仍有差异。 | 已总结 | — |
+| 003 | [连续主题体验设计](projects/003-unified-learning-design/README.md) | 以 Every Joule 为参照独立实现三课三维物理书：翻页、立体器材与能量变化同屏呈现，支持调参实验、预测反馈、MiniMax逐句导览、文字放大和连续阅读。通过共享实验状态联动模型、数值、镜头与讲解，阅读后恢复原上下文。沉淀内容、展示、操作和解释统一设计的方法，供互动教材、原理说明与实验平台复用；扩展布局仍为设想。 | 已总结 | — |
 | 004 | [BaoCut · 能力、原理与效果研究](projects/004-baocut-effects-atlas/README.md) | BaoCut 是 AI 可操作的视频编辑器与制作工作流。效果覆盖动效、讲解、产品片、混剪和故事；以代码动画、AI 静图运镜、已有素材剪辑组合成片，支持字幕、配音、检索与可编辑工程。价值主要在工具集成、反复修改和人工接手；附 24 个方向、20 段预览及原理说明，效率收益未实测。 | 研究中 | [在线访问](<https://yydshly.github.io/1025_codex_project/004-baocut-effects-atlas/>) |
 | 005 | [纸间 · 诗性风格实验室](projects/005-paper-poetics-lab/README.md) | 原参考以纸墨、画幅转换和自然微事件串起多场景诗性叙事。本研究用独立重写、实时茶庭与AI雨窗样片，沉淀氛围组织、载体选型和可复用工程方法；可扩展声画事件、纸墨与写实融合及文化展陈入口，仍需验证。 | 研究中 | — |
 | 006 | [PromptHub · AI 工作资产与复用](projects/006-prompthub-ai-assets/README.md) | 集中管理提示词、Skills、MCP、插件与规则，通过模板、技能分发和配置适配供 AI 复用。对我的价值是借鉴其方法，把每日笔记中验证有效的经验沉淀为工作资产，减少重复说明与跨工具配置；笔记自动提炼和结果回写需另接入。 | 已总结 | — |
@@ -43,6 +44,16 @@
 [研究说明](projects/002-ink-rain-alley/README.md) · [原始仓库](https://github.com/yydshly/1025_codex_project)
 
 **阶段：** 已总结 · **标签：** Three&#46;js / WebGL / 水墨叙事 / 程序生成 / 交互动画
+
+### 003 · 连续主题体验设计
+
+![连续主题体验设计 项目配图](projects/003-unified-learning-design/assets/images/understanding-atlas.png)
+
+以 Every Joule 为参照独立实现三课三维物理书：翻页、立体器材与能量变化同屏呈现，支持调参实验、预测反馈、MiniMax逐句导览、文字放大和连续阅读。通过共享实验状态联动模型、数值、镜头与讲解，阅读后恢复原上下文。沉淀内容、展示、操作和解释统一设计的方法，供互动教材、原理说明与实验平台复用；扩展布局仍为设想。
+
+[研究说明](projects/003-unified-learning-design/README.md) · [原始仓库](https://github.com/yydshly/1025_codex_project)
+
+**阶段：** 已总结 · **标签：** Three&#46;js / 3D书籍 / 效果复刻 / 交互学习 / 方法论
 
 ### 004 · BaoCut · 能力、原理与效果研究
 

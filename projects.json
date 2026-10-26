@@ -39,6 +39,24 @@
       "createdAt": "2026-10-26"
     },
     {
+      "id": "003",
+      "slug": "unified-learning-design",
+      "name": "连续主题体验设计",
+      "summary": "以 Every Joule 为参照独立实现三课三维物理书：翻页、立体器材与能量变化同屏呈现，支持调参实验、预测反馈、MiniMax逐句导览、文字放大和连续阅读。通过共享实验状态联动模型、数值、镜头与讲解，阅读后恢复原上下文。沉淀内容、展示、操作和解释统一设计的方法，供互动教材、原理说明与实验平台复用；扩展布局仍为设想。",
+      "source": "https://github.com/yydshly/1025_codex_project",
+      "status": "completed",
+      "tags": [
+        "Three.js",
+        "3D书籍",
+        "效果复刻",
+        "交互学习",
+        "方法论"
+      ],
+      "cover": "assets/images/understanding-atlas.png",
+      "demoUrl": "",
+      "createdAt": "2026-10-26"
+    },
+    {
       "id": "004",
       "slug": "baocut-effects-atlas",
       "name": "BaoCut · 能力、原理与效果研究",
