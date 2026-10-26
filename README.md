@@ -16,7 +16,7 @@
 
 | 编号 | 项目 | 简介 / 研究重点 | 阶段 | 演示 |
 | --- | --- | --- | --- | --- |
-| 001 | [早期方向档案](projects/001-early-directions-atlas/README.md) | 我们早期思考与尝试留下的十二个方向：需求与变现、内容获客、轻量产品、价格册、音频局部修改、3D咖啡、共想室、岗位观察、跨设备、论文、艺术短片与AI室友。按候选、方案、原型、阶段作品及停止项保存进展、依据和待验证问题。 | 已总结 | — |
+| 001 | [早期方向档案](projects/001-early-directions-atlas/README.md) | 我们早期思考与尝试留下的十二个方向：需求与变现、内容获客、轻量产品、价格册、音频局部修改、3D咖啡、共想室、岗位观察、跨设备、论文、艺术短片与AI室友。按候选、方案、原型、阶段作品及停止项保存进展、依据和待验证问题。 | 已总结 | [在线访问](<https://yydshly.github.io/1025_codex_project/001-early-directions-atlas/>) |
 
 ## 项目速览
 
@@ -26,7 +26,7 @@
 
 我们早期思考与尝试留下的十二个方向：需求与变现、内容获客、轻量产品、价格册、音频局部修改、3D咖啡、共想室、岗位观察、跨设备、论文、艺术短片与AI室友。按候选、方案、原型、阶段作品及停止项保存进展、依据和待验证问题。
 
-[研究说明](projects/001-early-directions-atlas/README.md) · [原始仓库](https://github.com/yydshly/1025_codex_project)
+[研究说明](projects/001-early-directions-atlas/README.md) · [原始仓库](https://github.com/yydshly/1025_codex_project) · [在线演示](<https://yydshly.github.io/1025_codex_project/001-early-directions-atlas/>)
 
 **阶段：** 已总结 · **标签：** 早期思考 / 遗留方向 / AI产品 / 创作 / 历史回溯
 

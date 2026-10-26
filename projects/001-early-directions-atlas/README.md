@@ -4,7 +4,7 @@
 
 这是我们早期思考、讨论和尝试留下的十二个方向。遗留包含候选、方案与原型、阶段作品，以及研究后主动停止的选择；逐项保存想法、进展与待验证问题，供下一轮取舍参考。
 
-[返回总索引](../../README.md#项目索引) · [网页文件](app/index.html) · [一图总览](assets/images/directions-map-v1.png) · [完整文字快照](research/archive-snapshot.md) · [整理与验证记录](research/notes.md)
+[在线阅读](https://yydshly.github.io/1025_codex_project/001-early-directions-atlas/) · [返回总索引](../../README.md#项目索引) · [网页文件](app/index.html) · [一图总览](assets/images/directions-map-v1.png) · [完整文字快照](research/archive-snapshot.md) · [整理与验证记录](research/notes.md)
 
 ![早期思考与方向地图引导图](assets/images/directions-map-v1.png)
 
@@ -23,7 +23,7 @@
 | 源码位置 | 本研究总库原创子项目，无独立上游代码仓库 |
 | 所属仓库 | https://github.com/yydshly/1025_codex_project |
 | 当前状态 | 档案整理与网页已完成；不代表十二个方向全部完成 |
-| 公开部署 | GitHub Pages / GitHub Actions；上线验收后登记演示地址 |
+| 公开部署 | [GitHub Pages 在线网页](https://yydshly.github.io/1025_codex_project/001-early-directions-atlas/)，2026-10-27 已验证 |
 | 依赖 | 无第三方依赖；可选本地服务需要 Node.js 22+ |
 
 ## 一图理解想法与方向
