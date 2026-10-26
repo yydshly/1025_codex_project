@@ -1,0 +1,15 @@
+{
+  "name": "github-research-hub",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Ordered GitHub project research index and scaffolding tools",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "project:new": "node scripts/projects.mjs new",
+    "index:update": "node scripts/projects.mjs update",
+    "check": "node scripts/projects.mjs check"
+  }
+}

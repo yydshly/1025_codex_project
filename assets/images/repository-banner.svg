@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320" role="img" aria-labelledby="title desc">
+  <title id="title">Repo Study Lab</title>
+  <desc id="desc">An ordered collection of open-source explorations. Read, reproduce, extend, and document.</desc>
+  <defs>
+    <linearGradient id="background" x2="1" y2="1">
+      <stop stop-color="#101d2c"/>
+      <stop offset="1" stop-color="#213b48"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#b3d9d1" stroke-opacity=".06"/>
+    </pattern>
+  </defs>
+  <rect width="1280" height="320" rx="20" fill="url(#background)"/>
+  <rect width="1280" height="320" rx="20" fill="url(#grid)"/>
+  <path d="M58 56H88" stroke="#a8ecd0" stroke-width="4"/>
+  <g font-family="Segoe UI,Arial,sans-serif">
+    <text x="102" y="63" fill="#a8ecd0" font-size="15" letter-spacing="4">OPEN SOURCE EXPLORATIONS</text>
+    <text x="56" y="153" fill="#f4f6ef" font-size="68" font-weight="700" letter-spacing="-2">Repo Study Lab</text>
+    <text x="60" y="209" fill="#b7c9cc" font-size="21" letter-spacing="2">READ / REPRODUCE / EXTEND / DOCUMENT</text>
+    <text x="60" y="277" fill="#8ca9ae" font-size="14" letter-spacing="2">ONE INDEX. MANY EXPLORATIONS.</text>
+    <rect x="925" y="66" width="276" height="188" rx="12" fill="#101d2c" stroke="#5a8b8a" stroke-opacity=".7"/>
+    <text x="951" y="106" fill="#8ca9ae" font-size="13" letter-spacing="3">COLLECTION / ORDERED</text>
+    <text x="948" y="179" fill="#a8ecd0" font-size="58" font-weight="600">001</text>
+    <path d="M1065 161H1103M1095 153L1103 161L1095 169" fill="none" stroke="#8ca9ae" stroke-width="2"/>
+    <text x="1120" y="178" fill="#f4f6ef" font-size="48" font-style="italic">n</text>
+    <text x="952" y="222" fill="#b7c9cc" font-size="14">A place for every discovery.</text>
+  </g>
+</svg>
