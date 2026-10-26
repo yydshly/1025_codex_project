@@ -1,0 +1,60 @@
+# 纸间 · v1.2 视频主体验验证
+
+日期：2026-10-26。当前结果：《雨窗茶寮》AI影片已生成、下载并接入真实播放；有许可的实拍雨窗另作对照，两项实时场景继续保留为练习。旧版检查已归档至 [v1.1](design-qa-v1.1.md) 与 [v1.0](design-qa-v1.0.md)。
+
+## 素材与授权
+
+原创首帧由内置 image_gen 工具生成，实际返回1672×941；原件与网页JPEG均已存入项目。准确提示词见 `research/cinema/tea-keyframe-prompt.txt`，未使用参考视频原画面作为生成输入。
+
+两次任务分别经用户确认：
+
+| 任务 | 模型与确认参数 | 结果与成本 |
+| --- | --- | --- |
+| 1040430 | Seedance2.0，15秒、1080p、16:9、1条、请求环境声；预计360积分 | 服务端failed，未返回视频，错误为“lit返回任务结果失败”；观察到余额前后未变。未将预计值记为实际成本。 |
+| 1040462 | Kling V3，同一首帧与提示词，15秒、1080p、1条、请求环境声；本地估算180积分 | 已completed并返回影片，服务实际返回264积分。本地估算与实际消耗不同，差异原因未确认。 |
+
+随后另行核对的余额净减少为264积分，与服务返回一致，实际消耗已确认。没有把本地估算180积分记为实际成本。
+
+先前本地等待超时后只继续查询相同task，没有自动重新提交或第三次生成。失败历史见 `research/cinema/generation-record-seedance2.json`，当前结果见 `research/cinema/generation-record.json`。下载、媒体验证和本地构建结果也记录在 `research/cinema/follow-status.json`。
+
+## 当前AI成片与接入
+
+本地影片为 `app/media/cinema/rain-window-tea.mp4`，实际元数据：
+
+- 时长15.046秒；1920×1080；24fps；H.264、yuv420p。
+- AAC双声道，44.1kHz；技术检查确认音轨非静音。未完成内容试听或声音质量验收。
+- 影片已通过安全路径检查、ffprobe验证及faststart封装，原始下载另存于 `assets/video/tea-kling-first/`。
+- `cinema.html` 已为ready，播放真实MP4；折叠说明保留“生成后自动接入，待人工观看”的提示。生成记录仍标记 `manual_review=pending`，局部检查不等于整体人工验收完成。
+
+## 本轮已完成的实际检查
+
+- 影院使用原生video，不经过旧Three.js后期。首页主要CTA已改为真实AI影院，实际点击后进入并播放。
+- 浏览器确认影片1920×1080、duration=15.046、muted=true、paused=false；中段真实播放截图为 `assets/images/v1.2/tea-film-playing.png`。
+- 390×844手机检查确认contain模式保留完整画面，截图为 `assets/images/v1.2/tea-film-mobile.png`。未据此声称实体手机长期表现或其他设备均已通过。
+- 查看0、5、10、14秒抽帧，见 `assets/images/v1.2/film-frames/frame-*.jpg` 与 `contact.jpg`。抽帧范围内杯、窗框与远村基本稳定，雨水、茶烟形态和镜头取景确有变化；镜头位移比“极小漂移”的目标明显。
+- 入口更新后的截图为 `assets/images/v1.2/portal-desktop.png`、`portal-full.png`。
+- 子项目 `npm run check`、`npm run build` 已通过；总库 `npm run index:update` 后 `npm run check` 通过，5个项目的编号、目录、配图与索引一致。构建包括影院、实拍对照及原有002演示，没有公网部署。
+
+## 实拍对照片的独立来源
+
+`rain-study.html` 是有许可的实拍对照样片，不能当作《雨窗茶寮》AI影片：
+
+- 视频来自 [Mixkit《Window on a rainy day》](https://mixkit.co/free-stock-video/window-on-a-rainy-day-2846/)，记录采用 [Mixkit Stock Video Free License](https://mixkit.co/license/#videoFree)。源视频无音轨，已裁剪为15秒。
+- 雨声来自 [Shizhao《SV100344.ogg》](https://commons.wikimedia.org/wiki/File:SV100344.ogg#Licensing)，标记为PD-author。音画来自不同来源，经过合成，并非同步现场录音。
+- 实拍页已检查静音自动播放、字幕与进度，证据为 `rain-study-start.png`、`rain-study-playing.png`、`rain-study-caption.png`。这些检查不能替代AI影片的视觉或声音验收。
+
+## 保留机制与历史检查
+
+- pending阶段曾在1280×800、默认约942×870和390×844实际查看；没有MP4时不设置视频地址、不发播放请求，提示为“视频准备中 · 当前为首帧预览”，播放控制禁用。`cinema-pending-desktop.png`／`cinema-pending-mobile.png` 是历史首帧证据，不是当前影片播放证据。
+- 首次生成失败时曾显示“视频生成未成功 · 当前为首帧预览”；该状态已被另行确认并完成的Kling影片替代。
+- 全屏与铺满在首帧阶段已实际操作。不能将这一历史结果写成最终影片全套操作都已复测。
+- 字幕关闭／重看曾修正cue状态残留问题。当前配置4–7秒与9–12秒的短字幕；没有逐项声称最终影片所有字幕、重播和系统偏好组合均已验收。
+
+## 限制与结论
+
+- 已完成的是一幕15.046秒AI氛围影片，不是30秒或更长的完整叙事。源片分析中的30秒脚本仍是后续方案。
+- 不能从几张抽帧和局部播放认定“微风→竹叶→雨线→茶烟”的因果关系全部达标，也不保证全片没有形变或细节问题。
+- AAC音轨存在且非静音，网页默认静音；未进行内容试听，不判断雨声、音乐、风声或整体听感是否符合提示词。
+- 尚未完成实体手机、多浏览器、多设备或长时间发热表现检查。没有宣称完整无障碍合规或性能保证。
+
+当前结论：AI成片交付与本地播放接入已完成，已做有限画面／手机构图检查；完整视觉与音轨人工验收仍待完成。

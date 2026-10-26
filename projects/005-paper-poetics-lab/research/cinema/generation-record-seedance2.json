@@ -1,0 +1,45 @@
+{
+  "status": "failed",
+  "approved": true,
+  "approved_estimated_credits": 360,
+  "actual_credits": null,
+  "task_id": "1040430",
+  "service": "ChatArt",
+  "tool": "chatart-skill/scripts/video_gen.py run",
+  "model": "Seedance 2.0",
+  "task_type": "i2v",
+  "input_mode": "first_last_frames",
+  "first_frame": "app/media/cinema/rain-window-tea.jpg",
+  "first_frame_sha256": "84feb374ca54695d5d8f50eeb3f4d620a79aaab6b9dd550183fc8e3e43020c62",
+  "prompt_file": "research/cinema/tea-video-prompt.txt",
+  "requested": {
+    "duration_seconds": 15,
+    "resolution": 1080,
+    "aspect_ratio": "16:9",
+    "sound": true,
+    "count": 1
+  },
+  "first_frame_creation": {
+    "tool": "built-in image_gen.imagegen",
+    "underlying_model": "not exposed by tool",
+    "seed": "not exposed by tool",
+    "prompt_file": "research/cinema/tea-keyframe-prompt.txt",
+    "dimensions": [
+      1672,
+      941
+    ]
+  },
+  "notes": "One task explicitly approved. No automatic resubmission or second generation authorized.",
+  "recorded_at": "2026-10-26T11:32:46.714233+00:00",
+  "submitted_at": null,
+  "continuation": {
+    "reason": "Initial local polling timed out at 900s while provider still reported working.",
+    "method": "Resume query of the same task 1040430, no resubmission.",
+    "recorded_at": "2026-10-26T11:48:33.899548+00:00"
+  },
+  "final_checked_at": "2026-10-26T12:06:25.926514+00:00",
+  "provider_error": "lit返回任务结果失败",
+  "video_returned": false,
+  "balance_check": "Unchanged before and after the failed task",
+  "observed_net_credit_change": 0
+}

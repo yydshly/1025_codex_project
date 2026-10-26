@@ -1,0 +1,25 @@
+{
+  "scope": "Actual in-app browser; phone size is viewport emulation, not a physical phone. CPU is submission time, not GPU time.",
+  "measurements": [
+    {
+      "surface": "current-window-summer",
+      "text": "LOCAL FRAME INSPECTION\nseasons / SUMMER · A\nViewport 639×871 CSS px\nRender DPR 1.50× · 958×1306 px\nScene target 959×1100 px\nFPS 236.0 · p95 interval 4.3 ms\nCPU render submission avg 0.31 ms\nSamples 472 · rolling 2.00 s / 2.0 s\nCPU timing only · not GPU time"
+    },
+    {
+      "surface": "current-window-summer-final",
+      "text": "LOCAL FRAME INSPECTION\nseasons / SUMMER · A\nViewport 639×871 CSS px\nRender DPR 1.50× · 958×1306 px\nScene target 959×1100 px\nFPS 60.1 · p95 interval 20.8 ms\nCPU render submission avg 0.66 ms\nSamples 121 · rolling 2.01 s / 2.0 s\nCPU timing only · not GPU time"
+    },
+    {
+      "surface": "current-window-winter-final",
+      "text": "LOCAL FRAME INSPECTION\nseasons / WINTER · A\nViewport 639×871 CSS px\nRender DPR 1.50× · 958×1306 px\nScene target 959×1100 px\nFPS 60.1 · p95 interval 20.8 ms\nCPU render submission avg 0.61 ms\nSamples 121 · rolling 2.01 s / 2.0 s\nCPU timing only · not GPU time"
+    },
+    {
+      "surface": "phone-sized-window-winter-final",
+      "text": "LOCAL FRAME INSPECTION\nseasons / WINTER · A\nViewport 390×844 CSS px\nRender DPR 1.00× · 390×844 px\nScene target 390×844 px\nFPS 60.0 · p95 interval 20.7 ms\nCPU render submission avg 0.41 ms\nSamples 121 · rolling 2.02 s / 2.0 s\nCPU timing only · not GPU time"
+    },
+    {
+      "surface": "phone-sized-window-lotus-final",
+      "text": "LOCAL FRAME INSPECTION\nlotus · A\nViewport 390×844 CSS px\nRender DPR 1.00× · 390×844 px\nScene target 390×844 px\nFPS 59.5 · p95 interval 20.8 ms\nCPU render submission avg 0.77 ms\nSamples 120 · rolling 2.02 s / 2.0 s\nCPU timing only · not GPU time"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#eee9da" />
+  <meta name="description" content="一张可点击的纸间研究总览：源效果、氛围与技术原理、五项演示及九章入口、对我们的价值、制作流程与验证边界。" />
+  <link rel="icon" href="data:," />
+  <link rel="stylesheet" href="./map.css" />
+  <title>一图总览 · 纸间研究</title>
+</head>
+<body>
+  <header class="map-toolbar">
+    <div class="map-heading"><a href="./research.html">← 研究回顾</a><h1>纸间研究总览</h1><p>源效果 · 氛围 · 技术 · 实践 · 价值</p></div>
+    <div class="map-actions" role="group" aria-label="总览图阅读与导出">
+      <button type="button" id="map-zoom-out" aria-label="缩小总览图">−</button><output id="map-zoom" aria-live="polite">载入中</output><button type="button" id="map-zoom-in" aria-label="放大总览图">＋</button>
+      <button type="button" id="map-fit-width">适宽</button><button type="button" id="map-fit-all">全图</button><button type="button" id="map-read">100%阅读</button>
+      <button type="button" id="map-save-png">下载PNG</button><button type="button" id="map-save-svg" disabled>下载SVG</button>
+    </div>
+  </header>
+  <main>
+    <div class="map-viewport" id="map-viewport" tabindex="0" role="region" aria-label="可滚动研究总览图。可用顶部按钮放大，拖动空白移动，点击效果卡或章节进入演示。">
+      <div class="map-stage" id="map-stage"><img class="map-fallback" src="./media/research-map.png" width="2400" height="4339" alt="纸间研究总览：原参考的纸墨雨巷、湖景、莲花与墨圈；氛围判断与本地技术；五项实践和九章；我们的价值、流程与验证边界。" /></div>
+    </div>
+    <p id="map-status" class="map-status" role="status">正在载入可点击总览图…</p>
+  </main>
+  <footer class="map-footer"><p>点击图中效果卡或章节进入演示。拖动空白移动，触屏可滑动。</p><div><a href="./research.html#evidence">证据与来源</a><a href="./research.html#findings">阅读文字总结</a><details><summary>效果索引</summary><nav aria-label="总览图的文字效果索引"><a href="./original.html">未完 · 独立重写</a><a href="./theme.html?theme=tea">山间茶息</a><a href="./theme.html?theme=moon">月下花庭</a><a href="./cinema.html">雨窗茶寮 · AI</a><a href="./rain-study.html">雨窗 · 实拍对照</a></nav></details></div></footer>
+  <script type="module" src="./map.js"></script>
+</body>
+</html>

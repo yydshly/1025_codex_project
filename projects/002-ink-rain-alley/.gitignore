@@ -1,0 +1,3 @@
+# Local audio masters; deploy the existing compressed playback asset.
+/assets/audio/paper-home-master.wav
+/assets/audio/paper-home-preview.wav

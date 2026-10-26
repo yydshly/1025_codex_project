@@ -1,0 +1,96 @@
+{
+  "status": "completed",
+  "approved": true,
+  "approved_estimated_credits": 180,
+  "actual_credits": 264.0,
+  "task_id": "1040462",
+  "service": "ChatArt",
+  "tool": "chatart-skill/scripts/video_gen.py run",
+  "model": "Kling V3",
+  "task_type": "i2v",
+  "input_mode": "first_last_frames",
+  "first_frame": "app/media/cinema/rain-window-tea.jpg",
+  "first_frame_sha256": "84feb374ca54695d5d8f50eeb3f4d620a79aaab6b9dd550183fc8e3e43020c62",
+  "prompt_file": "research/cinema/tea-video-prompt.txt",
+  "requested": {
+    "duration_seconds": 15,
+    "resolution": 1080,
+    "aspect_ratio": "16:9",
+    "sound": true,
+    "count": 1
+  },
+  "first_frame_creation": {
+    "tool": "built-in image_gen.imagegen",
+    "underlying_model": "not exposed by tool",
+    "seed": "not exposed by tool",
+    "prompt_file": "research/cinema/tea-keyframe-prompt.txt",
+    "dimensions": [
+      1672,
+      941
+    ]
+  },
+  "notes": "Second single task separately approved after the first provider failure. Same original first frame and prompt. No automatic third task authorized.",
+  "recorded_at": "2026-10-26T12:07:49.947859+00:00",
+  "submitted_at": null,
+  "video_returned": true,
+  "previous_attempt": "generation-record-seedance2.json",
+  "continuation": {
+    "reason": "Initial local polling timed out at 900s while provider still reported working.",
+    "method": "Resume query of the same task 1040462, no resubmission.",
+    "recorded_at": "2026-10-26T12:23:47.580681+00:00"
+  },
+  "completed_at": "2026-10-26T12:56:25.781635+00:00",
+  "media": {
+    "path": "app/media/cinema/rain-window-tea.mp4",
+    "original_download": "assets/video/tea-kling-first/video_20261026205601.mp4",
+    "sha256": "aa442a84805326ec259911518e722a80da06d9a52394228962dd39748055eb47",
+    "duration_seconds": 15.046,
+    "size_bytes": 9972702,
+    "video": {
+      "codec": "h264",
+      "width": 1920,
+      "height": 1080,
+      "pixel_format": "yuv420p",
+      "frame_rate": 24.0
+    },
+    "audio": {
+      "codec": "aac",
+      "channels": 2,
+      "sample_rate": "44100"
+    }
+  },
+  "manual_review": {
+    "status": "visual_samples_and_local_playback_checked",
+    "reviewed_at": "2026-10-26T13:10:41.819850+00:00",
+    "visual_samples_seconds": [
+      0,
+      5,
+      10,
+      14
+    ],
+    "observations": [
+      "Cup, window frame and village remain broadly coherent in sampled frames.",
+      "Rain, steam and framing change across the clip.",
+      "Camera drift is more visible than the original very-small-drift target."
+    ],
+    "local_playback": "Browser confirmed actual AI MP4 playing at the middle of the clip, not a poster.",
+    "audio": "AAC stereo track confirmed non-silent by signal analysis; audio content has not been auditioned.",
+    "limitations": [
+      "Sampled-frame review does not establish every-frame artifact freedom.",
+      "The intended wind-to-bamboo-to-steam causal sequence is not fully verified."
+    ]
+  },
+  "actual_cost": 264.0,
+  "followup": {
+    "task_id": "1040462",
+    "method": "query_only",
+    "local_install": "completed",
+    "local_build": "completed",
+    "manual_review": "pending"
+  },
+  "billing_verification": {
+    "observed_decrease": 264,
+    "service_reported_cost": 264,
+    "estimated_cost": 180
+  }
+}

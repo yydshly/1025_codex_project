@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "prepared_date": "2026-10-26",
+  "purpose": "005研究回顾页的真实既有截图缩略图；只做技术缩放、JPEG转码或原样复制。",
+  "outputs": [
+    {
+      "output": "app/media/research/tea.jpg",
+      "source_project_relative_path": "assets/images/v1.1/tea-production.png",
+      "source_version": "005 v1.1.0",
+      "media_kind": "browser_screenshot",
+      "description": "山间茶息实时练习的生产页面，注水阶段；保留原始浏览器画面构图。",
+      "source_dimensions": [
+        1280,
+        800
+      ],
+      "output_dimensions": [
+        960,
+        600
+      ],
+      "operation": {
+        "type": "proportional_resize_and_jpeg_encode",
+        "crop": false,
+        "visual_generation": false,
+        "maximum_width": 960,
+        "jpeg_quality": 85,
+        "resampler": "Pillow Image.Resampling.LANCZOS",
+        "upscaled": false
+      },
+      "source_sha256": "e00667c846a4e58759f53a122eca368af7ed8eaff8ed6e7d832967edd6eb764d",
+      "output_sha256": "cc88256280a4ccf53f72bc23b4b1d90683cb6dc16e6e300bf50d795ab3dffd3f"
+    },
+    {
+      "output": "app/media/research/moon.jpg",
+      "source_project_relative_path": "assets/images/v1.1/moon-production.png",
+      "source_version": "005 v1.1.0",
+      "media_kind": "browser_screenshot",
+      "description": "月下花庭实时练习的生产页面，随光阶段；保留原始浏览器画面构图。",
+      "source_dimensions": [
+        1280,
+        800
+      ],
+      "output_dimensions": [
+        960,
+        600
+      ],
+      "operation": {
+        "type": "proportional_resize_and_jpeg_encode",
+        "crop": false,
+        "visual_generation": false,
+        "maximum_width": 960,
+        "jpeg_quality": 85,
+        "resampler": "Pillow Image.Resampling.LANCZOS",
+        "upscaled": false
+      },
+      "source_sha256": "7bcb5f9fbf41f789bf51ba766111954352774977c24352451ca413afcc455e87",
+      "output_sha256": "21cae952d547d99552685e433033988c74a27f2e7dd6c0f4fd5698c7f39ca6f8"
+    },
+    {
+      "output": "app/media/research/original.jpg",
+      "source_project_relative_path": "app/media/original.jpg",
+      "source_version": "002 v2.2.0 既有演示预览（005 入口沿用）",
+      "media_kind": "existing_demo_preview",
+      "description": "复制005入口已有的002封面预览；不是Bee原视频截帧，也不是005新主题。",
+      "source_dimensions": [
+        1200,
+        675
+      ],
+      "output_dimensions": [
+        1200,
+        675
+      ],
+      "operation": {
+        "type": "byte_for_byte_copy",
+        "crop": false,
+        "visual_generation": false
+      },
+      "source_sha256": "0834b1f611ef99d525e3b3fd4183215ab7c1f22e7c93d00da0fafb41d50673f5",
+      "output_sha256": "0834b1f611ef99d525e3b3fd4183215ab7c1f22e7c93d00da0fafb41d50673f5",
+      "version_evidence": "005 README.md 的“来源与版本”将既有演示记为002 v2.2.0；本次只复制既有JPEG，没有重新截图或补造捕获时间。"
+    },
+    {
+      "output": "app/media/research/tea-first.jpg",
+      "source_project_relative_path": "assets/images/v1-baseline/tea-1280.png",
+      "source_version": "005 v1.0.0 baseline",
+      "media_kind": "browser_screenshot",
+      "description": "初版山间茶息的1280×800浏览器截图，注水阶段；纸底、平面茶席式构图。",
+      "source_dimensions": [
+        1280,
+        800
+      ],
+      "output_dimensions": [
+        960,
+        600
+      ],
+      "operation": {
+        "type": "proportional_resize_and_jpeg_encode",
+        "crop": false,
+        "visual_generation": false,
+        "maximum_width": 960,
+        "jpeg_quality": 85,
+        "resampler": "Pillow Image.Resampling.LANCZOS",
+        "upscaled": false
+      },
+      "source_sha256": "5bce6ec3e6001f69f97a31d1c3531b7f9f9daaa5626065f6cae139bb6853494f",
+      "output_sha256": "2a3c44e130aefef5c688f719057a80c5c855e8998f42f4923becc983665a8632"
+    }
+  ],
+  "existing_media_not_copied": [
+    {
+      "path": "app/media/cinema/rain-window-tea.jpg",
+      "kind": "AI生成首帧，沿用已有文件；不是实际视频抽帧。"
+    },
+    {
+      "path": "app/media/cinema/rain-window-study.jpg",
+      "kind": "有许可实拍对照片的既有配图，沿用已有文件。"
+    }
+  ],
+  "boundaries": [
+    "版本按既有归档目录和项目记录标注，不把静态截图当作运动或音轨验证。",
+    "v1.0与v1.1均为程序实时练习的浏览器截图，不是实拍或AI影片。",
+    "original.jpg对应项目002的独立重写演示，不是原作者视频或源码。",
+    "未更改来源文件；未生成、补绘、裁切、拼接或添加文字。"
+  ]
+}

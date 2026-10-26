@@ -5,6 +5,8 @@ on:
     branches: [main]
     paths:
       - 'projects/001-early-directions-atlas/**'
+      - 'projects/002-ink-rain-alley/**'
+      - 'projects/005-paper-poetics-lab/**'
       - 'projects/004-baocut-effects-atlas/**'
       - 'projects.json'
       - 'pages.config.json'
@@ -31,17 +33,29 @@ jobs:
       - uses: actions/setup-node@v6
         with:
           node-version: '22'
+          cache: npm
+          cache-dependency-path: |
+            projects/002-ink-rain-alley/package-lock.json
+            projects/005-paper-poetics-lab/package-lock.json
+      - name: Install storytelling project dependencies
+        run: |
+          npm --prefix projects/002-ink-rain-alley ci
+          npm --prefix projects/005-paper-poetics-lab ci
       - name: Check registry and publication boundary
         run: |
           npm run check
           npm run check:pages
           npm --prefix projects/001-early-directions-atlas run check
+          npm --prefix projects/002-ink-rain-alley run check
+          npm --prefix projects/005-paper-poetics-lab run check
       - name: Prepare BaoCut research page and public media
         run: npm --prefix projects/004-baocut-effects-atlas run build:site
       - name: Prepare GitHub Pages
         uses: actions/configure-pages@v5
       - name: Build selected public files
-        run: npm run build:pages
+        run: |
+          npm --prefix projects/005-paper-poetics-lab run build
+          npm run build:pages
       - name: Upload static site
         uses: actions/upload-pages-artifact@v4
         with:

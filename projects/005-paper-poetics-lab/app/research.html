@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#eee9da" />
+  <meta name="description" content="纸间研究回顾：从纸墨叙事重写、两项 Three.js 场景练习到雨窗茶寮 AI 样片，整理实际效果、制作分工、已验证结论与剩余问题。" />
+  <link rel="icon" href="data:," />
+  <link rel="stylesheet" href="./research.css" />
+  <title>研究回顾 · 从效果，到氛围 — 纸间</title>
+</head>
+<body class="research-page" id="top">
+  <a class="skip-link" href="#effects">跳到效果对照</a>
+  <header class="research-header research-width">
+    <a class="wordmark" href="./index.html"><span>纸间</span><small>PAPER POETICS</small></a>
+    <nav aria-label="研究回顾导航"><a href="./map.html">总览图</a><a href="#effects">效果</a><a href="#journey">过程</a><a href="#findings">理解</a><a href="#evidence">依据</a></nav>
+  </header>
+  <main>
+    <section class="research-hero research-width" aria-labelledby="research-title">
+      <div class="research-intro">
+        <p class="eyebrow">RESEARCH NOTES / 2026.10.26</p>
+        <h1 id="research-title">从效果，<br />到氛围。</h1>
+        <p class="research-lead">一段画面，为什么让人愿意停留？</p>
+        <p class="research-description">从纸张、雨巷和墨迹边框出发，经过两项实时场景练习，我们把关注点慢慢移向空间、事件、停顿与声音。这一页，把做过的效果与学到的方法放在一起。</p>
+        <a class="research-text-link" href="#effects">沿着效果，回看研究 <span aria-hidden="true">↓</span></a>
+        <p class="research-state">当前阶段：一幕样片已接入，制作方法仍在验证。</p>
+      </div>
+      <figure class="research-film">
+        <div class="research-film-top"><span>当前样片 / 雨窗茶寮</span><span>01 FILM</span></div>
+        <div class="research-film-stage">
+          <img id="research-poster" src="./media/cinema/rain-window-tea.jpg" width="1672" height="941" alt="原创雨窗茶寮首帧：暖灯茶席、窗外的雨村和青蓝远山" fetchpriority="high" />
+          <video id="research-video" data-src="./media/cinema/rain-window-tea.mp4" controls muted playsinline preload="none" poster="./media/cinema/rain-window-tea.jpg" aria-label="雨窗茶寮 AI 样片，约15秒" hidden></video>
+          <button class="research-film-start" id="research-play" type="button"><span aria-hidden="true">▷</span> 播放15秒样片</button>
+        </div>
+        <figcaption><p id="research-video-status" role="status">原创首帧 → Kling V3 成片。主动播放，默认静音。</p><a href="./cinema.html">进入完整观看页 ↗</a></figcaption>
+      </figure>
+    </section>
+
+    <section class="overview-link research-width" aria-labelledby="overview-link-title"><div><p class="eyebrow">ONE MAP / 一图总览</p><h2 id="overview-link-title">氛围与技术，<br />可以一起参考。</h2><p>从原参考的可见效果，到氛围理解、本地实现、五项实践与我们的价值。图中的效果卡和九章入口可以直接进入演示，也可下载全图。</p><a class="button-link" href="./map.html">打开可交互总览图 <span aria-hidden="true">↗</span></a></div><a class="overview-thumb" href="./map.html" aria-label="放大阅读完整研究总览图"><img src="./media/research-map-preview.jpg" width="720" height="1302" loading="lazy" alt="研究总览全图缩略预览，包含源效果、氛围技术对应、五项实践、价值和流程" /><span>放大阅读全图 ↗</span></a></section>
+
+    <section class="source-observation research-width" aria-labelledby="source-title">
+      <div class="research-section-head"><div><p class="eyebrow">00 / THE STARTING POINT</p><h2 id="source-title">先看见原作里，<br />真正发生的变化。</h2></div><p>依据原演示录屏的连续抽帧，得到以下观察。录屏中的具体实现方式与隐藏能力，仍无法确认。</p></div>
+      <div class="observation-grid">
+        <article><span>画幅</span><h3>纸面 → 窗口 → 环境 → 留白</h3><p>纸上雨巷转为拍立得，后续森林与湖景展开为满屏环境，章节之间也会留出空处。观看距离本身参与了叙事。</p></article>
+        <article><span>运动</span><h3>不同距离，有不同的速度。</h3><p>近处草叶、水面、薄雾与远山承担不同的变化。许多段落中，场景内部的活动比镜头移动更突出。</p></article>
+        <article><span>时间</span><h3>文字有进退，事件有余留。</h3><p>短句分批出现、退出；莲花之后留白，墨圈随后逐步画出。停顿给下一件事留出了位置。</p></article>
+      </div>
+      <p class="research-source-line">参考来源：<a href="https://x.com/thtbee_/status/2114030630887641448" target="_blank" rel="noopener noreferrer">Bee 的原始演示录屏 ↗</a><a href="https://x.com/laopai1990/status/2114146772155294099" target="_blank" rel="noopener noreferrer">最初提供的转述帖 ↗</a><span>未取得原作源码；下方《未完》是我们的独立重写。</span></p>
+    </section>
+
+    <section class="effects-section research-width" id="effects" aria-labelledby="effects-title">
+      <div class="research-section-head"><div><p class="eyebrow">01 / WHAT WE MADE</p><h2 id="effects-title">把效果放在一起看。</h2></div><p>截图来自各版实际页面；AI 样片使用原创首帧作封面。每项都保留可进入的演示，并写明观察与局限。</p></div>
+      <div class="study-tools"><div class="study-filters" role="group" aria-label="筛选研究效果"><button type="button" data-filter="all" aria-pressed="true">全部效果</button><button type="button" data-filter="realtime" aria-pressed="false">实时交互</button><button type="button" data-filter="film" aria-pressed="false">影片与实拍</button></div><p id="study-count" role="status" aria-live="polite">5项记录</p></div>
+      <div class="study-grid" id="study-grid"></div>
+      <noscript><p>效果索引需要 JavaScript。可直接打开 <a href="./original.html">水墨重写</a>、<a href="./theme.html?theme=tea">山间茶息</a>、<a href="./theme.html?theme=moon">月下花庭</a>、<a href="./cinema.html">AI 样片</a>与<a href="./rain-study.html">实拍对照</a>。</p></noscript>
+    </section>
+
+    <section class="journey-section" id="journey" aria-labelledby="journey-title"><div class="research-width">
+      <div class="research-section-head"><div><p class="eyebrow">02 / HOW THE QUESTION CHANGED</p><h2 id="journey-title">四轮探索，<br />问题逐渐清楚。</h2></div><p>保留每次尝试的价值，也记录它没有解决的部分。功能可用与画面动人，需要分别判断。</p></div>
+      <ol class="research-timeline" id="research-timeline"></ol>
+      <div class="iteration-comparison">
+        <figure><img id="tea-first-image" width="960" height="600" loading="lazy" alt="山间茶息 v1.0 的真实页面截图：纸色背景上的简化茶器" /><figcaption><span>v1.0 / 初版实时练习</span><p>有了主体和操作，空间与变化仍显单薄。</p></figcaption></figure>
+        <figure><img id="tea-space-image" width="960" height="600" loading="lazy" alt="山间茶息 v1.1 的真实页面截图：加入窗景、茶台和前后空间" /><figcaption><span>v1.1 / 加入空间关系</span><p>构图和体积有所推进，连续事件仍需加强。</p></figcaption></figure>
+      </div>
+      <p class="research-footnote">两张为不同版本的实际页面，展示方向变化；不代表同机位或逐像素比较。</p>
+    </div></section>
+
+    <section class="findings-section research-width" id="findings" aria-labelledby="findings-title">
+      <div class="research-section-head"><div><p class="eyebrow">03 / WHAT WE TAKE FORWARD</p><h2 id="findings-title">研究留下的，<br />是判断与制作的方法。</h2></div><p>以下是这一轮形成的研究判断。它们需要在后续作品中继续检验，还不能称为成熟的风格系统。</p></div>
+      <div class="findings-grid" id="findings-grid"></div>
+      <div class="division-note"><p class="eyebrow">一条更清楚的制作分工</p><div><p><strong>视频</strong><span>承载连续环境与时间细节</span></p><span class="division-plus" aria-hidden="true">＋</span><p><strong>网页</strong><span>组织进入、停留、切换与声音</span></p><span class="division-plus" aria-hidden="true">＋</span><p><strong>实时场景</strong><span>承接需要回应操作的部分</span></p></div><p class="research-footnote">目前已分别验证这些载体的局部能力，尚未完成三者融合的完整叙事。</p></div>
+      <div class="extension-note"><h3>扩展一个主题时，先写清四件事。</h3><ol><li><span>感受</span>希望观众感到什么？用一句具体的话说明。</li><li><span>事件</span>什么发生了，留下什么变化？</li><li><span>载体</span>哪些需要影片，哪些需要实时回应？</li><li><span>判断</span>拿什么画面与观看反馈检验结果？</li></ol></div>
+    </section>
+
+    <section class="evidence-section" id="evidence" aria-labelledby="evidence-title"><div class="research-width">
+      <div class="research-section-head"><div><p class="eyebrow">04 / EVIDENCE &amp; LIMITS</p><h2 id="evidence-title">已经知道什么，<br />还需要确认什么。</h2></div><p>生成成功、浏览器能播与作品达到预期，是不同层面的结果。当前样片的检查范围如下。</p></div>
+      <div class="evidence-table-wrap" tabindex="0" role="region" aria-label="样片验证范围，可横向滚动"><table class="evidence-table"><caption class="sr-only">雨窗茶寮已验证的事实与尚未确认的部分</caption><thead><tr><th scope="col">观察项目</th><th scope="col">已有依据</th><th scope="col">仍有边界</th></tr></thead><tbody>
+        <tr><th scope="row">连续画面</th><td>查看0、5、10、14秒抽帧；雨水、茶烟与取景有变化。</td><td>抽帧不等于逐帧验收，完整的微风因果链尚未确认。</td></tr>
+        <tr><th scope="row">实际播放</th><td>本地浏览器已播放真实 MP4；15.046秒、1920×1080、24fps。</td><td>未完成多浏览器、实体手机与长期性能验证。</td></tr>
+        <tr><th scope="row">声音</th><td>影片含非静音 AAC 音轨，网页默认静音，可主动开启。</td><td>尚未试听，不能确认雨声、风声及情绪是否符合意图。</td></tr>
+        <tr><th scope="row">移动画幅</th><td>390×844窗口中，默认保留完整16:9画面。</td><td>竖屏会留黑边；铺满模式会裁切边缘。</td></tr>
+        <tr><th scope="row">风格统一</th><td>已有纸墨重写、实时茶庭与写实雨窗三种探索。</td><td>写实电影感与纸墨语言尚未统一，不能宣称原作1:1复刻。</td></tr>
+      </tbody></table></div>
+      <p class="research-footnote">窄屏可左右滑动，查看完整对照。</p>
+      <details class="research-details"><summary>查看样片制作记录与实际成本 <span aria-hidden="true">＋</span></summary><div class="research-details-body"><p>原创首帧由内置图像生成工具创建，再作为图生视频输入。两次视频任务分别获得确认，失败后没有自动追加新任务。</p><dl class="generation-record"><div><dt>Seedance 2.0</dt><dd>预估360积分；任务失败，未取得视频。观察到余额前后未变。</dd></div><div><dt>Kling V3</dt><dd>预估180积分；返回一条15.046秒影片。实际消耗264积分，已由服务结果与余额变化核对；差异原因尚未确认。</dd></div></dl><p>当前网页播放本地素材，观看时不会调用生成服务。30秒扩展脚本仍是储备方案，并未生成或实现。</p></div></details>
+      <details class="research-details"><summary>查看15秒镜头的创作意图 <span aria-hidden="true">＋</span></summary><div class="research-details-body"><p>这是提交前的目标，不能替代对实际成片的判断。</p><ol class="shot-intent"><li><span>0–4秒</span>先让环境呼吸：近处滴水、远处河面灯影，杯与室内保持稳定。</li><li><span>4–9秒</span>一次轻微风动，让竹叶、雨线与茶烟相继回应。</li><li><span>9–15秒</span>风渐平息，注意力留在近处温茶，末段安静停留。</li></ol><p>抽帧中镜头位移比预期更明显；“微风带来连续后果”的目标仍需完整观看与听感确认。</p></div></details>
+      <details class="research-details"><summary>查看参考与素材出处 <span aria-hidden="true">＋</span></summary><div class="research-details-body source-links"><p>原参考：<a href="https://x.com/thtbee_/status/2114030630887641448" target="_blank" rel="noopener noreferrer">Bee 原始录屏 ↗</a>。仅据可见画面研究，未取得原作源码；独立重写未使用原视频作为网页播放素材。</p><p>AI 茶寮：本次原创首帧与 Kling V3 成片；影片声音来自生成文件。实时练习的程序配乐复用项目002原创《纸上归途》，未混入 AI 影院。</p><p>实拍对照：<a href="https://mixkit.co/free-stock-video/window-on-a-rainy-day-2846/" target="_blank" rel="noopener noreferrer">Mixkit《Window on a rainy day》 ↗</a>，采用 <a href="https://mixkit.co/license/#videoFree" target="_blank" rel="noopener noreferrer">Stock Video Free License ↗</a>。雨声另取自 Shizhao 的 <a href="https://commons.wikimedia.org/wiki/File:SV100344.ogg#Licensing" target="_blank" rel="noopener noreferrer">SV100344.ogg，PD-author ↗</a>，经剪辑合成，不是同步现场录音。</p></div></details>
+    </div></section>
+
+    <section class="next-section research-width" aria-labelledby="next-title"><div class="research-section-head"><div><p class="eyebrow">05 / THE NEXT QUESTIONS</p><h2 id="next-title">下一幕，<br />用这些问题检验。</h2></div><p>先把现有样片看清，再用相同规则制作与比较下一幕。以下是待验证的问题，不是已完成的能力。</p></div><ol class="next-questions" id="next-questions"></ol><div class="research-ending"><p>让一个场景成立，<br />再让一种风格延续。</p><a class="button-link" href="./cinema.html">回到雨窗茶寮 <span aria-hidden="true">↗</span></a></div></section>
+  </main>
+  <footer class="research-footer research-width"><a href="./index.html">← 返回纸间入口</a><p>本地研究整理 · 项目005 · v1.4.0</p><a href="#top">回到页首 ↑</a></footer>
+  <script type="module" src="./research.js"></script>
+</body>
+</html>

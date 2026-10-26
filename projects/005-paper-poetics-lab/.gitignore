@@ -1,0 +1,12 @@
+# Private publication backups and local operational records.
+/.local-private/
+
+# Raw production sources and one-off following tools; runtime MP4/OGG remain public.
+/assets/video/tea-kling-first/video_20261026205601.mp4
+/assets/video/rain-study/mixkit-2846-original-720.mp4
+/assets/video/rain-study/shizhao-rain-original.ogg
+/app/media/cinema/rain-window-tea-master.png
+/tools/follow-video-task.py
+**/follow-console*.log
+**/follow-errors*.log
+**/follow-status*.log

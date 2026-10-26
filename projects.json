@@ -21,6 +21,24 @@
       "createdAt": "2026-10-26"
     },
     {
+      "id": "002",
+      "slug": "ink-rain-alley",
+      "name": "未完 · 水墨叙事",
+      "summary": "依据Bee录屏独立重写纸墨九章叙事：雨巷、拼贴、森林、四季湖景、莲花与墨圈，以滚动、画幅变化和自然微动组织观看。沉淀场景进度、遮罩与声音实现；未取得原作源码，视觉仍有差异。",
+      "source": "https://github.com/yydshly/1025_codex_project",
+      "status": "completed",
+      "tags": [
+        "Three.js",
+        "WebGL",
+        "水墨叙事",
+        "程序生成",
+        "交互动画"
+      ],
+      "cover": "assets/images/cover.jpg",
+      "demoUrl": "",
+      "createdAt": "2026-10-26"
+    },
+    {
       "id": "004",
       "slug": "baocut-effects-atlas",
       "name": "BaoCut · 能力、原理与效果研究",
@@ -35,6 +53,24 @@
         "工作流研究"
       ],
       "cover": "assets/images/capability-map.png",
+      "demoUrl": "",
+      "createdAt": "2026-10-26"
+    },
+    {
+      "id": "005",
+      "slug": "paper-poetics-lab",
+      "name": "纸间 · 诗性风格实验室",
+      "summary": "原参考以纸墨、画幅转换和自然微事件串起多场景诗性叙事。本研究用独立重写、实时茶庭与AI雨窗样片，沉淀氛围组织、载体选型和可复用工程方法；可扩展声画事件、纸墨与写实融合及文化展陈入口，仍需验证。",
+      "source": "https://github.com/yydshly/1025_codex_project",
+      "status": "researching",
+      "tags": [
+        "视频氛围",
+        "AI视频",
+        "Three.js",
+        "风格研究",
+        "交互叙事"
+      ],
+      "cover": "assets/images/v1.4/research-map.png",
       "demoUrl": "",
       "createdAt": "2026-10-26"
     },

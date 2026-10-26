@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0b1013" />
+  <meta name="description" content="雨窗 · 实拍对照：雨滴沿玻璃滑落，窗外交通灯虚焦。十五秒实拍画面与另源雨声音频的合成对照样片。" />
+  <link rel="icon" href="data:," />
+  <link rel="stylesheet" href="./cinema.css" />
+  <title>雨窗 · 实拍对照 · 纸间</title>
+</head>
+<body>
+  <main id="cinema-shell" class="cinema-shell" data-chrome="visible" data-state="loading" data-fit="contain" aria-label="雨窗，实拍对照样片">
+    <div id="cinema-stage" class="cinema-stage">
+      <video id="cinema-video" class="cinema-video" data-status="ready" data-cues="rain-study" data-src="./media/cinema/rain-window-study.mp4" poster="./media/cinema/rain-window-study.jpg" muted playsinline preload="metadata" aria-hidden="true" aria-label="实拍雨窗：雨滴沿玻璃缓缓滑落，窗外交通灯虚焦。"></video>
+      <img id="cinema-poster" class="cinema-poster" src="./media/cinema/rain-window-study.jpg" width="1280" height="720" alt="实拍雨窗的静帧：雨滴沿玻璃滑落，窗外交通灯虚焦，形成柔和的光斑。" />
+    </div>
+
+    <header class="cinema-header">
+      <nav aria-label="影片导航"><a href="./index.html">返回纸间</a><a href="./research.html">研究回顾</a></nav>
+      <h1>雨窗 · 实拍对照</h1>
+    </header>
+
+    <p id="cinema-caption" class="cinema-caption" aria-live="off"></p>
+    <div id="cinema-message" class="cinema-message" role="status" aria-live="polite"><p id="cinema-status">正在载入影片…</p><button id="cinema-start" type="button" hidden>播放影片</button></div>
+
+    <footer class="cinema-controls" aria-label="影片操作">
+      <div class="cinema-transport">
+        <div class="cinema-main-buttons">
+          <button id="cinema-play" type="button" aria-label="播放影片" disabled>播放</button>
+          <button id="cinema-replay" type="button" aria-label="从头重看影片" disabled>重看</button>
+          <button id="cinema-sound" type="button" aria-pressed="false" aria-label="开启影片声音" disabled>声音 关</button>
+        </div>
+        <div class="cinema-view-buttons">
+          <button id="cinema-fill" type="button" aria-pressed="false" title="铺满会裁切画面边缘">铺满</button>
+          <button id="cinema-fullscreen" type="button" aria-pressed="false">全屏</button>
+        </div>
+      </div>
+      <label class="cinema-progress-label" for="cinema-progress"><span class="sr-only">影片进度</span><input id="cinema-progress" type="range" min="0" max="1000" value="0" step="1" disabled aria-label="影片进度" /><output id="cinema-time" for="cinema-progress">00:00 / —:—</output></label>
+    </footer>
+
+    <details id="cinema-notes" class="cinema-notes">
+      <summary>创作说明</summary>
+      <div class="cinema-note-panel">
+        <p>这是一段十五秒的实拍氛围对照样片：雨滴沿玻璃滑落，窗外灯光保持虚焦。短字幕由网页随播放时间叠加。</p>
+        <p>视频：<a href="https://mixkit.co/free-stock-video/window-on-a-rainy-day-2846/" target="_blank" rel="noopener noreferrer">Mixkit《Window on a rainy day》↗</a>，依据 <a href="https://mixkit.co/license/#videoFree" target="_blank" rel="noopener noreferrer">Mixkit Stock Video Free License ↗</a> 使用并裁剪。</p>
+        <p>音频：<a href="https://commons.wikimedia.org/wiki/File:SV100344.ogg#Licensing" target="_blank" rel="noopener noreferrer">Shizhao《SV100344.ogg》↗</a>，授权标记为 PD-author。视频与雨声来自不同来源，经过音画合成，并非同步录制的现场声音。</p>
+        <p>本页用于观察实拍运动与声音形成的氛围。原创 AI 雨窗茶寮是另一项制作，<a href="./cinema.html">可在这里查看其当前状态 ↗</a>。</p>
+        <button id="cinema-captions-toggle" type="button" aria-pressed="true">字幕 开</button>
+      </div>
+    </details>
+    <p id="cinema-announcement" class="sr-only" aria-live="polite" aria-atomic="true"></p>
+  </main>
+  <script type="module" src="./cinema.js"></script>
+</body>
+</html>

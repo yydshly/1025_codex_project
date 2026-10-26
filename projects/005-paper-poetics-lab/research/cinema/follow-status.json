@@ -1,0 +1,29 @@
+{
+  "task_id": "1040462",
+  "max_wait_seconds": 7200,
+  "recorded_at": "2026-10-26T12:56:27.254357+00:00",
+  "status": "completed",
+  "phase": "local_build_completed",
+  "media_path": "app/media/cinema/rain-window-tea.mp4",
+  "media": {
+    "path": "app/media/cinema/rain-window-tea.mp4",
+    "original_download": "assets/video/tea-kling-first/video_20261026205601.mp4",
+    "sha256": "aa442a84805326ec259911518e722a80da06d9a52394228962dd39748055eb47",
+    "duration_seconds": 15.046,
+    "size_bytes": 9972702,
+    "video": {
+      "codec": "h264",
+      "width": 1920,
+      "height": 1080,
+      "pixel_format": "yuv420p",
+      "frame_rate": 24.0
+    },
+    "audio": {
+      "codec": "aac",
+      "channels": 2,
+      "sample_rate": "44100"
+    }
+  },
+  "actual_cost": 264.0,
+  "manual_review": "pending"
+}

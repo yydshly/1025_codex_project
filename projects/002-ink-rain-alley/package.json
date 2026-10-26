@@ -1,0 +1,24 @@
+{
+  "name": "ink-rain-alley",
+  "version": "2.2.0",
+  "private": true,
+  "type": "module",
+  "description": "A procedural Three.js paper-and-ink story with adaptive ambience and an original ambient score",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "scripts": {
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 4174 --strictPort",
+    "check": "node --check app/main.js && node --check app/scene.js && node --check app/shaders.js && node --check app/paper.js && node --check app/botanicals.js && node --check app/landscape.js && node --check app/story-scenes.js && node --check app/story-data.js && node --check app/compositor.js && node --check app/audio.js && node --check app/frame-stats.js && node --check vite.config.js"
+  },
+  "dependencies": {
+    "@fontsource/cormorant-garamond": "5.3.0",
+    "three": "0.186.1"
+  },
+  "devDependencies": {
+    "vite": "8.3.5"
+  }
+}

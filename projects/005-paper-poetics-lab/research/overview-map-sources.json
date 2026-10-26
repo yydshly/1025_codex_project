@@ -1,0 +1,72 @@
+{
+  "width": 2400,
+  "height": 4339,
+  "source_record": "research/overview-map-content.json",
+  "renderer": "resvg-py",
+  "new_ai_generation": false,
+  "sources": [
+    {
+      "output": "app/media/map/effect-original.jpg",
+      "source": "app/media/research/original.jpg",
+      "operation": "proportional thumbnail, no visual generation",
+      "sha256": "d4ba14dc5e7f0745c36e0db8a5dcf79619f5eef26564107b58421e7840dc271d"
+    },
+    {
+      "output": "app/media/map/effect-tea.jpg",
+      "source": "app/media/research/tea.jpg",
+      "operation": "proportional thumbnail, no visual generation",
+      "sha256": "e724e73c047df20a4be86fd2cf38903a74d2cb85dd55bc9f4d4ef5a29562342c"
+    },
+    {
+      "output": "app/media/map/effect-moon.jpg",
+      "source": "app/media/research/moon.jpg",
+      "operation": "proportional thumbnail, no visual generation",
+      "sha256": "38eed75b926764e994ca8c7add123b875f93633f96ca3f2e5cb22d5cfa46cde1"
+    },
+    {
+      "output": "app/media/map/effect-cinema.jpg",
+      "source": "app/media/cinema/rain-window-tea.jpg",
+      "operation": "proportional thumbnail, no visual generation",
+      "sha256": "9830331c5dc447f4ea81950d8113c6f822cfbaa9d99791de301b3cfbce7bc2b1"
+    },
+    {
+      "output": "app/media/map/effect-study.jpg",
+      "source": "app/media/cinema/rain-window-study.jpg",
+      "operation": "proportional thumbnail, no visual generation",
+      "sha256": "c152d592127d0695c0c4908abf4aa186d6b71ba81c6952805caf95cc451d185b"
+    },
+    {
+      "output": "app/media/map/source-rain.jpg",
+      "source": "cached original demonstration recording",
+      "seconds": 1.8,
+      "attribution": "Bee / thtbee_",
+      "source_url": "https://x.com/thtbee_/status/2114030630887641448",
+      "operation": "single-frame extract with ffmpeg, scaled to 480px wide"
+    },
+    {
+      "output": "app/media/map/source-landscape.jpg",
+      "source": "cached original demonstration recording",
+      "seconds": 15.2,
+      "attribution": "Bee / thtbee_",
+      "source_url": "https://x.com/thtbee_/status/2114030630887641448",
+      "operation": "single-frame extract with ffmpeg, scaled to 480px wide"
+    },
+    {
+      "output": "app/media/map/source-lotus.jpg",
+      "source": "cached original demonstration recording",
+      "seconds": 21.4,
+      "attribution": "Bee / thtbee_",
+      "source_url": "https://x.com/thtbee_/status/2114030630887641448",
+      "operation": "single-frame extract with ffmpeg, scaled to 480px wide"
+    },
+    {
+      "output": "app/media/map/source-enso.jpg",
+      "source": "cached original demonstration recording",
+      "seconds": 24.0,
+      "attribution": "Bee / thtbee_",
+      "source_url": "https://x.com/thtbee_/status/2114030630887641448",
+      "operation": "single-frame extract with ffmpeg, scaled to 480px wide"
+    }
+  ],
+  "original_recording": "https://x.com/thtbee_/status/2114030630887641448"
+}

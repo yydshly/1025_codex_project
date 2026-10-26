@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0b1013" />
+  <meta name="description" content="雨窗茶寮：檐雨、远村和一盏温茶。一段连续镜头，配以轻量网页字幕与影片自身的声音。" />
+  <link rel="icon" href="data:," />
+  <link rel="stylesheet" href="./cinema.css" />
+  <title>雨窗茶寮 · 纸间</title>
+</head>
+<body>
+  <main id="cinema-shell" class="cinema-shell" data-chrome="visible" data-state="loading" data-fit="contain" aria-label="雨窗茶寮，单幕影片">
+    <div id="cinema-stage" class="cinema-stage">
+      <video id="cinema-video" class="cinema-video" data-status="ready" data-src="./media/cinema/rain-window-tea.mp4" poster="./media/cinema/rain-window-tea.jpg" muted playsinline preload="metadata" aria-hidden="true" aria-label="雨窗茶寮：从暖灯窗内望向雨中的村落，近处有一盏热茶。"></video>
+      <img id="cinema-poster" class="cinema-poster" src="./media/cinema/rain-window-tea.jpg" width="1672" height="941" alt="首帧预览：蓝调雨村和远山映在窗外，暖灯照着木桌，右下角是一盏冒着热气的茶。" />
+    </div>
+
+    <header class="cinema-header">
+      <nav aria-label="影片导航"><a href="./index.html">返回纸间</a><a href="./research.html">研究回顾</a></nav>
+      <h1>雨窗茶寮</h1>
+    </header>
+
+    <p id="cinema-caption" class="cinema-caption" aria-live="off"></p>
+    <div id="cinema-message" class="cinema-message" role="status" aria-live="polite"><p id="cinema-status">正在载入影片…</p><button id="cinema-start" type="button" hidden>播放影片</button></div>
+
+    <footer class="cinema-controls" aria-label="影片操作">
+      <div class="cinema-transport">
+        <div class="cinema-main-buttons">
+          <button id="cinema-play" type="button" aria-label="播放影片" disabled>播放</button>
+          <button id="cinema-replay" type="button" aria-label="从头重看影片" disabled>重看</button>
+          <button id="cinema-sound" type="button" aria-pressed="false" aria-label="开启影片声音" disabled>声音 关</button>
+        </div>
+        <div class="cinema-view-buttons">
+          <button id="cinema-fill" type="button" aria-pressed="false" title="铺满会裁切画面边缘">铺满</button>
+          <button id="cinema-fullscreen" type="button" aria-pressed="false">全屏</button>
+        </div>
+      </div>
+      <label class="cinema-progress-label" for="cinema-progress"><span class="sr-only">影片进度</span><input id="cinema-progress" type="range" min="0" max="1000" value="0" step="1" disabled aria-label="影片进度" /><output id="cinema-time" for="cinema-progress">00:00 / —:—</output></label>
+    </footer>
+
+    <details id="cinema-notes" class="cinema-notes">
+      <summary>创作说明</summary>
+      <div class="cinema-note-panel">
+        <p data-auto-video-task="1040462">原创首帧经 Kling V3 延展为约15秒的 AI 氛围短片。已检查分段画面与本地播放，音轨的具体听感仍待确认。</p>
+        <p>远村、雨水与近处茶烟处在同一段连续镜头里。载入前显示首帧，播放完成后停留在最后一帧，可随时重看。</p>
+        <p>短句由网页随镜头时间叠加，独立于原始视频。声音仅取自影片自身的音轨，默认关闭，不叠加旧版电子配乐。</p>
+        <button id="cinema-captions-toggle" type="button" aria-pressed="true">字幕 开</button>
+        <p><a href="./rain-study.html">另看实拍雨窗对照 ↗</a></p>
+      </div>
+    </details>
+    <p id="cinema-announcement" class="sr-only" aria-live="polite" aria-atomic="true"></p>
+  </main>
+  <script type="module" src="./cinema.js"></script>
+</body>
+</html>

@@ -4,12 +4,22 @@
     {
       "directory": "001-early-directions-atlas",
       "publicDirectory": "app",
-      "extraAssets": ["assets/images/directions-map-v1.png"]
+      "extraAssets": [
+        "assets/images/directions-map-v1.png"
+      ]
     },
     {
       "directory": "004-baocut-effects-atlas",
       "publicDirectory": "dist/site",
       "extraAssets": []
+    },
+    {
+      "directory": "005-paper-poetics-lab",
+      "publicDirectory": "dist",
+      "extraAssets": [
+        "assets/images/v1.4/research-map.png"
+      ],
+      "guidePage": "map.html"
     }
   ]
 }

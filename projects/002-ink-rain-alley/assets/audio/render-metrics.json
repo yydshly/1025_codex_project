@@ -1,0 +1,13 @@
+{
+  "title": "纸上归途",
+  "bpm": 54,
+  "durationSeconds": 71.111125,
+  "sampleRate": 32000,
+  "channels": 2,
+  "peak": 0.72,
+  "rms": 0.15091984045562884,
+  "loopBoundaryDelta": 0.00787799762018318,
+  "melodyNotes": 24,
+  "chords": 8,
+  "source": "Original note sequence and additive synthesis; no recordings, external music or AI audio service."
+}

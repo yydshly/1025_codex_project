@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#e9e5d9" />
+  <meta name="description" content="NOT YET — 一段由 Three.js 实时绘制的水墨旅程。从雨巷、玫瑰、森林和四季，慢慢走回自己。" />
+  <link rel="icon" href="data:," />
+  <title>NOT YET — 一笔，慢慢回来</title>
+</head>
+<body>
+  <canvas id="world" aria-hidden="true"></canvas>
+  <canvas id="botanical" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+  <div id="story-shell" data-scene="cover">
+    <header class="topbar">
+      <button id="home" class="identity" aria-label="回到封面">NOT YET<span>A STORY IN INK</span></button>
+      <div class="track-meta"><span id="track-number">TRACK 00</span><span id="track-name">序 · 尚未</span></div>
+      <button id="contents-open" aria-haspopup="dialog" aria-controls="contents">全部章节 <span class="menu-lines" aria-hidden="true"></span></button>
+    </header>
+    <div id="rain-aperture" aria-hidden="true"></div>
+    <div id="story-copy" class="story-copy">
+      <p id="eyebrow" class="eyebrow">A SMALL STORY ABOUT FINDING YOUR WAY BACK</p>
+      <h1 id="story-title">NOT<br>YET</h1>
+      <p id="story-subtitle">A small story about finding your way back.</p>
+      <p id="story-chinese">一些还没说完的话，<br>和一段慢慢回来的路。</p>
+      <div id="cover-actions"><button id="enter-story" class="text-link">展开这段旅程 <span aria-hidden="true">↓</span></button><span>SCROLL TO BEGIN</span></div>
+    </div>
+    <div id="season-controls" class="scene-actions" hidden aria-label="选择季节">
+      <button data-season="0" aria-pressed="false">春</button><button data-season="1" aria-pressed="false">夏</button><button data-season="2" aria-pressed="false">秋</button><button data-season="3" aria-pressed="false">冬</button><button id="season-follow" aria-pressed="true">随故事</button>
+    </div>
+    <div id="tape-actions" class="scene-actions" hidden><button id="tape-flip">翻到 B 面</button><span>也可以点击磁带翻面</span></div>
+    <div id="enso-actions" class="scene-actions" hidden><button id="redraw">再画一圈</button><span>ONE BREATH. ONE STROKE.</span></div>
+    <div id="ending-notes" hidden>
+      <div class="end-left"><em>not yet ≠ never</em><strong>LET YOURSELF<br>BE SEEN.</strong><p>慢一点，也是在向前。</p><div class="barcode" aria-hidden="true"></div><small>FALL · RISE · AGAIN</small></div>
+      <div class="end-right"><strong>LOOK UP.</strong><em>hold on, let go.</em><p>stay kind.</p><strong>KEEP BECOMING.</strong><span>one breath at a time.</span></div>
+      <div class="end-actions"><span>END OF SIDE <b id="end-side">A</b></span><button id="flip-tape">翻转磁带，听另一面</button><button id="replay">从封面重新开始</button></div>
+    </div>
+    <nav class="chapter-rail" id="chapter-rail" aria-label="章节导航"></nav>
+
+    <label id="rain-control" class="rain-control" hidden>雨量 <input id="rain" type="range" min="0" max="100" value="65" /><output id="rain-value" for="rain">65</output></label>
+    <p class="edition" aria-hidden="true">EVERY SCENE IS DRAWN IN CODE · NO VIDEO · TAKE YOUR TIME</p>
+    <div id="cursor" aria-hidden="true"></div>
+  </div>
+    <footer class="transport">
+      <div class="transport-left"><span id="side-label">SIDE A</span><span id="status" role="status">一笔，慢慢回来。</span></div>
+      <div class="playback"><button id="previous" aria-label="上一章">上一章</button><button id="auto-tour" aria-pressed="false">自动游览</button><button id="pause" aria-pressed="false">暂停动态</button><button id="next" aria-label="下一章">下一章</button></div>
+      <label class="progress-label" for="story-progress"><span class="sr-only">故事进度</span><input id="story-progress" type="range" min="0" max="1000" value="0" step="1" /><output id="progress-value" for="story-progress">00%</output></label>
+      <div class="sound"><button id="audio" aria-pressed="false">声音 关</button><button id="audio-settings" aria-haspopup="dialog" aria-controls="sound-panel">调音</button></div>
+    </footer>
+  <main id="timeline" aria-label="水墨故事的十个章节"></main>
+  <dialog id="contents" aria-labelledby="contents-title">
+    <div class="contents-header"><span>THE TRACKLIST</span><button id="contents-close" aria-label="关闭章节目录">关闭</button></div>
+    <h2 id="contents-title">每一段，都算数。</h2><div id="tracklist"></div>
+    <p>滚动浏览 · 方向键切换章节 · 空格暂停动态<br>原创配乐与程序环境声，点击声音后播放。</p>
+  </dialog>
+  <dialog id="sound-panel" class="sound-panel" aria-labelledby="sound-title">
+    <button id="sound-close" aria-label="关闭调音">关闭</button>
+    <h2 id="sound-title">听见这一页</h2>
+    <p>《纸上归途》<br>原创氛围配乐草案 · 54 BPM · 无鼓点、无人声<br>柔和钢琴音色与长音，和风、雨、水声慢慢交织。</p>
+    <button id="sound-play" aria-pressed="false">开启声音</button>
+    <div aria-label="声音模式"><button class="sound-mode" data-sound-mode="score" aria-pressed="true">配乐与环境</button><button class="sound-mode" data-sound-mode="nature" aria-pressed="false">只听环境</button></div>
+    <label id="volume-label" class="sound-slider" for="volume">总音量 <output id="volume-value" for="volume">45%</output><input id="volume" aria-label="总音量" type="range" min="0" max="100" value="45" /></label>
+    <label class="sound-slider" for="music-level">配乐 <output id="music-value" for="music-level">78%</output><input id="music-level" type="range" min="0" max="100" value="78" /></label>
+    <label class="sound-slider" for="nature-level">环境 <output id="nature-value" for="nature-level">66%</output><input id="nature-level" type="range" min="0" max="100" value="66" /></label>
+    <p id="sound-status" class="sound-note" role="status">默认静音，点击后播放。</p>
+    <p class="sound-note">配乐连续循环，环境声随场景变化。暂停动态或切到后台时，声音也会淡出并暂停。</p>
+  </dialog>
+  <div id="fallback" class="fallback" role="alert" hidden><h2>这段旅程需要显卡的帮助。</h2><p>请使用支持 WebGL 2 的浏览器，并开启硬件加速。</p><button onclick="location.reload()">重新尝试</button></div>
+  <script type="module" src="./main.js"></script>
+</body>
+</html>

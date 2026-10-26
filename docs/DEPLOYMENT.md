@@ -54,6 +54,14 @@ node scripts/build-pages.mjs --out dist/pages-review
 
 ## 后续增加项目
 
+### 005 · 纸间：纸墨叙事与氛围网页研究
+
+005使用 `dist/` 作为公开目录，002作为构建依赖，其完整产物复制在005的 `original/` 子目录，不另建公开站点。005的工作流步骤安装并构建002／005；其他项目仍以发布清单逐项声明，不自动上线未声明的本地研究。
+
+站点总入口的引导图使用用户确认的 `assets/images/v1.4/research-map.png`，完整保留纵向图解；`guidePage: "map.html"` 让点图与“放大阅读引导图”进入可交互版本，项目名称及“查看网页”进入005首页。原图作为逐项声明的 `extraAssets` 公开，源稿、生成任务记录与原始下载不因发布目录而自动进入网站。
+
+新增发布项需要先安装依赖，再执行 `npm --prefix projects/005-paper-poetics-lab run build`。该步骤自行构建002，随后根目录 `build:pages` 复制005的静态产物和声明的引导图。子路径链接、iframe章节hash及SVG导出地址需要在最终Pages地址复核，验证通过后再登记 `demoUrl`。
+
 `pages.config.json` 中的目录必须是登记的固定编号目录，例如：
 
 ```json
