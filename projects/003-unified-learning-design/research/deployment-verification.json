@@ -1,0 +1,540 @@
+{
+  "verifiedAt": "2026-10-27T01:41:05+08:00",
+  "timezone": "Asia/Shanghai",
+  "sourceCommit": "390b63823edbc609c8c79c40874bcc7bc4b1bbe8",
+  "workflowRun": "40369567113",
+  "baseUrl": "https://yydshly.github.io/1025_codex_project/003-unified-learning-design/",
+  "method": "Independent HTTP GET of all local public publication files. SHA256 is exact for binary resources and 37 files; 16 text resources were independently fetched again and differ only by Windows CRLF versus Actions Linux LF. No browser or private configuration was used for these HTTP checks.",
+  "status": "passed",
+  "summary": {
+    "resources": 53,
+    "http200": 53,
+    "exactByteMatches": 37,
+    "lineEndingOnlyDifferences": 16,
+    "matchingPublishedContent": 53,
+    "currentWavFiles": 13,
+    "guideUnchanged": true
+  },
+  "guide": {
+    "path": "assets/images/understanding-atlas.png",
+    "sha256": "e84531983b660e41e536030b7d6d49cb4535c5cc3562798ea3895b0ce1e16862",
+    "expectedSha256": "e84531983b660e41e536030b7d6d49cb4535c5cc3562798ea3895b0ce1e16862",
+    "matchesExpected": true
+  },
+  "resources": [
+    {
+      "path": "app/book-scenes.js",
+      "http": 200,
+      "bytes": 9290,
+      "type": "application/javascript",
+      "matchesLocalBytes": true,
+      "comparison": "exact-sha256",
+      "matchesPublishedContent": true
+    },
+    {
+      "path": "app/book.css",
+      "http": 200,
+      "bytes": 27985,
+      "type": "text/css",
+      "matchesLocalBytes": false,
+      "comparison": "CRLF-to-LF-only",
+      "matchesPublishedContent": true,
+      "localCRLFCount": 3
+    },
+    {
+      "path": "app/book.js",
+      "http": 200,
+      "bytes": 15607,
+      "type": "application/javascript",
+      "matchesLocalBytes": true,
+      "comparison": "exact-sha256",
+      "matchesPublishedContent": true
+    },
+    {
+      "path": "app/favicon.svg",
+      "http": 200,
+      "bytes": 299,
+      "type": "image/svg+xml",
+      "matchesLocalBytes": true,
+      "comparison": "exact-sha256",
+      "matchesPublishedContent": true
+    },
+    {
+      "path": "app/handbook.html",
+      "http": 200,
+      "bytes": 18746,
+      "type": "text/html",
+      "matchesLocalBytes": true,
+      "comparison": "exact-sha256",
+      "matchesPublishedContent": true
+    },
+    {
+      "path": "app/index.html",
+      "http": 200,
+      "bytes": 5159,
+      "type": "text/html",
+      "matchesLocalBytes": false,
+      "comparison": "CRLF-to-LF-only",
+      "matchesPublishedContent": true,
+      "localCRLFCount": 35
+    },
+    {
+      "path": "app/main.js",
+      "http": 200,
+      "bytes": 21834,
+      "type": "application/javascript",
+      "matchesLocalBytes": true,
+      "comparison": "exact-sha256",
+      "matchesPublishedContent": true
+    },
+    {
+      "path": "app/narration-source.js",
+      "http": 200,
+      "bytes": 1081,
+      "type": "application/javascript",
+      "matchesLocalBytes": true,
+      "comparison": "exact-sha256",
+      "matchesPublishedContent": true
+    },
+    {
+      "path": "app/paper-grain.svg",
+      "http": 200,
+      "bytes": 294,
+      "type": "image/svg+xml",
+      "matchesLocalBytes": true,
+      "comparison": "exact-sha256",
+      "matchesPublishedContent": true
+    },
+    {
+      "path": "app/replica-camera.js",
+      "http": 200,
+      "bytes": 2905,
+      "type": "application/javascript",
+      "matchesLocalBytes": false,
+      "comparison": "CRLF-to-LF-only",
+      "matchesPublishedContent": true,
+      "localCRLFCount": 44
+    },
+    {
+      "path": "app/replica-director.js",
+      "http": 200,
+      "bytes": 12153,
+      "type": "application/javascript",
+      "matchesLocalBytes": false,
+      "comparison": "CRLF-to-LF-only",
+      "matchesPublishedContent": true,
+      "localCRLFCount": 149
+    },
+    {
+      "path": "app/replica-magnifier.css",
+      "http": 200,
+      "bytes": 5175,
+      "type": "text/css",
+      "matchesLocalBytes": true,
+      "comparison": "exact-sha256",
+      "matchesPublishedContent": true
+    },
+    {
+      "path": "app/replica-magnifier.js",
+      "http": 200,
+      "bytes": 15167,
+      "type": "application/javascript",
+      "matchesLocalBytes": true,
+      "comparison": "exact-sha256",
+      "matchesPublishedContent": true
+    },
+    {
+      "path": "app/replica-models.js",
+      "http": 200,
+      "bytes": 17381,
+      "type": "application/javascript",
+      "matchesLocalBytes": false,
+      "comparison": "CRLF-to-LF-only",
+      "matchesPublishedContent": true,
+      "localCRLFCount": 90
+    },
+    {
+      "path": "app/replica-pages.js",
+      "http": 200,
+      "bytes": 9027,
+      "type": "application/javascript",
+      "matchesLocalBytes": false,
+      "comparison": "CRLF-to-LF-only",
+      "matchesPublishedContent": true,
+      "localCRLFCount": 47
+    },
+    {
+      "path": "app/replica-physics.js",
+      "http": 200,
+      "bytes": 13373,
+      "type": "application/javascript",
+      "matchesLocalBytes": false,
+      "comparison": "CRLF-to-LF-only",
+      "matchesPublishedContent": true,
+      "localCRLFCount": 226
+    },
+    {
+      "path": "app/replica-reading-session.js",
+      "http": 200,
+      "bytes": 1094,
+      "type": "application/javascript",
+      "matchesLocalBytes": true,
+      "comparison": "exact-sha256",
+      "matchesPublishedContent": true
+    },
+    {
+      "path": "app/replica-reading.js",
+      "http": 200,
+      "bytes": 4368,
+      "type": "application/javascript",
+      "matchesLocalBytes": true,
+      "comparison": "exact-sha256",
+      "matchesPublishedContent": true
+    },
+    {
+      "path": "app/replica-script.js",
+      "http": 200,
+      "bytes": 5611,
+      "type": "application/javascript",
+      "matchesLocalBytes": false,
+      "comparison": "CRLF-to-LF-only",
+      "matchesPublishedContent": true,
+      "localCRLFCount": 33
+    },
+    {
+      "path": "app/replica.css",
+      "http": 200,
+      "bytes": 16305,
+      "type": "text/css",
+      "matchesLocalBytes": false,
+      "comparison": "CRLF-to-LF-only",
+      "matchesPublishedContent": true,
+      "localCRLFCount": 32
+    },
+    {
+      "path": "app/replica.js",
+      "http": 200,
+      "bytes": 45714,
+      "type": "application/javascript",
+      "matchesLocalBytes": false,
+      "comparison": "CRLF-to-LF-only",
+      "matchesPublishedContent": true,
+      "localCRLFCount": 265
+    },
+    {
+      "path": "app/research-summary.css",
+      "http": 200,
+      "bytes": 30208,
+      "type": "text/css",
+      "matchesLocalBytes": false,
+      "comparison": "CRLF-to-LF-only",
+      "matchesPublishedContent": true,
+      "localCRLFCount": 17
+    },
+    {
+      "path": "app/research-summary.html",
+      "http": 200,
+      "bytes": 32452,
+      "type": "text/html",
+      "matchesLocalBytes": false,
+      "comparison": "CRLF-to-LF-only",
+      "matchesPublishedContent": true,
+      "localCRLFCount": 113
+    },
+    {
+      "path": "app/research-summary.js",
+      "http": 200,
+      "bytes": 9190,
+      "type": "application/javascript",
+      "matchesLocalBytes": false,
+      "comparison": "CRLF-to-LF-only",
+      "matchesPublishedContent": true,
+      "localCRLFCount": 58
+    },
+    {
+      "path": "app/seed-book.html",
+      "http": 200,
+      "bytes": 6988,
+      "type": "text/html",
+      "matchesLocalBytes": false,
+      "comparison": "CRLF-to-LF-only",
+      "matchesPublishedContent": true,
+      "localCRLFCount": 1
+    },
+    {
+      "path": "app/style.css",
+      "http": 200,
+      "bytes": 27418,
+      "type": "text/css",
+      "matchesLocalBytes": true,
+      "comparison": "exact-sha256",
+      "matchesPublishedContent": true
+    },
+    {
+      "path": "app/vendor/HAND-LICENSE.txt",
+      "http": 200,
+      "bytes": 4314,
+      "type": "text/plain",
+      "matchesLocalBytes": true,
+      "comparison": "exact-sha256",
+      "matchesPublishedContent": true
+    },
+    {
+      "path": "app/vendor/hand.woff2",
+      "http": 200,
+      "bytes": 74932,
+      "type": "font/woff2",
+      "matchesLocalBytes": true,
+      "comparison": "exact-sha256",
+      "matchesPublishedContent": true
+    },
+    {
+      "path": "app/vendor/SERIF-LICENSE.txt",
+      "http": 200,
+      "bytes": 4314,
+      "type": "text/plain",
+      "matchesLocalBytes": true,
+      "comparison": "exact-sha256",
+      "matchesPublishedContent": true
+    },
+    {
+      "path": "app/vendor/serif.woff2",
+      "http": 200,
+      "bytes": 50824,
+      "type": "font/woff2",
+      "matchesLocalBytes": true,
+      "comparison": "exact-sha256",
+      "matchesPublishedContent": true
+    },
+    {
+      "path": "app/vendor/THREE-LICENSE.txt",
+      "http": 200,
+      "bytes": 1081,
+      "type": "text/plain",
+      "matchesLocalBytes": true,
+      "comparison": "exact-sha256",
+      "matchesPublishedContent": true
+    },
+    {
+      "path": "app/vendor/three.core.js",
+      "http": 200,
+      "bytes": 1403455,
+      "type": "application/javascript",
+      "matchesLocalBytes": true,
+      "comparison": "exact-sha256",
+      "matchesPublishedContent": true
+    },
+    {
+      "path": "app/vendor/three.module.js",
+      "http": 200,
+      "bytes": 603113,
+      "type": "application/javascript",
+      "matchesLocalBytes": true,
+      "comparison": "exact-sha256",
+      "matchesPublishedContent": true
+    },
+    {
+      "path": "app/voice/minimax/legend-9c38c46e16a5.wav",
+      "http": 200,
+      "bytes": 858764,
+      "type": "audio/wav",
+      "matchesLocalBytes": true,
+      "comparison": "exact-sha256",
+      "matchesPublishedContent": true
+    },
+    {
+      "path": "app/voice/minimax/outro-b79f02b99183.wav",
+      "http": 200,
+      "bytes": 743564,
+      "type": "audio/wav",
+      "matchesLocalBytes": true,
+      "comparison": "exact-sha256",
+      "matchesPublishedContent": true
+    },
+    {
+      "path": "app/voice/minimax/ramp-bottom-1-c5a247e4deba.wav",
+      "http": 200,
+      "bytes": 545164,
+      "type": "audio/wav",
+      "matchesLocalBytes": true,
+      "comparison": "exact-sha256",
+      "matchesPublishedContent": true
+    },
+    {
+      "path": "app/voice/minimax/ramp-bottom-2-d87167bda3f2.wav",
+      "http": 200,
+      "bytes": 602764,
+      "type": "audio/wav",
+      "matchesLocalBytes": true,
+      "comparison": "exact-sha256",
+      "matchesPublishedContent": true
+    },
+    {
+      "path": "app/voice/minimax/ramp-bottom-3-297d6f4b7e47.wav",
+      "http": 200,
+      "bytes": 570764,
+      "type": "audio/wav",
+      "matchesLocalBytes": true,
+      "comparison": "exact-sha256",
+      "matchesPublishedContent": true
+    },
+    {
+      "path": "app/voice/minimax/ramp-loss-1-f22d72a44326.wav",
+      "http": 200,
+      "bytes": 551564,
+      "type": "audio/wav",
+      "matchesLocalBytes": true,
+      "comparison": "exact-sha256",
+      "matchesPublishedContent": true
+    },
+    {
+      "path": "app/voice/minimax/ramp-loss-2-6160359f4e1a.wav",
+      "http": 200,
+      "bytes": 717964,
+      "type": "audio/wav",
+      "matchesLocalBytes": true,
+      "comparison": "exact-sha256",
+      "matchesPublishedContent": true
+    },
+    {
+      "path": "app/voice/minimax/ramp-loss-3-26ec13103c5e.wav",
+      "http": 200,
+      "bytes": 596364,
+      "type": "audio/wav",
+      "matchesLocalBytes": true,
+      "comparison": "exact-sha256",
+      "matchesPublishedContent": true
+    },
+    {
+      "path": "app/voice/minimax/ramp-ready-53ecbd5b052e.wav",
+      "http": 200,
+      "bytes": 762764,
+      "type": "audio/wav",
+      "matchesLocalBytes": true,
+      "comparison": "exact-sha256",
+      "matchesPublishedContent": true
+    },
+    {
+      "path": "app/voice/minimax/spring-apex-1b660f3f14c3.wav",
+      "http": 200,
+      "bytes": 973964,
+      "type": "audio/wav",
+      "matchesLocalBytes": true,
+      "comparison": "exact-sha256",
+      "matchesPublishedContent": true
+    },
+    {
+      "path": "app/voice/minimax/spring-land-b963bc6bf447.wav",
+      "http": 200,
+      "bytes": 980364,
+      "type": "audio/wav",
+      "matchesLocalBytes": true,
+      "comparison": "exact-sha256",
+      "matchesPublishedContent": true
+    },
+    {
+      "path": "app/voice/minimax/spring-ready-f3341b0c62e2.wav",
+      "http": 200,
+      "bytes": 961164,
+      "type": "audio/wav",
+      "matchesLocalBytes": true,
+      "comparison": "exact-sha256",
+      "matchesPublishedContent": true
+    },
+    {
+      "path": "app/voice/minimax/types-e696e455796b.wav",
+      "http": 200,
+      "bytes": 845964,
+      "type": "audio/wav",
+      "matchesLocalBytes": true,
+      "comparison": "exact-sha256",
+      "matchesPublishedContent": true
+    },
+    {
+      "path": "assets/images/future-layout-concepts.png",
+      "http": 200,
+      "bytes": 2080024,
+      "type": "image/png",
+      "matchesLocalBytes": true,
+      "comparison": "exact-sha256",
+      "matchesPublishedContent": true
+    },
+    {
+      "path": "assets/images/optimized-energy-cue.png",
+      "http": 200,
+      "bytes": 74202,
+      "type": "image/png",
+      "matchesLocalBytes": true,
+      "comparison": "exact-sha256",
+      "matchesPublishedContent": true
+    },
+    {
+      "path": "assets/images/reading-v4.4/01-before-reading.png",
+      "http": 200,
+      "bytes": 64757,
+      "type": "image/png",
+      "matchesLocalBytes": true,
+      "comparison": "exact-sha256",
+      "matchesPublishedContent": true
+    },
+    {
+      "path": "assets/images/reading-v4.4/07-final-desktop.png",
+      "http": 200,
+      "bytes": 70327,
+      "type": "image/png",
+      "matchesLocalBytes": true,
+      "comparison": "exact-sha256",
+      "matchesPublishedContent": true
+    },
+    {
+      "path": "assets/images/understanding-atlas.png",
+      "http": 200,
+      "bytes": 4088120,
+      "type": "image/png",
+      "matchesLocalBytes": true,
+      "comparison": "exact-sha256",
+      "matchesPublishedContent": true
+    },
+    {
+      "path": "assets/images/understanding-atlas.svg",
+      "http": 200,
+      "bytes": 3047468,
+      "type": "image/svg+xml",
+      "matchesLocalBytes": false,
+      "comparison": "CRLF-to-LF-only",
+      "matchesPublishedContent": true,
+      "localCRLFCount": 281
+    },
+    {
+      "path": "index.html",
+      "http": 200,
+      "bytes": 32468,
+      "type": "text/html",
+      "matchesLocalBytes": false,
+      "comparison": "CRLF-to-LF-only",
+      "matchesPublishedContent": true,
+      "localCRLFCount": 113
+    }
+  ],
+  "failures": [],
+  "normalizationNotice": "The 16 text differences were all confirmed byte-identical after replacing CRLF with LF; no other content normalization was used. The PNG guide and 13 current WAVs match their local bytes exactly.",
+  "browserChecks": {
+    "verifiedBy": "Parent agent using live browser; findings supplied to this independent HTTP verifier",
+    "status": "passed",
+    "checks": [
+      "Research overview visibly states effect, capabilities, mechanism and value",
+      "Original guide image preview opens",
+      "3D WebGL book renders",
+      "Pause state explains camera inspection"
+    ],
+    "audio": {
+      "provider": "MiniMax",
+      "readyState": 4,
+      "paused": false,
+      "timeAdvancedFrom": 0.059877,
+      "timeAdvancedTo": 7.892668,
+      "url": "https://yydshly.github.io/1025_codex_project/003-unified-learning-design/app/voice/minimax/types-e696e455796b.wav"
+    },
+    "consoleWarningsAndErrors": []
+  }
+}

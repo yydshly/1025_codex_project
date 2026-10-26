@@ -15,9 +15,11 @@
 
 [研究汇总网页](app/research-summary.html) · [一张图看全貌](assets/images/understanding-atlas.png) · [可编辑总览图](assets/images/understanding-atlas.svg) · [返回总索引](../../README.md#项目索引) · [3D 复刻样章](app/index.html) · [方法总览](app/handbook.html) · [书页关联图](experience-map.md) · [完整方法](method.md) · [扩展方向](expansion.md)
 
+**在线访问：[研究总览](https://yydshly.github.io/1025_codex_project/003-unified-learning-design/) · [三维物理样章](https://yydshly.github.io/1025_codex_project/003-unified-learning-design/app/index.html)。** 已于2026-10-27通过GitHub Pages部署并核验；[发布记录与截图](research/deployment.md)。
+
 ![连续主题体验研究总览：产品思路、意义与价值、真实样章效果、设计方法和未来呈现形态](assets/images/understanding-atlas.png)
 
-引导图：本阶段生成的完整研究总览，点击可查看原图。实拍效果均来自本项目独立样章；未来呈现画面为AI概念图，和已实现能力分别标注。[可编辑SVG](assets/images/understanding-atlas.svg) · [制作与提示词记录](research/summary-assets.json)。
+引导图：本阶段生成的完整研究总览，点击可查看原图。真实效果截图均来自本项目独立样章；未来呈现画面为AI概念图，和已实现能力分别标注。[可编辑SVG](assets/images/understanding-atlas.svg) · [制作与提示词记录](research/summary-assets.json)。
 
 ## 本阶段汇总与后续复用
 
@@ -114,7 +116,7 @@ npm.cmd run dev
 
 - 编号：003；版本：v4.4；本次整理更新：2026-10-27。
 - 本阶段研究完成，已有三课3D独立样章、完整研究网页与总览图；原先的连续主题书、方法总览、筛选示例及规划工具全部保留，后续按具体产品需求选择性复用。
-- 本地网页可运行；线上地址、部署结果与核验范围见[发布记录](research/deployment.md)。交互验证不等于教学效果验证，真实受众试用仍待进行。
+- 本地网页与GitHub Pages正式站点均可访问；线上地址、部署结果与核验范围见[发布记录](research/deployment.md)。交互验证不等于教学效果验证，真实受众试用仍待进行。
 - 在子项目运行 `npm run check` 检查脚本语法，`npm test` 检查物理、导演、语音与阅读区域；在总库根目录运行 `npm run check` 检查索引。
 
 ## 灵感来源和授权
