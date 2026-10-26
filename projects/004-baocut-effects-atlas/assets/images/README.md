@@ -3,6 +3,7 @@
 - `capability-map.png`：当前总库与研究 README 的引导图，完整整理 BaoCut 的用途、制作路径、技巧、能力与价值；为本研究 SVG 总览的浏览器渲染。
 - `capability-map.svg`：可独立打开、下载的矢量总览；内嵌六张 Jim Liu / BaoCut 官方封面，主体图示与判断由本研究整理。
 - `overview.png`：网页中交互总览的实际截图。
+- `published-2026-10-27.jpg`：正式 GitHub Pages 网页上线后的浏览器实际截图。
 - `cover.png`：早期本地效果图鉴的实际浏览器截图，作为研究历史保留；界面是本研究制作，画面中的预览与缩略图来自 Jim Liu / BaoCut 官方模板。
 - `gallery.png`：分类效果目录的实际截图。
 - `implementation.png`：增加实现原理后的实际浏览器截图，展示代码画面和 AI 生图运镜等制作路径；网页继续向下可见已有素材剪辑。

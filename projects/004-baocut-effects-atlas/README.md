@@ -2,7 +2,7 @@
 
 > BaoCut 是 AI 可操作的视频编辑器与制作工作流。它以代码动画、AI 静图运镜和已有素材剪辑组合成片，支持字幕、配音、检索与可编辑工程；增量价值主要在工具集成、反复修改和人工接手。本研究用一张总览图、24 个场景方向与 20 段官方预览解释效果、能力、原理和价值，尚未对照实测效率收益。
 
-**[打开效果网页](app/index.html)** · **[能力与价值一图总览](assets/images/capability-map.svg)** · [总览文字与依据](research/overview.md) · **[实现原理与逐条分类](research/implementation.md)** · [修改与复现建议](research/guide.md) · [全部场景清单](research/scenes.md) · [原始仓库 JimLiu/baocut](https://github.com/JimLiu/baocut) · [研究笔记](research/notes.md) · [返回总索引](../../README.md#项目索引)
+**[在线网页](https://yydshly.github.io/1025_codex_project/004-baocut-effects-atlas/)** · **[在线一图总览](https://yydshly.github.io/1025_codex_project/004-baocut-effects-atlas/#overview)** · [本地网页](app/index.html) · **[SVG 完整图](assets/images/capability-map.svg)** · [总览文字与依据](research/overview.md) · **[实现原理与逐条分类](research/implementation.md)** · [修改与复现建议](research/guide.md) · [全部场景清单](research/scenes.md) · [上线验收](research/deployment.md) · [原始仓库 JimLiu/baocut](https://github.com/JimLiu/baocut) · [返回总索引](../../README.md#项目索引)
 
 ![我们整理的 BaoCut 能力、制作原理、效果与价值总览引导图](assets/images/capability-map.png)
 
@@ -68,6 +68,8 @@ Skill 的价值主要是简报、分镜、风格、样段和验收方法；BaoCu
 20 段预览都是约 15 秒的节选，不能当作完整成片。16 个预览文件没有音轨，4 个含音轨；页面逐条标明。官方模板记录中有 6 项标记为 `pass`、18 项为 `partial`；部分样片仍有素材、声音或内容准确性等缺项，原记录在详情中保留。模板方向、公开预览和稳定复现是不同层面的证据。
 
 ## 本地打开
+
+本研究网页已于 **2026-10-27** 发布到 GitHub Pages。正式地址、发布范围、工作流与验收记录见[上线说明](research/deployment.md)。部署的是研究展示页，BaoCut 软件和模型服务没有在网页中运行。
 
 展示页不需要 API 密钥、模型或 BaoCut。视频、图片、目录、原始提示与研究注释都保存在子项目中；`app/data.js` 打包了 24 个场景的数据，浏览时不再依赖 JSON 网络请求。
 

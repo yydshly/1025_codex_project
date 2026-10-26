@@ -1,0 +1,331 @@
+{
+  "date": "2026-10-27",
+  "deploymentCommit": "bfc5452e6160ef1ef6c858c03687788e01689542",
+  "workflowRun": "https://github.com/yydshly/1025_codex_project/actions/runs/40368092712",
+  "workflowConclusion": "success",
+  "site": "https://yydshly.github.io/1025_codex_project/004-baocut-effects-atlas/",
+  "overview": "https://yydshly.github.io/1025_codex_project/004-baocut-effects-atlas/#overview",
+  "httpChecks": [
+    {
+      "path": "/",
+      "status": 200,
+      "contentType": "text/html"
+    },
+    {
+      "path": "004-baocut-effects-atlas/app.js",
+      "status": 200,
+      "contentType": "application/javascript"
+    },
+    {
+      "path": "004-baocut-effects-atlas/catalog.json",
+      "status": 200,
+      "contentType": "application/json"
+    },
+    {
+      "path": "004-baocut-effects-atlas/data.js",
+      "status": 200,
+      "contentType": "application/javascript"
+    },
+    {
+      "path": "004-baocut-effects-atlas/guide.json",
+      "status": 200,
+      "contentType": "application/json"
+    },
+    {
+      "path": "004-baocut-effects-atlas/implementation.css",
+      "status": 200,
+      "contentType": "text/css"
+    },
+    {
+      "path": "004-baocut-effects-atlas/implementation.json",
+      "status": 200,
+      "contentType": "application/json"
+    },
+    {
+      "path": "004-baocut-effects-atlas/index.html",
+      "status": 200,
+      "contentType": "text/html"
+    },
+    {
+      "path": "004-baocut-effects-atlas/learning.css",
+      "status": 200,
+      "contentType": "text/css"
+    },
+    {
+      "path": "004-baocut-effects-atlas/overview.css",
+      "status": 200,
+      "contentType": "text/css"
+    },
+    {
+      "path": "004-baocut-effects-atlas/overview.js",
+      "status": 200,
+      "contentType": "application/javascript"
+    },
+    {
+      "path": "004-baocut-effects-atlas/overview.json",
+      "status": 200,
+      "contentType": "application/json"
+    },
+    {
+      "path": "004-baocut-effects-atlas/style.css",
+      "status": 200,
+      "contentType": "text/css"
+    },
+    {
+      "path": "004-baocut-effects-atlas/assets/baocut-LICENSE.txt",
+      "status": 200,
+      "contentType": "text/plain"
+    },
+    {
+      "path": "004-baocut-effects-atlas/assets/NOTICE.txt",
+      "status": 200,
+      "contentType": "text/plain"
+    },
+    {
+      "path": "004-baocut-effects-atlas/assets/images/capability-map.png",
+      "status": 200,
+      "contentType": "image/png"
+    },
+    {
+      "path": "004-baocut-effects-atlas/assets/images/capability-map.svg",
+      "status": 200,
+      "contentType": "image/svg+xml"
+    },
+    {
+      "path": "004-baocut-effects-atlas/assets/official/chaos-to-harmony/cover.jpg",
+      "status": 200,
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "004-baocut-effects-atlas/assets/official/chaos-to-harmony/preview.mp4",
+      "status": 200,
+      "contentType": "video/mp4"
+    },
+    {
+      "path": "004-baocut-effects-atlas/assets/official/cinematic-scene/cover.jpg",
+      "status": 200,
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "004-baocut-effects-atlas/assets/official/cinematic-scene/preview.mp4",
+      "status": 200,
+      "contentType": "video/mp4"
+    },
+    {
+      "path": "004-baocut-effects-atlas/assets/official/creative-montage/cover.jpg",
+      "status": 200,
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "004-baocut-effects-atlas/assets/official/creative-montage/preview.mp4",
+      "status": 200,
+      "contentType": "video/mp4"
+    },
+    {
+      "path": "004-baocut-effects-atlas/assets/official/data-story/cover.jpg",
+      "status": 200,
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "004-baocut-effects-atlas/assets/official/data-story/preview.mp4",
+      "status": 200,
+      "contentType": "video/mp4"
+    },
+    {
+      "path": "004-baocut-effects-atlas/assets/official/epic-mood-trailer/cover.jpg",
+      "status": 200,
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "004-baocut-effects-atlas/assets/official/epic-mood-trailer/preview.mp4",
+      "status": 200,
+      "contentType": "video/mp4"
+    },
+    {
+      "path": "004-baocut-effects-atlas/assets/official/event-recap/cover.jpg",
+      "status": 200,
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "004-baocut-effects-atlas/assets/official/event-recap/preview.mp4",
+      "status": 200,
+      "contentType": "video/mp4"
+    },
+    {
+      "path": "004-baocut-effects-atlas/assets/official/game-trailer/cover.jpg",
+      "status": 200,
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "004-baocut-effects-atlas/assets/official/game-trailer/preview.mp4",
+      "status": 200,
+      "contentType": "video/mp4"
+    },
+    {
+      "path": "004-baocut-effects-atlas/assets/official/knowledge-explainer/cover.jpg",
+      "status": 200,
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "004-baocut-effects-atlas/assets/official/knowledge-explainer/preview.mp4",
+      "status": 200,
+      "contentType": "video/mp4"
+    },
+    {
+      "path": "004-baocut-effects-atlas/assets/official/launch-film/cover.jpg",
+      "status": 200,
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "004-baocut-effects-atlas/assets/official/launch-film/preview.mp4",
+      "status": 200,
+      "contentType": "video/mp4"
+    },
+    {
+      "path": "004-baocut-effects-atlas/assets/official/motion-design-showreel/cover.jpg",
+      "status": 200,
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "004-baocut-effects-atlas/assets/official/motion-design-showreel/preview.mp4",
+      "status": 200,
+      "contentType": "video/mp4"
+    },
+    {
+      "path": "004-baocut-effects-atlas/assets/official/physics-ball-escape/cover.jpg",
+      "status": 200,
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "004-baocut-effects-atlas/assets/official/physics-ball-escape/preview.mp4",
+      "status": 200,
+      "contentType": "video/mp4"
+    },
+    {
+      "path": "004-baocut-effects-atlas/assets/official/product-showcase/cover.jpg",
+      "status": 200,
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "004-baocut-effects-atlas/assets/official/product-showcase/preview.mp4",
+      "status": 200,
+      "contentType": "video/mp4"
+    },
+    {
+      "path": "004-baocut-effects-atlas/assets/official/promo-ad/cover.jpg",
+      "status": 200,
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "004-baocut-effects-atlas/assets/official/promo-ad/preview.mp4",
+      "status": 200,
+      "contentType": "video/mp4"
+    },
+    {
+      "path": "004-baocut-effects-atlas/assets/official/rhythm-dance-video/cover.jpg",
+      "status": 200,
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "004-baocut-effects-atlas/assets/official/rhythm-dance-video/preview.mp4",
+      "status": 200,
+      "contentType": "video/mp4"
+    },
+    {
+      "path": "004-baocut-effects-atlas/assets/official/software-demo/cover.jpg",
+      "status": 200,
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "004-baocut-effects-atlas/assets/official/software-demo/preview.mp4",
+      "status": 200,
+      "contentType": "video/mp4"
+    },
+    {
+      "path": "004-baocut-effects-atlas/assets/official/step-tutorial/cover.jpg",
+      "status": 200,
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "004-baocut-effects-atlas/assets/official/step-tutorial/preview.mp4",
+      "status": 200,
+      "contentType": "video/mp4"
+    },
+    {
+      "path": "004-baocut-effects-atlas/assets/official/story-short/cover.jpg",
+      "status": 200,
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "004-baocut-effects-atlas/assets/official/story-short/preview.mp4",
+      "status": 200,
+      "contentType": "video/mp4"
+    },
+    {
+      "path": "004-baocut-effects-atlas/assets/official/typography-motion/cover.jpg",
+      "status": 200,
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "004-baocut-effects-atlas/assets/official/typography-motion/preview.mp4",
+      "status": 200,
+      "contentType": "video/mp4"
+    },
+    {
+      "path": "004-baocut-effects-atlas/assets/official/vlog-edit/cover.jpg",
+      "status": 200,
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "004-baocut-effects-atlas/assets/official/vlog-edit/preview.mp4",
+      "status": 200,
+      "contentType": "video/mp4"
+    },
+    {
+      "path": "004-baocut-effects-atlas/assets/official/white-ui-launch/cover.jpg",
+      "status": 200,
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "004-baocut-effects-atlas/assets/official/white-ui-launch/preview.mp4",
+      "status": 200,
+      "contentType": "video/mp4"
+    }
+  ],
+  "guideImageSHA256": "3d4b54a2a40190366324098b001b0076b2a4a763cb896bf4dcb680bab18456c7",
+  "guideImageMatchesPublic": true,
+  "publication": {
+    "projects": [
+      "001-early-directions-atlas",
+      "004-baocut-effects-atlas"
+    ],
+    "publicProjectFiles": 56,
+    "previewClips": 20,
+    "officialCovers": 20,
+    "sourcePromptsPreserved": 24,
+    "researchDirectoryPublished": false,
+    "buildScriptsPublished": false
+  },
+  "browser": {
+    "pageTitle": "BaoCut · 能力、原理与效果研究",
+    "sceneCards": 24,
+    "overviewRoutes": 3,
+    "imageRouteFilterCount": 5,
+    "detailRefreshRestoresSceneAndGuideTab": true,
+    "refreshDoesNotAutoplay": true,
+    "viewportWidth": 1280,
+    "pageWidth": 1265,
+    "representativeVideo": "cinematic-scene",
+    "videoDurationSeconds": 14.966667,
+    "consoleErrorsObserved": false,
+    "representativeVideoReachedEnd": true,
+    "representativeVideoReadyState": 4,
+    "publicHomeGuideImagesLoaded": true,
+    "screenshot": "../assets/images/published-2026-10-27.jpg"
+  },
+  "limits": [
+    "No BaoCut installation or video reproduction was performed.",
+    "No comparative timing, cost or visual-quality benchmark was performed.",
+    "No phone hardware test was performed."
+  ]
+}

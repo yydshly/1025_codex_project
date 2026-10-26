@@ -6,6 +6,8 @@
 
 2026-10-27 首次发布成功，已验证[站点总入口](https://yydshly.github.io/1025_codex_project/)与[001 在线网页](https://yydshly.github.io/1025_codex_project/001-early-directions-atlas/)。具体工作流和验收记录见[项目发布记录](../projects/001-early-directions-atlas/research/deployment.md)。
 
+同日接入并验证 [004 · BaoCut 能力、原理与效果研究](https://yydshly.github.io/1025_codex_project/004-baocut-effects-atlas/)，总库使用我们生成的能力总览图引导阅读。发布范围和验收见 [004 上线记录](../projects/004-baocut-effects-atlas/research/deployment.md)。
+
 ## 发布范围
 
 站点总入口介绍研究档案，并为每个公开项目提供引导图、摘要与网页链接。
