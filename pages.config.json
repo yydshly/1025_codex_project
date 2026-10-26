@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "projects": [
+    {
+      "directory": "001-early-directions-atlas",
+      "publicDirectory": "app",
+      "extraAssets": ["assets/images/directions-map-v1.png"]
+    }
+  ]
+}

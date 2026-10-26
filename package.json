@@ -10,6 +10,8 @@
   "scripts": {
     "project:new": "node scripts/projects.mjs new",
     "index:update": "node scripts/projects.mjs update",
-    "check": "node scripts/projects.mjs check"
+    "check": "node scripts/projects.mjs check",
+    "check:pages": "node --test scripts/pages.test.mjs",
+    "build:pages": "node scripts/build-pages.mjs"
   }
 }

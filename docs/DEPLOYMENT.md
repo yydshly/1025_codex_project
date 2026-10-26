@@ -2,36 +2,77 @@
 
 [返回首页](../README.md)
 
-当前仅完成仓库初始化，尚未启用 GitHub Pages，也没有已上线的 Web 演示。此文用于后续接入实际项目。
+本库通过 GitHub Actions 构建 GitHub Pages，一个站点下按编号子路径组织多个项目。当前发布清单为 [pages.config.json](../pages.config.json)，首个接入项目是 [001 · 早期方向档案](../projects/001-early-directions-atlas/README.md)。
 
-## 一个站点，多个项目路径
+## 发布范围
 
-GitHub Pages 每个仓库最多对应一个站点，适合部署静态 HTML、CSS、JavaScript 和可导出的前端应用。本库计划将多个项目的静态构建结果汇总为一个站点，分别挂载在编号子路径：
+站点总入口介绍研究档案，并为每个公开项目提供引导图、摘要与网页链接。
 
-```text
-https://yydshly.github.io/1025_codex_project/
-├── 001-repo-name/
-├── 002-another-repo/
-└── ...
+- 公开项目必须先登记在 `projects.json`，再明确列入 `pages.config.json`。
+- `publicDirectory` 指定该项目可公开的静态目录；框架项目需要先构建出静态结果。
+- `extraAssets` 只复制逐项声明的 `assets/` 资源。001 当前仅额外复制生成的方向引导图。
+- 项目名称、摘要及封面来自项目登记。封面也必须存在于公开资源中。
+- 构建器拒绝链接、路径跳转和重复产物目录，跳过隐藏文件。没有声明发布的项目、研究笔记和仓库其他文件不进入站点。
+
+源码与网站产物分开管理。公开 GitHub 仓库中提交的源码仍可通过仓库访问；“未进入站点”不等于仓库文件私密。
+
+## 本地构建与验证
+
+需要 Node.js 22+，根目录工具无第三方依赖：
+
+```powershell
+npm.cmd run index:update
+npm.cmd run check
+npm.cmd run check:pages
+npm.cmd run build:pages
+python -m http.server 4327 --bind 127.0.0.1 --directory dist/pages
 ```
 
-以上地址是路径规划，尚不可作为已部署链接。真正上线并验证后，再填写 `projects.json` 的 `demoUrl`。
+默认产物为 `dist/pages/`，在本地访问总入口和编号子路径，核对图片、脚本、筛选、详情 hash 与刷新。构建器要求新产物目录；重复构建可指定另一个空目录：
 
-## 首个 Web 项目接入时
+```powershell
+node scripts/build-pages.mjs --out dist/pages-review
+```
 
-1. 在该项目 `app/` 中确定技术栈，在子项目 README 中记录依赖安装、启动与构建命令。
-2. 配置资源基础路径为 `/1025_codex_project/001-repo-name/`（换成实际编号目录）。资源引用、客户端路由和页面刷新都需要按部署子路径验证。
-3. 使用 GitHub Actions 分别构建需要上线的子项目，将**可公开的静态产物**放入统一发布目录的编号子文件夹，再一次性发布整个站点。不要直接上传整个研究仓库。
-4. 在仓库 **Settings → Pages → Build and deployment** 选择 **GitHub Actions**，按官方文档配置构建与部署作业、`github-pages` 环境以及所需权限。
-5. 验证根入口、各项目入口、图片与脚本资源、子路径刷新以及不同项目间的链接；成功后登记真实演示地址并同步 README。
+`check:pages` 使用独立临时目录验证项目创建、编号递增、索引生成与发布边界，不修改真实登记。
 
-SPA 可以优先使用 hash 路由；若采用 history 路由，需要自行处理静态托管中的深层路径刷新。具体方案随项目确定。
+## GitHub Pages 发布
+
+工作流为 [.github/workflows/pages.yml](../.github/workflows/pages.yml)。
+
+1. 仓库 Pages 的发布方式设为 GitHub Actions（API 中 `build_type: workflow`）。
+2. 向 `main` 推送发布范围内的变化，或手动触发工作流。
+3. 构建作业检查登记、发布边界和项目脚本，再生成 `dist/pages`，上传 Pages artifact。
+4. 部署作业使用 `github-pages` 环境和官方 `actions/deploy-pages` 部署，输出网站地址。
+5. 工作流成功后，实际访问根入口、编号子路径、引导图和脚本，检查详情刷新与移动端。
+6. 验证通过后，才在 `projects.json` 的 `demoUrl` 登记真实地址，并重新生成 README。
+
+部署只提交本次授权的项目及必要的发布配置。其他正在整理的工作区内容可以保持未提交，不能因部署而一并纳入远端。
+
+## 后续增加项目
+
+`pages.config.json` 中的目录必须是登记的固定编号目录，例如：
+
+```json
+{
+  "schemaVersion": 1,
+  "projects": [
+    {
+      "directory": "001-early-directions-atlas",
+      "publicDirectory": "app",
+      "extraAssets": ["assets/images/directions-map-v1.png"]
+    }
+  ]
+}
+```
+
+同时更新工作流的 `paths`，让后续项目变动触发站点构建。资源引用采用相对路径；有客户端详情或路由时，优先使用 hash，避免静态托管中的深层路径刷新问题。部署需要的构建步骤随项目添加，不自动运行或上线所有子项目。
 
 ## 需要后端的项目
 
-GitHub Pages 提供静态托管，不能直接运行持续在线的 Node/Python 服务或保存服务端密钥。此类项目另行部署后端，或将整个应用部署到合适的平台，仍在总索引中登记最终演示地址。
+GitHub Pages 只能提供静态内容。模型服务、采集任务、密钥和持久化数据需另行托管；不得把服务端凭据打包到网页。
 
 ## 官方参考
 
-- [GitHub Pages 是什么、站点数量与默认路径](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages)
 - [使用自定义 GitHub Actions 工作流发布 Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages)
+- [GitHub Pages REST API](https://docs.github.com/en/rest/pages/pages)

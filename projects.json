@@ -1,5 +1,18 @@
 {
   "schemaVersion": 1,
-  "nextId": 1,
-  "projects": []
+  "nextId": 2,
+  "projects": [
+    {
+      "id": "001",
+      "slug": "early-directions-atlas",
+      "name": "早期方向档案",
+      "summary": "我们早期思考与尝试留下的十二个方向：需求与变现、内容获客、轻量产品、价格册、音频局部修改、3D咖啡、共想室、岗位观察、跨设备、论文、艺术短片与AI室友。按候选、方案、原型、阶段作品及停止项保存进展、依据和待验证问题。",
+      "source": "https://github.com/yydshly/1025_codex_project",
+      "status": "completed",
+      "tags": ["早期思考", "遗留方向", "AI产品", "创作", "历史回溯"],
+      "cover": "assets/images/directions-map-v1.png",
+      "demoUrl": "",
+      "createdAt": "2026-10-26"
+    }
+  ]
 }

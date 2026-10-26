@@ -1,0 +1,13 @@
+{
+  "name": "early-directions-atlas",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A local-first archive of twelve early product and creative directions",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "dev": "node serve.mjs",
+    "start": "node serve.mjs",
+    "check": "node --check serve.mjs && node --check app/data.js && node --check app/app.js"
+  }
+}

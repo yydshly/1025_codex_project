@@ -1,0 +1,66 @@
+Use case: infographic-diagram.
+Create ONE polished high-resolution Chinese infographic that explains a personal portfolio of 12 early AI product and creative directions. This is a legible project direction map, not a website screenshot, not a dense dashboard, not a fictional roadmap. Landscape 3840 x 2160 composition, crisp Chinese typography, export-quality.
+
+Design: contemporary editorial information design, warm ivory background, charcoal forest green text, restrained olive green for business, slate blue for tools, muted terracotta for creative work. Thin precise branch lines, generous padding, clearly aligned cards, calm professional feeling. Tiny native line illustrations of compass, tools and film can support the three branches. Text must be the hero. Avoid unnecessary English, gradients, excessive illustrations, fake UI controls, progress percentages or invented metrics. Chinese text must be accurate, readable, no duplicates, no gibberish. No watermark.
+
+Hierarchy:
+Top title: “起点档案｜早期项目与方向地图”
+Immediately under title, a strong central mission band, verbatim: “用 AI 做有价值的作品 → 找到真实需求 → 形成产品与经营能力”
+A single trunk branches cleanly to THREE columns. Do not connect cards as dependencies or a chronological sequence: each is a separate direction within its branch.
+
+Left column, OLIVE, header “产品与变现探索”, subtitle “找到问题，判断价值，练习经营”. FOUR numbered cards, with large title, clear stage label, and short text. Keep all the following content:
+01 “真实需求与商业机会” / stage “研究探索”
+“研究用户问题、竞品与实现成本。”
+“已有研究材料，真实使用与付费闭环待完成。”
+02 “个人 IP、内容与 SEO” / stage “研究探索”
+“把真实项目和制作过程变成内容。”
+“讨论过内容实验，持续发布与获客尚未核实。”
+03 “四个轻量产品” / stage “候选，未立项”
+List: “价格与利润计算｜重复资料整理”
+“情绪作品模板｜账号内容与商业线索”
+“需求、差异化与盈利尚未验证。”
+04 “价格册与资料核对” / stage “研究，部分停止”
+“价格册 + 客户折扣 + 生效日期：待真实资料验证。”
+“已淘汰：小票导入、通用 PDF，已有直接替代。”
+
+Middle column, SLATE BLUE, header “产品与工具实践”, subtitle “让原型进入真实使用”. SIX slightly shorter numbered cards, with their title, stage and description:
+05 “音频与音乐局部修改” / stage “已有演示”
+“只改一句旁白或一段音乐；衔接、字幕、导出待验证。”
+06 “咖啡全过程 3D” / stage “阶段作品”
+“同一批原料从咖啡果到拿铁；九阶段演示已有。”
+“商业需求尚未验证。”
+07 “共想室” / stage “已有原型”
+“多角色讨论，保留依据、分歧与决策。”
+“连接与短测试做过；协作增益待对照验证。”
+08 “岗位变化观察站” / stage “已有快照”
+“观察岗位与技能变化，辅助学习选择。”
+“采集可靠性与建议证据待核实。”
+09 “跨设备互联” / stage “已有实验”
+“配对 → 传输 → 校验 → 确认。”
+“浏览器已测；实体设备、跨网与恢复待验。”
+10 “论文研究工作台” / stage “方案阶段”
+“检索 → 理解术语、方法和图表 → 继续查新。”
+“方案页已有；在线检索与 AI 阅读未上线。”
+
+Right column, TERRACOTTA, header “创作与表达”, subtitle “让画面、角色与情绪形成作品”. TWO larger numbered cards and one smaller inspirations area:
+11 “艺术与动态视觉系列” / stage “有完整作品”
+“用画面、音乐和节奏表达艺术与审美。”
+“《观看的重量》完整交付过。”
+“《暂停的权利》被否定，系列尚未稳定。”
+12 “原创 AI 室友短剧” / stage “分集推进”
+“通过人物关系与喜剧形成原创角色系列。”
+“第一集有完整配音片。”
+“第二集《大一点》有剧本、样段与分镜，整集未完。”
+Below these two, a quieter dashed outline area titled “灵感保留区｜逐项状态待核实”
+“3D 世界与知识场景”
+“森林、洞穴、遗址、冰雪、微观生命、历史建筑、声音与情绪空间”
+“小龙动态形象：网站 / 桌面伴侣”
+“儿童动画与互动：救援小游戏”
+
+Bottom spans full width, clearly separate from three main branches:
+A slim context strip: “后来发展的游戏支线：保留现有成果，也为早期探索留出位置。”
+A bold shared learning loop, verbatim: “价值判断 → 最小实现 → 真实使用 → 反馈取舍”
+Small caption: “下一轮投入，由真实反馈决定。”
+Small source note: “依据 2026-10-25 回溯材料，整理于 2026-10-26。历史进展不等于当前验收；候选与停止项不计为开发承诺。”
+
+Fit every one of the twelve numbered directions exactly once. Make the mission and three branches immediately readable at thumbnail size; the short project details should be readable when enlarged. Equal width columns, with different card heights appropriate to 4 / 6 / 2 entries; no wasted empty right column. Keep labels tied to the correct project. No claim that all projects are launched, complete or commercially validated.
