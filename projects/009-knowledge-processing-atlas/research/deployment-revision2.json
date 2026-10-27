@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-28",
+  "url": "https://yydshly.github.io/1025_codex_project/009-knowledge-processing-atlas/",
+  "contentCommit": "92fe87f6fadefe7dcf60ead62051fe5fe5a17d76",
+  "workflow": {"id": 40604179834, "build": "success", "deploy": "success"},
+  "catalogObjects": 26,
+  "mechanismDisclosures": 26,
+  "algorithmTopics": 5,
+  "uniqueIds": 68,
+  "manualQuestions": 6,
+  "upstreamExperiments": "not-run",
+  "checks": {"registry": "pass", "publicationBoundary": "4 tests pass", "javascriptSyntax": "pass", "localLinks": "pass", "fullPagesBuild": "214 files", "liveResources": "7 endpoints HTTP 200"},
+  "localBrowser": {"supplementalSearch": "pass", "emptyState": "pass", "twoAndThreeComparisons": "pass", "fourthSelectionRejected": "pass", "clearSelection": "pass", "filteredHashReveal": "pass", "keyboardDisclosure": "pass"},
+  "liveBrowser": {"sqliteSearch": "pass", "twoComparisons": "6 rows", "scriptErrors": 0, "desktopViewport": 1280, "desktopDocumentWidth": 1265, "mobileViewport": 390, "mobileDocumentWidth": 375, "mobileTableContainerWidth": 337, "mobileTableScrollWidth": 650},
+  "liveImageSha256": "efed8221e35e78e77dc9d9b8e1e54f3c0a34da6be37b34f70c132ce63d3faa3d",
+  "liveFixtureSha256": "bfc5dd527e0cda4909a19316f39c151d3773cc7d0e556e8f26417f878a3309b9",
+  "textComparison": "line-endings normalized",
+  "screenshots": ["../assets/images/deployment-20261028-revision2/live-comparison.png", "../assets/images/deployment-20261028-revision2/live-mobile-sample.png"]
+}
