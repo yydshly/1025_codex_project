@@ -9,6 +9,7 @@ on:
       - 'projects/002-ink-rain-alley/**'
       - 'projects/005-paper-poetics-lab/**'
       - 'projects/004-baocut-effects-atlas/**'
+      - 'projects/008-ultraman-card-draw/**'
       - 'projects.json'
       - 'pages.config.json'
       - 'scripts/build-pages.mjs'
@@ -53,6 +54,7 @@ jobs:
           npm --prefix projects/002-ink-rain-alley run check
           npm --prefix projects/002-ink-rain-alley test
           npm --prefix projects/005-paper-poetics-lab run check
+          for script in projects/008-ultraman-card-draw/app/*.js; do node --check "$script"; done
       - name: Prepare BaoCut research page and public media
         run: npm --prefix projects/004-baocut-effects-atlas run build:site
       - name: Prepare GitHub Pages

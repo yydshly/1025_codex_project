@@ -25,6 +25,12 @@
         "assets/images/v1.4/research-map.png"
       ],
       "guidePage": "map.html"
+    },
+    {
+      "directory": "008-ultraman-card-draw",
+      "publicDirectory": "app",
+      "extraAssets": [],
+      "guidePage": "guide.html"
     }
   ]
 }

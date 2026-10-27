@@ -1,0 +1,30 @@
+Use case: infographic-diagram
+Asset type: 一张中文项目研究总览海报，用于本地项目README与向家长介绍成果。
+Primary request: 梳理“星光卡片基地”奥特曼与怪兽随机演示项目，清晰表达项目的目标、素材基础、上层架构、当前效果、价值与未来动作/渲染扩展。制作一张完成度高、中文清晰可读的横版信息图，建议3840×2160比例16:9。它是一张研究成果图，不是应用新页面。
+Audience and artistic intent: 面向家长和项目作者，传达“已经有丰富素材，可以逐步让熟悉的人物活起来，陪孩子随机探索”的期待感。科幻探索气质、友善、清楚、有童年想象力，避免战斗暴力和复杂数据仪表盘。
+Input images:
+Image 1 is the actual current app screenshot. Use it as accurate visual evidence/reference for current display styling: navy backdrop, rounded card, Tiga emerging ABOVE card boundary, solid metallic pose, title/skill/intro and four buttons. You may simplify into a well-composed current-effect card illustration rather than reproduce every tiny UI string. Do not copy its browser scrollbar or crop. Label the central card as “当前效果示意”.
+Image 2 is the existing stylized Tiga transparent foreground identity reference. Keep this exact recognisable silver/red/purple armor, lit eyes, blue chest jewel and crossed-arm pose in the central pop-out card. It represents the existing static foreground, not a newly completed animation.
+Composition and hierarchy: Spacious premium editorial infographic. Navy-blue background with restrained violet/cyan gradients, very sparse stars; warm cream white Chinese typography; cyan accents for implemented capabilities and amber accents ONLY for future additions. No decorative circular rings across the figure or words. Crisp clean Chinese sans typography, clear alignment, large text, restrained connectors. Nothing should look like a tiny crowded slide.
+Top 18%: small eyebrow “星光卡片基地 · 研究与效果总览”, very large headline “从人物图鉴，到孩子的随机探索剧场”, and subtitle “目标：随机认识英雄与怪兽，让孩子看形象、听介绍、和家长一起探索”.
+Middle 54%: left-to-right architecture with three generous visual zones, connected by visible directional arrows:
+LEFT zone about 29% width, two stacked modules connected downwards:
+module 1 exact heading “① 基础素材库”, standout numeral “874”, exact qualifier “条人物与形态资料”, then “人物形象 · 中文简介 · 资料来源”, and “搜索筛选 · 主题图鉴 · 本地收藏”. Small tasteful card stack icon/illustration suggests heroes and monsters without fabricated catalogue numbers.
+module 2 exact heading “② 人物演出配置”, text “配色 · 代表招式 · 讲解 · 可选前景”, and distinct cyan fact label “已配置：4位招式 · 2位透明前景”.
+CENTER zone about 38% width: heading “③ 卡片展示舞台”, dominant central Tiga pop-out card derived from the two references, the head and raised arms clearly emerging beyond the top of the rectangular card, not cut off and not crossing any labels. Soft lighting behind character, no rings or portal. Three concise cyan callouts outside the character area: “人物突出”, “招式光效”, “大图与朗读”. On the card show only “迪迦奥特曼” and “哉佩利敖光线” plus “当前效果示意”; avoid tiny body text and extra controls if space is tight.
+RIGHT zone about 25% width: heading “④ 随机演示体验”, a simple elegant vertical sequence of four clear text steps with small line icons and fine connectors:
+“抽一张”
+“看形象”
+“听介绍”
+“再探索”
+Below a small warm illustration of a parent and child looking at a display, secondary in scale to the central figure. Include exact short text “一套素材，反复发现新人物”.
+Bottom 28%: amber-accent future expansion band, clearly labelled as planned rather than already delivered:
+large heading “后续扩展：加动作 + 加渲染”
+two adjacent concise feature blocks:
+“动作层” / “标志姿态 · 挥手互动 · 招式短动画”
+“渲染层” / “分层前景 · 光线粒子 · 镜头与音画节奏”
+Both point via a single arrow to “继续接入随机演示”.
+Below an emphasis line “复用人物资料与抽卡流程，逐步丰富每个人物的演出”.
+Very bottom value row with three equal phrases: “孩子：兴趣驱动认知” / “家长：轻松亲子讲解” / “项目：素材可复用、效果可扩展”.
+Small unobtrusive footer “研究记录 · 2026.10.27｜人物主题图鉴，含不同形态｜角色形象为风格化演绎”.
+Constraints: Accurately distinguish existing capabilities from planned action animation. Existing 874 means entries including forms; existing 2 transparent foregrounds and 4 curated signature profiles. Do NOT claim all 874 have animation, fullbody cutouts, official voices, offline images, full Kayou physical card catalogue, full franchise completion, or deployed online service. No extra numerical claims. Keep all supplied visible Chinese wording spelled correctly, large and readable. Don't print the English instructions, section percentages, reference-image labels or this constraint block. No random Latin filler. No watermarks. One coherent final image only.

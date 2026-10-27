@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "nextId": 7,
+  "nextId": 9,
   "projects": [
     {
       "id": "001",
@@ -110,6 +110,23 @@
         "笔记到工具"
       ],
       "cover": "assets/images/prompthub-capabilities-overview.png",
+      "demoUrl": "",
+      "createdAt": "2026-10-27"
+    },
+    {
+      "id": "008",
+      "slug": "ultraman-card-draw",
+      "name": "奥特曼卡片抽卡器",
+      "summary": "以874条人物与形态资料为基础，随机展示奥特曼与怪兽，结合人物突出、招式光效和设备讲解开展亲子探索。沉淀素材、演出配置与卡片舞台分层，后续可增加人物动作和渲染，复用随机演示流程。",
+      "source": "https://github.com/yydshly/1025_codex_project",
+      "sourceName": "本库原创（无上游源库）",
+      "status": "building",
+      "tags": [
+        "卡片收藏",
+        "抽卡",
+        "亲子"
+      ],
+      "cover": "assets/images/project-overview-v1.png",
       "demoUrl": "",
       "createdAt": "2026-10-27"
     }

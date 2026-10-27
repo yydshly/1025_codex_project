@@ -2,6 +2,14 @@
 
 [返回首页](../README.md)
 
+## 008 · 星光卡片基地
+
+008 采用 `publicDirectory: app`，无需安装前端依赖；总入口使用本次生成的 `assets/images/project-overview-v1.png`，`guidePage: guide.html` 让点击引导图进入研究总览，项目名称和“查看网页”进入随机抽卡体验。引导图在 `app/assets/images/` 有逐字节一致的网页副本，支持本地打开与编号子路径发布。
+
+研究总览说明 874 条人物与形态资料、人物演出配置、卡片舞台和随机亲子展示，并区分现有的静态前景、页面光效、设备朗读与后续动作、渲染扩展。只发布 `app/` 中的静态页面、人物数据及展示素材；研究笔记、截图和测试工具不进入网站。正式地址与上线验收以 [008 发布记录](../projects/008-ultraman-card-draw/research/deployment.md)为准。
+
+个人收藏使用浏览器本地存储。本地文件页和线上地址的数据互不共享，切换入口时可先导出备份再在目标地址导入；发布不会读取或上传原浏览器收藏。
+
 本库通过 GitHub Actions 构建 GitHub Pages，一个站点下按编号子路径组织多个项目。当前发布清单为 [pages.config.json](../pages.config.json)，首个接入项目是 [001 · 早期方向档案](../projects/001-early-directions-atlas/README.md)。
 
 2026-10-27 首次发布成功，已验证[站点总入口](https://yydshly.github.io/1025_codex_project/)与[001 在线网页](https://yydshly.github.io/1025_codex_project/001-early-directions-atlas/)。具体工作流和验收记录见[项目发布记录](../projects/001-early-directions-atlas/research/deployment.md)。

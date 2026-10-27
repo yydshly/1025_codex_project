@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101a38">
+  <meta name="description" content="星光卡片基地研究总览：以874条人物与形态资料为基础，连接人物演出配置、卡片舞台和随机亲子演示，逐步扩展动作与渲染。">
+  <title>星光卡片基地 · 研究与效果总览</title>
+  <style>
+    :root { color-scheme: dark; font-family: 'Microsoft YaHei', 'PingFang SC', system-ui, sans-serif; color: #f3f6ff; background: #0d1530; font-synthesis: none; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-width: 320px; line-height: 1.8; background: radial-gradient(ellipse at 90% 0%, #243b664d, transparent 50%); }
+    a { color: inherit; text-underline-offset: 4px; }
+    a:focus-visible { outline: 3px solid #ffda76; outline-offset: 5px; }
+    .wrap { width: min(1160px, calc(100% - 48px)); margin: auto; }
+    header { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding-block: 22px; border-bottom: 1px solid #b9cded2b; }
+    header a { display: inline-flex; align-items: center; min-height: 44px; font-size: 14px; text-decoration: none; }
+    .brand { color: #ffd56b; font-weight: 800; letter-spacing: .05em; }
+    .intro { padding: 54px 0 30px; }
+    .eyebrow { margin: 0 0 12px; color: #8bdcfa; font-size: 12px; letter-spacing: .12em; }
+    h1 { max-width: 900px; margin: 0 0 20px; font-size: clamp(30px, 4.6vw, 52px); line-height: 1.35; letter-spacing: -.025em; }
+    .lead { max-width: 850px; color: #bac9e2; font-size: 17px; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin: 26px 0 10px; }
+    .button { display: inline-flex; align-items: center; justify-content: center; min-height: 46px; padding: 9px 20px; border: 1px solid #b9cded42; border-radius: 12px; text-decoration: none; font-size: 14px; font-weight: 700; }
+    .primary { color: #18223e; background: #ffd56b; border-color: #ffd56b; }
+    figure { margin: 16px 0 44px; }
+    .overview { display: block; border: 1px solid #b9cded35; border-radius: 16px; overflow: hidden; }
+    .overview img { display: block; width: 100%; height: auto; }
+    figcaption { margin-top: 12px; color: #a9bbd8; font-size: 13px; }
+    section { padding: 10px 0 34px; }
+    h2 { margin: 0 0 18px; font-size: clamp(22px, 3vw, 29px); line-height: 1.4; }
+    h3 { margin: 5px 0 10px; font-size: 18px; }
+    .grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+    .panel { padding: 22px; border: 1px solid #b9cded28; border-radius: 16px; background: #1724428c; }
+    .panel p { margin: 0; color: #b8c7df; font-size: 14px; }
+    .step { color: #8bdcfa; font-size: 12px; letter-spacing: .08em; }
+    .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 18px; }
+    .stats strong { display: block; color: #8bdcfa; font-size: 29px; line-height: 1.4; }
+    .stats span { color: #b8c7df; font-size: 14px; }
+    .two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .future .panel { border-color: #ffd56b42; background: #c49a3c0b; }
+    .future h3 { color: #ffd56b; }
+    .note { color: #a9bbd8; font-size: 14px; }
+    .values { display: flex; flex-wrap: wrap; gap: 10px 28px; padding: 20px 0; border-top: 1px solid #b9cded28; }
+    .values p { margin: 0; color: #b8c7df; font-size: 14px; }
+    .values strong { color: #f3f6ff; }
+    footer { padding: 22px 0 38px; color: #93a8ca; font-size: 12px; }
+    footer p { margin: 7px 0; }
+    @media(max-width: 850px) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    @media(max-width: 520px) { .wrap { width: calc(100% - 32px); } .intro { padding-top: 34px; } .lead { font-size: 15px; } .grid, .stats { grid-template-columns: 1fr; } .panel { padding: 20px; } .stats .panel { display: flex; align-items: baseline; gap: 14px; } header { gap: 12px; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header><a class="brand" href="index.html">✦ 星光卡片基地</a><a href="https://yydshly.github.io/1025_codex_project/">研究总库 ↗</a></header>
+    <main>
+      <div class="intro">
+        <p class="eyebrow">008 · 亲子探索 / 人物图鉴 / 网页演出</p>
+        <h1>从人物图鉴，<br>到孩子的随机探索剧场</h1>
+        <p class="lead">孩子喜欢的是人物和故事。我们把奥特曼与怪兽的形象、简介和资料来源整理为基础素材，再用卡片舞台、招式光效和讲解，让每一次随机相遇都成为认识新人物的机会。</p>
+        <nav class="actions" aria-label="体验入口"><a class="button primary" href="index.html">开始随机抽卡 ✦</a><a class="button" href="index.html#catalog">浏览人物图鉴</a><a class="button" href="assets/images/project-overview-v1.png">放大阅读引导图 ↗</a></nav>
+      </div>
+      <figure>
+        <a class="overview" href="assets/images/project-overview-v1.png" aria-label="打开完整研究与效果总览图"><img src="assets/images/project-overview-v1.png" width="1672" height="941" alt="星光卡片基地总览：874条人物与形态资料，连接人物配置、卡片舞台和随机演示；后续增加动作与渲染，服务孩子认知、亲子讲解和素材复用。"></a>
+        <figcaption>本次生成的研究引导图。青色展示当前能力，金色展示后续扩展；人物与卡片为风格化效果示意。点击图片可查看原图。</figcaption>
+      </figure>
+      <section aria-labelledby="structure-title">
+        <h2 id="structure-title">我们的理解：素材打底，演出逐步丰富</h2>
+        <div class="grid">
+          <article class="panel"><span class="step">01 · 素材基础</span><h3>人物素材库</h3><p>形象、中文简介与来源随图鉴组织。可以搜索和筛选，打开网页就能开始探索。</p></article>
+          <article class="panel"><span class="step">02 · 演出组织</span><h3>人物演出配置</h3><p>按人物关联配色、代表招式、原创讲解和可选透明前景，让特色表现独立于人物资料。</p></article>
+          <article class="panel"><span class="step">03 · 效果呈现</span><h3>卡片展示舞台</h3><p>通过人物突出、页面光效、大图与设备朗读，把资料转成看得清、听得懂的展示。</p></article>
+          <article class="panel"><span class="step">04 · 亲子使用</span><h3>随机演示体验</h3><p>抽一张、看形象、听介绍，再一起聊聊人物与故事。同一套素材可以反复探索。</p></article>
+        </div>
+      </section>
+      <section aria-labelledby="current-title">
+        <h2 id="current-title">现在已经能做什么</h2>
+        <div class="stats"><div class="panel"><strong>874 条</strong><span>人物与形态资料</span></div><div class="panel"><strong>4 位</strong><span>精选人物代表招式配置</span></div><div class="panel"><strong>2 位</strong><span>透明人物前景：初代、迪迦</span></div></div>
+        <p class="note">支持人物搜索、分类、随机抽取、连续抽取避开上一条、大图和主动语音讲解；也可以整理个人收藏并导出备份。现有前景是静态图片，招式使用页面光效演绎，讲解由设备合成语音朗读。</p>
+      </section>
+      <section class="future" aria-labelledby="future-title">
+        <p class="eyebrow">后续扩展 · 尚未实现</p>
+        <h2 id="future-title">加动作 + 加渲染，继续接入随机演示</h2>
+        <div class="grid two"><article class="panel"><h3>动作：让人物更有自己的性格</h3><p>逐步增加标志姿态、挥手互动和招式短动画。按人物制作动作素材，接入播放控制与演出顺序。</p></article><article class="panel"><h3>渲染：让出场和招式更有表现力</h3><p>丰富分层前景、光线粒子、镜头和音画节奏。优先打磨孩子喜欢的人物，再扩展到更多角色。</p></article></div>
+        <p class="note">继续复用人物资料与抽卡流程，逐个丰富人物演出。下一阶段需要实际制作和接入动作、渲染素材，当前未覆盖所有人物的专属演出。</p>
+      </section>
+      <section aria-labelledby="value-title">
+        <h2 id="value-title">项目的价值</h2>
+        <div class="values"><p><strong>对孩子</strong> · 用喜欢的人物带动认知和表达</p><p><strong>对家长</strong> · 随机展示，轻松开展亲子讲解</p><p><strong>对项目</strong> · 素材可复用，人物效果可持续扩展</p></div>
+        <a class="button primary" href="index.html">去遇见今天的人物 →</a>
+      </section>
+    </main>
+    <footer><p>非官方亲子实践。图鉴条目包含不同形态，并非完整卡游实体卡目录；人物与原始图片权利属于相应权利人。部分图片需要联网加载。</p><p>个人收藏保存在当前浏览器，不跨设备同步。从本地网页切换到线上地址时，可先导出备份，再在新地址导入。</p><p><a href="https://github.com/yydshly/1025_codex_project/tree/main/projects/008-ultraman-card-draw">项目说明与资料来源 ↗</a> · 研究记录 2026.10.27</p></footer>
+  </div>
+</body>
+</html>
