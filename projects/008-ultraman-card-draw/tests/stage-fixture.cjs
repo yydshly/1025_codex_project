@@ -1,11 +1,13 @@
 // Isolated local browser fixture: does not read or write the user's collection.
-// Usage: node tests/stage-fixture.cjs [port]
+// Usage: node tests/stage-fixture.cjs [port] [missing|delayed|normal]
 const http = require('node:http');
 const fs = require('node:fs');
 const path = require('node:path');
 
 const app = path.resolve(__dirname, '..', 'app');
 const port = Number(process.argv[2] || 8774);
+const mode = process.argv[3] || 'missing';
+if (!['missing', 'delayed', 'normal'].includes(mode)) throw new Error('Unknown fixture mode');
 const types = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.png': 'image/png' };
 const instrumentation = `<script>
   (() => {
@@ -30,7 +32,11 @@ http.createServer((req, res) => {
   try {
     let body = fs.readFileSync(target);
     if (requestPath === '/index.html') body = Buffer.from(body.toString('utf8').replace('<script src="app.js" defer></script>', `${instrumentation}<script src="app.js" defer></script>`));
-    if (requestPath === '/profiles.js') body = Buffer.from(body.toString('utf8').replaceAll('assets/tiga-foreground.png', 'assets/missing-tiga-foreground.png').replaceAll('assets/ultraman-foreground.png', 'assets/missing-ultraman-foreground.png'));
+    if (requestPath === '/profiles.js' && mode === 'missing') body = Buffer.from(body.toString('utf8').replaceAll('assets/tiga-foreground.png', 'assets/missing-tiga-foreground.png').replaceAll('assets/ultraman-foreground.png', 'assets/missing-ultraman-foreground.png'));
+    if (mode === 'delayed' && /\/assets\/(tiga|ultraman)-foreground\.png$/.test(requestPath)) {
+      setTimeout(() => { res.writeHead(200, { 'Content-Type': 'image/png', 'Cache-Control': 'no-store' }); res.end(body); }, 8000);
+      return;
+    }
     res.writeHead(200, { 'Content-Type': types[path.extname(target)] || 'application/octet-stream', 'Cache-Control': 'no-store' });
     res.end(body);
   } catch { res.writeHead(404).end('Not found'); }

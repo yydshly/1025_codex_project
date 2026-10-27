@@ -4,6 +4,8 @@
 
 ## 008 · 星光卡片基地
 
+2026-10-27 已上线并核验：[随机抽卡体验](https://yydshly.github.io/1025_codex_project/008-ultraman-card-draw/) · [研究与效果总览](https://yydshly.github.io/1025_codex_project/008-ultraman-card-draw/guide.html)。
+
 008 采用 `publicDirectory: app`，无需安装前端依赖；总入口使用本次生成的 `assets/images/project-overview-v1.png`，`guidePage: guide.html` 让点击引导图进入研究总览，项目名称和“查看网页”进入随机抽卡体验。引导图在 `app/assets/images/` 有逐字节一致的网页副本，支持本地打开与编号子路径发布。
 
 研究总览说明 874 条人物与形态资料、人物演出配置、卡片舞台和随机亲子展示，并区分现有的静态前景、页面光效、设备朗读与后续动作、渲染扩展。只发布 `app/` 中的静态页面、人物数据及展示素材；研究笔记、截图和测试工具不进入网站。正式地址与上线验收以 [008 发布记录](../projects/008-ultraman-card-draw/research/deployment.md)为准。

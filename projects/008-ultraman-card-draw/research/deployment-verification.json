@@ -1,0 +1,172 @@
+{
+  "checkedAtUtc": "2026-10-27T04:44:53.844440+00:00",
+  "releaseCommit": "5ac3100385e9537fa46e92f8b32c63d3052549ee",
+  "workflowRun": "https://github.com/yydshly/1025_codex_project/actions/runs/40451056010",
+  "workflowResult": "success",
+  "guideSha256": "d4927e0f641bbd96fca4bb4b5538ca4bdcd79682d4abae3523f2f7aa6277d9b4",
+  "researchRouteStatus": 404,
+  "resources": [
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 6421
+    },
+    {
+      "path": "008-ultraman-card-draw/app.js",
+      "status": 200,
+      "bytes": 26880
+    },
+    {
+      "path": "008-ultraman-card-draw/characters-extra-archive-4.js",
+      "status": 200,
+      "bytes": 2080
+    },
+    {
+      "path": "008-ultraman-card-draw/characters-extra-archive-5.js",
+      "status": 200,
+      "bytes": 20883
+    },
+    {
+      "path": "008-ultraman-card-draw/characters-extra-classic-2.js",
+      "status": 200,
+      "bytes": 7044
+    },
+    {
+      "path": "008-ultraman-card-draw/characters-extra-classic.js",
+      "status": 200,
+      "bytes": 28652
+    },
+    {
+      "path": "008-ultraman-card-draw/characters-extra-cosmos-6.js",
+      "status": 200,
+      "bytes": 49211
+    },
+    {
+      "path": "008-ultraman-card-draw/characters-extra-enemies-3.js",
+      "status": 200,
+      "bytes": 10504
+    },
+    {
+      "path": "008-ultraman-card-draw/characters-extra-forms-3.js",
+      "status": 200,
+      "bytes": 11155
+    },
+    {
+      "path": "008-ultraman-card-draw/characters-extra-gaia-5.js",
+      "status": 200,
+      "bytes": 34374
+    },
+    {
+      "path": "008-ultraman-card-draw/characters-extra-heroes-4.js",
+      "status": 200,
+      "bytes": 5939
+    },
+    {
+      "path": "008-ultraman-card-draw/characters-extra-heroes.js",
+      "status": 200,
+      "bytes": 29939
+    },
+    {
+      "path": "008-ultraman-card-draw/characters-extra-kaiju-4.js",
+      "status": 200,
+      "bytes": 41002
+    },
+    {
+      "path": "008-ultraman-card-draw/characters-extra-max-6.js",
+      "status": 200,
+      "bytes": 18771
+    },
+    {
+      "path": "008-ultraman-card-draw/characters-extra-modern-2.js",
+      "status": 200,
+      "bytes": 19953
+    },
+    {
+      "path": "008-ultraman-card-draw/characters-extra-modern.js",
+      "status": 200,
+      "bytes": 24461
+    },
+    {
+      "path": "008-ultraman-card-draw/characters-extra-official-3.js",
+      "status": 200,
+      "bytes": 7070
+    },
+    {
+      "path": "008-ultraman-card-draw/characters-extra-taro-6.js",
+      "status": 200,
+      "bytes": 34517
+    },
+    {
+      "path": "008-ultraman-card-draw/characters-extra-tiga-5.js",
+      "status": 200,
+      "bytes": 35936
+    },
+    {
+      "path": "008-ultraman-card-draw/characters.js",
+      "status": 200,
+      "bytes": 42609
+    },
+    {
+      "path": "008-ultraman-card-draw/guide.html",
+      "status": 200,
+      "bytes": 9282
+    },
+    {
+      "path": "008-ultraman-card-draw/index.html",
+      "status": 200,
+      "bytes": 9692
+    },
+    {
+      "path": "008-ultraman-card-draw/profiles.js",
+      "status": 200,
+      "bytes": 1211
+    },
+    {
+      "path": "008-ultraman-card-draw/style.css",
+      "status": 200,
+      "bytes": 22182
+    },
+    {
+      "path": "008-ultraman-card-draw/assets/character-portraits-v1.png",
+      "status": 200,
+      "bytes": 3339349
+    },
+    {
+      "path": "008-ultraman-card-draw/assets/character-portraits-v2.png",
+      "status": 200,
+      "bytes": 3492901
+    },
+    {
+      "path": "008-ultraman-card-draw/assets/tiga-foreground.png",
+      "status": 200,
+      "bytes": 2187340
+    },
+    {
+      "path": "008-ultraman-card-draw/assets/ultraman-foreground.png",
+      "status": 200,
+      "bytes": 1887919
+    },
+    {
+      "path": "008-ultraman-card-draw/assets/images/project-overview-v1.png",
+      "status": 200,
+      "bytes": 2170105
+    }
+  ],
+  "slowForegroundFixture": {
+    "delayMs": 8000,
+    "before": {
+      "foregroundHidden": true,
+      "foregroundComplete": false,
+      "cutoutActive": false,
+      "originalVisibility": "visible"
+    },
+    "after": {
+      "foregroundHidden": false,
+      "foregroundComplete": true,
+      "naturalWidth": 1024,
+      "cutoutActive": true,
+      "originalVisibility": "hidden"
+    },
+    "speech": "fixture stub; no actual audio verified"
+  }
+}
