@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "nextId": 9,
+  "nextId": 10,
   "projects": [
     {
       "id": "001",
@@ -129,6 +129,24 @@
       "cover": "assets/images/project-overview-v1.png",
       "demoUrl": "https://yydshly.github.io/1025_codex_project/008-ultraman-card-draw/",
       "createdAt": "2026-10-27"
+    },
+    {
+      "id": "009",
+      "slug": "knowledge-processing-atlas",
+      "name": "资料理解与检索研究",
+      "summary": "从 DeepTutor 与 NotebookLM 的资料学习场景出发，比较功能重叠与建库成本；拆解 MinerU、BGE-M3、Qdrant、Graphiti 等19项及5项延伸工具的解析、检索和时间关系本质，规划可追溯阅读、跨日回顾、经验复用与自适应练习。附分层对比与引导图，底层演示待验证。",
+      "source": "https://github.com/HKUDS/DeepTutor",
+      "status": "researching",
+      "tags": [
+        "文档解析",
+        "知识检索",
+        "RAG",
+        "时间关系",
+        "研究对比"
+      ],
+      "cover": "assets/images/research-overview-v3.png",
+      "demoUrl": "",
+      "createdAt": "2026-10-28"
     }
   ]
 }
