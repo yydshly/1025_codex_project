@@ -1,7 +1,5 @@
-# 项目图片
+# 项目配图
 
-存放该项目的封面、流程截图和结果对比图。建议使用 `cover.png`、`workflow.png` 等清晰且无空格的名称。
+research-overview.png 与 research-overview-v2.png 保留早期理解；research-overview-v3.png 为当前研究引导图，使用内置 imagegen 生成，相关提示词保存在 research/。它们是本研究示意，不是上游效果截图或实测。
 
-在项目 README 中为图片添加替代文字、图注与来源。在根目录 `projects.json` 中设置 `cover` 为 `assets/images/实际文件名` 后，执行 `npm run index:update` 即可更新总索引的项目配图。
-
-当前没有截图，待完成真实研究后补充。
+app/assets/images/research-overview-v3.png 是第三版的逐字节网页副本，供相同的本地和 Pages 相对路径使用。deployment-20261028/ 保存正式网页交互与手机布局核验截图，不进入网站产物。

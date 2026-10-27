@@ -115,3 +115,12 @@ GitHub Pages 只能提供静态内容。模型服务、采集任务、密钥和�
 发布准备仅复制静态应用、六项明确图像及当前映射的13段MiniMax音频；不发布旧音频、语音生成工具、配置或本地依赖。研究文档链接改指同仓库对应源码。既有 `understanding-atlas.png` 作为项目登记和网页引导图，发布时逐字节保留。`test:publication`在独立目录检查根入口路径、文档改写、资源白名单和越界／链接拒绝。
 
 2026-10-27已上线并核验：[研究总览](https://yydshly.github.io/1025_codex_project/003-unified-learning-design/) · [三维样章](https://yydshly.github.io/1025_codex_project/003-unified-learning-design/app/index.html)。工作流、资源检查与浏览器截图见[003发布记录](../projects/003-unified-learning-design/research/deployment.md)。
+
+
+## 009 · 资料理解与检索研究
+
+2026-10-28已上线并核验：[研究网页](https://yydshly.github.io/1025_codex_project/009-knowledge-processing-atlas/)。从DeepTutor与NotebookLM的资料学习场景出发，解释建库与模型依赖，展示19个重点项目/模型及5项延伸工具的原理、区别与价值，并规划可追溯阅读、跨日回顾、经验复用和自适应学习能力。
+
+009使用 `publicDirectory: app`，无需前端构建依赖；第三版引导图的网页副本与原图逐字节一致。新增009路径触发与脚本语法检查，发布清单保持已有项目。线上图像、资源、19项原理展开、搜索筛选和手机布局已核对。[完整发布与验收记录](../projects/009-knowledge-processing-atlas/research/deployment.md)。
+
+网页是研究展示，底层算法演示仍待实施，不能把上线视为上游项目能力已经实测。

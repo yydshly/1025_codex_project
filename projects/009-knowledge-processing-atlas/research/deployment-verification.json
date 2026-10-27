@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-28",
+  "timezone": "Asia/Shanghai",
+  "url": "https://yydshly.github.io/1025_codex_project/009-knowledge-processing-atlas/",
+  "contentCommit": "6c40aab5fc39d85b0dec45af8683669543217e7b",
+  "workflow": {
+    "id": 40559484575,
+    "url": "https://github.com/yydshly/1025_codex_project/actions/runs/40559484575",
+    "status": "completed",
+    "conclusion": "success"
+  },
+  "http": {
+    "root": 200,
+    "index": 200,
+    "css": 200,
+    "js": 200,
+    "image": 200
+  },
+  "imageSha256": "efed8221e35e78e77dc9d9b8e1e54f3c0a34da6be37b34f70c132ce63d3faa3d",
+  "toolCards": 19,
+  "mechanismDisclosures": 19,
+  "supplementalTools": 5,
+  "scenarios": 6,
+  "upstreamExperiments": "not-run",
+  "screenshots": [
+    "../assets/images/deployment-20261028/live-search-and-principle.png",
+    "../assets/images/deployment-20261028/live-mobile-scenarios.png"
+  ]
+}
