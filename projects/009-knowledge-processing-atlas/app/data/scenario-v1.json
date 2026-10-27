@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "id": "scenario-v1",
+  "status": "manually-authored-not-executed",
+  "description": "虚构研究样例及人工标注；页码为材料定位，不代表已生成或解析PDF。",
+  "documents": [
+    {
+      "id": "demo-project-a",
+      "title": "项目A试点手册",
+      "pages": [
+        {
+          "page": 1,
+          "locator": "P1-T1",
+          "table": {
+            "headers": [
+              "方案",
+              "条件",
+              "拟用方法"
+            ],
+            "rows": [
+              [
+                "甲",
+                "仅离线、100份以内",
+                "关键词与人工审校"
+              ],
+              [
+                "乙",
+                "超过100份、需要跨说法查找",
+                "拟评估语义检索"
+              ]
+            ]
+          }
+        },
+        {
+          "page": 2,
+          "events": [
+            {
+              "id": "E1",
+              "eventTime": "2026-03-01",
+              "importTime": "2026-06-10",
+              "text": "项目A因接口问题暂停。"
+            },
+            {
+              "id": "E2",
+              "eventTime": "2026-05-01",
+              "importTime": "2026-06-01",
+              "text": "接口修复，项目A恢复推进。"
+            }
+          ]
+        },
+        {
+          "page": 3,
+          "events": [
+            {
+              "id": "E3",
+              "eventTime": "2026-05-02",
+              "importTime": "2026-06-02",
+              "text": "项目B仍暂停，不能据项目A恢复推断B也恢复。"
+            }
+          ],
+          "text": "材料未给出预算金额。"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "Q1",
+      "question": "方案甲的适用条件？",
+      "goldSources": [
+        "P1-T1-甲"
+      ],
+      "goldAnswer": "仅离线、100份以内",
+      "type": "table"
+    },
+    {
+      "id": "Q2",
+      "question": "项目A为何一度搁置？",
+      "goldSources": [
+        "P2-E1"
+      ],
+      "goldAnswer": "接口问题",
+      "type": "paraphrase"
+    },
+    {
+      "id": "Q3",
+      "question": "截至2026-03-15项目A的状态？",
+      "goldSources": [
+        "P2-E1"
+      ],
+      "goldAnswer": "暂停",
+      "type": "historical-state"
+    },
+    {
+      "id": "Q4",
+      "question": "截至2026-05-02项目A的状态？",
+      "goldSources": [
+        "P2-E2"
+      ],
+      "goldAnswer": "恢复推进",
+      "type": "out-of-order-import"
+    },
+    {
+      "id": "Q5",
+      "question": "项目B也恢复了吗？",
+      "goldSources": [
+        "P3-E3"
+      ],
+      "goldAnswer": "仍暂停",
+      "type": "entity-negation"
+    },
+    {
+      "id": "Q6",
+      "question": "项目预算是多少？",
+      "goldSources": [],
+      "goldAnswer": null,
+      "answerable": false,
+      "type": "unanswerable"
+    }
+  ],
+  "experimentResults": null,
+  "notes": [
+    "表格数值是虚构手册条件，不是工具适用规模或性能阈值。",
+    "后续实际生成PDF/扫描件并记录哈希；尚无解析、检索或模型输出。"
+  ]
+}

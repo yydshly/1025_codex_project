@@ -1,0 +1,1 @@
+﻿run_id,experiment,status,dataset_id,dataset_sha256,tool_version_or_commit,engine_mode,model_version,device,tokenizer,chunk_policy,top_k,generator_version,prompt_hash,index_version,cold_or_warm,build_seconds,update_seconds,query_seconds,model_calls,storage_bytes,recall_at_k,mrr,unanswerable_behavior,errors,source_artifacts,license_reference

@@ -182,3 +182,15 @@ PageIndex 按章节树寻找内容，与关键词和向量是不同思路。Grap
 ### 引导图第三版
 
 第三版补入研究缘起、26个对象的分工、模型/索引/数据库边界、具体使用场景和四步验证路线。图用于导航，网页的展开说明保留更细的原理、输入输出、成本、局限与来源。图和网页都是研究综述；生成图像仅表示内容整理，不是上游工具实验。
+
+## 本轮复查后的补全
+
+1. 统一目录为26项：19个重点对象，加上LlamaIndex、LightRAG、SQLite FTS5、Pyserini、OmniDocBench及DeepTutor/NotebookLM。区分应用、模型、数据库、框架和评测，提供搜索、直接定位与2–3项并排描述对照。
+2. 比较精确到版本/引擎/模式。不能把MinerU、Docling和PaddleOCR固定归为传统流水线：它们可有不同解析路线。Docling提供VLM流程，MinerU当前版本还包括文档库与查找能力；解析职责与完整问答系统仍应区分。
+3. 算法专题包括解析、结构分块、BM25/稠密/词元级检索、排名融合/交叉编码重排、图与时间。区分学习稀疏权重与BM25、ColBERT后期交互与交叉编码；重排不能补回未进入候选的证据。
+4. 图像概览之外增加可点击文字路线，显示同层替换、跨层组合和可跳过环节；场景选型表明确简单基线、扩展条件及代价。
+5. 新增[scenario-v1虚构材料](../app/data/scenario-v1.json)，包含表格、同义表达、历史状态、乱序导入、对象否定和无答案6题。页面只显示人工内容/参照，没有运行解析、检索或生成，也尚未制作PDF。
+6. 用[实验协议](experiment-protocol.md)约定固定条件、改变项、完成依据和记录模板。首次导入、增量更新、查询、空间及维护分开记录；更正和删除后检查派生物失效，不只考察首次建库。
+7. 共同价值不局限于资料整理：我们希望沉淀来源字段、可替换模块、重建索引、可纠正生成记录和评测方法，支持阅读、跨日回顾、经验复用、学习与研究。业务目标影响证据和状态设计，不能把全部业务逻辑等同展示形式。
+
+新增官方依据（2026-10-28核对，实验目标版本待锁定）：[Docling分块](https://docling-project.github.io/docling/concepts/chunking/)、[Docling VLM](https://docling-project.github.io/docling/usage/vision_models/)、[PaddleOCR-VL](https://www.paddleocr.ai/main/en/version3.x/pipeline_usage/PaddleOCR-VL.html)、[Qdrant融合查询](https://qdrant.tech/documentation/search/hybrid-queries/)、[BAAI重排模型卡](https://huggingface.co/BAAI/bge-reranker-v2-m3)。新增链接服务原理解释，没有将相应模型安装到工作区。

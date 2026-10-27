@@ -134,7 +134,7 @@
       "id": "009",
       "slug": "knowledge-processing-atlas",
       "name": "资料理解与检索研究",
-      "summary": "从 DeepTutor 与 NotebookLM 的资料学习场景出发，比较功能重叠与建库成本；拆解 MinerU、BGE-M3、Qdrant、Graphiti 等19项及5项延伸工具的解析、检索和时间关系本质，规划可追溯阅读、跨日回顾、经验复用与自适应练习。附分层对比与引导图，底层演示待验证。",
+      "summary": "从 DeepTutor 与 NotebookLM 的教材问答和资料整理场景出发，比较 MinerU、Docling、BGE-M3、Qdrant、Graphiti 等26个对象。拆解结构解析、分块、检索与时间关系的本质，规划带出处阅读、跨日回顾、经验复用和自适应复习；附同题样例、场景选型、并排对比和实验协议，上游效果待验证。",
       "source": "https://github.com/HKUDS/DeepTutor",
       "status": "researching",
       "tags": [
