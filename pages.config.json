@@ -36,6 +36,12 @@
       "directory": "009-knowledge-processing-atlas",
       "publicDirectory": "app",
       "extraAssets": []
+    },
+    {
+      "directory": "010-agent-skills-engineering-lab",
+      "publicDirectory": "dist/site",
+      "extraAssets": [],
+      "guidePage": "app/overview.html"
     }
   ]
 }

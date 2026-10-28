@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="理解25个工程Skill的价值与能力：把工程经验变成AI可遵循、结果可核对的工作规程；按真实需求查阅用途、场景、步骤、产物和协作，学习控制落地。">
+  <title>25 个 Skill，一张使用地图</title>
+  <link rel="stylesheet" href="guide.css">
+  <link rel="stylesheet" href="overview.css">
+  <script defer src="overview-data.js"></script>
+  <script defer src="overview.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">跳到正文</a>
+  <header class="topbar">
+    <a class="brand" href="overview.html"><span>010</span> AGENT SKILLS <small>使用地图</small></a>
+    <nav aria-label="资料入口"><a href="scenarios.html">场景详解</a><a href="index.html#catalog">实现原理</a><a href="real-case.html">已有实践</a></nav>
+  </header>
+  <main id="main" class="overview-main">
+    <section class="overview-intro" aria-labelledby="overview-title">
+      <div>
+        <p class="eyebrow">查阅入口 · 全部 25 项</p>
+        <h1 id="overview-title">25 个 Skill，<em>一张使用地图</em></h1>
+        <p class="overview-lead">原库把需求、实现、验证与交付经验写成 25 份工作规程，帮助 AI 助手明确步骤、约束、产物和检查依据。</p>
+        <p class="overview-lead">这张图是我们的按需查阅入口：从真实问题选方法，点击看清五个问题；实际使用后再核对效果，学习怎样控制落地，并沉淀自己的能力。</p>
+      </div>
+      <div class="overview-exports" aria-label="完整汇总图">
+        <a class="primary" href="overview-poster.html">查看完整汇总长图 ↗</a>
+        <span><a href="../assets/images/skills-field-guide.png" download>下载 PNG</a><a href="../assets/images/skills-field-guide.svg" download>下载 SVG 原图</a></span>
+      </div>
+    </section>
+    <p class="overview-reading"><strong>读图顺序</strong><span>选方法 → 明确目标 → 准备执行 → 实现 → 验证 → 改善质量 → 交付维护</span></p>
+    <div class="overview-layout">
+      <section class="overview-map" aria-labelledby="map-title">
+        <div class="overview-map-heading"><h2 id="map-title">我现在遇到了什么问题？</h2><p>25 项全列在图中，按需要选择。</p></div>
+        <div id="overview-map" class="overview-stages"><p class="overview-loading" role="status">正在载入能力地图…</p></div>
+        <p class="overview-map-note">阶段用于定位，不是固定流水线。上下文、测试、质疑、安全、文档等方法会跨阶段使用；检查失败时可返回前面的步骤。</p>
+      </section>
+      <aside class="overview-detail" id="overview-detail" aria-labelledby="detail-title" aria-live="polite">
+        <p>选择图中的 Skill，查看完整五问。</p>
+      </aside>
+    </div>
+    <p class="overview-scope"><strong>当前理解范围</strong>25 项已完成用途、场景与原理解读；图中的项目场景帮助理解用法，25 项逐项完整实测尚未完成。之后结合真实需求，再选择相关 Skill 实际使用和分析。</p>
+    <noscript><p>此交互地图需要 JavaScript。也可以<a href="overview-poster.html">查看完整汇总图</a>，或阅读<a href="../research/learning-guide.md">完整文字导览</a>。</p></noscript>
+  </main>
+  <footer><p>固定研究版本 <code>aeac41d4</code> · 源库 addyosmani/agent-skills</p><a href="../README.md">项目说明与研究依据</a><a href="scenarios.html">展开全部使用场景</a></footer>
+</body>
+</html>

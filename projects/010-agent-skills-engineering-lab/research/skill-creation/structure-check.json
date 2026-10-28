@@ -1,0 +1,14 @@
+{
+  "checkedAt": "2026-10-28T06:31:39.680360+00:00",
+  "command": [
+    "D:\\software\\python310\\python.exe",
+    "-X",
+    "utf8",
+    "-B",
+    "D:/codex/home/skills/.system/skill-creator/scripts/quick_validate.py",
+    "D:\\codex\\home\\skills\\research-recall"
+  ],
+  "exitCode": 0,
+  "stdout": "Skill is valid!\n",
+  "stderr": ""
+}

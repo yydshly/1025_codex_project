@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agent Skills · 从整体到细节</title>
+  <meta name="description" content="以固定版本原文为依据，系统理解25项工程技能的作用、步骤、产出、区别与协作方式。">
+  <link rel="stylesheet" href="guide.css"><link rel="stylesheet" href="real-case.css"><link rel="stylesheet" href="scenarios.css">
+  <script defer src="catalog.js"></script><script defer src="guide.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">跳到正文</a>
+<header class="topbar"><a class="brand" href="overview.html"><span>010</span> AGENT SKILLS <small>研究导览</small></a><nav aria-label="主要导航"><a href="overview.html">入口总图</a><a href="scenarios.html">使用场景</a><a href="#catalog">25 项详解</a><a href="#distinctions">区别</a><a href="#journey">串起来看</a><a href="#evidence">验证范围</a></nav></header>
+<main id="main">
+  <section class="hero" id="overview">
+    <div><p class="eyebrow">从整体 → 分类 → 单项 → 协作</p><h1>从整体看懂<br><em>25 项工程技能</em></h1><p class="lead">这个仓库把软件工程经验写成给 AI 助手的工作流程。学习它，要看懂每项解决什么问题、怎样做、留下什么结果，以及何时与其他技能配合。</p><div class="hero-actions"><a class="primary" href="overview.html">入口：25项使用地图 <span>↗</span></a><a href="../research/learning-guide.md">阅读完整文字版 ↗</a></div></div>
+    <aside class="mental-model" aria-label="技能如何工作"><p class="eyebrow">先理解本质</p><div><span>01</span><h2>技能文件</h2><p>描述适用场景、步骤、检查点与完成证据</p></div><b aria-hidden="true">↓ 按需读取</b><div><span>02</span><h2>AI 助手</h2><p>结合任务和项目规则，决定并执行具体操作</p></div><b aria-hidden="true">↓ 调用可用工具</b><div><span>03</span><h2>实际产物与证据</h2><p>需求文档、代码、测试、审查意见或发布记录</p></div><p class="small">流程来自文本，行动依赖助手与工具；文件本身不会自动执行整套开发。</p></aside>
+  </section>
+  <section class="all-scenarios-entry" aria-labelledby="scenarios-entry-title"><h2 id="scenarios-entry-title">查阅入口：25 个 Skill，一张使用地图</h2><p>按当前问题定位相关技能；每项统一说明做什么、什么时候用、怎么做、交付与检查，以及如何配合。需要更多细节时，再进入具体场景和原理。</p><a href="overview.html">打开能力与使用总图 →</a></section>
+  <section class="practice-entry" aria-labelledby="practice-title"><div><h2 id="practice-title">第三站：通过真实需求观察落地</h2><p>完成场景与原理理解后，再看“这个库我们研究过吗”的实际过程。这个案例采用了部分技能方法，可搜索、核对出处和保存判断；它不是25项的逐项完整实测。</p></div><a href="real-case.html">进入真实案例 →</a></section>
+  <section class="section" aria-labelledby="map-title">
+    <div class="section-heading"><div><p class="eyebrow">第一层 · 整体结构</p><h2 id="map-title">一条开发主线，多项贯穿能力</h2></div><p>可从任何合适的阶段进入。每个任务不必走完全部技能。</p></div>
+    <div class="lifecycle" id="lifecycle"></div>
+    <div class="crosscut"><strong>贯穿全过程</strong><p>技能选择负责判断用什么；上下文与来源帮助确定依据；独立质疑检查重要假设；质量标准、版本、文档和观测随工作持续更新。图中分类是阅读入口，不表示只能在该阶段使用。</p></div>
+    <details class="anatomy"><summary>展开看：一份 Skill 内部究竟有什么？</summary><div class="anatomy-grid"><div><b>名称与简介</b><p>让宿主知道它是谁、适合什么任务。</p></div><div><b>流程与检查点</b><p>规定先后步骤、容易遗漏的环节，以及何时停下检查。</p></div><div><b>参考与验证</b><p>按需引用清单，要求用实际产物、测试或运行信息验证结果。</p></div></div><p>配套命令是部分宿主的入口，角色是审查视角，参考清单补充细节。它们不等于额外模型或可自动运行的新产品。当前本地快照包括 25 个主技能文件、7 个技能内支持文件、7 份共享参考及许可证。</p></details>
+  </section>
+  <section class="section catalog-section" id="catalog" aria-labelledby="catalog-title">
+    <div class="section-heading"><div><p class="eyebrow">第二层 · 全部能力</p><h2 id="catalog-title">每一项，都看清输入与结果</h2></div><p>点击条目进入详细说明。可搜索“接口”“回滚”“性能”等关键词。</p></div>
+    <div class="filters"><label for="search">搜索技能<input id="search" type="search" placeholder="名称、问题或关键词" autocomplete="off"></label><label for="stage">按阶段浏览<select id="stage" aria-label="按阶段浏览"><option value="全部">全部阶段</option><option>调度</option><option>需求</option><option>规划</option><option>实现</option><option>验证</option><option>审查</option><option>维护</option></select></label><button id="reset" type="button">显示全部</button><p id="result-count" role="status" aria-live="polite"></p></div>
+    <div id="skill-list" class="skill-list"></div><p id="empty" hidden>没有匹配项。可以换一个关键词，或点击“显示全部”。</p>
+    <noscript>请启用 JavaScript，或直接阅读<a href="../research/learning-guide.md">完整文字版</a>。</noscript>
+  </section>
+  <section id="skill-detail" class="detail-section section" tabindex="-1" aria-label="技能详细说明"></section>
+  <section class="section" id="distinctions" aria-labelledby="distinction-title">
+    <div class="section-heading"><div><p class="eyebrow">第三层 · 理解区别</p><h2 id="distinction-title">名字相近，解决的问题不同</h2></div><p>把这些区别看清楚，比记住 25 个英文名字更有用。</p></div>
+    <div class="distinctions" id="distinction-list"></div>
+  </section>
+  <section class="section" id="journey" aria-labelledby="journey-title">
+    <div class="section-heading"><div><p class="eyebrow">第四层 · 组合使用</p><h2 id="journey-title">让一个项目串起整套方法</h2></div><p>共同案例：做一个只使用虚构材料的资料检索小工具。下面是教学路径，未据此实施完整产品。</p></div>
+    <div class="scenario-intro"><strong>起点：“我想查几段资料，并看到出处。”</strong><p>随着目标逐步明确，会涉及检索规则、结果页面、错误处理、测试、发布和维护。技能在需要时加入，有些并行使用，有些仅当出现问题或迁移需求时使用。</p></div>
+    <div id="journey-list" class="journey"></div>
+  </section>
+  <section class="section evidence" id="evidence" aria-labelledby="evidence-title">
+    <div class="section-heading"><div><p class="eyebrow">理解深度与验证范围</p><h2 id="evidence-title">原文解读、教学示例、实际实验分开看</h2></div></div>
+    <div class="evidence-grid"><article><span class="label">25 / 25 原文解读</span><h3>所有技能均有详细说明</h3><p>依据固定版本，梳理用途、输入、步骤、产出、适用边界与相关技能。每项可直接打开对应原文。</p></article><article><span class="label">25 / 25 教学示例</span><h3>同一场景，解释不同职责</h3><p>以虚构资料检索小工具说明各项怎样工作。示例中的方案、预期产出和检查方法不是实测收益。</p></article><article><span class="label">3 项有限实验</span><h3>保留已有的真实执行记录</h3><p>规格只检查结构；调试使用人工故障；代码审查执行了实际项目的部分函数。没有无技能对照，也没有对全部技能进行效果测评。</p></article></div>
+    <div class="experiment-links"><a href="../experiment-batch/research/experiments/experiment-spec/README.md">检索规格实验 ↗</a><a href="../experiment-batch/research/experiments/experiment-debug/README.md">模拟调试实验 ↗</a><a href="../experiment-batch/research/experiments/experiment-review/README.md">真实代码审查实验 ↗</a></div>
+    <p class="scope-note">这里展示固定版本原文解读、教学例子与有限实践。上游插件未安装；自建研究回查 Skill 的产物与验证另有记录。未接入 ReflectFlow 正式库；使用时遵循用户指令与项目约定。</p>
+  </section>
+  <section class="section figure-section"><div><p class="eyebrow">两张图辅助回顾</p><h2>看全景，也看价值</h2><p>此前制作的两张图作为概览保留；详细流程与边界以本页原文解读为准。</p></div><a href="../assets/images/skills-overview.png"><img src="../assets/images/skills-overview.png" alt="25项技能能力全景图，点击打开原图" loading="lazy"></a><a href="../assets/images/value-and-use.png"><img src="../assets/images/value-and-use.png" alt="Agent Skills价值、使用与学习方法图，点击打开原图" loading="lazy"></a></section>
+</main>
+<footer><p>Agent Skills 学习导览 · 固定研究版本 aeac41d4 · 2026-10-28</p><a href="https://github.com/addyosmani/agent-skills/tree/aeac41d4d005999432bb7312f7ff06383a91d59d" target="_blank" rel="noopener">固定版源仓库 ↗</a><a href="../README.md">项目说明</a><a href="../research/upstream/LICENSE">上游 MIT 许可</a></footer>
+</body></html>

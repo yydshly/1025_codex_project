@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "kind": "research-recall-record",
+  "createdAt": "2026-10-28T06:32:44+00:00",
+  "judgment": "教学演示判断（由助手在本轮授权内创建，不代表用户已确认的个人意见）：\r\n原文记录：研究总库已登记 addyosmani/agent-skills 为项目010；项目README第3行说明已整理25项工程技能、逐项教学示例与三项有限实验。\r\n本次判断：这些资料可用于学习工程任务的流程设计和落地控制；研究回查Skill应继续用真实失败与来源核对检验，不能只看展示页。\r\n待验证：25项技能逐一完整实测尚未完成；没有有/无Skill对照，不能从已有材料推导效率或准确率提升。\r\n出处：projects.json:173；projects/010-agent-skills-engineering-lab/README.md:3及18。\r\n",
+  "verification": {
+    "schemaVersion": 1,
+    "kind": "verification",
+    "verified": true,
+    "verifiedAt": "2026-10-28T06:32:44+00:00",
+    "results": 1,
+    "evidenceCount": 3,
+    "scopePartial": false,
+    "meaning": "Source consistency only; interpretation and real-world claims require human/model review."
+  },
+  "packet": {
+    "schemaVersion": 1,
+    "kind": "research-recall",
+    "query": "https://github.com/addyosmani/agent-skills",
+    "projectFilter": null,
+    "limit": 5,
+    "generatedAt": "2026-10-28T06:31:50+00:00",
+    "registry": {
+      "path": "projects.json",
+      "sha256": "3b39989f301f634ffc5d9e4796c2118c15b34ec1db027f5fa7f8d2cb3a33a5a9"
+    },
+    "scope": {
+      "description": "projects.json and registered project README.md/research/**/*.md; excludes hidden paths, links, research/upstream, research/skill-creation, research/recall-records; literal AND or exact GitHub owner/repo; no network",
+      "projectIds": [
+        "001",
+        "002",
+        "003",
+        "004",
+        "005",
+        "006",
+        "007",
+        "008",
+        "009",
+        "010"
+      ],
+      "filesScanned": 59,
+      "filesSkipped": 0
+    },
+    "warnings": [],
+    "totalMatches": 1,
+    "truncated": false,
+    "results": [
+      {
+        "projectId": "010",
+        "projectName": "Agent Skills · 全景理解与实践",
+        "registeredStatus": "researching",
+        "registeredSource": "https://github.com/addyosmani/agent-skills",
+        "matchKind": "repository",
+        "evidence": [
+          {
+            "path": "projects.json",
+            "startLine": 168,
+            "endLine": 184,
+            "text": "    {\n      \"id\": \"010\",\n      \"slug\": \"agent-skills-engineering-lab\",\n      \"name\": \"Agent Skills · 全景理解与实践\",\n      \"summary\": \"系统解读25项工程技能，并以真实的研究回查需求演示落地：检索10个项目、核对出处、保存判断与备份；六步导览串起需求、约束、实现、失败修复和验证证据，区分采用与未触发能力。附原文与实验，未量化技能收益。\",\n      \"source\": \"https://github.com/addyosmani/agent-skills\",\n      \"status\": \"researching\",\n      \"tags\": [\n        \"Agent Skills\",\n        \"AI编程\",\n        \"工程流程\",\n        \"实验验证\"\n      ],\n      \"cover\": \"assets/images/skills-overview.png\",\n      \"demoUrl\": \"\",\n      \"createdAt\": \"2026-10-28\"\n    }",
+            "sha256": "3b39989f301f634ffc5d9e4796c2118c15b34ec1db027f5fa7f8d2cb3a33a5a9"
+          },
+          {
+            "path": "projects/010-agent-skills-engineering-lab/README.md",
+            "startLine": 1,
+            "endLine": 6,
+            "text": "# 010 · Agent Skills · 全景理解与实践\n\n系统理解 [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) 的全部 25 项工程技能：从整体结构、阶段职责，到单项输入、步骤、产出和边界，再用共同场景理解它们怎样配合。固定版本源码、逐项教学示例和三项有限实验分别保留，不把设计用途当成实测收益。\n\n[创建研究回查 Skill：从第1步开始](app/scenarios.html?lesson=1#build-skill) · [先看25项使用场景](app/scenarios.html) · [打开学习导览](app/index.html) · [真实需求实践](app/real-case.html) · [使用研究回查](app/recall.html) · [完整文字版](research/learning-guide.md) · [上游结构与适配](research/upstream-analysis.md) · [返回总索引](../../README.md#项目索引)\n",
+            "sha256": "fcddb4fa2e0bad9be9068eec4bfe9e5c2d0ffdd97d5f8aec6f757d99f4973dff"
+          },
+          {
+            "path": "projects/010-agent-skills-engineering-lab/research/learning-guide.md",
+            "startLine": 112,
+            "endLine": 118,
+            "text": "- 配合 [系统调试与恢复](#debugging-and-error-recovery)：遇到异常时切换到排错流程。\n- 配合 [上下文组织与交接](#context-engineering)：为当前所选流程准备相关上下文。\n\n[本地原文](upstream/skills/using-agent-skills/SKILL.md) · [固定版GitHub原文](https://github.com/addyosmani/agent-skills/blob/aeac41d4d005999432bb7312f7ff06383a91d59d/skills/using-agent-skills/SKILL.md)\n\n\n<a id=\"interview-me\"></a>",
+            "sha256": "546e70ded5b5d2b1d1a00bd6c903179b23411da85e854360ee59b9212dbbd08b"
+          }
+        ]
+      }
+    ]
+  }
+}

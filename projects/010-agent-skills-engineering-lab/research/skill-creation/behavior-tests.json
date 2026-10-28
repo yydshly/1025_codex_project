@@ -1,0 +1,13 @@
+{
+  "checkedAt": "2026-10-28T06:31:39.592648+00:00",
+  "command": [
+    "D:\\software\\python310\\python.exe",
+    "-X",
+    "utf8",
+    "-B",
+    "E:\\codex_project\\1025_codex_project\\projects\\010-agent-skills-engineering-lab\\tests\\skill-recall.test.py"
+  ],
+  "exitCode": 0,
+  "stdout": "Retained synthetic fixtures: E:\\DevelopmentCache\\Temp\\research-recall-tests-pd3pr0bf\n",
+  "stderr": "test_changed_source_blocks_verification_and_save (__main__.RecallBehavior) ... ok\ntest_duplicate_json_keys_are_rejected (__main__.RecallBehavior) ... ok\ntest_evidence_equals_source_lines_and_hash (__main__.RecallBehavior) ... ok\ntest_existing_output_is_never_overwritten (__main__.RecallBehavior) ... ok\ntest_file_budget_marks_coverage_partial (__main__.RecallBehavior) ... ok\ntest_forged_quote_metadata_and_unknown_fields_fail (__main__.RecallBehavior) ... ok\ntest_hidden_vendor_and_generated_material_excluded (__main__.RecallBehavior) ... ok\ntest_invalid_slug_and_duplicate_project_rejected_before_source_read (__main__.RecallBehavior) ... ok\ntest_limit_project_filter_and_invalid_cli_are_explicit (__main__.RecallBehavior) ... ok\ntest_missing_source_and_size_skip_are_explicit (__main__.RecallBehavior) ... ok\ntest_nfkc_casefold_and_chinese_literal_and (__main__.RecallBehavior) ... ok\ntest_outside_artifact_and_source_links_are_rejected (__main__.RecallBehavior) ... ok\ntest_packet_verifies_and_output_does_not_pollute_search (__main__.RecallBehavior) ... ok\ntest_read_bounded_original_lines (__main__.RecallBehavior) ... ok\ntest_read_past_end_reports_total_lines_without_silent_truncation (__main__.RecallBehavior) ... ok\ntest_repository_identity_normalization (__main__.RecallBehavior) ... ok\ntest_repository_prefix_is_not_a_match (__main__.RecallBehavior) ... ok\ntest_research_markdown_and_embedded_repository_url_are_searchable (__main__.RecallBehavior) ... ok\ntest_save_roundtrip_keeps_judgment_separate_and_preserves_sources (__main__.RecallBehavior) ... ok\ntest_saved_verified_flag_cannot_bypass_source_or_schema_checks (__main__.RecallBehavior) ... ok\ntest_source_path_traversal_and_unregistered_source_rejected (__main__.RecallBehavior) ... ok\ntest_write_failure_and_oversize_artifact_do_not_claim_success (__main__.RecallBehavior) ... ok\n\n----------------------------------------------------------------------\nRan 22 tests in 1.548s\n\nOK\n"
+}

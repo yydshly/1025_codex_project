@@ -1,0 +1,30 @@
+{
+  "installedAt": "2026-10-28T06:24:10.111997+00:00",
+  "source": "E:\\codex_project\\1025_codex_project\\projects\\010-agent-skills-engineering-lab\\skill\\research-recall",
+  "destination": "D:\\codex\\home\\skills\\research-recall",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "a7e3961053453e3a044e5b0f4b81457dbaff55e2be614c2f22fcac18502e20ac",
+      "bytes": 4113
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "a9cabb41b73f15e43076656d1fdb46456b8ffe7ce851f4e14a84c59f8b26a5ab",
+      "bytes": 339
+    },
+    {
+      "path": "references/workflow.md",
+      "sha256": "c0c58ec0ab6582fbf34bc34b06b843a6e4fdddcfb8dd5d9af5a30c3d74d3e73b",
+      "bytes": 5560
+    },
+    {
+      "path": "scripts/recall.py",
+      "sha256": "209f7886208f374bff6b1dadb3d3ab493c209d8c16b69653e79edc0d110a1c0f",
+      "bytes": 26285
+    }
+  ],
+  "hashesMatch": true,
+  "discovery": "Standard CODEX_HOME/skills location; implicit invocation default retained. UI hot-discovery not asserted.",
+  "updatedAt": "2026-10-28T06:31:37.909447+00:00"
+}

@@ -1,0 +1,120 @@
+{
+  "date": "2026-10-28",
+  "environment": "Codex in-app browser; local HTTP",
+  "queries": [
+    {
+      "empty": false,
+      "ids": [
+        "006"
+      ],
+      "q": "pRoMpThUb"
+    },
+    {
+      "empty": false,
+      "ids": [
+        "009"
+      ],
+      "q": "Graphiti"
+    },
+    {
+      "empty": false,
+      "ids": [
+        "009"
+      ],
+      "q": "跨日回顾"
+    },
+    {
+      "empty": false,
+      "ids": [
+        "010"
+      ],
+      "q": "https://GITHUB.com/addyosmani/agent-skills.git/?x=1#readme"
+    },
+    {
+      "empty": true,
+      "ids": [],
+      "q": "https://github.com/addyosmani/agent"
+    },
+    {
+      "empty": true,
+      "ids": [],
+      "q": "zz-not-a-library-20261028"
+    },
+    {
+      "empty": true,
+      "ids": [],
+      "q": "<img src=x onerror=alert(1)>"
+    }
+  ],
+  "phases": [
+    {
+      "hash": "#step=intent",
+      "links": 1,
+      "skills": 4,
+      "title": "01 · 从真实困扰提取目标"
+    },
+    {
+      "hash": "#step=contract",
+      "links": 2,
+      "skills": 3,
+      "title": "02 · 写清范围、验收与质量底线"
+    },
+    {
+      "hash": "#step=plan",
+      "links": 2,
+      "skills": 4,
+      "title": "03 · 拆任务，明确数据交接"
+    },
+    {
+      "hash": "#step=build",
+      "links": 2,
+      "skills": 4,
+      "title": "04 · 完成可运行的小闭环"
+    },
+    {
+      "hash": "#step=review",
+      "links": 2,
+      "skills": 6,
+      "title": "05 · 观察失败，复核控制是否生效"
+    },
+    {
+      "hash": "#step=handoff",
+      "links": 2,
+      "skills": 6,
+      "title": "06 · 留下可复查的交付"
+    }
+  ],
+  "verifiedFlows": [
+    "same-project draft preserved after fix",
+    "save then reload retains note",
+    "JSON text export and download parsed",
+    "idempotent import",
+    "new project import retained after reload",
+    "unknown version/id/conflict rejected",
+    "stale tab write blocked and other note retained",
+    "source opened with Enter and focus moved",
+    "malformed step fragment falls back",
+    "old guide has 25 cards and linked detail"
+  ],
+  "viewports": [
+    {
+      "width": 1280,
+      "height": 900,
+      "documentWidth": 1265
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "documentWidth": 375
+    },
+    {
+      "width": 320,
+      "height": 800,
+      "documentWidth": 305
+    }
+  ],
+  "logs": {
+    "realCase": [],
+    "recall": []
+  }
+}

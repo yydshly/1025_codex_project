@@ -1,0 +1,94 @@
+{
+  "checkedAt": "2026-10-28T12:26:08.255517+00:00",
+  "sourceRevision": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+  "scope": "25 original upstream skills; five requested questions per skill. Conditional project examples, not full effect testing.",
+  "contentReview": {
+    "sourceSkills": 25,
+    "uniqueOverviewSkills": 25,
+    "groups": 7,
+    "completeFields": 125,
+    "sourceSetMatches": true,
+    "independentReadOnlyReview": "Passed; all 25 descriptions compared with fixed upstream scope, process and constraints. No substantive correction required."
+  },
+  "browser": {
+    "skillsClickedAndDetailChecked": 25,
+    "fieldsPerDetail": 5,
+    "sourceAndDetailLinksPerSkill": 3,
+    "oneSelectionAtATime": true,
+    "reloadPreservesSelection": true,
+    "backRestoresSelection": true,
+    "keyboardEnterWorks": true,
+    "responsive": {
+      "viewport": [
+        390,
+        844
+      ],
+      "clientWidth": 375,
+      "scrollWidth": 375,
+      "clickMovesToDetail": true,
+      "returnToMapLinkWorks": true,
+      "overrideReset": true
+    },
+    "posterOriginalSizeControlWorks": true,
+    "posterTextOutsideCanvasOrColumn": 0,
+    "consoleErrorsAndWarnings": [],
+    "finalUrl": "http://127.0.0.1:8010/app/overview.html"
+  },
+  "staticResources": [
+    {
+      "page": "overview.html",
+      "localResourcesResolved": 15
+    },
+    {
+      "page": "overview-poster.html",
+      "localResourcesResolved": 3
+    }
+  ],
+  "images": [
+    {
+      "path": "assets/images/skills-field-guide.png",
+      "format": "PNG",
+      "dimensions": [
+        2400,
+        5480
+      ],
+      "bytes": 9009691,
+      "sha256": "fd11143e0336cd7f073467a5db1d94812a5e0d3924e293fa8c68743adae835a2"
+    },
+    {
+      "path": "assets/images/overview-entry.png",
+      "format": "PNG",
+      "dimensions": [
+        666,
+        852
+      ],
+      "bytes": 280190,
+      "sha256": "bee06788efc55486fce2126816a8c79a6ab3a1cf1a0d765e554355804bfd676e"
+    },
+    {
+      "path": "assets/images/overview-mobile.png",
+      "format": "PNG",
+      "dimensions": [
+        375,
+        812
+      ],
+      "bytes": 209465,
+      "sha256": "2e316c01b1aec5155ef202bb1ed8752d59b1aa1bb7a19e2c415e22ce8ab6862a"
+    }
+  ],
+  "commands": {
+    "buildOverviewCheck": "passed",
+    "javascriptSyntax": "passed",
+    "recallSnapshotRebuilt": "10 projects / 383 passages",
+    "recallSnapshotCheck": "passed",
+    "existingRecallTests": "18 passed / 0 failed",
+    "existingPageLinkCheck": "91 links / 4 pages / passed",
+    "rootRepositoryCheck": "10 projects / passed",
+    "rawEvidence": "overview-command-receipts.json"
+  },
+  "limits": [
+    "Classification is a reading guide; skills can operate across stages.",
+    "Use cases explain conditional usage and are not evidence that every upstream skill has been executed.",
+    "No full 25-skill benchmark or measured benefit claim."
+  ]
+}

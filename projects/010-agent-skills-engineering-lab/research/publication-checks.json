@@ -1,0 +1,66 @@
+{
+  "checkedAt": "2026-10-28T12:46:41.039910+00:00",
+  "publicationFiles": 31,
+  "runtimeFiles": 26,
+  "images": 4,
+  "localHtmlResourceLinks": 75,
+  "http": [
+    {
+      "path": "",
+      "status": 200,
+      "contentType": "text/html"
+    },
+    {
+      "path": "app/overview.html",
+      "status": 200,
+      "contentType": "text/html"
+    },
+    {
+      "path": "app/overview-data.js",
+      "status": 200,
+      "contentType": "application/javascript"
+    },
+    {
+      "path": "app/overview-poster.html",
+      "status": 200,
+      "contentType": "text/html"
+    },
+    {
+      "path": "assets/images/skills-field-guide.png",
+      "status": 200,
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/images/skills-field-guide.svg",
+      "status": 200,
+      "contentType": "image/svg+xml"
+    },
+    {
+      "path": "app/recall-data.js",
+      "status": 200,
+      "contentType": "application/javascript"
+    }
+  ],
+  "checks": {
+    "rootRegistry": true,
+    "rootPublicationBoundaryTests": 4,
+    "fixedSourceFiles": 40,
+    "overviewSkills": 25,
+    "fiveQuestionFields": 125,
+    "scenarioSkills": 25,
+    "recallSnapshotProjects": 9,
+    "recallBehaviorTests": 18,
+    "skillBehaviorTests": 22,
+    "publicationTests": 7,
+    "credentialPatternReview": "no matches"
+  },
+  "browser": {
+    "rootRedirectToOverview": true,
+    "all25SkillsRendered": true,
+    "fiveQuestionsOnSelection": true,
+    "selectionSurvivesReload": true,
+    "sourceLinksUseRepositorySource": true,
+    "consoleErrorsAndWarnings": []
+  },
+  "scope": "Only project 010 and its registry, index and publication configuration are included. Existing other publications build unchanged. Local-only project 007 is excluded."
+}

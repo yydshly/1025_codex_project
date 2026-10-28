@@ -11,6 +11,7 @@ on:
       - 'projects/004-baocut-effects-atlas/**'
       - 'projects/008-ultraman-card-draw/**'
       - 'projects/009-knowledge-processing-atlas/**'
+      - 'projects/010-agent-skills-engineering-lab/**'
       - 'projects.json'
       - 'pages.config.json'
       - 'scripts/build-pages.mjs'
@@ -57,6 +58,16 @@ jobs:
           npm --prefix projects/005-paper-poetics-lab run check
           for script in projects/008-ultraman-card-draw/app/*.js; do node --check "$script"; done
           node --check projects/009-knowledge-processing-atlas/app/app.js
+      - name: Check Agent Skills guide and prepare public files
+        run: |
+          python projects/010-agent-skills-engineering-lab/scripts/verify-snapshot.py
+          node projects/010-agent-skills-engineering-lab/scripts/build-overview.mjs --check
+          node projects/010-agent-skills-engineering-lab/scripts/build-scenarios.mjs --check
+          node projects/010-agent-skills-engineering-lab/scripts/build-recall.mjs --check
+          node --test projects/010-agent-skills-engineering-lab/tests/recall.test.mjs
+          python -B projects/010-agent-skills-engineering-lab/tests/skill-recall.test.py
+          node --test projects/010-agent-skills-engineering-lab/tests/publication.test.mjs
+          node projects/010-agent-skills-engineering-lab/scripts/build-site.mjs --ref "$GITHUB_SHA"
       - name: Prepare BaoCut research page and public media
         run: npm --prefix projects/004-baocut-effects-atlas run build:site
       - name: Prepare GitHub Pages

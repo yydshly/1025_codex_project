@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-28T04:06:18.334Z",
+  "environment": {
+    "node": "v22.15.0",
+    "platform": "win32",
+    "context": "Node pure search core; not a browser measurement"
+  },
+  "corpus": {
+    "projectCount": 10,
+    "generatedAt": "2026-10-28T03:53:40.934Z",
+    "dataSha256": "484eaf4e4cceaaf50a9fcbb80df64bd4ce95a5705b956908dd876743f90812a9"
+  },
+  "method": {
+    "queries": [
+      "https://github.com/addyosmani/agent-skills",
+      "PromptHub",
+      "Graphiti",
+      "library-that-does-not-exist-72841"
+    ],
+    "warmupCalls": 200,
+    "measuredCalls": 1000,
+    "callsPerQuery": 250,
+    "clock": "process.hrtime.bigint",
+    "includes": "query normalization, matching and result sorting; per-call timing overhead",
+    "excludes": "browser DOM, rendering, networking, data script loading and UI interactions"
+  },
+  "result": {
+    "coldFirstQueryMs": 4.5807,
+    "totalElapsedMs": 20.4562,
+    "meanCallMs": 0.020106899999999987,
+    "medianCallMs": 0.0194,
+    "p95CallMs": 0.039,
+    "resultCounts": {
+      "https://github.com/addyosmani/agent-skills": 1,
+      "PromptHub": 1,
+      "Graphiti": 1,
+      "library-that-does-not-exist-72841": 0
+    }
+  },
+  "limits": [
+    "One local run with a ten-project corpus; results depend on machine and runtime state.",
+    "No before/after optimization comparison; this does not show a Skill efficiency benefit.",
+    "Not a browser responsiveness, page-load, or production performance result."
+  ]
+}

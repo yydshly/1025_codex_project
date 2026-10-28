@@ -1,0 +1,4 @@
+interface:
+  display_name: "研究资料回查"
+  short_description: "跨项目找回已有研究、核对原文出处，并按需另存可复查的判断记录"
+  default_prompt: "使用 $research-recall 在当前研究总库回查 Agent Skills 的用途和适用场景，附原文出处，并区分已有记录与待验证判断。"

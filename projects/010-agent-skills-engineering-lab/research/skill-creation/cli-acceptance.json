@@ -1,0 +1,317 @@
+{
+  "checkedAt": "2026-10-28T06:32:44.533982+00:00",
+  "kind": "installed-cli-acceptance",
+  "installedCli": "D:/codex/home/skills/research-recall/scripts/recall.py",
+  "commands": [
+    {
+      "argv": [
+        "D:\\software\\python310\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "D:/codex/home/skills/research-recall/scripts/recall.py",
+        "search",
+        "--root",
+        "E:\\codex_project\\1025_codex_project",
+        "--query",
+        "https://github.com/addyosmani/agent-skills"
+      ],
+      "exitCode": 0,
+      "result": {
+        "schemaVersion": 1,
+        "kind": "research-recall",
+        "query": "https://github.com/addyosmani/agent-skills",
+        "projectFilter": null,
+        "limit": 5,
+        "generatedAt": "2026-10-28T06:32:43+00:00",
+        "registry": {
+          "path": "projects.json",
+          "sha256": "3b39989f301f634ffc5d9e4796c2118c15b34ec1db027f5fa7f8d2cb3a33a5a9"
+        },
+        "scope": {
+          "description": "projects.json and registered project README.md/research/**/*.md; excludes hidden paths, links, research/upstream, research/skill-creation, research/recall-records; literal AND or exact GitHub owner/repo; no network",
+          "projectIds": [
+            "001",
+            "002",
+            "003",
+            "004",
+            "005",
+            "006",
+            "007",
+            "008",
+            "009",
+            "010"
+          ],
+          "filesScanned": 59,
+          "filesSkipped": 0
+        },
+        "warnings": [],
+        "totalMatches": 1,
+        "truncated": false,
+        "results": [
+          {
+            "projectId": "010",
+            "projectName": "Agent Skills · 全景理解与实践",
+            "registeredStatus": "researching",
+            "registeredSource": "https://github.com/addyosmani/agent-skills",
+            "matchKind": "repository",
+            "evidence": [
+              {
+                "path": "projects.json",
+                "startLine": 168,
+                "endLine": 184,
+                "text": "    {\n      \"id\": \"010\",\n      \"slug\": \"agent-skills-engineering-lab\",\n      \"name\": \"Agent Skills · 全景理解与实践\",\n      \"summary\": \"系统解读25项工程技能，并以真实的研究回查需求演示落地：检索10个项目、核对出处、保存判断与备份；六步导览串起需求、约束、实现、失败修复和验证证据，区分采用与未触发能力。附原文与实验，未量化技能收益。\",\n      \"source\": \"https://github.com/addyosmani/agent-skills\",\n      \"status\": \"researching\",\n      \"tags\": [\n        \"Agent Skills\",\n        \"AI编程\",\n        \"工程流程\",\n        \"实验验证\"\n      ],\n      \"cover\": \"assets/images/skills-overview.png\",\n      \"demoUrl\": \"\",\n      \"createdAt\": \"2026-10-28\"\n    }",
+                "sha256": "3b39989f301f634ffc5d9e4796c2118c15b34ec1db027f5fa7f8d2cb3a33a5a9"
+              },
+              {
+                "path": "projects/010-agent-skills-engineering-lab/README.md",
+                "startLine": 1,
+                "endLine": 6,
+                "text": "# 010 · Agent Skills · 全景理解与实践\n\n系统理解 [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) 的全部 25 项工程技能：从整体结构、阶段职责，到单项输入、步骤、产出和边界，再用共同场景理解它们怎样配合。固定版本源码、逐项教学示例和三项有限实验分别保留，不把设计用途当成实测收益。\n\n[创建研究回查 Skill：从第1步开始](app/scenarios.html?lesson=1#build-skill) · [先看25项使用场景](app/scenarios.html) · [打开学习导览](app/index.html) · [真实需求实践](app/real-case.html) · [使用研究回查](app/recall.html) · [完整文字版](research/learning-guide.md) · [上游结构与适配](research/upstream-analysis.md) · [返回总索引](../../README.md#项目索引)\n",
+                "sha256": "fcddb4fa2e0bad9be9068eec4bfe9e5c2d0ffdd97d5f8aec6f757d99f4973dff"
+              },
+              {
+                "path": "projects/010-agent-skills-engineering-lab/research/learning-guide.md",
+                "startLine": 112,
+                "endLine": 118,
+                "text": "- 配合 [系统调试与恢复](#debugging-and-error-recovery)：遇到异常时切换到排错流程。\n- 配合 [上下文组织与交接](#context-engineering)：为当前所选流程准备相关上下文。\n\n[本地原文](upstream/skills/using-agent-skills/SKILL.md) · [固定版GitHub原文](https://github.com/addyosmani/agent-skills/blob/aeac41d4d005999432bb7312f7ff06383a91d59d/skills/using-agent-skills/SKILL.md)\n\n\n<a id=\"interview-me\"></a>",
+                "sha256": "546e70ded5b5d2b1d1a00bd6c903179b23411da85e854360ee59b9212dbbd08b"
+              }
+            ]
+          }
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "D:\\software\\python310\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "D:/codex/home/skills/research-recall/scripts/recall.py",
+        "read",
+        "--root",
+        "E:\\codex_project\\1025_codex_project",
+        "--path",
+        "projects/010-agent-skills-engineering-lab/README.md",
+        "--start",
+        "1",
+        "--end",
+        "50"
+      ],
+      "exitCode": 0,
+      "result": {
+        "schemaVersion": 1,
+        "kind": "source",
+        "projectId": "010",
+        "evidence": {
+          "path": "projects/010-agent-skills-engineering-lab/README.md",
+          "startLine": 1,
+          "endLine": 50,
+          "text": "# 010 · Agent Skills · 全景理解与实践\n\n系统理解 [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) 的全部 25 项工程技能：从整体结构、阶段职责，到单项输入、步骤、产出和边界，再用共同场景理解它们怎样配合。固定版本源码、逐项教学示例和三项有限实验分别保留，不把设计用途当成实测收益。\n\n[创建研究回查 Skill：从第1步开始](app/scenarios.html?lesson=1#build-skill) · [先看25项使用场景](app/scenarios.html) · [打开学习导览](app/index.html) · [真实需求实践](app/real-case.html) · [使用研究回查](app/recall.html) · [完整文字版](research/learning-guide.md) · [上游结构与适配](research/upstream-analysis.md) · [返回总索引](../../README.md#项目索引)\n\n| 项目 | 内容 |\n| --- | --- |\n| 上游版本 | [`aeac41d4d005999432bb7312f7ff06383a91d59d`](https://github.com/addyosmani/agent-skills/tree/aeac41d4d005999432bb7312f7ff06383a91d59d)；2026-10-28 核对 |\n| 上游许可 | MIT；原始版权与许可见[本地副本](research/upstream/LICENSE) |\n| 已获取 | 25 个 `SKILL.md`、7 个技能内支持文件、7 份共享参考资料及许可证，共 40 文件 |\n| 状态 | 25 项原文解读与教学示例、3 项有限实验；新增真实研究回查工具与六步实践导览，采用与未触发能力分别记录 |\n| 安装状态 | 上游材料只读研究，未安装上游插件；本项目自建 research-recall 技能的安装与验证另见下方记录 |\n\n## 建议先看：25项使用场景全景\n\n[全量场景页](app/scenarios.html)是第一站：以七类工作组织全部25项，每项提供触发条件、近期项目中的条件式例子、可以直接提出的任务、应得产物、验收方式、不适用情况、落地风险与技能衔接。支持展开全部案例和按技能直接定位。\n\n学习顺序：**全部使用场景 → 单项实现原理 → 真实需求实践**。场景说明已覆盖25项，原文解读已覆盖25项；25项逐一完整实测尚未完成。研究回查案例采用部分相关方法，不能作为全部能力的独立实测证明。\n\n场景结合现有项目构造，使用“当/如果/准备”等条件表达；不声称用户已提出这些新增需求、项目已出现这些故障，或已执行例子中的改动。来源与覆盖检查见[场景验证记录](research/scenarios-verification.md)。\n\n## 从真实需求学习落地控制\n\n本案例来自本聊天最初的真实问题：“这个库我们以前研究过吗？”用户选择以“跨项目检索、查看出处、保存判断”开展实际演示。现有 10 个研究项目的登记信息和 README 被保存为可核对的快照，形成一个可用的[研究回查入口](app/recall.html)。\n\n- 按仓库链接、库名、关键词与研究阶段查询；结果带原文段落、行号、来源哈希。\n- 展示当前总库快照的研究记录；未命中只表示此快照没找到，登记为已总结不代表上游已实测。\n- 个人判断存于当前浏览器，可生成或下载 JSON 备份、粘贴备份合并；格式错误、未知版本和冲突拒绝写入。\n- 草稿切换有保护；保存前检查其他页面是否已更新记录。它不是多人协作服务，没有跨设备同步。\n\n[真实需求实践页](app/real-case.html)按六步组织需求、约束、任务、实现、修复和交付；每步关联 Skill、产物和回顾问题。25 项覆盖表区分采用的方法与未触发能力，不把完整覆盖讲解当成全部技能的实测证明。\n\n已发生的行为失败和修复、浏览器使用流程与验证边界统一记录在[验收记录](research/real-case/verification.md)。核心逻辑有 18 项行为测试；此前三个有限实验继续保留，均无无技能独立对照，未量化技能收益。\n\n使用笔记功能请通过 HTTP 打开：在本子项目目录运行 `node scripts/serve.mjs`，访问 <http://127.0.0.1:8010/app/real-case.html>。从实践页进入回查工具。浏览器的本地保存跟随访问地址；需要保留记录时导出备份。直接打开文件的存储行为未验收。\n\n数据输入限总库登记和各项目 README，不扫描私人资料，也不连接 ReflectFlow。快照通过 `node scripts/build-recall.mjs` 更新；其他项目更新说明后需要重建。这个早期网页案例没有安装全局技能或增加模型服务；后续自建 Skill 见下面的独立章节。\n\n![真实需求实践学习页](assets/images/real-case/learning-desktop.png)\n\n## 创建真正可用的研究回查 Skill\n\n[六步创建实录](app/scenarios.html?lesson=1#build-skill)从能力契约开始，逐步说明流程、技能规程、脚本、独立试用与安装调用。每步都有设计理由、实际产物、验收方法和证据。初始教学草案作为历史示例保留；正式入口是 [research-recall/SKILL.md](skill/research-recall/SKILL.md)。\n\n该技能用 Python 3.10+ 标准库读取明确根目录的项目登记，以及登记项目的 README 和 research Markdown，排除上游副本和生成记录。提供 search、read、verify、save：返回带行号和哈希的原文，核对完整 GitHub 仓库身份，保存判断前重新验证证据，独占创建新文件。判断记录与浏览器笔记独立保存。\n\n- [第一步能力契约](research/skill-creation/contract.md)\n- [每一步设计与验证说明](research/skill-creation/walkthrough.md)\n- [实际检查与安装记录](research/skill-creation/verification.json)",
+          "sha256": "fcddb4fa2e0bad9be9068eec4bfe9e5c2d0ffdd97d5f8aec6f757d99f4973dff"
+        }
+      },
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "D:\\software\\python310\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "D:/codex/home/skills/research-recall/scripts/recall.py",
+        "verify",
+        "--root",
+        "E:\\codex_project\\1025_codex_project",
+        "--report",
+        "projects/010-agent-skills-engineering-lab/research/skill-creation/agent-skills-evidence.json"
+      ],
+      "exitCode": 0,
+      "result": {
+        "schemaVersion": 1,
+        "kind": "verification",
+        "verified": true,
+        "verifiedAt": "2026-10-28T06:32:43+00:00",
+        "results": 1,
+        "evidenceCount": 3,
+        "scopePartial": false,
+        "meaning": "Source consistency only; interpretation and real-world claims require human/model review."
+      },
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "D:\\software\\python310\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "D:/codex/home/skills/research-recall/scripts/recall.py",
+        "save",
+        "--root",
+        "E:\\codex_project\\1025_codex_project",
+        "--report",
+        "projects/010-agent-skills-engineering-lab/research/skill-creation/agent-skills-evidence.json",
+        "--judgment-file",
+        "projects/010-agent-skills-engineering-lab/research/skill-creation/demo-judgment.txt",
+        "--output",
+        "projects/010-agent-skills-engineering-lab/research/skill-creation/demo-record.json"
+      ],
+      "exitCode": 0,
+      "result": {
+        "ok": true,
+        "kind": "judgment-saved",
+        "output": "projects/010-agent-skills-engineering-lab/research/skill-creation/demo-record.json",
+        "verification": {
+          "schemaVersion": 1,
+          "kind": "verification",
+          "verified": true,
+          "verifiedAt": "2026-10-28T06:32:44+00:00",
+          "results": 1,
+          "evidenceCount": 3,
+          "scopePartial": false,
+          "meaning": "Source consistency only; interpretation and real-world claims require human/model review."
+        }
+      },
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "D:\\software\\python310\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "D:/codex/home/skills/research-recall/scripts/recall.py",
+        "verify",
+        "--root",
+        "E:\\codex_project\\1025_codex_project",
+        "--report",
+        "projects/010-agent-skills-engineering-lab/research/skill-creation/demo-record.json"
+      ],
+      "exitCode": 0,
+      "result": {
+        "schemaVersion": 1,
+        "kind": "verification",
+        "verified": true,
+        "verifiedAt": "2026-10-28T06:32:44+00:00",
+        "results": 1,
+        "evidenceCount": 3,
+        "scopePartial": false,
+        "meaning": "Source consistency only; interpretation and real-world claims require human/model review."
+      },
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "D:\\software\\python310\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "D:/codex/home/skills/research-recall/scripts/recall.py",
+        "save",
+        "--root",
+        "E:\\codex_project\\1025_codex_project",
+        "--report",
+        "projects/010-agent-skills-engineering-lab/research/skill-creation/agent-skills-evidence.json",
+        "--judgment-file",
+        "projects/010-agent-skills-engineering-lab/research/skill-creation/demo-judgment.txt",
+        "--output",
+        "projects/010-agent-skills-engineering-lab/research/skill-creation/demo-record.json"
+      ],
+      "exitCode": 2,
+      "result": {
+        "ok": false,
+        "error": {
+          "code": "OUTPUT_EXISTS",
+          "message": "Output already exists; no file was overwritten."
+        }
+      },
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "D:\\software\\python310\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "D:/codex/home/skills/research-recall/scripts/recall.py",
+        "read",
+        "--root",
+        "E:\\codex_project\\1025_codex_project",
+        "--path",
+        "projects/009-knowledge-processing-atlas/research/experiment-protocol.md",
+        "--start",
+        "1",
+        "--end",
+        "60"
+      ],
+      "exitCode": 2,
+      "result": {
+        "ok": false,
+        "error": {
+          "code": "INVALID_RANGE",
+          "message": "Line range is outside the source; source has 59 lines."
+        }
+      },
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "D:\\software\\python310\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "D:/codex/home/skills/research-recall/scripts/recall.py",
+        "read",
+        "--root",
+        "E:\\codex_project\\1025_codex_project",
+        "--path",
+        "projects/009-knowledge-processing-atlas/research/experiment-protocol.md",
+        "--start",
+        "1",
+        "--end",
+        "59"
+      ],
+      "exitCode": 0,
+      "result": {
+        "schemaVersion": 1,
+        "kind": "source",
+        "projectId": "009",
+        "evidence": {
+          "path": "projects/009-knowledge-processing-atlas/research/experiment-protocol.md",
+          "startLine": 1,
+          "endLine": 59,
+          "text": "# 同题验证协议 · 规划版\n\n本协议将研究目录变成可执行的后续任务。材料是人工编写的虚构内容，当前尚未生成PDF、运行上游工具、下载模型或取得性能结果。\n\n## 我们需要获得什么\n\n论文与教材：保留结构和出处，减少翻找并能核验解释。个人记录：找到旧事和状态变化，区分事件发生与资料导入。工作资产：在核对原始案例后沉淀步骤、知识卡和提示词。学习与研究：区分技能估计、练习选择、模型讲解和证据组织。\n\n底层库的价值在于提供可观察的结构、检索表示、查询、关系和评估模块。应用则把这些模块接到具体任务。增加模块前，需要用样本说明它解决了什么问题、增加了哪些成本。\n\n## 材料与来源约定\n\n- 材料：[scenario-v1.json](../app/data/scenario-v1.json)。包含虚构表格、三条事件和6个问题；experimentResults 为 null。\n- 页码是手工材料定位，不是解析结果。后续由相同内容生成文字版PDF与扫描版，保存每个文件哈希；标注每页文字、表格、行列、来源和必要坐标。\n- 数字“100份”只是虚构手册的适用条件，不表示任何工具的性能或适用规模。\n- 输出字段建议：document_id、source_revision、page、block_id、heading、table/cell位置、原文引用、事件时间、导入时间。解析坐标等只在真实生成后填入，不能编造。\n- 原文、派生块/索引、抽取关系与AI回答分开存。通过来源版本关联它们，保留纠正和重建的依据。\n- 无答案题没有正向相关来源，不混入正向召回分母；单独检查编造与拒答表现。\n\n## 四组实验\n\n| 组别 | 固定内容 | 改变项 | 完成依据 |\n| --- | --- | --- | --- |\n| P1 解析 | 同内容文字版/扫描版、人工标注结构与位置 | 具体解析器、模式和模型 | 每页文字、表格、顺序、公式及出处核对，保存错误；记录配置与耗时。 |\n| P2 检索 | 已核对文本、问题、来源、过滤和基线设置 | 先改检索方法，之后分别改分块、融合或重排 | 每题候选与来源排名、遗漏原因和耗时；分清页级与块级标注。 |\n| P3 时间/更新 | E1/E2/E3 与人工事件时间 | 导入顺序、日期筛选/图关系、明确更正及删除 | 历史与当前状态都回到来源；检查索引、关系与旧答案失效路径。 |\n| P4 回答 | 生成模型/版本、提示、证据预算 | 直接阅读与不同检索上下文 | 每题答案、引用、时间、对象、无答案行为和人工判定齐全。 |\n\n关键词基线记录中文 tokenizer；语义模型记录权重版本、表示方式和相似度；索引记录配置与版本。BGE-M3 和 Qdrant 分属模型与数据库，不设为互相替代的对照。章节树、图检索若改变数据粒度或结构，要记录差异，不能称为严格单变量实验。\n\nRRF按各路排名融合；交叉编码重排只处理已有候选。它们分别设组，不能把全部配置一起更改后把收益归给某一个算法。\n\n## 指标与人工核验\n\n- 解析：文字与结构错误清单、阅读顺序、表格行列与来源定位。初期人工逐项核对，不急于用一个总分。\n- 检索：Recall@k为前k结果中的正确来源数除以人工标注的正确来源总数；标注粒度和重复来源去重规则先固定。MRR可按每题首个正确结果排名的倒数取平均，未命中记0。无答案题另列。\n- 回答：与问题是否一致、是否受资料支持、引用是否正确、时间与对象是否混淆、缺资料时是否编造。Ragas评分只辅助，保留人工检查。\n- 教学效果不以虚构答题序列的掌握概率证明；当前实验也不证明普遍性能。\n\n## 时间与成本\n\n分别记录首次解析/表示/建索引、增量新增/更正/删除、查询召回/重排/生成；记录冷启动和缓存命中、设备、调用次数、费用（如有）、索引空间和人工维护步骤。\n\n[CSV空模板](../app/data/experiment-record-template.csv.txt)为CSV格式内容，以.txt进入现有发布白名单，网页下载时保存为.csv；仅有字段名，所有测量字段为空。记录不包含凭据、正式日记或编辑缓存。\n\n## 继续投入条件\n\n一轮完成意味着：数据和条件可定位，每题输出、来源、错误与成本齐全，能够说明新增模块纠正了哪些基线错误。没有收益或代价过高也是结果。先围绕错误扩展样本，再决定是否接入DeepTutor/RAGFlow或发展学习、研究功能。目标上游版本、模型和硬件待实施时锁定并核对代码、权重及数据许可。\n\n## 原理来源\n\n2026-10-28查阅：\n\n- [Docling 分块](https://docling-project.github.io/docling/concepts/chunking/)与[VLM流程](https://docling-project.github.io/docling/usage/vision_models/)。\n- [MinerU](https://github.com/opendatalab/MinerU)与[PaddleOCR-VL](https://www.paddleocr.ai/main/en/version3.x/pipeline_usage/PaddleOCR-VL.html)：同库可有不同模式。\n- [Qdrant 融合与多阶段查询](https://qdrant.tech/documentation/search/hybrid-queries/)与[BAAI重排模型卡](https://huggingface.co/BAAI/bge-reranker-v2-m3)：用于理解融合与重排机制，未安装。\n- [Graphiti](https://github.com/getzep/graphiti)：事件、来源与时间关系。\n\n现阶段的样本、条件和继续投入标准为本研究设计，不是上游提供的效果结论。",
+          "sha256": "5111aca3cb75b08491594889ae9693b8790f6892d5b0c6f781322674210412c6"
+        }
+      },
+      "stderr": ""
+    }
+  ],
+  "saveConflictPreservedHash": {
+    "before": "16161a85396dcf5054a82c3de690c38ba3bbe470d2c5c88179f9761661b8bd2a",
+    "after": "16161a85396dcf5054a82c3de690c38ba3bbe470d2c5c88179f9761661b8bd2a",
+    "unchanged": true
+  },
+  "scope": {
+    "description": "projects.json and registered project README.md/research/**/*.md; excludes hidden paths, links, research/upstream, research/skill-creation, research/recall-records; literal AND or exact GitHub owner/repo; no network",
+    "projectIds": [
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "008",
+      "009",
+      "010"
+    ],
+    "filesScanned": 59,
+    "filesSkipped": 0
+  },
+  "packet": "projects/010-agent-skills-engineering-lab/research/skill-creation/agent-skills-evidence.json",
+  "judgmentRecord": "projects/010-agent-skills-engineering-lab/research/skill-creation/demo-record.json",
+  "allAssertionsPassed": true
+}

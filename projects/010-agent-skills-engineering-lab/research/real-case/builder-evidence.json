@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-28T04:06:18.267Z",
+  "environment": {
+    "node": "v22.15.0",
+    "platform": "win32"
+  },
+  "fixtureRoot": "D:\\codex\\home\\visualizations\\2026\\10\\27\\01a17fb9-77ac-7903-8ac8-9ecaea8e123d\\recall-fixture-20261028\\run-vBlzTP",
+  "scope": "Isolated registry/README sources only; all generated fixture directories retained, nothing deleted.",
+  "builderSha256": "c252565f1815d4245c3c9cac5fa960902172dd6671b022970f5007b41b2e9d92",
+  "passed": 8,
+  "total": 8,
+  "checks": [
+    {
+      "name": "fixed timestamp produces identical bytes twice",
+      "status": "pass",
+      "detail": {
+        "projects": 2,
+        "sha256": "0cd03ad5c02292342eda6dd272eefd70b73a7baa01200c6aaf5e02690c65e8fc"
+      }
+    },
+    {
+      "name": "registry and README hashes describe original source bytes",
+      "status": "pass",
+      "detail": "raw-byte SHA-256 matches, including CRLF source"
+    },
+    {
+      "name": "all passages preserve exact line ranges and all nonempty lines",
+      "status": "pass",
+      "detail": {
+        "passages": 6
+      }
+    },
+    {
+      "name": "registry evidence references the exact source object lines",
+      "status": "pass",
+      "detail": "2 registry excerpts verified"
+    },
+    {
+      "name": "unregistered projects and extra project documents are ignored",
+      "status": "pass",
+      "detail": "only registered README files were indexed"
+    },
+    {
+      "name": "unsafe slug traversal is rejected",
+      "status": "pass",
+      "detail": "../escape rejected before README lookup"
+    },
+    {
+      "name": "duplicate project identity is rejected",
+      "status": "pass",
+      "detail": "duplicate 001 rejected"
+    },
+    {
+      "name": "a project junction cannot escape its declared source root",
+      "status": "pass",
+      "detail": {
+        "junctionTarget": "D:\\codex\\home\\visualizations\\2026\\10\\27\\01a17fb9-77ac-7903-8ac8-9ecaea8e123d\\recall-fixture-20261028\\run-vBlzTP\\harmless-junction-target",
+        "note": "Target belongs to this isolated run; no protected paths or unrelated content were accessed."
+      }
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "checkedAt": "2026-10-28T06:34:43.332199+00:00",
+  "checks": [
+    {
+      "argv": [
+        "node",
+        "scripts/build-recall.mjs"
+      ],
+      "exitCode": 0,
+      "stdout": "{\"mode\":\"build\",\"projects\":10,\"passages\":378,\"dataBytes\":284382,\"status\":\"pass\"}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "node",
+        "scripts/build-recall.mjs",
+        "--check"
+      ],
+      "exitCode": 0,
+      "stdout": "{\"mode\":\"check\",\"projects\":10,\"passages\":378,\"dataBytes\":284382,\"status\":\"pass\"}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "node",
+        "--test",
+        "tests/recall.test.mjs"
+      ],
+      "exitCode": 0,
+      "stdout": "TAP version 13\n# Subtest: the current registry has ten projects and a blank search returns them all\nok 1 - the current registry has ten projects and a blank search returns them all\n  ---\n  duration_ms: 17.7339\n  type: 'test'\n  ...\n# Subtest: the original real question locates agent-skills by GitHub URL\nok 2 - the original real question locates agent-skills by GitHub URL\n  ---\n  duration_ms: 0.2208\n  type: 'test'\n  ...\n# Subtest: repository URL case, .git, trailing slash, query and fragment preserve identity\nok 3 - repository URL case, .git, trailing slash, query and fragment preserve identity\n  ---\n  duration_ms: 0.1534\n  type: 'test'\n  ...\n# Subtest: a repository URL prefix is not mistaken for an exact researched repository\nok 4 - a repository URL prefix is not mistaken for an exact researched repository\n  ---\n  duration_ms: 0.0776\n  type: 'test'\n  ...\n# Subtest: PromptHub name search is case insensitive and ranks its primary project first\nok 5 - PromptHub name search is case insensitive and ranks its primary project first\n  ---\n  duration_ms: 0.1697\n  type: 'test'\n  ...\n# Subtest: Graphiti returns a real README passage from project 009\nok 6 - Graphiti returns a real README passage from project 009\n  ---\n  duration_ms: 0.2805\n  type: 'test'\n  ...\n# Subtest: the quoted passage is exactly the recorded source line range\nok 7 - the quoted passage is exactly the recorded source line range\n  ---\n  duration_ms: 0.3283\n  type: 'test'\n  ...\n# Subtest: multiple whitespace-separated words are ANDed and unknown text yields no invented result\nok 8 - multiple whitespace-separated words are ANDed and unknown text yields no invented result\n  ---\n  duration_ms: 0.3929\n  type: 'test'\n  ...\n# Subtest: research status filtering agrees with the registry\nok 9 - research status filtering agrees with the registry\n  ---\n  duration_ms: 0.3179\n  type: 'test'\n  ...\n# Subtest: HTML-looking search input is ordinary text and has no match\nok 10 - HTML-looking search input is ordinary text and has no match\n  ---\n  duration_ms: 0.2881\n  type: 'test'\n  ...\n# Subtest: valid notes round-trip without changing their text\nok 11 - valid notes round-trip without changing their text\n  ---\n  duration_ms: 0.9653\n  type: 'test'\n  ...\n# Subtest: invalid imports cannot replace an existing stored note\nok 12 - invalid imports cannot replace an existing stored note\n  ---\n  duration_ms: 1.0094\n  type: 'test'\n  ...\n# Subtest: merging refuses conflicting nonempty notes and leaves its inputs unchanged\nok 13 - merging refuses conflicting nonempty notes and leaves its inputs unchanged\n  ---\n  duration_ms: 0.3452\n  type: 'test'\n  ...\n# Subtest: merging is idempotent, adds new projects and does not erase nonempty notes\nok 14 - merging is idempotent, adds new projects and does not erase nonempty notes\n  ---\n  duration_ms: 0.2455\n  type: 'test'\n  ...\n# Subtest: storage write failure is reported and does not claim success or change existing data\nok 15 - storage write failure is reported and does not claim success or change existing data\n  ---\n  duration_ms: 0.1246\n  type: 'test'\n  ...\n# Subtest: corrupt or inaccessible storage is reported rather than silently reinitialized\nok 16 - corrupt or inaccessible storage is reported rather than silently reinitialized\n  ---\n  duration_ms: 0.1016\n  type: 'test'\n  ...\n# Subtest: every indexed source passage is tied to its real README lines\nok 17 - every indexed source passage is tied to its real README lines\n  ---\n  duration_ms: 0.3117\n  type: 'test'\n  ...\n# Subtest: corpus generation is deterministic for a fixed timestamp and safely serializes script content\nok 18 - corpus generation is deterministic for a fixed timestamp and safely serializes script content\n  ---\n  duration_ms: 13.3993\n  type: 'test'\n  ...\n1..18\n# tests 18\n# suites 0\n# pass 18\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 146.7984\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "node",
+        "scripts/verify-real-case.mjs"
+      ],
+      "exitCode": 0,
+      "stdout": "{\"status\":\"pass\",\"skills\":25,\"phases\":6,\"localLinks\":88,\"htmlPages\":4}\n",
+      "stderr": ""
+    }
+  ]
+}

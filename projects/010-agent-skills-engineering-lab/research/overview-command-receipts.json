@@ -1,0 +1,25 @@
+{
+  "checks": [
+    {
+      "status": "fulfilled",
+      "value": {
+        "chunk_id": "139255",
+        "wall_time_seconds": 0.7916936,
+        "exit_code": 1,
+        "original_token_count": 310,
+        "output": "node scripts/build-overview.mjs --check 0 {\"mode\":\"check\",\"status\":\"pass\",\"skills\":25,\"groups\":7,\"fieldsPerSkill\":5,\"width\":2400,\"height\":5480,\"outputs\":[\"assets/images/skills-field-guide.svg\",\"app/overview-poster.html\"]}\r\n\r\nnode --check app/overview.js 0 \r\nnode scripts/build-recall.mjs 0 {\"mode\":\"build\",\"projects\":10,\"passages\":383,\"dataBytes\":287968,\"status\":\"pass\"}\r\n\r\nnode scripts/build-recall.mjs --check 0 {\"mode\":\"check\",\"projects\":10,\"passages\":383,\"dataBytes\":287968,\"status\":\"pass\"}\r\n\r\nnode --test tests/recall.test.mjs 0 assage is tied to its real README lines\r\n  ---\r\n  duration_ms: 0.4404\r\n  type: 'test'\r\n  ...\r\n# Subtest: corpus generation is deterministic for a fixed timestamp and safely serializes script content\r\nok 18 - corpus generation is deterministic for a fixed timestamp and safely serializes script content\r\n  ---\r\n  duration_ms: 12.6528\r\n  type: 'test'\r\n  ...\r\n1..18\r\n# tests 18\r\n# suites 0\r\n# pass 18\r\n# fail 0\r\n# cancelled 0\r\n# skipped 0\r\n# todo 0\r\n# duration_ms 131.561\r\n\r\nnode scripts/verify-real-case.mjs 0 {\"status\":\"pass\",\"skills\":25,\"phases\":6,\"localLinks\":91,\"htmlPages\":4}\r\n\r\nPNG (65536, 4292542531) 1866360\r\nTraceback (most recent call last):\r\n  File \"<stdin>\", line 9, in <module>\r\nAssertionError\r\n"
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "chunk_id": "3fc476",
+        "wall_time_seconds": 0.6176561,
+        "exit_code": 0,
+        "original_token_count": 38,
+        "output": "\n> github-research-hub@0.1.0 check\n> node scripts/projects.mjs check\n\n校验通过：10 个项目，编号、目录、配图与 README 索引一致。\n"
+      }
+    }
+  ],
+  "exportValidationCorrection": "Browser screenshot bytes were JPEG despite the requested .png filename. Kept the rendered content and re-encoded the new image files as actual PNG. Verified full graphic dimensions 2400x5480. The six project commands themselves all exited 0; the first wrapper ended nonzero only on its initial PNG header assertion."
+}

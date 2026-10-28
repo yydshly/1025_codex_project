@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-28T12:47:33.545Z",
+  "sourceScope": "projects.json + registered project README.md files only",
+  "projectCount": 9,
+  "passageCount": 375,
+  "registrySha256": "b69ef0a1c80f3603d0cc06a8bf11843376432f74b59c08a2aea1984c7e21ad99",
+  "dataSha256": "b5a20d0f0018cf0edbabeab6148d1071aac8ac974945e20b0328cfc622f691a6",
+  "documents": [
+    {
+      "projectId": "001",
+      "path": "projects/001-early-directions-atlas/README.md",
+      "sha256": "0709e2c74d2a60ec0eb61f1fc40fa4342d544f5f3fad5019ff84161e2ed8dd60",
+      "passages": 36
+    },
+    {
+      "projectId": "002",
+      "path": "projects/002-ink-rain-alley/README.md",
+      "sha256": "ea7958c55dfa97c786e110c8eae94a92dfa825df15e09e232999b3f3487ebe90",
+      "passages": 44
+    },
+    {
+      "projectId": "003",
+      "path": "projects/003-unified-learning-design/README.md",
+      "sha256": "34b369fc6dfbf4750cc3c5645516ccddfc4fc33928fcf707daf65f940d092493",
+      "passages": 46
+    },
+    {
+      "projectId": "004",
+      "path": "projects/004-baocut-effects-atlas/README.md",
+      "sha256": "b80b3699dd1c0608982e70ec97350696e16ae344273fb6fe74cc511d79818f03",
+      "passages": 43
+    },
+    {
+      "projectId": "005",
+      "path": "projects/005-paper-poetics-lab/README.md",
+      "sha256": "18a160b5f246876115393fb0c2db98288cafd0586286176b724688fe83de0f50",
+      "passages": 67
+    },
+    {
+      "projectId": "006",
+      "path": "projects/006-prompthub-ai-assets/README.md",
+      "sha256": "5c194286137e13b74d1945bcc39652cdae3fabaac507e06c74ef8d54d8c61b16",
+      "passages": 37
+    },
+    {
+      "projectId": "008",
+      "path": "projects/008-ultraman-card-draw/README.md",
+      "sha256": "f29c5ad3b9f0bc1947e0105972e08f9fd5403469cba89266418ec1493fa522e7",
+      "passages": 21
+    },
+    {
+      "projectId": "009",
+      "path": "projects/009-knowledge-processing-atlas/README.md",
+      "sha256": "92388f9403687d714a6a6250015baa749f95ee3469b0083d97e82bdc2a1a9239",
+      "passages": 31
+    },
+    {
+      "projectId": "010",
+      "path": "projects/010-agent-skills-engineering-lab/README.md",
+      "sha256": "289448cbe1c128f6badf7290b25869439af4ab821358f342d869cec75cd8b80b",
+      "passages": 50
+    }
+  ]
+}

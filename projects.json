@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "nextId": 10,
+  "nextId": 11,
   "projects": [
     {
       "id": "001",
@@ -146,6 +146,23 @@
       ],
       "cover": "assets/images/research-overview-v3.png",
       "demoUrl": "https://yydshly.github.io/1025_codex_project/009-knowledge-processing-atlas/",
+      "createdAt": "2026-10-28"
+    },
+    {
+      "id": "010",
+      "slug": "agent-skills-engineering-lab",
+      "name": "Agent Skills · 全景理解与实践",
+      "summary": "研究 addyosmani/agent-skills 的25项工程规程：覆盖需求、规划、实现、验证、审查与交付维护，以七类工作和五问总图说明用途、场景、步骤、产物及协作。价值在于把工程经验变成AI可执行、结果可核对的流程；我们据此按真实需求选用，学习用约束、证据与检查控制落地，保留研究回查案例和自建Skill；全量讲解已完成，逐项实测待按需开展。",
+      "source": "https://github.com/addyosmani/agent-skills",
+      "status": "researching",
+      "tags": [
+        "Agent Skills",
+        "AI编程",
+        "工程流程",
+        "实验验证"
+      ],
+      "cover": "assets/images/skills-field-guide.png",
+      "demoUrl": "",
       "createdAt": "2026-10-28"
     }
   ]

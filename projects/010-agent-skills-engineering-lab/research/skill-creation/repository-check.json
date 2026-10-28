@@ -1,0 +1,8 @@
+{
+  "command": "npm.cmd run check",
+  "chunk_id": "16b89a",
+  "wall_time_seconds": 0.7087835,
+  "exit_code": 0,
+  "original_token_count": 38,
+  "output": "\n> github-research-hub@0.1.0 check\n> node scripts/projects.mjs check\n\n校验通过：10 个项目，编号、目录、配图与 README 索引一致。\n"
+}

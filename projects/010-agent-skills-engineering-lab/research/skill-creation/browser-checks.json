@@ -1,0 +1,29 @@
+{
+  "checkedAt": "2026-10-28T06:36:17.971630+00:00",
+  "url": "http://127.0.0.1:8010/app/scenarios.html?lesson=1#build-skill",
+  "checks": {
+    "sixStepsRendered": true,
+    "nextAndPreviousNavigation": true,
+    "firstPreviousDisabled": true,
+    "lastNextDisabled": true,
+    "reloadPreservesLesson": true,
+    "browserBackRestoresLesson": true,
+    "exampleExpansionWorks": true,
+    "artifactLinksResolvedOnDisk": true,
+    "finalStep5ShowsInitialFailuresAndRevision": true,
+    "finalStep6ShowsInstallationAndCliResults": true,
+    "finalViewIsStep1": true,
+    "consoleWarningsAndErrors": []
+  },
+  "responsive": {
+    "viewportWidth": 390,
+    "viewportHeight": 844,
+    "clientWidth": 375,
+    "scrollWidth": 375,
+    "overflow": false,
+    "testedBeforeFinalCopyUpdate": true,
+    "overrideReset": true
+  },
+  "screenshot": "../../assets/images/skill-creation/step-1-desktop.png",
+  "scope": "Navigation/responsive checks performed in the in-app browser. Latest result copy checked on steps 1, 5 and 6. No original browser notes were changed."
+}

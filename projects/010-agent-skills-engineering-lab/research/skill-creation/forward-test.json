@@ -1,0 +1,208 @@
+{
+  "kind": "independent-skill-forward-test",
+  "date": "2026-10-28",
+  "method": "Fresh agent received Skill location, authorized research root and two requests; no expected answers or parent conversation. It read the package and used search/read.",
+  "tasks": [
+    {
+      "question": "我们之前研究的 Graphiti 适合做什么？有没有实测证据？请给原文出处。",
+      "observed": "Located project 009 comparison and source evidence; stated that research exists but no installation, execution or effect testing is recorded.",
+      "review": "Meets tested criteria: identity, citation, and research-versus-measurement distinction."
+    },
+    {
+      "question": "https://github.com/addyosmani/agent 这个仓库以前研究过吗？",
+      "observed": "Exact repository query matched a test mention in project 010. Agent read the context, did not count it as positive research evidence, and distinguished registered source agent-skills.",
+      "review": "Meets tested criteria: exact identity plus semantic interpretation of the mention."
+    }
+  ],
+  "networkUsed": false,
+  "sourceMutations": false,
+  "commands": [
+    {
+      "command": "Get-Content -LiteralPath 'E:/codex_project/1025_codex_project/projects/010-agent-skills-engineering-lab/skill/research-recall/SKILL.md' -Raw -Encoding UTF8",
+      "reportedExitCode": 0,
+      "wallTimeSeconds": 0.4934156,
+      "note": "Skill or reference document read; full text in raw execution record."
+    },
+    {
+      "command": "Get-Content -LiteralPath 'E:/codex_project/1025_codex_project/projects/010-agent-skills-engineering-lab/skill/research-recall/references/workflow.md' -Raw -Encoding UTF8",
+      "reportedExitCode": 0,
+      "wallTimeSeconds": 0.541815,
+      "note": "Skill or reference document read; full text in raw execution record."
+    },
+    {
+      "command": "python -X utf8 \"E:/codex_project/1025_codex_project/projects/010-agent-skills-engineering-lab/skill/research-recall/scripts/recall.py\" search --root \"E:/codex_project/1025_codex_project\" --query \"Graphiti\"",
+      "reportedExitCode": 0,
+      "wallTimeSeconds": 0.4724465,
+      "kind": "research-recall",
+      "error": null,
+      "totalMatches": 2,
+      "truncated": false,
+      "scope": {
+        "description": "projects.json and registered project README.md/research/**/*.md; excludes hidden paths, links, research/upstream, research/skill-creation, research/recall-records; literal AND or exact GitHub owner/repo; no network",
+        "projectIds": [
+          "001",
+          "002",
+          "003",
+          "004",
+          "005",
+          "006",
+          "007",
+          "008",
+          "009",
+          "010"
+        ],
+        "filesScanned": 59,
+        "filesSkipped": 0
+      },
+      "warnings": []
+    },
+    {
+      "command": "python -X utf8 \"E:/codex_project/1025_codex_project/projects/010-agent-skills-engineering-lab/skill/research-recall/scripts/recall.py\" search --root \"E:/codex_project/1025_codex_project\" --query \"https://github.com/addyosmani/agent\"",
+      "reportedExitCode": 0,
+      "wallTimeSeconds": 0.4510967,
+      "kind": "research-recall",
+      "error": null,
+      "totalMatches": 1,
+      "truncated": false,
+      "scope": {
+        "description": "projects.json and registered project README.md/research/**/*.md; excludes hidden paths, links, research/upstream, research/skill-creation, research/recall-records; literal AND or exact GitHub owner/repo; no network",
+        "projectIds": [
+          "001",
+          "002",
+          "003",
+          "004",
+          "005",
+          "006",
+          "007",
+          "008",
+          "009",
+          "010"
+        ],
+        "filesScanned": 59,
+        "filesSkipped": 0
+      },
+      "warnings": []
+    },
+    {
+      "command": "python -X utf8 \"E:/codex_project/1025_codex_project/projects/010-agent-skills-engineering-lab/skill/research-recall/scripts/recall.py\" read --root \"E:/codex_project/1025_codex_project\" --path \"projects/009-knowledge-processing-atlas/README.md\" --start 1 --end 180",
+      "reportedExitCode": 1,
+      "wallTimeSeconds": 0.2461692,
+      "kind": null,
+      "error": {
+        "code": "INVALID_RANGE",
+        "message": "Line range is outside the source."
+      }
+    },
+    {
+      "command": "python -X utf8 \"E:/codex_project/1025_codex_project/projects/010-agent-skills-engineering-lab/skill/research-recall/scripts/recall.py\" read --root \"E:/codex_project/1025_codex_project\" --path \"projects/010-agent-skills-engineering-lab/research/real-case/verification.md\" --start 25 --end 45",
+      "reportedExitCode": 0,
+      "wallTimeSeconds": 0.2312784,
+      "kind": "source",
+      "error": null,
+      "source": {
+        "path": "projects/010-agent-skills-engineering-lab/research/real-case/verification.md",
+        "startLine": 25,
+        "endLine": 45,
+        "sha256": "cf481b93a7f7f5aafe109558f3a33b4076c2fc48de67a00e85b46edc2bfc7f7c"
+      }
+    },
+    {
+      "command": "python -X utf8 \"E:/codex_project/1025_codex_project/projects/010-agent-skills-engineering-lab/skill/research-recall/scripts/recall.py\" read --root \"E:/codex_project/1025_codex_project\" --path \"projects/009-knowledge-processing-atlas/README.md\" --start 1 --end 60",
+      "reportedExitCode": 0,
+      "wallTimeSeconds": 0.3765815,
+      "kind": "source",
+      "error": null,
+      "source": {
+        "path": "projects/009-knowledge-processing-atlas/README.md",
+        "startLine": 1,
+        "endLine": 60,
+        "sha256": "92388f9403687d714a6a6250015baa749f95ee3469b0083d97e82bdc2a1a9239"
+      }
+    },
+    {
+      "command": "python -X utf8 \"E:/codex_project/1025_codex_project/projects/010-agent-skills-engineering-lab/skill/research-recall/scripts/recall.py\" read --root \"E:/codex_project/1025_codex_project\" --path \"projects/009-knowledge-processing-atlas/research/notes.md\" --start 1 --end 80",
+      "reportedExitCode": 0,
+      "wallTimeSeconds": 0.5560465,
+      "kind": "source",
+      "error": null,
+      "source": {
+        "path": "projects/009-knowledge-processing-atlas/research/notes.md",
+        "startLine": 1,
+        "endLine": 80,
+        "sha256": "2d9d2f57174e09db383fdbbb6a9e60dc618e8294dedf8a01a80a77511c2161de"
+      }
+    },
+    {
+      "command": "python -X utf8 \"E:/codex_project/1025_codex_project/projects/010-agent-skills-engineering-lab/skill/research-recall/scripts/recall.py\" read --root \"E:/codex_project/1025_codex_project\" --path \"projects/009-knowledge-processing-atlas/research/experiment-protocol.md\" --start 1 --end 60",
+      "reportedExitCode": 1,
+      "wallTimeSeconds": 0.5225122,
+      "kind": null,
+      "error": {
+        "code": "INVALID_RANGE",
+        "message": "Line range is outside the source."
+      }
+    },
+    {
+      "command": "python -X utf8 \"E:/codex_project/1025_codex_project/projects/010-agent-skills-engineering-lab/skill/research-recall/scripts/recall.py\" read --root \"E:/codex_project/1025_codex_project\" --path \"projects/009-knowledge-processing-atlas/research/notes.md\" --start 32 --end 38",
+      "reportedExitCode": 0,
+      "wallTimeSeconds": 0.508355,
+      "kind": "source",
+      "error": null,
+      "source": {
+        "path": "projects/009-knowledge-processing-atlas/research/notes.md",
+        "startLine": 32,
+        "endLine": 38,
+        "sha256": "2d9d2f57174e09db383fdbbb6a9e60dc618e8294dedf8a01a80a77511c2161de"
+      }
+    },
+    {
+      "command": "python -X utf8 \"E:/codex_project/1025_codex_project/projects/010-agent-skills-engineering-lab/skill/research-recall/scripts/recall.py\" read --root \"E:/codex_project/1025_codex_project\" --path \"projects/009-knowledge-processing-atlas/research/experiment-protocol.md\" --start 1 --end 30",
+      "reportedExitCode": 0,
+      "wallTimeSeconds": 0.4908327,
+      "kind": "source",
+      "error": null,
+      "source": {
+        "path": "projects/009-knowledge-processing-atlas/research/experiment-protocol.md",
+        "startLine": 1,
+        "endLine": 30,
+        "sha256": "5111aca3cb75b08491594889ae9693b8790f6892d5b0c6f781322674210412c6"
+      }
+    },
+    {
+      "command": "python -X utf8 \"E:/codex_project/1025_codex_project/projects/010-agent-skills-engineering-lab/skill/research-recall/scripts/recall.py\" read --root \"E:/codex_project/1025_codex_project\" --path \"projects.json\" --start 168 --end 178",
+      "reportedExitCode": 0,
+      "wallTimeSeconds": 0.9292322,
+      "kind": "source",
+      "error": null,
+      "source": {
+        "path": "projects.json",
+        "startLine": 168,
+        "endLine": 178,
+        "sha256": "3b39989f301f634ffc5d9e4796c2118c15b34ec1db027f5fa7f8d2cb3a33a5a9"
+      }
+    }
+  ],
+  "initialIssues": [
+    {
+      "issue": "Two read ranges exceeded file length.",
+      "recovery": "Agent reduced the requested ranges and completed both tasks.",
+      "revision": "CLI now reports actual line count; regression test records post-revision behavior.",
+      "exitCodeNote": "Raw shell tool reports 1; Python direct process checks are recorded separately. Only the observed nonzero failure is used as the criterion."
+    },
+    {
+      "issue": "A precise repository URL can occur only in a test example.",
+      "revision": "Added explicit instruction to describe mention type and research depth; exact matching alone does not establish prior substantive research."
+    }
+  ],
+  "artifacts": {
+    "execution": "forward-execution.json",
+    "answer": "forward-answer.md",
+    "issues": "forward-issues.md"
+  },
+  "limits": [
+    "Two independent requests in one run; not a repeated benchmark.",
+    "The independent trial used the pre-clarification package. Post-revision automated tests and installed CLI acceptance are recorded separately.",
+    "No no-Skill control; no measured improvement claim.",
+    "Skill UI automatic discovery was not exercised."
+  ]
+}

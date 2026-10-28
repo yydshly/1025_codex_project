@@ -1,0 +1,65 @@
+{
+  "checkedAt": "2026-10-28T06:36:17.978403+00:00",
+  "skill": "research-recall",
+  "status": "First version installed; tested behavior, independent trial, installed CLI and learning page checks complete.",
+  "environment": {
+    "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+    "platform": "win32"
+  },
+  "structure": {
+    "passed": true,
+    "evidence": "structure-check.json"
+  },
+  "behaviorTests": {
+    "passed": 22,
+    "failed": 0,
+    "evidence": "behavior-tests.json"
+  },
+  "independentTrial": {
+    "requestsCompleted": 2,
+    "initialRecoverableRangeErrors": 2,
+    "evidence": "forward-test.json",
+    "initialRunPreserved": true,
+    "postTrialChanges": [
+      "Clarified that a URL/name mention is not proof of substantive research.",
+      "Out-of-range read errors now provide actual source line count; covered by regression and installed CLI recovery."
+    ]
+  },
+  "installation": {
+    "destination": "D:\\codex\\home\\skills\\research-recall",
+    "files": 4,
+    "allHashesMatch": true,
+    "evidence": "installation.json",
+    "uiHotDiscoveryVerified": false
+  },
+  "installedCli": {
+    "passed": true,
+    "commands": 8,
+    "filesScanned": 59,
+    "registeredProjects": 10,
+    "saveReadbackVerified": true,
+    "overwriteRejectedAndOldRecordUnchanged": true,
+    "evidence": "cli-acceptance.json",
+    "examplePacket": "agent-skills-evidence.json",
+    "exampleJudgmentRecord": "demo-record.json"
+  },
+  "limits": [
+    "Source integrity checks are not proof of semantic truth.",
+    "This is a bounded local keyword/exact-repository recall skill, not semantic or arbitrary-file search.",
+    "Not a filesystem security sandbox against concurrent adversarial mutation.",
+    "No repeated benchmark or no-Skill control; no quantitative benefit claim.",
+    "Does not imply complete testing of all 25 upstream skills."
+  ],
+  "webpage": {
+    "browserChecks": "browser-checks.json",
+    "staticChecks": "web-static-checks.json",
+    "existingRecallTestsPassed": 18,
+    "staticLinksChecked": 88,
+    "walkthroughArtifactLinksResolved": true,
+    "finalLesson": 1
+  },
+  "repositoryCheck": {
+    "passed": true,
+    "evidence": "repository-check.json"
+  }
+}
