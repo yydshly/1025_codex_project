@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-28T12:53:25.299Z",
+  "generatedAt": "2026-10-28T13:01:49.082Z",
   "sourceScope": "projects.json + registered project README.md files only",
   "projectCount": 9,
   "passageCount": 376,
   "registrySha256": "bda61e22f94da243e282ad77646198d3f214b11365448f846656c0ea5ac92ab3",
-  "dataSha256": "a2a09c30a6665da78880ae2c83a40e244af7d5bd6f8169d4679f95eb9a823722",
+  "dataSha256": "6105d55d4117e9eac4f96ebe7595b3fab43ec9dd4d9fdf4e28d1dd9415fbc63f",
   "documents": [
     {
       "projectId": "001",
@@ -58,7 +58,7 @@
     {
       "projectId": "010",
       "path": "projects/010-agent-skills-engineering-lab/README.md",
-      "sha256": "e64e8e344a91359e68800d6bf6a54c8c8b737c14fa04a1b98c5796a512cfd90c",
+      "sha256": "8a7517c8106d0c935c78ee663a18e3c930311ec5a0ac64ab2d92e7d024f7c665",
       "passages": 51
     }
   ]

@@ -26,7 +26,7 @@
 
 当前学习停留在全量理解和查阅；后续遇到真实需求，再选相关Skill实际使用、检查效果和分析实现。讲解覆盖25项不表示25项已经逐一完整实测。内容、交互与图片检查见[总图验证记录](research/overview-verification.json)。
 
-![25项能力与使用总图入口](assets/images/overview-entry.png)
+[![25项Skill能力、使用场景与协作引导图](assets/images/skills-field-guide.png)](app/overview.html)
 
 ## 需要更多细节：25项使用场景全景
 
