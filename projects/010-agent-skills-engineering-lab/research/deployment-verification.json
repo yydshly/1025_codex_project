@@ -1,0 +1,40 @@
+{
+  "verifiedAt": "2026-10-28T12:53:24.431796+00:00",
+  "firstPublishedCommit": "683cf5b65438edea2ef44c4f497211e8d8c8b94f",
+  "workflow": {
+    "id": 40690871041,
+    "url": "https://github.com/yydshly/1025_codex_project/actions/runs/40690871041",
+    "build": "success",
+    "deploy": "success"
+  },
+  "url": "https://yydshly.github.io/1025_codex_project/010-agent-skills-engineering-lab/",
+  "entry": "https://yydshly.github.io/1025_codex_project/010-agent-skills-engineering-lab/app/overview.html",
+  "summaryScope": "25 engineering workflows; practical value, capabilities and our need-driven adoption and implementation control are described in registry, README and webpage.",
+  "online": {
+    "skillsChecked": 25,
+    "fieldsPerSkill": 5,
+    "scenarioPrinciplesNavigation": true,
+    "detailRefreshRestoresSelection": true,
+    "sourceLinksPinnedToPublishedCommit": true,
+    "successfulHttpRequests": 9,
+    "mobileViewport": [
+      390,
+      844
+    ],
+    "mobileClientWidth": 375,
+    "mobileScrollWidth": 375,
+    "consoleErrorsAndWarnings": [],
+    "recallSnapshotProjects": 9,
+    "recallSnapshotEqualsFirstCommit": true,
+    "recallSnapshotSha256": "b5a20d0f0018cf0edbabeab6148d1071aac8ac974945e20b0328cfc622f691a6"
+  },
+  "limits": [
+    "Full explanations are not full execution testing of all 25 upstream skills.",
+    "No no-Skill control or quantified benefit claim.",
+    "Browser notes stay in the current origin; existing notes were not read or migrated."
+  ],
+  "screenshots": [
+    "assets/images/deployment-2026-10-28/online-overview.jpg",
+    "assets/images/deployment-2026-10-28/online-mobile.jpg"
+  ]
+}

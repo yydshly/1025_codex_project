@@ -126,3 +126,11 @@ GitHub Pages 只能提供静态内容。模型服务、采集任务、密钥和�
 网页是研究展示，底层算法演示仍待实施，不能把上线视为上游项目能力已经实测。
 
 同日补全并再次发布：统一26项搜索、定位与并排比较，增加5个算法专题、可点击文字路线、场景选型、6题虚构材料和实验协议。总索引摘要同时说明教材/资料学习场景、代表库、来源与时间等底层价值，以及阅读溯源、跨日回顾、经验复用和自适应复习。JSON与CSV格式文本在app/data/发布，模板通过download属性保存为.csv，保持现有发布白名单。[本轮正式验收](../projects/009-knowledge-processing-atlas/research/deployment-revision2.md)含成功工作流、资源和桌面/手机截图。
+
+## 010 · Agent Skills 能力、场景与按需使用
+
+2026-10-28 已发布并核验：[统一使用入口](https://yydshly.github.io/1025_codex_project/010-agent-skills-engineering-lab/) · [完整汇总图](https://yydshly.github.io/1025_codex_project/010-agent-skills-engineering-lab/app/overview-poster.html)。源库把工程经验整理成25份AI工作规程；本研究通过七类工作、五问总图说明能力、场景、步骤与约束、产物与检查、技能衔接。对我们的意义是按真实需求选择方法，学习用约束、证据和检查控制落地，逐步形成自己的能力。全量讲解已完成，逐项完整实测仍按需开展。
+
+010使用 `publicDirectory: dist/site`、`guidePage: app/overview.html`。`scripts/build-site.mjs`只复制26个运行文件和4项图像；保留app层级，根页进入总图，原文与研究记录跳到本次提交的GitHub源码。CI验证40份固定快照、25项总图与场景、回查快照及18/22/7项测试，再生成发布文件。首次工作流[40690871041](https://github.com/yydshly/1025_codex_project/actions/runs/40690871041)的构建和部署均成功。
+
+线上25项五问、场景到原理的跳转与刷新、PNG/SVG资源、手机布局及源码固定提交链接已核对。公共回查快照只含本次已提交的9个项目，保留本地历史演示10项目的说明；浏览器判断不自动跨地址同步。详见[010发布与验收记录](../projects/010-agent-skills-engineering-lab/research/deployment.md)。

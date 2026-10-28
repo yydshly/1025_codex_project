@@ -16,4 +16,12 @@ addyosmani/agent-skills 把工程经验写成25份可由AI助手读取的工作�
 
 ## 验证与发布记录
 
-本轮先在基于远端主分支的独立工作树检查发布边界与完整页面，再推送触发现有GitHub Pages流程。具体提交、工作流结果、真实地址和线上验收将在发布完成后记录。
+2026-10-28 已发布：[统一入口](https://yydshly.github.io/1025_codex_project/010-agent-skills-engineering-lab/) · [完整汇总长图](https://yydshly.github.io/1025_codex_project/010-agent-skills-engineering-lab/app/overview-poster.html)。
+
+首个发布提交为 `683cf5b65438edea2ef44c4f497211e8d8c8b94f`；[GitHub Actions 40690871041](https://github.com/yydshly/1025_codex_project/actions/runs/40690871041)的build与deploy均成功。只提交010及根索引、登记、发布清单和工作流；其余未提交内容保持原位。
+
+线上逐项检查25个节点及完整五问，场景跳转、原理深链与刷新恢复通过；9项页面/脚本/图像请求均为HTTP200。回查数据与首次提交的Git blob逐字节一致（9项目，无007）。手机390×844视口下，内容宽375与滚动宽375一致；控制台未见错误或警告。
+
+本地检查包含18项回查行为、22项Skill行为、7项发布隔离与4项总库发布测试；75条本地资源引用可解析。首次检出回查测试把项目数写死为10，修正为核对真实登记集合后通过，保留完整覆盖检查。
+
+截图：[正式入口](../assets/images/deployment-2026-10-28/online-overview.jpg)、[手机检查](../assets/images/deployment-2026-10-28/online-mobile.jpg)。结构化记录见[deployment-verification.json](deployment-verification.json)。

@@ -6,6 +6,8 @@
 
 对我们的意义是建立一份按需查阅的工程方法库：以后从真实需求出发，选择相关 Skill 实际使用、核对效果，再分析其设计。学习重点是如何用步骤、约束、产物和检查控制落地，并把有效做法沉淀为自己的能力。25 项介绍与原理解读已覆盖；逐项完整实测尚未完成，固定源码、教学示例、有限实验与自建 Skill 的证据分别保留。
 
+已上线：[统一入口](https://yydshly.github.io/1025_codex_project/010-agent-skills-engineering-lab/) · [完整汇总长图](https://yydshly.github.io/1025_codex_project/010-agent-skills-engineering-lab/app/overview-poster.html)。发布范围和线上验证见[发布记录](research/deployment.md)。
+
 [入口总图：25个Skill与使用场景](app/overview.html) · [完整汇总长图](app/overview-poster.html) · [25项场景详解](app/scenarios.html) · [实现原理导览](app/index.html) · [真实需求实践](app/real-case.html) · [使用研究回查](app/recall.html) · [创建研究回查Skill实录](app/scenarios.html?lesson=1#build-skill) · [完整文字版](research/learning-guide.md) · [返回总索引](../../README.md#项目索引)
 
 | 项目 | 内容 |
