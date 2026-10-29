@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-29",
+  "url": "https://yydshly.github.io/1025_codex_project/011-pose-look-creation-atlas/",
+  "workflowRun": 40808425925,
+  "commit": "1201d1cf113f06590abecefa4c6f26e998852245",
+  "status": "success",
+  "publicScope": "Static app, original fictional experiment images and selected documentation; private original gallery excluded.",
+  "checks": [
+    "11 HTTP HEAD responses 200 including all 8 experiment PNGs",
+    "Online browser loaded actual images and switched to the pose result",
+    "Local mobile 390x844 has no horizontal overflow",
+    "Isolated publication boundary and source/media hashes passed"
+  ],
+  "integrationNote": "Adding project 011 required regenerating the shared research-recall snapshot using its existing script; no algorithm change."
+}

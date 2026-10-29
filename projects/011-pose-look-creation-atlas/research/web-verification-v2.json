@@ -1,0 +1,76 @@
+{
+  "date": "2026-10-29",
+  "version": "actual-effects-v2",
+  "scope": "Static research and result presentation; no real-time model endpoint.",
+  "experiments": {
+    "imageGenCalls": 7,
+    "generatedInputs": 3,
+    "referenceEditOutputs": 4,
+    "originalPoseGuide": 1,
+    "attemptsPerConfiguration": 1,
+    "allResultsRetained": true,
+    "quantitativeFitOrIdentityEvaluation": false
+  },
+  "localBrowser": {
+    "desktop": [
+      1265,
+      712
+    ],
+    "mobile": [
+      390,
+      844
+    ],
+    "mobileDocumentScrollWidth": 375,
+    "horizontalOverflow": false
+  },
+  "flows": [
+    {
+      "name": "Dress B selection",
+      "result": "Both garment input and output changed to B; person reference retained."
+    },
+    {
+      "name": "Comparison range keyboard End",
+      "result": "Reveal reached 100% and ARIA value updated."
+    },
+    {
+      "name": "Full result button",
+      "result": "Reveal set to 0%."
+    },
+    {
+      "name": "Image lightbox",
+      "result": "Dialog opened with selected original image and closed normally."
+    },
+    {
+      "name": "Garden case",
+      "result": "Before=studio-a; after=garden."
+    },
+    {
+      "name": "Pose case",
+      "result": "Pose result and two actual inputs including original guide visible."
+    },
+    {
+      "name": "Effect to product scenario",
+      "result": "Opened bridal-photo in scenarios panel."
+    }
+  ],
+  "checks": {
+    "subproject": "Passed syntax, 28 pinned sources, 8 image assets/SHA-256 and input links.",
+    "committedBlobs": "37 source/media hashes passed.",
+    "publication": "57 selected public files, 8 experiment images; no private original-images directory.",
+    "isolatedRegistryAndPublicationTests": "4 passed.",
+    "sharedRecallIndex": "Refreshed after adding project 011; 18 JS and 22 Python checks passed."
+  },
+  "screenshots": [
+    "assets/images/effects-overview-v2.jpg",
+    "assets/images/effects-mobile-v2.jpg",
+    "assets/images/effects-online-v2.jpg"
+  ],
+  "deployment": {
+    "status": "verified-online",
+    "url": "https://yydshly.github.io/1025_codex_project/011-pose-look-creation-atlas/",
+    "workflowRun": 40808425925,
+    "deployedCommit": "1201d1cf113f06590abecefa4c6f26e998852245",
+    "httpChecks": "Page, effects.js, manifest and all 8 PNG assets returned HTTP 200.",
+    "browser": "Online hero PNGs loaded at 1024 px width; pose selection and reveal=0 worked; no browser console errors."
+  }
+}

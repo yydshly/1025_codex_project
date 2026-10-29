@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-29T02:46:38.290Z",
+  "generatedAt": "2026-10-29T02:58:21.126Z",
   "sourceScope": "projects.json + registered project README.md files only",
   "projectCount": 10,
   "passageCount": 419,
-  "registrySha256": "c8fbf36f5d2145a780409db6e9141874e893823a9bad24dfb112a4f799b1563e",
-  "dataSha256": "725c6411d679f55c93acfe1223068989576681eda7d679b62864c934b0e0b3bb",
+  "registrySha256": "96615577f314f04915b45a3b12f1316033ed5504542afb3ca168661edcf2843a",
+  "dataSha256": "d3c3dd104a1593cd11ee5e27efe0c8d8c9776e2b00f8cdaadac8b24be19ca7cf",
   "documents": [
     {
       "projectId": "001",
@@ -64,7 +64,7 @@
     {
       "projectId": "011",
       "path": "projects/011-pose-look-creation-atlas/README.md",
-      "sha256": "6dbc14f89ffc777ad5bc7e34c03cd391b5a1edb8023a9c8960c9283ebb3d7d32",
+      "sha256": "3d6af89c89fe0da7dfe2a53e15c9a3e11d1009ff886fec16db91aa9a46abde6d",
       "passages": 43
     }
   ]

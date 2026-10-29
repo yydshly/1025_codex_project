@@ -2,11 +2,11 @@
 
 > 把姿势、服装参考的作用说清楚，把工具能力、创作方向和来源关联起来。当前聚焦婚纱选款与个人造型，已增加原创输入与实际生成结果对照，保留视频、动作和真实 3D 的扩展地图。
 
-[返回总索引](../../README.md#项目索引) · [研究网页](app/index.html) · [研究笔记](research/notes.md) · [私有原图备份](https://github.com/yydshly/pose-look-reference-backup)
+[返回总索引](../../README.md#项目索引) · [在线研究与效果展示](https://yydshly.github.io/1025_codex_project/011-pose-look-creation-atlas/) · [本地网页](app/index.html) · [研究笔记](research/notes.md) · [私有原图备份](https://github.com/yydshly/pose-look-reference-backup)
 
-![姿势与造型的图像创作研究总览](assets/images/understanding-cover.svg)
+![本次参考图与婚纱换装生成结果](assets/images/effects-overview-v2.jpg)
 
-图：早期的原创矢量理解示意；当前网页首屏已替换为本次真实生成的参考与结果。实际效果见下方实验。
+图：本次真实生成的输入与结果，人物为虚构成年人、婚纱为原创概念设计。不是原图库图片或真实商品试穿。早期理解图保留在 assets/images/understanding-cover.svg。
 
 | 项目 | 内容 |
 | --- | --- |
@@ -18,7 +18,7 @@
 | 原图资源 | 1,439 张原尺寸 PNG，288 组姿势，637.57 MiB；不放入公开研究库 |
 | 源库资料 | 28 份说明、许可与少量导出实现，合计 530.2 KiB |
 | 授权 | 代码、原图、模型和附加人物分别核对；保留原文许可 |
-| 在线演示 | 尚未部署；可直接打开本地网页或启动本地服务 |
+| 在线演示 | 已发布并核验：[研究与实际效果展示](https://yydshly.github.io/1025_codex_project/011-pose-look-creation-atlas/) |
 
 ## 网页收录了什么
 
@@ -85,7 +85,7 @@ cd E:/codex_project/1025_codex_project/projects/011-pose-look-creation-atlas
 npm.cmd run dev
 ~~~
 
-打开 http://127.0.0.1:8011/app/ 。可用 POSE_LOOK_PORT 指定端口；无需安装依赖，仅绑定本机，尚未公开部署。
+打开 http://127.0.0.1:8011/app/ 。可用 POSE_LOOK_PORT 指定端口；无需安装依赖，仅绑定本机；也可直接访问上方在线网页。
 
 ~~~powershell
 npm.cmd run check

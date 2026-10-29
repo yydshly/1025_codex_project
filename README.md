@@ -25,7 +25,7 @@
 | 008 | [奥特曼卡片抽卡器](projects/008-ultraman-card-draw/README.md) | [本库原创（无上游源库）](<https://github.com/yydshly/1025_codex_project>) | 以874条人物与形态资料为基础，随机展示奥特曼与怪兽，结合人物突出、招式光效和设备讲解开展亲子探索。沉淀素材、演出配置与卡片舞台分层，后续可增加人物动作和渲染，复用随机演示流程。 | 实践中 | [在线访问](<https://yydshly.github.io/1025_codex_project/008-ultraman-card-draw/>) |
 | 009 | [资料理解与检索研究](projects/009-knowledge-processing-atlas/README.md) | [DeepTutor](<https://github.com/HKUDS/DeepTutor>) | 从 DeepTutor 与 NotebookLM 的教材问答和资料整理场景出发，比较 MinerU、Docling、BGE&#45;M3、Qdrant、Graphiti 等26个对象。拆解结构解析、分块、检索与时间关系的本质，规划带出处阅读、跨日回顾、经验复用和自适应复习；附同题样例、场景选型、并排对比和实验协议，上游效果待验证。 | 研究中 | [在线访问](<https://yydshly.github.io/1025_codex_project/009-knowledge-processing-atlas/>) |
 | 010 | [Agent Skills · 全景理解与实践](projects/010-agent-skills-engineering-lab/README.md) | [agent&#45;skills](<https://github.com/addyosmani/agent-skills>) | 研究 addyosmani/agent&#45;skills 的25项工程规程：覆盖需求、规划、实现、验证、审查与交付维护，以七类工作和五问总图说明用途、场景、步骤、产物及协作。价值在于把工程经验变成AI可执行、结果可核对的流程；我们据此按真实需求选用，学习用约束、证据与检查控制落地，保留研究回查案例和自建Skill；全量讲解已完成，逐项实测待按需开展。 | 研究中 | [在线访问](<https://yydshly.github.io/1025_codex_project/010-agent-skills-engineering-lab/>) |
-| 011 | [姿势与造型 · 图像创作研究](projects/011-pose-look-creation-atlas/README.md) | [姿势与服装参考图库原帖及相关源库](<https://x.com/leo_xiaolei/status/2114971707962536302>) | 以实际生成图展示同一人物两款婚纱、庭院场景和姿势参考编辑，支持拖动对照、原图放大及产品场景关联；汇总12项工具、8类创作方向、许可和资料备份。保留完整输入、指令与偏差，小样本不代表商品保真或稳定成功率。 | 研究中 | — |
+| 011 | [姿势与造型 · 图像创作研究](projects/011-pose-look-creation-atlas/README.md) | [姿势与服装参考图库原帖及相关源库](<https://x.com/leo_xiaolei/status/2114971707962536302>) | 以实际生成图展示同一人物两款婚纱、庭院场景和姿势参考编辑，支持拖动对照、原图放大及产品场景关联；汇总12项工具、8类创作方向、许可和资料备份。保留完整输入、指令与偏差，小样本不代表商品保真或稳定成功率。 | 研究中 | [在线访问](<https://yydshly.github.io/1025_codex_project/011-pose-look-creation-atlas/>) |
 
 ## 项目速览
 
@@ -125,7 +125,7 @@ BaoCut 是 AI 可操作的视频编辑器与制作工作流。效果覆盖动效
 
 以实际生成图展示同一人物两款婚纱、庭院场景和姿势参考编辑，支持拖动对照、原图放大及产品场景关联；汇总12项工具、8类创作方向、许可和资料备份。保留完整输入、指令与偏差，小样本不代表商品保真或稳定成功率。
 
-[研究说明](projects/011-pose-look-creation-atlas/README.md) · 源库：[姿势与服装参考图库原帖及相关源库](<https://x.com/leo_xiaolei/status/2114971707962536302>)
+[研究说明](projects/011-pose-look-creation-atlas/README.md) · 源库：[姿势与服装参考图库原帖及相关源库](<https://x.com/leo_xiaolei/status/2114971707962536302>) · [在线演示](<https://yydshly.github.io/1025_codex_project/011-pose-look-creation-atlas/>)
 
 **阶段：** 研究中 · **标签：** 参考生图 / 换装 / 婚纱 / 能力研究 / 资料备份
 

@@ -11,6 +11,9 @@ function setReveal(value){
   $('#comparison-frame').style.setProperty('--reveal',`${effectState.reveal}%`);
   $('#compare-range').value=effectState.reveal;
   $('#compare-range').setAttribute('aria-valuetext',`参考图 ${effectState.reveal}%，生成结果 ${100-effectState.reveal}%`);
+  $('.before-tag').hidden=effectState.reveal===0;
+  $('.after-tag').hidden=effectState.reveal===100;
+  $('.comparison-divider').hidden=effectState.reveal===0||effectState.reveal===100;
 }
 function openEffectImage(id){
   const asset=effectAsset(id);if(!asset)return;
@@ -38,6 +41,18 @@ function renderEffect(){
 $$('[data-effect-case]').forEach(button=>button.addEventListener('click',()=>{effectState.id=button.dataset.effectCase;renderEffect();}));
 $$('[data-effect-variant]').forEach(button=>button.addEventListener('click',()=>{effectState.variant=button.dataset.effectVariant;renderEffect();}));
 $('#compare-range').addEventListener('input',event=>setReveal(event.target.value));
+let draggingComparison=false;
+function revealAtPointer(event){
+  const rect=$('#comparison-frame').getBoundingClientRect();
+  setReveal(Math.round((event.clientX-rect.left)/rect.width*100));
+}
+$('#comparison-frame').addEventListener('pointerdown',event=>{
+  if(event.button!==0)return;
+  draggingComparison=true;event.currentTarget.setPointerCapture(event.pointerId);revealAtPointer(event);
+});
+$('#comparison-frame').addEventListener('pointermove',event=>{if(draggingComparison)revealAtPointer(event);});
+for(const eventName of ['pointerup','pointercancel'])$('#comparison-frame').addEventListener(eventName,()=>{draggingComparison=false;});
+$$('#comparison-frame img').forEach(img=>{img.draggable=false;});
 $$('[data-reveal]').forEach(button=>button.addEventListener('click',()=>setReveal(button.dataset.reveal)));
 $('#enlarge-effect').addEventListener('click',()=>openEffectImage(currentAfter()));
 $('#close-lightbox').addEventListener('click',()=>$('#effect-lightbox').close());
