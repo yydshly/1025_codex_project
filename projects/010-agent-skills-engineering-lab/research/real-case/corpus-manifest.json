@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-29T07:11:03.740Z",
+  "generatedAt": "2026-10-29T07:15:20.420Z",
   "sourceScope": "projects.json + registered project README.md files only",
   "projectCount": 11,
   "passageCount": 469,
-  "registrySha256": "63c1f3b1cbbdfea1deeffb8b3d8fc34cb68659a1a6974e4d1d8865fccfdfdb57",
-  "dataSha256": "9dc2e3201e113aa10cdedc170096dc2549c4c515e8ad37228b7418fd4b9ac630",
+  "registrySha256": "6bc01999c89b89ff671892a9f08e724aa651e4da3c30a6b5f5e52a5a88f78e2d",
+  "dataSha256": "6d387ef63235d367b07c72dcf968b927ab1e461b578bea19b943a02eb9c4fa11",
   "documents": [
     {
       "projectId": "001",

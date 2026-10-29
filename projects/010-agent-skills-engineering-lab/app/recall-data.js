@@ -1,8 +1,8 @@
 // Generated from the project registry and allowlisted README files.
 globalThis.RECALL_CORPUS = {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-29T07:11:03.740Z",
-  "registrySha256": "63c1f3b1cbbdfea1deeffb8b3d8fc34cb68659a1a6974e4d1d8865fccfdfdb57",
+  "generatedAt": "2026-10-29T07:15:20.420Z",
+  "registrySha256": "6bc01999c89b89ff671892a9f08e724aa651e4da3c30a6b5f5e52a5a88f78e2d",
   "projects": [
     {
       "id": "001",
