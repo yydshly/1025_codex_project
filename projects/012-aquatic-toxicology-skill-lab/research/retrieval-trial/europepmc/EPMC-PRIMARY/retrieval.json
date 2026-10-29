@@ -1,0 +1,46 @@
+{
+  "queryId": "EPMC-PRIMARY",
+  "query": "(TITLE_ABS:zebrafish OR TITLE_ABS:\"Danio rerio\") AND (TITLE_ABS:microplastic* OR TITLE_ABS:nanoplastic* OR TITLE_ABS:\"micro plastic*\" OR TITLE_ABS:\"nano plastic*\" OR TITLE_ABS:polystyrene OR TITLE_ABS:polyethylene OR TITLE_ABS:\"polyethylene terephthalate\" OR TITLE_ABS:polypropylene OR TITLE_ABS:\"polyvinyl chloride\" OR TITLE_ABS:\"polymethyl methacrylate\") AND (TITLE_ABS:PFAS OR TITLE_ABS:PFOS OR TITLE_ABS:PFOA OR TITLE_ABS:PFBA OR TITLE_ABS:PFHxS OR TITLE_ABS:PFBS OR TITLE_ABS:\"F-53B\" OR TITLE_ABS:\"Cl-PFESA\" OR TITLE_ABS:perfluoro* OR TITLE_ABS:polyfluoro* OR TITLE_ABS:fluorotelomer*) AND FIRST_PDATE:[2015-01-01 TO 2026-10-29]",
+  "purpose": "互补接口主检索（与PubMed有大量重叠）",
+  "endpoint": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+  "started_at": "2026-10-29T05:07:29.189422+00:00",
+  "plan_sha256": "c8ee855cabc2e8193295d588c939848364d2f2dc3f2e060ddf27841d094252d4",
+  "page_size": 1000,
+  "record_cap": 1000,
+  "attempts": [
+    {
+      "page": 1,
+      "attempt": 1,
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28TITLE_ABS%3Azebrafish+OR+TITLE_ABS%3A%22Danio+rerio%22%29+AND+%28TITLE_ABS%3Amicroplastic%2A+OR+TITLE_ABS%3Ananoplastic%2A+OR+TITLE_ABS%3A%22micro+plastic%2A%22+OR+TITLE_ABS%3A%22nano+plastic%2A%22+OR+TITLE_ABS%3Apolystyrene+OR+TITLE_ABS%3Apolyethylene+OR+TITLE_ABS%3A%22polyethylene+terephthalate%22+OR+TITLE_ABS%3Apolypropylene+OR+TITLE_ABS%3A%22polyvinyl+chloride%22+OR+TITLE_ABS%3A%22polymethyl+methacrylate%22%29+AND+%28TITLE_ABS%3APFAS+OR+TITLE_ABS%3APFOS+OR+TITLE_ABS%3APFOA+OR+TITLE_ABS%3APFBA+OR+TITLE_ABS%3APFHxS+OR+TITLE_ABS%3APFBS+OR+TITLE_ABS%3A%22F-53B%22+OR+TITLE_ABS%3A%22Cl-PFESA%22+OR+TITLE_ABS%3Aperfluoro%2A+OR+TITLE_ABS%3Apolyfluoro%2A+OR+TITLE_ABS%3Afluorotelomer%2A%29+AND+FIRST_PDATE%3A%5B2015-01-01+TO+2026-10-29%5D&format=json&resultType=core&pageSize=1000&cursorMark=%2A",
+      "started_at": "2026-10-29T05:07:29.189422+00:00",
+      "status": 200,
+      "bytes": 141400,
+      "content_type": "application/json;charset=UTF-8",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28TITLE_ABS%3Azebrafish+OR+TITLE_ABS%3A%22Danio+rerio%22%29+AND+%28TITLE_ABS%3Amicroplastic%2A+OR+TITLE_ABS%3Ananoplastic%2A+OR+TITLE_ABS%3A%22micro+plastic%2A%22+OR+TITLE_ABS%3A%22nano+plastic%2A%22+OR+TITLE_ABS%3Apolystyrene+OR+TITLE_ABS%3Apolyethylene+OR+TITLE_ABS%3A%22polyethylene+terephthalate%22+OR+TITLE_ABS%3Apolypropylene+OR+TITLE_ABS%3A%22polyvinyl+chloride%22+OR+TITLE_ABS%3A%22polymethyl+methacrylate%22%29+AND+%28TITLE_ABS%3APFAS+OR+TITLE_ABS%3APFOS+OR+TITLE_ABS%3APFOA+OR+TITLE_ABS%3APFBA+OR+TITLE_ABS%3APFHxS+OR+TITLE_ABS%3APFBS+OR+TITLE_ABS%3A%22F-53B%22+OR+TITLE_ABS%3A%22Cl-PFESA%22+OR+TITLE_ABS%3Aperfluoro%2A+OR+TITLE_ABS%3Apolyfluoro%2A+OR+TITLE_ABS%3Afluorotelomer%2A%29+AND+FIRST_PDATE%3A%5B2015-01-01+TO+2026-10-29%5D&format=json&resultType=core&pageSize=1000&cursorMark=%2A",
+      "finished_at": "2026-10-29T05:07:34.570981+00:00"
+    }
+  ],
+  "pages": [
+    {
+      "file": "page-001.json",
+      "sha256": "003033a97481faa658b015a029a4d27cbce0a221d7db104c8a4ea72b21c4ef09",
+      "count": 18,
+      "cursor": "*",
+      "next_cursor": null,
+      "request": {
+        "query": "(TITLE_ABS:zebrafish OR TITLE_ABS:\"Danio rerio\") AND (TITLE_ABS:microplastic* OR TITLE_ABS:nanoplastic* OR TITLE_ABS:\"micro plastic*\" OR TITLE_ABS:\"nano plastic*\" OR TITLE_ABS:polystyrene OR TITLE_ABS:polyethylene OR TITLE_ABS:\"polyethylene terephthalate\" OR TITLE_ABS:polypropylene OR TITLE_ABS:\"polyvinyl chloride\" OR TITLE_ABS:\"polymethyl methacrylate\") AND (TITLE_ABS:PFAS OR TITLE_ABS:PFOS OR TITLE_ABS:PFOA OR TITLE_ABS:PFBA OR TITLE_ABS:PFHxS OR TITLE_ABS:PFBS OR TITLE_ABS:\"F-53B\" OR TITLE_ABS:\"Cl-PFESA\" OR TITLE_ABS:perfluoro* OR TITLE_ABS:polyfluoro* OR TITLE_ABS:fluorotelomer*) AND FIRST_PDATE:[2015-01-01 TO 2026-10-29]",
+        "format": "json",
+        "resultType": "core",
+        "pageSize": "1000",
+        "cursorMark": "*"
+      },
+      "serverVersion": "6.9"
+    }
+  ],
+  "total": 18,
+  "returned": 18,
+  "complete": true,
+  "stop_reason": "all_reported_results_retrieved",
+  "finished_at": "2026-10-29T05:07:34.581660+00:00",
+  "returned_unique_source_ids": 18
+}

@@ -1,0 +1,45 @@
+{
+  "findings": [
+    {
+      "severity": "Minor",
+      "issue": "R01 · P06 findings/limitations：逐终点相对同条件 PFOA 单暴露的方向未在本地说明为未决。",
+      "action": "已定点复查：P06 findings 明确逐终点相对 PFOA 单独暴露的方向为 not_resolvable（摘要不足以核对）；保留联合暴露观察和作者 additive 表述。该修正与 source-verification.md 边界第4点及 synthesis.md 一致，未推翻 C01–C06。",
+      "status": "resolved_verified"
+    },
+    {
+      "severity": "Minor",
+      "issue": "R02 · C04/C06 evidenceIds、D03 priorWorkIds：方法/背景与核心经验依据在关联按钮及列表入口混计，角色需再次打开详情才可见。",
+      "action": "已定点复查：C04/C06 evidenceIds 移出 M01/M02，D03 priorWorkIds 移出 P11/P12；正文继续说明方法/背景用途，四项仍以 method/context 角色保留。实际数据映射断言确认三个入口只含 core ID，已用分离关联集合的等效方式解决混计。",
+      "status": "resolved_verified"
+    },
+    {
+      "severity": "Minor",
+      "issue": "R03 · summary：8篇摘要、2篇章节片段、0篇核心全文的读取分母未紧邻首屏结论。",
+      "action": "已定点复查：summary.lead 首句明确8篇摘要、2篇章节片段、全文审读0篇，随后以已报道结果界定结论，未将书目匹配升级为阅读深度。",
+      "status": "resolved_verified"
+    },
+    {
+      "severity": "Minor",
+      "issue": "R04 · F01：文本计数10篇，局部 evidenceIds 只链接6篇且未说明为示例。",
+      "action": "已定点复查：F01 evidenceIds 为 P01–P10；实际集合与十条 core 记录的 ID 集合完全相同，十篇计数的关联入口已补齐。",
+      "status": "resolved_verified"
+    },
+    {
+      "severity": "Minor",
+      "issue": "R05 · F02.title：“条件决定怎么解释”的决定性措辞强于其已正确限定的正文。",
+      "action": "已定点复查：F02.title 为“不同条件下，结论要分别解释”；正文保留 P03/P05/P09 条件性与不能估计独立因果作用的边界。",
+      "status": "resolved_verified"
+    }
+  ],
+  "executionLimits": [
+    "同一个 AI 会话内依次采用反方、编辑和研究诚信视角；按本次委派适配原始角色隔离要求，不是独立评审团、独立专家或盲审。",
+    "审查真实 app/data/research.json 对照 Phase 1/2/3 已有文件及网页引用展示代码；没有新增检索、访问新来源、取得全文、实验或统计复算。",
+    "核心材料实际为8篇摘要、2篇章节片段、0篇全文审读；书目 API 匹配不能证明全文内容、实验真实性或方法质量。",
+    "没有运行 Claude 原生 hooks、原生 Task 编排、完整诚信闸门、正式 Material Passport 协议或完整撤稿解析；不宣称这些缺失流程 PASS。",
+    "未进行人工批准、独立双人筛选、跨模型校准或同模型有/无技能对照；不能量化技能的效率或准确率增益。",
+    "P05/P09 队列独立性、P06 逐终点 PFAS 单暴露方向、P10 每项救援的鱼/细胞归属仍未知；协同标签未独立建模。",
+    "D01–D03 全部新颖性待验证；本轮未检得或未获取不是领域缺失研究证明，不从实验剂量外推环境或人群风险。",
+    "R01–R05 已对修改后的实际 research.json 定点回查并记录 resolved_verified；另读 Phase 4 report.md 核对新增科学漂移，未定位额外阻断项。该收据只覆盖所列问题与报告文本，不是完整原生闸门通过、全文认证或人工批准。",
+    "未开展人体研究或可识别受试者数据处理，不作人体伦理行政路径、准备度或授权判断。"
+  ]
+}

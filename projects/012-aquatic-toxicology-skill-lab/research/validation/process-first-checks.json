@@ -1,0 +1,113 @@
+{
+  "checked_at": "2026-10-29T04:08:07.808851+00:00",
+  "http": [
+    {
+      "url": "",
+      "status": 200
+    },
+    {
+      "url": "main.js",
+      "status": 200
+    },
+    {
+      "url": "styles.css",
+      "status": 200
+    },
+    {
+      "url": "process.css",
+      "status": 200
+    },
+    {
+      "url": "data/research-data.js",
+      "status": 200
+    },
+    {
+      "url": "data/process-walkthrough.md",
+      "status": 200
+    },
+    {
+      "url": "data/process-walkthrough.json",
+      "status": 200
+    },
+    {
+      "url": "data/report.md",
+      "status": 200
+    },
+    {
+      "url": "data/synthesis.md",
+      "status": 200
+    },
+    {
+      "url": "data/review.md",
+      "status": 200
+    },
+    {
+      "url": "data/process.md",
+      "status": 200
+    },
+    {
+      "url": "data/rq-brief.md",
+      "status": 200
+    },
+    {
+      "url": "data/methodology.md",
+      "status": 200
+    },
+    {
+      "url": "data/checkpoint1-review.md",
+      "status": 200
+    },
+    {
+      "url": "data/bibliography.md",
+      "status": 200
+    },
+    {
+      "url": "data/source-verification.md",
+      "status": 200
+    },
+    {
+      "url": "data/search-log.json",
+      "status": 200
+    },
+    {
+      "url": "data/upstream-manifest.json",
+      "status": 200
+    },
+    {
+      "url": "data/deep-research-SKILL.md",
+      "status": 200
+    },
+    {
+      "url": "data/upstream-LICENSE.txt",
+      "status": 200
+    },
+    {
+      "url": "data/execution-contract.md",
+      "status": 200
+    },
+    {
+      "url": "data/research.json",
+      "status": 200
+    },
+    {
+      "url": "data/evidence.csv",
+      "status": 200
+    },
+    {
+      "url": "data/citation-verification.json",
+      "status": 200
+    }
+  ],
+  "all_success": true,
+  "browser_observed": {
+    "process_steps": 7,
+    "search_step_example": "Q01/Q08/Q24/Q28 and P01 dedup visible",
+    "keyboard": "ArrowRight step3 to step4",
+    "program_step": "P03 match and P04 429 recorded examples visible",
+    "evidence_turn": "P03 source opens from decision",
+    "ownership": "User,skill,Codex main/subagents,public sources split",
+    "mobile_client_width": 375,
+    "mobile_document_scroll_width": 375
+  },
+  "boundary": "Presentation-only revision; no new scientific retrieval or API rerun; assignment text is a reconstructed task summary."
+}

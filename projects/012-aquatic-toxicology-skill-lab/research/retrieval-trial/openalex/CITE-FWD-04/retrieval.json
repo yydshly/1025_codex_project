@@ -1,0 +1,64 @@
+{
+  "queryId": "CITE-FWD-04",
+  "purpose": "One-hop forward citations; no relevance filtering or date restriction",
+  "endpoint": "https://api.openalex.org/works",
+  "parameters": {
+    "filter": "cites:W3025718754"
+  },
+  "started_at": "2026-10-29T05:16:28.295195+00:00",
+  "amendment_sha256": "0aab8b3dc02cde6ee515aad649b56f755b0fb0c99288c57d548871e38d8bc706",
+  "page_size": 100,
+  "record_cap": 1000,
+  "attempts": [
+    {
+      "url": "https://api.openalex.org/works?filter=cites%3AW3025718754&per_page=100&page=1&select=id%2Cdoi%2Cids%2Ctitle%2Cabstract_inverted_index%2Cpublication_year%2Cpublication_date%2Ctype%2Cprimary_location%2Creferenced_works%2Ccited_by_count",
+      "started_at": "2026-10-29T05:16:28.295702+00:00",
+      "attempt": 1,
+      "status": 200,
+      "final_url": "https://api.openalex.org/works?filter=cites%3AW3025718754&per_page=100&page=1&select=id%2Cdoi%2Cids%2Ctitle%2Cabstract_inverted_index%2Cpublication_year%2Cpublication_date%2Ctype%2Cprimary_location%2Creferenced_works%2Ccited_by_count",
+      "content_type": "application/json",
+      "file": "page-001.json",
+      "bytes": 651844,
+      "sha256": "1590bd22f48a358a886a15f007d4e738167de803024b1954f0e6a6d0993f598a",
+      "finished_at": "2026-10-29T05:16:35.027582+00:00"
+    },
+    {
+      "url": "https://api.openalex.org/works?filter=cites%3AW3025718754&per_page=100&page=2&select=id%2Cdoi%2Cids%2Ctitle%2Cabstract_inverted_index%2Cpublication_year%2Cpublication_date%2Ctype%2Cprimary_location%2Creferenced_works%2Ccited_by_count",
+      "started_at": "2026-10-29T05:16:36.138183+00:00",
+      "attempt": 1,
+      "status": 200,
+      "final_url": "https://api.openalex.org/works?filter=cites%3AW3025718754&per_page=100&page=2&select=id%2Cdoi%2Cids%2Ctitle%2Cabstract_inverted_index%2Cpublication_year%2Cpublication_date%2Ctype%2Cprimary_location%2Creferenced_works%2Ccited_by_count",
+      "content_type": "application/json",
+      "file": "page-002.json",
+      "bytes": 342429,
+      "sha256": "71fc9c994e5cbf597793a1d85b3c661116781e05c73c92dc610e6954acd3cbea",
+      "finished_at": "2026-10-29T05:17:10.954279+00:00"
+    }
+  ],
+  "pages": [
+    {
+      "file": "page-001.json",
+      "sha256": "1590bd22f48a358a886a15f007d4e738167de803024b1954f0e6a6d0993f598a",
+      "page": 1,
+      "count": 100,
+      "total_at_page": 158,
+      "url": "https://api.openalex.org/works?filter=cites%3AW3025718754&per_page=100&page=1&select=id%2Cdoi%2Cids%2Ctitle%2Cabstract_inverted_index%2Cpublication_year%2Cpublication_date%2Ctype%2Cprimary_location%2Creferenced_works%2Ccited_by_count"
+    },
+    {
+      "file": "page-002.json",
+      "sha256": "71fc9c994e5cbf597793a1d85b3c661116781e05c73c92dc610e6954acd3cbea",
+      "page": 2,
+      "count": 58,
+      "total_at_page": 158,
+      "url": "https://api.openalex.org/works?filter=cites%3AW3025718754&per_page=100&page=2&select=id%2Cdoi%2Cids%2Ctitle%2Cabstract_inverted_index%2Cpublication_year%2Cpublication_date%2Ctype%2Cprimary_location%2Creferenced_works%2Ccited_by_count"
+    }
+  ],
+  "total": 158,
+  "returned": 158,
+  "complete": true,
+  "stop_reason": "all_reported_results_retrieved",
+  "returned_unique_source_ids": 158,
+  "finished_at": "2026-10-29T05:17:10.964689+00:00",
+  "seed_doi": "10.1016/j.chemosphere.2020.127040",
+  "seed_OAid": "https://openalex.org/W3025718754"
+}

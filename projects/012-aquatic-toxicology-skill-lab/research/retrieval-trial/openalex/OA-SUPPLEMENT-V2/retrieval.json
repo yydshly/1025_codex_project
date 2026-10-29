@@ -1,0 +1,51 @@
+{
+  "queryId": "OA-SUPPLEMENT-V2",
+  "purpose": "Disclosed cross-disciplinary supplementary topic search",
+  "endpoint": "https://api.openalex.org/works",
+  "parameters": {
+    "search.title_and_abstract.exact": "(zebrafish OR \"Danio rerio\") AND (microplastic* OR nanoplastic* OR (\"micro plastic\" OR \"micro plastics\") OR (\"nano plastic\" OR \"nano plastics\") OR polystyrene OR polyethylene OR \"polyethylene terephthalate\" OR polypropylene OR \"polyvinyl chloride\" OR \"polymethyl methacrylate\") AND (PFAS OR PFOS OR PFOA OR PFBA OR PFHxS OR PFBS OR \"F-53B\" OR \"Cl-PFESA\" OR perfluoro* OR polyfluoro* OR fluorotelomer*)",
+    "filter": "from_publication_date:2015-01-01,to_publication_date:2026-10-29"
+  },
+  "started_at": "2026-10-29T05:17:28.153323+00:00",
+  "amendment_sha256": "f5b51b51b04adf4e443ab18a42fd5965d0906ca1c91df4d688023ce790b53366",
+  "page_size": 100,
+  "record_cap": 1000,
+  "attempts": [
+    {
+      "url": "https://api.openalex.org/works?search.title_and_abstract.exact=%28zebrafish+OR+%22Danio+rerio%22%29+AND+%28microplastic%2A+OR+nanoplastic%2A+OR+%28%22micro+plastic%22+OR+%22micro+plastics%22%29+OR+%28%22nano+plastic%22+OR+%22nano+plastics%22%29+OR+polystyrene+OR+polyethylene+OR+%22polyethylene+terephthalate%22+OR+polypropylene+OR+%22polyvinyl+chloride%22+OR+%22polymethyl+methacrylate%22%29+AND+%28PFAS+OR+PFOS+OR+PFOA+OR+PFBA+OR+PFHxS+OR+PFBS+OR+%22F-53B%22+OR+%22Cl-PFESA%22+OR+perfluoro%2A+OR+polyfluoro%2A+OR+fluorotelomer%2A%29&filter=from_publication_date%3A2015-01-01%2Cto_publication_date%3A2026-10-29&per_page=100&page=1&select=id%2Cdoi%2Cids%2Ctitle%2Cabstract_inverted_index%2Cpublication_year%2Cpublication_date%2Ctype%2Cprimary_location%2Creferenced_works%2Ccited_by_count",
+      "started_at": "2026-10-29T05:17:28.153323+00:00",
+      "attempt": 1,
+      "error": "Remote end closed connection without response",
+      "status": null,
+      "finished_at": "2026-10-29T05:17:48.449485+00:00"
+    },
+    {
+      "url": "https://api.openalex.org/works?search.title_and_abstract.exact=%28zebrafish+OR+%22Danio+rerio%22%29+AND+%28microplastic%2A+OR+nanoplastic%2A+OR+%28%22micro+plastic%22+OR+%22micro+plastics%22%29+OR+%28%22nano+plastic%22+OR+%22nano+plastics%22%29+OR+polystyrene+OR+polyethylene+OR+%22polyethylene+terephthalate%22+OR+polypropylene+OR+%22polyvinyl+chloride%22+OR+%22polymethyl+methacrylate%22%29+AND+%28PFAS+OR+PFOS+OR+PFOA+OR+PFBA+OR+PFHxS+OR+PFBS+OR+%22F-53B%22+OR+%22Cl-PFESA%22+OR+perfluoro%2A+OR+polyfluoro%2A+OR+fluorotelomer%2A%29&filter=from_publication_date%3A2015-01-01%2Cto_publication_date%3A2026-10-29&per_page=100&page=1&select=id%2Cdoi%2Cids%2Ctitle%2Cabstract_inverted_index%2Cpublication_year%2Cpublication_date%2Ctype%2Cprimary_location%2Creferenced_works%2Ccited_by_count",
+      "started_at": "2026-10-29T05:17:51.454862+00:00",
+      "attempt": 2,
+      "status": 200,
+      "final_url": "https://api.openalex.org/works?search.title_and_abstract.exact=%28zebrafish+OR+%22Danio+rerio%22%29+AND+%28microplastic%2A+OR+nanoplastic%2A+OR+%28%22micro+plastic%22+OR+%22micro+plastics%22%29+OR+%28%22nano+plastic%22+OR+%22nano+plastics%22%29+OR+polystyrene+OR+polyethylene+OR+%22polyethylene+terephthalate%22+OR+polypropylene+OR+%22polyvinyl+chloride%22+OR+%22polymethyl+methacrylate%22%29+AND+%28PFAS+OR+PFOS+OR+PFOA+OR+PFBA+OR+PFHxS+OR+PFBS+OR+%22F-53B%22+OR+%22Cl-PFESA%22+OR+perfluoro%2A+OR+polyfluoro%2A+OR+fluorotelomer%2A%29&filter=from_publication_date%3A2015-01-01%2Cto_publication_date%3A2026-10-29&per_page=100&page=1&select=id%2Cdoi%2Cids%2Ctitle%2Cabstract_inverted_index%2Cpublication_year%2Cpublication_date%2Ctype%2Cprimary_location%2Creferenced_works%2Ccited_by_count",
+      "content_type": "application/json",
+      "file": "page-001.json",
+      "bytes": 266943,
+      "sha256": "6f4bfff30740365c3ab922c2736100be4a9c0303b47af81a81ce72c7a845b719",
+      "finished_at": "2026-10-29T05:18:09.651812+00:00"
+    }
+  ],
+  "pages": [
+    {
+      "file": "page-001.json",
+      "sha256": "6f4bfff30740365c3ab922c2736100be4a9c0303b47af81a81ce72c7a845b719",
+      "page": 1,
+      "count": 32,
+      "total_at_page": 32,
+      "url": "https://api.openalex.org/works?search.title_and_abstract.exact=%28zebrafish+OR+%22Danio+rerio%22%29+AND+%28microplastic%2A+OR+nanoplastic%2A+OR+%28%22micro+plastic%22+OR+%22micro+plastics%22%29+OR+%28%22nano+plastic%22+OR+%22nano+plastics%22%29+OR+polystyrene+OR+polyethylene+OR+%22polyethylene+terephthalate%22+OR+polypropylene+OR+%22polyvinyl+chloride%22+OR+%22polymethyl+methacrylate%22%29+AND+%28PFAS+OR+PFOS+OR+PFOA+OR+PFBA+OR+PFHxS+OR+PFBS+OR+%22F-53B%22+OR+%22Cl-PFESA%22+OR+perfluoro%2A+OR+polyfluoro%2A+OR+fluorotelomer%2A%29&filter=from_publication_date%3A2015-01-01%2Cto_publication_date%3A2026-10-29&per_page=100&page=1&select=id%2Cdoi%2Cids%2Ctitle%2Cabstract_inverted_index%2Cpublication_year%2Cpublication_date%2Ctype%2Cprimary_location%2Creferenced_works%2Ccited_by_count"
+    }
+  ],
+  "total": 32,
+  "returned": 32,
+  "complete": true,
+  "stop_reason": "all_reported_results_retrieved",
+  "returned_unique_source_ids": 32,
+  "finished_at": "2026-10-29T05:18:09.659229+00:00"
+}

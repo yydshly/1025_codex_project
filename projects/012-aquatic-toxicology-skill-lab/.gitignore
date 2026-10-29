@@ -1,0 +1,16 @@
+# Local evidence stays on disk. Commit the public summaries, plans, counts,
+# request receipts and hashes, rather than republishing third-party abstracts.
+/research/upstream/
+/research/upstream-source.zip
+/research/phase2_investigation/targeted-web-results.json
+/research/phase2_investigation/method-web-results.json
+
+# Raw API pages/records and reviewer input samples contain complete abstracts.
+/research/retrieval-trial/**/page-*.json
+/research/retrieval-trial/**/batch-*.json
+/research/retrieval-trial/**/records*.json
+/research/retrieval-trial/**/efetch-*.xml
+/research/retrieval-trial/**/seed.json
+/research/retrieval-trial/screening/reviewer-b-sample*.json
+/research/retrieval-trial/diagnostics/B03.json
+/research/retrieval-trial/diagnostics/B05.json

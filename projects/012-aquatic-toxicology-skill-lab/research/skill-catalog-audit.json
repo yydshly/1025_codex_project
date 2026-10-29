@@ -1,0 +1,173 @@
+{
+  "title": "这个库包含哪些 Skill，怎样用于真实研究场景",
+  "date": "2026-10-29",
+  "commit": "b8d050f24f2e1c465c4410eace8634ea3af15930",
+  "scope": "核对已保存的固定版本源码；这是目录与执行边界审计，没有新增文献检索，也没有执行新的原生 Skill 流程。",
+  "inventory": {
+    "topLevelSkillCount": 5,
+    "installedSkillCountThisRun": 4,
+    "deepResearchRoleCount": 13,
+    "enumerationMethod": "遍历 research/upstream-source.zip 中深度恰为 <仓库根>/<目录>/SKILL.md 的成员；找到5项。版本来自各 SKILL.md frontmatter。",
+    "archivePath": "research/upstream-source.zip",
+    "caution": "5个顶层 Skill、deep-research 内部13个角色、Python客户端、宿主提供的网页搜索，是不同层次，不能混算为能力数量。"
+  },
+  "layers": [
+    {
+      "name": "顶层 Skill",
+      "whatItIs": "一个可选择的工作流入口，规定适用请求、角色分工、阶段、输入输出和边界。",
+      "examples": ["deep-research", "sr-screener", "academic-paper", "academic-paper-reviewer", "academic-pipeline"],
+      "boundary": "目录存在或安装成功，不等于该工作流已经运行。"
+    },
+    {
+      "name": "内部代理角色",
+      "whatItIs": "Skill 内的任务说明，由模型按研究问题、书目、来源核查、综合等职责执行。",
+      "examples": ["research_question_agent", "bibliography_agent", "source_verification_agent", "synthesis_agent"],
+      "boundary": "角色名称不意味着一个独立的检索数据库，也不意味着独立专家或彼此独立的错误。"
+    },
+    {
+      "name": "程序工具",
+      "whatItIs": "执行确定步骤的代码，例如调用论文元数据 API、导出记录、去重和校验格式。",
+      "examples": ["scripts/crossref_client.py", "scripts/semantic_scholar_client.py", "sr-screener/scripts/prepare_records.py"],
+      "boundary": "元数据匹配能核对论文身份，不能证明论文结论、实验真实或文献覆盖完整。"
+    },
+    {
+      "name": "宿主与外部数据源",
+      "whatItIs": "运行环境实际提供的搜索、网页读取、模型和数据库访问能力。",
+      "examples": ["本轮宿主网页搜索", "PubMed/PMC与出版商页面", "Crossref API", "Semantic Scholar API"],
+      "boundary": "Skill 文本提到某数据库，不会自动授予该数据库的权限、订阅或原生检索能力。"
+    }
+  ],
+  "skills": [
+    {
+      "id": "deep-research",
+      "version": "2.12.1",
+      "label": "从主题到研究问题与证据综合",
+      "purpose": "澄清研究问题，设计方法，检索与核查来源，跨文献综合并形成报告。",
+      "input": "模糊方向、明确研究问题、待核查论断或一组待研究材料。",
+      "outputs": ["问题与范围", "方法方案", "书目与来源核查", "证据矩阵和综合", "报告与审查记录"],
+      "modes": ["full", "quick", "review", "lit-review", "three-way-scan", "fact-check", "socratic", "systematic-review"],
+      "modeCount": 8,
+      "thisRun": "已安装；主会话和子代理实际采用其中的问题、方法、书目、核验、综合、报告和审查角色规范，进行了有边界适配。未完整执行原生full流程。",
+      "boundary": "不提供自有文献数据库；搜索质量取决于实际工具、检索策略、访问范围和执行情况。",
+      "sourceRefs": [{"path": "deep-research/SKILL.md", "line": 124}, {"path": "deep-research/SKILL.md", "line": 144}, {"path": "README.zh-CN.md", "line": 259}]
+    },
+    {
+      "id": "sr-screener",
+      "version": "1.0.0",
+      "label": "对已有检索记录做有规则的筛选",
+      "purpose": "按确认的纳入排除标准筛选题名摘要与全文，保留分歧、排除理由和筛选计数。",
+      "input": "研究方案或纳入标准，以及RIS、PubMed .nbib、Web of Science、CSV导出记录或全文。",
+      "outputs": ["筛选协议", "双AI决定与第三方裁决", "种子和近似排除复查", "与研究团队pilot标签的对照", "PRISMA计数和文献集交接"],
+      "modes": ["protocol", "quick", "pilot", "ta-screen", "ft-screen", "adjudicate", "audit", "report"],
+      "modeCount": 8,
+      "thisRun": "本轮未安装、未执行。此次只从固定ZIP读取其原始SKILL说明，用于解释能力边界。",
+      "boundary": "可以发现已经获取的记录在筛选阶段被漏掉或误排；不能据此证明搜索阶段没有漏掉未进入记录集的论文。原文也明确同一模型的两次判断可能共享误读。",
+      "sourceRefs": [{"path": "sr-screener/SKILL.md", "line": 18, "availability": "仅位于保存的原始ZIP"}, {"path": "sr-screener/SKILL.md", "line": 153, "availability": "仅位于保存的原始ZIP"}, {"path": "sr-screener/SKILL.md", "line": 188, "availability": "仅位于保存的原始ZIP"}, {"path": "sr-screener/SKILL.md", "line": 206, "availability": "仅位于保存的原始ZIP"}]
+    },
+    {
+      "id": "academic-paper",
+      "version": "3.3.1",
+      "label": "将已有证据组织成论文及修订材料",
+      "purpose": "组织论文结构、论证、正文、引用与格式，或对已有稿件进行修订和回复检查。",
+      "input": "问题、可信文献、作者材料、真实实验结果或已有稿件与审稿意见；具体输入随模式变化。",
+      "outputs": ["大纲和论证结构", "论文草稿", "修订路线图", "引用检查与AI使用披露", "依环境可用工具生成排版产物"],
+      "modes": ["full", "plan", "outline-only", "revision", "revision-coach", "abstract-only", "lit-review", "format-convert", "citation-check", "disclosure", "rebuttal-audit"],
+      "modeCount": 11,
+      "thisRun": "已安装，选读了写作质量等参考规范；没有运行其完整论文撰写工作流。本轮研究报告由deep-research的report_compiler角色规范适配完成。",
+      "boundary": "写作不能补造未做的实验、缺失的数据或未经核查的机制；篇章完整不等于科学证据充分。",
+      "sourceRefs": [{"path": "academic-paper/SKILL.md", "line": 3}, {"path": "academic-paper/SKILL.md", "line": 332}, {"path": "README.zh-CN.md", "line": 263}]
+    },
+    {
+      "id": "academic-paper-reviewer",
+      "version": "1.11.1",
+      "label": "按准则审查已有稿件",
+      "purpose": "围绕期刊适配、方法、领域和核心论证组织多视角审查，并回查修订。",
+      "input": "待审稿件及适用的目标期刊、研究设计或评价准则。校准模式另需gold set。",
+      "outputs": ["角色分开的审查意见", "编辑决定和修改路线图", "定点再审", "校准候选产物"],
+      "modes": ["full", "re-review", "quick", "methodology-focus", "guided", "calibration"],
+      "modeCount": 6,
+      "thisRun": "已安装，借用了经验研究评价准则参考；没有运行五席审查面板。此次5项复核来自deep-research审查角色的有边界合并适配。",
+      "boundary": "原文明确角色分离不代表错误过程独立；live review仍为NOT_CALIBRATED。不能把AI评审意见当独立专家结论。",
+      "sourceRefs": [{"path": "academic-paper-reviewer/SKILL.md", "line": 3}, {"path": "academic-paper-reviewer/SKILL.md", "line": 17}, {"path": "README.zh-CN.md", "line": 267}]
+    },
+    {
+      "id": "academic-pipeline",
+      "version": "3.24.0",
+      "label": "调度研究、写作、审查和修订",
+      "purpose": "识别项目阶段，选择并派发其他Skill，管理状态、交接、检查点和诚信核查。",
+      "input": "端到端论文目标，或已有研究/稿件/审稿意见及当前进度。",
+      "outputs": ["阶段状态", "跨Skill交接", "诚信检查记录", "修订追踪", "过程记录"],
+      "modes": [],
+      "modeCount": null,
+      "thisRun": "已安装并核对执行边界；没有启动原生编排器、完整Material Passport或正式机器诚信闸门，未完成其十阶段流程。",
+      "boundary": "原文说明它是轻量调度器，本身不执行实质研究。它的十阶段也不是十个新Skill。",
+      "sourceRefs": [{"path": "academic-pipeline/SKILL.md", "line": 19}, {"path": "academic-pipeline/SKILL.md", "line": 50}, {"path": "README.zh-CN.md", "line": 271}]
+    }
+  ],
+  "deepResearchRoles": [
+    {"id": "research_question_agent", "job": "将宽泛主题收窄为可回答的问题并划定范围", "thisRun": "实际采用规范", "line": 148},
+    {"id": "research_architect_agent", "job": "设计方法、数据策略、分析框架与有效性标准", "thisRun": "实际采用规范", "line": 149},
+    {"id": "bibliography_agent", "job": "形成检索策略、筛选来源并整理书目", "thisRun": "实际采用规范；使用宿主网页搜索", "line": 150},
+    {"id": "source_verification_agent", "job": "核查来源身份、证据适配性与可见局限", "thisRun": "实际采用规范；元数据程序核验另有记录", "line": 151},
+    {"id": "synthesis_agent", "job": "比较不同来源，分析分歧和候选缺口", "thisRun": "实际采用规范", "line": 152},
+    {"id": "report_compiler_agent", "job": "将已支持的判断组织成研究报告", "thisRun": "实际采用规范；保留真实AI参与和读取边界披露", "line": 153},
+    {"id": "editor_in_chief_agent", "job": "审查报告严谨性、证据充分性和表述", "thisRun": "在同一审查任务中合并适配，未形成独立面板", "line": 154},
+    {"id": "devils_advocate_agent", "job": "寻找反证，质疑假设并检查替代解释", "thisRun": "范围审查、定向补查和合并复核中采用", "line": 155},
+    {"id": "ethics_review_agent", "job": "检查归属、诚信和公平呈现", "thisRun": "与编辑/反方视角合并适配，未运行完整正式闸门", "line": 156},
+    {"id": "socratic_mentor_agent", "job": "通过对话帮助作者形成自己的研究方向", "thisRun": "未运行专门的引导对话流程", "line": 157},
+    {"id": "risk_of_bias_agent", "job": "在适用的系统综述中评估原研究偏倚风险", "thisRun": "未运行；未将临床RoB工具机械套用到鱼类实验", "line": 158},
+    {"id": "meta_analysis_agent", "job": "在证据可比时设计和执行统计综合", "thisRun": "未运行，无效应量合并", "line": 159},
+    {"id": "monitoring_agent", "job": "研究后持续监测新文献和反向发现", "thisRun": "未运行，无持续监控或自动订阅", "line": 160}
+  ],
+  "scenarios": [
+    {
+      "id": "S01", "request": "我想做水生毒理学，但还没有明确题目",
+      "route": ["deep-research / socratic", "research_question_agent", "research_architect_agent"],
+      "actions": ["澄清关注的污染物、物种、终点、已有条件和目标", "提出几个边界清楚的问题并与作者讨论", "选择一个问题后形成检索与提取方案"],
+      "deliverable": "候选研究问题、选择依据、范围和方法计划。",
+      "thisRun": "本轮由AI先选了斑马鱼/微纳塑料/PFAS作为演示案例；没有完成与作者逐步确认的socratic流程，具体题目仍是暂定。"
+    },
+    {
+      "id": "S02", "request": "我想知道微纳塑料与PFAS共暴露已有研究做到了什么",
+      "route": ["deep-research / lit-review 或明确问题下的full", "bibliography_agent", "source_verification_agent", "synthesis_agent"],
+      "actions": ["按物种、颗粒、化学物种与共暴露概念构造检索", "记录实际来源、查询、访问失败、去重和排除理由", "以匹配对照和逐终点结果建立证据表", "比较已有前作、反向结果和未决项"],
+      "deliverable": "检索日志、分层书目、证据矩阵和有边界的研究现状。",
+      "thisRun": "实际做了这一类探索性调查；37条正式网页查询，10篇核心记录，8篇摘要/2篇章节片段/0篇全文审读，不是完成原生full或系统综述。"
+    },
+    {
+      "id": "S03", "request": "我已经从数据库导出一批文献，哪些符合我的综述",
+      "route": ["sr-screener / protocol", "pilot", "ta-screen", "ft-screen", "adjudicate", "audit / report"],
+      "actions": ["确认纳入标准并解析导出记录、去重", "用种子研究及团队独立标注样本做pilot", "分别作出筛选决定，保留冲突并裁决", "复查近似排除和随机样本，导出逐条理由与计数"],
+      "deliverable": "可追溯筛选决定、QC、排除理由和筛选流程计数。",
+      "thisRun": "未执行；不能用已有15个遇到的排除候选冒充完整筛选，也不能用37次网页查询冒充导出记录总数。"
+    },
+    {
+      "id": "S04", "request": "我担心这个选题别人已经做过",
+      "route": ["deep-research / 定向前作检索", "source_verification_agent", "synthesis_agent", "devils_advocate_agent"],
+      "actions": ["拆分拟创新点对应的对象、暴露、终点、方法和机制", "寻找最接近的原始论文，逐项比较", "检索支持与反对新颖性判断的前作", "对未覆盖来源和未取得全文保持未决状态"],
+      "deliverable": "最近前作对照表，以及在已记录范围内发现了什么、尚未确认什么。",
+      "thisRun": "P03已报道阶段相关方向转换和TK/TD内容，因此不能把这些宽泛表述直接当成新颖性；没有认证任何方向为首次。"
+    },
+    {
+      "id": "S05", "request": "我已有真实实验结果，需要写论文并改稿",
+      "route": ["academic-paper / plan 或full", "academic-paper-reviewer / full 或methodology-focus", "academic-paper / revision", "academic-paper-reviewer / re-review"],
+      "actions": ["核对作者材料和证据需求", "形成大纲和论证，再写入已有结果", "按适用准则找问题并列修订计划", "回查每项修改是否落实"],
+      "deliverable": "稿件、审查意见、修订路线图及回查记录。",
+      "thisRun": "没有作者原始实验结果，不适用实证论文结果撰写；本轮只形成文献调查报告。"
+    },
+    {
+      "id": "S06", "request": "我要从研究主题一路推进到论文定稿",
+      "route": ["academic-pipeline", "deep-research", "academic-paper", "诚信核查", "academic-paper-reviewer", "修订与再审"],
+      "actions": ["判断起点和缺失材料", "按阶段派发工作并保留交接状态", "执行声明范围内的诚信核查和作者检查点", "完成修订追踪和过程记录"],
+      "deliverable": "贯穿多个Skill的项目状态和阶段产物。",
+      "thisRun": "本轮没有启动原生端到端编排。不能将网页的七步过程导览称为完整十阶段pipeline的完成回执。"
+    }
+  ],
+  "executionEvidence": [
+    {"path": "research/execution-contract.md", "use": "实际执行主体、适配范围、未运行原生机制及暂定题目"},
+    {"path": "research/phase2_investigation/search-log.json", "use": "实际网页检索、去重、读取范围和停止边界"},
+    {"path": "research/phase2_investigation/citation-verification-combined.json", "use": "原始客户端的真实元数据核验结果"},
+    {"path": "research/phase5_review/review.md", "use": "合并复核视角、五项问题和修复边界"}
+  ],
+  "interpretation": "应分别问：库中有哪些规则、工具实际能访问什么、这轮到底执行了哪些步骤、还有哪些验证没做。具备说明不等于执行完成，执行完成也不等于科学准确性认证。"
+}

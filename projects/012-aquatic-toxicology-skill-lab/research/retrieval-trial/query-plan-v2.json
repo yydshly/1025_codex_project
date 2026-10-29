@@ -1,0 +1,98 @@
+{
+  "schema": "retrieval-trial-plan/1.1",
+  "frozen_at": "2026-10-29T05:06:25.842829+00:00",
+  "skill_commit": "b8d050f24f2e1c465c4410eace8634ea3af15930",
+  "scope": "斑马鱼实验中的微/纳塑料与PFAS共暴露原始研究；只测试检索与题名摘要筛选，不据此评价毒性、统计或创新性。",
+  "date_range": [
+    "2015-01-01",
+    "2026-10-29"
+  ],
+  "language_filter": "none",
+  "generation": [
+    "从研究问题提取物种、塑料、PFAS三个概念块，块内OR、块间AND。",
+    "物种加入学名；塑料加入拼写变体与常见聚合物；PFAS加入缩写、替代物和词根。",
+    "不要求synergy、toxicity、coexposure、任何毒性方向或终点词，降低结果措辞造成的漏检。",
+    "按接口语法转译字段与日期；这是AI制定策略＋本轮脚本转译，不是上游自建数据库。",
+    "不按已知论文题名/DOI优化本轮原始主题查询；旧10篇只作回归检查，不当独立基准。",
+    "V2依据已知漏检修复：增加F53B、Cl-PFAES、PFC/PFCs与PFNA/PFOSA；perfluoro*/polyfluoro*缩短为perfluor*/polyfluor*以覆盖perfluorinated/polyfluorinated拼写。其余概念块保持一致。"
+  ],
+  "blocks": {
+    "organism": [
+      "zebrafish",
+      "\"Danio rerio\""
+    ],
+    "plastic": [
+      "microplastic*",
+      "nanoplastic*",
+      "\"micro plastic*\"",
+      "\"nano plastic*\"",
+      "polystyrene",
+      "polyethylene",
+      "\"polyethylene terephthalate\"",
+      "polypropylene",
+      "\"polyvinyl chloride\"",
+      "\"polymethyl methacrylate\""
+    ],
+    "pfas": [
+      "PFAS",
+      "PFOS",
+      "PFOA",
+      "PFBA",
+      "PFNA",
+      "PFOSA",
+      "PFHxS",
+      "PFBS",
+      "\"F-53B\"",
+      "F53B",
+      "\"Cl-PFESA\"",
+      "\"Cl-PFAES\"",
+      "PFC",
+      "PFCs",
+      "perfluor*",
+      "polyfluor*",
+      "fluorotelomer*"
+    ]
+  },
+  "queries": [
+    {
+      "id": "PM-REPAIRED",
+      "source": "PubMed E-utilities",
+      "purpose": "基准诊断后的词汇修订检索",
+      "query": "(zebrafish[Title/Abstract] OR \"Danio rerio\"[Title/Abstract]) AND (microplastic*[Title/Abstract] OR nanoplastic*[Title/Abstract] OR \"micro plastic*\"[Title/Abstract] OR \"nano plastic*\"[Title/Abstract] OR polystyrene[Title/Abstract] OR polyethylene[Title/Abstract] OR \"polyethylene terephthalate\"[Title/Abstract] OR polypropylene[Title/Abstract] OR \"polyvinyl chloride\"[Title/Abstract] OR \"polymethyl methacrylate\"[Title/Abstract]) AND (PFAS[Title/Abstract] OR PFOS[Title/Abstract] OR PFOA[Title/Abstract] OR PFBA[Title/Abstract] OR PFNA[Title/Abstract] OR PFOSA[Title/Abstract] OR PFHxS[Title/Abstract] OR PFBS[Title/Abstract] OR \"F-53B\"[Title/Abstract] OR F53B[Title/Abstract] OR \"Cl-PFESA\"[Title/Abstract] OR \"Cl-PFAES\"[Title/Abstract] OR PFC[Title/Abstract] OR PFCs[Title/Abstract] OR perfluor*[Title/Abstract] OR polyfluor*[Title/Abstract] OR fluorotelomer*[Title/Abstract]) AND (\"2015/01/01\"[Date - Publication] : \"2026/10/29\"[Date - Publication])"
+    },
+    {
+      "id": "EPMC-REPAIRED",
+      "source": "Europe PMC REST",
+      "purpose": "基准诊断后的词汇修订检索",
+      "query": "(TITLE_ABS:zebrafish OR TITLE_ABS:\"Danio rerio\") AND (TITLE_ABS:microplastic* OR TITLE_ABS:nanoplastic* OR TITLE_ABS:\"micro plastic*\" OR TITLE_ABS:\"nano plastic*\" OR TITLE_ABS:polystyrene OR TITLE_ABS:polyethylene OR TITLE_ABS:\"polyethylene terephthalate\" OR TITLE_ABS:polypropylene OR TITLE_ABS:\"polyvinyl chloride\" OR TITLE_ABS:\"polymethyl methacrylate\") AND (TITLE_ABS:PFAS OR TITLE_ABS:PFOS OR TITLE_ABS:PFOA OR TITLE_ABS:PFBA OR TITLE_ABS:PFNA OR TITLE_ABS:PFOSA OR TITLE_ABS:PFHxS OR TITLE_ABS:PFBS OR TITLE_ABS:\"F-53B\" OR TITLE_ABS:F53B OR TITLE_ABS:\"Cl-PFESA\" OR TITLE_ABS:\"Cl-PFAES\" OR TITLE_ABS:PFC OR TITLE_ABS:PFCs OR TITLE_ABS:perfluor* OR TITLE_ABS:polyfluor* OR TITLE_ABS:fluorotelomer*) AND FIRST_PDATE:[2015-01-01 TO 2026-10-29]"
+    }
+  ],
+  "pagination": "主检索取回所有接口报告的记录并核对count；任一查询超过1000条时保留边界，另行登记处理，不假称全取。",
+  "screening": {
+    "retain": "原始斑马鱼实验，塑料为微/纳颗粒且与明确PFAS共同暴露；题名摘要足以识别组合。",
+    "exclude": [
+      "非原始研究/综述",
+      "无斑马鱼实验",
+      "无塑料共暴露",
+      "无范围内PFAS",
+      "非微/纳颗粒",
+      "超出日期"
+    ],
+    "uncertain": "摘要缺失、混合模型或处理组描述不足时保留待全文核实，不按缺失内容猜测排除。",
+    "unit": "文献记录，不等于独立实验；DOI优先去重，PMID/题名辅助，版本关联单列。",
+    "second_review": "第二AI在未见第一轮决定的情况下筛选同一记录，保留分歧和裁决；不是独立人类领域复核。"
+  },
+  "validation": [
+    "独立综述派生基准：另一代理不读取旧10篇或新检索集；主检索冻结后再比对；不是严格外部盲法或全领域分母。",
+    "旧10篇已知论文回归检查，与独立基准分开报告。",
+    "去掉物种块的扩展检索：检查是否出现主检索漏检；原始与修订查询成绩分开。",
+    "对原始主检索保留项做一轮前后向引文追踪，记录可访问分母、返回上限和新增研究；复核发现不得回填为原检索命中。",
+    "对排除和待定项进行第二次独立AI筛选，记录误排、分歧及处理。",
+    "按已知元数据检查年份/期刊/方法分布；集中分布仅为提示，不是文献缺失证据。"
+  ],
+  "stopping": "完成冻结查询的可取得结果、独立基准比对、一轮引文追踪和筛选复查后停止本轮测试；不按获得10篇停止，不宣称检索穷尽。",
+  "access": "匿名公开接口和公开页面；不创建账号、不使用私人凭据、不绕过全文访问限制。",
+  "amended_at": "2026-10-29T05:21:13.474937+00:00",
+  "reason": "Independent benchmark first scored 3/5 for native primary searches, 4/5 after graph expansion. Exact-ID diagnosis found F53B/Cl-PFAES and PFCs/perfluorinated vocabulary gaps. This is benchmark-informed repair, not untouched validation.",
+  "original_plan_sha256": "c8ee855cabc2e8193295d588c939848364d2f2dc3f2e060ddf27841d094252d4"
+}

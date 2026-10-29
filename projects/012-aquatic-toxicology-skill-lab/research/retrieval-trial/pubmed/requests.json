@@ -1,0 +1,22 @@
+[
+  {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28zebrafish%5BTitle%2FAbstract%5D+OR+%22Danio+rerio%22%5BTitle%2FAbstract%5D%29+AND+%28microplastic%2A%5BTitle%2FAbstract%5D+OR+nanoplastic%2A%5BTitle%2FAbstract%5D+OR+%22micro+plastic%2A%22%5BTitle%2FAbstract%5D+OR+%22nano+plastic%2A%22%5BTitle%2FAbstract%5D+OR+polystyrene%5BTitle%2FAbstract%5D+OR+polyethylene%5BTitle%2FAbstract%5D+OR+%22polyethylene+terephthalate%22%5BTitle%2FAbstract%5D+OR+polypropylene%5BTitle%2FAbstract%5D+OR+%22polyvinyl+chloride%22%5BTitle%2FAbstract%5D+OR+%22polymethyl+methacrylate%22%5BTitle%2FAbstract%5D%29+AND+%28PFAS%5BTitle%2FAbstract%5D+OR+PFOS%5BTitle%2FAbstract%5D+OR+PFOA%5BTitle%2FAbstract%5D+OR+PFBA%5BTitle%2FAbstract%5D+OR+PFHxS%5BTitle%2FAbstract%5D+OR+PFBS%5BTitle%2FAbstract%5D+OR+%22F-53B%22%5BTitle%2FAbstract%5D+OR+%22Cl-PFESA%22%5BTitle%2FAbstract%5D+OR+perfluoro%2A%5BTitle%2FAbstract%5D+OR+polyfluoro%2A%5BTitle%2FAbstract%5D+OR+fluorotelomer%2A%5BTitle%2FAbstract%5D%29+AND+%28%222015%2F01%2F01%22%5BDate+-+Publication%5D+%3A+%222026%2F10%2F29%22%5BDate+-+Publication%5D%29&retmode=json&retmax=9999",
+    "started_at": "2026-10-29T05:07:58.165903+00:00",
+    "attempt": 1,
+    "file": "esearch.json",
+    "status": 200,
+    "bytes": 1196,
+    "sha256": "00629720890b0dc4f9659dffdee9965ce356906fc421f014219d54bf41cb6237",
+    "finished_at": "2026-10-29T05:08:04.084702+00:00"
+  },
+  {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42764241%2C42198499%2C41887838%2C41706329%2C41616538%2C41539585%2C41422984%2C41027221%2C41005273%2C40795757%2C39368493%2C39340199%2C39270866%2C39043301%2C38365036%2C33740727%2C32416398&retmode=xml",
+    "started_at": "2026-10-29T05:08:04.499431+00:00",
+    "attempt": 1,
+    "file": "efetch-001.xml",
+    "status": 200,
+    "bytes": 296556,
+    "sha256": "c9dd5c3ba6fe5dd63818b5771721a30a18e07e921ad83f228dd3bd51116743a9",
+    "finished_at": "2026-10-29T05:08:22.014237+00:00"
+  }
+]

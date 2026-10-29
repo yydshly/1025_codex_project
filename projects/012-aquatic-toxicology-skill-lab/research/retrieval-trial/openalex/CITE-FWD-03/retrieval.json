@@ -1,0 +1,39 @@
+{
+  "queryId": "CITE-FWD-03",
+  "purpose": "One-hop forward citations; no relevance filtering or date restriction",
+  "endpoint": "https://api.openalex.org/works",
+  "parameters": {
+    "filter": "cites:W4413113461"
+  },
+  "started_at": "2026-10-29T05:15:32.460475+00:00",
+  "amendment_sha256": "0aab8b3dc02cde6ee515aad649b56f755b0fb0c99288c57d548871e38d8bc706",
+  "page_size": 100,
+  "record_cap": 1000,
+  "attempts": [
+    {
+      "url": "https://api.openalex.org/works?filter=cites%3AW4413113461&per_page=100&page=1&select=id%2Cdoi%2Cids%2Ctitle%2Cabstract_inverted_index%2Cpublication_year%2Cpublication_date%2Ctype%2Cprimary_location%2Creferenced_works%2Ccited_by_count",
+      "started_at": "2026-10-29T05:15:32.460475+00:00",
+      "attempt": 1,
+      "error": "Remote end closed connection without response",
+      "status": null,
+      "finished_at": "2026-10-29T05:15:52.724453+00:00"
+    },
+    {
+      "url": "https://api.openalex.org/works?filter=cites%3AW4413113461&per_page=100&page=1&select=id%2Cdoi%2Cids%2Ctitle%2Cabstract_inverted_index%2Cpublication_year%2Cpublication_date%2Ctype%2Cprimary_location%2Creferenced_works%2Ccited_by_count",
+      "started_at": "2026-10-29T05:15:55.733018+00:00",
+      "attempt": 2,
+      "error": "Remote end closed connection without response",
+      "status": null,
+      "finished_at": "2026-10-29T05:16:15.985217+00:00"
+    }
+  ],
+  "pages": [],
+  "total": null,
+  "returned": 0,
+  "complete": false,
+  "stop_reason": "request_failed",
+  "returned_unique_source_ids": 0,
+  "finished_at": "2026-10-29T05:16:15.986252+00:00",
+  "seed_doi": "10.1016/j.aquatox.2025.107534",
+  "seed_OAid": "https://openalex.org/W4413113461"
+}

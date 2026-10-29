@@ -5,6 +5,7 @@ import { fileURLToPath } from 'node:url';
 const root = fileURLToPath(new URL('../', import.meta.url));
 const escape = (value) => String(value).replace(/[&<>"']/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
 const extensions = new Set(['.html', '.css', '.js', '.mjs', '.json', '.svg', '.png', '.jpg', '.jpeg', '.webp', '.gif', '.ico', '.woff', '.woff2', '.ttf', '.mp4', '.webm', '.mp3', '.ogg', '.wav', '.pdf', '.txt']);
+const optionalTextExtensions = new Set(['.md', '.csv']);
 
 function plainPath(base, relative) {
   if (typeof relative !== 'string' || path.isAbsolute(relative) || /[\\:]/.test(relative)) throw new Error(`非法相对路径：${relative}`);
@@ -18,13 +19,13 @@ function plainPath(base, relative) {
   return current;
 }
 
-function collect(directory, relative = '') {
+function collect(directory, relative = '', allowedExtensions = extensions) {
   return fs.readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {
     const name = relative ? `${relative}/${entry.name}` : entry.name;
     if (entry.isSymbolicLink()) throw new Error(`不能发布链接：${name}`);
     if (entry.name.startsWith('.')) return [];
-    if (entry.isDirectory()) return collect(path.join(directory, entry.name), name);
-    return entry.isFile() && extensions.has(path.extname(entry.name).toLowerCase()) ? [name] : [];
+    if (entry.isDirectory()) return collect(path.join(directory, entry.name), name, allowedExtensions);
+    return entry.isFile() && allowedExtensions.has(path.extname(entry.name).toLowerCase()) ? [name] : [];
   });
 }
 
@@ -40,9 +41,12 @@ export function buildPages(workspaceRoot = root, outputRelative = 'dist/pages') 
     const project = registry.projects.find((item) => `${item.id}-${item.slug}` === entry.directory);
     if (!project || selected.has(entry.directory)) throw new Error(`项目未登记或重复：${entry.directory}`);
     selected.add(entry.directory);
+    const textExtensions = entry.textExtensions === undefined ? [] : entry.textExtensions;
+    if (!Array.isArray(textExtensions) || textExtensions.some((extension) => typeof extension !== 'string' || !optionalTextExtensions.has(extension)) || new Set(textExtensions).size !== textExtensions.length) throw new Error('textExtensions 必须为不重复的 .md / .csv 扩展名数组。');
+    const allowedExtensions = new Set([...extensions, ...textExtensions]);
     const directory = plainPath(workspaceRoot, `projects/${entry.directory}`);
     const publicDirectory = plainPath(directory, entry.publicDirectory);
-    const files = collect(publicDirectory).map((relative) => ({ source: plainPath(publicDirectory, relative), relative }));
+    const files = collect(publicDirectory, '', allowedExtensions).map((relative) => ({ source: plainPath(publicDirectory, relative), relative }));
     if (!files.some((file) => file.relative === 'index.html')) throw new Error(`${entry.directory} 缺少 index.html。`);
     if (!Array.isArray(entry.extraAssets)) throw new Error('extraAssets 必须为数组。');
     for (const relative of entry.extraAssets) {

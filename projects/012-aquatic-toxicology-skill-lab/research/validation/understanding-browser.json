@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-29",
+  "page": "http://127.0.0.1:4332/#understanding",
+  "final_browser_location": "http://127.0.0.1:4332/#understanding-map",
+  "checks": {
+    "summary_visible": true,
+    "quick_links_navigate_within_same_tab": true,
+    "source_filters": {"all": 11, "used_in_case": 5, "retrieval_trial_api_tested": 3, "suggested": 6},
+    "api_source_names": ["PubMed", "Europe PMC", "OpenAlex"],
+    "pubmed_acquisition_detail_expands": true,
+    "scoping_step_expands": true,
+    "image_loaded": {"natural_width": 1536, "natural_height": 1024},
+    "open_original_creates_image_tab": true,
+    "owned_image_tab_closed_after_verification": true,
+    "download_link_has_download_attribute": true,
+    "responsive_test": {"viewport_width": 390, "viewport_height": 844, "client_width": 375, "scroll_width": 375, "override_reset": true},
+    "normal_view_after_reset": {"client_width": 391, "scroll_width": 391},
+    "mobile_skip_link_hidden_until_focus": true,
+    "new_page_and_artifact_http_checks": {"paths": 7, "all_status": 200},
+    "project_check": "pass",
+    "hub_check": "pass"
+  },
+  "image": {
+    "path": "app/assets/understanding-map.png",
+    "tool": "built-in image_gen",
+    "sha256": "77db9c8a099aa369a6df5669c17b47c4fcba62dcd56ac6da0b47df8c4919419e",
+    "prompt": "research/understanding-image-prompt.md",
+    "text_note": "Image uses Search generically; caption and source card give the precise ESearch-to-EFetch path."
+  },
+  "screenshot": "assets/images/understanding-overview.jpg",
+  "boundary": "Content consolidation, official source-access documentation checks, and software/UI verification. No new scientific literature retrieval, full-text attestation, unused native discovery run, or controlled skill-effectiveness test."
+}

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "nextId": 12,
+  "nextId": 13,
   "projects": [
     {
       "id": "001",
@@ -182,6 +182,23 @@
       ],
       "cover": "assets/images/source-overview-v3.jpg",
       "demoUrl": "https://yydshly.github.io/1025_codex_project/011-pose-look-creation-atlas/",
+      "createdAt": "2026-10-29"
+    },
+    {
+      "id": "012",
+      "slug": "aquatic-toxicology-skill-lab",
+      "name": "学术研究 Skill · 能力与水生毒理学实测",
+      "summary": "研究 academic-research-skills 的5个工作流：deep-research 拆题研究、sr-screener 文献筛选、academic-paper 写作、academic-paper-reviewer 审稿、academic-pipeline 调度。适用于选题、综述、证据核验、修订与审稿准备；价值是复用研究规范、角色与检查，使过程可追溯。以水生毒理学展示拆题、检索、补漏和分析，分清原库与新增采集器；查全、准确性和相对直接问AI的增益仍待验证。",
+      "source": "https://github.com/Imbad0202/academic-research-skills",
+      "status": "researching",
+      "tags": [
+        "水生毒理学",
+        "学术研究",
+        "Skill实测",
+        "证据综合"
+      ],
+      "cover": "assets/images/understanding-map.png",
+      "demoUrl": "",
       "createdAt": "2026-10-29"
     }
   ]

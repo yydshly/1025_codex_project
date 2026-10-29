@@ -49,6 +49,17 @@
       "extraAssets": [
         "assets/images/source-overview-v3.jpg"
       ]
+    },
+    {
+      "directory": "012-aquatic-toxicology-skill-lab",
+      "publicDirectory": "app",
+      "extraAssets": [
+        "assets/images/understanding-map.png"
+      ],
+      "textExtensions": [
+        ".md",
+        ".csv"
+      ]
     }
   ]
 }

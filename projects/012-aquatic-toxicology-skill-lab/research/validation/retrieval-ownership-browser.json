@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-29",
+  "page": "http://127.0.0.1:4332/#retrieval-trial",
+  "checks": {
+    "ownership_summary_visible": true,
+    "comparison_expands": true,
+    "comparison_rows": 7,
+    "viewport_client_width": 790,
+    "document_scroll_width": 790,
+    "collector_sources_exported_byte_identically": 3,
+    "project_check": "pass",
+    "hub_check": "pass"
+  },
+  "screenshot": "assets/images/retrieval-ownership.jpg",
+  "boundary": "Software provenance and page verification only; no new scientific search, native discovery run, full-text review or controlled skill-effectiveness comparison."
+}

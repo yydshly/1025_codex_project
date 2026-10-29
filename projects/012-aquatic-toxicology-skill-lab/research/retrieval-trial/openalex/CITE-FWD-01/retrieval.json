@@ -1,0 +1,44 @@
+{
+  "queryId": "CITE-FWD-01",
+  "purpose": "One-hop forward citations; no relevance filtering or date restriction",
+  "endpoint": "https://api.openalex.org/works",
+  "parameters": {
+    "filter": "cites:W4391850196"
+  },
+  "started_at": "2026-10-29T05:14:21.671899+00:00",
+  "amendment_sha256": "0aab8b3dc02cde6ee515aad649b56f755b0fb0c99288c57d548871e38d8bc706",
+  "page_size": 100,
+  "record_cap": 1000,
+  "attempts": [
+    {
+      "url": "https://api.openalex.org/works?filter=cites%3AW4391850196&per_page=100&page=1&select=id%2Cdoi%2Cids%2Ctitle%2Cabstract_inverted_index%2Cpublication_year%2Cpublication_date%2Ctype%2Cprimary_location%2Creferenced_works%2Ccited_by_count",
+      "started_at": "2026-10-29T05:14:21.671899+00:00",
+      "attempt": 1,
+      "status": 200,
+      "final_url": "https://api.openalex.org/works?filter=cites%3AW4391850196&per_page=100&page=1&select=id%2Cdoi%2Cids%2Ctitle%2Cabstract_inverted_index%2Cpublication_year%2Cpublication_date%2Ctype%2Cprimary_location%2Creferenced_works%2Ccited_by_count",
+      "content_type": "application/json",
+      "file": "page-001.json",
+      "bytes": 262158,
+      "sha256": "060341eee0fb880e0c5e1a22e8b8803e93999add836664ba9c096664e965637a",
+      "finished_at": "2026-10-29T05:14:27.888006+00:00"
+    }
+  ],
+  "pages": [
+    {
+      "file": "page-001.json",
+      "sha256": "060341eee0fb880e0c5e1a22e8b8803e93999add836664ba9c096664e965637a",
+      "page": 1,
+      "count": 38,
+      "total_at_page": 38,
+      "url": "https://api.openalex.org/works?filter=cites%3AW4391850196&per_page=100&page=1&select=id%2Cdoi%2Cids%2Ctitle%2Cabstract_inverted_index%2Cpublication_year%2Cpublication_date%2Ctype%2Cprimary_location%2Creferenced_works%2Ccited_by_count"
+    }
+  ],
+  "total": 38,
+  "returned": 38,
+  "complete": true,
+  "stop_reason": "all_reported_results_retrieved",
+  "returned_unique_source_ids": 38,
+  "finished_at": "2026-10-29T05:14:27.892543+00:00",
+  "seed_doi": "10.1016/j.scitotenv.2024.170948",
+  "seed_OAid": "https://openalex.org/W4391850196"
+}

@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-29",
+  "surface": "CUA in-app browser2 tab1",
+  "checks": {
+    "new_trial_navigation": true,
+    "term_blocks_and_frozen_query_visible": true,
+    "query_copy_success_status": true,
+    "keyboard_arrow_tabs": true,
+    "retained_filter_count": 17,
+    "doi_search_matches": 1,
+    "record_path_and_adjudication_visible": true,
+    "benchmark_column_names_original_stage": true,
+    "benchmark_original_misses_visible": true,
+    "mobile_document_width": 375,
+    "mobile_client_width": 375,
+    "viewport_restored": true,
+    "console_errors_or_warnings": []
+  },
+  "spot_checks": {
+    "adjudicated_record_method": "primary_AI_adjudication",
+    "checks": 8,
+    "reveal_timing": "bounded interval, exact event time not logged"
+  },
+  "screenshot": "assets/images/retrieval-trial.jpg",
+  "boundary": "UI and provenance checks; not scientific correctness certification."
+}

@@ -13,6 +13,7 @@ on:
       - 'projects/009-knowledge-processing-atlas/**'
       - 'projects/010-agent-skills-engineering-lab/**'
       - 'projects/011-pose-look-creation-atlas/**'
+      - 'projects/012-aquatic-toxicology-skill-lab/**'
       - 'projects.json'
       - 'pages.config.json'
       - 'scripts/build-pages.mjs'
@@ -60,6 +61,7 @@ jobs:
           for script in projects/008-ultraman-card-draw/app/*.js; do node --check "$script"; done
           node --check projects/009-knowledge-processing-atlas/app/app.js
           npm --prefix projects/011-pose-look-creation-atlas run check
+          npm --prefix projects/012-aquatic-toxicology-skill-lab run check:public
       - name: Check Agent Skills guide and prepare public files
         run: |
           python projects/010-agent-skills-engineering-lab/scripts/verify-snapshot.py

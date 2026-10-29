@@ -1,0 +1,360 @@
+{
+  "queries": [
+    {
+      "id": "Q01",
+      "q": "zebrafish PFAS microplastics nanoplastics PFOS PFOA coexposure toxicity",
+      "source": "web.run search_query (web search; site restrictions where shown)",
+      "date": "2026-10-29",
+      "notes": "Broad discovery; P01, P03, P05 plus reviews/context appeared."
+    },
+    {
+      "id": "Q02",
+      "q": "\"10.1016/j.scitotenv.2024.170948\"",
+      "source": "web.run search_query (web search; site restrictions where shown)",
+      "date": "2026-10-29",
+      "notes": "Exact seed DOI; publisher/OpenAlex records collapsed into P01."
+    },
+    {
+      "id": "Q03",
+      "q": "\"10.1016/j.chemosphere.2024.143462\"",
+      "source": "web.run search_query (web search; site restrictions where shown)",
+      "date": "2026-10-29",
+      "notes": "Exact seed DOI; publisher/OpenAlex/PubMed records collapsed into P02."
+    },
+    {
+      "id": "Q04",
+      "q": "\"zebrafish\" \"PFOA\" \"microplastics\" toxicity",
+      "source": "web.run search_query (web search; site restrictions where shown)",
+      "date": "2026-10-29",
+      "notes": "P05/P08/P09 discovery."
+    },
+    {
+      "id": "Q05",
+      "q": "\"zebrafish\" \"PFOS\" \"nanoplastics\" toxicity",
+      "source": "web.run search_query (web search; site restrictions where shown)",
+      "date": "2026-10-29",
+      "notes": "P03/P04 discovery."
+    },
+    {
+      "id": "Q06",
+      "q": "\"zebrafish\" \"PFOA\" \"transcriptomics\" polystyrene",
+      "source": "web.run search_query (web search; site restrictions where shown)",
+      "date": "2026-10-29",
+      "notes": "P07/P08 discovery."
+    },
+    {
+      "id": "Q07",
+      "q": "\"zebrafish\" \"polyethylene terephthalate\" \"PFOA\" microplastics 2026",
+      "source": "web.run search_query (web search; site restrictions where shown)",
+      "date": "2026-10-29",
+      "notes": "P06 discovery."
+    },
+    {
+      "id": "Q08",
+      "q": "\"41027221\"",
+      "source": "web.run search_query (web search; site restrictions where shown)",
+      "date": "2026-10-29",
+      "notes": "Bare PMID search returned unrelated numeric records; not used as scientific evidence."
+    },
+    {
+      "id": "Q09",
+      "q": "\"The exploration of chronic combined toxic mechanisms\" PFOA",
+      "source": "web.run search_query (web search; site restrictions where shown)",
+      "date": "2026-10-29",
+      "notes": "P09 lead, later resolved via exact DOI and PubMed."
+    },
+    {
+      "id": "Q10",
+      "q": "\"zebrafish\" \"PFOS\" \"nanoplastics\" combined -review -critical",
+      "source": "web.run search_query (web search; site restrictions where shown)",
+      "date": "2026-10-29",
+      "notes": "P03/P04 repeat records, deduplicated."
+    },
+    {
+      "id": "Q11",
+      "q": "\"zebrafish\" \"PFOA\" \"microplastics\" -review -wikipedia",
+      "source": "web.run search_query (web search; site restrictions where shown)",
+      "date": "2026-10-29",
+      "notes": "P07/P08/P09 leads; generic web material not used."
+    },
+    {
+      "id": "Q12",
+      "q": "\"Combined exposure with microplastics increases\" site:pubmed.ncbi.nlm.nih.gov",
+      "source": "web.run search_query (web search; site restrictions where shown)",
+      "date": "2026-10-29",
+      "notes": "Web domain-restricted discovery, not a native PubMed database search."
+    },
+    {
+      "id": "Q13",
+      "q": "\"Developmental stage-dependent carrier\" zebrafish authors",
+      "source": "web.run search_query (web search; site restrictions where shown)",
+      "date": "2026-10-29",
+      "notes": "P03 metadata lead; OpenAlex third-author order differs; PubMed used for spelling."
+    },
+    {
+      "id": "Q14",
+      "q": "\"Proteomic and metabolic responses\" \"PSNPs\"",
+      "source": "web.run search_query (web search; site restrictions where shown)",
+      "date": "2026-10-29",
+      "notes": "P04 publisher complete abstract and article information."
+    },
+    {
+      "id": "Q15",
+      "q": "\"Polystyrene modulation\" zebrafish PFOA transcriptomic",
+      "source": "web.run search_query (web search; site restrictions where shown)",
+      "date": "2026-10-29",
+      "notes": "P07 complete PubMed abstract and publisher section snippets."
+    },
+    {
+      "id": "Q16",
+      "q": "\"Combined exposure with microplastics increases the toxic effects\" Jian",
+      "source": "web.run search_query (web search; site restrictions where shown)",
+      "date": "2026-10-29",
+      "notes": "P01 complete PubMed abstract/citation."
+    },
+    {
+      "id": "Q17",
+      "q": "\"The exploration of chronic combined toxic mechanisms\" \"doi\"",
+      "source": "web.run search_query (web search; site restrictions where shown)",
+      "date": "2026-10-29",
+      "notes": "P09 DOI discovery attempt."
+    },
+    {
+      "id": "Q18",
+      "q": "\"Co-exposure of polyethylene terephthalate\" \"41706329\"",
+      "source": "web.run search_query (web search; site restrictions where shown)",
+      "date": "2026-10-29",
+      "notes": "P06 complete PubMed abstract plus independent metadata."
+    },
+    {
+      "id": "Q19",
+      "q": "\"Co-exposure to polystyrene microplastics and perfluorooctanoic acid can\"",
+      "source": "web.run search_query (web search; site restrictions where shown)",
+      "date": "2026-10-29",
+      "notes": "P08 PubMed/publisher metadata; duplicate DOI collapsed."
+    },
+    {
+      "id": "Q20",
+      "q": "\"The exploration of chronic combined toxic mechanisms\" zebrafish aquatic microcosm systems",
+      "source": "web.run search_query (web search; site restrictions where shown)",
+      "date": "2026-10-29",
+      "notes": "P09 complete publisher abstract; time-switch7d/28d."
+    },
+    {
+      "id": "Q21",
+      "q": "zebrafish PFOS PFOA microplastic nanoplastic coexposure 2015 2016 2017 2018 2019 2020 2021 2022 2023",
+      "source": "web.run search_query (web search; site restrictions where shown)",
+      "date": "2026-10-29",
+      "notes": "Backward-era broad query returned reviews, PFAS-only and plastic-only studies plus repeated recent core records; no claim that earlier core literature does not exist."
+    },
+    {
+      "id": "Q22",
+      "q": "\"Co-exposure to PFOA, PFBA and nanoplastics\" zebrafish",
+      "source": "web.run search_query (web search; site restrictions where shown)",
+      "date": "2026-10-29",
+      "notes": "P10 PMID41616538 discovery from related citation lead; ZFIN figure and PubMed result."
+    },
+    {
+      "id": "Q23",
+      "q": "\"PMC6660138\"",
+      "source": "web.run search_query (web search; site restrictions where shown)",
+      "date": "2026-10-29",
+      "notes": "P11 context identifier discovery."
+    },
+    {
+      "id": "Q24",
+      "q": "\"10.1016/j.aquatox.2025.107534\" site:pubmed.ncbi.nlm.nih.gov",
+      "source": "web.run search_query (web search; site restrictions where shown)",
+      "date": "2026-10-29",
+      "notes": "P09 PubMed citation; web site-restricted query, not native PubMed database search."
+    },
+    {
+      "id": "Q25",
+      "q": "\"107534\" \"Wang\" \"PFOA\"",
+      "source": "web.run search_query (web search; site restrictions where shown)",
+      "date": "2026-10-29",
+      "notes": "P09 duplicate ZFIN/OpenAlex records; same DOI kept once."
+    },
+    {
+      "id": "Q26",
+      "q": "\"PMC6660138\" nanoplastics",
+      "source": "web.run search_query (web search; site restrictions where shown)",
+      "date": "2026-10-29",
+      "notes": "P11 primary PubMed metadata."
+    },
+    {
+      "id": "Q27",
+      "q": "\"PMC9228135\"",
+      "source": "web.run search_query (web search; site restrictions where shown)",
+      "date": "2026-10-29",
+      "notes": "P12 metadata lead, subsequently checked official PMC/publisher text."
+    },
+    {
+      "id": "Q28",
+      "q": "\"Co-exposure to PFOA, PFBA and nanoplastics\" \"Abstract\"",
+      "source": "web.run search_query (web search; site restrictions where shown)",
+      "date": "2026-10-29",
+      "notes": "P10 complete official PubMed abstract retrieved."
+    },
+    {
+      "id": "Q29",
+      "q": "\"10.1016/j.envint.2026.110102\" exposure concentration zebrafish",
+      "source": "web.run search_query (web search; site restrictions where shown)",
+      "date": "2026-10-29",
+      "notes": "P10 publisher discovery; concentrations not extracted from abstract."
+    },
+    {
+      "id": "Q30",
+      "q": "\"Multi-Organ Toxicity of Combined PFOS/PS\" zebrafish",
+      "source": "web.run search_query (web search; site restrictions where shown)",
+      "date": "2026-10-29",
+      "notes": "Primary mouse/in-vitro study, excluded for organism."
+    },
+    {
+      "id": "Q31",
+      "q": "\"The exploration of chronic combined\" \"Abstract\" \"acetylcholine\"",
+      "source": "web.run search_query (web search; site restrictions where shown)",
+      "date": "2026-10-29",
+      "notes": "P09 publisher abstract cross-check."
+    },
+    {
+      "id": "Q32",
+      "q": "\"Nanoplastics Decrease the Toxicity\" \"Abstract\"",
+      "source": "web.run search_query (web search; site restrictions where shown)",
+      "date": "2026-10-29",
+      "notes": "P11 complete ACS publisher abstract; official PMC excerpts also retrieved."
+    },
+    {
+      "id": "Q33",
+      "q": "\"Co-exposure to PFOA, PFBA and nanoplastics\" \"PINK1\" site:sciencedirect.com",
+      "source": "web.run search_query (web search; site restrictions where shown)",
+      "date": "2026-10-29",
+      "notes": "P10 complete publisher abstract/highlights, no rescue-model location in abstract."
+    },
+    {
+      "id": "Q34",
+      "q": "\"Multi- and Transgenerational Effects\" \"Haimbaugh\" \"Abstract\"",
+      "source": "web.run search_query (web search; site restrictions where shown)",
+      "date": "2026-10-29",
+      "notes": "P12 publisher PDF book chapter reproducing article frontmatter/abstract; final methods read from PMC."
+    },
+    {
+      "id": "Q35",
+      "q": "site:pmc.ncbi.nlm.nih.gov/articles/PMC6660138/ \"2.1\" \"24\"",
+      "source": "web.run search_query (web search; site restrictions where shown)",
+      "date": "2026-10-29",
+      "notes": "Targeted PMC search did not reliably isolate desired section; direct PMC section opens used."
+    },
+    {
+      "id": "Q36",
+      "q": "site:pmc.ncbi.nlm.nih.gov/articles/PMC9228135/ \"2.2\" \"5\"",
+      "source": "web.run search_query (web search; site restrictions where shown)",
+      "date": "2026-10-29",
+      "notes": "Targeted PMC search returned substantial irrelevant records; direct PMC Methods2.2.3 read instead."
+    },
+    {
+      "id": "Q37",
+      "q": "site:pmc.ncbi.nlm.nih.gov/articles/PMC9228135/ \"Discussion\" \"mixture\"",
+      "source": "web.run search_query (web search; site restrictions where shown)",
+      "date": "2026-10-29",
+      "notes": "Targeted search not counted as full-text appraisal; direct PMC results and methods excerpts used."
+    }
+  ],
+  "exclusions": [
+    {
+      "title": "Toxicity of microplastics and per- and polyfluoroalkyl substances in sentinel freshwater models, Daphnia, Zebrafish and unicellular green algae: A systemic review",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2950305125000154",
+      "reason": "Review, not a primary zebrafish plastic–PFAS coexposure experiment. Lead finding only; not counted as core."
+    },
+    {
+      "title": "Combined Environmental Impacts and Toxicological Interactions of Per- and Polyfluoroalkyl Substances (PFAS) and Microplastics (MPs)",
+      "url": "https://www.mdpi.com/2076-3298/13/1/38",
+      "reason": "Review; its descriptions not substituted for primary evidence."
+    },
+    {
+      "title": "Interaction and combined toxicity of microplastics and PFASs in aquatic environment",
+      "url": "https://journal.hep.com.cn/fese/EN/PDF/10.1007/s11783-022-1571-2",
+      "reason": "Review, outside core primary-study design."
+    },
+    {
+      "title": "Microplastics as carriers of per- and polyfluoroalkyl substances (PFAS) in aquatic environment: interactions and ecotoxicological effects",
+      "url": "https://www.fosan.org/wp-content/uploads/2023/09/Microplastics-as-carriers-of-per-and-polyfluoroalkyl-substances-PFAS-in-aquatic-environment.-interactions-and-ecotoxicological-effects.pdf",
+      "reason": "Review; secondary lead only, not used for core findings."
+    },
+    {
+      "title": "Evaluation of phenotypic and behavioral toxicity of micro- and nano-plastic polystyrene particles in larval zebrafish (Danio rerio)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12038248/",
+      "reason": "Plastic-only exposures, no PFAS coexposure; not chosen as an additional context source."
+    },
+    {
+      "title": "Polystyrene microplastics and nanoplastics induce neurotoxicity in zebrafish via oxidative stress and neurotransmitter disruption",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1532045625002789",
+      "reason": "Plastic-only exposures, no PFAS coexposure."
+    },
+    {
+      "title": "Comparison of transcriptomic points of departure with apical endpoints in developing zebrafish exposed to PFOS, PFOA, or PFHxS",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40175316/",
+      "reason": "PFAS-only study, no plastic coexposure; outside core and not selected as context."
+    },
+    {
+      "title": "Comparative analysis of four PFAS regarding their toxicity to zebrafish development",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0147651326004094",
+      "reason": "PFAS-only study, no plastic coexposure."
+    },
+    {
+      "title": "Toxicokinetic Profiling and Developmental Toxicity of Long-Chain Per- and Polyfluoroalkyl Substances in Zebrafish",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41288385/",
+      "reason": "PFAS-only study, no plastic coexposure."
+    },
+    {
+      "title": "Multi-Organ Toxicity of Combined PFOS/PS Exposure and Its Application in Network Toxicology",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12730987/",
+      "reason": "Primary mouse/in-vitro study, not zebrafish; organism confirmed from Introduction."
+    },
+    {
+      "title": "Microplastics exacerbate the toxicity of perfluorooctanoic acid to human cells via cell membrane damage and internalization increases",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2213343726027156",
+      "reason": "Human-cell model, not zebrafish."
+    },
+    {
+      "title": "Nanoplastics drive toxicity under co-exposure with perfluorooctanesulfonic acid in human intestinal cells",
+      "url": "https://iris.cnr.it/retrieve/3163dead-03b8-42cd-8420-5a118f402de4/Alijagic%20et%20al%202025%20Env%20Chem%20Letters.pdf",
+      "reason": "Human-cell model, not zebrafish."
+    },
+    {
+      "title": "Metabolic Consequences of Developmental Exposure to Polystyrene Nanoplastics, the Flame Retardant BDE-47 and Their Combination in Zebrafish",
+      "url": "https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2022.822111/full",
+      "reason": "BDE-47 co-contaminant, not selected PFAS; context quota reserved for P11/P12."
+    },
+    {
+      "title": "The toxic effect of bisphenol AF and nanoplastic coexposure in parental and offspring generation zebrafish",
+      "url": "https://doi.org/10.1016/j.ecoenv.2023.114565",
+      "reason": "BPAF outside selected PFOS/PFOA/PFBA/F-53B chemical scope; not used to answer core RQ or to claim absence of coexposure multigeneration research."
+    },
+    {
+      "title": "The Microplastic–PFAS Nexus: From Co-Occurrence to Combined Toxicity in Aquatic Environments",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12737211/",
+      "reason": "Review; not core primary evidence."
+    }
+  ],
+  "selectionNotes": [
+    "Scope fixed before extraction: narrative evidence review, 2015–2026-10-29; English original studies of zebrafish exposed to PFAS together with micro/nanoplastics. Two explicitly segregated contextual primary papers retained.",
+    "Search was web.run web discovery plus direct official PubMed/PMC/publisher record retrieval. No native PubMed, Scopus, Web of Science or Google Scholar database search executed here. No database total hits, PRISMA completeness, systematic-review registration or exhaustion claim.",
+    "Exact queries are logged, but web search ranking and cached contents are dynamic. Study counts refer to the curated record set only; no invented search-engine hit totals.",
+    "Ten unique core DOIs and two unique context DOIs were retained. Repeated PubMed, publisher, ZFIN, OpenAlex, ResearchGate and OUCI entries for the same paper were collapsed by DOI/title. OpenAlex/ZFIN metadata were leads, not replacement findings sources. Parent runs upstream S2/Crossref clients separately.",
+    "P01: same DOI across PubMed38365036, ScienceDirect S0048969724010878, OpenAlex W4391850196 and ZFIN ZDB-PUB-240218-6 -> one record.",
+    "P02: PubMed39368493 and OpenAlex W4403097304 -> one DOI record; P03: PubMed41005273, ScienceDirect S0043135425015611 and OpenAlex W4414402625 -> one; P03 third-author spelling Xiang Yuan follows PubMed.",
+    "P05: PubMed41422984 and ScienceDirect S1382668925002820 -> one; P06 PubMed41706329 and OpenAlex W7130384165 -> one; P07 PubMed41027221, ScienceDirect S0304389425028705 and OpenAlex W4414518992 -> one.",
+    "P08: PubMed41887838 and ScienceDirect S1001074225006618 -> one; P09 PubMed40795757, ScienceDirect S0166445X2500298X, ZFIN ZDB-PUB-250813-11 -> one; P10 PubMed41616538, ScienceDirect S0160412026000607, ZFIN figure -> one.",
+    "P05/P09 are distinct DOIs/publications with overlapping authors and similar PE/PFOA systems. Abstracts cannot establish cohort independence; do not describe them as proven independent replication.",
+    "Publication-year convention uses final journal issue: P03/P05/P08=2026 despite 2025 online publication/DOI. Online dates preserved in locators; P04=2025, first online2025-07-01; P06=2026-02-18.",
+    "Core reading scope: P01/P02/P03/P04/P06/P08/P09/P10 abstract; P05 abstract plus Introduction excerpt (sections); P07 abstract plus named publisher section snippets (sections). No core full_text attestation. P11/P12 selected official PMC sections read; no full_text attestation.",
+    "Official full-text attempts for key papers: ScienceDirect P03/P09/P10 direct requests returned403; P03 DOI route inaccessible via web tool. RSC P04 landing and articlehtml direct requests returned403. Cached official search content supplied complete abstracts/selected snippets, not licensed full texts. Some PubMed/PMC direct opens initially returned empty footer/reCAPTCHA; later official results/opens used where available. No paywall bypass.",
+    "Method weaknesses are not inferred from unavailable methods. Six empirical aspect criteria from academic-paper-reviewer/references/review_criteria_framework.md §2.1 are tracked only within declared sections, and abstract-only records are not assessed.",
+    "Interaction words synergistic/additive/antagonistic remain author-reported labels unless the accessed text shows the reference model. Stronger mixture effects alone are not converted into synergy.",
+    "P10 abstract reports zebrafish plus SH-SY5Y and functional rescue but does not locate every rescue experiment by model; no whole-fish mechanistic rescue claim made.",
+    "P11 has PAHs, not PFAS. P12 has PFAS, not plastics. Neither contributes to core agreement/disagreement counts.",
+    "Distribution advisory (core only): controlled experimental studies10/10; publication2024–2026=10/10; Elsevier venues8/10. Scope-driven signals, not quality defects; no inference that literature outside these distributions is absent.",
+    "Stopped after10 directly relevant core papers plus2 context records, as delegated; no claim that this is all eligible literature."
+  ]
+}

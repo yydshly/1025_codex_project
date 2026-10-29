@@ -1,0 +1,401 @@
+{
+  "schema": "retrieval-ownership-audit/1.0",
+  "audited_at": "2026-10-29",
+  "method": "Static comparison of pinned archive, manifest, local source code, and existing trial receipts; no new network retrieval or research run.",
+  "upstream": {
+    "repository": "https://github.com/Imbad0202/academic-research-skills",
+    "commit": "b8d050f24f2e1c465c4410eace8634ea3af15930",
+    "manifest_file_count": 1106,
+    "archive_sha256": "b602ba6aecf3bb142520564a65e29c503c6d63e083a5ee318b9415213c8edafd",
+    "manifest": "research/upstream-manifest.json",
+    "archive": "research/upstream-source.zip"
+  },
+  "headline": "三个主题检索脚本均为本案例由AI新增；原库同时有检索规范、真实核验客户端及另一路发现适配器，不能概括为只有提示词。",
+  "script_checks": [
+    {
+      "path": "scripts/retrieve-pubmed.py",
+      "origin": "case_added",
+      "in_manifest": false,
+      "in_archive": false,
+      "actual_use": "主题ESearch + 批量EFetch；不是上游中文引文坐标核验",
+      "source_lines": [
+        29,
+        54,
+        63
+      ]
+    },
+    {
+      "path": "scripts/retrieve-europepmc.py",
+      "origin": "case_added",
+      "in_manifest": false,
+      "in_archive": false,
+      "actual_use": "Europe PMC REST主题检索、游标翻页、题录摘要归一化",
+      "source_lines": [
+        25,
+        44,
+        77,
+        81
+      ]
+    },
+    {
+      "path": "scripts/retrieve-openalex.py",
+      "origin": "case_added",
+      "in_manifest": false,
+      "in_archive": false,
+      "actual_use": "独立urllib主题采集器及一跳引用追踪；未调用上游OpenAlexClient",
+      "source_lines": [
+        30,
+        56,
+        139,
+        206,
+        280
+      ]
+    },
+    {
+      "path": "scripts/verify-citations.py",
+      "origin": "case_added_wrapper",
+      "in_manifest": false,
+      "in_archive": false,
+      "actual_use": "通过sys.path导入并运行原SemanticScholarClient/CrossrefClient",
+      "source_lines": [
+        15,
+        20,
+        21,
+        60,
+        66
+      ]
+    },
+    {
+      "path": "scripts/claim_standing_discovery.py",
+      "origin": "upstream",
+      "in_manifest": true,
+      "in_archive": true,
+      "local_upstream_hash_matches_manifest": true,
+      "actual_use": "not_run",
+      "source_lines": [
+        2,
+        11,
+        17,
+        397
+      ]
+    },
+    {
+      "path": "scripts/openalex_client.py",
+      "origin": "upstream",
+      "in_manifest": true,
+      "in_archive": true,
+      "local_upstream_hash_matches_manifest": true,
+      "actual_use": "not_run",
+      "source_lines": [
+        190,
+        201
+      ]
+    },
+    {
+      "path": "scripts/chinese_literature_client.py",
+      "origin": "upstream",
+      "in_manifest": true,
+      "in_archive": true,
+      "local_upstream_hash_matches_manifest": true,
+      "actual_use": "not_run",
+      "source_lines": [
+        1049,
+        1118
+      ]
+    }
+  ],
+  "upstream_capabilities": [
+    {
+      "kind": "agent_instructions",
+      "path": "deep-research/agents/bibliography_agent.md",
+      "lines": [
+        56,
+        69,
+        75,
+        85
+      ],
+      "provides": "数据库、同义词、布尔式、范围、命中数、先题目摘要再全文的检索和筛选规范",
+      "case_use": "AI阅读后制定本例领域词表和方案；不是原文预置该领域查询式"
+    },
+    {
+      "kind": "agent_instructions",
+      "path": "deep-research/agents/bibliography_agent.md",
+      "lines": [
+        104,
+        214,
+        485
+      ],
+      "provides": "已有语料的主题缺口补搜、分布偏斜提示、报告局限",
+      "case_use": "本例额外设计的基准、去物种条件、一跳追踪、词表修复不等于这些提示自动完成查全验证"
+    },
+    {
+      "kind": "resolver_code",
+      "paths": [
+        "scripts/semantic_scholar_client.py",
+        "scripts/crossref_client.py",
+        "scripts/openalex_client.py",
+        "scripts/arxiv_client.py"
+      ],
+      "lines": [
+        244,
+        174,
+        190,
+        177
+      ],
+      "provides": "已知引文DOI/ID/题名检索与题名交叉核验",
+      "case_use": "原S2/Crossref实际运行；原OpenAlex/arXiv未运行"
+    },
+    {
+      "kind": "discovery_code",
+      "path": "scripts/claim_standing_discovery.py",
+      "lines": [
+        2,
+        11,
+        17,
+        397
+      ],
+      "provides": "claim-standing流程的S2/OpenAlex/Crossref/arXiv主题发现适配器，有结果上限，无相关性/立场判断；版本头部标注尚未实网运行",
+      "case_use": "not_run"
+    },
+    {
+      "kind": "coordinate_verification_code",
+      "path": "scripts/chinese_literature_client.py",
+      "lines": [
+        1049,
+        1118
+      ],
+      "protocol": "deep-research/references/chinese_literature_api_protocol.md#L85",
+      "provides": "对已有无DOI中文引文按期刊/年/卷页等查PubMed候选，再做身份绑定核验",
+      "case_use": "not_run；与本例新写的PubMed主题检索不同"
+    }
+  ],
+  "case_added_work": [
+    "斑马鱼、微/纳塑料、PFAS的三概念块、同义词及具体字段查询式",
+    "PubMed/Europe PMC/OpenAlex三源组合及各自API采集器、原响应和请求回执",
+    "本地方案冻结与独立标注的语法修订、别名/词根修订",
+    "去掉物种条件的补充检索、一跳引用追踪、精确ID漏检诊断",
+    "五篇基准的构建与阶段找回比较；基准用于后续修词，不能视为留出验证",
+    "DOI/PMID跨源合并、机械初筛、独立AI复核协调、裁决、网页导出"
+  ],
+  "actually_executed_upstream_clients": {
+    "evidence": "research/phase2_investigation/citation-verification-combined.json",
+    "wrapper": "scripts/verify-citations.py",
+    "records": 12,
+    "CrossrefClient": {
+      "matched": 12
+    },
+    "SemanticScholarClient": {
+      "matched": 2,
+      "unavailable": 10,
+      "unavailable_reason": "HTTP 429 after retries"
+    },
+    "boundary": "引文身份核验成功不等于论文内容正确、已阅读全文或主题检索无遗漏"
+  },
+  "attribution_boundary": {
+    "results_evidence": "research/retrieval-trial/report.md",
+    "combined_candidates": 984,
+    "retain": 17,
+    "uncertain": 51,
+    "benchmark_recovered": {
+      "original_primary": "3/5",
+      "after_citation_expansion": "4/5",
+      "after_vocabulary_repair": "5/5"
+    },
+    "attribution": "原skill规则 + AI领域判断/协调 + 本例新增API代码与检查的组合结果；不可单独归为原库性能",
+    "no_ablation": true,
+    "benchmark_used_for_tuning": true,
+    "full_recall_proven": false,
+    "fulltext_eligibility_completed": false,
+    "note": "API全部返回不等于领域全部收录；5/5已见基准回归不等于100%查全；保留记录不等于独立实验或全文质量通过"
+  },
+  "commit": "b8d050f24f2e1c465c4410eace8634ea3af15930",
+  "summary": "三个主题检索脚本均为本案例由AI新增；原库同时有检索规范、真实核验客户端及另一路发现适配器，不能概括为只有提示词。",
+  "rows": [
+    {
+      "task": "主题怎么拆、检索式怎么写",
+      "original": "bibliography_agent 要求数据库、关键词/同义词、布尔式、时间/语言/文献类型及检索记录。",
+      "ours": "AI针对水生毒理学生成斑马鱼×微/纳塑料×PFAS词表，并用新增代码转为各接口查询。",
+      "runState": "原规范已阅读并采用；具体领域方案为本例新增。",
+      "sources": [
+        {
+          "label": "检索参数与记录要求",
+          "url": "https://github.com/Imbad0202/academic-research-skills/blob/b8d050f24f2e1c465c4410eace8634ea3af15930/deep-research/agents/bibliography_agent.md#L56"
+        },
+        {
+          "label": "本例冻结词表与查询式",
+          "url": "scripts/freeze-retrieval-plan.py#L13"
+        }
+      ]
+    },
+    {
+      "task": "三个主题采集脚本",
+      "original": "固定提交的ZIP及1106项清单均没有 retrieve-pubmed.py、retrieve-europepmc.py、retrieve-openalex.py。",
+      "ours": "三个脚本均本案例由AI新写，分别调用NCBI E-utilities、Europe PMC REST、OpenAlex works API。",
+      "runState": "本例已运行；不是原库自带采集器。",
+      "sources": [
+        {
+          "label": "原文件清单",
+          "url": "research/upstream-manifest.json"
+        },
+        {
+          "label": "新增PubMed采集器",
+          "url": "scripts/retrieve-pubmed.py#L29"
+        },
+        {
+          "label": "新增Europe PMC采集器",
+          "url": "scripts/retrieve-europepmc.py#L25"
+        },
+        {
+          "label": "新增OpenAlex采集器",
+          "url": "scripts/retrieve-openalex.py#L30"
+        }
+      ]
+    },
+    {
+      "task": "已知论文的身份核验",
+      "original": "原S2/Crossref/OpenAlex/arXiv客户端可按DOI/ID/题名查询并交叉核对题名。",
+      "ours": "新增 verify-citations.py 包装层导入原S2/Crossref客户端，实际跑12篇。",
+      "runState": "原S2/Crossref已运行：2匹配+10不可用、12匹配；原OpenAlex/arXiv未运行。",
+      "sources": [
+        {
+          "label": "原S2客户端",
+          "url": "https://github.com/Imbad0202/academic-research-skills/blob/b8d050f24f2e1c465c4410eace8634ea3af15930/scripts/semantic_scholar_client.py#L244"
+        },
+        {
+          "label": "原Crossref客户端",
+          "url": "https://github.com/Imbad0202/academic-research-skills/blob/b8d050f24f2e1c465c4410eace8634ea3af15930/scripts/crossref_client.py#L174"
+        },
+        {
+          "label": "原OpenAlex客户端",
+          "url": "https://github.com/Imbad0202/academic-research-skills/blob/b8d050f24f2e1c465c4410eace8634ea3af15930/scripts/openalex_client.py#L190"
+        },
+        {
+          "label": "原arXiv客户端",
+          "url": "https://github.com/Imbad0202/academic-research-skills/blob/b8d050f24f2e1c465c4410eace8634ea3af15930/scripts/arxiv_client.py#L177"
+        },
+        {
+          "label": "本例包装层的真实导入",
+          "url": "scripts/verify-citations.py#L15"
+        },
+        {
+          "label": "12篇核验结果",
+          "url": "research/phase2_investigation/citation-verification-combined.json"
+        }
+      ]
+    },
+    {
+      "task": "原库是否有搜索代码",
+      "original": "claim_standing_discovery.py 有S2/OpenAlex/Crossref/arXiv发现适配器，属于另一claim-standing流程；有上限，不判相关性/立场，头部称当时尚未实网运行。",
+      "ours": "本例选择新增三源主题采集器，没有调用该原生发现路径。",
+      "runState": "原代码存在，但本例未运行；不能说原库只有提示词。",
+      "sources": [
+        {
+          "label": "原发现代码及边界",
+          "url": "https://github.com/Imbad0202/academic-research-skills/blob/b8d050f24f2e1c465c4410eace8634ea3af15930/scripts/claim_standing_discovery.py#L2"
+        },
+        {
+          "label": "原四源适配器登记",
+          "url": "https://github.com/Imbad0202/academic-research-skills/blob/b8d050f24f2e1c465c4410eace8634ea3af15930/scripts/claim_standing_discovery.py#L397"
+        }
+      ]
+    },
+    {
+      "task": "原库的PubMed与本例是否相同",
+      "original": "原中文引文客户端对已有无DOI中文引文，按期刊/年/卷页等查PubMed候选并核验身份。",
+      "ours": "新增 retrieve-pubmed.py 对主题做ESearch，再EFetch批量题录/摘要，任务与实现均不同。",
+      "runState": "原中文引文客户端未调用；本例新采集器已运行。",
+      "sources": [
+        {
+          "label": "原PubMed坐标核验协议",
+          "url": "https://github.com/Imbad0202/academic-research-skills/blob/b8d050f24f2e1c465c4410eace8634ea3af15930/deep-research/references/chinese_literature_api_protocol.md#L85"
+        },
+        {
+          "label": "原坐标查找实现",
+          "url": "https://github.com/Imbad0202/academic-research-skills/blob/b8d050f24f2e1c465c4410eace8634ea3af15930/scripts/chinese_literature_client.py#L1049"
+        },
+        {
+          "label": "本例主题ESearch/EFetch",
+          "url": "scripts/retrieve-pubmed.py#L54"
+        }
+      ]
+    },
+    {
+      "task": "怎么筛选、如何补漏",
+      "original": "要求先题目摘要再全文；有已给语料主题缺口补搜、分布偏斜提示、检索局限记录。",
+      "ours": "本例另做跨源合并、机械初筛、独立AI复核；五篇基准、去物种条件、一跳引用追踪、别名/词根修复。",
+      "runState": "本例主要完成题录/摘要筛选，尚非全文资格评估；这些具体补漏实验为本例新增。",
+      "sources": [
+        {
+          "label": "原两轮筛选要求",
+          "url": "https://github.com/Imbad0202/academic-research-skills/blob/b8d050f24f2e1c465c4410eace8634ea3af15930/deep-research/agents/bibliography_agent.md#L85"
+        },
+        {
+          "label": "原主题缺口规则",
+          "url": "https://github.com/Imbad0202/academic-research-skills/blob/b8d050f24f2e1c465c4410eace8634ea3af15930/deep-research/agents/bibliography_agent.md#L214"
+        },
+        {
+          "label": "原偏斜提示",
+          "url": "https://github.com/Imbad0202/academic-research-skills/blob/b8d050f24f2e1c465c4410eace8634ea3af15930/deep-research/agents/bibliography_agent.md#L104"
+        },
+        {
+          "label": "本例合并与机械初筛",
+          "url": "scripts/prepare-trial-records.py#L1"
+        },
+        {
+          "label": "本例实测报告",
+          "url": "research/retrieval-trial/report.md"
+        }
+      ]
+    },
+    {
+      "task": "984条、3/5到5/5能证明什么",
+      "original": "原库提供规范和被实际运行的客户端，不能单独认领整个适配实验的性能。",
+      "ours": "这些数字来自原规范+AI判断/协调+新增API采集与检查的组合；五篇基准还被用于修词。",
+      "runState": "无有skill/无skill对照；5/5是已见基准回归，不是全领域查全率。",
+      "sources": [
+        {
+          "label": "本轮过程与结果",
+          "url": "research/retrieval-trial/report.md"
+        },
+        {
+          "label": "本轮机器可读记录",
+          "url": "research/retrieval-trial/trial.json"
+        }
+      ]
+    }
+  ],
+  "referenced_upstream_hash_checks": [
+    {
+      "path": "scripts/semantic_scholar_client.py",
+      "hash_matches_manifest": true
+    },
+    {
+      "path": "scripts/crossref_client.py",
+      "hash_matches_manifest": true
+    },
+    {
+      "path": "scripts/openalex_client.py",
+      "hash_matches_manifest": true
+    },
+    {
+      "path": "scripts/arxiv_client.py",
+      "hash_matches_manifest": true
+    },
+    {
+      "path": "scripts/claim_standing_discovery.py",
+      "hash_matches_manifest": true
+    },
+    {
+      "path": "scripts/chinese_literature_client.py",
+      "hash_matches_manifest": true
+    },
+    {
+      "path": "deep-research/agents/bibliography_agent.md",
+      "hash_matches_manifest": true
+    },
+    {
+      "path": "deep-research/agents/source_verification_agent.md",
+      "hash_matches_manifest": true
+    }
+  ]
+}

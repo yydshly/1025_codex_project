@@ -1,0 +1,71 @@
+{
+  "date": "2026-10-29",
+  "method": "Actual local IAB interactions through cua_repl; observations recorded from tool results.",
+  "url": "http://127.0.0.1:4332/",
+  "checks": [
+    {
+      "action": "Search PINK1",
+      "observed": "1 / 14 papers; P10 shown",
+      "result": "pass"
+    },
+    {
+      "action": "Open P10",
+      "observed": "DOI, Abstract reading scope, and fish/cell intervention uncertainty visible",
+      "result": "pass"
+    },
+    {
+      "action": "Select full_text reading filter",
+      "observed": "0 / 14 and empty-state clear-filter control",
+      "result": "pass"
+    },
+    {
+      "action": "Clear filters then core filter",
+      "observed": "10 / 14",
+      "result": "pass"
+    },
+    {
+      "action": "Open C02 evidence",
+      "observed": "One linked source P03 with claim boundary",
+      "result": "pass"
+    },
+    {
+      "action": "Select direction 02",
+      "observed": "P10 fulltext/model-location step and unverified novelty visible",
+      "result": "pass"
+    },
+    {
+      "action": "390x844 viewport (actual client width375)",
+      "observed": "document scrollWidth375 = clientWidth375; no document overflow",
+      "result": "pass"
+    },
+    {
+      "action": "Restore viewport",
+      "observed": "Normal desktop 1280 innerWidth and final report loaded",
+      "result": "pass"
+    },
+    {
+      "action": "Read console warning/error log",
+      "observed": [],
+      "result": "pass"
+    },
+    {
+      "action": "File URL browser QA",
+      "observed": "Browser security policy blocks file protocol; no bypass attempted; use HTTP preview",
+      "result": "not_tested"
+    },
+    {
+      "action": "Final downloads",
+      "observed": "17 report/CSV/JSON/source-skill/license artifacts; HTTP checks in http-check.json",
+      "result": "pass"
+    }
+  ],
+  "screenshots": [
+    "../../assets/images/research-overview.jpg",
+    "../../assets/images/mobile-preview.jpg"
+  ],
+  "softwareChecks": {
+    "root": "npm run check passed for12 projects",
+    "project": "npm --prefix ... run check passed:14sources/10core/6claims/42queries/12actualverifications/1106upstreamhashes/17artifacts",
+    "scientificBoundary": "These checks do not validate the scientific findings or expert accuracy."
+  }
+}

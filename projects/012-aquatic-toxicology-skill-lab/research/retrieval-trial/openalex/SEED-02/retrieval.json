@@ -1,0 +1,23 @@
+{
+  "queryId": "SEED-02",
+  "seed_doi": "10.1016/j.watres.2025.124658",
+  "started_at": "2026-10-29T05:14:27.905774+00:00",
+  "attempts": [
+    {
+      "url": "https://api.openalex.org/works/https://doi.org/10.1016/j.watres.2025.124658",
+      "started_at": "2026-10-29T05:14:27.905774+00:00",
+      "attempt": 1,
+      "status": 200,
+      "final_url": "https://api.openalex.org/works/https://doi.org/10.1016/j.watres.2025.124658",
+      "content_type": "application/json",
+      "file": "seed.json",
+      "bytes": 26623,
+      "sha256": "afba439e01eb7e969457671660baee01390820eddfda3eadb0e964924d286978",
+      "finished_at": "2026-10-29T05:14:33.591084+00:00"
+    }
+  ],
+  "amendment_sha256": "0aab8b3dc02cde6ee515aad649b56f755b0fb0c99288c57d548871e38d8bc706",
+  "matched": true,
+  "OAid": "https://openalex.org/W4414402625",
+  "finished_at": "2026-10-29T05:14:33.591611+00:00"
+}

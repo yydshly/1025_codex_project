@@ -1,0 +1,153 @@
+{
+  "checks": [
+    {
+      "path": "/",
+      "status": 200
+    },
+    {
+      "path": "/retrieval.js",
+      "status": 200
+    },
+    {
+      "path": "/retrieval.css",
+      "status": 200
+    },
+    {
+      "path": "/data/research-data.js",
+      "status": 200
+    },
+    {
+      "path": "/data/skill-mechanism-audit.md",
+      "status": 200
+    },
+    {
+      "path": "/data/skill-mechanism-audit.json",
+      "status": 200
+    },
+    {
+      "path": "/data/verify-citations.py.txt",
+      "status": 200
+    },
+    {
+      "path": "/data/programmatic-verification-summary.md",
+      "status": 200
+    },
+    {
+      "path": "/data/process-walkthrough.md",
+      "status": 200
+    },
+    {
+      "path": "/data/process-walkthrough.json",
+      "status": 200
+    },
+    {
+      "path": "/data/report.md",
+      "status": 200
+    },
+    {
+      "path": "/data/synthesis.md",
+      "status": 200
+    },
+    {
+      "path": "/data/review.md",
+      "status": 200
+    },
+    {
+      "path": "/data/process.md",
+      "status": 200
+    },
+    {
+      "path": "/data/rq-brief.md",
+      "status": 200
+    },
+    {
+      "path": "/data/methodology.md",
+      "status": 200
+    },
+    {
+      "path": "/data/checkpoint1-review.md",
+      "status": 200
+    },
+    {
+      "path": "/data/bibliography.md",
+      "status": 200
+    },
+    {
+      "path": "/data/source-verification.md",
+      "status": 200
+    },
+    {
+      "path": "/data/search-log.json",
+      "status": 200
+    },
+    {
+      "path": "/data/upstream-manifest.json",
+      "status": 200
+    },
+    {
+      "path": "/data/deep-research-SKILL.md",
+      "status": 200
+    },
+    {
+      "path": "/data/upstream-LICENSE.txt",
+      "status": 200
+    },
+    {
+      "path": "/data/execution-contract.md",
+      "status": 200
+    },
+    {
+      "path": "/data/research.json",
+      "status": 200
+    },
+    {
+      "path": "/data/evidence.csv",
+      "status": 200
+    },
+    {
+      "path": "/data/citation-verification.json",
+      "status": 200
+    },
+    {
+      "path": "/data/retrieval-trial-report.md",
+      "status": 200
+    },
+    {
+      "path": "/data/retrieval-trial.json",
+      "status": 200
+    },
+    {
+      "path": "/data/retrieval-screening.csv",
+      "status": 200
+    },
+    {
+      "path": "/data/retrieval-query-plan.json",
+      "status": 200
+    },
+    {
+      "path": "/data/retrieval-query-plan-v2.json",
+      "status": 200
+    },
+    {
+      "path": "/data/retrieval-request-receipts.json",
+      "status": 200
+    },
+    {
+      "path": "/data/retrieval-benchmark.json",
+      "status": 200
+    },
+    {
+      "path": "/data/retrieval-normalization-repair.json",
+      "status": 200
+    },
+    {
+      "path": "/data/retrieval-screening-audit.json",
+      "status": 200
+    },
+    {
+      "path": "/data/retrieval-source-manifest.json",
+      "status": 200
+    }
+  ],
+  "boundary": "HTTP availability only; not scientific accuracy."
+}

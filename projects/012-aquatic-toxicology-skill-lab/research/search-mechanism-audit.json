@@ -1,0 +1,214 @@
+{
+  "schema": "skill-search-mechanism-audit/1.0",
+  "date": "2026-10-29",
+  "upstreamCommit": "b8d050f24f2e1c465c4410eace8634ea3af15930",
+  "auditType": "固定版本源码与本轮产物的只读审计；没有新增科研检索或重新运行客户端",
+  "summary": "deep-research把检索写成由AI执行的策略与角色规范；宿主提供实际检索工具。库中同时有已知引文核验客户端，以及另一路有结果上限的关键词发现代码。这三层不能混同，也不能从数据库名称推断已经接通或执行。",
+  "steps": [
+    {
+      "id": "S01",
+      "title": "先把主题变成可检索的问题",
+      "actor": "deep-research / research_question_agent + research_architect_agent",
+      "originalRule": "拆主题、生成候选问题，明确研究对象、范围和子问题；方法角色选择数据库、时间、数据与有效性标准。",
+      "actualAction": "把宽泛的水生毒理学暂定为斑马鱼—微/纳塑料—PFAS共暴露比较。该范围由AI选择，仍是provisional，不是研究者已确认题目。",
+      "output": "RQ Brief、方法计划、纳入排除条件和提取字段。",
+      "sources": ["U01", "U02", "A01"]
+    },
+    {
+      "id": "S02",
+      "title": "拟定检索源与检索式",
+      "actor": "deep-research / bibliography_agent",
+      "originalRule": "先填写数据库、关键词与同义词、布尔组合、时间、语言和文献类型；逐数据库记录日期与命中数。DATABASES是需要填的字段，并非已接通的服务清单。",
+      "actualAction": "本轮采用宿主web.run网页搜索，包含广泛关键词查询、窄组合和已知题名/DOI定位；没有运行原生PubMed、WoS、Scopus或Google Scholar主题检索。",
+      "output": "37条有日期和用途说明的网页查询；不具备数据库全量命中或筛选分母。",
+      "sources": ["U03", "A02"]
+    },
+    {
+      "id": "S03",
+      "title": "筛选、去重、标记实际阅读范围",
+      "actor": "bibliography_agent；程序可辅助身份解析",
+      "originalRule": "按预先标准进行题名/摘要和全文两轮筛选；S2 ID辅助去重，服务不可用时降级；没有正文不得推断方法缺陷。",
+      "actualAction": "以DOI/题名折叠重复记录，区分10篇核心、2篇背景和2份方法资料；核心阅读是8篇摘要、2篇部分章节、0篇全文。完整第二轮全文筛选未完成。",
+      "output": "文献矩阵、阅读范围与15个遇到的排除候选；这15个不是全量排除总数。",
+      "sources": ["U04", "U05", "A02", "A03"]
+    },
+    {
+      "id": "S04",
+      "title": "验证已找到的论文身份",
+      "actor": "source_verification_agent + 原始SemanticScholarClient / CrossrefClient",
+      "originalRule": "DOI优先解析，题名检索作后备；书目身份匹配和论断核实是不同任务，服务降级需记录。",
+      "actualAction": "本地adapter调用未改写的两份原始客户端，对12篇已收集论文做实时网络请求。Crossref匹配12条；S2匹配P03/P09，10条429重试耗尽。",
+      "output": "逐篇状态、时间、请求和返回元数据；没有由此得到全文、漏检率或科学结论正确率。",
+      "sources": ["U06", "U07", "U08", "A04", "A05"]
+    },
+    {
+      "id": "S05",
+      "title": "检查覆盖信号并保持未知项",
+      "actor": "bibliography_agent + 后续综合/复核角色",
+      "originalRule": "已有用户文献时比较RQ子主题和已覆盖主题并补缺；检查年份、地域、方法、期刊等分布偏斜；报告检索局限。",
+      "actualAction": "记录了核心论文集中在2024—2026年、实验研究和Elsevier期刊的偏斜，以及P06比较方向、P10救援模型归属等未知。没有独立已知论文测试集，也没有完整前后向引文追踪回执。",
+      "output": "局限和后续核查事项；没有生成可信的总体覆盖率。",
+      "sources": ["U09", "U10", "A02", "A03"]
+    }
+  ],
+  "sourceLayers": [
+    {
+      "id": "L01",
+      "title": "原始规范建议或要求选择的来源",
+      "kind": "规则层",
+      "services": ["bibliography_agent中的DATABASES待填字段", "情境失败路径举例：Web of Science、Scopus、PubMed", "中文补充举例：Airiti、台湾学位论文库、CNKI", "后续监测举例：Google Scholar、PubMed、期刊RSS、WoS/Scopus/S2引文追踪"],
+      "meaning": "这些是按课题和可用条件选择、执行或设置的渠道。出现名称不表示库已取得订阅、账号、检索权限或自动导出能力。",
+      "thisRun": "本轮未设置数据库监测或邮件提醒，也未原生执行上述数据库主题检索。",
+      "sources": ["U03", "U11", "U12", "A02"]
+    },
+    {
+      "id": "L02",
+      "title": "宿主本轮真正使用的发现与读取渠道",
+      "kind": "本次执行层",
+      "services": ["宿主web.run search_query网页发现", "PubMed书目和摘要", "PMC可访问章节", "出版商原始页面、摘要或可见片段", "OpenAlex、ZFIN等题录线索页面"],
+      "meaning": "发现线索、读取一手页面、用索引核验题录是不同动作。site:pubmed.ncbi.nlm.nih.gov是网页搜索域名限定，不等于PubMed数据库原生检索。OpenAlex/ZFIN线索没有替代原始实验结果。",
+      "thisRun": "ScienceDirect P03/P09/P10及RSC P04全文请求受限；保留已读摘要/片段并记录失败，没有声称取得全文。",
+      "sources": ["A02", "A03"]
+    },
+    {
+      "id": "L03",
+      "title": "库中已知引文核验客户端",
+      "kind": "代码层：resolver",
+      "services": ["Semantic Scholar Graph API", "Crossref REST API", "OpenAlex API", "arXiv API", "ChineseLiteratureClient的中文DOI注册机构与PubMed坐标核验分支"],
+      "meaning": "主要输入是一篇已知论文的DOI、题名或其他坐标，核查返回记录是否对应。S2/Crossref/OpenAlex/arXiv题名后备路径均只取少量候选（5条）；不能据此声称执行了主题全量检索。中文PubMed分支也属于已知引文坐标核验，并非本次主题搜索。",
+      "thisRun": "只真实执行了S2/Crossref两种resolver。OpenAlex题录网页线索不等于运行OpenAlexClient；arXiv与中文核验客户端未运行。",
+      "sources": ["U07", "U08", "U13", "U14", "U15", "A04", "A05"]
+    },
+    {
+      "id": "L04",
+      "title": "另一路关键词发现适配器",
+      "kind": "代码层：claim-standing discovery",
+      "services": ["Semantic Scholar paper search", "OpenAlex works search", "Crossref works query", "arXiv phrase search"],
+      "meaning": "scripts/claim_standing_discovery.py实现四索引关键词发现，输入绑定的query plan；不同于上述resolver。只请求单页且有每查询/索引上限，不自动翻到全部记录；不产生相关性判定或立场判断。文件自述当时尚未做live验证，首次live应视为诊断。",
+      "thisRun": "这一路完全未执行，不得写成本次37次搜索的发动机，也不能将其作为本次覆盖测试成绩。",
+      "sources": ["U16"]
+    }
+  ],
+  "omissionControls": [
+    {
+      "id": "O01",
+      "name": "同义词、布尔组合与范围声明",
+      "origin": "上游明写",
+      "mechanism": "扩大概念表达覆盖并公开时间、语言、文献类型限制。",
+      "actualState": "部分执行：多种关键词及窄组合已记录，核心实际仅英文；没有全量数据库导出。",
+      "cannotProve": "检索式写得详细不等于所有相关研究都被命中。",
+      "sources": ["U03", "A02"]
+    },
+    {
+      "id": "O02",
+      "name": "用户文献先筛，再按未覆盖子主题补查",
+      "origin": "上游明写，存在输入条件",
+      "mechanism": "uncovered_topics = RQ子主题减去用户文献已覆盖主题；不可静默跳过用户文献，若用户限定仅用自己的库则公开缺口。",
+      "actualState": "未按Material Passport流程运行：本轮用户没有交付完整个人文献库。",
+      "cannotProve": "主题已被若干论文覆盖，不代表该主题全部研究都已找到；分主题本身仍可能遗漏。",
+      "sources": ["U10", "A01"]
+    },
+    {
+      "id": "O03",
+      "name": "分布偏斜提示",
+      "origin": "上游明写，非阻断提示",
+      "mechanism": "已知条目的某一属性值占比达到70%时提示年份、地域、方法或期刊等集中。分母是该维度有已知值的known_N。",
+      "actualState": "本轮已记录年份、实验设计与出版商集中；没有把集中等同质量差。",
+      "cannotProve": "分布均衡不证明没有漏文献；集中也可能正是题目限定的结果。",
+      "sources": ["U09", "A02"]
+    },
+    {
+      "id": "O04",
+      "name": "多索引核验与去重",
+      "origin": "上游明写，原始代码部分运行",
+      "mechanism": "多源核查已找到论文的身份、减少重复题录和虚构引文。",
+      "actualState": "DOI去重已做；S2/Crossref已运行，S2大部分请求不可用。",
+      "cannotProve": "12/12题录匹配只说明这些记录身份得到支持；没有测试未找到的论文。不能当召回率100%。",
+      "sources": ["U04", "U06", "A05"]
+    },
+    {
+      "id": "O05",
+      "name": "独立已知论文测试集",
+      "origin": "本轮后续建议；未在所审bibliography主流程中发现自动实施机制",
+      "mechanism": "从独立综述/专家清单收集确定合格的论文，测试主题检索式是否找回并分析漏检原因。",
+      "actualState": "未执行。现有题名或DOI定位不能充当独立测试。",
+      "cannotProve": "即使测试集全部找回，也只证明通过该样本；总体分母仍未知。",
+      "sources": ["A02"]
+    },
+    {
+      "id": "O06",
+      "name": "完整数据库筛选与前后向引文追踪",
+      "origin": "本轮方法计划包含追踪；上游监测资料另有引文追踪指导",
+      "mechanism": "保存各库结果，去重筛选；对关键文献的参考文献和被引文献进行有记录追踪，记录新增合格文献。",
+      "actualState": "没有完整原生数据库筛选分母和追踪回执；本轮在10篇核心、2篇背景后按委派规模停止。",
+      "cannotProve": "数量目标或重复遇到已知论文不是充分覆盖的证明，也不能据此说无人做过。",
+      "sources": ["U12", "A01", "A02"]
+    }
+  ],
+  "examples": [
+    {
+      "id": "E01",
+      "queryId": "Q01",
+      "query": "zebrafish PFAS microplastics nanoplastics PFOS PFOA coexposure toxicity",
+      "action": "用宿主网页搜索广泛发现候选；记录中出现P01、P03、P05以及综述/背景线索。",
+      "interpretation": "这是主题发现动作；必须继续筛选并核对原始页面，命中若干研究不代表已经穷尽。",
+      "artifact": "phase2_investigation/search-log.json",
+      "artifactLine": 4
+    },
+    {
+      "id": "E02",
+      "queryId": "Q08",
+      "query": "\"41027221\"",
+      "action": "单独搜索数字PMID，返回无关数字记录；这些结果未用于科学证据。",
+      "interpretation": "说明查询实际失败需要保留。不能将每个搜索动作都算作有效扩展覆盖。",
+      "artifact": "phase2_investigation/search-log.json",
+      "artifactLine": 53
+    },
+    {
+      "id": "E03",
+      "queryId": "Q24",
+      "query": "\"10.1016/j.aquatox.2025.107534\" site:pubmed.ncbi.nlm.nih.gov",
+      "action": "用精确DOI加域名限定定位P09的PubMed题录。",
+      "interpretation": "这是已知论文定位/核对，并非PubMed原生主题检索。Q08与Q24对应不同论文，不能写成同一论文失败后的直接重试。",
+      "artifact": "phase2_investigation/search-log.json",
+      "artifactLine": 165
+    },
+    {
+      "id": "E04",
+      "queryId": null,
+      "query": "12篇已知论文的DOI/题名核验",
+      "action": "本地adapter调用原始代码，保存Crossref 12匹配、S2 2匹配/10不可用的实时结果。",
+      "interpretation": "核验没有偷偷补造成功；429不能解释成论文不存在；书目成功不能解释成全文理解已验证。",
+      "artifact": "phase2_investigation/citation-verification-combined.json",
+      "artifactLine": 1
+    }
+  ],
+  "implementationNotes": [
+    "上游协议和部分注释将0.70题名阈值称为Levenshtein；所审实际公共实现_text_similarity.py使用difflib.SequenceMatcher及额外正规化。展示时应写题名匹配阈值，避免将文档算法名当成实测实现。",
+    "关键词发现代码存在不代表本次已运行；角色规范要求的检查存在不代表本次已完成。",
+    "本审计没有运行任何新网络请求或改变论文结论。它不认证该套件其他全部搜索/检索功能，也不声称静态代码已通过live端到端验证。"
+  ],
+  "sources": {
+    "U01": {"kind": "upstream", "path": "deep-research/agents/research_question_agent.md", "line": 47, "label": "主题拆分、范围与子问题"},
+    "U02": {"kind": "upstream", "path": "deep-research/agents/research_architect_agent.md", "line": 87, "label": "数据策略与分析有效性"},
+    "U03": {"kind": "upstream", "path": "deep-research/agents/bibliography_agent.md", "line": 56, "label": "检索参数、逐库执行记录"},
+    "U04": {"kind": "upstream", "path": "deep-research/agents/bibliography_agent.md", "line": 75, "label": "两轮筛选与S2去重"},
+    "U05": {"kind": "upstream", "path": "deep-research/agents/bibliography_agent.md", "line": 143, "label": "方法弱点与阅读范围约束"},
+    "U06": {"kind": "upstream", "path": "deep-research/agents/source_verification_agent.md", "line": 107, "label": "引文存在性核验与降级"},
+    "U07": {"kind": "upstream", "path": "scripts/semantic_scholar_client.py", "line": 244, "label": "S2 DOI核验和题名前5后备"},
+    "U08": {"kind": "upstream", "path": "scripts/crossref_client.py", "line": 174, "label": "Crossref DOI核验和题名前5后备"},
+    "U09": {"kind": "upstream", "path": "deep-research/agents/bibliography_agent.md", "line": 104, "label": "非阻断分布偏斜提示"},
+    "U10": {"kind": "upstream", "path": "deep-research/agents/bibliography_agent.md", "line": 180, "label": "用户文献优先和search-fills-gap"},
+    "U11": {"kind": "upstream", "path": "deep-research/references/failure_paths.md", "line": 243, "label": "F8中文来源补查情境"},
+    "U12": {"kind": "upstream", "path": "deep-research/references/literature_monitoring_strategies.md", "line": 157, "label": "WoS、Scopus、Scholar、S2引文追踪"},
+    "U13": {"kind": "upstream", "path": "scripts/openalex_client.py", "line": 190, "label": "OpenAlex已知题录核验"},
+    "U14": {"kind": "upstream", "path": "scripts/arxiv_client.py", "line": 177, "label": "arXiv已知ID和题名核验"},
+    "U15": {"kind": "upstream", "path": "deep-research/references/chinese_literature_api_protocol.md", "line": 85, "label": "中文引文PubMed坐标核验边界"},
+    "U16": {"kind": "upstream", "path": "scripts/claim_standing_discovery.py", "line": 1, "label": "单独的关键词发现路径；单页上限见370行附近"},
+    "A01": {"kind": "artifact", "path": "phase1_scoping/methodology.md", "line": 1, "label": "本轮方法计划，不冒充已执行"},
+    "A02": {"kind": "artifact", "path": "phase2_investigation/search-log.json", "line": 340, "label": "实际渠道、读取范围、停止边界"},
+    "A03": {"kind": "artifact", "path": "phase2_investigation/source-verification.md", "line": 3, "label": "实际复核范围和未决项"},
+    "A04": {"kind": "project", "path": "scripts/verify-citations.py", "line": 1, "label": "本轮真实客户端adapter"},
+    "A05": {"kind": "artifact", "path": "phase2_investigation/programmatic-verification-summary.md", "line": 1, "label": "最终实时核验状态"}
+  }
+}

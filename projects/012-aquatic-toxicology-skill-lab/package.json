@@ -1,0 +1,12 @@
+{
+  "name": "aquatic-toxicology-skill-lab",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:data": "python scripts/build-research-data.py",
+    "serve": "python -m http.server 4332 --bind 127.0.0.1 --directory app",
+    "check": "node scripts/check.mjs",
+    "check:public": "node scripts/check-public.mjs"
+  }
+}

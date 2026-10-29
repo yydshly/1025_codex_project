@@ -1,0 +1,22 @@
+[
+  {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28zebrafish%5BTitle%2FAbstract%5D+OR+%22Danio+rerio%22%5BTitle%2FAbstract%5D%29+AND+%28microplastic%2A%5BTitle%2FAbstract%5D+OR+nanoplastic%2A%5BTitle%2FAbstract%5D+OR+%22micro+plastic%2A%22%5BTitle%2FAbstract%5D+OR+%22nano+plastic%2A%22%5BTitle%2FAbstract%5D+OR+polystyrene%5BTitle%2FAbstract%5D+OR+polyethylene%5BTitle%2FAbstract%5D+OR+%22polyethylene+terephthalate%22%5BTitle%2FAbstract%5D+OR+polypropylene%5BTitle%2FAbstract%5D+OR+%22polyvinyl+chloride%22%5BTitle%2FAbstract%5D+OR+%22polymethyl+methacrylate%22%5BTitle%2FAbstract%5D%29+AND+%28PFAS%5BTitle%2FAbstract%5D+OR+PFOS%5BTitle%2FAbstract%5D+OR+PFOA%5BTitle%2FAbstract%5D+OR+PFBA%5BTitle%2FAbstract%5D+OR+PFNA%5BTitle%2FAbstract%5D+OR+PFOSA%5BTitle%2FAbstract%5D+OR+PFHxS%5BTitle%2FAbstract%5D+OR+PFBS%5BTitle%2FAbstract%5D+OR+%22F-53B%22%5BTitle%2FAbstract%5D+OR+F53B%5BTitle%2FAbstract%5D+OR+%22Cl-PFESA%22%5BTitle%2FAbstract%5D+OR+%22Cl-PFAES%22%5BTitle%2FAbstract%5D+OR+PFC%5BTitle%2FAbstract%5D+OR+PFCs%5BTitle%2FAbstract%5D+OR+perfluor%2A%5BTitle%2FAbstract%5D+OR+polyfluor%2A%5BTitle%2FAbstract%5D+OR+fluorotelomer%2A%5BTitle%2FAbstract%5D%29+AND+%28%222015%2F01%2F01%22%5BDate+-+Publication%5D+%3A+%222026%2F10%2F29%22%5BDate+-+Publication%5D%29&retmode=json&retmax=9999",
+    "started_at": "2026-10-29T05:21:14.300479+00:00",
+    "attempt": 1,
+    "file": "esearch.json",
+    "status": 200,
+    "bytes": 1388,
+    "sha256": "9b4178be56aa59738e44a7a2d9cd366a88be464d9c000c08ea44bdebe35c862d",
+    "finished_at": "2026-10-29T05:21:31.619954+00:00"
+  },
+  {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42764241%2C42198499%2C41887838%2C41706329%2C41616538%2C41539585%2C41422984%2C41027221%2C41005273%2C40795757%2C39368493%2C39340199%2C39270866%2C39043301%2C38941840%2C38365036%2C33740727%2C32416398%2C29306661&retmode=xml",
+    "started_at": "2026-10-29T05:21:32.026390+00:00",
+    "attempt": 1,
+    "file": "efetch-001.xml",
+    "status": 200,
+    "bytes": 314044,
+    "sha256": "715b9f8dd3110003b8adebd2ff8ac85c4172bc297af60c305c75598faee3e542",
+    "finished_at": "2026-10-29T05:21:38.695097+00:00"
+  }
+]

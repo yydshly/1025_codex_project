@@ -1,0 +1,433 @@
+{
+  "created_at": "2026-10-29T05:14:13.951451+00:00",
+  "reviewer": "primary Codex agent",
+  "blind_to_reviewer_b": true,
+  "coverage": "37 high-priority non-review records; mechanical preliminary exclusions remain separate",
+  "counts": {
+    "retain": 13,
+    "exclude": 24
+  },
+  "records": [
+    {
+      "id": "T1afa6b9d1",
+      "doi": "10.1016/j.jes.2025.10.001",
+      "sourceIds": [
+        "PMID:41887838",
+        "EPMC:MED:41887838"
+      ],
+      "decision": "retain",
+      "reason": "题名及可见摘要明确包含斑马鱼与微/纳塑料、明确PFAS的共暴露；保留进入下一阶段，未验证全文对照/统计。",
+      "readScope": "abstract",
+      "method": "primary_AI_targeted_review"
+    },
+    {
+      "id": "T401389cfc",
+      "doi": "10.1007/s10646-025-03017-0",
+      "sourceIds": [
+        "PMID:41706329",
+        "EPMC:MED:41706329"
+      ],
+      "decision": "retain",
+      "reason": "题名及可见摘要明确包含斑马鱼与微/纳塑料、明确PFAS的共暴露；保留进入下一阶段，未验证全文对照/统计。",
+      "readScope": "abstract",
+      "method": "primary_AI_targeted_review"
+    },
+    {
+      "id": "Taa939a1c2",
+      "doi": "10.1016/j.envint.2026.110102",
+      "sourceIds": [
+        "PMID:41616538",
+        "EPMC:MED:41616538"
+      ],
+      "decision": "retain",
+      "reason": "题名及可见摘要明确包含斑马鱼与微/纳塑料、明确PFAS的共暴露；保留进入下一阶段，未验证全文对照/统计。",
+      "readScope": "abstract",
+      "method": "primary_AI_targeted_review"
+    },
+    {
+      "id": "Tac5ec88c5",
+      "doi": "10.1016/j.etap.2025.104907",
+      "sourceIds": [
+        "PMID:41422984",
+        "EPMC:MED:41422984"
+      ],
+      "decision": "retain",
+      "reason": "题名及可见摘要明确包含斑马鱼与微/纳塑料、明确PFAS的共暴露；保留进入下一阶段，未验证全文对照/统计。",
+      "readScope": "abstract",
+      "method": "primary_AI_targeted_review"
+    },
+    {
+      "id": "Tac593520a",
+      "doi": "10.1016/j.jhazmat.2025.139951",
+      "sourceIds": [
+        "PMID:41027221",
+        "EPMC:MED:41027221"
+      ],
+      "decision": "retain",
+      "reason": "题名及可见摘要明确包含斑马鱼与微/纳塑料、明确PFAS的共暴露；保留进入下一阶段，未验证全文对照/统计。",
+      "readScope": "abstract",
+      "method": "primary_AI_targeted_review"
+    },
+    {
+      "id": "Tdf84e1869",
+      "doi": "10.1016/j.watres.2025.124658",
+      "sourceIds": [
+        "PMID:41005273",
+        "EPMC:MED:41005273"
+      ],
+      "decision": "retain",
+      "reason": "题名及可见摘要明确包含斑马鱼与微/纳塑料、明确PFAS的共暴露；保留进入下一阶段，未验证全文对照/统计。",
+      "readScope": "abstract",
+      "method": "primary_AI_targeted_review"
+    },
+    {
+      "id": "T38e5785cf",
+      "doi": "10.1016/j.aquatox.2025.107534",
+      "sourceIds": [
+        "PMID:40795757",
+        "EPMC:MED:40795757"
+      ],
+      "decision": "retain",
+      "reason": "题名及可见摘要明确包含斑马鱼与微/纳塑料、明确PFAS的共暴露；保留进入下一阶段，未验证全文对照/统计。",
+      "readScope": "abstract",
+      "method": "primary_AI_targeted_review"
+    },
+    {
+      "id": "Ta40aed7f3",
+      "doi": "10.1016/j.chemosphere.2024.143462",
+      "sourceIds": [
+        "PMID:39368493",
+        "EPMC:MED:39368493"
+      ],
+      "decision": "retain",
+      "reason": "题名及可见摘要明确包含斑马鱼与微/纳塑料、明确PFAS的共暴露；保留进入下一阶段，未验证全文对照/统计。",
+      "readScope": "abstract",
+      "method": "primary_AI_targeted_review"
+    },
+    {
+      "id": "Tc07b35fd1",
+      "doi": "10.1002/anie.202404956",
+      "sourceIds": [
+        "PMID:39340199",
+        "EPMC:MED:39340199"
+      ],
+      "decision": "exclude",
+      "reason": "氟表面活性剂用于斑马鱼机械测量，PEG为化学片段；摘要没有目标微/纳塑料与PFAS共暴露实验。",
+      "readScope": "abstract",
+      "method": "primary_AI_targeted_review"
+    },
+    {
+      "id": "Ta1ebeeffb",
+      "doi": "10.1016/j.scitotenv.2024.176223",
+      "sourceIds": [
+        "PMID:39270866",
+        "EPMC:MED:39270866"
+      ],
+      "decision": "retain",
+      "reason": "题名及可见摘要明确包含斑马鱼与微/纳塑料、明确PFAS的共暴露；保留进入下一阶段，未验证全文对照/统计。",
+      "readScope": "abstract",
+      "method": "primary_AI_targeted_review"
+    },
+    {
+      "id": "T818c9b578",
+      "doi": "10.1016/j.scitotenv.2024.174925",
+      "sourceIds": [
+        "PMID:39043301",
+        "EPMC:MED:39043301"
+      ],
+      "decision": "retain",
+      "reason": "题名及可见摘要明确包含斑马鱼与微/纳塑料、明确PFAS的共暴露；保留进入下一阶段，未验证全文对照/统计。",
+      "readScope": "abstract",
+      "method": "primary_AI_targeted_review"
+    },
+    {
+      "id": "T4c4da766f",
+      "doi": "10.1016/j.scitotenv.2024.170948",
+      "sourceIds": [
+        "PMID:38365036",
+        "EPMC:MED:38365036"
+      ],
+      "decision": "retain",
+      "reason": "题名及可见摘要明确包含斑马鱼与微/纳塑料、明确PFAS的共暴露；保留进入下一阶段，未验证全文对照/统计。",
+      "readScope": "abstract",
+      "method": "primary_AI_targeted_review"
+    },
+    {
+      "id": "T9024d7330",
+      "doi": "10.1016/j.jhazmat.2021.125626",
+      "sourceIds": [
+        "PMID:33740727",
+        "EPMC:MED:33740727"
+      ],
+      "decision": "retain",
+      "reason": "题名及可见摘要明确包含斑马鱼与微/纳塑料、明确PFAS的共暴露；保留进入下一阶段，未验证全文对照/统计。",
+      "readScope": "abstract",
+      "method": "primary_AI_targeted_review"
+    },
+    {
+      "id": "Tf1f8a3ceb",
+      "doi": "10.1016/j.chemosphere.2020.127040",
+      "sourceIds": [
+        "PMID:32416398",
+        "EPMC:MED:32416398"
+      ],
+      "decision": "retain",
+      "reason": "题名及可见摘要明确包含斑马鱼与微/纳塑料、明确PFAS的共暴露；保留进入下一阶段，未验证全文对照/统计。",
+      "readScope": "abstract",
+      "method": "primary_AI_targeted_review"
+    },
+    {
+      "id": "Td23dc5fac",
+      "doi": "",
+      "sourceIds": [
+        "EPMC:AGR:IND609281060"
+      ],
+      "decision": "exclude",
+      "reason": "AGR记录与MED40795757题名及摘要对应，作重复题录候选关联，不另算研究。",
+      "readScope": "abstract",
+      "method": "primary_AI_targeted_review"
+    },
+    {
+      "id": "Tc7c7168e8",
+      "doi": "",
+      "sourceIds": [
+        "EPMC:AGR:IND608874091"
+      ],
+      "decision": "exclude",
+      "reason": "题名明确为其他物种（罗非鱼/黑鲪/海鳟/牡蛎/摇蚊/蟹/青鳉/海鲈/食蚊鱼），不符合斑马鱼范围。",
+      "readScope": "title",
+      "method": "primary_AI_targeted_review"
+    },
+    {
+      "id": "Tcea8c7867",
+      "doi": "",
+      "sourceIds": [
+        "EPMC:AGR:IND609246806"
+      ],
+      "decision": "exclude",
+      "reason": "题名明确为其他物种（罗非鱼/黑鲪/海鳟/牡蛎/摇蚊/蟹/青鳉/海鲈/食蚊鱼），不符合斑马鱼范围。",
+      "readScope": "title",
+      "method": "primary_AI_targeted_review"
+    },
+    {
+      "id": "T52c2d8ae7",
+      "doi": "10.1016/j.envpol.2025.126578",
+      "sourceIds": [
+        "EPMC:MED:40466994"
+      ],
+      "decision": "exclude",
+      "reason": "题名明确为其他物种（罗非鱼/黑鲪/海鳟/牡蛎/摇蚊/蟹/青鳉/海鲈/食蚊鱼），不符合斑马鱼范围。",
+      "readScope": "title",
+      "method": "primary_AI_targeted_review"
+    },
+    {
+      "id": "T74ff09c86",
+      "doi": "10.1080/15287394.2026.2643391",
+      "sourceIds": [
+        "EPMC:MED:41824318"
+      ],
+      "decision": "exclude",
+      "reason": "题名明确为其他物种（罗非鱼/黑鲪/海鳟/牡蛎/摇蚊/蟹/青鳉/海鲈/食蚊鱼），不符合斑马鱼范围。",
+      "readScope": "title",
+      "method": "primary_AI_targeted_review"
+    },
+    {
+      "id": "T2f1a5fe95",
+      "doi": "10.1016/j.jhazmat.2026.141055",
+      "sourceIds": [
+        "EPMC:MED:41518798"
+      ],
+      "decision": "exclude",
+      "reason": "摘要的生物试验为海洋细菌与牡蛎胚胎，非斑马鱼。",
+      "readScope": "abstract",
+      "method": "primary_AI_targeted_review"
+    },
+    {
+      "id": "T90de05d13",
+      "doi": "10.1039/d4em00753k",
+      "sourceIds": [
+        "EPMC:MED:40227795"
+      ],
+      "decision": "exclude",
+      "reason": "摘要为Iowa溪流现场监测，非目标斑马鱼共暴露实验。",
+      "readScope": "abstract",
+      "method": "primary_AI_targeted_review"
+    },
+    {
+      "id": "Tafc42492d",
+      "doi": "10.1016/j.cbpc.2024.110119",
+      "sourceIds": [
+        "EPMC:MED:39725185"
+      ],
+      "decision": "exclude",
+      "reason": "题名明确为其他物种（罗非鱼/黑鲪/海鳟/牡蛎/摇蚊/蟹/青鳉/海鲈/食蚊鱼），不符合斑马鱼范围。",
+      "readScope": "title",
+      "method": "primary_AI_targeted_review"
+    },
+    {
+      "id": "T109cb1a88",
+      "doi": "10.1021/acsnano.3c12009",
+      "sourceIds": [
+        "EPMC:MED:38323841"
+      ],
+      "decision": "exclude",
+      "reason": "题名明确为其他物种（罗非鱼/黑鲪/海鳟/牡蛎/摇蚊/蟹/青鳉/海鲈/食蚊鱼），不符合斑马鱼范围。",
+      "readScope": "title",
+      "method": "primary_AI_targeted_review"
+    },
+    {
+      "id": "T4e182d93e",
+      "doi": "10.1016/j.jhazmat.2025.137488",
+      "sourceIds": [
+        "EPMC:MED:39919640"
+      ],
+      "decision": "exclude",
+      "reason": "题名明确为其他物种（罗非鱼/黑鲪/海鳟/牡蛎/摇蚊/蟹/青鳉/海鲈/食蚊鱼），不符合斑马鱼范围。",
+      "readScope": "title",
+      "method": "primary_AI_targeted_review"
+    },
+    {
+      "id": "T607b1ec90",
+      "doi": "",
+      "sourceIds": [
+        "EPMC:AGR:IND609294551"
+      ],
+      "decision": "exclude",
+      "reason": "题名明确为其他物种（罗非鱼/黑鲪/海鳟/牡蛎/摇蚊/蟹/青鳉/海鲈/食蚊鱼），不符合斑马鱼范围。",
+      "readScope": "title",
+      "method": "primary_AI_targeted_review"
+    },
+    {
+      "id": "T004ff42b1",
+      "doi": "10.1016/j.scitotenv.2023.163307",
+      "sourceIds": [
+        "EPMC:MED:37030384"
+      ],
+      "decision": "exclude",
+      "reason": "题名明确为其他物种（罗非鱼/黑鲪/海鳟/牡蛎/摇蚊/蟹/青鳉/海鲈/食蚊鱼），不符合斑马鱼范围。",
+      "readScope": "title",
+      "method": "primary_AI_targeted_review"
+    },
+    {
+      "id": "Tc6687d579",
+      "doi": "10.1016/j.jhazmat.2024.136200",
+      "sourceIds": [
+        "EPMC:MED:39437472"
+      ],
+      "decision": "exclude",
+      "reason": "摘要为14种海鱼现场污染调查，非斑马鱼控制实验。",
+      "readScope": "abstract",
+      "method": "primary_AI_targeted_review"
+    },
+    {
+      "id": "Te849d6192",
+      "doi": "10.20944/preprints202501.1698.v1",
+      "sourceIds": [
+        "EPMC:PPR:PPR969786"
+      ],
+      "decision": "exclude",
+      "reason": "摘要自称综述；鱼骨图属于问题分析方法，不是鱼类实验。",
+      "readScope": "abstract",
+      "method": "primary_AI_targeted_review"
+    },
+    {
+      "id": "Ta6b60627e",
+      "doi": "10.1016/j.fsi.2023.108793",
+      "sourceIds": [
+        "EPMC:MED:37146847"
+      ],
+      "decision": "exclude",
+      "reason": "题名明确为其他物种（罗非鱼/黑鲪/海鳟/牡蛎/摇蚊/蟹/青鳉/海鲈/食蚊鱼），不符合斑马鱼范围。",
+      "readScope": "title",
+      "method": "primary_AI_targeted_review"
+    },
+    {
+      "id": "Tafdd6d52f",
+      "doi": "10.20944/preprints202511.0652.v1",
+      "sourceIds": [
+        "EPMC:PPR:PPR1119604"
+      ],
+      "decision": "exclude",
+      "reason": "摘要为水产品污染风险概述，没有原始斑马鱼共暴露试验。",
+      "readScope": "abstract",
+      "method": "primary_AI_targeted_review"
+    },
+    {
+      "id": "T8f442c424",
+      "doi": "10.1016/j.fsi.2022.06.064",
+      "sourceIds": [
+        "EPMC:MED:35835386"
+      ],
+      "decision": "exclude",
+      "reason": "题名明确为其他物种（罗非鱼/黑鲪/海鳟/牡蛎/摇蚊/蟹/青鳉/海鲈/食蚊鱼），不符合斑马鱼范围。",
+      "readScope": "title",
+      "method": "primary_AI_targeted_review"
+    },
+    {
+      "id": "T25557e127",
+      "doi": "10.1021/acs.est.2c06500",
+      "sourceIds": [
+        "EPMC:MED:36972291"
+      ],
+      "decision": "exclude",
+      "reason": "摘要为胖头鲦和蚌及被动采样器试验；聚乙烯为采样器，非斑马鱼微塑料共暴露。",
+      "readScope": "abstract",
+      "method": "primary_AI_targeted_review"
+    },
+    {
+      "id": "T603153fd3",
+      "doi": "10.1007/s11356-021-15923-x",
+      "sourceIds": [
+        "EPMC:MED:34409531"
+      ],
+      "decision": "exclude",
+      "reason": "摘要为PFOS吸附解吸与人工鱼肠液试验，没有斑马鱼实验。",
+      "readScope": "abstract",
+      "method": "primary_AI_targeted_review"
+    },
+    {
+      "id": "T61369e2a1",
+      "doi": "10.1007/s00128-024-03976-w",
+      "sourceIds": [
+        "EPMC:MED:39500750"
+      ],
+      "decision": "exclude",
+      "reason": "摘要列4种野外经济鱼，研究为微塑料监测，非斑马鱼共暴露。",
+      "readScope": "abstract",
+      "method": "primary_AI_targeted_review"
+    },
+    {
+      "id": "T131d2c795",
+      "doi": "10.1016/j.marpolbul.2020.111059",
+      "sourceIds": [
+        "EPMC:MED:32319895"
+      ],
+      "decision": "exclude",
+      "reason": "题名明确为其他物种（罗非鱼/黑鲪/海鳟/牡蛎/摇蚊/蟹/青鳉/海鲈/食蚊鱼），不符合斑马鱼范围。",
+      "readScope": "title",
+      "method": "primary_AI_targeted_review"
+    },
+    {
+      "id": "T812cc213e",
+      "doi": "10.1016/j.ese.2026.100732",
+      "sourceIds": [
+        "EPMC:MED:42500116"
+      ],
+      "decision": "exclude",
+      "reason": "摘要为全球微塑料/鱼类生殖风险数据整合，非斑马鱼共暴露实验。",
+      "readScope": "abstract",
+      "method": "primary_AI_targeted_review"
+    },
+    {
+      "id": "T13971cbd8",
+      "doi": "10.1002/etc.4354",
+      "sourceIds": [
+        "EPMC:MED:30614049"
+      ],
+      "decision": "exclude",
+      "reason": "摘要为Passaic河鱼类蓝蟹污染与被动采样器研究，非目标实验。",
+      "readScope": "abstract",
+      "method": "primary_AI_targeted_review"
+    }
+  ]
+}

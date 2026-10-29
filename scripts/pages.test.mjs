@@ -95,3 +95,48 @@ test('引导页只能指向当前项目已公开的HTML文件', () => {
   assert.throws(() => buildPages(root), /引导页未列入公开文件/);
   assert.equal(fs.existsSync(path.join(root, 'dist/pages')), false);
 });
+
+test('文本下载按项目显式启用，递归保留原字节且不扩大其他项目范围', () => {
+  const { root } = fixture();
+  const markdown = Buffer.from('# 研究记录\r\n原始内容\r\n', 'utf8');
+  const csv = Buffer.from('\ufeffid,reason\r\n1,"保留,待全文"\r\n', 'utf8');
+  for (const folder of ['001-first', '002-second']) {
+    const data = path.join(root, 'projects', folder, 'app/data/nested');
+    fs.mkdirSync(data, { recursive: true });
+    fs.writeFileSync(path.join(data, 'report.md'), markdown);
+    fs.writeFileSync(path.join(data, 'records.csv'), csv);
+    fs.writeFileSync(path.join(data, 'archive.zip'), 'must-not-publish');
+  }
+  fs.writeFileSync(path.join(root, 'projects/002-second/app/index.html'), '<h1>默认发布范围</h1>');
+  const defaults = buildPages(root, 'dist/default-text-scope');
+  for (const name of ['report.md', 'records.csv', 'archive.zip']) assert.equal(fs.existsSync(path.join(defaults.output, '001-first/data/nested', name)), false);
+
+  const config = { schemaVersion: 1, projects: [
+    { directory: '001-first', publicDirectory: 'app', extraAssets: ['assets/images/map.svg'], textExtensions: ['.md', '.csv'] },
+    { directory: '002-second', publicDirectory: 'app', extraAssets: [] },
+  ] };
+  fs.writeFileSync(path.join(root, 'pages.config.json'), JSON.stringify(config));
+  const enabled = buildPages(root, 'dist/explicit-text-scope');
+  assert.deepEqual(fs.readFileSync(path.join(enabled.output, '001-first/data/nested/report.md')), markdown);
+  assert.deepEqual(fs.readFileSync(path.join(enabled.output, '001-first/data/nested/records.csv')), csv);
+  assert.equal(fs.existsSync(path.join(enabled.output, '001-first/data/nested/archive.zip')), false);
+  for (const name of ['report.md', 'records.csv', 'archive.zip']) assert.equal(fs.existsSync(path.join(enabled.output, '002-second/data/nested', name)), false);
+});
+
+test('拒绝未知、重复或类型错误的文本扩展配置，并保持额外资源边界', () => {
+  const { root } = fixture();
+  const entry = { directory: '001-first', publicDirectory: 'app', extraAssets: [] };
+  const config = { schemaVersion: 1, projects: [entry] };
+  for (const invalid of [['.zip'], ['.md', '.md'], '.md', null, {}, [1], ['.CSV']]) {
+    entry.textExtensions = invalid;
+    fs.writeFileSync(path.join(root, 'pages.config.json'), JSON.stringify(config));
+    assert.throws(() => buildPages(root), /textExtensions/);
+    assert.equal(fs.existsSync(path.join(root, 'dist/pages')), false);
+  }
+  entry.textExtensions = ['.md', '.csv'];
+  entry.extraAssets = ['assets/private.md'];
+  fs.writeFileSync(path.join(root, 'projects/001-first/assets/private.md'), 'not an allowed extra asset');
+  fs.writeFileSync(path.join(root, 'pages.config.json'), JSON.stringify(config));
+  assert.throws(() => buildPages(root), /不允许的额外资源/);
+  assert.equal(fs.existsSync(path.join(root, 'dist/pages')), false);
+});

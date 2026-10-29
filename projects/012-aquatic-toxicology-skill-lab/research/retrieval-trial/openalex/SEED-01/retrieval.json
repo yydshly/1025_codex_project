@@ -1,0 +1,23 @@
+{
+  "queryId": "SEED-01",
+  "seed_doi": "10.1016/j.scitotenv.2024.170948",
+  "started_at": "2026-10-29T05:13:34.811452+00:00",
+  "attempts": [
+    {
+      "url": "https://api.openalex.org/works/https://doi.org/10.1016/j.scitotenv.2024.170948",
+      "started_at": "2026-10-29T05:13:34.811452+00:00",
+      "attempt": 1,
+      "status": 200,
+      "final_url": "https://api.openalex.org/works/https://doi.org/10.1016/j.scitotenv.2024.170948",
+      "content_type": "application/json",
+      "file": "seed.json",
+      "bytes": 26300,
+      "sha256": "33b1992a6570ae0e4bddc633777ee721334662f27b3dbfd63fdfe9ea05d63c2f",
+      "finished_at": "2026-10-29T05:13:51.764615+00:00"
+    }
+  ],
+  "amendment_sha256": "0aab8b3dc02cde6ee515aad649b56f755b0fb0c99288c57d548871e38d8bc706",
+  "matched": true,
+  "OAid": "https://openalex.org/W4391850196",
+  "finished_at": "2026-10-29T05:13:51.766248+00:00"
+}

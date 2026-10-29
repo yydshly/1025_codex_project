@@ -1,0 +1,33 @@
+{
+  "scope": "主代理在可见来源和复核分歧基础上的定点裁决；不是独立领域专家意见。",
+  "overrides": [
+    {
+      "doi": "10.1016/j.jhazmat.2021.125626",
+      "decision": "uncertain",
+      "reason": "采纳复核的保守判断：摘要同时列斑马鱼/青鳉与PFOS/BP3/BaP多处理，未逐物种对应PFOS臂。保留待全文，不把两套名单自动交叉配对。",
+      "basis": "reviewer-a retain vs reviewer-b uncertain；原始PubMed摘要",
+      "readScope": "abstract"
+    },
+    {
+      "sourceId": "EPMC:AGR:IND609281060",
+      "decision": "exclude",
+      "reason": "题名、摘要与MED40795757对应，关联为重复题录，不另计候选研究；原始来源记录保留。",
+      "basis": "reviewer-a duplicate exclusion vs reviewer-b retain with duplicate warning",
+      "readScope": "abstract"
+    },
+    {
+      "doi": "10.1016/j.jhazmat.2024.135038",
+      "decision": "retain",
+      "reason": "引文追踪先取得无摘要记录；基准揭盲后的精确ID诊断和修订主题检索取得摘要，明确成鱼NPs+F53B及NOM组。保留为阅读候选，不作机制或全文认证。",
+      "basis": "diagnostics/B03.json；PM-REPAIRED与EPMC-REPAIRED原始返回；原图记录不回填为原主题命中",
+      "readScope": "abstract"
+    },
+    {
+      "doi": "10.1016/j.envres.2017.12.019",
+      "decision": "retain",
+      "reason": "斑马鱼饲喂微塑料与含PFCs的多污染物混合物；独立基准保留了出版商方法片段中的具体PFAS。符合本轮含PFAS共暴露检索范围，不能据此归因二元PFAS特异效应。",
+      "basis": "benchmark B05原始定位；diagnostics/B05.json；PM-REPAIRED与EPMC-REPAIRED",
+      "readScope": "abstract；具体化学物种依据基准记录的出版商方法片段"
+    }
+  ]
+}

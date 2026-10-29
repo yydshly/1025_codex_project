@@ -1,0 +1,788 @@
+{
+  "date": "2026-10-29",
+  "upstream_commit": "b8d050f24f2e1c465c4410eace8634ea3af15930",
+  "results": [
+    {
+      "id": "P01",
+      "title": "Combined exposure with microplastics increases the toxic effects of PFOS and its alternative F-53B in adult zebrafish",
+      "doi": "10.1016/j.scitotenv.2024.170948",
+      "year": 2024,
+      "semantic_scholar": {
+        "status": "unavailable",
+        "reason": "S2 API HTTP 429 after 3 retries"
+      },
+      "crossref": {
+        "status": "matched",
+        "DOI": "10.1016/j.scitotenv.2024.170948",
+        "title": [
+          "Combined exposure with microplastics increases the toxic effects of PFOS and its alternative F-53B in adult zebrafish"
+        ],
+        "container-title": [
+          "Science of The Total Environment"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              4
+            ]
+          ]
+        },
+        "published": {
+          "date-parts": [
+            [
+              2024,
+              4
+            ]
+          ]
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2024,
+              4
+            ]
+          ]
+        },
+        "type": "journal-article",
+        "relation": {},
+        "is-referenced-by-count": 39
+      }
+    },
+    {
+      "id": "P02",
+      "title": "Sorption of PFOS onto polystyrene microplastics potentiates synergistic toxic effects during zebrafish embryogenesis and neurodevelopment",
+      "doi": "10.1016/j.chemosphere.2024.143462",
+      "year": 2024,
+      "semantic_scholar": {
+        "status": "unavailable",
+        "reason": "S2 API HTTP 429 after 3 retries"
+      },
+      "crossref": {
+        "status": "matched",
+        "DOI": "10.1016/j.chemosphere.2024.143462",
+        "title": [
+          "Sorption of PFOS onto polystyrene microplastics potentiates synergistic toxic effects during zebrafish embryogenesis and neurodevelopment"
+        ],
+        "container-title": [
+          "Chemosphere"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              10
+            ]
+          ]
+        },
+        "published": {
+          "date-parts": [
+            [
+              2024,
+              10
+            ]
+          ]
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2024,
+              10
+            ]
+          ]
+        },
+        "type": "journal-article",
+        "relation": {},
+        "is-referenced-by-count": 31
+      }
+    },
+    {
+      "id": "P03",
+      "title": "Developmental stage-dependent carrier effects of nanoplastics on PFOS bioaccumulation and toxicity in zebrafish: Insights from toxicokinetic-toxicodynamic perspective",
+      "doi": "10.1016/j.watres.2025.124658",
+      "year": 2026,
+      "semantic_scholar": {
+        "status": "matched",
+        "matched": true,
+        "paperId": "ea8691e32b89822f7fa7ea200222548d72f9d261"
+      },
+      "crossref": {
+        "status": "matched",
+        "DOI": "10.1016/j.watres.2025.124658",
+        "title": [
+          "Developmental stage-dependent carrier effects of nanoplastics on PFOS bioaccumulation and toxicity in zebrafish: Insights from toxicokinetic-toxicodynamic perspective"
+        ],
+        "container-title": [
+          "Water Research"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              1
+            ]
+          ]
+        },
+        "published": {
+          "date-parts": [
+            [
+              2026,
+              1
+            ]
+          ]
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2026,
+              1
+            ]
+          ]
+        },
+        "type": "journal-article",
+        "relation": {},
+        "is-referenced-by-count": 4
+      }
+    },
+    {
+      "id": "P04",
+      "title": "Proteomic and metabolic responses in zebrafish embryos exposed to polystyrene nanoparticles and perfluorooctane sulfonate",
+      "doi": "10.1039/D5EN00231A",
+      "year": 2025,
+      "semantic_scholar": {
+        "status": "unavailable",
+        "reason": "S2 API HTTP 429 after 3 retries"
+      },
+      "crossref": {
+        "status": "matched",
+        "DOI": "10.1039/d5en00231a",
+        "title": [
+          "Proteomic and metabolic responses in zebrafish embryos exposed to polystyrene nanoparticles and perfluorooctane sulfonate"
+        ],
+        "container-title": [
+          "Environmental Science: Nano"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025
+            ]
+          ]
+        },
+        "published": {
+          "date-parts": [
+            [
+              2025
+            ]
+          ]
+        },
+        "published-online": {
+          "date-parts": [
+            [
+              2025
+            ]
+          ]
+        },
+        "type": "journal-article",
+        "relation": {},
+        "is-referenced-by-count": 1
+      }
+    },
+    {
+      "id": "P05",
+      "title": "Combined toxicity of polyethylene micro/nanoplastics and PFOA in zebrafish (Danio rerio): Impacts on antioxidant, neurotransmission, and gut microbiota",
+      "doi": "10.1016/j.etap.2025.104907",
+      "year": 2026,
+      "semantic_scholar": {
+        "status": "unavailable",
+        "reason": "S2 API HTTP 429 after 3 retries"
+      },
+      "crossref": {
+        "status": "matched",
+        "DOI": "10.1016/j.etap.2025.104907",
+        "title": [
+          "Combined toxicity of polyethylene micro/nanoplastics and PFOA in zebrafish (Danio rerio): Impacts on antioxidant, neurotransmission, and gut microbiota"
+        ],
+        "container-title": [
+          "Environmental Toxicology and Pharmacology"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              1
+            ]
+          ]
+        },
+        "published": {
+          "date-parts": [
+            [
+              2026,
+              1
+            ]
+          ]
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2026,
+              1
+            ]
+          ]
+        },
+        "type": "journal-article",
+        "relation": {},
+        "is-referenced-by-count": 3
+      }
+    },
+    {
+      "id": "P06",
+      "title": "Co-exposure of polyethylene terephthalate micro- and nanoplastics with per- and polyfluoroalkyl substances triggers immune dysregulation, apoptotic activation, and neurotoxicity",
+      "doi": "10.1007/s10646-025-03017-0",
+      "year": 2026,
+      "semantic_scholar": {
+        "status": "unavailable",
+        "reason": "S2 API HTTP 429 after 3 retries"
+      },
+      "crossref": {
+        "status": "matched",
+        "DOI": "10.1007/s10646-025-03017-0",
+        "title": [
+          "Co-exposure of polyethylene terephthalate micro- and nanoplastics with per- and polyfluoroalkyl substances triggers immune dysregulation, apoptotic activation, and neurotoxicity"
+        ],
+        "container-title": [
+          "Ecotoxicology"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              2,
+              18
+            ]
+          ]
+        },
+        "published": {
+          "date-parts": [
+            [
+              2026,
+              2,
+              18
+            ]
+          ]
+        },
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              2,
+              18
+            ]
+          ]
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2026,
+              4
+            ]
+          ]
+        },
+        "type": "journal-article",
+        "relation": {},
+        "is-referenced-by-count": 0
+      }
+    },
+    {
+      "id": "P07",
+      "title": "Polystyrene modulation of perfluorooctanoic acid toxicity in zebrafish: Transcriptomic and toxicological insights",
+      "doi": "10.1016/j.jhazmat.2025.139951",
+      "year": 2025,
+      "semantic_scholar": {
+        "status": "unavailable",
+        "reason": "S2 API HTTP 429 after 3 retries"
+      },
+      "crossref": {
+        "status": "matched",
+        "DOI": "10.1016/j.jhazmat.2025.139951",
+        "title": [
+          "Polystyrene modulation of perfluorooctanoic acid toxicity in zebrafish: Transcriptomic and toxicological insights"
+        ],
+        "container-title": [
+          "Journal of Hazardous Materials"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              10
+            ]
+          ]
+        },
+        "published": {
+          "date-parts": [
+            [
+              2025,
+              10
+            ]
+          ]
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2025,
+              10
+            ]
+          ]
+        },
+        "type": "journal-article",
+        "relation": {},
+        "is-referenced-by-count": 7
+      }
+    },
+    {
+      "id": "P08",
+      "title": "Co-exposure to polystyrene microplastics and perfluorooctanoic acid can exacerbate lipid metabolism disorders and liver damage in adult zebrafish",
+      "doi": "10.1016/j.jes.2025.10.001",
+      "year": 2026,
+      "semantic_scholar": {
+        "status": "unavailable",
+        "reason": "S2 API HTTP 429 after 3 retries"
+      },
+      "crossref": {
+        "status": "matched",
+        "DOI": "10.1016/j.jes.2025.10.001",
+        "title": [
+          "Co-exposure to polystyrene microplastics and perfluorooctanoic acid can exacerbate lipid metabolism disorders and liver damage in adult zebrafish"
+        ],
+        "container-title": [
+          "Journal of Environmental Sciences"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              5
+            ]
+          ]
+        },
+        "published": {
+          "date-parts": [
+            [
+              2026,
+              5
+            ]
+          ]
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2026,
+              5
+            ]
+          ]
+        },
+        "type": "journal-article",
+        "relation": {},
+        "is-referenced-by-count": 6
+      }
+    },
+    {
+      "id": "P09",
+      "title": "The exploration of chronic combined toxic mechanisms of environmental PFOA and polyethylene micro/nanoplastics on adult zebrafish (Danio rerio), using aquatic microcosm systems",
+      "doi": "10.1016/j.aquatox.2025.107534",
+      "year": 2025,
+      "semantic_scholar": {
+        "status": "matched",
+        "matched": true,
+        "paperId": "9aedd7257f71862b2cb737671cd1250bc21f9fcd"
+      },
+      "crossref": {
+        "status": "matched",
+        "DOI": "10.1016/j.aquatox.2025.107534",
+        "title": [
+          "The exploration of chronic combined toxic mechanisms of environmental PFOA and polyethylene micro/nanoplastics on adult zebrafish (Danio rerio), using aquatic microcosm systems"
+        ],
+        "container-title": [
+          "Aquatic Toxicology"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              10
+            ]
+          ]
+        },
+        "published": {
+          "date-parts": [
+            [
+              2025,
+              10
+            ]
+          ]
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2025,
+              10
+            ]
+          ]
+        },
+        "type": "journal-article",
+        "relation": {},
+        "is-referenced-by-count": 9
+      }
+    },
+    {
+      "id": "P10",
+      "title": "Co-exposure to PFOA, PFBA and nanoplastics synergistically exacerbates neurotoxicity by impairing PINK1/Parkin-mediated mitophagy",
+      "doi": "10.1016/j.envint.2026.110102",
+      "year": 2026,
+      "semantic_scholar": {
+        "status": "unavailable",
+        "reason": "S2 API HTTP 429 after 3 retries"
+      },
+      "crossref": {
+        "status": "matched",
+        "DOI": "10.1016/j.envint.2026.110102",
+        "title": [
+          "Co-exposure to PFOA, PFBA and nanoplastics synergistically exacerbates neurotoxicity by impairing PINK1/Parkin-mediated mitophagy"
+        ],
+        "container-title": [
+          "Environment International"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              2
+            ]
+          ]
+        },
+        "published": {
+          "date-parts": [
+            [
+              2026,
+              2
+            ]
+          ]
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2026,
+              2
+            ]
+          ]
+        },
+        "type": "journal-article",
+        "relation": {},
+        "is-referenced-by-count": 3
+      }
+    },
+    {
+      "id": "P11",
+      "title": "Nanoplastics Decrease the Toxicity of a Complex PAH Mixture but Impair Mitochondrial Energy Production in Developing Zebrafish",
+      "doi": "10.1021/acs.est.9b02003",
+      "year": 2019,
+      "semantic_scholar": {
+        "status": "unavailable",
+        "reason": "S2 API HTTP 429 after 3 retries"
+      },
+      "crossref": {
+        "status": "matched",
+        "DOI": "10.1021/acs.est.9b02003",
+        "title": [
+          "Nanoplastics Decrease the Toxicity of a Complex PAH Mixture but Impair Mitochondrial Energy Production in Developing Zebrafish"
+        ],
+        "container-title": [
+          "Environmental Science &amp; Technology"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2019,
+              6,
+              24
+            ]
+          ]
+        },
+        "published": {
+          "date-parts": [
+            [
+              2019,
+              6,
+              24
+            ]
+          ]
+        },
+        "published-online": {
+          "date-parts": [
+            [
+              2019,
+              6,
+              24
+            ]
+          ]
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2019,
+              7,
+              16
+            ]
+          ]
+        },
+        "type": "journal-article",
+        "relation": {},
+        "is-referenced-by-count": 303
+      }
+    },
+    {
+      "id": "P12",
+      "title": "Multi- and Transgenerational Effects of Developmental Exposure to Environmental Levels of PFAS and PFAS Mixture in Zebrafish (Danio rerio)",
+      "doi": "10.3390/toxics10060334",
+      "year": 2022,
+      "semantic_scholar": {
+        "status": "unavailable",
+        "reason": "S2 API HTTP 429 after 3 retries"
+      },
+      "crossref": {
+        "status": "matched",
+        "DOI": "10.3390/toxics10060334",
+        "title": [
+          "Multi- and Transgenerational Effects of Developmental Exposure to Environmental Levels of PFAS and PFAS Mixture in Zebrafish (Danio rerio)"
+        ],
+        "container-title": [
+          "Toxics"
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2022,
+              6,
+              18
+            ]
+          ]
+        },
+        "published": {
+          "date-parts": [
+            [
+              2022,
+              6,
+              18
+            ]
+          ]
+        },
+        "published-online": {
+          "date-parts": [
+            [
+              2022,
+              6,
+              18
+            ]
+          ]
+        },
+        "type": "journal-article",
+        "relation": {},
+        "is-referenced-by-count": 67
+      }
+    }
+  ],
+  "events": [
+    {
+      "index": "Semantic Scholar",
+      "path": "/paper/DOI:10.1016%2Fj.scitotenv.2024.170948?fields=title,authors,year,externalIds,venue,publicationDate",
+      "started_at": "2026-10-29T03:19:16.379640+00:00",
+      "status": "unavailable",
+      "error": "S2 API HTTP 429 after 3 retries",
+      "finished_at": "2026-10-29T03:20:07.659996+00:00"
+    },
+    {
+      "index": "Crossref",
+      "doi": "10.1016/j.scitotenv.2024.170948",
+      "started_at": "2026-10-29T03:20:07.660573+00:00",
+      "finished_at": "2026-10-29T03:20:24.820571+00:00",
+      "status": "matched"
+    },
+    {
+      "index": "Semantic Scholar",
+      "path": "/paper/DOI:10.1016%2Fj.chemosphere.2024.143462?fields=title,authors,year,externalIds,venue,publicationDate",
+      "started_at": "2026-10-29T03:20:24.821111+00:00",
+      "status": "unavailable",
+      "error": "S2 API HTTP 429 after 3 retries",
+      "finished_at": "2026-10-29T03:20:34.191519+00:00"
+    },
+    {
+      "index": "Crossref",
+      "doi": "10.1016/j.chemosphere.2024.143462",
+      "started_at": "2026-10-29T03:20:34.192067+00:00",
+      "finished_at": "2026-10-29T03:20:51.336779+00:00",
+      "status": "matched"
+    },
+    {
+      "index": "Semantic Scholar",
+      "path": "/paper/DOI:10.1016%2Fj.watres.2025.124658?fields=title,authors,year,externalIds,venue,publicationDate",
+      "started_at": "2026-10-29T03:20:51.337845+00:00",
+      "status": "response",
+      "paperId": "ea8691e32b89822f7fa7ea200222548d72f9d261",
+      "title": "Developmental stage-dependent carrier effects of nanoplastics on PFOS bioaccumulation and toxicity in zebrafish: Insights from toxicokinetic-toxicodynamic perspective.",
+      "year": 2025,
+      "finished_at": "2026-10-29T03:21:13.157914+00:00"
+    },
+    {
+      "index": "Crossref",
+      "doi": "10.1016/j.watres.2025.124658",
+      "started_at": "2026-10-29T03:21:13.157914+00:00",
+      "finished_at": "2026-10-29T03:21:19.335991+00:00",
+      "status": "matched"
+    },
+    {
+      "index": "Semantic Scholar",
+      "path": "/paper/DOI:10.1039%2FD5EN00231A?fields=title,authors,year,externalIds,venue,publicationDate",
+      "started_at": "2026-10-29T03:21:19.337075+00:00",
+      "status": "unavailable",
+      "error": "S2 API HTTP 429 after 3 retries",
+      "finished_at": "2026-10-29T03:21:52.002402+00:00"
+    },
+    {
+      "index": "Crossref",
+      "doi": "10.1039/D5EN00231A",
+      "started_at": "2026-10-29T03:21:52.005664+00:00",
+      "finished_at": "2026-10-29T03:22:03.881956+00:00",
+      "status": "matched"
+    },
+    {
+      "index": "Semantic Scholar",
+      "path": "/paper/DOI:10.1016%2Fj.etap.2025.104907?fields=title,authors,year,externalIds,venue,publicationDate",
+      "started_at": "2026-10-29T03:22:03.883021+00:00",
+      "status": "unavailable",
+      "error": "S2 API HTTP 429 after 3 retries",
+      "finished_at": "2026-10-29T03:22:40.107570+00:00"
+    },
+    {
+      "index": "Crossref",
+      "doi": "10.1016/j.etap.2025.104907",
+      "started_at": "2026-10-29T03:22:40.108102+00:00",
+      "finished_at": "2026-10-29T03:22:57.130544+00:00",
+      "status": "matched"
+    },
+    {
+      "index": "Semantic Scholar",
+      "path": "/paper/DOI:10.1007%2Fs10646-025-03017-0?fields=title,authors,year,externalIds,venue,publicationDate",
+      "started_at": "2026-10-29T03:22:57.131784+00:00",
+      "status": "unavailable",
+      "error": "S2 API HTTP 429 after 3 retries",
+      "finished_at": "2026-10-29T03:23:25.067031+00:00"
+    },
+    {
+      "index": "Crossref",
+      "doi": "10.1007/s10646-025-03017-0",
+      "started_at": "2026-10-29T03:23:25.068074+00:00",
+      "finished_at": "2026-10-29T03:23:31.011171+00:00",
+      "status": "matched"
+    },
+    {
+      "index": "Semantic Scholar",
+      "path": "/paper/DOI:10.1016%2Fj.jhazmat.2025.139951?fields=title,authors,year,externalIds,venue,publicationDate",
+      "started_at": "2026-10-29T03:23:31.012388+00:00",
+      "status": "unavailable",
+      "error": "S2 API HTTP 429 after 3 retries",
+      "finished_at": "2026-10-29T03:23:56.795432+00:00"
+    },
+    {
+      "index": "Crossref",
+      "doi": "10.1016/j.jhazmat.2025.139951",
+      "started_at": "2026-10-29T03:23:56.796627+00:00",
+      "finished_at": "2026-10-29T03:24:13.925676+00:00",
+      "status": "matched"
+    },
+    {
+      "index": "Semantic Scholar",
+      "path": "/paper/DOI:10.1016%2Fj.jes.2025.10.001?fields=title,authors,year,externalIds,venue,publicationDate",
+      "started_at": "2026-10-29T03:24:13.926898+00:00",
+      "status": "unavailable",
+      "error": "S2 API HTTP 429 after 3 retries",
+      "finished_at": "2026-10-29T03:24:22.688760+00:00"
+    },
+    {
+      "index": "Crossref",
+      "doi": "10.1016/j.jes.2025.10.001",
+      "started_at": "2026-10-29T03:24:22.689307+00:00",
+      "finished_at": "2026-10-29T03:24:29.474607+00:00",
+      "status": "matched"
+    },
+    {
+      "index": "Semantic Scholar",
+      "path": "/paper/DOI:10.1016%2Fj.aquatox.2025.107534?fields=title,authors,year,externalIds,venue,publicationDate",
+      "started_at": "2026-10-29T03:24:56.090328+00:00",
+      "status": "response",
+      "paperId": "9aedd7257f71862b2cb737671cd1250bc21f9fcd",
+      "title": "The exploration of chronic combined toxic mechanisms of environmental PFOA and polyethylene micro/nanoplastics on adult zebrafish (Danio rerio), using aquatic microcosm systems.",
+      "year": 2025,
+      "finished_at": "2026-10-29T03:25:17.021354+00:00"
+    },
+    {
+      "index": "Crossref",
+      "doi": "10.1016/j.aquatox.2025.107534",
+      "started_at": "2026-10-29T03:25:17.021354+00:00",
+      "finished_at": "2026-10-29T03:25:34.140281+00:00",
+      "status": "matched"
+    },
+    {
+      "index": "Semantic Scholar",
+      "path": "/paper/DOI:10.1016%2Fj.envint.2026.110102?fields=title,authors,year,externalIds,venue,publicationDate",
+      "started_at": "2026-10-29T03:25:34.141283+00:00",
+      "status": "unavailable",
+      "error": "S2 API HTTP 429 after 3 retries",
+      "finished_at": "2026-10-29T03:26:13.546269+00:00"
+    },
+    {
+      "index": "Crossref",
+      "doi": "10.1016/j.envint.2026.110102",
+      "started_at": "2026-10-29T03:26:13.547346+00:00",
+      "finished_at": "2026-10-29T03:26:14.311857+00:00",
+      "status": "matched"
+    },
+    {
+      "index": "Semantic Scholar",
+      "path": "/paper/DOI:10.1021%2Facs.est.9b02003?fields=title,authors,year,externalIds,venue,publicationDate",
+      "started_at": "2026-10-29T03:26:14.312437+00:00",
+      "status": "unavailable",
+      "error": "S2 API HTTP 429 after 3 retries",
+      "finished_at": "2026-10-29T03:26:54.865639+00:00"
+    },
+    {
+      "index": "Crossref",
+      "doi": "10.1021/acs.est.9b02003",
+      "started_at": "2026-10-29T03:26:54.866688+00:00",
+      "finished_at": "2026-10-29T03:27:11.991696+00:00",
+      "status": "matched"
+    },
+    {
+      "index": "Semantic Scholar",
+      "path": "/paper/DOI:10.3390%2Ftoxics10060334?fields=title,authors,year,externalIds,venue,publicationDate",
+      "started_at": "2026-10-29T03:27:11.993759+00:00",
+      "status": "unavailable",
+      "error": "S2 API HTTP 429 after 3 retries",
+      "finished_at": "2026-10-29T03:28:13.861398+00:00"
+    },
+    {
+      "index": "Crossref",
+      "doi": "10.3390/toxics10060334",
+      "started_at": "2026-10-29T03:28:13.861956+00:00",
+      "finished_at": "2026-10-29T03:28:30.821124+00:00",
+      "status": "matched"
+    }
+  ],
+  "counts": {
+    "records": 12,
+    "crossref_matched": 12,
+    "s2_matched": 2,
+    "s2_unavailable": 10
+  },
+  "boundary": "DOI/title identity only. Not proof of claim support, experimental truth, or novelty."
+}

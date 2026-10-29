@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-29",
+  "surface": "CUA in-app browser 2 / existing tab 1",
+  "checks": {
+    "five_tabs_rendered": true,
+    "search_step_expansion_Q01_visible": true,
+    "keyboard_arrow_right_selects_sources": true,
+    "source_cards": 6,
+    "checks_independent_test_expansion_shows_not_run": true,
+    "scenario_execution_labels_visible": true,
+    "catalog_skills": 5,
+    "mobile_client_width": 375,
+    "mobile_scroll_width": 375,
+    "viewport_restored": true,
+    "console_errors_or_warnings": []
+  },
+  "screenshot": "assets/images/skill-breakdown.jpg",
+  "boundary": "UI and content-provenance presentation checks only; not literature completeness or scientific accuracy validation."
+}

@@ -1,0 +1,1053 @@
+{
+  "pubmed": {
+    "query_id": "PM-PRIMARY",
+    "source": "PubMed E-utilities",
+    "query": "(zebrafish[Title/Abstract] OR \"Danio rerio\"[Title/Abstract]) AND (microplastic*[Title/Abstract] OR nanoplastic*[Title/Abstract] OR \"micro plastic*\"[Title/Abstract] OR \"nano plastic*\"[Title/Abstract] OR polystyrene[Title/Abstract] OR polyethylene[Title/Abstract] OR \"polyethylene terephthalate\"[Title/Abstract] OR polypropylene[Title/Abstract] OR \"polyvinyl chloride\"[Title/Abstract] OR \"polymethyl methacrylate\"[Title/Abstract]) AND (PFAS[Title/Abstract] OR PFOS[Title/Abstract] OR PFOA[Title/Abstract] OR PFBA[Title/Abstract] OR PFHxS[Title/Abstract] OR PFBS[Title/Abstract] OR \"F-53B\"[Title/Abstract] OR \"Cl-PFESA\"[Title/Abstract] OR perfluoro*[Title/Abstract] OR polyfluoro*[Title/Abstract] OR fluorotelomer*[Title/Abstract]) AND (\"2015/01/01\"[Date - Publication] : \"2026/10/29\"[Date - Publication])",
+    "started_at": "2026-10-29T05:07:58.165903+00:00",
+    "complete": true,
+    "total": 17,
+    "returned_ids": 17,
+    "translation": "(\"zebrafish\"[Title/Abstract] OR \"Danio rerio\"[Title/Abstract]) AND (\"microplastic*\"[Title/Abstract] OR \"nanoplastic*\"[Title/Abstract] OR \"micro plastic*\"[Title/Abstract] OR \"nano plastic*\"[Title/Abstract] OR \"polystyrene\"[Title/Abstract] OR \"polyethylene\"[Title/Abstract] OR \"polyethylene terephthalate\"[Title/Abstract] OR \"polypropylene\"[Title/Abstract] OR \"polyvinyl chloride\"[Title/Abstract] OR \"polymethyl methacrylate\"[Title/Abstract]) AND (\"PFAS\"[Title/Abstract] OR \"PFOS\"[Title/Abstract] OR \"PFOA\"[Title/Abstract] OR \"PFBA\"[Title/Abstract] OR \"PFHxS\"[Title/Abstract] OR \"PFBS\"[Title/Abstract] OR \"F-53B\"[Title/Abstract] OR \"Cl-PFESA\"[Title/Abstract] OR \"perfluoro*\"[Title/Abstract] OR \"polyfluoro*\"[Title/Abstract] OR \"fluorotelomer*\"[Title/Abstract]) AND 2015/01/01:2026/10/29[Date - Publication]",
+    "warnings": null,
+    "returned": 17,
+    "unique": 17,
+    "status": "success",
+    "finished_at": "2026-10-29T05:08:22.022071+00:00"
+  },
+  "europepmc": {
+    "source": "Europe PMC REST",
+    "endpoint": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+    "plan_sha256": "c8ee855cabc2e8193295d588c939848364d2f2dc3f2e060ddf27841d094252d4",
+    "queries": [
+      {
+        "queryId": "EPMC-PRIMARY",
+        "query": "(TITLE_ABS:zebrafish OR TITLE_ABS:\"Danio rerio\") AND (TITLE_ABS:microplastic* OR TITLE_ABS:nanoplastic* OR TITLE_ABS:\"micro plastic*\" OR TITLE_ABS:\"nano plastic*\" OR TITLE_ABS:polystyrene OR TITLE_ABS:polyethylene OR TITLE_ABS:\"polyethylene terephthalate\" OR TITLE_ABS:polypropylene OR TITLE_ABS:\"polyvinyl chloride\" OR TITLE_ABS:\"polymethyl methacrylate\") AND (TITLE_ABS:PFAS OR TITLE_ABS:PFOS OR TITLE_ABS:PFOA OR TITLE_ABS:PFBA OR TITLE_ABS:PFHxS OR TITLE_ABS:PFBS OR TITLE_ABS:\"F-53B\" OR TITLE_ABS:\"Cl-PFESA\" OR TITLE_ABS:perfluoro* OR TITLE_ABS:polyfluoro* OR TITLE_ABS:fluorotelomer*) AND FIRST_PDATE:[2015-01-01 TO 2026-10-29]",
+        "purpose": "互补接口主检索（与PubMed有大量重叠）",
+        "endpoint": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+        "started_at": "2026-10-29T05:07:29.189422+00:00",
+        "plan_sha256": "c8ee855cabc2e8193295d588c939848364d2f2dc3f2e060ddf27841d094252d4",
+        "page_size": 1000,
+        "record_cap": 1000,
+        "attempts": [
+          {
+            "page": 1,
+            "attempt": 1,
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28TITLE_ABS%3Azebrafish+OR+TITLE_ABS%3A%22Danio+rerio%22%29+AND+%28TITLE_ABS%3Amicroplastic%2A+OR+TITLE_ABS%3Ananoplastic%2A+OR+TITLE_ABS%3A%22micro+plastic%2A%22+OR+TITLE_ABS%3A%22nano+plastic%2A%22+OR+TITLE_ABS%3Apolystyrene+OR+TITLE_ABS%3Apolyethylene+OR+TITLE_ABS%3A%22polyethylene+terephthalate%22+OR+TITLE_ABS%3Apolypropylene+OR+TITLE_ABS%3A%22polyvinyl+chloride%22+OR+TITLE_ABS%3A%22polymethyl+methacrylate%22%29+AND+%28TITLE_ABS%3APFAS+OR+TITLE_ABS%3APFOS+OR+TITLE_ABS%3APFOA+OR+TITLE_ABS%3APFBA+OR+TITLE_ABS%3APFHxS+OR+TITLE_ABS%3APFBS+OR+TITLE_ABS%3A%22F-53B%22+OR+TITLE_ABS%3A%22Cl-PFESA%22+OR+TITLE_ABS%3Aperfluoro%2A+OR+TITLE_ABS%3Apolyfluoro%2A+OR+TITLE_ABS%3Afluorotelomer%2A%29+AND+FIRST_PDATE%3A%5B2015-01-01+TO+2026-10-29%5D&format=json&resultType=core&pageSize=1000&cursorMark=%2A",
+            "started_at": "2026-10-29T05:07:29.189422+00:00",
+            "status": 200,
+            "bytes": 141400,
+            "content_type": "application/json;charset=UTF-8",
+            "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28TITLE_ABS%3Azebrafish+OR+TITLE_ABS%3A%22Danio+rerio%22%29+AND+%28TITLE_ABS%3Amicroplastic%2A+OR+TITLE_ABS%3Ananoplastic%2A+OR+TITLE_ABS%3A%22micro+plastic%2A%22+OR+TITLE_ABS%3A%22nano+plastic%2A%22+OR+TITLE_ABS%3Apolystyrene+OR+TITLE_ABS%3Apolyethylene+OR+TITLE_ABS%3A%22polyethylene+terephthalate%22+OR+TITLE_ABS%3Apolypropylene+OR+TITLE_ABS%3A%22polyvinyl+chloride%22+OR+TITLE_ABS%3A%22polymethyl+methacrylate%22%29+AND+%28TITLE_ABS%3APFAS+OR+TITLE_ABS%3APFOS+OR+TITLE_ABS%3APFOA+OR+TITLE_ABS%3APFBA+OR+TITLE_ABS%3APFHxS+OR+TITLE_ABS%3APFBS+OR+TITLE_ABS%3A%22F-53B%22+OR+TITLE_ABS%3A%22Cl-PFESA%22+OR+TITLE_ABS%3Aperfluoro%2A+OR+TITLE_ABS%3Apolyfluoro%2A+OR+TITLE_ABS%3Afluorotelomer%2A%29+AND+FIRST_PDATE%3A%5B2015-01-01+TO+2026-10-29%5D&format=json&resultType=core&pageSize=1000&cursorMark=%2A",
+            "finished_at": "2026-10-29T05:07:34.570981+00:00"
+          }
+        ],
+        "pages": [
+          {
+            "file": "page-001.json",
+            "sha256": "003033a97481faa658b015a029a4d27cbce0a221d7db104c8a4ea72b21c4ef09",
+            "count": 18,
+            "cursor": "*",
+            "next_cursor": null,
+            "request": {
+              "query": "(TITLE_ABS:zebrafish OR TITLE_ABS:\"Danio rerio\") AND (TITLE_ABS:microplastic* OR TITLE_ABS:nanoplastic* OR TITLE_ABS:\"micro plastic*\" OR TITLE_ABS:\"nano plastic*\" OR TITLE_ABS:polystyrene OR TITLE_ABS:polyethylene OR TITLE_ABS:\"polyethylene terephthalate\" OR TITLE_ABS:polypropylene OR TITLE_ABS:\"polyvinyl chloride\" OR TITLE_ABS:\"polymethyl methacrylate\") AND (TITLE_ABS:PFAS OR TITLE_ABS:PFOS OR TITLE_ABS:PFOA OR TITLE_ABS:PFBA OR TITLE_ABS:PFHxS OR TITLE_ABS:PFBS OR TITLE_ABS:\"F-53B\" OR TITLE_ABS:\"Cl-PFESA\" OR TITLE_ABS:perfluoro* OR TITLE_ABS:polyfluoro* OR TITLE_ABS:fluorotelomer*) AND FIRST_PDATE:[2015-01-01 TO 2026-10-29]",
+              "format": "json",
+              "resultType": "core",
+              "pageSize": "1000",
+              "cursorMark": "*"
+            },
+            "serverVersion": "6.9"
+          }
+        ],
+        "total": 18,
+        "returned": 18,
+        "complete": true,
+        "stop_reason": "all_reported_results_retrieved",
+        "finished_at": "2026-10-29T05:07:34.581660+00:00",
+        "returned_unique_source_ids": 18
+      },
+      {
+        "queryId": "EPMC-NO-ORGANISM",
+        "query": "(TITLE_ABS:microplastic* OR TITLE_ABS:nanoplastic* OR TITLE_ABS:\"micro plastic*\" OR TITLE_ABS:\"nano plastic*\" OR TITLE_ABS:polystyrene OR TITLE_ABS:polyethylene OR TITLE_ABS:\"polyethylene terephthalate\" OR TITLE_ABS:polypropylene OR TITLE_ABS:\"polyvinyl chloride\" OR TITLE_ABS:\"polymethyl methacrylate\") AND (TITLE_ABS:PFAS OR TITLE_ABS:PFOS OR TITLE_ABS:PFOA OR TITLE_ABS:PFBA OR TITLE_ABS:PFHxS OR TITLE_ABS:PFBS OR TITLE_ABS:\"F-53B\" OR TITLE_ABS:\"Cl-PFESA\" OR TITLE_ABS:perfluoro* OR TITLE_ABS:polyfluoro* OR TITLE_ABS:fluorotelomer*) AND FIRST_PDATE:[2015-01-01 TO 2026-10-29]",
+        "purpose": "预先设定的概念块遗漏检查：去掉物种块，筛查主检索可能漏掉的相关研究",
+        "endpoint": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+        "started_at": "2026-10-29T05:07:29.189422+00:00",
+        "plan_sha256": "c8ee855cabc2e8193295d588c939848364d2f2dc3f2e060ddf27841d094252d4",
+        "page_size": 1000,
+        "record_cap": 1000,
+        "attempts": [
+          {
+            "page": 1,
+            "attempt": 1,
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28TITLE_ABS%3Amicroplastic%2A+OR+TITLE_ABS%3Ananoplastic%2A+OR+TITLE_ABS%3A%22micro+plastic%2A%22+OR+TITLE_ABS%3A%22nano+plastic%2A%22+OR+TITLE_ABS%3Apolystyrene+OR+TITLE_ABS%3Apolyethylene+OR+TITLE_ABS%3A%22polyethylene+terephthalate%22+OR+TITLE_ABS%3Apolypropylene+OR+TITLE_ABS%3A%22polyvinyl+chloride%22+OR+TITLE_ABS%3A%22polymethyl+methacrylate%22%29+AND+%28TITLE_ABS%3APFAS+OR+TITLE_ABS%3APFOS+OR+TITLE_ABS%3APFOA+OR+TITLE_ABS%3APFBA+OR+TITLE_ABS%3APFHxS+OR+TITLE_ABS%3APFBS+OR+TITLE_ABS%3A%22F-53B%22+OR+TITLE_ABS%3A%22Cl-PFESA%22+OR+TITLE_ABS%3Aperfluoro%2A+OR+TITLE_ABS%3Apolyfluoro%2A+OR+TITLE_ABS%3Afluorotelomer%2A%29+AND+FIRST_PDATE%3A%5B2015-01-01+TO+2026-10-29%5D&format=json&resultType=core&pageSize=1000&cursorMark=%2A",
+            "started_at": "2026-10-29T05:07:29.190642+00:00",
+            "status": 200,
+            "bytes": 3906243,
+            "content_type": "application/json;charset=UTF-8",
+            "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28TITLE_ABS%3Amicroplastic%2A+OR+TITLE_ABS%3Ananoplastic%2A+OR+TITLE_ABS%3A%22micro+plastic%2A%22+OR+TITLE_ABS%3A%22nano+plastic%2A%22+OR+TITLE_ABS%3Apolystyrene+OR+TITLE_ABS%3Apolyethylene+OR+TITLE_ABS%3A%22polyethylene+terephthalate%22+OR+TITLE_ABS%3Apolypropylene+OR+TITLE_ABS%3A%22polyvinyl+chloride%22+OR+TITLE_ABS%3A%22polymethyl+methacrylate%22%29+AND+%28TITLE_ABS%3APFAS+OR+TITLE_ABS%3APFOS+OR+TITLE_ABS%3APFOA+OR+TITLE_ABS%3APFBA+OR+TITLE_ABS%3APFHxS+OR+TITLE_ABS%3APFBS+OR+TITLE_ABS%3A%22F-53B%22+OR+TITLE_ABS%3A%22Cl-PFESA%22+OR+TITLE_ABS%3Aperfluoro%2A+OR+TITLE_ABS%3Apolyfluoro%2A+OR+TITLE_ABS%3Afluorotelomer%2A%29+AND+FIRST_PDATE%3A%5B2015-01-01+TO+2026-10-29%5D&format=json&resultType=core&pageSize=1000&cursorMark=%2A",
+            "finished_at": "2026-10-29T05:07:38.728873+00:00"
+          }
+        ],
+        "pages": [
+          {
+            "file": "page-001.json",
+            "sha256": "87cda305f1fb036a261986fb20bea1ad763851797d0169faee937a4933366a8a",
+            "count": 580,
+            "cursor": "*",
+            "next_cursor": null,
+            "request": {
+              "query": "(TITLE_ABS:microplastic* OR TITLE_ABS:nanoplastic* OR TITLE_ABS:\"micro plastic*\" OR TITLE_ABS:\"nano plastic*\" OR TITLE_ABS:polystyrene OR TITLE_ABS:polyethylene OR TITLE_ABS:\"polyethylene terephthalate\" OR TITLE_ABS:polypropylene OR TITLE_ABS:\"polyvinyl chloride\" OR TITLE_ABS:\"polymethyl methacrylate\") AND (TITLE_ABS:PFAS OR TITLE_ABS:PFOS OR TITLE_ABS:PFOA OR TITLE_ABS:PFBA OR TITLE_ABS:PFHxS OR TITLE_ABS:PFBS OR TITLE_ABS:\"F-53B\" OR TITLE_ABS:\"Cl-PFESA\" OR TITLE_ABS:perfluoro* OR TITLE_ABS:polyfluoro* OR TITLE_ABS:fluorotelomer*) AND FIRST_PDATE:[2015-01-01 TO 2026-10-29]",
+              "format": "json",
+              "resultType": "core",
+              "pageSize": "1000",
+              "cursorMark": "*"
+            },
+            "serverVersion": "6.9"
+          }
+        ],
+        "total": 580,
+        "returned": 580,
+        "complete": true,
+        "stop_reason": "all_reported_results_retrieved",
+        "finished_at": "2026-10-29T05:07:38.812536+00:00",
+        "returned_unique_source_ids": 580
+      }
+    ],
+    "unique_records": 580,
+    "boundary": "All records/abstracts returned for the frozen queries within the explicit cap. Europe PMC overlaps PubMed. Not full-text appraisal, screening, or a claim that all eligible literature exists in this index."
+  },
+  "openalex": {
+    "source": "OpenAlex works API",
+    "endpoint": "https://api.openalex.org/works",
+    "amendment_sha256": "0aab8b3dc02cde6ee515aad649b56f755b0fb0c99288c57d548871e38d8bc706",
+    "queries": [
+      {
+        "queryId": "OA-SUPPLEMENT",
+        "purpose": "Disclosed cross-disciplinary supplementary topic search",
+        "endpoint": "https://api.openalex.org/works",
+        "parameters": {
+          "search.title_and_abstract.exact": "(zebrafish OR \"Danio rerio\") AND (microplastic* OR nanoplastic* OR \"micro plastic*\" OR \"nano plastic*\" OR polystyrene OR polyethylene OR \"polyethylene terephthalate\" OR polypropylene OR \"polyvinyl chloride\" OR \"polymethyl methacrylate\") AND (PFAS OR PFOS OR PFOA OR PFBA OR PFHxS OR PFBS OR \"F-53B\" OR \"Cl-PFESA\" OR perfluoro* OR polyfluoro* OR fluorotelomer*)",
+          "filter": "from_publication_date:2015-01-01,to_publication_date:2026-10-29"
+        },
+        "started_at": "2026-10-29T05:13:17.856581+00:00",
+        "amendment_sha256": "0aab8b3dc02cde6ee515aad649b56f755b0fb0c99288c57d548871e38d8bc706",
+        "page_size": 100,
+        "record_cap": 1000,
+        "attempts": [
+          {
+            "url": "https://api.openalex.org/works?search.title_and_abstract.exact=%28zebrafish+OR+%22Danio+rerio%22%29+AND+%28microplastic%2A+OR+nanoplastic%2A+OR+%22micro+plastic%2A%22+OR+%22nano+plastic%2A%22+OR+polystyrene+OR+polyethylene+OR+%22polyethylene+terephthalate%22+OR+polypropylene+OR+%22polyvinyl+chloride%22+OR+%22polymethyl+methacrylate%22%29+AND+%28PFAS+OR+PFOS+OR+PFOA+OR+PFBA+OR+PFHxS+OR+PFBS+OR+%22F-53B%22+OR+%22Cl-PFESA%22+OR+perfluoro%2A+OR+polyfluoro%2A+OR+fluorotelomer%2A%29&filter=from_publication_date%3A2015-01-01%2Cto_publication_date%3A2026-10-29&per_page=100&page=1&select=id%2Cdoi%2Cids%2Ctitle%2Cabstract_inverted_index%2Cpublication_year%2Cpublication_date%2Ctype%2Cprimary_location%2Creferenced_works%2Ccited_by_count",
+            "started_at": "2026-10-29T05:13:17.857580+00:00",
+            "attempt": 1,
+            "status": 400,
+            "error": "HTTP Error 400: Bad Request",
+            "file": "page-001-attempt-1-error.txt",
+            "bytes": 256,
+            "sha256": "21107429f087d51946a327400249e1e91a0db3a84fac40d7f76f306a0999949c",
+            "finished_at": "2026-10-29T05:13:34.809740+00:00"
+          }
+        ],
+        "pages": [],
+        "total": null,
+        "returned": 0,
+        "complete": false,
+        "stop_reason": "request_failed",
+        "returned_unique_source_ids": 0,
+        "finished_at": "2026-10-29T05:13:34.810280+00:00"
+      },
+      {
+        "queryId": "CITE-BACK-01",
+        "purpose": "One-hop backward references; no relevance filtering",
+        "seed_OAid": "https://openalex.org/W4391850196",
+        "seed_doi": "10.1016/j.scitotenv.2024.170948",
+        "started_at": "2026-10-29T05:13:51.767657+00:00",
+        "amendment_sha256": "0aab8b3dc02cde6ee515aad649b56f755b0fb0c99288c57d548871e38d8bc706",
+        "total": 66,
+        "requested_ids": [
+          "https://openalex.org/W71201176",
+          "https://openalex.org/W1963748853",
+          "https://openalex.org/W1989177025",
+          "https://openalex.org/W2012861620",
+          "https://openalex.org/W2015392958",
+          "https://openalex.org/W2016223385",
+          "https://openalex.org/W2022186833",
+          "https://openalex.org/W2034515521",
+          "https://openalex.org/W2048553024",
+          "https://openalex.org/W2048668195",
+          "https://openalex.org/W2056381830",
+          "https://openalex.org/W2057079443",
+          "https://openalex.org/W2116961566",
+          "https://openalex.org/W2140176615",
+          "https://openalex.org/W2157024108",
+          "https://openalex.org/W2171480404",
+          "https://openalex.org/W2322346801",
+          "https://openalex.org/W2409075100",
+          "https://openalex.org/W2414330083",
+          "https://openalex.org/W2553902009",
+          "https://openalex.org/W2564546499",
+          "https://openalex.org/W2581031358",
+          "https://openalex.org/W2581845998",
+          "https://openalex.org/W2752803330",
+          "https://openalex.org/W2759727392",
+          "https://openalex.org/W2772722868",
+          "https://openalex.org/W2779948902",
+          "https://openalex.org/W2793554595",
+          "https://openalex.org/W2794305168",
+          "https://openalex.org/W2795517382",
+          "https://openalex.org/W2805526943",
+          "https://openalex.org/W2894426289",
+          "https://openalex.org/W2897810688",
+          "https://openalex.org/W2914833654",
+          "https://openalex.org/W2954870180",
+          "https://openalex.org/W2959032843",
+          "https://openalex.org/W2980884117",
+          "https://openalex.org/W2985020957",
+          "https://openalex.org/W2997266269",
+          "https://openalex.org/W3025718754",
+          "https://openalex.org/W3036743909",
+          "https://openalex.org/W3082407988",
+          "https://openalex.org/W3110295771",
+          "https://openalex.org/W3119945301",
+          "https://openalex.org/W3122643228",
+          "https://openalex.org/W3124888538",
+          "https://openalex.org/W3126882981",
+          "https://openalex.org/W3146788924",
+          "https://openalex.org/W3164753418",
+          "https://openalex.org/W3167802916",
+          "https://openalex.org/W3182127727",
+          "https://openalex.org/W3214738432",
+          "https://openalex.org/W4223921484",
+          "https://openalex.org/W4280509681",
+          "https://openalex.org/W4280519300",
+          "https://openalex.org/W4281972192",
+          "https://openalex.org/W4283786751",
+          "https://openalex.org/W4286509629",
+          "https://openalex.org/W4306632337",
+          "https://openalex.org/W4309604959",
+          "https://openalex.org/W4366978227",
+          "https://openalex.org/W4376602230",
+          "https://openalex.org/W4380884318",
+          "https://openalex.org/W4385483525",
+          "https://openalex.org/W4386987025",
+          "https://openalex.org/W4387532594"
+        ],
+        "record_cap": 1000,
+        "attempts": [
+          {
+            "url": "https://api.openalex.org/works?filter=openalex%3AW71201176%7CW1963748853%7CW1989177025%7CW2012861620%7CW2015392958%7CW2016223385%7CW2022186833%7CW2034515521%7CW2048553024%7CW2048668195%7CW2056381830%7CW2057079443%7CW2116961566%7CW2140176615%7CW2157024108%7CW2171480404%7CW2322346801%7CW2409075100%7CW2414330083%7CW2553902009%7CW2564546499%7CW2581031358%7CW2581845998%7CW2752803330%7CW2759727392%7CW2772722868%7CW2779948902%7CW2793554595%7CW2794305168%7CW2795517382%7CW2805526943%7CW2894426289%7CW2897810688%7CW2914833654%7CW2954870180%7CW2959032843%7CW2980884117%7CW2985020957%7CW2997266269%7CW3025718754%7CW3036743909%7CW3082407988%7CW3110295771%7CW3119945301%7CW3122643228%7CW3124888538%7CW3126882981%7CW3146788924%7CW3164753418%7CW3167802916%7CW3182127727%7CW3214738432%7CW4223921484%7CW4280509681%7CW4280519300%7CW4281972192%7CW4283786751%7CW4286509629%7CW4306632337%7CW4309604959%7CW4366978227%7CW4376602230%7CW4380884318%7CW4385483525%7CW4386987025%7CW4387532594&per_page=100&select=id%2Cdoi%2Cids%2Ctitle%2Cabstract_inverted_index%2Cpublication_year%2Cpublication_date%2Ctype%2Cprimary_location%2Creferenced_works%2Ccited_by_count",
+            "started_at": "2026-10-29T05:13:51.767657+00:00",
+            "attempt": 1,
+            "error": "Remote end closed connection without response",
+            "status": null,
+            "finished_at": "2026-10-29T05:14:12.033675+00:00"
+          },
+          {
+            "url": "https://api.openalex.org/works?filter=openalex%3AW71201176%7CW1963748853%7CW1989177025%7CW2012861620%7CW2015392958%7CW2016223385%7CW2022186833%7CW2034515521%7CW2048553024%7CW2048668195%7CW2056381830%7CW2057079443%7CW2116961566%7CW2140176615%7CW2157024108%7CW2171480404%7CW2322346801%7CW2409075100%7CW2414330083%7CW2553902009%7CW2564546499%7CW2581031358%7CW2581845998%7CW2752803330%7CW2759727392%7CW2772722868%7CW2779948902%7CW2793554595%7CW2794305168%7CW2795517382%7CW2805526943%7CW2894426289%7CW2897810688%7CW2914833654%7CW2954870180%7CW2959032843%7CW2980884117%7CW2985020957%7CW2997266269%7CW3025718754%7CW3036743909%7CW3082407988%7CW3110295771%7CW3119945301%7CW3122643228%7CW3124888538%7CW3126882981%7CW3146788924%7CW3164753418%7CW3167802916%7CW3182127727%7CW3214738432%7CW4223921484%7CW4280509681%7CW4280519300%7CW4281972192%7CW4283786751%7CW4286509629%7CW4306632337%7CW4309604959%7CW4366978227%7CW4376602230%7CW4380884318%7CW4385483525%7CW4386987025%7CW4387532594&per_page=100&select=id%2Cdoi%2Cids%2Ctitle%2Cabstract_inverted_index%2Cpublication_year%2Cpublication_date%2Ctype%2Cprimary_location%2Creferenced_works%2Ccited_by_count",
+            "started_at": "2026-10-29T05:14:15.042380+00:00",
+            "attempt": 2,
+            "status": 200,
+            "final_url": "https://api.openalex.org/works?filter=openalex%3AW71201176%7CW1963748853%7CW1989177025%7CW2012861620%7CW2015392958%7CW2016223385%7CW2022186833%7CW2034515521%7CW2048553024%7CW2048668195%7CW2056381830%7CW2057079443%7CW2116961566%7CW2140176615%7CW2157024108%7CW2171480404%7CW2322346801%7CW2409075100%7CW2414330083%7CW2553902009%7CW2564546499%7CW2581031358%7CW2581845998%7CW2752803330%7CW2759727392%7CW2772722868%7CW2779948902%7CW2793554595%7CW2794305168%7CW2795517382%7CW2805526943%7CW2894426289%7CW2897810688%7CW2914833654%7CW2954870180%7CW2959032843%7CW2980884117%7CW2985020957%7CW2997266269%7CW3025718754%7CW3036743909%7CW3082407988%7CW3110295771%7CW3119945301%7CW3122643228%7CW3124888538%7CW3126882981%7CW3146788924%7CW3164753418%7CW3167802916%7CW3182127727%7CW3214738432%7CW4223921484%7CW4280509681%7CW4280519300%7CW4281972192%7CW4283786751%7CW4286509629%7CW4306632337%7CW4309604959%7CW4366978227%7CW4376602230%7CW4380884318%7CW4385483525%7CW4386987025%7CW4387532594&per_page=100&select=id%2Cdoi%2Cids%2Ctitle%2Cabstract_inverted_index%2Cpublication_year%2Cpublication_date%2Ctype%2Cprimary_location%2Creferenced_works%2Ccited_by_count",
+            "content_type": "application/json",
+            "file": "batch-001.json",
+            "bytes": 356000,
+            "sha256": "dc89f4538442ddeb726810a369d9794736474a06ca5fef0b0dd27052d141878c",
+            "finished_at": "2026-10-29T05:14:21.353726+00:00"
+          }
+        ],
+        "pages": [
+          {
+            "file": "batch-001.json",
+            "sha256": "dc89f4538442ddeb726810a369d9794736474a06ca5fef0b0dd27052d141878c",
+            "batch": 1,
+            "requested_count": 66,
+            "returned": 66,
+            "reported_count": 66,
+            "url": "https://api.openalex.org/works?filter=openalex%3AW71201176%7CW1963748853%7CW1989177025%7CW2012861620%7CW2015392958%7CW2016223385%7CW2022186833%7CW2034515521%7CW2048553024%7CW2048668195%7CW2056381830%7CW2057079443%7CW2116961566%7CW2140176615%7CW2157024108%7CW2171480404%7CW2322346801%7CW2409075100%7CW2414330083%7CW2553902009%7CW2564546499%7CW2581031358%7CW2581845998%7CW2752803330%7CW2759727392%7CW2772722868%7CW2779948902%7CW2793554595%7CW2794305168%7CW2795517382%7CW2805526943%7CW2894426289%7CW2897810688%7CW2914833654%7CW2954870180%7CW2959032843%7CW2980884117%7CW2985020957%7CW2997266269%7CW3025718754%7CW3036743909%7CW3082407988%7CW3110295771%7CW3119945301%7CW3122643228%7CW3124888538%7CW3126882981%7CW3146788924%7CW3164753418%7CW3167802916%7CW3182127727%7CW3214738432%7CW4223921484%7CW4280509681%7CW4280519300%7CW4281972192%7CW4283786751%7CW4286509629%7CW4306632337%7CW4309604959%7CW4366978227%7CW4376602230%7CW4380884318%7CW4385483525%7CW4386987025%7CW4387532594&per_page=100&select=id%2Cdoi%2Cids%2Ctitle%2Cabstract_inverted_index%2Cpublication_year%2Cpublication_date%2Ctype%2Cprimary_location%2Creferenced_works%2Ccited_by_count"
+          }
+        ],
+        "returned": 66,
+        "complete": true,
+        "missing_requested_ids": [],
+        "returned_unique_source_ids": 66,
+        "stop_reason": "all_seed_reference_ids_resolved",
+        "finished_at": "2026-10-29T05:14:21.664896+00:00"
+      },
+      {
+        "queryId": "CITE-FWD-01",
+        "purpose": "One-hop forward citations; no relevance filtering or date restriction",
+        "endpoint": "https://api.openalex.org/works",
+        "parameters": {
+          "filter": "cites:W4391850196"
+        },
+        "started_at": "2026-10-29T05:14:21.671899+00:00",
+        "amendment_sha256": "0aab8b3dc02cde6ee515aad649b56f755b0fb0c99288c57d548871e38d8bc706",
+        "page_size": 100,
+        "record_cap": 1000,
+        "attempts": [
+          {
+            "url": "https://api.openalex.org/works?filter=cites%3AW4391850196&per_page=100&page=1&select=id%2Cdoi%2Cids%2Ctitle%2Cabstract_inverted_index%2Cpublication_year%2Cpublication_date%2Ctype%2Cprimary_location%2Creferenced_works%2Ccited_by_count",
+            "started_at": "2026-10-29T05:14:21.671899+00:00",
+            "attempt": 1,
+            "status": 200,
+            "final_url": "https://api.openalex.org/works?filter=cites%3AW4391850196&per_page=100&page=1&select=id%2Cdoi%2Cids%2Ctitle%2Cabstract_inverted_index%2Cpublication_year%2Cpublication_date%2Ctype%2Cprimary_location%2Creferenced_works%2Ccited_by_count",
+            "content_type": "application/json",
+            "file": "page-001.json",
+            "bytes": 262158,
+            "sha256": "060341eee0fb880e0c5e1a22e8b8803e93999add836664ba9c096664e965637a",
+            "finished_at": "2026-10-29T05:14:27.888006+00:00"
+          }
+        ],
+        "pages": [
+          {
+            "file": "page-001.json",
+            "sha256": "060341eee0fb880e0c5e1a22e8b8803e93999add836664ba9c096664e965637a",
+            "page": 1,
+            "count": 38,
+            "total_at_page": 38,
+            "url": "https://api.openalex.org/works?filter=cites%3AW4391850196&per_page=100&page=1&select=id%2Cdoi%2Cids%2Ctitle%2Cabstract_inverted_index%2Cpublication_year%2Cpublication_date%2Ctype%2Cprimary_location%2Creferenced_works%2Ccited_by_count"
+          }
+        ],
+        "total": 38,
+        "returned": 38,
+        "complete": true,
+        "stop_reason": "all_reported_results_retrieved",
+        "returned_unique_source_ids": 38,
+        "finished_at": "2026-10-29T05:14:27.892543+00:00",
+        "seed_doi": "10.1016/j.scitotenv.2024.170948",
+        "seed_OAid": "https://openalex.org/W4391850196"
+      },
+      {
+        "queryId": "CITE-BACK-02",
+        "purpose": "One-hop backward references; no relevance filtering",
+        "seed_OAid": "https://openalex.org/W4414402625",
+        "seed_doi": "10.1016/j.watres.2025.124658",
+        "started_at": "2026-10-29T05:14:33.592693+00:00",
+        "amendment_sha256": "0aab8b3dc02cde6ee515aad649b56f755b0fb0c99288c57d548871e38d8bc706",
+        "total": 89,
+        "requested_ids": [
+          "https://openalex.org/W2009151188",
+          "https://openalex.org/W2033759020",
+          "https://openalex.org/W2048691571",
+          "https://openalex.org/W2076664843",
+          "https://openalex.org/W2561582700",
+          "https://openalex.org/W2922019432",
+          "https://openalex.org/W2953313154",
+          "https://openalex.org/W2955913466",
+          "https://openalex.org/W3014939963",
+          "https://openalex.org/W3015985191",
+          "https://openalex.org/W3047447240",
+          "https://openalex.org/W3105845434",
+          "https://openalex.org/W3108374977",
+          "https://openalex.org/W3120810184",
+          "https://openalex.org/W3167802916",
+          "https://openalex.org/W3168450732",
+          "https://openalex.org/W3172434652",
+          "https://openalex.org/W3177261703",
+          "https://openalex.org/W3188418280",
+          "https://openalex.org/W3195007110",
+          "https://openalex.org/W3197905962",
+          "https://openalex.org/W3198940542",
+          "https://openalex.org/W3209201510",
+          "https://openalex.org/W4200110513",
+          "https://openalex.org/W4200233936",
+          "https://openalex.org/W4206716988",
+          "https://openalex.org/W4210795660",
+          "https://openalex.org/W4214489272",
+          "https://openalex.org/W4220975374",
+          "https://openalex.org/W4221095698",
+          "https://openalex.org/W4226074944",
+          "https://openalex.org/W4280578202",
+          "https://openalex.org/W4280600130",
+          "https://openalex.org/W4283792709",
+          "https://openalex.org/W4285025171",
+          "https://openalex.org/W4293865705",
+          "https://openalex.org/W4294190024",
+          "https://openalex.org/W4294543524",
+          "https://openalex.org/W4296286024",
+          "https://openalex.org/W4296616201",
+          "https://openalex.org/W4296694404",
+          "https://openalex.org/W4307234052",
+          "https://openalex.org/W4310700145",
+          "https://openalex.org/W4313453971",
+          "https://openalex.org/W4313898415",
+          "https://openalex.org/W4320487190",
+          "https://openalex.org/W4321435469",
+          "https://openalex.org/W4327898735",
+          "https://openalex.org/W4353056596",
+          "https://openalex.org/W4380051552",
+          "https://openalex.org/W4382517199",
+          "https://openalex.org/W4384338440",
+          "https://openalex.org/W4385232787",
+          "https://openalex.org/W4387046816",
+          "https://openalex.org/W4387241917",
+          "https://openalex.org/W4388007377",
+          "https://openalex.org/W4388342047",
+          "https://openalex.org/W4388523032",
+          "https://openalex.org/W4389055314",
+          "https://openalex.org/W4391815503",
+          "https://openalex.org/W4392204192",
+          "https://openalex.org/W4392799852",
+          "https://openalex.org/W4393030846",
+          "https://openalex.org/W4393368164",
+          "https://openalex.org/W4394617133",
+          "https://openalex.org/W4394912654",
+          "https://openalex.org/W4399571269",
+          "https://openalex.org/W4400059836",
+          "https://openalex.org/W4400952966",
+          "https://openalex.org/W4402031887",
+          "https://openalex.org/W4402609505",
+          "https://openalex.org/W4402625926",
+          "https://openalex.org/W4402858455",
+          "https://openalex.org/W4403203933",
+          "https://openalex.org/W4403667853",
+          "https://openalex.org/W4404350026",
+          "https://openalex.org/W4405031565",
+          "https://openalex.org/W4405056737",
+          "https://openalex.org/W4405275188",
+          "https://openalex.org/W4406433372",
+          "https://openalex.org/W4406505115",
+          "https://openalex.org/W4406923984",
+          "https://openalex.org/W4407088287",
+          "https://openalex.org/W4407196794",
+          "https://openalex.org/W4407929761",
+          "https://openalex.org/W4408930063",
+          "https://openalex.org/W4409167723",
+          "https://openalex.org/W4410282710",
+          "https://openalex.org/W4410487857"
+        ],
+        "record_cap": 1000,
+        "attempts": [
+          {
+            "url": "https://api.openalex.org/works?filter=openalex%3AW2009151188%7CW2033759020%7CW2048691571%7CW2076664843%7CW2561582700%7CW2922019432%7CW2953313154%7CW2955913466%7CW3014939963%7CW3015985191%7CW3047447240%7CW3105845434%7CW3108374977%7CW3120810184%7CW3167802916%7CW3168450732%7CW3172434652%7CW3177261703%7CW3188418280%7CW3195007110%7CW3197905962%7CW3198940542%7CW3209201510%7CW4200110513%7CW4200233936%7CW4206716988%7CW4210795660%7CW4214489272%7CW4220975374%7CW4221095698%7CW4226074944%7CW4280578202%7CW4280600130%7CW4283792709%7CW4285025171%7CW4293865705%7CW4294190024%7CW4294543524%7CW4296286024%7CW4296616201%7CW4296694404%7CW4307234052%7CW4310700145%7CW4313453971%7CW4313898415%7CW4320487190%7CW4321435469%7CW4327898735%7CW4353056596%7CW4380051552%7CW4382517199%7CW4384338440%7CW4385232787%7CW4387046816%7CW4387241917%7CW4388007377%7CW4388342047%7CW4388523032%7CW4389055314%7CW4391815503%7CW4392204192%7CW4392799852%7CW4393030846%7CW4393368164%7CW4394617133%7CW4394912654%7CW4399571269%7CW4400059836%7CW4400952966%7CW4402031887%7CW4402609505%7CW4402625926%7CW4402858455%7CW4403203933%7CW4403667853%7CW4404350026%7CW4405031565%7CW4405056737%7CW4405275188%7CW4406433372%7CW4406505115%7CW4406923984%7CW4407088287%7CW4407196794%7CW4407929761%7CW4408930063%7CW4409167723%7CW4410282710%7CW4410487857&per_page=100&select=id%2Cdoi%2Cids%2Ctitle%2Cabstract_inverted_index%2Cpublication_year%2Cpublication_date%2Ctype%2Cprimary_location%2Creferenced_works%2Ccited_by_count",
+            "started_at": "2026-10-29T05:14:33.592693+00:00",
+            "attempt": 1,
+            "status": 200,
+            "final_url": "https://api.openalex.org/works?filter=openalex%3AW2009151188%7CW2033759020%7CW2048691571%7CW2076664843%7CW2561582700%7CW2922019432%7CW2953313154%7CW2955913466%7CW3014939963%7CW3015985191%7CW3047447240%7CW3105845434%7CW3108374977%7CW3120810184%7CW3167802916%7CW3168450732%7CW3172434652%7CW3177261703%7CW3188418280%7CW3195007110%7CW3197905962%7CW3198940542%7CW3209201510%7CW4200110513%7CW4200233936%7CW4206716988%7CW4210795660%7CW4214489272%7CW4220975374%7CW4221095698%7CW4226074944%7CW4280578202%7CW4280600130%7CW4283792709%7CW4285025171%7CW4293865705%7CW4294190024%7CW4294543524%7CW4296286024%7CW4296616201%7CW4296694404%7CW4307234052%7CW4310700145%7CW4313453971%7CW4313898415%7CW4320487190%7CW4321435469%7CW4327898735%7CW4353056596%7CW4380051552%7CW4382517199%7CW4384338440%7CW4385232787%7CW4387046816%7CW4387241917%7CW4388007377%7CW4388342047%7CW4388523032%7CW4389055314%7CW4391815503%7CW4392204192%7CW4392799852%7CW4393030846%7CW4393368164%7CW4394617133%7CW4394912654%7CW4399571269%7CW4400059836%7CW4400952966%7CW4402031887%7CW4402609505%7CW4402625926%7CW4402858455%7CW4403203933%7CW4403667853%7CW4404350026%7CW4405031565%7CW4405056737%7CW4405275188%7CW4406433372%7CW4406505115%7CW4406923984%7CW4407088287%7CW4407196794%7CW4407929761%7CW4408930063%7CW4409167723%7CW4410282710%7CW4410487857&per_page=100&select=id%2Cdoi%2Cids%2Ctitle%2Cabstract_inverted_index%2Cpublication_year%2Cpublication_date%2Ctype%2Cprimary_location%2Creferenced_works%2Ccited_by_count",
+            "content_type": "application/json",
+            "file": "batch-001.json",
+            "bytes": 545367,
+            "sha256": "77e891b8fe3748f1e16711e179bcdaacf06986e77d17eab4eb25ea7f0ad5605c",
+            "finished_at": "2026-10-29T05:14:51.531899+00:00"
+          }
+        ],
+        "pages": [
+          {
+            "file": "batch-001.json",
+            "sha256": "77e891b8fe3748f1e16711e179bcdaacf06986e77d17eab4eb25ea7f0ad5605c",
+            "batch": 1,
+            "requested_count": 89,
+            "returned": 89,
+            "reported_count": 89,
+            "url": "https://api.openalex.org/works?filter=openalex%3AW2009151188%7CW2033759020%7CW2048691571%7CW2076664843%7CW2561582700%7CW2922019432%7CW2953313154%7CW2955913466%7CW3014939963%7CW3015985191%7CW3047447240%7CW3105845434%7CW3108374977%7CW3120810184%7CW3167802916%7CW3168450732%7CW3172434652%7CW3177261703%7CW3188418280%7CW3195007110%7CW3197905962%7CW3198940542%7CW3209201510%7CW4200110513%7CW4200233936%7CW4206716988%7CW4210795660%7CW4214489272%7CW4220975374%7CW4221095698%7CW4226074944%7CW4280578202%7CW4280600130%7CW4283792709%7CW4285025171%7CW4293865705%7CW4294190024%7CW4294543524%7CW4296286024%7CW4296616201%7CW4296694404%7CW4307234052%7CW4310700145%7CW4313453971%7CW4313898415%7CW4320487190%7CW4321435469%7CW4327898735%7CW4353056596%7CW4380051552%7CW4382517199%7CW4384338440%7CW4385232787%7CW4387046816%7CW4387241917%7CW4388007377%7CW4388342047%7CW4388523032%7CW4389055314%7CW4391815503%7CW4392204192%7CW4392799852%7CW4393030846%7CW4393368164%7CW4394617133%7CW4394912654%7CW4399571269%7CW4400059836%7CW4400952966%7CW4402031887%7CW4402609505%7CW4402625926%7CW4402858455%7CW4403203933%7CW4403667853%7CW4404350026%7CW4405031565%7CW4405056737%7CW4405275188%7CW4406433372%7CW4406505115%7CW4406923984%7CW4407088287%7CW4407196794%7CW4407929761%7CW4408930063%7CW4409167723%7CW4410282710%7CW4410487857&per_page=100&select=id%2Cdoi%2Cids%2Ctitle%2Cabstract_inverted_index%2Cpublication_year%2Cpublication_date%2Ctype%2Cprimary_location%2Creferenced_works%2Ccited_by_count"
+          }
+        ],
+        "returned": 89,
+        "complete": true,
+        "missing_requested_ids": [],
+        "returned_unique_source_ids": 89,
+        "stop_reason": "all_seed_reference_ids_resolved",
+        "finished_at": "2026-10-29T05:14:51.852147+00:00"
+      },
+      {
+        "queryId": "CITE-FWD-02",
+        "purpose": "One-hop forward citations; no relevance filtering or date restriction",
+        "endpoint": "https://api.openalex.org/works",
+        "parameters": {
+          "filter": "cites:W4414402625"
+        },
+        "started_at": "2026-10-29T05:14:51.855724+00:00",
+        "amendment_sha256": "0aab8b3dc02cde6ee515aad649b56f755b0fb0c99288c57d548871e38d8bc706",
+        "page_size": 100,
+        "record_cap": 1000,
+        "attempts": [
+          {
+            "url": "https://api.openalex.org/works?filter=cites%3AW4414402625&per_page=100&page=1&select=id%2Cdoi%2Cids%2Ctitle%2Cabstract_inverted_index%2Cpublication_year%2Cpublication_date%2Ctype%2Cprimary_location%2Creferenced_works%2Ccited_by_count",
+            "started_at": "2026-10-29T05:14:51.855724+00:00",
+            "attempt": 1,
+            "status": 200,
+            "final_url": "https://api.openalex.org/works?filter=cites%3AW4414402625&per_page=100&page=1&select=id%2Cdoi%2Cids%2Ctitle%2Cabstract_inverted_index%2Cpublication_year%2Cpublication_date%2Ctype%2Cprimary_location%2Creferenced_works%2Ccited_by_count",
+            "content_type": "application/json",
+            "file": "page-001.json",
+            "bytes": 21606,
+            "sha256": "8176a12293fd3739702af910ad4b922ed78b519a1f19736af17c113980e1ee9d",
+            "finished_at": "2026-10-29T05:14:57.461506+00:00"
+          }
+        ],
+        "pages": [
+          {
+            "file": "page-001.json",
+            "sha256": "8176a12293fd3739702af910ad4b922ed78b519a1f19736af17c113980e1ee9d",
+            "page": 1,
+            "count": 4,
+            "total_at_page": 4,
+            "url": "https://api.openalex.org/works?filter=cites%3AW4414402625&per_page=100&page=1&select=id%2Cdoi%2Cids%2Ctitle%2Cabstract_inverted_index%2Cpublication_year%2Cpublication_date%2Ctype%2Cprimary_location%2Creferenced_works%2Ccited_by_count"
+          }
+        ],
+        "total": 4,
+        "returned": 4,
+        "complete": true,
+        "stop_reason": "all_reported_results_retrieved",
+        "returned_unique_source_ids": 4,
+        "finished_at": "2026-10-29T05:14:57.464372+00:00",
+        "seed_doi": "10.1016/j.watres.2025.124658",
+        "seed_OAid": "https://openalex.org/W4414402625"
+      },
+      {
+        "queryId": "CITE-BACK-03",
+        "purpose": "One-hop backward references; no relevance filtering",
+        "seed_OAid": "https://openalex.org/W4413113461",
+        "seed_doi": "10.1016/j.aquatox.2025.107534",
+        "started_at": "2026-10-29T05:15:14.377791+00:00",
+        "amendment_sha256": "0aab8b3dc02cde6ee515aad649b56f755b0fb0c99288c57d548871e38d8bc706",
+        "total": 52,
+        "requested_ids": [
+          "https://openalex.org/W2055214928",
+          "https://openalex.org/W2057983728",
+          "https://openalex.org/W2075313774",
+          "https://openalex.org/W2156975150",
+          "https://openalex.org/W2765747110",
+          "https://openalex.org/W2767378937",
+          "https://openalex.org/W2888296876",
+          "https://openalex.org/W2914833654",
+          "https://openalex.org/W2990250392",
+          "https://openalex.org/W2998486359",
+          "https://openalex.org/W2999837798",
+          "https://openalex.org/W3043184549",
+          "https://openalex.org/W3087333805",
+          "https://openalex.org/W3121137012",
+          "https://openalex.org/W3137977629",
+          "https://openalex.org/W3201464819",
+          "https://openalex.org/W3204946927",
+          "https://openalex.org/W3217107095",
+          "https://openalex.org/W4220655782",
+          "https://openalex.org/W4281256979",
+          "https://openalex.org/W4281677147",
+          "https://openalex.org/W4292313820",
+          "https://openalex.org/W4306254738",
+          "https://openalex.org/W4316135901",
+          "https://openalex.org/W4379879752",
+          "https://openalex.org/W4381164430",
+          "https://openalex.org/W4385689165",
+          "https://openalex.org/W4386457889",
+          "https://openalex.org/W4387956123",
+          "https://openalex.org/W4388924385",
+          "https://openalex.org/W4391247881",
+          "https://openalex.org/W4391781871",
+          "https://openalex.org/W4391850196",
+          "https://openalex.org/W4393371139",
+          "https://openalex.org/W4396607937",
+          "https://openalex.org/W4397049664",
+          "https://openalex.org/W4400253664",
+          "https://openalex.org/W4400281156",
+          "https://openalex.org/W4400865830",
+          "https://openalex.org/W4400912524",
+          "https://openalex.org/W4401541247",
+          "https://openalex.org/W4401675393",
+          "https://openalex.org/W4402126127",
+          "https://openalex.org/W4403151451",
+          "https://openalex.org/W4403528877",
+          "https://openalex.org/W4403997733",
+          "https://openalex.org/W4406106296",
+          "https://openalex.org/W4406445580",
+          "https://openalex.org/W4406923984",
+          "https://openalex.org/W4407091582",
+          "https://openalex.org/W4407402368",
+          "https://openalex.org/W4408361108"
+        ],
+        "record_cap": 1000,
+        "attempts": [
+          {
+            "url": "https://api.openalex.org/works?filter=openalex%3AW2055214928%7CW2057983728%7CW2075313774%7CW2156975150%7CW2765747110%7CW2767378937%7CW2888296876%7CW2914833654%7CW2990250392%7CW2998486359%7CW2999837798%7CW3043184549%7CW3087333805%7CW3121137012%7CW3137977629%7CW3201464819%7CW3204946927%7CW3217107095%7CW4220655782%7CW4281256979%7CW4281677147%7CW4292313820%7CW4306254738%7CW4316135901%7CW4379879752%7CW4381164430%7CW4385689165%7CW4386457889%7CW4387956123%7CW4388924385%7CW4391247881%7CW4391781871%7CW4391850196%7CW4393371139%7CW4396607937%7CW4397049664%7CW4400253664%7CW4400281156%7CW4400865830%7CW4400912524%7CW4401541247%7CW4401675393%7CW4402126127%7CW4403151451%7CW4403528877%7CW4403997733%7CW4406106296%7CW4406445580%7CW4406923984%7CW4407091582%7CW4407402368%7CW4408361108&per_page=100&select=id%2Cdoi%2Cids%2Ctitle%2Cabstract_inverted_index%2Cpublication_year%2Cpublication_date%2Ctype%2Cprimary_location%2Creferenced_works%2Ccited_by_count",
+            "started_at": "2026-10-29T05:15:14.378356+00:00",
+            "attempt": 1,
+            "status": 200,
+            "final_url": "https://api.openalex.org/works?filter=openalex%3AW2055214928%7CW2057983728%7CW2075313774%7CW2156975150%7CW2765747110%7CW2767378937%7CW2888296876%7CW2914833654%7CW2990250392%7CW2998486359%7CW2999837798%7CW3043184549%7CW3087333805%7CW3121137012%7CW3137977629%7CW3201464819%7CW3204946927%7CW3217107095%7CW4220655782%7CW4281256979%7CW4281677147%7CW4292313820%7CW4306254738%7CW4316135901%7CW4379879752%7CW4381164430%7CW4385689165%7CW4386457889%7CW4387956123%7CW4388924385%7CW4391247881%7CW4391781871%7CW4391850196%7CW4393371139%7CW4396607937%7CW4397049664%7CW4400253664%7CW4400281156%7CW4400865830%7CW4400912524%7CW4401541247%7CW4401675393%7CW4402126127%7CW4403151451%7CW4403528877%7CW4403997733%7CW4406106296%7CW4406445580%7CW4406923984%7CW4407091582%7CW4407402368%7CW4408361108&per_page=100&select=id%2Cdoi%2Cids%2Ctitle%2Cabstract_inverted_index%2Cpublication_year%2Cpublication_date%2Ctype%2Cprimary_location%2Creferenced_works%2Ccited_by_count",
+            "content_type": "application/json",
+            "file": "batch-001.json",
+            "bytes": 301081,
+            "sha256": "50bd6a874cd01ef664a0c938eff4de304bb58294acee6d9a76a3c526cfc40fca",
+            "finished_at": "2026-10-29T05:15:32.137705+00:00"
+          }
+        ],
+        "pages": [
+          {
+            "file": "batch-001.json",
+            "sha256": "50bd6a874cd01ef664a0c938eff4de304bb58294acee6d9a76a3c526cfc40fca",
+            "batch": 1,
+            "requested_count": 52,
+            "returned": 52,
+            "reported_count": 52,
+            "url": "https://api.openalex.org/works?filter=openalex%3AW2055214928%7CW2057983728%7CW2075313774%7CW2156975150%7CW2765747110%7CW2767378937%7CW2888296876%7CW2914833654%7CW2990250392%7CW2998486359%7CW2999837798%7CW3043184549%7CW3087333805%7CW3121137012%7CW3137977629%7CW3201464819%7CW3204946927%7CW3217107095%7CW4220655782%7CW4281256979%7CW4281677147%7CW4292313820%7CW4306254738%7CW4316135901%7CW4379879752%7CW4381164430%7CW4385689165%7CW4386457889%7CW4387956123%7CW4388924385%7CW4391247881%7CW4391781871%7CW4391850196%7CW4393371139%7CW4396607937%7CW4397049664%7CW4400253664%7CW4400281156%7CW4400865830%7CW4400912524%7CW4401541247%7CW4401675393%7CW4402126127%7CW4403151451%7CW4403528877%7CW4403997733%7CW4406106296%7CW4406445580%7CW4406923984%7CW4407091582%7CW4407402368%7CW4408361108&per_page=100&select=id%2Cdoi%2Cids%2Ctitle%2Cabstract_inverted_index%2Cpublication_year%2Cpublication_date%2Ctype%2Cprimary_location%2Creferenced_works%2Ccited_by_count"
+          }
+        ],
+        "returned": 52,
+        "complete": true,
+        "missing_requested_ids": [],
+        "returned_unique_source_ids": 52,
+        "stop_reason": "all_seed_reference_ids_resolved",
+        "finished_at": "2026-10-29T05:15:32.457481+00:00"
+      },
+      {
+        "queryId": "CITE-FWD-03",
+        "purpose": "One-hop forward citations; no relevance filtering or date restriction",
+        "endpoint": "https://api.openalex.org/works",
+        "parameters": {
+          "filter": "cites:W4413113461"
+        },
+        "started_at": "2026-10-29T05:15:32.460475+00:00",
+        "amendment_sha256": "0aab8b3dc02cde6ee515aad649b56f755b0fb0c99288c57d548871e38d8bc706",
+        "page_size": 100,
+        "record_cap": 1000,
+        "attempts": [
+          {
+            "url": "https://api.openalex.org/works?filter=cites%3AW4413113461&per_page=100&page=1&select=id%2Cdoi%2Cids%2Ctitle%2Cabstract_inverted_index%2Cpublication_year%2Cpublication_date%2Ctype%2Cprimary_location%2Creferenced_works%2Ccited_by_count",
+            "started_at": "2026-10-29T05:15:32.460475+00:00",
+            "attempt": 1,
+            "error": "Remote end closed connection without response",
+            "status": null,
+            "finished_at": "2026-10-29T05:15:52.724453+00:00"
+          },
+          {
+            "url": "https://api.openalex.org/works?filter=cites%3AW4413113461&per_page=100&page=1&select=id%2Cdoi%2Cids%2Ctitle%2Cabstract_inverted_index%2Cpublication_year%2Cpublication_date%2Ctype%2Cprimary_location%2Creferenced_works%2Ccited_by_count",
+            "started_at": "2026-10-29T05:15:55.733018+00:00",
+            "attempt": 2,
+            "error": "Remote end closed connection without response",
+            "status": null,
+            "finished_at": "2026-10-29T05:16:15.985217+00:00"
+          }
+        ],
+        "pages": [],
+        "total": null,
+        "returned": 0,
+        "complete": false,
+        "stop_reason": "request_failed",
+        "returned_unique_source_ids": 0,
+        "finished_at": "2026-10-29T05:16:15.986252+00:00",
+        "seed_doi": "10.1016/j.aquatox.2025.107534",
+        "seed_OAid": "https://openalex.org/W4413113461"
+      },
+      {
+        "queryId": "CITE-BACK-04",
+        "purpose": "One-hop backward references; no relevance filtering",
+        "seed_OAid": "https://openalex.org/W3025718754",
+        "seed_doi": "10.1016/j.chemosphere.2020.127040",
+        "started_at": "2026-10-29T05:16:22.092203+00:00",
+        "amendment_sha256": "0aab8b3dc02cde6ee515aad649b56f755b0fb0c99288c57d548871e38d8bc706",
+        "total": 36,
+        "requested_ids": [
+          "https://openalex.org/W148261610",
+          "https://openalex.org/W1888056390",
+          "https://openalex.org/W1963748853",
+          "https://openalex.org/W2005404508",
+          "https://openalex.org/W2011681469",
+          "https://openalex.org/W2041714051",
+          "https://openalex.org/W2048668195",
+          "https://openalex.org/W2128635872",
+          "https://openalex.org/W2293481204",
+          "https://openalex.org/W2295281563",
+          "https://openalex.org/W2322346801",
+          "https://openalex.org/W2477160095",
+          "https://openalex.org/W2519315265",
+          "https://openalex.org/W2520617326",
+          "https://openalex.org/W2585884657",
+          "https://openalex.org/W2595675373",
+          "https://openalex.org/W2765581331",
+          "https://openalex.org/W2769190269",
+          "https://openalex.org/W2772722868",
+          "https://openalex.org/W2789500366",
+          "https://openalex.org/W2793554595",
+          "https://openalex.org/W2801229377",
+          "https://openalex.org/W2806355655",
+          "https://openalex.org/W2810732585",
+          "https://openalex.org/W2889479406",
+          "https://openalex.org/W2897810688",
+          "https://openalex.org/W2906191117",
+          "https://openalex.org/W2908974593",
+          "https://openalex.org/W2914833654",
+          "https://openalex.org/W2955474673",
+          "https://openalex.org/W2957092679",
+          "https://openalex.org/W2963435999",
+          "https://openalex.org/W2980884117",
+          "https://openalex.org/W2985020957",
+          "https://openalex.org/W2989656878",
+          "https://openalex.org/W6770502304"
+        ],
+        "record_cap": 1000,
+        "attempts": [
+          {
+            "url": "https://api.openalex.org/works?filter=openalex%3AW148261610%7CW1888056390%7CW1963748853%7CW2005404508%7CW2011681469%7CW2041714051%7CW2048668195%7CW2128635872%7CW2293481204%7CW2295281563%7CW2322346801%7CW2477160095%7CW2519315265%7CW2520617326%7CW2585884657%7CW2595675373%7CW2765581331%7CW2769190269%7CW2772722868%7CW2789500366%7CW2793554595%7CW2801229377%7CW2806355655%7CW2810732585%7CW2889479406%7CW2897810688%7CW2906191117%7CW2908974593%7CW2914833654%7CW2955474673%7CW2957092679%7CW2963435999%7CW2980884117%7CW2985020957%7CW2989656878%7CW6770502304&per_page=100&select=id%2Cdoi%2Cids%2Ctitle%2Cabstract_inverted_index%2Cpublication_year%2Cpublication_date%2Ctype%2Cprimary_location%2Creferenced_works%2Ccited_by_count",
+            "started_at": "2026-10-29T05:16:22.092634+00:00",
+            "attempt": 1,
+            "status": 200,
+            "final_url": "https://api.openalex.org/works?filter=openalex%3AW148261610%7CW1888056390%7CW1963748853%7CW2005404508%7CW2011681469%7CW2041714051%7CW2048668195%7CW2128635872%7CW2293481204%7CW2295281563%7CW2322346801%7CW2477160095%7CW2519315265%7CW2520617326%7CW2585884657%7CW2595675373%7CW2765581331%7CW2769190269%7CW2772722868%7CW2789500366%7CW2793554595%7CW2801229377%7CW2806355655%7CW2810732585%7CW2889479406%7CW2897810688%7CW2906191117%7CW2908974593%7CW2914833654%7CW2955474673%7CW2957092679%7CW2963435999%7CW2980884117%7CW2985020957%7CW2989656878%7CW6770502304&per_page=100&select=id%2Cdoi%2Cids%2Ctitle%2Cabstract_inverted_index%2Cpublication_year%2Cpublication_date%2Ctype%2Cprimary_location%2Creferenced_works%2Ccited_by_count",
+            "content_type": "application/json",
+            "file": "batch-001.json",
+            "bytes": 144433,
+            "sha256": "c3f29c291cceceeb56fe95f1b2769e733c9d39d3c2c273063636655d0ca43a93",
+            "finished_at": "2026-10-29T05:16:27.982786+00:00"
+          }
+        ],
+        "pages": [
+          {
+            "file": "batch-001.json",
+            "sha256": "c3f29c291cceceeb56fe95f1b2769e733c9d39d3c2c273063636655d0ca43a93",
+            "batch": 1,
+            "requested_count": 36,
+            "returned": 35,
+            "reported_count": 35,
+            "url": "https://api.openalex.org/works?filter=openalex%3AW148261610%7CW1888056390%7CW1963748853%7CW2005404508%7CW2011681469%7CW2041714051%7CW2048668195%7CW2128635872%7CW2293481204%7CW2295281563%7CW2322346801%7CW2477160095%7CW2519315265%7CW2520617326%7CW2585884657%7CW2595675373%7CW2765581331%7CW2769190269%7CW2772722868%7CW2789500366%7CW2793554595%7CW2801229377%7CW2806355655%7CW2810732585%7CW2889479406%7CW2897810688%7CW2906191117%7CW2908974593%7CW2914833654%7CW2955474673%7CW2957092679%7CW2963435999%7CW2980884117%7CW2985020957%7CW2989656878%7CW6770502304&per_page=100&select=id%2Cdoi%2Cids%2Ctitle%2Cabstract_inverted_index%2Cpublication_year%2Cpublication_date%2Ctype%2Cprimary_location%2Creferenced_works%2Ccited_by_count"
+          }
+        ],
+        "returned": 35,
+        "complete": false,
+        "missing_requested_ids": [
+          "https://openalex.org/W6770502304"
+        ],
+        "returned_unique_source_ids": 35,
+        "stop_reason": "cap_or_unresolved_reference_ids",
+        "finished_at": "2026-10-29T05:16:28.290931+00:00"
+      },
+      {
+        "queryId": "CITE-FWD-04",
+        "purpose": "One-hop forward citations; no relevance filtering or date restriction",
+        "endpoint": "https://api.openalex.org/works",
+        "parameters": {
+          "filter": "cites:W3025718754"
+        },
+        "started_at": "2026-10-29T05:16:28.295195+00:00",
+        "amendment_sha256": "0aab8b3dc02cde6ee515aad649b56f755b0fb0c99288c57d548871e38d8bc706",
+        "page_size": 100,
+        "record_cap": 1000,
+        "attempts": [
+          {
+            "url": "https://api.openalex.org/works?filter=cites%3AW3025718754&per_page=100&page=1&select=id%2Cdoi%2Cids%2Ctitle%2Cabstract_inverted_index%2Cpublication_year%2Cpublication_date%2Ctype%2Cprimary_location%2Creferenced_works%2Ccited_by_count",
+            "started_at": "2026-10-29T05:16:28.295702+00:00",
+            "attempt": 1,
+            "status": 200,
+            "final_url": "https://api.openalex.org/works?filter=cites%3AW3025718754&per_page=100&page=1&select=id%2Cdoi%2Cids%2Ctitle%2Cabstract_inverted_index%2Cpublication_year%2Cpublication_date%2Ctype%2Cprimary_location%2Creferenced_works%2Ccited_by_count",
+            "content_type": "application/json",
+            "file": "page-001.json",
+            "bytes": 651844,
+            "sha256": "1590bd22f48a358a886a15f007d4e738167de803024b1954f0e6a6d0993f598a",
+            "finished_at": "2026-10-29T05:16:35.027582+00:00"
+          },
+          {
+            "url": "https://api.openalex.org/works?filter=cites%3AW3025718754&per_page=100&page=2&select=id%2Cdoi%2Cids%2Ctitle%2Cabstract_inverted_index%2Cpublication_year%2Cpublication_date%2Ctype%2Cprimary_location%2Creferenced_works%2Ccited_by_count",
+            "started_at": "2026-10-29T05:16:36.138183+00:00",
+            "attempt": 1,
+            "status": 200,
+            "final_url": "https://api.openalex.org/works?filter=cites%3AW3025718754&per_page=100&page=2&select=id%2Cdoi%2Cids%2Ctitle%2Cabstract_inverted_index%2Cpublication_year%2Cpublication_date%2Ctype%2Cprimary_location%2Creferenced_works%2Ccited_by_count",
+            "content_type": "application/json",
+            "file": "page-002.json",
+            "bytes": 342429,
+            "sha256": "71fc9c994e5cbf597793a1d85b3c661116781e05c73c92dc610e6954acd3cbea",
+            "finished_at": "2026-10-29T05:17:10.954279+00:00"
+          }
+        ],
+        "pages": [
+          {
+            "file": "page-001.json",
+            "sha256": "1590bd22f48a358a886a15f007d4e738167de803024b1954f0e6a6d0993f598a",
+            "page": 1,
+            "count": 100,
+            "total_at_page": 158,
+            "url": "https://api.openalex.org/works?filter=cites%3AW3025718754&per_page=100&page=1&select=id%2Cdoi%2Cids%2Ctitle%2Cabstract_inverted_index%2Cpublication_year%2Cpublication_date%2Ctype%2Cprimary_location%2Creferenced_works%2Ccited_by_count"
+          },
+          {
+            "file": "page-002.json",
+            "sha256": "71fc9c994e5cbf597793a1d85b3c661116781e05c73c92dc610e6954acd3cbea",
+            "page": 2,
+            "count": 58,
+            "total_at_page": 158,
+            "url": "https://api.openalex.org/works?filter=cites%3AW3025718754&per_page=100&page=2&select=id%2Cdoi%2Cids%2Ctitle%2Cabstract_inverted_index%2Cpublication_year%2Cpublication_date%2Ctype%2Cprimary_location%2Creferenced_works%2Ccited_by_count"
+          }
+        ],
+        "total": 158,
+        "returned": 158,
+        "complete": true,
+        "stop_reason": "all_reported_results_retrieved",
+        "returned_unique_source_ids": 158,
+        "finished_at": "2026-10-29T05:17:10.964689+00:00",
+        "seed_doi": "10.1016/j.chemosphere.2020.127040",
+        "seed_OAid": "https://openalex.org/W3025718754"
+      },
+      {
+        "queryId": "OA-SUPPLEMENT-V2",
+        "purpose": "Disclosed cross-disciplinary supplementary topic search",
+        "endpoint": "https://api.openalex.org/works",
+        "parameters": {
+          "search.title_and_abstract.exact": "(zebrafish OR \"Danio rerio\") AND (microplastic* OR nanoplastic* OR (\"micro plastic\" OR \"micro plastics\") OR (\"nano plastic\" OR \"nano plastics\") OR polystyrene OR polyethylene OR \"polyethylene terephthalate\" OR polypropylene OR \"polyvinyl chloride\" OR \"polymethyl methacrylate\") AND (PFAS OR PFOS OR PFOA OR PFBA OR PFHxS OR PFBS OR \"F-53B\" OR \"Cl-PFESA\" OR perfluoro* OR polyfluoro* OR fluorotelomer*)",
+          "filter": "from_publication_date:2015-01-01,to_publication_date:2026-10-29"
+        },
+        "started_at": "2026-10-29T05:17:28.153323+00:00",
+        "amendment_sha256": "f5b51b51b04adf4e443ab18a42fd5965d0906ca1c91df4d688023ce790b53366",
+        "page_size": 100,
+        "record_cap": 1000,
+        "attempts": [
+          {
+            "url": "https://api.openalex.org/works?search.title_and_abstract.exact=%28zebrafish+OR+%22Danio+rerio%22%29+AND+%28microplastic%2A+OR+nanoplastic%2A+OR+%28%22micro+plastic%22+OR+%22micro+plastics%22%29+OR+%28%22nano+plastic%22+OR+%22nano+plastics%22%29+OR+polystyrene+OR+polyethylene+OR+%22polyethylene+terephthalate%22+OR+polypropylene+OR+%22polyvinyl+chloride%22+OR+%22polymethyl+methacrylate%22%29+AND+%28PFAS+OR+PFOS+OR+PFOA+OR+PFBA+OR+PFHxS+OR+PFBS+OR+%22F-53B%22+OR+%22Cl-PFESA%22+OR+perfluoro%2A+OR+polyfluoro%2A+OR+fluorotelomer%2A%29&filter=from_publication_date%3A2015-01-01%2Cto_publication_date%3A2026-10-29&per_page=100&page=1&select=id%2Cdoi%2Cids%2Ctitle%2Cabstract_inverted_index%2Cpublication_year%2Cpublication_date%2Ctype%2Cprimary_location%2Creferenced_works%2Ccited_by_count",
+            "started_at": "2026-10-29T05:17:28.153323+00:00",
+            "attempt": 1,
+            "error": "Remote end closed connection without response",
+            "status": null,
+            "finished_at": "2026-10-29T05:17:48.449485+00:00"
+          },
+          {
+            "url": "https://api.openalex.org/works?search.title_and_abstract.exact=%28zebrafish+OR+%22Danio+rerio%22%29+AND+%28microplastic%2A+OR+nanoplastic%2A+OR+%28%22micro+plastic%22+OR+%22micro+plastics%22%29+OR+%28%22nano+plastic%22+OR+%22nano+plastics%22%29+OR+polystyrene+OR+polyethylene+OR+%22polyethylene+terephthalate%22+OR+polypropylene+OR+%22polyvinyl+chloride%22+OR+%22polymethyl+methacrylate%22%29+AND+%28PFAS+OR+PFOS+OR+PFOA+OR+PFBA+OR+PFHxS+OR+PFBS+OR+%22F-53B%22+OR+%22Cl-PFESA%22+OR+perfluoro%2A+OR+polyfluoro%2A+OR+fluorotelomer%2A%29&filter=from_publication_date%3A2015-01-01%2Cto_publication_date%3A2026-10-29&per_page=100&page=1&select=id%2Cdoi%2Cids%2Ctitle%2Cabstract_inverted_index%2Cpublication_year%2Cpublication_date%2Ctype%2Cprimary_location%2Creferenced_works%2Ccited_by_count",
+            "started_at": "2026-10-29T05:17:51.454862+00:00",
+            "attempt": 2,
+            "status": 200,
+            "final_url": "https://api.openalex.org/works?search.title_and_abstract.exact=%28zebrafish+OR+%22Danio+rerio%22%29+AND+%28microplastic%2A+OR+nanoplastic%2A+OR+%28%22micro+plastic%22+OR+%22micro+plastics%22%29+OR+%28%22nano+plastic%22+OR+%22nano+plastics%22%29+OR+polystyrene+OR+polyethylene+OR+%22polyethylene+terephthalate%22+OR+polypropylene+OR+%22polyvinyl+chloride%22+OR+%22polymethyl+methacrylate%22%29+AND+%28PFAS+OR+PFOS+OR+PFOA+OR+PFBA+OR+PFHxS+OR+PFBS+OR+%22F-53B%22+OR+%22Cl-PFESA%22+OR+perfluoro%2A+OR+polyfluoro%2A+OR+fluorotelomer%2A%29&filter=from_publication_date%3A2015-01-01%2Cto_publication_date%3A2026-10-29&per_page=100&page=1&select=id%2Cdoi%2Cids%2Ctitle%2Cabstract_inverted_index%2Cpublication_year%2Cpublication_date%2Ctype%2Cprimary_location%2Creferenced_works%2Ccited_by_count",
+            "content_type": "application/json",
+            "file": "page-001.json",
+            "bytes": 266943,
+            "sha256": "6f4bfff30740365c3ab922c2736100be4a9c0303b47af81a81ce72c7a845b719",
+            "finished_at": "2026-10-29T05:18:09.651812+00:00"
+          }
+        ],
+        "pages": [
+          {
+            "file": "page-001.json",
+            "sha256": "6f4bfff30740365c3ab922c2736100be4a9c0303b47af81a81ce72c7a845b719",
+            "page": 1,
+            "count": 32,
+            "total_at_page": 32,
+            "url": "https://api.openalex.org/works?search.title_and_abstract.exact=%28zebrafish+OR+%22Danio+rerio%22%29+AND+%28microplastic%2A+OR+nanoplastic%2A+OR+%28%22micro+plastic%22+OR+%22micro+plastics%22%29+OR+%28%22nano+plastic%22+OR+%22nano+plastics%22%29+OR+polystyrene+OR+polyethylene+OR+%22polyethylene+terephthalate%22+OR+polypropylene+OR+%22polyvinyl+chloride%22+OR+%22polymethyl+methacrylate%22%29+AND+%28PFAS+OR+PFOS+OR+PFOA+OR+PFBA+OR+PFHxS+OR+PFBS+OR+%22F-53B%22+OR+%22Cl-PFESA%22+OR+perfluoro%2A+OR+polyfluoro%2A+OR+fluorotelomer%2A%29&filter=from_publication_date%3A2015-01-01%2Cto_publication_date%3A2026-10-29&per_page=100&page=1&select=id%2Cdoi%2Cids%2Ctitle%2Cabstract_inverted_index%2Cpublication_year%2Cpublication_date%2Ctype%2Cprimary_location%2Creferenced_works%2Ccited_by_count"
+          }
+        ],
+        "total": 32,
+        "returned": 32,
+        "complete": true,
+        "stop_reason": "all_reported_results_retrieved",
+        "returned_unique_source_ids": 32,
+        "finished_at": "2026-10-29T05:18:09.659229+00:00"
+      }
+    ],
+    "seeds": [
+      {
+        "queryId": "SEED-01",
+        "seed_doi": "10.1016/j.scitotenv.2024.170948",
+        "started_at": "2026-10-29T05:13:34.811452+00:00",
+        "attempts": [
+          {
+            "url": "https://api.openalex.org/works/https://doi.org/10.1016/j.scitotenv.2024.170948",
+            "started_at": "2026-10-29T05:13:34.811452+00:00",
+            "attempt": 1,
+            "status": 200,
+            "final_url": "https://api.openalex.org/works/https://doi.org/10.1016/j.scitotenv.2024.170948",
+            "content_type": "application/json",
+            "file": "seed.json",
+            "bytes": 26300,
+            "sha256": "33b1992a6570ae0e4bddc633777ee721334662f27b3dbfd63fdfe9ea05d63c2f",
+            "finished_at": "2026-10-29T05:13:51.764615+00:00"
+          }
+        ],
+        "amendment_sha256": "0aab8b3dc02cde6ee515aad649b56f755b0fb0c99288c57d548871e38d8bc706",
+        "matched": true,
+        "OAid": "https://openalex.org/W4391850196",
+        "finished_at": "2026-10-29T05:13:51.766248+00:00"
+      },
+      {
+        "queryId": "SEED-02",
+        "seed_doi": "10.1016/j.watres.2025.124658",
+        "started_at": "2026-10-29T05:14:27.905774+00:00",
+        "attempts": [
+          {
+            "url": "https://api.openalex.org/works/https://doi.org/10.1016/j.watres.2025.124658",
+            "started_at": "2026-10-29T05:14:27.905774+00:00",
+            "attempt": 1,
+            "status": 200,
+            "final_url": "https://api.openalex.org/works/https://doi.org/10.1016/j.watres.2025.124658",
+            "content_type": "application/json",
+            "file": "seed.json",
+            "bytes": 26623,
+            "sha256": "afba439e01eb7e969457671660baee01390820eddfda3eadb0e964924d286978",
+            "finished_at": "2026-10-29T05:14:33.591084+00:00"
+          }
+        ],
+        "amendment_sha256": "0aab8b3dc02cde6ee515aad649b56f755b0fb0c99288c57d548871e38d8bc706",
+        "matched": true,
+        "OAid": "https://openalex.org/W4414402625",
+        "finished_at": "2026-10-29T05:14:33.591611+00:00"
+      },
+      {
+        "queryId": "SEED-03",
+        "seed_doi": "10.1016/j.aquatox.2025.107534",
+        "started_at": "2026-10-29T05:14:57.476248+00:00",
+        "attempts": [
+          {
+            "url": "https://api.openalex.org/works/https://doi.org/10.1016/j.aquatox.2025.107534",
+            "started_at": "2026-10-29T05:14:57.476248+00:00",
+            "attempt": 1,
+            "status": 200,
+            "final_url": "https://api.openalex.org/works/https://doi.org/10.1016/j.aquatox.2025.107534",
+            "content_type": "application/json",
+            "file": "seed.json",
+            "bytes": 23302,
+            "sha256": "7cec1be523a38c1cf982a622e86371978d4c0fb24c0c45f5f3fc43095b2a7a6e",
+            "finished_at": "2026-10-29T05:15:14.376017+00:00"
+          }
+        ],
+        "amendment_sha256": "0aab8b3dc02cde6ee515aad649b56f755b0fb0c99288c57d548871e38d8bc706",
+        "matched": true,
+        "OAid": "https://openalex.org/W4413113461",
+        "finished_at": "2026-10-29T05:15:14.377260+00:00"
+      },
+      {
+        "queryId": "SEED-04",
+        "seed_doi": "10.1016/j.chemosphere.2020.127040",
+        "started_at": "2026-10-29T05:16:15.997382+00:00",
+        "attempts": [
+          {
+            "url": "https://api.openalex.org/works/https://doi.org/10.1016/j.chemosphere.2020.127040",
+            "started_at": "2026-10-29T05:16:15.997382+00:00",
+            "attempt": 1,
+            "status": 200,
+            "final_url": "https://api.openalex.org/works/https://doi.org/10.1016/j.chemosphere.2020.127040",
+            "content_type": "application/json",
+            "file": "seed.json",
+            "bytes": 31116,
+            "sha256": "eee6301c9c6888f658fe79007587932b61dfd0b2c609729f0407ae22fcb0d8e6",
+            "finished_at": "2026-10-29T05:16:22.090198+00:00"
+          }
+        ],
+        "amendment_sha256": "0aab8b3dc02cde6ee515aad649b56f755b0fb0c99288c57d548871e38d8bc706",
+        "matched": true,
+        "OAid": "https://openalex.org/W3025718754",
+        "finished_at": "2026-10-29T05:16:22.091207+00:00"
+      }
+    ],
+    "unique_records": 443,
+    "finished_at": "2026-10-29T05:18:09.679428+00:00",
+    "boundary": "Anonymous actual API calls with bounded basic paging. Topic search and one-hop references/citations are separate paths. Citation edges do not establish relevance, support for a claim, full-text reading, or complete literature coverage. Graph candidates outside the topic date window remain for later transparent screening.",
+    "supplement_amendments": [
+      {
+        "file": "amendment-openalex-v2.json",
+        "sha256": "f5b51b51b04adf4e443ab18a42fd5965d0906ca1c91df4d688023ce790b53366",
+        "queryId": "OA-SUPPLEMENT-V2"
+      }
+    ]
+  },
+  "pubmed_v2": {
+    "query_id": "PM-REPAIRED",
+    "source": "PubMed E-utilities",
+    "query": "(zebrafish[Title/Abstract] OR \"Danio rerio\"[Title/Abstract]) AND (microplastic*[Title/Abstract] OR nanoplastic*[Title/Abstract] OR \"micro plastic*\"[Title/Abstract] OR \"nano plastic*\"[Title/Abstract] OR polystyrene[Title/Abstract] OR polyethylene[Title/Abstract] OR \"polyethylene terephthalate\"[Title/Abstract] OR polypropylene[Title/Abstract] OR \"polyvinyl chloride\"[Title/Abstract] OR \"polymethyl methacrylate\"[Title/Abstract]) AND (PFAS[Title/Abstract] OR PFOS[Title/Abstract] OR PFOA[Title/Abstract] OR PFBA[Title/Abstract] OR PFNA[Title/Abstract] OR PFOSA[Title/Abstract] OR PFHxS[Title/Abstract] OR PFBS[Title/Abstract] OR \"F-53B\"[Title/Abstract] OR F53B[Title/Abstract] OR \"Cl-PFESA\"[Title/Abstract] OR \"Cl-PFAES\"[Title/Abstract] OR PFC[Title/Abstract] OR PFCs[Title/Abstract] OR perfluor*[Title/Abstract] OR polyfluor*[Title/Abstract] OR fluorotelomer*[Title/Abstract]) AND (\"2015/01/01\"[Date - Publication] : \"2026/10/29\"[Date - Publication])",
+    "started_at": "2026-10-29T05:21:14.300479+00:00",
+    "complete": true,
+    "total": 19,
+    "returned_ids": 19,
+    "translation": "(\"zebrafish\"[Title/Abstract] OR \"Danio rerio\"[Title/Abstract]) AND (\"microplastic*\"[Title/Abstract] OR \"nanoplastic*\"[Title/Abstract] OR \"micro plastic*\"[Title/Abstract] OR \"nano plastic*\"[Title/Abstract] OR \"polystyrene\"[Title/Abstract] OR \"polyethylene\"[Title/Abstract] OR \"polyethylene terephthalate\"[Title/Abstract] OR \"polypropylene\"[Title/Abstract] OR \"polyvinyl chloride\"[Title/Abstract] OR \"polymethyl methacrylate\"[Title/Abstract]) AND (\"PFAS\"[Title/Abstract] OR \"PFOS\"[Title/Abstract] OR \"PFOA\"[Title/Abstract] OR \"PFBA\"[Title/Abstract] OR \"PFNA\"[Title/Abstract] OR \"PFOSA\"[Title/Abstract] OR \"PFHxS\"[Title/Abstract] OR \"PFBS\"[Title/Abstract] OR \"F-53B\"[Title/Abstract] OR \"F53B\"[Title/Abstract] OR \"Cl-PFESA\"[Title/Abstract] OR \"Cl-PFAES\"[Title/Abstract] OR \"PFC\"[Title/Abstract] OR \"PFCs\"[Title/Abstract] OR \"perfluor*\"[Title/Abstract] OR \"polyfluor*\"[Title/Abstract] OR \"fluorotelomer*\"[Title/Abstract]) AND 2015/01/01:2026/10/29[Date - Publication]",
+    "warnings": null,
+    "returned": 19,
+    "unique": 19,
+    "status": "success",
+    "finished_at": "2026-10-29T05:21:38.703298+00:00"
+  },
+  "europepmc_v2": {
+    "source": "Europe PMC REST",
+    "endpoint": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+    "plan_file": "E:\\codex_project\\1025_codex_project\\projects\\012-aquatic-toxicology-skill-lab\\research\\retrieval-trial\\query-plan-v2.json",
+    "plan_sha256": "d1970646aa135f9fae10d0af9ee7e65ebcdf231814b9c425b6a9e6afad871053",
+    "queries": [
+      {
+        "queryId": "EPMC-REPAIRED",
+        "query": "(TITLE_ABS:zebrafish OR TITLE_ABS:\"Danio rerio\") AND (TITLE_ABS:microplastic* OR TITLE_ABS:nanoplastic* OR TITLE_ABS:\"micro plastic*\" OR TITLE_ABS:\"nano plastic*\" OR TITLE_ABS:polystyrene OR TITLE_ABS:polyethylene OR TITLE_ABS:\"polyethylene terephthalate\" OR TITLE_ABS:polypropylene OR TITLE_ABS:\"polyvinyl chloride\" OR TITLE_ABS:\"polymethyl methacrylate\") AND (TITLE_ABS:PFAS OR TITLE_ABS:PFOS OR TITLE_ABS:PFOA OR TITLE_ABS:PFBA OR TITLE_ABS:PFNA OR TITLE_ABS:PFOSA OR TITLE_ABS:PFHxS OR TITLE_ABS:PFBS OR TITLE_ABS:\"F-53B\" OR TITLE_ABS:F53B OR TITLE_ABS:\"Cl-PFESA\" OR TITLE_ABS:\"Cl-PFAES\" OR TITLE_ABS:PFC OR TITLE_ABS:PFCs OR TITLE_ABS:perfluor* OR TITLE_ABS:polyfluor* OR TITLE_ABS:fluorotelomer*) AND FIRST_PDATE:[2015-01-01 TO 2026-10-29]",
+        "purpose": "基准诊断后的词汇修订检索",
+        "endpoint": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+        "started_at": "2026-10-29T05:22:16.590129+00:00",
+        "plan_sha256": "d1970646aa135f9fae10d0af9ee7e65ebcdf231814b9c425b6a9e6afad871053",
+        "page_size": 1000,
+        "record_cap": 1000,
+        "attempts": [
+          {
+            "page": 1,
+            "attempt": 1,
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28TITLE_ABS%3Azebrafish+OR+TITLE_ABS%3A%22Danio+rerio%22%29+AND+%28TITLE_ABS%3Amicroplastic%2A+OR+TITLE_ABS%3Ananoplastic%2A+OR+TITLE_ABS%3A%22micro+plastic%2A%22+OR+TITLE_ABS%3A%22nano+plastic%2A%22+OR+TITLE_ABS%3Apolystyrene+OR+TITLE_ABS%3Apolyethylene+OR+TITLE_ABS%3A%22polyethylene+terephthalate%22+OR+TITLE_ABS%3Apolypropylene+OR+TITLE_ABS%3A%22polyvinyl+chloride%22+OR+TITLE_ABS%3A%22polymethyl+methacrylate%22%29+AND+%28TITLE_ABS%3APFAS+OR+TITLE_ABS%3APFOS+OR+TITLE_ABS%3APFOA+OR+TITLE_ABS%3APFBA+OR+TITLE_ABS%3APFNA+OR+TITLE_ABS%3APFOSA+OR+TITLE_ABS%3APFHxS+OR+TITLE_ABS%3APFBS+OR+TITLE_ABS%3A%22F-53B%22+OR+TITLE_ABS%3AF53B+OR+TITLE_ABS%3A%22Cl-PFESA%22+OR+TITLE_ABS%3A%22Cl-PFAES%22+OR+TITLE_ABS%3APFC+OR+TITLE_ABS%3APFCs+OR+TITLE_ABS%3Aperfluor%2A+OR+TITLE_ABS%3Apolyfluor%2A+OR+TITLE_ABS%3Afluorotelomer%2A%29+AND+FIRST_PDATE%3A%5B2015-01-01+TO+2026-10-29%5D&format=json&resultType=core&pageSize=1000&cursorMark=%2A",
+            "started_at": "2026-10-29T05:22:16.590129+00:00",
+            "error": "<urlopen error [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。>",
+            "status": null,
+            "finished_at": "2026-10-29T05:22:37.940810+00:00"
+          },
+          {
+            "page": 1,
+            "attempt": 2,
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28TITLE_ABS%3Azebrafish+OR+TITLE_ABS%3A%22Danio+rerio%22%29+AND+%28TITLE_ABS%3Amicroplastic%2A+OR+TITLE_ABS%3Ananoplastic%2A+OR+TITLE_ABS%3A%22micro+plastic%2A%22+OR+TITLE_ABS%3A%22nano+plastic%2A%22+OR+TITLE_ABS%3Apolystyrene+OR+TITLE_ABS%3Apolyethylene+OR+TITLE_ABS%3A%22polyethylene+terephthalate%22+OR+TITLE_ABS%3Apolypropylene+OR+TITLE_ABS%3A%22polyvinyl+chloride%22+OR+TITLE_ABS%3A%22polymethyl+methacrylate%22%29+AND+%28TITLE_ABS%3APFAS+OR+TITLE_ABS%3APFOS+OR+TITLE_ABS%3APFOA+OR+TITLE_ABS%3APFBA+OR+TITLE_ABS%3APFNA+OR+TITLE_ABS%3APFOSA+OR+TITLE_ABS%3APFHxS+OR+TITLE_ABS%3APFBS+OR+TITLE_ABS%3A%22F-53B%22+OR+TITLE_ABS%3AF53B+OR+TITLE_ABS%3A%22Cl-PFESA%22+OR+TITLE_ABS%3A%22Cl-PFAES%22+OR+TITLE_ABS%3APFC+OR+TITLE_ABS%3APFCs+OR+TITLE_ABS%3Aperfluor%2A+OR+TITLE_ABS%3Apolyfluor%2A+OR+TITLE_ABS%3Afluorotelomer%2A%29+AND+FIRST_PDATE%3A%5B2015-01-01+TO+2026-10-29%5D&format=json&resultType=core&pageSize=1000&cursorMark=%2A",
+            "started_at": "2026-10-29T05:22:39.944732+00:00",
+            "status": 200,
+            "bytes": 156166,
+            "content_type": "application/json;charset=UTF-8",
+            "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28TITLE_ABS%3Azebrafish+OR+TITLE_ABS%3A%22Danio+rerio%22%29+AND+%28TITLE_ABS%3Amicroplastic%2A+OR+TITLE_ABS%3Ananoplastic%2A+OR+TITLE_ABS%3A%22micro+plastic%2A%22+OR+TITLE_ABS%3A%22nano+plastic%2A%22+OR+TITLE_ABS%3Apolystyrene+OR+TITLE_ABS%3Apolyethylene+OR+TITLE_ABS%3A%22polyethylene+terephthalate%22+OR+TITLE_ABS%3Apolypropylene+OR+TITLE_ABS%3A%22polyvinyl+chloride%22+OR+TITLE_ABS%3A%22polymethyl+methacrylate%22%29+AND+%28TITLE_ABS%3APFAS+OR+TITLE_ABS%3APFOS+OR+TITLE_ABS%3APFOA+OR+TITLE_ABS%3APFBA+OR+TITLE_ABS%3APFNA+OR+TITLE_ABS%3APFOSA+OR+TITLE_ABS%3APFHxS+OR+TITLE_ABS%3APFBS+OR+TITLE_ABS%3A%22F-53B%22+OR+TITLE_ABS%3AF53B+OR+TITLE_ABS%3A%22Cl-PFESA%22+OR+TITLE_ABS%3A%22Cl-PFAES%22+OR+TITLE_ABS%3APFC+OR+TITLE_ABS%3APFCs+OR+TITLE_ABS%3Aperfluor%2A+OR+TITLE_ABS%3Apolyfluor%2A+OR+TITLE_ABS%3Afluorotelomer%2A%29+AND+FIRST_PDATE%3A%5B2015-01-01+TO+2026-10-29%5D&format=json&resultType=core&pageSize=1000&cursorMark=%2A",
+            "finished_at": "2026-10-29T05:22:42.198828+00:00"
+          }
+        ],
+        "pages": [
+          {
+            "file": "page-001.json",
+            "sha256": "a5fe3973d8a06ff3389fa64a48a03132e90332c5bc3a14328c0cf875a9db566a",
+            "count": 20,
+            "cursor": "*",
+            "next_cursor": null,
+            "request": {
+              "query": "(TITLE_ABS:zebrafish OR TITLE_ABS:\"Danio rerio\") AND (TITLE_ABS:microplastic* OR TITLE_ABS:nanoplastic* OR TITLE_ABS:\"micro plastic*\" OR TITLE_ABS:\"nano plastic*\" OR TITLE_ABS:polystyrene OR TITLE_ABS:polyethylene OR TITLE_ABS:\"polyethylene terephthalate\" OR TITLE_ABS:polypropylene OR TITLE_ABS:\"polyvinyl chloride\" OR TITLE_ABS:\"polymethyl methacrylate\") AND (TITLE_ABS:PFAS OR TITLE_ABS:PFOS OR TITLE_ABS:PFOA OR TITLE_ABS:PFBA OR TITLE_ABS:PFNA OR TITLE_ABS:PFOSA OR TITLE_ABS:PFHxS OR TITLE_ABS:PFBS OR TITLE_ABS:\"F-53B\" OR TITLE_ABS:F53B OR TITLE_ABS:\"Cl-PFESA\" OR TITLE_ABS:\"Cl-PFAES\" OR TITLE_ABS:PFC OR TITLE_ABS:PFCs OR TITLE_ABS:perfluor* OR TITLE_ABS:polyfluor* OR TITLE_ABS:fluorotelomer*) AND FIRST_PDATE:[2015-01-01 TO 2026-10-29]",
+              "format": "json",
+              "resultType": "core",
+              "pageSize": "1000",
+              "cursorMark": "*"
+            },
+            "serverVersion": "6.9"
+          }
+        ],
+        "total": 20,
+        "returned": 20,
+        "complete": true,
+        "stop_reason": "all_reported_results_retrieved",
+        "finished_at": "2026-10-29T05:22:42.204921+00:00",
+        "returned_unique_source_ids": 20
+      }
+    ],
+    "unique_records": 20,
+    "boundary": "All records/abstracts returned for the frozen queries within the explicit cap. Europe PMC overlaps PubMed. Not full-text appraisal, screening, or a claim that all eligible literature exists in this index."
+  },
+  "pubmed_requests": [
+    {
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28zebrafish%5BTitle%2FAbstract%5D+OR+%22Danio+rerio%22%5BTitle%2FAbstract%5D%29+AND+%28microplastic%2A%5BTitle%2FAbstract%5D+OR+nanoplastic%2A%5BTitle%2FAbstract%5D+OR+%22micro+plastic%2A%22%5BTitle%2FAbstract%5D+OR+%22nano+plastic%2A%22%5BTitle%2FAbstract%5D+OR+polystyrene%5BTitle%2FAbstract%5D+OR+polyethylene%5BTitle%2FAbstract%5D+OR+%22polyethylene+terephthalate%22%5BTitle%2FAbstract%5D+OR+polypropylene%5BTitle%2FAbstract%5D+OR+%22polyvinyl+chloride%22%5BTitle%2FAbstract%5D+OR+%22polymethyl+methacrylate%22%5BTitle%2FAbstract%5D%29+AND+%28PFAS%5BTitle%2FAbstract%5D+OR+PFOS%5BTitle%2FAbstract%5D+OR+PFOA%5BTitle%2FAbstract%5D+OR+PFBA%5BTitle%2FAbstract%5D+OR+PFHxS%5BTitle%2FAbstract%5D+OR+PFBS%5BTitle%2FAbstract%5D+OR+%22F-53B%22%5BTitle%2FAbstract%5D+OR+%22Cl-PFESA%22%5BTitle%2FAbstract%5D+OR+perfluoro%2A%5BTitle%2FAbstract%5D+OR+polyfluoro%2A%5BTitle%2FAbstract%5D+OR+fluorotelomer%2A%5BTitle%2FAbstract%5D%29+AND+%28%222015%2F01%2F01%22%5BDate+-+Publication%5D+%3A+%222026%2F10%2F29%22%5BDate+-+Publication%5D%29&retmode=json&retmax=9999",
+      "started_at": "2026-10-29T05:07:58.165903+00:00",
+      "attempt": 1,
+      "file": "esearch.json",
+      "status": 200,
+      "bytes": 1196,
+      "sha256": "00629720890b0dc4f9659dffdee9965ce356906fc421f014219d54bf41cb6237",
+      "finished_at": "2026-10-29T05:08:04.084702+00:00"
+    },
+    {
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42764241%2C42198499%2C41887838%2C41706329%2C41616538%2C41539585%2C41422984%2C41027221%2C41005273%2C40795757%2C39368493%2C39340199%2C39270866%2C39043301%2C38365036%2C33740727%2C32416398&retmode=xml",
+      "started_at": "2026-10-29T05:08:04.499431+00:00",
+      "attempt": 1,
+      "file": "efetch-001.xml",
+      "status": 200,
+      "bytes": 296556,
+      "sha256": "c9dd5c3ba6fe5dd63818b5771721a30a18e07e921ad83f228dd3bd51116743a9",
+      "finished_at": "2026-10-29T05:08:22.014237+00:00"
+    }
+  ],
+  "pubmed_v2_requests": [
+    {
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28zebrafish%5BTitle%2FAbstract%5D+OR+%22Danio+rerio%22%5BTitle%2FAbstract%5D%29+AND+%28microplastic%2A%5BTitle%2FAbstract%5D+OR+nanoplastic%2A%5BTitle%2FAbstract%5D+OR+%22micro+plastic%2A%22%5BTitle%2FAbstract%5D+OR+%22nano+plastic%2A%22%5BTitle%2FAbstract%5D+OR+polystyrene%5BTitle%2FAbstract%5D+OR+polyethylene%5BTitle%2FAbstract%5D+OR+%22polyethylene+terephthalate%22%5BTitle%2FAbstract%5D+OR+polypropylene%5BTitle%2FAbstract%5D+OR+%22polyvinyl+chloride%22%5BTitle%2FAbstract%5D+OR+%22polymethyl+methacrylate%22%5BTitle%2FAbstract%5D%29+AND+%28PFAS%5BTitle%2FAbstract%5D+OR+PFOS%5BTitle%2FAbstract%5D+OR+PFOA%5BTitle%2FAbstract%5D+OR+PFBA%5BTitle%2FAbstract%5D+OR+PFNA%5BTitle%2FAbstract%5D+OR+PFOSA%5BTitle%2FAbstract%5D+OR+PFHxS%5BTitle%2FAbstract%5D+OR+PFBS%5BTitle%2FAbstract%5D+OR+%22F-53B%22%5BTitle%2FAbstract%5D+OR+F53B%5BTitle%2FAbstract%5D+OR+%22Cl-PFESA%22%5BTitle%2FAbstract%5D+OR+%22Cl-PFAES%22%5BTitle%2FAbstract%5D+OR+PFC%5BTitle%2FAbstract%5D+OR+PFCs%5BTitle%2FAbstract%5D+OR+perfluor%2A%5BTitle%2FAbstract%5D+OR+polyfluor%2A%5BTitle%2FAbstract%5D+OR+fluorotelomer%2A%5BTitle%2FAbstract%5D%29+AND+%28%222015%2F01%2F01%22%5BDate+-+Publication%5D+%3A+%222026%2F10%2F29%22%5BDate+-+Publication%5D%29&retmode=json&retmax=9999",
+      "started_at": "2026-10-29T05:21:14.300479+00:00",
+      "attempt": 1,
+      "file": "esearch.json",
+      "status": 200,
+      "bytes": 1388,
+      "sha256": "9b4178be56aa59738e44a7a2d9cd366a88be464d9c000c08ea44bdebe35c862d",
+      "finished_at": "2026-10-29T05:21:31.619954+00:00"
+    },
+    {
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42764241%2C42198499%2C41887838%2C41706329%2C41616538%2C41539585%2C41422984%2C41027221%2C41005273%2C40795757%2C39368493%2C39340199%2C39270866%2C39043301%2C38941840%2C38365036%2C33740727%2C32416398%2C29306661&retmode=xml",
+      "started_at": "2026-10-29T05:21:32.026390+00:00",
+      "attempt": 1,
+      "file": "efetch-001.xml",
+      "status": 200,
+      "bytes": 314044,
+      "sha256": "715b9f8dd3110003b8adebd2ff8ac85c4172bc297af60c305c75598faee3e542",
+      "finished_at": "2026-10-29T05:21:38.695097+00:00"
+    }
+  ]
+}

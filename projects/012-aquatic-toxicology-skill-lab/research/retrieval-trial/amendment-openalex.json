@@ -1,0 +1,18 @@
+{
+  "schema": "retrieval-amendment/1.0",
+  "at": "2026-10-29T05:11:08.399299+00:00",
+  "reason": "Add cross-disciplinary OpenAlex as a third source after native PubMed/EuropePMC retrieval; known old DOI regression will be reported separately. Independent benchmark has not been opened by primary agent. Original frozen query scores remain separate.",
+  "source": "OpenAlex works API",
+  "query_id": "OA-SUPPLEMENT",
+  "parameter": "search.title_and_abstract.exact",
+  "query": "(zebrafish OR \"Danio rerio\") AND (microplastic* OR nanoplastic* OR \"micro plastic*\" OR \"nano plastic*\" OR polystyrene OR polyethylene OR \"polyethylene terephthalate\" OR polypropylene OR \"polyvinyl chloride\" OR \"polymethyl methacrylate\") AND (PFAS OR PFOS OR PFOA OR PFBA OR PFHxS OR PFBS OR \"F-53B\" OR \"Cl-PFESA\" OR perfluoro* OR polyfluoro* OR fluorotelomer*)",
+  "filter": "from_publication_date:2015-01-01,to_publication_date:2026-10-29",
+  "cap": 1000,
+  "citation_seeds": [
+    "10.1016/j.scitotenv.2024.170948",
+    "10.1016/j.watres.2025.124658",
+    "10.1016/j.aquatox.2025.107534",
+    "10.1016/j.chemosphere.2020.127040"
+  ],
+  "citation_scope": "One-hop backward/forward citation expansion of these four disclosed seeds. Up to1000 records per seed/direction, explicitly mark any unavailable pages and truncation. Not all included papers or all graph depths."
+}

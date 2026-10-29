@@ -1,0 +1,411 @@
+{
+  "purpose": "让读者沿着本仓库已经留下的文件，看到我们怎样把一个宽泛任务变成问题、检索、可读证据、程序核验、修改判断和交付。以下委派内容是依据产物整理的任务摘要，不是原始逐字提示词或完整会话轨迹；本次补写没有新增研究。",
+  "currentStage": "已完成有范围限制的证据调查、报告和五项修订回查；课题尚待作者确认，关键全文与科学问题仍待核实。",
+  "steps": [
+    {
+      "id": "W01",
+      "title": "先拿到固定版本，说明怎样执行",
+      "question": "我们拿到的究竟是什么，谁在运行它？",
+      "input": "用户要求新建子项目、获取 academic-research-skills，以水生毒理学实际研究并用网页展示。用户未交付确定题目、论文草稿或实验数据。",
+      "assignment": "主会话获取四项原始技能和共享文件，记录版本与哈希；说明 Codex 能执行的部分及 Claude 专属机制的缺口。",
+      "assignmentKind": "对本轮任务的摘要，不是逐字提示词日志",
+      "rule": {
+        "file": "research/execution-contract.md",
+        "section": "本轮实际执行约定（本项目的适配约定）",
+        "text": "固定版本、下载方式、实际执行主体与原生机制缺口必须讲清楚。这是本轮主会话的执行约定；固定提交和文件哈希并非声称由 deep-research 自动强制。",
+        "url": "./data/execution-contract.md"
+      },
+      "actor": "Codex 主会话；系统 skill-installer 下载脚本。",
+      "actions": [
+        "通过 install-skill-from-github.py 下载 deep-research、academic-paper、academic-paper-reviewer、academic-pipeline，固定 b8d050f24f2e1c465c4410eace8634ea3af15930。",
+        "补齐同一提交的 scripts/shared/docs/许可；清单记录1106份文件哈希。源ZIP为15,507,067字节，SHA-256为 b602ba6aecf3bb142520564a65e29c503c6d63e083a5ee318b9415213c8edafd。",
+        "实际采用 deep-research 2.12.1 及其角色文件，由 Codex 主会话和子代理按阶段手动编排。"
+      ],
+      "example": {
+        "label": "下载与执行是两条可核对的记录",
+        "before": "取得一个 GitHub 技能仓库，并不能说明它的原生插件已经运行。",
+        "action": "清单给出 repository、commit、archive_sha256 与逐文件 sha256；执行约定另记实际工具环境。",
+        "after": "可以复查用了哪个版本；同时保留 Claude hooks、Task 编排、完整原生诚信闸门未启用的事实。",
+        "evidenceIds": []
+      },
+      "decision": "以原始通用研究规范约束本轮工作；用本项目适配补齐任务，不能宣称 Claude 原生 full pipeline PASS。",
+      "output": "research/upstream/ 原始文件、upstream-manifest.json 和 execution-contract.md。",
+      "artifacts": [
+        {
+          "title": "固定版本与1106份文件清单",
+          "url": "./data/upstream-manifest.json"
+        },
+        {
+          "title": "本轮实际执行约定",
+          "url": "./data/execution-contract.md"
+        },
+        {
+          "title": "实际采用的原始 SKILL",
+          "url": "./data/deep-research-SKILL.md"
+        }
+      ],
+      "friction": "原技能面向另一套原生编排环境；下载文件没有自动启动其 hooks。",
+      "learning": "技能首先提供分工、交接和证据约束；它不会自动变成水生毒理学专家。"
+    },
+    {
+      "id": "W02",
+      "title": "把水生毒理学收窄成能比较的问题",
+      "question": "研究对象、比较组和停止边界如何确定？",
+      "input": "宽泛的水生毒理学领域；主会话下载前的两条探索查询及数条种子 DOI/PMID 线索。",
+      "assignment": "问题角色生成候选和范围；方法角色给出比较方法；范围审查检查是否预设结论或把创新性评分当成事实。",
+      "assignmentKind": "对本轮任务的摘要，不是逐字提示词日志",
+      "rule": {
+        "file": "deep-research/agents/research_question_agent.md",
+        "section": "Process · Steps 2–5；Phase Boundary",
+        "text": "原始角色要求生成候选、逐项 FINER 说明、明确纳入排除和子问题，只交付本阶段问题简报。候选内容和毒理比较字段由本轮代理制定。",
+        "url": "https://github.com/Imbad0202/academic-research-skills/blob/b8d050f24f2e1c465c4410eace8634ea3af15930/deep-research/agents/research_question_agent.md"
+      },
+      "actor": "Codex 子代理采用 research_question / research_architect 角色；同一工作链采用反方视角检查范围，非独立盲审。",
+      "actions": [
+        "列出三个候选：生命阶段/暴露条件、成鱼颗粒类型、胚胎内部负荷介导；选择前者作为有边界的比较案例。",
+        "主问题限定2015-01-01至2026-10-29、斑马鱼、微/纳塑料与PFAS；优先比较同一实验的共暴露组与同条件PFAS单暴露组。",
+        "状态记为 provisional、human_confirmed:false。方法补入暴露、实验单位、颗粒、终点、相互作用及读取范围字段，避免套用临床RCT排序。",
+        "CP1-01要求下游记录停止原因；CP1-02要求对外优先显示新颖性未验证，保留内部N=2的暂定性质。"
+      ],
+      "example": {
+        "label": "宽泛领域变成一个可执行案例",
+        "before": "水生毒理学：尚无用户确认的正式论文题目。",
+        "action": "选出候选A：微/纳塑料共暴露相对同条件PFAS单暴露的方向，如何随条件和生命阶段变化？",
+        "after": "得到问题简报与方法计划；不是用户已经相信塑料必然增强毒性，也不是用户已经认领PFAS/斑马鱼题目。",
+        "evidenceIds": []
+      },
+      "decision": "继续做公开文献的叙述性证据调查；不把暂定选题、FINER分数或检查点角色意见写成人工批准。",
+      "output": "rq-brief.md、methodology.md、checkpoint1-review.md。",
+      "artifacts": [
+        {
+          "title": "三个候选与暂定主问题",
+          "url": "./data/rq-brief.md"
+        },
+        {
+          "title": "本轮毒理学提取字段",
+          "url": "./data/methodology.md"
+        },
+        {
+          "title": "范围审查与两项修正",
+          "url": "./data/checkpoint1-review.md"
+        }
+      ],
+      "friction": "还不知道全文是否可取，也未完成查新；种子文献只是线索。",
+      "learning": "先固定比较对象，后面才知道哪篇能回答问题；没有全文和前作核查时，题目与创新性必须保持暂定。"
+    },
+    {
+      "id": "W03",
+      "title": "真实检索，去重并留下排除理由",
+      "question": "具体查了什么，为什么留下这批论文？",
+      "input": "Phase 1问题、同条件比较规则、时间范围和种子线索。",
+      "assignment": "书目角色执行网页发现与原始来源定位，按DOI/题名去重，保留核心与背景分区、查询和实际遇到的排除记录。",
+      "assignmentKind": "对本轮任务的摘要，不是逐字提示词日志",
+      "rule": {
+        "file": "deep-research/agents/bibliography_agent.md",
+        "section": "Search Strategy Framework · Steps 1–4.5",
+        "text": "原始角色要求记录检索参数、日期、纳排理由、去重及命中数。实际网页工具未提供完整数据库命中数，因此本轮没有补造；也未把网页域名限制当成原生数据库检索。",
+        "url": "https://github.com/Imbad0202/academic-research-skills/blob/b8d050f24f2e1c465c4410eace8634ea3af15930/deep-research/agents/bibliography_agent.md"
+      },
+      "actor": "书目子代理；主会话另补3条定向查询和2条OECD方法定位。",
+      "actions": [
+        "Q01：zebrafish PFAS microplastics nanoplastics PFOS PFOA coexposure toxicity；宽检定位P01/P03/P05与综述。",
+        "Q08：\"41027221\" 返回无关数字记录，不作科学依据；Q24用 \"10.1016/j.aquatox.2025.107534\" site:pubmed.ncbi.nlm.nih.gov 定位P09。",
+        "Q28：\"Co-exposure to PFOA, PFBA and nanoplastics\" \"Abstract\"，取得P10官方摘要。",
+        "正式日志37条查询，另5条补查/方法定位；按DOI/题名合并重复入口，保留10篇核心、2篇背景及15个实际遇到的排除候选。"
+      ],
+      "example": {
+        "label": "同一论文多个入口只算一篇",
+        "before": "P01同时出现于PubMed38365036、ScienceDirect、OpenAlex、ZFIN。",
+        "action": "以DOI 10.1016/j.scitotenv.2024.170948与题名合并；另把塑料单暴露、PFAS单暴露、非斑马鱼与综述标出。",
+        "after": "核心集合保留一条P01；P11无PFAS、P12无塑料，仅作背景，不进入核心分母。",
+        "evidenceIds": [
+          "P01",
+          "P11",
+          "P12"
+        ]
+      },
+      "decision": "达到委派的10篇直接相关核心研究加2篇背景后停止本次有界案例；没有证明检索饱和或收齐全部合格论文。",
+      "output": "search-log.json、bibliography.md、papers.json；15项排除是遇到的候选记录，不是完整筛选流程总数。",
+      "artifacts": [
+        {
+          "title": "37条原始检索式及15项排除",
+          "url": "./data/search-log.json"
+        },
+        {
+          "title": "实际书目与纳入理由",
+          "url": "./data/bibliography.md"
+        },
+        {
+          "title": "12篇结构化论文记录",
+          "url": "./data/papers.json"
+        }
+      ],
+      "friction": "裸PMID产生噪声，重复索引入口多；没有原生PubMed/Scopus/WoS全库运行及完整命中统计。",
+      "learning": "日志使我们能解释为什么留下这些论文；论文数量不能代替覆盖程度。"
+    },
+    {
+      "id": "W04",
+      "title": "只提取真正读到的内容",
+      "question": "读到了哪一层，哪些字段必须留空？",
+      "input": "去重后的12篇记录、官方摘要与可见章节；核心论文的全文访问尝试。",
+      "assignment": "读取官方可见内容，逐篇登记定位和范围；提取条件与终点，核验者检查结论是否超过实际阅读内容。",
+      "assignmentKind": "对本轮任务的摘要，不是逐字提示词日志",
+      "rule": {
+        "file": "deep-research/agents/bibliography_agent.md",
+        "section": "Step 5 · Method weaknesses，尤其 Bounded absence claims",
+        "text": "原始规范要求方法缺陷标明作者承认或读者推断；声称缺少某方法时须列出查过的章节。未读方法不能断言原文没有；本轮毒理学字段与摘要级边界来自方法适配。",
+        "url": "https://github.com/Imbad0202/academic-research-skills/blob/b8d050f24f2e1c465c4410eace8634ea3af15930/deep-research/agents/bibliography_agent.md"
+      },
+      "actor": "书目与来源核验子代理，依据已读范围提取和回查。",
+      "actions": [
+        "核心P01/P02/P03/P04/P06/P08/P09/P10读完整摘要；P05读摘要加Introduction片段，P07读摘要加指定出版社片段：共8摘要、2章节片段、0核心全文。",
+        "P03/P09/P10官方全文直连遇403或不可达；P04 RSC入口403。没有绕过限制或把搜索缓存摘要写成已读全文。",
+        "保留每篇readScope与locator；未知对照、浓度、统计和机制细节保持未知。背景P11/P12读指定PMC章节，方法M01/M02仅官方摘要/可见片段。"
+      ],
+      "example": {
+        "label": "P06不能从联合毒性直接推成增强",
+        "before": "摘要报告联合暴露下氧化、免疫、凋亡及行为变化，并使用additive标签。",
+        "action": "核对本轮真正可见的摘要，未能逐终点确认相对同条件PFOA单暴露的方向。",
+        "after": "逐终点方向写为not_resolvable；保留作者报告，等待全文对照，未给论文整体判为无效。",
+        "evidenceIds": [
+          "P06"
+        ]
+      },
+      "decision": "交付摘要/片段级证据地图，保留无法比较项目；不评定未知方法质量，不复算协同模型。",
+      "output": "每篇实际读取范围、证据定位与 source-verification.md 的判断边界。",
+      "artifacts": [
+        {
+          "title": "逐篇读取范围与缺失字段",
+          "url": "./data/papers.json"
+        },
+        {
+          "title": "来源核验与可断言边界",
+          "url": "./data/source-verification.md"
+        }
+      ],
+      "friction": "重要全文不可达，摘要无法核对全部对照、统计单位、正式相互作用模型或救援实验归属。",
+      "learning": "记录没读到什么，会直接降低结论强度；这是执行后的限制，不是纸面上完整走过全文审读。"
+    },
+    {
+      "id": "W05",
+      "title": "运行原始客户端，保留成功和限流",
+      "question": "程序实际核验了什么，又没核验什么？",
+      "input": "12篇论文的DOI和题名；固定提交的SemanticScholarClient与CrossrefClient。",
+      "assignment": "主会话运行本地记录适配器，实际调用原始客户端，保存逐条状态、请求路径、时间与错误。",
+      "assignmentKind": "对本轮任务的摘要，不是逐字提示词日志",
+      "rule": {
+        "file": "deep-research/agents/source_verification_agent.md",
+        "section": "Reference Existence Verification · Tier 0 / Graceful degradation",
+        "text": "原始规范要求逐篇核验文献身份；Semantic Scholar不可用时记录不可用并降级。用本地适配器记录原始客户端、另跑Crossref是本轮实现，不等于核验论文全部科学内容。",
+        "url": "https://github.com/Imbad0202/academic-research-skills/blob/b8d050f24f2e1c465c4410eace8634ea3af15930/deep-research/agents/source_verification_agent.md"
+      },
+      "actor": "Codex 主会话运行 scripts/verify-citations.py；该适配器实际导入原始客户端，没有注入匹配答案。",
+      "actions": [
+        "输入只含公开论文题名/DOI；保留两批原始记录及合并最终状态，没有为了补写过程重跑网络核验。",
+        "Crossref最终12/12 DOI与题名匹配；Semantic Scholar P03/P09匹配，其余10/12 HTTP429限流。",
+        "P03原始请求记录：/paper/DOI:10.1016%2Fj.watres.2025.124658?fields=title,authors,year,externalIds,venue,publicationDate；status=response，paperId=ea8691e32b89822f7fa7ea200222548d72f9d261，year=2025。合并表year=2026依据期刊卷期，未把线上/正式年份差异藏掉。"
+      ],
+      "example": {
+        "label": "同一次运行，P03成功而P04限流",
+        "before": "是否能通过两个公开索引确认题名/DOI，尚未运行。",
+        "action": "原始记录中P03请求从2026-10-29T03:20:51.337845+00:00开始并返回paperId；P04请求status=unavailable，error=\"S2 API HTTP 429 after 3 retries\"。",
+        "after": "合并结果P03 semantic_scholar.status=matched；P04 semantic_scholar.status=unavailable而crossref.status=matched。限流不是假论文，匹配也不是全文或实验认证。",
+        "evidenceIds": [
+          "P03",
+          "P04",
+          "P09"
+        ]
+      },
+      "decision": "保留API成败两个事实，以Crossref与官方来源支持书目身份；不宣称S2全部成功、论文科学真实性或创新性已验证。",
+      "output": "citation-verification.json、citation-verification-additional.json、citation-verification-combined.json；网页下载展示合并结果。",
+      "artifacts": [
+        {
+          "title": "最终12篇逐条API状态",
+          "url": "./data/citation-verification.json"
+        },
+        {
+          "title": "原始过程中的程序说明",
+          "url": "./data/process.md"
+        }
+      ],
+      "friction": "S2限流10条；不同索引存在online年份与正式卷期年份差异。",
+      "learning": "程序核验让书目身份可检查；它不能替代阅读全文、核对统计或判断创新性。"
+    },
+    {
+      "id": "W06",
+      "title": "用前作改变判断，再写成报告",
+      "question": "哪些具体证据让我们撤回或收窄了说法？",
+      "input": "Phase1问题与Phase2实际可读证据、书目身份记录；没有新增实验。",
+      "assignment": "综合角色建立矩阵、检查相同主题中的分歧和已有前作；主会话依据已有材料编写报告，不用参数记忆补科学事实。",
+      "assignmentKind": "对本轮任务的摘要，不是逐字提示词日志",
+      "rule": {
+        "file": "deep-research/agents/synthesis_agent.md；report_compiler_agent.md",
+        "section": "Evidence Mapping / Contradiction Resolution / Cross-Paper Tension Inventory；Knowledge Isolation",
+        "text": "原始规范要求跨来源比较，列明冲突与候选缺口；编写时事实须追溯书目，缺材料则标缺口。下面的挑战命题是代理为检验证据构造的探针，不是用户起初的信念。",
+        "url": "https://github.com/Imbad0202/academic-research-skills/blob/b8d050f24f2e1c465c4410eace8634ea3af15930/deep-research/agents/synthesis_agent.md"
+      },
+      "actor": "采用synthesis角色的子代理；采用report_compiler规范的Codex主会话。",
+      "actions": [
+        "建立12篇论文矩阵、3个主题、3对待作者确认的跨论文张力及3类候选方向；P11/P12只作背景，P05/P09不认作独立重复。",
+        "用P03的胚胎0–48h与仔鱼72–168h相反方向，检验并否定一律增强的概括；也确认阶段转换/TK–TD已有直接前作。",
+        "用P09的7/28天作者标签转换，撤回笼统时间差异即可当新点的想法；用P10的PINK1干预救援线索，撤回机制全部只有组学相关的概括。",
+        "把候选方向改写为需要具体核对的内部剂量、器官×时间、鱼/细胞干预归属；报告没有补造未读全文或新颖性认证。"
+      ],
+      "example": {
+        "label": "P03让阶段差异从候选创新点变成应先承认的前作",
+        "before": "代理构造的探针：生命阶段差异或TK–TD本身是否尚未研究？",
+        "action": "P03摘要直接研究stage-dependent carrier effects：胚胎累积及孵化抑制减轻，仔鱼累积及多类效应增强。",
+        "after": "不再把泛称阶段转换/TK–TD包装成创新；下一步先取P03全文，核对内部剂量匹配与模型，再判断更具体的问题。",
+        "evidenceIds": [
+          "P03"
+        ]
+      },
+      "decision": "报告只称已报道结果有条件差异；不估计普遍效应比例、条件独立因果作用，也不承诺三个候选方向新颖。",
+      "output": "synthesis.md 的矩阵与张力清单；报告草稿及最终report.md。",
+      "artifacts": [
+        {
+          "title": "12篇矩阵、3对张力与候选方向",
+          "url": "./data/synthesis.md"
+        },
+        {
+          "title": "依据既有材料编成的报告",
+          "url": "./data/report.md"
+        }
+      ],
+      "friction": "不同剂量、阶段、材料和终点纠缠，摘要无法解决正式协同、队列独立性或整鱼因果机制。",
+      "learning": "本次能展示的变化是依据前作缩小主张、改变下一步；没有无技能对照，不能量化效率或准确率增益。"
+    },
+    {
+      "id": "W07",
+      "title": "逐项修订，交付能回查的网页",
+      "question": "审查看到了什么，修改后如何留下收据？",
+      "input": "网页草稿、app/data/research.json、Phase1/2/3产物、Phase4报告草稿。",
+      "assignment": "另一子代理依次采用反方、编辑和诚信视角，指出具体问题；主会话修订，再由审查代理读取修改后的文件回查五项。",
+      "assignmentKind": "对本轮任务的摘要，不是逐字提示词日志",
+      "rule": {
+        "file": "deep-research/agents/editor_in_chief_agent.md；report_compiler_agent.md",
+        "section": "Core Principles / Evidence Sufficiency；Revision Protocol",
+        "text": "原始规范要求反馈对应具体文字与证据，并逐项处理修订。此次是同一AI工作链的顺序角色适配，未完整复现原始角色隔离与原生闸门；不能称独立专家评审。",
+        "url": "https://github.com/Imbad0202/academic-research-skills/blob/b8d050f24f2e1c465c4410eace8634ea3af15930/deep-research/agents/editor_in_chief_agent.md"
+      },
+      "actor": "审查子代理提出并复查；主会话修改数据、报告和网页展示。",
+      "actions": [
+        "R01：P06逐终点方向就地标为未决。R02：核心经验依据的关联入口移出方法/背景ID，保留其各自用途。",
+        "R03：把8篇摘要、2篇片段、0篇核心全文移到首屏结论旁。R04：声称10篇时关联补齐P01–P10。R05：标题改为不同条件下，结论要分别解释。",
+        "审查代理重新读取实际数据，五项均标resolved_verified，并读Phase4草稿检查相对综合材料的新增科学漂移。",
+        "网页提供判断到论文的入口、读取范围、方法/背景分区与白名单成果下载；软件与浏览器验证另存validation，不拿页面可用性证明科学准确。"
+      ],
+      "example": {
+        "label": "R03把限制搬到读者看到结论的位置",
+        "before": "读取分母没有紧邻首屏，读者可能把摘要比较理解成全文结论。",
+        "action": "summary.lead首句写清8篇摘要、2篇章节片段、全文审读0篇；审查者回读修改后的research.json。",
+        "after": "R03.status=resolved_verified。这个收据只证明所列展示问题已改并回查，不证明所有科学问题已经解决。",
+        "evidenceIds": []
+      },
+      "decision": "交付带来源、范围、失败和修订记录的研究展示；待作者确认与全文核查继续开放，没有虚构上线地址或人工批准。",
+      "output": "review.json/review.md、最终报告、网页与下载文件；过程补写独立保存，不改写既有科学数据。",
+      "artifacts": [
+        {
+          "title": "R01–R05修订回查与边界",
+          "url": "./data/review.md"
+        },
+        {
+          "title": "最终报告与AI披露",
+          "url": "./data/report.md"
+        },
+        {
+          "title": "原有完整过程记录",
+          "url": "./data/process.md"
+        }
+      ],
+      "friction": "页面结构容易把计数、关联和阅读范围拉开；同一模型家族角色检查仍有共同盲点。",
+      "learning": "可交付的是能回查的局部修改；resolved_verified不是独立专家认可、原生全流程PASS或全文科学认证。"
+    }
+  ],
+  "decisions": [
+    {
+      "title": "检查一律增强，得到条件性结论",
+      "startingPoint": "代理为检验证据构造的宽泛探针：塑料共暴露是否总会增强PFAS毒性？不是用户初始信念。",
+      "evidenceIds": [
+        "P03"
+      ],
+      "change": "P03报告胚胎窗口减轻、仔鱼窗口加重；据此不采用普遍增强的结论。",
+      "consequence": "保留阶段/窗口及终点，不能给整个领域估计增强比例。",
+      "provenance": "research/process.md §5；phase3_analysis/synthesis.md 文献矩阵与方向判断；P03 PubMed Abstract。"
+    },
+    {
+      "title": "阶段/TK–TD不是现成创新点",
+      "startingPoint": "代理构造的选题检查：是否可以把阶段差异或TK–TD本身视为未研究？",
+      "evidenceIds": [
+        "P03"
+      ],
+      "change": "已有直接前作；先核其模型与内部剂量设计，再谈更具体缺口。",
+      "consequence": "候选方向全部保持新颖性待验证，不用FINER数字认证创新。",
+      "provenance": "phase1_scoping/rq-brief.md 前作线索；phase3_analysis/synthesis.md 候选缺口1。"
+    },
+    {
+      "title": "时间差异改成待匹配的具体终点比较",
+      "startingPoint": "代理构造的探针：暴露时间差异能否直接当新点？",
+      "evidenceIds": [
+        "P05",
+        "P09"
+      ],
+      "change": "P09已有7/28天标签转换；需要核对器官、参照模型、剂量及P05/P09批次关系。",
+      "consequence": "不宣称两篇是独立重复或已解决的冲突，也不把时间差异直接命名为创新。",
+      "provenance": "phase3_analysis/synthesis.md CP-003及候选缺口2；P09出版社Abstract。"
+    },
+    {
+      "title": "机制不全是相关，但救援模型仍未清楚",
+      "startingPoint": "代理构造的探针：机制研究是否全部仅有组学相关？",
+      "evidenceIds": [
+        "P10"
+      ],
+      "change": "P10摘要报告PINK1过表达/药理激活救援，保留功能干预线索。",
+      "consequence": "下一步定位每项干预的鱼/细胞归属；不声称整鱼因果救援已证实，也不声称这类验证缺失。",
+      "provenance": "phase3_analysis/synthesis.md 机制段与候选缺口3；P10 PubMed Abstract / publisher Highlights。"
+    },
+    {
+      "title": "水中浓度与鱼体负荷分开",
+      "startingPoint": "代理构造的探针：游离PFAS减少是否意味着鱼体暴露必然减少？",
+      "evidenceIds": [
+        "P01"
+      ],
+      "change": "P01摘要报告水中游离浓度降低、肝/肠累积未改变。",
+      "consequence": "分别记录水相、内部剂量和不良终点，不用一条吸附叙事替代整条证据链。",
+      "provenance": "phase2_investigation/papers.json P01；phase3_analysis/synthesis.md 暴露链。"
+    }
+  ],
+  "ownership": [
+    {
+      "owner": "用户",
+      "contribution": "提出新建项目、获取技能、实际研究水生毒理学并网页展示的目标。",
+      "boundary": "没有提供原始实验数据；尚未逐项确认PFAS/斑马鱼题目、候选方向或本文构造的探针。"
+    },
+    {
+      "owner": "原始技能与角色规范",
+      "contribution": "提供问题范围、阶段交接、检索记录、来源核验、跨文献比较、审查和AI披露约束。",
+      "boundary": "通用规范不自动提供毒理学领域判断；本轮没有完整执行Claude原生编排和所有诚信协议。"
+    },
+    {
+      "owner": "Codex主会话",
+      "contribution": "固定版本、选择可执行案例、适配毒理字段、委派阶段、运行程序核验、汇编报告与网页、落实修订。",
+      "boundary": "这些编排和适配不能冒充原始技能自动行为；没有有/无技能对照，不能量化增益。"
+    },
+    {
+      "owner": "Codex子代理",
+      "contribution": "按已读原始角色完成范围、书目、来源核验、综合及审查产物。",
+      "boundary": "来自同一AI工作链和模型家族；角色分离不代表独立专家、盲审或跨模型共识。"
+    },
+    {
+      "owner": "论文及公开书目索引",
+      "contribution": "论文摘要/片段提供报道结果；Crossref和Semantic Scholar返回题名、DOI、年份或错误。",
+      "boundary": "索引匹配只支持书目身份；摘要作者标签、实验真实性、正式相互作用和未读全文仍未完成独立科学核验。"
+    }
+  ],
+  "next": [
+    "请研究者先确认这个PFAS/斑马鱼案例是否符合真实兴趣、资源和论文目标。",
+    "取得P03/P05/P09/P10关键全文，核对对照、实测暴露、相互作用模型、批次独立性和每项功能救援的模型归属。",
+    "在明确的新问题上补原生学术数据库检索并保存可复现结果，核查候选方向是否已有直接前作；不能把本次未取得写成领域空白。",
+    "需要评估技能收益时，另设计同模型、同任务、有/无技能的对照；当前产物只展示本次流程与局限。"
+  ]
+}

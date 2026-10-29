@@ -1,0 +1,56 @@
+[
+  {
+    "id": "M01",
+    "title": "Test No. 236: Fish Embryo Acute Toxicity (FET) Test",
+    "authors": "OECD",
+    "year": 2025,
+    "doi": "10.1787/9789264203709-en",
+    "url": "https://www.oecd.org/en/publications/test-no-236-fish-embryo-acute-toxicity-fet-test_9789264203709-en.html",
+    "role": "method",
+    "readScope": "sections",
+    "verification": "official_source",
+    "status": "官方页面摘要与发布日期已核对；未完成整份指南审读",
+    "organism": "Danio rerio",
+    "stage": "胚胎",
+    "exposure": "化学物质急性暴露试验的适用框架；不能自动套用为颗粒共暴露或慢性机制试验的完整验证。",
+    "duration": "96 h（官方摘要）",
+    "endpoints": "胚胎致死性观察、LC50及试验报告信息",
+    "findings": "2025年版本描述胚胎急性致死试验。报告要求包括水质和实测化学浓度；用于界定本次急性终点与其他终点的范围。",
+    "limitations": "本次仅用于方法边界提醒，不按2025年修订版追溯判定2024年论文不合规；不等同现场生态风险或完整慢性试验标准。",
+    "locator": "官方页面：25 June 2025；Abstract。PDF首页检索片段标记2025-09-18 corrected，未逐页阅读全文。",
+    "keywords": [
+      "OECD",
+      "TG236",
+      "96h",
+      "acute",
+      "method"
+    ]
+  },
+  {
+    "id": "M02",
+    "title": "Guidance Document on Aquatic Toxicity Testing of Difficult Substances and Mixtures",
+    "authors": "OECD",
+    "year": 2019,
+    "doi": "10.1787/0ed2f88e-en",
+    "url": "https://www.oecd.org/en/publications/guidance-document-on-aquatic-toxicity-testing-of-difficult-substances-and-mixtures_0ed2f88e-en.html",
+    "role": "method",
+    "readScope": "sections",
+    "verification": "official_source",
+    "status": "官方页面摘要与PDF第9节176–177段可见片段已核对；未阅读全文",
+    "organism": "Aquatic organisms",
+    "stage": "多类水生试验",
+    "exposure": "难测试物质和混合物；暴露稳定性、配液/采样及浓度报告。",
+    "duration": "依具体试验",
+    "endpoints": "暴露浓度和结果表达的方法支持",
+    "findings": "指南讨论维持、测量及报告暴露浓度，并建议尽可能以实测浓度表达结果。支持本次把名义浓度、游离水相浓度和体内负荷分开记录。",
+    "limitations": "它是通用方法指导，不是证明某篇颗粒/PFAS论文已通过验证的认证，也不能给出本研究的毒性结论。",
+    "locator": "官方摘要；PDF §9, paragraphs176–177（检索工具所返回片段）。",
+    "keywords": [
+      "OECD",
+      "GD23",
+      "measured concentration",
+      "mixture",
+      "method"
+    ]
+  }
+]

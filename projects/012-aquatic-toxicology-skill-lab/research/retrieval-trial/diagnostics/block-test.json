@@ -1,0 +1,61 @@
+[
+  {
+    "doi": "10.1016/j.jhazmat.2024.135038",
+    "pmid": "38941840",
+    "original_literal_hits": {
+      "organism": [
+        "zebrafish",
+        "\"Danio rerio\""
+      ],
+      "plastic": [
+        "nanoplastic*",
+        "polystyrene"
+      ],
+      "pfas": []
+    },
+    "amended_literal_hits": {
+      "organism": [
+        "zebrafish",
+        "\"Danio rerio\""
+      ],
+      "plastic": [
+        "nanoplastic*",
+        "polystyrene"
+      ],
+      "pfas": [
+        "F53B",
+        "\"Cl-PFAES\"",
+        "polyfluor*"
+      ]
+    },
+    "boundary": "Local literal-text diagnostic; provider parsing/index behavior may differ. Exact-ID lookup is not a topic-search hit."
+  },
+  {
+    "doi": "10.1016/j.envres.2017.12.019",
+    "pmid": "29306661",
+    "original_literal_hits": {
+      "organism": [
+        "zebrafish",
+        "\"Danio rerio\""
+      ],
+      "plastic": [
+        "microplastic*"
+      ],
+      "pfas": []
+    },
+    "amended_literal_hits": {
+      "organism": [
+        "zebrafish",
+        "\"Danio rerio\""
+      ],
+      "plastic": [
+        "microplastic*"
+      ],
+      "pfas": [
+        "PFCs",
+        "perfluor*"
+      ]
+    },
+    "boundary": "Local literal-text diagnostic; provider parsing/index behavior may differ. Exact-ID lookup is not a topic-search hit."
+  }
+]

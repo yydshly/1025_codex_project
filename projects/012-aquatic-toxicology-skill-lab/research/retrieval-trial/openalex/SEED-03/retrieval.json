@@ -1,0 +1,23 @@
+{
+  "queryId": "SEED-03",
+  "seed_doi": "10.1016/j.aquatox.2025.107534",
+  "started_at": "2026-10-29T05:14:57.476248+00:00",
+  "attempts": [
+    {
+      "url": "https://api.openalex.org/works/https://doi.org/10.1016/j.aquatox.2025.107534",
+      "started_at": "2026-10-29T05:14:57.476248+00:00",
+      "attempt": 1,
+      "status": 200,
+      "final_url": "https://api.openalex.org/works/https://doi.org/10.1016/j.aquatox.2025.107534",
+      "content_type": "application/json",
+      "file": "seed.json",
+      "bytes": 23302,
+      "sha256": "7cec1be523a38c1cf982a622e86371978d4c0fb24c0c45f5f3fc43095b2a7a6e",
+      "finished_at": "2026-10-29T05:15:14.376017+00:00"
+    }
+  ],
+  "amendment_sha256": "0aab8b3dc02cde6ee515aad649b56f755b0fb0c99288c57d548871e38d8bc706",
+  "matched": true,
+  "OAid": "https://openalex.org/W4413113461",
+  "finished_at": "2026-10-29T05:15:14.377260+00:00"
+}

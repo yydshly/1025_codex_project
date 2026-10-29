@@ -1,0 +1,284 @@
+{
+  "repaired_at": "2026-10-29T05:13:32.810855+00:00",
+  "network_requests": 0,
+  "cause": "This trial's new normalization adapter error; upstream skill and original articles were not at fault.",
+  "change": "Only known HTML tag names are stripped; angle-bracket comparisons are preserved.",
+  "raw_pages_unchanged": true,
+  "record_ids_unchanged": true,
+  "changed_unique_record_count": 22,
+  "versions": [
+    {
+      "path": "research/retrieval-trial/europepmc/EPMC-PRIMARY/records.json",
+      "before_sha256": "cc971ddb6d643b1c99cfaf0aa0ee3ab3c429f2a0438e7211eef2eb41a98c7689",
+      "after_sha256": "74a664e44b5dac70fcb01c920293dfe1e2ab9fe2543d9c91e8a16cff2dd2a177",
+      "preserved_before": "research/retrieval-trial/europepmc/EPMC-PRIMARY/records-before-normalization-repair.json"
+    },
+    {
+      "path": "research/retrieval-trial/europepmc/EPMC-NO-ORGANISM/records.json",
+      "before_sha256": "76c5f09fd6c2b793f9616e0095360f03ca15c0419e9553cd6652f6cbff7b1f46",
+      "after_sha256": "314a1960ac1e2c1c6faef8f7e106dab40abf0b18015c99f1ffbfcb42b7326b0d",
+      "preserved_before": "research/retrieval-trial/europepmc/EPMC-NO-ORGANISM/records-before-normalization-repair.json"
+    },
+    {
+      "path": "research/retrieval-trial/europepmc/records.json",
+      "before_sha256": "ff8f89473614d456463c00d7a218671c70d73f87b3637b51a98a854d1d4fa3cd",
+      "after_sha256": "4f5c1fa7df6aea277d5a2bae95db7f9b81e4c0b6538396533f1b723f9179f0ea",
+      "preserved_before": "research/retrieval-trial/europepmc/records-before-normalization-repair.json"
+    }
+  ],
+  "changed_records_by_query": [
+    {
+      "queryId": "EPMC-PRIMARY",
+      "id": "EPMC:MED:39270866",
+      "doi": "10.1016/j.scitotenv.2024.176223",
+      "title": "Eco-corona enhanced the interactive effects of nanoplastics and 6:2 chlorinated polyfluorinated ether sulfonate in zebrafish embryos.",
+      "before_abstract_characters": 773,
+      "after_abstract_characters": 1899,
+      "before_title_characters": 133,
+      "after_title_characters": 133,
+      "cause": "Adapter v1 stripped broad angle-bracket spans, confusing mathematical comparison signs with HTML tags. Not missing text in the paper/API raw response."
+    },
+    {
+      "queryId": "EPMC-NO-ORGANISM",
+      "id": "EPMC:MED:38870860",
+      "doi": "10.1016/j.watres.2024.121878",
+      "title": "The bioaccumulation and ecotoxicity of co-exposure of per(poly)fluoroalkyl substances and polystyrene microplastics to Eichhornia crassipes.",
+      "before_abstract_characters": 1342,
+      "after_abstract_characters": 1398,
+      "before_title_characters": 140,
+      "after_title_characters": 140,
+      "cause": "Adapter v1 stripped broad angle-bracket spans, confusing mathematical comparison signs with HTML tags. Not missing text in the paper/API raw response."
+    },
+    {
+      "queryId": "EPMC-NO-ORGANISM",
+      "id": "EPMC:MED:42702451",
+      "doi": "10.1016/j.aca.2026.346033",
+      "title": "A critical evaluation and optimization of combustion ion chromatography (CIC) for total fluorine quantification in plastic matrices relevant to PFAS regulation.",
+      "before_abstract_characters": 1223,
+      "after_abstract_characters": 1549,
+      "before_title_characters": 160,
+      "after_title_characters": 160,
+      "cause": "Adapter v1 stripped broad angle-bracket spans, confusing mathematical comparison signs with HTML tags. Not missing text in the paper/API raw response."
+    },
+    {
+      "queryId": "EPMC-NO-ORGANISM",
+      "id": "EPMC:MED:41779007",
+      "doi": "10.1158/1078-0432.ccr-25-3846",
+      "title": "Association of Blood Levels of Forever Plastics with Lung Cancer Mortality among Ever Smokers in the Prostate, Lung, Colorectal, and Ovarian (PLCO) Cohort Study.",
+      "before_abstract_characters": 1300,
+      "after_abstract_characters": 1859,
+      "before_title_characters": 161,
+      "after_title_characters": 161,
+      "cause": "Adapter v1 stripped broad angle-bracket spans, confusing mathematical comparison signs with HTML tags. Not missing text in the paper/API raw response."
+    },
+    {
+      "queryId": "EPMC-NO-ORGANISM",
+      "id": "EPMC:MED:39270866",
+      "doi": "10.1016/j.scitotenv.2024.176223",
+      "title": "Eco-corona enhanced the interactive effects of nanoplastics and 6:2 chlorinated polyfluorinated ether sulfonate in zebrafish embryos.",
+      "before_abstract_characters": 773,
+      "after_abstract_characters": 1899,
+      "before_title_characters": 133,
+      "after_title_characters": 133,
+      "cause": "Adapter v1 stripped broad angle-bracket spans, confusing mathematical comparison signs with HTML tags. Not missing text in the paper/API raw response."
+    },
+    {
+      "queryId": "EPMC-NO-ORGANISM",
+      "id": "EPMC:MED:41704626",
+      "doi": "10.1016/j.eehl.2026.100216",
+      "title": "Effects and mechanisms of microplastic types on plant uptake of per- and polyfluorinated alkyl substances.",
+      "before_abstract_characters": 1291,
+      "after_abstract_characters": 1700,
+      "before_title_characters": 106,
+      "after_title_characters": 106,
+      "cause": "Adapter v1 stripped broad angle-bracket spans, confusing mathematical comparison signs with HTML tags. Not missing text in the paper/API raw response."
+    },
+    {
+      "queryId": "EPMC-NO-ORGANISM",
+      "id": "EPMC:MED:40403557",
+      "doi": "10.1016/j.watres.2025.123822",
+      "title": "Perfluorooctanoic acid and concomitant microplastics pollution impact nitrogen elimination processes and increase N<sub>2</sub>O emission in wetlands through regulation of the functional microbiome.",
+      "before_abstract_characters": 2280,
+      "after_abstract_characters": 2353,
+      "before_title_characters": 198,
+      "after_title_characters": 198,
+      "cause": "Adapter v1 stripped broad angle-bracket spans, confusing mathematical comparison signs with HTML tags. Not missing text in the paper/API raw response."
+    },
+    {
+      "queryId": "EPMC-NO-ORGANISM",
+      "id": "EPMC:MED:34793599",
+      "doi": "10.1002/etc.5255",
+      "title": "Poly- and Perfluorinated Alkyl Substances in Air and Water from Dhaka, Bangladesh.",
+      "before_abstract_characters": 1410,
+      "after_abstract_characters": 1442,
+      "before_title_characters": 82,
+      "after_title_characters": 82,
+      "cause": "Adapter v1 stripped broad angle-bracket spans, confusing mathematical comparison signs with HTML tags. Not missing text in the paper/API raw response."
+    },
+    {
+      "queryId": "EPMC-NO-ORGANISM",
+      "id": "EPMC:MED:42263997",
+      "doi": "10.1016/j.envres.2026.124996",
+      "title": "Chemical and biological cargo on microplastics: current evidence for the Trojan-horse pathway to human exposure.",
+      "before_abstract_characters": 1535,
+      "after_abstract_characters": 1789,
+      "before_title_characters": 112,
+      "after_title_characters": 112,
+      "cause": "Adapter v1 stripped broad angle-bracket spans, confusing mathematical comparison signs with HTML tags. Not missing text in the paper/API raw response."
+    },
+    {
+      "queryId": "EPMC-NO-ORGANISM",
+      "id": "EPMC:MED:42084741",
+      "doi": "10.1007/s10653-026-03228-2",
+      "title": "Combined exposure to microplastics and PFASs on earthworms: size and concentration effects.",
+      "before_abstract_characters": 2301,
+      "after_abstract_characters": 2394,
+      "before_title_characters": 91,
+      "after_title_characters": 91,
+      "cause": "Adapter v1 stripped broad angle-bracket spans, confusing mathematical comparison signs with HTML tags. Not missing text in the paper/API raw response."
+    },
+    {
+      "queryId": "EPMC-NO-ORGANISM",
+      "id": "EPMC:MED:34226995",
+      "doi": "10.1007/s11356-021-14982-4",
+      "title": "Ecotoxicological effects of microplastics on aquatic organisms: a review.",
+      "before_abstract_characters": 849,
+      "after_abstract_characters": 1519,
+      "before_title_characters": 73,
+      "after_title_characters": 73,
+      "cause": "Adapter v1 stripped broad angle-bracket spans, confusing mathematical comparison signs with HTML tags. Not missing text in the paper/API raw response."
+    },
+    {
+      "queryId": "EPMC-NO-ORGANISM",
+      "id": "EPMC:MED:39500750",
+      "doi": "10.1007/s00128-024-03976-w",
+      "title": "Levels and Classification of Microplastics and Their Impact on the Wellbeing of Selected Commercially Important Fish Species in Kisumu Bay, Lake Victoria.",
+      "before_abstract_characters": 1452,
+      "after_abstract_characters": 1630,
+      "before_title_characters": 154,
+      "after_title_characters": 154,
+      "cause": "Adapter v1 stripped broad angle-bracket spans, confusing mathematical comparison signs with HTML tags. Not missing text in the paper/API raw response."
+    },
+    {
+      "queryId": "EPMC-NO-ORGANISM",
+      "id": "EPMC:MED:31445806",
+      "doi": "10.1016/j.chroma.2019.460430",
+      "title": "Losses of poly- and perfluoroalkyl substances to syringe filter materials.",
+      "before_abstract_characters": 1621,
+      "after_abstract_characters": 1636,
+      "before_title_characters": 74,
+      "after_title_characters": 74,
+      "cause": "Adapter v1 stripped broad angle-bracket spans, confusing mathematical comparison signs with HTML tags. Not missing text in the paper/API raw response."
+    },
+    {
+      "queryId": "EPMC-NO-ORGANISM",
+      "id": "EPMC:MED:42213629",
+      "doi": "10.1159/000552644",
+      "title": "Early-Onset Colorectal Cancer in Australia: Environmental, Microbial, and Policy Implications.",
+      "before_abstract_characters": 56,
+      "after_abstract_characters": 2499,
+      "before_title_characters": 94,
+      "after_title_characters": 94,
+      "cause": "Adapter v1 stripped broad angle-bracket spans, confusing mathematical comparison signs with HTML tags. Not missing text in the paper/API raw response."
+    },
+    {
+      "queryId": "EPMC-NO-ORGANISM",
+      "id": "EPMC:MED:39256853",
+      "doi": "10.1186/s13584-024-00628-6",
+      "title": "Adverse health effects of exposure to plastic, microplastics and their additives: environmental, legal and policy implications for Israel.",
+      "before_abstract_characters": 1253,
+      "after_abstract_characters": 2419,
+      "before_title_characters": 138,
+      "after_title_characters": 138,
+      "cause": "Adapter v1 stripped broad angle-bracket spans, confusing mathematical comparison signs with HTML tags. Not missing text in the paper/API raw response."
+    },
+    {
+      "queryId": "EPMC-NO-ORGANISM",
+      "id": "EPMC:MED:31950830",
+      "doi": "10.1021/acsami.9b19269",
+      "title": "Selective Infiltration in Polymer Hybrid Thin Films as a Gas-Encapsulation Layer for Stretchable Electronics.",
+      "before_abstract_characters": 1313,
+      "after_abstract_characters": 1319,
+      "before_title_characters": 109,
+      "after_title_characters": 109,
+      "cause": "Adapter v1 stripped broad angle-bracket spans, confusing mathematical comparison signs with HTML tags. Not missing text in the paper/API raw response."
+    },
+    {
+      "queryId": "EPMC-NO-ORGANISM",
+      "id": "EPMC:MED:27886760",
+      "doi": "10.1016/j.talanta.2016.10.093",
+      "title": "Practical limitations of single particle ICP-MS in the determination of nanoparticle size distributions and dissolution: case of rare earth oxides.",
+      "before_abstract_characters": 1044,
+      "after_abstract_characters": 1260,
+      "before_title_characters": 147,
+      "after_title_characters": 147,
+      "cause": "Adapter v1 stripped broad angle-bracket spans, confusing mathematical comparison signs with HTML tags. Not missing text in the paper/API raw response."
+    },
+    {
+      "queryId": "EPMC-NO-ORGANISM",
+      "id": "EPMC:MED:36969097",
+      "doi": "10.5334/aogh.4056",
+      "title": "The Minderoo-Monaco Commission on Plastics and Human Health.",
+      "before_abstract_characters": 17059,
+      "after_abstract_characters": 17777,
+      "before_title_characters": 60,
+      "after_title_characters": 60,
+      "cause": "Adapter v1 stripped broad angle-bracket spans, confusing mathematical comparison signs with HTML tags. Not missing text in the paper/API raw response."
+    },
+    {
+      "queryId": "EPMC-NO-ORGANISM",
+      "id": "EPMC:MED:28887585",
+      "doi": "10.1007/s00449-017-1835-6",
+      "title": "Biomechanical properties and cellular biocompatibility of 3D printed tracheal graft.",
+      "before_abstract_characters": 517,
+      "after_abstract_characters": 1054,
+      "before_title_characters": 84,
+      "after_title_characters": 84,
+      "cause": "Adapter v1 stripped broad angle-bracket spans, confusing mathematical comparison signs with HTML tags. Not missing text in the paper/API raw response."
+    },
+    {
+      "queryId": "EPMC-NO-ORGANISM",
+      "id": "EPMC:MED:38266587",
+      "doi": "10.1016/j.jhazmat.2024.133471",
+      "title": "Occurrence, spatiotemporal trends, fate, and treatment technologies for microplastics and organic contaminants in biosolids: A review.",
+      "before_abstract_characters": 970,
+      "after_abstract_characters": 1561,
+      "before_title_characters": 134,
+      "after_title_characters": 134,
+      "cause": "Adapter v1 stripped broad angle-bracket spans, confusing mathematical comparison signs with HTML tags. Not missing text in the paper/API raw response."
+    },
+    {
+      "queryId": "EPMC-NO-ORGANISM",
+      "id": "EPMC:MED:30614049",
+      "doi": "10.1002/etc.4354",
+      "title": "Uptake of hydrophobic organic compounds, including organochlorine pesticides, polybrominated diphenyl ethers, and perfluoroalkyl acids in fish and blue crabs of the lower Passaic River, New Jersey, USA.",
+      "before_abstract_characters": 1552,
+      "after_abstract_characters": 1559,
+      "before_title_characters": 202,
+      "after_title_characters": 202,
+      "cause": "Adapter v1 stripped broad angle-bracket spans, confusing mathematical comparison signs with HTML tags. Not missing text in the paper/API raw response."
+    },
+    {
+      "queryId": "EPMC-NO-ORGANISM",
+      "id": "EPMC:PMC:PMC6253509",
+      "doi": null,
+      "title": "2108. Perfluorocarbon Omniphobic Treatment Prevents Bacterial Colonization of Urinary Catheter in a Rat Model",
+      "before_abstract_characters": 2349,
+      "after_abstract_characters": 2358,
+      "before_title_characters": 109,
+      "after_title_characters": 109,
+      "cause": "Adapter v1 stripped broad angle-bracket spans, confusing mathematical comparison signs with HTML tags. Not missing text in the paper/API raw response."
+    },
+    {
+      "queryId": "EPMC-NO-ORGANISM",
+      "id": "EPMC:MED:28616869",
+      "doi": "10.1111/aos.13465",
+      "title": "A perfluorobutylpentane (F4H5)-based solution for the removal of residual emulsified silicone oil.",
+      "before_abstract_characters": 1463,
+      "after_abstract_characters": 1613,
+      "before_title_characters": 98,
+      "after_title_characters": 98,
+      "cause": "Adapter v1 stripped broad angle-bracket spans, confusing mathematical comparison signs with HTML tags. Not missing text in the paper/API raw response."
+    }
+  ]
+}

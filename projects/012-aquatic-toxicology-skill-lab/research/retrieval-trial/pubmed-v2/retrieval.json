@@ -1,0 +1,15 @@
+{
+  "query_id": "PM-REPAIRED",
+  "source": "PubMed E-utilities",
+  "query": "(zebrafish[Title/Abstract] OR \"Danio rerio\"[Title/Abstract]) AND (microplastic*[Title/Abstract] OR nanoplastic*[Title/Abstract] OR \"micro plastic*\"[Title/Abstract] OR \"nano plastic*\"[Title/Abstract] OR polystyrene[Title/Abstract] OR polyethylene[Title/Abstract] OR \"polyethylene terephthalate\"[Title/Abstract] OR polypropylene[Title/Abstract] OR \"polyvinyl chloride\"[Title/Abstract] OR \"polymethyl methacrylate\"[Title/Abstract]) AND (PFAS[Title/Abstract] OR PFOS[Title/Abstract] OR PFOA[Title/Abstract] OR PFBA[Title/Abstract] OR PFNA[Title/Abstract] OR PFOSA[Title/Abstract] OR PFHxS[Title/Abstract] OR PFBS[Title/Abstract] OR \"F-53B\"[Title/Abstract] OR F53B[Title/Abstract] OR \"Cl-PFESA\"[Title/Abstract] OR \"Cl-PFAES\"[Title/Abstract] OR PFC[Title/Abstract] OR PFCs[Title/Abstract] OR perfluor*[Title/Abstract] OR polyfluor*[Title/Abstract] OR fluorotelomer*[Title/Abstract]) AND (\"2015/01/01\"[Date - Publication] : \"2026/10/29\"[Date - Publication])",
+  "started_at": "2026-10-29T05:21:14.300479+00:00",
+  "complete": true,
+  "total": 19,
+  "returned_ids": 19,
+  "translation": "(\"zebrafish\"[Title/Abstract] OR \"Danio rerio\"[Title/Abstract]) AND (\"microplastic*\"[Title/Abstract] OR \"nanoplastic*\"[Title/Abstract] OR \"micro plastic*\"[Title/Abstract] OR \"nano plastic*\"[Title/Abstract] OR \"polystyrene\"[Title/Abstract] OR \"polyethylene\"[Title/Abstract] OR \"polyethylene terephthalate\"[Title/Abstract] OR \"polypropylene\"[Title/Abstract] OR \"polyvinyl chloride\"[Title/Abstract] OR \"polymethyl methacrylate\"[Title/Abstract]) AND (\"PFAS\"[Title/Abstract] OR \"PFOS\"[Title/Abstract] OR \"PFOA\"[Title/Abstract] OR \"PFBA\"[Title/Abstract] OR \"PFNA\"[Title/Abstract] OR \"PFOSA\"[Title/Abstract] OR \"PFHxS\"[Title/Abstract] OR \"PFBS\"[Title/Abstract] OR \"F-53B\"[Title/Abstract] OR \"F53B\"[Title/Abstract] OR \"Cl-PFESA\"[Title/Abstract] OR \"Cl-PFAES\"[Title/Abstract] OR \"PFC\"[Title/Abstract] OR \"PFCs\"[Title/Abstract] OR \"perfluor*\"[Title/Abstract] OR \"polyfluor*\"[Title/Abstract] OR \"fluorotelomer*\"[Title/Abstract]) AND 2015/01/01:2026/10/29[Date - Publication]",
+  "warnings": null,
+  "returned": 19,
+  "unique": 19,
+  "status": "success",
+  "finished_at": "2026-10-29T05:21:38.703298+00:00"
+}

@@ -1,0 +1,81 @@
+{
+  "queryId": "CITE-BACK-04",
+  "purpose": "One-hop backward references; no relevance filtering",
+  "seed_OAid": "https://openalex.org/W3025718754",
+  "seed_doi": "10.1016/j.chemosphere.2020.127040",
+  "started_at": "2026-10-29T05:16:22.092203+00:00",
+  "amendment_sha256": "0aab8b3dc02cde6ee515aad649b56f755b0fb0c99288c57d548871e38d8bc706",
+  "total": 36,
+  "requested_ids": [
+    "https://openalex.org/W148261610",
+    "https://openalex.org/W1888056390",
+    "https://openalex.org/W1963748853",
+    "https://openalex.org/W2005404508",
+    "https://openalex.org/W2011681469",
+    "https://openalex.org/W2041714051",
+    "https://openalex.org/W2048668195",
+    "https://openalex.org/W2128635872",
+    "https://openalex.org/W2293481204",
+    "https://openalex.org/W2295281563",
+    "https://openalex.org/W2322346801",
+    "https://openalex.org/W2477160095",
+    "https://openalex.org/W2519315265",
+    "https://openalex.org/W2520617326",
+    "https://openalex.org/W2585884657",
+    "https://openalex.org/W2595675373",
+    "https://openalex.org/W2765581331",
+    "https://openalex.org/W2769190269",
+    "https://openalex.org/W2772722868",
+    "https://openalex.org/W2789500366",
+    "https://openalex.org/W2793554595",
+    "https://openalex.org/W2801229377",
+    "https://openalex.org/W2806355655",
+    "https://openalex.org/W2810732585",
+    "https://openalex.org/W2889479406",
+    "https://openalex.org/W2897810688",
+    "https://openalex.org/W2906191117",
+    "https://openalex.org/W2908974593",
+    "https://openalex.org/W2914833654",
+    "https://openalex.org/W2955474673",
+    "https://openalex.org/W2957092679",
+    "https://openalex.org/W2963435999",
+    "https://openalex.org/W2980884117",
+    "https://openalex.org/W2985020957",
+    "https://openalex.org/W2989656878",
+    "https://openalex.org/W6770502304"
+  ],
+  "record_cap": 1000,
+  "attempts": [
+    {
+      "url": "https://api.openalex.org/works?filter=openalex%3AW148261610%7CW1888056390%7CW1963748853%7CW2005404508%7CW2011681469%7CW2041714051%7CW2048668195%7CW2128635872%7CW2293481204%7CW2295281563%7CW2322346801%7CW2477160095%7CW2519315265%7CW2520617326%7CW2585884657%7CW2595675373%7CW2765581331%7CW2769190269%7CW2772722868%7CW2789500366%7CW2793554595%7CW2801229377%7CW2806355655%7CW2810732585%7CW2889479406%7CW2897810688%7CW2906191117%7CW2908974593%7CW2914833654%7CW2955474673%7CW2957092679%7CW2963435999%7CW2980884117%7CW2985020957%7CW2989656878%7CW6770502304&per_page=100&select=id%2Cdoi%2Cids%2Ctitle%2Cabstract_inverted_index%2Cpublication_year%2Cpublication_date%2Ctype%2Cprimary_location%2Creferenced_works%2Ccited_by_count",
+      "started_at": "2026-10-29T05:16:22.092634+00:00",
+      "attempt": 1,
+      "status": 200,
+      "final_url": "https://api.openalex.org/works?filter=openalex%3AW148261610%7CW1888056390%7CW1963748853%7CW2005404508%7CW2011681469%7CW2041714051%7CW2048668195%7CW2128635872%7CW2293481204%7CW2295281563%7CW2322346801%7CW2477160095%7CW2519315265%7CW2520617326%7CW2585884657%7CW2595675373%7CW2765581331%7CW2769190269%7CW2772722868%7CW2789500366%7CW2793554595%7CW2801229377%7CW2806355655%7CW2810732585%7CW2889479406%7CW2897810688%7CW2906191117%7CW2908974593%7CW2914833654%7CW2955474673%7CW2957092679%7CW2963435999%7CW2980884117%7CW2985020957%7CW2989656878%7CW6770502304&per_page=100&select=id%2Cdoi%2Cids%2Ctitle%2Cabstract_inverted_index%2Cpublication_year%2Cpublication_date%2Ctype%2Cprimary_location%2Creferenced_works%2Ccited_by_count",
+      "content_type": "application/json",
+      "file": "batch-001.json",
+      "bytes": 144433,
+      "sha256": "c3f29c291cceceeb56fe95f1b2769e733c9d39d3c2c273063636655d0ca43a93",
+      "finished_at": "2026-10-29T05:16:27.982786+00:00"
+    }
+  ],
+  "pages": [
+    {
+      "file": "batch-001.json",
+      "sha256": "c3f29c291cceceeb56fe95f1b2769e733c9d39d3c2c273063636655d0ca43a93",
+      "batch": 1,
+      "requested_count": 36,
+      "returned": 35,
+      "reported_count": 35,
+      "url": "https://api.openalex.org/works?filter=openalex%3AW148261610%7CW1888056390%7CW1963748853%7CW2005404508%7CW2011681469%7CW2041714051%7CW2048668195%7CW2128635872%7CW2293481204%7CW2295281563%7CW2322346801%7CW2477160095%7CW2519315265%7CW2520617326%7CW2585884657%7CW2595675373%7CW2765581331%7CW2769190269%7CW2772722868%7CW2789500366%7CW2793554595%7CW2801229377%7CW2806355655%7CW2810732585%7CW2889479406%7CW2897810688%7CW2906191117%7CW2908974593%7CW2914833654%7CW2955474673%7CW2957092679%7CW2963435999%7CW2980884117%7CW2985020957%7CW2989656878%7CW6770502304&per_page=100&select=id%2Cdoi%2Cids%2Ctitle%2Cabstract_inverted_index%2Cpublication_year%2Cpublication_date%2Ctype%2Cprimary_location%2Creferenced_works%2Ccited_by_count"
+    }
+  ],
+  "returned": 35,
+  "complete": false,
+  "missing_requested_ids": [
+    "https://openalex.org/W6770502304"
+  ],
+  "returned_unique_source_ids": 35,
+  "stop_reason": "cap_or_unresolved_reference_ids",
+  "finished_at": "2026-10-29T05:16:28.290931+00:00"
+}

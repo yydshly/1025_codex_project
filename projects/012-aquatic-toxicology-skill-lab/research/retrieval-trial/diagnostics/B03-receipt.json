@@ -1,0 +1,9 @@
+{
+  "id": "B03",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A38941840+AND+SRC%3AMED&format=json&resultType=core",
+  "started_at": "2026-10-29T05:20:09.644479+00:00",
+  "purpose": "Exact-PMID diagnosis after independent test; not topic-query recovery",
+  "status": 200,
+  "sha256": "73ab63db5a5d2b85f425bcae3a7948045a4278c392d3d3741d18334307fdbeb0",
+  "finished_at": "2026-10-29T05:20:12.048033+00:00"
+}

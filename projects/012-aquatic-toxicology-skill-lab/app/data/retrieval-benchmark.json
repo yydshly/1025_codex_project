@@ -1,0 +1,1824 @@
+{
+  "schema_version": "1.0",
+  "name": "Independent review-derived zebrafish micro/nanoplastics–PFAS retrieval benchmark",
+  "collection_date": "2026-10-29",
+  "completed_at_utc": "2026-10-29 05:14:18 UTC",
+  "collector": "independent sub-agent /root/retrieval_benchmark",
+  "scope": {
+    "publication_start": "2015-01-01",
+    "publication_end": "2026-10-29",
+    "species": "Danio rerio",
+    "study_type": "original experimental research",
+    "exposures": "co-exposure to microplastics and/or nanoplastics plus at least one PFAS; other co-contaminants permitted and flagged",
+    "exclude": [
+      "reviews as benchmark items",
+      "other species without a zebrafish experiment",
+      "single-exposure PFAS or plastics only",
+      "adsorption/computational studies without zebrafish exposure",
+      "field co-occurrence without experimental exposure"
+    ]
+  },
+  "method": {
+    "candidate_generation": "Review discovery through internet queries, followed by review body/HTML/JATS and/or publisher-deposited Crossref reference-list screening; original abstracts checked after references supplied candidate identities.",
+    "target_count": null,
+    "stopping_rule": "Sources found through broad review discovery and their available reference lists were screened; no numeric target and no claim of saturation.",
+    "not_read": [
+      "existing papers.json",
+      "existing search-log.json",
+      "existing webpage data",
+      "new topic-search results produced by lead agent",
+      "any existing ten-paper list"
+    ],
+    "independence_from_topic_retrieval": "The benchmark collector received only scope and a later freeze timestamp/hash; it never received or inspected the lead topic-retrieval results. Candidate generation did not use that output.",
+    "blinding_caveats": [
+      "Review-discovery search results incidentally included primary papers. Those results were not themselves sufficient for benchmark inclusion; explicit review/reference-list provenance was subsequently required.",
+      "Before the lead requested concealment, one progress message named Yang 2020 and its F-53B subject. Therefore this workflow is not strict researcher blinding, even though source construction remained independent.",
+      "Review/source selection was adaptive and was not preregistered. Only the separate lead topic-search plan was reported frozen."
+    ],
+    "lead_freeze_communication": {
+      "reported_frozen_at": "2026-10-29T05:06:25Z",
+      "reported_plan_sha256": "c8ee855cabc2e8193295d588c939848364d2f2dc3f2e060ddf27841d094252d4",
+      "note": "Timestamp/hash were received as a message; this collector did not open the plan file."
+    },
+    "copyright": "Only bibliographic metadata and short paraphrases retained; no full review or abstract text copied into these deliverables.",
+    "logging": "Exact web queries/open/find arguments and returned result URLs retained. Returned search-result URLs do not mean each result was separately opened. Python network endpoints and failures retained. Per-request timestamps were not captured; date and logical batch order are recorded, with some batches concurrent."
+  },
+  "benchmark_count": 5,
+  "benchmark_items": [
+    {
+      "id": "B01",
+      "title": "Polystyrene microplastics decrease F-53B bioaccumulation but induce inflammatory stress in larval zebrafish",
+      "doi": "10.1016/j.chemosphere.2020.127040",
+      "pmid": "32416398",
+      "year": 2020,
+      "online_date": "2020-05-11",
+      "journal": "Chemosphere",
+      "species": "Danio rerio",
+      "stage": "larvae, starting 6 days post fertilization",
+      "plastic": "polystyrene microplastics (PS-MPs)",
+      "pfas": [
+        "F-53B / 6:2 chlorinated polyfluorinated ether sulfonate"
+      ],
+      "duration": "7 days",
+      "eligible_reason": "原始暴露实验；斑马鱼幼鱼设PS-MPs、F-53B及二者共暴露组，时间在范围内。",
+      "review_provenance": [
+        {
+          "review_id": "R01",
+          "locator": "Section 5, Combined toxicity of MPs and PFASs to aquatic organisms; reference [131] (Yang et al., 2020)",
+          "locator_url": "https://journal.hep.com.cn/fese/EN/10.1007/s11783-022-1571-2"
+        },
+        {
+          "review_id": "R08",
+          "locator": "Crossref reference key 10.1016/j.scitotenv.2024.175000_bb0725; array position 145 (not asserted as printed reference number)",
+          "locator_url": "https://api.crossref.org/works/10.1016/j.scitotenv.2024.175000"
+        },
+        {
+          "review_id": "R09",
+          "locator": "Crossref reference key 10.1016/j.hazadv.2025.100621_bib0105; array position 106",
+          "locator_url": "https://api.crossref.org/works/10.1016/j.hazadv.2025.100621"
+        }
+      ],
+      "original_verification": {
+        "urls": [
+          "https://pubmed.ncbi.nlm.nih.gov/32416398/",
+          "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:32416398%20AND%20SRC:MED&format=json&resultType=core",
+          "https://www.sciencedirect.com/science/article/pii/S0045653520312339"
+        ],
+        "access": "PubMed indexed record and Europe PMC MED core abstract read; publisher indexed chemicals/abstract snippet corroborates PS-MPs",
+        "abstract_paraphrase": "幼鱼从6 dpf开始，分别或联合接受F-53B与PS-MPs，观察7天；有明确共暴露实验组。"
+      },
+      "first_source_operation": "A04"
+    },
+    {
+      "id": "B02",
+      "title": "Sorption of PFOS onto polystyrene microplastics potentiates synergistic toxic effects during zebrafish embryogenesis and neurodevelopment",
+      "doi": "10.1016/j.chemosphere.2024.143462",
+      "pmid": "39368493",
+      "year": 2024,
+      "online_date": "2024-10-03",
+      "journal": "Chemosphere",
+      "species": "Danio rerio",
+      "stage": "embryos and larvae",
+      "plastic": "polystyrene microplastics (PS-MPs)",
+      "pfas": [
+        "PFOS"
+      ],
+      "eligible_reason": "原始实验在斑马鱼胚胎和幼体检验PS-MPs与PFOS的共暴露；不是仅有分子模拟或吸附实验。",
+      "review_provenance": [
+        {
+          "review_id": "R04",
+          "locator": "Reference CR11 (Gupta et al., 2024); section Plant uptake, bioaccumulation, trophic transfer, and toxicity; section Bioaccumulation, toxicity, and ecological implications",
+          "locator_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13526050/fullTextXML"
+        },
+        {
+          "review_id": "R10",
+          "locator": "Crossref reference key 10.1016/j.jhazmat.2025.140044_bib47; array position 47",
+          "locator_url": "https://api.crossref.org/works/10.1016/j.jhazmat.2025.140044"
+        },
+        {
+          "review_id": "R11",
+          "locator": "Crossref reference key e_1_3_7_37_1; array position 36 (printed reference number not verified)",
+          "locator_url": "https://api.crossref.org/works/10.1080/10408444.2026.2686292"
+        }
+      ],
+      "original_verification": {
+        "urls": [
+          "https://pubmed.ncbi.nlm.nih.gov/39368493/"
+        ],
+        "access": "Original bibliographic record and full PubMed abstract read",
+        "abstract_paraphrase": "摘要在吸附研究之后明确使用斑马鱼胚胎进行PS-MPs与PFOS共暴露，并观察幼体发育及行为。"
+      },
+      "first_source_operation": "S02"
+    },
+    {
+      "id": "B03",
+      "title": "Exacerbated interfacial impacts of nanoplastics and 6:2 chlorinated polyfluorinated ether sulfonate by natural organic matter in adult zebrafish: Evidence through histopathology, gut microbiota, and transcriptomic analysis",
+      "doi": "10.1016/j.jhazmat.2024.135038",
+      "pmid": "38941840",
+      "year": 2024,
+      "online_date": "2024-06-25",
+      "journal": "Journal of Hazardous Materials",
+      "species": "Danio rerio",
+      "stage": "adults",
+      "plastic": "polystyrene nanoplastics, 80 nm",
+      "pfas": [
+        "F-53B / 6:2 chlorinated polyfluorinated ether sulfonate"
+      ],
+      "duration": "21 days",
+      "eligible_reason": "原始成鱼实验包括NPs+F-53B二元共暴露和加入腐殖酸/BSA的混合组；添加天然有机质不改变其满足塑料–PFAS共暴露范围。",
+      "review_provenance": [
+        {
+          "review_id": "R04",
+          "locator": "Reference CR14 (Junaid et al., 2024); section Plant uptake, bioaccumulation, trophic transfer, and toxicity; section Bioaccumulation, toxicity, and ecological implications",
+          "locator_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13526050/fullTextXML"
+        }
+      ],
+      "original_verification": {
+        "urls": [
+          "https://pubmed.ncbi.nlm.nih.gov/38941840/"
+        ],
+        "access": "Original PubMed record and full abstract read",
+        "abstract_paraphrase": "成鱼接受80 nm PS-NPs（1 mg/L）和F-53B（200 μg/L）21天，并比较有无腐殖酸/BSA的条件；摘要明确列出NPs+F-53B组。"
+      },
+      "first_source_operation": "A07"
+    },
+    {
+      "id": "B04",
+      "title": "Combined exposure with microplastics increases the toxic effects of PFOS and its alternative F-53B in adult zebrafish",
+      "doi": "10.1016/j.scitotenv.2024.170948",
+      "pmid": "38365036",
+      "year": 2024,
+      "online_date": "2024-02-15",
+      "journal": "Science of the Total Environment",
+      "species": "Danio rerio",
+      "stage": "adult females",
+      "plastic": "microplastics (publisher indexed methods: polystyrene microspheres, 5 μm)",
+      "pfas": [
+        "PFOS",
+        "F-53B"
+      ],
+      "duration": "14 days",
+      "eligible_reason": "原始成鱼实验用微塑料与PFOS或F-53B分别设共暴露组；摘要直接给出二类污染物、物种与14天实验。",
+      "review_provenance": [
+        {
+          "review_id": "R07",
+          "locator": "Publisher-indexed paragraph beginning In an experiment conducted by Jian et al., citing [15]; Crossref ref_15 (array position 15) confirms title/DOI",
+          "locator_url": "https://api.crossref.org/works/10.3390/environments13010038",
+          "access_caveat": "正文定位来自实际返回的出版社索引段落；完整页面未取得。参考条目由Crossref出版社存储的参考列表核验。"
+        },
+        {
+          "review_id": "R10",
+          "locator": "Crossref reference key 10.1016/j.jhazmat.2025.140044_bib56; array position 56",
+          "locator_url": "https://api.crossref.org/works/10.1016/j.jhazmat.2025.140044"
+        },
+        {
+          "review_id": "R11",
+          "locator": "Crossref reference key e_1_3_7_43_1; array position 42 (printed reference number not verified)",
+          "locator_url": "https://api.crossref.org/works/10.1080/10408444.2026.2686292"
+        }
+      ],
+      "original_verification": {
+        "urls": [
+          "https://pubmed.ncbi.nlm.nih.gov/38365036/",
+          "https://www.sciencedirect.com/science/article/pii/S0048969724010878"
+        ],
+        "access": "PubMed and publisher indexed original abstract read; publisher indexed methods snippet read",
+        "abstract_paraphrase": "雌性成鱼接触10 μg/L PFOS或F-53B与50 μg/L MPs，设单独及共暴露，持续14天。"
+      },
+      "first_source_operation": "A06",
+      "incidental_primary_search_result_note": "Original also appeared incidentally in initial review-discovery search S01; it was not accepted until the independently retrieved R07 passage/reference linkage was verified."
+    },
+    {
+      "id": "B05",
+      "title": "Combined effects of microplastics and chemical contaminants on the organ toxicity of zebrafish (Danio rerio)",
+      "doi": "10.1016/j.envres.2017.12.019",
+      "pmid": "29306661",
+      "year": 2018,
+      "online_date": "2018-01-04 (PubMed indexed record)",
+      "journal": "Environmental Research",
+      "species": "Danio rerio",
+      "stage": "fish; adult stage not asserted from abstract alone",
+      "plastic": "LD-PE microplastics, 125–250 μm; 2% in contaminated feed",
+      "pfas": [
+        "PFOA",
+        "PFNA",
+        "PFOSA",
+        "PFOS"
+      ],
+      "duration": "3 weeks",
+      "multi_contaminant_mixture": true,
+      "eligible_reason": "原始斑马鱼饲喂实验设LD-PE吸附污染物混合物组与污染物单独组；混合物含明确PFAS。允许同时含PCB/BFR/甲基汞，但不能将结果解释为PFAS与塑料二元特异效应。",
+      "review_provenance": [
+        {
+          "review_id": "R07",
+          "locator": "Crossref ref_114, array position 114 (Rainieri et al., 2018)",
+          "locator_url": "https://api.crossref.org/works/10.3390/environments13010038"
+        },
+        {
+          "review_id": "R09",
+          "locator": "Crossref key 10.1016/j.hazadv.2025.100621_bib0077; array position 77",
+          "locator_url": "https://api.crossref.org/works/10.1016/j.hazadv.2025.100621"
+        }
+      ],
+      "original_verification": {
+        "urls": [
+          "https://pubmed.ncbi.nlm.nih.gov/29306661/",
+          "https://www.sciencedirect.com/science/article/pii/S0013935117316493"
+        ],
+        "access": "Original indexed PubMed abstract plus publisher indexed chemicals-used passage read",
+        "abstract_paraphrase": "四种饲料比较含微塑料、吸附PCB/BFR/PFC/甲基汞的微塑料、污染物以及对照，持续3周。出版社方法片段列出PFOA、PFNA、PFOSA、PFOS。"
+      },
+      "first_source_operation": "N04"
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "id": "X01",
+      "title": "Gut-ovary axis mediated synergistic reproductive toxicity of polystyrene nanoplastics and perfluorobutanoic acid co-exposure: pyroptotic signaling and probiotic mitigation",
+      "doi": "10.1186/s12989-026-00667-8",
+      "pmid": "41723513",
+      "review_id": "R05",
+      "review_locator": "Reference [194], XML id b194-ETM-32-2-13222",
+      "verification_url": "https://pubmed.ncbi.nlm.nih.gov/41723513/",
+      "reason": "原始摘要明确是大鼠28天实验；PFBA与纳塑料共暴露符合污染物条件，但物种不合格。",
+      "decision": "exclude_wrong_species"
+    },
+    {
+      "id": "X02",
+      "title": "Hainan medaka F-53B / polystyrene nanoplastics study (Gao X. et al., 2023)",
+      "doi": null,
+      "pmid": null,
+      "review_id": "R02",
+      "review_locator": "Section 3.6.2 Medaka, XML citation B66; Table 8 discussed",
+      "reason": "综述明确物种为Hainan medaka，不是斑马鱼；未进一步获取原始题录，不能当作原始论文已全文核验。",
+      "decision": "exclude_wrong_species_at_review_screen"
+    },
+    {
+      "id": "X03",
+      "title": "Microplastics and PFAS as ubiquitous pollutants affect potencies of highly toxic chemicals in mixtures",
+      "doi": "10.1016/j.jhazmat.2025.140493",
+      "pmid": "41313859 (indexed metadata)",
+      "review_id": "R11",
+      "review_locator": "Reference key e_1_3_7_98_1; array position 97",
+      "verification_url": "https://research.vu.nl/en/publications/microplastics-and-pfas-as-ubiquitous-pollutants-affect-potencies-/",
+      "reason": "原始摘要为土壤跳虫Folsomia candida的生殖试验，非斑马鱼。",
+      "decision": "exclude_wrong_species"
+    },
+    {
+      "id": "X04",
+      "title": "Interactions between perfluorinated alkyl substances (PFAS) and microplastics (MPs): Findings from an extensive investigation",
+      "doi": "10.1016/j.hazadv.2025.100740",
+      "review_id": "R11",
+      "review_locator": "Reference key e_1_3_7_29_1; array position 28",
+      "verification_url": "https://www.sciencedirect.com/science/article/pii/S2772416625001524",
+      "reason": "出版社题录/摘要/亮点描述18种聚合物的PFAS吸附及计算验证，未显示斑马鱼暴露实验。",
+      "decision": "exclude_no_zebrafish_experiment_in_available_original_record"
+    },
+    {
+      "id": "X05",
+      "title": "Polystyrene microplastics and nanoplastics induce neurotoxicity in zebrafish via oxidative stress and neurotransmitter disruption",
+      "doi": "10.1016/j.cbpc.2025.110397",
+      "review_id": "R11",
+      "review_locator": "Reference key e_1_3_7_57_1; array position 56",
+      "verification_url": "https://www.sciencedirect.com/science/article/pii/S1532045625002789",
+      "reason": "原始摘要为PS微/纳塑料的斑马鱼实验，未包含PFAS共同处理；不能因正文或推荐文献提到PFAS就纳入。",
+      "decision": "exclude_no_pfas_coexposure"
+    }
+  ],
+  "reviews_consulted": [
+    {
+      "id": "R01",
+      "doi": "10.1007/s11783-022-1571-2",
+      "url": "https://doi.org/10.1007/s11783-022-1571-2",
+      "title": "Interaction and combined toxicity of microplastics and per- and polyfluoroalkyl substances in aquatic environment",
+      "access": "publisher_full_html",
+      "notes": "HEP publisher HTML and full reference list read; section 5 and reference [131] identify B01. The Springer page was also accessed."
+    },
+    {
+      "id": "R02",
+      "doi": "10.3389/ftox.2025.1530209",
+      "url": "https://doi.org/10.3389/ftox.2025.1530209",
+      "title": "A systematic review of the effects of nanoplastics on fish",
+      "access": "europe_pmc_full_text_xml",
+      "notes": "Full JATS XML retrieved; PFAS/F-53B passages and references screened. Its reported literature search ends 2024-02-29. Relevant F-53B passage concerns Hainan medaka, not zebrafish; contributes no accepted items."
+    },
+    {
+      "id": "R03",
+      "doi": "10.3390/toxics13121041",
+      "url": "https://doi.org/10.3390/toxics13121041",
+      "title": "The Microplastic–PFAS Nexus: From Co-Occurrence to Combined Toxicity in Aquatic Environments",
+      "access": "europe_pmc_full_text_xml",
+      "notes": "Full JATS XML retrieved after publisher 429 and PMC browser challenges. No explicit eligible zebrafish original found in its inspected reference list; no candidate accepted from general fish/vector statements."
+    },
+    {
+      "id": "R04",
+      "doi": "10.1007/s10653-026-03419-x",
+      "url": "https://doi.org/10.1007/s10653-026-03419-x",
+      "title": "Microplastic and nanoplastic interactions with per- and polyfluoroalkyl substances (PFAS) in soils: a critical review of main findings and knowledge gaps",
+      "access": "publisher_html_and_europe_pmc_xml",
+      "notes": "Full XML retrieved; aquatic mechanistic evidence paragraphs cite Gupta 2024 (CR11) and Junaid 2024 (CR14). Both separately verified in original abstracts. Publisher dated 2026-08-29; review's final search reported 2025-11-12."
+    },
+    {
+      "id": "R05",
+      "doi": "10.3892/etm.2026.13222",
+      "url": "https://doi.org/10.3892/etm.2026.13222",
+      "title": "Ovarian toxic effects of micro- and nanoplastics (Review)",
+      "access": "europe_pmc_full_text_xml",
+      "notes": "Full XML retrieved. Ref [194] supplies PFBA–PS nanoplastics co-exposure candidate; original abstract identifies rats, so excluded. No zebrafish inference from nearby zebrafish reproduction citations."
+    },
+    {
+      "id": "R06",
+      "doi": "10.3390/toxics14050373",
+      "url": "https://doi.org/10.3390/toxics14050373",
+      "title": "Do Perfluorinated Chemicals Enhance the Toxicity of Other Contaminants in Aquatic Organisms? A Review",
+      "access": "europe_pmc_xml_and_indexed_publisher_text_partial_screen",
+      "notes": "Full XML downloaded; console encoding exception interrupted the selected-reference output. Indexed text/table was also returned. Do not claim full reference screening. Zebrafish pesticide/metal entries are not eligible plastics co-exposures; contributes none."
+    },
+    {
+      "id": "R07",
+      "doi": "10.3390/environments13010038",
+      "url": "https://doi.org/10.3390/environments13010038",
+      "title": "Combined Environmental Impacts and Toxicological Interactions of Per- and Polyfluoroalkyl Substances (PFAS) and Microplastics (MPs)",
+      "access": "publisher_indexed_paragraph_plus_crossref_reference_list",
+      "notes": "Publisher full page/XML/pdf access failed (403/429). Search returned a substantive publisher paragraph citing Jian [15]. Publisher-deposited Crossref metadata successfully returned 137 references; ref_15 resolves B04 and ref_114 resolves B05. This is reference-list access, not a claim to have read full review text."
+    },
+    {
+      "id": "R08",
+      "doi": "10.1016/j.scitotenv.2024.175000",
+      "url": "https://doi.org/10.1016/j.scitotenv.2024.175000",
+      "title": "Interaction of microplastics with perfluoroalkyl and polyfluoroalkyl substances in water: A review of the fate, mechanisms and toxicity",
+      "access": "pubmed_abstract_and_crossref_reference_list",
+      "notes": "Review abstract and publisher-deposited Crossref reference list of 158 records read; no claim to full text. Reference key bb0725 (array position 145) corroborates B01."
+    },
+    {
+      "id": "R09",
+      "doi": "10.1016/j.hazadv.2025.100621",
+      "url": "https://doi.org/10.1016/j.hazadv.2025.100621",
+      "title": "Unraveling the complexities of microplastics and PFAS synergy to foster sustainable environmental remediation and ecosystem protection: A critical review with novel insights",
+      "access": "publisher_indexed_text_and_crossref_reference_list",
+      "notes": "Publisher direct page failed 403; indexed publisher text and 116 Crossref references read. bib0077 identifies B05 and bib0105 identifies B01; retain keys because array position 106 differs from bib0105."
+    },
+    {
+      "id": "R10",
+      "doi": "10.1016/j.jhazmat.2025.140044",
+      "url": "https://doi.org/10.1016/j.jhazmat.2025.140044",
+      "title": "From co-occurrence to co-existence and co-exposure: Associations between per- and polyfluoroalkyl substances and microplastics in the environment",
+      "access": "crossref_reference_list",
+      "notes": "Read publisher-deposited Crossref reference list (165 references), not review full text. bib47 and bib56 corroborate B02/B04. Discovery was a review-title query; no primary-search candidate list supplied."
+    },
+    {
+      "id": "R11",
+      "doi": "10.1080/10408444.2026.2686292",
+      "url": "https://doi.org/10.1080/10408444.2026.2686292",
+      "title": "Microplastics–PFAS interactions in environmental matrices: quantitative evidence for antagonistic and synergistic toxicity",
+      "access": "pubmed_indexed_abstract_and_crossref_reference_list",
+      "notes": "Read indexed PubMed abstract and 112 publisher-deposited Crossref DOI references; fetched metadata for every referenced DOI. 110 resolved after retries, 2 deposited DOI strings remained 404. Only B02/B04 supplied eligible titles among resolved metadata. Reference array position is distinct from numeric-looking key; no claim to full review or its included-study supplement."
+    },
+    {
+      "id": "R12",
+      "doi": "10.1016/j.epm.2025.07.003",
+      "url": "https://doi.org/10.1016/j.epm.2025.07.003",
+      "title": "Toxicity of microplastics and per- and polyfluoroalkyl substances in sentinel freshwater models, Daphnia, Zebrafish and unicellular green algae: A systemic review",
+      "access": "publisher_search_result_only",
+      "notes": "Publisher direct page returned 403. A repository PDF appeared later in search results but was not opened. No reference from this unacquired full text entered the benchmark."
+    },
+    {
+      "id": "R13",
+      "doi": "10.3390/environments13050238",
+      "url": "https://doi.org/10.3390/environments13050238",
+      "title": "Interactions Between Microplastics and Organic Pollutants in Aquatic Systems: Impacts on Environmental Fate, Transport, and Risk Assessment",
+      "access": "publisher_indexed_table_only",
+      "notes": "Indexed table returned an MPs–PFOS/F-53B–zebrafish entry citing [85]; full page returned 429 and bibliography was not acquired. This source was not used as an independent reference-level acceptance route."
+    }
+  ],
+  "search_and_access_log": {
+    "web": [
+      {
+        "id": "S01",
+        "tool": "web.run",
+        "operation": "search_query",
+        "queries": [
+          "review microplastics PFAS zebrafish combined toxicity",
+          "review nanoplastics perfluorooctane sulfonate zebrafish co-exposure references",
+          "microplastics PFAS review F-53B zebrafish"
+        ],
+        "returned_result_urls": [
+          "https://pubmed.ncbi.nlm.nih.gov/42429663/",
+          "https://pubmed.ncbi.nlm.nih.gov/41422984/",
+          "https://pubmed.ncbi.nlm.nih.gov/42735728/",
+          "https://www.sciencedirect.com/science/article/pii/S2950305125000154",
+          "https://pubmed.ncbi.nlm.nih.gov/39053539/",
+          "https://pubmed.ncbi.nlm.nih.gov/41706329/",
+          "https://www.mdpi.com/2305-6304/13/12/1041",
+          "https://www.mdpi.com/2076-3298/13/1/38",
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC12163001/",
+          "https://www.sciencedirect.com/science/article/pii/S0048969724010878",
+          "https://www.sciencedirect.com/science/article/abs/pii/S0166445X2500298X",
+          "https://pubs.rsc.org/ba/content/articlelanding/2025/en/d5en00231a",
+          "https://journals.biologists.com/dmm/article-pdf/18/11/dmm052320/3669675/dmm052320.pdf",
+          "https://pubs.rsc.org/en/content/articlepdf/2025/em/d5em00145e",
+          "https://scholars.cityu.edu.hk/ws/portalfiles/portal/278023478/275524129.pdf",
+          "https://www.tandfonline.com/doi/pdf/10.1080/1547691X.2024.2343362?needAccess=true",
+          "https://fr.wikipedia.org/wiki/Nanoplastique",
+          "https://it.wikipedia.org/wiki/Microplastica",
+          "https://zh.wikipedia.org/wiki/%E5%BE%AE%E5%A1%91%E6%96%99",
+          "https://www.reddit.com/r/science/comments/1h1u8pu",
+          "https://en.wikipedia.org/wiki/Perfluorooctanesulfonyl_fluoride",
+          "https://arxiv.org/abs/2512.22593",
+          "https://de.wikipedia.org/wiki/Per-_und_polyfluorierte_Alkylverbindungen",
+          "https://de.wikipedia.org/wiki/Nanoplastik"
+        ],
+        "access_failures": []
+      },
+      {
+        "id": "A01",
+        "tool": "web.run",
+        "open": [
+          {
+            "ref_id": "https://www.mdpi.com/2305-6304/13/12/1041"
+          },
+          {
+            "ref_id": "https://www.mdpi.com/2076-3298/13/1/38"
+          },
+          {
+            "ref_id": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12163001/"
+          },
+          {
+            "ref_id": "https://pubmed.ncbi.nlm.nih.gov/39053539/"
+          }
+        ],
+        "response_length": "long",
+        "returned_result_urls": [
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC12163001/",
+          "https://pubmed.ncbi.nlm.nih.gov/39053539/"
+        ],
+        "access_failures": [
+          "Failed to fetch https://www.mdpi.com/2305-6304/13/12/1041: (429) Too Many Requests--------------------------------------------------------------------------------",
+          "Failed to fetch https://www.mdpi.com/2076-3298/13/1/38: (429) Too Many Requests--------------------------------------------------------------------------------",
+          "L0: Checking your browser before accessing pmc.ncbi.nlm.nih.gov ...",
+          "L0: Checking your browser before accessing pubmed.ncbi.nlm.nih.gov ..."
+        ]
+      },
+      {
+        "id": "A02",
+        "tool": "web.run",
+        "open": [
+          {
+            "ref_id": "https://www.mdpi.com/2305-6304/13/12/1041/htm"
+          },
+          {
+            "ref_id": "https://www.mdpi.com/2076-3298/13/1/38/htm"
+          },
+          {
+            "ref_id": "https://www.sciencedirect.com/science/article/pii/S2950305125000154"
+          }
+        ],
+        "search_query": [
+          {
+            "q": "\"Interaction of microplastics with perfluoroalkyl\" \"doi\""
+          },
+          {
+            "q": "\"The Microplastic–PFAS Nexus\" zebrafish"
+          }
+        ],
+        "response_length": "long",
+        "returned_result_urls": [
+          "https://pubmed.ncbi.nlm.nih.gov/39053539/",
+          "https://link.springer.com/article/10.1007/s11783-022-1571-2",
+          "https://www.mdpi.com/2305-6304/13/12/1041",
+          "https://journal.hep.com.cn/fese/EN/10.1007/s11783-022-1571-2",
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC12737211/",
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC12737211",
+          "https://pubs.acs.org/doi/abs/10.1021/acs.est.5c10916",
+          "https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2026.1998868/full",
+          "https://cran-test-dspace.koha-ptfs.co.uk/bitstreams/af433ada-9d2c-45e7-abfb-4c214f37c269/download",
+          "https://www.mdpi.com/2305-6304/13/12/1041/pdf?version=1764519241",
+          "https://www.southampton.ac.uk/publicpolicy/University_of_Southampton_written_submission_to_APPG_for_the_Ocean_Inquiry_into_sustainable_ocean_policy_140725.pdf",
+          "https://ouci.dntb.gov.ua/en/works/4YmPBmAM/",
+          "https://openalex.org/W4416845245",
+          "https://ouci.dntb.gov.ua/works/9jdMXVNN/",
+          "https://pubs.rsc.org/en/content/articlepdf/2026/va/d5va00424a",
+          "https://public-pages-files-2025.frontiersin.org/journals/physiology/articles/10.3389/fphys.2026.1782952/pdf",
+          "https://onlinelibrary.wiley.com/doi/10.1002/wer.11080",
+          "https://ehp.niehs.nih.gov/doi/pdf/10.1289/EHP14873"
+        ],
+        "access_failures": [
+          "URL https://www.mdpi.com/2305-6304/13/12/1041/htm is not accessible via this tool.--------------------------------------------------------------------------------",
+          "URL https://www.mdpi.com/2076-3298/13/1/38/htm is not accessible via this tool.--------------------------------------------------------------------------------",
+          "Failed to fetch https://www.sciencedirect.com/science/article/pii/S2950305125000154: (403) Forbidden"
+        ]
+      },
+      {
+        "id": "A03",
+        "tool": "web.run",
+        "open": [
+          {
+            "ref_id": "https://journal.hep.com.cn/fese/EN/10.1007/s11783-022-1571-2"
+          },
+          {
+            "ref_id": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12737211"
+          },
+          {
+            "ref_id": "https://www.mdpi.com/2076-3298/13/1/38"
+          }
+        ],
+        "response_length": "long",
+        "returned_result_urls": [
+          "https://journal.hep.com.cn/fese/EN/10.1007/s11783-022-1571-2",
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC12737211"
+        ],
+        "access_failures": [
+          "L0: Checking your browser before accessing pmc.ncbi.nlm.nih.gov ...",
+          "Failed to fetch https://www.mdpi.com/2076-3298/13/1/38: (429) Too Many Requests"
+        ]
+      },
+      {
+        "id": "A04",
+        "tool": "web.run",
+        "find": [
+          {
+            "ref_id": "turn28view0",
+            "pattern": "zebrafish"
+          },
+          {
+            "ref_id": "turn28view0",
+            "pattern": "References"
+          }
+        ],
+        "open": [
+          {
+            "ref_id": "https://www.mdpi.com/2305-6304/13/12/1041/xml"
+          },
+          {
+            "ref_id": "https://europepmc.org/articles/PMC12163001"
+          },
+          {
+            "ref_id": "https://link.springer.com/article/10.1007/s11783-022-1571-2"
+          }
+        ],
+        "response_length": "long",
+        "returned_result_urls": [
+          "https://link.springer.com/article/10.1007/s11783-022-1571-2",
+          "https://journal.hep.com.cn/fese/EN/10.1007/s11783-022-1571-2"
+        ],
+        "access_failures": [
+          "Failed to fetch https://www.mdpi.com/2305-6304/13/12/1041/xml: (429) Too Many Requests--------------------------------------------------------------------------------",
+          "URL https://europepmc.org/articles/PMC12163001 is not accessible via this tool.--------------------------------------------------------------------------------"
+        ]
+      },
+      {
+        "id": "A05",
+        "tool": "web.run",
+        "open": [
+          {
+            "ref_id": "turn28view0",
+            "lineno": 278
+          }
+        ],
+        "search_query": [
+          {
+            "q": "\"Combined Environmental Impacts and Toxicological Interactions\" zebrafish references"
+          },
+          {
+            "q": "\"A systematic review of the effects of nanoplastics on fish\" PFOS"
+          }
+        ],
+        "response_length": "long",
+        "returned_result_urls": [
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC12163001/",
+          "https://openalex.org/W4410905479",
+          "https://pubs.acs.org/doi/10.1021/acs.est.9b05995",
+          "https://www.mdpi.com/2076-3298/13/1/38",
+          "https://doi.org/10.3390/environments13010038",
+          "https://www.frontiersin.org/journals/toxicology/articles/10.3389/ftox.2026.1768236/full",
+          "https://analyticalsciencejournals.onlinelibrary.wiley.com/doi/10.1002/jat.70366?af=R",
+          "https://www.sciencedirect.com/science/article/abs/pii/S0165993625000263",
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC13211294/",
+          "https://www.nature.com/articles/s41598-025-27780-6_reference.pdf",
+          "https://onlinelibrary.wiley.com/doi/10.1111/faf.70071",
+          "https://ouci.dntb.gov.ua/en/works/9ZPZ3kxa/",
+          "https://www.nature.com/articles/s41598-025-27780-6",
+          "https://publica-rest.fraunhofer.de/server/api/core/bitstreams/7d45f792-b7d1-4f4c-a244-82c59408cf4a/content",
+          "https://journal.unram.ac.id/index.php/jfn/en/article/download/10033/5005/36268",
+          "https://www.mdpi.com/2305-6304/13/9/802/pdf?version=1758461831",
+          "https://www.frontiersin.org/journals/cell-and-developmental-biology/articles/10.3389/fcell.2025.1614251/pdf",
+          "https://amsdottorato.unibo.it/id/eprint/11859/1/PhD%20thesis_Polina%20Rusanova.pdf",
+          "https://journal.hep.com.cn/fese/EN/10.1007/s11783-022-1571-2"
+        ],
+        "access_failures": []
+      },
+      {
+        "id": "A06",
+        "tool": "web.run",
+        "open": [
+          {
+            "ref_id": "https://doi.org/10.3390/environments13010038"
+          },
+          {
+            "ref_id": "https://www.frontiersin.org/journals/toxicology/articles/10.3389/ftox.2025.1530209/full"
+          },
+          {
+            "ref_id": "https://pubmed.ncbi.nlm.nih.gov/42429663/"
+          }
+        ],
+        "search_query": [
+          {
+            "q": "\"Do Perfluorinated Chemicals Enhance the Toxicity\" microplastics zebrafish"
+          },
+          {
+            "q": "\"Combined Environmental Impacts\" \"Polystyrene\" \"zebrafish\""
+          }
+        ],
+        "response_length": "long",
+        "returned_result_urls": [
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC13211294/",
+          "https://www.mdpi.com/2076-3298/13/1/38",
+          "https://www.preprints.org/manuscript/202603.0210/v1/download",
+          "https://journal.hep.com.cn/fese/EN/10.1007/s11783-022-1571-2",
+          "https://www.frontiersin.org/journals/marine-science/articles/10.3389/fmars.2023.1195125/full",
+          "https://academic.oup.com/etc/article/40/3/564/7734567",
+          "https://www.beyondpesticides.org/programs/wildlife/fish",
+          "https://scholars.ufl.edu/cmartyn/publications",
+          "https://www.researchgate.net/publication/377172038_Combined_toxic_effects_of_polystyrene_microplastics_and_36-dibromocarbazole_on_zebrafish_Danio_rerio_embryos",
+          "https://link.springer.com/article/10.1007/s11783-022-1571-2",
+          "https://ouci.dntb.gov.ua/en/works/4YmPBmAM/",
+          "https://globalresearchspace.com/space?region=2026_APR_Q4_L2_359",
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC8741336/",
+          "https://www.preprints.org/frontend/manuscript/6c0e2130117708ca4a4926c9efe69281/download_pub",
+          "https://www.frontiersin.org/journals/toxicology/articles/10.3389/ftox.2025.1530209/full",
+          "https://pubmed.ncbi.nlm.nih.gov/42429663/"
+        ],
+        "access_failures": [
+          "Failed to fetch https://doi.org/10.3390/environments13010038: (429) Too Many Requests--------------------------------------------------------------------------------",
+          "citeturn31view2 [wordlim: 200] Crawled: 5 days ago; Content type: text/html; Source: open({\"ref_id\":\"https://pubmed.ncbi.nlm.nih.gov/42429663/\",\"lineno\":null}); Total lines: 1"
+        ]
+      },
+      {
+        "id": "S02",
+        "tool": "web.run",
+        "search_query": [
+          {
+            "q": "review \"microplastics\" \"PFAS\" \"zebrafish\" \"Yang\" \"2025\""
+          },
+          {
+            "q": "review \"nanoplastics\" \"perfluorobutanoic\" \"zebrafish\""
+          },
+          {
+            "q": "\"From co-occurrence to co-existence and co-exposure\""
+          }
+        ],
+        "response_length": "long",
+        "returned_result_urls": [
+          "https://link.springer.com/article/10.1007/s10311-025-01885-w",
+          "https://www.sciencedirect.com/science/article/pii/S1001074225006618",
+          "https://link.springer.com/article/10.1007/s10653-026-03419-x",
+          "https://www.sciencedirect.com/science/article/abs/pii/S0043135425015611",
+          "https://portaildocumentaire.inrs.fr/Default/basicfilesdownload.ashx?itemGuid=3A2C3605-B2E8-4CFD-982A-6134001CA187",
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC12196793/",
+          "https://doi.org/10.1016/j.hazadv.2025.100621",
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC13526050/",
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC13365865/",
+          "https://www.sciencedirect.com/science/article/abs/pii/S0048969725012185",
+          "https://pubs.rsc.org/en/content/articlehtml/2025/em/d5em00145e",
+          "https://pubs.rsc.org/id/content/articlehtml/2025/em/d5em00145e?page=search",
+          "https://doi.org/10.3390/environments13010038",
+          "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/advs.202520278",
+          "https://d-nb.info/1386582069/34",
+          "https://public-pages-files-2025.frontiersin.org/journals/physiology/articles/10.3389/fphys.2026.1782952/pdf",
+          "https://pubs.rsc.org/en/content/articlepdf/2025/en/d4en00948g",
+          "https://re.public.polimi.it/retrieve/2c397329-f5ad-462a-a8c6-13df39f7772f/Inflammatory%20and%20oxidative%20responses%20to%20PET%20nanoplastics%20in%20the%20leech%20Hirudo%20verbana%20-%20a%20comparative%20analysis%20of%20acute%20and%20chronic%20exposure.pdf"
+        ],
+        "access_failures": []
+      },
+      {
+        "id": "A07",
+        "tool": "web.run",
+        "open": [
+          {
+            "ref_id": "https://link.springer.com/article/10.1007/s10653-026-03419-x"
+          },
+          {
+            "ref_id": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13365865/"
+          },
+          {
+            "ref_id": "https://doi.org/10.1016/j.hazadv.2025.100621"
+          }
+        ],
+        "response_length": "long",
+        "returned_result_urls": [
+          "https://link.springer.com/article/10.1007/s10653-026-03419-x",
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC13365865/"
+        ],
+        "access_failures": [
+          "L0: Checking your browser before accessing pmc.ncbi.nlm.nih.gov ...",
+          "Failed to fetch https://doi.org/10.1016/j.hazadv.2025.100621: (500) Redirected to https://linkinghub.elsevier.com/retrieve/pii/S2772416625000336 which is not accessible via this tool. (non-retryable error)"
+        ]
+      },
+      {
+        "id": "V01",
+        "tool": "web.run",
+        "search_query": [
+          {
+            "q": "\"Polystyrene microplastics decrease F-53B bioaccumulation\" pubmed"
+          },
+          {
+            "q": "\"Sorption of PFOS onto polystyrene microplastics\" pubmed"
+          },
+          {
+            "q": "\"Exacerbated interfacial impacts of nanoplastics\" pubmed"
+          },
+          {
+            "q": "\"Gut-ovary axis mediated synergistic reproductive toxicity\" pubmed"
+          }
+        ],
+        "response_length": "long",
+        "returned_result_urls": [
+          "https://pubmed.ncbi.nlm.nih.gov/32416398/",
+          "https://pubmed.ncbi.nlm.nih.gov/41723513/",
+          "https://openalex.org/W3025718754",
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC12961878/",
+          "https://www.sciencedirect.com/science/article/pii/S0045653520312339",
+          "https://pubmed.ncbi.nlm.nih.gov/42920210/",
+          "https://oamonitor.ireland.openaire.eu/national/search/publication?pid=10.1016%2Fj.chemosphere.2024.143462",
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC13526050/",
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC11621061/",
+          "https://stud.epsilon.slu.se/16597/3/reaume_zabalgoitioa_s_n_210426.pdf",
+          "https://portal.findresearcher.sdu.dk/files/216467561/1_s2.0_S016041202200589X_main.pdf",
+          "https://iue.cas.cn/xwzx/kydt/202301/P020230105350051958340.pdf",
+          "https://www.fosan.org/wp-content/uploads/2023/09/Microplastics-as-carriers-of-per-and-polyfluoroalkyl-substances-PFAS-in-aquatic-environment.-interactions-and-ecotoxicological-effects.pdf",
+          "https://ee.hnu.edu.cn/__local/2/32/47/0EEA35FBAA6B7FADD852A0B2CB6_B56E84C9_D141E.pdf?e=.pdf",
+          "https://ee.hnu.edu.cn/__local/C/DB/34/2EC4D4DE7083E86C5556CC43FF1_4DAA9AC7_28079C.pdf?e=.pdf",
+          "https://doi.org/10.1186/s12989-026-00667-8",
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC11626057/",
+          "https://application.eurekamag.com/research/072/334/"
+        ],
+        "access_failures": []
+      },
+      {
+        "id": "V02",
+        "tool": "web.run",
+        "open": [
+          {
+            "ref_id": "https://pubmed.ncbi.nlm.nih.gov/39368493/"
+          },
+          {
+            "ref_id": "https://pubmed.ncbi.nlm.nih.gov/38941840/"
+          }
+        ],
+        "search_query": [
+          {
+            "q": "\"environments13010038\" \"15.\" \"Jian\""
+          },
+          {
+            "q": "\"environments13010038\" \"11.\" \"zebrafish\""
+          },
+          {
+            "q": "\"Interaction of microplastics\" \"175000\" \"zebrafish\""
+          }
+        ],
+        "response_length": "long",
+        "returned_result_urls": [
+          "https://doi.org/10.3390/environments13010038",
+          "https://bishtref.com/journals/2990/science-of-the-total-environment/volume/948/issue",
+          "https://ehp.niehs.nih.gov/doi/pdf/10.1289/EHP14873",
+          "https://www.mdpi.com/2076-3298/13/1",
+          "https://ouci.dntb.gov.ua/en/works/4NrXJE24/",
+          "https://pure-oai.bham.ac.uk/ws/portalfiles/portal/272519179/UmarA2025Toxicity.pdf",
+          "https://www.mdpi.com/2076-3298/13/5/238",
+          "https://ouci.dntb.gov.ua/en/works/4LYYARo6/",
+          "https://ouci.dntb.gov.ua/en/works/7BKdXq34/",
+          "https://vufind2.lib.aegean.gr/EDS/Search?lookfor=%22Huangyingzi+Wang%22&type=AU",
+          "https://www.mdpi.com/2076-3298/13/1/38",
+          "https://ouci.dntb.gov.ua/en/works/4vrOKxw4/",
+          "https://ouci.dntb.gov.ua/works/4YmbaqR8/",
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC13114043/",
+          "https://pubmed.ncbi.nlm.nih.gov/39368493/",
+          "https://pubmed.ncbi.nlm.nih.gov/38941840/"
+        ],
+        "access_failures": []
+      },
+      {
+        "id": "A08",
+        "tool": "web.run",
+        "open": [
+          {
+            "ref_id": "https://www.sciencedirect.com/science/article/pii/S2772416625000336"
+          },
+          {
+            "ref_id": "https://www.mdpi.com/2076-3298/13/5/238"
+          },
+          {
+            "ref_id": "https://www.mdpi.com/2076-3298/13/1/38/pdf"
+          }
+        ],
+        "find": [
+          {
+            "ref_id": "turn35view0",
+            "pattern": "Abstract"
+          },
+          {
+            "ref_id": "turn35view1",
+            "pattern": "Abstract"
+          }
+        ],
+        "response_length": "long",
+        "returned_result_urls": [
+          "https://pubmed.ncbi.nlm.nih.gov/39368493/",
+          "https://pubmed.ncbi.nlm.nih.gov/38941840/"
+        ],
+        "access_failures": [
+          "Failed to fetch https://www.sciencedirect.com/science/article/pii/S2772416625000336: (403) Forbidden--------------------------------------------------------------------------------",
+          "Failed to fetch https://www.mdpi.com/2076-3298/13/5/238: (429) Too Many Requests--------------------------------------------------------------------------------",
+          "URL https://www.mdpi.com/2076-3298/13/1/38/pdf is not accessible via this tool.--------------------------------------------------------------------------------"
+        ]
+      },
+      {
+        "id": "V03",
+        "tool": "web.run",
+        "open": [
+          {
+            "ref_id": "https://pubmed.ncbi.nlm.nih.gov/32416398/"
+          }
+        ],
+        "search_query": [
+          {
+            "q": "\"Combined exposure with microplastics increases the toxic effects of PFOS and its alternative F-53B in adult zebrafish\" pubmed"
+          }
+        ],
+        "response_length": "long",
+        "returned_result_urls": [
+          "https://pubmed.ncbi.nlm.nih.gov/38365036/",
+          "https://www.sciencedirect.com/science/article/pii/S0048969724010878",
+          "https://openalex.org/W4391850196",
+          "https://hero.epa.gov/reference/11412139/",
+          "https://oamonitor.ireland.openaire.eu/national/search/publication?pid=10.1016%2Fj.scitotenv.2024.170948",
+          "https://www.sciencedirect.com/science/article/abs/pii/S0166445X23001479",
+          "https://ouci.dntb.gov.ua/en/works/7WvXNqO9/",
+          "https://uat.greenmedinfo.com/abstracts/combined-exposure-with-microplastics-increases-the-toxic-effects-of-pf-38365036",
+          "https://heronetnext.epa.gov/project/4212/?page=3",
+          "https://www.mdpi.com/2076-3298/13/1/38",
+          "https://www.storkapp.me/pubpaper/38365036",
+          "https://ouci.dntb.gov.ua/en/works/lda3b5q9/",
+          "https://iris.cnr.it/retrieve/3163dead-03b8-42cd-8420-5a118f402de4/Alijagic%20et%20al%202025%20Env%20Chem%20Letters.pdf",
+          "https://prd-tsn-main-api.s3.amazonaws.com/article/567746bf-ddb6-41cf-8363-6641b9346e2d.pdf",
+          "https://hal.science/hal-04678847/document",
+          "https://oskar-bordeaux.fr/bitstream/handle/20.500.12278/201318/1-s2.0-S0048969724025269-main.pdf?isAllowed=y&sequence=2",
+          "https://public-pages-files-2025.frontiersin.org/journals/physiology/articles/10.3389/fphys.2026.1782952/pdf",
+          "https://journals.innovareacademics.in/index.php/ajpcr/article/download/55404/32721",
+          "https://pubmed.ncbi.nlm.nih.gov/32416398/"
+        ],
+        "access_failures": [
+          "citeturn37view0 [wordlim: 200] Crawled: last week; Content type: text/html; Source: open({\"ref_id\":\"https://pubmed.ncbi.nlm.nih.gov/32416398/\",\"lineno\":null}); Total lines: 1"
+        ]
+      },
+      {
+        "id": "V04",
+        "tool": "web.run",
+        "search_query": [
+          {
+            "q": "\"Combined effects of microplastics and chemical contaminants on the organ toxicity of zebrafish\""
+          }
+        ],
+        "response_length": "long",
+        "returned_result_urls": [
+          "https://pubmed.ncbi.nlm.nih.gov/29306661/",
+          "https://www.sciencedirect.com/science/article/pii/S0013935117316493",
+          "https://orbit.dtu.dk/en/publications/combined-effects-of-microplastics-and-chemical-contaminants-on-th/",
+          "https://heronetnext.epa.gov/reference/4239808/",
+          "https://openalex.org/W2781746339",
+          "https://ouci.dntb.gov.ua/en/works/7BWBvqw4/",
+          "https://greenmedinfo.com/abstracts/combined-effects-microplastics-and-chemical-contaminants-organ-toxicity-zebraf",
+          "https://atlas.winnowlabs.com/papers/76732",
+          "https://www.scinovex.com/articles/W2781746339",
+          "https://research.science.eus/documentos/64e2a60e4a4f093d56e73929?lang=en",
+          "https://uat.greenmedinfo.com/abstracts/combined-effects-microplastics-and-chemical-contaminants-organ-toxicity-zebraf",
+          "https://identity.eurekamag.com/research/055/331/055331759.php",
+          "https://kujnsr.com/JNSR/article/download/184/265/1570",
+          "https://uh.edu/honors/undergraduate-research/research-resources/get-involved/journal-club-on-biological-sciences/adverse-effects-polystyrene-microplastics-exert-on-zebrafish-heart--molecular-to-individual-level.pdf",
+          "https://ipen.org/sites/default/files/documents/ipen-fisheries-report-2024-draft.pdf",
+          "https://boa.unimib.it/retrieve/84975ebe-a752-489b-aa40-14423f2b8a8c/Bonfanti-2021-Ecotox%20Env%20Safety-VoR.pdf",
+          "https://site.ucdb.br/_uploads/d1460201-46ef-49ec-b7f5-37dec52d263a.pdf",
+          "https://dbc.library.uu.nl/bitstream/handle/1874/423663/H.M._Dusza_Thesis.pdf?isAllowed=y&sequence=3"
+        ],
+        "access_failures": []
+      },
+      {
+        "id": "V05",
+        "tool": "web.run",
+        "search_query": [
+          {
+            "q": "\"Microplastics and PFAS as ubiquitous pollutants affect potencies\" abstract"
+          },
+          {
+            "q": "\"Interactions between perfluorinated alkyl substances\" \"100740\" zebrafish"
+          },
+          {
+            "q": "\"Polystyrene microplastics and nanoplastics induce neurotoxicity in zebrafish\" PFAS"
+          }
+        ],
+        "response_length": "long",
+        "returned_result_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S1532045625002789",
+          "https://nora.nerc.ac.uk/id/eprint/540720/1/N540720JA.pdf",
+          "https://www.sciencedirect.com/science/article/pii/S2772416625001524",
+          "https://pure.uva.nl/ws/files/325553289/1-s2.0-S0304389425034132-main.pdf",
+          "https://dare.uva.nl",
+          "https://openalex.org/W4416827179",
+          "https://research.vu.nl/en/publications/microplastics-and-pfas-as-ubiquitous-pollutants-affect-potencies-/",
+          "https://www.frontiersin.org/journals/marine-science/articles/10.3389/fmars.2022.1099984/full",
+          "https://academic.oup.com/toxsci/article/205/1/154/8005871",
+          "https://www.researchgate.net/publication/397840233_Polystyrene_microplastics_and_nanoplastics_induce_neurotoxicity_in_zebrafish_via_oxidative_stress_and_neurotransmitter_disruption",
+          "https://www.mindat.org/reference.php?id=19422067",
+          "https://ouci.dntb.gov.ua/en/works/7A5yNXAJ/",
+          "https://www.researchgate.net/publication/391499394_Interactions_between_Perfluorinated_Alkyl_Substances_PFAS_and_Microplastics_MPs_Findings_from_an_Extensive_Investigation",
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC12590691/",
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC13023340/"
+        ],
+        "access_failures": []
+      }
+    ],
+    "python_http": [
+      {
+        "id": "N01",
+        "tool": "Python urllib.request",
+        "purpose": "Retrieve review JATS without reading local project data",
+        "requests": [
+          {
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12163001/fullTextXML",
+            "status": "success",
+            "bytes": 759500
+          },
+          {
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12737211/fullTextXML",
+            "status": "success",
+            "bytes": 144380
+          },
+          {
+            "url": "https://www.mdpi.com/2076-3298/13/1/38/xml",
+            "status": "HTTP 403"
+          }
+        ]
+      },
+      {
+        "id": "N02",
+        "tool": "Python urllib.request",
+        "purpose": "Read review references and candidate passages",
+        "requests": [
+          {
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13526050/fullTextXML",
+            "status": "success",
+            "bytes": 195407
+          },
+          {
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13365865/fullTextXML",
+            "status": "success",
+            "bytes": 397437
+          },
+          {
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13211294/fullTextXML",
+            "status": "success",
+            "bytes": 172298,
+            "processing_note": "Reference print loop interrupted by Windows GBK encoding error; download succeeded. No claim of full screening."
+          }
+        ]
+      },
+      {
+        "id": "N03",
+        "tool": "Python urllib.request",
+        "purpose": "Attempt publisher references and inspect section 5",
+        "requests": [
+          {
+            "url": "https://mdpi-res.com/d_attachment/environments/environments-13-00038/article_deploy/environments-13-00038.xml",
+            "status": "HTTP 403"
+          },
+          {
+            "url": "https://www.mdpi.com/2076-3298/13/1/38?type=check_update&version=1",
+            "status": "HTTP 403"
+          },
+          {
+            "url": "https://journal.hep.com.cn/fese/EN/10.1007/s11783-022-1571-2",
+            "status": "success",
+            "bytes": 574433,
+            "processing_note": "Selected body-text print failed on GBK ligature; the source was separately read by web tool."
+          }
+        ]
+      },
+      {
+        "id": "N04",
+        "tool": "Python urllib.request",
+        "purpose": "Read publisher-deposited reference lists; no full-text inference",
+        "requests": [
+          {
+            "url": "https://api.crossref.org/works/10.3390/environments13010038",
+            "status": "success",
+            "reference_count": 137
+          },
+          {
+            "url": "https://api.crossref.org/works/10.1016/j.scitotenv.2024.175000",
+            "status": "success",
+            "reference_count": 158
+          },
+          {
+            "url": "https://api.crossref.org/works/10.1016/j.hazadv.2025.100621",
+            "status": "success",
+            "reference_count": 116
+          },
+          {
+            "url": "https://api.crossref.org/works/10.1016/j.jhazmat.2025.140044",
+            "status": "success",
+            "reference_count": 165
+          },
+          {
+            "url": "https://api.crossref.org/works/10.1080/10408444.2026.2686292",
+            "status": "success",
+            "reference_count": 112
+          }
+        ]
+      },
+      {
+        "id": "N05",
+        "tool": "Python urllib.request",
+        "purpose": "Verify B01 original abstract because browser PubMed challenge/empty page",
+        "requests": [
+          {
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:32416398%20AND%20SRC:MED&format=json&resultType=core",
+            "status": "success",
+            "record": "MED:32416398"
+          }
+        ]
+      },
+      {
+        "id": "N06",
+        "tool": "Python urllib.request, ThreadPoolExecutor(max_workers=6)",
+        "purpose": "Resolve all 112 DOI-only reference entries in R11 for title screening",
+        "source_request": {
+          "url": "https://api.crossref.org/works/10.1080/10408444.2026.2686292",
+          "status": "success"
+        },
+        "requests": [
+          {
+            "reference_index_1_based": 1,
+            "reference_key": "e_1_3_7_2_1",
+            "url": "https://api.crossref.org/works/10.1016/j.jhazmat.2021.127284",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 2,
+            "reference_key": "e_1_3_7_3_1",
+            "url": "https://api.crossref.org/works/10.3389/fenvs.2021.678574",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 3,
+            "reference_key": "e_1_3_7_4_1",
+            "url": "https://api.crossref.org/works/10.1002/etc.2663",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 4,
+            "reference_key": "e_1_3_7_5_1",
+            "url": "https://api.crossref.org/works/10.3390/toxics12030192",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 5,
+            "reference_key": "e_1_3_7_6_1",
+            "url": "https://api.crossref.org/works/10.1016/j.jece.2025.116720",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 6,
+            "reference_key": "e_1_3_7_7_1",
+            "url": "https://api.crossref.org/works/10.1038/s41598-026-38385-y",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 7,
+            "reference_key": "e_1_3_7_8_1",
+            "url": "https://api.crossref.org/works/10.1016/j.envres.2020.109920",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 8,
+            "reference_key": "e_1_3_7_9_1",
+            "url": "https://api.crossref.org/works/10.1111/gcb.15724",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 9,
+            "reference_key": "e_1_3_7_10_1",
+            "url": "https://api.crossref.org/works/10.3389/fenvs.2022.873499",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 10,
+            "reference_key": "e_1_3_7_11_1",
+            "url": "https://api.crossref.org/works/10.1016/j.scitotenv.2020.138707",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 11,
+            "reference_key": "e_1_3_7_12_1",
+            "url": "https://api.crossref.org/works/10.1016/j.scitotenv.2024.176941",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 12,
+            "reference_key": "e_1_3_7_13_1",
+            "url": "https://api.crossref.org/works/10.3390/ijms22030995",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 13,
+            "reference_key": "e_1_3_7_14_1",
+            "url": "https://api.crossref.org/works/10.1016/j.oneear.2020.04.007",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 14,
+            "reference_key": "e_1_3_7_15_1",
+            "url": "https://api.crossref.org/works/10.1186/s12302-023-00721-8",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 15,
+            "reference_key": "e_1_3_7_16_1",
+            "url": "https://api.crossref.org/works/10.1016/j.tox.2011.05.010",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 16,
+            "reference_key": "e_1_3_7_17_1",
+            "url": "https://api.crossref.org/works/10.3390/ijerph17041212",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 17,
+            "reference_key": "e_1_3_7_18_1",
+            "url": "https://api.crossref.org/works/10.1016/j.toxlet.2014.01.038",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 18,
+            "reference_key": "e_1_3_7_19_1",
+            "url": "https://api.crossref.org/works/10.1007/s00244-008-9194-6",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 19,
+            "reference_key": "e_1_3_7_20_1",
+            "url": "https://api.crossref.org/works/10.1016/j.jhazmat.2023.132919",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 20,
+            "reference_key": "e_1_3_7_21_1",
+            "url": "https://api.crossref.org/works/10.1007/s11783-022-1571-2",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 21,
+            "reference_key": "e_1_3_7_22_1",
+            "url": "https://api.crossref.org/works/10.1289/EHP7171",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 22,
+            "reference_key": "e_1_3_7_23_1",
+            "url": "https://api.crossref.org/works/10.1021/bk-2024-1475.ch001",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 23,
+            "reference_key": "e_1_3_7_24_1",
+            "url": "https://api.crossref.org/works/10.1038/srep46687",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 24,
+            "reference_key": "e_1_3_7_25_1",
+            "url": "https://api.crossref.org/works/10.1177/0192623311428473",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 25,
+            "reference_key": "e_1_3_7_26_1",
+            "url": "https://api.crossref.org/works/10.1016/j.jhazmat.2022.129120",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 26,
+            "reference_key": "e_1_3_7_27_1",
+            "url": "https://api.crossref.org/works/10.1038/s41538-024-00319-1",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 27,
+            "reference_key": "e_1_3_7_28_1",
+            "url": "https://api.crossref.org/works/10.1021/acs.jpcb.5c02472",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 28,
+            "reference_key": "e_1_3_7_29_1",
+            "url": "https://api.crossref.org/works/10.1016/j.hazadv.2025.100740",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 29,
+            "reference_key": "e_1_3_7_30_1",
+            "url": "https://api.crossref.org/works/10.2131/jts.50.97",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 30,
+            "reference_key": "e_1_3_7_31_1",
+            "url": "https://api.crossref.org/works/10.1289/EHP5843",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 31,
+            "reference_key": "e_1_3_7_32_1",
+            "url": "https://api.crossref.org/works/10.1016/j.ecoenv.2025.119114",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 32,
+            "reference_key": "e_1_3_7_33_1",
+            "url": "https://api.crossref.org/works/10.1007/s10646-022-02576-w",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 33,
+            "reference_key": "e_1_3_7_34_1",
+            "url": "https://api.crossref.org/works/10.1039/d0em00291g",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 34,
+            "reference_key": "e_1_3_7_35_1",
+            "url": "https://api.crossref.org/works/10.1016/j.envint.2025.109763",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 35,
+            "reference_key": "e_1_3_7_36_1",
+            "url": "https://api.crossref.org/works/10.1001/jama.2011.2034",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 36,
+            "reference_key": "e_1_3_7_37_1",
+            "url": "https://api.crossref.org/works/10.1016/j.chemosphere.2024.143462",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 37,
+            "reference_key": "e_1_3_7_38_1",
+            "url": "https://api.crossref.org/works/10.1021/tx200363w",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 38,
+            "reference_key": "e_1_3_7_39_1",
+            "url": "https://api.crossref.org/works/10.1016/j.enmm.2021.100530",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 39,
+            "reference_key": "e_1_3_7_40_1",
+            "url": "https://api.crossref.org/works/10.1016/j.jhazmat.2023.132339",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 40,
+            "reference_key": "e_1_3_7_41_1",
+            "url": "https://api.crossref.org/works/10.1038/s41598-020-64464-9",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 41,
+            "reference_key": "e_1_3_7_42_1",
+            "url": "https://api.crossref.org/works/10.1016/j.hazmp.2025.100006",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 42,
+            "reference_key": "e_1_3_7_43_1",
+            "url": "https://api.crossref.org/works/10.1016/j.scitotenv.2024.170948",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 43,
+            "reference_key": "e_1_3_7_44_1",
+            "url": "https://api.crossref.org/works/10.1016/j.envpol.2025.127273",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 44,
+            "reference_key": "e_1_3_7_45_1",
+            "url": "https://api.crossref.org/works/10.1016/j.ecoenv.2025.117904",
+            "status": "HTTP 429"
+          },
+          {
+            "reference_index_1_based": 45,
+            "reference_key": "e_1_3_7_46_1",
+            "url": "https://api.crossref.org/works/10.1016/j.jhazmat.2020.123430",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 46,
+            "reference_key": "e_1_3_7_47_1",
+            "url": "https://api.crossref.org/works/10.1289/ehp.080051",
+            "status": "HTTP 404"
+          },
+          {
+            "reference_index_1_based": 47,
+            "reference_key": "e_1_3_7_48_1",
+            "url": "https://api.crossref.org/works/10.3389/fendo.2021.724989",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 48,
+            "reference_key": "e_1_3_7_49_1",
+            "url": "https://api.crossref.org/works/10.3390/toxics13070524",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 49,
+            "reference_key": "e_1_3_7_50_1",
+            "url": "https://api.crossref.org/works/10.3109/01480545.2011.582502",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 50,
+            "reference_key": "e_1_3_7_51_1",
+            "url": "https://api.crossref.org/works/10.1021/acsestwater.2c00296",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 51,
+            "reference_key": "e_1_3_7_52_1",
+            "url": "https://api.crossref.org/works/10.1016/j.watcyc.2024.12.003",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 52,
+            "reference_key": "e_1_3_7_53_1",
+            "url": "https://api.crossref.org/works/10.1371/journal.pone.0194970",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 53,
+            "reference_key": "e_1_3_7_54_1",
+            "url": "https://api.crossref.org/works/10.1016/j.scitotenv.2021.151003",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 54,
+            "reference_key": "e_1_3_7_55_1",
+            "url": "https://api.crossref.org/works/10.3390/polym14112220",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 55,
+            "reference_key": "e_1_3_7_56_1",
+            "url": "https://api.crossref.org/works/10.1016/j.chemosphere.2019.125492",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 56,
+            "reference_key": "e_1_3_7_57_1",
+            "url": "https://api.crossref.org/works/10.1016/j.cbpc.2025.110397",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 57,
+            "reference_key": "e_1_3_7_58_1",
+            "url": "https://api.crossref.org/works/10.1007/s11356-021-13911-9",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 58,
+            "reference_key": "e_1_3_7_59_1",
+            "url": "https://api.crossref.org/works/10.1016/j.envint.2025.109365",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 59,
+            "reference_key": "e_1_3_7_60_1",
+            "url": "https://api.crossref.org/works/10.3389/fphys.2023.1103141",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 60,
+            "reference_key": "e_1_3_7_61_1",
+            "url": "https://api.crossref.org/works/10.1021/acs.est.6b00183",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 61,
+            "reference_key": "e_1_3_7_62_1",
+            "url": "https://api.crossref.org/works/10.1016/j.marpolbul.2023.115309",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 62,
+            "reference_key": "e_1_3_7_63_1",
+            "url": "https://api.crossref.org/works/10.1016/j.envres.2020.110111",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 63,
+            "reference_key": "e_1_3_7_64_1",
+            "url": "https://api.crossref.org/works/10.1021/acs.est.1c07184",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 64,
+            "reference_key": "e_1_3_7_65_1",
+            "url": "https://api.crossref.org/works/10.1016/j.jece.2025.117707",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 65,
+            "reference_key": "e_1_3_7_66_1",
+            "url": "https://api.crossref.org/works/10.1038/s41598-017-10813-0",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 66,
+            "reference_key": "e_1_3_7_67_1",
+            "url": "https://api.crossref.org/works/10.3390/molecules30020364",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 67,
+            "reference_key": "e_1_3_7_68_1",
+            "url": "https://api.crossref.org/works/10.1016/j.envres.2022.114834",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 68,
+            "reference_key": "e_1_3_7_69_1",
+            "url": "https://api.crossref.org/works/10.1186/s12940-015-0032-9",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 69,
+            "reference_key": "e_1_3_7_70_1",
+            "url": "https://api.crossref.org/works/10.1016/j.scitotenv.2025.181170",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 70,
+            "reference_key": "e_1_3_7_71_1",
+            "url": "https://api.crossref.org/works/10.1289/EHP11072",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 71,
+            "reference_key": "e_1_3_7_72_1",
+            "url": "https://api.crossref.org/works/10.3390/toxics10020044",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 72,
+            "reference_key": "e_1_3_7_73_1",
+            "url": "https://api.crossref.org/works/10.20517/wecn.2023.25",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 73,
+            "reference_key": "e_1_3_7_74_1",
+            "url": "https://api.crossref.org/works/10.1016/j.envres.2022.113157",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 74,
+            "reference_key": "e_1_3_7_75_1",
+            "url": "https://api.crossref.org/works/10.1021/acs.est.3c03702",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 75,
+            "reference_key": "e_1_3_7_76_1",
+            "url": "https://api.crossref.org/works/10.1016/j.scitotenv.2025.180428",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 76,
+            "reference_key": "e_1_3_7_77_1",
+            "url": "https://api.crossref.org/works/10.3390/microorganisms8010092",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 77,
+            "reference_key": "e_1_3_7_78_1",
+            "url": "https://api.crossref.org/works/10.1016/j.etap.2016.05.025",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 78,
+            "reference_key": "e_1_3_7_79_1",
+            "url": "https://api.crossref.org/works/10.1016/j.tox.2021.153031.Per-",
+            "status": "HTTP 404"
+          },
+          {
+            "reference_index_1_based": 79,
+            "reference_key": "e_1_3_7_80_1",
+            "url": "https://api.crossref.org/works/10.1021/acs.est.4c06017",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 80,
+            "reference_key": "e_1_3_7_81_1",
+            "url": "https://api.crossref.org/works/10.1016/j.jhazmat.2024.134185",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 81,
+            "reference_key": "e_1_3_7_82_1",
+            "url": "https://api.crossref.org/works/10.1021/acs.estlett.2c00502",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 82,
+            "reference_key": "e_1_3_7_83_1",
+            "url": "https://api.crossref.org/works/10.1016/j.envpol.2025.127256",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 83,
+            "reference_key": "e_1_3_7_84_1",
+            "url": "https://api.crossref.org/works/10.3390/TOXICS9050106",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 84,
+            "reference_key": "e_1_3_7_85_1",
+            "url": "https://api.crossref.org/works/10.1016/j.chemosphere.2022.134261",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 85,
+            "reference_key": "e_1_3_7_86_1",
+            "url": "https://api.crossref.org/works/10.1093/aje/kwr171",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 86,
+            "reference_key": "e_1_3_7_87_1",
+            "url": "https://api.crossref.org/works/10.1002/etc.4935",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 87,
+            "reference_key": "e_1_3_7_88_1",
+            "url": "https://api.crossref.org/works/10.1289/ehp.11253",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 88,
+            "reference_key": "e_1_3_7_89_1",
+            "url": "https://api.crossref.org/works/10.1007/s40572-018-0206-z",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 89,
+            "reference_key": "e_1_3_7_90_1",
+            "url": "https://api.crossref.org/works/10.1016/j.eti.2021.101476",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 90,
+            "reference_key": "e_1_3_7_91_1",
+            "url": "https://api.crossref.org/works/10.1016/j.envpol.2024.125133",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 91,
+            "reference_key": "e_1_3_7_92_1",
+            "url": "https://api.crossref.org/works/10.1007/s00204-007-0246-x",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 92,
+            "reference_key": "e_1_3_7_93_1",
+            "url": "https://api.crossref.org/works/10.1093/aje/kwp279",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 93,
+            "reference_key": "e_1_3_7_94_1",
+            "url": "https://api.crossref.org/works/10.1016/j.envpol.2017.03.062",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 94,
+            "reference_key": "e_1_3_7_95_1",
+            "url": "https://api.crossref.org/works/10.1038/s41370-018-0094-1",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 95,
+            "reference_key": "e_1_3_7_96_1",
+            "url": "https://api.crossref.org/works/10.3390/ijerph18073794",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 96,
+            "reference_key": "e_1_3_7_97_1",
+            "url": "https://api.crossref.org/works/10.1093/humrep/des185",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 97,
+            "reference_key": "e_1_3_7_98_1",
+            "url": "https://api.crossref.org/works/10.1016/j.jhazmat.2025.140493",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 98,
+            "reference_key": "e_1_3_7_99_1",
+            "url": "https://api.crossref.org/works/10.1016/j.scitotenv.2020.141981",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 99,
+            "reference_key": "e_1_3_7_100_1",
+            "url": "https://api.crossref.org/works/10.1016/j.xinn.2024.100612",
+            "status": "connection closed"
+          },
+          {
+            "reference_index_1_based": 100,
+            "reference_key": "e_1_3_7_101_1",
+            "url": "https://api.crossref.org/works/10.1016/j.watres.2024.122493",
+            "status": "connection closed"
+          },
+          {
+            "reference_index_1_based": 101,
+            "reference_key": "e_1_3_7_102_1",
+            "url": "https://api.crossref.org/works/10.1016/j.scitotenv.2024.174026",
+            "status": "connection closed"
+          },
+          {
+            "reference_index_1_based": 102,
+            "reference_key": "e_1_3_7_103_1",
+            "url": "https://api.crossref.org/works/10.1210/er.2008-0025",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 103,
+            "reference_key": "e_1_3_7_104_1",
+            "url": "https://api.crossref.org/works/10.1016/j.scitotenv.2024.176247",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 104,
+            "reference_key": "e_1_3_7_105_1",
+            "url": "https://api.crossref.org/works/10.1093/toxsci/kfp275",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 105,
+            "reference_key": "e_1_3_7_106_1",
+            "url": "https://api.crossref.org/works/10.1016/j.gr.2021.12.001",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 106,
+            "reference_key": "e_1_3_7_107_1",
+            "url": "https://api.crossref.org/works/10.1155/2014/409837",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 107,
+            "reference_key": "e_1_3_7_108_1",
+            "url": "https://api.crossref.org/works/10.1016/j.scitotenv.2025.178373",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 108,
+            "reference_key": "e_1_3_7_109_1",
+            "url": "https://api.crossref.org/works/10.1016/j.envpol.2025.127059",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 109,
+            "reference_key": "e_1_3_7_110_1",
+            "url": "https://api.crossref.org/works/10.1016/j.scitotenv.2024.172503",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 110,
+            "reference_key": "e_1_3_7_111_1",
+            "url": "https://api.crossref.org/works/10.3390/md23090359",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 111,
+            "reference_key": "e_1_3_7_112_1",
+            "url": "https://api.crossref.org/works/10.1016/j.jece.2025.120174",
+            "status": "success"
+          },
+          {
+            "reference_index_1_based": 112,
+            "reference_key": "e_1_3_7_113_1",
+            "url": "https://api.crossref.org/works/10.1016/j.scitotenv.2025.179381",
+            "status": "success"
+          }
+        ],
+        "limitation": "Metadata-only title screening is not full original-paper or full-review reading; ambiguous co-exposure candidates were checked by primary abstracts in V05."
+      },
+      {
+        "id": "N07",
+        "tool": "Python urllib.request, ThreadPoolExecutor(max_workers=3)",
+        "purpose": "Retry six failed metadata requests from N06",
+        "requests": [
+          {
+            "doi": "10.1016/j.ecoenv.2025.117904",
+            "url": "https://api.crossref.org/works/10.1016/j.ecoenv.2025.117904",
+            "status": "ok",
+            "title": "Combined toxicity of polystyrene microplastics and perfluorobutane sulfonate on mouse liver: Impact on lipid metabolism and gut-liver axis disruption"
+          },
+          {
+            "doi": "10.1289/ehp.080051",
+            "url": "https://api.crossref.org/works/10.1289/ehp.080051",
+            "status": "error",
+            "error": "HTTP Error 404: Not Found"
+          },
+          {
+            "doi": "10.1016/j.tox.2021.153031.Per-",
+            "url": "https://api.crossref.org/works/10.1016/j.tox.2021.153031.Per-",
+            "status": "error",
+            "error": "HTTP Error 404: Not Found"
+          },
+          {
+            "doi": "10.1016/j.xinn.2024.100612",
+            "url": "https://api.crossref.org/works/10.1016/j.xinn.2024.100612",
+            "status": "ok",
+            "title": "Emerging contaminants: A One Health perspective"
+          },
+          {
+            "doi": "10.1016/j.watres.2024.122493",
+            "url": "https://api.crossref.org/works/10.1016/j.watres.2024.122493",
+            "status": "ok",
+            "title": "Meta-analysis of the effects of microplastic on fish: Insights into growth, survival, reproduction, oxidative stress, and gut microbiota diversity"
+          },
+          {
+            "doi": "10.1016/j.scitotenv.2024.174026",
+            "url": "https://api.crossref.org/works/10.1016/j.scitotenv.2024.174026",
+            "status": "ok",
+            "title": "Exposure to polystyrene microplastics reduces sociality and brain oxytocin levels through the gut-brain axis in mice"
+          }
+        ]
+      },
+      {
+        "id": "N08",
+        "tool": "Python urllib.request",
+        "purpose": "Re-read R11 DOI manifest so all actual metadata URLs can be retained in the access log",
+        "requests": [
+          {
+            "url": "https://api.crossref.org/works/10.1080/10408444.2026.2686292",
+            "status": "success",
+            "reference_count": 112
+          }
+        ]
+      }
+    ]
+  },
+  "limitations": [
+    "This is a five-paper review-derived find-back set, not the denominator of all eligible research in the field; recall against it must be labelled benchmark recall only.",
+    "The original-paper years in this set are 2018, 2020 and 2024. Reviews have citation and search cut-off lag; absence of 2025–2026 experiments here does not show their absence from the field.",
+    "Publisher 403/429 responses, PMC browser challenges and inaccessible review supplements limited full-text coverage. Crossref reference lists are used explicitly as reference-list evidence, not as proof of full-text access.",
+    "Review-level title/reference screening may miss studies whose titles omit species or exposure details. A broadly titled mixed-contaminant study was checked and included, but this does not make all reference screening exhaustive.",
+    "Two deposited DOI strings in the R11 reference list remained 404 after retry. They were not silently corrected or counted as read.",
+    "B05 includes several contaminant classes alongside PFAS; it satisfies exposure scope but cannot establish a plastic–PFAS binary-specific toxicity effect.",
+    "No pooled toxicity interpretation, risk ranking or effect-size meta-analysis was performed."
+  ],
+  "recall_evaluation": {
+    "status": "not_performed_by_benchmark_collector",
+    "instruction": "Lead may compare a frozen topic-retrieval result with these DOI/PMID identifiers only after its retrieval is complete. Keep benchmark false negatives distinct from evidence that the whole-field search is complete."
+  }
+}

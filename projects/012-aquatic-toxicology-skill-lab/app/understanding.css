@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+.understanding-content { min-width: 0; }
+.library-guide{margin:0;min-width:0;align-self:center}.library-guide img{display:block;width:100%;height:auto;border:1px solid var(--line)}.library-guide figcaption{font-size:10px;color:var(--ink-soft);margin-top:9px}.library-summary{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid var(--ink);margin-top:26px}.library-summary article{min-width:0;padding:20px 20px 20px 0;border-bottom:1px solid var(--line)}.library-summary article:nth-child(2n){padding-left:20px;padding-right:0;border-left:1px solid var(--line)}.library-summary h3{font-size:14px;margin:0 0 10px}.library-summary p{font-size:12px;line-height:1.95;color:var(--ink-soft)}.library-summary code{font:11px/1.8 ui-monospace,Consolas,monospace;overflow-wrap:anywhere}.library-summary a{display:inline-block;margin-top:12px;font-size:11px;text-decoration:underline}.library-summary-boundary{font-size:11px;line-height:1.9;color:var(--ink-soft);border-left:2px solid var(--accent);padding-left:14px;margin:20px 0 28px}@media(max-width:700px){.library-summary{grid-template-columns:1fr}.library-summary article:nth-child(2n){padding-left:0;border-left:0}.library-summary p{font-size:13px}.library-guide{margin-top:10px}}
+.understanding-jumps { display:flex; flex-wrap:wrap; gap:10px 24px; margin:-10px 0 24px; }
+.understanding-content p, .understanding-content li, .understanding-content h3, .understanding-content h4, .understanding-content h5, .understanding-content a { overflow-wrap: anywhere; }
+.understanding-lead { max-width: 900px; color: var(--ink-soft); font-size: 15px; line-height: 2; margin-bottom: 28px; }
+.understanding-conclusions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 1px solid var(--ink); border-bottom: 1px solid var(--line); margin-bottom: 30px; }
+.understanding-conclusion { padding: 21px 20px 23px; border-right: 1px solid var(--line); min-width: 0; }
+.understanding-conclusion:first-child { padding-left: 0; }
+.understanding-conclusion:last-child { border-right: 0; padding-right: 0; }
+.understanding-conclusion:nth-child(2n) { border-right: 0; padding-right: 0; }
+.understanding-conclusion:nth-child(2n+1) { padding-left: 0; }
+.understanding-conclusion:nth-child(n+3) { border-top: 1px solid var(--line); }
+.understanding-number { display: block; color: var(--accent); font-family: var(--serif); font-size: 23px; line-height: 1.4; margin-bottom: 10px; }
+.understanding-conclusion h3 { font-size: 15px; font-weight: 600; line-height: 1.8; margin: 0 0 11px; }
+.understanding-conclusion p { color: var(--ink-soft); font-size: 12px; line-height: 1.95; }
+.understanding-figure { border: 1px solid #c7d0bf; background: var(--paper-light); margin: 0 0 42px; min-width: 0; }
+.understanding-image-link { display: block; width: 100%; }
+.understanding-figure img { display: block; width: 100%; height: auto; max-width: 100%; }
+.understanding-figure figcaption { padding: 15px 18px; border-top: 1px solid var(--line); font-size: 11px; line-height: 1.9; color: var(--ink-soft); }
+.understanding-figure-tools { display: flex; flex-wrap: wrap; gap: 10px 24px; margin-top: 9px; }
+.understanding-link { display: inline-block; color: #55735f; font-size: 11px; line-height: 1.9; text-decoration: underline; text-underline-offset: 4px; }
+.understanding-content .understanding-link:hover { color: var(--accent); text-decoration: underline; }
+.understanding-heading { margin: 38px 0 24px; }
+.understanding-heading h3 { font: 500 26px/1.65 var(--serif); margin: 8px 0 10px; }
+.understanding-heading p { font-size: 13px; color: var(--ink-soft); line-height: 1.95; max-width: 870px; }
+.understanding-principles { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); margin-bottom: 23px; }
+.understanding-principle { min-width: 0; padding: 19px 16px 21px; border-right: 1px solid var(--line); }
+.understanding-principle:first-child { padding-left: 0; }
+.understanding-principle:last-child { border-right: 0; padding-right: 0; }
+.understanding-principle .understanding-number { font-size: 21px; color: #81967e; }
+.understanding-principle h4 { font-size: 13px; font-weight: 600; line-height: 1.8; margin: 0 0 9px; }
+.understanding-principle p { font-size: 12px; color: var(--ink-soft); line-height: 1.95; }
+.understanding-principle .understanding-principle-boundary { font-size: 11px; border-top: 1px dashed #cbd4c2; padding-top: 11px; margin-top: 12px; }
+.understanding-detail { min-width: 0; border-bottom: 1px solid var(--line); }
+.understanding-detail > summary { display: flex; align-items: center; gap: 12px; padding: 19px 0; cursor: pointer; }
+.understanding-detail-title { flex: 1; min-width: 0; font-size: 14px; font-weight: 500; line-height: 1.85; overflow-wrap: anywhere; }
+.understanding-expand { flex: 0 0 auto; color: var(--accent); font-size: 20px; line-height: 1; }
+.understanding-detail[open] > summary .understanding-expand { transform: rotate(45deg); }
+.understanding-detail-body { padding-bottom: 22px; min-width: 0; }
+.understanding-badge { display: inline-block; flex: 0 1 auto; max-width: 210px; overflow-wrap: anywhere; font-size: 9px; line-height: 1.8; font-weight: 400; padding: 2px 7px; background: #efe6d7; border: 1px solid #d6c7b4; color: #846347; }
+.understanding-badge-tested { background: #e4ecdf; border-color: #b7c7ae; color: #526f55; }
+.understanding-table-wrap { overflow: auto; width: 100%; max-width: 100%; border-top: 1px solid var(--line); }
+.understanding-table { border-collapse: collapse; width: 100%; min-width: 730px; table-layout: fixed; }
+.understanding-table th, .understanding-table td { text-align: left; vertical-align: top; padding: 14px 12px; border-bottom: 1px solid var(--line); line-height: 1.95; overflow-wrap: anywhere; }
+.understanding-table thead th { color: #718268; font-size: 10px; font-weight: 500; }
+.understanding-table thead th:first-child { width: 15%; }
+.understanding-table thead th:nth-child(2) { width: 28%; }
+.understanding-table thead th:nth-child(3) { width: 32%; }
+.understanding-table thead th:nth-child(4) { width: 25%; }
+.understanding-table tbody th { font-size: 12px; font-weight: 500; }
+.understanding-table td { font-size: 12px; color: var(--ink-soft); }
+.understanding-field { min-width: 0; margin-bottom: 17px; }
+.understanding-field h5 { font-size: 10px; font-weight: 600; color: #718268; line-height: 1.8; margin: 0 0 6px; }
+.understanding-field p, .understanding-field li { font-size: 12px; color: var(--ink-soft); line-height: 1.95; }
+.understanding-field ul { padding-left: 18px; margin: 0; }
+.understanding-field li + li { margin-top: 5px; }
+.understanding-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.understanding-action { background: #e8ede2; border-left: 2px solid #8ba588; padding: 14px 16px; margin-bottom: 21px; }
+.understanding-source-controls { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px 22px; margin: 0 0 23px; }
+.understanding-filter-group { display: flex; flex-wrap: wrap; gap: 8px; }
+.understanding-filter { border: 1px solid #bdcbb4; background: transparent; color: var(--ink-soft); padding: 7px 13px; font-size: 11px; line-height: 1.8; }
+.understanding-filter[aria-pressed="true"] { background: var(--ink); color: var(--paper-light); border-color: var(--ink); }
+.understanding-source-count { font-size: 10px; line-height: 1.9; color: #718268; }
+.understanding-sources { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; align-items: start; }
+.understanding-source { min-width: 0; padding: 20px 20px 0; border: 1px solid #cdd6c4; background: #f7f7ef; }
+.understanding-source-top { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 10px; min-width: 0; }
+.understanding-source-top .eyebrow { font-size: 9px; letter-spacing: .8px; color: #718268; max-width: 70%; }
+.understanding-source > h4 { margin: 15px 0 11px; font: 500 23px/1.6 var(--serif); }
+.understanding-source-role { font-size: 12px; line-height: 1.95; color: var(--ink-soft); }
+.understanding-source-state { font-size: 11px; line-height: 1.95; color: #718268; border-top: 1px dashed var(--line); padding-top: 12px; margin-top: 15px; }
+.understanding-source .understanding-detail { border: 0; }
+.understanding-source .understanding-detail > summary { padding: 16px 0; }
+.understanding-source .understanding-detail-title { font-size: 11px; }
+.understanding-source .understanding-detail-body { border-top: 1px solid var(--line); padding-top: 17px; }
+.understanding-pipeline { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0 25px; counter-reset: understanding-pipeline; }
+.understanding-pipeline li { min-width: 0; position: relative; padding: 18px 0 20px 32px; border-top: 1px solid var(--line); counter-increment: understanding-pipeline; }
+.understanding-pipeline li::before { content: counter(understanding-pipeline, decimal-leading-zero); position: absolute; left: 0; top: 19px; color: var(--accent); font: 17px/1.4 var(--serif); }
+.understanding-pipeline h4 { font-size: 13px; font-weight: 500; line-height: 1.8; margin: 0 0 9px; }
+.understanding-pipeline p { font-size: 12px; line-height: 1.95; color: var(--ink-soft); }
+.understanding-checks { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 25px; margin-bottom: 23px; }
+.understanding-check-block { border-top: 2px solid #8ca588; padding: 17px 0 0; min-width: 0; }
+.understanding-check-block h4 { font-size: 14px; font-weight: 600; margin: 0 0 14px; }
+.understanding-limits { border-color: var(--accent); }
+.understanding-rule-list { padding-left: 19px; margin: 0; font-size: 12px; line-height: 1.95; color: var(--ink-soft); }
+.understanding-rule-list li + li { margin-top: 11px; }
+.understanding-rule-list strong, .understanding-rule-list span { display: block; }
+.understanding-rule-list strong { font-weight: 500; color: var(--ink); margin-bottom: 4px; }
+.understanding-references { padding-left: 18px; margin: 0; }
+.understanding-references li { margin-bottom: 9px; color: #718268; }
+.understanding-downloads { display: flex; flex-wrap: wrap; gap: 14px 24px; margin-top: 22px; }
+.understanding-empty { font-size: 13px; line-height: 1.95; color: var(--ink-soft); }
+.understanding-content button:focus-visible, .understanding-content summary:focus-visible, .understanding-content a:focus-visible, .understanding-table-wrap:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+
+@media (max-width: 1100px) {
+  .understanding-conclusions { grid-template-columns: 1fr; }
+  .understanding-conclusion, .understanding-conclusion:first-child, .understanding-conclusion:last-child { padding: 18px 0 20px; border-right: 0; border-bottom: 1px solid var(--line); }
+  .understanding-conclusion:nth-child(n+3) { border-top: 0; }
+  .understanding-conclusion:last-child { border-bottom: 0; }
+  .understanding-conclusion .understanding-number { float: left; width: 37px; margin-top: 3px; }
+  .understanding-conclusion h3, .understanding-conclusion p { margin-left: 37px; }
+  .understanding-principles { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .understanding-principle:nth-child(2) { border-right: 0; padding-right: 0; }
+  .understanding-principle:nth-child(3) { padding-left: 0; border-top: 1px solid var(--line); }
+  .understanding-principle:nth-child(4) { border-top: 1px solid var(--line); }
+  .understanding-sources { grid-template-columns: 1fr; }
+  .understanding-pipeline { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 700px) {
+  .understanding-lead { font-size: 14px; }
+  .understanding-heading h3 { font-size: 23px; }
+  .understanding-heading p, .understanding-conclusion p, .understanding-field p, .understanding-field li, .understanding-source-role, .understanding-rule-list { font-size: 13px; }
+  .understanding-figure { margin-bottom: 32px; }
+  .understanding-figure figcaption { padding: 13px 14px; }
+  .understanding-figure-tools { gap: 10px 19px; }
+  .understanding-principles { grid-template-columns: 1fr; }
+  .understanding-principle, .understanding-principle:first-child, .understanding-principle:last-child, .understanding-principle:nth-child(3) { border: 0; border-bottom: 1px solid var(--line); padding: 17px 0 19px; }
+  .understanding-principle:last-child { border-bottom: 0; }
+  .understanding-principle .understanding-number { float: left; width: 35px; margin-top: 3px; }
+  .understanding-principle h4, .understanding-principle p { margin-left: 35px; }
+  .understanding-principle .understanding-principle-boundary { font-size: 12px; }
+  .understanding-detail > summary { flex-wrap: wrap; gap: 8px; padding: 17px 0; }
+  .understanding-detail-title { font-size: 13px; }
+  .understanding-detail > summary > .understanding-badge { max-width: 120px; font-size: 8px; }
+  .understanding-pair, .understanding-pipeline, .understanding-checks { grid-template-columns: 1fr; gap: 0; }
+  .understanding-checks { gap: 25px; }
+  .understanding-source { padding: 18px 16px 0; }
+  .understanding-source > h4 { font-size: 22px; }
+  .understanding-source-state { font-size: 12px; }
+  .understanding-source .understanding-detail-title { font-size: 12px; }
+  .understanding-filter { font-size: 12px; padding: 8px 12px; }
+  .understanding-source-count { font-size: 11px; }
+  .understanding-downloads { flex-direction: column; align-items: flex-start; gap: 12px; }
+  .understanding-link { font-size: 12px; }
+}
+@media print {
+  .understanding-filter-group, .understanding-figure-tools, .understanding-downloads { display: none; }
+  .understanding-conclusions { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .understanding-principles { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .understanding-sources { display: block; }
+  .understanding-source { margin-bottom: 16px; break-inside: avoid; }
+  .understanding-table-wrap { overflow: visible; }
+  .understanding-table { min-width: 0; }
+  .understanding-heading { break-after: avoid; }
+}

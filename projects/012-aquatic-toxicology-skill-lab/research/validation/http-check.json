@@ -1,0 +1,90 @@
+{
+  "checked_at": "2026-10-29T03:46:25.923294+00:00",
+  "checks": [
+    {
+      "url": "",
+      "status": 200
+    },
+    {
+      "url": "main.js",
+      "status": 200
+    },
+    {
+      "url": "styles.css",
+      "status": 200
+    },
+    {
+      "url": "data/research-data.js",
+      "status": 200
+    },
+    {
+      "url": "data/report.md",
+      "status": 200
+    },
+    {
+      "url": "data/synthesis.md",
+      "status": 200
+    },
+    {
+      "url": "data/review.md",
+      "status": 200
+    },
+    {
+      "url": "data/process.md",
+      "status": 200
+    },
+    {
+      "url": "data/rq-brief.md",
+      "status": 200
+    },
+    {
+      "url": "data/methodology.md",
+      "status": 200
+    },
+    {
+      "url": "data/checkpoint1-review.md",
+      "status": 200
+    },
+    {
+      "url": "data/bibliography.md",
+      "status": 200
+    },
+    {
+      "url": "data/source-verification.md",
+      "status": 200
+    },
+    {
+      "url": "data/search-log.json",
+      "status": 200
+    },
+    {
+      "url": "data/upstream-manifest.json",
+      "status": 200
+    },
+    {
+      "url": "data/deep-research-SKILL.md",
+      "status": 200
+    },
+    {
+      "url": "data/upstream-LICENSE.txt",
+      "status": 200
+    },
+    {
+      "url": "data/execution-contract.md",
+      "status": 200
+    },
+    {
+      "url": "data/research.json",
+      "status": 200
+    },
+    {
+      "url": "data/evidence.csv",
+      "status": 200
+    },
+    {
+      "url": "data/citation-verification.json",
+      "status": 200
+    }
+  ],
+  "all_success": true
+}
