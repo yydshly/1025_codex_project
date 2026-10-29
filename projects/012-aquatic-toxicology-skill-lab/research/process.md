@@ -50,7 +50,7 @@
 
 网页数据来自真实研究JSON，提供文献搜索、核心/背景/方法筛选、阅读范围筛选、判断到文献的弹窗、执行步骤、候选方向比较及下载。CSV保持明确字段；下载目录仅复制白名单研究成果和本次原始SKILL/许可/清单，不将全部上游源码、ZIP或研究原始搜索返回自动发布到网页。
 
-页面支持HTTP和本地文件打开；数据JS与JSON经一致性检查。软件/来源完整性检查与浏览器操作验证另存 `validation/`，它们不能被解释为科学准确率测试。未推送、未登记虚构上线地址。
+HTTP页面已通过浏览器验证；数据JS与JSON的一致性检查不等于file协议浏览器验证，内置浏览器不允许file访问，本例未验证本地文件直接打开。现已部署并推送远端，见[正式网页](https://yydshly.github.io/1025_codex_project/012-aquatic-toxicology-skill-lab/)和[已提交的发布记录](https://github.com/yydshly/1025_codex_project/blob/13c81cc0dedb1386fa231549b560a3fae8ef23f3/projects/012-aquatic-toxicology-skill-lab/research/deployment.md)。软件/来源完整性检查与浏览器操作验证另存 `validation/`，它们不能被解释为科学准确率测试。
 
 ## 能说明与不能说明的价值
 

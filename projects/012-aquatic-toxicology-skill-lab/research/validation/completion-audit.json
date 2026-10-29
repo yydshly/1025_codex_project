@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-29",
+  "scope": "Publication completion audit; no new scientific research",
+  "findings": [
+    {"file": "app/data/process.md", "problem": "Outdated unpublished status and unverified file-protocol support", "repair": "State verified HTTP access and actual publication; distinguish JS/JSON consistency from file-browser verification"},
+    {"file": "app/data/process-walkthrough.md", "problem": "15 research-relative links were invalid in the flat public data directory", "repair": "12 public targets rewritten; 3 distinct source receipts linked to their committed GitHub originals"}
+  ],
+  "local_validation": {"full_project_check": "pass", "public_check": "pass", "local_markdown_links_checked": 42, "old_broken_path_negative_check": "rejected"},
+  "scientific_work_still_unfinished": ["Core full-text review", "Suggested-source retrieval and new unseen benchmark tests", "Complete native skill workflow and controlled with/without-skill evaluation"]
+}

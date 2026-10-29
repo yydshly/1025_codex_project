@@ -122,6 +122,30 @@ for source, destination, label, kind in exports:
     if path.exists():
         shutil.copyfile(path,OUT/destination)
         data["artifacts"].append({"title":label,"url":"./data/"+destination,"kind":kind})
+# The research guide uses stage-relative paths; its public copy lives flat in data/.
+# Keep the three distinct verification/review receipts linked to their original
+# committed files rather than relabeling them as the merged public summary.
+walkthrough_links = {
+    "phase1_scoping/rq-brief.md": "rq-brief.md",
+    "phase1_scoping/methodology.md": "methodology.md",
+    "phase1_scoping/checkpoint1-review.md": "checkpoint1-review.md",
+    "phase2_investigation/search-log.json": "search-log.json",
+    "phase2_investigation/bibliography.md": "bibliography.md",
+    "phase2_investigation/papers.json": "papers.json",
+    "phase2_investigation/source-verification.md": "source-verification.md",
+    "phase2_investigation/citation-verification-combined.json": "citation-verification.json",
+    "../scripts/verify-citations.py": "verify-citations.py.txt",
+    "phase3_analysis/synthesis.md": "synthesis.md",
+    "phase6_final/report.md": "report.md",
+    "phase5_review/review.md": "review.md",
+}
+published_source = "https://github.com/yydshly/1025_codex_project/blob/13c81cc0dedb1386fa231549b560a3fae8ef23f3/projects/012-aquatic-toxicology-skill-lab/research/"
+for source in ["phase2_investigation/citation-verification.json", "phase2_investigation/citation-verification-additional.json", "phase5_review/review.json"]:
+    walkthrough_links[source] = published_source + source
+walkthrough_public = (OUT / "process-walkthrough.md").read_text(encoding="utf-8")
+for source, target in walkthrough_links.items():
+    walkthrough_public = walkthrough_public.replace("](" + source + ")", "](" + target + ")")
+(OUT / "process-walkthrough.md").write_text(walkthrough_public, encoding="utf-8")
 combined={"date":"2026-10-29","upstream_commit":data["meta"]["upstreamCommit"],"results":checks,"events":events,"counts":{"records":len(checks),"crossref_matched":sum(r.get("crossref",{}).get("status")=="matched" for r in checks),"s2_matched":sum(r.get("semantic_scholar",{}).get("status")=="matched" for r in checks),"s2_unavailable":sum(r.get("semantic_scholar",{}).get("status")=="unavailable" for r in checks)},"boundary":"DOI/title identity only. Not proof of claim support, experimental truth, or novelty."}
 (OUT/"citation-verification.json").write_text(json.dumps(combined,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
 (RESEARCH/"phase2_investigation/citation-verification-combined.json").write_text(json.dumps(combined,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")

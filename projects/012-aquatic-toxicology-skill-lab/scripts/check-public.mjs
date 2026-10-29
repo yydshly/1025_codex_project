@@ -83,6 +83,19 @@ function checkNoAbstractMirror(value, file) {
     checkNoAbstractMirror(item, file);
   }
 }
+function markdownWithoutCode(source) {
+  let fence = null;
+  return source.split(/\r?\n/).map(line => {
+    const marker = line.match(/^ {0,3}(`{3,}|~{3,})/);
+    if (marker) {
+      if (!fence) fence = marker[1];
+      else if (marker[1][0] === fence[0] && marker[1].length >= fence.length) fence = null;
+      return '';
+    }
+    return fence ? '' : line.replace(/(`+)[\s\S]*?\1/g, '');
+  }).join('\n');
+}
+let checkedMarkdownLinks = 0;
 for (const file of publicFiles) {
   const extension = path.extname(file);
   if (extension === '.json') checkNoAbstractMirror(JSON.parse(fs.readFileSync(file, 'utf8').replace(/^\uFEFF/, '')), path.relative(app, file));
@@ -100,9 +113,19 @@ for (const file of publicFiles) {
       localTarget(match[1], path.dirname(file));
     }
   }
+  if (extension === '.md') {
+    const markdown = markdownWithoutCode(fs.readFileSync(file, 'utf8'));
+    for (const match of markdown.matchAll(/!?\[[^\]\n]*\]\(\s*(?:<([^>\n]+)>|([^\s)]+))(?:\s+["'][^\n]*?["'])?\s*\)/g)) {
+      const url = match[1] || match[2];
+      if (url.startsWith('#') || /^[a-z][a-z\d+.-]*:/i.test(url) || url.startsWith('//')) continue;
+      try { localTarget(url, path.dirname(file)); }
+      catch (error) { throw new Error(`Broken Markdown link in ${path.relative(app, file)}: ${url} — ${error.message}`); }
+      checkedMarkdownLinks++;
+    }
+  }
 }
 const image = fs.readFileSync(path.join(app, 'assets/understanding-map.png'));
 assert(image.subarray(0, 8).equals(Buffer.from('89504e470d0a1a0a', 'hex')) && image.readUInt32BE(16) === 1536 && image.readUInt32BE(20) === 1024, 'Understanding map PNG dimensions differ');
 assert(crypto.createHash('sha256').update(image).digest('hex') === '77db9c8a099aa369a6df5669c17b47c4fcba62dcd56ac6da0b47df8c4919419e', 'Generated guide image bytes changed');
 for (const name of ['main.js', 'skill-map.js', 'retrieval.js', 'understanding.js', 'data/research-data.js']) execFileSync(process.execPath, ['--check', path.join(app, name)]);
-console.log(JSON.stringify({ result: 'pass', mode: 'public-artifacts-only', sources: 14, skills: 5, apiSources: 3, candidates: 984, downloads: 42, publicFiles: publicFiles.length, boundary: 'Public artifact integrity and publication scope, not scientific reliability or exhaustive retrieval.' }, null, 2));
+console.log(JSON.stringify({ result: 'pass', mode: 'public-artifacts-only', sources: 14, skills: 5, apiSources: 3, candidates: 984, downloads: 42, publicFiles: publicFiles.length, checkedMarkdownLinks, boundary: 'Public artifact integrity and publication scope, not scientific reliability or exhaustive retrieval.' }, null, 2));
