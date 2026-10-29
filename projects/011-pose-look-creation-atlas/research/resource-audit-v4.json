@@ -1,0 +1,71 @@
+{
+  "records": 1439,
+  "groups": 288,
+  "fields": [
+    "id",
+    "系統",
+    "ポーズ番号",
+    "分類",
+    "ポーズ名",
+    "アングル",
+    "サムネ",
+    "原寸"
+  ],
+  "angles": {
+    "正面": 288,
+    "上から": 288,
+    "下から": 287,
+    "横": 288,
+    "斜め": 288
+  },
+  "groupSizeHistogram": {
+    "5": 287,
+    "4": 1
+  },
+  "partialGroups": [
+    {
+      "group": "全身1人・セクシー系|P018",
+      "present": 4,
+      "missingAngles": [
+        "下から"
+      ]
+    }
+  ],
+  "families": [
+    {
+      "name": "2人絡み",
+      "images": 275,
+      "groups": 55
+    },
+    {
+      "name": "上半身1人",
+      "images": 400,
+      "groups": 80
+    },
+    {
+      "name": "全身1人・セクシー系",
+      "images": 399,
+      "groups": 80
+    },
+    {
+      "name": "全身1人・標準系",
+      "images": 365,
+      "groups": 73
+    }
+  ],
+  "dimensions": {
+    "900x1200": 1439
+  },
+  "localPngs": 1439,
+  "indexSha256": "9b4af3f6e84b569719bb40be41442bc6e05f30c8a44df0b9c76cd9c7e8afd499",
+  "manifestSha256": "feddc96293062d300391493243aeb88195fb6e001582ce61969a543744b955d6",
+  "totalBytes": 668536222,
+  "date": "2026-10-29",
+  "scope": "Read-only analysis of the preserved original index and image manifest; no model inference.",
+  "uniqueImageHashes": 1439,
+  "duplicateImageEntries": 0,
+  "localInventoryComplete": true,
+  "indexContainsKeypoints": false,
+  "indexContainsCameraCalibration": false,
+  "indexContainsTimeSequence": false
+}

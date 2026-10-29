@@ -4,9 +4,10 @@ import {createHash} from 'node:crypto';
 await import('./verify-archive.mjs');
 const base=new URL('../app/',import.meta.url);
 const context={window:{}};vm.createContext(context);
-for(const filename of ['data.js','archive-data.js','backup-data.js','experiments-data.js'])vm.runInContext(await readFile(new URL(filename,base),'utf8'),context,{filename});
+for(const filename of ['data.js','archive-data.js','backup-data.js','experiments-data.js','resource-data.js'])vm.runInContext(await readFile(new URL(filename,base),'utf8'),context,{filename});
 new vm.Script(await readFile(new URL('app.js',base),'utf8'),{filename:'app.js'});
 new vm.Script(await readFile(new URL('effects.js',base),'utf8'),{filename:'effects.js'});
+new vm.Script(await readFile(new URL('resources.js',base),'utf8'),{filename:'resources.js'});
 const {RESEARCH:r,BACKUP_STATUS:b}=context.window;
 if(r.tools.length!==12||r.scenarios.length!==8)throw new Error('Research entries incomplete');
 for(const list of [r.tools,r.scenarios,r.sources])if(new Set(list.map(item=>item.id)).size!==list.length)throw new Error('Duplicate IDs');
@@ -23,6 +24,12 @@ for(const asset of experiment.assets){
 }
 const manifest=JSON.parse(await readFile(new URL('media/experiment-v1/manifest.json',base),'utf8'));
 if(JSON.stringify(manifest)!==JSON.stringify(experiment))throw new Error('Web experiment data differs from manifest');
+const resource=context.window.RESOURCE_RESEARCH;
+const resourceFile=JSON.parse(await readFile(new URL('resource-research.json',base),'utf8'));
+if(JSON.stringify(resource)!==JSON.stringify(resourceFile))throw new Error('Resource research data differs from record');
+if(resource.audit.records!==1439||resource.audit.groups!==288||!resource.audit.localInventoryComplete||resource.audit.groupSizeHistogram['5']!==287||resource.audit.groupSizeHistogram['4']!==1)throw new Error('Resource inventory differs');
+if(resource.directions.length!==7||resource.sources.length!==4)throw new Error('Direction research incomplete');
+for(const direction of resource.directions)for(const id of direction.sources)if(!resource.sources.some(item=>item.id===id))throw new Error('Missing primary research source');
 const html=await readFile(new URL('index.html',base),'utf8');
 const branch=await readFile(new URL('branch.html',base),'utf8');
 for(const page of [html,branch])for(const match of page.matchAll(/(?:src|href)="([^"#]+)"/g)){
@@ -33,4 +40,5 @@ for(const page of [html,branch])for(const match of page.matchAll(/(?:src|href)="
 if(/original-images\//.test(html))throw new Error('Public HTML references private originals');
 if(!html.includes('data-view="source"')||html.includes('id="effects"')||html.includes('experiment-v1/')||html.includes('src="effects.js"'))throw new Error('The source main page must not present independent experiments');
 if(!branch.includes('data-view="branch"')||!branch.includes('id="effects"')||!branch.includes('id="thinking"')||!branch.includes('id="scenarios"')||!branch.includes('非原库验收'))throw new Error('Extension branch incomplete or unlabelled');
+if(!html.includes('id="resource-inventory"')||!html.includes('id="direction-research"')||html.includes('file:///'))throw new Error('Resource state or direction research is missing or uses an unusable file link');
 console.log('Research, scripts, local links, 8 experiment assets and their input links/hashes, plus original-backup summary verified.');

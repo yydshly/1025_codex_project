@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-29",
+  "scope": "Resource-status and source-led extension research, with local UI verification. No new image generation, upstream installation or model inference.",
+  "dataAudit": "resource-audit-v4.json",
+  "ui": {
+    "browser": "Codex in-app browser",
+    "desktop": {"width": 1280, "height": 720, "horizontalOverflow": false},
+    "mobile": {"width": 390, "height": 844, "scrollWidth": 375, "horizontalOverflow": false},
+    "directionCards": 7,
+    "officialSources": 4,
+    "resourceMetricsVisible": true,
+    "directionExpansion": "Control-map direction expanded; evidence, missing work, validation, rights and source links visible.",
+    "mainExperimentImages": 0,
+    "consoleErrors": [],
+    "localDiskAccess": false,
+    "localViewerImplemented": false,
+    "viewportOverrideReset": true
+  },
+  "limits": [
+    "The webpage presents a saved status snapshot, not a live disk inventory.",
+    "Extension directions are research and validation plans; they are not implemented features.",
+    "No original-library image-generation benchmark or skeleton detection was performed.",
+    "No new cross-software 3D or continuous-motion test was performed."
+  ]
+}
