@@ -1,0 +1,41 @@
+{
+  "checkedAt": "2026-10-29T09:08:24.866302+00:00",
+  "baseUrl": "https://yydshly.github.io/1025_codex_project/012-aquatic-toxicology-skill-lab/",
+  "commit": "bd2fce5f8d162b44ede11ca793083b2af8baaee2",
+  "actualBrowser": "CUA in-app browser",
+  "checks": {
+    "resultSectionVisible": true,
+    "metrics": [
+      17,
+      9,
+      8,
+      1
+    ],
+    "readScopeText": "1 main full text, 6 sections/figure captions, 10 abstracts",
+    "fullTextFilter": 1,
+    "conclusionLinkOpensR14": true,
+    "filteredTargetIsRevealed": true,
+    "figure6And7Links": true,
+    "desktop": {
+      "requestedWidth": 1440,
+      "clientWidth": 1425,
+      "scrollWidth": 1425,
+      "conclusionColumns": 2
+    },
+    "phoneLocalValidatedSeparately": {
+      "requestedWidth": 391,
+      "clientWidth": 376,
+      "scrollWidth": 376
+    },
+    "prominentSidebarEntryVisible": true
+  },
+  "screenshot": {
+    "path": "assets/images/round2-20261029/online-results.png",
+    "sha256": "acfad53b8c721c0d6f03ac937d6fed2b5dc4b4ae0bc8e794c01f86f9fd3ff413"
+  },
+  "limits": [
+    "UI and static-resource verification only; not a scientific reliability certificate.",
+    "One existing user-tab handle was unavailable; the already-owned QA tab was navigated to the actual deployed site and retained.",
+    "Viewport override reset after checks."
+  ]
+}
