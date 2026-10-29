@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-28T13:01:49.082Z",
+  "generatedAt": "2026-10-29T02:46:38.290Z",
   "sourceScope": "projects.json + registered project README.md files only",
-  "projectCount": 9,
-  "passageCount": 376,
-  "registrySha256": "bda61e22f94da243e282ad77646198d3f214b11365448f846656c0ea5ac92ab3",
-  "dataSha256": "6105d55d4117e9eac4f96ebe7595b3fab43ec9dd4d9fdf4e28d1dd9415fbc63f",
+  "projectCount": 10,
+  "passageCount": 419,
+  "registrySha256": "c8fbf36f5d2145a780409db6e9141874e893823a9bad24dfb112a4f799b1563e",
+  "dataSha256": "725c6411d679f55c93acfe1223068989576681eda7d679b62864c934b0e0b3bb",
   "documents": [
     {
       "projectId": "001",
@@ -60,6 +60,12 @@
       "path": "projects/010-agent-skills-engineering-lab/README.md",
       "sha256": "8a7517c8106d0c935c78ee663a18e3c930311ec5a0ac64ab2d92e7d024f7c665",
       "passages": 51
+    },
+    {
+      "projectId": "011",
+      "path": "projects/011-pose-look-creation-atlas/README.md",
+      "sha256": "6dbc14f89ffc777ad5bc7e34c03cd391b5a1edb8023a9c8960c9283ebb3d7d32",
+      "passages": 43
     }
   ]
 }
