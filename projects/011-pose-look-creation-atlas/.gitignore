@@ -1,0 +1,6 @@
+# Original collections are preserved in a separate PRIVATE repository, never this checkout.
+private/
+original-images/
+*.part
+__pycache__/
+*.pyc

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1536" viewBox="0 0 640 960">
+  <rect width="640" height="960" fill="#efefeb"/>
+  <ellipse cx="326" cy="887" rx="96" ry="14" fill="#d6d8d0"/>
+  <g fill="#b6bbb5" stroke="#717a72" stroke-width="2.5" stroke-linejoin="round">
+    <path d="M298 355Q282 405 291 510L314 650L307 850L330 857L343 648L331 504L347 365Z"/>
+    <path d="M333 361Q360 409 357 509L346 660L364 855L388 855L377 653L389 499L377 365Z"/>
+    <path d="M304 849L331 851L333 875L290 880L283 872Z M363 851L386 851L411 870L411 880L366 879Z" fill="#8d958c"/>
+    <path d="M308 168L307 198L350 203L350 165Z"/>
+    <path d="M308 189L274 205Q269 236 282 269L291 326L287 367Q330 394 382 363L369 323L377 262Q391 228 374 208L350 194Z"/>
+    <ellipse cx="330" cy="121" rx="38" ry="51" transform="rotate(-5 330 121)"/>
+    <path d="M276 213Q259 225 254 256L244 297Q244 309 254 318L306 356L319 337L269 295L285 245Z"/>
+    <path d="M373 215Q394 230 399 267L407 304Q405 316 392 323L344 350L330 332L380 299L365 245Z"/>
+    <ellipse cx="324" cy="347" rx="20" ry="11" transform="rotate(19 324 347)" fill="#c5c9c2"/>
+    <ellipse cx="340" cy="341" rx="18" ry="10" transform="rotate(-12 340 341)" fill="#c5c9c2"/>
+  </g>
+  <path d="M343 88Q351 120 341 152 M300 208Q324 219 370 214 M295 326Q330 343 371 324" fill="none" stroke="#919a90" stroke-width="1.7"/>
+  <g fill="#a87076" stroke="#a87076" stroke-width="2" opacity=".75">
+    <path d="M277 223L256 298L319 347 M376 223L394 304L339 342 M328 205L331 336 M306 369L321 509L326 650L319 852 M363 369L372 507L359 652L375 854" fill="none"/>
+    <circle cx="277" cy="223" r="4"/><circle cx="256" cy="298" r="4"/><circle cx="319" cy="347" r="4"/><circle cx="376" cy="223" r="4"/><circle cx="394" cy="304" r="4"/><circle cx="339" cy="342" r="4"/>
+  </g>
+  <g font-family="Microsoft YaHei,sans-serif" text-anchor="middle" fill="#677063"><text x="320" y="37" font-size="12" letter-spacing="2">POSE REFERENCE / ORIGINAL DRAWING</text><text x="320" y="933" font-size="13">双手在腰前轻合 · 重心偏向一腿</text></g>
+</svg>

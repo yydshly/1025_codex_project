@@ -1,0 +1,206 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-29",
+  "title": "婚纱参考生图 · 小样本实验 v1",
+  "generationCalls": 7,
+  "assets": [
+    {
+      "id": "person",
+      "label": "人物基准",
+      "path": "media/experiment-v1/person.png",
+      "role": "generated-input",
+      "engine": "Built-in ImageGen",
+      "modelVersion": "Not reported by the tool",
+      "prompt": "Use case: photorealistic-natural. Asset type: input reference image for an honest AI virtual bridal styling experiment on a research webpage. Create one single full-body studio photograph of ONE fictional 30-year-old adult East Asian woman, not based on a real person. Natural oval face, dark brown almond eyes, shoulder-length straight dark hair neatly tucked behind the ears, neutral gentle expression. Ordinary realistic healthy adult proportions, no body exaggeration. Wearing a plain light gray crewneck T-shirt, charcoal straight-leg trousers and simple flat shoes. Standing front-facing, weight balanced, both hands relaxed slightly away from sides, feet slightly apart, looking into camera. Full figure from head to shoes visible with clear margins, centered, portrait 2:3 composition, eye-level camera, neutral warm light-gray seamless studio, soft broad light, real skin texture. No collage, no inset portrait, no text, no logos, no flowers, no bridal styling. Keep the image clean and useful as an identity/body/pose baseline.",
+      "inputs": [],
+      "attempts": 1,
+      "bytes": 1884840,
+      "sha256": "bd5f35880cf9a5d2486d9b5885d307a5b8b45362e1ec57401940380a90776c7d",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "id": "dress-a",
+      "label": "婚纱 A · 无袖缎面 A 字裙",
+      "path": "media/experiment-v1/dress-a.png",
+      "role": "generated-input",
+      "engine": "Built-in ImageGen",
+      "modelVersion": "Not reported by the tool",
+      "prompt": "Use case: product-mockup. Asset type: independent original garment reference for an AI bridal styling experiment. Create ONE single photorealistic catalog product photograph of an original ivory wedding gown on an invisible mannequin, no human person or face. Design A: clean bateau neckline, sleeveless fitted bodice with fine floral lace overlay, natural waist with a narrow plain ivory band, generous A-line matte silk satin skirt and short train. The skirt has no lace appliques, no belt bow, no beading. Show the complete dress from front, including full hem and train. Portrait 2:3 composition on a neutral warm light-gray studio background, soft even light, accurately legible silhouette and fabric. An original unbranded concept garment, not a real product SKU. No text, no collage, no extra objects, no watermarks.",
+      "inputs": [],
+      "attempts": 1,
+      "bytes": 1679888,
+      "sha256": "497b6d67ebc4f3388c6157853114ba20767332dede1861d17001ce5554870faf",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "id": "dress-b",
+      "label": "婚纱 B · 长袖全蕾丝",
+      "path": "media/experiment-v1/dress-b.png",
+      "role": "generated-input",
+      "engine": "Built-in ImageGen",
+      "modelVersion": "Not reported by the tool",
+      "prompt": "Use case: product-mockup. Asset type: independent original garment reference for an AI bridal styling experiment. Create ONE single photorealistic catalog product photograph of an original ivory wedding gown on an invisible mannequin, no human person or face. Design B: modest V neckline with scalloped edge, opaque fitted bodice, long fitted floral lace sleeves, soft all-over lace overlay continuing into a gently fitted waist and subtly flared floor-length trumpet skirt with short train. An elegant fully lined adult bridal garment, not sheer on the torso. This gown should be visibly different from a sleeveless plain-satin A-line wedding dress. Show complete front view including hem and train. Portrait 2:3 composition on neutral warm light-gray seamless studio, soft even light. Original unbranded concept garment, not real SKU. No text, collage, extra objects or watermarks.",
+      "inputs": [],
+      "attempts": 1,
+      "bytes": 2250458,
+      "sha256": "fb793ef4d66caaadfb9cae3f99b48cf10b964c0b09c1150d29ba783d8c9fcfb1",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "id": "studio-a",
+      "label": "A 款上身结果",
+      "path": "media/experiment-v1/studio-a.png",
+      "role": "reference-edit-output",
+      "engine": "Built-in ImageGen",
+      "modelVersion": "Not reported by the tool",
+      "prompt": "Use case: identity-preserve. Asset type: actual multi-reference AI try-on experiment, single output image for a research webpage. Input image 1 is the fictional adult woman's identity, body, pose, studio background and framing baseline. Input image 2 is the original wedding gown design to put on her. Replace only her T-shirt, trousers and shoes with the exact gown shown in image 2 and unobtrusive ivory bridal shoes if visible. Preserve the woman's face, facial proportions, natural body proportions, hair, expression, front-facing standing pose, hand positions, camera height, full-body framing, neutral light-gray background and soft studio lighting from image 1. Preserve the gown's neckline, sleeves or sleeveless construction, waistline, fabric and skirt silhouette from image 2. Fit it realistically around her existing body; do not change her waist or shoulders to match an idealized mannequin. No veil, bouquet, jewelry, extra flowers or changes to hairstyle. Single portrait 2:3 full-length studio photo with head and complete gown hem visible. Natural photographic detail, no collage, no text or watermark. This is a styling preview using wholly fictional AI-created inputs, not evidence of real-world clothing fit.",
+      "inputs": [
+        "person",
+        "dress-a"
+      ],
+      "attempts": 1,
+      "bytes": 1703476,
+      "sha256": "1f9dd2a37bc7ad6f3822dd9d7636f28266e1ab7c54e88a1dcd3a1e8656dba026",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "id": "studio-b",
+      "label": "B 款上身结果",
+      "path": "media/experiment-v1/studio-b.png",
+      "role": "reference-edit-output",
+      "engine": "Built-in ImageGen",
+      "modelVersion": "Not reported by the tool",
+      "prompt": "Use case: identity-preserve. Asset type: actual multi-reference AI try-on experiment, single output image for a research webpage. Input image 1 is the fictional adult woman's identity, body, pose, studio background and framing baseline. Input image 2 is the original wedding gown design to put on her. Replace only her T-shirt, trousers and shoes with the exact gown shown in image 2 and unobtrusive ivory bridal shoes if visible. Preserve the woman's face, facial proportions, natural body proportions, hair, expression, front-facing standing pose, hand positions, camera height, full-body framing, neutral light-gray background and soft studio lighting from image 1. Preserve the gown's neckline, sleeves or sleeveless construction, waistline, fabric and skirt silhouette from image 2. Fit it realistically around her existing body; do not change her waist or shoulders to match an idealized mannequin. No veil, bouquet, jewelry, extra flowers or changes to hairstyle. Single portrait 2:3 full-length studio photo with head and complete gown hem visible. Natural photographic detail, no collage, no text or watermark. This is a styling preview using wholly fictional AI-created inputs, not evidence of real-world clothing fit.",
+      "inputs": [
+        "person",
+        "dress-b"
+      ],
+      "attempts": 1,
+      "bytes": 2140377,
+      "sha256": "2440c702a6e6732db96f04c609c50142f672390e16244aad10ce492e3fd0add2",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "id": "garden",
+      "label": "庭院场景结果",
+      "path": "media/experiment-v1/garden.png",
+      "role": "reference-edit-output",
+      "engine": "Built-in ImageGen",
+      "modelVersion": "Not reported by the tool",
+      "prompt": "Use case: identity-preserve. Asset type: actual image-to-image scene variation for a bridal research webpage. Edit the supplied studio photograph. Preserve the same fictional adult woman's facial identity, face shape, hair, expression, body proportions, standing pose, hand positions, ivory sleeveless lace-bodice and plain matte-satin A-line wedding dress, its neckline, waist band and train. Change only the setting and physically necessary lighting/shadows: place her on a pale stone path in an elegant green garden courtyard with restrained white flowering shrubs and a softly blurred stone arch behind her. Soft late-afternoon daylight, realistic ground contact and shadows. Preserve eye-level camera, same full-length scale and centered portrait 2:3 framing. The venue is fictional. Do not add veil, bouquet, jewelry, other people, signs, text or watermark. Keep garment design unchanged as closely as possible. Single photorealistic image, not a collage.",
+      "inputs": [
+        "studio-a"
+      ],
+      "attempts": 1,
+      "bytes": 2217295,
+      "sha256": "21b6db62905c7caf414eba73b9b111ba301251616ab90d9211cd3f1285536632",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "id": "pose",
+      "label": "双手腰前姿势结果",
+      "path": "media/experiment-v1/pose.png",
+      "role": "reference-edit-output",
+      "engine": "Built-in ImageGen",
+      "modelVersion": "Not reported by the tool",
+      "prompt": "Use case: identity-preserve. Asset type: actual pose-reference editing experiment for a bridal research webpage. Image 1 is the edit target: a fictional adult woman wearing her ivory wedding gown in a neutral studio. Image 2 is a hand-drawn pose diagram only, NOT a reference for identity, body shape, clothing or style. Change the woman's arm/hand pose and weight distribution to follow image 2: both elbows gently bent, both hands resting loosely together at the low waist in front, one wrist lightly held by the other hand, weight on one leg and the other knee relaxed. Preserve the exact facial identity, realistic body proportions, hair, neutral gentle expression, gown design (sleeveless lace bodice, modest bateau neckline, narrow ivory waistband, plain satin A-line skirt and short train), background, soft studio lighting, eye-level full-length portrait framing from image 1. Adapt the drape of the dress only as needed for the new pose. Keep full head and full hem visible. Do not copy the diagram's gray body, skeleton lines or its text. No veil, bouquet, extra people, new accessories, collage, text or watermark. One natural photorealistic image.",
+      "inputs": [
+        "studio-a",
+        "pose-guide"
+      ],
+      "attempts": 1,
+      "bytes": 1652015,
+      "sha256": "c271ba86eb4f9a3eeb137c3940b1e8a38b34014edd9aa4631ad0d3495766edb6",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "id": "pose-guide",
+      "label": "自绘姿势参考",
+      "path": "media/experiment-v1/pose-guide.png",
+      "sourceVector": "media/experiment-v1/pose-guide.svg",
+      "role": "original-vector-reference",
+      "engine": "Original SVG rasterized with existing Sharp",
+      "inputs": [],
+      "prompt": null,
+      "bytes": 131028,
+      "sha256": "0e770871e35c4a61babdfe21abe974a687874bb546fa133f533ddfa7ef9b0110",
+      "width": 1024,
+      "height": 1536,
+      "sourceVectorSha256": "540d04491d97c9c1dc72710ea826d4728c81bdecf2a4b5f94e4ea95f81b49535"
+    }
+  ],
+  "scope": "虚构成年人物、原创概念婚纱与自绘姿势图。7 次内置 ImageGen 调用，各配置 1 次并保留全部结果。不是原图库效果复现、真实顾客、真实商品 SKU、尺码或合身测试。",
+  "cases": [
+    {
+      "id": "tryon",
+      "title": "同一个人，换两款婚纱",
+      "short": "换款",
+      "before": "person",
+      "after": "studio-a",
+      "alternatives": [
+        "studio-a",
+        "studio-b"
+      ],
+      "inputs": [
+        "person",
+        "dress-a"
+      ],
+      "scenario": "bridal-compare",
+      "fixed": "人物身份、发型、站姿、影棚背景与机位",
+      "changed": "服装款式",
+      "observations": [
+        "两款结果都保留了人物的主要面部特征和正面构图。",
+        "A 款保留无袖、蕾丝上身与缎面 A 字裙；B 款保留 V 领、长袖与全蕾丝轮廓。",
+        "A 款领口弧度与腰带观感有变化，蕾丝花纹位置并非逐点复刻。"
+      ],
+      "boundary": "这是款式预览。体型藏在裙下，不能据此确认身体尺寸保持，更不能预测真实合身。"
+    },
+    {
+      "id": "scene",
+      "title": "同一套婚纱，从影棚到庭院",
+      "short": "换场景",
+      "before": "studio-a",
+      "after": "garden",
+      "inputs": [
+        "studio-a"
+      ],
+      "scenario": "bridal-photo",
+      "fixed": "人物、婚纱设计、站姿与全身构图",
+      "changed": "背景、环境光与接地阴影",
+      "observations": [
+        "中性影棚变为虚构庭院，服装与人物主要特征延续。",
+        "光线变暖，头发边缘与裙摆反光随环境发生变化。",
+        "不能把这张图当作真实场地拍摄或已经完成摄影交付。"
+      ],
+      "boundary": "适合讨论氛围和拍摄方案；真实地点、光线条件和服装细节仍需现场确认。"
+    },
+    {
+      "id": "pose",
+      "title": "加入姿势图，让手臂换一个动作",
+      "short": "改姿势",
+      "before": "studio-a",
+      "after": "pose",
+      "inputs": [
+        "studio-a",
+        "pose-guide"
+      ],
+      "scenario": "bridal-photo",
+      "fixed": "人物、婚纱、影棚、机位与光线",
+      "changed": "手臂动作及站立重心目标",
+      "observations": [
+        "双手从身体两侧改为腰前轻合，方向与自绘姿势参考一致。",
+        "手部和蕾丝边缘随编辑重新生成，仍需放大检查。",
+        "腿部被长裙遮挡，不能确认重心和关节角度精确遵循参考。"
+      ],
+      "boundary": "姿势图能表达动作目标；本例没有生成或恢复三维骨骼，也未验证数值级姿势控制。"
+    }
+  ],
+  "totalImageBytes": 13659377
+}

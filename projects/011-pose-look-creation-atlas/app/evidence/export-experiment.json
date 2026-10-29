@@ -1,0 +1,134 @@
+{
+  "blender": "5.2.3 LTS",
+  "mannequin_import": {
+    "meshes": 57,
+    "armatures": [],
+    "cameras": [],
+    "actions": 0
+  },
+  "mannequin_file": {
+    "bytes": 579928,
+    "nodes": 153,
+    "meshes": 57,
+    "skins": 0,
+    "animations": 0,
+    "cameras": 0,
+    "animation_channels": []
+  },
+  "mpfb_created": {
+    "meshes": 1,
+    "armatures": [
+      {
+        "name": "Human.rig",
+        "bones": 53
+      }
+    ],
+    "cameras": [],
+    "actions": 0,
+    "bone_names": [
+      "Root",
+      "pelvis",
+      "spine_01",
+      "spine_02",
+      "spine_03",
+      "clavicle_l",
+      "upperarm_l",
+      "lowerarm_l",
+      "hand_l",
+      "index_01_l",
+      "index_02_l",
+      "index_03_l",
+      "middle_01_l",
+      "middle_02_l",
+      "middle_03_l",
+      "pinky_01_l",
+      "pinky_02_l",
+      "pinky_03_l",
+      "ring_01_l",
+      "ring_02_l",
+      "ring_03_l",
+      "thumb_01_l",
+      "thumb_02_l",
+      "thumb_03_l",
+      "clavicle_r",
+      "upperarm_r",
+      "lowerarm_r",
+      "hand_r",
+      "index_01_r",
+      "index_02_r",
+      "index_03_r",
+      "middle_01_r",
+      "middle_02_r",
+      "middle_03_r",
+      "pinky_01_r",
+      "pinky_02_r",
+      "pinky_03_r",
+      "ring_01_r",
+      "ring_02_r",
+      "ring_03_r",
+      "thumb_01_r",
+      "thumb_02_r",
+      "thumb_03_r",
+      "neck_01",
+      "head",
+      "thigh_l",
+      "calf_l",
+      "foot_l",
+      "ball_l",
+      "thigh_r",
+      "calf_r",
+      "foot_r",
+      "ball_r"
+    ],
+    "weighted_vertices": 19158
+  },
+  "mpfb_pose": {
+    "edited_bone": "upperarm_l",
+    "rotation_degrees": [
+      0.0,
+      0.0,
+      -65.00000067042492
+    ],
+    "camera_location": [
+      3.5,
+      -6.0,
+      2.799999952316284
+    ],
+    "camera_lens": 55.0
+  },
+  "mpfb_glb": {
+    "bytes": 4692844,
+    "nodes": 56,
+    "meshes": 1,
+    "skins": 1,
+    "animations": 1,
+    "cameras": 1,
+    "animation_channels": [
+      159
+    ]
+  },
+  "mpfb_roundtrip": {
+    "meshes": 2,
+    "armatures": [
+      {
+        "name": "Human.rig",
+        "bones": 53
+      }
+    ],
+    "cameras": [
+      "VerificationCamera"
+    ],
+    "actions": 2,
+    "vertices_moved": 3528,
+    "max_vertex_displacement": 0.6070825991550979,
+    "camera_location": [
+      3.5,
+      -6.0,
+      2.799999952316284
+    ],
+    "camera_lens": 65.18518829345703
+  },
+  "status": "passed",
+  "scopeNote": "Historical limited local experiment. Same Blender GLB export/reimport only; not validation in another DCC or game engine. Focal length changed on round trip; FOV equivalence was not checked. No claim of universal compatibility.",
+  "testDate": "2026-10-29"
+}

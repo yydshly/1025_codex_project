@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "retrievedAt": "2026-10-28T18:33:08.012056+00:00",
+  "source": "https://ai-pose-gallery.pages.dev/",
+  "expected": 1439,
+  "verified": 1439,
+  "poseGroups": 288,
+  "totalBytes": 668536222,
+  "manifestSha256": "feddc96293062d300391493243aeb88195fb6e001582ce61969a543744b955d6",
+  "privateRepository": "https://github.com/yydshly/pose-look-reference-backup",
+  "remoteVerified": true,
+  "status": "complete-private-remote",
+  "clothing": "one-original-preview-only",
+  "failureCount": 0,
+  "private": true,
+  "remoteCommit": "6ecb806cc7561938fbe4fcb7accffef47a0b3663",
+  "remoteFiles": 1448,
+  "remoteOriginals": 1439,
+  "verifiedAt": "2026-10-29T02:01:35.956178+00:00",
+  "pngIntegrityVerified": true
+}

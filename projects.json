@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "nextId": 11,
+  "nextId": 12,
   "projects": [
     {
       "id": "001",
@@ -164,6 +164,25 @@
       "cover": "assets/images/skills-field-guide.png",
       "demoUrl": "https://yydshly.github.io/1025_codex_project/010-agent-skills-engineering-lab/",
       "createdAt": "2026-10-28"
+    },
+    {
+      "id": "011",
+      "slug": "pose-look-creation-atlas",
+      "name": "姿势与造型 · 图像创作研究",
+      "summary": "以实际生成图展示同一人物两款婚纱、庭院场景和姿势参考编辑，支持拖动对照、原图放大及产品场景关联；汇总12项工具、8类创作方向、许可和资料备份。保留完整输入、指令与偏差，小样本不代表商品保真或稳定成功率。",
+      "source": "https://x.com/leo_xiaolei/status/2114971707962536302",
+      "sourceName": "姿势与服装参考图库原帖及相关源库",
+      "status": "researching",
+      "tags": [
+        "参考生图",
+        "换装",
+        "婚纱",
+        "能力研究",
+        "资料备份"
+      ],
+      "cover": "assets/images/effects-overview-v2.jpg",
+      "demoUrl": "",
+      "createdAt": "2026-10-29"
     }
   ]
 }

@@ -1,0 +1,11 @@
+{
+  "name": "pose-look-creation-atlas",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "check": "node scripts/check.mjs",
+    "archive:verify": "node scripts/verify-archive.mjs"
+  }
+}

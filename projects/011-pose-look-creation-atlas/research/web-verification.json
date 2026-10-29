@@ -1,0 +1,85 @@
+{
+  "checkedAt": "2026-10-28T18:47:19.191562+00:00",
+  "scope": "Research webpage only; no upstream models re-run.",
+  "browser": "Codex in-app browser",
+  "desktop": {
+    "viewport": [
+      1265,
+      712
+    ],
+    "horizontalOverflow": false,
+    "consoleWarningsOrErrors": []
+  },
+  "mobile": {
+    "viewport": [
+      390,
+      844
+    ],
+    "documentScrollWidth": 375,
+    "horizontalOverflow": false,
+    "panelsChecked": [
+      "understanding",
+      "tools",
+      "scenarios",
+      "archive"
+    ]
+  },
+  "flows": [
+    {
+      "name": "Editor filter plus GLB search",
+      "result": "4 matching tools"
+    },
+    {
+      "name": "MPFB detail expansion",
+      "result": "Input, output, camera, license, limitations visible"
+    },
+    {
+      "name": "Compare Mannequin and MPFB",
+      "result": "3 table columns including row labels"
+    },
+    {
+      "name": "Compare maximum",
+      "result": "Fourth selection rejected; 3 remain checked; explanatory toast visible"
+    },
+    {
+      "name": "Empty search",
+      "result": "No matches message visible"
+    },
+    {
+      "name": "Edit prompt, switch scene and return",
+      "result": "Draft retained in current session"
+    },
+    {
+      "name": "Export plan JSON",
+      "result": "Actual downloaded JSON parsed; scene and edited prompt match"
+    },
+    {
+      "name": "Source and backup panel",
+      "result": "1448 original archive Git blobs matched private remote; fixed version links, 1439 PNGs and clothing-preview-only status visible."
+    },
+    {
+      "name": "Final typography and private-backup links",
+      "result": "Source panel shows verified private backup and versioned paths; archive and scenarios have no mobile horizontal overflow; no browser errors."
+    }
+  ],
+  "downloads": "One QA plan JSON downloaded to browser Downloads; contains only synthetic QA text.",
+  "screenshots": [
+    "assets/images/desktop-overview.jpg",
+    "assets/images/mobile-overview.jpg",
+    "assets/images/mobile-scenarios.jpg",
+    "assets/images/desktop-scenarios.jpg",
+    "assets/images/desktop-backup.jpg"
+  ],
+  "checks": [
+    "npm.cmd run check (root): 11 projects validated",
+    "npm.cmd run check (subproject): syntax, assets, research structure, complete local original summary",
+    "archive:verify: 28 pinned files / 542954 bytes verified"
+  ],
+  "limitations": [
+    "No AI image generation or visual quality experiment performed",
+    "No external DCC or game-engine compatibility tested",
+    "Public deployment not performed",
+    "The in-app browser disallows file: URLs; browser verification used the local HTTP server. No alternate browser or bypass was attempted."
+  ],
+  "originalBackup": "1439 PNG CRC/integrity and SHA-256 checks passed; all 1448 original archive Git blobs matched private remote."
+}

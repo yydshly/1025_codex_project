@@ -1,0 +1,4 @@
+# Keep upstream snapshot bytes identical to their SHA-256 manifests.
+app/archive/upstream/** -text
+assets/images/*.jpg -text
+app/media/experiment-v1/** -text

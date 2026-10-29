@@ -42,6 +42,13 @@
       "publicDirectory": "dist/site",
       "extraAssets": [],
       "guidePage": "app/overview.html"
+    },
+    {
+      "directory": "011-pose-look-creation-atlas",
+      "publicDirectory": "app",
+      "extraAssets": [
+        "assets/images/effects-overview-v2.jpg"
+      ]
     }
   ]
 }
