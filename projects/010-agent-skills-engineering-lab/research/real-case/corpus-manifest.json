@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-29T07:26:16.016Z",
+  "generatedAt": "2026-10-29T09:02:27.033Z",
   "sourceScope": "projects.json + registered project README.md files only",
   "projectCount": 11,
-  "passageCount": 469,
+  "passageCount": 474,
   "registrySha256": "a49cc81139d3b2937246b6cc79808c12fbcf4ef8722c2334f0ff18d8a05f91ed",
-  "dataSha256": "c1f50b9ebd0e833bbc501dcae869106f9284dc94aab42b1b4a42a51deb297a29",
+  "dataSha256": "a802d56e2b1391299862e41f3e487dd6e1270a0fdac69dde1de043772a5d114a",
   "documents": [
     {
       "projectId": "001",
@@ -70,8 +70,8 @@
     {
       "projectId": "012",
       "path": "projects/012-aquatic-toxicology-skill-lab/README.md",
-      "sha256": "9a493a85da37044fbaa1eff74e5d830acbf83ae38454d6187dd220323f41e020",
-      "passages": 47
+      "sha256": "0c466b6b1641e966fcdee4d4889b4ee3b5fd47f06b76067036e5452ff3309663",
+      "passages": 52
     }
   ]
 }
