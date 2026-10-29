@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-29",
+  "environment": "CUA actual in-app browser; local publication tree port4334",
+  "checks": {
+    "prominentEntry": true,
+    "resultsBeforeUnderstanding": true,
+    "readingFilter": {
+      "full_text": 1,
+      "sections": 6
+    },
+    "newOnlyFilter": 8,
+    "PINK1Search": 1,
+    "evidenceLinkOpensDetails": true,
+    "sameHashReopensClosedDetails": true,
+    "deepLinkRefresh": {
+      "record": "Taa939a1c2",
+      "open": true,
+      "top": 50
+    },
+    "figure6And7Links": true,
+    "accessLogVisible": true,
+    "phone": {
+      "requestedViewportWidth": 391,
+      "clientWidth": 376,
+      "scrollWidth": 376,
+      "detailOverflow": false
+    },
+    "visibleConclusions": 6,
+    "records": 17
+  },
+  "limits": [
+    "These interface checks do not prove scientific reliability.",
+    "Data-missing fallback added and statically checked; network fault injection not performed.",
+    "Slow-network race fixed via research-ready event; reload checked, no throttled-network experiment."
+  ]
+}

@@ -14,3 +14,6 @@
 /research/retrieval-trial/screening/reviewer-b-sample*.json
 /research/retrieval-trial/diagnostics/B03.json
 /research/retrieval-trial/diagnostics/B05.json
+
+# Reading copies stay local; publish our paraphrases, locators and receipts only.
+/research/round2/raw/

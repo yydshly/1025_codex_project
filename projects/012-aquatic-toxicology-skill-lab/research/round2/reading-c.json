@@ -1,0 +1,465 @@
+[
+  {
+    "id": "Ta40aed7f3",
+    "title": "Sorption of PFOS onto polystyrene microplastics potentiates synergistic toxic effects during zebrafish embryogenesis and neurodevelopment",
+    "doi": "10.1016/j.chemosphere.2024.143462",
+    "priorId": "P02",
+    "documentType": "journal_article",
+    "accessLevel": "sections",
+    "eligibility": "direct",
+    "independence": "不同于其他候选的期刊记录；未获取方法与原始数据，未认证实验队列独立性。",
+    "design": {
+      "model": "斑马鱼胚胎/仔鱼，另有分子动力学模拟",
+      "stage": "早期发育；实际起止暴露窗口未核清，Introduction中的一般发育窗口不当作本试验时程",
+      "particles": "PS微塑料；粒径、表面及投加量未取得",
+      "chemicals": "PFOS",
+      "doses": "未取得生物试验剂量与实测水相/体内浓度",
+      "duration": "未取得",
+      "groups": "摘要/Introduction说明PS、PFOS及其组合；完整对照组表未读",
+      "replication": "未取得",
+      "statistics": "未取得正式交互模型及重复结构；协同是作者标签"
+    },
+    "findings": [
+      {
+        "statement": "作者报告PS附着卵膜，组合暴露下孵化、发育及神经行为终点受扰；模拟支持吸附相互作用。",
+        "locator": "PubMed PMID39368493 Abstract；出版社Introduction末段",
+        "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/39368493/",
+        "strength": "作者摘要报告；方向未逐图复核"
+      },
+      {
+        "statement": "读者判断：卵膜定位和模拟不能独自证成PFOS体内载荷增加；低氧为作者解释，未核到溶解氧测量。",
+        "locator": "Abstract关于卵膜/心率的解释；与未读方法对照",
+        "sourceUrl": "https://www.sciencedirect.com/science/article/pii/S0045653524023609",
+        "strength": "证据边界分析，非新增实验发现"
+      }
+    ],
+    "limitations": [
+      "未读Methods、结果图表及补充材料，不能核算协同。",
+      "与P03颗粒、剂量及窗口未匹配，不能归因两文的方向差异。"
+    ],
+    "firstRoundComparison": "增强方向维持；补读Introduction并细分物理定位、载体解释和未证实的体内剂量链。没有升级正式协同或全文质量判断。",
+    "readingLog": [
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/39368493/",
+        "action": "打开并复读原始索引摘要",
+        "result": "可读",
+        "readParts": "题录、完整摘要、利益冲突声明",
+        "locator": "Abstract；COI",
+        "accessedAt": "2026-10-29"
+      },
+      {
+        "url": "https://www.sciencedirect.com/science/article/pii/S0045653524023609",
+        "action": "出版社全文尝试及定向检索",
+        "result": "直接打开HTTP403；搜索索引返回摘要和Introduction片段",
+        "readParts": "Highlights、Abstract及Introduction末段；未读Methods/图表",
+        "locator": "Introduction研究假设及目的",
+        "accessedAt": "2026-10-29"
+      },
+      {
+        "url": "https://api.openalex.org/works/https://doi.org/10.1016/j.chemosphere.2024.143462",
+        "action": "核查合法公开版本位置",
+        "result": "HTTP200；closed；any_repository_has_fulltext=false；无PDF地址",
+        "readParts": "OA及locations元数据",
+        "locator": "open_access、locations",
+        "accessedAt": "2026-10-29"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/39368493/",
+        "type": "原始研究摘要索引",
+        "readScope": "abstract"
+      },
+      {
+        "url": "https://www.sciencedirect.com/science/article/pii/S0045653524023609",
+        "type": "出版社索引片段",
+        "readScope": "sections：Introduction片段及摘要"
+      }
+    ],
+    "fullTextAttempt": {
+      "status": "not_obtained",
+      "reason": "出版社直接访问403；OpenAlex未列合法公开全文；定向PDF检索未找到可读机构副本。403不是付费墙的证明。"
+    },
+    "decisionRationale": "明确是鱼体PS—PFOS共暴露，纳入定性证据；只按实际摘要/片段深度使用。"
+  },
+  {
+    "id": "Taa939a1c2",
+    "title": "Co-exposure to PFOA, PFBA and nanoplastics synergistically exacerbates neurotoxicity by impairing PINK1/Parkin-mediated mitophagy",
+    "doi": "10.1016/j.envint.2026.110102",
+    "priorId": "P10",
+    "documentType": "journal_article",
+    "accessLevel": "sections",
+    "eligibility": "direct",
+    "independence": "同一论文的鱼与细胞证据流，不能算两项独立鱼实验复制。",
+    "design": {
+      "model": "斑马鱼仔鱼；人SH-SY5Y神经母细胞瘤细胞",
+      "stage": "仔鱼；具体鱼龄未取得",
+      "particles": "纳米塑料；聚合物、粒径及分散控制未取得",
+      "chemicals": "PFOA、PFBA；摘要指各自单独或与NP组合，不据题名认定三者同时混合",
+      "doses": "污染物、MTK458与过表达处理剂量未取得",
+      "duration": "未取得",
+      "groups": "Fig6为细胞PINK1过表达；Fig7为鱼MTK458处理；完整组表未知",
+      "replication": "图1及图5–7多个定量面板标n=3；n的实验单位及批次定义未读到",
+      "statistics": "图5–7标显著性阈值；未取得统计检验类型、独立重复定义及协同零模型"
+    },
+    "findings": [
+      {
+        "statement": "作者摘要报告组合暴露损伤及PINK1/Parkin相关变化；图5定位细胞线粒体、LC3、自噬流和蛋白测量。",
+        "locator": "Abstract；Fig5A–L图注",
+        "sourceUrl": "https://zfin.org/ZDB-FIG-260402-5",
+        "strength": "作者报告加原图图注定位，未审读完整方法/图像定量"
+      },
+      {
+        "statement": "PINK1过表达的救援试验定位在SH-SY5Y细胞，不能改写为整鱼遗传救援。",
+        "locator": "Fig6A–L图注",
+        "sourceUrl": "https://zfin.org/ZDB-FIG-260402-6",
+        "strength": "原图图注明确细胞模型归属；未审读完整方法"
+      },
+      {
+        "statement": "MTK458药理处理定位在斑马鱼，测神经发育、线粒体荧光和游泳行为。",
+        "locator": "Fig7A–M图注",
+        "sourceUrl": "https://zfin.org/ZDB-FIG-260402-7",
+        "strength": "原图图注明确整鱼药理处理；剂量/特异性待全文核查"
+      }
+    ],
+    "limitations": [
+      "图注解决干预归属，不能代替全文方法；药物特异性、剂量及对照未核。",
+      "有整鱼药理证据，但不能改写为整鱼遗传因果已证实或人体疗效。",
+      "未复算协同；n=3不能擅自等同3条鱼或3个独立水缸。"
+    ],
+    "firstRoundComparison": "实质更新：第一轮“救援在鱼还是细胞未知”现拆清为细胞过表达与整鱼MTK458药理处理；功能证据范围扩大，但整鱼遗传机制和正式协同仍未验证。",
+    "readingLog": [
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41616538/",
+        "action": "检索并复读原始摘要",
+        "result": "搜索返回完整摘要；直接页面一次只返回导航片段",
+        "readParts": "题录、Abstract",
+        "locator": "Abstract模型/干预句",
+        "accessedAt": "2026-10-29"
+      },
+      {
+        "url": "https://www.sciencedirect.com/science/article/pii/S0160412026000607",
+        "action": "尝试开放获取出版社HTML及PDF",
+        "result": "HTML、abs及PDF请求均HTTP403；不能据此说论文不开放",
+        "readParts": "未取得正文",
+        "locator": "正文入口",
+        "accessedAt": "2026-10-29"
+      },
+      {
+        "url": "https://api.elsevier.com/content/article/pii/S0160412026000607?httpAccept=text/xml",
+        "action": "核查出版社API正文可用性",
+        "result": "HTTP200只返回题录和openaccessArticle=true；view=FULL返回401 Invalid API Key",
+        "readParts": "元数据；无正文",
+        "locator": "coredata；service-error",
+        "accessedAt": "2026-10-29"
+      },
+      {
+        "url": "https://zfin.org/ZDB-FIG-260402-1",
+        "action": "沿ZFIN论文原图目录核对模型",
+        "result": "图1及图5/6/7图注可读；不复制受版权保护图片",
+        "readParts": "Fig1、Fig5、Fig6、Fig7图注；Fig2–4只打开页面未提取正文，不计已读证据",
+        "locator": "各图Figure Caption",
+        "accessedAt": "2026-10-29"
+      },
+      {
+        "url": "https://api.openalex.org/works/https://doi.org/10.1016/j.envint.2026.110102",
+        "action": "核查开放全文副本位置",
+        "result": "gold OA、CC BY-NC-ND；仅出版社地址，无repo副本/PDF地址",
+        "readParts": "OA及locations元数据",
+        "locator": "open_access、best_oa_location",
+        "accessedAt": "2026-10-29"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41616538/",
+        "type": "原始研究摘要索引",
+        "readScope": "abstract"
+      },
+      {
+        "url": "https://zfin.org/ZDB-FIG-260402-1",
+        "type": "原研究图注的获许可数据库展示",
+        "readScope": "sections：Fig1图注"
+      },
+      {
+        "url": "https://zfin.org/ZDB-FIG-260402-5",
+        "type": "原研究图注的获许可数据库展示",
+        "readScope": "sections：Fig5图注"
+      },
+      {
+        "url": "https://zfin.org/ZDB-FIG-260402-6",
+        "type": "原研究图注的获许可数据库展示",
+        "readScope": "sections：Fig6图注，细胞过表达"
+      },
+      {
+        "url": "https://zfin.org/ZDB-FIG-260402-7",
+        "type": "原研究图注的获许可数据库展示",
+        "readScope": "sections：Fig7图注，整鱼药理处理"
+      }
+    ],
+    "fullTextAttempt": {
+      "status": "not_obtained",
+      "reason": "开放论文在本环境出版社入口403；API未授权正文；合法图注可读，故保持sections，非全文。"
+    },
+    "decisionRationale": "鱼共暴露符合范围；细胞机制单独标记，图注补足关键归属，不跨模型移植结论。"
+  },
+  {
+    "id": "Tac593520a",
+    "title": "Polystyrene modulation of perfluorooctanoic acid toxicity in zebrafish: Transcriptomic and toxicological insights",
+    "doi": "10.1016/j.jhazmat.2025.139951",
+    "priorId": "P07",
+    "documentType": "journal_article",
+    "accessLevel": "sections",
+    "eligibility": "direct",
+    "independence": "不同题录；未见足以认证独立队列的原始记录。",
+    "design": {
+      "model": "斑马鱼",
+      "stage": "本轮可读材料未提取年龄/性别",
+      "particles": "非功能化PS，标称粒径0.2、2、20 μm",
+      "chemicals": "PFOA",
+      "doses": "Introduction说明后续研究选PFOA 40与80 mg/L；急性PFOA系列另列，完整组合剂量见未读Table S1–S3",
+      "duration": "急性试验96 h；不能将此时长自动赋给全部其他检测",
+      "groups": "PFOA单独及不同粒径PS组合；精确组表未取得",
+      "replication": "未取得",
+      "statistics": "片段报PFOA单暴露96-h LC50=72.64 mg/L；模型、区间和重复结构未知"
+    },
+    "findings": [
+      {
+        "statement": "作者报告2及20 μm PS条件下存活和PFOA累积受影响；存在粒径相关的转录及组织响应。",
+        "locator": "PubMed Abstract；出版社Acute toxicity、Conclusion片段",
+        "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/41027221/",
+        "strength": "作者摘要/片段级"
+      },
+      {
+        "statement": "读者判断：40/80 mg/L设计及96 h致死数据提供高浓度危害线索，不能直接支持环境浓度风险量化。",
+        "locator": "Introduction末段；Acute toxicity首段；Table S1–S5目录",
+        "sourceUrl": "https://www.sciencedirect.com/science/article/abs/pii/S0304389425028705",
+        "strength": "外部适用性边界，非实测现场效应"
+      }
+    ],
+    "limitations": [
+      "未取得Methods、Table S1–S5和原始数据；未复算LC50或交互效应。",
+      "粒径、粒子数/表面积、暴露浓度与剂量可比性待核；未把未知控制当成已发现缺陷。"
+    ],
+    "firstRoundComparison": "补入40/80 mg/L设计定位，强化第一轮“不可外推现场”的限制；粒径条件性判断保留，机制和正式相互作用仍未证实。",
+    "readingLog": [
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41027221/",
+        "action": "复读研究摘要",
+        "result": "可读",
+        "readParts": "题录、Abstract",
+        "locator": "Abstract",
+        "accessedAt": "2026-10-29"
+      },
+      {
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S0304389425028705",
+        "action": "尝试全文并定向定位方法/结果",
+        "result": "直接访问403；出版社搜索索引返回指定章节片段",
+        "readParts": "Introduction末段、Test chemicals、Acute toxicity首段、Conclusion、Supporting information目录；未读补充表",
+        "locator": "上述节名；Fig1/Table S4仅被正文引用，未读取图表本身",
+        "accessedAt": "2026-10-29"
+      },
+      {
+        "url": "https://api.openalex.org/works/https://doi.org/10.1016/j.jhazmat.2025.139951",
+        "action": "核查公开版本位置",
+        "result": "HTTP200；closed；无repo全文或PDF链接",
+        "readParts": "OA及locations元数据",
+        "locator": "open_access、locations",
+        "accessedAt": "2026-10-29"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41027221/",
+        "type": "原始研究摘要索引",
+        "readScope": "abstract"
+      },
+      {
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S0304389425028705",
+        "type": "出版社索引片段",
+        "readScope": "sections：Introduction、Test chemicals、Acute toxicity、Conclusion及补充材料目录片段"
+      }
+    ],
+    "fullTextAttempt": {
+      "status": "not_obtained",
+      "reason": "直接访问403；OpenAlex无合法repo地址；定向PDF检索未取得可读全文。"
+    },
+    "decisionRationale": "直接共暴露研究，但结果用于危害与设计条件分析，不推算现场风险。"
+  },
+  {
+    "id": "Tac5ec88c5",
+    "title": "Combined toxicity of polyethylene micro/nanoplastics and PFOA in zebrafish (Danio rerio): Impacts on antioxidant, neurotransmission, and gut microbiota",
+    "doi": "10.1016/j.etap.2025.104907",
+    "priorId": "P05",
+    "documentType": "journal_article",
+    "accessLevel": "sections",
+    "eligibility": "direct",
+    "independence": "与P09共享Ruixuan Li、Yingxue Sun、Chun Wang及BTBU机构；相似体系不能证明重复，也不能算两次独立复制。队列独立性未知。",
+    "design": {
+      "model": "成年斑马鱼（Introduction研究目的段）",
+      "stage": "成年；性别未取得",
+      "particles": "PE-MPs、PE-NPs；精确粒径及剂量未取得",
+      "chemicals": "PFOA",
+      "doses": "作者称环境相关浓度；数值和实测暴露稳定性未取得，不自行认证环境相关性",
+      "duration": "慢性，具体天数未取得",
+      "groups": "PFOA单独与MP、NP及MP+NP组合；完整组表未读",
+      "replication": "未取得",
+      "statistics": "IBRv2综合生物标志物响应；协同/拮抗标签的参照与检验未核"
+    },
+    "findings": [
+      {
+        "statement": "作者以IBRv2描述鳃/肝与肠道方向不同，并报告氧化、AChE及菌群变化。",
+        "locator": "Abstract的IBRv2及微生物段；Introduction末段",
+        "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/41422984/",
+        "strength": "作者摘要报告，未逐终点复核"
+      },
+      {
+        "statement": "读者判断：微生物通路名称属于功能预测/注释线索，不能据此认定鱼发生对应人类疾病或菌群导致器官损伤。",
+        "locator": "Abstract列举KEGG样通路名称；未读干预方法",
+        "sourceUrl": "https://www.sciencedirect.com/science/article/pii/S1382668925002820",
+        "strength": "解释边界，非新增生物学结果"
+      }
+    ],
+    "limitations": [
+      "IBRv2分数不是已核验的浓度加和/独立作用零模型，不能独自认证协同。",
+      "缺乏剂量、时程、独立重复、菌群因果干预及P05/P09队列信息。"
+    ],
+    "firstRoundComparison": "器官条件性判断保留；补查作者重叠并显式挂起P05/P09独立性。未把两个摘要标签当成确定矛盾。",
+    "readingLog": [
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41422984/",
+        "action": "复读题录和摘要",
+        "result": "可读",
+        "readParts": "作者、Abstract、COI",
+        "locator": "Authors、Abstract",
+        "accessedAt": "2026-10-29"
+      },
+      {
+        "url": "https://www.sciencedirect.com/science/article/pii/S1382668925002820",
+        "action": "尝试全文并定位研究对象",
+        "result": "直接打开403；出版社搜索索引返回完整Introduction和摘要",
+        "readParts": "Highlights、Abstract、Introduction；无Methods或结果表",
+        "locator": "Introduction最后两段",
+        "accessedAt": "2026-10-29"
+      },
+      {
+        "url": "https://api.openalex.org/works/https://doi.org/10.1016/j.etap.2025.104907",
+        "action": "核查合法公开版本",
+        "result": "HTTP200；closed；未列repo/PDF",
+        "readParts": "OA及locations元数据",
+        "locator": "open_access、locations",
+        "accessedAt": "2026-10-29"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41422984/",
+        "type": "原始研究摘要索引",
+        "readScope": "abstract"
+      },
+      {
+        "url": "https://www.sciencedirect.com/science/article/pii/S1382668925002820",
+        "type": "出版社索引章节",
+        "readScope": "sections：Introduction及摘要"
+      },
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40795757/",
+        "type": "P09作者题录对照",
+        "readScope": "metadata：来自并行核验记录"
+      }
+    ],
+    "fullTextAttempt": {
+      "status": "not_obtained",
+      "reason": "出版社403；OpenAlex无repo；定向PDF检索未获取合法全文。"
+    },
+    "decisionRationale": "直接共暴露且符合范围；综合保留器官条件性，不纳入任何独立重复计数或效应量合并。"
+  },
+  {
+    "id": "Tdf84e1869",
+    "title": "Developmental stage-dependent carrier effects of nanoplastics on PFOS bioaccumulation and toxicity in zebrafish: Insights from toxicokinetic-toxicodynamic perspective",
+    "doi": "10.1016/j.watres.2025.124658",
+    "priorId": "P03",
+    "documentType": "journal_article",
+    "accessLevel": "abstract",
+    "eligibility": "direct",
+    "independence": "一个研究内的两个生命阶段窗口，不是两次独立研究复制。",
+    "design": {
+      "model": "斑马鱼胚胎与仔鱼",
+      "stage": "摘要分别标胚胎0–48 h与仔鱼72–168 h；不拼接为连续0–168 h暴露",
+      "particles": "纳米塑料；聚合物、粒径、投加量及表面状态未取得",
+      "chemicals": "PFOS",
+      "doses": "外部及内部浓度数值、测量误差未取得",
+      "duration": "两阶段窗口如上；采样/消除试验细节未读到",
+      "groups": "PFOS与NP-PFOS比较；NP单独和溶剂组是否完整未知",
+      "replication": "未取得",
+      "statistics": "作者摘要称TK模型与内部浓度BBMD；模型式、先验、拟合优度及可信区间未取得"
+    },
+    "findings": [
+      {
+        "statement": "作者报告胚胎期PFOS累积及孵化抑制减轻，仔鱼期累积和多类毒性加重。",
+        "locator": "PubMed PMID41005273 Abstract第二段",
+        "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/41005273/",
+        "strength": "摘要中的研究内阶段比较"
+      },
+      {
+        "statement": "内部浓度BBMD未检出NP显著改变剂量反应，是作者偏向TK解释的依据；读者不把“未检出”升级为TD完全相同。",
+        "locator": "Abstract第三段，TK及BBMD句",
+        "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/41005273/",
+        "strength": "作者模型结论加保守解释；未审读模型"
+      }
+    ],
+    "limitations": [
+      "全文和补充模型文件未取得，不能复核等效性、模型识别或外推。",
+      "P02/P03的颗粒、窗口、剂量未匹配，不能直接据方向相反指定原因。"
+    ],
+    "firstRoundComparison": "第一轮阶段条件性与TK解释维持，明确“无显著改变≠等效/无TD作用”；本轮未把摘要复读宣称为模型验证。",
+    "readingLog": [
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41005273/",
+        "action": "复读题录、摘要和全文入口",
+        "result": "摘要可读；全文链接到Elsevier",
+        "readParts": "完整摘要、COI；未读模型正文",
+        "locator": "Abstract第二/三段",
+        "accessedAt": "2026-10-29"
+      },
+      {
+        "url": "https://www.sciencedirect.com/science/article/pii/S0043135425015611",
+        "action": "尝试出版社全文/索引片段",
+        "result": "正文及LinkOut跳转403；索引仅返回摘要/Highlights及一般Introduction背景",
+        "readParts": "摘要、Highlights；一般背景不记为方法阅读升级",
+        "locator": "Abstract；Highlights",
+        "accessedAt": "2026-10-29"
+      },
+      {
+        "url": "https://api.openalex.org/works/https://doi.org/10.1016/j.watres.2025.124658",
+        "action": "核查公开全文副本",
+        "result": "HTTP200；closed；无repo/PDF地址；ZFIN仅摘要无图",
+        "readParts": "OA及locations元数据",
+        "locator": "open_access、locations",
+        "accessedAt": "2026-10-29"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41005273/",
+        "type": "原始研究摘要索引",
+        "readScope": "abstract"
+      },
+      {
+        "url": "https://www.sciencedirect.com/science/article/pii/S0043135425015611",
+        "type": "出版社索引摘要",
+        "readScope": "abstract"
+      },
+      {
+        "url": "https://zfin.org/ZDB-PUB-250927-7",
+        "type": "原始研究摘要/题录索引",
+        "readScope": "abstract；没有模型图表"
+      }
+    ],
+    "fullTextAttempt": {
+      "status": "not_obtained",
+      "reason": "出版社入口403，OpenAlex无合法repo；定向PDF检索无可读原文。"
+    },
+    "decisionRationale": "直接符合共暴露问题；是条件性证据，但其模型结果仍只作为作者摘要报告。"
+  }
+]

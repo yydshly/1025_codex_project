@@ -79,10 +79,16 @@ inspect(app);
 function checkNoAbstractMirror(value, file) {
   if (!value || typeof value !== 'object') return;
   for (const [key, item] of Object.entries(value)) {
-    if (['abstract', 'abstracttext', 'abstract_inverted_index'].includes(key.toLowerCase())) assert(item === null || item === '' || (typeof item === 'object' && Object.keys(item).length === 0), `Full abstract material in public artifact: ${file}`);
+    // A numerical reading-level count (e.g. abstract: 10) is not article text.
+    if (['abstract', 'abstracttext', 'abstract_inverted_index'].includes(key.toLowerCase())) assert(item === null || item === '' || (key.toLowerCase() === 'abstract' && Number.isInteger(item) && item >= 0) || (typeof item === 'object' && Object.keys(item).length === 0), `Full abstract material in public artifact: ${file}`);
     checkNoAbstractMirror(item, file);
   }
 }
+checkNoAbstractMirror({ readingLevels: { abstract: 10 } }, 'reading-level counter');
+let rejectsAbstractText = false;
+try { checkNoAbstractMirror({ paper: { abstract: 'full source text' } }, 'negative fixture'); }
+catch { rejectsAbstractText = true; }
+assert(rejectsAbstractText, 'Public checker must still reject mirrored abstract text');
 function markdownWithoutCode(source) {
   let fence = null;
   return source.split(/\r?\n/).map(line => {

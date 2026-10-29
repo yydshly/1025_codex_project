@@ -4,9 +4,11 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build:data": "python scripts/build-research-data.py",
+    "build:data": "python scripts/build-research-data.py && python scripts/build-round2.py",
+    "build:round2": "python scripts/build-round2.py",
     "serve": "python -m http.server 4332 --bind 127.0.0.1 --directory app",
     "check": "node scripts/check.mjs",
-    "check:public": "node scripts/check-public.mjs"
+    "check:public": "node scripts/check-public.mjs && node scripts/check-round2.mjs",
+    "check:round2": "node scripts/check-round2.mjs"
   }
 }

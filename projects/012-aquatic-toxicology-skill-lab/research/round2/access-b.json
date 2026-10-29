@@ -1,0 +1,204 @@
+{
+  "schemaVersion": 1,
+  "scope": "6个候选逐一查OpenAlex开放副本位置；原响应正文未公开",
+  "requests": [
+    {
+      "url": "https://api.openalex.org/works/W7149268709",
+      "accessedAt": "2026-10-29T08:47:27.167899+00:00",
+      "method": "GET",
+      "purpose": "查官方聚合元数据是否提供合法开放全文入口；不核验科学结论",
+      "status": 200,
+      "bytes": 30411,
+      "sha256": "c4268de2fa5484fa7f68ede6e0c2aba0c902ad9ebd9ed28dc97fbc4f85bb840e",
+      "doi": "https://doi.org/10.70675/2ed0f996z93c2z462bz9e14zdbabeb9e631b",
+      "title": "Microplastic toxicity for fish : beyond simple vectors for pollutants?",
+      "openAccess": {
+        "is_oa": true,
+        "oa_status": "green",
+        "oa_url": "https://theses.fr/2020BORD0036/document",
+        "any_repository_has_fulltext": true
+      },
+      "locations": [
+        {
+          "landingPageUrl": "https://doi.org/10.70675/2ed0f996z93c2z462bz9e14zdbabeb9e631b",
+          "pdfUrl": null,
+          "version": "publishedVersion",
+          "isOa": false,
+          "source": null
+        },
+        {
+          "landingPageUrl": "https://theses.fr/2020BORD0036/document",
+          "pdfUrl": null,
+          "version": "submittedVersion",
+          "isOa": true,
+          "source": "theses.fr (ABES)"
+        }
+      ]
+    },
+    {
+      "url": "https://api.openalex.org/works/W3025718754",
+      "accessedAt": "2026-10-29T08:47:27.169034+00:00",
+      "method": "GET",
+      "purpose": "查官方聚合元数据是否提供合法开放全文入口；不核验科学结论",
+      "status": 200,
+      "bytes": 31116,
+      "sha256": "805e616179eddd7fceb07ff9cfc58e3cc98a21d05be59a067961fc5b3f4309e6",
+      "doi": "https://doi.org/10.1016/j.chemosphere.2020.127040",
+      "title": "Polystyrene microplastics decrease F–53B bioaccumulation but induce inflammatory stress in larval zebrafish",
+      "openAccess": {
+        "is_oa": false,
+        "oa_status": "closed",
+        "oa_url": null,
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "landingPageUrl": "https://doi.org/10.1016/j.chemosphere.2020.127040",
+          "pdfUrl": null,
+          "version": "publishedVersion",
+          "isOa": false,
+          "source": "Chemosphere"
+        },
+        {
+          "landingPageUrl": "https://pubmed.ncbi.nlm.nih.gov/32416398",
+          "pdfUrl": null,
+          "version": "publishedVersion",
+          "isOa": false,
+          "source": "PubMed"
+        }
+      ]
+    },
+    {
+      "url": "https://api.openalex.org/works/W4415043628",
+      "accessedAt": "2026-10-29T08:47:27.169034+00:00",
+      "method": "GET",
+      "purpose": "查官方聚合元数据是否提供合法开放全文入口；不核验科学结论",
+      "status": 200,
+      "bytes": 28620,
+      "sha256": "0b36f7eac3ece05d305b3c373654322de46ea28484da641e2878de20d21df306",
+      "doi": "https://doi.org/10.1016/j.jes.2025.10.001",
+      "title": "Co-exposure to polystyrene microplastics and perfluorooctanoic acid can exacerbate lipid metabolism disorders and liver damage in adult zebrafish",
+      "openAccess": {
+        "is_oa": false,
+        "oa_status": "closed",
+        "oa_url": null,
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "landingPageUrl": "https://doi.org/10.1016/j.jes.2025.10.001",
+          "pdfUrl": null,
+          "version": "publishedVersion",
+          "isOa": false,
+          "source": "Journal of Environmental Sciences"
+        },
+        {
+          "landingPageUrl": "https://pubmed.ncbi.nlm.nih.gov/41887838",
+          "pdfUrl": null,
+          "version": "publishedVersion",
+          "isOa": false,
+          "source": "PubMed"
+        }
+      ]
+    },
+    {
+      "url": "https://api.openalex.org/works/W4413113461",
+      "accessedAt": "2026-10-29T08:47:27.169740+00:00",
+      "method": "GET",
+      "purpose": "查官方聚合元数据是否提供合法开放全文入口；不核验科学结论",
+      "status": 200,
+      "bytes": 23302,
+      "sha256": "e1c9a11b531289e51786b4a5bbbc1b9ad2aa4681df12463af56f39acf4dba6a1",
+      "doi": "https://doi.org/10.1016/j.aquatox.2025.107534",
+      "title": "The exploration of chronic combined toxic mechanisms of environmental PFOA and polyethylene micro/nanoplastics on adult zebrafish (Danio rerio), using aquatic microcosm systems",
+      "openAccess": {
+        "is_oa": false,
+        "oa_status": "closed",
+        "oa_url": null,
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "landingPageUrl": "https://doi.org/10.1016/j.aquatox.2025.107534",
+          "pdfUrl": null,
+          "version": "publishedVersion",
+          "isOa": false,
+          "source": "Aquatic Toxicology"
+        },
+        {
+          "landingPageUrl": "https://pubmed.ncbi.nlm.nih.gov/40795757",
+          "pdfUrl": null,
+          "version": "publishedVersion",
+          "isOa": false,
+          "source": "PubMed"
+        }
+      ]
+    },
+    {
+      "url": "https://api.openalex.org/works/W7130384165",
+      "accessedAt": "2026-10-29T08:47:27.169740+00:00",
+      "method": "GET",
+      "purpose": "查官方聚合元数据是否提供合法开放全文入口；不核验科学结论",
+      "status": 200,
+      "bytes": 25736,
+      "sha256": "9c179b233ff2c8c61ee827e5edddc6fb6860f0114b547c9db5ef59d55938e1fc",
+      "doi": "https://doi.org/10.1007/s10646-025-03017-0",
+      "title": "Co-exposure of polyethylene terephthalate micro- and nanoplastics with per- and polyfluoroalkyl substances triggers immune dysregulation, apoptotic activation, and neurotoxicity",
+      "openAccess": {
+        "is_oa": false,
+        "oa_status": "closed",
+        "oa_url": null,
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "landingPageUrl": "https://doi.org/10.1007/s10646-025-03017-0",
+          "pdfUrl": null,
+          "version": "publishedVersion",
+          "isOa": false,
+          "source": "Ecotoxicology"
+        },
+        {
+          "landingPageUrl": "https://pubmed.ncbi.nlm.nih.gov/41706329",
+          "pdfUrl": null,
+          "version": "publishedVersion",
+          "isOa": false,
+          "source": "PubMed"
+        }
+      ]
+    },
+    {
+      "url": "https://api.openalex.org/works/W4391850196",
+      "accessedAt": "2026-10-29T08:47:27.170293+00:00",
+      "method": "GET",
+      "purpose": "查官方聚合元数据是否提供合法开放全文入口；不核验科学结论",
+      "status": 200,
+      "bytes": 26300,
+      "sha256": "5504e09cf7217892d2d260ef351c340f3b7e7086c63e76c5bd8f3de387343b48",
+      "doi": "https://doi.org/10.1016/j.scitotenv.2024.170948",
+      "title": "Combined exposure with microplastics increases the toxic effects of PFOS and its alternative F-53B in adult zebrafish",
+      "openAccess": {
+        "is_oa": false,
+        "oa_status": "closed",
+        "oa_url": null,
+        "any_repository_has_fulltext": false
+      },
+      "locations": [
+        {
+          "landingPageUrl": "https://doi.org/10.1016/j.scitotenv.2024.170948",
+          "pdfUrl": null,
+          "version": "publishedVersion",
+          "isOa": false,
+          "source": "The Science of The Total Environment"
+        },
+        {
+          "landingPageUrl": "https://pubmed.ncbi.nlm.nih.gov/38365036",
+          "pdfUrl": null,
+          "version": "publishedVersion",
+          "isOa": false,
+          "source": "PubMed"
+        }
+      ]
+    }
+  ]
+}

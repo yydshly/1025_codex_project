@@ -1,0 +1,90 @@
+[
+  {
+    "pmid": "29306661",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A29306661+AND+SRC%3AMED&resultType=core&format=json",
+    "status": 200,
+    "bytes": 6490,
+    "sha256": "fb8714bc11d254e1160e947267c3e9dbcd8cf99c34ceff3ad6c404d1d7a266a3",
+    "accessedAt": "2026-10-29T08:42:18.837409+00:00",
+    "inPMC": "N",
+    "inEPMC": "N",
+    "isOpenAccess": "N",
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Subscription required",
+          "availabilityCode": "S",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1016/j.envres.2017.12.019"
+        }
+      ]
+    }
+  },
+  {
+    "pmid": "39043301",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A39043301+AND+SRC%3AMED&resultType=core&format=json",
+    "status": 200,
+    "bytes": 8379,
+    "sha256": "5c86da6a9bbb6c5a639a5af23862a07c66448dc10b388a053fddde8c999a2932",
+    "accessedAt": "2026-10-29T08:42:20.540155+00:00",
+    "inPMC": "N",
+    "inEPMC": "N",
+    "isOpenAccess": "N",
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Subscription required",
+          "availabilityCode": "S",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1016/j.scitotenv.2024.174925"
+        }
+      ]
+    }
+  },
+  {
+    "pmid": "39270866",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A39270866+AND+SRC%3AMED&resultType=core&format=json",
+    "status": 200,
+    "bytes": 7103,
+    "sha256": "0fb0702a60e3f0b67c548c666fd6ceec4068a3c322c3c8a79c1473a8083decbe",
+    "accessedAt": "2026-10-29T08:42:21.754084+00:00",
+    "inPMC": "N",
+    "inEPMC": "N",
+    "isOpenAccess": "N",
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Subscription required",
+          "availabilityCode": "S",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1016/j.scitotenv.2024.176223"
+        }
+      ]
+    }
+  },
+  {
+    "pmid": "38941840",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A38941840+AND+SRC%3AMED&resultType=core&format=json",
+    "status": 200,
+    "bytes": 8632,
+    "sha256": "0b80bdc04127180e1c29cc4e500761b98e6cadcd8c7d3a81ca1b54e4ad981854",
+    "accessedAt": "2026-10-29T08:42:34.368736+00:00",
+    "inPMC": "N",
+    "inEPMC": "N",
+    "isOpenAccess": "N",
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Subscription required",
+          "availabilityCode": "S",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1016/j.jhazmat.2024.135038"
+        }
+      ]
+    }
+  }
+]

@@ -14,9 +14,19 @@
 
 ![我们生成的研究Skill能力与过程引导图](assets/images/understanding-map.png)
 
-[总索引](../../README.md) · [在线研究网页](https://yydshly.github.io/1025_codex_project/012-aquatic-toxicology-skill-lab/) · [最终报告](research/phase6_final/report.md) · [实际过程](research/process.md)
+[总索引](../../README.md) · [在线研究网页](https://yydshly.github.io/1025_codex_project/012-aquatic-toxicology-skill-lab/) · [首轮历史报告](research/phase6_final/report.md) · [实际过程](research/process.md)
 
 ![实际网页桌面截图](assets/images/process-walkthrough.jpg)
+
+## 最新研究结果：17条候选的后续阅读
+
+[直接打开最新结果](https://yydshly.github.io/1025_codex_project/012-aquatic-toxicology-skill-lab/#round2-results) · [更新研究报告](research/round2/report.md) · [执行协议](research/round2/protocol.md) · [阅读矩阵CSV](app/data/round2-evidence.csv) · [审查与修订](research/round2/review.md)
+
+17条候选已逐条复核：9条首轮重合、8条新增；实际读取为期刊主文全文1条、章节/图注6条、摘要10条。14条直接共暴露记录、1条多污染物情境、2条学位论文补充，不等同17项独立实验。未取得全文、统计和实验单位未知项逐条列出。
+
+更新综合纳入更早PFOS/F-53B前作、终点限定的不显著/未放大结果、生态冠已有研究和PINK1干预模型定位（细胞过表达、整鱼MTK458药理处理）。不显著不证明安全，图注不替代全部方法，队列独立性与正式协同仍待核。首轮报告、结论及阅读范围作为历史对照保留；首屏和侧栏优先进入最新结果。
+
+三个阅读任务、定点内容审查和实现审查均为同模型家族适配，不是独立专家或原生全流程。原始阅读副本被Git忽略；公开自己转述、原文定位、访问日志及输入哈希。新增五份公开下载；检索阶段42份下载保持原样。构建最新结果运行 `npm run build:round2`，公开验证运行 `npm run check:public`。完整 `build:data` 仍需本地历史原始产物，随后也会构建第二轮阅读结果。
 
 ## 我们的理解总览
 
@@ -104,7 +114,7 @@
 | 范围 | [问题](research/phase1_scoping/rq-brief.md)、[方法](research/phase1_scoping/methodology.md)、[范围审查](research/phase1_scoping/checkpoint1-review.md) |
 | 调查 | [书目](research/phase2_investigation/bibliography.md)、[日志](research/phase2_investigation/search-log.json)、[来源](research/phase2_investigation/source-verification.md)、[最终API](research/phase2_investigation/programmatic-verification-summary.md) |
 | 综合 | [矩阵与张力](research/phase3_analysis/synthesis.md) |
-| 修订 | [草稿](research/phase4_draft/report.md)、[审查复核](research/phase5_review/review.md)、[最终报告](research/phase6_final/report.md) |
+| 修订 | [草稿](research/phase4_draft/report.md)、[审查复核](research/phase5_review/review.md)、[首轮历史报告](research/phase6_final/report.md) |
 | 网页数据 | [JSON](app/data/research.json)、[CSV](app/data/evidence.csv) |
 
 ## 许可与图片

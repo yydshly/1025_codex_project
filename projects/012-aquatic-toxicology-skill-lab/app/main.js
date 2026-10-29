@@ -278,8 +278,8 @@
   }
   function renderWalkthrough(data) {
     const guide = data.walkthrough || {};
-    if (has(guide.purpose)) setText("task-purpose", guide.purpose);
-    if (has(guide.currentStage)) setText("task-stage", guide.currentStage);
+    if (has(guide.purpose) && !window.ROUND2_DATA) setText("task-purpose", guide.purpose);
+    if (has(guide.currentStage) && !window.ROUND2_DATA) setText("task-stage", guide.currentStage);
     const steps = arr(guide.steps);
     const tabs = $("walkthrough-steps"); tabs.replaceChildren();
     const panel = $("walkthrough-content"); panel.replaceChildren();
@@ -536,6 +536,7 @@
       renderWorkflow(data); renderWalkthrough(data); renderDirections(data); renderBoundaries(data);
       setText("all-count", data.papers.length); filterPapers();
       $("loading-state").hidden = true; $("app-root").hidden = false;
+      document.dispatchEvent(new Event("research-ready"));
       observeSections();
     } catch (error) {
       $("loading-state").hidden = true; $("error-state").hidden = false;

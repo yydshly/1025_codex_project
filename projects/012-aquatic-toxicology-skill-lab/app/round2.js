@@ -1,0 +1,83 @@
+"use strict";
+(() => {
+  const data = window.ROUND2_DATA;
+  if (!data) {
+    const root = document.getElementById("round2-content");
+    root.setAttribute("role", "alert");
+    root.textContent = "第二轮数据未能加载。可刷新网页，或直接打开更新研究报告：";
+    const a = document.createElement("a"); a.href = "./data/round2-report.md"; a.textContent = "阅读研究报告 MD ↗"; root.append(a);
+    return;
+  }
+  const scopes = { full_text: "全文审读", sections: "部分章节", abstract: "摘要阅读", metadata: "仅题录" };
+  const roles = { direct: "直接共暴露证据", mixture_context: "多污染物背景", thesis_context: "学位论文补充", unresolved: "资格未决" };
+  const documentTypes = {journal_article: "期刊原始研究", doctoral_thesis: "博士学位论文"};
+  const accessLabels = {obtained: "已取得并审读主文", obtained_partially_read: "已取得文件，实际只读相关章节", partial_only: "仅取得部分章节", not_obtained: "未取得完整正文"};
+  const node = (tag, text, cls) => { const e = document.createElement(tag); if (text != null) e.textContent = text; if (cls) e.className = cls; return e; };
+  const list = items => { const ul = node("ul"); (items || []).forEach(x => ul.append(node("li", x))); return ul; };
+  const anchor = (text, url) => { const a = node("a", text); a.href = url; if (url.startsWith("https://")) { a.target = "_blank"; a.rel = "noopener noreferrer"; } return a; };
+  const field = (label, text) => { const d = node("div", null, "r2-field"); d.append(node("strong", label), node("p", typeof text === "string" ? text : JSON.stringify(text))); return d; };
+  const root = document.getElementById("round2-content");
+  root.append(node("p", data.lead, "r2-lead"));
+  const metrics = node("div", null, "r2-metrics");
+  [[17, "候选逐条复核"], [9, "与第一轮重合"], [8, "新增记录"], [data.papers.filter(p => p.accessLevel === "full_text").length, "实际全文审读"]].forEach(([n, s]) => { const e = node("div"); e.append(node("b", n), node("span", s)); metrics.append(e); });
+  root.append(metrics, node("p", data.readingSummary, "r2-note"), node("p", data.boundary, "r2-note"));
+  const jumps = node("div", null, "r2-jumps");
+  [["更新后的结论", "#round2-conclusions"], ["第一轮→第二轮对照", "#round2-comparison"], ["17条阅读与证据", "#round2-reading"], ["研究局限与下一步", "#round2-limits"]].forEach(([s, url]) => jumps.append(anchor(s + " ↓", url)));
+  root.append(jumps);
+  const conclusions = node("div", null, "r2-conclusions"); conclusions.id = "round2-conclusions";
+  conclusions.append(node("h3", "读完这些材料，判断更新在哪里"));
+  data.conclusions.forEach((c, i) => {
+    const card = node("article", null, "r2-conclusion");
+    card.append(node("span", String(i + 1).padStart(2, "0"), "eyebrow"), node("h4", c.title), node("p", c.text), node("p", c.limit, "r2-note"));
+    const refs = node("div", null, "r2-refs"); c.evidenceIds.forEach(id => refs.append(anchor(data.papers.find(p => p.id === id)?.shortLabel || id, "#r2-" + id)));
+    card.append(refs); conclusions.append(card);
+  });
+  root.append(conclusions);
+  const comparison = node("div", null, "r2-comparison"); comparison.id = "round2-comparison";
+  comparison.append(node("h3", "第一轮 → 第二轮：哪些改变，哪些仍待核实"));
+  data.comparison.forEach(c => { const e = node("article"); e.append(node("h4", c.topic), field("第一轮", c.before), field(c.status, c.after), field("依据与尚缺材料", c.evidence)); comparison.append(e); }); root.append(comparison);
+  const process = node("details", null, "r2-process");
+  process.append(node("summary", "展开实际阅读步骤与分析规则 ＋"));
+  data.process.forEach(p => process.append(field(p.title, p.text))); root.append(process);
+  const reading = node("div"); reading.id = "round2-reading"; reading.append(node("h3", "17条候选：阅读过程、证据和局限"), node("p", "展开任一条，查看获取尝试、实际读到哪里、实验设计、证据定位和与首轮的关系。阅读深度不会因DOI匹配或摘要更长而升级。", "r2-note"));
+  const controls = node("div", null, "r2-controls");
+  const input = node("input"); input.type = "search"; input.placeholder = "搜索题名、DOI、证据或局限"; input.setAttribute("aria-label", "搜索第二轮文献");
+  const select = node("select"); select.setAttribute("aria-label", "筛选第二轮阅读深度");
+  Object.entries({ all: "全部阅读深度", ...scopes }).forEach(([v, t]) => { const o = node("option", t); o.value = v; select.append(o); });
+  const newOnly = node("input"); newOnly.type = "checkbox"; const label = node("label"); label.append(newOnly, node("span", "只看8条新增记录"));
+  const count = node("p", null, "r2-note"); count.setAttribute("role", "status"); count.setAttribute("aria-live", "polite");
+  controls.append(input, select, label); reading.append(controls, count);
+  const records = node("div", null, "r2-records");
+  const cards = data.papers.map((p, i) => {
+    const e = node("details", null, "r2-paper"); e.id = "r2-" + p.id;
+    const head = node("summary"); head.append(node("span", p.shortLabel || "R" + (i + 1), "r2-paper-id"), node("strong", p.title), node("span", scopes[p.accessLevel], "r2-badge"));
+    const body = node("div", null, "r2-paper-body");
+    body.append(node("p", (p.priorId ? "首轮 " + p.priorId + " · 本轮复核" : "首轮未纳入 · 新增记录") + " · " + roles[p.eligibility] + " · " + (documentTypes[p.documentType] || p.documentType), "r2-note"), anchor("原始来源 / DOI ↗", "https://doi.org/" + p.doi), field("资格判断", p.decisionRationale), field("独立性与重复发表", p.independence));
+    const design = node("div", null, "r2-design");
+    const labels = { model: "模型", stage: "阶段", particles: "颗粒", chemicals: "化合物", doses: "剂量", duration: "时程", groups: "对照与分组", replication: "实验单位/重复", statistics: "统计与交互判据" };
+    Object.entries(p.design).forEach(([k, v]) => design.append(field(labels[k] || k, v))); body.append(design, node("h4", "实际证据 · 作者报告与本次判断"));
+    p.findings.forEach(f => { const fblock = node("div", null, "r2-evidence"); fblock.append(node("p", f.statement), anchor("定位：" + f.locator + " ↗", f.sourceUrl), node("small", f.strength)); body.append(fblock); });
+    body.append(node("h4", "局限与不能回答的部分"), list(p.limitations), field("与第一轮对照", p.firstRoundComparison));
+    const log = node("details", null, "r2-log"); log.append(node("summary", "展开获取与阅读日志（" + p.readingLog.length + "条） ＋"));
+    p.readingLog.forEach(l => { const row = node("div", null, "r2-field"); row.append(anchor(l.url, l.url), node("p", l.action + " → " + l.result), node("p", "实际阅读：" + l.readParts + "；定位：" + l.locator), node("small", l.accessedAt)); log.append(row); }); body.append(log);
+    body.append(field("全文获取结果", (accessLabels[p.fullTextAttempt.status] || p.fullTextAttempt.status) + " · " + p.fullTextAttempt.reason));
+    const sources = node("div", null, "r2-field"); sources.append(node("strong", "已读来源与材料"));
+    p.sources.forEach(s => { const row = node("p"); row.append(anchor(s.type + " · " + s.readScope + " ↗", s.url)); sources.append(row); }); body.append(sources);
+    e.append(head, body); records.append(e); return { p, e };
+  });
+  const filter = () => { let shown = 0; const q = input.value.trim().toLocaleLowerCase(); cards.forEach(({ p, e }) => { e.hidden = !((select.value === "all" || select.value === p.accessLevel) && (!newOnly.checked || !p.priorId) && (!q || JSON.stringify(p).toLocaleLowerCase().includes(q))); if (!e.hidden) shown++; }); count.textContent = `显示 ${shown} / 17 条候选；按阅读材料分类，不等同独立实验数。`; };
+  input.addEventListener("input", filter); select.addEventListener("change", filter); newOnly.addEventListener("change", filter); filter(); reading.append(records); root.append(reading);
+  const tensions = node("details", null, "r2-process"); tensions.append(node("summary", "展开跨文献分歧与尚未解决的问题 ＋"));
+  data.tensions.forEach(t => tensions.append(field(t.pair + " · " + t.assessment, t.text + "；定位：" + t.locators + "；研究者确认：待确认"))); tensions.append(node("p", data.tensionCoverage, "r2-note")); root.append(tensions);
+  const limits = node("div", null, "r2-limits"); limits.id = "round2-limits"; limits.append(node("h3", "本轮做到哪里，下一步怎么做"), list(data.limitations));
+  data.nextSteps.forEach(n => limits.append(field(n.title, n.text)));
+  limits.append(node("p", data.reviewNote, "r2-note")); root.append(limits);
+  const downloads = node("div", null, "r2-jumps");
+  [["阅读记录 JSON", "round2.json"], ["证据矩阵 CSV", "round2-evidence.csv"], ["更新研究报告 MD", "round2-report.md"], ["执行协议 MD", "round2-protocol.md"], ["审查与修订 MD", "round2-review.md"]].forEach(([s, f]) => { const a = anchor(s + " ↘", "./data/" + f); a.download = ""; downloads.append(a); }); root.append(downloads);
+  function openHash(hash = location.hash) { const id = decodeURIComponent(hash.slice(1)); if (!id.startsWith("r2-T") && !id.startsWith("round2-")) return; const e = document.getElementById(id); if (!e) return; if (id.startsWith("r2-T")) { if (e.hidden) { input.value = ""; select.value = "all"; newOnly.checked = false; filter(); } e.open = true; } if (!document.getElementById("app-root").hidden) e.scrollIntoView({ block: "start" }); }
+  window.addEventListener("hashchange", () => openHash());
+  // main.js reveals the shared page after its data is loaded.
+  window.addEventListener("load", () => openHash());
+  document.addEventListener("research-ready", () => openHash());
+  document.addEventListener("click", event => { const a = event.target.closest('a[href^="#r2-T"]'); if (a) openHash(a.hash); });
+})();
