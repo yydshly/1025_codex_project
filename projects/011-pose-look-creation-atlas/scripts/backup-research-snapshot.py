@@ -15,6 +15,7 @@ entries=[]
 for f in sorted(source.rglob('*')):
     relative=f.relative_to(source)
     if any(part in {'.git','node_modules','__pycache__','.venv'} for part in relative.parts) or f.suffix=='.pyc':continue
+    if relative.parts[0]=='.local' and relative.as_posix()!='.local/research-overview-v2/overview.png':continue
     if f.is_symlink() or source not in f.resolve().parents:raise SystemExit('Linked or external path rejected')
     if not f.is_file():continue
     if f.stat().st_size>5_000_000:raise SystemExit('Unexpected large file in research snapshot: '+str(relative))

@@ -45,14 +45,23 @@ function setLook(look){
 }
 
 const branchView=document.body.dataset.view==='branch';
-const tabs=branchView?['thinking','effects','scenarios']:['understanding','tools','archive'];
+const localResearchRuntime=['127.0.0.1','localhost'].includes(location.hostname)&&location.pathname.startsWith('/app/');
+const tabs=branchView?['thinking','effects','scenarios']:['gallery','series','understanding','tools','archive'];
 function showTab(name, scroll = false){
   if(!branchView&&['thinking','effects','scenarios'].includes(name)){location.replace('branch.html#'+name);return;}
-  if(branchView&&['understanding','tools','archive'].includes(name)){location.replace('index.html#'+name);return;}
+  const productJump=!branchView&&name==='products';
+  const pilotJump=!branchView&&name==='pilot';
+  const overviewJump=!branchView&&name==='overview';
+  if(productJump||pilotJump)name='gallery';
+  if(overviewJump)name='series';
+  if(branchView&&['gallery','products','pilot','series','overview','understanding','tools','archive'].includes(name)){location.replace('index.html#'+name);return;}
   if(!tabs.includes(name))name=tabs[0];
   $$('.panel').forEach(p=>{p.hidden=p.id!==name;});
   $$('[data-tab]').forEach(b=>{b.setAttribute('aria-selected',String(b.dataset.tab===name));b.tabIndex=b.dataset.tab===name?0:-1;});
-  if(scroll)$('#content').scrollIntoView({block:'start',behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});
+  if(overviewJump)requestAnimationFrame(()=>$('#research-overview')?.scrollIntoView({block:'start',behavior:'instant'}));
+  else if(pilotJump)requestAnimationFrame(()=>$('#pose-pilot')?.scrollIntoView({block:'start',behavior:'instant'}));
+  else if(productJump)requestAnimationFrame(()=>$('#product-directions')?.scrollIntoView({block:'start',behavior:'instant'}));
+  else if(scroll)$('#content').scrollIntoView({block:'start',behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});
 }
 $$('[data-tab]').forEach(b=>b.addEventListener('click',()=>{location.hash=b.dataset.tab;}));
 $('.section-nav').addEventListener('keydown',event=>{
@@ -123,9 +132,9 @@ function renderArchive(){
   $('#archive-caption').textContent=`${archive.repositories.length} 个项目 · ${archive.fileCount} 份文件 · ${(archive.totalBytes/1024).toFixed(1)} KiB\n只存资料，不安装、不运行上游`;
   $('#archives-list').innerHTML=archive.repositories.map(r=>`<details class="archive-item"><summary><span>${escapeHTML(r.repository)}</span><small>${r.files.length} 份文件 · ${escapeHTML(archiveLicenseLabels[r.repository]||r.licenseTag||'按原文适用')}</small></summary><p>固定版本 <code>${escapeHTML(r.commit)}</code> · 分支 ${escapeHTML(r.branch)}</p><ul>${r.files.map(f=>`<li><a href="archive/${escapeHTML(f.path)}" target="_blank" rel="noopener">${escapeHTML(f.upstreamPath)} ↗</a><span>${f.bytes.toLocaleString('en-US')} B · ${ext(f.sourceUrl,'原始位置')}</span></li>`).join('')}</ul><p>文件许可按各自原文适用；快照不合并或扩大任何上游授权。哈希见 <a href="archive/manifest.json">清单</a>。</p></details>`).join('');
 }
-$('#download-research')?.addEventListener('click',()=>download('pose-look-research-index.json',{...research,archive,backup,experiments:window.EXPERIMENTS,resourceResearch:window.RESOURCE_RESEARCH}));
+$('#download-research')?.addEventListener('click',()=>download('pose-look-research-index.json',{...research,archive,backup,experiments:window.EXPERIMENTS,resourceResearch:window.RESOURCE_RESEARCH,posePilot:window.POSE_PILOT}));
 if($('#tools-list')){renderTools();renderCompare();}
 if($('#scenario-list'))renderScene();
 if($('#backup-panel'))renderBackup();
 if($('#sources-list'))renderArchive();
-setLook('studio-a');showTab(location.hash.slice(1));
+setLook('studio-a');showTab(location.hash.slice(1)||(branchView?'thinking':localResearchRuntime?'gallery':'overview'));

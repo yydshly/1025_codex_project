@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-29",
+  "scope": "Local-only series workspace and saved image pilot",
+  "url": "http://127.0.0.1:8011/app/#series",
+  "generation": {
+    "newCalls": 3,
+    "newOutputs": 3,
+    "reusedOutputs": 3,
+    "newOutputBytes": 9537464,
+    "newOutputDimensions": [1086, 1448],
+    "allOutputsRetained": true,
+    "realPersonInput": false,
+    "sourceManifest": "app/media/courtyard-series-v1/manifest.json",
+    "review": "Qualitative visual inspection; opening and ending framing targets were not fully met. No success-rate or identity-score claim."
+  },
+  "checks": [
+    {"name": "Child npm run check", "result": "pass", "covers": "Pinned sources, JS syntax, local HTML links, 23 distinct generated PNG files, dimensions, SHA-256, source inputs, new/reuse provenance and five directions"},
+    {"name": "Root npm run index:update and npm run check", "result": "pass", "covers": "12 projects and generated README index"},
+    {"name": "Six series images load in browser", "result": "pass", "details": "All six naturalWidth values were positive; reused files still point to pose-pilot-v3."},
+    {"name": "Selection and note persistence", "result": "pass", "details": "Changed title, opening note and first selection; reload recovered edited title, note and 5/6 selected. Restored title and all six candidates afterwards."},
+    {"name": "JSON export", "result": "pass", "details": "Downloaded and parsed actual file: six frames, five selected in the temporary test, all prompts and pose hashes present."},
+    {"name": "JSON import", "result": "pass", "details": "Changed the draft and imported exported file through file chooser; title and five selections were restored. Final draft returned to six candidates."},
+    {"name": "Markdown export", "result": "pass", "details": "Downloaded file contained six shot headings, revision notes and upper80v2_P019_front source reference."},
+    {"name": "Application directions", "result": "pass", "details": "All five buttons switch actual detail content; fashion task export parsed with its capability gap and validation task."},
+    {"name": "Inline comparison", "result": "pass", "details": "Portrait viewer loaded result, shared base and raw upper-body pose. Next controls reached ending frame, its side source and intentional gaze override."},
+    {"name": "Responsive layout", "result": "pass", "details": "406px viewport had two image columns and no page overflow; comparison width about 355px with no horizontal overflow. 1280px desktop had three image columns and two comparison columns. Temporary viewport override reset."},
+    {"name": "Existing gallery draft", "result": "pass", "details": "Original draft title remained 虚构角色 · 站姿与情绪方案 with four frames; card-level angle controls remained present."},
+    {"name": "Browser errors", "result": "pass", "details": "No error-level browser log entries at final reload."}
+  ],
+  "evidence": {
+    "overview": "assets/images/courtyard-series-v1-overview.png",
+    "privateComparison": "assets/images/local-v5/courtyard-series-v1-compare.png",
+    "privateComparisonIgnoredByGit": true
+  },
+  "remoteCommitPushOrDeployment": false,
+  "localServerLeftRunning": true
+}

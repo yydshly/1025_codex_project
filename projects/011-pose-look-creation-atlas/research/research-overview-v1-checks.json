@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-29",
+  "scope": "Single research infographic and local website integration",
+  "url": "http://127.0.0.1:8011/app/#overview",
+  "asset": "app/media/research-overview-v1/overview.png",
+  "manifest": "app/media/research-overview-v1/manifest.json",
+  "generationCalls": 1,
+  "dimensions": [1536, 1024],
+  "visualReview": "Inspected generated image: resource quantities, clothing preview status, reference/model/workflow separation, six-shot pilot and five product stages were present; no raw source images included.",
+  "checks": [
+    {"name": "Project npm run check", "result": "pass", "covers": "Image dimensions, byte count, SHA-256, manifest fields, archived source links, JavaScript syntax and local HTML links"},
+    {"name": "Overview route", "result": "pass", "details": "#overview selected the series panel and displayed the research image and download link."},
+    {"name": "Image preview and zoom", "result": "pass", "details": "Image naturalWidth was 1536. At 150%, image width was 512px in a 353px viewport with horizontal scrolling available. Fit reset the display to 100%."},
+    {"name": "Original download", "result": "pass", "details": "Downloaded PNG was 1743747 bytes; SHA-256 55095ca41e8c588d8472d4423c2e6f33b00deac7526dd43418457e0c0b74fd5a matched the project asset."},
+    {"name": "Responsive display", "result": "pass", "details": "Checked narrow window and 1280px desktop, where full infographic and surrounding viewer controls were visible with no page overflow. Temporary viewport override reset."},
+    {"name": "Browser errors", "result": "pass", "details": "No error-level browser log entries."}
+  ],
+  "evidence": {
+    "desktop": "assets/images/research-overview-v1-web.png",
+    "mobileLocalOnly": "assets/images/local-v5/research-overview-v1-mobile.png"
+  },
+  "remoteCommitPushOrDeployment": false,
+  "localServiceLeftRunning": true
+}

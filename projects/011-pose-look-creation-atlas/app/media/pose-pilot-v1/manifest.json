@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "id": "v1",
+  "date": "2026-10-29",
+  "label": "插画风 · 旧版",
+  "style": "illustration",
+  "status": "superseded-user-style-feedback",
+  "engine": "Built-in ImageGen",
+  "modelVersion": "Not reported by the tool",
+  "generationCalls": 4,
+  "baseId": "character-base",
+  "assets": [
+    {
+      "id": "character-base",
+      "path": "media/pose-pilot-v1/character-base.png",
+      "role": "generated-input",
+      "prompt": "Use case: illustration-story. Asset type: canonical character reference for a small controlled pose-reference experiment. Create ONE original fictional adult woman, about 28 years old, as a polished semi-realistic editorial digital illustration, clearly an illustration rather than a photograph. Chin-length chestnut-brown bob with a gentle side part, dark brown eyes, softly angular oval face, calm approachable expression, normal adult proportions. Outfit: open plain deep-teal hip-length chore jacket with two square front pockets, ivory crewneck T-shirt, muted terracotta straight-leg full-length trousers, plain white low-top sneakers. No jewellery or bag. Front-facing neutral standing pose, both arms relaxed slightly away from the torso, both feet on the floor, head and both shoes fully visible, generous margin above and below. Pale warm-gray seamless background, soft even studio-like illustrated lighting and a subtle ground shadow. Clean detailed contours and restrained painterly shading. Portrait canvas, approximately 3:4. Single full-body character only, no pose sheet, no extra figures, no inset faces, no text, no signature, no logo. This will be the sole canonical appearance reference for three later pose changes; make the face, hairstyle, outfit construction and colours easy to recognise.",
+      "attempts": 1,
+      "bytes": 1779048,
+      "width": 1086,
+      "height": 1448,
+      "sha256": "19359e1f9def9e040b8781e8b5d2a4267d91550a329e92fd08eefb630d9dfa49"
+    },
+    {
+      "id": "standing",
+      "path": "media/pose-pilot-v1/standing.png",
+      "role": "generated-pose-result",
+      "prompt": "Use case: identity-preserve / illustration-story. Asset type: one image in a controlled same-character pose-reference pilot. IMAGE 1 is the canonical fictional adult character: preserve this exact illustrated woman, facial appearance, chin-length chestnut bob, adult proportions, deep-teal open two-pocket jacket with rolled cuffs, ivory crewneck shirt, terracotta full-length straight trousers, white low-top sneakers, palette, line quality and shading. IMAGE 2 is the source-library pose reference: use only its body arrangement and frontal viewpoint. Change the pose of the fully clothed character from Image 1 to match Image 2. Match limb placement and support relationships instead of keeping the neutral stance. Keep the pale warm-gray seamless background, soft even light and subtle ground shadow. Portrait approximately 3:4, one complete full-body character, ample margins, all raised hands and both shoes visible; adjust framing only enough to contain the full pose. Do not mirror the pose reference. No new accessories, no extra person, no collage, no inset, no typography, no logo. Do not display or reproduce the mannequin drawing in the output. POSE TARGET: one bent arm with its hand resting on the hip at the LEFT side of the image, opposite arm lowered at the RIGHT; asymmetric standing contrapposto with lateral hip shift, relaxed tilted shoulders and the reference's unequal leg positions. Preserve the face and all outfit pieces while changing only pose and physically necessary fabric folds.",
+      "attempts": 1,
+      "bytes": 1733418,
+      "width": 1086,
+      "height": 1448,
+      "sha256": "d2c500a574c1e395f977f525c15864a75370e0dfcaff6c32f7f6e54a39d00cd9"
+    },
+    {
+      "id": "stretch",
+      "path": "media/pose-pilot-v1/stretch.png",
+      "role": "generated-pose-result",
+      "prompt": "Use case: identity-preserve / illustration-story. Asset type: one image in a controlled same-character pose-reference pilot. IMAGE 1 is the canonical fictional adult character: preserve this exact illustrated woman, facial appearance, chin-length chestnut bob, adult proportions, deep-teal open two-pocket jacket with rolled cuffs, ivory crewneck shirt, terracotta full-length straight trousers, white low-top sneakers, palette, line quality and shading. IMAGE 2 is the source-library pose reference: use only its body arrangement and frontal viewpoint. Change the pose of the fully clothed character from Image 1 to match Image 2. Match limb placement and support relationships instead of keeping the neutral stance. Keep the pale warm-gray seamless background, soft even light and subtle ground shadow. Portrait approximately 3:4, one complete full-body character, ample margins, all raised hands and both shoes visible; adjust framing only enough to contain the full pose. Do not mirror the pose reference. No new accessories, no extra person, no collage, no inset, no typography, no logo. Do not display or reproduce the mannequin drawing in the output. POSE TARGET: both arms extended vertically above the head, separated hands, elbows nearly straight, both hands fully in frame, feet close together on the ground, front-facing body with the slight head tilt shown in Image 2. Preserve the same jacket, shirt, trousers and sneakers; render sleeves and natural cloth folds consistently with raised arms.",
+      "attempts": 1,
+      "bytes": 1685958,
+      "width": 1086,
+      "height": 1448,
+      "sha256": "10317140ed2b2a34f2c33853e180d5da93be50085a4c6abc36c781644f447354"
+    },
+    {
+      "id": "seated",
+      "path": "media/pose-pilot-v1/seated.png",
+      "role": "generated-pose-result",
+      "prompt": "Use case: identity-preserve / illustration-story. Asset type: one image in a controlled same-character pose-reference pilot. IMAGE 1 is the canonical fictional adult character: preserve this exact illustrated woman, facial appearance, chin-length chestnut bob, adult proportions, deep-teal open two-pocket jacket with rolled cuffs, ivory crewneck shirt, terracotta full-length straight trousers, white low-top sneakers, palette, line quality and shading. IMAGE 2 is the source-library pose reference: use only its body arrangement and frontal viewpoint. Change the pose of the fully clothed character from Image 1 to match Image 2. Match limb placement and support relationships instead of keeping the neutral stance. Keep the pale warm-gray seamless background, soft even light and subtle ground shadow. Portrait approximately 3:4, one complete full-body character, ample margins, all raised hands and both shoes visible; adjust framing only enough to contain the full pose. Do not mirror the pose reference. No new accessories, no extra person, no collage, no inset, no typography, no logo. Do not display or reproduce the mannequin drawing in the output. POSE TARGET: sit on the floor, not a chair. The knee on the LEFT side of the image is raised, its elbow rests near/on that knee and its hand supports the cheek. The leg on the RIGHT side of the image extends diagonally forward, while the opposite arm braces with its palm on the floor at the RIGHT. Match the reference's asymmetry, foreshortening and supported body weight. Keep the same facial appearance and fully closed clothing coverage; both sneakers and the supporting hand remain visible.",
+      "attempts": 1,
+      "bytes": 1893926,
+      "width": 1086,
+      "height": 1448,
+      "sha256": "da798897adc07a112a2a3bf29454a4225b120a940a14edbcb773477b1c9678e8"
+    }
+  ],
+  "cases": [
+    {
+      "id": "standing",
+      "label": "扶腰站立",
+      "poseId": "full_single_P015_front",
+      "poseGroup": "full_single_P015",
+      "angle": "正面",
+      "sourceUrl": "https://ai-pose-gallery.pages.dev/img/full_single_P015_front.png",
+      "localPoseUrl": "/local-media/pose/full_single_P015_front.png",
+      "poseSha256": "51f54ceb4d8115f6e29a36a9583a88f896314304101ca035091a1d30394e80aa",
+      "poseWidth": 900,
+      "poseHeight": 1200,
+      "inputOrder": [
+        "character-base",
+        "full_single_P015_front"
+      ],
+      "resultId": "standing",
+      "follows": "扶腰手臂、另一手下垂与非对称站姿可辨。",
+      "differences": "腰胯偏移、腿间距与脚尖朝向并非逐点一致；手指和衣服折痕仍重绘。"
+    },
+    {
+      "id": "stretch",
+      "label": "双臂上伸",
+      "poseId": "full_single_P019_front",
+      "poseGroup": "full_single_P019",
+      "angle": "正面",
+      "sourceUrl": "https://ai-pose-gallery.pages.dev/img/full_single_P019_front.png",
+      "localPoseUrl": "/local-media/pose/full_single_P019_front.png",
+      "poseSha256": "25fea98ca831642ac6ee03fe1990b32fe3a3864dd600a75c38e877a7df730440",
+      "poseWidth": 900,
+      "poseHeight": 1200,
+      "inputOrder": [
+        "character-base",
+        "full_single_P019_front"
+      ],
+      "resultId": "stretch",
+      "follows": "双臂分开上举、近直肘和并拢站姿可辨，双手完整入画。",
+      "differences": "袖口位置、衣摆与口袋轮廓随生成变化，构图缩放也与基准不同。"
+    },
+    {
+      "id": "seated",
+      "label": "坐姿托腮",
+      "poseId": "full_single_P012_front",
+      "poseGroup": "full_single_P012",
+      "angle": "正面",
+      "sourceUrl": "https://ai-pose-gallery.pages.dev/img/full_single_P012_front.png",
+      "localPoseUrl": "/local-media/pose/full_single_P012_front.png",
+      "poseSha256": "f640702325d6adae80eb1b66b33dbe0e3bf7beaf9bc0883de7a2097370861614",
+      "poseWidth": 900,
+      "poseHeight": 1200,
+      "inputOrder": [
+        "character-base",
+        "full_single_P012_front"
+      ],
+      "resultId": "seated",
+      "follows": "单膝抬起、手扶脸颊、另一掌撑地和前伸腿的关系可辨。",
+      "differences": "肘膝接触和腿部透视未做几何验收；裤腿、鞋形及面部细节仍有变化。"
+    }
+  ],
+  "sourceManifestSha256": "feddc96293062d300391493243aeb88195fb6e001582ce61969a543744b955d6",
+  "identityGroundTruth": false,
+  "realPersonInput": false,
+  "assessment": "Qualitative visual review only, one output per configuration. No text-only control, fixed-seed test or numerical identity/pose measurement.",
+  "notes": [
+    "摄影质感与还原具体真人是两个目标；本轮没有真人照片作为身份真值。",
+    "同一版本的三个结果各自使用同一张基准人物图和一张原库姿势图，没有串行修改前一张结果。",
+    "原库姿势输入来自已下载的真实原图；未把原图复制到公开 app 目录。",
+    "本地展示已保存结果，网页尚无实时生成接口。"
+  ],
+  "userFeedback": "用户指出人物形象太假，要求尽量还原真人形象；保留旧版用于对照。"
+}

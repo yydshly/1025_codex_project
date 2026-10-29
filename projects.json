@@ -168,19 +168,19 @@
     {
       "id": "011",
       "slug": "pose-look-creation-atlas",
-      "name": "姿势与服装参考库 · 来源与能力研究",
-      "summary": "研究原始姿势与服装参考库的来源、作者演示、能力与许可；说明已备份1,439张原图的保存位置，盘点288组姿势与视角覆盖，分析本地图册、对照评测、控制图、构图、视频及3D等七个方向的证据与验收。换装/婚纱生图实验保留为独立分支，不作为原库效果验证。",
+      "name": "姿势与衣装参考 · 能力、作用与产品探索",
+      "summary": "POSE-DB-01提供1,439张无脸人偶姿势PNG、288组及多视角检索，用于动作与构图参考。衣装分享是约1,000套参考的预告和人物＋服装＋姿势组合演示；目前只取得一张预告拼图，完整库与商用条款未确认。两者提供素材，生图和身份、衣装保持由外部模型完成。我们用六张虚构人物写真候选探索写真、穿搭、婚纱、图文故事与个人品牌，区分实测和设想。",
       "source": "https://x.com/leo_xiaolei/status/2114971707962536302",
-      "sourceName": "姿势与服装参考图库原帖及相关源库",
+      "sourceName": "POSE-DB-01姿势图库与衣装参考预告/多参考生图演示",
       "status": "researching",
       "tags": [
-        "参考生图",
-        "换装",
-        "婚纱",
-        "能力研究",
-        "资料备份"
+        "姿势参考",
+        "衣装参考",
+        "多参考生图",
+        "系列写真",
+        "产品研究"
       ],
-      "cover": "assets/images/source-overview-v3.jpg",
+      "cover": "assets/images/research-overview-public-v3.png",
       "demoUrl": "https://yydshly.github.io/1025_codex_project/011-pose-look-creation-atlas/",
       "createdAt": "2026-10-29"
     },

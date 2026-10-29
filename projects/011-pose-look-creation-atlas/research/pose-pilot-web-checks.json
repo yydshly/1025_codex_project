@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-29",
+  "url": "http://127.0.0.1:8011/app/#pilot",
+  "scope": "Original-library three-pose pilot, saved outputs and qualitative review. Local only.",
+  "generation": {"versions": 2, "callsPerVersion": 4, "pngs": 8, "attemptsPerConfiguration": 1, "currentVersion": "v2", "realPersonInput": false},
+  "integrity": {"sourcePoseFilesCheckedAgainstPrivateManifest": 3, "generatedHashesAndPngDimensionsChecked": 8, "fullPromptsAndInputOrderPreserved": true, "previousWeddingAssetsUnchanged": true},
+  "browser": {
+    "surface": "Codex in-app browser",
+    "desktopViewport": [805, 871],
+    "mobileViewport": [390, 844],
+    "mobileDocumentScrollWidth": 375,
+    "horizontalOverflow": false,
+    "mobileDialogHorizontalOverflow": false,
+    "currentResultsLoaded": 3,
+    "defaultVersion": "photographic v2",
+    "oldVersionToggle": "v1 result URL loaded, then switched back to v2",
+    "zoomComparison": "Character baseline, exact original pose and corresponding generated result visible in one dialog",
+    "directPilotHash": "loads gallery panel and locates the pilot section",
+    "viewportReset": true,
+    "consoleErrors": []
+  },
+  "screenshots": ["assets/images/local-v5/pose-pilot-v2-overview.jpg"],
+  "screenshotGitIgnored": true,
+  "checks": ["Subproject check: syntax, records, source/result associations, all generated asset hashes and dimensions", "Root registry check: 12 projects"],
+  "limits": ["No real-person identity ground truth", "No numerical face or joint similarity metric", "No text-only control or repeated trials", "No real-time model call from the webpage", "No remote commit, push, backup sync or publication this turn"]
+}

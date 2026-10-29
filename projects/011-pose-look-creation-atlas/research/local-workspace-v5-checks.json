@@ -1,0 +1,94 @@
+{
+  "date": "2026-10-29",
+  "scope": "Local-only original-image workspace and creative-plan prototype. No remote commit, push, publication, new image generation, upstream installation or new original downloads.",
+  "url": "http://127.0.0.1:8011/app/#gallery",
+  "productUrl": "http://127.0.0.1:8011/app/#products",
+  "library": {
+    "originals": 1439,
+    "groups": 288,
+    "mount": "read-only external backup directory",
+    "copiesIntoPublicApp": 0,
+    "chinesePoseNames": 98,
+    "curatedCollections": 5
+  },
+  "automated": [
+    "Subproject check: syntax, local links, research structures and unchanged hashes of all eight existing experiment assets.",
+    "Local integration: full index/group counts, every curated and translated pose exists, actual PNG bytes and SHA-256, image MIME type and cache validation.",
+    "Local integration: image allowlist, unknown image, traversal, hidden files, external Origin, untrusted Host and POST rejection.",
+    "Local integration: missing library returns 503 while research HTML remains accessible.",
+    "Root registry check: 12 projects, IDs, covers and generated README agree."
+  ],
+  "browser": {
+    "surface": "Codex in-app browser",
+    "desktopViewport": [
+      839,
+      871
+    ],
+    "mobileViewport": [
+      390,
+      844
+    ],
+    "horizontalOverflow": false,
+    "mobileDialogHorizontalOverflow": false,
+    "viewportOverrideReset": true,
+    "flows": [
+      "P015 search: one pose group, five source images.",
+      "Source-image dialog: five existing views; side selection changes the actual PNG URL.",
+      "Add a specific view to a plan, select character product preset and retain existing references.",
+      "Edit name, goal and per-image notes; reorder a reference; reload restores order and text.",
+      "Toggle favourite, filter favourites and reload; favourite remains selected.",
+      "Import two references: duplicate view skipped, new diagonal view added with note; remove added reference.",
+      "Actual plan JSON download parsed: four frames retain order, notes, original source URLs and SHA-256.",
+      "Actual creative-brief Markdown download parsed: project name, product, filenames, notes and hashes present.",
+      "Direct #products refresh locates product heading; gallery, plan and dialog fit the mobile viewport."
+    ],
+    "consoleErrors": []
+  },
+  "downloadCheck": {
+    "planJsonBytes": 2691,
+    "planJsonSha256": "7bf2bc64a384cdbe7ada73f78115131f26293a7978c085795d732e4da5cc40a6",
+    "embeddedImageData": false
+  },
+  "lifecycle": {
+    "backgroundStart": "passed",
+    "duplicateStartReused": true,
+    "ownedProcessStopAndRestart": "passed",
+    "serverLeftRunningForUser": true,
+    "systemAutostartInstalled": false
+  },
+  "screenshots": {
+    "directory": "assets/images/local-v5/",
+    "gitIgnored": true,
+    "reason": "Some local screenshots show restricted original references."
+  },
+  "limits": [
+    "The three product directions share one planning prototype; they are not three finished production systems.",
+    "No original-library generation benchmark, detector run, animation or 3D conversion was performed.",
+    "No real-user time saving, paid demand or commercial outcome was measured.",
+    "The previous online version remains unchanged; this turn only updates local files."
+  ],
+  "inlineCardPreview": {
+    "date": "2026-10-29",
+    "views": [
+      "正面",
+      "俯视",
+      "仰视",
+      "侧面",
+      "斜侧"
+    ],
+    "actualImageUrlChangedForAllFive": true,
+    "dialogRemainsClosed": true,
+    "urlHashUnchanged": true,
+    "otherCardsKeepTheirOwnView": true,
+    "zoomUsesSelectedView": true,
+    "planUsesSelectedView": true,
+    "temporaryPlanEntryRemovedAndExistingDraftRetained": true,
+    "mobileWidth": 390,
+    "mobileScrollWidth": 375,
+    "horizontalOverflow": false,
+    "viewportReset": true,
+    "screenshot": "assets/images/local-v5/inline-views-v6.jpg",
+    "consoleErrors": [],
+    "publication": "local only, no remote submission or deployment"
+  }
+}

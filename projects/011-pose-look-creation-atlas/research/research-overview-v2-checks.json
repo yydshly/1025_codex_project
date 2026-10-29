@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-29",
+  "scope": "Private local overview with source materials and existing generated results",
+  "url": "http://127.0.0.1:8011/app/#overview",
+  "privateImage": ".local/research-overview-v2/overview.png",
+  "manifest": "app/media/research-overview-v2/manifest.json",
+  "dimensions": [1448, 1086],
+  "bytes": 1989805,
+  "sha256": "f9b55ec340c2857038b285eb0e586fc1e929b1b8d4eacaccb74606bba07ed63f",
+  "generation": {"acceptedRequests": 2, "completedImages": 1, "failedNetworkRequests": 1, "validationRejectedBeforeGeneration": 1, "deliveredContent": "Standing pose, author clothing preview, existing courtyard standing result and earlier independent bridal result. Seated addition returned no image."},
+  "checks": [
+    {"name": "Project npm run check", "result": "pass", "covers": "Public v1 integrity, private v2 record, optional private file integrity, input hashes, absence of restricted PNG from public app, scripts and local links"},
+    {"name": "npm run test:local", "result": "pass", "details": "Three test groups passed: original library and access boundaries; missing library; approved private-overview route, image hash, cache, HEAD, hidden path and cross-origin rejection, corrupt file rejection."},
+    {"name": "Private local API", "result": "pass", "details": "Returned available=true with matching image dimensions, byte count, SHA-256 and source inputs after restart of only the owned workspace server."},
+    {"name": "Local web display", "result": "pass", "details": "Preview and download switched from public v1 to /local-media/research-overview-v2.png and linked to v2 record."},
+    {"name": "Original materials and results in same window", "result": "pass", "details": "Viewer switched to original P015 (900px), full clothing preview (2048px), saved courtyard standing result (1086px) and saved bridal result (1024px), then back to memory overview."},
+    {"name": "Fit and zoom", "result": "pass", "details": "150% zoom enabled scrolling. Fit respected both width and height: narrow-window image height 254.25px in a 266px viewport; desktop image height 793.5px in an 818px viewport. Temporary desktop override reset."},
+    {"name": "Downloaded current overview", "result": "pass", "details": "Actual downloaded file matched 1989805 bytes and recorded SHA-256."},
+    {"name": "Git exclusion", "result": "pass", "details": "git check-ignore confirmed the complete private PNG and local-only screenshot directory are ignored."},
+    {"name": "Browser errors", "result": "pass", "details": "No error-level browser logs."}
+  ],
+  "evidence": "assets/images/local-v5/research-overview-v2-web.png",
+  "evidenceIgnoredByGit": true,
+  "remoteCommitPushOrDeployment": false,
+  "localServiceLeftRunning": true
+}

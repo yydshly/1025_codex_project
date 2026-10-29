@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "research-overview-v1",
+  "date": "2026-10-29",
+  "role": "research-infographic",
+  "engine": "Built-in ImageGen",
+  "modelVersion": "Not reported by the tool",
+  "generationCalls": 1,
+  "prompt": "Use case: infographic-diagram.\nCreate ONE polished, readable Simplified Chinese editorial infographic summarizing our research into a pose reference library and its possible products. Landscape 3:2, high resolution ideally 3000x2000 or larger. This is an information map, not a website screenshot. Warm ivory background, dark charcoal Chinese sans-serif text, muted forest/sage green and restrained dusty-rose status accents, thin tidy arrows, generous white space. Strong headline, three well-separated main columns with a clear left-to-right conceptual flow, small simple original line icons for files/pose/reference inputs/planning. Do not use actual source pose-library images, do not reproduce a source website or GitHub branding, do not add invented photos, charts, performance numbers or products. Prioritize accurate, large legible Chinese typography over decorations. Use exact supplied Chinese text; no gibberish, duplicate sections, cropped text or illegibly tiny footnotes. The main headline should be clearly legible when the image is displayed at laptop width.\n\nTop:\nSmall eyebrow \"POSE / LOOK · 研究 011 · 2026.10.29\"\nHeadline \"姿势参考库：资源、能力与产品方向\"\nSubtitle \"我们的理解：参考素材 + 外部生成模型 + 系列创作流程\"\nA slim row of four factual numeric highlights: \"1,439 张姿势原图\" / \"288 组姿势\" / \"6 张写真候选\" / \"5 个扩展方向\"\n\nLEFT COLUMN title \"01｜我们手里有什么\"\nThree nested source cards:\nCard 1 sage-tinted, status \"已取得\", heading \"姿势原图\"\n\"1,439 张 PNG · 288 组姿势\"\n\"900×1200 · 多数每组 5 个视角\"\n\"已保存本地原图与私有远端备份\"\nCard 2 rose-tinted, status \"仅有预告\", heading \"衣装参考\"\n\"仅取得 1 张原始预告拼图\"\n\"约 1,000 张是作者预告\"\n\"完整图库与授权尚未确认\"\nCard 3 neutral, status \"已整理\", heading \"研究资料与本地工作台\"\n\"10 个项目 · 28 份资料快照\"\n\"来源、说明、许可与部分实现\"\n\"网页：浏览、检索、多视角、收藏、方案\"\n\nMIDDLE COLUMN title \"02｜参考如何产生作用\"\nVisually organized main flow:\nA row of four compact reference-input tokens \"人物\" \"姿势\" \"服装\" \"场景\"\narrow down to \"外部图像模型\"\narrow down to \"生成候选 → 对照选片 → 系列交付\"\nExplain the three responsibilities in a clean compact block:\n\"素材层：表达动作与已有视角\"\n\"模型层：重新生成图片\"\n\"流程层：编镜头、排顺序、记返修\"\nTwo small lines:\n\"固定：人物、服装、场景、光线\"\n\"变化：动作、景别、视线、顺序\"\nA distinct evidence card headed \"我们的实测｜《庭院午后》\"\n\"6 张写真候选＝3 张新增＋3 张复用\"\n\"虚构成年亚洲女性 · 手机随拍视觉\"\n\"已支持逐张对照、选片、备注、导出\"\n\"仍有景别、脸部、手部与背景偏差\"\nA small clear label: \"网页展示已存结果，尚无实时生图接口\"\n\nRIGHT COLUMN title \"03｜可扩展的产品目标\"\nFive stacked product cards with easy-to-read status badges and deliverables:\n\"主题写真\" — \"主题 + 六镜头 + 选片方案\" — green badge \"已有候选\"\n\"穿搭 Lookbook\" — \"多角度服装展示与细节册\" — neutral badge \"待验证\"\n\"婚纱造型\" — \"拍前造型与镜头提案\" — dusty-rose badge \"分支小样\"\n\"图文故事\" — \"叙事顺序 + 图片文案\" — neutral badge \"规划阶段\"\n\"个人品牌\" — \"头像、半身、封面等版位\" — neutral badge \"规划阶段\"\nUnder these five cards, a highlighted goal line:\n\"优先目标：验证一个可复用的系列创作流程\"\n\nBOTTOM full-width conclusion band, visually connected to all columns:\nMain line \"价值目标｜找图更快 · 目标更清楚 · 返修可追踪 · 方案可复用\"\nUnder it, three readable factual boundary lines, still large enough to read:\n\"能力边界：原库提供静态参考；视频与真实 3D 需额外工具，目前未验证。\"\n\"许可边界：代码与原图分开核对；原图不公开再分发；真人场景需另用适当授权参考。\"\n\"验证方法：记录制作时间、返修次数与复用情况；产品收益仍是待验证假设。\"\nVery small but readable source footer \"依据：已归档原库资料与本地实测记录。\"\nEnsure the map makes resource availability, actual tested results, and future product goals visibly distinct.",
+  "asset": {
+    "path": "media/research-overview-v1/overview.png",
+    "bytes": 1743747,
+    "width": 1536,
+    "height": 1024,
+    "sha256": "55095ca41e8c588d8472d4423c2e6f33b00deac7526dd43418457e0c0b74fd5a"
+  },
+  "sources": [
+    "research/original-backup-summary.json",
+    "app/archive/manifest.json",
+    "app/media/courtyard-series-v1/manifest.json",
+    "app/series-data.js"
+  ],
+  "scope": "Summary of archived source research, local resource status and generation pilot; future product goals are hypotheses, not proven capabilities.",
+  "notes": [
+    "未使用或复制原库图片；图中的图标为生成的示意图形。",
+    "资源数量和状态依照已归档研究记录，并非本轮重新下载。",
+    "信息图不增加写真试验样本数，未生成额外写真、视频或 3D。",
+    "本轮仅本地接入，没有远端提交、推送或部署。"
+  ]
+}

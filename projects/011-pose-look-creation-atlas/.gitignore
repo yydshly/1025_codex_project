@@ -1,4 +1,8 @@
-# Original collections are preserved in a separate PRIVATE repository, never this checkout.
+# Local process state, temporary user exports and private library configuration.
+.local/
+# Local-only screenshots may contain restricted original references.
+assets/images/local-v5/
+# Original collections remain in a separate private repository.
 private/
 original-images/
 *.part

@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "research-overview-v3",
+  "date": "2026-10-29",
+  "role": "public-research-infographic",
+  "engine": "Built-in ImageGen",
+  "modelVersion": "Not reported by the tool",
+  "generationCalls": 3,
+  "successfulOutputs": 1,
+  "asset": {
+    "path": "media/research-overview-v3/overview.png",
+    "coverCopy": "assets/images/research-overview-public-v3.png",
+    "bytes": 1898189,
+    "width": 1448,
+    "height": 1086,
+    "sha256": "d15aa0130a5a70bfe6eeca5f5d6742c6d2fe20d558b1b623ff6d6283f0455764"
+  },
+  "prompt": "Use case: precise-object-edit / infographic-diagram. Edit IMAGE 1 into the PUBLIC publication version of the SAME Chinese research infographic. Preserve its overall 4:3 landscape composition, typography, column layout, factual text, resource counts, product cards, memory-aid purpose, muted sage/rose/ivory design and our generated experiment photographs. IMAGE 2 and IMAGE 3 are the exact saved courtyard-standing and bridal experiment photographs respectively; use their contents to preserve these thumbnails accurately. No new person, no new experiment result.\n\nMake ONLY the publication changes below:\n1. Completely REMOVE all copied/source-derived faceless mannequin line drawings, both the large figure in the left resource card and the smaller figure inside the middle comparison. Replace them with clearly ORIGINAL and very simple geometric STICK-FIGURE diagrams (single circles/lines, no torso anatomy, no tracing, no mannequin contours), showing one hand touching a hip. The two positions can share the new original stick figure. Caption each \"姿势示意 · 非原库图片\". The middle comparison's left label becomes \"姿势参考示意\", right stays \"既有生成结果\". Do not describe the stick diagram as the actual P015 input. The photograph really is our existing result from prior research; the diagram only explains the role of a reference.\n2. Completely REMOVE BOTH strips of source clothing-preview outfits (left source card and right fashion card). Replace the LEFT strip with a set of clearly ORIGINAL flat geometric garment icons: a plain shirt, trousers and an A-line skirt, no people, no accessories, no source designs. Caption \"服装示意 · 非源库素材\". Remove the duplicated strip on the right fashion card; use its space for \"指定商品保真尚未验证\".\n3. Preserve clothing source facts \"仅取得 1 张预告拼图\", \"约 1,000 张是作者预告\", \"完整图库与授权未确认\". Keep these as factual text; the icons do NOT show that original preview.\n4. Preserve our courtyard photo, bridal photo, their findings and the honest five product stages. Bridal remains clearly labelled \"早期婚纱探索 · 独立分支\". Do not change these into illustrations or different people. Keep 1,439 source PNG / 288 pose groups, 6 candidate shots and 5 directions.\n5. Top-right stamp becomes \"研究总览 · 公开版\".\n6. Footer licence line becomes \"使用边界：代码与原图分别核对许可；源素材请从原站或本地私有入口查看。\"\n7. The small attribution note becomes \"姿势与服装图形为原创示意；试验照片由 AI 生成。完整输入和观察另存。\"\n8. Preserve title \"姿势参考库：资源、能力与产品方向\", subtitle and value targets, the external image-model workflow and all other original text. Keep labels \"静态参考\", \"尚无实时生图接口\", and future video / real 3D unverified.\n\nImportant: final image must NOT contain any crop, remake or trace of the original source mannequin drawings or clothing contact sheet. Use the clearly new geometric symbols instead. The result should still be instantly recognizable as the infographic in Image 1, retain our actual exploration photos, and be readable as the project's public guide image.",
+  "failedTextCorrections": [
+    {
+      "prompt": "Use case: text-localization. EDIT the provided infographic with ONLY TWO precise Chinese text corrections. Preserve every other pixel as much as possible: all layout, colours, title, numbers, original stick diagrams, garment icons, courtyard and bridal photographs, product cards and labels. This is the public version; no source-library images remain.\nCorrection 1: In the left clothing card, replace the first bullet \"作者衣装预告片段\" with \"衣装库目前仅有预告\". Keep the next three bullets unchanged.\nCorrection 2: In the BOTTOM FOOTER, the line labelled \"许可边界\" must be replaced entirely. Remove \"含原素材缩略内容，仅供本地私人研究回看，不公开再分发\". The new complete line must read exactly: \"许可边界：代码与原图分别核对；源素材请从原站或本地私有入口查看。\"\nDo not keep the old local-only copyright sentence anywhere in the final image. Keep the top badge \"研究总览 · 公开版\", the existing small note that the pose and clothing graphics are original illustrations, and every other piece of the graphic unchanged. Do not add new artwork.",
+      "status": "network-error-no-output"
+    },
+    {
+      "prompt": "Edit this existing infographic. Change only two Chinese text lines, preserving all other graphics and photographs. In the left clothing box, change the first bullet from “作者衣装预告片段” to “衣装库目前仅有预告”. In the bottom footer, replace the entire line after “许可边界” with: “代码与原图分别核对；源素材请从原站或本地私有入口查看。” Delete the old local-only sentence “含原素材缩略内容，仅供本地私人研究回看，不公开再分发”. Keep the top-right badge “研究总览 · 公开版”. All original stick-figure diagrams, flat garment icons, photos, other text, size and layout must remain unchanged.",
+      "status": "network-error-no-output"
+    }
+  ],
+  "inputs": [
+    {
+      "id": "private-memory-layout",
+      "role": "layout-edit-target",
+      "record": "media/research-overview-v2/manifest.json",
+      "published": false
+    },
+    {
+      "id": "courtyard-standing",
+      "role": "saved-generated-result",
+      "path": "media/pose-pilot-v3/standing.png"
+    },
+    {
+      "id": "early-bridal",
+      "role": "saved-generated-result",
+      "path": "media/experiment-v1/studio-a.png"
+    }
+  ],
+  "review": [
+    "沿用用户指定记忆图的版式和我们已有的庭院、婚纱试验缩略。",
+    "图中源库姿势线稿已改为原创几何火柴人，衣装预告缩略已改为原创平面图标，并明确标注非原库素材。",
+    "图片底部保留素材版的原图许可提醒；该提醒针对原库图像数据，公开版本已将原图替换为示意，网页图注补充说明适用范围。",
+    "图片中的姿势示意不是 P015 原图，精确输入关联以实验记录为准。",
+    "两次小字修订因网络错误没有返回图片，没有把修订写成交付。"
+  ],
+  "licenceSource": {
+    "url": "https://ai-pose-gallery.pages.dev/",
+    "checked": "2026-10-29",
+    "summary": "Source image data redistribution is prohibited, including processed versions. Original source diagrams and clothing contact-sheet thumbnails are absent from this public graphic."
+  }
+}

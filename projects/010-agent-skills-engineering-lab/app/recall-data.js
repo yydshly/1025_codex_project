@@ -1,8 +1,8 @@
 // Generated from the project registry and allowlisted README files.
 globalThis.RECALL_CORPUS = {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-29T09:02:27.033Z",
-  "registrySha256": "a49cc81139d3b2937246b6cc79808c12fbcf4ef8722c2334f0ff18d8a05f91ed",
+  "generatedAt": "2026-10-29T09:53:22.736Z",
+  "registrySha256": "cd92351c4cb1914ad5cef8bf20877a3b5ab2e7d19c0f2c8e6f0ffcdefeda126d",
   "projects": [
     {
       "id": "001",
@@ -2503,296 +2503,470 @@ globalThis.RECALL_CORPUS = {
     {
       "id": "011",
       "slug": "pose-look-creation-atlas",
-      "name": "姿势与服装参考库 · 来源与能力研究",
-      "summary": "研究原始姿势与服装参考库的来源、作者演示、能力与许可；说明已备份1,439张原图的保存位置，盘点288组姿势与视角覆盖，分析本地图册、对照评测、控制图、构图、视频及3D等七个方向的证据与验收。换装/婚纱生图实验保留为独立分支，不作为原库效果验证。",
+      "name": "姿势与衣装参考 · 能力、作用与产品探索",
+      "summary": "POSE-DB-01提供1,439张无脸人偶姿势PNG、288组及多视角检索，用于动作与构图参考。衣装分享是约1,000套参考的预告和人物＋服装＋姿势组合演示；目前只取得一张预告拼图，完整库与商用条款未确认。两者提供素材，生图和身份、衣装保持由外部模型完成。我们用六张虚构人物写真候选探索写真、穿搭、婚纱、图文故事与个人品牌，区分实测和设想。",
       "source": "https://x.com/leo_xiaolei/status/2114971707962536302",
       "status": "researching",
       "tags": [
-        "参考生图",
-        "换装",
-        "婚纱",
-        "能力研究",
-        "资料备份"
+        "姿势参考",
+        "衣装参考",
+        "多参考生图",
+        "系列写真",
+        "产品研究"
       ],
       "createdAt": "2026-10-29",
       "readmePath": "projects/011-pose-look-creation-atlas/README.md",
-      "readmeSha256": "16c54d6675af193332308a18736757b269da7f57651ce80bf3e5832f966ec8ff",
-      "readmeText": "# 011 · 姿势与服装参考库 · 来源与能力研究\n\n> 主线研究原始图库、作者演示、素材与模型的能力边界、授权及价值。已有通用生图实验和产品思路保留为独立扩展分支。\n\n[返回总索引](../../README.md#项目索引) · [在线原库研究](https://yydshly.github.io/1025_codex_project/011-pose-look-creation-atlas/) · [本地网页](app/index.html) · [研究笔记](research/notes.md) · [私有原图备份](https://github.com/yydshly/pose-look-reference-backup)\n\n![原始图库研究主线](assets/images/source-overview-v3.jpg)\n\n图：主线首页，区分原始姿势图库和服装预告/作者演示。已有生图图片在独立分支中保留。\n\n| 项目 | 内容 |\n| --- | --- |\n| 编号 | 011 |\n| 收录与核对日期 | 2026-10-29，Asia/Shanghai |\n| 当前阶段 | 原库资料、来源与边界已整理；原库控制效果尚未独立实测。扩展实验另列 |\n| 实现 | 无第三方依赖的 HTML / CSS / JavaScript；无需构建 |\n| 上游研究版本 | 10 个项目固定 commit，见[快照清单](app/archive/manifest.json) |\n| 原图资源 | 1,439 张原尺寸 PNG，288 组姿势，637.57 MiB；不放入公开研究库 |\n| 源库资料 | 28 份说明、许可与少量导出实现，合计 530.2 KiB |\n| 授权 | 代码、原图、模型和附加人物分别核对；保留原文许可 |\n| 在线演示 | 已发布并核验：[原库研究主线](https://yydshly.github.io/1025_codex_project/011-pose-look-creation-atlas/) |\n\n## 网页结构\n\n**主页面：原库研究**\n\n- 原始对象：两条分享各自指向什么，日文原站、中文转述与镜像的关系。\n- 保存状态：已取得的原图、服装预告、本地路径与私有远端入口，以及网页保留原站关联的原因。\n- 原库盘点与扩展研究：真实索引的分类、视角和尺寸统计；七个方向的交付、证据、缺口、验证方法与优先级。\n- 作者演示：人物、服装与姿势参考分别发挥什么作用，生成由哪一层执行。\n- 能力与价值：原库提供的素材/检索，外部模型和相关工具的边界，已确认事实和未验证效果。\n- 来源与备份：原帖、原站、条款、固定版本资料和私人原图备份。\n\n**独立分支：已有思路与实验**\n\n- 思路理解：通用参考生图原理，以及图片、视频、3D 的交付区别。\n- 自建实验：原有换装、庭院场景、姿势编辑对照，保留完整图片、指令、输入关联和偏差。\n- 产品场景：婚纱、换装、摄影、衣橱与店铺等八类方案。\n\n主页面不加载分支的生图图片或实验脚本。旧的 #effects 与 #scenarios 链接会跳转至 branch.html 的对应模块；#understanding 仍指向原库主线。\n\n## 主线判断与证据边界\n\n原始姿势库提供静态、多角度、可筛选的参考 PNG；中文镜像增加汉化和检索。服装帖包含制作预告与作者在外部图像模型中的多参考图演示，完整衣装图库与授权未确认。\n\n原库的价值应从找图效率、目标表达、多角度参考和素材复用来判断。姿势跟随、身份保持、服装保真与成功率属于外部模型及工作流程的结果，需要用原库本身做对照验证。目前尚未完成这样的独立验证。\n\n自建婚纱图片和产品方案是另一层探索。它们已移入分支，不能替代原库效果、资源可用性或授权的核对。\n\n## 原库盘点与实际扩展研究\n\n本次对已保存的索引、清单及原图目录做只读盘点，不安装检测器、不下载权重，也不重新生图。[资源盘点](research/resource-audit-v4.json)记录了字段、分组、视角、尺寸和清单哈希；[扩展研究](research/extension-directions-v4.json)记录每个方向的依据与验收方法。网页中可直接展开阅读，也可下载[汇总 JSON](app/resource-research.json)。\n\n[保存状态的网页截图](assets/images/resources-status-v4.jpg) · [本次网页核验](research/resource-research-v4-checks.json)\n\n- 1,439 张原图全部为 900×1200；288 组中，287 组有五个视角，一组有四个视角。缺项是原索引的“全身1人・セクシー系 / P018 / 下から”，不是下载遗漏。\n- 1,439 个图像哈希各不相同，但同组的不同视角不等于不同姿势。\n- 原索引八个字段提供分类、名称、视角与图片地址，没有关节点坐标、相机标定或动作时序。\n- 网页展示保存状态快照和路径，不实时读取磁盘；私人本地图册尚未实现。原站链接用于溯源、核对条款和查看原始素材，不能据此判断尚未下载。\n\n| 优先级 | 方向 | 当前判断 |\n| --- | --- | --- |\n| P0 | 私有本地图册、项目收藏与备注 | 资源基础已具备；先比对现成镜像和文件夹的找图效率，避免重复建设 |\n| P1 | 原库参考效果对照评测 | 最直接验证原库价值；保留全部尝试、偏差、耗时与返修，尚未执行 |\n| P1 | 姿势控制图和可复用模板 | 官方技术路线存在；灰色线稿、手部及双人检测质量未验证 |\n| P1 | 虚构角色和插画构图方案 | 可利用多角度与标签；需验证能否减少选图和沟通成本 |\n| P2 | 3D 摆姿、机位与跨软件交付 | 需要外部模型、骨架与导出流程；原库本身不含真实 3D |\n| P2 | 分镜、关键画面与视频延伸 | 静态图能辅助规划；连续动作与视频需额外数据及验证 |\n| 暂不推进 | 公开原图镜像、素材转售或训练包 | 图片再分发受限；训练用途未确认，不能从代码许可推断 |\n\n这些是研究方向，不是已上线功能或已证明的商业机会。真人婚纱、换装等继续放在分支，并应更换为适当授权的参考素材。\n\n## 来源与许可\n\n起点是[中文姿势库转述](https://x.com/leo_xiaolei/status/2114971707962536302)与[原作者服装库预告](https://x.com/giaaibusi/status/2115431641766359244)。[日文姿势库原站](https://ai-pose-gallery.pages.dev/)提供原尺寸 PNG；[中文镜像](https://github.com/anhao/ai-pose-gallery-zh)主要增加中文检索和整理。\n\n- 原站允许免费使用，允许符合条款的作品制作商用、编辑与参考；禁止图片数据本身的再分发、转载和转售，原尺寸及加工后图片都在其范围内。\n- 原站另写有“不要用于表达实际人物或未成年人的用途”等限制。真人婚纱/换装应使用自己的或适当授权的姿势参考，不能自动套用这套图库。\n- 中文镜像的 MIT 只适用于代码，明确排除图片和原始数据；镜像又声明素材不得商用。不能把仓库标签当作整包素材的授权。\n- 服装库约 1,000 张是制作预告。已保留一张原始预告拼图；截至核对时未确认完整图库入口与商用条款。\n- 源码许可不覆盖所有检查点、数据、人物资产、示例模型和服务。各上游原文随快照保留，快照不扩大授权。\n\n原图只在本人可访问的私有仓库保存，不通过本研究库、GitHub Pages、Releases 或公开图库再次分发。个人备份不产生新的使用权。\n\n## 备份与可恢复性\n\n- 本地原图：E:/PersonalBackups/PoseLookReferences/pose-db-20261029\n- 私有远端：[yydshly/pose-look-reference-backup](https://github.com/yydshly/pose-look-reference-backup)。需要仓库权限，无权限可能显示 404。\n- [备份摘要](research/original-backup-summary.json)只含数量、来源、清单哈希、私有仓库链接及核验状态，没有原图。\n- 私有目录含逐文件 SHA-256、大小、尺寸、原始 URL、日文索引、抓取时原站 HTML，以及服装预告拼图的来源与哈希。\n- 私有仓库的 research-project/ 同时保存本研究网页、笔记、截图与脚本快照；research-project-snapshot.json 记录逐文件 SHA-256。网页展示的固定提交是原图核验版本，研究快照在 main 中继续保留。\n- 资料快照按固定 commit 保存，文件追加 .txt 后缀供静态查看；内容字节不变，原路径和 SHA-256 在清单中。\n\n校验全部本地原图：\n\n~~~powershell\npython -X utf8 scripts/verify-originals.py E:/PersonalBackups/PoseLookReferences/pose-db-20261029\n~~~\n\n核对远端私有 Git 树及每个 blob 与本地字节是否一致（需要已登录的 GitHub CLI，不下载另一份完整图片）：\n\n~~~powershell\npython -X utf8 scripts/verify-private-remote.py E:/PersonalBackups/PoseLookReferences/pose-db-20261029\n~~~\n\n恢复时从私有仓库克隆，再运行其中的 verify-originals.py。不要把它改为公开仓库或发布原图。备份脚本不安装/运行上游软件，不下载权重；抓取脚本只用于明确授权的私人备份，重复执行会复用已存在的有效 PNG。来源数量变化会停止抓取，需先核对。\n\n## 本地使用与检查\n\n双击 app/index.html 可阅读和操作。推荐 Node.js 22+ 启动本地服务：\n\n~~~powershell\ncd E:/codex_project/1025_codex_project/projects/011-pose-look-creation-atlas\nnpm.cmd run dev\n~~~\n\n打开 http://127.0.0.1:8011/app/ 。可用 POSE_LOOK_PORT 指定端口；无需安装依赖，仅绑定本机；也可直接访问上方在线网页。\n\n~~~powershell\nnpm.cmd run check\nnpm.cmd run archive:verify\n~~~\n\n根目录另运行 npm.cmd run check。交互结果见[网页核验](research/web-verification.json)。本轮没有重新执行上游模型或安装依赖。\n\n## 有限实测与限制\n\n此前的[导出实验记录](app/evidence/export-experiment.json)：Mannequin GLB 为网格层级，0 蒙皮/动画/相机；MPFB + Blender 测试 GLB 含 1 蒙皮、1 动画、1 相机，回读得到 53 骨骼且顶点随动画变化。只证明同一 Blender 的有限回读。焦距数值变化，视场角是否等价尚未核对；未证明其他 DCC 或游戏引擎兼容。\n\n其余工具主要是文档与选定代码调研。新增的小样本说明参考编辑可用于表达换装、场景与动作目标；不能据此推断真实商品还原率、稳定成功率或商业收益。\n\n## 扩展分支\n\n[思路理解、生图实验与产品场景](research/extension-branch.md)已单独保存，在[在线分支页](https://yydshly.github.io/1025_codex_project/011-pose-look-creation-atlas/branch.html#thinking)查看。既有 7 次 ImageGen 调用、8 张输入/结果图、自绘姿势源文件、完整提示词与偏差记录保持不变。\n\n",
+      "readmeSha256": "10c82340f0b21523d0be7e9b82861b8885e18243a971fc43c8326c755cbb79a3",
+      "readmeText": "# 011 · 姿势与衣装参考 · 能力、作用与产品探索\n\n> 两个来源分别承担“表达怎么摆姿势”和“表达穿什么”的作用。POSE-DB-01 是静态姿势参考站；衣装分享目前是图库预告和作者的多参考生图演示。生成由外部模型完成，我们在网页中区分原库事实、实际小样和产品设想。\n\n> **网页内容**：[研究总览](https://yydshly.github.io/1025_codex_project/011-pose-look-creation-atlas/#overview) · [系列写真与五个方向](https://yydshly.github.io/1025_codex_project/011-pose-look-creation-atlas/#series) · [两个来源的详细研究](https://yydshly.github.io/1025_codex_project/011-pose-look-creation-atlas/#understanding)。公开版保留生成小样、选片、备注和方案导出；[本地版](http://127.0.0.1:8011/app/#gallery)另提供原图浏览、五视角、收藏与私人素材记忆图。\n\n[返回总索引](../../README.md#项目索引) · [在线原库研究](https://yydshly.github.io/1025_codex_project/011-pose-look-creation-atlas/) · [本地网页](app/index.html) · [研究笔记](research/notes.md) · [私有原图备份](https://github.com/yydshly/pose-look-reference-backup)\n\n![姿势与衣装参考的能力、作用与产品目标](assets/images/research-overview-public-v3.png)\n\n图：沿用用户选定的素材回忆图版式和已有探索效果。公开版将源库姿势线稿与衣装预告缩略换为原创几何示意；含原素材的完整记忆图继续放在本地私人入口。姿势与服装示意不是原库图片，精确输入以记录为准。[公开引导图编辑记录](app/media/research-overview-v3/manifest.json)。图中底部原图许可提醒适用于原库图像数据，当前公开图的源库图形已替换为示意。\n\n| 来源 | 已确认能力 | 对创作的作用 | 资源状态 |\n| --- | --- | --- | --- |\n| POSE-DB-01 姿势图库 | 分类检索、静态 PNG、同组已有视角对照 | 将身体动作、重心和构图方向变成外部 AI 可参考的图片 | 1,439 张原图、288 组已保存到本地与私有备份；原图不公开再分发 |\n| 衣装参考预告与作者演示 | 约 1,000 套的制作预告；人物、服装、姿势多参考生图演示 | 提供“穿什么”的造型目标，辅助换装、婚纱和展示方案 | 只取得一张预告拼图；完整图库、开放下载与商用条款未确认 |\n\n两者提供素材条件；它们自身不运行生图模型。人物身份、服装细节和姿势跟随取决于外部模型及流程。中文 GitHub 镜像增加汉化与检索，代码许可不自动覆盖原图。\n\n| 项目 | 内容 |\n| --- | --- |\n| 编号 | 011 |\n| 收录与核对日期 | 2026-10-29，Asia/Shanghai |\n| 当前阶段 | 原库资料与本地工作台已整理；六张主题写真候选、选片方案与五个产品方向已接入，稳定性与真人还原仍待验证 |\n| 实现 | 无第三方依赖的 HTML / CSS / JavaScript；无需构建 |\n| 上游研究版本 | 10 个项目固定 commit，见[快照清单](app/archive/manifest.json) |\n| 原图资源 | 1,439 张原尺寸 PNG，288 组姿势，637.57 MiB；不放入公开研究库 |\n| 源库资料 | 28 份说明、许可与少量导出实现，合计 530.2 KiB |\n| 授权 | 代码、原图、模型和附加人物分别核对；保留原文许可 |\n| 在线演示 | 已发布并核验：[原库研究主线](https://yydshly.github.io/1025_codex_project/011-pose-look-creation-atlas/) |\n\n## 网页结构\n\n**一图总览（#overview）**\n\n[打开本地图解](http://127.0.0.1:8011/app/#overview) · [下载 PNG](app/media/research-overview-v1/overview.png) · [完整生成指令与资料依据](app/media/research-overview-v1/manifest.json)\n\n![姿势参考库：资源、能力与产品方向](app/media/research-overview-v1/overview.png)\n\n以“资源 → 参考如何起作用 → 产品目标”汇总原库理解：区分完整姿势原图、仅有预告的服装资源、外部生成模型与工作流，以及五个方向的实际进度。图中说明价值目标、视频与真实 3D 的缺口、许可边界和验证方法。上图为 1536×1024 的文字总览 v1，图标为示意图形，未复制原库图片。\n\n**本地默认新增「素材与效果版 v2」**：在图中嵌入 P015 扶腰原素材、衣装预告片段、对应庭院站姿结果和早期婚纱小样，便于回忆研究对象与探索。婚纱明确标为独立分支，衣装完整库仍未确认。AI 排版的缩略细节可能重绘，网页提供当前窗口切换查看各张原始资料与结果的入口。[本地查看](http://127.0.0.1:8011/app/#overview) · [输入、指令与哈希记录](app/media/research-overview-v2/manifest.json)。\n\n含原素材的合成图仅保存于 Git 忽略的 `.local/research-overview-v2/overview.png`，不放入公开 app 或公开截图。只有本机专用路由 `/local-media/research-overview-v2.png` 可展示；路由逐次核对 PNG、字节、尺寸和 SHA-256。无私人本地文件时，网页显示 v1 文字总览。网页均支持放大、滚动阅读与下载。v2 首次排版完成，第二次补坐姿因网络失败没有返回结果；交付图为 1448×1086，未包含坐姿补充。本轮未提交、推送或部署远端。\n\n**本地原图与创作方案（新增默认入口）**\n\n- 通过本机服务只读挂载已保存的 1,439 张原图、288 组姿势；不重复复制图片，不下载新资源。\n- 分类、中文与日文搜索、卡片内直接点选五视角、按需放大、原图另存、来源与哈希、收藏及五个自编专题。每张卡片独立切换，加入方案沿用当前视角；原站缺项会禁用标记。\n- 98 组姿势提供人工中文译名；其他保留原名与中文分类。动作特征标签由原始名称规则整理，不是图像识别结果。\n- 创作方案板支持按视角选图、排序、备注、草稿持久化、JSON 导出/合并导入和制作说明导出。\n- 三个可操作的产品流程原型：创作参考方案包、角色系列图制作计划、分镜与机位方案板。方案板本身不调用模型；另有使用真实原库输入生成的三姿势小样，尚未验证真实用户效率或付费价值。\n- 原库生成实测：默认亚洲女性手机随拍版，保留前两轮插画与摄影风格；可切换版本、放大人物基准/原姿势/结果，回查全部输入、指令、哈希和偏差。展示的是已保存结果，没有网页实时生图接口。\n\n方案保存图片引用、出处、哈希与备注，不内嵌原图。完整源索引通过本地接口读取，不进入公开 app 目录。包含原图的本次本地截图位于 `assets/images/local-v5/`，已排除 Git 跟踪；后续远端处理需区分工具代码、方案元数据与原图资产。\n\n**系列创作（#series）**\n\n- 五个方向：主题写真、穿搭与 Lookbook、婚纱造型、生活方式图文故事、职业与个人品牌；分别说明价值假设、交付物、输入、固定条件、变化、缺口和验证任务。\n- 《庭院午后》六镜头：环境开场、全身主图、半身表情、坐姿变化、动作变化、侧身结束。延续同一虚构成年亚洲女性、白 T 恤、牛仔裤、庭院与手机随拍视觉方向。\n- 新增三次生成，另三张引用手机随拍 v3 的原有文件；未重复复制。保留全部结果，开场与结束景别偏近的问题明确列为返修项。\n- 点击图片在当前窗口对照人物、原库姿势和结果，可连续切图，查看指令与来源；支持候选勾选、备注、浏览器保存、JSON 导出/导入和 Markdown 镜头说明导出。\n- 当前网页展示已生成结果，未接入实时生图；穿搭商品保真、真人还原、视频与 3D 没有因此得到验证。\n\n**主页面：原库研究**\n\n- 原始对象：两条分享各自指向什么，日文原站、中文转述与镜像的关系。\n- 保存状态：已取得的原图、服装预告、本地路径与私有远端入口，以及网页保留原站关联的原因。\n- 原库盘点与扩展研究：真实索引的分类、视角和尺寸统计；七个方向的交付、证据、缺口、验证方法与优先级。\n- 作者演示：人物、服装与姿势参考分别发挥什么作用，生成由哪一层执行。\n- 能力与价值：原库提供的素材/检索，外部模型和相关工具的边界，已确认事实和未验证效果。\n- 来源与备份：原帖、原站、条款、固定版本资料和私人原图备份。\n\n**独立分支：已有思路与实验**\n\n- 思路理解：通用参考生图原理，以及图片、视频、3D 的交付区别。\n- 自建实验：原有换装、庭院场景、姿势编辑对照，保留完整图片、指令、输入关联和偏差。\n- 产品场景：婚纱、换装、摄影、衣橱与店铺等八类方案。\n\n独立分支的交互脚本不在主页面加载；引导图用婚纱缩略效果记忆该分支，并明确标注。公开版默认进入研究总览，本地版默认 #gallery 展示原图与方案，#series 展示写真系列与五个应用方向，#products 定位原有方案板方向。旧的 #effects 与 #scenarios 链接会跳转至 branch.html；#understanding 仍指向原库研究。\n\n## 主线判断与证据边界\n\n原始姿势库提供静态、多角度、可筛选的参考 PNG；中文镜像增加汉化和检索。服装帖包含制作预告与作者在外部图像模型中的多参考图演示，完整衣装图库与授权未确认。\n\n原库的价值应从找图效率、目标表达、多角度参考和素材复用来判断。姿势跟随、身份保持、服装保真与成功率属于外部模型及工作流程的结果。目前已完成同一虚构人物的三姿势小样，并延伸为六张主题写真候选；尚未做纯文字对照、多次重复、数值身份相似度或真人身份还原验证，不能据此估计稳定成功率。\n\n自建婚纱图片和产品方案是另一层探索。它们已移入分支，不能替代原库效果、资源可用性或授权的核对。\n\n## 原库盘点与实际扩展研究\n\n本次对已保存的索引、清单及原图目录做只读盘点，不安装检测器、不下载权重，也不重新生图。[资源盘点](research/resource-audit-v4.json)记录了字段、分组、视角、尺寸和清单哈希；[扩展研究](research/extension-directions-v4.json)记录每个方向的依据与验收方法。网页中可直接展开阅读，也可下载[汇总 JSON](app/resource-research.json)。\n\n[保存状态的网页截图](assets/images/resources-status-v4.jpg) · [本次网页核验](research/resource-research-v4-checks.json)\n\n- 1,439 张原图全部为 900×1200；288 组中，287 组有五个视角，一组有四个视角。缺项是原索引的“全身1人・セクシー系 / P018 / 下から”，不是下载遗漏。\n- 1,439 个图像哈希各不相同，但同组的不同视角不等于不同姿势。\n- 原索引八个字段提供分类、名称、视角与图片地址，没有关节点坐标、相机标定或动作时序。\n- v4 为资源保存状态快照；当前本地版通过服务只读挂载原图，已经可直接浏览和做方案。原站链接继续用于溯源与核对条款。\n\n| 优先级 | 方向 | 当前判断 |\n| --- | --- | --- |\n| P0 | 私有本地图册、项目收藏与备注 | 本地原型已实现；仍需比对现成镜像和文件夹的找图效率 |\n| P1 | 原库参考效果对照评测 | 已做三姿势小样；保留全部输出与偏差，严格对照和多次重复未执行 |\n| P1 | 姿势控制图和可复用模板 | 官方技术路线存在；灰色线稿、手部及双人检测质量未验证 |\n| P1 | 虚构角色和插画构图方案 | 可利用多角度与标签；需验证能否减少选图和沟通成本 |\n| P2 | 3D 摆姿、机位与跨软件交付 | 需要外部模型、骨架与导出流程；原库本身不含真实 3D |\n| P2 | 分镜、关键画面与视频延伸 | 静态图能辅助规划；连续动作与视频需额外数据及验证 |\n| 暂不推进 | 公开原图镜像、素材转售或训练包 | 图片再分发受限；训练用途未确认，不能从代码许可推断 |\n\n这些是研究方向，不是已上线功能或已证明的商业机会。真人婚纱、换装等继续放在分支，并应更换为适当授权的参考素材。\n\n## 来源与许可\n\n起点是[中文姿势库转述](https://x.com/leo_xiaolei/status/2114971707962536302)与[原作者服装库预告](https://x.com/giaaibusi/status/2115431641766359244)。[日文姿势库原站](https://ai-pose-gallery.pages.dev/)提供原尺寸 PNG；[中文镜像](https://github.com/anhao/ai-pose-gallery-zh)主要增加中文检索和整理。\n\n- 原站允许免费使用，允许符合条款的作品制作商用、编辑与参考；禁止图片数据本身的再分发、转载和转售，原尺寸及加工后图片都在其范围内。\n- 原站另写有“不要用于表达实际人物或未成年人的用途”等限制。真人婚纱/换装应使用自己的或适当授权的姿势参考，不能自动套用这套图库。\n- 中文镜像的 MIT 只适用于代码，明确排除图片和原始数据；镜像又声明素材不得商用。不能把仓库标签当作整包素材的授权。\n- 服装库约 1,000 张是制作预告。已保留一张原始预告拼图；截至核对时未确认完整图库入口与商用条款。\n- 源码许可不覆盖所有检查点、数据、人物资产、示例模型和服务。各上游原文随快照保留，快照不扩大授权。\n\n原图只在本人可访问的私有仓库保存，不通过本研究库、GitHub Pages、Releases 或公开图库再次分发。个人备份不产生新的使用权。\n\n## 原库三姿势实测 · 亚洲女性手机随拍版\n\n[本地对照页](http://127.0.0.1:8011/app/#pilot) · [当前手机随拍版完整输入与指令](app/media/pose-pilot-v3/manifest.json) · [前轮摄影版](app/media/pose-pilot-v2/manifest.json) · [插画旧版记录](app/media/pose-pilot-v1/manifest.json) · [观察与范围](research/pose-pilot-review.md)\n\n使用原库 `full_single_P015_front`、`full_single_P019_front`、`full_single_P012_front`，分别测试扶腰、双臂上伸和坐姿托腮。每一版生成一张人物基准，再各自从相同基准与对应原图生成三个结果；每个配置一次。按用户反馈，先后保留插画版、自然光摄影版，并新增成年亚洲女性的日常庭院手机随拍方向：白 T 恤、牛仔裤、普通光线和手持构图。三版共 12 次内置 ImageGen 调用、12 张 PNG；模型版本和随机种子未由工具报告。\n\n定性目测：主要动作与支撑关系可辨，人物特征、衣服类型与主色延续；腰胯、脚尖、袖口、口袋、鞋形和面部细节仍有重绘。全部结果保留，不按三张小样推断稳定成功率。\n\n人物基准和图片均由 AI 生成，没有真人照片，也不是实际手机拍摄。手机随拍是视觉方向；需要具体人物还原时，应准备其本人照片与适当授权的姿势素材，再独立检查身份与身体特征。本次没有生成视频、3D 或进行真实商品试穿验收。\n\n## 六张《庭院午后》系列 · 2026-10-29\n\n[本地展示](http://127.0.0.1:8011/app/#series) · [逐张输入、完整指令与哈希](app/media/courtyard-series-v1/manifest.json) · [研究与观察](research/courtyard-series-v1.md)\n\n![六张写真系列的本地创作页](assets/images/courtyard-series-v1-overview.png)\n\n从手机随拍 v3 的三张动作结果向系列内容延伸，新增环境开场、半身表情、侧身结束三张。新增资产 3 张、3 次内置 ImageGen 调用；其余 3 张和人物基准直接引用 v3 文件。未生成视频或 3D；此次发布公开展示这些已保存结果。\n\n这组支持“姿势参考 + 镜头目的 + 固定人物和场景”的流程探索；目前可见动作、景别和观看节奏的变化。开场人物约占画面一半，未达到约三分之一的目标；结束图也仍偏近。背景几何、面部、手指和服装细节没有逐点锁定，不能当作稳定身份保持、真实机位控制或商业成片质量的证明。\n\n选片草稿使用独立浏览器存储，不改动原图库的创作方案。导出包含图片路径、姿势出处、哈希、指令和备注，不包含原图字节。各方向的收益仍是待验证假设。\n\n## 备份与可恢复性\n\n- 本地原图：E:/PersonalBackups/PoseLookReferences/pose-db-20261029\n- 私有远端：[yydshly/pose-look-reference-backup](https://github.com/yydshly/pose-look-reference-backup)。需要仓库权限，无权限可能显示 404。\n- [备份摘要](research/original-backup-summary.json)只含数量、来源、清单哈希、私有仓库链接及核验状态，没有原图。\n- 私有目录含逐文件 SHA-256、大小、尺寸、原始 URL、日文索引、抓取时原站 HTML，以及服装预告拼图的来源与哈希。\n- 私有仓库的 research-project/ 同时保存本研究网页、笔记、截图与脚本快照；research-project-snapshot.json 记录逐文件 SHA-256。网页展示的固定提交是原图核验版本，研究快照在 main 中继续保留。\n- 资料快照按固定 commit 保存，文件追加 .txt 后缀供静态查看；内容字节不变，原路径和 SHA-256 在清单中。\n\n校验全部本地原图：\n\n~~~powershell\npython -X utf8 scripts/verify-originals.py E:/PersonalBackups/PoseLookReferences/pose-db-20261029\n~~~\n\n核对远端私有 Git 树及每个 blob 与本地字节是否一致（需要已登录的 GitHub CLI，不下载另一份完整图片）：\n\n~~~powershell\npython -X utf8 scripts/verify-private-remote.py E:/PersonalBackups/PoseLookReferences/pose-db-20261029\n~~~\n\n恢复时从私有仓库克隆，再运行其中的 verify-originals.py。不要把它改为公开仓库或发布原图。备份脚本不安装/运行上游软件，不下载权重；抓取脚本只用于明确授权的私人备份，重复执行会复用已存在的有效 PNG。来源数量变化会停止抓取，需先核对。\n\n## 本地使用与检查\n\n原图工作台需要 Node.js 22+ 的本地服务；双击静态 HTML 无法访问原图目录。前台启动：\n\n~~~powershell\ncd E:/codex_project/1025_codex_project/projects/011-pose-look-creation-atlas\nnpm.cmd run dev\n~~~\n\n打开 http://127.0.0.1:8011/app/#gallery 。无需安装依赖，仅绑定 127.0.0.1。默认读取 E:/PersonalBackups/PoseLookReferences/pose-db-20261029，可在启动前设置 POSE_LOOK_LIBRARY 为另一份完整备份根目录；POSE_LOOK_PORT 可指定端口。\n\nWindows 后台启动/停止（只管理本工作台进程，不注册系统自启动）：\n\n~~~powershell\nnpm.cmd run start:local\nnpm.cmd run stop:local\n~~~\n\n启动脚本、日志和进程记录仅在本项目 `.local/`，此目录不进入 Git。重复启动会复用已有服务。其他机器需要先取得有权限的原图备份，再指定目录；公开静态站不会自动得到本机图片。\n\n~~~powershell\nnpm.cmd run check\nnpm.cmd run archive:verify\nnpm.cmd run test:local\n~~~\n\n根目录另运行 npm.cmd run check。交互结果见[网页核验](research/web-verification.json)。本轮没有重新执行上游模型或安装依赖。\n\n本轮本地工作台的目标和产品判断见[本地版记录](research/local-workspace-v5.md)，交互、实际导出文件及访问边界见[核验记录](research/local-workspace-v5-checks.json)。源码准备保留在本地，后续再统一处理 GitHub 提交、素材关联与部署。\n\n## 有限实测与限制\n\n此前的[导出实验记录](app/evidence/export-experiment.json)：Mannequin GLB 为网格层级，0 蒙皮/动画/相机；MPFB + Blender 测试 GLB 含 1 蒙皮、1 动画、1 相机，回读得到 53 骨骼且顶点随动画变化。只证明同一 Blender 的有限回读。焦距数值变化，视场角是否等价尚未核对；未证明其他 DCC 或游戏引擎兼容。\n\n其余工具主要是文档与选定代码调研。新增的小样本说明参考编辑可用于表达换装、场景与动作目标；不能据此推断真实商品还原率、稳定成功率或商业收益。\n\n## 扩展分支\n\n[思路理解、生图实验与产品场景](research/extension-branch.md)已单独保存，在[在线分支页](https://yydshly.github.io/1025_codex_project/011-pose-look-creation-atlas/branch.html#thinking)查看。既有 7 次 ImageGen 调用、8 张输入/结果图、自绘姿势源文件、完整提示词与偏差记录保持不变。\n\n",
       "passages": [
         {
           "path": "projects/011-pose-look-creation-atlas/README.md",
           "startLine": 1,
           "endLine": 1,
-          "text": "# 011 · 姿势与服装参考库 · 来源与能力研究"
+          "text": "# 011 · 姿势与衣装参考 · 能力、作用与产品探索"
         },
         {
           "path": "projects/011-pose-look-creation-atlas/README.md",
           "startLine": 3,
           "endLine": 3,
-          "text": "> 主线研究原始图库、作者演示、素材与模型的能力边界、授权及价值。已有通用生图实验和产品思路保留为独立扩展分支。"
+          "text": "> 两个来源分别承担“表达怎么摆姿势”和“表达穿什么”的作用。POSE-DB-01 是静态姿势参考站；衣装分享目前是图库预告和作者的多参考生图演示。生成由外部模型完成，我们在网页中区分原库事实、实际小样和产品设想。"
         },
         {
           "path": "projects/011-pose-look-creation-atlas/README.md",
           "startLine": 5,
           "endLine": 5,
-          "text": "[返回总索引](../../README.md#项目索引) · [在线原库研究](https://yydshly.github.io/1025_codex_project/011-pose-look-creation-atlas/) · [本地网页](app/index.html) · [研究笔记](research/notes.md) · [私有原图备份](https://github.com/yydshly/pose-look-reference-backup)"
+          "text": "> **网页内容**：[研究总览](https://yydshly.github.io/1025_codex_project/011-pose-look-creation-atlas/#overview) · [系列写真与五个方向](https://yydshly.github.io/1025_codex_project/011-pose-look-creation-atlas/#series) · [两个来源的详细研究](https://yydshly.github.io/1025_codex_project/011-pose-look-creation-atlas/#understanding)。公开版保留生成小样、选片、备注和方案导出；[本地版](http://127.0.0.1:8011/app/#gallery)另提供原图浏览、五视角、收藏与私人素材记忆图。"
         },
         {
           "path": "projects/011-pose-look-creation-atlas/README.md",
           "startLine": 7,
           "endLine": 7,
-          "text": "![原始图库研究主线](assets/images/source-overview-v3.jpg)"
+          "text": "[返回总索引](../../README.md#项目索引) · [在线原库研究](https://yydshly.github.io/1025_codex_project/011-pose-look-creation-atlas/) · [本地网页](app/index.html) · [研究笔记](research/notes.md) · [私有原图备份](https://github.com/yydshly/pose-look-reference-backup)"
         },
         {
           "path": "projects/011-pose-look-creation-atlas/README.md",
           "startLine": 9,
           "endLine": 9,
-          "text": "图：主线首页，区分原始姿势图库和服装预告/作者演示。已有生图图片在独立分支中保留。"
+          "text": "![姿势与衣装参考的能力、作用与产品目标](assets/images/research-overview-public-v3.png)"
         },
         {
           "path": "projects/011-pose-look-creation-atlas/README.md",
           "startLine": 11,
-          "endLine": 18,
-          "text": "| 项目 | 内容 |\n| --- | --- |\n| 编号 | 011 |\n| 收录与核对日期 | 2026-10-29，Asia/Shanghai |\n| 当前阶段 | 原库资料、来源与边界已整理；原库控制效果尚未独立实测。扩展实验另列 |\n| 实现 | 无第三方依赖的 HTML / CSS / JavaScript；无需构建 |\n| 上游研究版本 | 10 个项目固定 commit，见[快照清单](app/archive/manifest.json) |\n| 原图资源 | 1,439 张原尺寸 PNG，288 组姿势，637.57 MiB；不放入公开研究库 |"
+          "endLine": 11,
+          "text": "图：沿用用户选定的素材回忆图版式和已有探索效果。公开版将源库姿势线稿与衣装预告缩略换为原创几何示意；含原素材的完整记忆图继续放在本地私人入口。姿势与服装示意不是原库图片，精确输入以记录为准。[公开引导图编辑记录](app/media/research-overview-v3/manifest.json)。图中底部原图许可提醒适用于原库图像数据，当前公开图的源库图形已替换为示意。"
         },
         {
           "path": "projects/011-pose-look-creation-atlas/README.md",
-          "startLine": 19,
-          "endLine": 21,
+          "startLine": 13,
+          "endLine": 16,
+          "text": "| 来源 | 已确认能力 | 对创作的作用 | 资源状态 |\n| --- | --- | --- | --- |\n| POSE-DB-01 姿势图库 | 分类检索、静态 PNG、同组已有视角对照 | 将身体动作、重心和构图方向变成外部 AI 可参考的图片 | 1,439 张原图、288 组已保存到本地与私有备份；原图不公开再分发 |\n| 衣装参考预告与作者演示 | 约 1,000 套的制作预告；人物、服装、姿势多参考生图演示 | 提供“穿什么”的造型目标，辅助换装、婚纱和展示方案 | 只取得一张预告拼图；完整图库、开放下载与商用条款未确认 |"
+        },
+        {
+          "path": "projects/011-pose-look-creation-atlas/README.md",
+          "startLine": 18,
+          "endLine": 18,
+          "text": "两者提供素材条件；它们自身不运行生图模型。人物身份、服装细节和姿势跟随取决于外部模型及流程。中文 GitHub 镜像增加汉化与检索，代码许可不自动覆盖原图。"
+        },
+        {
+          "path": "projects/011-pose-look-creation-atlas/README.md",
+          "startLine": 20,
+          "endLine": 27,
+          "text": "| 项目 | 内容 |\n| --- | --- |\n| 编号 | 011 |\n| 收录与核对日期 | 2026-10-29，Asia/Shanghai |\n| 当前阶段 | 原库资料与本地工作台已整理；六张主题写真候选、选片方案与五个产品方向已接入，稳定性与真人还原仍待验证 |\n| 实现 | 无第三方依赖的 HTML / CSS / JavaScript；无需构建 |\n| 上游研究版本 | 10 个项目固定 commit，见[快照清单](app/archive/manifest.json) |\n| 原图资源 | 1,439 张原尺寸 PNG，288 组姿势，637.57 MiB；不放入公开研究库 |"
+        },
+        {
+          "path": "projects/011-pose-look-creation-atlas/README.md",
+          "startLine": 28,
+          "endLine": 30,
           "text": "| 源库资料 | 28 份说明、许可与少量导出实现，合计 530.2 KiB |\n| 授权 | 代码、原图、模型和附加人物分别核对；保留原文许可 |\n| 在线演示 | 已发布并核验：[原库研究主线](https://yydshly.github.io/1025_codex_project/011-pose-look-creation-atlas/) |"
         },
         {
           "path": "projects/011-pose-look-creation-atlas/README.md",
-          "startLine": 23,
-          "endLine": 23,
-          "text": "## 网页结构"
-        },
-        {
-          "path": "projects/011-pose-look-creation-atlas/README.md",
-          "startLine": 25,
-          "endLine": 25,
-          "text": "**主页面：原库研究**"
-        },
-        {
-          "path": "projects/011-pose-look-creation-atlas/README.md",
-          "startLine": 27,
+          "startLine": 32,
           "endLine": 32,
-          "text": "- 原始对象：两条分享各自指向什么，日文原站、中文转述与镜像的关系。\n- 保存状态：已取得的原图、服装预告、本地路径与私有远端入口，以及网页保留原站关联的原因。\n- 原库盘点与扩展研究：真实索引的分类、视角和尺寸统计；七个方向的交付、证据、缺口、验证方法与优先级。\n- 作者演示：人物、服装与姿势参考分别发挥什么作用，生成由哪一层执行。\n- 能力与价值：原库提供的素材/检索，外部模型和相关工具的边界，已确认事实和未验证效果。\n- 来源与备份：原帖、原站、条款、固定版本资料和私人原图备份。"
+          "text": "## 网页结构"
         },
         {
           "path": "projects/011-pose-look-creation-atlas/README.md",
           "startLine": 34,
           "endLine": 34,
-          "text": "**独立分支：已有思路与实验**"
+          "text": "**一图总览（#overview）**"
         },
         {
           "path": "projects/011-pose-look-creation-atlas/README.md",
           "startLine": 36,
+          "endLine": 36,
+          "text": "[打开本地图解](http://127.0.0.1:8011/app/#overview) · [下载 PNG](app/media/research-overview-v1/overview.png) · [完整生成指令与资料依据](app/media/research-overview-v1/manifest.json)"
+        },
+        {
+          "path": "projects/011-pose-look-creation-atlas/README.md",
+          "startLine": 38,
           "endLine": 38,
-          "text": "- 思路理解：通用参考生图原理，以及图片、视频、3D 的交付区别。\n- 自建实验：原有换装、庭院场景、姿势编辑对照，保留完整图片、指令、输入关联和偏差。\n- 产品场景：婚纱、换装、摄影、衣橱与店铺等八类方案。"
+          "text": "![姿势参考库：资源、能力与产品方向](app/media/research-overview-v1/overview.png)"
         },
         {
           "path": "projects/011-pose-look-creation-atlas/README.md",
           "startLine": 40,
           "endLine": 40,
-          "text": "主页面不加载分支的生图图片或实验脚本。旧的 #effects 与 #scenarios 链接会跳转至 branch.html 的对应模块；#understanding 仍指向原库主线。"
+          "text": "以“资源 → 参考如何起作用 → 产品目标”汇总原库理解：区分完整姿势原图、仅有预告的服装资源、外部生成模型与工作流，以及五个方向的实际进度。图中说明价值目标、视频与真实 3D 的缺口、许可边界和验证方法。上图为 1536×1024 的文字总览 v1，图标为示意图形，未复制原库图片。"
         },
         {
           "path": "projects/011-pose-look-creation-atlas/README.md",
           "startLine": 42,
           "endLine": 42,
-          "text": "## 主线判断与证据边界"
+          "text": "**本地默认新增「素材与效果版 v2」**：在图中嵌入 P015 扶腰原素材、衣装预告片段、对应庭院站姿结果和早期婚纱小样，便于回忆研究对象与探索。婚纱明确标为独立分支，衣装完整库仍未确认。AI 排版的缩略细节可能重绘，网页提供当前窗口切换查看各张原始资料与结果的入口。[本地查看](http://127.0.0.1:8011/app/#overview) · [输入、指令与哈希记录](app/media/research-overview-v2/manifest.json)。"
         },
         {
           "path": "projects/011-pose-look-creation-atlas/README.md",
           "startLine": 44,
           "endLine": 44,
-          "text": "原始姿势库提供静态、多角度、可筛选的参考 PNG；中文镜像增加汉化和检索。服装帖包含制作预告与作者在外部图像模型中的多参考图演示，完整衣装图库与授权未确认。"
+          "text": "含原素材的合成图仅保存于 Git 忽略的 `.local/research-overview-v2/overview.png`，不放入公开 app 或公开截图。只有本机专用路由 `/local-media/research-overview-v2.png` 可展示；路由逐次核对 PNG、字节、尺寸和 SHA-256。无私人本地文件时，网页显示 v1 文字总览。网页均支持放大、滚动阅读与下载。v2 首次排版完成，第二次补坐姿因网络失败没有返回结果；交付图为 1448×1086，未包含坐姿补充。本轮未提交、推送或部署远端。"
         },
         {
           "path": "projects/011-pose-look-creation-atlas/README.md",
           "startLine": 46,
           "endLine": 46,
-          "text": "原库的价值应从找图效率、目标表达、多角度参考和素材复用来判断。姿势跟随、身份保持、服装保真与成功率属于外部模型及工作流程的结果，需要用原库本身做对照验证。目前尚未完成这样的独立验证。"
+          "text": "**本地原图与创作方案（新增默认入口）**"
         },
         {
           "path": "projects/011-pose-look-creation-atlas/README.md",
           "startLine": 48,
-          "endLine": 48,
+          "endLine": 53,
+          "text": "- 通过本机服务只读挂载已保存的 1,439 张原图、288 组姿势；不重复复制图片，不下载新资源。\n- 分类、中文与日文搜索、卡片内直接点选五视角、按需放大、原图另存、来源与哈希、收藏及五个自编专题。每张卡片独立切换，加入方案沿用当前视角；原站缺项会禁用标记。\n- 98 组姿势提供人工中文译名；其他保留原名与中文分类。动作特征标签由原始名称规则整理，不是图像识别结果。\n- 创作方案板支持按视角选图、排序、备注、草稿持久化、JSON 导出/合并导入和制作说明导出。\n- 三个可操作的产品流程原型：创作参考方案包、角色系列图制作计划、分镜与机位方案板。方案板本身不调用模型；另有使用真实原库输入生成的三姿势小样，尚未验证真实用户效率或付费价值。\n- 原库生成实测：默认亚洲女性手机随拍版，保留前两轮插画与摄影风格；可切换版本、放大人物基准/原姿势/结果，回查全部输入、指令、哈希和偏差。展示的是已保存结果，没有网页实时生图接口。"
+        },
+        {
+          "path": "projects/011-pose-look-creation-atlas/README.md",
+          "startLine": 55,
+          "endLine": 55,
+          "text": "方案保存图片引用、出处、哈希与备注，不内嵌原图。完整源索引通过本地接口读取，不进入公开 app 目录。包含原图的本次本地截图位于 `assets/images/local-v5/`，已排除 Git 跟踪；后续远端处理需区分工具代码、方案元数据与原图资产。"
+        },
+        {
+          "path": "projects/011-pose-look-creation-atlas/README.md",
+          "startLine": 57,
+          "endLine": 57,
+          "text": "**系列创作（#series）**"
+        },
+        {
+          "path": "projects/011-pose-look-creation-atlas/README.md",
+          "startLine": 59,
+          "endLine": 63,
+          "text": "- 五个方向：主题写真、穿搭与 Lookbook、婚纱造型、生活方式图文故事、职业与个人品牌；分别说明价值假设、交付物、输入、固定条件、变化、缺口和验证任务。\n- 《庭院午后》六镜头：环境开场、全身主图、半身表情、坐姿变化、动作变化、侧身结束。延续同一虚构成年亚洲女性、白 T 恤、牛仔裤、庭院与手机随拍视觉方向。\n- 新增三次生成，另三张引用手机随拍 v3 的原有文件；未重复复制。保留全部结果，开场与结束景别偏近的问题明确列为返修项。\n- 点击图片在当前窗口对照人物、原库姿势和结果，可连续切图，查看指令与来源；支持候选勾选、备注、浏览器保存、JSON 导出/导入和 Markdown 镜头说明导出。\n- 当前网页展示已生成结果，未接入实时生图；穿搭商品保真、真人还原、视频与 3D 没有因此得到验证。"
+        },
+        {
+          "path": "projects/011-pose-look-creation-atlas/README.md",
+          "startLine": 65,
+          "endLine": 65,
+          "text": "**主页面：原库研究**"
+        },
+        {
+          "path": "projects/011-pose-look-creation-atlas/README.md",
+          "startLine": 67,
+          "endLine": 72,
+          "text": "- 原始对象：两条分享各自指向什么，日文原站、中文转述与镜像的关系。\n- 保存状态：已取得的原图、服装预告、本地路径与私有远端入口，以及网页保留原站关联的原因。\n- 原库盘点与扩展研究：真实索引的分类、视角和尺寸统计；七个方向的交付、证据、缺口、验证方法与优先级。\n- 作者演示：人物、服装与姿势参考分别发挥什么作用，生成由哪一层执行。\n- 能力与价值：原库提供的素材/检索，外部模型和相关工具的边界，已确认事实和未验证效果。\n- 来源与备份：原帖、原站、条款、固定版本资料和私人原图备份。"
+        },
+        {
+          "path": "projects/011-pose-look-creation-atlas/README.md",
+          "startLine": 74,
+          "endLine": 74,
+          "text": "**独立分支：已有思路与实验**"
+        },
+        {
+          "path": "projects/011-pose-look-creation-atlas/README.md",
+          "startLine": 76,
+          "endLine": 78,
+          "text": "- 思路理解：通用参考生图原理，以及图片、视频、3D 的交付区别。\n- 自建实验：原有换装、庭院场景、姿势编辑对照，保留完整图片、指令、输入关联和偏差。\n- 产品场景：婚纱、换装、摄影、衣橱与店铺等八类方案。"
+        },
+        {
+          "path": "projects/011-pose-look-creation-atlas/README.md",
+          "startLine": 80,
+          "endLine": 80,
+          "text": "独立分支的交互脚本不在主页面加载；引导图用婚纱缩略效果记忆该分支，并明确标注。公开版默认进入研究总览，本地版默认 #gallery 展示原图与方案，#series 展示写真系列与五个应用方向，#products 定位原有方案板方向。旧的 #effects 与 #scenarios 链接会跳转至 branch.html；#understanding 仍指向原库研究。"
+        },
+        {
+          "path": "projects/011-pose-look-creation-atlas/README.md",
+          "startLine": 82,
+          "endLine": 82,
+          "text": "## 主线判断与证据边界"
+        },
+        {
+          "path": "projects/011-pose-look-creation-atlas/README.md",
+          "startLine": 84,
+          "endLine": 84,
+          "text": "原始姿势库提供静态、多角度、可筛选的参考 PNG；中文镜像增加汉化和检索。服装帖包含制作预告与作者在外部图像模型中的多参考图演示，完整衣装图库与授权未确认。"
+        },
+        {
+          "path": "projects/011-pose-look-creation-atlas/README.md",
+          "startLine": 86,
+          "endLine": 86,
+          "text": "原库的价值应从找图效率、目标表达、多角度参考和素材复用来判断。姿势跟随、身份保持、服装保真与成功率属于外部模型及工作流程的结果。目前已完成同一虚构人物的三姿势小样，并延伸为六张主题写真候选；尚未做纯文字对照、多次重复、数值身份相似度或真人身份还原验证，不能据此估计稳定成功率。"
+        },
+        {
+          "path": "projects/011-pose-look-creation-atlas/README.md",
+          "startLine": 88,
+          "endLine": 88,
           "text": "自建婚纱图片和产品方案是另一层探索。它们已移入分支，不能替代原库效果、资源可用性或授权的核对。"
         },
         {
           "path": "projects/011-pose-look-creation-atlas/README.md",
-          "startLine": 50,
-          "endLine": 50,
+          "startLine": 90,
+          "endLine": 90,
           "text": "## 原库盘点与实际扩展研究"
         },
         {
           "path": "projects/011-pose-look-creation-atlas/README.md",
-          "startLine": 52,
-          "endLine": 52,
-          "text": "本次对已保存的索引、清单及原图目录做只读盘点，不安装检测器、不下载权重，也不重新生图。[资源盘点](research/resource-audit-v4.json)记录了字段、分组、视角、尺寸和清单哈希；[扩展研究](research/extension-directions-v4.json)记录每个方向的依据与验收方法。网页中可直接展开阅读，也可下载[汇总 JSON](app/resource-research.json)。"
-        },
-        {
-          "path": "projects/011-pose-look-creation-atlas/README.md",
-          "startLine": 54,
-          "endLine": 54,
-          "text": "[保存状态的网页截图](assets/images/resources-status-v4.jpg) · [本次网页核验](research/resource-research-v4-checks.json)"
-        },
-        {
-          "path": "projects/011-pose-look-creation-atlas/README.md",
-          "startLine": 56,
-          "endLine": 59,
-          "text": "- 1,439 张原图全部为 900×1200；288 组中，287 组有五个视角，一组有四个视角。缺项是原索引的“全身1人・セクシー系 / P018 / 下から”，不是下载遗漏。\n- 1,439 个图像哈希各不相同，但同组的不同视角不等于不同姿势。\n- 原索引八个字段提供分类、名称、视角与图片地址，没有关节点坐标、相机标定或动作时序。\n- 网页展示保存状态快照和路径，不实时读取磁盘；私人本地图册尚未实现。原站链接用于溯源、核对条款和查看原始素材，不能据此判断尚未下载。"
-        },
-        {
-          "path": "projects/011-pose-look-creation-atlas/README.md",
-          "startLine": 61,
-          "endLine": 68,
-          "text": "| 优先级 | 方向 | 当前判断 |\n| --- | --- | --- |\n| P0 | 私有本地图册、项目收藏与备注 | 资源基础已具备；先比对现成镜像和文件夹的找图效率，避免重复建设 |\n| P1 | 原库参考效果对照评测 | 最直接验证原库价值；保留全部尝试、偏差、耗时与返修，尚未执行 |\n| P1 | 姿势控制图和可复用模板 | 官方技术路线存在；灰色线稿、手部及双人检测质量未验证 |\n| P1 | 虚构角色和插画构图方案 | 可利用多角度与标签；需验证能否减少选图和沟通成本 |\n| P2 | 3D 摆姿、机位与跨软件交付 | 需要外部模型、骨架与导出流程；原库本身不含真实 3D |\n| P2 | 分镜、关键画面与视频延伸 | 静态图能辅助规划；连续动作与视频需额外数据及验证 |"
-        },
-        {
-          "path": "projects/011-pose-look-creation-atlas/README.md",
-          "startLine": 69,
-          "endLine": 69,
-          "text": "| 暂不推进 | 公开原图镜像、素材转售或训练包 | 图片再分发受限；训练用途未确认，不能从代码许可推断 |"
-        },
-        {
-          "path": "projects/011-pose-look-creation-atlas/README.md",
-          "startLine": 71,
-          "endLine": 71,
-          "text": "这些是研究方向，不是已上线功能或已证明的商业机会。真人婚纱、换装等继续放在分支，并应更换为适当授权的参考素材。"
-        },
-        {
-          "path": "projects/011-pose-look-creation-atlas/README.md",
-          "startLine": 73,
-          "endLine": 73,
-          "text": "## 来源与许可"
-        },
-        {
-          "path": "projects/011-pose-look-creation-atlas/README.md",
-          "startLine": 75,
-          "endLine": 75,
-          "text": "起点是[中文姿势库转述](https://x.com/leo_xiaolei/status/2114971707962536302)与[原作者服装库预告](https://x.com/giaaibusi/status/2115431641766359244)。[日文姿势库原站](https://ai-pose-gallery.pages.dev/)提供原尺寸 PNG；[中文镜像](https://github.com/anhao/ai-pose-gallery-zh)主要增加中文检索和整理。"
-        },
-        {
-          "path": "projects/011-pose-look-creation-atlas/README.md",
-          "startLine": 77,
-          "endLine": 81,
-          "text": "- 原站允许免费使用，允许符合条款的作品制作商用、编辑与参考；禁止图片数据本身的再分发、转载和转售，原尺寸及加工后图片都在其范围内。\n- 原站另写有“不要用于表达实际人物或未成年人的用途”等限制。真人婚纱/换装应使用自己的或适当授权的姿势参考，不能自动套用这套图库。\n- 中文镜像的 MIT 只适用于代码，明确排除图片和原始数据；镜像又声明素材不得商用。不能把仓库标签当作整包素材的授权。\n- 服装库约 1,000 张是制作预告。已保留一张原始预告拼图；截至核对时未确认完整图库入口与商用条款。\n- 源码许可不覆盖所有检查点、数据、人物资产、示例模型和服务。各上游原文随快照保留，快照不扩大授权。"
-        },
-        {
-          "path": "projects/011-pose-look-creation-atlas/README.md",
-          "startLine": 83,
-          "endLine": 83,
-          "text": "原图只在本人可访问的私有仓库保存，不通过本研究库、GitHub Pages、Releases 或公开图库再次分发。个人备份不产生新的使用权。"
-        },
-        {
-          "path": "projects/011-pose-look-creation-atlas/README.md",
-          "startLine": 85,
-          "endLine": 85,
-          "text": "## 备份与可恢复性"
-        },
-        {
-          "path": "projects/011-pose-look-creation-atlas/README.md",
-          "startLine": 87,
+          "startLine": 92,
           "endLine": 92,
-          "text": "- 本地原图：E:/PersonalBackups/PoseLookReferences/pose-db-20261029\n- 私有远端：[yydshly/pose-look-reference-backup](https://github.com/yydshly/pose-look-reference-backup)。需要仓库权限，无权限可能显示 404。\n- [备份摘要](research/original-backup-summary.json)只含数量、来源、清单哈希、私有仓库链接及核验状态，没有原图。\n- 私有目录含逐文件 SHA-256、大小、尺寸、原始 URL、日文索引、抓取时原站 HTML，以及服装预告拼图的来源与哈希。\n- 私有仓库的 research-project/ 同时保存本研究网页、笔记、截图与脚本快照；research-project-snapshot.json 记录逐文件 SHA-256。网页展示的固定提交是原图核验版本，研究快照在 main 中继续保留。\n- 资料快照按固定 commit 保存，文件追加 .txt 后缀供静态查看；内容字节不变，原路径和 SHA-256 在清单中。"
+          "text": "本次对已保存的索引、清单及原图目录做只读盘点，不安装检测器、不下载权重，也不重新生图。[资源盘点](research/resource-audit-v4.json)记录了字段、分组、视角、尺寸和清单哈希；[扩展研究](research/extension-directions-v4.json)记录每个方向的依据与验收方法。网页中可直接展开阅读，也可下载[汇总 JSON](app/resource-research.json)。"
         },
         {
           "path": "projects/011-pose-look-creation-atlas/README.md",
           "startLine": 94,
           "endLine": 94,
-          "text": "校验全部本地原图："
+          "text": "[保存状态的网页截图](assets/images/resources-status-v4.jpg) · [本次网页核验](research/resource-research-v4-checks.json)"
         },
         {
           "path": "projects/011-pose-look-creation-atlas/README.md",
           "startLine": 96,
-          "endLine": 98,
-          "text": "~~~powershell\npython -X utf8 scripts/verify-originals.py E:/PersonalBackups/PoseLookReferences/pose-db-20261029\n~~~"
+          "endLine": 99,
+          "text": "- 1,439 张原图全部为 900×1200；288 组中，287 组有五个视角，一组有四个视角。缺项是原索引的“全身1人・セクシー系 / P018 / 下から”，不是下载遗漏。\n- 1,439 个图像哈希各不相同，但同组的不同视角不等于不同姿势。\n- 原索引八个字段提供分类、名称、视角与图片地址，没有关节点坐标、相机标定或动作时序。\n- v4 为资源保存状态快照；当前本地版通过服务只读挂载原图，已经可直接浏览和做方案。原站链接继续用于溯源与核对条款。"
         },
         {
           "path": "projects/011-pose-look-creation-atlas/README.md",
-          "startLine": 100,
-          "endLine": 100,
-          "text": "核对远端私有 Git 树及每个 blob 与本地字节是否一致（需要已登录的 GitHub CLI，不下载另一份完整图片）："
-        },
-        {
-          "path": "projects/011-pose-look-creation-atlas/README.md",
-          "startLine": 102,
-          "endLine": 104,
-          "text": "~~~powershell\npython -X utf8 scripts/verify-private-remote.py E:/PersonalBackups/PoseLookReferences/pose-db-20261029\n~~~"
-        },
-        {
-          "path": "projects/011-pose-look-creation-atlas/README.md",
-          "startLine": 106,
-          "endLine": 106,
-          "text": "恢复时从私有仓库克隆，再运行其中的 verify-originals.py。不要把它改为公开仓库或发布原图。备份脚本不安装/运行上游软件，不下载权重；抓取脚本只用于明确授权的私人备份，重复执行会复用已存在的有效 PNG。来源数量变化会停止抓取，需先核对。"
-        },
-        {
-          "path": "projects/011-pose-look-creation-atlas/README.md",
-          "startLine": 108,
+          "startLine": 101,
           "endLine": 108,
-          "text": "## 本地使用与检查"
+          "text": "| 优先级 | 方向 | 当前判断 |\n| --- | --- | --- |\n| P0 | 私有本地图册、项目收藏与备注 | 本地原型已实现；仍需比对现成镜像和文件夹的找图效率 |\n| P1 | 原库参考效果对照评测 | 已做三姿势小样；保留全部输出与偏差，严格对照和多次重复未执行 |\n| P1 | 姿势控制图和可复用模板 | 官方技术路线存在；灰色线稿、手部及双人检测质量未验证 |\n| P1 | 虚构角色和插画构图方案 | 可利用多角度与标签；需验证能否减少选图和沟通成本 |\n| P2 | 3D 摆姿、机位与跨软件交付 | 需要外部模型、骨架与导出流程；原库本身不含真实 3D |\n| P2 | 分镜、关键画面与视频延伸 | 静态图能辅助规划；连续动作与视频需额外数据及验证 |"
         },
         {
           "path": "projects/011-pose-look-creation-atlas/README.md",
-          "startLine": 110,
-          "endLine": 110,
-          "text": "双击 app/index.html 可阅读和操作。推荐 Node.js 22+ 启动本地服务："
+          "startLine": 109,
+          "endLine": 109,
+          "text": "| 暂不推进 | 公开原图镜像、素材转售或训练包 | 图片再分发受限；训练用途未确认，不能从代码许可推断 |"
         },
         {
           "path": "projects/011-pose-look-creation-atlas/README.md",
-          "startLine": 112,
+          "startLine": 111,
+          "endLine": 111,
+          "text": "这些是研究方向，不是已上线功能或已证明的商业机会。真人婚纱、换装等继续放在分支，并应更换为适当授权的参考素材。"
+        },
+        {
+          "path": "projects/011-pose-look-creation-atlas/README.md",
+          "startLine": 113,
+          "endLine": 113,
+          "text": "## 来源与许可"
+        },
+        {
+          "path": "projects/011-pose-look-creation-atlas/README.md",
+          "startLine": 115,
           "endLine": 115,
-          "text": "~~~powershell\ncd E:/codex_project/1025_codex_project/projects/011-pose-look-creation-atlas\nnpm.cmd run dev\n~~~"
+          "text": "起点是[中文姿势库转述](https://x.com/leo_xiaolei/status/2114971707962536302)与[原作者服装库预告](https://x.com/giaaibusi/status/2115431641766359244)。[日文姿势库原站](https://ai-pose-gallery.pages.dev/)提供原尺寸 PNG；[中文镜像](https://github.com/anhao/ai-pose-gallery-zh)主要增加中文检索和整理。"
         },
         {
           "path": "projects/011-pose-look-creation-atlas/README.md",
           "startLine": 117,
-          "endLine": 117,
-          "text": "打开 http://127.0.0.1:8011/app/ 。可用 POSE_LOOK_PORT 指定端口；无需安装依赖，仅绑定本机；也可直接访问上方在线网页。"
+          "endLine": 121,
+          "text": "- 原站允许免费使用，允许符合条款的作品制作商用、编辑与参考；禁止图片数据本身的再分发、转载和转售，原尺寸及加工后图片都在其范围内。\n- 原站另写有“不要用于表达实际人物或未成年人的用途”等限制。真人婚纱/换装应使用自己的或适当授权的姿势参考，不能自动套用这套图库。\n- 中文镜像的 MIT 只适用于代码，明确排除图片和原始数据；镜像又声明素材不得商用。不能把仓库标签当作整包素材的授权。\n- 服装库约 1,000 张是制作预告。已保留一张原始预告拼图；截至核对时未确认完整图库入口与商用条款。\n- 源码许可不覆盖所有检查点、数据、人物资产、示例模型和服务。各上游原文随快照保留，快照不扩大授权。"
         },
         {
           "path": "projects/011-pose-look-creation-atlas/README.md",
-          "startLine": 119,
-          "endLine": 122,
-          "text": "~~~powershell\nnpm.cmd run check\nnpm.cmd run archive:verify\n~~~"
+          "startLine": 123,
+          "endLine": 123,
+          "text": "原图只在本人可访问的私有仓库保存，不通过本研究库、GitHub Pages、Releases 或公开图库再次分发。个人备份不产生新的使用权。"
         },
         {
           "path": "projects/011-pose-look-creation-atlas/README.md",
-          "startLine": 124,
-          "endLine": 124,
+          "startLine": 125,
+          "endLine": 125,
+          "text": "## 原库三姿势实测 · 亚洲女性手机随拍版"
+        },
+        {
+          "path": "projects/011-pose-look-creation-atlas/README.md",
+          "startLine": 127,
+          "endLine": 127,
+          "text": "[本地对照页](http://127.0.0.1:8011/app/#pilot) · [当前手机随拍版完整输入与指令](app/media/pose-pilot-v3/manifest.json) · [前轮摄影版](app/media/pose-pilot-v2/manifest.json) · [插画旧版记录](app/media/pose-pilot-v1/manifest.json) · [观察与范围](research/pose-pilot-review.md)"
+        },
+        {
+          "path": "projects/011-pose-look-creation-atlas/README.md",
+          "startLine": 129,
+          "endLine": 129,
+          "text": "使用原库 `full_single_P015_front`、`full_single_P019_front`、`full_single_P012_front`，分别测试扶腰、双臂上伸和坐姿托腮。每一版生成一张人物基准，再各自从相同基准与对应原图生成三个结果；每个配置一次。按用户反馈，先后保留插画版、自然光摄影版，并新增成年亚洲女性的日常庭院手机随拍方向：白 T 恤、牛仔裤、普通光线和手持构图。三版共 12 次内置 ImageGen 调用、12 张 PNG；模型版本和随机种子未由工具报告。"
+        },
+        {
+          "path": "projects/011-pose-look-creation-atlas/README.md",
+          "startLine": 131,
+          "endLine": 131,
+          "text": "定性目测：主要动作与支撑关系可辨，人物特征、衣服类型与主色延续；腰胯、脚尖、袖口、口袋、鞋形和面部细节仍有重绘。全部结果保留，不按三张小样推断稳定成功率。"
+        },
+        {
+          "path": "projects/011-pose-look-creation-atlas/README.md",
+          "startLine": 133,
+          "endLine": 133,
+          "text": "人物基准和图片均由 AI 生成，没有真人照片，也不是实际手机拍摄。手机随拍是视觉方向；需要具体人物还原时，应准备其本人照片与适当授权的姿势素材，再独立检查身份与身体特征。本次没有生成视频、3D 或进行真实商品试穿验收。"
+        },
+        {
+          "path": "projects/011-pose-look-creation-atlas/README.md",
+          "startLine": 135,
+          "endLine": 135,
+          "text": "## 六张《庭院午后》系列 · 2026-10-29"
+        },
+        {
+          "path": "projects/011-pose-look-creation-atlas/README.md",
+          "startLine": 137,
+          "endLine": 137,
+          "text": "[本地展示](http://127.0.0.1:8011/app/#series) · [逐张输入、完整指令与哈希](app/media/courtyard-series-v1/manifest.json) · [研究与观察](research/courtyard-series-v1.md)"
+        },
+        {
+          "path": "projects/011-pose-look-creation-atlas/README.md",
+          "startLine": 139,
+          "endLine": 139,
+          "text": "![六张写真系列的本地创作页](assets/images/courtyard-series-v1-overview.png)"
+        },
+        {
+          "path": "projects/011-pose-look-creation-atlas/README.md",
+          "startLine": 141,
+          "endLine": 141,
+          "text": "从手机随拍 v3 的三张动作结果向系列内容延伸，新增环境开场、半身表情、侧身结束三张。新增资产 3 张、3 次内置 ImageGen 调用；其余 3 张和人物基准直接引用 v3 文件。未生成视频或 3D；此次发布公开展示这些已保存结果。"
+        },
+        {
+          "path": "projects/011-pose-look-creation-atlas/README.md",
+          "startLine": 143,
+          "endLine": 143,
+          "text": "这组支持“姿势参考 + 镜头目的 + 固定人物和场景”的流程探索；目前可见动作、景别和观看节奏的变化。开场人物约占画面一半，未达到约三分之一的目标；结束图也仍偏近。背景几何、面部、手指和服装细节没有逐点锁定，不能当作稳定身份保持、真实机位控制或商业成片质量的证明。"
+        },
+        {
+          "path": "projects/011-pose-look-creation-atlas/README.md",
+          "startLine": 145,
+          "endLine": 145,
+          "text": "选片草稿使用独立浏览器存储，不改动原图库的创作方案。导出包含图片路径、姿势出处、哈希、指令和备注，不包含原图字节。各方向的收益仍是待验证假设。"
+        },
+        {
+          "path": "projects/011-pose-look-creation-atlas/README.md",
+          "startLine": 147,
+          "endLine": 147,
+          "text": "## 备份与可恢复性"
+        },
+        {
+          "path": "projects/011-pose-look-creation-atlas/README.md",
+          "startLine": 149,
+          "endLine": 154,
+          "text": "- 本地原图：E:/PersonalBackups/PoseLookReferences/pose-db-20261029\n- 私有远端：[yydshly/pose-look-reference-backup](https://github.com/yydshly/pose-look-reference-backup)。需要仓库权限，无权限可能显示 404。\n- [备份摘要](research/original-backup-summary.json)只含数量、来源、清单哈希、私有仓库链接及核验状态，没有原图。\n- 私有目录含逐文件 SHA-256、大小、尺寸、原始 URL、日文索引、抓取时原站 HTML，以及服装预告拼图的来源与哈希。\n- 私有仓库的 research-project/ 同时保存本研究网页、笔记、截图与脚本快照；research-project-snapshot.json 记录逐文件 SHA-256。网页展示的固定提交是原图核验版本，研究快照在 main 中继续保留。\n- 资料快照按固定 commit 保存，文件追加 .txt 后缀供静态查看；内容字节不变，原路径和 SHA-256 在清单中。"
+        },
+        {
+          "path": "projects/011-pose-look-creation-atlas/README.md",
+          "startLine": 156,
+          "endLine": 156,
+          "text": "校验全部本地原图："
+        },
+        {
+          "path": "projects/011-pose-look-creation-atlas/README.md",
+          "startLine": 158,
+          "endLine": 160,
+          "text": "~~~powershell\npython -X utf8 scripts/verify-originals.py E:/PersonalBackups/PoseLookReferences/pose-db-20261029\n~~~"
+        },
+        {
+          "path": "projects/011-pose-look-creation-atlas/README.md",
+          "startLine": 162,
+          "endLine": 162,
+          "text": "核对远端私有 Git 树及每个 blob 与本地字节是否一致（需要已登录的 GitHub CLI，不下载另一份完整图片）："
+        },
+        {
+          "path": "projects/011-pose-look-creation-atlas/README.md",
+          "startLine": 164,
+          "endLine": 166,
+          "text": "~~~powershell\npython -X utf8 scripts/verify-private-remote.py E:/PersonalBackups/PoseLookReferences/pose-db-20261029\n~~~"
+        },
+        {
+          "path": "projects/011-pose-look-creation-atlas/README.md",
+          "startLine": 168,
+          "endLine": 168,
+          "text": "恢复时从私有仓库克隆，再运行其中的 verify-originals.py。不要把它改为公开仓库或发布原图。备份脚本不安装/运行上游软件，不下载权重；抓取脚本只用于明确授权的私人备份，重复执行会复用已存在的有效 PNG。来源数量变化会停止抓取，需先核对。"
+        },
+        {
+          "path": "projects/011-pose-look-creation-atlas/README.md",
+          "startLine": 170,
+          "endLine": 170,
+          "text": "## 本地使用与检查"
+        },
+        {
+          "path": "projects/011-pose-look-creation-atlas/README.md",
+          "startLine": 172,
+          "endLine": 172,
+          "text": "原图工作台需要 Node.js 22+ 的本地服务；双击静态 HTML 无法访问原图目录。前台启动："
+        },
+        {
+          "path": "projects/011-pose-look-creation-atlas/README.md",
+          "startLine": 174,
+          "endLine": 177,
+          "text": "~~~powershell\ncd E:/codex_project/1025_codex_project/projects/011-pose-look-creation-atlas\nnpm.cmd run dev\n~~~"
+        },
+        {
+          "path": "projects/011-pose-look-creation-atlas/README.md",
+          "startLine": 179,
+          "endLine": 179,
+          "text": "打开 http://127.0.0.1:8011/app/#gallery 。无需安装依赖，仅绑定 127.0.0.1。默认读取 E:/PersonalBackups/PoseLookReferences/pose-db-20261029，可在启动前设置 POSE_LOOK_LIBRARY 为另一份完整备份根目录；POSE_LOOK_PORT 可指定端口。"
+        },
+        {
+          "path": "projects/011-pose-look-creation-atlas/README.md",
+          "startLine": 181,
+          "endLine": 181,
+          "text": "Windows 后台启动/停止（只管理本工作台进程，不注册系统自启动）："
+        },
+        {
+          "path": "projects/011-pose-look-creation-atlas/README.md",
+          "startLine": 183,
+          "endLine": 186,
+          "text": "~~~powershell\nnpm.cmd run start:local\nnpm.cmd run stop:local\n~~~"
+        },
+        {
+          "path": "projects/011-pose-look-creation-atlas/README.md",
+          "startLine": 188,
+          "endLine": 188,
+          "text": "启动脚本、日志和进程记录仅在本项目 `.local/`，此目录不进入 Git。重复启动会复用已有服务。其他机器需要先取得有权限的原图备份，再指定目录；公开静态站不会自动得到本机图片。"
+        },
+        {
+          "path": "projects/011-pose-look-creation-atlas/README.md",
+          "startLine": 190,
+          "endLine": 194,
+          "text": "~~~powershell\nnpm.cmd run check\nnpm.cmd run archive:verify\nnpm.cmd run test:local\n~~~"
+        },
+        {
+          "path": "projects/011-pose-look-creation-atlas/README.md",
+          "startLine": 196,
+          "endLine": 196,
           "text": "根目录另运行 npm.cmd run check。交互结果见[网页核验](research/web-verification.json)。本轮没有重新执行上游模型或安装依赖。"
         },
         {
           "path": "projects/011-pose-look-creation-atlas/README.md",
-          "startLine": 126,
-          "endLine": 126,
+          "startLine": 198,
+          "endLine": 198,
+          "text": "本轮本地工作台的目标和产品判断见[本地版记录](research/local-workspace-v5.md)，交互、实际导出文件及访问边界见[核验记录](research/local-workspace-v5-checks.json)。源码准备保留在本地，后续再统一处理 GitHub 提交、素材关联与部署。"
+        },
+        {
+          "path": "projects/011-pose-look-creation-atlas/README.md",
+          "startLine": 200,
+          "endLine": 200,
           "text": "## 有限实测与限制"
         },
         {
           "path": "projects/011-pose-look-creation-atlas/README.md",
-          "startLine": 128,
-          "endLine": 128,
+          "startLine": 202,
+          "endLine": 202,
           "text": "此前的[导出实验记录](app/evidence/export-experiment.json)：Mannequin GLB 为网格层级，0 蒙皮/动画/相机；MPFB + Blender 测试 GLB 含 1 蒙皮、1 动画、1 相机，回读得到 53 骨骼且顶点随动画变化。只证明同一 Blender 的有限回读。焦距数值变化，视场角是否等价尚未核对；未证明其他 DCC 或游戏引擎兼容。"
         },
         {
           "path": "projects/011-pose-look-creation-atlas/README.md",
-          "startLine": 130,
-          "endLine": 130,
+          "startLine": 204,
+          "endLine": 204,
           "text": "其余工具主要是文档与选定代码调研。新增的小样本说明参考编辑可用于表达换装、场景与动作目标；不能据此推断真实商品还原率、稳定成功率或商业收益。"
         },
         {
           "path": "projects/011-pose-look-creation-atlas/README.md",
-          "startLine": 132,
-          "endLine": 132,
+          "startLine": 206,
+          "endLine": 206,
           "text": "## 扩展分支"
         },
         {
           "path": "projects/011-pose-look-creation-atlas/README.md",
-          "startLine": 134,
-          "endLine": 134,
+          "startLine": 208,
+          "endLine": 208,
           "text": "[思路理解、生图实验与产品场景](research/extension-branch.md)已单独保存，在[在线分支页](https://yydshly.github.io/1025_codex_project/011-pose-look-creation-atlas/branch.html#thinking)查看。既有 7 次 ImageGen 调用、8 张输入/结果图、自绘姿势源文件、完整提示词与偏差记录保持不变。"
         }
       ],
@@ -2800,7 +2974,7 @@ globalThis.RECALL_CORPUS = {
         "path": "projects.json",
         "startLine": 168,
         "endLine": 186,
-        "text": "    {\n      \"id\": \"011\",\n      \"slug\": \"pose-look-creation-atlas\",\n      \"name\": \"姿势与服装参考库 · 来源与能力研究\",\n      \"summary\": \"研究原始姿势与服装参考库的来源、作者演示、能力与许可；说明已备份1,439张原图的保存位置，盘点288组姿势与视角覆盖，分析本地图册、对照评测、控制图、构图、视频及3D等七个方向的证据与验收。换装/婚纱生图实验保留为独立分支，不作为原库效果验证。\",\n      \"source\": \"https://x.com/leo_xiaolei/status/2114971707962536302\",\n      \"sourceName\": \"姿势与服装参考图库原帖及相关源库\",\n      \"status\": \"researching\",\n      \"tags\": [\n        \"参考生图\",\n        \"换装\",\n        \"婚纱\",\n        \"能力研究\",\n        \"资料备份\"\n      ],\n      \"cover\": \"assets/images/source-overview-v3.jpg\",\n      \"demoUrl\": \"https://yydshly.github.io/1025_codex_project/011-pose-look-creation-atlas/\",\n      \"createdAt\": \"2026-10-29\"\n    },"
+        "text": "    {\n      \"id\": \"011\",\n      \"slug\": \"pose-look-creation-atlas\",\n      \"name\": \"姿势与衣装参考 · 能力、作用与产品探索\",\n      \"summary\": \"POSE-DB-01提供1,439张无脸人偶姿势PNG、288组及多视角检索，用于动作与构图参考。衣装分享是约1,000套参考的预告和人物＋服装＋姿势组合演示；目前只取得一张预告拼图，完整库与商用条款未确认。两者提供素材，生图和身份、衣装保持由外部模型完成。我们用六张虚构人物写真候选探索写真、穿搭、婚纱、图文故事与个人品牌，区分实测和设想。\",\n      \"source\": \"https://x.com/leo_xiaolei/status/2114971707962536302\",\n      \"sourceName\": \"POSE-DB-01姿势图库与衣装参考预告/多参考生图演示\",\n      \"status\": \"researching\",\n      \"tags\": [\n        \"姿势参考\",\n        \"衣装参考\",\n        \"多参考生图\",\n        \"系列写真\",\n        \"产品研究\"\n      ],\n      \"cover\": \"assets/images/research-overview-public-v3.png\",\n      \"demoUrl\": \"https://yydshly.github.io/1025_codex_project/011-pose-look-creation-atlas/\",\n      \"createdAt\": \"2026-10-29\"\n    },"
       }
     },
     {

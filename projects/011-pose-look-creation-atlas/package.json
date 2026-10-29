@@ -5,7 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "node scripts/serve.mjs",
+    "start:local": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Start-Local.ps1",
+    "stop:local": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Stop-Local.ps1",
     "check": "node scripts/check.mjs",
+    "test:local": "node --test scripts/local-server.test.mjs",
     "archive:verify": "node scripts/verify-archive.mjs"
   }
 }

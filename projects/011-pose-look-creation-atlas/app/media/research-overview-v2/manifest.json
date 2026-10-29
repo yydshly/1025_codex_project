@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "id": "research-overview-v2",
+  "date": "2026-10-29",
+  "role": "private-research-memory-infographic",
+  "engine": "Built-in ImageGen",
+  "modelVersion": "Not reported by the tool",
+  "generationCalls": 2,
+  "successfulOutputs": 1,
+  "asset": {
+    "localUrl": "/local-media/research-overview-v2.png",
+    "private": true,
+    "publicPath": null,
+    "bytes": 1989805,
+    "width": 1448,
+    "height": 1086,
+    "sha256": "f9b55ec340c2857038b285eb0e586fc1e929b1b8d4eacaccb74606bba07ed63f"
+  },
+  "stages": [
+    {
+      "id": "memory-composition",
+      "status": "completed",
+      "prompt": "Use case: compositing / infographic-diagram. EDIT IMAGE 1, the supplied Chinese research infographic, into ONE richer landscape 4:3 visual memory map. Keep all its accurate research facts and five product goals, warm ivory/sage/rose style and readable Chinese typography. Expand the layout to make room for real visual inserts, ideally 2400x1800 or larger. Do not make text tiny. Use the supplied image contents faithfully as inserts, preserving their visible drawings, poses, people, clothes and backgrounds. Do not invent new example photographs.\nIMAGE 1 is the edit target, our current infographic.\nIMAGE 2 is the ACTUAL SOURCE POSE full_single_P015_front: faceless mannequin hand-on-hip standing drawing.\nIMAGE 3 is the ACTUAL AUTHOR CLOTHING PREVIEW contact sheet. Use only an upper-row ordinary-clothed outfit strip, omit the bottom underwear row.\nIMAGE 4 is OUR SAVED STANDING RESULT made using pose IMAGE 2: fictional adult Asian woman, white T-shirt, blue jeans, courtyard.\nIMAGE 5 is OUR SAVED EARLY BRIDAL RESULT: a DIFFERENT fictional adult Asian woman in an ivory wedding dress. It belongs to an INDEPENDENT earlier experiment branch, not source-pose verification or the courtyard character.\n\nRetain title \"姿势参考库：资源、能力与产品方向\"; subtitle \"参考素材 + 外部生成模型 + 系列创作流程\"; four highlights \"1,439 张姿势原图\" \"288 组姿势\" \"6 张写真候选\" \"5 个扩展方向\". Add small stamp \"素材回忆版 · 仅本地\".\nLEFT column \"01｜我们手里有什么\":\nPose card must include recognizable IMAGE 2 thumbnail, caption \"原库姿势素材 · P015 扶腰站姿\". Keep \"1,439 张 PNG · 288 组姿势\", \"900×1200 · 多数每组 5 视角\", \"本地保存 + 私有远端备份\".\nClothing card must include a wide strip from IMAGE 3, caption \"作者衣装预告片段\". Keep \"仅取得 1 张预告拼图\", \"约 1,000 张是作者预告\", \"完整图库与授权未确认\". Do not imply these outfits generated our white-T-shirt result.\nResearch card: \"研究资料与本地工作台\", \"10 个项目 · 28 份资料快照\", \"来源、说明、许可与部分实现\", \"浏览、检索、多视角、收藏、方案\".\nMIDDLE column \"02｜参考如何产生作用\":\nCompact workflow \"人物 + 姿势 + 服装 + 场景 → 外部图像模型 → 生成候选 → 对照选片 → 系列交付\".\nCreate a prominent \"从原库到我们的效果\" visual comparison block. One row: IMAGE 2 complete pose thumbnail LEFT → IMAGE 4 complete standing photograph RIGHT. Column labels \"原库输入\" and \"我们的生成结果\"; row title \"扶腰站姿\". Large enough to recognize actual pose, face, outfit and courtyard. Leave enough breathing space below this comparison to later add a second seated-pose comparison, without placeholder labels.\nBelow, evidence text \"《庭院午后》6 张候选\", \"3 张新增 + 3 张复用\", \"同一虚构成年亚洲女性 · 手机随拍视觉\", \"动作可辨；景别、脸部、手部与背景仍有偏差\".\n\"固定：人物、服装、场景、光线\"; \"变化：动作、景别、视线、顺序\"; \"网页展示已存结果，尚无实时生图接口\".\nRIGHT column \"03｜可扩展的产品目标\":\nRetain five separate product cards and honest statuses:\n\"主题写真\" / \"主题 + 六镜头 + 选片方案\" / \"已有候选\";\n\"穿搭 Lookbook\" / \"多角度服装展示与细节册\" / \"待验证\";\n\"婚纱造型\" / \"拍前造型与镜头提案\" / \"分支小样\";\n\"图文故事\" / \"叙事顺序 + 图片文案\" / \"规划阶段\";\n\"个人品牌\" / \"头像、半身、封面等版位\" / \"规划阶段\".\nInclude substantial IMAGE 5 bridal thumbnail INSIDE or adjacent to bridal product card, caption \"早期婚纱探索 · 独立分支\". Keep distinct from our courtyard character and original-library evidence.\n\"优先目标：验证一个可复用的系列创作流程\".\nBOTTOM:\n\"价值目标｜找图更快 · 目标更清楚 · 返修可追踪 · 方案可复用\"\n\"能力边界：静态参考不含真实 3D 或动作时序；视频与真实 3D 尚未验证。\"\n\"许可边界：含原素材缩略内容，仅供本地私人研究回看，不公开再分发。\"\n\"验证方法：记录制作时间、返修与复用，产品收益仍待验证。\"\n\"缩略图用于回忆；精确内容以原图与实验记录为准。人物效果均为 AI 生成。\"\nNo text overlapping images, no invented performance scores, no new people. Source → actual effect and independent earlier branch should be visually unambiguous.",
+      "inputOrder": [
+        "previous-overview",
+        "source-standing",
+        "clothing-preview",
+        "courtyard-standing",
+        "early-bridal"
+      ]
+    },
+    {
+      "id": "seated-addition",
+      "status": "failed-network-no-output",
+      "prompt": "Use case: compositing / precise infographic edit.\nIMAGE 1 is the edit target: the current Chinese visual memory infographic with real source pose, clothing preview, standing courtyard result and early bridal experiment.\nIMAGE 2 is the ACTUAL SOURCE SEATED POSE full_single_P012_front, faceless black-line mannequin: one raised knee, one hand at cheek, other palm on floor, opposite leg extended.\nIMAGE 3 is OUR ACTUAL SAVED SEATED RESULT made from IMAGE 2: the same fictional adult Asian woman as the standing courtyard result, white T-shirt, blue jeans, sitting on courtyard paving, raised knee, cheek supported, other palm bracing and leg extended with visible white sneaker.\n\nMake ONE targeted addition to IMAGE 1: add a second clearly paired source-to-result row titled \"坐姿托腮\" in its middle \"从原库到我们的效果\" module, using IMAGE 2 on the LEFT and IMAGE 3 on the RIGHT with a small arrow. Labels \"原库输入\" and \"我们的生成结果\", caption \"P012 坐姿托腮\". Preserve recognizable full-body source pose and result, not only faces. Keep the first \"扶腰站姿\" row directly above so the two actual input/result associations are unmistakable. Keep the seated result's actual clothing, face, courtyard, pose and shoe perspective; do not generate a new woman or improve/retouch its anatomy.\nIncrease canvas HEIGHT and extend the columns as needed, keeping the overall width and readability. It may become a near-square landscape research board, approximately 9:8. Do not squeeze all text and photos into the old height. Both paired examples must remain large enough to recognize.\n\nKeep everything else from IMAGE 1: main title, subtitle, 1,439/288/6/5 facts, left original-resource card, author clothing preview, research/workspace facts, four reference inputs and model workflow, the six-shot pilot facts, fixed/variable conditions, five product goals and honest progress badges, existing bridal photograph with \"早期婚纱探索 · 独立分支\", value goals and boundary footer. Preserve the distinction between original source, our generated candidate and independent earlier branch. Do not rewrite facts.\nOne related cleanup: remove the duplicated clothing preview strip from the RIGHT \"穿搭 Lookbook\" goal card. Keep the actual clothing preview on the LEFT where it is correctly labelled as source preview. The right fashion goal should contain only its name, \"多角度服装展示与细节册\", badge \"待验证\", and short line \"指定商品保真尚未验证\". Use the freed space and extra vertical space to keep the bridal thumbnail and other target cards comfortable.\nKeep small local-only stamp \"素材回忆版 · 仅本地\".\nKeep footer \"缩略图用于回忆；精确内容以原图与实验记录为准。人物效果均为 AI 生成。\"\nNo other new imagery or invented results. Clear, accurately spelled, readable Simplified Chinese, clean ivory/sage/rose editorial infographic style.",
+      "inputOrder": [
+        "memory-composition",
+        "source-seated",
+        "courtyard-seated"
+      ]
+    }
+  ],
+  "validationNote": "An initial seven-reference request was rejected before generation because the tool accepts at most five references. It returned no image. Two subsequent accepted generation requests produced one image and one network failure.",
+  "sources": [
+    "research/original-backup-summary.json",
+    "app/media/pose-pilot-v3/manifest.json",
+    "app/media/experiment-v1/manifest.json",
+    "app/media/research-overview-v1/manifest.json"
+  ],
+  "notes": [
+    "交付的是首次完成的站姿、衣装预告、庭院站姿与婚纱版本，坐姿补充请求没有返回图片。",
+    "含源素材缩略内容；完整合成图仅存放在 Git 忽略的本地私人目录，经本机专用路由展示，不放进公开 app 或公开截图。",
+    "信息图由 AI 排版，嵌图细节可能重绘；精确内容以可回看的原始文件和实验记录为准。",
+    "婚纱结果属于早期独立分支，没有用来证明原库姿势或指定商品的还原效果。",
+    "仅复用已有原图与已保存生成结果，没有下载新图库或生成新写真。",
+    "本轮没有远端提交、推送或部署。"
+  ],
+  "inputs": [
+    {
+      "id": "previous-overview",
+      "label": "初版文字总览",
+      "role": "layout-reference",
+      "path": "media/research-overview-v1/overview.png",
+      "bytes": 1743747,
+      "sha256": "55095ca41e8c588d8472d4423c2e6f33b00deac7526dd43418457e0c0b74fd5a"
+    },
+    {
+      "id": "source-standing",
+      "label": "原库姿势 · P015 扶腰",
+      "role": "source-pose",
+      "localUrl": "/local-media/pose/full_single_P015_front.png",
+      "sourceUrl": "https://ai-pose-gallery.pages.dev/img/full_single_P015_front.png",
+      "bytes": 225412,
+      "sha256": "51f54ceb4d8115f6e29a36a9583a88f896314304101ca035091a1d30394e80aa"
+    },
+    {
+      "id": "clothing-preview",
+      "label": "原始衣装预告",
+      "role": "source-preview",
+      "localUrl": "/local-media/clothing-preview.jpg",
+      "sourceUrl": "https://x.com/giaaibusi/status/2115431641766359244",
+      "bytes": 285508,
+      "sha256": "a0769d50f141d9e264ac8e573937297493ec663d5b5fb1186c628aa17d2ad62d"
+    },
+    {
+      "id": "courtyard-standing",
+      "label": "我们的庭院站姿结果",
+      "role": "saved-generated-result",
+      "path": "media/pose-pilot-v3/standing.png",
+      "record": "media/pose-pilot-v3/manifest.json",
+      "bytes": 3268755,
+      "sha256": "0b24fc1466cb5144a13a8b73128c5fd41f07453430178506b5b22618ad03c5a8"
+    },
+    {
+      "id": "early-bridal",
+      "label": "早期婚纱 · 独立分支",
+      "role": "saved-generated-result",
+      "path": "media/experiment-v1/studio-a.png",
+      "record": "media/experiment-v1/manifest.json",
+      "bytes": 1703476,
+      "sha256": "1f9dd2a37bc7ad6f3822dd9d7636f28266e1ab7c54e88a1dcd3a1e8656dba026"
+    }
+  ]
+}

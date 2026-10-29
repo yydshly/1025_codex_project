@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-29",
+  "url": "http://127.0.0.1:8011/app/#pilot",
+  "currentVersion": "v3",
+  "direction": "Fictional adult East Asian woman, everyday smartphone-snapshot visual style",
+  "realCameraCapture": false,
+  "generationCallsThisVersion": 4,
+  "attemptsPerConfiguration": 1,
+  "assetsSaved": 4,
+  "previousVersionsRetained": ["v2", "v1"],
+  "integrity": "All twelve pilot PNGs and all eight legacy experiment PNGs match their manifests; all three source inputs checked against the original backup manifest.",
+  "ui": {
+    "desktopViewport": [805, 871],
+    "mobileViewport": [390, 844],
+    "horizontalOverflow": false,
+    "selectedLabel": "手机随拍 · 当前版",
+    "resultImagesLoaded": 3,
+    "zoomTitle": "坐姿托腮 · 手机随拍 · 当前版",
+    "viewportReset": true,
+    "consoleErrors": []
+  },
+  "screenshot": "assets/images/local-v5/pose-pilot-v3-phone.jpg",
+  "screenshotGitIgnored": true,
+  "checks": ["Subproject assets, input associations, scripts and local links", "Root registry: 12 projects"],
+  "limits": ["No user acceptance or numerical realism score", "No real-person input or identity ground truth", "Appearance, clothing and scene changed together; not a single-variable comparison", "No remote submission or deployment this turn"]
+}

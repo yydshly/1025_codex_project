@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "id": "v3",
+  "date": "2026-10-29",
+  "label": "手机随拍 · 当前版",
+  "style": "photographic",
+  "photographyStyle": "phone-snapshot",
+  "subject": "AI-generated fictional 27-year-old East Asian adult woman",
+  "status": "current-small-pilot",
+  "engine": "Built-in ImageGen",
+  "modelVersion": "Not reported by the tool",
+  "generationCalls": 4,
+  "baseId": "character-base",
+  "assets": [
+    {
+      "id": "character-base",
+      "path": "media/pose-pilot-v3/character-base.png",
+      "role": "generated-input",
+      "prompt": "Use case: photorealistic-natural. Create ONE believable everyday smartphone snapshot, casually taken by a friend, of a naturally beautiful FICTIONAL 27-year-old East Asian adult woman. She must clearly have a natural East Asian appearance, expressive dark-brown eyes of ordinary human size, softly defined face, a warm relaxed slight smile, long dark-brown hair loosely tied back with a few stray strands near her cheeks, and understated everyday makeup. Retain real pores, faint under-eye texture, small normal skin-tone variations and natural facial asymmetry; attractive without a beauty filter or porcelain doll skin. Casual outfit: plain soft off-white cotton crewneck T-shirt, medium-blue full-length straight-leg jeans with believable creases and white low-top sneakers. Normal realistic adult proportions. Full-body casual standing, facing the friend with her weight relaxed onto one leg and arms resting comfortably, full head and shoes visible. Location: an ordinary lived-in residential courtyard, light tiled or concrete walkway, pale building wall and a little everyday greenery at the edge, not a studio or luxury photoshoot. Soft ordinary late-afternoon daylight, uneven natural reflected light and modest shadows. Shot with a handheld smartphone main camera in normal PHOTO mode, approximately 26 mm equivalent perspective, portrait 3:4 orientation, chest-height viewpoint, slightly imperfect framing and a very small handheld tilt; the woman slightly off centre. Background remains naturally readable, no artificial portrait-mode bokeh. Believable phone-camera processing, moderate detail, a little fine shadow noise and mild JPEG texture; not hyper-sharp HDR or glossy fashion-ad lighting. The image should feel like a good-looking friend in an unedited personal phone album. One person only. No phone UI, no timestamp, no words, no watermark, no collage. No illustration, painting, CGI, plastic rendering, glamour retouching or doll-like enlarged features.",
+      "attempts": 1,
+      "bytes": 3399647,
+      "width": 1086,
+      "height": 1448,
+      "sha256": "ab9e4ef322aaffd192f4863f6c558cbd52da9da1c78920c3aa27e52ad269c367"
+    },
+    {
+      "id": "standing",
+      "path": "media/pose-pilot-v3/standing.png",
+      "role": "generated-pose-result",
+      "prompt": "Use case: identity-preserve, photorealistic-natural. Create ONE everyday handheld SMARTPHONE photograph, not a professional photoshoot. IMAGE 1 is the canonical identity and visual reference: preserve this SAME fictional adult East Asian woman, her natural facial structure, ordinary-size dark eyes, soft relaxed smile, loosely tied-back long dark hair and stray strands, realistic skin, white cotton crewneck T-shirt, medium-blue jeans and white low-top sneakers. Keep her natural adult proportions, subtle casual makeup, and the real clothing texture and construction. Preserve the ordinary residential courtyard, paving, pale wall and greenery, natural afternoon daylight, phone main-camera approximately 26 mm perspective, readable background, slight hand-held framing imperfection, mild phone compression and shadow noise. No portrait-mode fake bokeh, no beauty filter, no airbrushing, no studio glamour lighting, no cinematic grade, no glossy ad or fashion-editorial look. IMAGE 2 is only a body-pose and front-view reference. Change the fully clothed woman's pose to match its limb arrangement and support relationships; do not render the mannequin. Retain a relaxed human expression rather than a stiff display mannequin. Portrait 3:4, whole body with hands and shoes visible, one person, no collage, no text, no watermark. Do not mirror Image 2. Pose: the hand on the LEFT side of the image rests on her hip, elbow bent outward; opposite arm relaxed down at the RIGHT. Follow the pose reference's lateral hip shift, shoulder slope, unequal leg positions and foot directions while retaining credible human balance. The result should feel like a friend casually taking a phone photo of this woman posing in the same courtyard.",
+      "attempts": 1,
+      "bytes": 3268755,
+      "width": 1086,
+      "height": 1448,
+      "sha256": "0b24fc1466cb5144a13a8b73128c5fd41f07453430178506b5b22618ad03c5a8"
+    },
+    {
+      "id": "stretch",
+      "path": "media/pose-pilot-v3/stretch.png",
+      "role": "generated-pose-result",
+      "prompt": "Use case: identity-preserve, photorealistic-natural. Create ONE everyday handheld SMARTPHONE photograph, not a professional photoshoot. IMAGE 1 is the canonical identity and visual reference: preserve this SAME fictional adult East Asian woman, her natural facial structure, ordinary-size dark eyes, soft relaxed smile, loosely tied-back long dark hair and stray strands, realistic skin, white cotton crewneck T-shirt, medium-blue jeans and white low-top sneakers. Keep her natural adult proportions, subtle casual makeup, and the real clothing texture and construction. Preserve the ordinary residential courtyard, paving, pale wall and greenery, natural afternoon daylight, phone main-camera approximately 26 mm perspective, readable background, slight hand-held framing imperfection, mild phone compression and shadow noise. No portrait-mode fake bokeh, no beauty filter, no airbrushing, no studio glamour lighting, no cinematic grade, no glossy ad or fashion-editorial look. IMAGE 2 is only a body-pose and front-view reference. Change the fully clothed woman's pose to match its limb arrangement and support relationships; do not render the mannequin. Retain a relaxed human expression rather than a stiff display mannequin. Portrait 3:4, whole body with hands and shoes visible, one person, no collage, no text, no watermark. Do not mirror Image 2. Pose: both arms extended up above her head, separated hands with palms facing inward, elbows nearly straight, feet close together grounded on the paving, gentle head tilt. Leave room above both fingertips; no cropped hands. The same T-shirt and jeans crease naturally as she stretches. Keep the ordinary phone-photo feeling and the same face.",
+      "attempts": 1,
+      "bytes": 3329342,
+      "width": 1086,
+      "height": 1448,
+      "sha256": "0d21094e99b5acf10caf0f91711e8bd1e55d7b788e3267d57e51699f3451c079"
+    },
+    {
+      "id": "seated",
+      "path": "media/pose-pilot-v3/seated.png",
+      "role": "generated-pose-result",
+      "prompt": "Use case: identity-preserve, photorealistic-natural. Create ONE everyday handheld SMARTPHONE photograph, not a professional photoshoot. IMAGE 1 is the canonical identity and visual reference: preserve this SAME fictional adult East Asian woman, her natural facial structure, ordinary-size dark eyes, soft relaxed smile, loosely tied-back long dark hair and stray strands, realistic skin, white cotton crewneck T-shirt, medium-blue jeans and white low-top sneakers. Keep her natural adult proportions, subtle casual makeup, and the real clothing texture and construction. Preserve the ordinary residential courtyard, paving, pale wall and greenery, natural afternoon daylight, phone main-camera approximately 26 mm perspective, readable background, slight hand-held framing imperfection, mild phone compression and shadow noise. No portrait-mode fake bokeh, no beauty filter, no airbrushing, no studio glamour lighting, no cinematic grade, no glossy ad or fashion-editorial look. IMAGE 2 is only a body-pose and front-view reference. Change the fully clothed woman's pose to match its limb arrangement and support relationships; do not render the mannequin. Retain a relaxed human expression rather than a stiff display mannequin. Portrait 3:4, whole body with hands and shoes visible, one person, no collage, no text, no watermark. Do not mirror Image 2. Pose: seated directly on the courtyard paving, no chair or stool. Knee on the LEFT of the image raised, same-side elbow rests at that knee with the hand supporting the cheek; leg on the RIGHT extends diagonally toward the phone, opposite palm supports her on the paving at the RIGHT. Match the source's asymmetry, foreshortening and weight support. Preserve the woman's face, ponytail, T-shirt, jeans and both sneakers. It should look like an ordinary friend casually photographed her seated pose with a phone.",
+      "attempts": 1,
+      "bytes": 3219338,
+      "width": 1086,
+      "height": 1448,
+      "sha256": "5e492b1fe7dc2c5c5cce14754b75f8531d392f0894f9a437065053782b5d63d7"
+    }
+  ],
+  "cases": [
+    {
+      "id": "standing",
+      "label": "扶腰站立",
+      "poseId": "full_single_P015_front",
+      "poseGroup": "full_single_P015",
+      "angle": "正面",
+      "sourceUrl": "https://ai-pose-gallery.pages.dev/img/full_single_P015_front.png",
+      "localPoseUrl": "/local-media/pose/full_single_P015_front.png",
+      "poseSha256": "51f54ceb4d8115f6e29a36a9583a88f896314304101ca035091a1d30394e80aa",
+      "poseWidth": 900,
+      "poseHeight": 1200,
+      "inputOrder": [
+        "character-base",
+        "full_single_P015_front"
+      ],
+      "resultId": "standing",
+      "follows": "扶腰、另一臂下垂和非对称站姿可辨，延续了同一人物的表情与日常穿着。",
+      "differences": "腰胯偏移、脚尖和手指仍有变化；T 恤褶皱、牛仔布纹理与背景细节被重绘。"
+    },
+    {
+      "id": "stretch",
+      "label": "双臂上伸",
+      "poseId": "full_single_P019_front",
+      "poseGroup": "full_single_P019",
+      "angle": "正面",
+      "sourceUrl": "https://ai-pose-gallery.pages.dev/img/full_single_P019_front.png",
+      "localPoseUrl": "/local-media/pose/full_single_P019_front.png",
+      "poseSha256": "25fea98ca831642ac6ee03fe1990b32fe3a3864dd600a75c38e877a7df730440",
+      "poseWidth": 900,
+      "poseHeight": 1200,
+      "inputOrder": [
+        "character-base",
+        "full_single_P019_front"
+      ],
+      "resultId": "stretch",
+      "follows": "双手分开上举、近直肘与站姿可辨，人物和庭院随拍风格延续。",
+      "differences": "双臂高度及头部倾斜不完全等同原图；衣服褶皱、手指和背景枝叶有变化。"
+    },
+    {
+      "id": "seated",
+      "label": "坐姿托腮",
+      "poseId": "full_single_P012_front",
+      "poseGroup": "full_single_P012",
+      "angle": "正面",
+      "sourceUrl": "https://ai-pose-gallery.pages.dev/img/full_single_P012_front.png",
+      "localPoseUrl": "/local-media/pose/full_single_P012_front.png",
+      "poseSha256": "f640702325d6adae80eb1b66b33dbe0e3bf7beaf9bc0883de7a2097370861614",
+      "poseWidth": 900,
+      "poseHeight": 1200,
+      "inputOrder": [
+        "character-base",
+        "full_single_P012_front"
+      ],
+      "resultId": "seated",
+      "follows": "单膝抬起、手靠脸颊、另一掌撑地和前伸腿可辨，保留白上衣与蓝色牛仔裤。",
+      "differences": "手更靠近颈侧，肘膝接触未做几何核对；鞋形与鞋面细节、裤脚和背景透视仍被重绘。"
+    }
+  ],
+  "sourceManifestSha256": "feddc96293062d300391493243aeb88195fb6e001582ce61969a543744b955d6",
+  "identityGroundTruth": false,
+  "realPersonInput": false,
+  "generatedNotCameraCapture": true,
+  "assessment": "Qualitative review only. The requested visual direction is an everyday smartphone snapshot, not a claim of an actual camera capture or real-person identity recovery. One output per configuration; no text-only control or numerical measurement.",
+  "notes": [
+    "用户要求亚洲美女和真实手机拍摄的感觉。当前版改用成年亚洲女性、日常庭院、白 T 恤和牛仔裤、手持手机观感。",
+    "人物仍由 AI 生成，没有输入真人照片，也没有真实手机拍摄或 EXIF 依据。",
+    "三个姿势各自从相同人物基准与对应原库姿势生成，不串行修改上一张结果。",
+    "保留前两轮版本，不据三张小样推断稳定性或成功率。"
+  ]
+}
