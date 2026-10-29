@@ -2,7 +2,7 @@
 
 **三个检索脚本是本案例由 AI 新写的适配代码，不是原 skill 自带脚本。** 原库也不只有提示词：它同时包含检索规范、引文核验客户端，以及另一条真实的文献发现代码路径。此前网页把这些与本案例适配成果连续呈现，容易让人误以为都是原库直接完成的。
 
-审计对象固定为 [`b8d050f`](https://github.com/Imbad0202/academic-research-skills/tree/b8d050f24f2e1c465c4410eace8634ea3af15930)。核对了本地[原始文件清单](upstream-manifest.json)（1,106 项）与[原始 ZIP](upstream-source.zip)，ZIP SHA256 为 `b602ba6aecf3bb142520564a65e29c503c6d63e083a5ee318b9415213c8edafd`。以下是静态归属审计，没有重新联网检索或重跑科研。
+审计对象固定为 [`b8d050f`](https://github.com/Imbad0202/academic-research-skills/tree/b8d050f24f2e1c465c4410eace8634ea3af15930)。核对了本地[原始文件清单](upstream-manifest.json)（1,106 项）与原始 ZIP（仅本地保留，不随公开仓库提交），ZIP SHA256 为 `b602ba6aecf3bb142520564a65e29c503c6d63e083a5ee318b9415213c8edafd`。以下是静态归属审计，没有重新联网检索或重跑科研。
 
 | 内容 | 原库提供什么 | 本案例实际如何使用 |
 |---|---|---|

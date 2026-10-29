@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-29T04:19:37.519Z",
+  "generatedAt": "2026-10-29T07:11:03.740Z",
   "sourceScope": "projects.json + registered project README.md files only",
-  "projectCount": 10,
-  "passageCount": 422,
-  "registrySha256": "be319d4d343302190a1ff6f14cc04c919ea959f0f3e96881a74da1c19e248967",
-  "dataSha256": "bba6ad1954e8e7ff8cd79115fa17084f6db82f2b14b3741d00ea98c14b4884f3",
+  "projectCount": 11,
+  "passageCount": 469,
+  "registrySha256": "63c1f3b1cbbdfea1deeffb8b3d8fc34cb68659a1a6974e4d1d8865fccfdfdb57",
+  "dataSha256": "9dc2e3201e113aa10cdedc170096dc2549c4c515e8ad37228b7418fd4b9ac630",
   "documents": [
     {
       "projectId": "001",
@@ -66,6 +66,12 @@
       "path": "projects/011-pose-look-creation-atlas/README.md",
       "sha256": "16c54d6675af193332308a18736757b269da7f57651ce80bf3e5832f966ec8ff",
       "passages": 46
+    },
+    {
+      "projectId": "012",
+      "path": "projects/012-aquatic-toxicology-skill-lab/README.md",
+      "sha256": "dfed3da086a09255a31d3d18f9ec7910fe674b7999e68999d04d400e795ca98d",
+      "passages": 47
     }
   ]
 }
