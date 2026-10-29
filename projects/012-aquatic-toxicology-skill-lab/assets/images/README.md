@@ -13,3 +13,6 @@
 - understanding-overview.jpg：理解总览网页的实际浏览器截图，显示本轮生成的信息图、放大下载入口及原理分工。由浏览器正常视口获取，不是生成的网页截图。
 
 理解总览信息图保存在 `app/assets/understanding-map.png`：内置image_gen生成并进行一次文字修订，1536×1024。它是解释性信息图，不是实验图表，也不是原库官方架构图。生成/修订提示词及图中文字核对说明见 `research/understanding-image-prompt.md`。
+
+- understanding-map.png：生成引导图的总索引副本，与app/assets/understanding-map.png逐字节一致。
+- deployment-20261029/online-summary.jpg：GitHub Pages正式网址的实际浏览器截图，展示能力、5个Skill、场景和价值摘要。

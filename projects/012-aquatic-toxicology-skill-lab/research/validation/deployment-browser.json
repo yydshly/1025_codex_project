@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-29",
+  "url": "https://yydshly.github.io/1025_codex_project/012-aquatic-toxicology-skill-lab/",
+  "library_summary_visible": true,
+  "five_skill_names_visible": true,
+  "scenario_and_value_visible": true,
+  "guide_image_loaded": [
+    1536,
+    1024
+  ],
+  "source_api_filter": {
+    "count": 3,
+    "names": [
+      "PubMed",
+      "Europe PMC",
+      "OpenAlex"
+    ]
+  },
+  "normal_viewport": {
+    "client": 391,
+    "scroll": 391
+  },
+  "portal_summary_and_guide_link_verified": true,
+  "screenshot": "assets/images/deployment-20261029/online-summary.jpg",
+  "boundary": "Website publication and UI verification, not scientific validation or a full native skill run."
+}

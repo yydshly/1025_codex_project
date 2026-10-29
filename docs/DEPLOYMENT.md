@@ -134,3 +134,11 @@ GitHub Pages 只能提供静态内容。模型服务、采集任务、密钥和�
 010使用 `publicDirectory: dist/site`、`guidePage: app/overview.html`。`scripts/build-site.mjs`只复制26个运行文件和4项图像；保留app层级，根页进入总图，原文与研究记录跳到本次提交的GitHub源码。CI验证40份固定快照、25项总图与场景、回查快照及18/22/7项测试，再生成发布文件。首次工作流[40690871041](https://github.com/yydshly/1025_codex_project/actions/runs/40690871041)的构建和部署均成功。
 
 线上25项五问、场景到原理的跳转与刷新、PNG/SVG资源、手机布局及源码固定提交链接已核对。公共回查快照只含本次已提交的9个项目，保留本地历史演示10项目的说明；浏览器判断不自动跨地址同步。详见[010发布与验收记录](../projects/010-agent-skills-engineering-lab/research/deployment.md)。
+
+## 012 · 学术研究 Skill：能力、场景与水生毒理学实测
+
+2026-10-29 已部署并核验：[研究网页](https://yydshly.github.io/1025_codex_project/012-aquatic-toxicology-skill-lab/)。摘要列出5个Skill、研究能力、选题/综述/核验/写作修订/审稿场景和流程复用价值；总入口使用我们生成的理解总览图，原图字节保持一致。
+
+012使用publicDirectory: app，仅声明生成图额外资源，并用本项目textExtensions: [".md", ".csv"]发布报告和筛选表；其他项目默认范围不变。42个下载及52个线上请求均200，来源筛选和窄屏布局已验证。原始摘要批量响应、上游ZIP/镜像保留本地，CI使用公开产物检查；研究性能与科学结论的限制继续明确记录。[完整发布记录](../projects/012-aquatic-toxicology-skill-lab/research/deployment.md)。
+
+新增登记同时更新010的受管回查快照；以实际提交的登记字节生成，防止Windows/Linux换行差异导致哈希失配。首次成功工作流为[40834394350](https://github.com/yydshly/1025_codex_project/actions/runs/40834394350)。

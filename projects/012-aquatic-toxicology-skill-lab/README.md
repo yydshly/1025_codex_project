@@ -14,13 +14,13 @@
 
 ![我们生成的研究Skill能力与过程引导图](assets/images/understanding-map.png)
 
-[总索引](../../README.md) · [本地研究网页](http://127.0.0.1:4332/) · [最终报告](research/phase6_final/report.md) · [实际过程](research/process.md)
+[总索引](../../README.md) · [在线研究网页](https://yydshly.github.io/1025_codex_project/012-aquatic-toxicology-skill-lab/) · [最终报告](research/phase6_final/report.md) · [实际过程](research/process.md)
 
 ![实际网页桌面截图](assets/images/process-walkthrough.jpg)
 
 ## 我们的理解总览
 
-[打开理解总览网页](http://127.0.0.1:4332/#understanding) · [总结说明](research/understanding-summary.md) · [结构化总结](research/understanding-summary.json) · [总览图 PNG](app/assets/understanding-map.png) · [生成及修订提示词](research/understanding-image-prompt.md)
+[打开理解总览网页](https://yydshly.github.io/1025_codex_project/012-aquatic-toxicology-skill-lab/#understanding) · [总结说明](research/understanding-summary.md) · [结构化总结](research/understanding-summary.json) · [总览图 PNG](app/assets/understanding-map.png) · [生成及修订提示词](research/understanding-image-prompt.md)
 
 总结库的能力、原理和价值主张，分清原库规则/代码、本轮新增采集器/测试与后续建议。按拆题、拟词选源、取回、筛选、补漏、分析六步解释输入、动作、产物和检查点；11类来源分别说明用途、获取权限、处理方式与实际使用状态。只有PubMed、Europe PMC、OpenAlex属于第二轮API实测；原文/OECD首轮部分阅读与其他来源建议分开标明。
 
@@ -28,7 +28,7 @@
 
 ## 检索单独实测（第二轮）
 
-[打开检索实测网页](http://127.0.0.1:4332/#retrieval-trial) · [过程与验证报告](research/retrieval-trial/report.md) · [冻结方案](research/retrieval-trial/query-plan.json) · [实际请求与原始产物](research/retrieval-trial/)
+[打开检索实测网页](https://yydshly.github.io/1025_codex_project/012-aquatic-toxicology-skill-lab/#retrieval-trial) · [过程与验证报告](research/retrieval-trial/report.md) · [冻结方案](research/retrieval-trial/query-plan.json) · [实际请求与原始产物](research/retrieval-trial/)
 
 ![检索实测的实际网页](assets/images/retrieval-trial.jpg)
 
@@ -81,7 +81,7 @@
 
 ## 网页与运行
 
-新增[Skill拆解](http://127.0.0.1:4332/#skill-map)：固定版本5个顶层Skill、13个内部角色与工具/宿主分开解释；5个搜索步骤、6组来源和工具、8项漏检或误读检查、6种场景用法。每项区分原始规范、代码实现与本轮实际状态，并链接固定提交文件或执行记录。详见[拆解报告](research/skill-mechanism-audit.md)和[数据](research/skill-mechanism-audit.json)。
+新增[Skill拆解](https://yydshly.github.io/1025_codex_project/012-aquatic-toxicology-skill-lab/#skill-map)：固定版本5个顶层Skill、13个内部角色与工具/宿主分开解释；5个搜索步骤、6组来源和工具、8项漏检或误读检查、6种场景用法。每项区分原始规范、代码实现与本轮实际状态，并链接固定提交文件或执行记录。详见[拆解报告](research/skill-mechanism-audit.md)和[数据](research/skill-mechanism-audit.json)。
 
 这轮补充仅审计固定源码和已有执行产物，没有新增科学检索、重跑API或执行未使用的Skill。目录清点包含保留ZIP中的sr-screener；本轮没有安装或运行它。原始目录审计与搜索审计分别见[skill-catalog-audit.json](research/skill-catalog-audit.json)、[search-mechanism-audit.json](research/search-mechanism-audit.json)。
 
@@ -93,7 +93,7 @@
     npm.cmd --prefix projects/012-aquatic-toxicology-skill-lab run check
     npm.cmd --prefix projects/012-aquatic-toxicology-skill-lab run serve
 
-访问 http://127.0.0.1:4332/ 。入口为[app/index.html](app/index.html)。离线JS与HTTP JSON保持一致；浏览器实测仅HTTP，内置浏览器不允许file协议，未声称离线浏览器已验证。未公开部署，不登记虚构demoUrl。
+访问 http://127.0.0.1:4332/ 。入口为[app/index.html](app/index.html)。离线JS与HTTP JSON保持一致；浏览器实测仅HTTP，内置浏览器不允许file协议，未声称离线浏览器已验证。已通过GitHub Pages发布并验证，详见[部署记录](research/deployment.md)。
 
 本地完整检查覆盖ID/DOI、来源角色/读取范围、证据关联、下载、12条核验记录、1106份上游哈希和JS语法/数据一致性。公开副本/CI运行 `npm run check:public`，只读已提交网页数据，检查归属、计数、资源、图片字节与语法。完整 `check` 与 `build:data` 需要本地保留的原始资料；公开仓库不含这些原始响应，不能声称克隆后能完整重建历史采集。检查不等于科学准确率验证。浏览器证据见[validation](research/validation)。
 
@@ -111,5 +111,5 @@
 
 上游为[CC BY-NC 4.0](app/data/upstream-LICENSE.txt)，保留作者Cheng-I Wu署名，当前用于非商业研究。文献只展示题录、链接、短转述和定位，不批量镜像正文。配图见[图片说明](assets/images/README.md)。源码提交和站点只包含公开摘要、方案、筛选结果、哈希/请求回执、我们编写的代码与生成图；含完整论文摘要的原始批量响应、筛选输入以及上游镜像/ZIP保留在本地，不纳入提交。
 
-本次按用户要求准备GitHub Pages部署与远端提交；真实地址将在上线验证后登记。没有清理磁盘或访问ReflectFlow数据。
+本次已按用户要求部署GitHub Pages并推送远端main；总库摘要和首屏说明能力、5个Skill、使用场景及价值，引导图沿用生成原图。没有清理磁盘或访问ReflectFlow数据。
 
