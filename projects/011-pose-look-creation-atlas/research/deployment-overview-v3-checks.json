@@ -1,0 +1,465 @@
+{
+  "date": "2026-10-29",
+  "status": "deployed-and-verified",
+  "url": "https://yydshly.github.io/1025_codex_project/011-pose-look-creation-atlas/#overview",
+  "runtimeCommit": "7f09afdbfc140fbe2d010e0d40003139816239ba",
+  "runtimeTree": "4c65f17b1339f52c41e9ee0006be0f78c5b2a876",
+  "workflow": {
+    "id": 40857283792,
+    "url": "https://github.com/yydshly/1025_codex_project/actions/runs/40857283792",
+    "build": "success",
+    "deploy": "success"
+  },
+  "summary": {
+    "poseSource": "POSE-DB-01: 1,439 faceless mannequin PNGs, 288 groups and existing-angle search; inputs for body pose and composition reference.",
+    "clothingSource": "Author preview of about 1,000 outfit references and a person+clothing+pose generation demonstration. One announcement sheet acquired; full release, download and commercial terms unconfirmed.",
+    "modelRole": "Both supply reference conditions. Generation, identity and garment fidelity depend on the external model and workflow.",
+    "ourWork": "Six fictional-adult courtyard candidates, selection/notes/export, and five product directions with evidence stages."
+  },
+  "guide": {
+    "path": "assets/images/research-overview-public-v3.png",
+    "sha256": "d15aa0130a5a70bfe6eeca5f5d6742c6d2fe20d558b1b623ff6d6283f0455764",
+    "bytes": 1898189,
+    "exactMatchWithWebCopy": true,
+    "sourceImagesReplacedWithOriginalSymbols": true,
+    "privateSourceVersionRetained": true,
+    "textCorrectionLimit": "Two small-text edit requests failed on the network. The page explains that the old footer licence warning applies to source image data; pose/clothing symbols in the public guide are original illustrations."
+  },
+  "privateBackup": {
+    "repository": "https://github.com/yydshly/pose-look-reference-backup",
+    "commit": "7f0a6d2481b3f016467ebc9bdba2b8c4e9ec41f5",
+    "filesVerified": 189,
+    "bytes": 62247579,
+    "privateMemoryImageSha256": "f9b55ec340c2857038b285eb0e586fc1e929b1b8d4eacaccb74606bba07ed63f",
+    "runtimeFilesExcluded": true,
+    "originalImageFilesUnchanged": true
+  },
+  "localChecks": [
+    "Root registry and README index check passed on the remote-based isolated worktree.",
+    "Six Pages publication-boundary tests passed.",
+    "Child asset/hash/input/manifest/script/link check passed.",
+    "Managed recall snapshot regenerated from the committed registry and README bytes; 18 recall tests passed."
+  ],
+  "onlineHTTP": {
+    "date": "2026-10-29",
+    "base": "https://yydshly.github.io/1025_codex_project/011-pose-look-creation-atlas/",
+    "files": 96,
+    "all200": true,
+    "guideBytes": 1898189,
+    "guideSha256": "d15aa0130a5a70bfe6eeca5f5d6742c6d2fe20d558b1b623ff6d6283f0455764",
+    "privateOverviewStatus": 404,
+    "checks": [
+      {
+        "path": "archive/upstream/anhao--ai-pose-gallery-zh/LICENSE.txt",
+        "status": 200
+      },
+      {
+        "path": "archive/manifest.json",
+        "status": 200
+      },
+      {
+        "path": "app.js",
+        "status": 200
+      },
+      {
+        "path": "archive/upstream/anhao--ai-pose-gallery-zh/README.md.txt",
+        "status": 200
+      },
+      {
+        "path": "archive/upstream/boytchev--mannequin.js/src/editor/posture-editor.js",
+        "status": 200
+      },
+      {
+        "path": "archive/upstream/boytchev--mannequin.js/LICENSE.txt",
+        "status": 200
+      },
+      {
+        "path": "archive/upstream/boytchev--mannequin.js/README.md.txt",
+        "status": 200
+      },
+      {
+        "path": "archive/upstream/boytchev--mannequin.js/src/editor/posture-editor.js.txt",
+        "status": 200
+      },
+      {
+        "path": "archive/upstream/ekza-space--ekza-studio/LICENSE.txt",
+        "status": 200
+      },
+      {
+        "path": "archive/upstream/ekza-space--ekza-studio/README.md.txt",
+        "status": 200
+      },
+      {
+        "path": "archive/upstream/ekza-space--ekza-studio/packages/editor-core/src/workflows/exportRun.ts.txt",
+        "status": 200
+      },
+      {
+        "path": "archive/upstream/ketle-man--comfyui-vrm-pose-editor/js/pose_vrma_export.js",
+        "status": 200
+      },
+      {
+        "path": "archive/upstream/ketle-man--comfyui-vrm-pose-editor/js/pose_vrma_export.js.txt",
+        "status": 200
+      },
+      {
+        "path": "archive/upstream/ketle-man--comfyui-vrm-pose-editor/LICENSE.txt",
+        "status": 200
+      },
+      {
+        "path": "archive/upstream/ketle-man--comfyui-vrm-pose-editor/README.md.txt",
+        "status": 200
+      },
+      {
+        "path": "archive/upstream/makehumancommunity--mpfb2/LICENSE.ASSETS.md.txt",
+        "status": 200
+      },
+      {
+        "path": "archive/upstream/makehumancommunity--mpfb2/LICENSE.md.txt",
+        "status": 200
+      },
+      {
+        "path": "archive/upstream/makehumancommunity--mpfb2/LICENSE.CODE.md.txt",
+        "status": 200
+      },
+      {
+        "path": "archive/upstream/makehumancommunity--mpfb2/README.md.txt",
+        "status": 200
+      },
+      {
+        "path": "archive/upstream/makehumancommunity--mpfb2/script_samples/10_complete_character_export_fbx.py.txt",
+        "status": 200
+      },
+      {
+        "path": "archive/upstream/Tencent-Hunyuan--Hunyuan3D-2.1/LICENSE.txt",
+        "status": 200
+      },
+      {
+        "path": "archive/upstream/Tencent-Hunyuan--Hunyuan3D-2.1/Notice.txt",
+        "status": 200
+      },
+      {
+        "path": "archive/upstream/Tencent-Hunyuan--Hunyuan3D-2.1/Notice.txt.txt",
+        "status": 200
+      },
+      {
+        "path": "archive/upstream/Tencent-Hunyuan--Hunyuan3D-2.1/README.md.txt",
+        "status": 200
+      },
+      {
+        "path": "archive/upstream/VAST-AI-Research--UniRig/README.md.txt",
+        "status": 200
+      },
+      {
+        "path": "archive/upstream/Wan-Video--Wan2.2/LICENSE.txt",
+        "status": 200
+      },
+      {
+        "path": "archive/upstream/VAST-AI-Research--UniRig/LICENSE.txt",
+        "status": 200
+      },
+      {
+        "path": "archive/upstream/Wan-Video--Wan2.2/LICENSE.txt.txt",
+        "status": 200
+      },
+      {
+        "path": "archive/upstream/Wan-Video--Wan2.2/wan/modules/animate/preprocess/UserGuider.md.txt",
+        "status": 200
+      },
+      {
+        "path": "archive/upstream/Wan-Video--Wan2.2/README.md.txt",
+        "status": 200
+      },
+      {
+        "path": "archive/upstream/ZhUyU1997--open-pose-editor/LICENSE.txt",
+        "status": 200
+      },
+      {
+        "path": "archive/upstream/ZhUyU1997--open-pose-editor/README.md.txt",
+        "status": 200
+      },
+      {
+        "path": "archive/upstream/zju3dv--GVHMR/README.md.txt",
+        "status": 200
+      },
+      {
+        "path": "archive-data.js",
+        "status": 200
+      },
+      {
+        "path": "assets/images/research-overview-public-v3.png",
+        "status": 200
+      },
+      {
+        "path": "archive/upstream/zju3dv--GVHMR/LICENSE.txt",
+        "status": 200
+      },
+      {
+        "path": "backup-data.js",
+        "status": 200
+      },
+      {
+        "path": "backup-summary.json",
+        "status": 200
+      },
+      {
+        "path": "branch.html",
+        "status": 200
+      },
+      {
+        "path": "data.js",
+        "status": 200
+      },
+      {
+        "path": "effects.css",
+        "status": 200
+      },
+      {
+        "path": "effects.js",
+        "status": 200
+      },
+      {
+        "path": "evidence/export-experiment.json",
+        "status": 200
+      },
+      {
+        "path": "experiments-data.js",
+        "status": 200
+      },
+      {
+        "path": "gallery.css",
+        "status": 200
+      },
+      {
+        "path": "gallery.js",
+        "status": 200
+      },
+      {
+        "path": "index.html",
+        "status": 200
+      },
+      {
+        "path": "media/courtyard-series-v1/03-portrait.png",
+        "status": 200
+      },
+      {
+        "path": "media/courtyard-series-v1/01-environment.png",
+        "status": 200
+      },
+      {
+        "path": "media/courtyard-series-v1/manifest.json",
+        "status": 200
+      },
+      {
+        "path": "media/courtyard-series-v1/06-ending.png",
+        "status": 200
+      },
+      {
+        "path": "media/experiment-v1/dress-b.png",
+        "status": 200
+      },
+      {
+        "path": "media/experiment-v1/dress-a.png",
+        "status": 200
+      },
+      {
+        "path": "media/experiment-v1/manifest.json",
+        "status": 200
+      },
+      {
+        "path": "media/experiment-v1/garden.png",
+        "status": 200
+      },
+      {
+        "path": "media/experiment-v1/pose-guide.png",
+        "status": 200
+      },
+      {
+        "path": "media/experiment-v1/person.png",
+        "status": 200
+      },
+      {
+        "path": "media/experiment-v1/pose-guide.svg",
+        "status": 200
+      },
+      {
+        "path": "media/experiment-v1/pose.png",
+        "status": 200
+      },
+      {
+        "path": "media/experiment-v1/studio-a.png",
+        "status": 200
+      },
+      {
+        "path": "media/experiment-v1/studio-b.png",
+        "status": 200
+      },
+      {
+        "path": "media/pose-pilot-v1/character-base.png",
+        "status": 200
+      },
+      {
+        "path": "media/pose-pilot-v1/manifest.json",
+        "status": 200
+      },
+      {
+        "path": "media/pose-pilot-v1/standing.png",
+        "status": 200
+      },
+      {
+        "path": "media/pose-pilot-v1/seated.png",
+        "status": 200
+      },
+      {
+        "path": "media/pose-pilot-v1/stretch.png",
+        "status": 200
+      },
+      {
+        "path": "media/pose-pilot-v2/character-base.png",
+        "status": 200
+      },
+      {
+        "path": "media/pose-pilot-v2/manifest.json",
+        "status": 200
+      },
+      {
+        "path": "media/pose-pilot-v2/seated.png",
+        "status": 200
+      },
+      {
+        "path": "media/pose-pilot-v2/standing.png",
+        "status": 200
+      },
+      {
+        "path": "media/pose-pilot-v2/stretch.png",
+        "status": 200
+      },
+      {
+        "path": "media/pose-pilot-v3/manifest.json",
+        "status": 200
+      },
+      {
+        "path": "media/pose-pilot-v3/character-base.png",
+        "status": 200
+      },
+      {
+        "path": "media/pose-pilot-v3/standing.png",
+        "status": 200
+      },
+      {
+        "path": "media/pose-pilot-v3/seated.png",
+        "status": 200
+      },
+      {
+        "path": "media/pose-pilot-v3/stretch.png",
+        "status": 200
+      },
+      {
+        "path": "media/research-overview-v1/manifest.json",
+        "status": 200
+      },
+      {
+        "path": "media/research-overview-v1/overview.png",
+        "status": 200
+      },
+      {
+        "path": "media/research-overview-v2/manifest.json",
+        "status": 200
+      },
+      {
+        "path": "media/research-overview-v3/manifest.json",
+        "status": 200
+      },
+      {
+        "path": "media/research-overview-v3/overview.png",
+        "status": 200
+      },
+      {
+        "path": "overview.css",
+        "status": 200
+      },
+      {
+        "path": "overview.js",
+        "status": 200
+      },
+      {
+        "path": "pose-pilot-data.js",
+        "status": 200
+      },
+      {
+        "path": "pose-pilot.css",
+        "status": 200
+      },
+      {
+        "path": "pose-pilot.js",
+        "status": 200
+      },
+      {
+        "path": "resource-data.js",
+        "status": 200
+      },
+      {
+        "path": "resource-research.json",
+        "status": 200
+      },
+      {
+        "path": "resources.js",
+        "status": 200
+      },
+      {
+        "path": "series-record.js",
+        "status": 200
+      },
+      {
+        "path": "series-data.js",
+        "status": 200
+      },
+      {
+        "path": "series.js",
+        "status": 200
+      },
+      {
+        "path": "series.css",
+        "status": 200
+      },
+      {
+        "path": "source.css",
+        "status": 200
+      },
+      {
+        "path": "styles.css",
+        "status": 200
+      },
+      {
+        "path": "workspace-data.js",
+        "status": 200
+      }
+    ]
+  },
+  "browserChecks": {
+    "rootSummaryAndNewCoverVerified": true,
+    "guideModalLoaded": {
+      "width": 1448,
+      "height": 1086
+    },
+    "allSixSeriesImagesLoaded": true,
+    "sourceLinksReplacePrivateImageRequests": true,
+    "privateImageRequests": 0,
+    "seriesPortraitComparisonWorked": true,
+    "selectionJSONExport": {
+      "frames": 6,
+      "promptsAndSourceHashesPresent": true
+    },
+    "narrowViewport": {
+      "width": 403,
+      "horizontalOverflow": false
+    },
+    "desktopViewport": {
+      "width": 1280,
+      "horizontalOverflow": false
+    },
+    "browserErrorLogs": 0
+  },
+  "evidence": "assets/images/deployment-overview-v3/online-guide.png",
+  "gitTransport": "Large Git HTTPS pack uploads reset/timed out. GitHub Git Data API uploads verified each binary blob SHA and the exact complete directory tree before expected-head ref updates.",
+  "note": "This record describes verified runtime commit 7f09afd; the evidence-only commit containing this record does not change runtime files."
+}
