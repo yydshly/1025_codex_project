@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="姿势与服装参考如何进入图像创作：来源、能力边界、婚纱换装场景与可回查的私有备份。">
+  <title>扩展分支 · 参考生图与产品思路</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="effects.css"><link rel="stylesheet" href="source.css">
+  <script defer src="data.js"></script><script defer src="archive-data.js"></script><script defer src="backup-data.js"></script><script defer src="experiments-data.js"></script><script defer src="app.js"></script><script defer src="effects.js"></script>
+</head>
+<body data-view="branch">
+  <a class="skip" href="#content">跳到研究内容</a>
+  <header class="masthead wrap">
+    <a class="brand" href="index.html#understanding" aria-label="返回原库研究首页">POSE <i>/</i> LOOK<span>原库研究 · 独立扩展分支</span></a>
+    <div class="edition">FIELD NOTES <b>011</b><span>2026.10.29 · 持续研究</span></div>
+  </header>
+  <main>
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="dot"></span> 扩展分支 · 从原库研究延伸的思路与实验</p>
+        <h1 id="hero-title">扩展分支：<br><span>参考生图。</span></h1>
+        <p class="hero-lead">这里保留通用生图原理、自建样例和产品场景。<br>这些实验没有使用原库图片，<br class="desktop">不能据此判断原库的控制效果。</p>
+        <div class="hero-links"><a class="button dark" href="#thinking">先看分支思路 <span>↗</span></a><a class="text-link" href="#scenarios">查看产品场景 →</a></div>
+        <p class="small-note">分支自建实验 · 虚构人物与原创概念婚纱 · 不作为原库效果证明。</p>
+      </div>
+      <div class="visual-lab">
+        <div class="lab-label"><span>REFERENCE → RESULT</span><span>实际生成 / v1</span></div>
+        <div id="hero-art" class="hero-art hero-photo-pair"><figure><img src="media/experiment-v1/person.png" alt="本次 AI 生成的虚构成年人物基准图" width="1024" height="1536"><figcaption>人物参考</figcaption></figure><span class="hero-pair-arrow" aria-hidden="true">→</span><figure><img id="hero-result" src="media/experiment-v1/studio-a.png" alt="同一人物穿婚纱 A 的本次生成结果" width="1024" height="1536"><figcaption>本次生成结果</figcaption></figure></div>
+        <div class="art-caption"><span id="art-caption">婚纱 A · 影棚换装</span><span>可在下方查看参考与偏差</span></div>
+        <fieldset class="swatches"><legend>切换实际生成结果</legend><button data-look="studio-a" aria-pressed="true">婚纱 A</button><button data-look="studio-b" aria-pressed="false">婚纱 B</button><button data-look="garden" aria-pressed="false">换场景</button><button data-look="pose" aria-pressed="false">改姿势</button></fieldset>
+      </div>
+    </section>
+    <div class="research-strip wrap"><p><strong>先说结论</strong> 本分支研究参考生图与产品方向，主线仍是原始图库。</p><p>与原库已确认的能力、作者演示分别记录。</p></div>
+    <div class="navigation-shell" id="content"><div class="wrap nav-layout"><nav class="section-nav" aria-label="研究章节" role="tablist"><button id="tab-thinking" role="tab" aria-controls="thinking" data-tab="thinking" aria-selected="true"><span>01</span> 思路理解</button><button id="tab-effects" role="tab" aria-controls="effects" data-tab="effects" aria-selected="false"><span>02</span> 独立生图实验</button><button id="tab-scenarios" role="tab" aria-controls="scenarios" data-tab="scenarios" aria-selected="false"><span>03</span> 产品场景</button></nav><a class="module-link" href="index.html#understanding">← 返回原库主线</a></div></div>
+    <div class="wrap panels">
+      <section class="panel" id="thinking" role="tabpanel" aria-labelledby="tab-thinking">
+        <div class="section-heading"><div><p class="eyebrow">分支 A / 思路理解</p><h2>从图库出发，理解参考生图。</h2></div><p>本节是通用原理与产品思路。<br>不作为原库效果的独立验证。</p></div>
+        <div class="flow" aria-label="图像创作流程">
+          <div class="reference-stack"><span class="mini-label">有权使用的输入</span><div><b>A</b><span>人物图<small>是谁 · 保留身份与体型</small></span></div><div><b>B</b><span>服装图<small>穿什么 · 轮廓与细节</small></span></div><div><b>C</b><span>姿势 / 场景<small>怎么站 · 在哪里拍</small></span></div></div>
+          <span class="flow-arrow" aria-hidden="true">→</span><div class="model-step"><span class="mini-label">执行创作</span><h3>外部图像模型</h3><p>理解多张参考与文字要求<br>生成、比较，再定向修改</p><small>能否保留身份、版型与姿势<br>取决于具体模型与输入质量</small></div><span class="flow-arrow" aria-hidden="true">→</span><div class="outcome-step"><span class="mini-label">交付与核对</span><h3>一份造型方案</h3><p>图片 + 参考来源<br>生成指令 + 返修记录</p><small>保存可用方案，也保留偏差<br>不只收藏一张结果图</small></div>
+        </div>
+        <div class="two-column conclusions"><article><span class="number">A</span><h3>选款时，控制变量。</h3><p>固定同一个人、姿势、机位、背景和灯光，只换婚纱。这样比较的主要差异才是款式，而不是整个画面的变化。</p></article><article><span class="number">B</span><h3>创作时，逐步展开。</h3><p>先确认人物与服装，再换姿势、场景和氛围。每轮知道自己改了什么，比把所有要求一次塞进提示词更容易判断。</p></article></div>
+        <div class="section-heading compact"><div><p class="eyebrow">WHAT EACH LAYER DOES</p><h2>同样叫“姿势”，交付物不一样。</h2></div></div>
+        <div class="layers"><article><span>素材</span><h3>姿势 / 服装图库</h3><p>交付静态图片。帮助表达目标，减少寻找和描述的时间。</p><small>可作为参考，不会自己执行生成。</small></article><article><span>编辑</span><h3>3D 摆姿 / 机位编辑器</h3><p>交付自己设计的姿势、构图或控制图。部分工具支持模型与动画文件。</p><small>导出哪些内容，要逐个工具确认。</small></article><article><span>生成</span><h3>图像 / 视频模型</h3><p>交付新画面或新视频。保真度、稳定性和成本需要实际评测。</p><small>生成画面不等于拿到真实三维资产。</small></article><article><span>资产</span><h3>3D 重建 / 动作 / 绑定</h3><p>交付网格、骨架、蒙皮或运动参数，进入另一套制作流程。</p><small>还要处理适配、形变与软件兼容。</small></article></div>
+        <div class="section-heading compact"><div><p class="eyebrow">FROM LINKS TO AN UNDERSTANDING</p><h2>这次探索，留下了什么判断？</h2></div></div>
+        <ol class="journey"><li><span>起点</span><div><h3>两条分享并不是两个已发布的开源图库。</h3><p>第一条转述日文姿势库；中文 GitHub 镜像主要增加翻译和检索。第二条是服装库制作预告与多参考生图演示，完整资源入口尚未确认。</p></div></li><li><span>厘清</span><div><h3>免费参考、代码开源与素材商用，是三件事。</h3><p>原站允许符合条款的作品创作，但禁止原图再分发。镜像 MIT 不覆盖图片；原站还有真人与未成年人用途限制。真人婚纱方案应另用自有或适当授权的参考。</p></div></li><li><span>扩展</span><div><h3>视频和真实 3D 有价值，但不是图库附带的能力。</h3><p>角色跟随视频、视频恢复人体动作、图片生成网格和自动绑定，分别需要不同模型。它们不是“下载姿势图”自然就能得到的结果。</p></div></li><li><span>聚焦</span><div><h3>先把婚纱选款与个人造型做成能比较的创作流程。</h3><p>对我们的价值假设是：减少找图与反复描述，让选款沟通更具体，成功方案可继续修改。是否值得做产品，要用真实需求、保真效果和返修成本验证。</p></div></li></ol>
+        <div class="next-note"><b>下一步最值得验证</b><p>用自己有权使用的人物图和三套真实服装，做一轮同条件换装比较。记录身份保持、款式细节、成功率、返修次数、耗时和单次成本；先确认有用，再考虑更大的平台。</p><a href="#scenarios">查看婚纱选款方案 →</a></div>
+      </section>
+      <section class="panel" id="effects" role="tabpanel" aria-labelledby="tab-effects" hidden>
+        <div class="section-heading"><div><p class="eyebrow">分支 B / 独立生图实验</p><h2>自建样例：通用参考生图。</h2></div><p>这组图片由我们本次实际生成。<br>每个配置只生成一次，保留全部输入、结果与指令。</p></div>
+        <div class="experiment-disclosure"><b>独立生成实验 · 非原库验收</b><p>虚构成年人物 + 原创概念婚纱 + 自绘姿势图。没有使用源图库的受限原图，没有真实顾客或实物商品。样本量小，展示可行性与偏差，不代表稳定成功率。</p><span>7 次生成调用<br>3 类能力对照</span></div>
+        <div class="effect-case-tabs" aria-label="选择实际效果"><button data-effect-case="tryon" aria-pressed="true"><span>01</span> 同人换款</button><button data-effect-case="scene" aria-pressed="false"><span>02</span> 换场景</button><button data-effect-case="pose" aria-pressed="false"><span>03</span> 姿势参考</button></div>
+        <div class="effect-board">
+          <aside class="effect-input-rail"><div class="effect-column-heading"><h3>实际输入</h3><small>点图放大</small></div><div id="effect-inputs"></div></aside>
+          <div class="effect-comparison"><div class="effect-column-heading"><h3 id="effect-title">同一个人，换两款婚纱</h3><small>拖动对照</small></div>
+            <div id="effect-variants" class="filter-group" aria-label="选择婚纱结果"><button data-effect-variant="studio-a" aria-pressed="true">婚纱 A · 无袖缎面</button><button data-effect-variant="studio-b" aria-pressed="false">婚纱 B · 长袖蕾丝</button></div>
+            <div class="comparison-frame" id="comparison-frame" style="--reveal:50%"><img id="compare-after" src="media/experiment-v1/studio-a.png" width="1024" height="1536" alt="婚纱 A 的本次实际生成结果"><div class="comparison-before"><img id="compare-before" src="media/experiment-v1/person.png" width="1024" height="1536" alt="编辑前的虚构人物参考"></div><span class="compare-tag before-tag">参考 / 基准</span><span class="compare-tag after-tag">实际结果</span><span class="comparison-divider" aria-hidden="true"><i>↔</i></span></div>
+            <label class="range-label" for="compare-range"><span>← 参考图</span><span>生成结果 →</span></label><input id="compare-range" type="range" min="0" max="100" value="50" aria-label="参考图与生成结果的对照比例"><div class="comparison-actions"><button data-reveal="100">看完整参考</button><button data-reveal="0">看完整结果</button><button id="enlarge-effect">放大结果 ↗</button></div>
+          </div>
+          <aside class="effect-review" id="effect-review" aria-live="polite"></aside>
+        </div>
+        <div class="two-outcomes"><div class="section-heading compact"><div><p class="eyebrow">SAME PERSON / DIFFERENT DRESSES</p><h2>两款放在一起，更容易比较。</h2></div><p>同一人物与影棚条件，主要改变服装。<br>这是本次生成结果，不是 CSS 叠衣或贴图模拟。</p></div><div class="outcome-pair"><figure><button data-enlarge="studio-a" aria-label="放大婚纱 A 上身结果"><img src="media/experiment-v1/studio-a.png" width="1024" height="1536" alt="虚构人物穿无袖缎面 A 字婚纱的实际生成结果" loading="lazy"></button><figcaption><b>A / 无袖缎面 A 字裙</b><span>关注：领口、上身蕾丝、腰带和裙摆。</span></figcaption></figure><figure><button data-enlarge="studio-b" aria-label="放大婚纱 B 上身结果"><img src="media/experiment-v1/studio-b.png" width="1024" height="1536" alt="同一虚构人物穿长袖全蕾丝婚纱的实际生成结果" loading="lazy"></button><figcaption><b>B / 长袖全蕾丝</b><span>关注：袖型、V 领、蕾丝分布与轮廓。</span></figcaption></figure></div></div>
+        <div class="section-heading compact"><div><p class="eyebrow">FROM EFFECT TO PRODUCT</p><h2>看见效果以后，可以扩展什么？</h2></div><p>把已展示的能力与待验证方向分开。<br>生成一张好图，还需要走到可重复交付。</p></div>
+        <div class="extension-rows"><article><span class="evidence-level done">本次有图</span><div><h3>选款对比 → 个性化婚纱款式册</h3><p>固定人物与拍摄条件，逐款换婚纱，关联候选款、偏好和返修。实际商品还需验证领口、蕾丝、颜色与长度是否忠实。</p></div><button data-open-scenario="bridal-compare">看选款方案 →</button></article><article><span class="evidence-level done">本次有图</span><div><h3>场景与姿势 → 写真概念图、拍摄清单</h3><p>围绕确定的人物和服装，讨论场景氛围与动作。交付可沟通的方案，现场可执行性和成片仍需摄影流程完成。</p></div><button data-open-scenario="bridal-photo">看摄影方案 →</button></article><article><span class="evidence-level planned">尚未实测</span><div><h3>头纱、发型、配饰 → 完整新娘造型</h3><p>每轮改变一个造型要素，比较搭配。下一步要验证遮挡、配饰归属和服装保持，不能把本次换婚纱直接当作整套造型已稳定。</p></div><button data-open-scenario="bridal-styling">看造型方案 →</button></article><article><span class="evidence-level planned">尚未实测</span><div><h3>双人合影、真实 SKU → 更高要求的产品</h3><p>双人需要同时保持两个人；店铺需要忠实对应真实商品。这些方向还需要客户授权、商品核对和人工验收。</p></div><button data-open-scenario="shop">看店铺方案 →</button></article><article><span class="evidence-level research">独立流程</span><div><h3>视频 / 真实 3D → 另外的输入和交付</h3><p>参考视频驱动角色、从视频恢复动作、从图片生成网格，需要各自模型。此前仅完成有限 GLB 回读，不把本次图片演示扩写成视频或 3D 能力。</p></div><a href="#tools">看能力边界 →</a></article></div>
+        <div class="experiment-record"><p><b>实验记录可回查</b> 3 张 AI 输入图、1 张自绘姿势参考、4 张参考编辑结果。各配置 n=1，没有量化身份相似度、服装还原率、尺寸或合身测试；真实商品和更多人物仍待验证。</p><a class="button light" href="media/experiment-v1/manifest.json" target="_blank" rel="noopener">查看指令、输入关联与文件哈希 ↗</a></div>
+      </section>
+      <section class="panel" id="scenarios" role="tabpanel" aria-labelledby="tab-scenarios" hidden>
+        <div class="section-heading"><div><p class="eyebrow">分支 C / 产品场景假设</p><h2>从“生成一张图”，<br>走向“解决一件事”。</h2></div><p>每个方向都写清输入、固定项、变化项与交付。<br>这里的价值是待验证的产品假设，不能当效果承诺。</p></div>
+        <div class="scenario-layout"><div id="scenario-list" class="scenario-list" aria-label="选择创作场景"></div><article id="scenario-detail" class="scenario-detail" aria-live="polite"></article></div>
+        <div class="product-path"><div><span class="mini-label">可扩展的产品目标</span><h3>先有稳定结果，再有产品。</h3></div><ol><li><b>01 · 个人创作工作台</b><p>参考、指令、结果和返修关联保存。</p></li><li><b>02 · 可比较的选款方案</b><p>同条件对比，记录喜欢与不喜欢。</p></li><li><b>03 · 店铺沟通与款式册</b><p>关联真实商品，人工确认商品细节。</p></li></ol><p class="small-note">现成图像工具已经能尝试多参考换装。新产品需要证明：比直接在通用工具里生图，选款更快、商品更准、方案更好复用。只是把图库与提示词放到一起，投入价值有限。</p><p class="small-note">本项目已完成独立生图小样本与研究方案整理，尚未接入实时生成、商品系统或客户照片服务。</p></div>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer wrap"><div class="brand">POSE <i>/</i> LOOK<span>把目标说清楚，把判断留下来。</span></div><p>研究 011 · 扩展分支<br>虚构人物与原创概念婚纱；源图库图片仍保留在私有备份。</p></footer>
+  <dialog id="effect-lightbox" aria-labelledby="lightbox-title"><div class="lightbox-heading"><h2 id="lightbox-title">实验原图</h2><button id="close-lightbox" aria-label="关闭原图">关闭 ×</button></div><img id="lightbox-image" alt=""><p id="lightbox-caption"></p></dialog>
+  <div id="toast" role="status" class="toast" hidden></div>
+</body>
+</html>

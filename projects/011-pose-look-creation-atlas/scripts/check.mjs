@@ -24,9 +24,13 @@ for(const asset of experiment.assets){
 const manifest=JSON.parse(await readFile(new URL('media/experiment-v1/manifest.json',base),'utf8'));
 if(JSON.stringify(manifest)!==JSON.stringify(experiment))throw new Error('Web experiment data differs from manifest');
 const html=await readFile(new URL('index.html',base),'utf8');
-for(const match of html.matchAll(/(?:src|href)="([^"#]+)"/g)){
+const branch=await readFile(new URL('branch.html',base),'utf8');
+for(const page of [html,branch])for(const match of page.matchAll(/(?:src|href)="([^"#]+)"/g)){
   const relative=match[1];if(/^(?:https?:|data:)/.test(relative))continue;
-  if(!(await stat(new URL(relative,base))).isFile())throw new Error(`Missing local asset: ${relative}`);
+  const target=new URL(relative,base);target.hash='';target.search='';
+  if(!(await stat(target)).isFile())throw new Error(`Missing local asset: ${relative}`);
 }
 if(/original-images\//.test(html))throw new Error('Public HTML references private originals');
+if(!html.includes('data-view="source"')||html.includes('id="effects"')||html.includes('experiment-v1/')||html.includes('src="effects.js"'))throw new Error('The source main page must not present independent experiments');
+if(!branch.includes('data-view="branch"')||!branch.includes('id="effects"')||!branch.includes('id="thinking"')||!branch.includes('id="scenarios"')||!branch.includes('非原库验收'))throw new Error('Extension branch incomplete or unlabelled');
 console.log('Research, scripts, local links, 8 experiment assets and their input links/hashes, plus original-backup summary verified.');

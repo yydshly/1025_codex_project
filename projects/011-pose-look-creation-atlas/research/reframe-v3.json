@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-29",
+  "scope": "Restore original-library research as the main storyline; preserve prior work as an independent branch.",
+  "mainPage": "index.html",
+  "branchPage": "branch.html",
+  "mainPanels": [
+    "understanding",
+    "tools",
+    "archive"
+  ],
+  "branchPanels": [
+    "thinking",
+    "effects",
+    "scenarios"
+  ],
+  "attribution": "Author demonstrations, original-library facts and independent experiments are explicitly separate.",
+  "preservation": {
+    "experimentImages": 8,
+    "originalImageGenCalls": 7,
+    "newImageGenCalls": 0,
+    "archivedSourceFiles": 28,
+    "privateOriginals": 1439
+  },
+  "localBrowserChecks": [
+    "Main default is original-library research",
+    "Main has zero experiment images and does not load effects.js",
+    "Branch default is thinking; experiment B selection works",
+    "Branch return opens original-library main",
+    "Legacy main #effects redirects to branch.html#effects",
+    "GLB search shows four results",
+    "Main and branch at 390x844 have no horizontal overflow",
+    "No browser console errors"
+  ],
+  "cover": "assets/images/source-overview-v3.jpg"
+}

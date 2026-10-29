@@ -1,5 +1,5 @@
 window.RESEARCH = {
-  title: '姿势与造型 · 图像创作研究', date: '2026-10-29',
+  title: '姿势与服装参考库 · 来源与能力研究', date: '2026-10-29',
   sources: [
     {id:'post-pose', title:'最初的中文转述', url:'https://x.com/leo_xiaolei/status/2114971707962536302', kind:'研究起点', note:'转述“1,439 张姿势图”；“开源”一词需要继续核对素材与代码的许可。'},
     {id:'post-original', title:'原作者的姿势库发布说明', url:'https://x.com/giaaibusi/status/2114913843331871157', kind:'原作者', note:'发布说明给出 1,439 张、288 组姿势；同一姿势包含不同观察角度。'},

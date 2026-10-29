@@ -168,8 +168,8 @@
     {
       "id": "011",
       "slug": "pose-look-creation-atlas",
-      "name": "姿势与造型 · 图像创作研究",
-      "summary": "以实际生成图展示同一人物两款婚纱、庭院场景和姿势参考编辑，支持拖动对照、原图放大及产品场景关联；汇总12项工具、8类创作方向、许可和资料备份。保留完整输入、指令与偏差，小样本不代表商品保真或稳定成功率。",
+      "name": "姿势与服装参考库 · 来源与能力研究",
+      "summary": "回到原始姿势与服装参考库：核对日文原站、中文转述与镜像、作者演示、输入输出、许可及价值边界，关联原图私人备份。通用参考生图实验和换装/婚纱产品思路保留为独立分支，不作为原库效果验证。",
       "source": "https://x.com/leo_xiaolei/status/2114971707962536302",
       "sourceName": "姿势与服装参考图库原帖及相关源库",
       "status": "researching",
@@ -180,7 +180,7 @@
         "能力研究",
         "资料备份"
       ],
-      "cover": "assets/images/effects-overview-v2.jpg",
+      "cover": "assets/images/source-overview-v3.jpg",
       "demoUrl": "https://yydshly.github.io/1025_codex_project/011-pose-look-creation-atlas/",
       "createdAt": "2026-10-29"
     }

@@ -36,6 +36,7 @@ function icon(kind, color = 'rose'){
   return `<svg viewBox="0 0 56 74" aria-hidden="true"><path d="${paths[kind]||paths.gown}" fill="${fill}" stroke="${line}" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
 }
 function setLook(look){
+  if(!$('#hero-result')||!window.EXPERIMENTS)return;
   const asset=window.EXPERIMENTS.assets.find(item=>item.id===look);
   if(!asset)return;
   state.look=look;$('#hero-result').src=asset.path;$('#hero-result').alt=asset.label;
@@ -43,9 +44,12 @@ function setLook(look){
   $$('[data-look]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.look===look)));
 }
 
-const tabs = ['effects','understanding','tools','scenarios','archive'];
+const branchView=document.body.dataset.view==='branch';
+const tabs=branchView?['thinking','effects','scenarios']:['understanding','tools','archive'];
 function showTab(name, scroll = false){
-  if(!tabs.includes(name))name='effects';
+  if(!branchView&&['thinking','effects','scenarios'].includes(name)){location.replace('branch.html#'+name);return;}
+  if(branchView&&['understanding','tools','archive'].includes(name)){location.replace('index.html#'+name);return;}
+  if(!tabs.includes(name))name=tabs[0];
   $$('.panel').forEach(p=>{p.hidden=p.id!==name;});
   $$('[data-tab]').forEach(b=>{b.setAttribute('aria-selected',String(b.dataset.tab===name));b.tabIndex=b.dataset.tab===name?0:-1;});
   if(scroll)$('#content').scrollIntoView({block:'start',behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});
@@ -80,8 +84,8 @@ function renderCompare(){
   $('#compare-table').innerHTML=chosen.length?`<table><thead><tr><th scope="col">能力</th>${chosen.map(t=>`<th scope="col">${escapeHTML(t.name)}</th>`).join('')}</tr></thead><tbody>${[['输入','input'],['输出','output'],['相机','camera'],['限制','limit'],['验证','evidence'],['许可','license']].map(([label,key])=>`<tr><th scope="row">${label}</th>${chosen.map(t=>`<td>${escapeHTML(t[key])}</td>`).join('')}</tr>`).join('')}</tbody></table>`:'';
 }
 $$('[data-family]').forEach(b=>b.addEventListener('click',()=>{state.family=b.dataset.family;$$('[data-family]').forEach(item=>item.setAttribute('aria-pressed',String(item===b)));renderTools();}));
-$('#tool-search').addEventListener('input',event=>{state.query=event.target.value.trim().toLowerCase();renderTools();});
-$('#clear-compare').addEventListener('click',()=>{state.selected.clear();renderCompare();$$('[data-compare]').forEach(b=>{b.checked=false;});});
+$('#tool-search')?.addEventListener('input',event=>{state.query=event.target.value.trim().toLowerCase();renderTools();});
+$('#clear-compare')?.addEventListener('click',()=>{state.selected.clear();renderCompare();$$('[data-compare]').forEach(b=>{b.checked=false;});});
 
 const sceneDrafts=new Map();
 function list(items){return `<ul>${items.map(item=>`<li>${escapeHTML(item)}</li>`).join('')}</ul>`;}
@@ -97,8 +101,11 @@ function renderScene(){
   });
   $('#export-plan').addEventListener('click',()=>download(`pose-look-${s.id}.json`,{researchDate:research.date,...s,prompt:$('#scene-prompt').value,status:'Planning template; not a validated generation result.',sourcePage:'011-pose-look-creation-atlas'}));
 }
+if($('#scenario-list')){
 $('#scenario-list').innerHTML=research.scenarios.map(s=>`<button class="scenario-choice" data-scene="${s.id}" aria-pressed="false" aria-controls="scenario-detail">${icon(s.icon,s.color)}<span><b>${escapeHTML(s.name)}</b><small>${escapeHTML(s.kicker)}</small></span></button>`).join('');
 $$('[data-scene]').forEach(b=>b.addEventListener('click',()=>{state.scene=b.dataset.scene;renderScene();}));
+}
+
 function download(filename,data){
   const blob=new Blob([JSON.stringify(data,null,2)+'\n'],{type:'application/json;charset=utf-8'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=filename;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);notify('已准备下载，请在浏览器下载记录中查看。');
 }
@@ -116,5 +123,9 @@ function renderArchive(){
   $('#archive-caption').textContent=`${archive.repositories.length} 个项目 · ${archive.fileCount} 份文件 · ${(archive.totalBytes/1024).toFixed(1)} KiB\n只存资料，不安装、不运行上游`;
   $('#archives-list').innerHTML=archive.repositories.map(r=>`<details class="archive-item"><summary><span>${escapeHTML(r.repository)}</span><small>${r.files.length} 份文件 · ${escapeHTML(archiveLicenseLabels[r.repository]||r.licenseTag||'按原文适用')}</small></summary><p>固定版本 <code>${escapeHTML(r.commit)}</code> · 分支 ${escapeHTML(r.branch)}</p><ul>${r.files.map(f=>`<li><a href="archive/${escapeHTML(f.path)}" target="_blank" rel="noopener">${escapeHTML(f.upstreamPath)} ↗</a><span>${f.bytes.toLocaleString('en-US')} B · ${ext(f.sourceUrl,'原始位置')}</span></li>`).join('')}</ul><p>文件许可按各自原文适用；快照不合并或扩大任何上游授权。哈希见 <a href="archive/manifest.json">清单</a>。</p></details>`).join('');
 }
-$('#download-research').addEventListener('click',()=>download('pose-look-research-index.json',{...research,archive,backup,experiments:window.EXPERIMENTS}));
-renderTools();renderCompare();renderScene();renderBackup();renderArchive();setLook('studio-a');showTab(location.hash.slice(1));
+$('#download-research')?.addEventListener('click',()=>download('pose-look-research-index.json',{...research,archive,backup,experiments:window.EXPERIMENTS}));
+if($('#tools-list')){renderTools();renderCompare();}
+if($('#scenario-list'))renderScene();
+if($('#backup-panel'))renderBackup();
+if($('#sources-list'))renderArchive();
+setLook('studio-a');showTab(location.hash.slice(1));

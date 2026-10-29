@@ -2,89 +2,61 @@
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="姿势与服装参考如何进入图像创作：来源、能力边界、婚纱换装场景与可回查的私有备份。">
-  <title>POSE / LOOK · 姿势与造型研究</title>
+  <meta name="description" content="研究原始姿势与服装参考库的来源、作者演示、实际能力、许可与价值；通用生图实验作为独立扩展分支。">
+  <title>原始姿势与服装参考库 · 研究主线</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="effects.css">
-  <script defer src="data.js"></script><script defer src="archive-data.js"></script><script defer src="backup-data.js"></script><script defer src="experiments-data.js"></script><script defer src="app.js"></script><script defer src="effects.js"></script>
+  <link rel="stylesheet" href="source.css">
+  <script defer src="data.js"></script><script defer src="archive-data.js"></script><script defer src="backup-data.js"></script><script defer src="app.js"></script>
 </head>
-<body>
+<body data-view="source">
   <a class="skip" href="#content">跳到研究内容</a>
   <header class="masthead wrap">
-    <a class="brand" href="#effects" aria-label="POSE LOOK 研究首页">POSE <i>/</i> LOOK<span>姿势与造型研究</span></a>
+    <a class="brand" href="#understanding" aria-label="原库研究首页">POSE <i>/</i> LOOK<span>原始参考图库 · 研究主线</span></a>
     <div class="edition">FIELD NOTES <b>011</b><span>2026.10.29 · 持续研究</span></div>
   </header>
+
   <main>
-    <section class="hero wrap" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="dot"></span> 从两条图库分享，走向自己的创作方向</p>
-        <h1 id="hero-title">让参考，<br>变成<span>创作。</span></h1>
-        <p class="hero-lead">姿势决定怎么站，服装表达穿什么。<br>价值来自把人物、造型和场景组织成<br class="desktop">一份可以比较、修改和复用的方案。</p>
-        <div class="hero-links"><a class="button dark" href="#effects">先看实际效果 <span>↗</span></a><a class="text-link" href="#scenarios">探索可扩展场景 →</a></div>
-        <p class="small-note">本次真实生成实验 · 虚构成年人物与原创概念婚纱 · 本页展示结果，不实时生图。</p>
-      </div>
-      <div class="visual-lab">
-        <div class="lab-label"><span>REFERENCE → RESULT</span><span>实际生成 / v1</span></div>
-        <div id="hero-art" class="hero-art hero-photo-pair"><figure><img src="media/experiment-v1/person.png" alt="本次 AI 生成的虚构成年人物基准图" width="1024" height="1536"><figcaption>人物参考</figcaption></figure><span class="hero-pair-arrow" aria-hidden="true">→</span><figure><img id="hero-result" src="media/experiment-v1/studio-a.png" alt="同一人物穿婚纱 A 的本次生成结果" width="1024" height="1536"><figcaption>本次生成结果</figcaption></figure></div>
-        <div class="art-caption"><span id="art-caption">婚纱 A · 影棚换装</span><span>可在下方查看参考与偏差</span></div>
-        <fieldset class="swatches"><legend>切换实际生成结果</legend><button data-look="studio-a" aria-pressed="true">婚纱 A</button><button data-look="studio-b" aria-pressed="false">婚纱 B</button><button data-look="garden" aria-pressed="false">换场景</button><button data-look="pose" aria-pressed="false">改姿势</button></fieldset>
-      </div>
+    <section class="hero wrap source-hero" aria-labelledby="hero-title">
+      <div class="hero-copy"><p class="eyebrow"><span class="dot"></span> 研究主线 · 回到原来的两条分享</p><h1 id="hero-title">先看清，<br>这两个<span>库。</span></h1><p class="hero-lead">它们提供什么素材，作者演示了什么，<br>哪些能力属于原库，哪些属于外部 AI，<br>以及这些参考对我们到底有什么价值。</p><div class="hero-links"><a class="button dark" href="#understanding">研究原库与演示 ↗</a><a class="text-link" href="#archive">查看来源与备份 →</a></div><p class="small-note">原始图库是研究主体。已有的生图实验与产品思路保留为独立分支。</p></div>
+      <div class="source-map"><p class="eyebrow">TWO POSTS / TWO DIFFERENT OBJECTS</p><a class="source-map-item" href="https://ai-pose-gallery.pages.dev/" target="_blank" rel="noopener noreferrer"><span>01 · POSE-DB-01</span><h2>姿势参考图库 <i>↗</i></h2><p>原尺寸 PNG · 已有多角度 · 可筛选</p><div><b>1,439 张</b><b>288 组</b></div></a><div class="source-map-connector">日文原站 → 中文转述 / 第三方汉化</div><a class="source-map-item outfit" href="https://x.com/giaaibusi/status/2115431641766359244" target="_blank" rel="noopener noreferrer"><span>02 · 原作者预告与演示</span><h2>服装参考探索 <i>↗</i></h2><p>人物 + 服装 + 姿势 → 外部 AI → 生成图</p><div><b>完整资源未确认</b><b>作者案例</b></div></a><p class="source-map-foot">资料关系示意；原始素材与演示通过上方来源入口查看。</p></div>
     </section>
-    <div class="research-strip wrap"><p><strong>先说结论</strong> 对我们最直接的方向，是基于图片的造型创作。</p><p>视频与真实 3D 也有扩展，但需要新的模型、数据和工作流程。</p></div>
-    <div class="navigation-shell" id="content"><nav class="section-nav wrap" aria-label="研究章节" role="tablist">
-      <button id="tab-effects" role="tab" aria-controls="effects" data-tab="effects" aria-selected="true"><span>01</span> 实际效果对照</button>
-      <button id="tab-understanding" role="tab" aria-controls="understanding" data-tab="understanding" aria-selected="false"><span>02</span> 理解与图片探索</button>
-      <button id="tab-tools" role="tab" aria-controls="tools" data-tab="tools" aria-selected="false"><span>03</span> 工具与能力</button>
-      <button id="tab-scenarios" role="tab" aria-controls="scenarios" data-tab="scenarios" aria-selected="false"><span>04</span> 创作场景</button>
-      <button id="tab-archive" role="tab" aria-controls="archive" data-tab="archive" aria-selected="false"><span>05</span> 来源与备份</button>
-    </nav></div>
+    <div class="research-strip wrap"><p><strong>研究对象</strong> 原库的素材、检索、用法、授权与价值。</p><p>我们的独立生图样例另列为扩展，不替代原库验证。</p></div>
+    <div class="navigation-shell" id="content"><div class="wrap nav-layout"><nav class="section-nav" aria-label="研究章节" role="tablist"><button id="tab-understanding" role="tab" aria-controls="understanding" data-tab="understanding" aria-selected="true"><span>01</span> 原库与作者演示</button><button id="tab-tools" role="tab" aria-controls="tools" data-tab="tools" aria-selected="false"><span>02</span> 相关能力对照</button><button id="tab-archive" role="tab" aria-controls="archive" data-tab="archive" aria-selected="false"><span>03</span> 来源与备份</button></nav><a class="module-link" href="branch.html#thinking">扩展分支 ↗</a></div></div>
     <div class="wrap panels">
-      <section class="panel" id="effects" role="tabpanel" aria-labelledby="tab-effects">
-        <div class="section-heading"><div><p class="eyebrow">01 / ACTUAL IMAGE EXPERIMENTS</p><h2>先看，参考改变了什么。</h2></div><p>这组图片由我们本次实际生成。<br>每个配置只生成一次，保留全部输入、结果与指令。</p></div>
-        <div class="experiment-disclosure"><b>独立生成实验</b><p>虚构成年人物 + 原创概念婚纱 + 自绘姿势图。没有使用源图库的受限原图，没有真实顾客或实物商品。样本量小，展示可行性与偏差，不代表稳定成功率。</p><span>7 次生成调用<br>3 类能力对照</span></div>
-        <div class="effect-case-tabs" aria-label="选择实际效果"><button data-effect-case="tryon" aria-pressed="true"><span>01</span> 同人换款</button><button data-effect-case="scene" aria-pressed="false"><span>02</span> 换场景</button><button data-effect-case="pose" aria-pressed="false"><span>03</span> 姿势参考</button></div>
-        <div class="effect-board">
-          <aside class="effect-input-rail"><div class="effect-column-heading"><h3>实际输入</h3><small>点图放大</small></div><div id="effect-inputs"></div></aside>
-          <div class="effect-comparison"><div class="effect-column-heading"><h3 id="effect-title">同一个人，换两款婚纱</h3><small>拖动对照</small></div>
-            <div id="effect-variants" class="filter-group" aria-label="选择婚纱结果"><button data-effect-variant="studio-a" aria-pressed="true">婚纱 A · 无袖缎面</button><button data-effect-variant="studio-b" aria-pressed="false">婚纱 B · 长袖蕾丝</button></div>
-            <div class="comparison-frame" id="comparison-frame" style="--reveal:50%"><img id="compare-after" src="media/experiment-v1/studio-a.png" width="1024" height="1536" alt="婚纱 A 的本次实际生成结果"><div class="comparison-before"><img id="compare-before" src="media/experiment-v1/person.png" width="1024" height="1536" alt="编辑前的虚构人物参考"></div><span class="compare-tag before-tag">参考 / 基准</span><span class="compare-tag after-tag">实际结果</span><span class="comparison-divider" aria-hidden="true"><i>↔</i></span></div>
-            <label class="range-label" for="compare-range"><span>← 参考图</span><span>生成结果 →</span></label><input id="compare-range" type="range" min="0" max="100" value="50" aria-label="参考图与生成结果的对照比例"><div class="comparison-actions"><button data-reveal="100">看完整参考</button><button data-reveal="0">看完整结果</button><button id="enlarge-effect">放大结果 ↗</button></div>
-          </div>
-          <aside class="effect-review" id="effect-review" aria-live="polite"></aside>
+
+      <section class="panel" id="understanding" role="tabpanel" aria-labelledby="tab-understanding">
+        <div class="section-heading"><div><p class="eyebrow">01 / ORIGINAL LIBRARIES</p><h2>先厘清：两条分享，分别是什么。</h2></div><p>主线只讨论原始素材、作者演示、实际能力与价值。<br>通用生图实验和产品思路放在独立分支。</p></div>
+        <div class="original-grid">
+          <article class="original-card"><p class="source-kicker">01 / 姿势图库</p><h3>POSE-DB-01</h3><p class="original-lead">日文原站提供无脸灰色人偶线稿、多角度姿势参考 PNG。</p><div class="source-counts"><span><strong>1,439</strong>张图片</span><span><strong>288</strong>组姿势</span></div><p>最初中文帖是转述。中文 GitHub 镜像主要增加汉化、命名和检索；原图与代码的授权需要分开看。</p><dl><dt>输入</dt><dd>选择类别、姿势和已有角度</dd><dt>输出</dt><dd>静态原尺寸 PNG</dd><dt>边界</dt><dd>不自行生图，不提供可自由旋转的 3D 人物或骨骼动画。</dd></dl><div class="source-actions"><a class="button dark" href="https://ai-pose-gallery.pages.dev/" target="_blank" rel="noopener noreferrer">打开原图库 ↗</a><a href="https://x.com/leo_xiaolei/status/2114971707962536302" target="_blank" rel="noopener noreferrer">最初中文分享 ↗</a><a href="https://github.com/anhao/ai-pose-gallery-zh" target="_blank" rel="noopener noreferrer">中文镜像 ↗</a></div></article>
+          <article class="original-card"><p class="source-kicker">02 / 服装参考库预告</p><h3>原作者的衣装参考探索</h3><p class="original-lead">制作预告与多参考图生图演示。</p><div class="source-counts"><span><strong>约 1,000</strong>作者预告规模</span><span><strong>未确认</strong>完整发布与下载</span></div><p>研究时查到的是作者预告和演示，不把预告数量写成已取得的图库。私人备份只保留了一张原始预告拼图。</p><dl><dt>演示输入</dt><dd>人物图、服装图、姿势图</dd><dt>演示输出</dt><dd>由外部图像模型生成的人物画面</dd><dt>边界</dt><dd>演示不能证明完整图库已发布，也不能证明所有模型都能稳定复现。</dd></dl><div class="source-actions"><a class="button dark" href="https://x.com/giaaibusi/status/2115431641766359244" target="_blank" rel="noopener noreferrer">查看原作者演示 ↗</a><a href="https://x.com/giaaibusi/status/2115432978071613444" target="_blank" rel="noopener noreferrer">后续追帖 ↗</a></div></article>
         </div>
-        <div class="two-outcomes"><div class="section-heading compact"><div><p class="eyebrow">SAME PERSON / DIFFERENT DRESSES</p><h2>两款放在一起，更容易比较。</h2></div><p>同一人物与影棚条件，主要改变服装。<br>这是本次生成结果，不是 CSS 叠衣或贴图模拟。</p></div><div class="outcome-pair"><figure><button data-enlarge="studio-a" aria-label="放大婚纱 A 上身结果"><img src="media/experiment-v1/studio-a.png" width="1024" height="1536" alt="虚构人物穿无袖缎面 A 字婚纱的实际生成结果" loading="lazy"></button><figcaption><b>A / 无袖缎面 A 字裙</b><span>关注：领口、上身蕾丝、腰带和裙摆。</span></figcaption></figure><figure><button data-enlarge="studio-b" aria-label="放大婚纱 B 上身结果"><img src="media/experiment-v1/studio-b.png" width="1024" height="1536" alt="同一虚构人物穿长袖全蕾丝婚纱的实际生成结果" loading="lazy"></button><figcaption><b>B / 长袖全蕾丝</b><span>关注：袖型、V 领、蕾丝分布与轮廓。</span></figcaption></figure></div></div>
-        <div class="section-heading compact"><div><p class="eyebrow">FROM EFFECT TO PRODUCT</p><h2>看见效果以后，可以扩展什么？</h2></div><p>把已展示的能力与待验证方向分开。<br>生成一张好图，还需要走到可重复交付。</p></div>
-        <div class="extension-rows"><article><span class="evidence-level done">本次有图</span><div><h3>选款对比 → 个性化婚纱款式册</h3><p>固定人物与拍摄条件，逐款换婚纱，关联候选款、偏好和返修。实际商品还需验证领口、蕾丝、颜色与长度是否忠实。</p></div><button data-open-scenario="bridal-compare">看选款方案 →</button></article><article><span class="evidence-level done">本次有图</span><div><h3>场景与姿势 → 写真概念图、拍摄清单</h3><p>围绕确定的人物和服装，讨论场景氛围与动作。交付可沟通的方案，现场可执行性和成片仍需摄影流程完成。</p></div><button data-open-scenario="bridal-photo">看摄影方案 →</button></article><article><span class="evidence-level planned">尚未实测</span><div><h3>头纱、发型、配饰 → 完整新娘造型</h3><p>每轮改变一个造型要素，比较搭配。下一步要验证遮挡、配饰归属和服装保持，不能把本次换婚纱直接当作整套造型已稳定。</p></div><button data-open-scenario="bridal-styling">看造型方案 →</button></article><article><span class="evidence-level planned">尚未实测</span><div><h3>双人合影、真实 SKU → 更高要求的产品</h3><p>双人需要同时保持两个人；店铺需要忠实对应真实商品。这些方向还需要客户授权、商品核对和人工验收。</p></div><button data-open-scenario="shop">看店铺方案 →</button></article><article><span class="evidence-level research">独立流程</span><div><h3>视频 / 真实 3D → 另外的输入和交付</h3><p>参考视频驱动角色、从视频恢复动作、从图片生成网格，需要各自模型。此前仅完成有限 GLB 回读，不把本次图片演示扩写成视频或 3D 能力。</p></div><a href="#tools">看能力边界 →</a></article></div>
-        <div class="experiment-record"><p><b>实验记录可回查</b> 3 张 AI 输入图、1 张自绘姿势参考、4 张参考编辑结果。各配置 n=1，没有量化身份相似度、服装还原率、尺寸或合身测试；真实商品和更多人物仍待验证。</p><a class="button light" href="media/experiment-v1/manifest.json" target="_blank" rel="noopener">查看指令、输入关联与文件哈希 ↗</a></div>
-      </section>
-      <section class="panel" id="understanding" role="tabpanel" aria-labelledby="tab-understanding" hidden>
-        <div class="section-heading"><div><p class="eyebrow">01 / UNDERSTANDING</p><h2>参考图提供目标，<br>生成模型把目标变成画面。</h2></div><p>图库不是生成器，也不是三维动作。<br>分清它们交付什么，才能判断对自己有没有用。</p></div>
-        <div class="flow" aria-label="图像创作流程">
-          <div class="reference-stack"><span class="mini-label">有权使用的输入</span><div><b>A</b><span>人物图<small>是谁 · 保留身份与体型</small></span></div><div><b>B</b><span>服装图<small>穿什么 · 轮廓与细节</small></span></div><div><b>C</b><span>姿势 / 场景<small>怎么站 · 在哪里拍</small></span></div></div>
-          <span class="flow-arrow" aria-hidden="true">→</span><div class="model-step"><span class="mini-label">执行创作</span><h3>外部图像模型</h3><p>理解多张参考与文字要求<br>生成、比较，再定向修改</p><small>能否保留身份、版型与姿势<br>取决于具体模型与输入质量</small></div><span class="flow-arrow" aria-hidden="true">→</span><div class="outcome-step"><span class="mini-label">交付与核对</span><h3>一份造型方案</h3><p>图片 + 参考来源<br>生成指令 + 返修记录</p><small>保存可用方案，也保留偏差<br>不只收藏一张结果图</small></div>
+        <div class="section-heading compact"><div><p class="eyebrow">AUTHOR'S DEMONSTRATION</p><h2>作者展示的是怎样一条链路？</h2></div><p>下图解释原帖中各张参考的作用。<br>原帖效果请通过作者入口查看，未用我们的样例替代。</p></div>
+        <div class="flow author-flow"><div class="reference-stack"><span class="mini-label">作者演示中的参考条件</span><div><b>A</b><span>人物图<small>希望保留谁</small></span></div><div><b>B</b><span>服装图<small>希望穿哪套</small></span></div><div><b>C</b><span>姿势图<small>希望采用什么动作</small></span></div></div><span class="flow-arrow" aria-hidden="true">→</span><div class="model-step"><span class="mini-label">生成由外部工具执行</span><h3>图像生成模型</h3><p>作者在 ChatGPT 中演示<br>组合参考并提出要求</p><small>图库在这里提供素材条件。</small></div><span class="flow-arrow" aria-hidden="true">→</span><div class="outcome-step"><span class="mini-label">原帖中的案例结果</span><h3>新的生成图</h3><p>尝试组合人物、服装与动作</p><a class="text-link" href="https://x.com/giaaibusi/status/2115431641766359244" target="_blank" rel="noopener noreferrer">去作者原帖看效果 ↗</a><small>作者案例，尚未完成原库独立复现。</small></div></div>
+        <div class="source-note"><b>“合并”的具体含义</b><p>用人物图表达身份，用原库图片表达服装或姿势目标，再由外部 AI 重新生成画面。素材是否有帮助、能控制到什么程度，需要用原库做对照验证。</p></div>
+        <div class="section-heading compact"><div><p class="eyebrow">CAPABILITY BOUNDARY</p><h2>原库提供什么，效果又取决于什么？</h2></div></div>
+        <div class="source-capabilities">
+          <article><span>素材层</span><h3>姿势、角度和服装参考</h3><p>把难以用文字讲清的目标变成可见图片。姿势站能筛选已有角度；不会从一张图连续旋转到任意机位。</p></article>
+          <article><span>检索层</span><h3>分类、命名与中文界面</h3><p>帮助更快找到合适素材。汉化和分类不会自动增加原始动作，也不增加图像模型的能力。</p></article>
+          <article><span>生成层</span><h3>由外部 AI 理解参考</h3><p>身份保持、姿势跟随、服装细节和出图稳定性，取决于模型、输入和流程。图库本身不承诺这些结果。</p></article>
+          <article><span>其他工具</span><h3>3D 编辑、动作与网格</h3><p>相关开源工具有不同输入输出，应单独研究。不能把它们的编辑和导出能力归到这两个图库上。</p><a href="#tools">查看相关能力对照 →</a></article>
         </div>
-        <div class="two-column conclusions"><article><span class="number">A</span><h3>选款时，控制变量。</h3><p>固定同一个人、姿势、机位、背景和灯光，只换婚纱。这样比较的主要差异才是款式，而不是整个画面的变化。</p></article><article><span class="number">B</span><h3>创作时，逐步展开。</h3><p>先确认人物与服装，再换姿势、场景和氛围。每轮知道自己改了什么，比把所有要求一次塞进提示词更容易判断。</p></article></div>
-        <div class="section-heading compact"><div><p class="eyebrow">WHAT EACH LAYER DOES</p><h2>同样叫“姿势”，交付物不一样。</h2></div></div>
-        <div class="layers"><article><span>素材</span><h3>姿势 / 服装图库</h3><p>交付静态图片。帮助表达目标，减少寻找和描述的时间。</p><small>可作为参考，不会自己执行生成。</small></article><article><span>编辑</span><h3>3D 摆姿 / 机位编辑器</h3><p>交付自己设计的姿势、构图或控制图。部分工具支持模型与动画文件。</p><small>导出哪些内容，要逐个工具确认。</small></article><article><span>生成</span><h3>图像 / 视频模型</h3><p>交付新画面或新视频。保真度、稳定性和成本需要实际评测。</p><small>生成画面不等于拿到真实三维资产。</small></article><article><span>资产</span><h3>3D 重建 / 动作 / 绑定</h3><p>交付网格、骨架、蒙皮或运动参数，进入另一套制作流程。</p><small>还要处理适配、形变与软件兼容。</small></article></div>
-        <div class="section-heading compact"><div><p class="eyebrow">FROM LINKS TO AN UNDERSTANDING</p><h2>这次探索，留下了什么判断？</h2></div></div>
-        <ol class="journey"><li><span>起点</span><div><h3>两条分享并不是两个已发布的开源图库。</h3><p>第一条转述日文姿势库；中文 GitHub 镜像主要增加翻译和检索。第二条是服装库制作预告与多参考生图演示，完整资源入口尚未确认。</p></div></li><li><span>厘清</span><div><h3>免费参考、代码开源与素材商用，是三件事。</h3><p>原站允许符合条款的作品创作，但禁止原图再分发。镜像 MIT 不覆盖图片；原站还有真人与未成年人用途限制。真人婚纱方案应另用自有或适当授权的参考。</p></div></li><li><span>扩展</span><div><h3>视频和真实 3D 有价值，但不是图库附带的能力。</h3><p>角色跟随视频、视频恢复人体动作、图片生成网格和自动绑定，分别需要不同模型。它们不是“下载姿势图”自然就能得到的结果。</p></div></li><li><span>聚焦</span><div><h3>先把婚纱选款与个人造型做成能比较的创作流程。</h3><p>对我们的价值假设是：减少找图与反复描述，让选款沟通更具体，成功方案可继续修改。是否值得做产品，要用真实需求、保真效果和返修成本验证。</p></div></li></ol>
-        <div class="next-note"><b>下一步最值得验证</b><p>用自己有权使用的人物图和三套真实服装，做一轮同条件换装比较。记录身份保持、款式细节、成功率、返修次数、耗时和单次成本；先确认有用，再考虑更大的平台。</p><a href="#scenarios">查看婚纱选款方案 →</a></div>
+        <div class="section-heading compact"><div><p class="eyebrow">VALUE TO INVESTIGATE</p><h2>研究的价值，落在哪些具体问题上？</h2></div></div>
+        <div class="value-questions"><article><b>找图是否更快？</b><p>分类、中文名称和集中浏览，是否能减少寻找合适姿势的时间？</p><small>有检索入口；节省时间的幅度尚未测量。</small></article><article><b>目标是否更容易表达？</b><p>面对复杂手臂、重心或机位，用参考图是否比反复写提示词更清楚？</p><small>这是用途假设；需原库图片与文字条件做对照。</small></article><article><b>多角度是否更有帮助？</b><p>同一组姿势的不同视角，对绘画、构图沟通和生图参考各有什么作用？</p><small>多角度素材存在；不等于获得可编辑 3D。</small></article><article><b>能否形成可复用参考？</b><p>适合某种创作的素材组合，能否连同来源、条件和偏差记录下来？</p><small>要先确认具体用途与素材许可。</small></article></div>
+        <div class="section-heading compact"><div><p class="eyebrow">EVIDENCE STATUS</p><h2>已确认的事实，与仍待验证的效果。</h2></div></div>
+        <div class="evidence-columns"><article><h3>已确认 / 已留证</h3><ul><li>姿势站的素材索引、数量、类别与下载形式。</li><li>日文原站、中文转述和 GitHub 镜像之间的关系。</li><li>原作者的多参考图生成演示及服装库预告。</li><li>代码、图片、模型许可需要分别核对。</li><li>原图私人备份、原始索引与固定版本资料。</li></ul></article><article><h3>尚未确认 / 尚未实测</h3><ul><li>完整服装图库的下载入口与商用许可。</li><li>用原库在固定模型下的姿势跟随成功率。</li><li>与文字提示、普通参考图相比的实际增益。</li><li>真实商品保真、视频或真实 3D 的完整工作流。</li><li>现有自建换装样例不属于原库验证。</li></ul></article></div>
+        <div class="source-note"><b>授权影响实际用途</b><p>原站允许符合条款的免费创作参考与商业作品，但禁止图片数据再分发、转载、转售，另有真人与未成年人用途限制。中文镜像 MIT 仅覆盖代码，素材不随之开放；服装图库授权仍未确认。</p><a href="#archive">查看原始条款、出处与私有备份 →</a></div>
+        <div class="branch-callout"><div><span class="mini-label">独立分支 / 保留已有研究</span><h3>思路理解、生图实验与产品场景</h3><p>已有的原创婚纱样例、输入输出对照、换装与摄影方向完整保留。它们说明通用参考生图和产品假设，不作为原库效果证明。</p></div><a class="button light" href="branch.html#thinking">进入扩展分支 ↗</a></div>
       </section>
       <section class="panel" id="tools" role="tabpanel" aria-labelledby="tab-tools" hidden>
-        <div class="section-heading"><div><p class="eyebrow">02 / CAPABILITY MAP</p><h2>每个库，到底能做到哪一步？</h2></div><p>12 项素材、编辑与生成方向。<br>展开查看输入、输出、机位、许可与验证程度。</p></div>
+        <div class="section-heading"><div><p class="eyebrow">02 / RELATED CAPABILITIES</p><h2>原库与相关工具，能力分别到哪里？</h2></div><p>前 3 项是原库与镜像，其余是相关能力研究。<br>编辑器、视频或 3D 工具的能力不归属于原图库。</p></div>
         <details class="format-note"><summary>看不懂文件名？先看它交付的是什么。</summary><dl><div><dt>PNG / 控制图</dt><dd>PNG 是图片。OpenPose 表达关节点，深度图表达远近，法线图表达表面朝向，Canny 表达边线；它们帮助模型控制画面。</dd></div><div><dt>姿势 JSON</dt><dd>保存工具自己的关节数值或场景参数，往往需要用原工具重新打开。</dd></div><div><dt>GLB / FBX</dt><dd>三维文件容器，可以装网格、材质、骨架、动画等；实际装了哪些内容，取决于工具与导出设置。</dd></div><div><dt>VRM / VRMA / 蒙皮</dt><dd>VRM 常用于人形角色，VRMA 保存人形动作。蒙皮是让模型表面跟随骨架运动的权重分配；格式支持不等于已经完成角色适配。</dd></div></dl></details>
         <div class="tool-toolbar"><div class="filter-group" aria-label="能力类别"><button data-family="all" aria-pressed="true">全部</button><button data-family="reference" aria-pressed="false">参考素材</button><button data-family="editor" aria-pressed="false">摆姿与编辑</button><button data-family="motion" aria-pressed="false">视频与动作</button><button data-family="asset" aria-pressed="false">真实 3D</button></div><label class="search-label"><span>搜索能力</span><input id="tool-search" type="search" placeholder="试试：相机、GLB、骨骼…"></label></div>
         <p class="results-label" id="tool-count" aria-live="polite"></p><div id="tools-list" class="tool-list"></div>
         <p class="muted footnote">“文档已读”表示核对了官方说明或代码，不代表已本机复现。历史有限实验单独列出，不扩大为完整兼容性承诺。<a href="evidence/export-experiment.json" target="_blank" rel="noopener">查看有限导出实验记录 ↗</a></p>
         <div id="compare-area" hidden><div class="compare-heading"><h3>能力并排看 <small>最多 3 项</small></h3><button id="clear-compare" class="quiet-button">清空对比</button></div><div id="compare-table" class="table-scroll"></div></div>
       </section>
-      <section class="panel" id="scenarios" role="tabpanel" aria-labelledby="tab-scenarios" hidden>
-        <div class="section-heading"><div><p class="eyebrow">03 / CREATIVE DIRECTIONS</p><h2>从“生成一张图”，<br>走向“解决一件事”。</h2></div><p>每个方向都写清输入、固定项、变化项与交付。<br>这里的价值是待验证的产品假设，不能当效果承诺。</p></div>
-        <div class="scenario-layout"><div id="scenario-list" class="scenario-list" aria-label="选择创作场景"></div><article id="scenario-detail" class="scenario-detail" aria-live="polite"></article></div>
-        <div class="product-path"><div><span class="mini-label">可扩展的产品目标</span><h3>先有稳定结果，再有产品。</h3></div><ol><li><b>01 · 个人创作工作台</b><p>参考、指令、结果和返修关联保存。</p></li><li><b>02 · 可比较的选款方案</b><p>同条件对比，记录喜欢与不喜欢。</p></li><li><b>03 · 店铺沟通与款式册</b><p>关联真实商品，人工确认商品细节。</p></li></ol><p class="small-note">现成图像工具已经能尝试多参考换装。新产品需要证明：比直接在通用工具里生图，选款更快、商品更准、方案更好复用。只是把图库与提示词放到一起，投入价值有限。</p><p class="small-note">本项目已完成独立生图小样本与研究方案整理，尚未接入实时生成、商品系统或客户照片服务。</p></div>
-      </section>
       <section class="panel" id="archive" role="tabpanel" aria-labelledby="tab-archive" hidden>
-        <div class="section-heading"><div><p class="eyebrow">04 / SOURCES & PRESERVATION</p><h2>结论有出处，<br>资料可以继续回查。</h2></div><p>原图在私有备份；研究页保留索引与关联。<br>代码、素材和模型的许可分别核对。</p></div>
+        <div class="section-heading"><div><p class="eyebrow">03 / SOURCES & PRESERVATION</p><h2>结论有出处，<br>资料可以继续回查。</h2></div><p>原图在私有备份；研究页保留索引与关联。<br>代码、素材和模型的许可分别核对。</p></div>
         <div id="backup-panel" class="backup-panel"></div>
         <div class="rights-note"><b>保存不改变原作者授权。</b><p>姿势站允许免费创作参考和符合条款的商业作品，禁止原图及加工后图片数据的再分发、转载、转售；另有限制真人与未成年人用途的条款。中文镜像的 MIT 只覆盖代码。服装库完整下载与商用许可尚未确认。私有备份仅用于本人回查，不作为公开素材镜像。</p></div>
         <div class="section-heading compact"><div><p class="eyebrow">PRIMARY SOURCES</p><h2>原始入口与判断依据</h2></div></div><div id="sources-list" class="source-list"></div>
@@ -93,8 +65,7 @@
       </section>
     </div>
   </main>
-  <footer class="site-footer wrap"><div class="brand">POSE <i>/</i> LOOK<span>把目标说清楚，把判断留下来。</span></div><p>研究 011 · 资料与生成实验 2026.10.29<br>虚构人物与原创概念婚纱；源图库图片仍保留在私有备份。</p></footer>
-  <dialog id="effect-lightbox" aria-labelledby="lightbox-title"><div class="lightbox-heading"><h2 id="lightbox-title">实验原图</h2><button id="close-lightbox" aria-label="关闭原图">关闭 ×</button></div><img id="lightbox-image" alt=""><p id="lightbox-caption"></p></dialog>
+  <footer class="site-footer wrap"><div class="brand">POSE <i>/</i> LOOK<span>把目标说清楚，把判断留下来。</span></div><p>研究 011 · 原始图库主线<br>来源与能力分别留证；通用生图与产品探索为独立分支。</p></footer>
   <div id="toast" role="status" class="toast" hidden></div>
 </body>
 </html>
