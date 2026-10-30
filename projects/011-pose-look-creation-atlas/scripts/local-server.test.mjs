@@ -72,3 +72,28 @@ test('Private overview is served only through its approved route with matching i
     assert.equal((await fetch(base+info.url)).status,404);
   }finally{await new Promise(resolve=>server.close(resolve));}
 });
+
+test('Costume trial exposes only the three approved original inputs and rejects changed bytes',async()=>{
+  const root=fileURLToPath(new URL(`../.local/costume-route-test-${process.pid}/`,import.meta.url));
+  const source=path.join(root,'private-library'),record=path.join(root,'app/media/costume-matrix-v1');
+  await mkdir(path.join(source,'original-images'),{recursive:true});await mkdir(record,{recursive:true});
+  const bytes=Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+a3ioAAAAASUVORK5CYII=','base64');
+  const sha256=createHash('sha256').update(bytes).digest('hex');const outfits=['SPR-0001','SUM-0162','AUT-0001'].map(id=>({id,bytes:bytes.length,width:1,height:1,sha256}));
+  for(const item of outfits)await writeFile(path.join(source,'original-images',item.id+'.png'),bytes);
+  await writeFile(path.join(source,'manifest.json'),JSON.stringify({files:outfits.map(item=>({...item,kind:'original',path:'original-images/'+item.id+'.png'}))}));
+  await writeFile(path.join(record,'manifest.json'),JSON.stringify({id:'costume-matrix-v1',outfits}));
+  const server=createLocalServer({root,library:null,costumeDirectory:source});await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));const base='http://127.0.0.1:'+server.address().port;
+  try{
+    assert.equal((await (await fetch(base+'/api/costume-matrix-inputs')).json()).costumesAvailable,true);
+    const image=await fetch(base+'/local-media/costume/SPR-0001.png');assert.equal(image.status,200);assert.deepEqual(Buffer.from(await image.arrayBuffer()),bytes);
+    assert.equal((await fetch(base+'/local-media/costume/SPR-0001.png',{headers:{'If-None-Match':image.headers.get('etag')}})).status,304);
+    assert.equal((await fetch(base+'/local-media/costume/SPR-0001.png',{method:'HEAD'})).status,200);
+    assert.equal((await fetch(base+'/local-media/costume/SPR-0002.png')).status,404);
+    assert.equal((await fetch(base+'/local-media/costume/SPR-0001.png',{headers:{Origin:'https://example.org'}})).status,403);
+    assert.equal((await fetch(base+'/api/costume-matrix-inputs',{method:'POST'})).status,403);
+    assert.equal((await fetch(base+'/.local/private-library/manifest.json')).status,403);
+    await writeFile(path.join(source,'original-images/SPR-0001.png'),Buffer.from('changed'));
+    assert.equal((await (await fetch(base+'/api/costume-matrix-inputs')).json()).costumesAvailable,false);
+    assert.equal((await fetch(base+'/local-media/costume/SPR-0001.png')).status,404);
+  }finally{await new Promise(resolve=>server.close(resolve));}
+});

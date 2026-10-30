@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-30",
+  "scope": "011 integration of nine previously generated images; no new generation",
+  "local": {
+    "url": "http://127.0.0.1:8011/app/#matrix",
+    "api": {"costumesAvailable": true, "posesAvailable": true},
+    "comparison": "Person, AUT-0001 original costume and full_single_P017_side original pose loaded together in the output dialog.",
+    "publicScreenshotSaved": false
+  },
+  "publicModePreview": {
+    "url": "http://127.0.0.1:8032/#matrix",
+    "cards": 9,
+    "resultImagesLoaded": 9,
+    "restrictedImagesInDOM": 0,
+    "detail": "Output and generated person base shown; costume/pose use IDs and source/private links.",
+    "nextImageAndPromptExpansion": "passed",
+    "jsonDownload": "Downloaded JSON deep-equals the public manifest, including all nine prompts and hashes.",
+    "mobileViewport": "390x844; three-column chapter navigation and scrollable dialog inspected; viewport reset afterward",
+    "consoleErrorsOrWarnings": 0,
+    "screenshots": [
+      "assets/images/pose-costume-matrix-v1-public.jpg",
+      "assets/images/pose-costume-matrix-v1-detail.jpg",
+      "assets/images/pose-costume-matrix-v1-mobile.jpg"
+    ]
+  },
+  "automated": {
+    "projectCheck": "passed: data associations, all nine PNG byte counts/dimensions/SHA-256, existing source and generation records",
+    "localServerTests": "4 passed: full pose library, unavailable library, private overview, three approved costume inputs with integrity/cache/access checks",
+    "rootRegistryCheck": "passed in shared workspace; release checkout checked separately"
+  },
+  "publication": {
+    "rawCostumeOrPoseImagesAdded": 0,
+    "generatedOutputsAdded": 9,
+    "historicalOverviewImageChanged": false,
+    "liveVerification": "Recorded separately after deployment."
+  }
+}

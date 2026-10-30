@@ -4,7 +4,7 @@ import {createHash} from 'node:crypto';
 await import('./verify-archive.mjs');
 const base=new URL('../app/',import.meta.url);
 const context={window:{}};vm.createContext(context);
-for(const filename of ['data.js','archive-data.js','backup-data.js','experiments-data.js','resource-data.js','workspace-data.js','pose-pilot-data.js','series-data.js','series-record.js'])vm.runInContext(await readFile(new URL(filename,base),'utf8'),context,{filename});
+for(const filename of ['data.js','archive-data.js','backup-data.js','experiments-data.js','resource-data.js','workspace-data.js','pose-pilot-data.js','series-data.js','series-record.js','costume-matrix-data.js'])vm.runInContext(await readFile(new URL(filename,base),'utf8'),context,{filename});
 new vm.Script(await readFile(new URL('app.js',base),'utf8'),{filename:'app.js'});
 new vm.Script(await readFile(new URL('effects.js',base),'utf8'),{filename:'effects.js'});
 new vm.Script(await readFile(new URL('resources.js',base),'utf8'),{filename:'resources.js'});
@@ -12,6 +12,7 @@ new vm.Script(await readFile(new URL('gallery.js',base),'utf8'),{filename:'galle
 new vm.Script(await readFile(new URL('pose-pilot.js',base),'utf8'),{filename:'pose-pilot.js'});
 new vm.Script(await readFile(new URL('series.js',base),'utf8'),{filename:'series.js'});
 new vm.Script(await readFile(new URL('overview.js',base),'utf8'),{filename:'overview.js'});
+new vm.Script(await readFile(new URL('costume-matrix.js',base),'utf8'),{filename:'costume-matrix.js'});
 const {RESEARCH:r,BACKUP_STATUS:b}=context.window;
 if(r.tools.length!==12||r.scenarios.length!==8)throw new Error('Research entries incomplete');
 for(const list of [r.tools,r.scenarios,r.sources])if(new Set(list.map(item=>item.id)).size!==list.length)throw new Error('Duplicate IDs');
@@ -92,6 +93,19 @@ if(resource.audit.records!==1439||resource.audit.groups!==288||!resource.audit.l
 if(resource.directions.length!==7||resource.sources.length!==4)throw new Error('Direction research incomplete');
 for(const direction of resource.directions)for(const id of direction.sources)if(!resource.sources.some(item=>item.id===id))throw new Error('Missing primary research source');
 const html=await readFile(new URL('index.html',base),'utf8');
+const matrix=context.window.COSTUME_MATRIX;
+const matrixRecord=JSON.parse(await readFile(new URL('media/costume-matrix-v1/manifest.json',base),'utf8'));
+if(JSON.stringify(matrix)!==JSON.stringify(matrixRecord)||matrix.frames.length!==9||matrix.outfits.length!==3||matrix.poses.length!==3||matrix.successfulImages!==9||matrix.acceptedRequests!==10||matrix.rejectedOutputs!==1||matrix.realPersonInput!==false)throw new Error('Costume matrix record or scope differs');
+if(matrix.person.asset.path!=='media/pose-pilot-v3/character-base.png'||matrix.person.asset.sha256!==series.base.sha256||matrix.clothingLibrary.originals!==1407||matrix.clothingLibrary.categories.reduce((n,c)=>n+c.count,0)!==1407)throw new Error('Costume library or reused person differs');
+const combinations=new Set();
+for(const frame of matrix.frames){
+  const outfit=matrix.outfits.find(item=>item.id===frame.outfitId),pose=matrix.poses.find(item=>item.id===frame.poseId),asset=frame.asset;
+  if(!outfit||!pose||JSON.stringify(frame.inputOrder)!==JSON.stringify(['character-base',outfit.id,pose.id])||!frame.prompt||!frame.review||frame.generationCalls!==1||!asset.path.startsWith('media/costume-matrix-v1/')||asset.path.includes('..'))throw new Error('Matrix association incomplete');
+  combinations.add(outfit.id+'/'+pose.id);const bytes=await readFile(new URL(asset.path,base));
+  if(bytes.length!==asset.bytes||createHash('sha256').update(bytes).digest('hex')!==asset.sha256||bytes.readUInt32BE(16)!==asset.width||bytes.readUInt32BE(20)!==asset.height)throw new Error('Matrix result differs: '+frame.id);
+}
+if(combinations.size!==9||!html.includes('id="tab-matrix"')||!html.includes('id="matrix-dialog"'))throw new Error('Nine-cell matrix UI missing');
+for(const input of [...matrix.outfits,...matrix.poses])if(input.publicPath!==null||!/^[a-f0-9]{64}$/.test(input.sha256))throw new Error('Restricted input is not private or lacks hash');
 const branch=await readFile(new URL('branch.html',base),'utf8');
 for(const page of [html,branch])for(const match of page.matchAll(/(?:src|href)="([^"#]+)"/g)){
   const relative=match[1];if(/^(?:https?:|data:)/.test(relative))continue;
@@ -105,4 +119,4 @@ if(!html.includes('id="resource-inventory"')||!html.includes('id="direction-rese
 if(!html.includes('id="gallery"')||!html.includes('id="creation-plan"')||context.window.POSE_WORKSPACE.products.length!==3)throw new Error('Local workspace is incomplete');
 if(!html.includes('id="tab-series"')||!html.includes('id="series-grid"')||!html.includes('id="series-dialog"'))throw new Error('Series workspace is incomplete');
 if(!html.includes('id="research-overview"')||!html.includes('id="overview-dialog"'))throw new Error('Research overview UI missing');
-console.log(`Research, scripts, local links, ${experiment.assets.length} legacy assets, ${pilot.versions.reduce((sum,version)=>sum+version.assets.length,0)} pose-pilot assets, six series frames (three new, three reused), five product directions, public overview, private memory-overview record and backup summary verified.`);
+console.log(`Research, scripts, local links, ${experiment.assets.length} legacy assets, ${pilot.versions.reduce((sum,version)=>sum+version.assets.length,0)} pose-pilot assets, six series frames (three new, three reused), five product directions, nine costume-pose combinations, public overview, private memory-overview record and backup summary verified.`);

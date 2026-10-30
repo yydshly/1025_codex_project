@@ -25,7 +25,7 @@
 | 008 | [奥特曼卡片抽卡器](projects/008-ultraman-card-draw/README.md) | [本库原创（无上游源库）](<https://github.com/yydshly/1025_codex_project>) | 以874条人物与形态资料为基础，随机展示奥特曼与怪兽，结合人物突出、招式光效和设备讲解开展亲子探索。沉淀素材、演出配置与卡片舞台分层，后续可增加人物动作和渲染，复用随机演示流程。 | 实践中 | [在线访问](<https://yydshly.github.io/1025_codex_project/008-ultraman-card-draw/>) |
 | 009 | [资料理解与检索研究](projects/009-knowledge-processing-atlas/README.md) | [DeepTutor](<https://github.com/HKUDS/DeepTutor>) | 从 DeepTutor 与 NotebookLM 的教材问答和资料整理场景出发，比较 MinerU、Docling、BGE&#45;M3、Qdrant、Graphiti 等26个对象。拆解结构解析、分块、检索与时间关系的本质，规划带出处阅读、跨日回顾、经验复用和自适应复习；附同题样例、场景选型、并排对比和实验协议，上游效果待验证。 | 研究中 | [在线访问](<https://yydshly.github.io/1025_codex_project/009-knowledge-processing-atlas/>) |
 | 010 | [Agent Skills · 全景理解与实践](projects/010-agent-skills-engineering-lab/README.md) | [agent&#45;skills](<https://github.com/addyosmani/agent-skills>) | 研究 addyosmani/agent&#45;skills 的25项工程规程：覆盖需求、规划、实现、验证、审查与交付维护，以七类工作和五问总图说明用途、场景、步骤、产物及协作。价值在于把工程经验变成AI可执行、结果可核对的流程；我们据此按真实需求选用，学习用约束、证据与检查控制落地，保留研究回查案例和自建Skill；全量讲解已完成，逐项实测待按需开展。 | 研究中 | [在线访问](<https://yydshly.github.io/1025_codex_project/010-agent-skills-engineering-lab/>) |
-| 011 | [姿势与衣装参考 · 能力、作用与产品探索](projects/011-pose-look-creation-atlas/README.md) | [POSE&#45;DB&#45;01姿势图库与衣装参考预告/多参考生图演示](<https://x.com/leo_xiaolei/status/2114971707962536302>) | POSE&#45;DB&#45;01提供1,439张无脸人偶姿势PNG、288组及多视角检索，用于动作与构图参考。衣装分享是约1,000套参考的预告和人物＋服装＋姿势组合演示；目前只取得一张预告拼图，完整库与商用条款未确认。两者提供素材，生图和身份、衣装保持由外部模型完成。我们用六张虚构人物写真候选探索写真、穿搭、婚纱、图文故事与个人品牌，区分实测和设想。 | 研究中 | [在线访问](<https://yydshly.github.io/1025_codex_project/011-pose-look-creation-atlas/>) |
+| 011 | [姿势与衣装参考 · 能力、作用与产品探索](projects/011-pose-look-creation-atlas/README.md) | [POSE&#45;DB&#45;01姿势图库与COSTUME&#45;DB&#45;01衣装图库](<https://x.com/leo_xiaolei/status/2114971707962536302>) | POSE&#45;DB&#45;01提供1,439张姿势PNG、288组及多视角检索，表达动作与构图；COSTUME&#45;DB&#45;01提供1,407套虚构衣装、八类检索和原尺寸PNG，表达穿搭目标。原图分别私有备份，生图及身份、衣装保持由外部模型完成。已展示同一虚构人物的三套衣装×三种动作九格实测、六张写真候选，探索穿搭比较、系列写真、婚纱方案等产品目标，并保留提示词、来源和偏差。 | 研究中 | [在线访问](<https://yydshly.github.io/1025_codex_project/011-pose-look-creation-atlas/>) |
 | 012 | [学术研究 Skill · 能力与水生毒理学实测](projects/012-aquatic-toxicology-skill-lab/README.md) | [academic&#45;research&#45;skills](<https://github.com/Imbad0202/academic-research-skills>) | 研究 academic&#45;research&#45;skills 的5个工作流：deep&#45;research 拆题研究、sr&#45;screener 文献筛选、academic&#45;paper 写作、academic&#45;paper&#45;reviewer 审稿、academic&#45;pipeline 调度。适用于选题、综述、证据核验、修订与审稿准备；价值是复用研究规范、角色与检查，使过程可追溯。以水生毒理学展示拆题、检索、补漏和分析，分清原库与新增采集器；查全、准确性和相对直接问AI的增益仍待验证。 | 研究中 | [在线访问](<https://yydshly.github.io/1025_codex_project/012-aquatic-toxicology-skill-lab/>) |
 
 ## 项目速览
@@ -124,9 +124,9 @@ BaoCut 是 AI 可操作的视频编辑器与制作工作流。效果覆盖动效
 
 ![姿势与衣装参考 · 能力、作用与产品探索 项目配图](projects/011-pose-look-creation-atlas/assets/images/research-overview-public-v3.png)
 
-POSE&#45;DB&#45;01提供1,439张无脸人偶姿势PNG、288组及多视角检索，用于动作与构图参考。衣装分享是约1,000套参考的预告和人物＋服装＋姿势组合演示；目前只取得一张预告拼图，完整库与商用条款未确认。两者提供素材，生图和身份、衣装保持由外部模型完成。我们用六张虚构人物写真候选探索写真、穿搭、婚纱、图文故事与个人品牌，区分实测和设想。
+POSE&#45;DB&#45;01提供1,439张姿势PNG、288组及多视角检索，表达动作与构图；COSTUME&#45;DB&#45;01提供1,407套虚构衣装、八类检索和原尺寸PNG，表达穿搭目标。原图分别私有备份，生图及身份、衣装保持由外部模型完成。已展示同一虚构人物的三套衣装×三种动作九格实测、六张写真候选，探索穿搭比较、系列写真、婚纱方案等产品目标，并保留提示词、来源和偏差。
 
-[研究说明](projects/011-pose-look-creation-atlas/README.md) · 源库：[POSE&#45;DB&#45;01姿势图库与衣装参考预告/多参考生图演示](<https://x.com/leo_xiaolei/status/2114971707962536302>) · [在线演示](<https://yydshly.github.io/1025_codex_project/011-pose-look-creation-atlas/>)
+[研究说明](projects/011-pose-look-creation-atlas/README.md) · 源库：[POSE&#45;DB&#45;01姿势图库与COSTUME&#45;DB&#45;01衣装图库](<https://x.com/leo_xiaolei/status/2114971707962536302>) · [在线演示](<https://yydshly.github.io/1025_codex_project/011-pose-look-creation-atlas/>)
 
 **阶段：** 研究中 · **标签：** 姿势参考 / 衣装参考 / 多参考生图 / 系列写真 / 产品研究
 

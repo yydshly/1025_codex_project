@@ -3,9 +3,10 @@ import {readFile,realpath,stat} from 'node:fs/promises';
 import path from 'node:path';
 import {within} from './local-library.mjs';
 import {loadLocalOverview,localOverviewUrl} from './local-overview.mjs';
+import {loadCostumeInputs,defaultCostumeRoot} from './local-costume.mjs';
 const mime={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'text/javascript; charset=utf-8','.json':'application/json; charset=utf-8','.svg':'image/svg+xml','.png':'image/png','.jpg':'image/jpeg','.jpeg':'image/jpeg','.txt':'text/plain; charset=utf-8','.md':'text/plain; charset=utf-8'};
 
-export function createLocalServer({root,library,libraryError=null}){
+export function createLocalServer({root,library,libraryError=null,costumeDirectory=process.env.POSE_LOOK_COSTUMES||defaultCostumeRoot}){
   return http.createServer(async(req,res)=>{
     const reply=(code,type,body,extra={})=>{res.writeHead(code,{'Content-Type':type,'Cache-Control':'no-store','X-Content-Type-Options':'nosniff','Cross-Origin-Resource-Policy':'same-origin',...extra});res.end(req.method==='HEAD'?undefined:body);};
     try{
@@ -13,6 +14,15 @@ export function createLocalServer({root,library,libraryError=null}){
       if(!/^(127\.0\.0\.1|localhost)(:\d+)?$/.test(host)||!['GET','HEAD'].includes(req.method))return reply(403,'text/plain','Forbidden');
       if(req.headers['sec-fetch-site']==='cross-site'||(req.headers.origin&&req.headers.origin!=='http://'+host))return reply(403,'text/plain','Cross-origin request blocked');
       const url=new URL(req.url,'http://'+host);const pathname=decodeURIComponent(url.pathname);
+      if(pathname==='/api/costume-matrix-inputs'||pathname.startsWith('/local-media/costume/')){
+        const images=await loadCostumeInputs(root,costumeDirectory);
+        if(pathname==='/api/costume-matrix-inputs')return reply(200,'application/json; charset=utf-8',JSON.stringify({costumesAvailable:Boolean(images),posesAvailable:Boolean(library)}));
+        const id=pathname.match(/^\/local-media\/costume\/([A-Z]+-\d+)\.png$/)?.[1],image=images?.get(id);
+        if(!image)return reply(404,'text/plain','Approved local costume unavailable');
+        const etag='"'+image.sha256+'"';
+        if(req.headers['if-none-match']===etag){res.writeHead(304,{'ETag':etag,'Cache-Control':'private, max-age=3600','Cross-Origin-Resource-Policy':'same-origin'});return res.end();}
+        return reply(200,'image/png',image.bytes,{'ETag':etag,'Cache-Control':'private, max-age=3600','Content-Disposition':'inline; filename="'+id+'.png"'});
+      }
       if(pathname==='/api/local-overview'||pathname===localOverviewUrl){
         const overview=await loadLocalOverview(root);
         if(pathname==='/api/local-overview')return reply(200,'application/json; charset=utf-8',JSON.stringify(overview?.info||{available:false}));

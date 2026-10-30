@@ -46,7 +46,7 @@ function setLook(look){
 
 const branchView=document.body.dataset.view==='branch';
 const localResearchRuntime=['127.0.0.1','localhost'].includes(location.hostname)&&location.pathname.startsWith('/app/');
-const tabs=branchView?['thinking','effects','scenarios']:['gallery','series','understanding','tools','archive'];
+const tabs=branchView?['thinking','effects','scenarios']:['gallery','series','matrix','understanding','tools','archive'];
 function showTab(name, scroll = false){
   if(!branchView&&['thinking','effects','scenarios'].includes(name)){location.replace('branch.html#'+name);return;}
   const productJump=!branchView&&name==='products';
@@ -54,7 +54,7 @@ function showTab(name, scroll = false){
   const overviewJump=!branchView&&name==='overview';
   if(productJump||pilotJump)name='gallery';
   if(overviewJump)name='series';
-  if(branchView&&['gallery','products','pilot','series','overview','understanding','tools','archive'].includes(name)){location.replace('index.html#'+name);return;}
+  if(branchView&&['gallery','products','pilot','series','matrix','overview','understanding','tools','archive'].includes(name)){location.replace('index.html#'+name);return;}
   if(!tabs.includes(name))name=tabs[0];
   $$('.panel').forEach(p=>{p.hidden=p.id!==name;});
   $$('[data-tab]').forEach(b=>{b.setAttribute('aria-selected',String(b.dataset.tab===name));b.tabIndex=b.dataset.tab===name?0:-1;});

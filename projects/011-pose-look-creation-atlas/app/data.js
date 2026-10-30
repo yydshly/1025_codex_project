@@ -1,11 +1,13 @@
 window.RESEARCH = {
-  title: '姿势与服装参考库 · 来源与能力研究', date: '2026-10-29',
+  title: '姿势与服装参考库 · 来源与能力研究', date: '2026-10-30',
   sources: [
     {id:'post-pose', title:'最初的中文转述', url:'https://x.com/leo_xiaolei/status/2114971707962536302', kind:'研究起点', note:'转述“1,439 张姿势图”；“开源”一词需要继续核对素材与代码的许可。'},
     {id:'post-original', title:'原作者的姿势库发布说明', url:'https://x.com/giaaibusi/status/2114913843331871157', kind:'原作者', note:'发布说明给出 1,439 张、288 组姿势；同一姿势包含不同观察角度。'},
     {id:'pose-site', title:'日文姿势库原站 · POSE-DB-01', url:'https://ai-pose-gallery.pages.dev/', kind:'原始图库', note:'可选姿势和视角、下载 PNG。免费创作参考与素材再分发是不同许可。'},
-    {id:'post-outfit', title:'原作者的服装库预告', url:'https://x.com/giaaibusi/status/2115431641766359244', kind:'预告', note:'约 1,000 张服装参考仍为制作预告；已保留预告的原始拼图，不把它写成完整图库。'},
-    {id:'post-outfit-followup', title:'服装库后续追帖', url:'https://x.com/giaaibusi/status/2115432978071613444', kind:'状态核对', note:'查阅时仍在征求公开需求；未确认完整下载入口及商用许可。'},
+    {id:'post-outfit', title:'原作者的服装库预告', url:'https://x.com/giaaibusi/status/2115431641766359244', kind:'预告', note:'早期约 1,000 套的制作预告已保留；2026-10-30 找到完整衣装站，核对规模为 1,407 套。'},
+    {id:'post-outfit-followup', title:'服装库后续追帖', url:'https://x.com/giaaibusi/status/2115432978071613444', kind:'状态核对', note:'本链接保留早期追帖；后续已确认完整衣装原站和原作者使用条款，原图在独立私有库备份。'},
+    {"id":"costume-original","title":"COSTUME-DB-01 衣装原站","url":"https://ai-costume-gallery.pages.dev/","kind":"原始素材","note":"1,407 套虚构衣装、八类检索与单张原图；源站条款适用于素材。"},
+    {"id":"costume-material-source","title":"衣装中文索引与素材来源","url":"https://github.com/Stone-dielianhua/ComfyUI_Costume-Gallery_ZH","kind":"第三方整理","note":"本次素材来自其固定版本 fdf367c；只保存衣装图片和索引，未备份插件。MIT 明确排除图片和数据。"},
     {id:'post-rights', title:'作者对再分发的补充说明', url:'https://x.com/giaaibusi/status/2115302275686207681', kind:'许可证据', note:'原图数据本身的再分发、销售被禁止。私有保存不等于获得公开镜像或素材销售授权。'},
     {id:'mirror-license', title:'中文镜像的 LICENSE', url:'https://github.com/anhao/ai-pose-gallery-zh/blob/main/LICENSE', kind:'许可证据', note:'MIT 仅覆盖代码；图片与原始数据被排除，镜像条款还写有素材不得商用。不能据 MIT 标记授权整包图片。'},
     {id:'tryon-boundary', title:'Google：试穿图片能说明什么', url:'https://support.google.com/googleshopping/answer/16253678?hl=en', kind:'产品边界', note:'视觉预览不能保证真实合身，人物特征、体型和服装细节可能有误差。'},
@@ -13,7 +15,7 @@ window.RESEARCH = {
   ],
   tools: [
     {id:'pose-db', name:'POSE-DB-01 原站', family:'reference', label:'参考素材', lead:'给 AI 一个可以看懂的姿势目标。', input:'挑选已有姿势与角度', output:'静态 PNG 参考图', ability:'288 组姿势、1,439 张多角度图片；按动作类别和视角查找。', camera:'挑选已有正面、俯视、仰视、侧面、斜角图；不能连续旋转原图。', limit:'图片本身不执行生成，不带可直接驱动角色的三维骨架或时间序列。', license:'原站免费，允许符合条款的商业作品参考；禁止素材再分发/转载/转售，限制真人与未成年人用途。', evidence:'来源与条款已读；原图私有备份状态见归档页。', url:'https://ai-pose-gallery.pages.dev/', repo:null},
-    {id:'outfit-db', name:'服装参考库预告', family:'reference', label:'参考素材', lead:'用服装图表达想换成哪一套。', input:'人物、服装和姿势参考', output:'由外部图像模型生成的换装画面', ability:'作者演示在 ChatGPT 中组合三张参考图，得到穿指定服装、采用指定姿势的人物图片。', camera:'参考图影响构图；未展示独立镜头编辑器。', limit:'未找到完整衣装图库；约 1,000 张为作者制作预告，不能据此声称已发布或可商用。', license:'完整图库授权未确认；只保留预告拼图供私有回查。', evidence:'正文与演示已查看；非我们完成的换装生成实验。', url:'https://x.com/giaaibusi/status/2115431641766359244', repo:null},
+    {"id":"outfit-db","name":"COSTUME-DB-01 衣装参考库","family":"reference","label":"衣装参考","lead":"1,407 套虚构衣装，用图片表达穿什么。","input":"人物基准、衣装原图与姿势参考","output":"原站提供衣装 PNG；外部模型生成造型候选","ability":"原站按八类浏览并搜索、预览和取得单张原图。本项目以三套真实原库衣装和三种姿势，完成同一虚构人物的九张组合候选。","camera":"衣装图不提供相机控制；画面与机位由人物、姿势和生成指令共同影响。","limit":"主服装与动作可以大体延续，纹理、手指和角度仍会重绘。未验证真实商品、合身、真人身份或视频。","license":"原图及索引不适用第三方代码 MIT。参考创作按原作者条款，禁止素材再分发，真实人物与未成年人用途受限制。","evidence":"2026-10-30 已核对 1,407 套衣装、完成私有备份及九格原库组合实测。","url":"https://ai-costume-gallery.pages.dev/","repo":null},
     {id:'zh-gallery', name:'AI Pose Gallery 中文镜像', family:'reference', label:'参考检索网页', lead:'中文名称和分类帮助查找同一套参考。', input:'名称、分类、角度筛选', output:'参考图与中文检索结果', ability:'汉化界面、名称和分类，提供分组浏览、原图下载；2,878 个图片文件包括原图和对应缩略图。', camera:'筛选已有视角；不创建新机位。', limit:'第三方汉化不增加原始姿势或生成能力，不能把 1,439 条图片记录说成 1,439 种独立姿势。', license:'代码 MIT；图片与原始数据排除在外。镜像与原作者许可表述有差异，优先查原站。', evidence:'README、LICENSE 与来源关系已核对。', url:'https://github.com/anhao/ai-pose-gallery-zh', repo:'anhao/ai-pose-gallery-zh'},
     {id:'openpose', name:'Online 3D Openpose Editor', family:'editor', label:'3D 控制图编辑', lead:'自己摆人偶，生成适合 AI 的控制图。', input:'手动关节、体型、观察角度', output:'OpenPose / 深度 / 法线 / Canny 等控制图及场景保存', ability:'可编辑身体与手部、调整人体参数，保存并恢复编辑场景。', camera:'旋转、平移场景，调整出图构图。', limit:'主要面向生图控制图；项目说明不足以证明可以完整导出通用角色骨骼动画。', license:'MIT；引入模型和素材时仍需分别核对。', evidence:'文档与代码资料；未运行该上游。', url:'https://github.com/ZhUyU1997/open-pose-editor', repo:'ZhUyU1997/open-pose-editor'},
     {id:'mannequin', name:'Mannequin.js', family:'editor', label:'轻量人偶编辑', lead:'一个能动关节的网页人偶。', input:'身体、手指、关节调整', output:'姿势 JSON、摆好姿势的人偶 GLB', ability:'关节拖动、逆向运动学开关、生物关节限制、多人偶；适合小型摆姿界面研究。', camera:'浏览器中观察人偶；这次导出的 GLB 不含相机。', limit:'有限实测文件为 57 个网格、153 个节点，0 个蒙皮、0 个动画、0 个相机；不能把它当现成通用骨骼动作包。', license:'GPL-3.0；二次开发分发需遵守相应代码许可。', evidence:'曾实测关节拖动、网页导出及 Blender 导入；不代表所有功能验收通过。', url:'https://github.com/boytchev/mannequin.js', repo:'boytchev/mannequin.js'},
