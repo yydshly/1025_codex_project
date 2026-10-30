@@ -3,7 +3,10 @@
   "scope": "011 integration of nine previously generated images; no new generation",
   "local": {
     "url": "http://127.0.0.1:8011/app/#matrix",
-    "api": {"costumesAvailable": true, "posesAvailable": true},
+    "api": {
+      "costumesAvailable": true,
+      "posesAvailable": true
+    },
     "comparison": "Person, AUT-0001 original costume and full_single_P017_side original pose loaded together in the output dialog.",
     "publicScreenshotSaved": false
   },
@@ -32,6 +35,6 @@
     "rawCostumeOrPoseImagesAdded": 0,
     "generatedOutputsAdded": 9,
     "historicalOverviewImageChanged": false,
-    "liveVerification": "Recorded separately after deployment."
+    "liveVerification": "costume-matrix-deployment.json: build/deploy success; all nine image headers and exact manifest match; live browser navigation timed out."
   }
 }

@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-30T13:22:17.430Z",
+  "commit": "a68c0c26f111d7d55d88174b5d10669430de62cc",
+  "url": "https://yydshly.github.io/1025_codex_project/011-pose-look-creation-atlas/#matrix",
+  "workflow": "https://github.com/yydshly/1025_codex_project/actions/runs/41062150361",
+  "manifest": {
+    "status": 200,
+    "exactMatch": true,
+    "sha256": "d1d5b27b2307bdca1df7245ad6636f3eab544c3fb00aadd99d53a501dfc5d501"
+  },
+  "checks": [
+    {
+      "path": "media/costume-matrix-v1/SPR-0001-standing.png",
+      "status": 200,
+      "bytes": 3250740
+    },
+    {
+      "path": "media/costume-matrix-v1/SPR-0001-stretch.png",
+      "status": 200,
+      "bytes": 3348796
+    },
+    {
+      "path": "media/costume-matrix-v1/SPR-0001-side.png",
+      "status": 200,
+      "bytes": 3205174
+    },
+    {
+      "path": "media/costume-matrix-v1/SUM-0162-standing.png",
+      "status": 200,
+      "bytes": 3167242
+    },
+    {
+      "path": "media/costume-matrix-v1/SUM-0162-stretch.png",
+      "status": 200,
+      "bytes": 3405094
+    },
+    {
+      "path": "media/costume-matrix-v1/SUM-0162-side.png",
+      "status": 200,
+      "bytes": 3237842
+    },
+    {
+      "path": "media/costume-matrix-v1/AUT-0001-standing.png",
+      "status": 200,
+      "bytes": 3328333
+    },
+    {
+      "path": "media/costume-matrix-v1/AUT-0001-stretch.png",
+      "status": 200,
+      "bytes": 3410440
+    },
+    {
+      "path": "media/costume-matrix-v1/AUT-0001-side.png",
+      "status": 200,
+      "bytes": 3226596
+    },
+    {
+      "path": "costume-matrix.js",
+      "status": 200
+    },
+    {
+      "path": "costume-matrix-data.js",
+      "status": 200
+    },
+    {
+      "path": "costume-matrix.css",
+      "status": 200
+    },
+    {
+      "path": "local-media/costume/SPR-0001.png",
+      "status": 404
+    },
+    {
+      "path": "original-images/SPR-0001.png",
+      "status": 404
+    },
+    {
+      "path": "media/costume-matrix-v1/inputs/SPR-0001.png",
+      "status": 404
+    }
+  ],
+  "workflowJobs": [
+    {
+      "id": 124084304414,
+      "name": "build",
+      "conclusion": "success"
+    },
+    {
+      "id": 124084715237,
+      "name": "deploy",
+      "conclusion": "success"
+    }
+  ],
+  "browser": {
+    "localInteraction": "passed; nine loaded images, same-window detail, source references, prompt expansion, JSON export and 390x844 mobile layout",
+    "onlineInteraction": "not completed: browser navigation timed out; live HTTP resources and exact manifest verified independently",
+    "screenshots": [
+      "assets/images/pose-costume-matrix-v1-public.jpg",
+      "assets/images/pose-costume-matrix-v1-detail.jpg",
+      "assets/images/pose-costume-matrix-v1-mobile.jpg"
+    ]
+  }
+}
