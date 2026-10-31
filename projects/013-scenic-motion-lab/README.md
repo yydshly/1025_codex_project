@@ -9,11 +9,11 @@
 | 编号 / 收录日期 | 013 / 2026-10-31 |
 | 项目性质 | 原创研究网页；没有上游源码仓库或可对应的 commit/tag |
 | 研究对象 | Personality（@hi_personality）的《grassland special》及本轮个人生成试验 |
-| 当前状态 | researching；内容整理完成，进入静态发布准备 |
+| 当前状态 | researching；网页已发布，创作方法继续验证 |
 | 当前拼接实测 | 《悬崖长卷》，11.041667 秒，1280 × 720，24 fps；两条源片于5.000秒硬切 |
 | 历史完整试验 | 《越过山脊，看见海湾》，8.375 秒，1280 × 720，24 fps；继续保留 |
 | 新方向状态 | 七个概念图已归档；悬崖长卷已做双片拼接，接地、匀距与接缝仍有偏差；其余六项视频未生成 |
-| 在线演示 | 本轮已授权远端静态发布；正式URL待部署验证后登记 |
+| 在线演示 | [完整研究与试片](https://yydshly.github.io/1025_codex_project/013-scenic-motion-lab/) · [生成引导图](https://yydshly.github.io/1025_codex_project/013-scenic-motion-lab/overview.html) |
 
 ## 这次研究回答什么
 
@@ -50,7 +50,7 @@
 
 ## 一图理解
 
-[打开本地长图阅读页](http://127.0.0.1:4333/overview.html) · [PNG 原图](assets/images/overview-v1.png) · [实际生成与校正记录](research/overview-v1-generation.json)
+[打开本地长图阅读页](https://yydshly.github.io/1025_codex_project/013-scenic-motion-lab/overview.html) · [PNG 原图](assets/images/overview-v1.png) · [实际生成与校正记录](research/overview-v1-generation.json)
 
 总览图串起核心理解、图像与文字条件生成视频的工作流程、视差与身体接触等可信依据、本轮实测、七个创意和四类产品假设。图中的实测流程画面是依据本轮素材的视觉示意，不冒充逐帧原件；四类产品尚未做产品与商业验证。
 
@@ -58,7 +58,7 @@
 
 ## 悬崖长卷 · 11秒双片拼接实测
 
-[观看当前拼接版](http://127.0.0.1:4333/?film=coastal-scroll-splice-v1#screening) · [制作设计](research/coastal-scroll-splice-v1-design.json) · [实际剪辑记录](research/coastal-scroll-splice-v1-edit.json) · [实际接缝对照](assets/images/coastal-scroll-splice-v1/actual-seam.jpg)
+[观看当前拼接版](https://yydshly.github.io/1025_codex_project/013-scenic-motion-lab/?film=coastal-scroll-splice-v1#screening) · [制作设计](research/coastal-scroll-splice-v1-design.json) · [实际剪辑记录](research/coastal-scroll-splice-v1-edit.json) · [实际接缝对照](assets/images/coastal-scroll-splice-v1/actual-seam.jpg)
 
 两条源片均为Kling 4.0、720p档原生1284×724、24fps。A任务1044781原有121帧；第120帧作为B任务1044794的实际首图，交付中从A剪除这帧，以免相似边界姿态重复。成片取A第0–119帧（5秒）与B第0–144帧（6.041667秒），共265帧、11.041667秒，在5.000秒真实硬切；两源仅归一至1280×720，没有循环、定格、变速或溶解。
 
@@ -66,9 +66,9 @@
 
 ## 悬崖长卷 · 历史5秒模型对照
 
-[观看 Seedance 2.0 对照](http://127.0.0.1:4333/?film=coastal-scroll-seedance2-v1#screening) · [准确运动提示词](research/coastal-scroll-trial-v1-prompt.txt) · [设计与实际参数](research/coastal-scroll-trial-v1-design.json) · [交付与审片](research/coastal-scroll-seedance2-v1-delivery.json)
+[观看 Seedance 2.0 对照](https://yydshly.github.io/1025_codex_project/013-scenic-motion-lab/?film=coastal-scroll-seedance2-v1#screening) · [准确运动提示词](research/coastal-scroll-trial-v1-prompt.txt) · [设计与实际参数](research/coastal-scroll-trial-v1-design.json) · [交付与审片](research/coastal-scroll-seedance2-v1-delivery.json)
 
-[观看 Kling 4.0 新版](http://127.0.0.1:4333/?film=coastal-scroll-kling4-v1#screening) · [新版交付与审片记录](research/coastal-scroll-kling4-v1-delivery.json)
+[观看 Kling 4.0 新版](https://yydshly.github.io/1025_codex_project/013-scenic-motion-lab/?film=coastal-scroll-kling4-v1#screening) · [新版交付与审片记录](research/coastal-scroll-kling4-v1-delivery.json)
 
 Kling4.0新版也已交付：720p档原生输出实际1284×724，121帧、24fps、5.041667秒，保留原速与音轨。相较本次Seedance样片，人物尺度更稳定，近花石快移、远海岸慢移的视差可辨认，风景仍占主导；约0.75–2.5秒轮胎被花草遮挡，全程沿路接地尚未严验。网页预估150积分、提交后余额相应减少150；任务查询成本字段N/A，最终消耗仍未确认。声音未听验，两条具体样本也不能构成模型普遍排名。
 
@@ -118,11 +118,11 @@ npm run check
 ## 来源与授权
 
 - **研究文字与网页实现**：本项目原创整理，没有上游源码许可证可沿用；本项目未在此另行授予素材或代码许可。
-- **原作视频及其分析帧**：来源为 [@hi_personality 原帖](https://x.com/hi_personality/status/2115567493565825244)，权利归原权利人。公开可访问不等于获准再分发或商用；本轮仅作本地研究展示，公开发布前需单独核对素材使用范围。
+- **原作视频及其分析帧**：来源为 [@hi_personality 原帖](https://x.com/hi_personality/status/2115567493565825244)，权利归原权利人。公开可访问不等于获准再分发或商用；分析帧保留原作署名与来源，完整原视频通过原帖访问；原作的制作工程和再分发许可均未取得。
 - **本轮生成图像与视频**：来自会话内的图像生成工具与 ChatArt / Seedance、Kling 试验。保留原件、任务记录和派生关系；适用服务条款、素材输入权利与发布用途需分别核对，不能直接继承参考视频的授权。
-- **本地记忆**：创作准则已整理为“景观驱动的动态奇观”；本网页将其展开为可理解、可审查的方法，不承诺所有动作可被精确控制，也不承诺商业回报。
+- **本地记忆**：创作准则已整理为“景观驱动的动态奇观”；本网页将其展开为可理解、可审查的方法，动作控制和商业应用效果仍需后续实验验证。
 
-后续先修正当前样片的接地与接缝偏差，或选择其余方向的单一机制做短样，再决定是否提高分辨率或延长。本轮已授权远端静态发布；发布产物与本地完整证据分别管理，正式URL仅在远端验证后登记。
+后续先修正当前样片的接地与接缝偏差，或选择其余方向的单一机制做短样，再决定是否提高分辨率或延长。网站已于2026-10-31发布并完成访问核验，发布产物与本地完整证据分别管理；见[发布与验收记录](research/deployment.md)。
 
 ## 静态发布范围
 

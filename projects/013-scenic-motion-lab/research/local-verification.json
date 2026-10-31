@@ -486,5 +486,44 @@
       "root_npm_check": "passed: 13 projects",
       "manifest_hash_check": "passed: 107 artifacts; only two intentional curation hashes refreshed; A source unchanged"
     }
+  },
+  "public_deployment": {
+    "status": "verified",
+    "first_commit": "ab5b0a97f785d68c32a56ec219900c3bcefea33e",
+    "workflow_url": "https://github.com/yydshly/1025_codex_project/actions/runs/41179206155",
+    "workflow_conclusion": "success",
+    "site_url": "https://yydshly.github.io/1025_codex_project/013-scenic-motion-lab/",
+    "guide_url": "https://yydshly.github.io/1025_codex_project/013-scenic-motion-lab/overview.html",
+    "public_resources_checked": 48,
+    "all_resource_status_200": true,
+    "original_guide_png_sha_matches_online": true,
+    "browser_checks": {
+      "understanding_section_rendered": true,
+      "root_guide_points_to_overview": true,
+      "root_guide_image_natural_size": [
+        1024,
+        1536
+      ],
+      "main_video_duration_seconds": 11.041667,
+      "main_video_size": [
+        1280,
+        720
+      ],
+      "main_video_playback_started": true,
+      "seam_image_viewer_loaded": [
+        1920,
+        1628
+      ],
+      "overview_loaded": [
+        1024,
+        1536
+      ],
+      "mobile_viewport_width": 390,
+      "mobile_document_width": 375,
+      "page_horizontal_overflow": false,
+      "audio_listened": false
+    },
+    "evidence_directory": "assets/images/deployment-2026-10-31",
+    "resource_record": "research/deployment-http.json"
   }
 }

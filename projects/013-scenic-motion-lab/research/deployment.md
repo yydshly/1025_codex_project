@@ -1,6 +1,8 @@
 # 013 发布与验收记录
 
-状态：本地发布检查通过，线上部署待执行。
+状态：2026-10-31已发布，线上访问与交互核验通过。
+
+[完整研究与试片](https://yydshly.github.io/1025_codex_project/013-scenic-motion-lab/) · [生成引导图](https://yydshly.github.io/1025_codex_project/013-scenic-motion-lab/overview.html) · [总入口](https://yydshly.github.io/1025_codex_project/)
 
 引导图沿用本轮专门生成的 `assets/images/overview-v1.png`。网页PNG和生成归档逐字节一致，尺寸1024×1536；图片保持首轮研究快照，旁补11.04秒拼接进展。
 
@@ -10,4 +12,8 @@
 
 本地检查：项目check、总库登记check、6项发布边界测试、010回查快照与18项测试通过；发布产物465文件。浏览器确认新增总结、两组折叠框架、11.041667秒720p播放器、1024×1536原引导图与图解跳转；未进行音轨听验。
 
-线上工作流与访问验收在实际成功后补记。
+首个发布提交：`ab5b0a97f785d68c32a56ec219900c3bcefea33e`；[工作流41179206155](https://github.com/yydshly/1025_codex_project/actions/runs/41179206155)的build、deploy均成功。
+
+线上48个声明资源全部200；生成引导PNG的SHA256为`313a0485675e560b354237c3354725eb2bd8cd3de6dee13cbc692c628d61770f`，与生成归档一致。总入口点图进入overview，标题与网页链接进入研究主站。浏览器实际确认11.041667秒、1280×720视频可开始播放，接缝图加载为1920×1628；图解、总结与模板入口可用。390px视窗下页面文档宽375px，未出现页面横向溢出。
+
+截图在[发布证据目录](../assets/images/deployment-2026-10-31/)，请求结果见[资源核验](deployment-http.json)。验证范围不含音轨听验或全部扩展方向的视频生成。

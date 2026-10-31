@@ -148,4 +148,4 @@ GitHub Pages 只能提供静态内容。模型服务、采集任务、密钥和�
 
 013发布使用 `publicDirectory: app`、`guidePage: overview.html`。站点总入口以本轮专门生成的 `assets/images/overview-v1.png` 作引导图，网页PNG与生成原件逐字节一致；点图进入总览，项目名称和网页链接进入完整研究与试片。无需安装前端依赖，CI执行子项目check。
 
-内容组织为世界与首图、人物行动、摄影路径、环境响应、时间剪辑、审片迭代，展示11.041667秒Kling4.0双片实测和5秒硬切接点，区分已验证能力、偏差与待建产品。发布仅复制app静态目录；研究原件随仓库保留，含账户界面的两张证据截图仅留本地，主机绝对路径在公开元数据中改为项目相对路径。没有部署模型服务或把自动长片能力宣称为已实现。正式访问与工作流结果在成功核验后登记。
+内容组织为世界与首图、人物行动、摄影路径、环境响应、时间剪辑、审片迭代，展示11.041667秒Kling4.0双片实测和5秒硬切接点，区分已验证能力、偏差与待建产品。发布仅复制app静态目录；研究原件随仓库保留，含账户界面的两张证据截图仅留本地，主机绝对路径在公开元数据中改为项目相对路径。没有部署模型服务或把自动长片能力宣称为已实现。2026-10-31已上线并核验：[研究与试片](https://yydshly.github.io/1025_codex_project/013-scenic-motion-lab/) · [生成引导图](https://yydshly.github.io/1025_codex_project/013-scenic-motion-lab/overview.html)。[工作流41179206155](https://github.com/yydshly/1025_codex_project/actions/runs/41179206155)构建、部署成功；48个声明资源返回200，在线PNG与生成原件SHA一致，桌面/手机、视频播放及接缝图交互已检查。详见[013发布记录](../projects/013-scenic-motion-lab/research/deployment.md)。

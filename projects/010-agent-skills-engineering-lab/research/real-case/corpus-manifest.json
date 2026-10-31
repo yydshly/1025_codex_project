@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-31T07:00:26.416Z",
+  "generatedAt": "2026-10-31T07:15:05.382Z",
   "sourceScope": "projects.json + registered project README.md files only",
   "projectCount": 12,
   "passageCount": 561,
-  "registrySha256": "e3e48ba8ea8d0667e5401574b963ebba0052ec747b6a8aeb97b33ee86fc6fdcd",
-  "dataSha256": "e38834981a4554203afe6b923b236a131ced523e249feedc200260ca0d452d7d",
+  "registrySha256": "9916ccdb2cc98f0e77bc09422afdb37af9f5cd7adaf13e400fd6675afa185ef4",
+  "dataSha256": "43a8c2caa36ba1c8a210d918384f2c5be688f4baa56164999fc790df08cbff39",
   "documents": [
     {
       "projectId": "001",
@@ -76,7 +76,7 @@
     {
       "projectId": "013",
       "path": "projects/013-scenic-motion-lab/README.md",
-      "sha256": "b75f23e0a790938603680d454e24c99f5b4cfc021150af620823669b0a075c8b",
+      "sha256": "e81d21a79271e817b1167daaacad71357b84cca619ea896b5a871933e6edd0e9",
       "passages": 51
     }
   ]

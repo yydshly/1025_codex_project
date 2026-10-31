@@ -2517,10 +2517,200 @@
         "status": "Project research UI evidence; no third-party CC license asserted",
         "third_party_cc_license_asserted": false
       }
+    },
+    {
+      "path": "assets/images/deployment-2026-10-31/local-mobile.jpg",
+      "sha256": "b3da29745887b95e598d9878eff6021a27b0f8fa5ed2c8e1917e8c1df6ad5351",
+      "bytes": 48194,
+      "kind": "browser-screenshot",
+      "source": {
+        "type": "root deployment QA",
+        "workflow": "https://github.com/yydshly/1025_codex_project/actions/runs/41179206155"
+      },
+      "derivation": [
+        {
+          "operation": "Actual browser screenshot; not AI generated"
+        }
+      ],
+      "license": {
+        "status": "Project research evidence; no new third-party license asserted",
+        "third_party_cc_license_asserted": false
+      }
+    },
+    {
+      "path": "assets/images/deployment-2026-10-31/online-capabilities.jpg",
+      "sha256": "7d554f18411826ff6717423485b84ea1c688974a5325cedab6d2de8c5b4a2e0e",
+      "bytes": 84153,
+      "kind": "browser-screenshot",
+      "source": {
+        "type": "root deployment QA",
+        "workflow": "https://github.com/yydshly/1025_codex_project/actions/runs/41179206155"
+      },
+      "derivation": [
+        {
+          "operation": "Actual browser screenshot; not AI generated"
+        }
+      ],
+      "license": {
+        "status": "Project research evidence; no new third-party license asserted",
+        "third_party_cc_license_asserted": false
+      }
+    },
+    {
+      "path": "assets/images/deployment-2026-10-31/online-entry.jpg",
+      "sha256": "b9fa3e8c1af742f926edb8dd54479f4ceb86722832456aa73cfc540ca40e0ac2",
+      "bytes": 95122,
+      "kind": "browser-screenshot",
+      "source": {
+        "type": "root deployment QA",
+        "workflow": "https://github.com/yydshly/1025_codex_project/actions/runs/41179206155"
+      },
+      "derivation": [
+        {
+          "operation": "Actual browser screenshot; not AI generated"
+        }
+      ],
+      "license": {
+        "status": "Project research evidence; no new third-party license asserted",
+        "third_party_cc_license_asserted": false
+      }
+    },
+    {
+      "path": "assets/images/deployment-2026-10-31/online-mobile-overview.jpg",
+      "sha256": "0563df99bd654f3e801522d6a82e40bbe000b3db063ab41a819b0c8cb7ac34a8",
+      "bytes": 84329,
+      "kind": "browser-screenshot",
+      "source": {
+        "type": "root deployment QA",
+        "workflow": "https://github.com/yydshly/1025_codex_project/actions/runs/41179206155"
+      },
+      "derivation": [
+        {
+          "operation": "Actual browser screenshot; not AI generated"
+        }
+      ],
+      "license": {
+        "status": "Project research evidence; no new third-party license asserted",
+        "third_party_cc_license_asserted": false
+      }
+    },
+    {
+      "path": "assets/images/deployment-2026-10-31/online-mobile-understanding.jpg",
+      "sha256": "4121a5d147a6ada461d9c091f34f71368d9f9fe6542f1a8911041d863b4441c2",
+      "bytes": 39743,
+      "kind": "browser-screenshot",
+      "source": {
+        "type": "root deployment QA",
+        "workflow": "https://github.com/yydshly/1025_codex_project/actions/runs/41179206155"
+      },
+      "derivation": [
+        {
+          "operation": "Actual browser screenshot; not AI generated"
+        }
+      ],
+      "license": {
+        "status": "Project research evidence; no new third-party license asserted",
+        "third_party_cc_license_asserted": false
+      }
+    },
+    {
+      "path": "assets/images/deployment-2026-10-31/online-overview.jpg",
+      "sha256": "3a2b83113b0cfdd1af26458ee9dc9cd65382b28e87df8f5878b9aa48e178e405",
+      "bytes": 154785,
+      "kind": "browser-screenshot",
+      "source": {
+        "type": "root deployment QA",
+        "workflow": "https://github.com/yydshly/1025_codex_project/actions/runs/41179206155"
+      },
+      "derivation": [
+        {
+          "operation": "Actual browser screenshot; not AI generated"
+        }
+      ],
+      "license": {
+        "status": "Project research evidence; no new third-party license asserted",
+        "third_party_cc_license_asserted": false
+      }
+    },
+    {
+      "path": "assets/images/deployment-2026-10-31/online-screening.jpg",
+      "sha256": "5688b943fcb02e4e826b1086b106320ff052f6e2f5b4cdc4093c59d809e1cc12",
+      "bytes": 174054,
+      "kind": "browser-screenshot",
+      "source": {
+        "type": "root deployment QA",
+        "workflow": "https://github.com/yydshly/1025_codex_project/actions/runs/41179206155"
+      },
+      "derivation": [
+        {
+          "operation": "Actual browser screenshot; not AI generated"
+        }
+      ],
+      "license": {
+        "status": "Project research evidence; no new third-party license asserted",
+        "third_party_cc_license_asserted": false
+      }
+    },
+    {
+      "path": "assets/images/deployment-2026-10-31/online-understanding.jpg",
+      "sha256": "0a099f42b1148ce2246e02608441ca629eb515bc79dc029ec33a41c39791b4d3",
+      "bytes": 74527,
+      "kind": "browser-screenshot",
+      "source": {
+        "type": "root deployment QA",
+        "workflow": "https://github.com/yydshly/1025_codex_project/actions/runs/41179206155"
+      },
+      "derivation": [
+        {
+          "operation": "Actual browser screenshot; not AI generated"
+        }
+      ],
+      "license": {
+        "status": "Project research evidence; no new third-party license asserted",
+        "third_party_cc_license_asserted": false
+      }
+    },
+    {
+      "path": "research/deployment-http.json",
+      "sha256": "74b28b6678dbb0f0560e8a00fb9a106f4ff3bb4e1382f0fa16b468190cc63bd7",
+      "bytes": 6004,
+      "kind": "verification-record",
+      "source": {
+        "type": "root deployment QA",
+        "workflow": "https://github.com/yydshly/1025_codex_project/actions/runs/41179206155"
+      },
+      "derivation": [
+        {
+          "operation": "Actual browser / declared-resource verification data"
+        }
+      ],
+      "license": {
+        "status": "Project research evidence; no new third-party license asserted",
+        "third_party_cc_license_asserted": false
+      }
+    },
+    {
+      "path": "research/local-verification.json",
+      "sha256": "b5ac5e64a2863289297ef1353ce4aeae3e8d7ecfcad4cf91ddb65c37470023fa",
+      "bytes": 16696,
+      "kind": "verification-record",
+      "source": {
+        "type": "root deployment QA",
+        "workflow": "https://github.com/yydshly/1025_codex_project/actions/runs/41179206155"
+      },
+      "derivation": [
+        {
+          "operation": "Actual browser / declared-resource verification data"
+        }
+      ],
+      "license": {
+        "status": "Project research evidence; no new third-party license asserted",
+        "third_party_cc_license_asserted": false
+      }
     }
   ],
   "concept_policy": "Seven new built-in AI concept stills, not video outputs or guaranteed exact first frames; source PNGs retained and web derivatives only compressed.",
-  "artifact_count": 106,
+  "artifact_count": 116,
   "local_web_verification_note": "Coastal-scroll now has a real 11.041667-second two-clip editorial trial, with a documented 5.0-second hard cut and local browser playback evidence. The other six directions have no generated motion trials. The original full 10-second design has not been strictly accepted; numeric audio checks do not establish listening or perceptual continuity.",
   "publication_exclusions": [
     {

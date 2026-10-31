@@ -1,0 +1,249 @@
+{
+  "site": "https://yydshly.github.io/1025_codex_project/013-scenic-motion-lab/",
+  "declared_public_files_checked": 48,
+  "failures": [],
+  "overview_png_online_sha256": "313a0485675e560b354237c3354725eb2bd8cd3de6dee13cbc692c628d61770f",
+  "overview_matches_generated_original": true,
+  "files": [
+    {
+      "path": "favicon.svg",
+      "status": 200,
+      "content_length": "278"
+    },
+    {
+      "path": "index.html",
+      "status": 200,
+      "content_length": "14319"
+    },
+    {
+      "path": "main.js",
+      "status": 200,
+      "content_length": "27633"
+    },
+    {
+      "path": "overview.html",
+      "status": 200,
+      "content_length": "11194"
+    },
+    {
+      "path": "styles.css",
+      "status": 200,
+      "content_length": "38056"
+    },
+    {
+      "path": "assets/images/overview-v1.png",
+      "status": 200,
+      "content_length": "2961330"
+    },
+    {
+      "path": "assets/images/overview-v1.webp",
+      "status": 200,
+      "content_length": "2288698"
+    },
+    {
+      "path": "assets/images/concepts/coastal-scroll.webp",
+      "status": 200,
+      "content_length": "589188"
+    },
+    {
+      "path": "assets/images/concepts/inner-sea.webp",
+      "status": 200,
+      "content_length": "619578"
+    },
+    {
+      "path": "assets/images/concepts/miniature-bay.webp",
+      "status": 200,
+      "content_length": "541394"
+    },
+    {
+      "path": "assets/images/concepts/pedal-city.webp",
+      "status": 200,
+      "content_length": "485668"
+    },
+    {
+      "path": "assets/images/concepts/reflection-first.webp",
+      "status": 200,
+      "content_length": "610396"
+    },
+    {
+      "path": "assets/images/concepts/seasonal-gate.webp",
+      "status": 200,
+      "content_length": "634332"
+    },
+    {
+      "path": "assets/images/concepts/seed-islands.webp",
+      "status": 200,
+      "content_length": "374362"
+    },
+    {
+      "path": "assets/images/keyframes/apex.webp",
+      "status": 200,
+      "content_length": "533786"
+    },
+    {
+      "path": "assets/images/keyframes/end.webp",
+      "status": 200,
+      "content_length": "543604"
+    },
+    {
+      "path": "assets/images/keyframes/start.webp",
+      "status": 200,
+      "content_length": "543516"
+    },
+    {
+      "path": "assets/images/posters/coastal-scroll-kling4-b-v1.jpg",
+      "status": 200,
+      "content_length": "397848"
+    },
+    {
+      "path": "assets/images/posters/coastal-scroll-kling4-v1.jpg",
+      "status": 200,
+      "content_length": "442855"
+    },
+    {
+      "path": "assets/images/posters/coastal-scroll-seedance2-v1.jpg",
+      "status": 200,
+      "content_length": "464487"
+    },
+    {
+      "path": "assets/images/posters/coastal-scroll-splice-v1.jpg",
+      "status": 200,
+      "content_length": "437810"
+    },
+    {
+      "path": "assets/images/posters/complete-ride.jpg",
+      "status": 200,
+      "content_length": "76763"
+    },
+    {
+      "path": "assets/images/posters/motion-native.jpg",
+      "status": 200,
+      "content_length": "127528"
+    },
+    {
+      "path": "assets/images/posters/motion-paced.jpg",
+      "status": 200,
+      "content_length": "104834"
+    },
+    {
+      "path": "assets/images/posters/shot-a.jpg",
+      "status": 200,
+      "content_length": "126733"
+    },
+    {
+      "path": "assets/images/posters/shot-b.jpg",
+      "status": 200,
+      "content_length": "134870"
+    },
+    {
+      "path": "assets/images/posters/static-1080.jpg",
+      "status": 200,
+      "content_length": "193626"
+    },
+    {
+      "path": "assets/images/posters/static-720.jpg",
+      "status": 200,
+      "content_length": "150666"
+    },
+    {
+      "path": "assets/images/reference/coastal-scroll-splice-v1-seam.jpg",
+      "status": 200,
+      "content_length": "1662384"
+    },
+    {
+      "path": "assets/images/reference/source-full-timeline.jpg",
+      "status": 200,
+      "content_length": "1099093"
+    },
+    {
+      "path": "assets/images/reference/source-vs-result-motion.png",
+      "status": 200,
+      "content_length": "1628739"
+    },
+    {
+      "path": "assets/videos/coastal-scroll-kling4-b-v1.mp4",
+      "status": 200,
+      "content_length": "13358263"
+    },
+    {
+      "path": "assets/videos/coastal-scroll-kling4-v1.mp4",
+      "status": 200,
+      "content_length": "17626421"
+    },
+    {
+      "path": "assets/videos/coastal-scroll-seedance2-v1.mp4",
+      "status": 200,
+      "content_length": "6492441"
+    },
+    {
+      "path": "assets/videos/coastal-scroll-splice-v1-seam.mp4",
+      "status": 200,
+      "content_length": "2122626"
+    },
+    {
+      "path": "assets/videos/coastal-scroll-splice-v1.mp4",
+      "status": 200,
+      "content_length": "11180757"
+    },
+    {
+      "path": "assets/videos/complete-ride.mp4",
+      "status": 200,
+      "content_length": "9432102"
+    },
+    {
+      "path": "assets/videos/motion-native.mp4",
+      "status": 200,
+      "content_length": "5535648"
+    },
+    {
+      "path": "assets/videos/motion-paced.mp4",
+      "status": 200,
+      "content_length": "5026390"
+    },
+    {
+      "path": "assets/videos/shot-a.mp4",
+      "status": 200,
+      "content_length": "5824859"
+    },
+    {
+      "path": "assets/videos/shot-b.mp4",
+      "status": 200,
+      "content_length": "5680163"
+    },
+    {
+      "path": "assets/videos/static-1080.mp4",
+      "status": 200,
+      "content_length": "12044664"
+    },
+    {
+      "path": "assets/videos/static-720.mp4",
+      "status": 200,
+      "content_length": "4665317"
+    },
+    {
+      "path": "data/concept-generation.js",
+      "status": 200,
+      "content_length": "14955"
+    },
+    {
+      "path": "data/concepts.js",
+      "status": 200,
+      "content_length": "27641"
+    },
+    {
+      "path": "data/execution.js",
+      "status": 200,
+      "content_length": "11273"
+    },
+    {
+      "path": "data/media.js",
+      "status": 200,
+      "content_length": "21372"
+    },
+    {
+      "path": "data/research.js",
+      "status": 200,
+      "content_length": "27770"
+    }
+  ]
+}
