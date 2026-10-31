@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>一张图读懂景观奇旅 · 研究总览</title>
+  <style>
+    :root{--paper:#f6f3eb;--white:#fffef9;--ink:#183d35;--muted:#68756b;--line:#dcded1;--accent:#a75e3d;--mint:#e8ede2;--sans:"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;--serif:"Iowan Old Style","Noto Serif SC","Songti SC",serif}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.7 var(--sans)}
+    a{color:inherit;text-underline-offset:4px}
+    button{font:inherit;cursor:pointer}
+    button:disabled{cursor:default;opacity:.55}
+    a:focus-visible,button:focus-visible,.reader:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+    [hidden]{display:none!important}
+    .shell{width:min(1480px,calc(100% - 64px));margin-inline:auto}
+    header{padding-block:24px 18px;border-bottom:1px solid var(--line)}
+    .back{display:inline-flex;align-items:center;min-height:44px;font-size:13px}
+    .eyebrow{margin:12px 0 6px;color:var(--accent);font-size:11px;letter-spacing:2px}
+    h1{margin:0;font:clamp(28px,4vw,44px)/1.3 var(--serif);font-weight:500}
+    .intro{margin:12px 0 0;max-width:780px;color:var(--muted);font-size:14px}
+    .toolbar{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;padding-block:18px}
+    .controls{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+    .control,.download{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:9px 16px;border:1px solid #bec9bc;background:transparent;color:var(--ink);text-decoration:none;font-size:13px}
+    .control[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--white)}
+    .control:not(:disabled):hover,.download:hover{box-shadow:inset 0 0 0 1px var(--accent)}
+    .download{border-color:var(--accent);color:var(--accent)}
+    .download[aria-disabled="true"]{pointer-events:none;opacity:.5}
+    .local-note{margin:0;color:var(--muted);font-size:12px}
+    .reading-hint{margin:0 0 12px;color:var(--muted);font-size:13px}
+    .reader{width:100%;max-width:1400px;max-height:75dvh;min-height:260px;margin:0 auto;overflow:auto;overscroll-behavior:contain;background:var(--white);border:1px solid var(--line);scrollbar-color:#8b9a88 var(--paper)}
+    .reader img{display:block;width:100%;max-width:1400px;height:auto;margin-inline:auto}
+    .reader.is-native img{width:var(--natural-width);max-width:none;margin:0}
+    .empty{display:grid;place-content:center;min-height:260px;padding:30px;text-align:center;color:var(--muted)}
+    .empty p{margin:0;max-width:460px}
+    .meta{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;margin:12px 0;color:var(--muted);font-size:12px}
+    footer{padding-block:18px 30px;color:var(--muted);font-size:12px}
+    footer p{margin:0}
+    .overview-layout{display:grid;grid-template-columns:minmax(0,1fr)320px;gap:24px;align-items:start}.latest-summary{padding:24px;background:var(--white);border:1px solid var(--line)}.latest-summary h2{font:25px/1.5 var(--serif);margin:7px 0 14px}.latest-summary h3{font:19px/1.6 var(--serif);margin:24px 0 8px}.latest-summary p{font-size:13px;color:var(--muted);margin:0 0 13px}.latest-summary .progress{font:39px/1.3 var(--serif);color:var(--ink);margin:8px 0}.latest-summary .progress small{font:12px var(--sans);margin-left:8px}.latest-summary .summary-links{display:grid;gap:10px;margin:20px 0}.latest-summary .primary{background:var(--ink);color:var(--white);text-decoration:none;padding:11px 14px;text-align:center;min-height:44px}.latest-summary ul{padding-left:18px;margin:8px 0;font-size:13px;color:var(--muted)}.latest-summary .boundary{padding-top:14px;border-top:1px solid var(--line);font-size:12px}@media(max-width:900px){.overview-layout{grid-template-columns:1fr}.latest-summary{display:block}.latest-summary .summary-links{grid-template-columns:1fr 1fr}}@media(max-width:600px){.latest-summary{padding:20px}.latest-summary .summary-links{grid-template-columns:1fr}}
+    @media(max-width:600px){.shell{width:calc(100% - 28px)}header{padding-block:12px 16px}.intro{font-size:13px}.toolbar{align-items:flex-start;gap:10px;padding-block:14px}.controls{gap:6px}.control,.download{padding-inline:12px}.local-note{width:100%}.reader{max-height:70dvh;min-height:220px}.empty{min-height:220px;padding:20px}.reading-hint{font-size:12px}.meta{font-size:11px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="shell">
+      <a class="back" href="./index.html">← 返回景观奇旅实验室</a>
+      <p class="eyebrow">SCENIC MOTION LAB / RESEARCH OVERVIEW</p>
+      <h1>一张图读懂景观奇旅</h1>
+      <p class="intro">这张专门生成的长图保留为首轮研究快照，原图不重画。最新11.04秒双片拼接进展与能力边界补充在旁边；完整效果和新总结可直接进入主站查看。</p>
+    </div>
+  </header>
+  <main class="shell">
+    <div class="toolbar" aria-label="长图阅读工具">
+      <div class="controls" role="group" aria-label="显示尺寸">
+        <button class="control" id="fit-button" type="button" aria-pressed="true" aria-controls="reader" disabled>适合宽度</button>
+        <button class="control" id="native-button" type="button" aria-pressed="false" aria-controls="reader" disabled>原尺寸</button>
+        <a class="download" id="download" href="./assets/images/overview-v1.png" download="scenic-motion-overview-v1.png" aria-disabled="true" tabindex="-1">下载 PNG 原图 ↓</a>
+      </div>
+      <p class="local-note">研究总览 · 实测与待验证方向</p>
+    </div>
+    <p class="reading-hint" id="reading-hint">在图内向下滚动查看完整长图；切换原尺寸后，可横向滚动查看细节。</p>
+    <div class="overview-layout">
+    <figure class="reader" id="reader" tabindex="0" role="region" aria-label="研究总览长图，可滚动阅读" aria-describedby="reading-hint" aria-busy="true">
+      <div class="empty" id="empty"><p id="empty-message">正在载入研究总览长图…</p></div>
+      <img id="overview-image" src="./assets/images/overview-v1.png" width="1024" height="1536" alt="专门生成的景观奇旅中文研究总览原图：风格理解、首轮影像试验、制作原理与待验证的产品方向。" decoding="async" hidden>
+    </figure>
+    <aside class="latest-summary" aria-labelledby="latest-title">
+      <p class="eyebrow">LATEST EVIDENCE / 最新进展</p><h2 id="latest-title">从短样走到<br>真实双片拼接。</h2><p class="progress">11.04<small>秒 · 两条源片</small></p>
+      <p>《悬崖长卷》取A前5秒与B全部6.041667秒，265帧、720p、24fps，在第5秒硬切。没有循环、定格、变速或溶解。</p>
+      <p>接点动作和主要地理基本承接，仍有轻微重绘；B后段明显拉远，声音未听验。原图中的较早试验保留为历史，不替代这些新证据。</p>
+      <div class="summary-links"><a class="primary" href="./index.html?film=coastal-scroll-splice-v1#screening">观看11.04秒成片 →</a><a class="primary" href="./index.html#understanding">阅读理解、价值与能力 →</a></div>
+      <h3>真正可复用的理解</h3><p>世界与首图、人物行动、摄影路径、环境响应、时间剪辑和审查迭代共同形成观看体验。漂亮图、新模型或高分辨率都不能自动替代这些选择。</p>
+      <h3>创作与产品方向</h3><ul><li>近期可试：系列景观旅程、品牌／文旅概念样片。</li><li>待产品化：动作摄影模板与首尾接力。</li><li>待建：互动创作工作台。</li></ul>
+      <p class="boundary">这些是可验证的方向，不是已上线商业产品。当前方法不提供精确骨骼／路径控制或自动长片；其余六个新方向尚未生成视频。</p>
+    </aside>
+    </div>
+    <div class="meta">
+      <span id="image-status" role="status" aria-live="polite">图像尚未载入。</span>
+      <a href="./index.html">查看完整研究文字与试验记录 →</a>
+    </div>
+  </main>
+  <footer class="shell"><p>长图用于总结研究；生成原件、后期处理和已知限制，以完整研究记录为准。</p></footer>
+  <script>
+    (() => {
+      const image = document.getElementById('overview-image');
+      const reader = document.getElementById('reader');
+      const fit = document.getElementById('fit-button');
+      const native = document.getElementById('native-button');
+      const status = document.getElementById('image-status');
+      const empty = document.getElementById('empty');
+      const emptyMessage = document.getElementById('empty-message');
+      const download = document.getElementById('download');
+      let ready = false;
+      let nativeMode = false;
+
+      function updateStatus() {
+        status.textContent = `${image.naturalWidth} × ${image.naturalHeight} 像素 · ${nativeMode ? '原尺寸，可上下及横向滚动' : '适合宽度，向下滚动阅读'}`;
+      }
+
+      function setMode(useNative) {
+        if (!ready) return;
+        const previousHeight = image.getBoundingClientRect().height;
+        const relativeTop = previousHeight ? reader.scrollTop / previousHeight : 0;
+        nativeMode = useNative;
+        reader.classList.toggle('is-native', useNative);
+        fit.setAttribute('aria-pressed', String(!useNative));
+        native.setAttribute('aria-pressed', String(useNative));
+        reader.scrollTop = relativeTop * image.getBoundingClientRect().height;
+        if (!useNative) reader.scrollLeft = 0;
+        updateStatus();
+      }
+
+      function onLoad() {
+        if (!image.naturalWidth || !image.naturalHeight) return;
+        ready = true;
+        reader.style.setProperty('--natural-width', `${image.naturalWidth}px`);
+        empty.hidden = true;
+        image.hidden = false;
+        reader.setAttribute('aria-busy', 'false');
+        fit.disabled = false;
+        native.disabled = false;
+        download.removeAttribute('aria-disabled');
+        download.removeAttribute('tabindex');
+        setMode(nativeMode);
+      }
+
+      function onError() {
+        ready = false;
+        image.hidden = true;
+        empty.hidden = false;
+        emptyMessage.textContent = '长图尚未归档或暂时无法读取。图片就绪后刷新本页即可查看，也可返回完整研究。';
+        status.textContent = '长图当前不可用；未读取到图像尺寸。';
+        reader.setAttribute('aria-busy', 'false');
+        fit.disabled = true;
+        native.disabled = true;
+        download.setAttribute('aria-disabled', 'true');
+        download.setAttribute('tabindex', '-1');
+      }
+
+      fit.addEventListener('click', () => setMode(false));
+      native.addEventListener('click', () => setMode(true));
+      image.addEventListener('load', onLoad);
+      image.addEventListener('error', onError);
+      download.addEventListener('click', event => { if (!ready) event.preventDefault(); });
+      if (image.complete) image.naturalWidth ? onLoad() : onError();
+    })();
+  </script>
+</body>
+</html>

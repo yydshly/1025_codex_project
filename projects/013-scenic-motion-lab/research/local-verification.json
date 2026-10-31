@@ -1,0 +1,490 @@
+{
+  "schema_version": 1,
+  "recorded_on": "2026-10-31",
+  "scope": "本地研究网页，不含提交或部署",
+  "base_url": "http://127.0.0.1:4333/",
+  "status": "local_web_completed; coastal_scroll_two_clip_trial_reviewed; six_other_concept_videos_not_generated",
+  "evidence_attribution": {
+    "browser_checks_performed_by": "root",
+    "browser_method": "Cua 实际浏览器操作",
+    "record_compiled_by": "workflow_check",
+    "independently_repeated_by_record_compiler": false,
+    "basis": "root 在本轮协作消息中报告的实际操作、浏览器状态、剪贴板及下载结果；本文件作者未重复执行这些浏览器检查。",
+    "exact_execution_timestamp": null,
+    "screenshot_evidence_attached": true
+  },
+  "checks": [
+    {
+      "id": "main_video_ready_and_playback",
+      "status": "passed",
+      "performed_by": "root",
+      "action": "加载主视频并点击播放",
+      "observed": {
+        "readyState": 4,
+        "duration_seconds": 8.375,
+        "videoWidth": 1280,
+        "videoHeight": 720,
+        "paused_after_click": false
+      },
+      "limit": "证明本地加载与播放交互有效，不等于重新完成视频艺术或声音验收。"
+    },
+    {
+      "id": "video_switch_to_1080",
+      "status": "passed",
+      "performed_by": "root",
+      "action": "在 7 个视频条目中切换至 1080p 版本",
+      "observed": {
+        "video_entry_count": 7,
+        "selected_src_matches_expected": true,
+        "videoWidth": 1916,
+        "videoHeight": 1080
+      },
+      "limit": "本项报告了指定切换与其尺寸，未声称逐一完整播放 7 条视频。"
+    },
+    {
+      "id": "concept_card_count",
+      "status": "passed",
+      "performed_by": "root",
+      "action": "查看概念卡片列表",
+      "observed": {
+        "card_count": 7
+      },
+      "limit": "卡片数量通过不表示 7 张新概念图已经生成或完成静态检查。"
+    },
+    {
+      "id": "concept_filter_absurd",
+      "status": "passed",
+      "performed_by": "root",
+      "action": "选择荒诞筛选",
+      "observed": {
+        "visible_card_count": 3
+      }
+    },
+    {
+      "id": "concept_search_reflection",
+      "status": "passed",
+      "performed_by": "root",
+      "action": "搜索倒影",
+      "observed": {
+        "visible_card_count": 1
+      }
+    },
+    {
+      "id": "search_empty_state_and_reset",
+      "status": "passed",
+      "performed_by": "root",
+      "action": "输入无结果条件后清空",
+      "observed": {
+        "no_result_card_count": 0,
+        "empty_state_visible": true,
+        "restored_card_count_after_clear": 7
+      }
+    },
+    {
+      "id": "reflection_dialog_hash",
+      "status": "passed",
+      "performed_by": "root",
+      "action": "打开倒影概念详情",
+      "observed": {
+        "dialog_open": true,
+        "hash_matches_selected_concept": true
+      }
+    },
+    {
+      "id": "image_prompt_copy",
+      "status": "passed",
+      "performed_by": "root",
+      "action": "在详情中复制首图提示词并读取实际剪贴板",
+      "observed": {
+        "clipboard_prefix_matches_expected": true,
+        "toast_visible_inside_dialog": true
+      },
+      "limit": "报告的内容比对范围为剪贴板前缀，不扩展成逐字全量校验。"
+    },
+    {
+      "id": "reflection_design_export",
+      "status": "passed",
+      "performed_by": "root",
+      "action": "导出倒影方案",
+      "observed": {
+        "actual_download_created": true,
+        "filename": "reflection-first-design.json"
+      },
+      "limit": "确认实际下载发生；本记录未声称独立解析或逐字段核验下载文件。"
+    },
+    {
+      "id": "dialog_close_focus_return",
+      "status": "passed",
+      "performed_by": "root",
+      "action": "关闭详情",
+      "observed": {
+        "focus_returned_to_trigger_card": true
+      }
+    },
+    {
+      "id": "inner_sea_deep_link_refresh",
+      "status": "passed",
+      "performed_by": "root",
+      "action": "访问 inner-sea 深链接并刷新，再关闭详情",
+      "observed": {
+        "concept_id": "inner-sea",
+        "dialog_opens_after_refresh": true,
+        "focus_returns_to_corresponding_card_after_close": true
+      }
+    },
+    {
+      "id": "mobile_horizontal_overflow",
+      "status": "passed",
+      "performed_by": "root",
+      "action": "以移动端视口检查布局",
+      "observed": {
+        "viewport_width": 390,
+        "viewport_height": 844,
+        "horizontal_overflow": false
+      },
+      "limit": "仅对应已测视口，不推断全部设备与所有宽度。"
+    },
+    {
+      "id": "pipeline_keyboard_end",
+      "status": "passed",
+      "performed_by": "root",
+      "action": "在 9 步流程中使用键盘 End",
+      "observed": {
+        "step_count": 9,
+        "selected_step": 9,
+        "focus_and_panel_title_match_selected_step": true
+      }
+    },
+    {
+      "id": "repair_template_copy",
+      "status": "passed",
+      "performed_by": "root",
+      "action": "复制返修模板",
+      "observed": {
+        "copy_succeeded": true
+      }
+    },
+    {
+      "id": "desktop_1280_layout",
+      "status": "passed",
+      "performed_by": "root",
+      "observed": {
+        "viewport": [
+          1280,
+          900
+        ],
+        "horizontal_overflow": false
+      }
+    },
+    {
+      "id": "concept_actual_prompt_copy",
+      "status": "passed",
+      "performed_by": "root",
+      "observed": {
+        "clipboard_equals_full_rendered_prompt": true
+      }
+    },
+    {
+      "id": "full_research_json_download",
+      "status": "passed",
+      "performed_by": "root",
+      "observed": {
+        "download_parsed": true,
+        "concepts": 7,
+        "videos": 7,
+        "actual_image_prompts": 7,
+        "local_only": true,
+        "winter_script_confirmed": true
+      }
+    },
+    {
+      "id": "mobile_dialog_and_image_viewer",
+      "status": "passed",
+      "performed_by": "root",
+      "observed": {
+        "viewport": [
+          390,
+          844
+        ],
+        "dialog_horizontal_overflow": false,
+        "image_viewer_opens_and_loads": true,
+        "escape_closes_dialog": true
+      }
+    },
+    {
+      "id": "final_browser_console",
+      "status": "passed",
+      "performed_by": "root",
+      "observed": {
+        "new_error_entries_after_final_reload": 0,
+        "temporary_viewport_reset": true,
+        "deliverable_tab_retained": true
+      }
+    }
+  ],
+  "pending": {
+    "new_concept_video_motion": {
+      "status": "not_verified",
+      "note": "本轮只做七张概念静图与未来动作/摄影设计，没有新增这些方向的视频生成。"
+    }
+  },
+  "delivery_boundaries": {
+    "local_only": true,
+    "git_submission_performed_in_this_round": false,
+    "deployment_performed_in_this_round": false,
+    "public_demo_url": null,
+    "full_third_party_source_video_archived_in_webpage": false,
+    "audio_listening_verified_by_these_browser_checks": false
+  },
+  "completed_asset_verification": {
+    "status": "passed",
+    "original_png_count": 7,
+    "webp_count": 7,
+    "all_decodable": true,
+    "browser_loaded_count": 7,
+    "browser_natural_dimensions": [
+      1672,
+      941
+    ],
+    "root_visual_review": "七图缩略对照及浏览器页面；结合来源代理逐张观察，保留倒影、尺度、灯光等概念偏差。",
+    "manifest_artifact_count": 77,
+    "all_concept_videos_generated": false,
+    "seasonal_design": "当前图与未来脚本均已统一早夏→薄雪冬季；准确原始生成prompt保留不变。"
+  },
+  "screenshots": {
+    "status": "archived",
+    "directory": "assets/images/local-review",
+    "files": [
+      {
+        "path": "assets/images/local-review/concept-detail-1280.jpg",
+        "width": 1280,
+        "height": 900,
+        "sha256": "e4e6c29d7fb9953f7ff6994b5a22638b79147196f9bf2b2da1d0d38170dfc240"
+      },
+      {
+        "path": "assets/images/local-review/concepts-desktop-1280.jpg",
+        "width": 1265,
+        "height": 889,
+        "sha256": "f59860e7ce9ea3d06c86c21a518dec00993e3d7994ae7ed4e42e2c73c2514efc"
+      },
+      {
+        "path": "assets/images/local-review/desktop-1280.jpg",
+        "width": 1265,
+        "height": 889,
+        "sha256": "f492b2cda9ca7240a6ad0b1ac37d8a4c018afe35cfe5385955b31683b04758c4"
+      },
+      {
+        "path": "assets/images/local-review/mobile-concept-390.jpg",
+        "width": 390,
+        "height": 844,
+        "sha256": "5fc5989d62a8fb29365bd2ec3d1d5062dc8da2009fa2e7640c2687eb9c9bb2bd"
+      },
+      {
+        "path": "assets/images/local-review/mobile-final-390.jpg",
+        "width": 375,
+        "height": 812,
+        "sha256": "923e54e07c4fb180b44660d788ac06f58d2533e2a069e1ac1f6e002b11f8224b"
+      }
+    ]
+  },
+  "command_checks": [
+    {
+      "scope": "013 subproject",
+      "command": "npm run check",
+      "result": "passed"
+    },
+    {
+      "scope": "repository registry and index",
+      "command": "npm run check",
+      "result": "passed",
+      "project_count": 13
+    },
+    {
+      "scope": "isolated creation, numbering, index and publication boundaries",
+      "command": "npm run check:pages",
+      "result": "passed",
+      "tests_passed": 6,
+      "production_deployment_performed": false
+    }
+  ],
+  "overview_image": {
+    "status": "visually_reviewed",
+    "path": "assets/images/overview-v1.png",
+    "dimensions": [
+      1024,
+      1536
+    ],
+    "built_in_imagegen": true,
+    "factual_thumbnail_corrected": true,
+    "webp_lossless": true,
+    "product_directions": "hypotheses, unverified",
+    "reader_page": "app/overview.html",
+    "reader_browser_qa": {
+      "status": "passed",
+      "browser": "in-app browser",
+      "image_load": "1024 x 1536",
+      "fit_and_native_controls": "passed",
+      "internal_scroll": "visually verified into seven concepts and product region",
+      "png_download_target": "HTTP 200; decoded PNG verified; browser download click not exercised",
+      "mobile_viewport": "not repeated for this new reader page",
+      "webp_rebuilt": "Valid lossless WebP; decoded pixels identical to archived PNG"
+    },
+    "checks": {
+      "project_npm_check": "passed",
+      "root_npm_check": "passed",
+      "all_58_manifest_hashes": "passed"
+    }
+  },
+  "coastal_scroll_seedance_trial": {
+    "date": "2026-10-31",
+    "status": "passed browser and file checks; motion target only partially achieved",
+    "task_id": 1044756,
+    "browser_qa": "See research/coastal-scroll-seedance2-v1-delivery.json; actual root IAB test, agent had no browser access",
+    "width": 1280,
+    "height": 720,
+    "browser_duration": 5.088,
+    "video_duration": 5.041667,
+    "fps": 24,
+    "frames": 121,
+    "all_video_frames_decoded": true,
+    "film_buttons": 8,
+    "linked_concept_count": 1,
+    "other_unverified_concepts": 6,
+    "direct_link_playback_and_concept_link": "passed",
+    "screenshot": "assets/images/local-review/seedance2-trial-ui.jpg",
+    "audio_listened": false
+  },
+  "coastal_scroll_kling4_trial": {
+    "date": "2026-10-31",
+    "status": "file and playback checks passed; motion review partial",
+    "task_id": 1044781,
+    "metadata": {
+      "programs": [],
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1284,
+          "height": 724,
+          "pix_fmt": "yuv420p",
+          "color_space": "bt709",
+          "color_transfer": "bt709",
+          "color_primaries": "bt709",
+          "r_frame_rate": "24/1",
+          "avg_frame_rate": "24/1",
+          "duration": "5.041667",
+          "nb_frames": "121",
+          "nb_read_frames": "121"
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "duration": "5.039002",
+          "nb_frames": "219",
+          "nb_read_frames": "217"
+        }
+      ],
+      "format": {
+        "duration": "5.041667",
+        "size": "17626421"
+      }
+    },
+    "browser_qa": {
+      "direct_link": "passed",
+      "selected_src": "app/assets/videos/coastal-scroll-kling4-v1.mp4",
+      "actual_video_dimensions": [
+        1284,
+        724
+      ],
+      "browser_duration": 5.041667,
+      "ready_state": 4,
+      "playback_started": true,
+      "film_buttons": 9,
+      "console_errors": 0,
+      "screenshot": "assets/images/local-review/kling4-trial-ui.jpg",
+      "native_output_resized": false
+    },
+    "all_121_frames_decoded": true,
+    "audio_listened": false,
+    "motion_review_record": "research/coastal-scroll-kling4-v1-delivery.json",
+    "final_checks": {
+      "project_npm_check": "passed: 9 archived videos and 1 linked direction",
+      "root_npm_check": "passed: 13 projects",
+      "manifest_hash_check": "passed: 77 files"
+    }
+  },
+  "coastal_scroll_splice_v1": {
+    "recorded_on": "2026-10-31",
+    "performed_by": "root",
+    "scope": "Actual MP4 decode, analytical frame inspection and browser interaction QA; not full artistic acceptance or audio listening",
+    "sources": [
+      {
+        "task_id": 1044781,
+        "used_frames_inclusive": [
+          0,
+          119
+        ]
+      },
+      {
+        "task_id": 1044794,
+        "used_frames_inclusive": [
+          0,
+          144
+        ],
+        "actual_credits": 180
+      }
+    ],
+    "output": {
+      "file": "app/assets/videos/coastal-scroll-splice-v1.mp4",
+      "frames": 265,
+      "fps": 24,
+      "width": 1280,
+      "height": 720,
+      "duration_seconds": 11.041667,
+      "seam_time_seconds": 5.0,
+      "transition": "hard cut",
+      "retimed": false,
+      "looped": false,
+      "dissolved": false,
+      "native_originals_unchanged": true
+    },
+    "visual_review": {
+      "seam_image": "assets/images/coastal-scroll-splice-v1/actual-seam.jpg",
+      "timeline": "assets/images/local-review/coastal-scroll-splice-v1/timeline.jpg",
+      "observation": "Rider position, scale, direction and pedal pose broadly continue across cut; slight model redraw/softening remains, followed by a stronger-than-planned pullback in B",
+      "ground_contact_fully_verified": false,
+      "normal_speed_perceptual_review": false
+    },
+    "browser_qa": {
+      "url": "http://127.0.0.1:4333/?film=coastal-scroll-splice-v1#screening",
+      "actual_current_src": "http://127.0.0.1:4333/assets/videos/coastal-scroll-splice-v1.mp4",
+      "video_width": 1280,
+      "video_height": 720,
+      "duration_seconds": 11.041667,
+      "ready_state": 4,
+      "paused_after_space": false,
+      "observed_ended_at_seconds": 11.041667,
+      "film_entries": 11,
+      "seam_details_expand": true,
+      "seam_image_viewer_open_and_close": true,
+      "seam_image_actual_dimensions": [
+        1920,
+        1628
+      ],
+      "concept_link_to_splice": true,
+      "console_errors": 0,
+      "screenshot": "assets/images/local-review/coastal-scroll-splice-v1-ui.jpg"
+    },
+    "audio_numeric_record": "research/coastal-scroll-splice-v1-audio-check.json",
+    "audio_listened": false,
+    "checks": {
+      "project_npm_check": "passed: 11 archived videos and real multi-clip MP4",
+      "root_npm_check": "passed: 13 projects",
+      "manifest_hash_check": "passed: 107 artifacts; only two intentional curation hashes refreshed; A source unchanged"
+    }
+  }
+}

@@ -12,7 +12,7 @@
 
 ## 项目索引
 
-已收录 **11** 个项目 · 按固定编号升序排列
+已收录 **12** 个项目 · 按固定编号升序排列
 
 | 编号 | 项目 | 源库 | 简介 / 研究重点 | 阶段 | 演示 |
 | --- | --- | --- | --- | --- | --- |
@@ -27,6 +27,7 @@
 | 010 | [Agent Skills · 全景理解与实践](projects/010-agent-skills-engineering-lab/README.md) | [agent&#45;skills](<https://github.com/addyosmani/agent-skills>) | 研究 addyosmani/agent&#45;skills 的25项工程规程：覆盖需求、规划、实现、验证、审查与交付维护，以七类工作和五问总图说明用途、场景、步骤、产物及协作。价值在于把工程经验变成AI可执行、结果可核对的流程；我们据此按真实需求选用，学习用约束、证据与检查控制落地，保留研究回查案例和自建Skill；全量讲解已完成，逐项实测待按需开展。 | 研究中 | [在线访问](<https://yydshly.github.io/1025_codex_project/010-agent-skills-engineering-lab/>) |
 | 011 | [姿势与衣装参考 · 能力、作用与产品探索](projects/011-pose-look-creation-atlas/README.md) | [POSE&#45;DB&#45;01姿势图库与COSTUME&#45;DB&#45;01衣装图库](<https://x.com/leo_xiaolei/status/2114971707962536302>) | POSE&#45;DB&#45;01提供1,439张姿势PNG、288组及多视角检索，表达动作与构图；COSTUME&#45;DB&#45;01提供1,407套虚构衣装、八类检索和原尺寸PNG，表达穿搭目标。原图分别私有备份，生图及身份、衣装保持由外部模型完成。已展示同一虚构人物的三套衣装×三种动作九格实测、六张写真候选，探索穿搭比较、系列写真、婚纱方案等产品目标，并保留提示词、来源和偏差。 | 研究中 | [在线访问](<https://yydshly.github.io/1025_codex_project/011-pose-look-creation-atlas/>) |
 | 012 | [学术研究 Skill · 能力与水生毒理学实测](projects/012-aquatic-toxicology-skill-lab/README.md) | [academic&#45;research&#45;skills](<https://github.com/Imbad0202/academic-research-skills>) | 研究 academic&#45;research&#45;skills 的5个工作流：deep&#45;research 拆题研究、sr&#45;screener 文献筛选、academic&#45;paper 写作、academic&#45;paper&#45;reviewer 审稿、academic&#45;pipeline 调度。适用于选题、综述、证据核验、修订与审稿准备；价值是复用研究规范、角色与检查，使过程可追溯。以水生毒理学展示拆题、检索、补漏和分析，分清原库与新增采集器；查全、准确性和相对直接问AI的增益仍待验证。 | 研究中 | [在线访问](<https://yydshly.github.io/1025_codex_project/012-aquatic-toxicology-skill-lab/>) |
+| 013 | [景观奇旅 · AI影像创作实验室](projects/013-scenic-motion-lab/README.md) | [Personality 原参考视频（非源码仓库）](<https://x.com/hi_personality/status/2115567493565825244>) | 以悬崖海湾骑行为样本，将首图世界设计、人物行动、镜头路径、环境响应和多段剪辑组织成可审查的影像方法。展示11&#46;04秒Kling4&#46;0双片实测、原片与接缝，提供首图、动作、氛围、摄影提示框架和七个扩展方向；价值是景观探索体验与导演经验复用，可延展系列旅程、文旅品牌概念样片及创作工作台。精确动作、全程接地和自动长片仍待验证。 | 研究中 | — |
 
 ## 项目速览
 
@@ -139,6 +140,16 @@ POSE&#45;DB&#45;01提供1,439张姿势PNG、288组及多视角检索，表达动
 [研究说明](projects/012-aquatic-toxicology-skill-lab/README.md) · 源库：[academic&#45;research&#45;skills](<https://github.com/Imbad0202/academic-research-skills>) · [在线演示](<https://yydshly.github.io/1025_codex_project/012-aquatic-toxicology-skill-lab/>)
 
 **阶段：** 研究中 · **标签：** 水生毒理学 / 学术研究 / Skill实测 / 证据综合
+
+### 013 · 景观奇旅 · AI影像创作实验室
+
+![景观奇旅 · AI影像创作实验室 项目配图](projects/013-scenic-motion-lab/assets/images/overview-v1.png)
+
+以悬崖海湾骑行为样本，将首图世界设计、人物行动、镜头路径、环境响应和多段剪辑组织成可审查的影像方法。展示11&#46;04秒Kling4&#46;0双片实测、原片与接缝，提供首图、动作、氛围、摄影提示框架和七个扩展方向；价值是景观探索体验与导演经验复用，可延展系列旅程、文旅品牌概念样片及创作工作台。精确动作、全程接地和自动长片仍待验证。
+
+[研究说明](projects/013-scenic-motion-lab/README.md) · 源库：[Personality 原参考视频（非源码仓库）](<https://x.com/hi_personality/status/2115567493565825244>)
+
+**阶段：** 研究中 · **标签：** AI影像 / 景观叙事 / 图生视频 / 运镜设计 / 创作实验
 
 <!-- PROJECTS:END -->
 

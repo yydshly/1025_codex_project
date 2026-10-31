@@ -1,0 +1,76 @@
+{
+  "status": "completed_and_visually_reviewed_partial_target",
+  "task_id": 1044756,
+  "model": "Seedance 2.0",
+  "requested_seconds": 5,
+  "requested_resolution": "720p",
+  "actual_cost_credits": 75,
+  "estimated_cost_credits": 90,
+  "source": "assets/videos/coastal-scroll-trial-v1/video_20261031102122.mp4",
+  "web_file": "app/assets/videos/coastal-scroll-seedance2-v1.mp4",
+  "sha256": "9f44bba09a6942aad90334ae92130bfb088485350969ade8eb88305deb3a35b2",
+  "web_copy_identical": true,
+  "native_output_unedited": true,
+  "prompt_file": "research/coastal-scroll-trial-v1-prompt.txt",
+  "reference_image": "assets/images/concepts-source/coastal-scroll.png",
+  "metadata": {
+    "programs": [],
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1280,
+        "height": 720,
+        "pix_fmt": "yuv420p",
+        "r_frame_rate": "24/1",
+        "avg_frame_rate": "24/1",
+        "duration": "5.041667",
+        "nb_frames": "121",
+        "nb_read_frames": "121"
+      },
+      {
+        "index": 1,
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "r_frame_rate": "0/0",
+        "avg_frame_rate": "0/0",
+        "duration": "5.088000",
+        "nb_frames": "160",
+        "nb_read_frames": "159"
+      }
+    ],
+    "format": {
+      "duration": "5.088000",
+      "size": "6492441"
+    }
+  },
+  "decoded_frames": 121,
+  "review_contact_sheet": "assets/images/local-review/coastal-scroll-seedance2-v1/timeline.jpg",
+  "audio_listened": false,
+  "motion_review": {
+    "horizontal_ride": "Observed rightward travel",
+    "tracking": "Observed rear-side to side tracking; camera also approaches rather than maintaining constant distance",
+    "parallax": "Foreground flowers and rocks cross faster than the distant coast; landscape remains dominant",
+    "ground_contact": "Not fully achieved: roughly 0.25-1s cuts across the flowered verge, with a brief floating/lifted appearance around 0.5s; later trail contact more credible",
+    "identity_and_world": "One red cyclist/backpack and coherent two-wheel bicycle; large coastal/arcade forms remain broadly continuous in reviewed samples",
+    "full_10_second_design": "Not generated or accepted",
+    "evidence": "Timeline plus first-second contact sheet, complete frame decode; independent review by root and creator_research"
+  },
+  "audio_boundary": "Request sound=false nevertheless returned an AAC track. Track existence and timing were checked; audio content has not been listened to.",
+  "browser_qa": {
+    "direct_link": "passed",
+    "selected_src": "app/assets/videos/coastal-scroll-seedance2-v1.mp4",
+    "actual_video_dimensions": [
+      1280,
+      720
+    ],
+    "browser_duration": 5.088,
+    "ready_state": 4,
+    "playback_started": true,
+    "film_buttons": 8,
+    "other_unverified_concept_cards": 6,
+    "concept_trial_link_navigation": "passed",
+    "screenshot": "assets/images/local-review/seedance2-trial-ui.jpg"
+  }
+}

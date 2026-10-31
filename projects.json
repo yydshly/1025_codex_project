@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "nextId": 13,
+  "nextId": 14,
   "projects": [
     {
       "id": "001",
@@ -200,6 +200,25 @@
       "cover": "assets/images/understanding-map.png",
       "demoUrl": "https://yydshly.github.io/1025_codex_project/012-aquatic-toxicology-skill-lab/",
       "createdAt": "2026-10-29"
+    },
+    {
+      "id": "013",
+      "slug": "scenic-motion-lab",
+      "name": "景观奇旅 · AI影像创作实验室",
+      "summary": "以悬崖海湾骑行为样本，将首图世界设计、人物行动、镜头路径、环境响应和多段剪辑组织成可审查的影像方法。展示11.04秒Kling4.0双片实测、原片与接缝，提供首图、动作、氛围、摄影提示框架和七个扩展方向；价值是景观探索体验与导演经验复用，可延展系列旅程、文旅品牌概念样片及创作工作台。精确动作、全程接地和自动长片仍待验证。",
+      "source": "https://x.com/hi_personality/status/2115567493565825244",
+      "sourceName": "Personality 原参考视频（非源码仓库）",
+      "status": "researching",
+      "tags": [
+        "AI影像",
+        "景观叙事",
+        "图生视频",
+        "运镜设计",
+        "创作实验"
+      ],
+      "cover": "assets/images/overview-v1.png",
+      "demoUrl": "",
+      "createdAt": "2026-10-31"
     }
   ]
 }

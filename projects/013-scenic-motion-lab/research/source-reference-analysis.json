@@ -1,0 +1,101 @@
+{
+  "title": "grassland special",
+  "author": "Personality (@hi_personality)",
+  "url": "https://x.com/hi_personality/status/2115567493565825244",
+  "duration": 6.976,
+  "width": 1920,
+  "height": 1080,
+  "fps": 60,
+  "colorPrimaries": "bt2020",
+  "colorTransfer": "arib-std-b67 (HLG)",
+  "colorMatrix": "bt2020nc",
+  "pixFmt": "yuv420p",
+  "nativeGenerationFpsConfirmed": false,
+  "sourceModelConfirmed": false,
+  "sourceCodeRepositoryConfirmed": false,
+  "fullSourceVideoPublished": false,
+  "caption": "仅引用原帖与已分析时间轴；60fps 和 HLG/BT.2020 是已下载文件的标记，不证明作者原生生成帧率、具体模型或源码已公开。",
+  "analyzed_samples": [
+    {
+      "frame": 0,
+      "time_seconds": 0.0
+    },
+    {
+      "frame": 30,
+      "time_seconds": 0.5
+    },
+    {
+      "frame": 60,
+      "time_seconds": 1.0
+    },
+    {
+      "frame": 90,
+      "time_seconds": 1.5
+    },
+    {
+      "frame": 120,
+      "time_seconds": 2.0
+    },
+    {
+      "frame": 150,
+      "time_seconds": 2.5
+    },
+    {
+      "frame": 180,
+      "time_seconds": 3.0
+    },
+    {
+      "frame": 210,
+      "time_seconds": 3.5
+    },
+    {
+      "frame": 240,
+      "time_seconds": 4.0
+    },
+    {
+      "frame": 270,
+      "time_seconds": 4.5
+    },
+    {
+      "frame": 300,
+      "time_seconds": 5.0
+    },
+    {
+      "frame": 330,
+      "time_seconds": 5.5
+    },
+    {
+      "frame": 360,
+      "time_seconds": 6.0
+    },
+    {
+      "frame": 390,
+      "time_seconds": 6.5
+    },
+    {
+      "frame": 414,
+      "time_seconds": 6.9
+    },
+    {
+      "frame": 417,
+      "time_seconds": 6.95
+    }
+  ],
+  "reference_images": [
+    {
+      "path": "app/assets/images/reference/source-full-timeline.jpg",
+      "caption": "原片约 7 秒，每 0.5 秒采样并补片尾。该早期分析图未做 HLG→SDR 映射，只用于观察动作、构图和时间顺序。"
+    },
+    {
+      "path": "app/assets/images/reference/source-vs-result-motion.png",
+      "caption": "原片采样帧已作 HLG→SDR 分析映射；双方各自时间标记用于比较镜头与尺度变化，不等同于在 HDR 显示器上比较亮度。"
+    }
+  ],
+  "observed_motion": "Wide view rapidly approaches cyclist; shifts to rear-side tracking; foreground sweeps past with changing occlusion; follows a bend and reopens the bay. Observations concern the complete clip, not its cover alone.",
+  "rights": {
+    "status": "第三方原片的分析摘帧，许可状态未知；权利归原作者，已署名和链接出处。",
+    "third_party_cc_license_asserted": false,
+    "author": "Personality (@hi_personality)",
+    "post_url": "https://x.com/hi_personality/status/2115567493565825244"
+  }
+}

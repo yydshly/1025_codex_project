@@ -60,6 +60,12 @@
         ".md",
         ".csv"
       ]
+    },
+    {
+      "directory": "013-scenic-motion-lab",
+      "publicDirectory": "app",
+      "extraAssets": [],
+      "guidePage": "overview.html"
     }
   ]
 }

@@ -1,0 +1,67 @@
+{
+  "kind": "Editorial timing candidate, not a new AI generation",
+  "source": "app/assets/videos/shot-a.mp4",
+  "source_sha256": "882f8b23cc72c2afad169127361a323f1b301722e0b327d8ce3a21af582cf356",
+  "original_unchanged": true,
+  "output": {
+    "local_file_name": "shot-a-flight-paced.mp4",
+    "archived": false
+  },
+  "fps": 24,
+  "expected_frames": 98,
+  "speed_segments_source_frames_end_exclusive": [
+    [
+      0,
+      68,
+      1
+    ],
+    [
+      68,
+      114,
+      2
+    ],
+    [
+      114,
+      121,
+      1
+    ]
+  ],
+  "intent": "Reduce visibly prolonged airtime while retaining the approach, descent, landing and bay reveal",
+  "audio": "Original generated audio, middle interval atempo=2; not listened to",
+  "no_ai_generation": true,
+  "no_interpolated_frames": true,
+  "ffmpeg_command": [
+    "ffmpeg",
+    "-hide_banner",
+    "-loglevel",
+    "error",
+    "-n",
+    "-i",
+    "app/assets/videos/shot-a.mp4",
+    "-filter_complex",
+    "[0:v]split=3[v0][v1][v2];[0:a]aresample=48000,asplit=3[a0][a1][a2];[v0]trim=start_frame=0:end_frame=68,setpts=PTS-STARTPTS[p0];[v1]trim=start_frame=68:end_frame=114,setpts=(PTS-STARTPTS)/2,fps=24,trim=end_frame=23,setpts=PTS-STARTPTS[p1];[v2]trim=start_frame=114:end_frame=121,setpts=PTS-STARTPTS[p2];[a0]atrim=start_sample=0:end_sample=136000,asetpts=PTS-STARTPTS[q0];[a1]atrim=start_sample=136000:end_sample=228000,asetpts=PTS-STARTPTS,atempo=2,apad,atrim=end_sample=46000[q1];[a2]atrim=start_sample=228000:end_sample=242000,asetpts=PTS-STARTPTS[q2];[p0][q0][p1][q1][p2][q2]concat=n=3:v=1:a=1[v][a]",
+    "-map",
+    "[v]",
+    "-map",
+    "[a]",
+    "-c:v",
+    "libx264",
+    "-preset",
+    "medium",
+    "-crf",
+    "18",
+    "-pix_fmt",
+    "yuv420p",
+    "-c:a",
+    "aac",
+    "-b:a",
+    "192k",
+    "-movflags",
+    "+faststart",
+    {
+      "local_file_name": "shot-a-flight-paced.mp4",
+      "archived": false
+    }
+  ],
+  "_archive_note": "Sanitized research copy: known archived media use repository-relative paths; unarchived local references retain only a filename. Submitted prompt text is unchanged. No operational logs or account responses are included."
+}

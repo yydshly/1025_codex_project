@@ -14,6 +14,7 @@ on:
       - 'projects/010-agent-skills-engineering-lab/**'
       - 'projects/011-pose-look-creation-atlas/**'
       - 'projects/012-aquatic-toxicology-skill-lab/**'
+      - 'projects/013-scenic-motion-lab/**'
       - 'projects.json'
       - 'pages.config.json'
       - 'scripts/build-pages.mjs'
@@ -62,6 +63,7 @@ jobs:
           node --check projects/009-knowledge-processing-atlas/app/app.js
           npm --prefix projects/011-pose-look-creation-atlas run check
           npm --prefix projects/012-aquatic-toxicology-skill-lab run check:public
+          npm --prefix projects/013-scenic-motion-lab run check
       - name: Check Agent Skills guide and prepare public files
         run: |
           python projects/010-agent-skills-engineering-lab/scripts/verify-snapshot.py

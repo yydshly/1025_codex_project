@@ -1,0 +1,13 @@
+{
+  "decoded_audio_samples_per_channel": 530432,
+  "decoded_duration": 11.050666666666666,
+  "peak_absolute": 0.718763530254364,
+  "rms_dbfs_before_cut_250ms": -28.451399364432003,
+  "rms_dbfs_after_cut_250ms": -26.956718246013025,
+  "sample_discontinuity_at_cut": [
+    0.003971404395997524,
+    0.0052537210285663605
+  ],
+  "audio_listened": false,
+  "scope": "Numerical signal checks only. Does not establish audible continuity, semantic content, or absence of clicks."
+}

@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-31",
+  "status": "completed_and_reviewed",
+  "user_direction": "Prioritize good motion results with a newer capable model, examples V4 or Seedance 2.5; do not fall back to Kling V3 by default.",
+  "preferred_candidate": "Kling 4.0",
+  "alternative_candidate": "Seedance 2.5",
+  "selection_rationale": "Kling 4.0 official release emphasizes continuity in high-speed action and complex tracking shots. This is a capability-based test choice, not evidence that the planned clip will succeed.",
+  "reference": "assets/images/concepts-source/coastal-scroll.png",
+  "reference_role": "One uploaded concept image as world/actor/opening composition reference; not a source-video motion reference or an exact endpoint.",
+  "prompt_basis": "research/coastal-scroll-trial-v1-prompt.txt",
+  "target": {
+    "duration_seconds": 5,
+    "resolution": "720p",
+    "aspect_ratio": "16:9",
+    "count": 1
+  },
+  "provider_candidate": "ChatArt web UI",
+  "connection_confirmed": true,
+  "account_model_access_checked": true,
+  "account_credit_balance_checked": true,
+  "generation_submitted": true,
+  "task_id": 1044781,
+  "published_developer_api_cost_reference": {
+    "kling_4": {
+      "estimated_credits": 64,
+      "duration_seconds": 5,
+      "resolution": "720p",
+      "input_video": false,
+      "note": "Published Runway Dev API promotional rate/rounding through 2026-11-30; connected product quote still needs verification"
+    },
+    "seedance2_5": {
+      "estimated_credits": 150,
+      "duration_seconds": 5,
+      "resolution": "720p",
+      "input_video": false,
+      "note": "30 Runway Dev credits per output second; connected product quote still needs verification"
+    },
+    "credit_pools": "Runway credits are separate from ChatArt credits. No purchase is authorized by this document."
+  },
+  "original_task": {
+    "provider": "ChatArt",
+    "model": "Seedance 2.0",
+    "task_id": 1044756,
+    "status": "completed",
+    "estimated_credits": 90,
+    "actual_credits": 75,
+    "may_still_complete": true,
+    "delivery_record": "research/coastal-scroll-seedance2-v1-delivery.json"
+  },
+  "official_sources": [
+    "https://ir.kuaishou.com/news-releases/news-release-details/kling-ai-officially-launches-next-generation-kling-40-raising",
+    "https://docs.volcengine.com/docs/ark/seedance-2-5?lang=en",
+    "https://docs.dev.runwayml.com/guides/models/",
+    "https://docs.dev.runwayml.com/guides/pricing/",
+    "https://docs.dev.runwayml.com/api-details/api_changelog/"
+  ],
+  "web_form_prepared": {
+    "model": "Kling 4.0",
+    "duration_seconds": 5,
+    "quality": "720p",
+    "aspect_ratio": "16:9",
+    "image_uploaded": true,
+    "image_count": 1,
+    "prompt_file": "research/coastal-scroll-trial-v1-prompt.txt",
+    "prompt_characters": 2536,
+    "prompt_verified_complete": true,
+    "displayed_estimated_chatart_credits": 150,
+    "signed_in": true,
+    "generation_submitted": true,
+    "screenshot": null,
+    "login_required": false,
+    "screenshot_publication_note": "Service login/account evidence retained only in the local archive; not part of the public repository."
+  },
+  "official_script_review": {
+    "repository": "https://github.com/chatart-ai/skill",
+    "latest_reviewed_commit": "a426ffe3de46bde7e2738d4442f309834564bfbc",
+    "seedance_2_5_or_kling_4_supported": false,
+    "note": "Official web model availability exceeds the public scripts registry; no invented model identifier was submitted."
+  },
+  "runway_connection_requested_but_now_optional": true,
+  "submission": {
+    "channel": "ChatArt web UI through computer use",
+    "model": "Kling 4.0",
+    "mode": "reference-to-video",
+    "reference_count": 1,
+    "duration_seconds": 5,
+    "resolution": "720p",
+    "aspect_ratio": "16:9",
+    "estimated_chatart_credits": 150,
+    "actual_credits": null,
+    "submitted_at_local": "2026-10-31 10:19 Asia/Shanghai",
+    "exact_prompt_file": "research/coastal-scroll-trial-v1-prompt.txt",
+    "prompt_characters": 2536,
+    "prompt_complete_after_login": true,
+    "new_model_task_record_visible": true,
+    "native_audio_toggle": "not exposed in inspected form; no dialogue/music requested in prompt",
+    "generation_count": 1
+  },
+  "retrieval": "Official video_gen.py query can retrieve the existing web-created task without submitting an unsupported model ID.",
+  "latest_kling_task_check": {
+    "utc": "2026-10-31T03:06:31Z",
+    "state": "completed",
+    "video_returned": true
+  },
+  "actual_video": "assets/videos/coastal-scroll-kling4-v1/video_20261031110501.mp4",
+  "completion": {
+    "task_status": "completed",
+    "actual_cost_field": "N/A",
+    "delivery_record": "research/coastal-scroll-kling4-v1-delivery.json",
+    "returned_native_video": true,
+    "actual_dimensions": [
+      1284,
+      724
+    ],
+    "actual_video_duration": 5.041667,
+    "review_status": "Tracking and parallax observed; front segment ground contact partly obscured; full 10s design unverified"
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "status": "completed_and_visually_reviewed_partial_target",
+  "task_id": 1044781,
+  "model": "Kling 4.0",
+  "submission_channel": "ChatArt web UI",
+  "requested_seconds": 5,
+  "requested_resolution": "720p",
+  "requested_aspect_ratio": "16:9",
+  "estimated_cost_credits": 150,
+  "actual_cost_credits": null,
+  "actual_cost_boundary": "Task query returned N/A; web form quoted 150 and balance changed by 150 at submission; final reported consumption remains unconfirmed",
+  "source": "assets/videos/coastal-scroll-kling4-v1/video_20261031110501.mp4",
+  "web_file": "app/assets/videos/coastal-scroll-kling4-v1.mp4",
+  "sha256": "e0126d366d4527e67504af7efccc9fe397753c212c5cbadfd3677b02f2fc5347",
+  "web_copy_identical": true,
+  "native_output_unedited": true,
+  "prompt_file": "research/coastal-scroll-trial-v1-prompt.txt",
+  "reference_image": "assets/images/concepts-source/coastal-scroll.png",
+  "reference_mode": "reference-to-video; one uploaded concept image, no source video or endpoint",
+  "metadata": {
+    "programs": [],
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1284,
+        "height": 724,
+        "pix_fmt": "yuv420p",
+        "color_space": "bt709",
+        "color_transfer": "bt709",
+        "color_primaries": "bt709",
+        "r_frame_rate": "24/1",
+        "avg_frame_rate": "24/1",
+        "duration": "5.041667",
+        "nb_frames": "121",
+        "nb_read_frames": "121"
+      },
+      {
+        "index": 1,
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "r_frame_rate": "0/0",
+        "avg_frame_rate": "0/0",
+        "duration": "5.039002",
+        "nb_frames": "219",
+        "nb_read_frames": "217"
+      }
+    ],
+    "format": {
+      "duration": "5.041667",
+      "size": "17626421"
+    }
+  },
+  "decoded_frames": 121,
+  "review_contact_sheet": "assets/images/local-review/coastal-scroll-kling4-v1/timeline.jpg",
+  "audio_listened": false,
+  "motion_review": {
+    "horizontal_ride": "Observed rightward cycling; journey continues through the final frame",
+    "tracking": "Rear-side tracking gradually reveals the bicycle side; rider stays relatively small and scale is more stable than the specific Seedance comparison clip",
+    "parallax": "Foreground flowers and rocks pass faster than distant coast/arcades, with changing occlusions; scenery remains dominant",
+    "ground_contact": "Around 0.75-2.5s flowers partially obscure tires and route; constant original-trail contact cannot be fully confirmed. No short lift as clear as the Seedance sample was identified in reviewed frames",
+    "identity_and_world": "One red cyclist/backpack and coherent bicycle; broad coast/arcade geography and light appear continuous",
+    "full_10_second_design": "Not generated or accepted",
+    "review_scope": "Timeline at half-second intervals, full-resolution keyframes and first-second contact sheet, complete video frame decode; independent review by root and creator_research. This is a comparison of two samples, not a general model ranking"
+  },
+  "browser_qa": {
+    "direct_link": "passed",
+    "selected_src": "app/assets/videos/coastal-scroll-kling4-v1.mp4",
+    "actual_video_dimensions": [
+      1284,
+      724
+    ],
+    "browser_duration": 5.041667,
+    "ready_state": 4,
+    "playback_started": true,
+    "film_buttons": 9,
+    "console_errors": 0,
+    "screenshot": "assets/images/local-review/kling4-trial-ui.jpg",
+    "native_output_resized": false
+  }
+}

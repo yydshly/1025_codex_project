@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-31",
+  "concept": "seasonal-gate",
+  "original_draft": "早夏到深秋",
+  "generated_visual": "早夏到雪冬",
+  "selected_design": "早夏到薄雪冬季；道路保留可骑土路，地理与角色连续",
+  "reason": "让最终概念图与后续首帧及动作设计一致",
+  "historical_generation_prompts_unchanged": true,
+  "video_motion_verified": false,
+  "history_note": "concept-prompts.json中的夏冬图与当时夏秋脚本差异是生成时的观察；未来设计已在本次修订中统一。"
+}

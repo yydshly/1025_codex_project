@@ -1,0 +1,24 @@
+{
+  "generation_task_id": "1044377",
+  "source": "app/assets/videos/motion-native.mp4",
+  "native_visual_copy": "output/motion-native-720p.mp4",
+  "paced_output": "app/assets/videos/motion-paced.mp4",
+  "source_duration_seconds": 5.041667,
+  "paced_duration_seconds": 3.791667,
+  "segments": [
+    {
+      "source_start_seconds": 0,
+      "source_end_seconds": 2.5,
+      "speed": 2.0
+    },
+    {
+      "source_start_seconds": 2.5,
+      "source_end_seconds": 5.041667,
+      "speed": 1.0
+    }
+  ],
+  "audio_in_preview": false,
+  "additional_ai_generation": false,
+  "motion_retiming_is_editorial_not_model_native": true,
+  "_archive_note": "Sanitized research copy: known archived media use repository-relative paths; unarchived local references retain only a filename. Submitted prompt text is unchanged. No operational logs or account responses are included."
+}

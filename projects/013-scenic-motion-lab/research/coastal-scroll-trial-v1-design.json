@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "concept_id": "coastal-scroll",
+  "title": "悬崖长卷 · 横向跟拍短样 01",
+  "date": "2026-10-31",
+  "status": "completed_pending_motion_review",
+  "authorization": "User explicitly requested one 5-second 720p video in this concept using a better video model; model selection delegated by that request.",
+  "provider_skill": "chatart-skill",
+  "script": "video_gen.py run",
+  "type": "omni",
+  "model_display_name": "Seedance 2.0",
+  "model_id_from_local_registry": "seedance-2.0",
+  "model_variant": "standard; not Fast or Mini",
+  "requested_duration_seconds": 5,
+  "requested_resolution": "720p",
+  "requested_aspect_ratio": "16:9",
+  "count": 1,
+  "requested_sound": false,
+  "estimated_credits": 90,
+  "actual_credits": 75,
+  "reference_inputs": [
+    {
+      "path": "assets/images/concepts-source/coastal-scroll.png",
+      "role": "World, cyclist, bicycle, lighting, materials and opening composition reference; no exact endpoint or motion reference supplied",
+      "image_dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "112da7725c1b2dcd21dac803b381a49adcf4f27fcb53ac7250e1f458dce37c9f"
+    }
+  ],
+  "prompt_file": "research/coastal-scroll-trial-v1-prompt.txt",
+  "task_id": 1044756,
+  "actual_video": "assets/videos/coastal-scroll-trial-v1/video_20261031102122.mp4",
+  "camera_design": "Rear-left three-quarter parallel lateral tracking to the right and slightly forward, stable wide framing; no orbit or zoom",
+  "action_design": "One grounded cyclist rides right and slightly away; normal pedaling and small terrain response",
+  "reveal_design": "Nearby flowers and low rocks sweep left quickly, uncovering water and waterfall shoreline; distant cliffs move slowly",
+  "target_beats": [
+    {
+      "start": 0,
+      "end": 1,
+      "intent": "Already cycling; establish immediate lateral track"
+    },
+    {
+      "start": 1,
+      "end": 4,
+      "intent": "Foreground occlusion clears and exposes more bay with depth-dependent parallax"
+    },
+    {
+      "start": 4,
+      "end": 5,
+      "intent": "Continue riding and hold the opened landscape"
+    }
+  ],
+  "acceptance": [
+    "Rider progresses on a continuous route while camera tracks alongside, rather than only moving limbs in a static frame",
+    "Nearby flowers and rocks move substantially faster across the image than remote cliffs",
+    "At least one identifiable foreground occlusion clears to reveal additional water or shoreline",
+    "Both tires remain grounded; pedaling, hands, feet and bicycle geometry remain credible",
+    "One continuous scenic shot with stable world geometry, light and rider identity"
+  ],
+  "review_boundaries": "Planned timings and motion are targets, not guaranteed execution. Record actual duration, dimensions, frames, costs and observed deviations after completion. Do not infer listening from audio metadata. No automatic second generation.",
+  "prompt_sha256": "8c1204b92b25a9f58507b854622f0577ad6969787b1342467e51b437d4d6ca2b",
+  "submitted_parameters": {
+    "video_id": "102",
+    "sound": false,
+    "function_mode": "omni_reference",
+    "original_model": "seedance-2.0",
+    "gpt_type": "seedance-2.0",
+    "quality": "720p",
+    "ratio": "16:9",
+    "duration": "5",
+    "reference_image_count": 1
+  },
+  "retrieval_notes": {
+    "last_known_state": "in_progress",
+    "query_status_label": "working",
+    "history_status_label": "pending",
+    "video_url_returned": false,
+    "last_checked_utc": "2026-10-31T01:56:41Z",
+    "submitted_at_history_local": "2026-10-31 09:37 Asia/Shanghai",
+    "connection_recovery": "Repeated transient DNS errors; resumed status retrieval for the same task without another generation submission",
+    "actual_cost_confirmed": false
+  }
+}

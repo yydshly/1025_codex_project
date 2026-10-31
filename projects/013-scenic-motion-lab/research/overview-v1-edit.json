@@ -1,0 +1,10 @@
+{
+  "tool": "image_gen built-in",
+  "intent": "precise factual thumbnail correction",
+  "edit_target": "initial generated infographic",
+  "supporting_image": "app/assets/images/posters/shot-b.jpg",
+  "prompt": "Edit reference image 1, the finished Chinese infographic poster, with one precise factual correction. Preserve its full portrait layout, all Chinese wording, colors, diagrams, large scenic hero, all seven concept-gallery images, all product cards, the factual numbers 8.375秒 / 720p / 24fps, and its footnotes. In section 02 '我们实际学到了什么', there is a three-thumbnail strip. The THIRD thumbnail currently shows a large open stone doorway, incorrectly mixing a future concept into the tested film sequence. Replace ONLY that third thumbnail with the grounded red-shirt cyclist and bay/cliffs from reference image 2 (an actual frame from our B clip). Match its existing rectangular crop; the rider must be on the dirt trail, no giant open portal in this third thumbnail. Change the small caption directly under this third thumbnail from '完整事件' to the exact Chinese '落地续骑'. If there is room in this section, add the small label '实测流程示意' without reducing any existing type. The seven-concept gallery below MUST retain its portal scenes. Do not redesign or rewrite anything else. Keep Chinese characters sharp and legible. Return a direct flat poster, with no frame or mockup.",
+  "status": "completed",
+  "selected_filename": "exec-69004256-6c09-48f2-a3aa-8ed094ddbf41.png",
+  "visual_correction_confirmed": true
+}

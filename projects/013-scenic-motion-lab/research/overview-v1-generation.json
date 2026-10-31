@@ -1,0 +1,37 @@
+{
+  "tool": "image_gen built-in",
+  "mode": "new infographic with visual references",
+  "purpose": "一张图汇总创作理解、效果、工作原理和产品假设",
+  "references": [
+    {
+      "path": "assets/images/local-review/concept-contact-sheet.jpg",
+      "role": "七个概念视觉的内容与风格参考"
+    },
+    {
+      "path": "app/assets/images/keyframes/end.webp",
+      "role": "本轮生成世界与角色参考"
+    },
+    {
+      "path": "app/assets/images/posters/complete-ride.jpg",
+      "role": "实际成片视觉参考；不冒充逐帧复现"
+    }
+  ],
+  "prompt": "Use case: infographic-diagram.\nCreate ONE finished, exceptionally legible Chinese editorial infographic poster, portrait 2:3, target 2400×3600 or the highest supported equivalent. Direct flat artwork, not a photograph of a poster. This is an original research overview for an existing local creative project. Use generous type sizes and structured visual storytelling; do not cram a document into tiny text.\n\nINPUT ROLES:\nReference image 1 is an analytical contact sheet of our SEVEN newly generated concept visuals. Use its seven scene ideas and color/material language to create a compact seven-thumbnail gallery. Do NOT copy its English filenames or empty eighth/ninth cells.\nReference image 2 is our own generated world/character keyframe: red-shirt adult cyclist, black helmet and dark backpack, flowered grassy route, blue bay, enormous white stone cliffs with arches and waterfalls. Use as the large scenic hero visual and consistent world reference.\nReference image 3 is a frame from our actual edited test film, useful as a small result/evidence visual of a jump revealing the bay. It is not a reference for additional extreme stunts.\nAll source visuals are provided as content/style references for this NEW designed summary. Do not invent additional experiments or claim illustrative thumbnails are exact video frames.\n\nART DIRECTION:\nA premium Chinese visual field guide: warm ivory paper, deep forest-green Chinese typography, restrained burnt-orange annotation lines, blue/green scenic imagery. Large elegant Chinese serif title paired with clean, crisply readable sans-serif body text. Strong modular hierarchy, calm spacing, fine rules, clean arrows and simple camera/path diagrams. Approximately 45% beautiful imagery and 55% diagrams/words. No computer/device mockups, no neon interface, no invented logos, no illegible filler. Maintain correct Chinese characters. Keep all content within safe margins. The image must be understandable without the chat.\n\nINFORMATION HIERARCHY, from top to bottom. Render the following Chinese copy accurately; short phrases may be line-broken but never change facts:\n\nTOP:\nSmall label: \"013 · 创作研究总览\"\nVery large main title: \"景观奇旅\"\nSubtitle: \"把一张图，导演成一段值得进入的世界\"\nLarge cinematic scenic hero panel derived from reference 2, with a small red rider providing scale.\nA prominent core sentence below it:\n\"美景吸引 · 人物带路 · 摄影建立空间 · 行动带来发现\"\n\nSECTION 1 — \"01  这类效果怎样成立\"\nShow a central explanatory flow with clear arrow connections:\n\"图像与角色参考\" + \"路线、动作、运镜指令\"\n→ \"视频模型生成连续画面\"\n→ \"审片、剪辑与后期\"\n→ \"完整观看体验\"\nBelow, include four diagram callouts with visible spatial cues:\n\"视差：近处快，远处慢\"\n\"空间：透视与遮挡变化\"\n\"身体：重心、接触与缓冲\"\n\"世界：路线与光线连续\"\nA concise technical boundary in a tinted note:\n\"图像与文字提供生成条件；本轮没有骨骼或精确轨迹控制。\"\n\"当前输出是视频，不等于已重建可交互的3D世界。\"\n\nSECTION 2 — \"02  我们实际学到了什么\"\nThree compact visual steps or a filmstrip, using reference 2/3 as scene references:\n\"静态构图\" → \"运动短样\" → \"完整事件\"\nAccurate evidence line, bold and readable:\n\"成片：8.375秒 · 720p · 24fps\"\n\"两段AI片段，经剪辑与局部变速完成\"\nThree concise lessons:\n\"高清不能替代镜头与事件设计\"\n\"首尾图表达目标，不保证精确执行\"\n\"跳跃重量感与跨镜头空间仍需改进\"\nSmall footnote:\n\"归档7段试验/剪辑视频；声音尚未完成听觉验收。\"\nDo not claim flawless physics or a single native continuous take.\n\nSECTION 3 — \"03  七种创作扩展\"\nA gorgeous readable gallery of seven thumbnails, arranged four plus three, visually related to the seven panels in reference 1. Each has one accurate Chinese title:\n\"悬崖长卷\" — lateral scenic ride\n\"门中海\" — another bay inside a huge stone doorway\n\"倒影先行\" — a closed real gate and open reflected gate\n\"花种载岛\" — a dandelion seed carrying a tiny grassy island\n\"踏板唤醒城市\" — cycling and a sequentially illuminated cliff arcade at dusk\n\"微缩海湾\" — bay and tiny rider revealed inside a natural stone hollow\n\"同一海湾的另一季\" — continuous route through an arch from summer grass into light winter snow\nA clear gallery status label:\n\"7张概念图＋基础拍摄设计；新方向的视频运动待验证\"\nThis status must be unmistakable.\n\nSECTION 4 — \"04  可扩展的产品方向\"\nFour clearly separated compact product cards. Make this section substantial, about one fifth of the poster. These are proposals, not launched products.\nCard 1:\n\"景观旅程生成器\"\n\"场景图 → 路线与镜头 → 旅程短片\"\n\"验证：路线与揭景是否达成\"\nCard 2:\n\"世界观系列短片\"\n\"固定世界与角色，持续探索\"\n\"验证：角色连续与追看意愿\"\nCard 3:\n\"创作者预演台\"\n\"分镜、提示词、版本对照与偏差定位\"\n\"验证：返修效率与可复用性\"\nCard 4:\n\"沉浸动态画框\"\n\"循环影像、数字展陈与观看界面\"\n\"验证：循环接缝与耐看度\"\nA small but readable orange status ribbon:\n\"以上均为产品假设，尚未进行产品与商业验证。\"\nDo not add money, growth, revenue numbers, customers, or claims of a working 3D engine.\n\nBOTTOM:\nHeading: \"下一步怎么验证\"\n\"先做《悬崖长卷》5秒、720p短样，验证横向跟拍、视差与接地。\"\nA compact checklist:\n\"景观层次 / 身份几何 / 动作接触 / 路线光线 / 事件完整\"\nA final boundary:\n\"原作模型未知；本轮原视频仅供人工分析，实际生成输入为图片与文字。\"\nFooter: \"景观驱动的动态奇观 · 2026.10.31\"\n\nMake this a visually impressive, carefully typeset explanatory map with rich scenic examples, not a dense essay. Use the exact section ordering and retain the clear distinction between tested results, concept proposals and unknowns.",
+  "status": "completed_and_visually_reviewed",
+  "target_file": "assets/images/overview-v1.png",
+  "initial_generated_filename": "exec-8e8a497e-7ca0-49d2-8fcc-9e635472ff8a.png",
+  "selected_generated_filename": "exec-69004256-6c09-48f2-a3aa-8ed094ddbf41.png",
+  "actual_dimensions": [
+    1024,
+    1536
+  ],
+  "delivered_file": "assets/images/overview-v1.png",
+  "web_files": [
+    "app/assets/images/overview-v1.png",
+    "app/assets/images/overview-v1.webp"
+  ],
+  "sha256": "313a0485675e560b354237c3354725eb2bd8cd3de6dee13cbc692c628d61770f",
+  "webp_pixels_match_png": true,
+  "correction": "section02 third thumbnail corrected from unverified portal concept to grounded riding; caption now落地续骑 and sequence marked实测流程示意",
+  "scope": "Four product directions are hypotheses; seven new concept videos remain unverified; thumbnails are illustrative."
+}

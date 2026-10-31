@@ -1,0 +1,63 @@
+{
+  "title": "越过山脊，看见海湾",
+  "video": "app/assets/videos/complete-ride.mp4",
+  "sha256": "07ebcfc9764e1dd6387e8a01ff77d67628a49df5ebc86b7e47a4285ff192b87a",
+  "duration_seconds": 8.375,
+  "resolution": [
+    1280,
+    720
+  ],
+  "fps": 24,
+  "video_frames": 201,
+  "selected_edit": {
+    "local_file_name": "scenic-ride-complete-v3-720p.mp4",
+    "archived": false
+  },
+  "model_selected_for_both_shots": "Seedance 2.0 (full)",
+  "source_tasks": [
+    "1044472",
+    "1044477"
+  ],
+  "story": "Approach along the grassy ridge, leap as the camera clears the ridge and opens the bay, land, then continue downhill through a second view of the cliffs and coastline.",
+  "style_principles": {
+    "local_file_name": "scenic-action.md",
+    "archived": false
+  },
+  "actual_edit": {
+    "first_shot": "A source frames [0,68) at 1x, [68,114) at 2x, [114,121) at 1x: 98 output frames",
+    "second_shot": "B source frames [18,121), after its initial landing: 103 output frames",
+    "camera_change_seconds": 4.083333333333333,
+    "transition": "Explicit hard cut between camera positions, after landing; no repeated jump",
+    "source_manifest": {
+      "local_file_name": "scenic-ride-complete-v3-720p.edit.json",
+      "archived": false
+    },
+    "timing_manifest": {
+      "local_file_name": "shot-a-flight-paced.edit.json",
+      "archived": false
+    },
+    "frame_interpolation": false,
+    "ai_generation_after_these_two_shots": false
+  },
+  "review": {
+    "timeline_and_dense_action_frames_visually_inspected": true,
+    "full_output_decoded_frame_count_verified": true,
+    "audio": "Generated audio retained; A middle interval retimed with atempo=2, shot boundaries faded by up to 40ms. Numeric analysis only, not heard.",
+    "numeric_audio_findings": "No samples near full scale, no detected silence interval >=0.1s, and no packet timestamp discontinuities.",
+    "known_limits": [
+      "Visible camera/terrain/color change at the hard cut",
+      "Takeoff preload and landing absorption in A are still weak",
+      "Some generated bicycle/body geometry may vary; no claim of perfect physical simulation"
+    ],
+    "independent_review": "No repeated takeoff, second landing or action reversal in the inspected whole-film and dense junction sheets. At 4.083s, subject scale, bay geography and color visibly change between camera shots. A jump height is still exaggerated."
+  },
+  "cost": {
+    "estimated_video_credits_total": 180,
+    "a_actual_credits_reported": 75,
+    "b_actual_credits_reported": null,
+    "b_query_cost_field": "N/A",
+    "actual_total_unverified": true
+  },
+  "source_video_role": "Human analysis only; generation used the image URLs and prompts in design.json.",
+  "_archive_note": "Sanitized research copy: known archived media use repository-relative paths; unarchived local references retain only a filename. Submitted prompt text is unchanged. No operational logs or account responses are included."
+}

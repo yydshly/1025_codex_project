@@ -1,0 +1,10 @@
+{
+  "name": "scenic-motion-lab",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "serve": "python -m http.server 4333 --bind 127.0.0.1 --directory app",
+    "check": "node scripts/check.mjs"
+  }
+}

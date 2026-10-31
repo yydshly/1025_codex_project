@@ -1,0 +1,113 @@
+{
+  "title": "越过山脊，看见海湾",
+  "principles_reference": {
+    "local_file_name": "scenic-action.md",
+    "archived": false
+  },
+  "purpose": "Exploratory complete scenic action film: landscape as primary spectacle, credible camera and body motion, one action revealing scenery and a clear grounded payoff.",
+  "intended_feeling": "Curiosity, brief exhilaration, then spacious forward-looking wonder.",
+  "output": {
+    "model": "Seedance 2.0",
+    "resolution": 720,
+    "aspect_ratio": "16:9",
+    "target_duration_seconds": 10,
+    "planned_segments": 2,
+    "segment_seconds": 5,
+    "estimated_total_credits": 180,
+    "cost_is_estimate": true
+  },
+  "composition": "Landscape-led; rider establishes scale and route. Opening ridge conceals much of bay; leap and rising camera reveal it; landing continues into another view.",
+  "source_video_role": "Human analysis of cinematic principles only; the source video is not transmitted to the generation model.",
+  "keyframes": {
+    "start": {
+      "local": "assets/images/keyframes/start.png",
+      "generated_source": {
+        "local_file_name": "exec-8dfd3f3a-d776-47b6-8c6b-d7518ecc677f.png",
+        "archived": false
+      },
+      "url": "https://files.chatartpro.com/chat-skill-upload/20261030/exec-8dfd3f3a-d776-47b6-8c6b-d7518ecc677f.png",
+      "role": "Start: grounded approach, rounded ridge partly blocks bay"
+    },
+    "apex": {
+      "local": "assets/images/keyframes/apex.png",
+      "generated_source": {
+        "local_file_name": "exec-3f740c2d-ab73-450c-b6f4-c6fd018e7e11.png",
+        "archived": false
+      },
+      "url": "https://files.chatartpro.com/chat-skill-upload/20261030/exec-3f740c2d-ab73-450c-b6f4-c6fd018e7e11.png",
+      "role": "Shared action-match frame: short airborne apex with newly open bay and visible landing trail"
+    },
+    "end": {
+      "local": "assets/images/keyframes/end.png",
+      "generated_source": {
+        "local_file_name": "exec-f94d591b-b275-42c1-8728-2ccaf6383275.png",
+        "archived": false
+      },
+      "url": "https://files.chatartpro.com/chat-skill-upload/20261030/exec-f94d591b-b275-42c1-8728-2ccaf6383275.png",
+      "role": "End: grounded ride continues along same curved trail, vista remains dominant"
+    }
+  },
+  "shots": [
+    {
+      "id": "a",
+      "duration_seconds": 5,
+      "type": "i2v",
+      "model": "Seedance 2.0",
+      "resolution": 720,
+      "first_keyframe": "start",
+      "end_keyframe": "apex",
+      "actual_prompt": "Five-second cinematic landscape sequence, one continuous traveling shot. The same red-shirted cyclist rides briskly along the unbroken hillside trail toward a low rounded dirt crest. Track smoothly from behind-left at a moderate distance with a wide-angle lens; let the landscape dominate. The ridge initially hides most of the bay. Keep both wheels in believable ground contact during the first four seconds. Near the crest, the rider lowers the body and compresses, then makes one short controlled hop. End at the brief natural apex shown in the ending reference as the camera rises over the crest and the immense bay opens below. Preserve forward momentum, rider identity, consistent terrain, one rigid bicycle and two wheels. The same downhill trail is visible beneath and ahead for landing. Natural wind, tire and chain sounds, with a brief lift-off whoosh; no speech or music.",
+      "estimated_credits": 90,
+      "remote_task_id": "1044472"
+    },
+    {
+      "id": "b",
+      "duration_seconds": 5,
+      "type": "i2v",
+      "model": "Seedance 2.0",
+      "resolution": 720,
+      "first_keyframe": "apex",
+      "end_keyframe": "end",
+      "actual_prompt": "Five-second continuation beginning at the supplied airborne apex. Immediately descend under gravity while preserving forward speed; the wheels meet the same visible downhill trail within the first 0.7 seconds. The rider bends knees and elbows to absorb landing, then resumes smooth riding. Follow from behind-left at a moderate distance as the path curves gently, revealing a changed angle of the bay, coastline and cliff architecture. Let the landscape dominate, with fast nearby grass and rocks and slower distant cliffs. In the last seconds, ease slightly higher while continuing forward, leaving the vista open around the moving rider. Preserve clothing, backpack, two-wheel bicycle proportions, daylight direction and scene geography. A brief landing thump joins natural wind, tire and chain sounds; no speech or music. Continuous forward motion and grounded contact after landing, matching the ending reference.",
+      "estimated_credits": 90,
+      "remote_task_id": "1044477"
+    }
+  ],
+  "editing_plan": "Action-matched junction at apex. Prefer a hard match cut and remove duplicate/frozen frames; do not claim a single native take. Preserve generation originals and record editorial derivatives.",
+  "acceptance": [
+    "Scenery has an actual reveal when the camera clears the ridge, not a fixed background",
+    "Grounded approach, compression, short lift, descent, tire contact, absorption and onward riding are visibly complete",
+    "One identifiable rider, one rigid bicycle, two wheels, continuous forward momentum and coherent terrain",
+    "No long hovering or flight; landing trail connects to takeoff trail",
+    "Match junction preserves approximate subject position/direction/scale and sunlight",
+    "Visual and any sound assertions are based on inspection; unverified audio is identified as unverified"
+  ],
+  "generation_attempt_limit": "One paid submission per planned shot in this authorized pass; do not silently add retries, change models, or add extra shots.",
+  "execution_notes": {
+    "shot_b_submission_recovery": {
+      "initial_submission": "ConnectionError before acknowledgement; no remote task ID returned.",
+      "read_only_recovery_checks": "Two history reads found no exact shot-B prompt candidate and no ordered APEX-to-END frame URL match.",
+      "history_scope": {
+        "contains_shot_a_1044472": true,
+        "newest_creation_time": "2026-10-30T23:51:27+08:00",
+        "limitation": "Latest-ten history visibility; absence was not treated as proof that the unacknowledged POST could never be recorded later."
+      },
+      "recovery_action": "Resubmitted the same originally planned shot B after the read-only checks; received remote task ID 1044477.",
+      "preserved": "Original prompts, keyframe images and URLs, model, resolution and durations remain unchanged.",
+      "evidence_files": [
+        "shot-b-history-recovery.json",
+        "shot-b-history-range.json"
+      ]
+    }
+  },
+  "delivered_version": {
+    "path": "app/assets/videos/complete-ride.mp4",
+    "duration_seconds": 8.375,
+    "manifest": {
+      "local_file_name": "delivery.json",
+      "archived": false
+    },
+    "actual_two_shot_edit": "Post-landing cut; original planned apex junction was not used."
+  },
+  "_archive_note": "Sanitized research copy: known archived media use repository-relative paths; unarchived local references retain only a filename. Submitted prompt text is unchanged. No operational logs or account responses are included."
+}

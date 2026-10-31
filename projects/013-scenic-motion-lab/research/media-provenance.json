@@ -1,0 +1,2536 @@
+{
+  "schema_version": 1,
+  "archive_scope": "Public research repository and static app; local service-account screenshots excluded; native source media unchanged.",
+  "path_base": "project root",
+  "source_video_policy": "Do not publish the complete third-party source video; cite the original post and analyzed timeline only.",
+  "credit_policy": "Only verified actual service charges are numeric. Unknown charges remain null: the earlier film B is task 1044477, while the coastal-scroll source A is task 1044781. The new coastal-scroll B task 1044794 has confirmed actual cost 180 credits. Reusing A creates no new generation charge; web copies and editorial derivatives do not double-count source-task fees, and the combined edit cost remains null because A is unknown.",
+  "artifacts": [
+    {
+      "path": "app/assets/videos/static-720.mp4",
+      "sha256": "96f9100c0d534191a245da69ff00fdd6516c47eda87bc7a73b5d062486ba1f19",
+      "bytes": 4665317,
+      "source": {
+        "type": "existing local task artifact",
+        "file_name": "video_20261030200721.mp4",
+        "sha256": "96f9100c0d534191a245da69ff00fdd6516c47eda87bc7a73b5d062486ba1f19"
+      },
+      "derivation": [
+        {
+          "operation": "bit-exact copy",
+          "original_modified": false
+        }
+      ],
+      "license": {
+        "status": "本轮 AI 产物，可用于本项目本地展示；未授予第三方素材任何新的 CC 许可。",
+        "third_party_cc_license_asserted": false
+      },
+      "asset_id": "static-720",
+      "kind": "ai-original",
+      "task_id": "1044252"
+    },
+    {
+      "path": "app/assets/images/posters/static-720.jpg",
+      "sha256": "351ffe06fc15a58814516a26606e8551bdb900b46291277497e282c6abc11cd2",
+      "bytes": 150666,
+      "source": {
+        "path": "app/assets/videos/static-720.mp4",
+        "sha256": "96f9100c0d534191a245da69ff00fdd6516c47eda87bc7a73b5d062486ba1f19"
+      },
+      "derivation": [
+        {
+          "operation": "ffmpeg frame extraction",
+          "time_seconds": 0.5,
+          "width": 960,
+          "ai_generated": false
+        }
+      ],
+      "license": {
+        "status": "本轮 AI 产物，可用于本项目本地展示；未授予第三方素材任何新的 CC 许可。",
+        "third_party_cc_license_asserted": false
+      },
+      "asset_id": "static-720"
+    },
+    {
+      "path": "app/assets/videos/static-1080.mp4",
+      "sha256": "59ce321d6ba22f7221f8b7767070241ee48fd35df53427c21b350d91da897a3e",
+      "bytes": 12044664,
+      "source": {
+        "type": "existing local task artifact",
+        "file_name": "seedance2-1080p-original.mp4",
+        "sha256": "59ce321d6ba22f7221f8b7767070241ee48fd35df53427c21b350d91da897a3e"
+      },
+      "derivation": [
+        {
+          "operation": "bit-exact copy",
+          "original_modified": false
+        }
+      ],
+      "license": {
+        "status": "本轮 AI 产物，可用于本项目本地展示；未授予第三方素材任何新的 CC 许可。",
+        "third_party_cc_license_asserted": false
+      },
+      "asset_id": "static-1080",
+      "kind": "ai-original",
+      "task_id": "1044280"
+    },
+    {
+      "path": "app/assets/images/posters/static-1080.jpg",
+      "sha256": "7dad3538dca8d2e636403f5730cdda482fb84ba85c4ee0811a375a699e54df7a",
+      "bytes": 193626,
+      "source": {
+        "path": "app/assets/videos/static-1080.mp4",
+        "sha256": "59ce321d6ba22f7221f8b7767070241ee48fd35df53427c21b350d91da897a3e"
+      },
+      "derivation": [
+        {
+          "operation": "ffmpeg frame extraction",
+          "time_seconds": 0.5,
+          "width": 960,
+          "ai_generated": false
+        }
+      ],
+      "license": {
+        "status": "本轮 AI 产物，可用于本项目本地展示；未授予第三方素材任何新的 CC 许可。",
+        "third_party_cc_license_asserted": false
+      },
+      "asset_id": "static-1080"
+    },
+    {
+      "path": "app/assets/videos/motion-native.mp4",
+      "sha256": "f09f33f0290c9c940648b45076cd99e0ac62ad639d7b785d640813864ba0be64",
+      "bytes": 5535648,
+      "source": {
+        "type": "existing local task artifact",
+        "file_name": "video_20261030225925.mp4",
+        "sha256": "f09f33f0290c9c940648b45076cd99e0ac62ad639d7b785d640813864ba0be64"
+      },
+      "derivation": [
+        {
+          "operation": "bit-exact copy",
+          "original_modified": false
+        }
+      ],
+      "license": {
+        "status": "本轮 AI 产物，可用于本项目本地展示；未授予第三方素材任何新的 CC 许可。",
+        "third_party_cc_license_asserted": false
+      },
+      "asset_id": "motion-native",
+      "kind": "ai-original",
+      "task_id": "1044377"
+    },
+    {
+      "path": "app/assets/images/posters/motion-native.jpg",
+      "sha256": "1d709da1d1260e462529e4439227482f86d59436154962c05e6d135f24a5c48d",
+      "bytes": 127528,
+      "source": {
+        "path": "app/assets/videos/motion-native.mp4",
+        "sha256": "f09f33f0290c9c940648b45076cd99e0ac62ad639d7b785d640813864ba0be64"
+      },
+      "derivation": [
+        {
+          "operation": "ffmpeg frame extraction",
+          "time_seconds": 0.5,
+          "width": 960,
+          "ai_generated": false
+        }
+      ],
+      "license": {
+        "status": "本轮 AI 产物，可用于本项目本地展示；未授予第三方素材任何新的 CC 许可。",
+        "third_party_cc_license_asserted": false
+      },
+      "asset_id": "motion-native"
+    },
+    {
+      "path": "app/assets/videos/motion-paced.mp4",
+      "sha256": "65ee868ea68cc2c3d8378c9e3d9c145c1209553258b67fa659f01b3353f4e8be",
+      "bytes": 5026390,
+      "source": {
+        "type": "existing local task artifact",
+        "file_name": "motion-paced-720p.mp4",
+        "sha256": "65ee868ea68cc2c3d8378c9e3d9c145c1209553258b67fa659f01b3353f4e8be"
+      },
+      "derivation": [
+        {
+          "operation": "bit-exact copy",
+          "original_modified": false
+        }
+      ],
+      "license": {
+        "status": "本轮 AI 产物，可用于本项目本地展示；未授予第三方素材任何新的 CC 许可。",
+        "third_party_cc_license_asserted": false
+      },
+      "asset_id": "motion-paced",
+      "kind": "editorial-derivative",
+      "task_id": "1044377"
+    },
+    {
+      "path": "app/assets/images/posters/motion-paced.jpg",
+      "sha256": "84d9b29cd99394665a1a75f036913955a28864c857e174c2e30954142f8f8512",
+      "bytes": 104834,
+      "source": {
+        "path": "app/assets/videos/motion-paced.mp4",
+        "sha256": "65ee868ea68cc2c3d8378c9e3d9c145c1209553258b67fa659f01b3353f4e8be"
+      },
+      "derivation": [
+        {
+          "operation": "ffmpeg frame extraction",
+          "time_seconds": 0.5,
+          "width": 960,
+          "ai_generated": false
+        }
+      ],
+      "license": {
+        "status": "本轮 AI 产物，可用于本项目本地展示；未授予第三方素材任何新的 CC 许可。",
+        "third_party_cc_license_asserted": false
+      },
+      "asset_id": "motion-paced"
+    },
+    {
+      "path": "app/assets/videos/shot-a.mp4",
+      "sha256": "882f8b23cc72c2afad169127361a323f1b301722e0b327d8ce3a21af582cf356",
+      "bytes": 5824859,
+      "source": {
+        "type": "existing local task artifact",
+        "file_name": "video_20261031003438.mp4",
+        "sha256": "882f8b23cc72c2afad169127361a323f1b301722e0b327d8ce3a21af582cf356"
+      },
+      "derivation": [
+        {
+          "operation": "bit-exact copy",
+          "original_modified": false
+        }
+      ],
+      "license": {
+        "status": "本轮 AI 产物，可用于本项目本地展示；未授予第三方素材任何新的 CC 许可。",
+        "third_party_cc_license_asserted": false
+      },
+      "asset_id": "shot-a",
+      "kind": "ai-original",
+      "task_id": "1044472"
+    },
+    {
+      "path": "app/assets/images/posters/shot-a.jpg",
+      "sha256": "e6d56ab82cbf94428457fcee4f7b1d4ba7aee30f03ce667635129b780ff1ecbe",
+      "bytes": 126733,
+      "source": {
+        "path": "app/assets/videos/shot-a.mp4",
+        "sha256": "882f8b23cc72c2afad169127361a323f1b301722e0b327d8ce3a21af582cf356"
+      },
+      "derivation": [
+        {
+          "operation": "ffmpeg frame extraction",
+          "time_seconds": 0.5,
+          "width": 960,
+          "ai_generated": false
+        }
+      ],
+      "license": {
+        "status": "本轮 AI 产物，可用于本项目本地展示；未授予第三方素材任何新的 CC 许可。",
+        "third_party_cc_license_asserted": false
+      },
+      "asset_id": "shot-a"
+    },
+    {
+      "path": "app/assets/videos/shot-b.mp4",
+      "sha256": "9b7e646a3f881f70fbc4a4c2e4de1d0f960511e0ff694ec453b5f6166a4adea8",
+      "bytes": 5680163,
+      "source": {
+        "type": "existing local task artifact",
+        "file_name": "video_20261031011717.mp4",
+        "sha256": "9b7e646a3f881f70fbc4a4c2e4de1d0f960511e0ff694ec453b5f6166a4adea8"
+      },
+      "derivation": [
+        {
+          "operation": "bit-exact copy",
+          "original_modified": false
+        }
+      ],
+      "license": {
+        "status": "本轮 AI 产物，可用于本项目本地展示；未授予第三方素材任何新的 CC 许可。",
+        "third_party_cc_license_asserted": false
+      },
+      "asset_id": "shot-b",
+      "kind": "ai-original",
+      "task_id": "1044477"
+    },
+    {
+      "path": "app/assets/images/posters/shot-b.jpg",
+      "sha256": "a252540df972b3fa548683a4ca56c3412a17b2675570409770b158369e5584a2",
+      "bytes": 134870,
+      "source": {
+        "path": "app/assets/videos/shot-b.mp4",
+        "sha256": "9b7e646a3f881f70fbc4a4c2e4de1d0f960511e0ff694ec453b5f6166a4adea8"
+      },
+      "derivation": [
+        {
+          "operation": "ffmpeg frame extraction",
+          "time_seconds": 0.5,
+          "width": 960,
+          "ai_generated": false
+        }
+      ],
+      "license": {
+        "status": "本轮 AI 产物，可用于本项目本地展示；未授予第三方素材任何新的 CC 许可。",
+        "third_party_cc_license_asserted": false
+      },
+      "asset_id": "shot-b"
+    },
+    {
+      "path": "app/assets/videos/complete-ride.mp4",
+      "sha256": "07ebcfc9764e1dd6387e8a01ff77d67628a49df5ebc86b7e47a4285ff192b87a",
+      "bytes": 9432102,
+      "source": {
+        "type": "existing local task artifact",
+        "file_name": "scenic-ride-complete-720p.mp4",
+        "sha256": "07ebcfc9764e1dd6387e8a01ff77d67628a49df5ebc86b7e47a4285ff192b87a"
+      },
+      "derivation": [
+        {
+          "operation": "bit-exact copy",
+          "original_modified": false
+        }
+      ],
+      "license": {
+        "status": "本轮 AI 产物，可用于本项目本地展示；未授予第三方素材任何新的 CC 许可。",
+        "third_party_cc_license_asserted": false
+      },
+      "asset_id": "complete-ride",
+      "kind": "editorial-derivative",
+      "task_id": null
+    },
+    {
+      "path": "app/assets/images/posters/complete-ride.jpg",
+      "sha256": "bb9738ae7779102bfc0af18275b302bf7dcf1fe41ddc1a2bf21a8c1725d9458d",
+      "bytes": 76763,
+      "source": {
+        "path": "app/assets/videos/complete-ride.mp4",
+        "sha256": "07ebcfc9764e1dd6387e8a01ff77d67628a49df5ebc86b7e47a4285ff192b87a"
+      },
+      "derivation": [
+        {
+          "operation": "ffmpeg frame extraction",
+          "time_seconds": 3.5,
+          "width": 960,
+          "ai_generated": false
+        }
+      ],
+      "license": {
+        "status": "本轮 AI 产物，可用于本项目本地展示；未授予第三方素材任何新的 CC 许可。",
+        "third_party_cc_license_asserted": false
+      },
+      "asset_id": "complete-ride"
+    },
+    {
+      "path": "assets/images/keyframes/start.png",
+      "sha256": "f32bd01fb0daf47f9ed886d880d4345392f70fa54609bcba25fa2da205163d42",
+      "bytes": 3269445,
+      "source": {
+        "type": "existing local task artifact",
+        "file_name": "start.png",
+        "sha256": "f32bd01fb0daf47f9ed886d880d4345392f70fa54609bcba25fa2da205163d42"
+      },
+      "derivation": [
+        {
+          "operation": "bit-exact copy",
+          "original_modified": false
+        }
+      ],
+      "license": {
+        "status": "本轮 AI 产物，可用于本项目本地展示；未授予第三方素材任何新的 CC 许可。",
+        "third_party_cc_license_asserted": false
+      },
+      "kind": "ai-generated-keyframe"
+    },
+    {
+      "path": "app/assets/images/keyframes/start.webp",
+      "sha256": "37832339c0bb35baabd70e773bc09440608126131c68adab6d5691541bac1471",
+      "bytes": 543516,
+      "source": {
+        "path": "assets/images/keyframes/start.png",
+        "sha256": "f32bd01fb0daf47f9ed886d880d4345392f70fa54609bcba25fa2da205163d42"
+      },
+      "derivation": [
+        {
+          "operation": "PNG to WebP compression",
+          "quality": 88,
+          "pixel_dimensions_changed": false,
+          "ai_generation": false
+        }
+      ],
+      "license": {
+        "status": "本轮 AI 产物，可用于本项目本地展示；未授予第三方素材任何新的 CC 许可。",
+        "third_party_cc_license_asserted": false
+      },
+      "kind": "web-image-derivative"
+    },
+    {
+      "path": "assets/images/keyframes/apex.png",
+      "sha256": "f463a185d6006013b6bdd51f9104d889ec21e65ad78dbc01be18c8a120287645",
+      "bytes": 3180070,
+      "source": {
+        "type": "existing local task artifact",
+        "file_name": "apex.png",
+        "sha256": "f463a185d6006013b6bdd51f9104d889ec21e65ad78dbc01be18c8a120287645"
+      },
+      "derivation": [
+        {
+          "operation": "bit-exact copy",
+          "original_modified": false
+        }
+      ],
+      "license": {
+        "status": "本轮 AI 产物，可用于本项目本地展示；未授予第三方素材任何新的 CC 许可。",
+        "third_party_cc_license_asserted": false
+      },
+      "kind": "ai-generated-keyframe"
+    },
+    {
+      "path": "app/assets/images/keyframes/apex.webp",
+      "sha256": "9cf3116d1adeede78d555893184151d1e2019e8655b6d70569aee0a38d1ab231",
+      "bytes": 533786,
+      "source": {
+        "path": "assets/images/keyframes/apex.png",
+        "sha256": "f463a185d6006013b6bdd51f9104d889ec21e65ad78dbc01be18c8a120287645"
+      },
+      "derivation": [
+        {
+          "operation": "PNG to WebP compression",
+          "quality": 88,
+          "pixel_dimensions_changed": false,
+          "ai_generation": false
+        }
+      ],
+      "license": {
+        "status": "本轮 AI 产物，可用于本项目本地展示；未授予第三方素材任何新的 CC 许可。",
+        "third_party_cc_license_asserted": false
+      },
+      "kind": "web-image-derivative"
+    },
+    {
+      "path": "assets/images/keyframes/end.png",
+      "sha256": "71b8900db320a061a262872b1db2c39b4ffbc89f75a2348afc2cacc0dd3dcadb",
+      "bytes": 3169308,
+      "source": {
+        "type": "existing local task artifact",
+        "file_name": "end.png",
+        "sha256": "71b8900db320a061a262872b1db2c39b4ffbc89f75a2348afc2cacc0dd3dcadb"
+      },
+      "derivation": [
+        {
+          "operation": "bit-exact copy",
+          "original_modified": false
+        }
+      ],
+      "license": {
+        "status": "本轮 AI 产物，可用于本项目本地展示；未授予第三方素材任何新的 CC 许可。",
+        "third_party_cc_license_asserted": false
+      },
+      "kind": "ai-generated-keyframe"
+    },
+    {
+      "path": "app/assets/images/keyframes/end.webp",
+      "sha256": "a2f61662f68ffff9d6ac8d8f9c02d428c1b1b3df36567602b7b90deb45185597",
+      "bytes": 543604,
+      "source": {
+        "path": "assets/images/keyframes/end.png",
+        "sha256": "71b8900db320a061a262872b1db2c39b4ffbc89f75a2348afc2cacc0dd3dcadb"
+      },
+      "derivation": [
+        {
+          "operation": "PNG to WebP compression",
+          "quality": 88,
+          "pixel_dimensions_changed": false,
+          "ai_generation": false
+        }
+      ],
+      "license": {
+        "status": "本轮 AI 产物，可用于本项目本地展示；未授予第三方素材任何新的 CC 许可。",
+        "third_party_cc_license_asserted": false
+      },
+      "kind": "web-image-derivative"
+    },
+    {
+      "path": "assets/images/motion-inputs/first-frame.png",
+      "sha256": "c0a30166c38d38f3507f644715f5708c8ca732f7dc4e7a95333d01ff6c240130",
+      "bytes": 3397166,
+      "source": {
+        "type": "existing local task artifact",
+        "file_name": "first-frame.png",
+        "sha256": "c0a30166c38d38f3507f644715f5708c8ca732f7dc4e7a95333d01ff6c240130"
+      },
+      "derivation": [
+        {
+          "operation": "bit-exact copy",
+          "original_modified": false
+        }
+      ],
+      "license": {
+        "status": "本轮 AI 产物，可用于本项目本地展示；未授予第三方素材任何新的 CC 许可。",
+        "third_party_cc_license_asserted": false
+      },
+      "kind": "historical-ai-input"
+    },
+    {
+      "path": "assets/images/motion-inputs/end-frame.png",
+      "sha256": "2584eeb0ff0c0f88ae948f2d89a169f77ff41178cc9dd7579c3ee72557cc8be7",
+      "bytes": 3144548,
+      "source": {
+        "type": "existing local task artifact",
+        "file_name": "end-frame.png",
+        "sha256": "2584eeb0ff0c0f88ae948f2d89a169f77ff41178cc9dd7579c3ee72557cc8be7"
+      },
+      "derivation": [
+        {
+          "operation": "bit-exact copy",
+          "original_modified": false
+        }
+      ],
+      "license": {
+        "status": "本轮 AI 产物，可用于本项目本地展示；未授予第三方素材任何新的 CC 许可。",
+        "third_party_cc_license_asserted": false
+      },
+      "kind": "historical-ai-input"
+    },
+    {
+      "path": "app/assets/images/reference/source-full-timeline.jpg",
+      "sha256": "e83dc70ae92b4ff3d018a74fbcbe2419c84af1f0549a703fc4b6168855f3dd2a",
+      "bytes": 1099093,
+      "source": {
+        "type": "existing local task artifact",
+        "file_name": "source-full-timeline.jpg",
+        "sha256": "e83dc70ae92b4ff3d018a74fbcbe2419c84af1f0549a703fc4b6168855f3dd2a"
+      },
+      "derivation": [
+        {
+          "operation": "bit-exact copy",
+          "original_modified": false
+        }
+      ],
+      "license": {
+        "status": "第三方原片的分析摘帧，许可状态未知；权利归原作者，已署名和链接出处。",
+        "third_party_cc_license_asserted": false,
+        "author": "Personality (@hi_personality)",
+        "post_url": "https://x.com/hi_personality/status/2115567493565825244"
+      },
+      "kind": "research-comparison"
+    },
+    {
+      "path": "app/assets/images/reference/source-vs-result-motion.png",
+      "sha256": "f47a78d6d5aa2ddcc9594f660e0abe0f73123627e0df6c5eca22cf5f0a67b6b3",
+      "bytes": 1628739,
+      "source": {
+        "type": "existing local task artifact",
+        "file_name": "source-vs-result-motion.png",
+        "sha256": "f47a78d6d5aa2ddcc9594f660e0abe0f73123627e0df6c5eca22cf5f0a67b6b3"
+      },
+      "derivation": [
+        {
+          "operation": "bit-exact copy",
+          "original_modified": false
+        }
+      ],
+      "license": {
+        "status": "第三方原片的分析摘帧，许可状态未知；权利归原作者，已署名和链接出处。",
+        "third_party_cc_license_asserted": false,
+        "author": "Personality (@hi_personality)",
+        "post_url": "https://x.com/hi_personality/status/2115567493565825244"
+      },
+      "kind": "research-comparison"
+    },
+    {
+      "path": "research/motion-trial-design.json",
+      "sha256": "e996c9c01430ac69a49119977e9982dc5e4240be2fc7939f1c0bf5e44107a4fd",
+      "bytes": 2565,
+      "source": {
+        "type": "saved creative/review metadata",
+        "file_name": "spec.json",
+        "sha256": "a2fb33bfcb9063e16147fcaf7847a1cc65ffcc6cf767ce6adcd67b4a8ce56610"
+      },
+      "derivation": [
+        {
+          "operation": "privacy-preserving research metadata sanitization"
+        }
+      ],
+      "license": {
+        "status": "本轮 AI 产物，可用于本项目本地展示；未授予第三方素材任何新的 CC 许可。",
+        "third_party_cc_license_asserted": false
+      },
+      "kind": "research-metadata",
+      "local_archive_sha256_before_publication": "0afd58b589927508c12d57dfddc208f61a1c9bab443e84a7aa3b6acc930d69a9"
+    },
+    {
+      "path": "research/motion-trial-retiming.json",
+      "sha256": "853ede1943b519948fcb12a844d8b1d0d1301119aa37564a7d27e38c1722f209",
+      "bytes": 867,
+      "source": {
+        "type": "saved creative/review metadata",
+        "file_name": "postprocess.json",
+        "sha256": "612fd9f965bbb02ffb059812650367d7905c35a82959e9a7e9fa5728caed7f85"
+      },
+      "derivation": [
+        {
+          "operation": "privacy-preserving research metadata sanitization"
+        }
+      ],
+      "license": {
+        "status": "本轮 AI 产物，可用于本项目本地展示；未授予第三方素材任何新的 CC 许可。",
+        "third_party_cc_license_asserted": false
+      },
+      "kind": "research-metadata",
+      "local_archive_sha256_before_publication": "3bad8c4689573c1a95cd829c38ffeeab0695a72012ddd16ecf2156406a693ec3"
+    },
+    {
+      "path": "research/complete-ride-design.json",
+      "sha256": "86ca032b7e83b5d03c7640660f15939e79f1aefd1876a8688a40c641079a88d9",
+      "bytes": 7146,
+      "source": {
+        "type": "saved creative/review metadata",
+        "file_name": "design.json",
+        "sha256": "ac5a585edd0e7aadb35333a99bf51cef07d467355b38beb60091407724fb0b2e"
+      },
+      "derivation": [
+        {
+          "operation": "privacy-preserving research metadata sanitization"
+        }
+      ],
+      "license": {
+        "status": "本轮 AI 产物，可用于本项目本地展示；未授予第三方素材任何新的 CC 许可。",
+        "third_party_cc_license_asserted": false
+      },
+      "kind": "research-metadata",
+      "local_archive_sha256_before_publication": "719873636a42b30b93f3418165c071aed77917c84046d268a27e7b52b4275a26"
+    },
+    {
+      "path": "research/complete-ride-delivery.json",
+      "sha256": "5aa4486ebdaece4b971550b80ee19001cfa88248e193bf74a58c395992c5a733",
+      "bytes": 2956,
+      "source": {
+        "type": "saved creative/review metadata",
+        "file_name": "delivery.json",
+        "sha256": "8cb797b861203fc3b2193f4f106c4fe76198e9206b6dc4b97b2e19bcfc2375ae"
+      },
+      "derivation": [
+        {
+          "operation": "privacy-preserving research metadata sanitization"
+        }
+      ],
+      "license": {
+        "status": "本轮 AI 产物，可用于本项目本地展示；未授予第三方素材任何新的 CC 许可。",
+        "third_party_cc_license_asserted": false
+      },
+      "kind": "research-metadata",
+      "local_archive_sha256_before_publication": "786ad09fa0b8903b36d927a3e39d64bf7b1edb648a7219bc34eaba7d21d34460"
+    },
+    {
+      "path": "research/edits/complete-ride-v3.json",
+      "sha256": "d2fc03695fc89ef05622fa2dc69183580ac168490ef9189b4884e3dc4a9b77b3",
+      "bytes": 6449,
+      "source": {
+        "type": "saved creative/review metadata",
+        "file_name": "scenic-ride-complete-v3-720p.edit.json",
+        "sha256": "c2453f1276b09671949df99ab7873874157d10ba0c3e456dfbd7219a4de62a03"
+      },
+      "derivation": [
+        {
+          "operation": "privacy-preserving research metadata sanitization"
+        }
+      ],
+      "license": {
+        "status": "本轮 AI 产物，可用于本项目本地展示；未授予第三方素材任何新的 CC 许可。",
+        "third_party_cc_license_asserted": false
+      },
+      "kind": "research-metadata",
+      "local_archive_sha256_before_publication": "2fd50ebde3cde2ba859bec1bcd1aa37c4990fd3d3c48f1d89a97364293ae99c1"
+    },
+    {
+      "path": "research/edits/shot-a-retiming.json",
+      "sha256": "c2f06c8c11cab9de081034d2e92f6f4310b21656a868f0592ee34249a20d4185",
+      "bytes": 2136,
+      "source": {
+        "type": "saved creative/review metadata",
+        "file_name": "shot-a-flight-paced.edit.json",
+        "sha256": "12abe1b766cea6ff82a5de5e3f3989fb16316e36d6c5f96c70c5ba0dababf65c"
+      },
+      "derivation": [
+        {
+          "operation": "privacy-preserving research metadata sanitization"
+        }
+      ],
+      "license": {
+        "status": "本轮 AI 产物，可用于本项目本地展示；未授予第三方素材任何新的 CC 许可。",
+        "third_party_cc_license_asserted": false
+      },
+      "kind": "research-metadata",
+      "local_archive_sha256_before_publication": "56f244b16580ea1f7efce952eaf4a46dd2cf0c4691f15faa1a07ecdd09c472d9"
+    },
+    {
+      "path": "research/source-reference-analysis.json",
+      "sha256": "52b1b103d72cc1340aba9088ac6e3e966b39fe91b696fd86235c3480edfec833",
+      "bytes": 2714,
+      "source": {
+        "post_url": "https://x.com/hi_personality/status/2115567493565825244",
+        "author": "Personality (@hi_personality)"
+      },
+      "derivation": [
+        {
+          "operation": "curated summary of already completed local analysis",
+          "source_video_copied_to_webpage": false
+        }
+      ],
+      "license": {
+        "status": "第三方原片的分析摘帧，许可状态未知；权利归原作者，已署名和链接出处。",
+        "third_party_cc_license_asserted": false,
+        "author": "Personality (@hi_personality)",
+        "post_url": "https://x.com/hi_personality/status/2115567493565825244"
+      },
+      "kind": "research-metadata",
+      "local_archive_sha256_before_publication": "4fbabcc9908a0edf088036d40568f3616f0e2daba516ce11db6edbe5eab7a56a"
+    },
+    {
+      "path": "research/video-metadata.json",
+      "sha256": "f0e2fef997ca1fb52a28ae2bc44855a6ffac6462889f922b40b9d47b66e095b4",
+      "bytes": 4947,
+      "source": {
+        "type": "ffprobe of archived local outputs"
+      },
+      "derivation": [
+        {
+          "operation": "local metadata inspection",
+          "network": false
+        }
+      ],
+      "license": {
+        "status": "本轮 AI 产物，可用于本项目本地展示；未授予第三方素材任何新的 CC 许可。",
+        "third_party_cc_license_asserted": false
+      },
+      "kind": "research-metadata",
+      "local_archive_sha256_before_publication": "ec0cd065a9a0c18a0767e401201684fdf9bf5b3cceff6eaf90aaa718dd570d0f"
+    },
+    {
+      "path": "app/data/media.js",
+      "sha256": "de9f043349f096d7dc2e842c1f8854b39cc7ff01ab3ba632f3b60e3073eb1e39",
+      "bytes": 21372,
+      "source": {
+        "type": "curated local media catalog"
+      },
+      "derivation": [
+        {
+          "operation": "catalog authoring from verified files and recorded inputs"
+        },
+        {
+          "operation": "Hash refreshed after final catalog text synchronization",
+          "verified_date": "2026-10-31"
+        },
+        {
+          "operation": "Catalog updated with completed task1044756 and its actual motion-review boundary"
+        },
+        {
+          "operation": "Completed Kling4.0 and Seedance2.0 motion trials cataloged with actual review limits"
+        }
+      ],
+      "license": {
+        "status": "本轮 AI 产物，可用于本项目本地展示；未授予第三方素材任何新的 CC 许可。",
+        "third_party_cc_license_asserted": false
+      },
+      "kind": "media-catalog",
+      "local_archive_sha256_before_publication": "210630b3c93d7fa2ea69b3063d7b50a01f4c9fef8d6bd3899d487f77fbb079af"
+    },
+    {
+      "path": "assets/images/concepts-source/coastal-scroll.png",
+      "sha256": "112da7725c1b2dcd21dac803b381a49adcf4f27fcb53ac7250e1f458dce37c9f",
+      "bytes": 3388530,
+      "asset_id": "coastal-scroll",
+      "kind": "ai-concept-original",
+      "source": {
+        "type": "built-in image_gen output",
+        "file_name": "exec-46499e42-7109-431e-8c84-9bf9ee18004f.png",
+        "prompt_file": "research/concept-prompts.json",
+        "prompt_id": "coastal-scroll",
+        "reference_image": "app/assets/images/keyframes/end.webp",
+        "reference_sha256": "a2f61662f68ffff9d6ac8d8f9c02d428c1b1b3df36567602b7b90deb45185597"
+      },
+      "derivation": [
+        {
+          "operation": "bit-exact copy",
+          "original_modified": false
+        }
+      ],
+      "license": {
+        "status": "本轮内置 image_gen 生成的概念视觉，可用于本项目本地展示；未授予第三方素材任何新的 CC 许可。",
+        "third_party_cc_license_asserted": false
+      }
+    },
+    {
+      "path": "app/assets/images/concepts/coastal-scroll.webp",
+      "sha256": "47b83083aad5d8e29151b9b0b25c19e86d898785dbbd5d3c1068fd19b0b1d6fc",
+      "bytes": 589188,
+      "asset_id": "coastal-scroll",
+      "kind": "ai-concept-web-image",
+      "source": {
+        "path": "assets/images/concepts-source/coastal-scroll.png",
+        "sha256": "112da7725c1b2dcd21dac803b381a49adcf4f27fcb53ac7250e1f458dce37c9f"
+      },
+      "derivation": [
+        {
+          "operation": "Pillow RGB conversion and WebP compression only",
+          "quality": 88,
+          "method": 6,
+          "resize": false,
+          "content_edit": false,
+          "width": 1672,
+          "height": 941
+        }
+      ],
+      "license": {
+        "status": "本轮内置 image_gen 生成的概念视觉，可用于本项目本地展示；未授予第三方素材任何新的 CC 许可。",
+        "third_party_cc_license_asserted": false
+      }
+    },
+    {
+      "path": "assets/images/concepts-source/inner-sea.png",
+      "sha256": "67fe14874ba6eaa01eb23ef13d73ec701ea74e58664f35e37b67089bb510f6c7",
+      "bytes": 3559302,
+      "asset_id": "inner-sea",
+      "kind": "ai-concept-original",
+      "source": {
+        "type": "built-in image_gen output",
+        "file_name": "exec-993da489-3067-4eb9-9560-6e6caa86b351.png",
+        "prompt_file": "research/concept-prompts.json",
+        "prompt_id": "inner-sea",
+        "reference_image": "app/assets/images/keyframes/end.webp",
+        "reference_sha256": "a2f61662f68ffff9d6ac8d8f9c02d428c1b1b3df36567602b7b90deb45185597"
+      },
+      "derivation": [
+        {
+          "operation": "bit-exact copy",
+          "original_modified": false
+        }
+      ],
+      "license": {
+        "status": "本轮内置 image_gen 生成的概念视觉，可用于本项目本地展示；未授予第三方素材任何新的 CC 许可。",
+        "third_party_cc_license_asserted": false
+      }
+    },
+    {
+      "path": "app/assets/images/concepts/inner-sea.webp",
+      "sha256": "a501d9096a8728d2f97e40ac29f2dffa6e0191fbf341c7b15cd9de3bedab748d",
+      "bytes": 619578,
+      "asset_id": "inner-sea",
+      "kind": "ai-concept-web-image",
+      "source": {
+        "path": "assets/images/concepts-source/inner-sea.png",
+        "sha256": "67fe14874ba6eaa01eb23ef13d73ec701ea74e58664f35e37b67089bb510f6c7"
+      },
+      "derivation": [
+        {
+          "operation": "Pillow RGB conversion and WebP compression only",
+          "quality": 88,
+          "method": 6,
+          "resize": false,
+          "content_edit": false,
+          "width": 1672,
+          "height": 941
+        }
+      ],
+      "license": {
+        "status": "本轮内置 image_gen 生成的概念视觉，可用于本项目本地展示；未授予第三方素材任何新的 CC 许可。",
+        "third_party_cc_license_asserted": false
+      }
+    },
+    {
+      "path": "assets/images/concepts-source/reflection-first.png",
+      "sha256": "7822e2c78f980dabe641eb21f9c1f5457d6104770b50e61adaf2b73ff8df953e",
+      "bytes": 3534574,
+      "asset_id": "reflection-first",
+      "kind": "ai-concept-original",
+      "source": {
+        "type": "built-in image_gen output",
+        "file_name": "exec-9c6023fd-7178-42f0-be45-f75bafc972b8.png",
+        "prompt_file": "research/concept-prompts.json",
+        "prompt_id": "reflection-first",
+        "reference_image": "app/assets/images/keyframes/end.webp",
+        "reference_sha256": "a2f61662f68ffff9d6ac8d8f9c02d428c1b1b3df36567602b7b90deb45185597"
+      },
+      "derivation": [
+        {
+          "operation": "bit-exact copy",
+          "original_modified": false
+        }
+      ],
+      "license": {
+        "status": "本轮内置 image_gen 生成的概念视觉，可用于本项目本地展示；未授予第三方素材任何新的 CC 许可。",
+        "third_party_cc_license_asserted": false
+      }
+    },
+    {
+      "path": "app/assets/images/concepts/reflection-first.webp",
+      "sha256": "aa9c8c7cfe7907e0fe7a2f92eb2f3e62b457636e40ef0111bb22a5a51763b684",
+      "bytes": 610396,
+      "asset_id": "reflection-first",
+      "kind": "ai-concept-web-image",
+      "source": {
+        "path": "assets/images/concepts-source/reflection-first.png",
+        "sha256": "7822e2c78f980dabe641eb21f9c1f5457d6104770b50e61adaf2b73ff8df953e"
+      },
+      "derivation": [
+        {
+          "operation": "Pillow RGB conversion and WebP compression only",
+          "quality": 88,
+          "method": 6,
+          "resize": false,
+          "content_edit": false,
+          "width": 1672,
+          "height": 941
+        }
+      ],
+      "license": {
+        "status": "本轮内置 image_gen 生成的概念视觉，可用于本项目本地展示；未授予第三方素材任何新的 CC 许可。",
+        "third_party_cc_license_asserted": false
+      }
+    },
+    {
+      "path": "assets/images/concepts-source/seed-islands.png",
+      "sha256": "6dbf869b1dc1b823a96cd6ef393b460c0f78c9276fde4078d812c38c2d6a9a4e",
+      "bytes": 2785415,
+      "asset_id": "seed-islands",
+      "kind": "ai-concept-original",
+      "source": {
+        "type": "built-in image_gen output",
+        "file_name": "exec-fc6c5ca2-d272-41b7-8e48-cfa64ab3eab8.png",
+        "prompt_file": "research/concept-prompts.json",
+        "prompt_id": "seed-islands",
+        "reference_image": "app/assets/images/keyframes/end.webp",
+        "reference_sha256": "a2f61662f68ffff9d6ac8d8f9c02d428c1b1b3df36567602b7b90deb45185597"
+      },
+      "derivation": [
+        {
+          "operation": "bit-exact copy",
+          "original_modified": false
+        }
+      ],
+      "license": {
+        "status": "本轮内置 image_gen 生成的概念视觉，可用于本项目本地展示；未授予第三方素材任何新的 CC 许可。",
+        "third_party_cc_license_asserted": false
+      }
+    },
+    {
+      "path": "app/assets/images/concepts/seed-islands.webp",
+      "sha256": "f397df93846d53c559d4c080d0bd06b2ee233562e0d9548295f009775ec2b64d",
+      "bytes": 374362,
+      "asset_id": "seed-islands",
+      "kind": "ai-concept-web-image",
+      "source": {
+        "path": "assets/images/concepts-source/seed-islands.png",
+        "sha256": "6dbf869b1dc1b823a96cd6ef393b460c0f78c9276fde4078d812c38c2d6a9a4e"
+      },
+      "derivation": [
+        {
+          "operation": "Pillow RGB conversion and WebP compression only",
+          "quality": 88,
+          "method": 6,
+          "resize": false,
+          "content_edit": false,
+          "width": 1672,
+          "height": 941
+        }
+      ],
+      "license": {
+        "status": "本轮内置 image_gen 生成的概念视觉，可用于本项目本地展示；未授予第三方素材任何新的 CC 许可。",
+        "third_party_cc_license_asserted": false
+      }
+    },
+    {
+      "path": "assets/images/concepts-source/pedal-city.png",
+      "sha256": "db45ea9cb265bb295d4078acd0da3b84ca5357cd65a932c28161085e6c129dea",
+      "bytes": 3030554,
+      "asset_id": "pedal-city",
+      "kind": "ai-concept-original",
+      "source": {
+        "type": "built-in image_gen output",
+        "file_name": "exec-fff09c67-6564-42a3-a24b-b8347eb2c3b0.png",
+        "prompt_file": "research/concept-prompts.json",
+        "prompt_id": "pedal-city",
+        "reference_image": "app/assets/images/keyframes/end.webp",
+        "reference_sha256": "a2f61662f68ffff9d6ac8d8f9c02d428c1b1b3df36567602b7b90deb45185597"
+      },
+      "derivation": [
+        {
+          "operation": "bit-exact copy",
+          "original_modified": false
+        }
+      ],
+      "license": {
+        "status": "本轮内置 image_gen 生成的概念视觉，可用于本项目本地展示；未授予第三方素材任何新的 CC 许可。",
+        "third_party_cc_license_asserted": false
+      }
+    },
+    {
+      "path": "app/assets/images/concepts/pedal-city.webp",
+      "sha256": "87ce1d5fc6a90c627d20ceb9ef15ced2f689e2943a0b60952a0cf2ce4e78a473",
+      "bytes": 485668,
+      "asset_id": "pedal-city",
+      "kind": "ai-concept-web-image",
+      "source": {
+        "path": "assets/images/concepts-source/pedal-city.png",
+        "sha256": "db45ea9cb265bb295d4078acd0da3b84ca5357cd65a932c28161085e6c129dea"
+      },
+      "derivation": [
+        {
+          "operation": "Pillow RGB conversion and WebP compression only",
+          "quality": 88,
+          "method": 6,
+          "resize": false,
+          "content_edit": false,
+          "width": 1672,
+          "height": 941
+        }
+      ],
+      "license": {
+        "status": "本轮内置 image_gen 生成的概念视觉，可用于本项目本地展示；未授予第三方素材任何新的 CC 许可。",
+        "third_party_cc_license_asserted": false
+      }
+    },
+    {
+      "path": "assets/images/concepts-source/miniature-bay.png",
+      "sha256": "a965b0e84ed2c1b8f8a9e02ab8b55eb12695a71e3383171245b2db184fa55447",
+      "bytes": 3353819,
+      "asset_id": "miniature-bay",
+      "kind": "ai-concept-original",
+      "source": {
+        "type": "built-in image_gen output",
+        "file_name": "exec-21742601-0c67-4a7d-8109-dc79da4cb101.png",
+        "prompt_file": "research/concept-prompts.json",
+        "prompt_id": "miniature-bay",
+        "reference_image": "app/assets/images/keyframes/end.webp",
+        "reference_sha256": "a2f61662f68ffff9d6ac8d8f9c02d428c1b1b3df36567602b7b90deb45185597"
+      },
+      "derivation": [
+        {
+          "operation": "bit-exact copy",
+          "original_modified": false
+        }
+      ],
+      "license": {
+        "status": "本轮内置 image_gen 生成的概念视觉，可用于本项目本地展示；未授予第三方素材任何新的 CC 许可。",
+        "third_party_cc_license_asserted": false
+      }
+    },
+    {
+      "path": "app/assets/images/concepts/miniature-bay.webp",
+      "sha256": "26483f847db90bc177e0633ad3b4d121fe6a7c2077e96aac8b5f1ea78253d8b1",
+      "bytes": 541394,
+      "asset_id": "miniature-bay",
+      "kind": "ai-concept-web-image",
+      "source": {
+        "path": "assets/images/concepts-source/miniature-bay.png",
+        "sha256": "a965b0e84ed2c1b8f8a9e02ab8b55eb12695a71e3383171245b2db184fa55447"
+      },
+      "derivation": [
+        {
+          "operation": "Pillow RGB conversion and WebP compression only",
+          "quality": 88,
+          "method": 6,
+          "resize": false,
+          "content_edit": false,
+          "width": 1672,
+          "height": 941
+        }
+      ],
+      "license": {
+        "status": "本轮内置 image_gen 生成的概念视觉，可用于本项目本地展示；未授予第三方素材任何新的 CC 许可。",
+        "third_party_cc_license_asserted": false
+      }
+    },
+    {
+      "path": "assets/images/concepts-source/seasonal-gate.png",
+      "sha256": "a80ef9a8512d22a2edbc6ef1e0ae63e480e922698aad744e6e7ebdde6a9a7787",
+      "bytes": 3626796,
+      "asset_id": "seasonal-gate",
+      "kind": "ai-concept-original",
+      "source": {
+        "type": "built-in image_gen output",
+        "file_name": "exec-b0bcd183-9916-4bae-8ac5-e369678c49cc.png",
+        "prompt_file": "research/concept-prompts.json",
+        "prompt_id": "seasonal-gate",
+        "reference_image": "app/assets/images/keyframes/end.webp",
+        "reference_sha256": "a2f61662f68ffff9d6ac8d8f9c02d428c1b1b3df36567602b7b90deb45185597"
+      },
+      "derivation": [
+        {
+          "operation": "bit-exact copy",
+          "original_modified": false
+        }
+      ],
+      "license": {
+        "status": "本轮内置 image_gen 生成的概念视觉，可用于本项目本地展示；未授予第三方素材任何新的 CC 许可。",
+        "third_party_cc_license_asserted": false
+      }
+    },
+    {
+      "path": "app/assets/images/concepts/seasonal-gate.webp",
+      "sha256": "2eecf4fc77ba307effb6ac81ff9badb5e1dde44d54fe8cfe1e1df0f12cfcd9ef",
+      "bytes": 634332,
+      "asset_id": "seasonal-gate",
+      "kind": "ai-concept-web-image",
+      "source": {
+        "path": "assets/images/concepts-source/seasonal-gate.png",
+        "sha256": "a80ef9a8512d22a2edbc6ef1e0ae63e480e922698aad744e6e7ebdde6a9a7787"
+      },
+      "derivation": [
+        {
+          "operation": "Pillow RGB conversion and WebP compression only",
+          "quality": 88,
+          "method": 6,
+          "resize": false,
+          "content_edit": false,
+          "width": 1672,
+          "height": 941
+        }
+      ],
+      "license": {
+        "status": "本轮内置 image_gen 生成的概念视觉，可用于本项目本地展示；未授予第三方素材任何新的 CC 许可。",
+        "third_party_cc_license_asserted": false
+      }
+    },
+    {
+      "path": "research/concept-prompts.json",
+      "sha256": "b9b658d1eba8643ce1b4b93620d9e1f871f95fe428951aa95aa6c2e2c7dea42e",
+      "bytes": 24000,
+      "kind": "concept-generation-record",
+      "source": {
+        "type": "exact submitted prompts and actual returned file names"
+      },
+      "derivation": [
+        {
+          "operation": "record tool inputs and visual review; no video generation"
+        },
+        {
+          "operation": "Current motion-trial status appended for coastal-scroll; original image-generation prompt text retained"
+        }
+      ],
+      "license": {
+        "status": "本轮内置 image_gen 生成的概念视觉，可用于本项目本地展示；未授予第三方素材任何新的 CC 许可。",
+        "third_party_cc_license_asserted": false
+      },
+      "local_archive_sha256_before_publication": "eb5ec0552867ba86771ac07daaebde3cb9e0ab93d6ae1dcd5a0f35517d8c3b86"
+    },
+    {
+      "path": "assets/images/cover.webp",
+      "sha256": "a2f61662f68ffff9d6ac8d8f9c02d428c1b1b3df36567602b7b90deb45185597",
+      "bytes": 543604,
+      "source": {
+        "path": "app/assets/images/keyframes/end.webp",
+        "sha256": "a2f61662f68ffff9d6ac8d8f9c02d428c1b1b3df36567602b7b90deb45185597"
+      },
+      "derivation": [
+        {
+          "operation": "bit-exact copy for project index cover",
+          "original_modified": false
+        }
+      ],
+      "kind": "index-cover-from-generated-keyframe",
+      "license": {
+        "status": "本轮AI关键帧派生；非第三方原视频截图。",
+        "third_party_cc_license_asserted": false
+      }
+    },
+    {
+      "path": "assets/images/local-review/concept-contact-sheet.jpg",
+      "sha256": "77839dacbe24b378b025f3b2be63b48cbc5c8b3ea91914c444c6b4548bba58f5",
+      "bytes": 877422,
+      "width": 1800,
+      "height": 1150,
+      "kind": "analysis-contact-sheet",
+      "source": {
+        "type": "本轮七张概念图的缩略分析排版",
+        "url": null
+      },
+      "derivation": [
+        {
+          "operation": "Pillow thumbnail grid, no scene editing",
+          "ai_generation": false
+        }
+      ],
+      "license": {
+        "status": "本项目本地网页与本轮素材的研究展示记录。",
+        "third_party_cc_license_asserted": false
+      }
+    },
+    {
+      "path": "assets/images/local-review/concept-detail-1280.jpg",
+      "sha256": "e4e6c29d7fb9953f7ff6994b5a22638b79147196f9bf2b2da1d0d38170dfc240",
+      "bytes": 103175,
+      "width": 1280,
+      "height": 900,
+      "kind": "local-browser-screenshot",
+      "source": {
+        "type": "Cua浏览器截图",
+        "url": "http://127.0.0.1:4333/"
+      },
+      "derivation": [
+        {
+          "operation": "Browser screenshot JPEG",
+          "ai_generation": false
+        }
+      ],
+      "license": {
+        "status": "本项目本地网页与本轮素材的研究展示记录。",
+        "third_party_cc_license_asserted": false
+      }
+    },
+    {
+      "path": "assets/images/local-review/concepts-desktop-1280.jpg",
+      "sha256": "f59860e7ce9ea3d06c86c21a518dec00993e3d7994ae7ed4e42e2c73c2514efc",
+      "bytes": 122743,
+      "width": 1265,
+      "height": 889,
+      "kind": "local-browser-screenshot",
+      "source": {
+        "type": "Cua浏览器截图",
+        "url": "http://127.0.0.1:4333/"
+      },
+      "derivation": [
+        {
+          "operation": "Browser screenshot JPEG",
+          "ai_generation": false
+        }
+      ],
+      "license": {
+        "status": "本项目本地网页与本轮素材的研究展示记录。",
+        "third_party_cc_license_asserted": false
+      }
+    },
+    {
+      "path": "assets/images/local-review/desktop-1280.jpg",
+      "sha256": "f492b2cda9ca7240a6ad0b1ac37d8a4c018afe35cfe5385955b31683b04758c4",
+      "bytes": 134914,
+      "width": 1265,
+      "height": 889,
+      "kind": "local-browser-screenshot",
+      "source": {
+        "type": "Cua浏览器截图",
+        "url": "http://127.0.0.1:4333/"
+      },
+      "derivation": [
+        {
+          "operation": "Browser screenshot JPEG",
+          "ai_generation": false
+        }
+      ],
+      "license": {
+        "status": "本项目本地网页与本轮素材的研究展示记录。",
+        "third_party_cc_license_asserted": false
+      }
+    },
+    {
+      "path": "assets/images/local-review/mobile-concept-390.jpg",
+      "sha256": "5fc5989d62a8fb29365bd2ec3d1d5062dc8da2009fa2e7640c2687eb9c9bb2bd",
+      "bytes": 47037,
+      "width": 390,
+      "height": 844,
+      "kind": "local-browser-screenshot",
+      "source": {
+        "type": "Cua浏览器截图",
+        "url": "http://127.0.0.1:4333/"
+      },
+      "derivation": [
+        {
+          "operation": "Browser screenshot JPEG",
+          "ai_generation": false
+        }
+      ],
+      "license": {
+        "status": "本项目本地网页与本轮素材的研究展示记录。",
+        "third_party_cc_license_asserted": false
+      }
+    },
+    {
+      "path": "assets/images/local-review/mobile-final-390.jpg",
+      "sha256": "923e54e07c4fb180b44660d788ac06f58d2533e2a069e1ac1f6e002b11f8224b",
+      "bytes": 50411,
+      "width": 375,
+      "height": 812,
+      "kind": "local-browser-screenshot",
+      "source": {
+        "type": "Cua浏览器截图",
+        "url": "http://127.0.0.1:4333/"
+      },
+      "derivation": [
+        {
+          "operation": "Browser screenshot JPEG",
+          "ai_generation": false
+        }
+      ],
+      "license": {
+        "status": "本项目本地网页与本轮素材的研究展示记录。",
+        "third_party_cc_license_asserted": false
+      }
+    },
+    {
+      "path": "assets/images/overview-v1.png",
+      "sha256": "313a0485675e560b354237c3354725eb2bd8cd3de6dee13cbc692c628d61770f",
+      "bytes": 2961330,
+      "width": 1024,
+      "height": 1536,
+      "kind": "generated-research-infographic",
+      "source": {
+        "path": null,
+        "generation_record": "research/overview-v1-generation.json"
+      },
+      "derivation": [
+        {
+          "operation": "image_gen initial generation plus targeted factual correction",
+          "original_modified": false
+        }
+      ],
+      "license": {
+        "status": "Project research infographic made from archived generated references; product proposals remain unverified.",
+        "third_party_cc_license_asserted": false
+      }
+    },
+    {
+      "path": "app/assets/images/overview-v1.png",
+      "sha256": "313a0485675e560b354237c3354725eb2bd8cd3de6dee13cbc692c628d61770f",
+      "bytes": 2961330,
+      "width": 1024,
+      "height": 1536,
+      "kind": "web-download-copy",
+      "source": {
+        "path": "assets/images/overview-v1.png",
+        "generation_record": "research/overview-v1-generation.json"
+      },
+      "derivation": [
+        {
+          "operation": "bit-exact copy",
+          "original_modified": false
+        }
+      ],
+      "license": {
+        "status": "Project research infographic made from archived generated references; product proposals remain unverified.",
+        "third_party_cc_license_asserted": false
+      }
+    },
+    {
+      "path": "app/assets/images/overview-v1.webp",
+      "sha256": "8313099a11f3287cd0fe04578149902a607144871b5ddc9d131c3434f3dc0c34",
+      "bytes": 2288698,
+      "width": 1024,
+      "height": 1536,
+      "kind": "web-display-derivative",
+      "source": {
+        "path": "assets/images/overview-v1.png",
+        "generation_record": "research/overview-v1-generation.json"
+      },
+      "derivation": [
+        {
+          "operation": "lossless WebP encoding; decoded pixels unchanged",
+          "original_modified": false
+        }
+      ],
+      "license": {
+        "status": "Project research infographic made from archived generated references; product proposals remain unverified.",
+        "third_party_cc_license_asserted": false
+      }
+    },
+    {
+      "path": "app/assets/videos/coastal-scroll-seedance2-v1.mp4",
+      "sha256": "9f44bba09a6942aad90334ae92130bfb088485350969ade8eb88305deb3a35b2",
+      "bytes": 6492441,
+      "kind": "web-video-copy",
+      "source": {
+        "task_id": 1044756,
+        "model": "Seedance 2.0",
+        "record": "research/coastal-scroll-seedance2-v1-delivery.json"
+      },
+      "derivation": [
+        {
+          "operation": "Bit-exact archive/copy"
+        }
+      ],
+      "license": {
+        "status": "Project generated trial and research evidence; third-party service UI, where visible, retains its own rights; no new third-party license asserted",
+        "third_party_cc_license_asserted": false
+      }
+    },
+    {
+      "path": "assets/videos/coastal-scroll-trial-v1/video_20261031102122.mp4",
+      "sha256": "9f44bba09a6942aad90334ae92130bfb088485350969ade8eb88305deb3a35b2",
+      "bytes": 6492441,
+      "kind": "ai-video-original",
+      "source": {
+        "task_id": 1044756,
+        "model": "Seedance 2.0",
+        "record": "research/coastal-scroll-seedance2-v1-delivery.json"
+      },
+      "derivation": [
+        {
+          "operation": "Bit-exact archive/copy"
+        }
+      ],
+      "license": {
+        "status": "Project generated trial and research evidence; third-party service UI, where visible, retains its own rights; no new third-party license asserted",
+        "third_party_cc_license_asserted": false
+      }
+    },
+    {
+      "path": "app/assets/images/posters/coastal-scroll-seedance2-v1.jpg",
+      "sha256": "679a950a05b055c0b25a5e54d20427778ecdb33f42e0e0879c03d7464608f765",
+      "bytes": 464487,
+      "kind": "video-frame-extract",
+      "source": {
+        "task_id": 1044756,
+        "model": "Seedance 2.0",
+        "record": "research/coastal-scroll-seedance2-v1-delivery.json"
+      },
+      "derivation": [
+        {
+          "operation": "Actual video frame extraction; analytical crops/labels only, no generated imagery"
+        }
+      ],
+      "license": {
+        "status": "Project generated trial and research evidence; third-party service UI, where visible, retains its own rights; no new third-party license asserted",
+        "third_party_cc_license_asserted": false
+      }
+    },
+    {
+      "path": "assets/images/local-review/seedance2-trial-ui.jpg",
+      "sha256": "52f6396cd308216d4848b209e0decd6de00bc36506b2d060ff2e53cb38b7df7c",
+      "bytes": 164992,
+      "kind": "browser-workflow-screenshot",
+      "source": {
+        "type": "Actual local browser preview of the archived Seedance motion trial"
+      },
+      "derivation": [
+        {
+          "operation": "Browser capture"
+        }
+      ],
+      "license": {
+        "status": "Project generated trial and research evidence; third-party service UI, where visible, retains its own rights; no new third-party license asserted",
+        "third_party_cc_license_asserted": false
+      }
+    },
+    {
+      "path": "assets/images/local-review/coastal-scroll-seedance2-v1/first-second-contact.jpg",
+      "sha256": "93a286c6dbb7ecf47c6101798a4b8c63c7263ea28b1cc85bb7984c939ff2e3fb",
+      "bytes": 748531,
+      "kind": "analysis-contact-sheet",
+      "source": {
+        "task_id": 1044756,
+        "model": "Seedance 2.0",
+        "record": "research/coastal-scroll-seedance2-v1-delivery.json"
+      },
+      "derivation": [
+        {
+          "operation": "Actual video frame extraction; analytical crops/labels only, no generated imagery"
+        }
+      ],
+      "license": {
+        "status": "Project generated trial and research evidence; third-party service UI, where visible, retains its own rights; no new third-party license asserted",
+        "third_party_cc_license_asserted": false
+      }
+    },
+    {
+      "path": "assets/images/local-review/coastal-scroll-seedance2-v1/frame-000.jpg",
+      "sha256": "11cc90bd578857b3a8f9dab9065857d30da410366319385bbf05d07d0e879067",
+      "bytes": 550912,
+      "kind": "video-frame-extract",
+      "source": {
+        "task_id": 1044756,
+        "model": "Seedance 2.0",
+        "record": "research/coastal-scroll-seedance2-v1-delivery.json"
+      },
+      "derivation": [
+        {
+          "operation": "Actual video frame extraction; analytical crops/labels only, no generated imagery"
+        }
+      ],
+      "license": {
+        "status": "Project generated trial and research evidence; third-party service UI, where visible, retains its own rights; no new third-party license asserted",
+        "third_party_cc_license_asserted": false
+      }
+    },
+    {
+      "path": "assets/images/local-review/coastal-scroll-seedance2-v1/frame-048.jpg",
+      "sha256": "421e9d9b41916bc8b1c91b3c39723ff094062b7f1423f81d1974dec72450dd8c",
+      "bytes": 426672,
+      "kind": "video-frame-extract",
+      "source": {
+        "task_id": 1044756,
+        "model": "Seedance 2.0",
+        "record": "research/coastal-scroll-seedance2-v1-delivery.json"
+      },
+      "derivation": [
+        {
+          "operation": "Actual video frame extraction; analytical crops/labels only, no generated imagery"
+        }
+      ],
+      "license": {
+        "status": "Project generated trial and research evidence; third-party service UI, where visible, retains its own rights; no new third-party license asserted",
+        "third_party_cc_license_asserted": false
+      }
+    },
+    {
+      "path": "assets/images/local-review/coastal-scroll-seedance2-v1/frame-120.jpg",
+      "sha256": "a5adfe1b5adab431039cb66dc24fe6f6004a59aebe7b2f06c0a79d84833f5865",
+      "bytes": 424947,
+      "kind": "video-frame-extract",
+      "source": {
+        "task_id": 1044756,
+        "model": "Seedance 2.0",
+        "record": "research/coastal-scroll-seedance2-v1-delivery.json"
+      },
+      "derivation": [
+        {
+          "operation": "Actual video frame extraction; analytical crops/labels only, no generated imagery"
+        }
+      ],
+      "license": {
+        "status": "Project generated trial and research evidence; third-party service UI, where visible, retains its own rights; no new third-party license asserted",
+        "third_party_cc_license_asserted": false
+      }
+    },
+    {
+      "path": "assets/images/local-review/coastal-scroll-seedance2-v1/timeline.jpg",
+      "sha256": "ac623af621688a6600ba49d26dbc3f1ed17ada5acb0700548b262a4359e3da6a",
+      "bytes": 1487687,
+      "kind": "analysis-contact-sheet",
+      "source": {
+        "task_id": 1044756,
+        "model": "Seedance 2.0",
+        "record": "research/coastal-scroll-seedance2-v1-delivery.json"
+      },
+      "derivation": [
+        {
+          "operation": "Actual video frame extraction; analytical crops/labels only, no generated imagery"
+        }
+      ],
+      "license": {
+        "status": "Project generated trial and research evidence; third-party service UI, where visible, retains its own rights; no new third-party license asserted",
+        "third_party_cc_license_asserted": false
+      }
+    },
+    {
+      "path": "app/assets/videos/coastal-scroll-kling4-v1.mp4",
+      "sha256": "e0126d366d4527e67504af7efccc9fe397753c212c5cbadfd3677b02f2fc5347",
+      "bytes": 17626421,
+      "kind": "web-video-copy",
+      "source": {
+        "task_id": 1044781,
+        "model": "Kling 4.0",
+        "record": "research/coastal-scroll-kling4-v1-delivery.json"
+      },
+      "derivation": [
+        {
+          "operation": "Bit-exact archive/copy, no retiming or image manipulation"
+        }
+      ],
+      "license": {
+        "status": "Project generated trial and research evidence; third-party UI retains its rights; no new third-party license asserted",
+        "third_party_cc_license_asserted": false
+      }
+    },
+    {
+      "path": "assets/videos/coastal-scroll-kling4-v1/video_20261031110501.mp4",
+      "sha256": "e0126d366d4527e67504af7efccc9fe397753c212c5cbadfd3677b02f2fc5347",
+      "bytes": 17626421,
+      "kind": "ai-video-original",
+      "source": {
+        "task_id": 1044781,
+        "model": "Kling 4.0",
+        "record": "research/coastal-scroll-kling4-v1-delivery.json"
+      },
+      "derivation": [
+        {
+          "operation": "Bit-exact archive/copy, no retiming or image manipulation"
+        }
+      ],
+      "license": {
+        "status": "Project generated trial and research evidence; third-party UI retains its rights; no new third-party license asserted",
+        "third_party_cc_license_asserted": false
+      }
+    },
+    {
+      "path": "app/assets/images/posters/coastal-scroll-kling4-v1.jpg",
+      "sha256": "c6c1b221e6c395e2562ba7753ced8435cdace6a439149a39c491fe2157de0f19",
+      "bytes": 442855,
+      "kind": "video-frame-extract",
+      "source": {
+        "task_id": 1044781,
+        "model": "Kling 4.0",
+        "record": "research/coastal-scroll-kling4-v1-delivery.json"
+      },
+      "derivation": [
+        {
+          "operation": "Actual video frame extraction; analytical crops and labels only, no generated imagery"
+        }
+      ],
+      "license": {
+        "status": "Project generated trial and research evidence; third-party UI retains its rights; no new third-party license asserted",
+        "third_party_cc_license_asserted": false
+      }
+    },
+    {
+      "path": "assets/images/local-review/kling4-trial-ui.jpg",
+      "sha256": "491380a4306fc96d991a4250c8a52eb3708bf92dc85094d4eae073a1d5af75d3",
+      "bytes": 108537,
+      "kind": "browser-workflow-screenshot",
+      "source": {
+        "task_id": 1044781,
+        "model": "Kling 4.0",
+        "record": "research/coastal-scroll-kling4-v1-delivery.json"
+      },
+      "derivation": [
+        {
+          "operation": "Actual local browser screenshot"
+        }
+      ],
+      "license": {
+        "status": "Project generated trial and research evidence; third-party UI retains its rights; no new third-party license asserted",
+        "third_party_cc_license_asserted": false
+      }
+    },
+    {
+      "path": "assets/images/local-review/coastal-scroll-kling4-v1/first-second-contact.jpg",
+      "sha256": "ad36e51e7aced16771339ba48572844d0aa80656376f7f2948d31b1ec1c2551d",
+      "bytes": 814362,
+      "kind": "analysis-contact-sheet",
+      "source": {
+        "task_id": 1044781,
+        "model": "Kling 4.0",
+        "record": "research/coastal-scroll-kling4-v1-delivery.json"
+      },
+      "derivation": [
+        {
+          "operation": "Actual video frame extraction; analytical crops and labels only, no generated imagery"
+        }
+      ],
+      "license": {
+        "status": "Project generated trial and research evidence; third-party UI retains its rights; no new third-party license asserted",
+        "third_party_cc_license_asserted": false
+      }
+    },
+    {
+      "path": "assets/images/local-review/coastal-scroll-kling4-v1/frame-000.jpg",
+      "sha256": "fc305ba4a787f044d634f712e63362c51924064c92fffb5c2c469c72cf43577f",
+      "bytes": 524903,
+      "kind": "video-frame-extract",
+      "source": {
+        "task_id": 1044781,
+        "model": "Kling 4.0",
+        "record": "research/coastal-scroll-kling4-v1-delivery.json"
+      },
+      "derivation": [
+        {
+          "operation": "Actual video frame extraction; analytical crops and labels only, no generated imagery"
+        }
+      ],
+      "license": {
+        "status": "Project generated trial and research evidence; third-party UI retains its rights; no new third-party license asserted",
+        "third_party_cc_license_asserted": false
+      }
+    },
+    {
+      "path": "assets/images/local-review/coastal-scroll-kling4-v1/frame-048.jpg",
+      "sha256": "40b4aebb63d033814488d51e46e97769602455cb0ddd91edcc8b0ab604a14b1b",
+      "bytes": 496683,
+      "kind": "video-frame-extract",
+      "source": {
+        "task_id": 1044781,
+        "model": "Kling 4.0",
+        "record": "research/coastal-scroll-kling4-v1-delivery.json"
+      },
+      "derivation": [
+        {
+          "operation": "Actual video frame extraction; analytical crops and labels only, no generated imagery"
+        }
+      ],
+      "license": {
+        "status": "Project generated trial and research evidence; third-party UI retains its rights; no new third-party license asserted",
+        "third_party_cc_license_asserted": false
+      }
+    },
+    {
+      "path": "assets/images/local-review/coastal-scroll-kling4-v1/frame-120.jpg",
+      "sha256": "bb0c46a7e2dbfca2df6923944004e0d255f698ef188dbf3ff88f6ec92bef33b4",
+      "bytes": 465195,
+      "kind": "video-frame-extract",
+      "source": {
+        "task_id": 1044781,
+        "model": "Kling 4.0",
+        "record": "research/coastal-scroll-kling4-v1-delivery.json"
+      },
+      "derivation": [
+        {
+          "operation": "Actual video frame extraction; analytical crops and labels only, no generated imagery"
+        }
+      ],
+      "license": {
+        "status": "Project generated trial and research evidence; third-party UI retains its rights; no new third-party license asserted",
+        "third_party_cc_license_asserted": false
+      }
+    },
+    {
+      "path": "assets/images/local-review/coastal-scroll-kling4-v1/timeline.jpg",
+      "sha256": "ebce4b50c7c7083067c00291ee4d998d38e354920bab73dd9d620917282576ee",
+      "bytes": 1753055,
+      "kind": "analysis-contact-sheet",
+      "source": {
+        "task_id": 1044781,
+        "model": "Kling 4.0",
+        "record": "research/coastal-scroll-kling4-v1-delivery.json"
+      },
+      "derivation": [
+        {
+          "operation": "Actual video frame extraction; analytical crops and labels only, no generated imagery"
+        }
+      ],
+      "license": {
+        "status": "Project generated trial and research evidence; third-party UI retains its rights; no new third-party license asserted",
+        "third_party_cc_license_asserted": false
+      }
+    },
+    {
+      "path": "assets/videos/coastal-scroll-kling4-b-v1/video_20261031120640.mp4",
+      "sha256": "f4fb6888d3bd653692637382fe9acc8a293f033c196e07b95e21599db7c7cee2",
+      "bytes": 13358263,
+      "kind": "ai-video-original",
+      "source": {
+        "provider": "ChatArt",
+        "model": "Kling 4.0",
+        "task_id": 1044794,
+        "actual_cost_credits": 180,
+        "record": "research/coastal-scroll-kling4-b-v1-delivery.json",
+        "first_frame": {
+          "path": "assets/images/coastal-scroll-splice-v1/a-last-frame.png",
+          "sha256": "2cb19b90bb23465b461611dd248b4caa39496c1d703fca8f2e0d10d1c2905157"
+        },
+        "prompt": {
+          "path": "research/coastal-scroll-splice-v1-b-prompt.txt",
+          "sha256": "e3f54a571a30ded76804c65776e073d7301a743af97176f0e2eee6199428dd1e"
+        },
+        "ending_frame_supplied": false,
+        "third_party_source_video_supplied": false,
+        "metadata": {
+          "width": 1284,
+          "height": 724,
+          "fps": 24,
+          "frames": 145,
+          "duration_seconds": 6.041667
+        }
+      },
+      "derivation": [
+        {
+          "operation": "Native downloaded AI output retained unchanged. B uses the actual A frame 120 as its sole first-frame target; this does not guarantee exact motion inheritance."
+        }
+      ],
+      "license": {
+        "status": "Generated project research material; source-input rights and service terms remain applicable. This manifest grants no new third-party license.",
+        "third_party_cc_license_asserted": false
+      }
+    },
+    {
+      "path": "app/assets/videos/coastal-scroll-kling4-b-v1.mp4",
+      "sha256": "f4fb6888d3bd653692637382fe9acc8a293f033c196e07b95e21599db7c7cee2",
+      "bytes": 13358263,
+      "kind": "ai-video-web-copy",
+      "source": {
+        "task_id": 1044794,
+        "path": "assets/videos/coastal-scroll-kling4-b-v1/video_20261031120640.mp4",
+        "sha256": "f4fb6888d3bd653692637382fe9acc8a293f033c196e07b95e21599db7c7cee2"
+      },
+      "derivation": [
+        {
+          "operation": "Byte-identical copy of the native B output; no new generation and no additional source-task fee."
+        }
+      ],
+      "license": {
+        "status": "Generated project research material; source-input rights and service terms remain applicable. This manifest grants no new third-party license.",
+        "third_party_cc_license_asserted": false
+      }
+    },
+    {
+      "path": "app/assets/images/posters/coastal-scroll-kling4-b-v1.jpg",
+      "sha256": "c4797f86fcf0624fc4d88b58fe33afecba26b72ad69e0ee884f67dbbe1c1e237",
+      "bytes": 397848,
+      "kind": "video-poster",
+      "source": {
+        "task_id": 1044794,
+        "path": "assets/videos/coastal-scroll-kling4-b-v1/video_20261031120640.mp4",
+        "sha256": "f4fb6888d3bd653692637382fe9acc8a293f033c196e07b95e21599db7c7cee2",
+        "exact_extraction_timestamp": "not separately recorded"
+      },
+      "derivation": [
+        {
+          "operation": "Decoded video still encoded as a JPEG poster; no new AI generation."
+        }
+      ],
+      "license": {
+        "status": "Generated project research material; source-input rights and service terms remain applicable. This manifest grants no new third-party license.",
+        "third_party_cc_license_asserted": false
+      },
+      "image_metadata": {
+        "format": "JPEG",
+        "width": 1284,
+        "height": 724
+      }
+    },
+    {
+      "path": "assets/images/coastal-scroll-splice-v1/a-last-frame.png",
+      "sha256": "2cb19b90bb23465b461611dd248b4caa39496c1d703fca8f2e0d10d1c2905157",
+      "bytes": 1895136,
+      "kind": "video-frame-reference",
+      "source": {
+        "task_id": 1044781,
+        "path": "assets/videos/coastal-scroll-kling4-v1/video_20261031110501.mp4",
+        "sha256": "e0126d366d4527e67504af7efccc9fe397753c212c5cbadfd3677b02f2fc5347",
+        "frame_index": 120,
+        "frame_pts_seconds": 5.0,
+        "used_as_first_frame_for_task": 1044794
+      },
+      "derivation": [
+        {
+          "operation": "Actual final frame decoded from source A to PNG; source A was not modified. No ending-frame target was supplied for B."
+        }
+      ],
+      "license": {
+        "status": "Generated project research material; source-input rights and service terms remain applicable. This manifest grants no new third-party license.",
+        "third_party_cc_license_asserted": false
+      },
+      "image_metadata": {
+        "format": "PNG",
+        "width": 1284,
+        "height": 724
+      }
+    },
+    {
+      "path": "assets/images/coastal-scroll-splice-v1/actual-seam.jpg",
+      "sha256": "50b87192c87598e809dd0ca00916b17e359965af93b14576cf53c358b8467116",
+      "bytes": 1662384,
+      "kind": "analysis-contact-sheet",
+      "source": {
+        "source_task_ids": [
+          1044781,
+          1044794
+        ],
+        "path": "assets/videos/coastal-scroll-splice-v1/coastal-scroll-splice-v1.mp4",
+        "sha256": "bacabec47e61b6ee5a812e44dd0f7dc82302981116583b4888f301b038b6fa86",
+        "seam_time_seconds": 5.0,
+        "record": "research/coastal-scroll-splice-v1-edit.json"
+      },
+      "derivation": [
+        {
+          "operation": "Decoded frames around the actual final edit seam arranged with analytical labels. This is an analysis layout, not a browser screenshot or a newly generated image."
+        }
+      ],
+      "license": {
+        "status": "Generated project research material; source-input rights and service terms remain applicable. This manifest grants no new third-party license.",
+        "third_party_cc_license_asserted": false
+      },
+      "image_metadata": {
+        "format": "JPEG",
+        "width": 1920,
+        "height": 1628
+      }
+    },
+    {
+      "path": "assets/images/local-review/coastal-scroll-kling4-b-v1/frame-000.jpg",
+      "sha256": "c4797f86fcf0624fc4d88b58fe33afecba26b72ad69e0ee884f67dbbe1c1e237",
+      "bytes": 397848,
+      "kind": "video-frame-analysis",
+      "source": {
+        "task_id": 1044794,
+        "path": "assets/videos/coastal-scroll-kling4-b-v1/video_20261031120640.mp4",
+        "sha256": "f4fb6888d3bd653692637382fe9acc8a293f033c196e07b95e21599db7c7cee2",
+        "frame_index": 0,
+        "frame_pts_seconds": 0.0
+      },
+      "derivation": [
+        {
+          "operation": "Actual B frame decoded and JPEG encoded for analysis; no source modification or new AI generation."
+        }
+      ],
+      "license": {
+        "status": "Generated project research material; source-input rights and service terms remain applicable. This manifest grants no new third-party license.",
+        "third_party_cc_license_asserted": false
+      },
+      "image_metadata": {
+        "format": "JPEG",
+        "width": 1284,
+        "height": 724
+      }
+    },
+    {
+      "path": "assets/images/local-review/coastal-scroll-kling4-b-v1/frame-144.jpg",
+      "sha256": "713c2c988d9c98198bbbae450350a9c8102bc0ead31aa2abca88a73bdf6b822a",
+      "bytes": 398740,
+      "kind": "video-frame-analysis",
+      "source": {
+        "task_id": 1044794,
+        "path": "assets/videos/coastal-scroll-kling4-b-v1/video_20261031120640.mp4",
+        "sha256": "f4fb6888d3bd653692637382fe9acc8a293f033c196e07b95e21599db7c7cee2",
+        "frame_index": 144,
+        "frame_pts_seconds": 6.0
+      },
+      "derivation": [
+        {
+          "operation": "Actual B frame decoded and JPEG encoded for analysis; no source modification or new AI generation."
+        }
+      ],
+      "license": {
+        "status": "Generated project research material; source-input rights and service terms remain applicable. This manifest grants no new third-party license.",
+        "third_party_cc_license_asserted": false
+      },
+      "image_metadata": {
+        "format": "JPEG",
+        "width": 1284,
+        "height": 724
+      }
+    },
+    {
+      "path": "assets/images/local-review/coastal-scroll-kling4-b-v1/opening-dense.jpg",
+      "sha256": "edea9347a46ad2317921961f5f18f28b83739ee876d16874a87f0ab8f83fe582",
+      "bytes": 1069811,
+      "kind": "analysis-contact-sheet",
+      "source": {
+        "task_id": 1044794,
+        "path": "assets/videos/coastal-scroll-kling4-b-v1/video_20261031120640.mp4",
+        "sha256": "f4fb6888d3bd653692637382fe9acc8a293f033c196e07b95e21599db7c7cee2",
+        "record": "research/coastal-scroll-kling4-b-v1-delivery.json"
+      },
+      "derivation": [
+        {
+          "operation": "Actual decoded B frames arranged with analytical time labels; an analysis layout, not a screenshot or new AI generation."
+        }
+      ],
+      "license": {
+        "status": "Generated project research material; source-input rights and service terms remain applicable. This manifest grants no new third-party license.",
+        "third_party_cc_license_asserted": false
+      },
+      "image_metadata": {
+        "format": "JPEG",
+        "width": 1920,
+        "height": 1185
+      }
+    },
+    {
+      "path": "assets/images/local-review/coastal-scroll-kling4-b-v1/timeline.jpg",
+      "sha256": "fb8a6fcedd44acab6b77494895312f1a1ce8c4aae645836c052bcb2f2440230a",
+      "bytes": 1079353,
+      "kind": "analysis-contact-sheet",
+      "source": {
+        "task_id": 1044794,
+        "path": "assets/videos/coastal-scroll-kling4-b-v1/video_20261031120640.mp4",
+        "sha256": "f4fb6888d3bd653692637382fe9acc8a293f033c196e07b95e21599db7c7cee2",
+        "record": "research/coastal-scroll-kling4-b-v1-delivery.json"
+      },
+      "derivation": [
+        {
+          "operation": "Actual decoded B frames arranged with analytical time labels; an analysis layout, not a screenshot or new AI generation."
+        }
+      ],
+      "license": {
+        "status": "Generated project research material; source-input rights and service terms remain applicable. This manifest grants no new third-party license.",
+        "third_party_cc_license_asserted": false
+      },
+      "image_metadata": {
+        "format": "JPEG",
+        "width": 2048,
+        "height": 1292
+      }
+    },
+    {
+      "path": "assets/images/local-review/coastal-scroll-kling4-b-v1/seam-a-end-b-start.jpg",
+      "sha256": "177a0aa9d8e36cd982575a278f27f6c5f6f2f704027b82948e63e44bc6ed911d",
+      "bytes": 717676,
+      "kind": "analysis-contact-sheet",
+      "source": {
+        "source_task_ids": [
+          1044781,
+          1044794
+        ],
+        "sources": [
+          {
+            "path": "assets/videos/coastal-scroll-kling4-v1/video_20261031110501.mp4",
+            "sha256": "e0126d366d4527e67504af7efccc9fe397753c212c5cbadfd3677b02f2fc5347"
+          },
+          {
+            "path": "assets/videos/coastal-scroll-kling4-b-v1/video_20261031120640.mp4",
+            "sha256": "f4fb6888d3bd653692637382fe9acc8a293f033c196e07b95e21599db7c7cee2"
+          }
+        ],
+        "record": "research/coastal-scroll-kling4-b-v1-delivery.json"
+      },
+      "derivation": [
+        {
+          "operation": "Actual source A ending and B opening frames compared; analytical crops/layout and labels only. Not an independent generated image."
+        }
+      ],
+      "license": {
+        "status": "Generated project research material; source-input rights and service terms remain applicable. This manifest grants no new third-party license.",
+        "third_party_cc_license_asserted": false
+      },
+      "image_metadata": {
+        "format": "JPEG",
+        "width": 2240,
+        "height": 574
+      }
+    },
+    {
+      "path": "assets/images/local-review/coastal-scroll-kling4-b-v1/seam-rider-close.jpg",
+      "sha256": "6659dc1b5658e451c64edd6ea72286c7a2ff4794b293936ae9b5268fd9c446ca",
+      "bytes": 629140,
+      "kind": "analysis-contact-sheet",
+      "source": {
+        "source_task_ids": [
+          1044781,
+          1044794
+        ],
+        "sources": [
+          {
+            "path": "assets/videos/coastal-scroll-kling4-v1/video_20261031110501.mp4",
+            "sha256": "e0126d366d4527e67504af7efccc9fe397753c212c5cbadfd3677b02f2fc5347"
+          },
+          {
+            "path": "assets/videos/coastal-scroll-kling4-b-v1/video_20261031120640.mp4",
+            "sha256": "f4fb6888d3bd653692637382fe9acc8a293f033c196e07b95e21599db7c7cee2"
+          }
+        ],
+        "record": "research/coastal-scroll-kling4-b-v1-delivery.json"
+      },
+      "derivation": [
+        {
+          "operation": "Actual source A ending and B opening frames compared; analytical crops/layout and labels only. Not an independent generated image."
+        }
+      ],
+      "license": {
+        "status": "Generated project research material; source-input rights and service terms remain applicable. This manifest grants no new third-party license.",
+        "third_party_cc_license_asserted": false
+      },
+      "image_metadata": {
+        "format": "JPEG",
+        "width": 2000,
+        "height": 770
+      }
+    },
+    {
+      "path": "assets/images/local-review/coastal-scroll-splice-v1/timeline.jpg",
+      "sha256": "760b3830c4b55bac40eb9d95fa81293b37245435afde4ed76a93a878829ca8ec",
+      "bytes": 1724825,
+      "kind": "analysis-contact-sheet",
+      "source": {
+        "source_task_ids": [
+          1044781,
+          1044794
+        ],
+        "path": "assets/videos/coastal-scroll-splice-v1/coastal-scroll-splice-v1.mp4",
+        "sha256": "bacabec47e61b6ee5a812e44dd0f7dc82302981116583b4888f301b038b6fa86",
+        "record": "research/coastal-scroll-splice-v1-edit.json"
+      },
+      "derivation": [
+        {
+          "operation": "Decoded frames from the actual edited 11.041667-second output arranged as a timeline; labels/layout only, no new AI generation."
+        }
+      ],
+      "license": {
+        "status": "Generated project research material; source-input rights and service terms remain applicable. This manifest grants no new third-party license.",
+        "third_party_cc_license_asserted": false
+      },
+      "image_metadata": {
+        "format": "JPEG",
+        "width": 1920,
+        "height": 1568
+      }
+    },
+    {
+      "path": "assets/videos/coastal-scroll-splice-v1/coastal-scroll-splice-v1.mp4",
+      "sha256": "bacabec47e61b6ee5a812e44dd0f7dc82302981116583b4888f301b038b6fa86",
+      "bytes": 11180757,
+      "kind": "editorial-derivative",
+      "source": {
+        "source_task_ids": [
+          1044781,
+          1044794
+        ],
+        "sources": [
+          {
+            "path": "assets/videos/coastal-scroll-kling4-v1/video_20261031110501.mp4",
+            "sha256": "e0126d366d4527e67504af7efccc9fe397753c212c5cbadfd3677b02f2fc5347"
+          },
+          {
+            "path": "assets/videos/coastal-scroll-kling4-b-v1/video_20261031120640.mp4",
+            "sha256": "f4fb6888d3bd653692637382fe9acc8a293f033c196e07b95e21599db7c7cee2"
+          }
+        ],
+        "record": "research/coastal-scroll-splice-v1-edit.json",
+        "actual_cost_credits": null,
+        "source_actual_cost_credits": {
+          "1044781": null,
+          "1044794": 180
+        },
+        "a_frames_inclusive": [
+          0,
+          119
+        ],
+        "b_frames_inclusive": [
+          0,
+          144
+        ],
+        "seam_time_seconds": 5.0,
+        "metadata": {
+          "width": 1280,
+          "height": 720,
+          "fps": 24,
+          "frames": 265,
+          "duration_seconds": 11.041667
+        }
+      },
+      "derivation": [
+        {
+          "operation": "Actual two-clip edit: A frames 0-119 followed by B frames 0-144; hard cut at output frame 120 (5.0 seconds). Native speed retained; no looping, frozen frames, interpolation or dissolve."
+        },
+        {
+          "operation": "Each native 1284x724 source normalized to 1280x720 with Lanczos and square pixels, retaining 24 fps. Source originals are unchanged."
+        },
+        {
+          "operation": "Original audio resampled to 48 kHz stereo, duration-aligned and directly concatenated; no new music, level matching or crossfade. Numeric audio check does not establish listening or perceptual continuity."
+        },
+        {
+          "operation": "Editorial derivative creates no additional AI task; source fees must not be counted again. The original 10-second concept script is not thereby fully accepted."
+        }
+      ],
+      "license": {
+        "status": "Generated project research material; source-input rights and service terms remain applicable. This manifest grants no new third-party license.",
+        "third_party_cc_license_asserted": false
+      }
+    },
+    {
+      "path": "app/assets/videos/coastal-scroll-splice-v1.mp4",
+      "sha256": "bacabec47e61b6ee5a812e44dd0f7dc82302981116583b4888f301b038b6fa86",
+      "bytes": 11180757,
+      "kind": "editorial-web-copy",
+      "source": {
+        "source_task_ids": [
+          1044781,
+          1044794
+        ],
+        "path": "assets/videos/coastal-scroll-splice-v1/coastal-scroll-splice-v1.mp4",
+        "sha256": "bacabec47e61b6ee5a812e44dd0f7dc82302981116583b4888f301b038b6fa86"
+      },
+      "derivation": [
+        {
+          "operation": "Byte-identical copy of the archived two-clip edit, not a native single-shot AI output."
+        }
+      ],
+      "license": {
+        "status": "Generated project research material; source-input rights and service terms remain applicable. This manifest grants no new third-party license.",
+        "third_party_cc_license_asserted": false
+      }
+    },
+    {
+      "path": "assets/videos/coastal-scroll-splice-v1/seam-4-6s.mp4",
+      "sha256": "09b97828cb6b78286ecb93dfb82c0cb01326736a18944792a931b411e6154294",
+      "bytes": 2122626,
+      "kind": "editorial-excerpt",
+      "source": {
+        "source_task_ids": [
+          1044781,
+          1044794
+        ],
+        "path": "assets/videos/coastal-scroll-splice-v1/coastal-scroll-splice-v1.mp4",
+        "sha256": "bacabec47e61b6ee5a812e44dd0f7dc82302981116583b4888f301b038b6fa86",
+        "source_interval_seconds": [
+          4.0,
+          6.0
+        ],
+        "seam_time_in_excerpt_seconds": 1.0,
+        "record": "research/coastal-scroll-splice-v1-edit.json"
+      },
+      "derivation": [
+        {
+          "operation": "Two-second excerpt around the actual cut, retaining one second before and after the seam. An editorial review excerpt, not an independent AI generation."
+        }
+      ],
+      "license": {
+        "status": "Generated project research material; source-input rights and service terms remain applicable. This manifest grants no new third-party license.",
+        "third_party_cc_license_asserted": false
+      }
+    },
+    {
+      "path": "app/assets/videos/coastal-scroll-splice-v1-seam.mp4",
+      "sha256": "09b97828cb6b78286ecb93dfb82c0cb01326736a18944792a931b411e6154294",
+      "bytes": 2122626,
+      "kind": "editorial-excerpt-web-copy",
+      "source": {
+        "source_task_ids": [
+          1044781,
+          1044794
+        ],
+        "path": "assets/videos/coastal-scroll-splice-v1/seam-4-6s.mp4",
+        "sha256": "09b97828cb6b78286ecb93dfb82c0cb01326736a18944792a931b411e6154294"
+      },
+      "derivation": [
+        {
+          "operation": "Byte-identical web copy of the seam excerpt."
+        }
+      ],
+      "license": {
+        "status": "Generated project research material; source-input rights and service terms remain applicable. This manifest grants no new third-party license.",
+        "third_party_cc_license_asserted": false
+      }
+    },
+    {
+      "path": "app/assets/images/posters/coastal-scroll-splice-v1.jpg",
+      "sha256": "88d8b3f4c702e3c19405aa3e320f9f07efd3bbecec87655ab6dec3be6a591228",
+      "bytes": 437810,
+      "kind": "video-poster",
+      "source": {
+        "source_task_ids": [
+          1044781,
+          1044794
+        ],
+        "path": "assets/videos/coastal-scroll-splice-v1/coastal-scroll-splice-v1.mp4",
+        "sha256": "bacabec47e61b6ee5a812e44dd0f7dc82302981116583b4888f301b038b6fa86",
+        "exact_extraction_timestamp": "not separately recorded"
+      },
+      "derivation": [
+        {
+          "operation": "Decoded frame from the edited output encoded as a JPEG poster; no new AI generation."
+        }
+      ],
+      "license": {
+        "status": "Generated project research material; source-input rights and service terms remain applicable. This manifest grants no new third-party license.",
+        "third_party_cc_license_asserted": false
+      },
+      "image_metadata": {
+        "format": "JPEG",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "path": "app/assets/images/reference/coastal-scroll-splice-v1-seam.jpg",
+      "sha256": "50b87192c87598e809dd0ca00916b17e359965af93b14576cf53c358b8467116",
+      "bytes": 1662384,
+      "kind": "analysis-image-web-copy",
+      "source": {
+        "source_task_ids": [
+          1044781,
+          1044794
+        ],
+        "path": "assets/images/coastal-scroll-splice-v1/actual-seam.jpg",
+        "sha256": "50b87192c87598e809dd0ca00916b17e359965af93b14576cf53c358b8467116"
+      },
+      "derivation": [
+        {
+          "operation": "Byte-identical web copy of the seam analysis layout; not a browser screenshot or new AI generation."
+        }
+      ],
+      "license": {
+        "status": "Generated project research material; source-input rights and service terms remain applicable. This manifest grants no new third-party license.",
+        "third_party_cc_license_asserted": false
+      },
+      "image_metadata": {
+        "format": "JPEG",
+        "width": 1920,
+        "height": 1628
+      }
+    },
+    {
+      "path": "research/coastal-scroll-trial-v1-design.json",
+      "sha256": "6f0834ae708de0cb453c98c6d987a89034e8dfc5521aa46a1fafd838cf8a8880",
+      "bytes": 3750,
+      "kind": "research-metadata",
+      "source": {
+        "authorship": "Project research record",
+        "source_task_ids": [
+          1044756,
+          1044781
+        ],
+        "purpose": "Historical first-trial design and retrieval record; requested settings are distinguished from actual delivered metadata."
+      },
+      "derivation": [
+        {
+          "operation": "Existing local record archived by exact bytes and SHA-256; contents are not rewritten by this provenance update."
+        }
+      ],
+      "license": {
+        "status": "Project-authored research record. Referenced images, videos and services retain their applicable rights; no new third-party license is granted.",
+        "third_party_cc_license_asserted": false
+      },
+      "local_archive_sha256_before_publication": "59cec1bd160a5c905cefb1a8807c14c0cf3a2ed4e2f7b17d9f154749a740449f"
+    },
+    {
+      "path": "research/coastal-scroll-trial-v1-prompt.txt",
+      "sha256": "8c1204b92b25a9f58507b854622f0577ad6969787b1342467e51b437d4d6ca2b",
+      "bytes": 2536,
+      "kind": "actual-generation-prompt",
+      "source": {
+        "authorship": "Project research record",
+        "source_task_ids": [
+          1044756,
+          1044781
+        ],
+        "purpose": "Actual shared first-trial generation prompt; image/text input is not a third-party video reference."
+      },
+      "derivation": [
+        {
+          "operation": "Existing local record archived by exact bytes and SHA-256; contents are not rewritten by this provenance update."
+        }
+      ],
+      "license": {
+        "status": "Project-authored research record. Referenced images, videos and services retain their applicable rights; no new third-party license is granted.",
+        "third_party_cc_license_asserted": false
+      }
+    },
+    {
+      "path": "research/coastal-scroll-higher-model-plan.json",
+      "sha256": "772b67c70dbc4cb78f95926376ed510a52635010d9225e3f77847093dbaa5a95",
+      "bytes": 4983,
+      "kind": "research-metadata",
+      "source": {
+        "authorship": "Project research record",
+        "source_task_ids": [
+          1044756,
+          1044781
+        ],
+        "purpose": "Historical model-comparison plan; estimates are not treated as actual charges."
+      },
+      "derivation": [
+        {
+          "operation": "Existing local record archived by exact bytes and SHA-256; contents are not rewritten by this provenance update."
+        }
+      ],
+      "license": {
+        "status": "Project-authored research record. Referenced images, videos and services retain their applicable rights; no new third-party license is granted.",
+        "third_party_cc_license_asserted": false
+      },
+      "local_archive_sha256_before_publication": "75c46d4200b31fdd2f1320860d57a044fb963f2c976a228dcf1064457acc09a0"
+    },
+    {
+      "path": "research/coastal-scroll-seedance2-v1-delivery.json",
+      "sha256": "6516697714aa01919478aa52dc7469cbaa548c671bccb105169bc32ebf0e37ae",
+      "bytes": 2985,
+      "kind": "research-metadata",
+      "source": {
+        "authorship": "Project research record",
+        "source_task_ids": [
+          1044756
+        ],
+        "purpose": "Actual Seedance comparison delivery record; confirmed cost 75 credits."
+      },
+      "derivation": [
+        {
+          "operation": "Existing local record archived by exact bytes and SHA-256; contents are not rewritten by this provenance update."
+        }
+      ],
+      "license": {
+        "status": "Project-authored research record. Referenced images, videos and services retain their applicable rights; no new third-party license is granted.",
+        "third_party_cc_license_asserted": false
+      },
+      "local_archive_sha256_before_publication": "603fae902503d62af1a527b7c151cbefa520800d47ffcf3a2b3512a03cb3ab0c"
+    },
+    {
+      "path": "research/coastal-scroll-kling4-v1-delivery.json",
+      "sha256": "1e10872f52b683ac1606f4ef3ecdcc44cae9413795e39eba138a75c86a8f6b14",
+      "bytes": 3500,
+      "kind": "research-metadata",
+      "source": {
+        "authorship": "Project research record",
+        "source_task_ids": [
+          1044781
+        ],
+        "purpose": "Actual Kling A delivery record; actual service cost remains unknown."
+      },
+      "derivation": [
+        {
+          "operation": "Existing local record archived by exact bytes and SHA-256; contents are not rewritten by this provenance update."
+        }
+      ],
+      "license": {
+        "status": "Project-authored research record. Referenced images, videos and services retain their applicable rights; no new third-party license is granted.",
+        "third_party_cc_license_asserted": false
+      },
+      "local_archive_sha256_before_publication": "898bc5f5eb74511daffcc148eed2419936e1d55c05c1f12d122211bee084ddb1"
+    },
+    {
+      "path": "research/coastal-scroll-splice-v1-design.json",
+      "sha256": "54f766221853d41056d0a010a3535edd9a22d8c7c3a3cf35bd5f85133ba31018",
+      "bytes": 4154,
+      "kind": "research-metadata",
+      "source": {
+        "authorship": "Project research record",
+        "source_task_ids": [
+          1044781,
+          1044794
+        ],
+        "purpose": "Design and execution record for actual two-clip continuation; new B actual cost 180 credits."
+      },
+      "derivation": [
+        {
+          "operation": "Existing local record archived by exact bytes and SHA-256; contents are not rewritten by this provenance update."
+        }
+      ],
+      "license": {
+        "status": "Project-authored research record. Referenced images, videos and services retain their applicable rights; no new third-party license is granted.",
+        "third_party_cc_license_asserted": false
+      },
+      "local_archive_sha256_before_publication": "2f364d411933c4859f3f1fb32f6b466b5599a52e855983ec0b6bfa602d2912e1"
+    },
+    {
+      "path": "research/coastal-scroll-splice-v1-b-prompt.txt",
+      "sha256": "e3f54a571a30ded76804c65776e073d7301a743af97176f0e2eee6199428dd1e",
+      "bytes": 2581,
+      "kind": "actual-generation-prompt",
+      "source": {
+        "authorship": "Project research record",
+        "source_task_ids": [
+          1044794
+        ],
+        "purpose": "Actual B continuation prompt, with A last frame supplied as first-frame target only."
+      },
+      "derivation": [
+        {
+          "operation": "Existing local record archived by exact bytes and SHA-256; contents are not rewritten by this provenance update."
+        }
+      ],
+      "license": {
+        "status": "Project-authored research record. Referenced images, videos and services retain their applicable rights; no new third-party license is granted.",
+        "third_party_cc_license_asserted": false
+      }
+    },
+    {
+      "path": "research/coastal-scroll-kling4-b-v1-delivery.json",
+      "sha256": "d2b9b933bb69d92049015cbb99d55a6a9066a79f39fadaf34a6d1a368d5266da",
+      "bytes": 5213,
+      "kind": "research-metadata",
+      "source": {
+        "authorship": "Project research record",
+        "source_task_ids": [
+          1044794
+        ],
+        "purpose": "Actual B delivery, metadata and frame-review limitations."
+      },
+      "derivation": [
+        {
+          "operation": "Existing local record archived by exact bytes and SHA-256; contents are not rewritten by this provenance update."
+        }
+      ],
+      "license": {
+        "status": "Project-authored research record. Referenced images, videos and services retain their applicable rights; no new third-party license is granted.",
+        "third_party_cc_license_asserted": false
+      },
+      "local_archive_sha256_before_publication": "148eba1cfe4771d5e17e29f79813feb294fb8ed77d44e663f2158d820a8e5f76"
+    },
+    {
+      "path": "research/coastal-scroll-splice-v1-edit.json",
+      "sha256": "ac76da92c39491cc62383f05281d332578c2ac6b46da7fbbe4db24a1d573b155",
+      "bytes": 7133,
+      "kind": "research-metadata",
+      "source": {
+        "authorship": "Project research record",
+        "source_task_ids": [
+          1044781,
+          1044794
+        ],
+        "purpose": "Actual editorial transform, source frame ranges, cut, metadata and visual-review limitations."
+      },
+      "derivation": [
+        {
+          "operation": "Existing local record archived by exact bytes and SHA-256; contents are not rewritten by this provenance update."
+        }
+      ],
+      "license": {
+        "status": "Project-authored research record. Referenced images, videos and services retain their applicable rights; no new third-party license is granted.",
+        "third_party_cc_license_asserted": false
+      },
+      "local_archive_sha256_before_publication": "80d3231cc95a803ad5ad2c7acd8ef43dfae9e6c7a7d053a8396ab9f4078e0593"
+    },
+    {
+      "path": "research/coastal-scroll-splice-v1-audio-check.json",
+      "sha256": "77c02dd98f12c819894ecb98a35cef915adaa895994aac74ac1ed8b0af83308d",
+      "bytes": 475,
+      "kind": "research-metadata",
+      "source": {
+        "authorship": "Project research record",
+        "source_task_ids": [
+          1044781,
+          1044794
+        ],
+        "purpose": "Numeric audio analysis only; not a listening assessment or proof of perceptual continuity."
+      },
+      "derivation": [
+        {
+          "operation": "Existing local record archived by exact bytes and SHA-256; contents are not rewritten by this provenance update."
+        }
+      ],
+      "license": {
+        "status": "Project-authored research record. Referenced images, videos and services retain their applicable rights; no new third-party license is granted.",
+        "third_party_cc_license_asserted": false
+      },
+      "local_archive_sha256_before_publication": "7e61ba5efcf561abe4316572e72f954caec3f9673cb72a27df38c15e1f3e3f5d"
+    },
+    {
+      "path": "assets/images/local-review/coastal-scroll-splice-v1-ui.jpg",
+      "sha256": "8b405dcacb97e11f350d46ffce0d8ff1931de2b7dd333e8970f083460aa8c2cc",
+      "bytes": 171784,
+      "kind": "browser-verification-screenshot",
+      "source": {
+        "page": "http://127.0.0.1:4333/?film=coastal-scroll-splice-v1#screening",
+        "performed_by": "root agent",
+        "source_task_ids": [
+          1044781,
+          1044794
+        ],
+        "verification": "Actual local browser screenshot; not independently executed by provenance agent"
+      },
+      "derivation": [
+        {
+          "operation": "Original browser screenshot retained as provided, with dimensions read from the actual JPEG. No new AI generation or screenshot reconstruction."
+        }
+      ],
+      "license": {
+        "status": "Actual local browser/workflow evidence; third-party interface and displayed material retain their rights. No new third-party license is granted.",
+        "third_party_cc_license_asserted": false
+      },
+      "image_metadata": {
+        "format": "JPEG",
+        "width": 1265,
+        "height": 712
+      }
+    },
+    {
+      "path": "assets/images/deployment-2026-10-31/local-understanding.jpg",
+      "sha256": "0a099f42b1148ce2246e02608441ca629eb515bc79dc029ec33a41c39791b4d3",
+      "bytes": 74527,
+      "kind": "browser-screenshot",
+      "source": {
+        "type": "root actual browser QA",
+        "url": "http://127.0.0.1:4336/013-scenic-motion-lab/#understanding"
+      },
+      "derivation": [
+        {
+          "operation": "Browser viewport screenshot, JPEG; not generated artwork"
+        }
+      ],
+      "license": {
+        "status": "Project research UI evidence; no third-party CC license asserted",
+        "third_party_cc_license_asserted": false
+      }
+    }
+  ],
+  "concept_policy": "Seven new built-in AI concept stills, not video outputs or guaranteed exact first frames; source PNGs retained and web derivatives only compressed.",
+  "artifact_count": 106,
+  "local_web_verification_note": "Coastal-scroll now has a real 11.041667-second two-clip editorial trial, with a documented 5.0-second hard cut and local browser playback evidence. The other six directions have no generated motion trials. The original full 10-second design has not been strictly accepted; numeric audio checks do not establish listening or perceptual continuity.",
+  "publication_exclusions": [
+    {
+      "path": "assets/images/coastal-scroll-splice-v1/b-submitted.jpg",
+      "reason": "Local service interface/account evidence; no runtime dependency; retained in original local archive only."
+    },
+    {
+      "path": "assets/images/local-review/kling4-ready-login.jpg",
+      "reason": "Local service interface/account evidence; no runtime dependency; retained in original local archive only."
+    }
+  ],
+  "publication_text_policy": "Public text uses LF line endings for cross-platform Git/CI. Current content and relative-path metadata edits are hashed here; previous local archive hashes are retained for changed text. Raster images and native video files are unchanged."
+}

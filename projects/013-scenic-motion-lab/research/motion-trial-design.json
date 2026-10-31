@@ -1,0 +1,30 @@
+{
+  "task_id": "1044377",
+  "model": "Seedance 2.0",
+  "task_type": "i2v",
+  "mode": "first_last_frames",
+  "first_frame_url": "https://files.chatartpro.com/chat-skill-upload/20261030/exec-ce379bba-5084-41da-837e-3c2adce840d6.png",
+  "end_frame_url": "https://files.chatartpro.com/chat-skill-upload/20261030/exec-b412d0d1-1813-472d-8ef5-42bae5f2ab81.png",
+  "resolution": 720,
+  "duration_seconds": 5,
+  "aspect_ratio": "16:9",
+  "count": 1,
+  "first_frame": "assets/images/motion-inputs/first-frame.png",
+  "end_frame": "assets/images/motion-inputs/end-frame.png",
+  "reference_video_for_human_analysis_only": {
+    "local_file_name": "source-grassland-special-1080p.mp4",
+    "archived": false
+  },
+  "video_reference_transmitted": false,
+  "actual_prompt": "One continuous five-second tracking shot with a physically traveling camera and a fixed wide-angle focal length. Follow the same red-shirted cyclist through the same landscape, from the starting reference to the ending reference. From 0-1.5s, the camera travels rapidly forward and downward, approaching the cyclist from behind-left. Rider and bicycle grow to about 60-70 percent of frame height because the camera catches up. From 1.5-3.8s, maintain a close trailing distance while both camera and cyclist ride briskly downhill. Foreground grass, flowers and rocks sweep past rapidly; distant cliffs move slowly, producing strong depth-dependent parallax and changing occlusions. From 3.8-5s, follow a gentle bend, smoothly banking and turning with the cyclist to reveal a changed view of the bay. Finish close behind the rider, matching the ending reference while forward travel continues. Preserve rider identity, bicycle anatomy, daylight and the architecture's world geometry as the composition changes. Natural pedaling, rotating wheels and continuous coherent forward travel.",
+  "estimated_credits": 90,
+  "estimate_note": "Previous estimate was below actual charge; verify returned cost.",
+  "acceptance": [
+    "Rapid camera approach before 1.5s, not a late dissolve",
+    "Rider and bicycle fill about 60-70% of frame height in following section",
+    "Foreground fast/distant slow parallax rather than uniform digital zoom",
+    "Camera follows downhill and a bend, rider remains close",
+    "No rider/vehicle duplication or structure melting"
+  ],
+  "_archive_note": "Sanitized research copy: known archived media use repository-relative paths; unarchived local references retain only a filename. Submitted prompt text is unchanged. No operational logs or account responses are included."
+}

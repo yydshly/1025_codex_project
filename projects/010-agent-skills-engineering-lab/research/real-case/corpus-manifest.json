@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-30T13:17:49.623Z",
+  "generatedAt": "2026-10-31T07:00:26.416Z",
   "sourceScope": "projects.json + registered project README.md files only",
-  "projectCount": 11,
-  "passageCount": 510,
-  "registrySha256": "76cca61aeded4f1a46a41a72420b7b7cbfc462e18aabdcd88789608d76f1852e",
-  "dataSha256": "1b043bb7ed11fc79622d0bea1f014428a1d783ce256e21200606d55c6f632524",
+  "projectCount": 12,
+  "passageCount": 561,
+  "registrySha256": "e3e48ba8ea8d0667e5401574b963ebba0052ec747b6a8aeb97b33ee86fc6fdcd",
+  "dataSha256": "e38834981a4554203afe6b923b236a131ced523e249feedc200260ca0d452d7d",
   "documents": [
     {
       "projectId": "001",
@@ -72,6 +72,12 @@
       "path": "projects/012-aquatic-toxicology-skill-lab/README.md",
       "sha256": "0c466b6b1641e966fcdee4d4889b4ee3b5fd47f06b76067036e5452ff3309663",
       "passages": 52
+    },
+    {
+      "projectId": "013",
+      "path": "projects/013-scenic-motion-lab/README.md",
+      "sha256": "b75f23e0a790938603680d454e24c99f5b4cfc021150af620823669b0a075c8b",
+      "passages": 51
     }
   ]
 }
