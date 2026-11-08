@@ -1,0 +1,30 @@
+2018 年山竹：鲗鱼涌实测海水位接入结论
+
+已取得并提取：UHSLC / JASL Research Quality Data Set，站号 329、版本 B，原始提供者为香港天文台。
+可用文件：quarry-bay-mangkhut-2018-hourly.json。
+原始完整 CSV、站点 QA 文档、第二官方接口的 72 条样本及元数据均保存在本目录。extract-quarry-bay.py 可重复生成 JSON，并校验时间连续性和来源差异。
+
+覆盖 UTC 2018-09-06 12:00 至 09-17 18:00，含端点，共 271 条整点观测，无缺测。与原 JMA 路径的 46 个分析时刻均精确匹配。优先窗口香港时间 9/15 00:00 至 9/17 23:00 有 72 条。
+统一播放窗口 UTC 9/16 00:00—12:00 可直接筛选得到 13 条观测。云图若每 10 分钟一帧，整点之间没有新增潮位记录：应展示“最近一次观测 + 实际观测时刻 + 距当前多久”，或显示暂无同时刻观测；不能插值后标成实测。
+
+数值定义必须保留：整点 1 分钟平均海水位，每小时一条，不是整小时平均。源单位毫米，JSON 只做毫米除以 1000 的米单位换算。它不是天文潮预测、风暴潮增水、波高或淹水深度。
+垂直基准：第二官方 ERDDAP 接口明确返回 station zero。应用轴标签建议“m · UHSLC站点零点”。旧 GLOSS 站表（1997 年更新）称 TGZ 等于 Admiralty Chart Datum，但尚未验证与这段 2018 年序列的对应关系，不据此无条件改名为 CD。
+该片段最大整点样本为 UTC 9/16 06:00（香港时间 14:00），3730 mm，即 3.73 m · 站点零点。HKO 报告的 3.88 m CD 是官方事件峰值，不能用它替换整点样本，也不能把 3.73 m 称为官方事件峰值。抽样间隔和基准说明需保留。
+站点坐标取 HKO 潮汐站表：22°17′28″N、114°12′48″E，即 22.2911111111,114.2133333333；与应用的泛“香港参照点”不是同一点。
+
+来源交叉验证：HKT 9/15—17 的 72 条记录中，原 CSV 与 ERDDAP 71 条完全一致。UTC 2018-09-15 23:00 的 CSV 为 2010 mm、ERDDAP 为 2009 mm，差 1 mm，原因未确认。本产品始终使用原 CSV，不混合或修补；差异已在 JSON validation.differences 中逐条记录。
+主 CSV 没有逐行 QC 码，因此 JSON 未伪造它；第二接口的 72 条样本 QC 均为 4，单独记入验证信息。主 CSV 缺测标记 9999/-9999 均转 null，本片段没有此标记。
+
+真实图表可回答：在台风接近香港的对应时刻，鲗鱼涌海水位如何变化、最高整点样本何时出现、两个真实观测时刻相差多少。单站资料不能变成全香港淹水范围，也不能直接推导风暴潮增水；后者还需同站同基准同时刻的天文潮序列。
+若后续需要分钟级记录，可继续申请 IOC Sea Level Monitoring API 权限或 HKO 历史小时/高频观测数据；不影响本次已取得的公开整点观测接入。
+
+官方入口：
+https://uhslc.soest.hawaii.edu/data/csv/rqds/pacific/hourly/h329b.csv
+https://uhslc.soest.hawaii.edu/rqds/pacific/doc/qa329b.dmt
+https://uhslc.soest.hawaii.edu/datainfo/
+https://uhslc.soest.hawaii.edu/erddap/info/global_hourly_rqds/index.html
+https://www.bodc.ac.uk/resources/inventories/gloss_handbook/stations/77/
+https://www.hko.gov.hk/en/cis/stn.htm
+https://www.hko.gov.hk/en/publica/tc/tc2018/section3_5rpt.html
+
+推荐引用：Caldwell, P. C., M. A. Merrifield, P. R. Thompson (2015), Sea level measured by tide gauges from global oceans — the Joint Archive for Sea Level holdings (NCEI Accession 0019568), Version 5.5, NOAA NCEI. https://doi.org/10.7289/V5V40S7W

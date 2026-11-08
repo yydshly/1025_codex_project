@@ -1,0 +1,57 @@
+{
+  "title": "真实亮温观测的地理轮廓与标注位置",
+  "asset": "app/data/observed-change-features.json",
+  "processor": "research/dynamics/derive-observed-features.py",
+  "inputs": [
+    "app/data/volcano-dynamic.json",
+    "app/data/storm-dynamic.json",
+    "上述逐帧 numericData 引用的 uint16 单通道 PNG；每份源文件 SHA256 均与清单核对。"
+  ],
+  "provenance": {
+    "sensor": "JMA Himawari-8 AHI band13，原始 HSD 来自 NOAA 公开档案",
+    "archive": "https://registry.opendata.aws/noaa-himawari/",
+    "formatAndCalibration": "https://www.data.jma.go.jp/mscweb/en/himawari89/space_segment/hsd_sample/HS_D_users_guide_en_v13.pdf",
+    "sourcePreservation": "未修改任何原始 HSD、数值 PNG、原动态数据清单或原统计序列。本次只从既有且已标定、已核验的数值资产派生标注。原始数据仍留在研究工作副本。",
+    "reuse": "这是 JMA/NOAA 真实观测的派生展示，保留 JMA Himawari-8 / NOAA 来源及原动态清单中的使用条件；轮廓不是机构发布的灾害产品。"
+  },
+  "selection": {
+    "volcano": "25个真实时刻，2022-01-15 03:50—07:50 UTC。仅原统计中心300公里范围内、留存亮温PNG数值 <220 K 的像元。最初两帧没有符合阈值的像元，因此没有轮廓或标注位置。",
+    "storm": "23个真实时刻，2022-09-05 03:00—13:30 UTC。原 bbox=[112,22,140,43] 内、留存亮温PNG数值 ≤235 K 的像元。包括范围内其他天气云，未分割出单独台风。"
+  },
+  "spatialMethod": [
+    "从原 EPSG:4326 栅格每8×8像元块选取一个接近块中心的真实原像元，未平均或插值；整块须无缺测。",
+    "汤加只保留四角都在原300公里统计圈内的显示网格；这会略缩小可绘制的统计边缘。",
+    "四邻接连接当前帧的低温网格，线只沿有效低温格与有效较暖格的交界。统计圈、图像窗口或缺测边界不补闭合线。",
+    "只删去严格共线的冗余顶点，不平滑、不生成额外形态，不连接不同的阈值区域。短于三个顶点的孤立线段省略。",
+    "粗网格最大对角尺度：汤加约23.09公里，轩岚诺约33.17公里。这是取样分辨率尺度，不是绝对定位精度或轮廓误差上界；小块、狭长区域可能漏绘。",
+    "汤加经度保持174—193度的连续表示；大于180度的值与相应负经度是相同地理位置，渲染时不得把轮廓直接接成长距离跨球线。",
+    "label anchor 从当前帧最大粗网格连通区内的实际低温原像元中选择，接近该区面积加权球面重心；返回值本身始终是实测数值像元位置。"
+  ],
+  "timeAndDelta": [
+    "timeUtc 是原帧名义时间；scanStartUtc/scanEndUtc 原样保留区域扫描时间。整帧不是同一秒拍摄。",
+    "每帧 metricValues 直接复制原统计序列的同一时刻值；deltaMetrics 是相邻两个已提供记录的 B-A，不是速度或变化率。",
+    "轩岚诺10:00 UTC原始扫描缺档，09:50与10:10仍各是真实记录。10:10的差值明确标记 spansKnownMissing=true，绝不重建或补充10:00的过程。",
+    "轮廓、连通分量编号和anchor均只属于当前帧，没有跨帧目标身份；不能把位置差解读为云团位移、风向或风速。"
+  ],
+  "numericBoundaries": [
+    "数值PNG单位为K，uint16×0.01，0表示缺测。量化步长0.01 K，最大舍入差0.005 K。",
+    "轩岚诺原统计由浮点标定亮温计算；235 K附近的量化可能改变PNG的阈值归属。轮廓依据留存PNG，图表差值依据原series，不能把粗轮廓面积称作原统计面积。",
+    "低温阈值只是显示选择，不能识别灰云、灰浓度、云高、喷发物质量、降雨量、灾害范围或地面温度。",
+    "源卫星云视差未校正；云层的表观地理位置可能偏离其地表垂直投影。"
+  ],
+  "independentValidation": [
+    "Node测试以独立PNG解码器读取全部48份16bit数据并核对SHA256、尺寸、真实UTC和scan范围。",
+    "每条简化线段重新拆回粗网格边，逐边核对其两侧为有效的实际原像元且跨越指定阈值；不接受范围边缘充当温度边界。",
+    "核对每个anchor的实际原像元、阈值、经纬度及300公里范围；核对全部差值与原series完全一致。",
+    "交付体积小于2 MB。未随网页复制数值PNG时，源数值完整性测试明确跳过；其余应用契约检查仍执行。完整核验应在保留数值PNG的研究工作副本运行。"
+  ],
+  "reproduce": {
+    "workingDirectory": "项目根目录；所需原数值PNG需按原动态数据清单路径存在。",
+    "dependencies": "Python 3、NumPy、Pillow；Node.js 内置模块，无额外Node依赖。",
+    "commands": [
+      "python research/dynamics/derive-observed-features.py",
+      "node --test tests/observed-change-features.test.mjs"
+    ],
+    "determinism": "派生轮廓和指标由相同输入确定；derivedAtUtc记录本次生成时间，因此重复运行的整体JSON哈希会变化。"
+  }
+}

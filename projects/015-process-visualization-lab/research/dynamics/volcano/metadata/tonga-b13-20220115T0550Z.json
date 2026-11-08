@@ -1,0 +1,290 @@
+{
+  "frame": {
+    "timeUtc": "2022-01-15T05:50:00Z",
+    "url": "assets/events/volcano-dynamic/tonga-b13-20220115T0550Z.png",
+    "scanStartUtc": "2022-01-15T05:56:03.795Z",
+    "scanEndUtc": "2022-01-15T05:58:27.524Z",
+    "regionalScanStartUtcEstimate": "2022-01-15T05:56:33.643Z",
+    "regionalScanEndUtcEstimate": "2022-01-15T05:58:15.037Z",
+    "sha256": "0569347a55aa72f48e6a9d25535f8cf8e9c2670dc808ebcd452647c00c73947b",
+    "bytes": 606333,
+    "width": 1024,
+    "height": 916,
+    "stats": {
+      "minK": 199.45000000000002,
+      "maxK": 295.43,
+      "meanK": 250.04061583319464,
+      "p10K": 228.32,
+      "neighborhoodMinK": 202.5,
+      "coldAreaKm2": 10027.277082701887,
+      "validNeighborhoodAreaKm2": 282651.6421838542,
+      "neighborhoodAreaKm2": 282651.6421838542,
+      "validPixels": 937984,
+      "missingPixels": 0,
+      "statsRegion": "fixed 300 km surface-distance neighborhood of volcano catalogue location"
+    },
+    "sourceSegments": [
+      {
+        "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0550/HS_H08_20220115_0550_B13_FLDK_R20_S0710.DAT.bz2",
+        "rawFile": "research/dynamics/volcano/raw/HS_H08_20220115_0550_B13_FLDK_R20_S0710.DAT.bz2",
+        "rawSHA256": "571685dd91dd74b72b3773675ac17025228a6549db1bb77b2a4f66758f30b115",
+        "rawBytes": 3032586,
+        "retrievedAtUtc": "2026-11-04T14:44:41.755325Z"
+      },
+      {
+        "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0550/HS_H08_20220115_0550_B13_FLDK_R20_S0810.DAT.bz2",
+        "rawFile": "research/dynamics/volcano/raw/HS_H08_20220115_0550_B13_FLDK_R20_S0810.DAT.bz2",
+        "rawSHA256": "6df5fc7f15986ee8820d0a1542d9302c63a84f5095e252b7b74cb7c0312d3fb9",
+        "rawBytes": 2819461,
+        "retrievedAtUtc": "2026-11-04T14:44:43.030429Z"
+      }
+    ],
+    "numericData": {
+      "url": "research/dynamics/volcano/numeric/tonga-b13-20220115T0550Z-bt-centikelvin.png",
+      "sha256": "868e114064c4f1f798d867b82ba9a89fdd138efb6e2c5319ea01e219cefe415a",
+      "bytes": 980411,
+      "encoding": "PNG uint16",
+      "scale": 0.01,
+      "unit": "K",
+      "nodata": 0
+    }
+  },
+  "segments": [
+    {
+      "satellite": "Himawari-8",
+      "formatVersion": "1.3",
+      "segment": 7,
+      "segmentsInFullDisk": 10,
+      "firstGlobalLine1Based": 3301,
+      "columns": 5500,
+      "lines": 550,
+      "scanStartUtc": "2022-01-15T05:56:03.795Z",
+      "scanEndUtc": "2022-01-15T05:57:32.283Z",
+      "createdAtUtc": "2022-01-15T05:59:25.000Z",
+      "qualityFlags": [
+        0,
+        0,
+        77,
+        1
+      ],
+      "qualityInterpretation": "flag1 must be zero; flag2 spare; flags3/4 processing-center use only per JMA HSD guide",
+      "navigationCorrection": {
+        "rotation": 0.0,
+        "records": [
+          [
+            3301,
+            0.0,
+            0.0
+          ],
+          [
+            3850,
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "errorLineCount": 0,
+      "projection": {
+        "subLongitude": 140.7,
+        "CFAC": 20466275,
+        "LFAC": 20466275,
+        "COFF": 2750.5,
+        "LOFF": 2750.5,
+        "satelliteDistanceFromEarthCenterKm": 42164.0,
+        "equatorialRadiusKm": 6378.137,
+        "polarRadiusKm": 6356.7523
+      },
+      "calibration": {
+        "band": 13,
+        "wavelengthMicrometers": 10.4073,
+        "validBits": 12,
+        "invalidCountValues": [
+          65535,
+          65534
+        ],
+        "gain": -0.003752547757067497,
+        "offset": 15.197821038469975,
+        "c0": -0.116127314573644,
+        "c1": 1.00099153832169,
+        "c2": -1.76961091570947e-06,
+        "speedOfLight": 299792458.0,
+        "planckConstant": 6.62606957e-34,
+        "boltzmannConstant": 1.3806488e-23
+      },
+      "lineTimes": [
+        {
+          "line": 3301,
+          "timeUtc": "2022-01-15T05:56:03.795Z"
+        },
+        {
+          "line": 3354,
+          "timeUtc": "2022-01-15T05:56:32.876Z"
+        },
+        {
+          "line": 3594,
+          "timeUtc": "2022-01-15T05:57:01.665Z"
+        },
+        {
+          "line": 3836,
+          "timeUtc": "2022-01-15T05:57:32.283Z"
+        },
+        {
+          "line": 3850,
+          "timeUtc": "2022-01-15T05:57:32.283Z"
+        }
+      ]
+    },
+    {
+      "satellite": "Himawari-8",
+      "formatVersion": "1.3",
+      "segment": 8,
+      "segmentsInFullDisk": 10,
+      "firstGlobalLine1Based": 3851,
+      "columns": 5500,
+      "lines": 550,
+      "scanStartUtc": "2022-01-15T05:57:32.283Z",
+      "scanEndUtc": "2022-01-15T05:58:27.524Z",
+      "createdAtUtc": "2022-01-15T05:59:28.000Z",
+      "qualityFlags": [
+        0,
+        0,
+        77,
+        1
+      ],
+      "qualityInterpretation": "flag1 must be zero; flag2 spare; flags3/4 processing-center use only per JMA HSD guide",
+      "navigationCorrection": {
+        "rotation": 0.0,
+        "records": [
+          [
+            3851,
+            0.0,
+            0.0
+          ],
+          [
+            4400,
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "errorLineCount": 0,
+      "projection": {
+        "subLongitude": 140.7,
+        "CFAC": 20466275,
+        "LFAC": 20466275,
+        "COFF": 2750.5,
+        "LOFF": 2750.5,
+        "satelliteDistanceFromEarthCenterKm": 42164.0,
+        "equatorialRadiusKm": 6378.137,
+        "polarRadiusKm": 6356.7523
+      },
+      "calibration": {
+        "band": 13,
+        "wavelengthMicrometers": 10.4073,
+        "validBits": 12,
+        "invalidCountValues": [
+          65535,
+          65534
+        ],
+        "gain": -0.003752547757067497,
+        "offset": 15.197821038469975,
+        "c0": -0.116127314573644,
+        "c1": 1.00099153832169,
+        "c2": -1.76961091570947e-06,
+        "speedOfLight": 299792458.0,
+        "planckConstant": 6.62606957e-34,
+        "boltzmannConstant": 1.3806488e-23
+      },
+      "lineTimes": [
+        {
+          "line": 3851,
+          "timeUtc": "2022-01-15T05:57:32.283Z"
+        },
+        {
+          "line": 4077,
+          "timeUtc": "2022-01-15T05:58:00.254Z"
+        },
+        {
+          "line": 4320,
+          "timeUtc": "2022-01-15T05:58:27.524Z"
+        },
+        {
+          "line": 4400,
+          "timeUtc": "2022-01-15T05:58:27.524Z"
+        }
+      ]
+    }
+  ],
+  "coordinateRoundTripChecks": [
+    {
+      "lon": 174,
+      "lat": -29,
+      "nativeColumn1Based": 4209.8397902863,
+      "nativeLine1Based": 4209.1655403618915,
+      "roundTripErrorDegrees": 1.7053025658242404e-13
+    },
+    {
+      "lon": 174,
+      "lat": -12,
+      "nativeColumn1Based": 4404.71641440496,
+      "nativeLine1Based": 3385.4772010269535,
+      "roundTripErrorDegrees": 2.2737367544323206e-13
+    },
+    {
+      "lon": 193,
+      "lat": -29,
+      "nativeColumn1Based": 4781.425557567224,
+      "nativeLine1Based": 4157.842762498482,
+      "roundTripErrorDegrees": 1.1368683772161603e-13
+    },
+    {
+      "lon": 193,
+      "lat": -12,
+      "nativeColumn1Based": 5041.439612138885,
+      "nativeLine1Based": 3359.9199195068436,
+      "roundTripErrorDegrees": 2.5579538487363607e-13
+    },
+    {
+      "lon": 184.6159,
+      "lat": -20.5532,
+      "nativeColumn1Based": 4701.215052265168,
+      "nativeLine1Based": 3794.6866738167873,
+      "roundTripErrorDegrees": 4.263256414560601e-13
+    },
+    {
+      "lon": 174,
+      "lat": -29,
+      "nativeColumn1Based": 4209.8397902863,
+      "nativeLine1Based": 4209.1655403618915,
+      "roundTripErrorDegrees": 1.7053025658242404e-13
+    },
+    {
+      "lon": 174,
+      "lat": -12,
+      "nativeColumn1Based": 4404.71641440496,
+      "nativeLine1Based": 3385.4772010269535,
+      "roundTripErrorDegrees": 2.2737367544323206e-13
+    },
+    {
+      "lon": 193,
+      "lat": -29,
+      "nativeColumn1Based": 4781.425557567224,
+      "nativeLine1Based": 4157.842762498482,
+      "roundTripErrorDegrees": 1.1368683772161603e-13
+    },
+    {
+      "lon": 193,
+      "lat": -12,
+      "nativeColumn1Based": 5041.439612138885,
+      "nativeLine1Based": 3359.9199195068436,
+      "roundTripErrorDegrees": 2.5579538487363607e-13
+    },
+    {
+      "lon": 184.6159,
+      "lat": -20.5532,
+      "nativeColumn1Based": 4701.215052265168,
+      "nativeLine1Based": 3794.6866738167873,
+      "roundTripErrorDegrees": 4.263256414560601e-13
+    }
+  ]
+}

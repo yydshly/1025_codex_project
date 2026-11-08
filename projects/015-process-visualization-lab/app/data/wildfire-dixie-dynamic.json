@@ -1,0 +1,279 @@
+{
+  "schemaVersion": 1,
+  "id": "dixie-2021-airborne-ir",
+  "kind": "wildfire",
+  "title": "2021 Dixie 山火 · 航空红外边界",
+  "description": "用九期原档比较火区的边界怎样从羽毛河峡谷一带向外扩展。",
+  "subtitle": "美国加州北部 · 2021-07-27 至 2021-08-06 · 九期档案",
+  "dateBasis": "原档文件名日期。内部 ISO 键用于排序，档案未提供可核实的具体测绘时刻。",
+  "focus": {
+    "lon": -121.0,
+    "lat": 40.225
+  },
+  "viewBounds": [
+    -121.57,
+    39.8,
+    -120.43,
+    40.65
+  ],
+  "bbox": [
+    -122.62,
+    39.59,
+    -119.62,
+    40.79
+  ],
+  "startUtc": "2021-07-27T00:00:00Z",
+  "endUtc": "2021-08-06T00:00:00Z",
+  "archive": {
+    "md5": "098c12989f93d3c5f3f4c9edb3832bab",
+    "sha256": "84afb94741b691e7efe74e6b04eb4a89d6311cb7395ef6a6b094705cd30606db"
+  },
+  "basemap": {
+    "sha256": "5085a8a4149964dfe0c1be2ef910131a65c4ae46738593e3254f57a1773803f4",
+    "request": "https://basemap.nationalmap.gov/arcgis/rest/services/USGSTopo/MapServer/export?bbox=-122.62,39.59,-119.62,40.79&bboxSR=4326&imageSR=4326&size=3000,1200&format=jpg&f=pjson",
+    "extent": {
+      "xmin": -122.61999999999998,
+      "ymin": 39.589999999999996,
+      "xmax": -119.61999999999998,
+      "ymax": 40.79,
+      "spatialReference": {
+        "wkid": 4326,
+        "latestWkid": 4326
+      }
+    }
+  },
+  "frames": [
+    {
+      "archiveDate": "2021-07-27",
+      "timeUtc": "2021-07-27T00:00:00Z",
+      "url": "assets/events/dixie-fire/20210727.jpg",
+      "sha256": "377a8d9e15727bce7b148d19885e33b7c9aa445a2b0c3aaf18da421f1e13b381",
+      "sourceFile": "20210727_Dixie_KMZ HeatPerimeterDissolved (#2).shp",
+      "sourceGeometrySha256": "c666df7409b339805011df8f7d91d9217c4115b37ad2025ebdb87ff1c19618e7",
+      "width": 3000,
+      "height": 1200,
+      "mappedKm2": 846.63,
+      "addedKm2": null,
+      "outsideKm2": null
+    },
+    {
+      "archiveDate": "2021-07-28",
+      "timeUtc": "2021-07-28T00:00:00Z",
+      "url": "assets/events/dixie-fire/20210728.jpg",
+      "sha256": "b0224d7cecec733869542da15bda39e3c9f4403b46feb81b72a71e57bbd6b0a1",
+      "sourceFile": "20210728_Dixie_KMZ HeatPerimeterDissolved (#2).shp",
+      "sourceGeometrySha256": "b33e6ab8363b706a35c4cdf2e2204d88a92948f1a1559a28fb63111f0df20947",
+      "width": 3000,
+      "height": 1200,
+      "mappedKm2": 880.52,
+      "addedKm2": 33.98,
+      "outsideKm2": 0.09
+    },
+    {
+      "archiveDate": "2021-07-29",
+      "timeUtc": "2021-07-29T00:00:00Z",
+      "url": "assets/events/dixie-fire/20210729.jpg",
+      "sha256": "b05d251f938e980b8965d45de6f40d543c997961e73d3665b2c3ba5082b3e4af",
+      "sourceFile": "20210729_Dixie_KMZ HeatPerimeterDissolved (#2).shp",
+      "sourceGeometrySha256": "66d8d7d1cf66d441ac08422e82583e80315d04b7892c1f33b15b357bed532623",
+      "width": 3000,
+      "height": 1200,
+      "mappedKm2": 898.32,
+      "addedKm2": 17.81,
+      "outsideKm2": 0.01
+    },
+    {
+      "archiveDate": "2021-07-30",
+      "timeUtc": "2021-07-30T00:00:00Z",
+      "url": "assets/events/dixie-fire/20210730.jpg",
+      "sha256": "fa801d2c11028d3d515d4fdf681d5fc991d6eb5d72d386d36d542cbc22eec633",
+      "sourceFile": "20210730_Dixie_KMZ HeatPerimeterDissolved (#2).shp",
+      "sourceGeometrySha256": "836eb4bd23355e7b3ef2a8efc9b2ae62f99591a8cb60b26ccd2f30724ec34c97",
+      "width": 3000,
+      "height": 1200,
+      "mappedKm2": 973.67,
+      "addedKm2": 75.58,
+      "outsideKm2": 0.22
+    },
+    {
+      "archiveDate": "2021-07-31",
+      "timeUtc": "2021-07-31T00:00:00Z",
+      "url": "assets/events/dixie-fire/20210731.jpg",
+      "sha256": "987fe2bc74bc5ef2588c49e1fd8144e9caec9c90e8ac214cad54aed586ec70ed",
+      "sourceFile": "20210731_Dixie_KMZ HeatPerimeterDissolved (#2).shp",
+      "sourceGeometrySha256": "9d6907c3f94c13e7c26ebb684ba4e995c8c02eca846df8ee1f2d3296f8bbe243",
+      "width": 3000,
+      "height": 1200,
+      "mappedKm2": 983.21,
+      "addedKm2": 15.31,
+      "outsideKm2": 5.76
+    },
+    {
+      "archiveDate": "2021-08-01",
+      "timeUtc": "2021-08-01T00:00:00Z",
+      "url": "assets/events/dixie-fire/20210801.jpg",
+      "sha256": "a666c78bcb727106fae5bbf01299c0aafd93dc1e0a2684b3ed991d390ee97326",
+      "sourceFile": "20210801_Dixie_KMZ HeatPerimeter (#2).shp",
+      "sourceGeometrySha256": "0b6df3be8086422c5531b91d957307665ce4d32d02086e05d0bbad67010d05bf",
+      "width": 3000,
+      "height": 1200,
+      "mappedKm2": 980.31,
+      "addedKm2": 14.57,
+      "outsideKm2": 17.47
+    },
+    {
+      "archiveDate": "2021-08-04",
+      "timeUtc": "2021-08-04T00:00:00Z",
+      "url": "assets/events/dixie-fire/20210804.jpg",
+      "sha256": "4c7d26f574fd0fc92d033f51488d1eced3550babc67939f02f927cf6ee6a614d",
+      "sourceFile": "20210804_Dixie_KMZ HeatPerimeterDissolved_copyDissolved.shp",
+      "sourceGeometrySha256": "8ff44e6449f5a11b55932c4219c2409ee4a0180fc6424b35c72a5671a71df24d",
+      "width": 3000,
+      "height": 1200,
+      "mappedKm2": 1120.96,
+      "addedKm2": 140.74,
+      "outsideKm2": 0.09
+    },
+    {
+      "archiveDate": "2021-08-05",
+      "timeUtc": "2021-08-05T00:00:00Z",
+      "url": "assets/events/dixie-fire/20210805.jpg",
+      "sha256": "389075f1d04957e97aa73e2a8f8a23c04b0cee153eca455b336a4e82df82fef7",
+      "sourceFile": "20210805_Dixie_KMZ HeatPerimeterDissolved (#2).shp",
+      "sourceGeometrySha256": "565110dcaa4480fbea9fc32a4e60c70f9a9f110ef5892e993fa6e9637788dd6f",
+      "width": 3000,
+      "height": 1200,
+      "mappedKm2": 1322.14,
+      "addedKm2": 201.21,
+      "outsideKm2": 0.02
+    },
+    {
+      "archiveDate": "2021-08-06",
+      "timeUtc": "2021-08-06T00:00:00Z",
+      "url": "assets/events/dixie-fire/20210806.jpg",
+      "sha256": "7e0c7f9d28b537515cffc901540c98b885e3afc9e86e5577ba09e0603767318e",
+      "sourceFile": "20210806_Dixie_KMZ HeatPerimeterDissolved (#2).shp",
+      "sourceGeometrySha256": "bf2390b73e051514ba4c858185328e232b3f0e1e74180a66f531236ce958eedf",
+      "width": 3000,
+      "height": 1200,
+      "mappedKm2": 1822.66,
+      "addedKm2": 500.55,
+      "outsideKm2": 0.03
+    }
+  ],
+  "sources": [
+    {
+      "name": "航空红外边界原档（Hatchett 整理自 NIFC）",
+      "url": "https://zenodo.org/records/15492982"
+    },
+    {
+      "name": "CAL FIRE Dixie 事件档案",
+      "url": "https://www.fire.ca.gov/incidents/2021/7/13/dixie-fire"
+    },
+    {
+      "name": "USGS The National Map 地形底图",
+      "url": "https://basemap.nationalmap.gov/arcgis/rest/services/USGSTopo/MapServer/export?bbox=-122.62,39.59,-119.62,40.79&bboxSR=4326&imageSR=4326&size=3000,1200&format=jpg&f=pjson"
+    },
+    {
+      "name": "NWCG 火行为：天气、燃料、地形",
+      "url": "https://training.nwcg.gov/dl/s290/s-290-student-workbook-all.pdf"
+    }
+  ],
+  "series": [
+    {
+      "id": "mappedKm2",
+      "label": "当前制图边界内面积",
+      "unit": "km²",
+      "color": "#ffce84",
+      "method": "将本期原档多边形合并后，以等面积投影计算。",
+      "samples": [
+        {
+          "timeUtc": "2021-07-27T00:00:00Z",
+          "value": 846.63
+        },
+        {
+          "timeUtc": "2021-07-28T00:00:00Z",
+          "value": 880.52
+        },
+        {
+          "timeUtc": "2021-07-29T00:00:00Z",
+          "value": 898.32
+        },
+        {
+          "timeUtc": "2021-07-30T00:00:00Z",
+          "value": 973.67
+        },
+        {
+          "timeUtc": "2021-07-31T00:00:00Z",
+          "value": 983.21
+        },
+        {
+          "timeUtc": "2021-08-01T00:00:00Z",
+          "value": 980.31
+        },
+        {
+          "timeUtc": "2021-08-04T00:00:00Z",
+          "value": 1120.96
+        },
+        {
+          "timeUtc": "2021-08-05T00:00:00Z",
+          "value": 1322.14
+        },
+        {
+          "timeUtc": "2021-08-06T00:00:00Z",
+          "value": 1822.66
+        }
+      ]
+    },
+    {
+      "id": "addedKm2",
+      "label": "比上一期多划入的面积",
+      "unit": "km²",
+      "color": "#ff9a61",
+      "method": "当前边界范围减去上一可用记录范围。记录间隔有长有短。",
+      "samples": [
+        {
+          "timeUtc": "2021-07-27T00:00:00Z",
+          "value": null
+        },
+        {
+          "timeUtc": "2021-07-28T00:00:00Z",
+          "value": 33.98
+        },
+        {
+          "timeUtc": "2021-07-29T00:00:00Z",
+          "value": 17.81
+        },
+        {
+          "timeUtc": "2021-07-30T00:00:00Z",
+          "value": 75.58
+        },
+        {
+          "timeUtc": "2021-07-31T00:00:00Z",
+          "value": 15.31
+        },
+        {
+          "timeUtc": "2021-08-01T00:00:00Z",
+          "value": 14.57
+        },
+        {
+          "timeUtc": "2021-08-04T00:00:00Z",
+          "value": 140.74
+        },
+        {
+          "timeUtc": "2021-08-05T00:00:00Z",
+          "value": 201.21
+        },
+        {
+          "timeUtc": "2021-08-06T00:00:00Z",
+          "value": 500.55
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "档案日期按原文件名显示。8 月 2 日和 3 日无对应边界，地图直接切到 8 月 4 日，差集覆盖整个间隔。",
+    "边界范围包含内部未燃斑块及测绘修订。范围差集用于比较两期制图结果，逐点起火时刻、燃烧强度与致因需其他证据。",
+    "USGS 地形底图供地名和地形定位，火区范围来自事件档案。"
+  ]
+}

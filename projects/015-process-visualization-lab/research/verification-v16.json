@@ -1,0 +1,64 @@
+{
+  "version": "16.0.0",
+  "status": "verified-local",
+  "verifiedAtUtc": "2026-11-05T03:31:18.071669+00:00",
+  "localUrl": "http://127.0.0.1:4175/app/index.html#dynamic-volcano",
+  "publicDeployment": false,
+  "purpose": "Observed change on the existing Earth, with geographic callouts, actual-time key moments, linked evidence and existing MiniMax narration.",
+  "automated": {
+    "testsPassed": 244,
+    "testsFailed": 0,
+    "projectCheck": "passed: original records, 48 dynamic frames, numeric/display hashes, 72 Mangkhut frames, 70 change pairs and 36 MiniMax WAV/text hashes",
+    "repositoryCheck": "passed: 15 projects and generated README index agree",
+    "review": "Independent agent identified missing-image readiness bug; fixed dynamic failure and Mangkhut missing-cloud states with regression coverage."
+  },
+  "browser": {
+    "desktop": [
+      1440,
+      1000
+    ],
+    "mobile": [
+      390,
+      844
+    ],
+    "mobileHorizontalOverflow": false,
+    "checks": [
+      "Tonga actual scans advanced under audible MiniMax narration; regional statistics, callouts and Earth used the same committed time.",
+      "Clicking a geographic temperature-statistics annotation focused the corresponding chart without stopping running narration.",
+      "Completed demonstrations stay on Earth by default; before/after comparison is still available on explicit selection.",
+      "Tonga full Earth and process close-up, fusion/raw controls and actual-frame key moments were operated; fusion ROI reduced rectangular weather-window edges.",
+      "Callouts leave geographic anchors clear and avoid each other; lower-priority labels can be hidden in small viewports.",
+      "Hinnamnor 13:30 UTC Earth/chart/story clocks matched; current analysis separately showed 12:00 UTC 75 kt / 955 hPa, previous 09:00 UTC location, and approximately96km coordinate displacement.",
+      "Tohoku 05:49:20 UTC Earth/chart/story clocks matched MAJO38690961counts; INCN key moment selected INCN before seeking05:54:31UTC.",
+      "Mangkhut12:00 and13:00 key moments immediately committed matching story/Earth/chart clocks and actual wind/sea-level readings.",
+      "Mangkhut10:40HKT cloud gap showed explicit missing-cloud status instead of claiming synchronous imagery; no old annotation retained.",
+      "Mobile paused chapter3 kept Earth bottom562.49 above narration dock top603.51CSSpx, without horizontal overflow.",
+      "Latest browser error log returned empty in the tested flows; temporary viewport override reset and useful Earth tab retained."
+    ]
+  },
+  "dataChanges": {
+    "newObservations": false,
+    "newAudio": false,
+    "derivedFeatures": "48 original uint16 brightness-temperature frames ->2923 grid reference polylines /30580 vertices; exact original times and source SHA256 retained. Each8x8block selects an actual center sample; no time interpolation or object tracking.",
+    "sourceInputs": "Unchanged original observation/analysis series, numeric/display PNGs and36MiniMax audio clips."
+  },
+  "displayBoundaries": [
+    "Threshold outlines are coarse numeric-grid references, not exact cloud edges; cell maximum diagonals23.09km(Tonga)/33.17km(storm) describe sampling scale, not error bounds. Cloud parallax uncorrected.",
+    "P10 is a fixed-region percentile. Its callout is positioned at an actual qualifying cold pixel and is never presented as that pixel temperature.",
+    "Tonga fusion opacity retains existing weight through400km and smoothly fades400-600km. Raw display bypasses this focus;300km statistics and input frames are unchanged.",
+    "Texture lighting enhances same-frame appearance, without inferring measured three-dimensional height or ash concentration.",
+    "JMA connector compares actual analysis locations only; it is not reconstructed travel, wind direction or a wind field.",
+    "Quake per-station normalized glyphs use actual instrument counts, not ground displacement or an interpolated wavefront.",
+    "Rain remains a district accumulated range; sea level retains its station-zero datum and is not isolated storm surge.",
+    "Reference video page returned403 in this iteration. Saved original reference frame guided central Earth/two-column/leader composition; no claim of original renderer reproduction."
+  ],
+  "screenshots": [
+    "assets/images/observed-earth-v16.png",
+    "assets/images/observed-close-v16.png",
+    "assets/images/observed-narration-v16.png",
+    "assets/images/observed-storm-v16.png",
+    "assets/images/observed-quake-v16.png",
+    "assets/images/observed-mangkhut-v16.png",
+    "assets/images/observed-mobile-v16.png"
+  ]
+}

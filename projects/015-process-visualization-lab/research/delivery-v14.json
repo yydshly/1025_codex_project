@@ -1,0 +1,322 @@
+{
+  "version": "14.0.0",
+  "status": "copied-and-hash-verified",
+  "fileCount": 63,
+  "files": [
+    {
+      "file": "README.md",
+      "bytes": 32954,
+      "sha256": "71ea8c231d89466bb20d0ac2f07a660d9f0fe703df9a65969918ad68195b334f"
+    },
+    {
+      "file": "package.json",
+      "bytes": 478,
+      "sha256": "479f994cdf74488a7aa78ecfb0355c93815a5ebad8021fa1ad1507e759f60f76"
+    },
+    {
+      "file": "app/index.html",
+      "bytes": 21148,
+      "sha256": "7e910f477e79dfe765ed0d259d7266a107b160787380f2975e9c500854171738"
+    },
+    {
+      "file": "app/globe.html",
+      "bytes": 21148,
+      "sha256": "7e910f477e79dfe765ed0d259d7266a107b160787380f2975e9c500854171738"
+    },
+    {
+      "file": "app/globe-app.js",
+      "bytes": 71453,
+      "sha256": "c37f87aae28ff3c480d2111ab0ecc0cca5343d0908a6e8a1666642ceb697fa45"
+    },
+    {
+      "file": "app/dynamic-player.js",
+      "bytes": 21815,
+      "sha256": "3b94f8508fdf6f02f4e658c115c3f65f44bcbf6ac5598acb866590322b89cec3"
+    },
+    {
+      "file": "app/narration-guide.js",
+      "bytes": 8211,
+      "sha256": "f7e23cdef929241c9b7f89464a20bffeba3b8bcdb62e9e60f90870ff7ce2eb02"
+    },
+    {
+      "file": "app/narration-session.js",
+      "bytes": 3141,
+      "sha256": "b122da405db9fe3b7b1e58ef295efbbc8b24f676242cf0ee997c1be8e024693b"
+    },
+    {
+      "file": "app/narration-script.js",
+      "bytes": 16715,
+      "sha256": "e5535710a862684753c5bf025f5905e4ae89110f5f6c5e5105b8963683902513"
+    },
+    {
+      "file": "app/narration.css",
+      "bytes": 7053,
+      "sha256": "e9a11327ffe8370be0ab56085428b70671278e5aaaf25f35a0d29b3ba0373e4e"
+    },
+    {
+      "file": "app/assets/narration/manifest.json",
+      "bytes": 24087,
+      "sha256": "0108547c9abd73cf0f945e049911c6d153ee1c51f13f94812c9d3c51095ede7c"
+    },
+    {
+      "file": "scripts/serve.mjs",
+      "bytes": 1496,
+      "sha256": "9f403499105c598a5ee19216c370da92f72fe37d5aaba55391d481b12c112a94"
+    },
+    {
+      "file": "scripts/check.mjs",
+      "bytes": 12947,
+      "sha256": "305f7dced097e4de0219592c92830dd16a379b1e0596e5ac0372dec69680b3a1"
+    },
+    {
+      "file": "scripts/check-narration.mjs",
+      "bytes": 6817,
+      "sha256": "f182a630c064eae5969e5e96b62bf469dd221e56545c9a715df2609e29a0fcfa"
+    },
+    {
+      "file": "scripts/generate-minimax-narration.mjs",
+      "bytes": 12697,
+      "sha256": "3d57173e889ee126822f8a0a34e5616ccb3fc0deb4192323fc7c4d4ef651394d"
+    },
+    {
+      "file": "tests/dynamic-player.test.mjs",
+      "bytes": 13448,
+      "sha256": "23aa5c3a3db995d27d834e3c4905a3abebe6ff8cb7483c568f6fdac0fab9de7e"
+    },
+    {
+      "file": "tests/narration-session.test.mjs",
+      "bytes": 14685,
+      "sha256": "b64e2f2c501910f0152f95c98f29ecaacc47a3253a020ed89614c7eb6f5ecd13"
+    },
+    {
+      "file": "tests/narration-content.test.mjs",
+      "bytes": 7443,
+      "sha256": "45aad33cdbe071bb31041579d55011eafdca7df6def77faaab97ec2b11b1f2d9"
+    },
+    {
+      "file": "research/narration/README.md",
+      "bytes": 4228,
+      "sha256": "af3da6ff46c8984d2c31f953874241559fac649e60ff313a7b41c5dec8ec09f7"
+    },
+    {
+      "file": "research/narration/minimax-source.json",
+      "bytes": 18307,
+      "sha256": "8d22ae20092a582df53db5c3a13998f610abd2c7534ce1e00eebcdf1d2919b64"
+    },
+    {
+      "file": "research/narration/minimax-validation-report.json",
+      "bytes": 13286,
+      "sha256": "cd35924db42dffaf66e38fab5bc756430682448cf99000138bdf9074f611c1f5"
+    },
+    {
+      "file": "research/narration/minimax-generator.test.mjs",
+      "bytes": 3659,
+      "sha256": "4399175e19016e92a781a288f79254e6e428476a6f296da223f4231ddaacb806"
+    },
+    {
+      "file": "app/assets/narration/minimax/battery-0-0657e2867994.wav",
+      "bytes": 1165964,
+      "sha256": "0657e2867994fcbfbc8cf97447f96204e7ad8c8de5def7565e9c5779a6a4a1c2"
+    },
+    {
+      "file": "app/assets/narration/minimax/battery-1-409cbfd8d957.wav",
+      "bytes": 1127564,
+      "sha256": "409cbfd8d957f191b572ac6343efd5745313aa26b397c9bab6bc0514ab40f62a"
+    },
+    {
+      "file": "app/assets/narration/minimax/mangkhut-0-aae4563eacb2.wav",
+      "bytes": 1268364,
+      "sha256": "aae4563eacb29cc36a15191f132daa716db18dbdd53b2a9035cd8672026b0124"
+    },
+    {
+      "file": "app/assets/narration/minimax/mangkhut-1-177ff73f6685.wav",
+      "bytes": 1191564,
+      "sha256": "177ff73f6685987f9bb6fd4cfaf4f639087dbe799a4d04d1f408e9a9ce53f326"
+    },
+    {
+      "file": "app/assets/narration/minimax/mangkhut-2-a0805793e6eb.wav",
+      "bytes": 1319564,
+      "sha256": "a0805793e6eb709883cdd0d848d91881945a5c8363214d4e08132ec66271ac33"
+    },
+    {
+      "file": "app/assets/narration/minimax/mangkhut-3-93324c3d70c4.wav",
+      "bytes": 1165964,
+      "sha256": "93324c3d70c4a80ea1c85b512047a99581dcf6736f8b44f7acf1fd886cc816d9"
+    },
+    {
+      "file": "app/assets/narration/minimax/manifest.partial.json",
+      "bytes": 41317,
+      "sha256": "a46129edefb2005facfbff18645bb52954d8fbb418f28d5184c260b8fce00c76"
+    },
+    {
+      "file": "app/assets/narration/minimax/orbital-0-cb35b0faa6b8.wav",
+      "bytes": 1165964,
+      "sha256": "cb35b0faa6b89667b4a676ba39396e0a7138c13d1b38f187f6ae507882fe6961"
+    },
+    {
+      "file": "app/assets/narration/minimax/orbital-1-c90e71aacd75.wav",
+      "bytes": 1150646,
+      "sha256": "c90e71aacd7557d3ec9e052f5cf89934b32676dfcc9bfbc848ff3424e53ab5cb"
+    },
+    {
+      "file": "app/assets/narration/minimax/overview-0-ba66fef2e654.wav",
+      "bytes": 1114764,
+      "sha256": "ba66fef2e654bda3d0a7f9d79a21ef5fcb751a97e4f4735f7ab97ae0385add09"
+    },
+    {
+      "file": "app/assets/narration/minimax/overview-1-de3a9e1384bb.wav",
+      "bytes": 1178764,
+      "sha256": "de3a9e1384bb984fd9fb597cf56e7485798dee6202f1bfb1afe660bdfdcb6fde"
+    },
+    {
+      "file": "app/assets/narration/minimax/overview-2-c3e5b7460a4c.wav",
+      "bytes": 1223564,
+      "sha256": "c3e5b7460a4cace9dcfd97ddb78a1950006801b917ca37bbde842a1aace931d8"
+    },
+    {
+      "file": "app/assets/narration/minimax/overview-3-cadf4de36653.wav",
+      "bytes": 1217164,
+      "sha256": "cadf4de3665393df9c164295545043bd51b64a5d97280fd9c1e359b093b96e40"
+    },
+    {
+      "file": "app/assets/narration/minimax/overview-4-d90a1d7a43a6.wav",
+      "bytes": 1172364,
+      "sha256": "d90a1d7a43a63d0b4e6dbdeff03b4ffa68251e24f84c155b211bddaa09004573"
+    },
+    {
+      "file": "app/assets/narration/minimax/overview-5-fff269ffb278.wav",
+      "bytes": 1191564,
+      "sha256": "fff269ffb27896dc71c32bcca8f3cbe4476e861ce826a2eb78c685d1f1d720f9"
+    },
+    {
+      "file": "app/assets/narration/minimax/overview-6-0751ea44b9db.wav",
+      "bytes": 1242764,
+      "sha256": "0751ea44b9db923921c67743194d560004331b98bd3b4dcb48a95d51f3a5b737"
+    },
+    {
+      "file": "app/assets/narration/minimax/overview-7-a9e4e81b1c4c.wav",
+      "bytes": 1242764,
+      "sha256": "a9e4e81b1c4cbf32e9b1e50ce1a3b508da0972233ea611ddfb1d0944ae6e2b38"
+    },
+    {
+      "file": "app/assets/narration/minimax/principleQuake-0-a69ba936da1f.wav",
+      "bytes": 1114764,
+      "sha256": "a69ba936da1f38b4b91c5b352298664d83577986d43332277b88785d6fc53376"
+    },
+    {
+      "file": "app/assets/narration/minimax/principleQuake-1-c1ab9aca9423.wav",
+      "bytes": 1249164,
+      "sha256": "c1ab9aca9423d89c1b98712a4bcae34290d0fac51bcf111003a5f947bdffeabb"
+    },
+    {
+      "file": "app/assets/narration/minimax/principleTyphoon-0-02091a916bb5.wav",
+      "bytes": 1146764,
+      "sha256": "02091a916bb537a875d68352fdb5e756e89944f2bb7ced1eb2bcb5426be9dd46"
+    },
+    {
+      "file": "app/assets/narration/minimax/principleTyphoon-1-d1583416630d.wav",
+      "bytes": 1159564,
+      "sha256": "d1583416630dd5225cb5ef4335c8df9f7496b7ef7fc92ef117b00ca81f2bde96"
+    },
+    {
+      "file": "app/assets/narration/minimax/principleVolcano-0-e9e45df6186d.wav",
+      "bytes": 1165964,
+      "sha256": "e9e45df6186d739dfc8764702705413b3e287fed0b67c38a14de0cd01f1a8221"
+    },
+    {
+      "file": "app/assets/narration/minimax/principleVolcano-1-e39ba06f6982.wav",
+      "bytes": 1210764,
+      "sha256": "e39ba06f69820265f865d1f94fb8dec5f15686fad4c121a1845d72f8e0701b37"
+    },
+    {
+      "file": "app/assets/narration/minimax/quake-0-9d812e10042a.wav",
+      "bytes": 1217164,
+      "sha256": "9d812e10042ad8d9d1c7f1fbe3a1e96192522427d0bded35c2f3e2844625ed13"
+    },
+    {
+      "file": "app/assets/narration/minimax/quake-1-fde9c97b0410.wav",
+      "bytes": 1133964,
+      "sha256": "fde9c97b041052c4a50fd6da552360f3e7cfa36e08ddefd4658dd6fdaad163cd"
+    },
+    {
+      "file": "app/assets/narration/minimax/quake-2-9cf2ee6a53d5.wav",
+      "bytes": 1153164,
+      "sha256": "9cf2ee6a53d5488f3731856d56dae87332899122262bc4465ebeb825bcc23fee"
+    },
+    {
+      "file": "app/assets/narration/minimax/quake-3-09cfc2f9d343.wav",
+      "bytes": 1191564,
+      "sha256": "09cfc2f9d3430fec31168b5eb2606e996400ce0d78c15703067baacafeac1d5e"
+    },
+    {
+      "file": "app/assets/narration/minimax/river-0-80a7b62b512b.wav",
+      "bytes": 1138756,
+      "sha256": "80a7b62b512bea4c9d8eb18ccba381f686a7d58f1ffaba19dfbd5896372e4fcd"
+    },
+    {
+      "file": "app/assets/narration/minimax/river-1-12df71c7803c.wav",
+      "bytes": 1274764,
+      "sha256": "12df71c7803c6c1194ac4410707b79a49eb0d4f6e9375164d7ce2d2d298e0d10"
+    },
+    {
+      "file": "app/assets/narration/minimax/storm-0-6d2eb3d18c3b.wav",
+      "bytes": 1093432,
+      "sha256": "6d2eb3d18c3b4132b95353c437852ab1bbec5afe92ad974cbbdb335834528e99"
+    },
+    {
+      "file": "app/assets/narration/minimax/storm-1-f941f5c2b528.wav",
+      "bytes": 1223564,
+      "sha256": "f941f5c2b528a324f17acbf908787b076f996eed2de230cd4e613d3a30cbcf9b"
+    },
+    {
+      "file": "app/assets/narration/minimax/storm-2-efb728771724.wav",
+      "bytes": 1255564,
+      "sha256": "efb728771724f2dea3e5ae164c98b7c3d3463d632e2b2887a702ce4bbeb008a6"
+    },
+    {
+      "file": "app/assets/narration/minimax/storm-3-04e0ee3d2fbc.wav",
+      "bytes": 1229544,
+      "sha256": "04e0ee3d2fbc00d33340284bbef49f747a3cdc2b100a941c02ed9b21cfbcb335"
+    },
+    {
+      "file": "app/assets/narration/minimax/volcano-0-9396297bfb2a.wav",
+      "bytes": 1108364,
+      "sha256": "9396297bfb2a3c07838ecad6e3841edd8fec60a08c5eb70d9b126fe57c1acd3c"
+    },
+    {
+      "file": "app/assets/narration/minimax/volcano-1-773d2a3f5b65.wav",
+      "bytes": 1146764,
+      "sha256": "773d2a3f5b65d026c3adaafbf124a9e90b6d603dba8874e730c5ad326f5d96bb"
+    },
+    {
+      "file": "app/assets/narration/minimax/volcano-2-cb5d09e913a0.wav",
+      "bytes": 1153164,
+      "sha256": "cb5d09e913a0b61c9e2bb6ad15e8e830a255bc3eed1d8668e02a983daf9212de"
+    },
+    {
+      "file": "app/assets/narration/minimax/volcano-3-c26c069cef06.wav",
+      "bytes": 1204364,
+      "sha256": "c26c069cef06b1e91e61098be1827a1fea97ca05deb954a2f9f21823ef5c9f62"
+    },
+    {
+      "file": "research/verification-v14.json",
+      "bytes": 3123,
+      "sha256": "d263ab10b3d198d37759c1e0211b3562bb1e94e1591291f62c1c33371a25c68b"
+    },
+    {
+      "file": "assets/images/narration-v14.png",
+      "bytes": 161589,
+      "sha256": "b4096b17f60b3481ad4b8b9d926f205942a3a44163f9763e98056814c7d4080e"
+    },
+    {
+      "file": "assets/images/narration-mobile-v14.png",
+      "bytes": 55698,
+      "sha256": "e1fee1f1c1d2e3bebd08bb9c35a46988b35c3838a0f933ed6705df14e674d01c"
+    },
+    {
+      "file": "assets/images/narration-entry-v14.png",
+      "bytes": 113846,
+      "sha256": "33c3b8bceb011cc11926f13d5980f29b3b1a979ae4c6c0a983e2ba264d211c3a"
+    }
+  ]
+}

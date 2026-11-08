@@ -1,0 +1,219 @@
+{
+  "version": "16.0.0",
+  "canonicalRoot": "E:\\codex_project\\1025_codex_project\\projects\\015-process-visualization-lab",
+  "status": "canonical-written-and-whitelisted-stage-copy-hash-verified",
+  "fileCount": 42,
+  "files": [
+    {
+      "file": "app/index.html",
+      "bytes": 24999,
+      "sha256": "f3719aa80a7f1541116f9f26913fd10cf77f73699da519a1703a272f9164403d"
+    },
+    {
+      "file": "app/globe.html",
+      "bytes": 24999,
+      "sha256": "f3719aa80a7f1541116f9f26913fd10cf77f73699da519a1703a272f9164403d"
+    },
+    {
+      "file": "app/globe-app.js",
+      "bytes": 75404,
+      "sha256": "1b873577ebc62ab153f592ec7996cf1d3126b9827a5557e194cc18b75ca5134f"
+    },
+    {
+      "file": "app/globe-engine.js",
+      "bytes": 41782,
+      "sha256": "443382e8d25636fb9b2acedd7ec9c5280e598fcb1e9aeb757a790182e60e92ef"
+    },
+    {
+      "file": "app/dynamic-player.js",
+      "bytes": 22734,
+      "sha256": "8ac9b739992fc6a6c0d6bf95aa4c3a384b1285a4459314f8d63d90d5454eae7b"
+    },
+    {
+      "file": "app/dynamic-globe-layer.js",
+      "bytes": 9444,
+      "sha256": "14ee89b87fb615ffe6e59209be204cb6f435078614a6b9fec53da3c8789d0bf7"
+    },
+    {
+      "file": "app/sync-cloud-layer.js",
+      "bytes": 25684,
+      "sha256": "9b42cfa1c36dfaaa0eb56688796576b58aedf357a385fb90a777cad9de4954bb"
+    },
+    {
+      "file": "app/demo-workbench.js",
+      "bytes": 15416,
+      "sha256": "633859b9fc7520d9f4ca2bcbca35425953ef14684f31ceffb41f9e542f64c33b"
+    },
+    {
+      "file": "app/narration-session.js",
+      "bytes": 3206,
+      "sha256": "98f1b17edd1abdd166428cd81214689a968b71ab59dcfd151c63643cff3c2937"
+    },
+    {
+      "file": "app/narration-guide.js",
+      "bytes": 8594,
+      "sha256": "14c69a97b58d1c25a20da5915101a6d0cc5b63b182e6c75ffabc0f94890ef95e"
+    },
+    {
+      "file": "app/observed-story.js",
+      "bytes": 14056,
+      "sha256": "347d367addcfaf582b26b1e9bb1c80a3239af7a2f5c192e77f7a0c003d3bd587"
+    },
+    {
+      "file": "app/observed-story-layer.js",
+      "bytes": 15830,
+      "sha256": "c89bb268ed61be4cbfa6181d6cb10e75965ea53b2b852f1671569824918f5977"
+    },
+    {
+      "file": "app/observed-presentation.js",
+      "bytes": 10077,
+      "sha256": "7c54394af130205264606306cb1103c0417d364f19e7f4c6e8f1105ec235b1c3"
+    },
+    {
+      "file": "app/observed-presentation.css",
+      "bytes": 8143,
+      "sha256": "3818b16949ab8d180a794ea5c4a75718ca74c466f4d6ba419202952740c8070b"
+    },
+    {
+      "file": "app/data/observed-change-features.json",
+      "bytes": 1080987,
+      "sha256": "07784e808f463fd0ea23fd02a6c727ef7a6b317e258092c39e90224cdf7d2e24"
+    },
+    {
+      "file": "tests/observed-story.test.mjs",
+      "bytes": 8590,
+      "sha256": "18dad55a987ac4d1bebb2eab68182cba240a517e37dbcb0ab07515ae0f3f9c79"
+    },
+    {
+      "file": "tests/observed-story-layer.test.mjs",
+      "bytes": 10827,
+      "sha256": "84ba6274846d2ec807a459989c38fabfa7c56699f96938885f5f5a5a304ccd01"
+    },
+    {
+      "file": "tests/observed-change-features.test.mjs",
+      "bytes": 10855,
+      "sha256": "55441f667885947b340d8fc683153a1514f5c4e7b744584749c564d775d42e9b"
+    },
+    {
+      "file": "tests/observed-presentation.test.mjs",
+      "bytes": 13993,
+      "sha256": "d7dd08d8c185cd8676c5da4e7d7702bc59cc75c500b0fc955f7a6d076562b1c9"
+    },
+    {
+      "file": "tests/volcano-display-focus.test.mjs",
+      "bytes": 9824,
+      "sha256": "903e9b6e2c0b1495c2d893c77e3364b911430873bf00b4552ee3428710a1eb43"
+    },
+    {
+      "file": "tests/earth-event-layer.test.mjs",
+      "bytes": 18911,
+      "sha256": "d983a1d785572dc70993d51ba620a4081b43d7fd28026dfd6a2ca21e5e8632cf"
+    },
+    {
+      "file": "tests/narration-session.test.mjs",
+      "bytes": 15103,
+      "sha256": "7fad6c5fb934032486308ce12de86df1686b8bc4e0b7784c55b6f68d19dcc413"
+    },
+    {
+      "file": "tests/demo-workbench.test.mjs",
+      "bytes": 8640,
+      "sha256": "b225364832275bb2c3346bc3d77893754cea8c3d41b43a794b42baf12b046d1e"
+    },
+    {
+      "file": "tests/sync-playback.test.mjs",
+      "bytes": 13881,
+      "sha256": "f2c7161ad04c4db5c99dac1c6c0bc532648175f5163222a07b56ac93bd41a5dd"
+    },
+    {
+      "file": "tests/dynamic-player.test.mjs",
+      "bytes": 22373,
+      "sha256": "223ff3858b9424f745d64d52f8f3838cfabbf4da3381ea31f0d39571ac364ec4"
+    },
+    {
+      "file": "research/dynamics/derive-observed-features.py",
+      "bytes": 19597,
+      "sha256": "eaaaad4420bf9f01a3d5542bc97a9c0e4a39dee5874065bc219ef90fcd735c28"
+    },
+    {
+      "file": "research/dynamics/observed-features-report.json",
+      "bytes": 1031,
+      "sha256": "a390d230184d3eef7c7fd9dd63dc8e0a5d67a1aeb5caa6440601d807c1839bfd"
+    },
+    {
+      "file": "research/dynamics/observed-features-notes.json",
+      "bytes": 5106,
+      "sha256": "402f42eca504fb9de513b8ee71898bd8dddd981f40dc2d4d02a00ef6d78ebe50"
+    },
+    {
+      "file": "research/dynamics/volcano-display-focus.json",
+      "bytes": 2351,
+      "sha256": "fc16dc84be9fe384087c9a6504e2dc5efb9061b1502ca5cf717a20477f7147de"
+    },
+    {
+      "file": "research/dynamics/README.md",
+      "bytes": 9830,
+      "sha256": "40e1db13a98a6e612ada2692a7a80fad17865aac0a466d13ca7fefd370198eb5"
+    },
+    {
+      "file": "research/verification-v16.json",
+      "bytes": 4678,
+      "sha256": "5caf72b1f6276efe912c405afa02e64d48bfcf7fe1345f9d090993aeb7769333"
+    },
+    {
+      "file": "assets/images/README.md",
+      "bytes": 3257,
+      "sha256": "fff990a80e2ca86602e5f77ba3db456098a2981dde33ea458bde74501b7bf3b4"
+    },
+    {
+      "file": "README.md",
+      "bytes": 37925,
+      "sha256": "b0ff7b0300840fe03405fee7c6f18eb727fb3f0a288bd2acf8aa2d2c046f63eb"
+    },
+    {
+      "file": "package.json",
+      "bytes": 478,
+      "sha256": "dd06e1404b92481bfbaf099827aa020e35320991c5433a8c87c02cdebec2459f"
+    },
+    {
+      "file": "scripts/check.mjs",
+      "bytes": 14260,
+      "sha256": "2b2a0e0f0076504dc6d90fbff37e72457c883d03c78fb9366158f68caf856f2c"
+    },
+    {
+      "file": "assets/images/observed-earth-v16.png",
+      "bytes": 126933,
+      "sha256": "5223dbc60eb3a54f779c5d6295dc248ac57a5be7946c41782e5daa8bf3b08039"
+    },
+    {
+      "file": "assets/images/observed-close-v16.png",
+      "bytes": 137933,
+      "sha256": "8d7272ec3579e7f91fdb5c9933e068145cd43060f0381876d61a4071bccc6401"
+    },
+    {
+      "file": "assets/images/observed-narration-v16.png",
+      "bytes": 129883,
+      "sha256": "1a9108cb4f34f714b06a8a6482ea527ffdf7069b537e42cbf83dd47797e52ad7"
+    },
+    {
+      "file": "assets/images/observed-storm-v16.png",
+      "bytes": 161655,
+      "sha256": "3c2be37b0c9d03badd06c33c4370cbe93b33a8792629b7919d036db523ce34d3"
+    },
+    {
+      "file": "assets/images/observed-quake-v16.png",
+      "bytes": 121442,
+      "sha256": "a5f77416b06ed044dfed53db734ee13f3501ff6d57e156b955c0436646deff08"
+    },
+    {
+      "file": "assets/images/observed-mangkhut-v16.png",
+      "bytes": 129802,
+      "sha256": "4d2756c1b9dd261c987dba9e9ec231bf82634ef7f7e9288478f82494a2fad7fb"
+    },
+    {
+      "file": "assets/images/observed-mobile-v16.png",
+      "bytes": 45754,
+      "sha256": "141300af387aa55a6f3f4f8744cf5d6846c77af857eecb5b1f509e40c234c700"
+    }
+  ],
+  "scope": "Only explicit v16 implementation/tests/docs/proofs copied to existing local staging; no observation/audio replacement or cleanup."
+}

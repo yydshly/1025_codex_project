@@ -1,0 +1,105 @@
+body[data-replay=observations] .archive-switch{border-color:#67b8c175}
+#mode-records[aria-pressed=true]{color:#ffe3b7;border-color:#edc78c78;background:#392d1a}
+.sync-chart{padding:13px 0;border-bottom:1px solid #7797ae29}.sync-chart:last-child{border-bottom:0}
+.sync-chart-title{display:flex;justify-content:space-between;align-items:baseline;gap:6px;font-size:12px;line-height:1.6}
+.sync-chart-title strong{font-weight:500}.sync-chart-title>span{white-space:nowrap;font:12px ui-monospace,monospace}
+.sync-chart-station{margin:5px 0 6px;font-size:9px;color:#91aabb;line-height:1.7}
+.sync-chart svg{display:block;width:100%;height:auto;overflow:visible}
+.sync-chart-foot{display:flex;justify-content:space-between;align-items:flex-start;gap:7px;font-size:9px;color:#a2b4c1;line-height:1.7}
+.sync-chart-foot>a{flex-shrink:0;font-size:9px;color:#9bd8df}
+.sync-readout{display:grid;grid-template-columns:1fr auto;align-items:center;gap:6px;padding:11px 0;border-bottom:1px solid #7b9bb12a}
+.sync-readout:last-child{border-bottom:0}.sync-readout>div>span{display:block;font-size:11px}.sync-readout>div>small{display:block;font-size:9px;margin-top:5px;color:#8ba5b7}
+.sync-readout>strong{font:22px ui-monospace,monospace;white-space:nowrap}.sync-readout>strong>small{font-size:9px;margin-left:4px}
+.sync-readout>p{grid-column:1/-1;font-size:9px;line-height:1.7;color:#a4b4c0;margin:0}
+.sync-legend{margin:10px 0 0;font-size:9px;line-height:1.85;color:#98aebf}.sync-legend b{font-weight:400;color:#ead2a6}
+.sync-time-picks{display:flex;flex-wrap:wrap;gap:5px;margin-top:12px}.sync-time-picks button{flex:1 1 28%;border:1px solid #81aab53a;background:#102330;border-radius:4px;min-height:32px;font:11px ui-monospace,monospace;color:#b7d1dc}.sync-time-picks button[aria-pressed=true]{color:#ffe0ab;border-color:#d9ba7a;background:#342d21}
+.sync-registration{font-size:9px;line-height:1.8;color:#829caf;margin:9px 0 0}
+.sync-cloud-key{display:flex;align-items:center;gap:7px;flex-wrap:wrap;font-size:9px;color:#9caebb}.sync-cloud-key i{display:inline-block;width:70px;height:6px;background:linear-gradient(90deg,#111,#fff);border:1px solid #9bb4bf50}
+.sync-station-marker{position:absolute;padding:6px 9px;border-radius:3px;border-left:2px solid var(--station-color);background:#06121ddd;color:#cddfe8;font-size:9px;white-space:nowrap;pointer-events:none;z-index:3;line-height:1.6}.sync-station-marker small{display:block;color:var(--station-color);font-size:9px}
+body[data-replay=observations] #current-insight{padding-top:8px;padding-bottom:9px}
+body[data-replay=observations] .earth-caption #view-label{font-size:11px}
+body[data-replay=observations] #archive-image-date{font-size:12px}
+body[data-replay=observations] #open-local{display:none}
+body[data-replay=observations] .meaning #next-topic{display:none}
+@media(min-width:901px){body[data-replay=observations] .context{padding-top:16px;padding-bottom:13px}body[data-replay=observations] .context h2{font-size:19px;margin-top:12px}body[data-replay=observations] .context .location{margin-top:10px;padding-top:10px}body[data-replay=observations] .context .scale-note{margin-top:9px;font-size:9px}body[data-replay=observations] .earth-view{min-height:460px}}
+@media(max-width:1200px){.archive-mode-buttons button{padding-left:8px;padding-right:8px;font-size:10px}.sync-readout>strong{font-size:19px}}
+@media(max-width:700px){.sync-chart-title{font-size:13px}.sync-chart-title>span{font-size:14px}.sync-chart-station,.sync-chart-foot,.sync-chart-foot>a{font-size:11px}.sync-readout>div>span{font-size:13px}.sync-readout>div>small,.sync-readout>p{font-size:11px}.sync-readout>strong{font-size:27px}.sync-legend,.sync-registration{font-size:11px}.archive-mode-buttons button{font-size:10px;padding-left:5px;padding-right:5px}.sync-station-marker{font-size:8px;padding:4px 6px}}
+
+.sync-station-name,.sync-station-reading{display:block;font-size:9px;font-weight:400}.sync-station-reading{color:var(--station-color)}
+
+.sync-readout{grid-template-columns:minmax(0,1fr) auto}.sync-readout>div{min-width:0}.sync-readout>strong>small{display:block;text-align:right;margin-top:4px;margin-left:0}
+
+.sync-readout>strong>small{font-size:10px;line-height:1.3;color:#a3bac7}
+
+@media(max-width:700px){body[data-replay=observations] .left-panels,body[data-replay=observations] .right-panels{grid-template-columns:minmax(0,1fr)}body[data-replay=observations] .sync-chart svg{max-height:none}body[data-replay=observations] .sync-time-picks button{flex-basis:20%}}
+
+.sync-presentation-tools{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 0 11px;border-bottom:1px solid #7599b62b;margin-bottom:11px}.sync-presentation-tools[hidden]{display:none}.sync-presentation-tools>div{display:flex;gap:4px}.sync-presentation-tools button{font-size:11px;border:1px solid #7da1b53a;border-radius:5px;padding:8px 12px;color:#9ebbc9;background:#0a1b29}.sync-presentation-tools button[aria-pressed=true]{color:#d9f8fb;background:#173a4b;border-color:#79b8c680}.sync-presentation-tools>span{font-size:10px;color:#7f9fac}.sync-step-tools button{font:10px ui-monospace,monospace;padding:8px}.sync-presentation-tools button:disabled{opacity:.3}
+body[data-replay=observations] .earth-view{height:520px;min-height:460px;background:radial-gradient(ellipse at 50% 52%,#10374a35,transparent 68%)}body[data-replay=observations] .archive-imagery-note{background:#061421c9;backdrop-filter:blur(8px)}
+@media(max-width:1100px){.sync-presentation-tools>span{display:none}.sync-presentation-tools button{padding:8px;font-size:10px}}
+@media(max-width:700px){body[data-replay=observations] .earth-view{height:440px;min-height:0}.sync-presentation-tools{gap:6px}.sync-presentation-tools button{padding:8px 9px}.sync-step-tools button{font-size:10px}.sync-presentation-tools>span{display:none}}
+
+body[data-replay=observations] #archive-image-date strong{display:block;font:500 27px/1.2 ui-monospace,monospace;letter-spacing:1px;color:#f0f8ff;margin:5px 0}body[data-replay=observations] #archive-image-date small{display:block;font-size:9px;color:#8faec2;margin-bottom:7px}body[data-replay=observations] .archive-imagery-note{border-left-color:#7ac9d5}
+
+body[data-replay=observations] .globe-coordinate{display:none}body[data-replay=observations] .archive-imagery-note{top:12px;left:10px}@media(max-width:700px){body[data-replay=observations] #archive-image-date strong{font-size:21px}body[data-replay=observations] .archive-imagery-note{top:6px;left:4px;padding:7px 9px}}
+
+.sync-presentation-tools{flex-wrap:wrap;gap:7px}.sync-presentation-tools>span{display:none}.sync-enhancements button[aria-pressed=true]{border-color:#bcab7b88;background:#302c22;color:#f3dfae}.sync-change-status{padding:9px 12px;border-left:2px solid #77cddd;background:#0b202c;color:#afc7d5;font-size:11px;line-height:1.7;margin-bottom:10px}.sync-change-status[hidden]{display:none}.sync-change-status b{font-weight:500;color:#e5eff6}.sync-change-key{display:inline-flex;align-items:center;gap:5px}.sync-change-key i{display:inline-block;width:7px;height:7px;border-radius:50%}.sync-step-tools{margin-left:auto}
+@media(max-width:700px){.sync-presentation-tools{row-gap:8px}.sync-presentation-tools>.sync-step-tools{margin-left:0}.sync-presentation-tools>.sync-enhancements{margin-left:auto}.sync-presentation-tools button{padding:8px 7px;font-size:10px}.sync-change-status{font-size:11px}.archive-view-tools button{padding:5px!important;font-size:8px!important}}
+#mangkhut-lesson-entry { display:none; }
+html:has(body.narration-active[data-mode="archive"][data-replay="observations"]) { overflow-anchor:none; }
+body[data-mode="archive"][data-replay="observations"]:not(.narration-active,.demo-active) #mangkhut-lesson-entry {
+  display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:9px 14px;
+  margin-bottom:9px; padding:10px 13px; border:1px solid #7a6c54; border-radius:6px; background:#1a2530;
+}
+#mangkhut-lesson-entry strong { display:block; color:#ffe3ab; font-size:14px; }
+#mangkhut-lesson-entry span { display:block; margin-top:3px; color:#c0d6e5; font-size:11px; }
+#mangkhut-learn { padding:7px 10px; border-radius:4px; background:#ffe1a5; color:#242218; font-size:12px; font-weight:700; }
+body[data-mode="archive"][data-replay="observations"]:not(.narration-active,.demo-active) #story-narrate { display:none; }
+body[data-mode="archive"][data-replay="observations"] .narration-bottom nav { flex-wrap:wrap; }
+body[data-mode="archive"][data-replay="observations"] .narration-bottom nav button { font-family:inherit; }
+body[data-mangkhut-recap] :is(#observed-story-band,#observation-flow-controls),
+body[data-mangkhut-recap] #narration-dock[data-status="ended"] .narration-body { display:none; }
+body[data-replay="observations"] #earth-view:is([data-sync-cloud="missing"],[data-sync-cloud="failed"]) #archive-imagery-note { display:block!important; }
+.mangkhut-impact[hidden] { display:none; }
+.mangkhut-impact {
+  display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:6px;
+  margin:6px 0 4px;
+}
+.mangkhut-impact article {
+  --reading:#86ddda;
+  min-width:0; position:relative; padding:7px 9px; border:1px solid #3e5467;
+  border-radius:6px; background:#102437; color:#d8e9f3;
+}
+.mangkhut-impact article[data-mangkhut-reading="rain"] { --reading:#a0c4ff; }
+.mangkhut-impact article[data-mangkhut-reading="seaLevel"] { --reading:#ffd08b; }
+.mangkhut-impact article[data-guide-focus] { border-color:var(--reading); background:#183149; }
+.mangkhut-impact h3 { margin:0 0 4px; font-size:11px; font-weight:650; }
+.mangkhut-impact strong { color:var(--reading); font:650 clamp(14px,1.6vw,23px) system-ui,sans-serif; }
+.mangkhut-impact small { display:block; margin-top:2px; font-size:9px; color:#b9cddd; line-height:1.35; }
+.mangkhut-compass { width:37px; height:37px; float:right; margin:0 0 3px 6px; color:var(--reading); }
+.mangkhut-compass circle { fill:#0c1c2b; stroke:currentColor; stroke-width:.8; }
+.mangkhut-compass text { text-anchor:middle; font:9px system-ui,sans-serif; fill:#e0f7fb; }
+.mangkhut-compass path { fill:none; stroke:currentColor; stroke-width:2.5; stroke-linecap:round; stroke-linejoin:round; }
+.mangkhut-bar { position:relative; height:5px; margin:3px 0; background:#30495c; border-radius:4px; overflow:visible; }
+.mangkhut-bar i { position:absolute; inset:0 auto 0 0; background:var(--reading); border-radius:4px; }
+.mangkhut-rain-range i { min-width:2px; border-left:2px solid #e6f1ff; border-right:2px solid #e6f1ff; }
+.mangkhut-bar b { position:absolute; height:9px; top:-2px; border-left:1px solid #fff; }
+.mangkhut-water-gauge { position:relative; float:right; width:17px; height:39px; margin:0 0 3px 5px; border:1px solid #718ba0; border-radius:2px; background:#0a1c2e; }
+.mangkhut-water-gauge i { position:absolute; inset:auto 0 0; background:var(--reading); opacity:.82; }
+.mangkhut-water-gauge b { position:absolute; left:-3px; right:-3px; border-top:1px dashed #fff; }
+@media (min-width:701px) {
+  body.narration-active[data-mode="archive"][data-replay="observations"]:not([data-case-lesson]) #earth-view { height:clamp(245px,calc(100dvh - 455px),530px); }
+  body.narration-active[data-mode="archive"][data-replay="observations"][data-mangkhut-recap] #earth-view { height:clamp(220px,calc(100dvh - 485px),500px); }
+  body.narration-active[data-mode="archive"][data-replay="observations"] :is(#observed-keyframes,#observation-flow-controls,#observed-story-band) { display:none; }
+  body.narration-active[data-replay="observations"]:has(.mangkhut-impact:not([hidden])) :is(#visual-key,.observed-cloud-callouts) { display:none; }
+  body.narration-active[data-replay="observations"]:has(.mangkhut-impact:not([hidden])) #current-insight { order:-1; }
+  body.narration-active[data-replay="observations"]:has([data-mangkhut-reading="rain"][data-guide-focus]) #current-insight { display:flex; flex-direction:column; }
+  body.narration-active[data-replay="observations"]:has([data-mangkhut-reading="rain"][data-guide-focus]) #current-insight .panel-label { order:-2; }
+  body.narration-active[data-replay="observations"]:has([data-mangkhut-reading="rain"][data-guide-focus]) #current-insight [data-series="rain"] { order:-1; }
+}
+@media (max-width:700px) {
+  .mangkhut-impact { gap:4px; }
+  .mangkhut-impact article { padding:6px; }
+  .mangkhut-impact h3 { font-size:10px; }
+  .mangkhut-compass { width:25px; height:25px; }
+  .mangkhut-water-gauge { width:12px; height:26px; }
+}

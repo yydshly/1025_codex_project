@@ -1,0 +1,434 @@
+[
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/0000/HS_H08_20180916_0000_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 23934309,
+    "ETag": "\"266c61c798ea750d0ebf44b019756066-3\"",
+    "LastModified": "2022-01-23T09:49:41.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/0010/HS_H08_20180916_0010_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 23959686,
+    "ETag": "\"7b358ebe229e146f5c18bc3fef629739-3\"",
+    "LastModified": "2022-01-23T09:49:44.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/0020/HS_H08_20180916_0020_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 23986548,
+    "ETag": "\"7e0d806bd1c447d7eba8e72055a78b7a-3\"",
+    "LastModified": "2022-01-23T09:49:47.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/0030/HS_H08_20180916_0030_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24025510,
+    "ETag": "\"fcf5179f50be0d1557d9307b74d030ae-3\"",
+    "LastModified": "2022-01-23T09:49:49.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/0040/HS_H08_20180916_0040_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24087051,
+    "ETag": "\"4b9930cc700cc2888e7e4a991c22fb3e-3\"",
+    "LastModified": "2022-01-23T09:49:51.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/0050/HS_H08_20180916_0050_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24081981,
+    "ETag": "\"5f6c8dc7b182d7123a3d1499ed0e6934-3\"",
+    "LastModified": "2022-01-23T09:49:55.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/0100/HS_H08_20180916_0100_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24101149,
+    "ETag": "\"a3b635585c9de7c3f1fb4320e8db7241-3\"",
+    "LastModified": "2022-01-23T09:58:01.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/0110/HS_H08_20180916_0110_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24115817,
+    "ETag": "\"ad964cad4597cd0633d40ef6e25d7ad1-3\"",
+    "LastModified": "2022-01-23T09:58:05.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/0120/HS_H08_20180916_0120_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24141850,
+    "ETag": "\"b367b52622aa7d16648f138cd242ea03-3\"",
+    "LastModified": "2022-01-23T09:58:07.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/0130/HS_H08_20180916_0130_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24168667,
+    "ETag": "\"a8ec0c5f1717243a58e84f57a543db10-3\"",
+    "LastModified": "2022-01-23T09:58:10.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/0140/HS_H08_20180916_0140_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24193927,
+    "ETag": "\"3a73844c9913a288a3b49cec3a61c400-3\"",
+    "LastModified": "2022-01-23T09:58:13.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/0150/HS_H08_20180916_0150_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24221611,
+    "ETag": "\"20865b36dafd57317bbf59bd712204b9-3\"",
+    "LastModified": "2022-01-23T09:58:20.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/0200/HS_H08_20180916_0200_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24246349,
+    "ETag": "\"9669c897860b1cd2ee0d4ca9bff0d99b-3\"",
+    "LastModified": "2022-01-23T10:06:21.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/0210/HS_H08_20180916_0210_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24274649,
+    "ETag": "\"0e2a727b78e0b32b8605ae441110b189-3\"",
+    "LastModified": "2022-01-23T10:06:23.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/0220/HS_H08_20180916_0220_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24290922,
+    "ETag": "\"b51d1af16a80526ebbcaa7417cee3787-3\"",
+    "LastModified": "2022-01-23T10:06:25.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/0230/HS_H08_20180916_0230_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24308241,
+    "ETag": "\"f55980d0139daaa320012da5a9d1da6d-3\"",
+    "LastModified": "2022-01-23T10:06:27.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/0250/HS_H08_20180916_0250_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24348365,
+    "ETag": "\"4c6f62598117ea87762744d0ed7245b1-3\"",
+    "LastModified": "2022-01-23T10:06:30.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/0300/HS_H08_20180916_0300_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24363732,
+    "ETag": "\"1bffb9fe579a31375ea49c155bcc84f1-3\"",
+    "LastModified": "2022-01-23T10:13:48.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/0310/HS_H08_20180916_0310_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24394991,
+    "ETag": "\"9079bb0726b7504ef50c214edd2fd4c5-3\"",
+    "LastModified": "2022-01-23T10:13:51.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/0320/HS_H08_20180916_0320_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24399086,
+    "ETag": "\"2928746b3f4c36c80a9465d873d75d5f-3\"",
+    "LastModified": "2022-01-23T10:13:54.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/0330/HS_H08_20180916_0330_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24414445,
+    "ETag": "\"d749e0b66560dd8be560c54553efb6d5-3\"",
+    "LastModified": "2022-01-23T10:13:56.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/0340/HS_H08_20180916_0340_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24422955,
+    "ETag": "\"621e43e183533e77ff383c6b998701fb-3\"",
+    "LastModified": "2022-01-23T10:13:59.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/0350/HS_H08_20180916_0350_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24434707,
+    "ETag": "\"7370ae55d76936ed3f847fa67c60c833-3\"",
+    "LastModified": "2022-01-23T10:14:03.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/0400/HS_H08_20180916_0400_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24433010,
+    "ETag": "\"c72fdf341d7df55dbbcc6e48af4bc95c-3\"",
+    "LastModified": "2022-01-23T10:22:16.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/0410/HS_H08_20180916_0410_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24445858,
+    "ETag": "\"c4a08acb782a5a53307a7bfa56a3bdf2-3\"",
+    "LastModified": "2022-01-23T10:22:19.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/0420/HS_H08_20180916_0420_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24453442,
+    "ETag": "\"48a5428cbbfbc34e4c4a21c1f3bf9aa8-3\"",
+    "LastModified": "2022-01-23T10:22:23.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/0430/HS_H08_20180916_0430_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24453999,
+    "ETag": "\"f90610804c75cda96c2c3e952586cadd-3\"",
+    "LastModified": "2022-01-23T10:22:26.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/0440/HS_H08_20180916_0440_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24458587,
+    "ETag": "\"7a84dbfa500f4432be1124b916281198-3\"",
+    "LastModified": "2022-01-23T10:22:29.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/0450/HS_H08_20180916_0450_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24450930,
+    "ETag": "\"f2ad52a237c4222f17742dfb66431cad-3\"",
+    "LastModified": "2022-01-23T10:22:32.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/0500/HS_H08_20180916_0500_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24458374,
+    "ETag": "\"0f7724239bec7301f48d341b79d3ac88-3\"",
+    "LastModified": "2022-01-23T10:30:24.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/0510/HS_H08_20180916_0510_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24451630,
+    "ETag": "\"08ff22963831547b4a6374775a4b27e3-3\"",
+    "LastModified": "2022-01-23T10:30:27.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/0520/HS_H08_20180916_0520_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24445215,
+    "ETag": "\"8f1cfc8839609fa003a426ecab8db874-3\"",
+    "LastModified": "2022-01-23T10:30:31.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/0530/HS_H08_20180916_0530_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24436539,
+    "ETag": "\"5f67ab595c4ac3c0a28b65a42032f7c0-3\"",
+    "LastModified": "2022-01-23T10:30:34.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/0540/HS_H08_20180916_0540_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24435177,
+    "ETag": "\"b195341fb3867df3551405a4988add00-3\"",
+    "LastModified": "2022-01-23T10:30:36.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/0550/HS_H08_20180916_0550_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24470396,
+    "ETag": "\"d7272a8ebb9ead4e9bce89f50e6ca809-3\"",
+    "LastModified": "2022-01-23T10:30:40.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/0600/HS_H08_20180916_0600_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24413661,
+    "ETag": "\"a257b31db7bd9523832a6448fa30427a-3\"",
+    "LastModified": "2022-01-23T10:37:57.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/0610/HS_H08_20180916_0610_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24393597,
+    "ETag": "\"aef6f2786c81c166aa95b52a895c841d-3\"",
+    "LastModified": "2022-01-23T10:38:00.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/0620/HS_H08_20180916_0620_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24382963,
+    "ETag": "\"a7a4f5df6a230844e688860b5b3a3b32-3\"",
+    "LastModified": "2022-01-23T10:38:03.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/0630/HS_H08_20180916_0630_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24363927,
+    "ETag": "\"d2d0da119b8957544c854d78ef4ac292-3\"",
+    "LastModified": "2022-01-23T10:38:07.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/0640/HS_H08_20180916_0640_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24342507,
+    "ETag": "\"2e5dbf1abfa18c3f7166b86ebb24090a-3\"",
+    "LastModified": "2022-01-23T10:38:10.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/0650/HS_H08_20180916_0650_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24311847,
+    "ETag": "\"8089fbad52b4548ddd784125eb30cfc0-3\"",
+    "LastModified": "2022-01-23T10:38:14.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/0700/HS_H08_20180916_0700_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24288076,
+    "ETag": "\"a281858985c46ea50f37ce2fcb7dd466-3\"",
+    "LastModified": "2022-01-23T10:44:54.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/0710/HS_H08_20180916_0710_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24265014,
+    "ETag": "\"8c3c9f0d92db9c7fd756366504f6300c-3\"",
+    "LastModified": "2022-01-23T10:44:57.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/0720/HS_H08_20180916_0720_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24242437,
+    "ETag": "\"cf8763ea2d6f4b8013a0a6b3ca462061-3\"",
+    "LastModified": "2022-01-23T10:45:00.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/0730/HS_H08_20180916_0730_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24218098,
+    "ETag": "\"809cd529710be1f7d670c55c3411b596-3\"",
+    "LastModified": "2022-01-23T10:45:03.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/0740/HS_H08_20180916_0740_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24183582,
+    "ETag": "\"9859ebc02c51fe9a84a0c71a3473d2ff-3\"",
+    "LastModified": "2022-01-23T10:45:06.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/0750/HS_H08_20180916_0750_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24206255,
+    "ETag": "\"a6aef6f060d024bb216cd25b4db1b6e8-3\"",
+    "LastModified": "2022-01-23T10:45:09.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/0800/HS_H08_20180916_0800_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24172578,
+    "ETag": "\"453356159d6835b3f328b53529c9878d-3\"",
+    "LastModified": "2022-01-23T10:51:12.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/0810/HS_H08_20180916_0810_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24104579,
+    "ETag": "\"e8f2ac7092e9e4f41299d3d6940edf0f-3\"",
+    "LastModified": "2022-01-23T10:51:14.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/0820/HS_H08_20180916_0820_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24083488,
+    "ETag": "\"103384a692f72c9b34cca7684bef254a-3\"",
+    "LastModified": "2022-01-23T10:51:16.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/0830/HS_H08_20180916_0830_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24060019,
+    "ETag": "\"32ed91eb9949f39f898282efcdd52b51-3\"",
+    "LastModified": "2022-01-23T10:51:18.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/0840/HS_H08_20180916_0840_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24050934,
+    "ETag": "\"50d16a34adc34aae54a03532025ecd2c-3\"",
+    "LastModified": "2022-01-23T10:51:22.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/0850/HS_H08_20180916_0850_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24033660,
+    "ETag": "\"82d22657b851376c7547b42fed7f23b4-3\"",
+    "LastModified": "2022-01-23T10:51:25.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/0900/HS_H08_20180916_0900_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24023344,
+    "ETag": "\"33b91ef350587426b082b8ceedd07103-3\"",
+    "LastModified": "2022-01-23T10:57:14.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/0910/HS_H08_20180916_0910_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24019552,
+    "ETag": "\"1cf9d8ff9a113d38727390de2b8e3624-3\"",
+    "LastModified": "2022-01-23T10:57:17.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/0920/HS_H08_20180916_0920_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24060921,
+    "ETag": "\"2511cea9b51b74dd05e8df9f58cc7da8-3\"",
+    "LastModified": "2022-01-23T10:57:19.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/0930/HS_H08_20180916_0930_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24055165,
+    "ETag": "\"e82db679b533ebce2258fcd85252ee79-3\"",
+    "LastModified": "2022-01-23T10:57:22.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/0940/HS_H08_20180916_0940_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24019184,
+    "ETag": "\"d06d68ef9a31e560512bd9bc600a7684-3\"",
+    "LastModified": "2022-01-23T10:57:24.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/0950/HS_H08_20180916_0950_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24009849,
+    "ETag": "\"cd87b3cab2590a44be76f972cf5a1d5b-3\"",
+    "LastModified": "2022-01-23T10:57:26.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/1000/HS_H08_20180916_1000_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24012945,
+    "ETag": "\"36049adcf52fb737ffb95cd4883838ee-3\"",
+    "LastModified": "2022-01-23T11:02:42.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/1010/HS_H08_20180916_1010_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24014492,
+    "ETag": "\"23d437acf9b784a3506714eee3fce872-3\"",
+    "LastModified": "2022-01-23T11:02:45.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/1020/HS_H08_20180916_1020_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24006422,
+    "ETag": "\"153ae2d9c75ac377752fcacb25389002-3\"",
+    "LastModified": "2022-01-23T11:02:48.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/1030/HS_H08_20180916_1030_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24014115,
+    "ETag": "\"a2efadc8abfbd0491cdaaeca378e7615-3\"",
+    "LastModified": "2022-01-23T11:02:50.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/1040/HS_H08_20180916_1040_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24009187,
+    "ETag": "\"e5988ee2dfbec2d35acc9ab529c85432-3\"",
+    "LastModified": "2022-01-23T11:02:52.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/1050/HS_H08_20180916_1050_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24012574,
+    "ETag": "\"d9cbd3a2c845393a8642780643ca52d3-3\"",
+    "LastModified": "2022-01-23T11:02:55.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/1100/HS_H08_20180916_1100_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24026751,
+    "ETag": "\"2e2e6e564b402d4e8796cbd934c2404f-3\"",
+    "LastModified": "2022-01-23T11:07:46.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/1110/HS_H08_20180916_1110_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24010268,
+    "ETag": "\"32fc3c8e006eed5a293099eed1e53e2d-3\"",
+    "LastModified": "2022-01-23T11:07:48.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/1120/HS_H08_20180916_1120_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24008893,
+    "ETag": "\"1b3a2642cd5f4c0a713061e5010f9abf-3\"",
+    "LastModified": "2022-01-23T11:07:50.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/1130/HS_H08_20180916_1130_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24006017,
+    "ETag": "\"93bda5956b5c3677ee95f782f70d5ea8-3\"",
+    "LastModified": "2022-01-23T11:07:52.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/1140/HS_H08_20180916_1140_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24011205,
+    "ETag": "\"4f3e650586b8a1ff5cd6384db8804c6e-3\"",
+    "LastModified": "2022-01-23T11:07:53.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/1150/HS_H08_20180916_1150_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24008374,
+    "ETag": "\"60f5dc4c5ff59c2648020d151a523406-3\"",
+    "LastModified": "2022-01-23T11:07:55.000Z"
+  },
+  {
+    "Key": "AHI-L1b-FLDK/2018/09/16/1200/HS_H08_20180916_1200_B13_FLDK_R20_S0101.DAT.bz2",
+    "Size": 24003776,
+    "ETag": "\"53f79a17a7dc330b996887da571983e7-3\"",
+    "LastModified": "2022-01-23T11:12:19.000Z"
+  }
+]
