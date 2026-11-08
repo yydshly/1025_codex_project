@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-08T13:41:41.727Z",
+  "generatedAt": "2026-11-08T13:58:41.711Z",
   "sourceScope": "projects.json + registered project README.md files only",
-  "projectCount": 13,
-  "passageCount": 704,
-  "registrySha256": "337a33ee9b592a96c2a44b20c34dbf154adc78ef3c7f4b022e527a2af2f7f9e2",
-  "dataSha256": "df405286b2c5ae4c66ceebae5d53364d7e226e9c5e612274d6f3f4801c58fdb0",
+  "projectCount": 15,
+  "passageCount": 721,
+  "registrySha256": "cd77dd0aadc475bd924dfac5e7ac3d98511a0858c0400baf622a3a342ead68b5",
+  "dataSha256": "9bd5ef4e6655e598724139f7cd44cb67e7ecd5a020acb636857e9da1145039a7",
   "documents": [
     {
       "projectId": "001",
@@ -44,6 +44,12 @@
       "passages": 37
     },
     {
+      "projectId": "007",
+      "path": "projects/007-pelican-bicycle/README.md",
+      "sha256": "8b37dd2ae0cc9d1d83336a9434759f5c42b22a1e6e5ace390854937135f5d35e",
+      "passages": 11
+    },
+    {
       "projectId": "008",
       "path": "projects/008-ultraman-card-draw/README.md",
       "sha256": "f29c5ad3b9f0bc1947e0105972e08f9fd5403469cba89266418ec1493fa522e7",
@@ -78,6 +84,12 @@
       "path": "projects/013-scenic-motion-lab/README.md",
       "sha256": "e81d21a79271e817b1167daaacad71357b84cca619ea896b5a871933e6edd0e9",
       "passages": 51
+    },
+    {
+      "projectId": "014",
+      "path": "projects/014-web-product-reference-library/README.md",
+      "sha256": "c1ba9571c09f485baef28182aa194fccaf948f5d33a1c10b512f00ebc3369019",
+      "passages": 6
     },
     {
       "projectId": "015",

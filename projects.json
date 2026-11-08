@@ -6,7 +6,7 @@
       "id": "001",
       "slug": "early-directions-atlas",
       "name": "早期方向档案",
-      "summary": "我们早期思考与尝试留下的十二个方向：需求与变现、内容获客、轻量产品、价格册、音频局部修改、3D咖啡、共想室、岗位观察、跨设备、论文、艺术短片与AI室友。按候选、方案、原型、阶段作品及停止项保存进展、依据和待验证问题。",
+      "summary": "把早期的 12 个产品、工具与创作方向整理成一张地图。可查每个想法做到哪一步、为何继续或暂停，以及接下来要验证什么。",
       "source": "https://github.com/yydshly/1025_codex_project",
       "sourceName": "本库原创档案（无上游源库）",
       "status": "completed",
@@ -25,7 +25,7 @@
       "id": "002",
       "slug": "ink-rain-alley",
       "name": "未完 · 水墨叙事",
-      "summary": "依据Bee录屏独立重写纸墨九章叙事：雨巷、拼贴、森林、四季湖景、莲花与墨圈，以滚动、画幅变化和自然微动组织观看。沉淀场景进度、遮罩与声音实现；未取得原作源码，视觉仍有差异。",
+      "summary": "参考 Bee 的录屏独立实现九段滚动水墨叙事。看雨巷、四季湖景与莲花如何用画幅、遮罩、微动和声音串起来。公开演示收在 005「纸间」。",
       "source": "https://x.com/thtbee_/status/2114030630887641448",
       "sourceName": "Bee 原演示（未取得源库）",
       "status": "completed",
@@ -44,7 +44,7 @@
       "id": "003",
       "slug": "unified-learning-design",
       "name": "连续主题体验设计",
-      "summary": "以 Every Joule 为参照独立实现三课三维物理书：翻页、立体器材与能量变化同屏呈现，支持调参实验、预测反馈、MiniMax逐句导览、文字放大和连续阅读。通过共享实验状态联动模型、数值、镜头与讲解，阅读后恢复原上下文。沉淀内容、展示、操作和解释统一设计的方法，供互动教材、原理说明与实验平台复用；扩展布局仍为设想。",
+      "summary": "体验三课可翻页、可调参的三维物理书。实验状态同时驱动模型、数值、镜头和 MiniMax 导览，适合参考互动教材怎样组织内容和反馈。",
       "source": "https://github.com/iamtechartist/every-joule-lesson1",
       "status": "completed",
       "tags": [
@@ -62,7 +62,7 @@
       "id": "004",
       "slug": "baocut-effects-atlas",
       "name": "BaoCut · 能力、原理与效果研究",
-      "summary": "BaoCut 是 AI 可操作的视频编辑器与制作工作流。效果覆盖动效、讲解、产品片、混剪和故事；以代码动画、AI 静图运镜、已有素材剪辑组合成片，支持字幕、配音、检索与可编辑工程。价值主要在工具集成、反复修改和人工接手；附 24 个方向、20 段预览及原理说明，效率收益未实测。",
+      "summary": "从 20 段预览和 24 个方向看 BaoCut 怎样把代码动效、AI 静图运镜和素材剪辑组合成可编辑的视频。记录了人工接手的位置，效率收益待实测。",
       "source": "https://github.com/JimLiu/baocut",
       "status": "researching",
       "tags": [
@@ -80,7 +80,7 @@
       "id": "005",
       "slug": "paper-poetics-lab",
       "name": "纸间 · 诗性风格实验室",
-      "summary": "原参考以纸墨、画幅转换和自然微事件串起多场景诗性叙事。本研究用独立重写、实时茶庭与AI雨窗样片，沉淀氛围组织、载体选型和可复用工程方法；可扩展声画事件、纸墨与写实融合及文化展陈入口，仍需验证。",
+      "summary": "用水墨重写、实时茶庭和 AI 雨窗样片比较三种氛围表达方式。图解说明何时选网页交互、实时场景或生成视频，并记录各自的制作条件。",
       "source": "https://x.com/thtbee_/status/2114030630887641448",
       "sourceName": "Bee 原演示（未取得源库）",
       "status": "researching",
@@ -99,7 +99,7 @@
       "id": "006",
       "slug": "prompthub-ai-assets",
       "name": "PromptHub · AI 工作资产与复用",
-      "summary": "集中管理提示词、Skills、MCP、插件与规则，通过模板、技能分发和配置适配供 AI 复用。对我的价值是借鉴其方法，把每日笔记中验证有效的经验沉淀为工作资产，减少重复说明与跨工具配置；笔记自动提炼和结果回写需另接入。",
+      "summary": "研究 PromptHub 如何管理提示词、Skills、MCP、插件与规则。档案记录把反复验证的工作经验整理成可复用资产的方法，笔记提炼与回写待接入。",
       "source": "https://github.com/legeling/PromptHub",
       "status": "completed",
       "tags": [
@@ -114,10 +114,27 @@
       "createdAt": "2026-10-27"
     },
     {
+      "id": "007",
+      "slug": "pelican-bicycle",
+      "name": "鹈鹕的单车日和",
+      "summary": "体验一只在海边骑车的鹈鹕。SVG 画角色与景物，CSS 做轮转和微动，可暂停、调速，支持减少动态效果设置。适合参考轻量网页动画的实现。",
+      "source": "https://github.com/yydshly/1025_codex_project",
+      "sourceName": "本库原创（无上游源库）",
+      "status": "building",
+      "tags": [
+        "网页动画",
+        "插画",
+        "交互"
+      ],
+      "cover": "",
+      "demoUrl": "",
+      "createdAt": "2026-10-27"
+    },
+    {
       "id": "008",
       "slug": "ultraman-card-draw",
       "name": "奥特曼卡片抽卡器",
-      "summary": "以874条人物与形态资料为基础，随机展示奥特曼与怪兽，结合人物突出、招式光效和设备讲解开展亲子探索。沉淀素材、演出配置与卡片舞台分层，后续可增加人物动作和渲染，复用随机演示流程。",
+      "summary": "从 874 条人物与形态资料中抽卡，结合招式光效与设备讲解做亲子探索。研究记录了人物素材、演出配置和卡片舞台如何分层。",
       "source": "https://github.com/yydshly/1025_codex_project",
       "sourceName": "本库原创（无上游源库）",
       "status": "building",
@@ -134,7 +151,7 @@
       "id": "009",
       "slug": "knowledge-processing-atlas",
       "name": "资料理解与检索研究",
-      "summary": "从 DeepTutor 与 NotebookLM 的教材问答和资料整理场景出发，比较 MinerU、Docling、BGE-M3、Qdrant、Graphiti 等26个对象。拆解结构解析、分块、检索与时间关系的本质，规划带出处阅读、跨日回顾、经验复用和自适应复习；附同题样例、场景选型、并排对比和实验协议，上游效果待验证。",
+      "summary": "比较 26 个资料处理工具或方案，拆解文档解析、分块、检索与时间关系。可查看同题样例和选型协议，研究目标是能带出处读资料和跨日回顾。",
       "source": "https://github.com/HKUDS/DeepTutor",
       "status": "researching",
       "tags": [
@@ -152,7 +169,7 @@
       "id": "010",
       "slug": "agent-skills-engineering-lab",
       "name": "Agent Skills · 全景理解与实践",
-      "summary": "研究 addyosmani/agent-skills 的25项工程规程：覆盖需求、规划、实现、验证、审查与交付维护，以七类工作和五问总图说明用途、场景、步骤、产物及协作。价值在于把工程经验变成AI可执行、结果可核对的流程；我们据此按真实需求选用，学习用约束、证据与检查控制落地，保留研究回查案例和自建Skill；全量讲解已完成，逐项实测待按需开展。",
+      "summary": "把上游的 25 项工程 Skills 按需求、计划、实现、验证、审查和交付等环节整理成地图。可对照应用场景、产物和检查项，并查看本库的研究回查实测。",
       "source": "https://github.com/addyosmani/agent-skills",
       "status": "researching",
       "tags": [
@@ -169,7 +186,7 @@
       "id": "011",
       "slug": "pose-look-creation-atlas",
       "name": "姿势与衣装参考 · 能力、作用与产品探索",
-      "summary": "POSE-DB-01提供1,439张姿势PNG、288组及多视角检索，表达动作与构图；COSTUME-DB-01提供1,407套虚构衣装、八类检索和原尺寸PNG，表达穿搭目标。原图分别私有备份，生图及身份、衣装保持由外部模型完成。已展示同一虚构人物的三套衣装×三种动作九格实测、六张写真候选，探索穿搭比较、系列写真、婚纱方案等产品目标，并保留提示词、来源和偏差。",
+      "summary": "用姿势与衣装两个图库研究多参考生图。公开九格组合实测和六张写真候选，可看同一虚构人物怎样更换动作与衣装，以及哪些细节容易偏离。",
       "source": "https://x.com/leo_xiaolei/status/2114971707962536302",
       "sourceName": "POSE-DB-01姿势图库与COSTUME-DB-01衣装图库",
       "status": "researching",
@@ -188,7 +205,7 @@
       "id": "012",
       "slug": "aquatic-toxicology-skill-lab",
       "name": "学术研究 Skill · 能力与水生毒理学实测",
-      "summary": "研究 academic-research-skills 的5个工作流：deep-research 拆题研究、sr-screener 文献筛选、academic-paper 写作、academic-paper-reviewer 审稿、academic-pipeline 调度。适用于选题、综述、证据核验、修订与审稿准备；价值是复用研究规范、角色与检查，使过程可追溯。以水生毒理学展示拆题、检索、补漏和分析，分清原库与新增采集器；查全、准确性和相对直接问AI的增益仍待验证。",
+      "summary": "以水生毒理学试题走一遍拆题、检索、文献筛选和证据分析，比较五种学术研究流程。公开报告、筛选表和核验记录，检索查全率与实际增益待验证。",
       "source": "https://github.com/Imbad0202/academic-research-skills",
       "status": "researching",
       "tags": [
@@ -205,7 +222,7 @@
       "id": "013",
       "slug": "scenic-motion-lab",
       "name": "景观奇旅 · AI影像创作实验室",
-      "summary": "以悬崖海湾骑行为样本，将首图世界设计、人物行动、镜头路径、环境响应和多段剪辑组织成可审查的影像方法。展示11.04秒Kling4.0双片实测、原片与接缝，提供首图、动作、氛围、摄影提示框架和七个扩展方向；价值是景观探索体验与导演经验复用，可延展系列旅程、文旅品牌概念样片及创作工作台。精确动作、全程接地和自动长片仍待验证。",
+      "summary": "观看 11.04 秒海湾骑行试片和两段原片，追踪首图、角色动作、运镜、环境响应与接缝。总结了可复用的导演方法，长片连续性待验证。",
       "source": "https://x.com/hi_personality/status/2115567493565825244",
       "sourceName": "Personality 原参考视频（非源码仓库）",
       "status": "researching",
@@ -221,12 +238,31 @@
       "createdAt": "2026-10-31"
     },
     {
+      "id": "014",
+      "slug": "web-product-reference-library",
+      "name": "50 个网站的产品能力与实现参考库",
+      "summary": "把 50 个网站按能力整理，逐站记录入口、效果证据、可借鉴机制和实现条件。研究摘要列出五个优先验证的产品方向，完整交互索引保留在本地。",
+      "source": "https://x.com/xiaoying_eth/status/2116389253060190271",
+      "sourceName": "小樱 50 个网站清单与各站官方资料",
+      "status": "researching",
+      "tags": [
+        "产品研究",
+        "能力分类",
+        "交互机制",
+        "数据接口",
+        "实现条件"
+      ],
+      "cover": "",
+      "demoUrl": "",
+      "createdAt": "2026-11-01"
+    },
+    {
       "id": "015",
       "slug": "process-visualization-lab",
       "name": "观象 · 地球过程与真实事件",
-      "summary": "从 50 站参考库与地月视频出发，研究怎样用固定参照、同一时间轴和真实资料解释地球变化。公开八个历史案例与 NASA B0005 放电实验，原理、画面、批注、曲线和中文讲解可按关键时刻核对。适用于课堂、展陈与历史复盘；柴油机为本地实验，洪水、污染迁移与持续观测为扩展方向。",
-      "source": "https://github.com/yydshly/1025_codex_project",
-      "sourceName": "本库原创产品与科学资料参考",
+      "summary": "用同一时间轴联动原理、真实资料、画面、曲线和中文讲解。公开八个地球历史案例及 NASA B0005 放电实验，可追溯关键时刻的观测来源。",
+      "source": "https://x.com/xiaoying_eth/status/2116389253060190271",
+      "sourceName": "研究起点 · 50 站清单与地月配视频",
       "status": "building",
       "tags": [
         "交互地球",
@@ -237,6 +273,137 @@
       "cover": "assets/images/guanxiang-research-overview.png",
       "demoUrl": "https://yydshly.github.io/1025_codex_project/015-process-visualization-lab/",
       "createdAt": "2026-11-04"
+    }
+  ],
+  "topics": [
+    {
+      "id": "product",
+      "title": "产品方向与参考",
+      "summary": "回看自己的想法，再找外部实现和验证线索。",
+      "projects": [
+        "001",
+        "014"
+      ]
+    },
+    {
+      "id": "knowledge",
+      "title": "AI 工作与证据",
+      "summary": "从整理工作经验，到检索资料和核对研究证据。",
+      "projects": [
+        "006",
+        "009",
+        "010",
+        "012"
+      ]
+    },
+    {
+      "id": "learning",
+      "title": "互动学习与数据叙事",
+      "summary": "用可操作的原理、画面和数据讲清一个过程。",
+      "projects": [
+        "003",
+        "015"
+      ]
+    },
+    {
+      "id": "visual",
+      "title": "影像与视觉制作",
+      "summary": "从人物参考和分镜，到短片拼接与后期编辑。",
+      "projects": [
+        "004",
+        "011",
+        "013"
+      ]
+    },
+    {
+      "id": "experience",
+      "title": "叙事与轻互动",
+      "summary": "探索网页的滚动节奏、实时氛围和短交互。",
+      "projects": [
+        "002",
+        "005",
+        "007",
+        "008"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "projects": [
+        "002",
+        "005"
+      ],
+      "label": "005「纸间」采用 002 的水墨独立重写作对照。"
+    },
+    {
+      "projects": [
+        "014",
+        "015"
+      ],
+      "label": "015「观象」从 014 的 50 站研究和地月参考视频延伸而来。"
+    },
+    {
+      "projects": [
+        "001",
+        "014"
+      ],
+      "label": "选题对照：001 查自有方向，014 查外部实现。"
+    },
+    {
+      "projects": [
+        "003",
+        "015"
+      ],
+      "label": "交互方法对照：003 联动实验状态，015 联动真实观测时间。"
+    },
+    {
+      "projects": [
+        "006",
+        "010"
+      ],
+      "label": "工作资产对照：006 研究如何管理，010 研究怎样执行和验收。"
+    },
+    {
+      "projects": [
+        "009",
+        "012"
+      ],
+      "label": "研究证据对照：009 拆解检索能力，012 展示学术检索与筛选流程。"
+    },
+    {
+      "projects": [
+        "010",
+        "012"
+      ],
+      "label": "流程对照：010 关注软件工程，012 关注学术研究。"
+    },
+    {
+      "projects": [
+        "011",
+        "013"
+      ],
+      "label": "创作方法对照：011 看人物和衣装约束，013 看动作、运镜和多段连续性。"
+    },
+    {
+      "projects": [
+        "004",
+        "013"
+      ],
+      "label": "制作流程对照：013 关注镜头设计与生成，004 关注素材组织与编辑。"
+    },
+    {
+      "projects": [
+        "005",
+        "013"
+      ],
+      "label": "氛围表现对照：005 比较纸墨与实时场景，013 用人物行动串起景观。"
+    },
+    {
+      "projects": [
+        "007",
+        "008"
+      ],
+      "label": "轻互动对照：007 用播放和调速，008 用抽取和卡片反馈。"
     }
   ]
 }

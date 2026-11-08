@@ -1,14 +1,14 @@
 // Generated from the project registry and allowlisted README files.
 globalThis.RECALL_CORPUS = {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-08T13:41:41.727Z",
-  "registrySha256": "337a33ee9b592a96c2a44b20c34dbf154adc78ef3c7f4b022e527a2af2f7f9e2",
+  "generatedAt": "2026-11-08T13:58:41.711Z",
+  "registrySha256": "cd77dd0aadc475bd924dfac5e7ac3d98511a0858c0400baf622a3a342ead68b5",
   "projects": [
     {
       "id": "001",
       "slug": "early-directions-atlas",
       "name": "早期方向档案",
-      "summary": "我们早期思考与尝试留下的十二个方向：需求与变现、内容获客、轻量产品、价格册、音频局部修改、3D咖啡、共想室、岗位观察、跨设备、论文、艺术短片与AI室友。按候选、方案、原型、阶段作品及停止项保存进展、依据和待验证问题。",
+      "summary": "把早期的 12 个产品、工具与创作方向整理成一张地图。可查每个想法做到哪一步、为何继续或暂停，以及接下来要验证什么。",
       "source": "https://github.com/yydshly/1025_codex_project",
       "status": "completed",
       "tags": [
@@ -244,14 +244,14 @@ globalThis.RECALL_CORPUS = {
         "path": "projects.json",
         "startLine": 5,
         "endLine": 23,
-        "text": "    {\n      \"id\": \"001\",\n      \"slug\": \"early-directions-atlas\",\n      \"name\": \"早期方向档案\",\n      \"summary\": \"我们早期思考与尝试留下的十二个方向：需求与变现、内容获客、轻量产品、价格册、音频局部修改、3D咖啡、共想室、岗位观察、跨设备、论文、艺术短片与AI室友。按候选、方案、原型、阶段作品及停止项保存进展、依据和待验证问题。\",\n      \"source\": \"https://github.com/yydshly/1025_codex_project\",\n      \"sourceName\": \"本库原创档案（无上游源库）\",\n      \"status\": \"completed\",\n      \"tags\": [\n        \"早期思考\",\n        \"遗留方向\",\n        \"AI产品\",\n        \"创作\",\n        \"历史回溯\"\n      ],\n      \"cover\": \"assets/images/directions-map-v1.png\",\n      \"demoUrl\": \"https://yydshly.github.io/1025_codex_project/001-early-directions-atlas/\",\n      \"createdAt\": \"2026-10-26\"\n    },"
+        "text": "    {\n      \"id\": \"001\",\n      \"slug\": \"early-directions-atlas\",\n      \"name\": \"早期方向档案\",\n      \"summary\": \"把早期的 12 个产品、工具与创作方向整理成一张地图。可查每个想法做到哪一步、为何继续或暂停，以及接下来要验证什么。\",\n      \"source\": \"https://github.com/yydshly/1025_codex_project\",\n      \"sourceName\": \"本库原创档案（无上游源库）\",\n      \"status\": \"completed\",\n      \"tags\": [\n        \"早期思考\",\n        \"遗留方向\",\n        \"AI产品\",\n        \"创作\",\n        \"历史回溯\"\n      ],\n      \"cover\": \"assets/images/directions-map-v1.png\",\n      \"demoUrl\": \"https://yydshly.github.io/1025_codex_project/001-early-directions-atlas/\",\n      \"createdAt\": \"2026-10-26\"\n    },"
       }
     },
     {
       "id": "002",
       "slug": "ink-rain-alley",
       "name": "未完 · 水墨叙事",
-      "summary": "依据Bee录屏独立重写纸墨九章叙事：雨巷、拼贴、森林、四季湖景、莲花与墨圈，以滚动、画幅变化和自然微动组织观看。沉淀场景进度、遮罩与声音实现；未取得原作源码，视觉仍有差异。",
+      "summary": "参考 Bee 的录屏独立实现九段滚动水墨叙事。看雨巷、四季湖景与莲花如何用画幅、遮罩、微动和声音串起来。公开演示收在 005「纸间」。",
       "source": "https://x.com/thtbee_/status/2114030630887641448",
       "status": "completed",
       "tags": [
@@ -535,14 +535,14 @@ globalThis.RECALL_CORPUS = {
         "path": "projects.json",
         "startLine": 24,
         "endLine": 42,
-        "text": "    {\n      \"id\": \"002\",\n      \"slug\": \"ink-rain-alley\",\n      \"name\": \"未完 · 水墨叙事\",\n      \"summary\": \"依据Bee录屏独立重写纸墨九章叙事：雨巷、拼贴、森林、四季湖景、莲花与墨圈，以滚动、画幅变化和自然微动组织观看。沉淀场景进度、遮罩与声音实现；未取得原作源码，视觉仍有差异。\",\n      \"source\": \"https://x.com/thtbee_/status/2114030630887641448\",\n      \"sourceName\": \"Bee 原演示（未取得源库）\",\n      \"status\": \"completed\",\n      \"tags\": [\n        \"Three.js\",\n        \"WebGL\",\n        \"水墨叙事\",\n        \"程序生成\",\n        \"交互动画\"\n      ],\n      \"cover\": \"assets/images/cover.jpg\",\n      \"demoUrl\": \"https://yydshly.github.io/1025_codex_project/005-paper-poetics-lab/original.html\",\n      \"createdAt\": \"2026-10-26\"\n    },"
+        "text": "    {\n      \"id\": \"002\",\n      \"slug\": \"ink-rain-alley\",\n      \"name\": \"未完 · 水墨叙事\",\n      \"summary\": \"参考 Bee 的录屏独立实现九段滚动水墨叙事。看雨巷、四季湖景与莲花如何用画幅、遮罩、微动和声音串起来。公开演示收在 005「纸间」。\",\n      \"source\": \"https://x.com/thtbee_/status/2114030630887641448\",\n      \"sourceName\": \"Bee 原演示（未取得源库）\",\n      \"status\": \"completed\",\n      \"tags\": [\n        \"Three.js\",\n        \"WebGL\",\n        \"水墨叙事\",\n        \"程序生成\",\n        \"交互动画\"\n      ],\n      \"cover\": \"assets/images/cover.jpg\",\n      \"demoUrl\": \"https://yydshly.github.io/1025_codex_project/005-paper-poetics-lab/original.html\",\n      \"createdAt\": \"2026-10-26\"\n    },"
       }
     },
     {
       "id": "003",
       "slug": "unified-learning-design",
       "name": "连续主题体验设计",
-      "summary": "以 Every Joule 为参照独立实现三课三维物理书：翻页、立体器材与能量变化同屏呈现，支持调参实验、预测反馈、MiniMax逐句导览、文字放大和连续阅读。通过共享实验状态联动模型、数值、镜头与讲解，阅读后恢复原上下文。沉淀内容、展示、操作和解释统一设计的方法，供互动教材、原理说明与实验平台复用；扩展布局仍为设想。",
+      "summary": "体验三课可翻页、可调参的三维物理书。实验状态同时驱动模型、数值、镜头和 MiniMax 导览，适合参考互动教材怎样组织内容和反馈。",
       "source": "https://github.com/iamtechartist/every-joule-lesson1",
       "status": "completed",
       "tags": [
@@ -838,14 +838,14 @@ globalThis.RECALL_CORPUS = {
         "path": "projects.json",
         "startLine": 43,
         "endLine": 60,
-        "text": "    {\n      \"id\": \"003\",\n      \"slug\": \"unified-learning-design\",\n      \"name\": \"连续主题体验设计\",\n      \"summary\": \"以 Every Joule 为参照独立实现三课三维物理书：翻页、立体器材与能量变化同屏呈现，支持调参实验、预测反馈、MiniMax逐句导览、文字放大和连续阅读。通过共享实验状态联动模型、数值、镜头与讲解，阅读后恢复原上下文。沉淀内容、展示、操作和解释统一设计的方法，供互动教材、原理说明与实验平台复用；扩展布局仍为设想。\",\n      \"source\": \"https://github.com/iamtechartist/every-joule-lesson1\",\n      \"status\": \"completed\",\n      \"tags\": [\n        \"Three.js\",\n        \"3D书籍\",\n        \"效果复刻\",\n        \"交互学习\",\n        \"方法论\"\n      ],\n      \"cover\": \"assets/images/understanding-atlas.png\",\n      \"demoUrl\": \"https://yydshly.github.io/1025_codex_project/003-unified-learning-design/\",\n      \"createdAt\": \"2026-10-26\"\n    },"
+        "text": "    {\n      \"id\": \"003\",\n      \"slug\": \"unified-learning-design\",\n      \"name\": \"连续主题体验设计\",\n      \"summary\": \"体验三课可翻页、可调参的三维物理书。实验状态同时驱动模型、数值、镜头和 MiniMax 导览，适合参考互动教材怎样组织内容和反馈。\",\n      \"source\": \"https://github.com/iamtechartist/every-joule-lesson1\",\n      \"status\": \"completed\",\n      \"tags\": [\n        \"Three.js\",\n        \"3D书籍\",\n        \"效果复刻\",\n        \"交互学习\",\n        \"方法论\"\n      ],\n      \"cover\": \"assets/images/understanding-atlas.png\",\n      \"demoUrl\": \"https://yydshly.github.io/1025_codex_project/003-unified-learning-design/\",\n      \"createdAt\": \"2026-10-26\"\n    },"
       }
     },
     {
       "id": "004",
       "slug": "baocut-effects-atlas",
       "name": "BaoCut · 能力、原理与效果研究",
-      "summary": "BaoCut 是 AI 可操作的视频编辑器与制作工作流。效果覆盖动效、讲解、产品片、混剪和故事；以代码动画、AI 静图运镜、已有素材剪辑组合成片，支持字幕、配音、检索与可编辑工程。价值主要在工具集成、反复修改和人工接手；附 24 个方向、20 段预览及原理说明，效率收益未实测。",
+      "summary": "从 20 段预览和 24 个方向看 BaoCut 怎样把代码动效、AI 静图运镜和素材剪辑组合成可编辑的视频。记录了人工接手的位置，效率收益待实测。",
       "source": "https://github.com/JimLiu/baocut",
       "status": "researching",
       "tags": [
@@ -1123,14 +1123,14 @@ globalThis.RECALL_CORPUS = {
         "path": "projects.json",
         "startLine": 61,
         "endLine": 78,
-        "text": "    {\n      \"id\": \"004\",\n      \"slug\": \"baocut-effects-atlas\",\n      \"name\": \"BaoCut · 能力、原理与效果研究\",\n      \"summary\": \"BaoCut 是 AI 可操作的视频编辑器与制作工作流。效果覆盖动效、讲解、产品片、混剪和故事；以代码动画、AI 静图运镜、已有素材剪辑组合成片，支持字幕、配音、检索与可编辑工程。价值主要在工具集成、反复修改和人工接手；附 24 个方向、20 段预览及原理说明，效率收益未实测。\",\n      \"source\": \"https://github.com/JimLiu/baocut\",\n      \"status\": \"researching\",\n      \"tags\": [\n        \"BaoCut\",\n        \"视频制作\",\n        \"代码动画\",\n        \"素材剪辑\",\n        \"工作流研究\"\n      ],\n      \"cover\": \"assets/images/capability-map.png\",\n      \"demoUrl\": \"https://yydshly.github.io/1025_codex_project/004-baocut-effects-atlas/\",\n      \"createdAt\": \"2026-10-26\"\n    },"
+        "text": "    {\n      \"id\": \"004\",\n      \"slug\": \"baocut-effects-atlas\",\n      \"name\": \"BaoCut · 能力、原理与效果研究\",\n      \"summary\": \"从 20 段预览和 24 个方向看 BaoCut 怎样把代码动效、AI 静图运镜和素材剪辑组合成可编辑的视频。记录了人工接手的位置，效率收益待实测。\",\n      \"source\": \"https://github.com/JimLiu/baocut\",\n      \"status\": \"researching\",\n      \"tags\": [\n        \"BaoCut\",\n        \"视频制作\",\n        \"代码动画\",\n        \"素材剪辑\",\n        \"工作流研究\"\n      ],\n      \"cover\": \"assets/images/capability-map.png\",\n      \"demoUrl\": \"https://yydshly.github.io/1025_codex_project/004-baocut-effects-atlas/\",\n      \"createdAt\": \"2026-10-26\"\n    },"
       }
     },
     {
       "id": "005",
       "slug": "paper-poetics-lab",
       "name": "纸间 · 诗性风格实验室",
-      "summary": "原参考以纸墨、画幅转换和自然微事件串起多场景诗性叙事。本研究用独立重写、实时茶庭与AI雨窗样片，沉淀氛围组织、载体选型和可复用工程方法；可扩展声画事件、纸墨与写实融合及文化展陈入口，仍需验证。",
+      "summary": "用水墨重写、实时茶庭和 AI 雨窗样片比较三种氛围表达方式。图解说明何时选网页交互、实时场景或生成视频，并记录各自的制作条件。",
       "source": "https://x.com/thtbee_/status/2114030630887641448",
       "status": "researching",
       "tags": [
@@ -1552,14 +1552,14 @@ globalThis.RECALL_CORPUS = {
         "path": "projects.json",
         "startLine": 79,
         "endLine": 97,
-        "text": "    {\n      \"id\": \"005\",\n      \"slug\": \"paper-poetics-lab\",\n      \"name\": \"纸间 · 诗性风格实验室\",\n      \"summary\": \"原参考以纸墨、画幅转换和自然微事件串起多场景诗性叙事。本研究用独立重写、实时茶庭与AI雨窗样片，沉淀氛围组织、载体选型和可复用工程方法；可扩展声画事件、纸墨与写实融合及文化展陈入口，仍需验证。\",\n      \"source\": \"https://x.com/thtbee_/status/2114030630887641448\",\n      \"sourceName\": \"Bee 原演示（未取得源库）\",\n      \"status\": \"researching\",\n      \"tags\": [\n        \"视频氛围\",\n        \"AI视频\",\n        \"Three.js\",\n        \"风格研究\",\n        \"交互叙事\"\n      ],\n      \"cover\": \"assets/images/v1.4/research-map.png\",\n      \"demoUrl\": \"https://yydshly.github.io/1025_codex_project/005-paper-poetics-lab/\",\n      \"createdAt\": \"2026-10-26\"\n    },"
+        "text": "    {\n      \"id\": \"005\",\n      \"slug\": \"paper-poetics-lab\",\n      \"name\": \"纸间 · 诗性风格实验室\",\n      \"summary\": \"用水墨重写、实时茶庭和 AI 雨窗样片比较三种氛围表达方式。图解说明何时选网页交互、实时场景或生成视频，并记录各自的制作条件。\",\n      \"source\": \"https://x.com/thtbee_/status/2114030630887641448\",\n      \"sourceName\": \"Bee 原演示（未取得源库）\",\n      \"status\": \"researching\",\n      \"tags\": [\n        \"视频氛围\",\n        \"AI视频\",\n        \"Three.js\",\n        \"风格研究\",\n        \"交互叙事\"\n      ],\n      \"cover\": \"assets/images/v1.4/research-map.png\",\n      \"demoUrl\": \"https://yydshly.github.io/1025_codex_project/005-paper-poetics-lab/\",\n      \"createdAt\": \"2026-10-26\"\n    },"
       }
     },
     {
       "id": "006",
       "slug": "prompthub-ai-assets",
       "name": "PromptHub · AI 工作资产与复用",
-      "summary": "集中管理提示词、Skills、MCP、插件与规则，通过模板、技能分发和配置适配供 AI 复用。对我的价值是借鉴其方法，把每日笔记中验证有效的经验沉淀为工作资产，减少重复说明与跨工具配置；笔记自动提炼和结果回写需另接入。",
+      "summary": "研究 PromptHub 如何管理提示词、Skills、MCP、插件与规则。档案记录把反复验证的工作经验整理成可复用资产的方法，笔记提炼与回写待接入。",
       "source": "https://github.com/legeling/PromptHub",
       "status": "completed",
       "tags": [
@@ -1801,14 +1801,105 @@ globalThis.RECALL_CORPUS = {
         "path": "projects.json",
         "startLine": 98,
         "endLine": 115,
-        "text": "    {\n      \"id\": \"006\",\n      \"slug\": \"prompthub-ai-assets\",\n      \"name\": \"PromptHub · AI 工作资产与复用\",\n      \"summary\": \"集中管理提示词、Skills、MCP、插件与规则，通过模板、技能分发和配置适配供 AI 复用。对我的价值是借鉴其方法，把每日笔记中验证有效的经验沉淀为工作资产，减少重复说明与跨工具配置；笔记自动提炼和结果回写需另接入。\",\n      \"source\": \"https://github.com/legeling/PromptHub\",\n      \"status\": \"completed\",\n      \"tags\": [\n        \"PromptHub\",\n        \"AI工作流\",\n        \"Skill\",\n        \"提示词管理\",\n        \"笔记到工具\"\n      ],\n      \"cover\": \"assets/images/prompthub-capabilities-overview.png\",\n      \"demoUrl\": \"\",\n      \"createdAt\": \"2026-10-27\"\n    },"
+        "text": "    {\n      \"id\": \"006\",\n      \"slug\": \"prompthub-ai-assets\",\n      \"name\": \"PromptHub · AI 工作资产与复用\",\n      \"summary\": \"研究 PromptHub 如何管理提示词、Skills、MCP、插件与规则。档案记录把反复验证的工作经验整理成可复用资产的方法，笔记提炼与回写待接入。\",\n      \"source\": \"https://github.com/legeling/PromptHub\",\n      \"status\": \"completed\",\n      \"tags\": [\n        \"PromptHub\",\n        \"AI工作流\",\n        \"Skill\",\n        \"提示词管理\",\n        \"笔记到工具\"\n      ],\n      \"cover\": \"assets/images/prompthub-capabilities-overview.png\",\n      \"demoUrl\": \"\",\n      \"createdAt\": \"2026-10-27\"\n    },"
+      }
+    },
+    {
+      "id": "007",
+      "slug": "pelican-bicycle",
+      "name": "鹈鹕的单车日和",
+      "summary": "体验一只在海边骑车的鹈鹕。SVG 画角色与景物，CSS 做轮转和微动，可暂停、调速，支持减少动态效果设置。适合参考轻量网页动画的实现。",
+      "source": "https://github.com/yydshly/1025_codex_project",
+      "status": "building",
+      "tags": [
+        "网页动画",
+        "插画",
+        "交互"
+      ],
+      "createdAt": "2026-10-27",
+      "readmePath": "projects/007-pelican-bicycle/README.md",
+      "readmeSha256": "8b37dd2ae0cc9d1d83336a9434759f5c42b22a1e6e5ace390854937135f5d35e",
+      "readmeText": "# 007 · 鹈鹕的单车日和\n\n一只戴着小帽子的鹈鹕骑车经过海边：这是一个用原生 SVG、CSS 和少量 JavaScript 制作的轻量互动动画。\n\n[返回总索引](../../README.md#项目索引) · [实现笔记](research/notes.md)\n\n## 体验\n\n打开页面即可看到车轮转动、骑手轻轻起伏、云朵和花草随风摆动。页面提供暂停和调整速度的按钮，并适配手机屏幕；系统启用减少动态效果时，页面会从暂停状态开始。\n\n## 本地运行\n\n无需安装依赖或构建。直接在浏览器中打开 [app/index.html](app/index.html)，即可体验。所有插画均为项目内的 SVG，无需联网加载资源。\n\n## 实现说明\n\n画面由 SVG 绘制，车轮、曲柄、骑手和背景使用 CSS 动画，按钮通过 JavaScript 控制动画的暂停和速度。动画以插画表现为主，并非精确的自行车机械运动模拟。\n\n## 来源与授权\n\n本项目为本库原创实践，没有外部上游项目或素材。项目文件适用本仓库的授权约定。\n",
+      "passages": [
+        {
+          "path": "projects/007-pelican-bicycle/README.md",
+          "startLine": 1,
+          "endLine": 1,
+          "text": "# 007 · 鹈鹕的单车日和"
+        },
+        {
+          "path": "projects/007-pelican-bicycle/README.md",
+          "startLine": 3,
+          "endLine": 3,
+          "text": "一只戴着小帽子的鹈鹕骑车经过海边：这是一个用原生 SVG、CSS 和少量 JavaScript 制作的轻量互动动画。"
+        },
+        {
+          "path": "projects/007-pelican-bicycle/README.md",
+          "startLine": 5,
+          "endLine": 5,
+          "text": "[返回总索引](../../README.md#项目索引) · [实现笔记](research/notes.md)"
+        },
+        {
+          "path": "projects/007-pelican-bicycle/README.md",
+          "startLine": 7,
+          "endLine": 7,
+          "text": "## 体验"
+        },
+        {
+          "path": "projects/007-pelican-bicycle/README.md",
+          "startLine": 9,
+          "endLine": 9,
+          "text": "打开页面即可看到车轮转动、骑手轻轻起伏、云朵和花草随风摆动。页面提供暂停和调整速度的按钮，并适配手机屏幕；系统启用减少动态效果时，页面会从暂停状态开始。"
+        },
+        {
+          "path": "projects/007-pelican-bicycle/README.md",
+          "startLine": 11,
+          "endLine": 11,
+          "text": "## 本地运行"
+        },
+        {
+          "path": "projects/007-pelican-bicycle/README.md",
+          "startLine": 13,
+          "endLine": 13,
+          "text": "无需安装依赖或构建。直接在浏览器中打开 [app/index.html](app/index.html)，即可体验。所有插画均为项目内的 SVG，无需联网加载资源。"
+        },
+        {
+          "path": "projects/007-pelican-bicycle/README.md",
+          "startLine": 15,
+          "endLine": 15,
+          "text": "## 实现说明"
+        },
+        {
+          "path": "projects/007-pelican-bicycle/README.md",
+          "startLine": 17,
+          "endLine": 17,
+          "text": "画面由 SVG 绘制，车轮、曲柄、骑手和背景使用 CSS 动画，按钮通过 JavaScript 控制动画的暂停和速度。动画以插画表现为主，并非精确的自行车机械运动模拟。"
+        },
+        {
+          "path": "projects/007-pelican-bicycle/README.md",
+          "startLine": 19,
+          "endLine": 19,
+          "text": "## 来源与授权"
+        },
+        {
+          "path": "projects/007-pelican-bicycle/README.md",
+          "startLine": 21,
+          "endLine": 21,
+          "text": "本项目为本库原创实践，没有外部上游项目或素材。项目文件适用本仓库的授权约定。"
+        }
+      ],
+      "registryPassage": {
+        "path": "projects.json",
+        "startLine": 116,
+        "endLine": 132,
+        "text": "    {\n      \"id\": \"007\",\n      \"slug\": \"pelican-bicycle\",\n      \"name\": \"鹈鹕的单车日和\",\n      \"summary\": \"体验一只在海边骑车的鹈鹕。SVG 画角色与景物，CSS 做轮转和微动，可暂停、调速，支持减少动态效果设置。适合参考轻量网页动画的实现。\",\n      \"source\": \"https://github.com/yydshly/1025_codex_project\",\n      \"sourceName\": \"本库原创（无上游源库）\",\n      \"status\": \"building\",\n      \"tags\": [\n        \"网页动画\",\n        \"插画\",\n        \"交互\"\n      ],\n      \"cover\": \"\",\n      \"demoUrl\": \"\",\n      \"createdAt\": \"2026-10-27\"\n    },"
       }
     },
     {
       "id": "008",
       "slug": "ultraman-card-draw",
       "name": "奥特曼卡片抽卡器",
-      "summary": "以874条人物与形态资料为基础，随机展示奥特曼与怪兽，结合人物突出、招式光效和设备讲解开展亲子探索。沉淀素材、演出配置与卡片舞台分层，后续可增加人物动作和渲染，复用随机演示流程。",
+      "summary": "从 874 条人物与形态资料中抽卡，结合招式光效与设备讲解做亲子探索。研究记录了人物素材、演出配置和卡片舞台如何分层。",
       "source": "https://github.com/yydshly/1025_codex_project",
       "status": "building",
       "tags": [
@@ -1950,16 +2041,16 @@ globalThis.RECALL_CORPUS = {
       ],
       "registryPassage": {
         "path": "projects.json",
-        "startLine": 116,
-        "endLine": 132,
-        "text": "    {\n      \"id\": \"008\",\n      \"slug\": \"ultraman-card-draw\",\n      \"name\": \"奥特曼卡片抽卡器\",\n      \"summary\": \"以874条人物与形态资料为基础，随机展示奥特曼与怪兽，结合人物突出、招式光效和设备讲解开展亲子探索。沉淀素材、演出配置与卡片舞台分层，后续可增加人物动作和渲染，复用随机演示流程。\",\n      \"source\": \"https://github.com/yydshly/1025_codex_project\",\n      \"sourceName\": \"本库原创（无上游源库）\",\n      \"status\": \"building\",\n      \"tags\": [\n        \"卡片收藏\",\n        \"抽卡\",\n        \"亲子\"\n      ],\n      \"cover\": \"assets/images/project-overview-v1.png\",\n      \"demoUrl\": \"https://yydshly.github.io/1025_codex_project/008-ultraman-card-draw/\",\n      \"createdAt\": \"2026-10-27\"\n    },"
+        "startLine": 133,
+        "endLine": 149,
+        "text": "    {\n      \"id\": \"008\",\n      \"slug\": \"ultraman-card-draw\",\n      \"name\": \"奥特曼卡片抽卡器\",\n      \"summary\": \"从 874 条人物与形态资料中抽卡，结合招式光效与设备讲解做亲子探索。研究记录了人物素材、演出配置和卡片舞台如何分层。\",\n      \"source\": \"https://github.com/yydshly/1025_codex_project\",\n      \"sourceName\": \"本库原创（无上游源库）\",\n      \"status\": \"building\",\n      \"tags\": [\n        \"卡片收藏\",\n        \"抽卡\",\n        \"亲子\"\n      ],\n      \"cover\": \"assets/images/project-overview-v1.png\",\n      \"demoUrl\": \"https://yydshly.github.io/1025_codex_project/008-ultraman-card-draw/\",\n      \"createdAt\": \"2026-10-27\"\n    },"
       }
     },
     {
       "id": "009",
       "slug": "knowledge-processing-atlas",
       "name": "资料理解与检索研究",
-      "summary": "从 DeepTutor 与 NotebookLM 的教材问答和资料整理场景出发，比较 MinerU、Docling、BGE-M3、Qdrant、Graphiti 等26个对象。拆解结构解析、分块、检索与时间关系的本质，规划带出处阅读、跨日回顾、经验复用和自适应复习；附同题样例、场景选型、并排对比和实验协议，上游效果待验证。",
+      "summary": "比较 26 个资料处理工具或方案，拆解文档解析、分块、检索与时间关系。可查看同题样例和选型协议，研究目标是能带出处读资料和跨日回顾。",
       "source": "https://github.com/HKUDS/DeepTutor",
       "status": "researching",
       "tags": [
@@ -2163,16 +2254,16 @@ globalThis.RECALL_CORPUS = {
       ],
       "registryPassage": {
         "path": "projects.json",
-        "startLine": 133,
-        "endLine": 150,
-        "text": "    {\n      \"id\": \"009\",\n      \"slug\": \"knowledge-processing-atlas\",\n      \"name\": \"资料理解与检索研究\",\n      \"summary\": \"从 DeepTutor 与 NotebookLM 的教材问答和资料整理场景出发，比较 MinerU、Docling、BGE-M3、Qdrant、Graphiti 等26个对象。拆解结构解析、分块、检索与时间关系的本质，规划带出处阅读、跨日回顾、经验复用和自适应复习；附同题样例、场景选型、并排对比和实验协议，上游效果待验证。\",\n      \"source\": \"https://github.com/HKUDS/DeepTutor\",\n      \"status\": \"researching\",\n      \"tags\": [\n        \"文档解析\",\n        \"知识检索\",\n        \"RAG\",\n        \"时间关系\",\n        \"研究对比\"\n      ],\n      \"cover\": \"assets/images/research-overview-v3.png\",\n      \"demoUrl\": \"https://yydshly.github.io/1025_codex_project/009-knowledge-processing-atlas/\",\n      \"createdAt\": \"2026-10-28\"\n    },"
+        "startLine": 150,
+        "endLine": 167,
+        "text": "    {\n      \"id\": \"009\",\n      \"slug\": \"knowledge-processing-atlas\",\n      \"name\": \"资料理解与检索研究\",\n      \"summary\": \"比较 26 个资料处理工具或方案，拆解文档解析、分块、检索与时间关系。可查看同题样例和选型协议，研究目标是能带出处读资料和跨日回顾。\",\n      \"source\": \"https://github.com/HKUDS/DeepTutor\",\n      \"status\": \"researching\",\n      \"tags\": [\n        \"文档解析\",\n        \"知识检索\",\n        \"RAG\",\n        \"时间关系\",\n        \"研究对比\"\n      ],\n      \"cover\": \"assets/images/research-overview-v3.png\",\n      \"demoUrl\": \"https://yydshly.github.io/1025_codex_project/009-knowledge-processing-atlas/\",\n      \"createdAt\": \"2026-10-28\"\n    },"
       }
     },
     {
       "id": "010",
       "slug": "agent-skills-engineering-lab",
       "name": "Agent Skills · 全景理解与实践",
-      "summary": "研究 addyosmani/agent-skills 的25项工程规程：覆盖需求、规划、实现、验证、审查与交付维护，以七类工作和五问总图说明用途、场景、步骤、产物及协作。价值在于把工程经验变成AI可执行、结果可核对的流程；我们据此按真实需求选用，学习用约束、证据与检查控制落地，保留研究回查案例和自建Skill；全量讲解已完成，逐项实测待按需开展。",
+      "summary": "把上游的 25 项工程 Skills 按需求、计划、实现、验证、审查和交付等环节整理成地图。可对照应用场景、产物和检查项，并查看本库的研究回查实测。",
       "source": "https://github.com/addyosmani/agent-skills",
       "status": "researching",
       "tags": [
@@ -2495,16 +2586,16 @@ globalThis.RECALL_CORPUS = {
       ],
       "registryPassage": {
         "path": "projects.json",
-        "startLine": 151,
-        "endLine": 167,
-        "text": "    {\n      \"id\": \"010\",\n      \"slug\": \"agent-skills-engineering-lab\",\n      \"name\": \"Agent Skills · 全景理解与实践\",\n      \"summary\": \"研究 addyosmani/agent-skills 的25项工程规程：覆盖需求、规划、实现、验证、审查与交付维护，以七类工作和五问总图说明用途、场景、步骤、产物及协作。价值在于把工程经验变成AI可执行、结果可核对的流程；我们据此按真实需求选用，学习用约束、证据与检查控制落地，保留研究回查案例和自建Skill；全量讲解已完成，逐项实测待按需开展。\",\n      \"source\": \"https://github.com/addyosmani/agent-skills\",\n      \"status\": \"researching\",\n      \"tags\": [\n        \"Agent Skills\",\n        \"AI编程\",\n        \"工程流程\",\n        \"实验验证\"\n      ],\n      \"cover\": \"assets/images/skills-field-guide.png\",\n      \"demoUrl\": \"https://yydshly.github.io/1025_codex_project/010-agent-skills-engineering-lab/\",\n      \"createdAt\": \"2026-10-28\"\n    },"
+        "startLine": 168,
+        "endLine": 184,
+        "text": "    {\n      \"id\": \"010\",\n      \"slug\": \"agent-skills-engineering-lab\",\n      \"name\": \"Agent Skills · 全景理解与实践\",\n      \"summary\": \"把上游的 25 项工程 Skills 按需求、计划、实现、验证、审查和交付等环节整理成地图。可对照应用场景、产物和检查项，并查看本库的研究回查实测。\",\n      \"source\": \"https://github.com/addyosmani/agent-skills\",\n      \"status\": \"researching\",\n      \"tags\": [\n        \"Agent Skills\",\n        \"AI编程\",\n        \"工程流程\",\n        \"实验验证\"\n      ],\n      \"cover\": \"assets/images/skills-field-guide.png\",\n      \"demoUrl\": \"https://yydshly.github.io/1025_codex_project/010-agent-skills-engineering-lab/\",\n      \"createdAt\": \"2026-10-28\"\n    },"
       }
     },
     {
       "id": "011",
       "slug": "pose-look-creation-atlas",
       "name": "姿势与衣装参考 · 能力、作用与产品探索",
-      "summary": "POSE-DB-01提供1,439张姿势PNG、288组及多视角检索，表达动作与构图；COSTUME-DB-01提供1,407套虚构衣装、八类检索和原尺寸PNG，表达穿搭目标。原图分别私有备份，生图及身份、衣装保持由外部模型完成。已展示同一虚构人物的三套衣装×三种动作九格实测、六张写真候选，探索穿搭比较、系列写真、婚纱方案等产品目标，并保留提示词、来源和偏差。",
+      "summary": "用姿势与衣装两个图库研究多参考生图。公开九格组合实测和六张写真候选，可看同一虚构人物怎样更换动作与衣装，以及哪些细节容易偏离。",
       "source": "https://x.com/leo_xiaolei/status/2114971707962536302",
       "status": "researching",
       "tags": [
@@ -3014,16 +3105,16 @@ globalThis.RECALL_CORPUS = {
       ],
       "registryPassage": {
         "path": "projects.json",
-        "startLine": 168,
-        "endLine": 186,
-        "text": "    {\n      \"id\": \"011\",\n      \"slug\": \"pose-look-creation-atlas\",\n      \"name\": \"姿势与衣装参考 · 能力、作用与产品探索\",\n      \"summary\": \"POSE-DB-01提供1,439张姿势PNG、288组及多视角检索，表达动作与构图；COSTUME-DB-01提供1,407套虚构衣装、八类检索和原尺寸PNG，表达穿搭目标。原图分别私有备份，生图及身份、衣装保持由外部模型完成。已展示同一虚构人物的三套衣装×三种动作九格实测、六张写真候选，探索穿搭比较、系列写真、婚纱方案等产品目标，并保留提示词、来源和偏差。\",\n      \"source\": \"https://x.com/leo_xiaolei/status/2114971707962536302\",\n      \"sourceName\": \"POSE-DB-01姿势图库与COSTUME-DB-01衣装图库\",\n      \"status\": \"researching\",\n      \"tags\": [\n        \"姿势参考\",\n        \"衣装参考\",\n        \"多参考生图\",\n        \"系列写真\",\n        \"产品研究\"\n      ],\n      \"cover\": \"assets/images/research-overview-public-v3.png\",\n      \"demoUrl\": \"https://yydshly.github.io/1025_codex_project/011-pose-look-creation-atlas/\",\n      \"createdAt\": \"2026-10-29\"\n    },"
+        "startLine": 185,
+        "endLine": 203,
+        "text": "    {\n      \"id\": \"011\",\n      \"slug\": \"pose-look-creation-atlas\",\n      \"name\": \"姿势与衣装参考 · 能力、作用与产品探索\",\n      \"summary\": \"用姿势与衣装两个图库研究多参考生图。公开九格组合实测和六张写真候选，可看同一虚构人物怎样更换动作与衣装，以及哪些细节容易偏离。\",\n      \"source\": \"https://x.com/leo_xiaolei/status/2114971707962536302\",\n      \"sourceName\": \"POSE-DB-01姿势图库与COSTUME-DB-01衣装图库\",\n      \"status\": \"researching\",\n      \"tags\": [\n        \"姿势参考\",\n        \"衣装参考\",\n        \"多参考生图\",\n        \"系列写真\",\n        \"产品研究\"\n      ],\n      \"cover\": \"assets/images/research-overview-public-v3.png\",\n      \"demoUrl\": \"https://yydshly.github.io/1025_codex_project/011-pose-look-creation-atlas/\",\n      \"createdAt\": \"2026-10-29\"\n    },"
       }
     },
     {
       "id": "012",
       "slug": "aquatic-toxicology-skill-lab",
       "name": "学术研究 Skill · 能力与水生毒理学实测",
-      "summary": "研究 academic-research-skills 的5个工作流：deep-research 拆题研究、sr-screener 文献筛选、academic-paper 写作、academic-paper-reviewer 审稿、academic-pipeline 调度。适用于选题、综述、证据核验、修订与审稿准备；价值是复用研究规范、角色与检查，使过程可追溯。以水生毒理学展示拆题、检索、补漏和分析，分清原库与新增采集器；查全、准确性和相对直接问AI的增益仍待验证。",
+      "summary": "以水生毒理学试题走一遍拆题、检索、文献筛选和证据分析，比较五种学术研究流程。公开报告、筛选表和核验记录，检索查全率与实际增益待验证。",
       "source": "https://github.com/Imbad0202/academic-research-skills",
       "status": "researching",
       "tags": [
@@ -3352,16 +3443,16 @@ globalThis.RECALL_CORPUS = {
       ],
       "registryPassage": {
         "path": "projects.json",
-        "startLine": 187,
-        "endLine": 203,
-        "text": "    {\n      \"id\": \"012\",\n      \"slug\": \"aquatic-toxicology-skill-lab\",\n      \"name\": \"学术研究 Skill · 能力与水生毒理学实测\",\n      \"summary\": \"研究 academic-research-skills 的5个工作流：deep-research 拆题研究、sr-screener 文献筛选、academic-paper 写作、academic-paper-reviewer 审稿、academic-pipeline 调度。适用于选题、综述、证据核验、修订与审稿准备；价值是复用研究规范、角色与检查，使过程可追溯。以水生毒理学展示拆题、检索、补漏和分析，分清原库与新增采集器；查全、准确性和相对直接问AI的增益仍待验证。\",\n      \"source\": \"https://github.com/Imbad0202/academic-research-skills\",\n      \"status\": \"researching\",\n      \"tags\": [\n        \"水生毒理学\",\n        \"学术研究\",\n        \"Skill实测\",\n        \"证据综合\"\n      ],\n      \"cover\": \"assets/images/understanding-map.png\",\n      \"demoUrl\": \"https://yydshly.github.io/1025_codex_project/012-aquatic-toxicology-skill-lab/\",\n      \"createdAt\": \"2026-10-29\"\n    },"
+        "startLine": 204,
+        "endLine": 220,
+        "text": "    {\n      \"id\": \"012\",\n      \"slug\": \"aquatic-toxicology-skill-lab\",\n      \"name\": \"学术研究 Skill · 能力与水生毒理学实测\",\n      \"summary\": \"以水生毒理学试题走一遍拆题、检索、文献筛选和证据分析，比较五种学术研究流程。公开报告、筛选表和核验记录，检索查全率与实际增益待验证。\",\n      \"source\": \"https://github.com/Imbad0202/academic-research-skills\",\n      \"status\": \"researching\",\n      \"tags\": [\n        \"水生毒理学\",\n        \"学术研究\",\n        \"Skill实测\",\n        \"证据综合\"\n      ],\n      \"cover\": \"assets/images/understanding-map.png\",\n      \"demoUrl\": \"https://yydshly.github.io/1025_codex_project/012-aquatic-toxicology-skill-lab/\",\n      \"createdAt\": \"2026-10-29\"\n    },"
       }
     },
     {
       "id": "013",
       "slug": "scenic-motion-lab",
       "name": "景观奇旅 · AI影像创作实验室",
-      "summary": "以悬崖海湾骑行为样本，将首图世界设计、人物行动、镜头路径、环境响应和多段剪辑组织成可审查的影像方法。展示11.04秒Kling4.0双片实测、原片与接缝，提供首图、动作、氛围、摄影提示框架和七个扩展方向；价值是景观探索体验与导演经验复用，可延展系列旅程、文旅品牌概念样片及创作工作台。精确动作、全程接地和自动长片仍待验证。",
+      "summary": "观看 11.04 秒海湾骑行试片和两段原片，追踪首图、角色动作、运镜、环境响应与接缝。总结了可复用的导演方法，长片连续性待验证。",
       "source": "https://x.com/hi_personality/status/2115567493565825244",
       "status": "researching",
       "tags": [
@@ -3685,17 +3776,80 @@ globalThis.RECALL_CORPUS = {
       ],
       "registryPassage": {
         "path": "projects.json",
-        "startLine": 204,
-        "endLine": 222,
-        "text": "    {\n      \"id\": \"013\",\n      \"slug\": \"scenic-motion-lab\",\n      \"name\": \"景观奇旅 · AI影像创作实验室\",\n      \"summary\": \"以悬崖海湾骑行为样本，将首图世界设计、人物行动、镜头路径、环境响应和多段剪辑组织成可审查的影像方法。展示11.04秒Kling4.0双片实测、原片与接缝，提供首图、动作、氛围、摄影提示框架和七个扩展方向；价值是景观探索体验与导演经验复用，可延展系列旅程、文旅品牌概念样片及创作工作台。精确动作、全程接地和自动长片仍待验证。\",\n      \"source\": \"https://x.com/hi_personality/status/2115567493565825244\",\n      \"sourceName\": \"Personality 原参考视频（非源码仓库）\",\n      \"status\": \"researching\",\n      \"tags\": [\n        \"AI影像\",\n        \"景观叙事\",\n        \"图生视频\",\n        \"运镜设计\",\n        \"创作实验\"\n      ],\n      \"cover\": \"assets/images/overview-v1.png\",\n      \"demoUrl\": \"https://yydshly.github.io/1025_codex_project/013-scenic-motion-lab/\",\n      \"createdAt\": \"2026-10-31\"\n    },"
+        "startLine": 221,
+        "endLine": 239,
+        "text": "    {\n      \"id\": \"013\",\n      \"slug\": \"scenic-motion-lab\",\n      \"name\": \"景观奇旅 · AI影像创作实验室\",\n      \"summary\": \"观看 11.04 秒海湾骑行试片和两段原片，追踪首图、角色动作、运镜、环境响应与接缝。总结了可复用的导演方法，长片连续性待验证。\",\n      \"source\": \"https://x.com/hi_personality/status/2115567493565825244\",\n      \"sourceName\": \"Personality 原参考视频（非源码仓库）\",\n      \"status\": \"researching\",\n      \"tags\": [\n        \"AI影像\",\n        \"景观叙事\",\n        \"图生视频\",\n        \"运镜设计\",\n        \"创作实验\"\n      ],\n      \"cover\": \"assets/images/overview-v1.png\",\n      \"demoUrl\": \"https://yydshly.github.io/1025_codex_project/013-scenic-motion-lab/\",\n      \"createdAt\": \"2026-10-31\"\n    },"
+      }
+    },
+    {
+      "id": "014",
+      "slug": "web-product-reference-library",
+      "name": "50 个网站的产品能力与实现参考库",
+      "summary": "把 50 个网站按能力整理，逐站记录入口、效果证据、可借鉴机制和实现条件。研究摘要列出五个优先验证的产品方向，完整交互索引保留在本地。",
+      "source": "https://x.com/xiaoying_eth/status/2116389253060190271",
+      "status": "researching",
+      "tags": [
+        "产品研究",
+        "能力分类",
+        "交互机制",
+        "数据接口",
+        "实现条件"
+      ],
+      "createdAt": "2026-11-01",
+      "readmePath": "projects/014-web-product-reference-library/README.md",
+      "readmeSha256": "c1ba9571c09f485baef28182aa194fccaf948f5d33a1c10b512f00ebc3369019",
+      "readmeText": "# 014 · 50 个网站的产品能力与实现参考库\n\n从小樱分享的清单出发，按能力整理 50 个网站。每条记录都把具体入口、效果证据、可借鉴的机制和实现条件对应起来。历史截图用于核对当时的界面，实际操作以原站为准。这里公开研究摘要和选题结论，完整筛选网页和预览素材保留在本地。\n\n[原始清单与地月配视频](https://x.com/xiaoying_eth/status/2116389253060190271) · [研究方法与五个产品方向](research/notes.md) · [返回总索引](../../README.md#项目索引)\n\n## 如何使用这份研究\n\n先选一个用户问题，例如「怎样用可追溯的数据讲清一次事件」。再找能支持这个问题的公开数据、时间控制、画面和出处展示机制，并用小样本验证它们能否配合。原帖中的地月视频单独用作视觉参考，作者和实现工具待确认。\n\n015「观象」沿着科普解释和数据叙事这条线做了一个可运行案例。它把地球观测、事件画面、曲线和讲解接到同一时间轴上，供课堂、展陈和历史复盘使用。[观象研究说明](../015-process-visualization-lab/README.md) · [观象在线体验](https://yydshly.github.io/1025_codex_project/015-process-visualization-lab/)\n",
+      "passages": [
+        {
+          "path": "projects/014-web-product-reference-library/README.md",
+          "startLine": 1,
+          "endLine": 1,
+          "text": "# 014 · 50 个网站的产品能力与实现参考库"
+        },
+        {
+          "path": "projects/014-web-product-reference-library/README.md",
+          "startLine": 3,
+          "endLine": 3,
+          "text": "从小樱分享的清单出发，按能力整理 50 个网站。每条记录都把具体入口、效果证据、可借鉴的机制和实现条件对应起来。历史截图用于核对当时的界面，实际操作以原站为准。这里公开研究摘要和选题结论，完整筛选网页和预览素材保留在本地。"
+        },
+        {
+          "path": "projects/014-web-product-reference-library/README.md",
+          "startLine": 5,
+          "endLine": 5,
+          "text": "[原始清单与地月配视频](https://x.com/xiaoying_eth/status/2116389253060190271) · [研究方法与五个产品方向](research/notes.md) · [返回总索引](../../README.md#项目索引)"
+        },
+        {
+          "path": "projects/014-web-product-reference-library/README.md",
+          "startLine": 7,
+          "endLine": 7,
+          "text": "## 如何使用这份研究"
+        },
+        {
+          "path": "projects/014-web-product-reference-library/README.md",
+          "startLine": 9,
+          "endLine": 9,
+          "text": "先选一个用户问题，例如「怎样用可追溯的数据讲清一次事件」。再找能支持这个问题的公开数据、时间控制、画面和出处展示机制，并用小样本验证它们能否配合。原帖中的地月视频单独用作视觉参考，作者和实现工具待确认。"
+        },
+        {
+          "path": "projects/014-web-product-reference-library/README.md",
+          "startLine": 11,
+          "endLine": 11,
+          "text": "015「观象」沿着科普解释和数据叙事这条线做了一个可运行案例。它把地球观测、事件画面、曲线和讲解接到同一时间轴上，供课堂、展陈和历史复盘使用。[观象研究说明](../015-process-visualization-lab/README.md) · [观象在线体验](https://yydshly.github.io/1025_codex_project/015-process-visualization-lab/)"
+        }
+      ],
+      "registryPassage": {
+        "path": "projects.json",
+        "startLine": 240,
+        "endLine": 258,
+        "text": "    {\n      \"id\": \"014\",\n      \"slug\": \"web-product-reference-library\",\n      \"name\": \"50 个网站的产品能力与实现参考库\",\n      \"summary\": \"把 50 个网站按能力整理，逐站记录入口、效果证据、可借鉴机制和实现条件。研究摘要列出五个优先验证的产品方向，完整交互索引保留在本地。\",\n      \"source\": \"https://x.com/xiaoying_eth/status/2116389253060190271\",\n      \"sourceName\": \"小樱 50 个网站清单与各站官方资料\",\n      \"status\": \"researching\",\n      \"tags\": [\n        \"产品研究\",\n        \"能力分类\",\n        \"交互机制\",\n        \"数据接口\",\n        \"实现条件\"\n      ],\n      \"cover\": \"\",\n      \"demoUrl\": \"\",\n      \"createdAt\": \"2026-11-01\"\n    },"
       }
     },
     {
       "id": "015",
       "slug": "process-visualization-lab",
       "name": "观象 · 地球过程与真实事件",
-      "summary": "从 50 站参考库与地月视频出发，研究怎样用固定参照、同一时间轴和真实资料解释地球变化。公开八个历史案例与 NASA B0005 放电实验，原理、画面、批注、曲线和中文讲解可按关键时刻核对。适用于课堂、展陈与历史复盘；柴油机为本地实验，洪水、污染迁移与持续观测为扩展方向。",
-      "source": "https://github.com/yydshly/1025_codex_project",
+      "summary": "用同一时间轴联动原理、真实资料、画面、曲线和中文讲解。公开八个地球历史案例及 NASA B0005 放电实验，可追溯关键时刻的观测来源。",
+      "source": "https://x.com/xiaoying_eth/status/2116389253060190271",
       "status": "building",
       "tags": [
         "交互地球",
@@ -4569,9 +4723,9 @@ globalThis.RECALL_CORPUS = {
       ],
       "registryPassage": {
         "path": "projects.json",
-        "startLine": 223,
-        "endLine": 240,
-        "text": "    {\n      \"id\": \"015\",\n      \"slug\": \"process-visualization-lab\",\n      \"name\": \"观象 · 地球过程与真实事件\",\n      \"summary\": \"从 50 站参考库与地月视频出发，研究怎样用固定参照、同一时间轴和真实资料解释地球变化。公开八个历史案例与 NASA B0005 放电实验，原理、画面、批注、曲线和中文讲解可按关键时刻核对。适用于课堂、展陈与历史复盘；柴油机为本地实验，洪水、污染迁移与持续观测为扩展方向。\",\n      \"source\": \"https://github.com/yydshly/1025_codex_project\",\n      \"sourceName\": \"本库原创产品与科学资料参考\",\n      \"status\": \"building\",\n      \"tags\": [\n        \"交互地球\",\n        \"过程可视化\",\n        \"真实事件\",\n        \"资料溯源\"\n      ],\n      \"cover\": \"assets/images/guanxiang-research-overview.png\",\n      \"demoUrl\": \"https://yydshly.github.io/1025_codex_project/015-process-visualization-lab/\",\n      \"createdAt\": \"2026-11-04\"\n    }"
+        "startLine": 259,
+        "endLine": 276,
+        "text": "    {\n      \"id\": \"015\",\n      \"slug\": \"process-visualization-lab\",\n      \"name\": \"观象 · 地球过程与真实事件\",\n      \"summary\": \"用同一时间轴联动原理、真实资料、画面、曲线和中文讲解。公开八个地球历史案例及 NASA B0005 放电实验，可追溯关键时刻的观测来源。\",\n      \"source\": \"https://x.com/xiaoying_eth/status/2116389253060190271\",\n      \"sourceName\": \"研究起点 · 50 站清单与地月配视频\",\n      \"status\": \"building\",\n      \"tags\": [\n        \"交互地球\",\n        \"过程可视化\",\n        \"真实事件\",\n        \"资料溯源\"\n      ],\n      \"cover\": \"assets/images/guanxiang-research-overview.png\",\n      \"demoUrl\": \"https://yydshly.github.io/1025_codex_project/015-process-visualization-lab/\",\n      \"createdAt\": \"2026-11-04\"\n    }"
       }
     }
   ]

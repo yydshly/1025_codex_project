@@ -6,17 +6,29 @@
       "publicDirectory": "app",
       "extraAssets": [
         "assets/images/directions-map-v1.png"
-      ]
+      ],
+      "action": {
+        "label": "看早期方向地图",
+        "path": "index.html"
+      }
     },
     {
       "directory": "003-unified-learning-design",
       "publicDirectory": "public",
-      "extraAssets": []
+      "extraAssets": [],
+      "action": {
+        "label": "体验三维物理书",
+        "path": "app/index.html"
+      }
     },
     {
       "directory": "004-baocut-effects-atlas",
       "publicDirectory": "dist/site",
-      "extraAssets": []
+      "extraAssets": [],
+      "action": {
+        "label": "查看效果预览",
+        "path": "index.html"
+      }
     },
     {
       "directory": "005-paper-poetics-lab",
@@ -24,31 +36,60 @@
       "extraAssets": [
         "assets/images/v1.4/research-map.png"
       ],
-      "guidePage": "map.html"
+      "guidePage": "map.html",
+      "action": {
+        "label": "进入纸间实验室",
+        "path": "index.html"
+      }
+    },
+    {
+      "directory": "007-pelican-bicycle",
+      "publicDirectory": "app",
+      "extraAssets": [],
+      "action": {
+        "label": "播放海边骑行动画",
+        "path": "index.html"
+      }
     },
     {
       "directory": "008-ultraman-card-draw",
       "publicDirectory": "app",
       "extraAssets": [],
-      "guidePage": "guide.html"
+      "guidePage": "guide.html",
+      "action": {
+        "label": "开始抽卡",
+        "path": "index.html"
+      }
     },
     {
       "directory": "009-knowledge-processing-atlas",
       "publicDirectory": "app",
-      "extraAssets": []
+      "extraAssets": [],
+      "action": {
+        "label": "查看工具与流程对比",
+        "path": "index.html"
+      }
     },
     {
       "directory": "010-agent-skills-engineering-lab",
       "publicDirectory": "dist/site",
       "extraAssets": [],
-      "guidePage": "app/overview.html"
+      "guidePage": "app/overview.html",
+      "action": {
+        "label": "打开 25 项技能地图",
+        "path": "app/overview.html"
+      }
     },
     {
       "directory": "011-pose-look-creation-atlas",
       "publicDirectory": "app",
       "extraAssets": [
         "assets/images/research-overview-public-v3.png"
-      ]
+      ],
+      "action": {
+        "label": "看九格组合实测",
+        "path": "index.html#matrix"
+      }
     },
     {
       "directory": "012-aquatic-toxicology-skill-lab",
@@ -59,20 +100,32 @@
       "textExtensions": [
         ".md",
         ".csv"
-      ]
+      ],
+      "action": {
+        "label": "查看案例与证据",
+        "path": "index.html"
+      }
     },
     {
       "directory": "013-scenic-motion-lab",
       "publicDirectory": "app",
       "extraAssets": [],
-      "guidePage": "overview.html"
+      "guidePage": "overview.html",
+      "action": {
+        "label": "播放海湾骑行试片",
+        "path": "index.html#screening"
+      }
     },
     {
       "directory": "015-process-visualization-lab",
       "publicDirectory": "dist/site",
       "extraAssets": [
         "assets/images/guanxiang-research-overview.png"
-      ]
+      ],
+      "action": {
+        "label": "打开地球过程回放",
+        "path": "app/index.html"
+      }
     }
   ]
 }

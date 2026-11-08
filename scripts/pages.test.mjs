@@ -41,7 +41,10 @@ test('隔离目录中创建递增编号、同步索引，只发布选定项目�
   assert.deepEqual(result.projects, ['001-first']);
   const home = fs.readFileSync(path.join(result.output, 'index.html'), 'utf8');
   assert.match(home, /早期 &lt;思考&gt;/);
-  assert.doesNotMatch(home, /未发布研究/);
+  assert.match(home, /未发布研究/);
+  assert.match(home, /仅公开研究说明/);
+  assert.doesNotMatch(home, /href="\.\/002-second\//);
+  assert.ok(fs.existsSync(path.join(result.output, 'hub.css')));
   assert.equal(fs.readFileSync(path.join(result.output, '001-first/assets/images/map.svg'), 'utf8').startsWith('<svg'), true);
   assert.equal(fs.existsSync(path.join(result.output, '001-first/.env')), false);
   assert.equal(fs.existsSync(path.join(result.output, '001-first/research')), false);
@@ -77,7 +80,7 @@ test('构建后的嵌套演示、视频和完整引导图按声明发布，引�
   const result = buildPages(root);
   const home = fs.readFileSync(path.join(result.output, 'index.html'), 'utf8');
   assert.match(home, /class="guide-image" href="\.\/001-first\/map.html"/);
-  assert.match(home, /放大阅读引导图/);
+  assert.match(home, /看项目引导/);
   assert.match(home, /width="1" height="1"/);
   assert.equal(fs.readFileSync(path.join(result.output, '001-first/original/index.html'), 'utf8'), '<h1>独立重写</h1>');
   assert.equal(fs.readFileSync(path.join(result.output, '001-first/media/scene.mp4'), 'utf8'), 'fixture-video');
@@ -139,4 +142,39 @@ test('拒绝未知、重复或类型错误的文本扩展配置，并保持额�
   fs.writeFileSync(path.join(root, 'pages.config.json'), JSON.stringify(config));
   assert.throws(() => buildPages(root), /不允许的额外资源/);
   assert.equal(fs.existsSync(path.join(root, 'dist/pages')), false);
+});
+
+
+test('总入口区分跨项目演示和研究说明，按主题与关联定位', () => {
+  const { root } = fixture();
+  const registryFile = path.join(root, 'projects.json');
+  const registry = JSON.parse(fs.readFileSync(registryFile, 'utf8'));
+  registry.projects[1].demoUrl = 'https://yydshly.github.io/1025_codex_project/001-first/index.html#water';
+  registry.topics = [{ id: 'study', title: '研究方法', summary: '先复现再比较', projects: ['001', '002'] }];
+  registry.relationships = [{ projects: ['001', '002'], label: '用同一套方法对照' }];
+  fs.writeFileSync(registryFile, JSON.stringify(registry));
+  const result = buildPages(root);
+  const home = fs.readFileSync(path.join(result.output, 'index.html'), 'utf8');
+  assert.match(home, /id="topic-study"/);
+  assert.match(home, /href="\.\/001-first\/index\.html#water">打开在线演示/);
+  assert.match(home, /href="#project-002">002 ↗<\/a><span>用同一套方法对照/);
+  assert.match(home, /href="#project-001">001 ↗<\/a><span>用同一套方法对照/);
+  assert.equal(fs.existsSync(path.join(result.output, '002-second')), false);
+  registry.projects[1].demoUrl = registry.projects[1].demoUrl.replace('index.html', 'missing.html');
+  fs.writeFileSync(registryFile, JSON.stringify(registry));
+  assert.throws(() => buildPages(root, 'dist/invalid-demo'), /演示地址未列入发布文件/);
+  assert.equal(fs.existsSync(path.join(root, 'dist/invalid-demo')), false);
+});
+
+test('体验入口必须落在该项目的公开网页', () => {
+  const { root } = fixture();
+  const configFile = path.join(root, 'pages.config.json');
+  const config = JSON.parse(fs.readFileSync(configFile, 'utf8'));
+  config.projects[0].action = { label: '直接体验', path: 'index.html#demo' };
+  fs.writeFileSync(configFile, JSON.stringify(config));
+  const result = buildPages(root);
+  assert.match(fs.readFileSync(path.join(result.output, 'index.html'), 'utf8'), /href="\.\/001-first\/#demo">直接体验/);
+  config.projects[0].action.path = 'missing.html';
+  fs.writeFileSync(configFile, JSON.stringify(config));
+  assert.throws(() => buildPages(root, 'dist/invalid-action'), /action 未指向已发布页面/);
 });
