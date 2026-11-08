@@ -2,7 +2,7 @@
 
 一只戴着小帽子的鹈鹕骑车经过海边：这是一个用原生 SVG、CSS 和少量 JavaScript 制作的轻量互动动画。
 
-[返回总索引](../../README.md#项目索引) · [实现笔记](research/notes.md)
+[在线体验](https://yydshly.github.io/1025_codex_project/007-pelican-bicycle/) · [返回总索引](../../README.md#项目索引) · [实现笔记](research/notes.md)
 
 ## 体验
 

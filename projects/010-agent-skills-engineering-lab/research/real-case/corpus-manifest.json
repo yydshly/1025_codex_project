@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-08T13:58:41.711Z",
+  "generatedAt": "2026-11-08T14:03:34.373Z",
   "sourceScope": "projects.json + registered project README.md files only",
   "projectCount": 15,
   "passageCount": 721,
-  "registrySha256": "cd77dd0aadc475bd924dfac5e7ac3d98511a0858c0400baf622a3a342ead68b5",
-  "dataSha256": "9bd5ef4e6655e598724139f7cd44cb67e7ecd5a020acb636857e9da1145039a7",
+  "registrySha256": "b468fdbe3ad5e0ed6a2f803a7fad0b09df5424395354a6f913718a930983e7dd",
+  "dataSha256": "1b91f87b13bcf460c475f36ef7fe2c65031b47be16648ee8b2c8a56cdf353f1e",
   "documents": [
     {
       "projectId": "001",
@@ -46,7 +46,7 @@
     {
       "projectId": "007",
       "path": "projects/007-pelican-bicycle/README.md",
-      "sha256": "8b37dd2ae0cc9d1d83336a9434759f5c42b22a1e6e5ace390854937135f5d35e",
+      "sha256": "b8a8d14becc2f0e3f628da89b49984cb3ede636c356d3b443b8c1249f81c6248",
       "passages": 11
     },
     {

@@ -1,8 +1,8 @@
 // Generated from the project registry and allowlisted README files.
 globalThis.RECALL_CORPUS = {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-08T13:58:41.711Z",
-  "registrySha256": "cd77dd0aadc475bd924dfac5e7ac3d98511a0858c0400baf622a3a342ead68b5",
+  "generatedAt": "2026-11-08T14:03:34.373Z",
+  "registrySha256": "b468fdbe3ad5e0ed6a2f803a7fad0b09df5424395354a6f913718a930983e7dd",
   "projects": [
     {
       "id": "001",
@@ -1818,8 +1818,8 @@ globalThis.RECALL_CORPUS = {
       ],
       "createdAt": "2026-10-27",
       "readmePath": "projects/007-pelican-bicycle/README.md",
-      "readmeSha256": "8b37dd2ae0cc9d1d83336a9434759f5c42b22a1e6e5ace390854937135f5d35e",
-      "readmeText": "# 007 · 鹈鹕的单车日和\n\n一只戴着小帽子的鹈鹕骑车经过海边：这是一个用原生 SVG、CSS 和少量 JavaScript 制作的轻量互动动画。\n\n[返回总索引](../../README.md#项目索引) · [实现笔记](research/notes.md)\n\n## 体验\n\n打开页面即可看到车轮转动、骑手轻轻起伏、云朵和花草随风摆动。页面提供暂停和调整速度的按钮，并适配手机屏幕；系统启用减少动态效果时，页面会从暂停状态开始。\n\n## 本地运行\n\n无需安装依赖或构建。直接在浏览器中打开 [app/index.html](app/index.html)，即可体验。所有插画均为项目内的 SVG，无需联网加载资源。\n\n## 实现说明\n\n画面由 SVG 绘制，车轮、曲柄、骑手和背景使用 CSS 动画，按钮通过 JavaScript 控制动画的暂停和速度。动画以插画表现为主，并非精确的自行车机械运动模拟。\n\n## 来源与授权\n\n本项目为本库原创实践，没有外部上游项目或素材。项目文件适用本仓库的授权约定。\n",
+      "readmeSha256": "b8a8d14becc2f0e3f628da89b49984cb3ede636c356d3b443b8c1249f81c6248",
+      "readmeText": "# 007 · 鹈鹕的单车日和\n\n一只戴着小帽子的鹈鹕骑车经过海边：这是一个用原生 SVG、CSS 和少量 JavaScript 制作的轻量互动动画。\n\n[在线体验](https://yydshly.github.io/1025_codex_project/007-pelican-bicycle/) · [返回总索引](../../README.md#项目索引) · [实现笔记](research/notes.md)\n\n## 体验\n\n打开页面即可看到车轮转动、骑手轻轻起伏、云朵和花草随风摆动。页面提供暂停和调整速度的按钮，并适配手机屏幕；系统启用减少动态效果时，页面会从暂停状态开始。\n\n## 本地运行\n\n无需安装依赖或构建。直接在浏览器中打开 [app/index.html](app/index.html)，即可体验。所有插画均为项目内的 SVG，无需联网加载资源。\n\n## 实现说明\n\n画面由 SVG 绘制，车轮、曲柄、骑手和背景使用 CSS 动画，按钮通过 JavaScript 控制动画的暂停和速度。动画以插画表现为主，并非精确的自行车机械运动模拟。\n\n## 来源与授权\n\n本项目为本库原创实践，没有外部上游项目或素材。项目文件适用本仓库的授权约定。\n",
       "passages": [
         {
           "path": "projects/007-pelican-bicycle/README.md",
@@ -1837,7 +1837,7 @@ globalThis.RECALL_CORPUS = {
           "path": "projects/007-pelican-bicycle/README.md",
           "startLine": 5,
           "endLine": 5,
-          "text": "[返回总索引](../../README.md#项目索引) · [实现笔记](research/notes.md)"
+          "text": "[在线体验](https://yydshly.github.io/1025_codex_project/007-pelican-bicycle/) · [返回总索引](../../README.md#项目索引) · [实现笔记](research/notes.md)"
         },
         {
           "path": "projects/007-pelican-bicycle/README.md",
@@ -1892,7 +1892,7 @@ globalThis.RECALL_CORPUS = {
         "path": "projects.json",
         "startLine": 116,
         "endLine": 132,
-        "text": "    {\n      \"id\": \"007\",\n      \"slug\": \"pelican-bicycle\",\n      \"name\": \"鹈鹕的单车日和\",\n      \"summary\": \"体验一只在海边骑车的鹈鹕。SVG 画角色与景物，CSS 做轮转和微动，可暂停、调速，支持减少动态效果设置。适合参考轻量网页动画的实现。\",\n      \"source\": \"https://github.com/yydshly/1025_codex_project\",\n      \"sourceName\": \"本库原创（无上游源库）\",\n      \"status\": \"building\",\n      \"tags\": [\n        \"网页动画\",\n        \"插画\",\n        \"交互\"\n      ],\n      \"cover\": \"\",\n      \"demoUrl\": \"\",\n      \"createdAt\": \"2026-10-27\"\n    },"
+        "text": "    {\n      \"id\": \"007\",\n      \"slug\": \"pelican-bicycle\",\n      \"name\": \"鹈鹕的单车日和\",\n      \"summary\": \"体验一只在海边骑车的鹈鹕。SVG 画角色与景物，CSS 做轮转和微动，可暂停、调速，支持减少动态效果设置。适合参考轻量网页动画的实现。\",\n      \"source\": \"https://github.com/yydshly/1025_codex_project\",\n      \"sourceName\": \"本库原创（无上游源库）\",\n      \"status\": \"building\",\n      \"tags\": [\n        \"网页动画\",\n        \"插画\",\n        \"交互\"\n      ],\n      \"cover\": \"\",\n      \"demoUrl\": \"https://yydshly.github.io/1025_codex_project/007-pelican-bicycle/\",\n      \"createdAt\": \"2026-10-27\"\n    },"
       }
     },
     {
