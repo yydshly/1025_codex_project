@@ -1,0 +1,85 @@
+{
+  "version": "9.0.0",
+  "verifiedAtUtc": "2026-11-04T13:01:25.937792+00:00",
+  "entry": "http://127.0.0.1:4175/app/index.html#typhoon-real",
+  "scope": {
+    "dateHkt": "2018-09-16",
+    "startHkt": "08:00",
+    "endHkt": "20:00",
+    "cloudFrames": 72,
+    "clockTicks": 73,
+    "missingCloudHkt": "10:40",
+    "windReportsWithinWindow": 20,
+    "rainWindowsWithinWindow": 12,
+    "seaLevelSamplesWithinWindow": 13
+  },
+  "checks": {
+    "projectCheck": "passed in staging and original project",
+    "automatedTests": {
+      "passed": 46,
+      "failed": 0
+    },
+    "fileDelivery": "304 copied files verified by SHA-256; raw HSD not duplicated into E"
+  },
+  "browser": {
+    "desktopViewport": [
+      1440,
+      1000
+    ],
+    "mobileViewport": [
+      390,
+      844
+    ],
+    "singleEarth": true,
+    "sameClockOnFourChartsAt1310": "2018-09-16T05:10:00.000Z",
+    "at1310": {
+      "cloudUtc": "2018-09-16T05:10:00Z",
+      "windActualUtc": "2018-09-16T05:00:00Z",
+      "windKmh": 111.12,
+      "seaLevelActualUtc": "2018-09-16T05:00:00Z",
+      "seaLevelM": 3.7,
+      "rainIntervalHkt": [
+        "11:45",
+        "12:45"
+      ],
+      "rainRangeMm": [
+        2,
+        48
+      ]
+    },
+    "rapidTimelineJumps": "09:30 -> 19:00 -> 13:10 final image and four chart clocks correct",
+    "cloudGap1040": "no cloud frame; historical geographic base and missing-frame label; station series continue",
+    "windAt0800": "missing, no expired observation reused",
+    "rainAt1850": "missing district in original 17:45-18:45 bulletin; source links to 20180916-1915 original snapshot",
+    "fullPlayback": "Original project entry4175:08:00 to20:00; auto-stop at73/73; all four chart clocks equal2018-09-16T12:00:00.000Z and actual cloud scan20:00-20:09.",
+    "jsonAndTxtExport": "UI downloads inspected: selected and displayed cloud time match; actual observation times, rain publication time and station-zero datum retained",
+    "originalEffects": "six topics each retain two parameters and three model curves; no synchronized station labels leak into principle mode",
+    "fullTrackMode": "A/B retained;9/16 08:00 selects9/16 stage background",
+    "mobile": "no horizontal page/modal overflow; four charts shown at full column width",
+    "consoleWarningsAndErrors": [],
+    "finalState": "13:00 paused, viewport override reset, deliverable tab retained."
+  },
+  "scientificBoundaries": [
+    "Historical observation-time alignment, not simultaneous acquisition or real-time original availability.",
+    "Cloud B13 calibrated radiance-derived brightness temperature; valid clear-sky surface pixels are retained. No invented animation or cloud mask.",
+    "Cloud frames use nominal ten-minute scan times with actual full-disk scan start/end retained. High-cloud parallax not corrected.",
+    "No interpolated or future observations. Missing archives retained as empty.",
+    "Airport wind normally ten-minute mean with half-hourly routine METAR reports.",
+    "Rain is district station minimum-maximum past-hour accumulation, not single-station mean or uncertainty interval.",
+    "Sea level is original hourly sampling of one-minute on-the-hour averages, UHSLC station zero; no CD conversion or storm-surge residual.",
+    "JMA center remains original six-hourly best-track analysis, no invented ten-minute center positions."
+  ],
+  "sourceValidation": [
+    "research/high-frequency-clouds/validation-report.json",
+    "research/high-frequency-clouds/README.md",
+    "research/hko-mangkhut-observations/raw-file-integrity.json",
+    "research/hko-mangkhut-observations/README.md",
+    "research/real-events/hong-kong-sea-level/quarry-bay-mangkhut-2018-hourly.json"
+  ],
+  "screenshots": [
+    "assets/images/synchronized-mangkhut-v9.png",
+    "assets/images/synchronized-mangkhut-v9-mobile.png",
+    "assets/images/synchronized-mangkhut-v9-missing.png",
+    "assets/images/synchronized-mangkhut-v9-evening.png"
+  ]
+}

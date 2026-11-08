@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "startedAtUtc": "2026-11-04T14:15:26.218Z",
+  "completedAtUtc": "2026-11-04T14:15:36.410Z",
+  "snapshotUpdated": true,
+  "counts": {
+    "quake": 720,
+    "volcano": 35,
+    "storm": 2
+  },
+  "sources": [
+    {
+      "id": "usgs_quakes",
+      "name": "USGS 地震目录",
+      "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_month.geojson",
+      "coverageLabel": "过去 30 天 · M4.5+ 地震",
+      "documentationUrl": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php",
+      "status": "ok",
+      "attemptedAtUtc": "2026-11-04T14:15:26.225Z",
+      "retrievedAtUtc": "2026-11-04T14:15:27.238Z",
+      "retrievalSucceeded": true,
+      "diagnostics": {
+        "inputRecords": 720,
+        "includedRecords": 720,
+        "skippedRecords": 0,
+        "unsupportedGeometries": 0,
+        "duplicateTimes": 0,
+        "conflictingDuplicateTimes": 0
+      }
+    },
+    {
+      "id": "eonet_recent",
+      "name": "NASA EONET 近期事件",
+      "url": "https://eonet.gsfc.nasa.gov/api/v3/events?status=open&days=90",
+      "coverageLabel": "过去 90 天的开放事件 · 仅明确命名的热带气旋及火山",
+      "documentationUrl": "https://eonet.gsfc.nasa.gov/docs/v3",
+      "status": "ok",
+      "attemptedAtUtc": "2026-11-04T14:15:26.295Z",
+      "retrievedAtUtc": "2026-11-04T14:15:36.367Z",
+      "retrievalSucceeded": true,
+      "diagnostics": {
+        "inputRecords": 212,
+        "includedRecords": 2,
+        "skippedRecords": 210,
+        "unsupportedGeometries": 0,
+        "duplicateTimes": 0,
+        "conflictingDuplicateTimes": 0
+      }
+    },
+    {
+      "id": "eonet_volcano_open",
+      "name": "NASA EONET 开放火山目录",
+      "url": "https://eonet.gsfc.nasa.gov/api/v3/events?status=open&category=volcanoes",
+      "coverageLabel": "开放火山事件目录 · 报告时间各异（不限定 90 天）",
+      "documentationUrl": "https://eonet.gsfc.nasa.gov/docs/v3",
+      "status": "ok",
+      "attemptedAtUtc": "2026-11-04T14:15:26.296Z",
+      "retrievedAtUtc": "2026-11-04T14:15:33.826Z",
+      "retrievalSucceeded": true,
+      "diagnostics": {
+        "inputRecords": 32,
+        "includedRecords": 32,
+        "skippedRecords": 0,
+        "unsupportedGeometries": 0,
+        "duplicateTimes": 0,
+        "conflictingDuplicateTimes": 0
+      }
+    },
+    {
+      "id": "usgs_volcano_status",
+      "name": "USGS 火山状态通报",
+      "url": "https://volcanoes.usgs.gov/hans-public/api/volcano/getElevatedVolcanoes",
+      "coordinateUrl": "https://volcanoes.usgs.gov/vsc/api/volcanoApi/geojson",
+      "coverageLabel": "USGS 当前较高警戒级别目录 · 时间为最近官方通报发布时间",
+      "documentationUrl": "https://volcanoes.usgs.gov/hans-public/api/volcano/",
+      "status": "ok",
+      "attemptedAtUtc": "2026-11-04T14:15:26.297Z",
+      "retrievedAtUtc": "2026-11-04T14:15:27.472Z",
+      "retrievalSucceeded": true,
+      "diagnostics": {
+        "inputRecords": 3,
+        "includedRecords": 3,
+        "skippedRecords": 0,
+        "unsupportedGeometries": 0,
+        "duplicateTimes": 0,
+        "conflictingDuplicateTimes": 0
+      }
+    }
+  ],
+  "rawResponses": [
+    {
+      "sourceId": "usgs_quakes",
+      "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_month.geojson",
+      "retrievedAtUtc": "2026-11-04T14:15:27.238Z",
+      "httpStatus": 200,
+      "headers": {
+        "content-type": "application/json; charset=utf-8",
+        "date": "Wed, 04 Nov 2026 14:14:51 GMT",
+        "last-modified": "Wed, 04 Nov 2026 14:14:51 GMT",
+        "cache-control": "public, max-age=60",
+        "access-control-allow-origin": "*"
+      },
+      "sha256": "51bd63478739aa87a4f3b672693fbd140bd8b5d8697ef3aac644a909daecaf39",
+      "bytes": 502619,
+      "file": "raw/20261104T141526218Z/usgs_quakes-212ac8ac6d.json"
+    },
+    {
+      "sourceId": "eonet_volcano_open",
+      "url": "https://eonet.gsfc.nasa.gov/api/v3/events?status=open&category=volcanoes",
+      "retrievedAtUtc": "2026-11-04T14:15:33.826Z",
+      "httpStatus": 200,
+      "headers": {
+        "content-type": "application/rss+xml; charset=utf-8",
+        "date": "Wed, 04 Nov 2026 14:15:33 GMT",
+        "cache-control": "no-cache, private",
+        "access-control-allow-origin": "*"
+      },
+      "sha256": "2fcfea8aad492278c604fc62d5559c08aa04e8f311421dcc655b47a0287c02a6",
+      "bytes": 21671,
+      "file": "raw/20261104T141526218Z/eonet_volcano_open-1b735e7f24.json"
+    },
+    {
+      "sourceId": "eonet_recent",
+      "url": "https://eonet.gsfc.nasa.gov/api/v3/events?status=open&days=90",
+      "retrievedAtUtc": "2026-11-04T14:15:36.367Z",
+      "httpStatus": 200,
+      "headers": {
+        "content-type": "application/rss+xml; charset=utf-8",
+        "date": "Wed, 04 Nov 2026 14:15:32 GMT",
+        "cache-control": "no-cache, private",
+        "access-control-allow-origin": "*"
+      },
+      "sha256": "da9f0a5a2298dadb1d705b095c5ad4db2103c4a7e5c3cd432ad4732b350b53ad",
+      "bytes": 252053,
+      "file": "raw/20261104T141526218Z/eonet_recent-5dabd2efec.json"
+    },
+    {
+      "sourceId": "usgs_volcano_status",
+      "url": "https://volcanoes.usgs.gov/hans-public/api/volcano/getElevatedVolcanoes",
+      "retrievedAtUtc": "2026-11-04T14:15:27.297Z",
+      "httpStatus": 200,
+      "headers": {
+        "content-type": "application/json",
+        "date": "Wed, 04 Nov 2026 14:15:27 GMT",
+        "access-control-allow-origin": "*"
+      },
+      "sha256": "a213b8a73be56bbd36d4f543adda2fbb95417bc679bf75ce92b30c3ad8bdb5dd",
+      "bytes": 1960,
+      "file": "raw/20261104T141526218Z/usgs_volcano_status-d7f5d6694e.json"
+    },
+    {
+      "sourceId": "usgs_volcano_status",
+      "url": "https://volcanoes.usgs.gov/vsc/api/volcanoApi/geojson",
+      "retrievedAtUtc": "2026-11-04T14:15:27.472Z",
+      "httpStatus": 200,
+      "headers": {
+        "content-type": "text/html; charset=UTF-8",
+        "date": "Wed, 04 Nov 2026 14:15:26 GMT",
+        "access-control-allow-origin": "*"
+      },
+      "sha256": "85007ee5f0e864d108c3ecc884da7bcb1e4053b7afd0d68631b42855b236f877",
+      "bytes": 116596,
+      "file": "raw/20261104T141526218Z/usgs_volcano_status-04eec29deb.json"
+    }
+  ],
+  "notes": [
+    "原始文件保存 HTTP JSON 正文字节，SHA256 对原始字节计算；未保存或使用身份凭据。",
+    "app 快照仅在全部来源请求和规范化验证成功时原子替换；任一失败保留原快照。",
+    "HANS 通报按 vnum 匹配官方火山目录位置；时间为 sent_unixtime 所示发布时间，不是喷发起点。",
+    "USGS 与 EONET 可能包含同一座火山的不同来源记录；计数不是去重后的火山数量。"
+  ]
+}

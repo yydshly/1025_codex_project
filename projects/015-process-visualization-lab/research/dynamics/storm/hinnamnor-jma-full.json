@@ -1,0 +1,631 @@
+{
+  "records": [
+    {
+      "timeUtc": "2022-08-27T18:00:00Z",
+      "lat": 23.8,
+      "lon": 151.1,
+      "pressureHpa": 1008,
+      "windKt": null,
+      "grade": 2,
+      "sourceLine": 2
+    },
+    {
+      "timeUtc": "2022-08-28T00:00:00Z",
+      "lat": 24.9,
+      "lon": 150.3,
+      "pressureHpa": 1008,
+      "windKt": null,
+      "grade": 2,
+      "sourceLine": 3
+    },
+    {
+      "timeUtc": "2022-08-28T06:00:00Z",
+      "lat": 25.9,
+      "lon": 149.5,
+      "pressureHpa": 1004,
+      "windKt": 35,
+      "grade": 3,
+      "sourceLine": 4
+    },
+    {
+      "timeUtc": "2022-08-28T12:00:00Z",
+      "lat": 26.9,
+      "lon": 148.5,
+      "pressureHpa": 1002,
+      "windKt": 40,
+      "grade": 3,
+      "sourceLine": 5
+    },
+    {
+      "timeUtc": "2022-08-28T18:00:00Z",
+      "lat": 27.2,
+      "lon": 146.9,
+      "pressureHpa": 996,
+      "windKt": 55,
+      "grade": 4,
+      "sourceLine": 6
+    },
+    {
+      "timeUtc": "2022-08-29T00:00:00Z",
+      "lat": 27.3,
+      "lon": 145.3,
+      "pressureHpa": 980,
+      "windKt": 70,
+      "grade": 5,
+      "sourceLine": 7
+    },
+    {
+      "timeUtc": "2022-08-29T03:00:00Z",
+      "lat": 27.4,
+      "lon": 144.4,
+      "pressureHpa": 980,
+      "windKt": 70,
+      "grade": 5,
+      "sourceLine": 8
+    },
+    {
+      "timeUtc": "2022-08-29T06:00:00Z",
+      "lat": 27.4,
+      "lon": 143.2,
+      "pressureHpa": 975,
+      "windKt": 75,
+      "grade": 5,
+      "sourceLine": 9
+    },
+    {
+      "timeUtc": "2022-08-29T09:00:00Z",
+      "lat": 27.4,
+      "lon": 142.3,
+      "pressureHpa": 970,
+      "windKt": 80,
+      "grade": 5,
+      "sourceLine": 10
+    },
+    {
+      "timeUtc": "2022-08-29T12:00:00Z",
+      "lat": 27.3,
+      "lon": 141.3,
+      "pressureHpa": 965,
+      "windKt": 85,
+      "grade": 5,
+      "sourceLine": 11
+    },
+    {
+      "timeUtc": "2022-08-29T15:00:00Z",
+      "lat": 27.2,
+      "lon": 140.3,
+      "pressureHpa": 955,
+      "windKt": 85,
+      "grade": 5,
+      "sourceLine": 12
+    },
+    {
+      "timeUtc": "2022-08-29T18:00:00Z",
+      "lat": 27.1,
+      "lon": 139.2,
+      "pressureHpa": 950,
+      "windKt": 90,
+      "grade": 5,
+      "sourceLine": 13
+    },
+    {
+      "timeUtc": "2022-08-30T00:00:00Z",
+      "lat": 26.8,
+      "lon": 137.3,
+      "pressureHpa": 940,
+      "windKt": 95,
+      "grade": 5,
+      "sourceLine": 14
+    },
+    {
+      "timeUtc": "2022-08-30T06:00:00Z",
+      "lat": 26.8,
+      "lon": 135.4,
+      "pressureHpa": 935,
+      "windKt": 100,
+      "grade": 5,
+      "sourceLine": 15
+    },
+    {
+      "timeUtc": "2022-08-30T12:00:00Z",
+      "lat": 26.6,
+      "lon": 133.6,
+      "pressureHpa": 920,
+      "windKt": 105,
+      "grade": 5,
+      "sourceLine": 16
+    },
+    {
+      "timeUtc": "2022-08-30T15:00:00Z",
+      "lat": 26.5,
+      "lon": 132.7,
+      "pressureHpa": 920,
+      "windKt": 105,
+      "grade": 5,
+      "sourceLine": 17
+    },
+    {
+      "timeUtc": "2022-08-30T18:00:00Z",
+      "lat": 26.3,
+      "lon": 131.9,
+      "pressureHpa": 920,
+      "windKt": 105,
+      "grade": 5,
+      "sourceLine": 18
+    },
+    {
+      "timeUtc": "2022-08-30T21:00:00Z",
+      "lat": 26.1,
+      "lon": 131.1,
+      "pressureHpa": 920,
+      "windKt": 105,
+      "grade": 5,
+      "sourceLine": 19
+    },
+    {
+      "timeUtc": "2022-08-31T00:00:00Z",
+      "lat": 25.9,
+      "lon": 130.3,
+      "pressureHpa": 935,
+      "windKt": 100,
+      "grade": 5,
+      "sourceLine": 20
+    },
+    {
+      "timeUtc": "2022-08-31T03:00:00Z",
+      "lat": 25.7,
+      "lon": 129.6,
+      "pressureHpa": 935,
+      "windKt": 100,
+      "grade": 5,
+      "sourceLine": 21
+    },
+    {
+      "timeUtc": "2022-08-31T06:00:00Z",
+      "lat": 25.4,
+      "lon": 129.0,
+      "pressureHpa": 935,
+      "windKt": 100,
+      "grade": 5,
+      "sourceLine": 22
+    },
+    {
+      "timeUtc": "2022-08-31T09:00:00Z",
+      "lat": 25.1,
+      "lon": 128.4,
+      "pressureHpa": 935,
+      "windKt": 100,
+      "grade": 5,
+      "sourceLine": 23
+    },
+    {
+      "timeUtc": "2022-08-31T12:00:00Z",
+      "lat": 24.7,
+      "lon": 127.7,
+      "pressureHpa": 935,
+      "windKt": 100,
+      "grade": 5,
+      "sourceLine": 24
+    },
+    {
+      "timeUtc": "2022-08-31T18:00:00Z",
+      "lat": 23.7,
+      "lon": 126.3,
+      "pressureHpa": 935,
+      "windKt": 100,
+      "grade": 5,
+      "sourceLine": 25
+    },
+    {
+      "timeUtc": "2022-09-01T00:00:00Z",
+      "lat": 22.6,
+      "lon": 125.7,
+      "pressureHpa": 925,
+      "windKt": 100,
+      "grade": 5,
+      "sourceLine": 26
+    },
+    {
+      "timeUtc": "2022-09-01T06:00:00Z",
+      "lat": 21.8,
+      "lon": 125.5,
+      "pressureHpa": 925,
+      "windKt": 100,
+      "grade": 5,
+      "sourceLine": 27
+    },
+    {
+      "timeUtc": "2022-09-01T12:00:00Z",
+      "lat": 21.3,
+      "lon": 125.5,
+      "pressureHpa": 925,
+      "windKt": 100,
+      "grade": 5,
+      "sourceLine": 28
+    },
+    {
+      "timeUtc": "2022-09-01T18:00:00Z",
+      "lat": 21.3,
+      "lon": 125.5,
+      "pressureHpa": 935,
+      "windKt": 90,
+      "grade": 5,
+      "sourceLine": 29
+    },
+    {
+      "timeUtc": "2022-09-02T00:00:00Z",
+      "lat": 21.5,
+      "lon": 125.5,
+      "pressureHpa": 940,
+      "windKt": 80,
+      "grade": 5,
+      "sourceLine": 30
+    },
+    {
+      "timeUtc": "2022-09-02T06:00:00Z",
+      "lat": 21.9,
+      "lon": 125.0,
+      "pressureHpa": 945,
+      "windKt": 75,
+      "grade": 5,
+      "sourceLine": 31
+    },
+    {
+      "timeUtc": "2022-09-02T12:00:00Z",
+      "lat": 22.1,
+      "lon": 124.6,
+      "pressureHpa": 950,
+      "windKt": 75,
+      "grade": 5,
+      "sourceLine": 32
+    },
+    {
+      "timeUtc": "2022-09-02T18:00:00Z",
+      "lat": 22.5,
+      "lon": 124.6,
+      "pressureHpa": 955,
+      "windKt": 75,
+      "grade": 5,
+      "sourceLine": 33
+    },
+    {
+      "timeUtc": "2022-09-02T21:00:00Z",
+      "lat": 22.7,
+      "lon": 124.6,
+      "pressureHpa": 960,
+      "windKt": 75,
+      "grade": 5,
+      "sourceLine": 34
+    },
+    {
+      "timeUtc": "2022-09-03T00:00:00Z",
+      "lat": 23.0,
+      "lon": 124.6,
+      "pressureHpa": 960,
+      "windKt": 75,
+      "grade": 5,
+      "sourceLine": 35
+    },
+    {
+      "timeUtc": "2022-09-03T03:00:00Z",
+      "lat": 23.3,
+      "lon": 124.6,
+      "pressureHpa": 960,
+      "windKt": 75,
+      "grade": 5,
+      "sourceLine": 36
+    },
+    {
+      "timeUtc": "2022-09-03T06:00:00Z",
+      "lat": 23.8,
+      "lon": 124.7,
+      "pressureHpa": 960,
+      "windKt": 75,
+      "grade": 5,
+      "sourceLine": 37
+    },
+    {
+      "timeUtc": "2022-09-03T09:00:00Z",
+      "lat": 24.0,
+      "lon": 124.8,
+      "pressureHpa": 960,
+      "windKt": 75,
+      "grade": 5,
+      "sourceLine": 38
+    },
+    {
+      "timeUtc": "2022-09-03T12:00:00Z",
+      "lat": 24.3,
+      "lon": 124.9,
+      "pressureHpa": 950,
+      "windKt": 80,
+      "grade": 5,
+      "sourceLine": 39
+    },
+    {
+      "timeUtc": "2022-09-03T15:00:00Z",
+      "lat": 24.8,
+      "lon": 124.7,
+      "pressureHpa": 950,
+      "windKt": 80,
+      "grade": 5,
+      "sourceLine": 40
+    },
+    {
+      "timeUtc": "2022-09-03T18:00:00Z",
+      "lat": 25.1,
+      "lon": 124.6,
+      "pressureHpa": 950,
+      "windKt": 80,
+      "grade": 5,
+      "sourceLine": 41
+    },
+    {
+      "timeUtc": "2022-09-03T21:00:00Z",
+      "lat": 25.5,
+      "lon": 124.6,
+      "pressureHpa": 950,
+      "windKt": 80,
+      "grade": 5,
+      "sourceLine": 42
+    },
+    {
+      "timeUtc": "2022-09-04T00:00:00Z",
+      "lat": 26.0,
+      "lon": 124.6,
+      "pressureHpa": 945,
+      "windKt": 85,
+      "grade": 5,
+      "sourceLine": 43
+    },
+    {
+      "timeUtc": "2022-09-04T03:00:00Z",
+      "lat": 26.3,
+      "lon": 124.5,
+      "pressureHpa": 945,
+      "windKt": 85,
+      "grade": 5,
+      "sourceLine": 44
+    },
+    {
+      "timeUtc": "2022-09-04T06:00:00Z",
+      "lat": 27.0,
+      "lon": 124.7,
+      "pressureHpa": 940,
+      "windKt": 90,
+      "grade": 5,
+      "sourceLine": 45
+    },
+    {
+      "timeUtc": "2022-09-04T09:00:00Z",
+      "lat": 27.5,
+      "lon": 124.4,
+      "pressureHpa": 940,
+      "windKt": 90,
+      "grade": 5,
+      "sourceLine": 46
+    },
+    {
+      "timeUtc": "2022-09-04T12:00:00Z",
+      "lat": 27.7,
+      "lon": 124.5,
+      "pressureHpa": 940,
+      "windKt": 90,
+      "grade": 5,
+      "sourceLine": 47
+    },
+    {
+      "timeUtc": "2022-09-04T18:00:00Z",
+      "lat": 28.6,
+      "lon": 124.7,
+      "pressureHpa": 940,
+      "windKt": 90,
+      "grade": 5,
+      "sourceLine": 48
+    },
+    {
+      "timeUtc": "2022-09-05T00:00:00Z",
+      "lat": 29.8,
+      "lon": 124.9,
+      "pressureHpa": 945,
+      "windKt": 85,
+      "grade": 5,
+      "sourceLine": 49
+    },
+    {
+      "timeUtc": "2022-09-05T03:00:00Z",
+      "lat": 30.2,
+      "lon": 125.1,
+      "pressureHpa": 945,
+      "windKt": 85,
+      "grade": 5,
+      "sourceLine": 50
+    },
+    {
+      "timeUtc": "2022-09-05T06:00:00Z",
+      "lat": 31.0,
+      "lon": 125.5,
+      "pressureHpa": 950,
+      "windKt": 80,
+      "grade": 5,
+      "sourceLine": 51
+    },
+    {
+      "timeUtc": "2022-09-05T09:00:00Z",
+      "lat": 31.6,
+      "lon": 126.0,
+      "pressureHpa": 950,
+      "windKt": 80,
+      "grade": 5,
+      "sourceLine": 52
+    },
+    {
+      "timeUtc": "2022-09-05T12:00:00Z",
+      "lat": 32.3,
+      "lon": 126.6,
+      "pressureHpa": 955,
+      "windKt": 75,
+      "grade": 5,
+      "sourceLine": 53
+    },
+    {
+      "timeUtc": "2022-09-05T15:00:00Z",
+      "lat": 33.3,
+      "lon": 127.2,
+      "pressureHpa": 960,
+      "windKt": 75,
+      "grade": 5,
+      "sourceLine": 54
+    },
+    {
+      "timeUtc": "2022-09-05T18:00:00Z",
+      "lat": 34.2,
+      "lon": 128.1,
+      "pressureHpa": 965,
+      "windKt": 70,
+      "grade": 5,
+      "sourceLine": 55
+    },
+    {
+      "timeUtc": "2022-09-05T21:00:00Z",
+      "lat": 35.1,
+      "lon": 129.1,
+      "pressureHpa": 965,
+      "windKt": 70,
+      "grade": 5,
+      "sourceLine": 56
+    },
+    {
+      "timeUtc": "2022-09-06T00:00:00Z",
+      "lat": 36.4,
+      "lon": 130.7,
+      "pressureHpa": 970,
+      "windKt": 65,
+      "grade": 5,
+      "sourceLine": 57
+    },
+    {
+      "timeUtc": "2022-09-06T03:00:00Z",
+      "lat": 37.8,
+      "lon": 131.9,
+      "pressureHpa": 970,
+      "windKt": 65,
+      "grade": 5,
+      "sourceLine": 58
+    },
+    {
+      "timeUtc": "2022-09-06T06:00:00Z",
+      "lat": 39.8,
+      "lon": 133.6,
+      "pressureHpa": 975,
+      "windKt": 60,
+      "grade": 4,
+      "sourceLine": 59
+    },
+    {
+      "timeUtc": "2022-09-06T12:00:00Z",
+      "lat": 44.0,
+      "lon": 137.0,
+      "pressureHpa": 980,
+      "windKt": null,
+      "grade": 6,
+      "sourceLine": 60
+    },
+    {
+      "timeUtc": "2022-09-06T18:00:00Z",
+      "lat": 47.5,
+      "lon": 139.4,
+      "pressureHpa": 982,
+      "windKt": null,
+      "grade": 6,
+      "sourceLine": 61
+    },
+    {
+      "timeUtc": "2022-09-07T00:00:00Z",
+      "lat": 52.6,
+      "lon": 138.4,
+      "pressureHpa": 978,
+      "windKt": null,
+      "grade": 6,
+      "sourceLine": 62
+    },
+    {
+      "timeUtc": "2022-09-07T06:00:00Z",
+      "lat": 54.8,
+      "lon": 139.1,
+      "pressureHpa": 968,
+      "windKt": null,
+      "grade": 6,
+      "sourceLine": 63
+    },
+    {
+      "timeUtc": "2022-09-07T12:00:00Z",
+      "lat": 55.8,
+      "lon": 139.1,
+      "pressureHpa": 970,
+      "windKt": null,
+      "grade": 6,
+      "sourceLine": 64
+    },
+    {
+      "timeUtc": "2022-09-07T18:00:00Z",
+      "lat": 56.7,
+      "lon": 140.8,
+      "pressureHpa": 972,
+      "windKt": null,
+      "grade": 6,
+      "sourceLine": 65
+    },
+    {
+      "timeUtc": "2022-09-08T00:00:00Z",
+      "lat": 58.0,
+      "lon": 142.9,
+      "pressureHpa": 976,
+      "windKt": null,
+      "grade": 6,
+      "sourceLine": 66
+    },
+    {
+      "timeUtc": "2022-09-08T06:00:00Z",
+      "lat": 58.2,
+      "lon": 145.0,
+      "pressureHpa": 978,
+      "windKt": null,
+      "grade": 6,
+      "sourceLine": 67
+    },
+    {
+      "timeUtc": "2022-09-08T12:00:00Z",
+      "lat": 58.9,
+      "lon": 147.0,
+      "pressureHpa": 984,
+      "windKt": null,
+      "grade": 6,
+      "sourceLine": 68
+    },
+    {
+      "timeUtc": "2022-09-08T18:00:00Z",
+      "lat": 59.9,
+      "lon": 149.2,
+      "pressureHpa": 990,
+      "windKt": null,
+      "grade": 6,
+      "sourceLine": 69
+    },
+    {
+      "timeUtc": "2022-09-09T00:00:00Z",
+      "lat": 61.7,
+      "lon": 149.9,
+      "pressureHpa": 992,
+      "windKt": null,
+      "grade": 6,
+      "sourceLine": 70
+    }
+  ],
+  "sourceUrl": "https://www.jma.go.jp/jma/jma-eng/jma-center/rsmc-hp-pub-eg/Besttracks/bst_all.zip",
+  "sourceSHA256": "0323294061ac01bd68986b283169b4323f02a6f5532061ecf849cd356bfa1e20",
+  "archiveSHA256": "4039571abf3724343d27cb462e2920a952314f3621d646e98958b93b99777ecb",
+  "sourceRevisionDate": "2022-11-24",
+  "dataType": "official-retrospective-best-track-analysis",
+  "windDefinition": "maximum sustained wind, 10-minute averaging, knots; not eye-point wind"
+}

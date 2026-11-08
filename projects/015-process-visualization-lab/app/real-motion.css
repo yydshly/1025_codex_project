@@ -1,0 +1,31 @@
+.real-motion-dialog{box-sizing:border-box;width:min(1180px,94vw);height:auto;max-height:94vh;padding:0;border:1px solid #567184;border-radius:16px;background:#08121d;color:#dceaf3;box-shadow:0 28px 120px #000b;overflow:auto}
+.real-motion-dialog::backdrop{background:#010711d9;backdrop-filter:blur(9px)}
+.real-motion-dialog [hidden]{display:none!important}
+.real-motion-heading{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:24px 28px 19px;border-bottom:1px solid #59748940;background:linear-gradient(115deg,#122536,#08121d)}
+.real-motion-eyebrow{font:10px ui-monospace,monospace;letter-spacing:1.9px;color:#8fb6c9}
+.real-motion-heading h2{font-size:24px;font-weight:500;letter-spacing:.5px;line-height:1.35;margin:9px 0 0}
+.real-motion-close{flex:none;display:flex;gap:14px;align-items:center;border:1px solid #607e934d;border-radius:7px;padding:10px 12px;background:#152a3b;color:#bbd0de;font-family:inherit;font-size:12px;cursor:pointer}
+.real-motion-close span{font-size:23px;line-height:16px;color:#dcebf5}
+.real-motion-body{padding:20px 28px 24px}
+.real-motion-scope{color:#b8ceda;font-size:12px;line-height:1.8;margin:0 0 15px}
+.real-motion-stage{position:relative;aspect-ratio:16/9;width:100%;overflow:hidden;border:1px solid #69889c42;border-radius:10px;background:radial-gradient(ellipse at 48% 42%,#183548 0,#0b1c2a 42%,#03080e 80%)}
+.real-motion-video{display:block;width:100%;height:100%;object-fit:contain;background:transparent}
+.real-motion-overlay{position:absolute;inset:0;display:grid;place-items:center;background:linear-gradient(0deg,#02091416,#07172242);pointer-events:none;padding:24px}
+.real-motion-play{display:flex;flex-direction:column;align-items:center;gap:13px;max-width:100%;padding:19px 28px;border:1px solid #88b9c04f;border-radius:12px;background:#0e2535e8;box-shadow:0 12px 50px #0005;color:#e0f0f2;cursor:pointer;pointer-events:auto;font:inherit}
+.real-motion-play-icon{display:grid;place-items:center;width:56px;height:56px;padding-left:3px;box-sizing:border-box;border:1px solid #a3e2df66;border-radius:50%;background:#6ccccb12;color:#a4e6df;font-size:20px}
+.real-motion-play-label{font-size:16px;line-height:1.5}
+.real-motion-play small{font-size:11px;font-weight:400;line-height:1.6;color:#85a6bb}
+.real-motion-status{font-size:11px;line-height:1.7;color:#92b5c8;margin:12px 0 7px;min-height:19px}
+.real-motion-time-note{font-size:11px;line-height:1.8;color:#b8a383;margin:8px 0 18px}
+.real-motion-notes{display:grid;grid-template-columns:1fr 1fr;gap:22px;padding:17px 0;border-top:1px solid #607b8f38;border-bottom:1px solid #607b8f38}
+.real-motion-notes>div>span{font:10px ui-monospace,monospace;letter-spacing:.6px;color:#8fc8cc}
+.real-motion-notes p{font-size:12px;line-height:1.8;margin:8px 0 0;color:#c1d2dc}
+.real-motion-links{display:flex;flex-wrap:wrap;gap:12px 24px;margin:18px 0 12px}
+.real-motion-links a,.real-motion-fallback a{color:#a1dcd9;font-size:12px;line-height:1.8;text-decoration:none;border-bottom:1px solid #73bcb84d}
+.real-motion-links a:hover,.real-motion-fallback a:hover{color:#e4ffff;border-bottom-color:#a1dcd9}
+.real-motion-credit{font-size:10px;line-height:1.8;color:#7998ac;margin:0}
+.real-motion-fallback{margin:12px 0;padding:13px 16px;border:1px solid #bb965441;border-radius:7px;background:#4b381c24}
+.real-motion-fallback p{margin:0 0 8px;color:#d4bb93;font-size:12px;line-height:1.7}
+.real-motion-fallback a{display:inline-block;margin:0 18px 4px 0}
+.real-motion-dialog button:focus-visible,.real-motion-dialog a:focus-visible{outline:2px solid #b8ece9;outline-offset:4px}
+@media(max-width:700px){.real-motion-dialog{width:96vw;max-height:95vh;border-radius:12px}.real-motion-heading{padding:18px 17px;gap:10px}.real-motion-eyebrow{font-size:8px;letter-spacing:1px}.real-motion-heading h2{font-size:19px}.real-motion-close{padding:8px;gap:9px}.real-motion-body{padding:15px 17px 20px}.real-motion-scope{font-size:11px}.real-motion-stage{border-radius:7px}.real-motion-play{padding:12px 18px;gap:6px}.real-motion-play-icon{width:38px;height:38px;font-size:15px}.real-motion-play-label{font-size:13px}.real-motion-play small{font-size:9px}.real-motion-notes{grid-template-columns:1fr;gap:16px}.real-motion-links{flex-direction:column;align-items:flex-start;gap:10px}}

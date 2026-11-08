@@ -1,0 +1,223 @@
+{
+  "version": "2.0",
+  "date": "2026-11-04",
+  "scenarioChecks": [
+    {
+      "id": "orbital",
+      "kind": "几何模型",
+      "labels": [
+        "NASA地球模型",
+        "太阳光方向"
+      ],
+      "loadingHidden": true,
+      "metrics": [
+        "37.6%",
+        "384,400km",
+        "0.637指数"
+      ],
+      "overflow": false,
+      "title": "地月与潮汐",
+      "width": 642,
+      "parameters": [
+        {
+          "input": "param-distance",
+          "metricsChanged": true
+        },
+        {
+          "input": "param-inclination",
+          "metricsChanged": true
+        }
+      ]
+    },
+    {
+      "id": "volcano",
+      "kind": "过程示意",
+      "labels": [
+        "岩浆房",
+        "上升通道",
+        "岩层剖面"
+      ],
+      "loadingHidden": true,
+      "metrics": [
+        "0.318指数",
+        "100%",
+        "64.3%"
+      ],
+      "overflow": false,
+      "title": "火山内部活动",
+      "width": 642,
+      "parameters": [
+        {
+          "input": "param-pressure",
+          "metricsChanged": true
+        },
+        {
+          "input": "param-viscosity",
+          "metricsChanged": true
+        }
+      ]
+    },
+    {
+      "id": "quake",
+      "kind": "波传播模型",
+      "labels": [
+        "震源",
+        "P 波",
+        "S 波",
+        "地表标记点"
+      ],
+      "loadingHidden": true,
+      "metrics": [
+        "52.4km",
+        "23.5km",
+        "2倍"
+      ],
+      "overflow": false,
+      "title": "地震与波传播",
+      "width": 642,
+      "parameters": [
+        {
+          "input": "param-magnitude",
+          "metricsChanged": true
+        },
+        {
+          "input": "param-depth",
+          "metricsChanged": true
+        }
+      ]
+    },
+    {
+      "id": "typhoon",
+      "kind": "理想风场",
+      "labels": [
+        "台风眼",
+        "模型标记点",
+        "海岸示意"
+      ],
+      "loadingHidden": true,
+      "metrics": [
+        "46m/s",
+        "985.7hPa",
+        "34.8m/s"
+      ],
+      "overflow": false,
+      "title": "台风与风场",
+      "width": 642,
+      "parameters": [
+        {
+          "input": "param-wind",
+          "metricsChanged": true
+        },
+        {
+          "input": "param-radius",
+          "metricsChanged": true
+        }
+      ]
+    },
+    {
+      "id": "river",
+      "kind": "解析输运模型",
+      "labels": [
+        "瞬时释放 · 100 m",
+        "浓度监测 · 1000 m",
+        "上游 · 0 m",
+        "下游 · 2000 m"
+      ],
+      "loadingHidden": true,
+      "metrics": [
+        "983.2m",
+        "0.084mg/L",
+        "100%"
+      ],
+      "overflow": false,
+      "title": "河流与污染物",
+      "width": 642,
+      "parameters": [
+        {
+          "input": "param-flow",
+          "metricsChanged": true
+        },
+        {
+          "input": "param-diffusion",
+          "metricsChanged": true
+        }
+      ]
+    },
+    {
+      "id": "battery",
+      "kind": "简化电热模型",
+      "labels": [
+        "− 负极端子",
+        "+ 正极端子",
+        "多层电极与隔膜",
+        "切开外壳 · 内部结构示意",
+        "外电路负载 · 电子 − → +"
+      ],
+      "loadingHidden": true,
+      "metrics": [
+        "75.8%",
+        "3.72V",
+        "26.8℃"
+      ],
+      "overflow": false,
+      "title": "电池与能量",
+      "width": 642,
+      "parameters": [
+        {
+          "input": "param-current",
+          "metricsChanged": true
+        },
+        {
+          "input": "param-cooling",
+          "metricsChanged": true
+        }
+      ]
+    }
+  ],
+  "comparison": {
+    "recorded": true,
+    "deltaFields": 3
+  },
+  "observationExport": {
+    "downloadEvent": true
+  },
+  "scopePanel": {
+    "opened": true
+  },
+  "mobile": {
+    "canvasWidth": 337.3333435058594,
+    "focusWorks": true,
+    "height": 844,
+    "navCount": 6,
+    "overflow": false,
+    "width": 390
+  },
+  "consoleErrors": [],
+  "limitations": [
+    "教学模型与过程示意，不是实时观测或专业预测。",
+    "验证涵盖交互、数学关系与实际渲染，未开展用户学习效果研究。"
+  ],
+  "mathChecks": [
+    "有限边界与曲线/当前值一致",
+    "月相几何与距离潮汐趋势",
+    "P/S先后、深度与震级关系",
+    "河流质量积分与单位",
+    "电池放电、散热与耗尽"
+  ],
+  "renderer": "Three.js 0.180.0 / WebGL2；实际六类场景与云体着色器均已加载，无浏览器错误。",
+  "assetSources": "asset-sources.json",
+  "status": "模型测试、六主题与十二参数、对照导出、来源说明、390px窄屏均已通过所列范围核对。",
+  "limits": "默认浏览器面板宽度在测试中随窗口变化，截图不是逐像素复刻评分；尚未验证教学收益、真实监测或工程预测。",
+  "screenshots": [
+    "assets/images/scene-orbital-v2.jpg",
+    "assets/images/scene-volcano-v2.jpg",
+    "assets/images/scene-quake-v2.jpg",
+    "assets/images/scene-typhoon-v2.jpg",
+    "assets/images/scene-river-v2.jpg",
+    "assets/images/scene-battery-v2.jpg"
+  ],
+  "screenshotReview": {
+    "rejected": "audit-orbital-loading-v2.jpg（首张天体截图仍处加载态）",
+    "accepted": "scene-orbital-v2.jpg采用本轮已确认加载完成的390×844实际画面，与mobile-orbital-v2.jpg一致。其余五场景为普通面板实际画面。"
+  }
+}
