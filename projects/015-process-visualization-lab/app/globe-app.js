@@ -85,6 +85,7 @@ const simulationScope=$('#scope-introduction').innerHTML;
 const archiveActive=()=>state.mode==='archive';
 const labActive=()=>state.mode==='dynamic'&&isDeviceEvent(getDynamicEvent(state.id.slice(8)));
 const earthHomeReplay='tide-san-francisco';
+const publicEdition=document.documentElement.hasAttribute('data-publication');
 const sceneLinks=[...document.querySelectorAll('[data-scene-route]')];
 function sceneKind(){
  if(archiveActive())return 'storm';
@@ -95,7 +96,7 @@ const earthGuideSequence={label:'地球过程',routes:[
  'dynamic-'+earthHomeReplay,'typhoon-real','dynamic-storm','dynamic-quake',
  'dynamic-quake-hualien','dynamic-volcano','dynamic-wildfire-dixie','dynamic-river-big-piney',
 ]};
-const labGuideSequence={label:'实验与设备',routes:['dynamic-battery-b0005','dynamic-engine-jlu-diesel']};
+const labGuideSequence={label:'实验与设备',routes:publicEdition?['dynamic-battery-b0005']:['dynamic-battery-b0005','dynamic-engine-jlu-diesel']};
 function guideSequence(route){
  return labGuideSequence.routes.includes(route)?labGuideSequence:earthGuideSequence;
 }
@@ -112,7 +113,7 @@ let scenario=null,series=[],last=0,uiTime=0,noticeTimer,localWasRunning=false;
 const format=(v)=>new Intl.NumberFormat('zh-CN',{maximumFractionDigits:Math.abs(v)<1?3:Math.abs(v)<10?2:1}).format(v);
 const engine=createGlobeEngine($('#earth-canvas'),$('#geo-labels'),$('#earth-loading'),{onSelect:id=>route(id),onArchiveRecord:i=>selectArchiveRecord(i),onStorySelect:target=>observedPresentation?.focus(target),onTideArrival:()=>observedPresentation?.refresh(),onTideTeachingFrame:tideLesson.update});
 const eventExplorer=createEventExplorer(engine,{isActive:()=>state.mode==='live',onPrinciple:id=>{route(id);state.running=!matchMedia('(prefers-reduced-motion: reduce)').matches;updateUi();}});
-const dynamicPlayer=createDynamicPlayer(engine,{isActive:()=>state.mode==='dynamic',onRoute:kind=>route('dynamic-'+kind),onUpdate:()=>{syncTideSceneFocus();syncHungaRecapSelection();syncQuakeReviewSelection();syncRiverReviewSelection();syncMapRecapSelection();observedPresentation?.refresh();syncNarrationControls(narrationGuide?.session.snapshot());},getExportContext:()=>observedPresentation?.getExportContext()??null,onManualSeek:seekManualScene,onManualStation:takeNarrationStation,onWatch:()=>{if(restartRecordedGuide())return true;narrationGuide?.stop();return false;}});
+const dynamicPlayer=createDynamicPlayer(engine,{publicEdition,isActive:()=>state.mode==='dynamic',onRoute:kind=>route('dynamic-'+kind),onUpdate:()=>{syncTideSceneFocus();syncHungaRecapSelection();syncQuakeReviewSelection();syncRiverReviewSelection();syncMapRecapSelection();observedPresentation?.refresh();syncNarrationControls(narrationGuide?.session.snapshot());},getExportContext:()=>observedPresentation?.getExportContext()??null,onManualSeek:seekManualScene,onManualStation:takeNarrationStation,onWatch:()=>{if(restartRecordedGuide())return true;narrationGuide?.stop();return false;}});
 engine.ready?.catch(()=>{state.running=false;$('#earth-loading').hidden=false;$('#earth-loading').textContent='地球资源加载失败，请刷新重试。';});
 function renderStages(){
  let entries=stages[state.id]||[];
@@ -124,6 +125,7 @@ function renderStages(){
 function route(id,hash=true,{observe=true}={}){
  if(id===''||id==='home')return activateDynamic(earthHomeReplay,hash,observe);
  if(id==='lab')return route(labGuideSequence.routes[0],hash,{observe});
+ if(publicEdition&&id==='dynamic-engine-jlu-diesel')return route('lab',true,{observe:false});
  if(id==='battery')return activateDynamic('battery-b0005',hash,observe);
  if(id.startsWith('dynamic-')&&getDynamicEvent(id.slice(8)))return activateDynamic(id.slice(8),hash,observe);
  if(state.mode==='dynamic')dynamicPlayer.leave();
@@ -283,49 +285,86 @@ $('#parameters').addEventListener('input',e=>{if(state.mode!=='principle')return
 $('#reset-conditions').addEventListener('click',()=>{if(syncActive()){requestSyncTime(30);return;}if(archiveActive()){selectArchiveRecord(findRecordIndex(archive.dataset,'2018-09-14T06:00:00Z'));return;}if(state.mode==='loading')return;const progress=state.progress;route(state.id);state.progress=progress;updateUi();});
 $('#stage-steps').addEventListener('click',e=>{if(syncActive()){const b=e.target.closest('[data-sync-index]');if(b)requestSyncTime(Number(b.dataset.syncIndex));return;}if(archiveActive()){const record=e.target.closest('[data-archive-index]');if(record){pauseGuideForManualTime();selectArchiveRecord(record.dataset.archiveIndex);}return;}if(state.mode==='loading')return;const b=e.target.closest('[data-progress]');if(!b)return;pauseGuideForManualTime();state.progress=Number(b.dataset.progress);state.running=false;updateUi();render();});
 const observationTimeline=$('#timeline');
+const mobileGuideScreen=matchMedia('(max-width:700px)');
+const mobileGuideRoutes=new Set(['dynamic-'+earthHomeReplay,'typhoon-real','dynamic-volcano']);
+let guideTimelineHome=null;
+function syncMobileGuideTimeline(guide){
+ const timeline=observationTimeline.closest('.timeline'),stage=$('#observation-stage');
+ const nearStage=timeline.nextElementSibling===stage;
+ const move=mobileGuideScreen.matches&&guide?.active&&mobileGuideRoutes.has(guide.step?.cue?.route);
+ if(move&&!nearStage){
+  guideTimelineHome?.remove();
+  guideTimelineHome=document.createComment('timeline position before mobile guide');
+  timeline.before(guideTimelineHome);
+  stage.before(timeline);
+ }else if(!move&&guideTimelineHome){
+  if(nearStage)guideTimelineHome.replaceWith(timeline);
+  else guideTimelineHome.remove();
+  guideTimelineHome=null;
+ }
+}
+mobileGuideScreen.addEventListener('change',()=>syncMobileGuideTimeline(narrationGuide?.session.snapshot()));
 let touchTimeline=null;
+function previewTouchTime(event){
+ const gesture=touchTimeline;
+ if(!gesture||gesture.pointer!==event.pointerId||gesture.route!==state.id)return;
+ const {left,width}=observationTimeline.getBoundingClientRect();
+ const min=Number(observationTimeline.min),max=Number(observationTimeline.max);
+ const fraction=Math.max(0,Math.min(1,(event.clientX-left-8)/Math.max(1,width-16)));
+ const value=Math.round(min+(max-min)*fraction);
+ if(!gesture.changed&&value===gesture.start)return;
+ if(!gesture.changed){
+  gesture.changed=true;
+  if(recordedScrub)narrationGuide.session.pause();
+  else if(state.mode==='dynamic')dynamicPlayer.pause();
+  else {++syncAdvanceToken;syncAdvancePending=false;state.running=false;updateSynchronizedControls();}
+ }
+ observationTimeline.value=value;
+}
 observationTimeline.addEventListener('pointerdown',event=>{
+ if(event.button!==0||!event.isPrimary)return;
  const narration=activeRecordedNarration();
- if(narration&&!mapRecap.visible&&event.button===0&&event.isPrimary){
+ if(narration&&!mapRecap.visible){
   recordedScrub={pointer:event.pointerId,resume:narration.wantedPlaying&&!['error','ended'].includes(narration.status),matched:false};
  }
- if(event.pointerType==='touch'&&event.isPrimary&&(state.mode==='dynamic'||syncActive())){
-  touchTimeline={pointer:event.pointerId,route:state.id,value:null};
+ if(event.pointerType==='touch'&&(state.mode==='dynamic'||syncActive())){
+  // Commit the touch position even when the native slider swallows a short drag.
+  event.preventDefault();
+  observationTimeline.setPointerCapture(event.pointerId);
+  touchTimeline={pointer:event.pointerId,route:state.id,start:Number(observationTimeline.value),changed:false};
   observationTimeline.dataset.touchScrubbing='true';
+  previewTouchTime(event);
  }
 });
-function finishRecordedScrub(event){
+observationTimeline.addEventListener('pointermove',previewTouchTime);
+function finishRecordedScrub(event,cancelledTouch){
  if(recordedScrub?.pointer!==event.pointerId)return;
  const {resume,matched}=recordedScrub;recordedScrub=null;
  const narration=activeRecordedNarration();
- if(event.type==='pointerup'&&!document.hidden&&resume&&matched&&narration&&narration.status!=='error'){
+ if(((event.type==='pointerup'&&matched)||cancelledTouch)&&!document.hidden&&resume&&narration&&narration.status!=='error'){
   narrationGuide.session.resume();
  }
 }
 for(const type of ['pointerup','pointercancel'])window.addEventListener(type,event=>{
+ let cancelledTouch=false;
  if(touchTimeline?.pointer===event.pointerId){
-  const {route,value}=touchTimeline;
+  if(event.type==='pointerup')previewTouchTime(event);
+  const {route,changed}=touchTimeline;
+  const value=Number(observationTimeline.value);
   touchTimeline=null;
   delete observationTimeline.dataset.touchScrubbing;
-  if(route===state.id&&value!=null){
+  if(route===state.id&&changed){
    if(event.type==='pointerup')seekTimeline(value);
-   else observationTimeline.value=state.mode==='dynamic'?dynamicPlayer.getState({includeTicks:false}).index:syncIndex;
+   else{
+    observationTimeline.value=state.mode==='dynamic'?dynamicPlayer.getState({includeTicks:false}).index:syncIndex;
+    cancelledTouch=true;
+   }
   }
  }
- finishRecordedScrub(event);
+ finishRecordedScrub(event,cancelledTouch);
 });
 observationTimeline.addEventListener('input',event=>{
- const index=Number(event.target.value);
- if(touchTimeline?.route===state.id){
-  if(touchTimeline.value===null){
-   if(recordedScrub)narrationGuide.session.pause();
-   else if(state.mode==='dynamic')dynamicPlayer.pause();
-   else {++syncAdvanceToken;syncAdvancePending=false;state.running=false;updateSynchronizedControls();}
-  }
-  touchTimeline.value=index;
-  return;
- }
- seekTimeline(index);
+ if(!touchTimeline)seekTimeline(Number(event.target.value));
 });
 function seekTimeline(index){
  if(state.mode==='dynamic'){dynamicPlayer.requestSeek(index);return;}
@@ -945,7 +984,9 @@ function syncTideSceneFocus(guide=narrationGuide?.session.snapshot()){
  panel.hidden=!showEvidence;
  if(revealed&&cue&&guide.status!=='ended'){
   requestAnimationFrame(()=>{
-   if(!panel.hidden)$('#observation-stage').scrollIntoView({block:'start',behavior:'instant'});
+   if(panel.hidden)return;
+   const stage=$('#observation-stage'),timeline=observationTimeline.closest('.timeline');
+   (timeline.nextElementSibling===stage?timeline:stage).scrollIntoView({block:'start',behavior:'instant'});
   });
  }
  if(visibleTideFocus===focus)return;
@@ -1220,6 +1261,7 @@ async function prepareNarration(step,{signal,progress=0,seeking=false}){
  if(state.mode==='dynamic'&&!dynamicPlayer.getState().ticks.length)await dynamicReady;
  if(!labActive())await engine.ready;
  if(signal.aborted)return false;
+ syncMobileGuideTimeline(narration);
  stopNarrationPlayback();
  if(cue.casePrimer){
   if(cue.route==='typhoon-real'?!syncActive():!dynamicPlayer.getState().ticks.length)return false;
@@ -1306,6 +1348,7 @@ narrationGuide=setupNarrationGuide({
  getRoute:()=>archiveActive()?'typhoon-real':state.id,
  startCurrentByDefault:()=>Boolean(currentNarrationTour()),
  onPlaybackChange(guide){
+  syncMobileGuideTimeline(guide);
   syncNarrationControls(guide);
   syncRecordedSceneFocus(guide);
   if(guide.status==='ended'||guide.status==='error'){
@@ -1497,6 +1540,7 @@ function guidedCaseButton(route,label){
  return button;
 }
 for(const button of document.querySelectorAll('[data-capability-dynamic],[data-capability-archive]')){
+ if(publicEdition&&button.hasAttribute('data-local-only'))continue;
  const route=button.hasAttribute('data-capability-archive')?'typhoon-real':'dynamic-'+button.dataset.capabilityDynamic;
  const scenario=guidedCases[route];
  if(!scenario)continue;

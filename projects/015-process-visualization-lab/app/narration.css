@@ -72,6 +72,27 @@ body.narration-active #observation-followup {display:none}
   #narration-finish {margin:0 9px 6px}
 }
 
+#narration-transcript-toggle {display:none}
+@media (max-width:700px) {
+  #narration-transcript-toggle {
+    display:block;
+    float:right;
+    margin:0 0 2px 6px;
+    padding:2px 5px;
+    border:1px solid #64849b;
+    border-radius:4px;
+    color:#e7d2ad;
+    font-size:11px;
+    min-height:28px;
+  }
+  #narration-dock .narration-body #narration-transcript-toggle[aria-expanded="true"] + p {
+    max-height:none;
+    overflow:visible;
+  }
+  #narration-dock[data-status="ended"] .narration-body {display:none}
+  body.narration-active .timeline:has(+ .observation-stage) {margin:0 0 6px;scroll-margin-top:8px}
+}
+
 #narration-dock {
   max-height:calc(100dvh - 24px);
   overflow-y:auto;

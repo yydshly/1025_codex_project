@@ -14,6 +14,7 @@ export function narrationInteraction(event,{active,isPlaybackControl=()=>false}=
 export function setupNarrationGuide({getRoute,getCurrentTour=()=>null,startCurrentByDefault=()=>false,isPlaybackControl=()=>false,onPlaybackChange=()=>{},onExplore=()=>{},onStart=()=>{},onFollowCamera=()=>{},getCaseSequence=()=>null,getCase=()=>null,onChooseCase=()=>{},onBrowse=()=>{},prepare,update,onStop}){
  const dock=$('#narration-dock'),audio=$('#narration-audio');let manifestPromise=null,highlight=null,renderedStep=null,renderedTour=null,opener=null,muted=false,hasAudio=false,mediaToken=0,audioObjectUrl=null,audioFallback='字幕讲解 · 本章暂无语音';
  const finish=$('#narration-finish'),nextGuide=$('#narration-continue'),browse=$('#narration-browse');
+ const transcriptToggle=$('#narration-transcript-toggle'),transcript=$('#narration-text');
  const casePicker=$('#narration-case-picker'),caseSelect=$('#narration-case-select');
  let renderedSequence=null, nextRoute=null;
  const dockSize=typeof ResizeObserver==='function'?new ResizeObserver(()=>{
@@ -90,7 +91,7 @@ export function setupNarrationGuide({getRoute,getCurrentTour=()=>null,startCurre
  function showStep(s){
   if(renderedStep===s.step&&renderedTour===s.tour)return;
   const changedTour=renderedTour!==s.tour;renderedStep=s.step;renderedTour=s.tour;
-  $('#narration-title').textContent=s.step.title;$('#narration-text').textContent=s.step.text;
+  $('#narration-title').textContent=s.step.title;transcript.textContent=s.step.text;transcript.scrollTop=0;
   $('#narration-tour').textContent=s.tour.label;$('#narration-count').textContent=String(s.index+1).padStart(2,'0')+' / '+String(s.tour.steps.length).padStart(2,'0');
   if(changedTour){$('#narration-chapters').replaceChildren(...s.tour.steps.map((step,i)=>{const b=document.createElement('button');b.type='button';b.dataset.chapter=i;b.title=step.title;b.textContent=step.navLabel??String(i+1).padStart(2,'0');b.setAttribute('aria-label','第'+(i+1)+'章：'+step.title);return b;}));}
   for(const b of $('#narration-chapters').children)b.setAttribute('aria-current',Number(b.dataset.chapter)===s.index?'step':'false');
@@ -142,7 +143,8 @@ export function setupNarrationGuide({getRoute,getCurrentTour=()=>null,startCurre
   if(!scroll)return;
   const cue=step.cue;
   if(cue?.tideEvidence&&!$('#tide-focus-evidence').hidden){
-   $('#observation-stage').scrollIntoView({block:'start',behavior:'instant'});
+   const stage=$('#observation-stage'),timeline=$('.timeline');
+   (timeline.nextElementSibling===stage?timeline:stage).scrollIntoView({block:'start',behavior:'instant'});
    return;
   }
   if(innerWidth<=700&&step.targetSelector!=='#sources-panel'&&(cue?.casePrimer||cue?.tideLesson||
@@ -150,7 +152,7 @@ export function setupNarrationGuide({getRoute,getCurrentTour=()=>null,startCurre
    const scene=$('#earth-view').getBoundingClientRect(),timeline=$('.timeline').getBoundingClientRect();
    const trackAbove=timeline.height&&timeline.top<scene.top&&scene.top-timeline.top<155;
    const top=trackAbove?timeline.top:scene.top;
-   if(top<10||scene.bottom>dock.getBoundingClientRect().top-8){
+   if(top<10||top>24||scene.bottom>dock.getBoundingClientRect().top-8){
     window.scrollTo({top:Math.max(0,scrollY+top-10),behavior:'instant'});
    }
    return;
@@ -240,6 +242,12 @@ export function setupNarrationGuide({getRoute,getCurrentTour=()=>null,startCurre
  browse.addEventListener('click',onBrowse);
  $('#narration-next').addEventListener('click',()=>session.next());$('#narration-prev').addEventListener('click',()=>session.previous());
  $('#narration-chapters').addEventListener('click',e=>{const b=e.target.closest('[data-chapter]');if(b)session.go(Number(b.dataset.chapter));});
+ transcriptToggle.addEventListener('click',()=>{
+  const expand=transcriptToggle.getAttribute('aria-expanded')==='false';
+  transcriptToggle.setAttribute('aria-expanded',String(expand));
+  transcriptToggle.textContent=expand?'收起字幕':'展开字幕';
+  transcript.scrollTop=0;
+ });
  $('#narration-close').addEventListener('click',()=>stop(true));$('#narration-locate').addEventListener('click',()=>locate(session.snapshot().step));
  $('#narration-follow-camera').addEventListener('click',()=>{const step=session.snapshot().step;if(step){onFollowCamera(step);locate(step);$('#narration-pause').focus({preventScroll:true});}});
  $('#narration-sound').addEventListener('click',()=>{muted=!muted;audio.muted=muted;$('#narration-sound').setAttribute('aria-pressed',String(!muted));$('#narration-sound').textContent=muted?'声音关':'声音开';audioStatus(muted?'声音已关闭 · 字幕继续':hasAudio?'中文语音 · 同步字幕':audioFallback);});

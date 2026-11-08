@@ -47,7 +47,15 @@ function copyApp(source, relative = '') {
       if (name.startsWith('assets/narration/minimax/') && !audio.has(name)) continue;
       const destination = path.join(output, 'app', name);
       fs.mkdirSync(path.dirname(destination), { recursive: true });
-      fs.copyFileSync(path.join(source, entry.name), destination, fs.constants.COPYFILE_EXCL);
+      const original = path.join(source, entry.name);
+      if (name === 'index.html' || name === 'globe.html') {
+        const html = fs.readFileSync(original, 'utf8');
+        const pageRoot = '<html lang="zh-CN">';
+        assert(html.includes(pageRoot), 'Missing publication marker in ' + name);
+        fs.writeFileSync(destination, html.replace(pageRoot, '<html lang="zh-CN" data-publication>'), { flag: 'wx' });
+      } else {
+        fs.copyFileSync(original, destination, fs.constants.COPYFILE_EXCL);
+      }
     }
   }
 }

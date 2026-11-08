@@ -42,7 +42,7 @@ function plot(samples,now,{color='#96dfeb',unit='',label='',height=70,window=nul
  };
  return `<svg viewBox="0 0 230 ${height}" role="img" aria-label="${esc(label)}，${dateOnly?'档案日期'+archiveDate(now):'同一时刻'+esc(clockUtc?utcClock(now)+' UTC':time(now))}"><path d="M8 ${Y(Math.max(low,Math.min(high,0))).toFixed(1)}H222 M8 8H222" stroke="#314655" stroke-width=".5"/><path d="${envelope}" stroke="${color}" opacity=".5" stroke-width="1"/><path d="${discrete?'':path}" stroke="${color}" opacity=".82" stroke-width="1.1" fill="none"/>${dots}<path d="M${cursor.toFixed(1)} 4V${height-13}" stroke="#fff0cf" stroke-width="1" stroke-dasharray="2 3"/>${selected?`<circle cx="${X(selected.timeUtc).toFixed(1)}" cy="${Y(selected.value).toFixed(1)}" r="2.5" fill="#fff0cf"/>`:''}<text x="8" y="${height-2}">${axisTime(start)}</text><text x="222" y="${height-2}" text-anchor="end">${axisTime(end)}</text><text x="222" y="12" text-anchor="end">${number(high-pad)} ${esc(unit)}</text></svg>`;
 }
-export function createDynamicPlayer(engine,{isActive,onRoute,onUpdate=()=>{},getExportContext=()=>null,onManualSeek=()=>null,onManualStation=()=>{},onWatch=()=>false}){
+export function createDynamicPlayer(engine,{isActive,onRoute,onUpdate=()=>{},getExportContext=()=>null,onManualSeek=()=>null,onManualStation=()=>{},onWatch=()=>false,publicEdition=false}){
  let data=null,ticks=[],index=0,snapshot=null,selectedStation=null,playing=false,elapsed=0,request=0,playbackIntent=0,loading=false,displayReady=false,displayFailed=false,requestedTimeUtc=null,failureMessage='',kind='volcano',presentation='fusion',relief=true;
  let event=dynamicEvents.volcano,slug='volcano',watchPhase='',watchComplete=false,watchRun=0,watchTimer=null,watchObserver=null,stationButtons=new Map();
  let riverEvidence=null,tideEvidence=null,batteryEvidence=null,dieselEvidence=null,requestedElapsedSeconds=null,followRiver=false;
@@ -269,9 +269,9 @@ export function createDynamicPlayer(engine,{isActive,onRoute,onUpdate=()=>{},get
   $('#dynamic-toolbar').hidden=false;$('#dynamic-view-tools').hidden=false;$('#dynamic-controls').hidden=false;
   $('#dynamic-full').hidden=device;
   $('#layers').setAttribute('aria-label',device?'实验与设备场景':'地球过程图层');
-  const entries=Object.entries(dynamicEvents).filter(([,item])=>isDeviceEvent(item)===device);
+  const entries=Object.entries(dynamicEvents).filter(([,item])=>isDeviceEvent(item)===device&&!(publicEdition&&item.localOnly));
   $('#layers').innerHTML='';
-  $('#observation-flow-controls').hidden=false;$('#observation-event-picker').hidden=false;
+  $('#observation-flow-controls').hidden=false;$('#observation-event-picker').hidden=entries.length<2;
   $('#observation-event-select').innerHTML=entries.map(([id,item])=>`<option value="${id}">${esc(item.label)}</option>`).join('');
   $('#observation-event-select').value=slug;
   document.body.classList?.add('observation-flow-active');

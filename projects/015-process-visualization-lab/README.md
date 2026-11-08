@@ -10,7 +10,7 @@
 
 **复现资料。** 仓库保存运行文件、来源与处理记录。大型科学原件、部分历史帧和本机导入数据随各案例的复现说明获取。完整资料校验需要相应原档。公开构建执行 `npm run build:site`，校验运行资料及 68 段压缩旁白。
 
-「地球过程」包含地月潮汐、台风、地震、火山、山火和河流。「实验与设备」直接打开设备近景，可在 B0005 电芯与吉林大学柴油机台架之间切换。两个入口各有场景目录，共用回放时间轴和图表联动。[地球过程](http://127.0.0.1:4175/app/index.html#dynamic-tide-san-francisco) · [实验与设备](http://127.0.0.1:4175/app/index.html#lab)
+「地球过程」包含地月潮汐、台风、地震、火山、山火和河流。「实验与设备」公开提供 B0005 电芯近景与实测回放，吉林大学柴油机提供[本地复现说明](research/dynamics/jlu-diesel/README.md)。两个入口各有场景目录，共用回放时间轴和图表联动。[地球过程](https://yydshly.github.io/1025_codex_project/015-process-visualization-lab/app/index.html#dynamic-tide-san-francisco) · [实验与设备](https://yydshly.github.io/1025_codex_project/015-process-visualization-lab/app/index.html#lab)
 
 **首版功能验收（桌面本地）**。六类地球过程共八个实测案例，另有两个设备实验。十个案例均实机核对了关键时刻跳转、主画面和图表的时刻一致、来源入口，以及对应导览章节。地球案例使用 MiniMax 旁白，设备用同步字幕。另抽查了山竹播放暂停、潮汐暂停后跳时刻再续讲、官方目录搜索及地球与设备分区切换。
 
@@ -32,15 +32,15 @@ MiniMax 原始 WAV 用于核验，浏览器优先播放同源 MP3。重新生成
 
 **在主画面看实测变化。** 点击「MiniMax 边播边讲」，两侧图表与主画面沿同一观测时钟推进。汤加、轩岚诺和山竹的关键扫描会放大并逐帧慢放，同一段保持固定地理取景。位置标注移到侧边，空间不足时移到画面下方。缩放、旋转或选测点时旁白继续，拖动时间轴可从新时刻继续。
 
-**Dixie 山火边界复盘。** 同一地球播放器按档案日期切换九期航空红外边界。橙色显示本期新划入的范围，蓝色填充显示前一期划入而本期未划入的范围。地图、制图面积和 MiniMax 讲解随档案日期推进。附近测站风按当地小时核对，可切换高程阴影、火前燃料植被和地名地图。8 月 2 日与 3 日在所用档案中缺失。[打开 Dixie 复盘](http://127.0.0.1:4175/app/index.html#dynamic-wildfire-dixie) · [来源与复现](research/dynamics/dixie-fire/README.md)
+**Dixie 山火边界复盘。** 同一地球播放器按档案日期切换九期航空红外边界。橙色显示本期新划入的范围，蓝色填充显示前一期划入而本期未划入的范围。地图、制图面积和 MiniMax 讲解随档案日期推进。附近测站风按当地小时核对，可切换高程阴影、火前燃料植被和地名地图。8 月 2 日与 3 日在所用档案中缺失。[打开 Dixie 复盘](https://yydshly.github.io/1025_codex_project/015-process-visualization-lab/app/index.html#dynamic-wildfire-dixie) · [来源与复现](research/dynamics/dixie-fire/README.md)
 
 **讲完后回看证据。** Dixie 在同一组航空红外边界上切换新增范围、测站风、坡度和火前植被。轩岚诺可以点回东海起点、缺档前后的两幅原始扫描和末帧的强度分析。点卡片时，主画面和两侧图表跟随对应记录；继续拖时间轴会保留回看面板。[Dixie 坡度回看实拍](assets/images/dixie-evidence-recap.png)
 
-- [汤加火山](http://127.0.0.1:4175/app/index.html#dynamic-volcano)、[轩岚诺](http://127.0.0.1:4175/app/index.html#dynamic-storm)和[山竹](http://127.0.0.1:4175/app/index.html#typhoon-real)：当前真实红外云图上叠加上一幅的低温边缘（金色）和本幅新增的低温区（青色）。汤加使用亮温低于 220 K，两个台风使用亮温不高于 235 K。两幅扫描时刻在图例列出。缺帧断开比较；「原始亮温」可查看不含这层对照的当前扫描。亮温变化可由云带移动、扩展或冷却造成，不能反推云高或灰浓度。
-- [日本东北地震](http://127.0.0.1:4175/app/index.html#dynamic-quake)和[花莲地震](http://127.0.0.1:4175/app/index.html#dynamic-quake-hualien)：台站旁的正负刻线显示当前一秒窗的范围，画面内的近 60 秒记录和峰值条把同站震前与当前放在固定刻度上比较。单位是原档仪器计数。
-- [Big Piney 河](http://127.0.0.1:4175/app/index.html#dynamic-river-big-piney)：两岸实测点的浓度弧会随样本变大或缩小。画面内的三个断面依次显示首次持续信号及相对释放时刻，可直接点选断面。弧线大小只编码测点读数，测点之间没有推算染料分布。
+- [汤加火山](https://yydshly.github.io/1025_codex_project/015-process-visualization-lab/app/index.html#dynamic-volcano)、[轩岚诺](https://yydshly.github.io/1025_codex_project/015-process-visualization-lab/app/index.html#dynamic-storm)和[山竹](https://yydshly.github.io/1025_codex_project/015-process-visualization-lab/app/index.html#typhoon-real)：当前真实红外云图上叠加上一幅的低温边缘（金色）和本幅新增的低温区（青色）。汤加使用亮温低于 220 K，两个台风使用亮温不高于 235 K。两幅扫描时刻在图例列出。缺帧断开比较；「原始亮温」可查看不含这层对照的当前扫描。亮温变化可由云带移动、扩展或冷却造成，不能反推云高或灰浓度。
+- [日本东北地震](https://yydshly.github.io/1025_codex_project/015-process-visualization-lab/app/index.html#dynamic-quake)和[花莲地震](https://yydshly.github.io/1025_codex_project/015-process-visualization-lab/app/index.html#dynamic-quake-hualien)：台站旁的正负刻线显示当前一秒窗的范围，画面内的近 60 秒记录和峰值条把同站震前与当前放在固定刻度上比较。单位是原档仪器计数。
+- [Big Piney 河](https://yydshly.github.io/1025_codex_project/015-process-visualization-lab/app/index.html#dynamic-river-big-piney)：两岸实测点的浓度弧会随样本变大或缩小。画面内的三个断面依次显示首次持续信号及相对释放时刻，可直接点选断面。弧线大小只编码测点读数，测点之间没有推算染料分布。
 
-**v22 · 吉林大学柴油机 ETC 台架。** [打开本地发动机回放](http://127.0.0.1:4175/app/index.html#dynamic-engine-jlu-diesel)
+**v22 · 吉林大学柴油机 ETC 台架。** [查看本地复现说明](research/dynamics/jlu-diesel/README.md)
 
 从「实验与设备」打开柴油机，即可观看通用共轨柴油机的单缸剖面。曲轴和活塞随实测转速做慢放示意。首播 30–90 秒：38.5 秒扭矩首笔为零，转速仍有 3,197 rpm；85.6 秒转速降至 753 rpm。左侧显示当前读数和附近 12 秒的变化，右侧给出整段工况与同刻游标。点击剖面旁的仪表可突出对应图表。
 
@@ -48,7 +48,7 @@ MiniMax 原始 WAV 用于核验，浏览器优先播放同源 MP3。重新生成
 
 ![柴油机剖面、38.5 秒同刻台架仪表和两侧曲线](assets/images/jlu-diesel-v22.jpg)
 
-**v21 · NASA B0005 首次放电。** [打开 B0005 实测回放](http://127.0.0.1:4175/app/index.html#dynamic-battery-b0005)
+**v21 · NASA B0005 首次放电。** [打开 B0005 实测回放](https://yydshly.github.io/1025_codex_project/015-process-visualization-lab/app/index.html#dynamic-battery-b0005)
 
 打开 B0005 便进入电芯近景，外壳打开后露出典型圆柱电芯的卷绕结构示意。外部仪表、两侧读数和三条曲线使用同一笔 NASA 采样。电流保留原始符号，外部电流指示的亮度反映实测电流幅值，温度只对应实验记录的单点数值。
 
@@ -56,7 +56,7 @@ MiniMax 原始 WAV 用于核验，浏览器优先播放同源 MP3。重新生成
 
 ![B0005 的电芯结构示意、同刻实测仪表和采样曲线](assets/images/b0005-discharge-v21.jpg)
 
-**v23 · 从地月全景飞到旧金山港。** [打开旧金山港回放](http://127.0.0.1:4175/app/index.html#dynamic-tide-san-francisco)
+**v23 · 从地月全景飞到旧金山港。** [打开旧金山港回放](https://yydshly.github.io/1025_codex_project/015-process-visualization-lab/app/index.html#dynamic-tide-san-francisco)
 
 打开先看到完整地球、月球和 NOAA 9414290 验潮站。「在地球上看潮汐」在同一三维场景叠加理想海面的两处隆起。地球自转时，示意海岸点和旁边的相对水位曲线同步变化。随后在同一场景旁用海岸剖面对照浅滩和航道的涨落。月球大小、距离和海面高差均按教学比例放大。[NOAA 潮汐原理](https://oceanservice.noaa.gov/facts/moon-tide.html)
 
@@ -70,7 +70,7 @@ MiniMax 原始 WAV 用于核验，浏览器优先播放同源 MP3。重新生成
 
 [潮峰实机截图：19:54 UTC，岸边水线达到当天最高采样](assets/images/san-francisco-tide-high-v23.jpg)
 
-**v19 · Big Piney 河实地示踪。** [打开实测回放](http://127.0.0.1:4175/app/index.html#dynamic-river-big-piney)
+**v19 · Big Piney 河实地示踪。** [打开实测回放](https://yydshly.github.io/1025_codex_project/015-process-visualization-lab/app/index.html#dynamic-river-big-piney)
 
 镜头从完整地球飞入密苏里州 Big Piney 河段。航拍影像与 USGS 河道中心线提供定位，六个实测点上的浓度柱和光环随读数变化。左侧比较三个断面，右侧显示所选断面两岸的曲线。自动观察会随三个左岸持续信号切换断面。点击地图标注、左侧断面或关键时刻可以自己核对。
 
@@ -78,7 +78,7 @@ MiniMax 原始 WAV 用于核验，浏览器优先播放同源 MP3。重新生成
 
 ![Big Piney 断面 1 的两岸读数、同刻游标和地理位置](assets/images/big-piney-observation-v19.jpg)
 
-**v18 · 从地球定位进入实测回放。** [轩岚诺台风](http://127.0.0.1:4175/app/index.html#dynamic-storm) · [日本东北地震](http://127.0.0.1:4175/app/index.html#dynamic-quake) · [花莲地震](http://127.0.0.1:4175/app/index.html#dynamic-quake-hualien) · [山竹复盘](http://127.0.0.1:4175/app/index.html#typhoon-real)
+**v18 · 从地球定位进入实测回放。** [轩岚诺台风](https://yydshly.github.io/1025_codex_project/015-process-visualization-lab/app/index.html#dynamic-storm) · [日本东北地震](https://yydshly.github.io/1025_codex_project/015-process-visualization-lab/app/index.html#dynamic-quake) · [花莲地震](https://yydshly.github.io/1025_codex_project/015-process-visualization-lab/app/index.html#dynamic-quake-hualien) · [山竹复盘](https://yydshly.github.io/1025_codex_project/015-process-visualization-lab/app/index.html#typhoon-real)
 
 轩岚诺和两个地震案例先展示完整地球，再靠近观测区域。可以暂停或点击关键时刻。台风默认对照固定窗口的低温面积和 JMA 最大持续风速，分别标注卫星扫描时间与分析时间。地震默认显示所选台站的波形，球面放大所选站最近 60 秒的轨迹。展开「全部读数与曲线」查看辅助指标。
 
@@ -99,7 +99,7 @@ MiniMax 原始 WAV 用于核验，浏览器优先播放同源 MP3。重新生成
 | 发动机 | 吉林大学 2.7 L 四缸柴油机 ETC 台架：18,000 笔，0.1 秒采样。转速和扭矩为实测，轨压为原档 RP；本机研究回放。[论文及图 1](https://scis.scichina.com/en/2019/077201.pdf) |
 | 电池 | NASA B0005 首次放电 197 条记录，包含端电压、电流和电池温度。相对起点约 1,796 秒的观测为 3.5299 V、−2.0148 A、32.87 °C。原始日期缺少时区，第一版使用放电经过时间。[NASA 档案](https://data.nasa.gov/dataset/li-ion-battery-aging-datasets) |
 
-**v17：先修复失败状态与证据导出，再按七方向规格扩展。** [查看 v17 历史规划](http://127.0.0.1:4175/research/implementation-plan.html) · [打开真实过程](http://127.0.0.1:4175/app/index.html#dynamic-storm)。
+**v17：先修复失败状态与证据导出，再按七方向规格扩展。** [查看 v17 历史规划源码](research/implementation-plan.html) · [打开真实过程](https://yydshly.github.io/1025_codex_project/015-process-visualization-lab/app/index.html#dynamic-storm)。
 
 本批修复末帧重播失败仍进入播放、失败提示被覆盖，以及语音清单首次失败无法重试的问题。参考轮廓加载失败时显示明确状态与重试入口；重试保持原观测时钟，轮廓按事件ID及真实帧时间对应。原36段MiniMax音轨与四个真实案例保留。
 
@@ -107,7 +107,7 @@ MiniMax 原始 WAV 用于核验，浏览器优先播放同源 MP3。重新生成
 
 七方向的用户问题、动态对象、镜头顺序、最多两项主指标、最终成果与完成分级已写入[场景规格](research/scenario-specifications.json)；时空、来源独立更新、派生版本与MiniMax讲解流程见[运行合同](research/operating-contracts.json)。规划改为各方向独立数据准入，共用呈现使用已有代表资料直接启动。新增真实场景仍待逐项接入，规格完成不计为能力完成。验收见[验证记录](research/verification-v17.json)。下方保留历次说明。
 
-**v16：在地球上看变化，MiniMax讲解、关键位置和图表共用真实时钟。** [打开真实地球过程](http://127.0.0.1:4175/app/index.html#dynamic-volcano)，点击“MiniMax 边播边讲”。播放结束继续停留在地球，前后图片对照保留为手动核对入口。
+**v16：在地球上看变化，MiniMax讲解、关键位置和图表共用真实时钟。** [打开真实地球过程](https://yydshly.github.io/1025_codex_project/015-process-visualization-lab/app/index.html#dynamic-volcano)，点击“MiniMax 边播边讲”。播放结束继续停留在地球，前后图片对照保留为手动核对入口。
 
 ![真实地球过程、球面变化标注与同刻图表](assets/images/observed-earth-v16.png)
 
@@ -122,9 +122,9 @@ MiniMax 原始 WAV 用于核验，浏览器优先播放同源 MP3。重新生成
 
 轮廓来自原有48帧uint16数值亮温，每8×8格取实际中心样本后提取阈值边线；汤加220 K、轩岚诺235 K，与原统计口径对应。采样格最大对角约23.09／33.17公里，只用于粗略定位，未校正云视差，不是精确云边界、火山灰识别或云高。区域P10是整个固定区域的统计量，标注位置指向该帧实际低温像元，不把区域值冒充单点测温。台站counts未转换为位移；两次分析位置的连线不解释为实际行进路线或风场。
 
-当前为本地产品，未部署公网。截图均取自实际网页；参考原视频的中央地球、两侧证据与位置引线表达，未取得原作源码，不声称复刻其渲染。验收见[验证记录](research/verification-v16.json)，轮廓与显示复现见[动态资料说明](research/dynamics/README.md)。下方保留历史版本说明。
+v16 验收时使用本地原型。截图均取自实际网页；参考原视频的中央地球、两侧证据与位置引线表达，未取得原作源码，不声称复刻其渲染。验收见[验证记录](research/verification-v16.json)，轮廓与显示复现见[动态资料说明](research/dynamics/README.md)。下方保留历史版本说明。
 
-**v15：四个真实事件配套演示，加入可操作的前后对照。** [打开产品](http://127.0.0.1:4175/app/index.html#overview)，在“选一个问题，直接看真实变化”中选择事件。约17秒沿真实记录推进，结束后自动切换前后对照；可以回到A、查看B、重播，或在原时间轴自己观察。
+**v15：四个真实事件配套演示，加入可操作的前后对照。** [打开产品](https://yydshly.github.io/1025_codex_project/015-process-visualization-lab/app/index.html#overview)，在“选一个问题，直接看真实变化”中选择事件。约17秒沿真实记录推进，结束后自动切换前后对照；可以回到A、查看B、重播，或在原时间轴自己观察。
 
 ![汤加真实扫描前后对照与同刻统计](assets/images/demo-volcano-v15.png)
 
@@ -141,10 +141,10 @@ MiniMax 原始 WAV 用于核验，浏览器优先播放同源 MP3。重新生成
 
 MiniMax原36段旁白、四类真实案例、官方事件目录、六类原理动画与山竹完整复盘继续可用。“听当前事件讲解”可进入已接入的中文语音导览。本轮没有生成新音轨或增加观测数据；重点改进演示组织、前后可见差别和证据验证。
 
-`npm test`覆盖播放区间、慢帧等待、退出、手动时间漂移后重新定位、缺测断线及无效比较清理。验收与截图见[验证记录](research/verification-v15.json)。当前仍为本地产品，未部署公网；下方保留历史版本记录。
+`npm test`覆盖播放区间、慢帧等待、退出、手动时间漂移后重新定位、缺测断线及无效比较清理。验收与截图见[验证记录](research/verification-v15.json)。v15 验收时使用本地原型。
 
 
-**v14：一键中文讲解，让地球、真实时间和证据一起讲清楚。** [打开产品](http://127.0.0.1:4175/app/index.html#overview)，点击右上角“▶ 一键讲解”，约3分钟自动走过总览、汤加喷发、日本东北地震、轩岚诺和山竹，再进入来源说明。“讲解当前内容”则讲当前事件或原理。
+**v14：一键中文讲解，让地球、真实时间和证据一起讲清楚。** [打开产品](https://yydshly.github.io/1025_codex_project/015-process-visualization-lab/app/index.html#overview)，点击右上角“▶ 一键讲解”，约3分钟自动走过总览、汤加喷发、日本东北地震、轩岚诺和山竹，再进入来源说明。“讲解当前内容”则讲当前事件或原理。
 
 ![MiniMax旁白带动真实过程与同刻图表](assets/images/narration-v14.png)
 
@@ -166,7 +166,7 @@ MiniMax原36段旁白、四类真实案例、官方事件目录、六类原理�
 讲解沿用已有实测数据与显示边界：红外亮温不等于云高/灰浓度，counts不等于地面位移，站点海水位不等于风暴潮增水。山竹复盘、四类实测事件和六类原理入口全部保留。本地运行，未发布公网。下方保留历次迭代记录。
 
 
-**v13：三类真实动态过程已经进入同一地球。** [打开真实过程](http://127.0.0.1:4175/app/index.html#dynamic-volcano)，选择汤加喷发、日本东北地震或轩岚诺。默认完整地球，可切换“过程特写”；支持播放、逐帧、拖动、原始亮温核对及带来源导出。[山竹同步复盘](http://127.0.0.1:4175/app/index.html#typhoon-real)完整保留。
+**v13：三类真实动态过程已经进入同一地球。** [打开真实过程](https://yydshly.github.io/1025_codex_project/015-process-visualization-lab/app/index.html#dynamic-volcano)，选择汤加喷发、日本东北地震或轩岚诺。默认完整地球，可切换“过程特写”；支持播放、逐帧、拖动、原始亮温核对及带来源导出。[山竹同步复盘](https://yydshly.github.io/1025_codex_project/015-process-visualization-lab/app/index.html#typhoon-real)完整保留。
 
 ![汤加喷发真实云团与同帧统计](assets/images/dynamic-volcano-v13.png)
 
@@ -182,10 +182,10 @@ MiniMax原36段旁白、四类真实案例、官方事件目录、六类原理�
 
 轩岚诺10:00扫描缺档，采用真实09:50/10:10扫描并保留20分钟间隔；14:00—15:00存在太阳杂散光/日食质量标记，因此本次展示止于13:30。原始文件、数值16bit亮温、统计方法、SHA256、实际扫描时窗、原始台站波形及独立核验结果保存在`research/dynamics/`。可运行`npm run check:dynamics`核对48张显示/数值图及同刻指标；各事件完整复现步骤见[动态资料说明](research/dynamics/README.md)。
 
-本轮具体界面与回归验收见[验证记录](research/verification-v13.json)。当前为本地产品原型，未发布公网。以下保留v12及更早的阶段记录。
+本轮具体界面与回归验收见[验证记录](research/verification-v13.json)。v13 验收时使用本地原型。以下保留v12及更早的阶段记录。
 
 
-**v12：完整地球 + 可更新事件目录 + 六类过程入口。** 默认打开[地球事件](http://127.0.0.1:4175/app/index.html#events)，可筛选、检索 USGS 地震、USGS 火山状态通报与 NASA EONET 热带气旋报告；“更新官方资料”从公开接口获取最新目录并保留获取时间。默认视角和复位按窗口宽高显示完整球体，局部近看需单独选择。山竹同步回放与原有六类原理动画继续可用。
+**v12：完整地球 + 可更新事件目录 + 六类过程入口。** 默认打开[地球事件](https://yydshly.github.io/1025_codex_project/015-process-visualization-lab/app/index.html#events)，可筛选、检索 USGS 地震、USGS 火山状态通报与 NASA EONET 热带气旋报告；“更新官方资料”从公开接口获取最新目录并保留获取时间。默认视角和复位按窗口宽高显示完整球体，局部近看需单独选择。山竹同步回放与原有六类原理动画继续可用。
 
 ![完整地球上的真实事件目录](assets/images/events-globe-v12.png)
 
@@ -211,7 +211,7 @@ MiniMax原36段旁白、四类真实案例、官方事件目录、六类原理�
 
 产品面向科普作者、教师、新闻解读与事件复盘。地球负责空间定位，时间线负责选取真实时刻，图表负责展示变化，原始资料负责核对结论。用户可以比较山竹穿越吕宋前后的中心强度，再查看香港天文台对强风和风暴潮的解释。仅凭中心路径与中心风速不能推出香港每个地点的实际受灾程度。
 
-[地球过程全景 · 主入口](http://127.0.0.1:4175/app/index.html#overview) · [当前地球中的真实山竹](http://127.0.0.1:4175/app/index.html#typhoon-real) · [完整事件资料 · 补充页面](http://127.0.0.1:4175/app/real-event.html) · [事件扩展合同](research/real-events/extension-contract.md) · [返回研究总库](../../README.md#项目索引)
+[地球过程全景 · 主入口](https://yydshly.github.io/1025_codex_project/015-process-visualization-lab/app/index.html#overview) · [当前地球中的真实山竹](https://yydshly.github.io/1025_codex_project/015-process-visualization-lab/app/index.html#typhoon-real) · [完整事件资料 · 补充页面](https://yydshly.github.io/1025_codex_project/015-process-visualization-lab/app/real-event.html) · [事件扩展合同](research/real-events/extension-contract.md) · [返回研究总库](../../README.md#项目索引)
 
 ![同一真实红外帧的纹理光照与云带特写](assets/images/cloud-relief-v11.png)
 

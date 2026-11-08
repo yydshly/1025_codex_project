@@ -19,7 +19,8 @@
   </div>
   <div class="section-topics" data-lab-only>
     <button type="button" data-scene-route="dynamic-battery-b0005" data-scene-kind="battery" aria-pressed="false">电芯放电</button>
-    <button type="button" data-scene-route="dynamic-engine-jlu-diesel" data-scene-kind="engine" aria-pressed="false">柴油机台架</button>
+    <button type="button" data-local-only data-scene-route="dynamic-engine-jlu-diesel" data-scene-kind="engine" aria-pressed="false">柴油机台架</button>
+    <a class="publication-doc-link" data-publication-only href="https://github.com/yydshly/1025_codex_project/blob/main/projects/015-process-visualization-lab/research/dynamics/jlu-diesel/README.md">查看柴油机本地复现说明 ↗</a>
   </div>
   <div class="section-tools">
     <button type="button" id="browse-capabilities"><span data-earth-only>场景与原理</span><span data-lab-only>设备案例</span> ↓</button>
@@ -144,7 +145,8 @@
       <b>ETC 台架实验</b>
       <p>对照实测转速、扭矩和原档轨压，观察曲轴与活塞的示意运动。</p>
       <small>结构按实测转速慢放。柴油机回放使用本机研究数据。</small>
-      <button type="button" data-capability-dynamic="engine-jlu-diesel">打开柴油机近景 →</button>
+      <button type="button" data-local-only data-capability-dynamic="engine-jlu-diesel">打开柴油机近景 →</button>
+      <a class="publication-doc-link" data-publication-only href="https://github.com/yydshly/1025_codex_project/blob/main/projects/015-process-visualization-lab/research/dynamics/jlu-diesel/README.md">查看柴油机本地复现说明 ↗</a>
     </article>
   </div>
 </section>
@@ -170,7 +172,7 @@
 <div id="notice" role="status" aria-live="polite"></div>
 <section id="narration-dock" aria-label="过程讲解播放器" hidden>
 <div class="narration-top"><span class="narration-live">◉ 导览进行中</span><span id="narration-tour"></span><span id="narration-count"></span><span id="narration-audio-status">准备中文语音</span><button type="button" id="narration-follow-camera" hidden>回到讲解镜头</button><button type="button" id="narration-sound" aria-pressed="true" aria-label="开启或关闭讲解声音">声音开</button><button type="button" id="narration-close" aria-label="退出讲解">退出 ×</button></div>
-<div class="narration-body"><div><h2 id="narration-title"></h2><small id="narration-scene-time"></small></div><div><p id="narration-text" aria-live="polite"></p><span id="narration-status" role="status"></span></div></div>
+<div class="narration-body"><div><h2 id="narration-title"></h2><small id="narration-scene-time"></small></div><div><button type="button" id="narration-transcript-toggle" aria-expanded="false" aria-controls="narration-text">展开字幕</button><p id="narration-text" aria-live="polite"></p><span id="narration-status" role="status"></span></div></div>
 <section id="narration-finish" class="flow-followup" aria-label="讲解结束后的下一步" hidden>
   <div><strong id="narration-finish-title">这一段看完了</strong><span id="narration-finish-note"></span></div>
   <button type="button" id="narration-continue" class="flow-next"></button>
