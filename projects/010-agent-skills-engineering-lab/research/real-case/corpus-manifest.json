@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-06T06:58:22.901Z",
+  "generatedAt": "2026-11-08T13:13:20.438Z",
   "sourceScope": "projects.json + registered project README.md files only",
   "projectCount": 13,
-  "passageCount": 703,
-  "registrySha256": "08dedb9b3bc28d68f2f1a99c2022b887c7c3e62c86ba19aea6446c27dded03ff",
-  "dataSha256": "c7a0b267efd024f319d13b8d4685006d5fbf3cdc2f1cece597ec3f66ce1a64c2",
+  "passageCount": 704,
+  "registrySha256": "337a33ee9b592a96c2a44b20c34dbf154adc78ef3c7f4b022e527a2af2f7f9e2",
+  "dataSha256": "2d4e4670fdbb7268ec30dd0159eb30dd2d2bb67c2a11c5b9f6b203a37e2dc092",
   "documents": [
     {
       "projectId": "001",
@@ -82,8 +82,8 @@
     {
       "projectId": "015",
       "path": "projects/015-process-visualization-lab/README.md",
-      "sha256": "a43cc38e1f8f80a19c988325da2b5078e2227d47bb7b3d729937d42cb5159dfb",
-      "passages": 142
+      "sha256": "d3fe5a109ae361f18fe7ae99403b8f3dea4819e641dcfe79ac19cea5307e7c01",
+      "passages": 143
     }
   ]
 }

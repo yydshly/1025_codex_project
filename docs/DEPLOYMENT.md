@@ -149,3 +149,7 @@ GitHub Pages 只能提供静态内容。模型服务、采集任务、密钥和�
 013发布使用 `publicDirectory: app`、`guidePage: overview.html`。站点总入口以本轮专门生成的 `assets/images/overview-v1.png` 作引导图，网页PNG与生成原件逐字节一致；点图进入总览，项目名称和网页链接进入完整研究与试片。无需安装前端依赖，CI执行子项目check。
 
 内容组织为世界与首图、人物行动、摄影路径、环境响应、时间剪辑、审片迭代，展示11.041667秒Kling4.0双片实测和5秒硬切接点，区分已验证能力、偏差与待建产品。发布仅复制app静态目录；研究原件随仓库保留，含账户界面的两张证据截图仅留本地，主机绝对路径在公开元数据中改为项目相对路径。没有部署模型服务或把自动长片能力宣称为已实现。2026-10-31已上线并核验：[研究与试片](https://yydshly.github.io/1025_codex_project/013-scenic-motion-lab/) · [生成引导图](https://yydshly.github.io/1025_codex_project/013-scenic-motion-lab/overview.html)。[工作流41179206155](https://github.com/yydshly/1025_codex_project/actions/runs/41179206155)构建、部署成功；48个声明资源返回200，在线PNG与生成原件SHA一致，桌面/手机、视频播放及接缝图交互已检查。详见[013发布记录](../projects/013-scenic-motion-lab/research/deployment.md)。
+
+## 015 · 观象：地球过程与真实事件
+
+2026-11-08 已上线并核验。[研究总览](https://yydshly.github.io/1025_codex_project/015-process-visualization-lab/)说明来源、研究方法、公开范围与扩展价值，并使用生成的总览图作引导。[地球实测回放](https://yydshly.github.io/1025_codex_project/015-process-visualization-lab/app/index.html)覆盖八个历史案例和 NASA B0005 放电实验，柴油机保留本地复现。构建输出为 `dist/site`，总览原图作为额外资源发布。详见[015 发布记录](../projects/015-process-visualization-lab/research/deployment.md)。
