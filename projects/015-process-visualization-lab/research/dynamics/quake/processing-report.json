@@ -1,0 +1,102 @@
+{
+  "generatedAtUtc": "2026-11-04T14:48:01.982308Z",
+  "event": {
+    "eventSourceId": "official20110311054624120_30",
+    "originUtc": "2011-03-11T05:46:24.120Z",
+    "magnitude": 9.1,
+    "magnitudeType": "mww",
+    "depthKm": 29
+  },
+  "stations": [
+    {
+      "id": "IU.MAJO.00.BHZ",
+      "lat": 36.54567,
+      "lon": 138.20406,
+      "nativeSampleRateHz": 20.0,
+      "rawSampleCount": 24000,
+      "firstRawTimeUtc": "2011-03-11T05:45:00.019538Z",
+      "lastRawTimeUtc": "2011-03-11T06:04:59.969539Z",
+      "baselineCounts": 261.0,
+      "displayScaleMaxAbsCounts": 38690961.0,
+      "partialWindowCount": 0,
+      "emptyWindowCount": 0,
+      "gaps": []
+    },
+    {
+      "id": "IU.INCN.00.BHZ",
+      "lat": 37.4776,
+      "lon": 126.6239,
+      "nativeSampleRateHz": 20.0,
+      "rawSampleCount": 24000,
+      "firstRawTimeUtc": "2011-03-11T05:45:00.019538Z",
+      "lastRawTimeUtc": "2011-03-11T06:04:59.969539Z",
+      "baselineCounts": -9329.0,
+      "displayScaleMaxAbsCounts": 37696532.0,
+      "partialWindowCount": 0,
+      "emptyWindowCount": 0,
+      "gaps": []
+    },
+    {
+      "id": "IU.TATO.00.BHZ",
+      "lat": 24.9735,
+      "lon": 121.4971,
+      "nativeSampleRateHz": 20.0,
+      "rawSampleCount": 24000,
+      "firstRawTimeUtc": "2011-03-11T05:45:00.019536Z",
+      "lastRawTimeUtc": "2011-03-11T06:04:59.969536Z",
+      "baselineCounts": -301864.5,
+      "displayScaleMaxAbsCounts": 12426317.5,
+      "partialWindowCount": 0,
+      "emptyWindowCount": 0,
+      "gaps": []
+    },
+    {
+      "id": "IU.YSS.00.BHZ",
+      "lat": 46.9587,
+      "lon": 142.7604,
+      "nativeSampleRateHz": 20.0,
+      "rawSampleCount": 24000,
+      "firstRawTimeUtc": "2011-03-11T05:45:00.010645Z",
+      "lastRawTimeUtc": "2011-03-11T06:04:59.960645Z",
+      "baselineCounts": -721.0,
+      "displayScaleMaxAbsCounts": 10042814.0,
+      "partialWindowCount": 0,
+      "emptyWindowCount": 0,
+      "gaps": []
+    },
+    {
+      "id": "IU.GUMO.00.BHZ",
+      "lat": 13.5893,
+      "lon": 144.8684,
+      "nativeSampleRateHz": 20.0,
+      "rawSampleCount": 24000,
+      "firstRawTimeUtc": "2011-03-11T05:45:00.019536Z",
+      "lastRawTimeUtc": "2011-03-11T06:04:59.969536Z",
+      "baselineCounts": -618985.5,
+      "displayScaleMaxAbsCounts": 13481143.5,
+      "partialWindowCount": 0,
+      "emptyWindowCount": 0,
+      "gaps": []
+    },
+    {
+      "id": "IU.ULN.00.BHZ",
+      "lat": 47.8651,
+      "lon": 107.0532,
+      "nativeSampleRateHz": 20.0,
+      "rawSampleCount": 24000,
+      "firstRawTimeUtc": "2011-03-11T05:45:00.035665Z",
+      "lastRawTimeUtc": "2011-03-11T06:04:59.985658Z",
+      "baselineCounts": 1181.0,
+      "displayScaleMaxAbsCounts": 7557047.0,
+      "partialWindowCount": 0,
+      "emptyWindowCount": 0,
+      "gaps": []
+    }
+  ],
+  "stationCount": 6,
+  "envelopeCountPerStation": 1200,
+  "assetBytes": 2755347,
+  "assetSHA256": "b09b02e3712ce500c3c16279b275a65413dea5e4054bbb8b62542472b37fa3fe",
+  "rawHashesVerified": 9,
+  "sourceSamplesRetainedWithoutInterpolation": 144000
+}

@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "name": "汤加融合显示的球面空间聚焦",
+  "appliesTo": "仅 dynamic-volcano 的 fusion 展示模式",
+  "center": { "lat": -20.5532, "lon": -175.3841 },
+  "innerRadiusKm": 400,
+  "outerRadiusKm": 600,
+  "earthRadiusKm": 6371.0088,
+  "statisticsRadiusKmUnchanged": 300,
+  "method": "对原展示透明度乘平滑空间权重：smoothstep(cos(600/R), cos(400/R), dot(像元单位方向,中心单位方向))。400公里内权重1，400—600公里渐隐，600公里外权重0。",
+  "registration": "汤加原窗口174—193度经longitudeRegistration转换为-6—13度后，将clouds组旋转180度。focus经度同样减180并归一化，局部经度4.6159度；在同一个局部球面计算权重。",
+  "preserved": [
+    "完整原始展示PNG、数值PNG、帧UTC和scan起止、所有hash及原统计series均不修改。",
+    "raw分支完全绕过聚焦、温度透明度和既有边缘渐隐，仍显示完整原始灰度窗口。",
+    "400公里内只保持本次聚焦权重为1；原有温度透明度、矩形3度羽化和显示光照保持原逻辑。",
+    "300公里统计区域仍按原观测数据计算，未因显示范围扩大到600公里而改动。",
+    "不新增云、不下载外部素材、不生成噪声、不进行时间插值或云形态重绘。"
+  ],
+  "limitations": [
+    "600公里是界面显示选择，不是喷发、灰云、灾害范围或云识别结果。",
+    "渐隐区域可能存在真实天气云；隐藏只为聚焦事件，不能解释为无云或无观测。",
+    "灰云身份、云高和灰浓度仍不可从此单通道亮温展示直接确定。"
+  ],
+  "userLabel": "融合显示聚焦火山周边半径600公里，400—600公里渐隐；统计范围仍为300公里，原帧可核对完整窗口。",
+  "lifecycle": "clear、隐藏和切换其他事件会清空聚焦；汤加下个真实帧到达时重新设置。storm默认不启用；raw不应用此权重。",
+  "validationCommand": "node --test tests/volcano-display-focus.test.mjs tests/sync-cloud-layer.test.mjs tests/dynamic-waveform.test.mjs",
+  "validationScope": "球面多方位400/600公里边界与单调性、原帧绕过、实际Three材质uniform和GLSL分支、跨180配准、事件切换、原数据字节与图像hash不变。实际浏览器GPU呈现由界面验收补充。"
+}

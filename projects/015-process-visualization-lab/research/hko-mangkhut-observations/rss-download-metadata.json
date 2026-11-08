@@ -1,0 +1,8 @@
+{
+  "requestedUrl": "https://app.data.gov.hk/v1/historical-archive/get-file?url=https%3A%2F%2Frss.weather.gov.hk%2Frss%2FCurrentWeather.xml&time=20180901",
+  "responseUrl": "https://historical-resource-archive.oss-cn-hongkong.aliyuncs.com/88f7c6acbe7210cfb7f1822b38424cf97c261e45f5dac9bf3692ac85d5fd311a/data/2018/88f7c6acbe7210cfb7f1822b38424cf97c261e45f5dac9bf3692ac85d5fd311a-201809.zip",
+  "bytes": 1406175,
+  "downloadedAt": "2026-11-04T12:24:16.046233+00:00",
+  "monthlyArchiveSha256": "f46f3eaead69358a151efc78f6deabfa854472fba8f4c1fa399aa0d199ea4f50",
+  "retainedFiles": 92
+}

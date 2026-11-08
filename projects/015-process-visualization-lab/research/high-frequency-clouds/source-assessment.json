@@ -1,0 +1,43 @@
+{
+  "status": "complete_72_real_B13_frames_processed_and_validated",
+  "preferredSource": {
+    "name": "NOAA Open Data - JMA Himawari-8",
+    "url": "https://registry.opendata.aws/noaa-himawari/",
+    "bucket": "noaa-himawari8",
+    "date": "2018-09-16",
+    "selectedBand": 13,
+    "utcStart": "00:00",
+    "utcEnd": "12:00",
+    "listedFrames": 72,
+    "missingTimesUtc": [
+      "2018-09-16T02:40:00Z"
+    ],
+    "nativeFormat": "HSD normalized geostationary, single S0101 unsegmented B13 file per nominal time",
+    "nativeResolution": "2 km at sub-satellite point",
+    "permission": "NOAA is authorized to distribute JMA data freely and openly; attribution requested; transformed products must not be called unaltered originals"
+  },
+  "ciraReference": {
+    "url": "https://rammb-data.cira.colostate.edu/tc_realtime/archive.asp?product=4kmirimg&storm_identifier=wp262018",
+    "descriptionUrl": "https://rammb-data.cira.colostate.edu/tc_realtime/about.asp",
+    "downloadedFrame": "cira-201809161200.gif",
+    "sourceUrl": "https://rammb-data.cira.colostate.edu/tc_realtime/products/storms/2018wp26/4kmirimg/2018wp26_4kmirimg_201809161200.gif",
+    "sha256": "efc57d2d6d3623f7ab71e71e0a292f6ca9c8ced6911824574da72b40b6611c90",
+    "visualInspection": "Watermark HIMAWARI-8 band 13, 16 SEP 18259 120000; labelled graticules at 100/110/120 E and 20/30 N. UTC not explicitly spelled out in this image.",
+    "projection": "4 km Mercator according to product documentation; moving 5-degree rounded center based on recent location/motion. Full exact per-frame extent not machine-readable in GIF.",
+    "reuse": "Rehosting permission not independently established; retain research sample, prefer original external loop for users. Do not texture globe with labelled GIF."
+  },
+  "gibsAlternative": {
+    "status": "2018 Himawari subdaily coverage not verified; do not substitute daily VIIRS mosaics."
+  },
+  "guideUrl": "https://www.data.jma.go.jp/mscweb/en/himawari89/space_segment/hsd_sample/HS_D_users_guide_en_v13.pdf",
+  "validationReport": "validation-report.json",
+  "visualValidation": {
+    "inspectedFramesUtc": [
+      "2018-09-16T00:00:00Z",
+      "2018-09-16T06:00:00Z",
+      "2018-09-16T12:00:00Z"
+    ],
+    "comparison": "12:00 regional grey-scale frame visually matches the archived CIRA 12:00 B13 spiral and band structure after accounting for different projection, extent and color enhancement. This is a visual consistency check, not a measured geolocation-accuracy claim."
+  },
+  "pipelineSHA256": "c3ea318c05a0ad3ee08da34a72197fc5df3d880176fc92fe17921a5e5b0a5bc9"
+}

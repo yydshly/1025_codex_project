@@ -1,0 +1,14 @@
+{
+  "datasetPage": "http://www.ascl.jlu.edu.cn/vci/info/1010/1082.htm",
+  "archiveUrl": "http://www.ascl.jlu.edu.cn/vci/datafile.zip",
+  "archiveBytes": 228557,
+  "archiveSha256": "8e70cb20e62e30641694ec73fc91416373fadeee6dabcddde5a624b8482060ff",
+  "member": "dataset_for_engine.mat",
+  "matBytes": 230049,
+  "matSha256": "81a20de8460cc36d8623adb6ed7f4cd5f3391dc496f5ad9b187248ff96798baf",
+  "paperUrl": "https://scis.scichina.com/en/2019/077201.pdf",
+  "paperSha256": "92bc5bf127b5578571049a98bb4f63a16174b8344e8594fa6ac3c1acc0c316b9",
+  "doi": "10.1007/s11432-018-9783-x",
+  "replaySha256": "2a2ca2e9efa62aa1189805471ecd90b819f81b758b8daea97959f6cb81b962f6",
+  "publicationScope": "The article states that the dataset was opened for academic research. No redistribution or commercial license was identified in the article, landing page, or archive."
+}

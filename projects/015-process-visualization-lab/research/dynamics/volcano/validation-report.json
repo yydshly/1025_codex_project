@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "checkedAtUtc": "2026-11-04T14:52:15.771808Z",
+  "frames": 25,
+  "rawFiles": 50,
+  "missingFrames": 0,
+  "independentRawCalibrationSamples": 200,
+  "checks": [
+    "all raw/display/numeric SHA256 and byte lengths",
+    "strict 600-second nominal timestamps, actual segment scan bounds retained",
+    "full-pixel uint16 to fixed display mapping",
+    "independent ECEF navigation and micrometre Planck raw-count checks at 8 pixels/frame",
+    "independent spherical-neighborhood threshold area and weighted P10 from uint16",
+    "all series values/time exactly equal corresponding frame stats"
+  ],
+  "visualInspection": [
+    "03:50 pre-eruption surroundings",
+    "04:20 small new bright eruption cloud",
+    "07:50 substantially expanded umbrella cloud; background weather clouds retained"
+  ],
+  "displayBytes": 15100366,
+  "numericBytes": 24466823,
+  "rawBytes": 145832392,
+  "firstScan": {
+    "nominal": "2022-01-15T03:50:00Z",
+    "selectedSegmentsStart": "2022-01-15T03:56:03.920Z",
+    "selectedSegmentsEnd": "2022-01-15T03:58:27.651Z"
+  },
+  "lastScan": {
+    "nominal": "2022-01-15T07:50:00Z",
+    "selectedSegmentsStart": "2022-01-15T07:56:03.667Z",
+    "selectedSegmentsEnd": "2022-01-15T07:58:27.396Z"
+  },
+  "limits": "Round-trip/algorithm agreement checks are not external geolocation accuracy claims. Cloud parallax and weather-cloud ambiguity remain."
+}

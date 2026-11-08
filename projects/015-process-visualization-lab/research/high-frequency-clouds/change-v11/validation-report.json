@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "version": "change-v11",
+  "pairs": 70,
+  "distinctNumericInputs": 72,
+  "displayImageBytes": 97853141,
+  "minimumFrameBytes": 1301608,
+  "maximumFrameBytes": 1485838,
+  "noComparisonTimesUtc": [
+    "2018-09-16T00:00:00Z",
+    "2018-09-16T02:50:00Z"
+  ],
+  "currentFrameMissingTimesUtc": [
+    "2018-09-16T02:40:00Z"
+  ],
+  "maximumAlphaErrorVsIndependentRationalFormulaBytes": 0,
+  "minimumDisplayedPixelCount": 458588,
+  "maximumDisplayedPixelCount": 530182,
+  "checks": [
+    "exact 600-second pairing against observed frame registry; no crossing the gap",
+    "all numeric-input and output SHA-256 hashes",
+    "same EPSG:4326 grid",
+    "every nontransparent pixel passes validity, cold-region selection and signed-change threshold",
+    "every displayed color agrees with the exact signed uint16-derived difference",
+    "all alpha values checked against an independent integer-rational expression",
+    "all signed and displayed-pixel statistics independently recomputed",
+    "source manifest hash unchanged"
+  ],
+  "scope": "Validation of a derived visualization, not validation of cloud tracking or wind retrieval."
+}

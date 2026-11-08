@@ -1,0 +1,34 @@
+{
+  "noaa-station": {
+    "url": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9414290.json",
+    "file": "research/dynamics/san-francisco-tide/raw/noaa-station.json",
+    "status": 200,
+    "retrievedAtUtc": "2026-11-05T05:59:11.426Z",
+    "bytes": 2641,
+    "sha256": "23d1c617cdb91ed6b8f8082406cf1bb0d5e64d32f717bc6efcbf02d9d67c16a4"
+  },
+  "noaa-observed": {
+    "url": "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?begin_date=20250115&end_date=20250115&station=9414290&datum=MLLW&time_zone=gmt&units=metric&application=web_services&format=json&product=water_level",
+    "file": "research/dynamics/san-francisco-tide/raw/noaa-observed.json",
+    "status": 200,
+    "retrievedAtUtc": "2026-11-05T05:59:12.531Z",
+    "bytes": 18086,
+    "sha256": "60566a56d4bac3227ac9ba4a852cd6f346a516c3fbf2b94e8a07346f88ae96bd"
+  },
+  "noaa-predicted": {
+    "url": "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?begin_date=20250115&end_date=20250115&station=9414290&datum=MLLW&time_zone=gmt&units=metric&application=web_services&format=json&product=predictions&interval=6",
+    "file": "research/dynamics/san-francisco-tide/raw/noaa-predicted.json",
+    "status": 200,
+    "retrievedAtUtc": "2026-11-05T05:59:13.781Z",
+    "bytes": 9152,
+    "sha256": "7aa997b0299d426d6f5fb086ceb1cd899a02740878a6855592086a372da7d2e0"
+  },
+  "jpl-moon": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27301%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40399%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%27-122.46589%2C37.806305%2C0.0%27&START_TIME=%272025-01-15%2000%3A00%27&STOP_TIME=%272025-01-15%2023%3A54%27&STEP_SIZE=%276%20m%27&QUANTITIES=%274%2C10%2C20%27&APPARENT=%27AIRLESS%27&ELEV_CUT=%27-90%27&SKIP_DAYLT=%27NO%27&CSV_FORMAT=%27YES%27&TIME_TYPE=%27UT%27",
+    "file": "research/dynamics/san-francisco-tide/raw/jpl-moon.json",
+    "status": 200,
+    "retrievedAtUtc": "2026-11-05T05:59:16.152Z",
+    "bytes": 30039,
+    "sha256": "752aae1b58d07aea567dab1893911adfc6f1e91d4d2b206024658295a162cfad"
+  }
+}

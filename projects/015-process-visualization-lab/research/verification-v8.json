@@ -1,0 +1,45 @@
+{
+  "version": "8.0.0",
+  "date": "2026-11-04",
+  "scope": "Local event interpretation on the existing globe; only Mangkhut has archived real-event data.",
+  "automated": {
+    "testsPassed": 33,
+    "testsFailed": 0,
+    "projectIntegrityCheck": "passed; source lines, raw SHA-256 and six image hashes unchanged"
+  },
+  "browser": {
+    "desktopViewport": [
+      1440,
+      1000
+    ],
+    "mobileViewport": [
+      390,
+      844
+    ],
+    "consoleErrors": [],
+    "checks": [
+      "Default A 2018-09-14T06:00:00Z and B 2018-09-16T06:00:00Z match the globe, two curves, three comparison rows and report.",
+      "Three guided sections stop at 09/14 14:00, 09/16 14:00 and 09/17 14:00 UTC+8; final control offers restart.",
+      "Manual date selection cancels guided playback; reverse order and same-record states are explicit.",
+      "First record missing wind remains unreported; no zero or fabricated curve point.",
+      "Copied report successfully; TXT download inspected for A/B values, source rows 33/41, revision date and method.",
+      "Original orbital, volcano, quake, typhoon, river and battery modes each retain two parameters and three curves.",
+      "NASA MP4 played from 0.789 to 49.1802 seconds, duration 54.366667 seconds; readyState 4, no media error.",
+      "Closing video pauses; reopening preserves position and stays paused.",
+      "390px page and conclusion dialog have no horizontal overflow; video dialog fits the phone layout.",
+      "Conclusion dialog height 578.33px at 1000px viewport after fixing inherited stretch; viewport reset and tab retained."
+    ]
+  },
+  "screenshots": [
+    "assets/images/event-analysis-v8.png",
+    "assets/images/event-conclusion-v8.png",
+    "assets/images/nasa-motion-v8.png"
+  ],
+  "remaining": [
+    "Globe still uses six daily composites, not high-frequency cloud animation.",
+    "NASA video is independent 09/12–13 data visualization, not synchronized to selected B time.",
+    "CIRA loop is an official external entry; per-frame timestamp and geographic registration not yet integrated.",
+    "No local Hong Kong station time series; event peaks remain separate evidence.",
+    "Other five process themes remain explicitly labeled teaching simulations."
+  ]
+}

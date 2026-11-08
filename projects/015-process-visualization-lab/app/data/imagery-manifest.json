@@ -1,0 +1,94 @@
+{
+  "layer": "VIIRS_SNPP_CorrectedReflectance_TrueColor",
+  "projection": "EPSG:4326",
+  "temporalType": "daily mosaic; not hourly or instantaneous",
+  "credit": "NASA GIBS / NASA EOSDIS, Suomi NPP VIIRS corrected reflectance true color",
+  "source": "https://nasa-gibs.github.io/gibs-api-docs/access-basics/",
+  "bbox": [
+    -180,
+    -90,
+    180,
+    90
+  ],
+  "wmsVersion": "1.1.1",
+  "frames": [
+    {
+      "date": "2018-09-12",
+      "url": "assets/events/mangkhut-earth-20180912.jpg",
+      "sourceUrl": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi?SERVICE=WMS&REQUEST=GetMap&VERSION=1.1.1&LAYERS=VIIRS_SNPP_CorrectedReflectance_TrueColor&STYLES=&FORMAT=image/jpeg&SRS=EPSG:4326&BBOX=-180,-90,180,90&WIDTH=4096&HEIGHT=2048&TIME=2018-09-12",
+      "width": 4096,
+      "height": 2048,
+      "sha256": "23445892090bc76de63364c3862135b3d2def0324fd45685954dd1602f1bafd4",
+      "bytes": 2505294,
+      "downloadMethod": "browser_download_then_local_copy",
+      "downloadedFileLastModifiedUtc": "2026-11-04T10:59:05.1363929Z",
+      "verifiedAtUtc": "2026-11-04T11:07:07.8383879Z",
+      "visualValidation": "view_image: global land/ocean/cloud mosaic confirmed, not an error page; original coverage gaps preserved"
+    },
+    {
+      "date": "2018-09-13",
+      "url": "assets/events/mangkhut-earth-20180913.jpg",
+      "sourceUrl": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi?SERVICE=WMS&REQUEST=GetMap&VERSION=1.1.1&LAYERS=VIIRS_SNPP_CorrectedReflectance_TrueColor&STYLES=&FORMAT=image/jpeg&SRS=EPSG:4326&BBOX=-180,-90,180,90&WIDTH=4096&HEIGHT=2048&TIME=2018-09-13",
+      "width": 4096,
+      "height": 2048,
+      "sha256": "188287dae516482396d721d00b9785d33d6e7c9ca3194184f31d74624281fa13",
+      "bytes": 2205260,
+      "downloadMethod": "browser_download_then_local_copy",
+      "downloadedFileLastModifiedUtc": "2026-11-04T11:01:21.9748725Z",
+      "verifiedAtUtc": "2026-11-04T11:07:07.8383879Z",
+      "visualValidation": "view_image: global land/ocean/cloud mosaic confirmed, not an error page; original coverage gaps preserved"
+    },
+    {
+      "date": "2018-09-14",
+      "url": "assets/events/mangkhut-earth-20180914.jpg",
+      "sourceUrl": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi?SERVICE=WMS&REQUEST=GetMap&VERSION=1.1.1&LAYERS=VIIRS_SNPP_CorrectedReflectance_TrueColor&STYLES=&FORMAT=image/jpeg&SRS=EPSG:4326&BBOX=-180,-90,180,90&WIDTH=4096&HEIGHT=2048&TIME=2018-09-14",
+      "width": 4096,
+      "height": 2048,
+      "sha256": "a15be8f49c39e2a98960db022d654ec88e86201da39f006d9d63dd1e4f479ce9",
+      "bytes": 2500157,
+      "downloadMethod": "browser_download_then_local_copy",
+      "downloadedFileLastModifiedUtc": "2026-11-04T11:03:31.9778301Z",
+      "verifiedAtUtc": "2026-11-04T11:07:07.8383879Z",
+      "visualValidation": "view_image: global land/ocean/cloud mosaic confirmed, not an error page; original coverage gaps preserved"
+    },
+    {
+      "date": "2018-09-15",
+      "url": "assets/events/mangkhut-earth-20180915.jpg",
+      "sourceUrl": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi?SERVICE=WMS&REQUEST=GetMap&VERSION=1.1.1&LAYERS=VIIRS_SNPP_CorrectedReflectance_TrueColor&STYLES=&FORMAT=image/jpeg&SRS=EPSG:4326&BBOX=-180,-90,180,90&WIDTH=4096&HEIGHT=2048&TIME=2018-09-15",
+      "width": 4096,
+      "height": 2048,
+      "sha256": "758d15d0e086a277e528d2c442ba4739c163cf5d75ab48f5ffe979da935aa5af",
+      "bytes": 2485297,
+      "downloadMethod": "browser_download_then_local_copy",
+      "downloadedFileLastModifiedUtc": "2026-11-04T11:05:30.955001Z",
+      "verifiedAtUtc": "2026-11-04T11:07:07.8383879Z",
+      "visualValidation": "view_image: global land/ocean/cloud mosaic confirmed, not an error page; original coverage gaps preserved"
+    },
+    {
+      "date": "2018-09-16",
+      "url": "assets/events/mangkhut-earth-20180916.jpg",
+      "sourceUrl": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi?SERVICE=WMS&REQUEST=GetMap&VERSION=1.1.1&LAYERS=VIIRS_SNPP_CorrectedReflectance_TrueColor&STYLES=&FORMAT=image/jpeg&SRS=EPSG:4326&BBOX=-180,-90,180,90&WIDTH=4096&HEIGHT=2048&TIME=2018-09-16",
+      "width": 4096,
+      "height": 2048,
+      "sha256": "53b3c27fd8632111a927da27cb0e3105138c4df45de0882bd65d3048b15cb372",
+      "bytes": 2463694,
+      "downloadMethod": "browser_download_then_local_copy",
+      "downloadedFileLastModifiedUtc": "2026-11-04T11:06:17.4149072Z",
+      "verifiedAtUtc": "2026-11-04T11:08:11.5037819Z",
+      "visualValidation": "view_image: global land/ocean/cloud mosaic confirmed, not an error page; original coverage gaps preserved"
+    },
+    {
+      "date": "2018-09-17",
+      "url": "assets/events/mangkhut-earth-20180917.jpg",
+      "sourceUrl": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi?SERVICE=WMS&REQUEST=GetMap&VERSION=1.1.1&LAYERS=VIIRS_SNPP_CorrectedReflectance_TrueColor&STYLES=&FORMAT=image/jpeg&SRS=EPSG:4326&BBOX=-180,-90,180,90&WIDTH=4096&HEIGHT=2048&TIME=2018-09-17",
+      "width": 4096,
+      "height": 2048,
+      "sha256": "c0ba1195a5d58afb8de70e516aee6050aeb60fcd375f189721961c9367b69cf2",
+      "bytes": 2481314,
+      "downloadMethod": "browser_download_then_local_copy",
+      "downloadedFileLastModifiedUtc": "2026-11-04T11:06:53.5102130Z",
+      "verifiedAtUtc": "2026-11-04T11:08:11.5037819Z",
+      "visualValidation": "view_image: global land/ocean/cloud mosaic confirmed, not an error page; original coverage gaps preserved"
+    }
+  ]
+}

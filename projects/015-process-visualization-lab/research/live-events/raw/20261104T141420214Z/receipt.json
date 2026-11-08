@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "startedAtUtc": "2026-11-04T14:14:20.214Z",
+  "completedAtUtc": "2026-11-04T14:14:30.911Z",
+  "snapshotUpdated": false,
+  "counts": {
+    "quake": 0,
+    "volcano": 0,
+    "storm": 0
+  },
+  "sources": [
+    {
+      "id": "usgs_quakes",
+      "name": "USGS 地震目录",
+      "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_month.geojson",
+      "coverageLabel": "过去 30 天 · M4.5+ 地震",
+      "documentationUrl": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php",
+      "status": "error",
+      "attemptedAtUtc": "2026-11-04T14:14:20.216Z",
+      "retrievedAtUtc": "2026-11-04T14:14:30.910Z",
+      "retrievalSucceeded": false,
+      "error": "fetch failed",
+      "timestampMeaning": "failed-attempt-completion-not-successful-retrieval"
+    },
+    {
+      "id": "eonet_recent",
+      "name": "NASA EONET 近期事件",
+      "url": "https://eonet.gsfc.nasa.gov/api/v3/events?status=open&days=90",
+      "coverageLabel": "过去 90 天的开放事件 · 仅明确命名的热带气旋及火山",
+      "documentationUrl": "https://eonet.gsfc.nasa.gov/docs/v3",
+      "status": "error",
+      "attemptedAtUtc": "2026-11-04T14:14:20.307Z",
+      "retrievedAtUtc": "2026-11-04T14:14:30.911Z",
+      "retrievalSucceeded": false,
+      "error": "fetch failed",
+      "timestampMeaning": "failed-attempt-completion-not-successful-retrieval"
+    },
+    {
+      "id": "eonet_volcano_open",
+      "name": "NASA EONET 开放火山目录",
+      "url": "https://eonet.gsfc.nasa.gov/api/v3/events?status=open&category=volcanoes",
+      "coverageLabel": "开放火山事件目录 · 报告时间各异（不限定 90 天）",
+      "documentationUrl": "https://eonet.gsfc.nasa.gov/docs/v3",
+      "status": "error",
+      "attemptedAtUtc": "2026-11-04T14:14:20.308Z",
+      "retrievedAtUtc": "2026-11-04T14:14:30.911Z",
+      "retrievalSucceeded": false,
+      "error": "fetch failed",
+      "timestampMeaning": "failed-attempt-completion-not-successful-retrieval"
+    },
+    {
+      "id": "usgs_volcano_status",
+      "name": "USGS 火山状态通报",
+      "url": "https://volcanoes.usgs.gov/hans-public/api/volcano/getElevatedVolcanoes",
+      "coordinateUrl": "https://volcanoes.usgs.gov/vsc/api/volcanoApi/geojson",
+      "coverageLabel": "USGS 当前较高警戒级别目录 · 时间为最近官方通报发布时间",
+      "documentationUrl": "https://volcanoes.usgs.gov/hans-public/api/volcano/",
+      "status": "error",
+      "attemptedAtUtc": "2026-11-04T14:14:20.309Z",
+      "retrievedAtUtc": "2026-11-04T14:14:30.910Z",
+      "retrievalSucceeded": false,
+      "error": "fetch failed",
+      "timestampMeaning": "failed-attempt-completion-not-successful-retrieval"
+    }
+  ],
+  "rawResponses": [],
+  "notes": [
+    "原始文件保存 HTTP JSON 正文字节，SHA256 对原始字节计算；未保存或使用身份凭据。",
+    "app 快照仅在全部来源请求和规范化验证成功时原子替换；任一失败保留原快照。",
+    "HANS 通报按 vnum 匹配官方火山目录位置；时间为 sent_unixtime 所示发布时间，不是喷发起点。",
+    "USGS 与 EONET 可能包含同一座火山的不同来源记录；计数不是去重后的火山数量。"
+  ]
+}

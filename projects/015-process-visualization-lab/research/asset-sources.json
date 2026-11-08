@@ -1,0 +1,23 @@
+{
+  "earth": {
+    "page": "https://science.nasa.gov/resource/earth-with-clouds-3d-model/",
+    "download": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/09/e/EarthClouds_1_12756.glb?emrc=6aeae748dcfbf",
+    "credit": "NASA Visualization Technology Applications and Development (VTAD)",
+    "sha256": "f0989772fa9ab1aeee32911df9b5da4ee1a938580414357ace51c9e05b5f3929"
+  },
+  "moon": {
+    "page": "https://svs.gsfc.nasa.gov/4720/",
+    "download": "https://svs.gsfc.nasa.gov/vis/a000000/a004700/a004720/lroc_color_2k.jpg",
+    "credit": "NASA Scientific Visualization Studio / Ernie Wright / LRO teams",
+    "sha256": "f7130a1822681fa7512d7dcfd40db8c10b9ba4f06777910348698260ed7a2170"
+  },
+  "note": "纹理从NASA GLB逐字节提取，未改绘；地图用于视觉呈现，不是本产品观测数据。",
+  "globeEarth": {
+    "page": "https://svs.gsfc.nasa.gov/2915/",
+    "download": "https://svs.gsfc.nasa.gov/vis/a000000/a002900/a002915/bluemarble-2048.png",
+    "file": "app/assets/earth-blue-marble.png",
+    "credit": "NASA/Goddard Space Flight Center Scientific Visualization Studio; Blue Marble data courtesy Reto Stockli (NASA/GSFC) and NASA Earth Observatory",
+    "sha256": "ae6214b078ed0864c96f74bcb10ae3021f6eb116f8059797efe0fa9ea8b89d35",
+    "use": "equirectangular geographic background; historical composite, not current satellite/weather data"
+  }
+}

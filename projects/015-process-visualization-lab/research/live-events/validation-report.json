@@ -1,0 +1,21 @@
+{
+  "checkedAtUtc": "2026-11-06T06:42:46.199Z",
+  "passed": true,
+  "checks": [
+    "schema / finite legal coordinates / strict UTC ordered observations / real observation time <= retrieval",
+    "all 5 raw HTTP bodies SHA256 + bytes + public CORS headers",
+    "offline raw-response replay exactly reproduces all normalized events",
+    "all quake coordinates / depth / magnitude / origin / updated time match raw fields",
+    "tropical category + title filter; Polygon rejected; same-time conflicting Point stable deduplication",
+    "negative earthquake depth and zero magnitude preserved",
+    "missing volcano coordinate join rejected",
+    "failed source explicitly error; successful sources remain ok; saved snapshot untouched"
+  ],
+  "eventCounts": {
+    "quake": 720,
+    "volcano": 35,
+    "storm": 2
+  },
+  "rawResponses": 5,
+  "snapshotRetrievedAtUtc": "2026-11-04T14:15:36.397Z"
+}

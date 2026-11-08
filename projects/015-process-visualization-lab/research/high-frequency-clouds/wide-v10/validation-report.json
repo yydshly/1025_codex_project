@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "version": "wide-v10",
+  "frames": 72,
+  "bbox": [
+    85,
+    -10,
+    165,
+    55
+  ],
+  "width": 2048,
+  "height": 1664,
+  "startTimeUtc": "2018-09-16T00:00:00Z",
+  "endTimeUtc": "2018-09-16T12:00:00Z",
+  "missingTimesUtc": [
+    "2018-09-16T02:40:00Z"
+  ],
+  "newDownloads": 0,
+  "displayImageBytes": 208624292,
+  "brightnessTemperatureDataBytes": 357746359,
+  "totalMissingSpatialPixelsAcrossFrames": 0,
+  "minimumAdjacentChangedPixels": 2615332,
+  "sourceIdentity": "Every source SHA-256, source URL, nominal time and full-scan start/end equals the original 72-frame package.",
+  "originalPipelineUnchanged": true,
+  "checks": [
+    "all source and output SHA-256 hashes",
+    "same real clock and missing time",
+    "fixed wider geographic extent and image dimensions",
+    "nodata and alpha consistency",
+    "temperature range and unchanged operation quality",
+    "all corners pass numerical transform checks"
+  ],
+  "limitations": [
+    "Transform consistency is not a claim of absolute geolocation precision.",
+    "Cloud parallax remains uncorrected.",
+    "No feathering or brightness-to-opacity mapping is baked into the scientific rasters."
+  ]
+}

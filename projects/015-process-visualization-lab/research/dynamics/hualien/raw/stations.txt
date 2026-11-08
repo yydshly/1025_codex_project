@@ -1,0 +1,4 @@
+#Network | Station | Latitude | Longitude | Elevation | SiteName | StartTime | EndTime 
+IU|INCN|37.47768|126.62436|55.0|Inchon, Republic of Korea|2013-11-21T00:00:00.0000|
+IU|MAJO|36.54567|138.20406|405.0|Matsushiro, Japan|1990-08-18T00:00:00.0000|
+IU|TATO|24.9735|121.4971|160.0|Taipei, Taiwan|1992-09-26T00:00:00.0000|

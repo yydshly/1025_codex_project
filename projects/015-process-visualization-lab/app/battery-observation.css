@@ -1,0 +1,179 @@
+body[data-dynamic-kind="battery"] .battery-evidence,
+body[data-dynamic-kind="battery"] .battery-evidence-clock,
+body[data-dynamic-kind="battery"] .battery-chart {
+  min-width: 0;
+  color: #e8f3f7;
+  font-variant-numeric: tabular-nums;
+}
+
+body[data-dynamic-kind="battery"] .battery-voltage { --battery-channel: #70dfef; }
+body[data-dynamic-kind="battery"] .battery-current { --battery-channel: #ffc072; }
+body[data-dynamic-kind="battery"] .battery-temperature { --battery-channel: #f59484; }
+
+body[data-dynamic-kind="battery"] .battery-evidence-heading,
+body[data-dynamic-kind="battery"] .battery-chart-heading,
+body[data-dynamic-kind="battery"] .battery-evidence-clock {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 4px 8px;
+  flex-wrap: wrap;
+}
+
+body[data-dynamic-kind="battery"] .battery-evidence-heading span,
+body[data-dynamic-kind="battery"] .battery-chart-heading span,
+body[data-dynamic-kind="battery"] .battery-evidence-clock span {
+  color: #a9bdc8;
+  font-size: 10px;
+}
+
+body[data-dynamic-kind="battery"] .battery-evidence-clock strong {
+  color: #f0dfa4;
+  font: 13px ui-monospace, monospace;
+}
+
+body[data-dynamic-kind="battery"] .battery-readings {
+  display: grid;
+  gap: 7px;
+}
+
+body[data-dynamic-kind="battery"] .battery-reading {
+  min-width: 0;
+  display: grid;
+  gap: 5px;
+  border: 1px solid #46616f66;
+  border-left: 2px solid var(--battery-channel);
+  border-radius: 4px;
+  padding: 8px 9px;
+  background: #10222e;
+}
+
+body[data-dynamic-kind="battery"] .battery-reading-label {
+  color: #c6d7e2;
+  font-size: 11px;
+}
+
+body[data-dynamic-kind="battery"] .battery-reading strong {
+  color: var(--battery-channel);
+  font: 600 clamp(15px, 1.6vw, 23px)/1.2 ui-monospace, monospace;
+  overflow-wrap: anywhere;
+}
+
+body[data-dynamic-kind="battery"] .battery-reading small {
+  color: #adbec9;
+  font-size: 9px;
+  overflow-wrap: anywhere;
+}
+
+body[data-dynamic-kind="battery"] .battery-meter {
+  height: 2px;
+  overflow: hidden;
+  border-radius: 2px;
+  background: #a6c1cf33;
+}
+
+body[data-dynamic-kind="battery"] .battery-meter > span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: var(--battery-channel);
+}
+
+body[data-dynamic-kind="battery"] .battery-note {
+  margin: 7px 0 0;
+  color: #a9becb;
+  font-size: 10px;
+  line-height: 1.55;
+}
+
+body[data-dynamic-kind="battery"] .battery-evidence-clock .battery-note {
+  flex-basis: 100%;
+  margin-top: 0;
+}
+
+body[data-dynamic-kind="battery"] .battery-chart-heading {
+  font-size: 11px;
+}
+
+body[data-dynamic-kind="battery"] .battery-chart-heading strong {
+  color: var(--battery-channel);
+}
+
+body[data-dynamic-kind="battery"] .battery-chart svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+body[data-dynamic-kind="battery"] .battery-axis path {
+  fill: none;
+  stroke: #7594a5;
+  stroke-opacity: .31;
+  stroke-width: .65;
+}
+
+body[data-dynamic-kind="battery"] .battery-axis path.battery-zero-line {
+  stroke-opacity: .7;
+}
+
+body[data-dynamic-kind="battery"] .battery-axis text {
+  fill: #b7cbd7;
+  font: 8px ui-monospace, monospace;
+}
+
+body[data-dynamic-kind="battery"] .battery-samples {
+  fill: none;
+  stroke: var(--battery-channel);
+  stroke-width: 1.65;
+  stroke-linecap: round;
+}
+
+body[data-dynamic-kind="battery"] .battery-sample-history {
+  opacity: .35;
+}
+
+body[data-dynamic-kind="battery"] .battery-cursor {
+  stroke: #f0dfa4;
+  stroke-width: 1;
+  stroke-dasharray: 2.5 2;
+}
+
+body[data-dynamic-kind="battery"] .battery-sample-now {
+  fill: var(--battery-channel);
+  stroke: #0d2230;
+  stroke-width: 1;
+}
+
+@media (max-width: 700px) {
+  body[data-dynamic-kind="battery"] #current-insight {
+    grid-column: 1 / -1;
+  }
+
+  body[data-dynamic-kind="battery"] .battery-readings {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  body[data-dynamic-kind="battery"] .battery-reading {
+    padding: 7px 6px;
+  }
+
+  body[data-dynamic-kind="battery"] .battery-chart svg {
+    max-height: 114px;
+  }
+}
+body[data-dynamic-kind="battery"] .earth-view:has(#dynamic-close[aria-pressed="true"]) :is(.globe-coordinate, .north, #rotate) {
+  display: none;
+}
+
+body[data-dynamic-kind="battery"] #observed-keyframes:not([hidden]),
+body[data-dynamic-kind="battery"] .timeline {
+  margin: 0 0 7px;
+}
+
+body[data-dynamic-kind="battery"] #observed-keyframes button {
+  padding: 6px 8px;
+}
+

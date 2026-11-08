@@ -1,0 +1,121 @@
+{
+  "version": "3.0.0",
+  "date": "2026-11-04",
+  "flow": [
+    "同一地球总览与经纬度图层",
+    "切换六过程，地球保留，读数曲线同步",
+    "局部放大继承时间参数，电池电流改动返回地球后一致",
+    "恢复总览播放"
+  ],
+  "checks": [
+    {
+      "theme": "地月潮汐",
+      "checks": [
+        {
+          "parameter": "月地距离",
+          "metricsChanged": true
+        },
+        {
+          "parameter": "轨道倾角",
+          "metricsChanged": true
+        }
+      ],
+      "chartCount": 3,
+      "earthPresent": true
+    },
+    {
+      "theme": "火山",
+      "checks": [
+        {
+          "parameter": "初始驱动强度",
+          "metricsChanged": true
+        },
+        {
+          "parameter": "黏度设定",
+          "metricsChanged": true
+        }
+      ],
+      "chartCount": 3,
+      "earthPresent": true
+    },
+    {
+      "theme": "地震",
+      "checks": [
+        {
+          "parameter": "震级设定",
+          "metricsChanged": true
+        },
+        {
+          "parameter": "震源深度",
+          "metricsChanged": true
+        }
+      ],
+      "chartCount": 3,
+      "earthPresent": true
+    },
+    {
+      "theme": "台风",
+      "checks": [
+        {
+          "parameter": "峰值风速",
+          "metricsChanged": true
+        },
+        {
+          "parameter": "最大风半径",
+          "metricsChanged": true
+        }
+      ],
+      "chartCount": 3,
+      "earthPresent": true
+    },
+    {
+      "theme": "河流污染",
+      "checks": [
+        {
+          "parameter": "平均流速",
+          "metricsChanged": true
+        },
+        {
+          "parameter": "纵向弥散系数",
+          "metricsChanged": true
+        }
+      ],
+      "chartCount": 3,
+      "earthPresent": true
+    },
+    {
+      "theme": "设施电池",
+      "checks": [
+        {
+          "parameter": "放电电流",
+          "metricsChanged": true
+        },
+        {
+          "parameter": "等效散热热导",
+          "metricsChanged": true
+        }
+      ],
+      "chartCount": 3,
+      "earthPresent": true
+    }
+  ],
+  "phone": {
+    "width": 390,
+    "height": 844,
+    "navCount": 7,
+    "overflow": false,
+    "canvasWidth": 342.67
+  },
+  "localSync": {
+    "initialProgress": 0.45,
+    "currentBefore": 4,
+    "currentAfter": 1.5,
+    "metricsMatched": true
+  },
+  "exportDownload": true,
+  "pinNavigation": true,
+  "focusWorks": true,
+  "webglErrors": [],
+  "screenshot": "assets/images/globe-overview-v3.png",
+  "scope": "GPU实际画面、交互与模型关系；非实时监测、专业预测或原视频源码复现。"
+}

@@ -1,0 +1,53 @@
+{
+  "version": "15.0.0",
+  "status": "verified-local",
+  "verifiedAtUtc": "2026-11-05T02:44:10.587398+00:00",
+  "localUrl": "http://127.0.0.1:4175/app/index.html#overview",
+  "publicDeployment": false,
+  "purpose": "Four question-led real-event demonstrations: observed globe playback, matching A/B evidence, comparable differences and traceable sources.",
+  "automated": {
+    "testsPassed": 205,
+    "testsFailed": 0,
+    "projectCheck": "passed including original observations, image/numeric hashes and 36 MiniMax WAV/text hashes",
+    "repositoryCheck": "passed: all 15 projects and generated README index agree"
+  },
+  "browser": {
+    "desktop": [
+      1440,
+      1000
+    ],
+    "mobile": [
+      390,
+      844
+    ],
+    "mobileHorizontalOverflow": false,
+    "checks": [
+      "Tonga auto-play reached 07:50 UTC and automatically opened the real before/after comparison.",
+      "Tonga earth, charts and comparison carried the same 2022-01-15T07:50:00Z observed clock.",
+      "Comparison slider was operated to 100% and 51%; images remain actual same-window/same-mapping frames.",
+      "Tohoku MAJO A=1863 counts and B=38690961 counts; A/B waveform panes share an actual common scale.",
+      "Changing to INCN recomputed both endpoints using INCN; no cross-station subtraction.",
+      "Hinnamnor endpoint wind used the 12:00 UTC 75 kt analysis and separately displayed 13:30 UTC image clock.",
+      "Manual original timeline seek followed by B button returned earth/charts/evidence to the real B endpoint.",
+      "Manual quake seek before A removed old comparison evidence; A button restored the valid starting frame.",
+      "Mangkhut earth/charts/evidence all carried 2018-09-16T05:00:00.000Z at Hong Kong 13:00.",
+      "Mangkhut wind 79.6 to 111.1 km/h, sea level 3.51 to 3.70 m and rain ranges 7-42 vs 2-48 mm shown without a fake scalar rain delta.",
+      "Current-event MiniMax narration retained the demonstration; endpoint comparison followed the same earth and chart clock.",
+      "Earth view can be restored from comparison; original waveform/imagery layer remains active.",
+      "Phone volcano and quake comparison stayed within viewport width.",
+      "No console errors observed in the tested flows."
+    ]
+  },
+  "dataChanges": "No added or replaced observation datasets, image frames or narration audio. Existing data remain independently checked.",
+  "displayBoundaries": [
+    "Two-dimensional comparison is a view of actual brightness-temperature derived images, not another Earth renderer or independent video.",
+    "Quake counts are same-station instrument readings, not displacement or an interpolated propagation field.",
+    "Rain ranges are not reduced to midpoints or single-station increments.",
+    "Sea-level difference is relative to the same station zero and is not isolated storm surge."
+  ],
+  "screenshots": [
+    "assets/images/demo-volcano-v15.png",
+    "assets/images/demo-mobile-v15.png",
+    "assets/images/demo-quake-v15.png"
+  ]
+}
