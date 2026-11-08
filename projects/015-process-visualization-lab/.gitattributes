@@ -1,0 +1,3 @@
+# These manifests are referenced by byte-level provenance hashes.
+app/data/volcano-dynamic.json -text
+app/data/storm-dynamic.json -text
