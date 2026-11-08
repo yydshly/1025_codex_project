@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "frames": 48,
+  "numericHashesChecked": 48,
+  "lines": 2923,
+  "points": 30580,
+  "checks": [
+    "independent file re-read SHA256/dimensions",
+    "exact source frame times and scan bounds",
+    "anchor is an actual qualifying numeric pixel inside the declared region",
+    "line vertex bounds,300km clipping and minimum3 vertices",
+    "deltas exactly equal adjacent original series values; source gaps explicitly retained"
+  ],
+  "limitation": "轮廓是格网近似，不保证保留全部细小阈值区域；无灰云分类、云高反演、跨帧目标匹配或云移速。",
+  "bytes": 1080987,
+  "sha256": "07784e808f463fd0ea23fd02a6c727ef7a6b317e258092c39e90224cdf7d2e24",
+  "processorSHA256": "eaaaad4420bf9f01a3d5542bc97a9c0e4a39dee5874065bc219ef90fcd735c28",
+  "events": {
+    "volcano": {
+      "frames": 25,
+      "gridMaximumCellDiagonalKm": 23.09140759236648
+    },
+    "storm": {
+      "frames": 23,
+      "gridMaximumCellDiagonalKm": 33.17046541498518
+    }
+  }
+}

@@ -1,0 +1,32 @@
+/* Comparison and guided interpretation belong only to the historical case. */
+#guide-toggle{margin-left:auto;flex-shrink:0;min-height:38px;padding:10px 16px;border:1px solid #e7c58d;border-radius:4px;background:#e7c58d;color:#17222b;font-size:12px;font-weight:600}
+#guide-toggle:disabled{opacity:.6;cursor:wait}
+#mode-description{flex:1}.guide-progress{display:block;color:#f2d4a0;font-size:10px;margin-top:6px}
+.comparison-times{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:5px 0 12px;font-size:10px;line-height:1.7}
+.comparison-times>div{padding:8px;border:1px solid #91b9cb2b;border-radius:4px;background:#081421}
+.comparison-a{color:#7ce1f0}.comparison-b{color:#ffd192}
+.comparison-table{width:100%;border-collapse:collapse;font-size:11px;font-variant-numeric:tabular-nums}
+.comparison-table th,.comparison-table td{padding:9px 3px;text-align:right;border-bottom:1px solid #8baec422;font-weight:400}
+.comparison-table th:first-child,.comparison-table td:first-child{text-align:left}
+.comparison-table thead{font-size:10px;color:#99b0bf}.comparison-table small{display:block;font-size:8px;line-height:1.5;color:#89a5b7}
+.comparison-actions{display:flex;gap:6px;margin-top:12px}.comparison-actions button{flex:1;padding:8px 4px;border:1px solid #88b5c540;border-radius:4px;background:#152a37;font-size:10px;color:#c7e5ee;line-height:1.5}
+.comparison-method-note,.comparison-order-note{margin:10px 0 0;font-size:9px;line-height:1.8;color:#95aebe}
+.comparison-order-note{color:#d6bd91}
+body[data-mode=archive] #explanation{color:#d5e2e8;font-size:12px;line-height:1.9}
+#open-conclusion{width:100%;padding:11px 9px;border:1px solid #e7c58d66;border-radius:4px;background:#322b20;color:#f0d5a9;font-size:11px;margin:5px 0 10px;text-align:left}
+#comparison-dialog{height:fit-content;width:min(750px,92vw);max-height:88dvh;padding:0;border:1px solid #9a927877;border-radius:8px;background:#0a1522;color:#c4d7e2;overflow:auto}
+#comparison-dialog .dialog-head{position:sticky;top:0;padding:22px;background:#0f2030;gap:18px;z-index:1}
+#comparison-dialog h2{font-size:20px;line-height:1.5;margin-top:8px}
+#close-comparison{flex-shrink:0;padding:9px;border:1px solid #8eabb544;border-radius:4px}
+.comparison-report-body{padding:22px}.comparison-report-body p,.comparison-report-body li{font-size:12px;line-height:2}
+.comparison-report-body ul{padding-left:19px}.comparison-report-body h3{font-size:12px;margin:24px 0 8px;color:#e8ce9e}
+.comparison-report-body .report-limits{padding:12px 18px;background:#09111b;border-left:2px solid #b4a17e}
+.comparison-report-body a{color:#94dce6;font-size:11px}.comparison-report-body .report-method{font-size:10px;color:#8ca5b7}
+.report-actions{display:flex;flex-wrap:wrap;gap:9px;padding:0 22px 22px}.report-actions button{padding:11px 15px;background:#e7c58d;border:1px solid #e7c58d;border-radius:4px;color:#17222b;font-size:12px}
+.report-actions button+button{background:transparent;color:#dfc596}.report-actions #copy-result{flex-basis:100%;font-size:11px;color:#a8c3ce;line-height:1.7}
+@media(max-width:1200px){#guide-toggle{font-size:10px;padding:10px}.archive-switch{gap:9px}.comparison-table{font-size:10px}}
+@media(max-width:700px){#guide-toggle{width:100%;margin:0;font-size:12px}.comparison-table{font-size:13px}.comparison-table th,.comparison-table td{padding:12px 3px}.comparison-method-note{font-size:11px}.comparison-times{font-size:12px}.comparison-actions button{min-height:40px;font-size:12px}#comparison-dialog .dialog-head{padding:16px}#comparison-dialog h2{font-size:17px}.comparison-report-body{padding:16px}.report-actions{padding:0 16px 16px}}
+
+.comparison-times{grid-template-columns:1fr;gap:6px}.comparison-time{display:flex;gap:9px;align-items:baseline}.comparison-mark{font-weight:700}.comparison-table-wrap{min-width:0}.comparison-metric{max-width:87px}.comparison-table .comparison-value{white-space:nowrap}.comparison-table .comparison-definition{line-height:1.7}.comparison-report-body details{margin:16px 0;font-size:11px}.comparison-report-body summary{cursor:pointer;color:#b6d2dd;padding:9px 0}
+
+#open-real-motion{min-height:38px;flex-shrink:0;padding:9px 12px;border:1px solid #7fc5d481;border-radius:4px;background:#132b39;color:#c3e9ed;font-size:11px}#guide-toggle{margin-left:0}@media(max-width:700px){#open-real-motion{width:100%;font-size:12px}}

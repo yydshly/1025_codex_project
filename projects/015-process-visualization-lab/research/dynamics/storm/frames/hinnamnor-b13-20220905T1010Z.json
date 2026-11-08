@@ -1,0 +1,218 @@
+{
+  "frame": {
+    "timeUtc": "2022-09-05T10:10:00Z",
+    "url": "assets/events/storm-dynamic/hinnamnor-b13-20220905T1010Z.png",
+    "width": 1024,
+    "height": 768,
+    "scanStartUtc": "2022-09-05T10:10:54.762Z",
+    "scanEndUtc": "2022-09-05T10:12:38.721Z",
+    "sha256": "b448c63ac91189622d341a3bac3bcd4c6bbadd1bd23a9f124cf8bcb78d5e136a",
+    "stats": {
+      "minK": 190.58719811883594,
+      "maxK": 300.8369122962583,
+      "meanK": 270.30604750282083,
+      "p10K": 230.13355923440696,
+      "p50K": 282.3830243901924,
+      "below235KAreaKm2": 854848.4947167158,
+      "validPixels": 786432,
+      "missingPixels": 0
+    },
+    "sourceUrls": [
+      "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/09/05/1010/HS_H08_20220905_1010_B13_FLDK_R20_S0210.DAT.bz2",
+      "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/09/05/1010/HS_H08_20220905_1010_B13_FLDK_R20_S0310.DAT.bz2"
+    ],
+    "numericData": {
+      "researchFile": "research/dynamics/storm/frames/hinnamnor-b13-20220905T1010Z-bt-centikelvin.png",
+      "sha256": "75ba82c71530a8d594ecbcd542adaf1c5b5f3a6ff756e8f7d1eea41ae9005790",
+      "encoding": "PNG uint16",
+      "scale": 0.01,
+      "unit": "K",
+      "nodata": 0
+    }
+  },
+  "sourceSegments": [
+    {
+      "satellite": "Himawari-8",
+      "formatVersion": "1.3",
+      "nativeColumns": 5500,
+      "nativeLines": 550,
+      "segment": 2,
+      "totalSegments": 10,
+      "firstLine1Based": 551,
+      "scanStartUtc": "2022-09-05T10:10:54.762Z",
+      "scanEndUtc": "2022-09-05T10:11:41.447Z",
+      "createdAtUtc": "2022-09-05T10:17:26.000Z",
+      "qualityFlags": [
+        0,
+        0,
+        77,
+        1
+      ],
+      "errorLineCount": 0,
+      "navigationCorrection": {
+        "rotationMicroradians": 0.0,
+        "allShiftsZero": true,
+        "recordCount": 2
+      },
+      "projection": {
+        "name": "normalized geostationary",
+        "subLongitude": 140.7,
+        "CFAC": 20466275,
+        "LFAC": 20466275,
+        "COFF": 2750.5,
+        "LOFF": 2750.5,
+        "satelliteDistanceFromEarthCenterKm": 42164.0,
+        "equatorialRadiusKm": 6378.137,
+        "polarRadiusKm": 6356.7523
+      },
+      "calibration": {
+        "band": 13,
+        "wavelengthMicrometers": 10.4073,
+        "validBits": 12,
+        "invalidCountValues": [
+          65535,
+          65534
+        ],
+        "gain": -0.003752547757067497,
+        "offset": 15.197821038469975,
+        "c0": -0.116127314573644,
+        "c1": 1.00099153832169,
+        "c2": -1.76961091570947e-06,
+        "speedOfLight": 299792458.0,
+        "planckConstant": 6.62606957e-34,
+        "boltzmannConstant": 1.3806488e-23
+      },
+      "lineTimes": [
+        {
+          "line": 551,
+          "timeUtc": "2022-09-05T10:10:54.762Z"
+        },
+        {
+          "line": 684,
+          "timeUtc": "2022-09-05T10:11:19.941Z"
+        },
+        {
+          "line": 927,
+          "timeUtc": "2022-09-05T10:11:41.447Z"
+        },
+        {
+          "line": 1100,
+          "timeUtc": "2022-09-05T10:11:41.447Z"
+        }
+      ],
+      "rawFile": "raw/HS_H08_20220905_1010_B13_FLDK_R20_S0210.DAT.bz2",
+      "rawBytes": 2146077,
+      "rawSHA256": "2ef7235cdb2663c079c37e69f381fbbc69de367b74eca2290f11a672d2d18535",
+      "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/09/05/1010/HS_H08_20220905_1010_B13_FLDK_R20_S0210.DAT.bz2"
+    },
+    {
+      "satellite": "Himawari-8",
+      "formatVersion": "1.3",
+      "nativeColumns": 5500,
+      "nativeLines": 550,
+      "segment": 3,
+      "totalSegments": 10,
+      "firstLine1Based": 1101,
+      "scanStartUtc": "2022-09-05T10:11:41.447Z",
+      "scanEndUtc": "2022-09-05T10:12:38.721Z",
+      "createdAtUtc": "2022-09-05T10:17:27.000Z",
+      "qualityFlags": [
+        0,
+        0,
+        77,
+        1
+      ],
+      "errorLineCount": 0,
+      "navigationCorrection": {
+        "rotationMicroradians": 0.0,
+        "allShiftsZero": true,
+        "recordCount": 2
+      },
+      "projection": {
+        "name": "normalized geostationary",
+        "subLongitude": 140.7,
+        "CFAC": 20466275,
+        "LFAC": 20466275,
+        "COFF": 2750.5,
+        "LOFF": 2750.5,
+        "satelliteDistanceFromEarthCenterKm": 42164.0,
+        "equatorialRadiusKm": 6378.137,
+        "polarRadiusKm": 6356.7523
+      },
+      "calibration": {
+        "band": 13,
+        "wavelengthMicrometers": 10.4073,
+        "validBits": 12,
+        "invalidCountValues": [
+          65535,
+          65534
+        ],
+        "gain": -0.003752547757067497,
+        "offset": 15.197821038469975,
+        "c0": -0.116127314573644,
+        "c1": 1.00099153832169,
+        "c2": -1.76961091570947e-06,
+        "speedOfLight": 299792458.0,
+        "planckConstant": 6.62606957e-34,
+        "boltzmannConstant": 1.3806488e-23
+      },
+      "lineTimes": [
+        {
+          "line": 1101,
+          "timeUtc": "2022-09-05T10:11:41.447Z"
+        },
+        {
+          "line": 1170,
+          "timeUtc": "2022-09-05T10:12:08.621Z"
+        },
+        {
+          "line": 1413,
+          "timeUtc": "2022-09-05T10:12:38.721Z"
+        },
+        {
+          "line": 1650,
+          "timeUtc": "2022-09-05T10:12:38.721Z"
+        }
+      ],
+      "rawFile": "raw/HS_H08_20220905_1010_B13_FLDK_R20_S0310.DAT.bz2",
+      "rawBytes": 2765365,
+      "rawSHA256": "038c7fecaac9ea92ab12a607a279e90992d098ac710d7257bafb78f63fb96ac2",
+      "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/09/05/1010/HS_H08_20220905_1010_B13_FLDK_R20_S0310.DAT.bz2"
+    }
+  ],
+  "coordinateChecks": [
+    {
+      "lon": 112,
+      "lat": 22,
+      "roundTripMaxErrorDegrees": 8.526512829121202e-14
+    },
+    {
+      "lon": 112,
+      "lat": 43,
+      "roundTripMaxErrorDegrees": 2.2737367544323206e-13
+    },
+    {
+      "lon": 140,
+      "lat": 22,
+      "roundTripMaxErrorDegrees": 1.3855583347321954e-13
+    },
+    {
+      "lon": 140,
+      "lat": 43,
+      "roundTripMaxErrorDegrees": 1.9895196601282805e-13
+    },
+    {
+      "lon": 125.8,
+      "lat": 32.3,
+      "roundTripMaxErrorDegrees": 1.2079226507921703e-13
+    }
+  ],
+  "bbox": [
+    112,
+    22,
+    140,
+    43
+  ],
+  "projection": "EPSG:4326",
+  "pixelConvention": "outer edges; pixel centers at half-cell offsets; rows north to south"
+}

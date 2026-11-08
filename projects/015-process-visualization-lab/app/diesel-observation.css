@@ -1,0 +1,241 @@
+body[data-dynamic-kind="engine"] :is(.diesel-evidence, .diesel-clock, .diesel-chart) {
+  min-width: 0;
+  color: #e8f3f7;
+  font-variant-numeric: tabular-nums;
+}
+
+body[data-dynamic-kind="engine"] .diesel-rpm { --diesel-channel: #72d9f1; }
+body[data-dynamic-kind="engine"] .diesel-torque { --diesel-channel: #ffc074; }
+body[data-dynamic-kind="engine"] .diesel-railPressure { --diesel-channel: #f3a4ce; }
+
+body[data-dynamic-kind="engine"] :is(.diesel-evidence-head, .diesel-chart-head, .diesel-clock, .diesel-reading-head) {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3px 8px;
+}
+
+body[data-dynamic-kind="engine"] :is(.diesel-evidence-head, .diesel-chart-head, .diesel-clock) span,
+body[data-dynamic-kind="engine"] .diesel-reading-head span:last-child,
+body[data-dynamic-kind="engine"] .diesel-local-range {
+  color: #b7cbd7;
+  font-size: 10px;
+}
+
+body[data-dynamic-kind="engine"] .diesel-local-range {
+  margin-bottom: 5px;
+}
+
+body[data-dynamic-kind="engine"] .diesel-clock strong {
+  margin-left: 6px;
+  color: #f6dfa4;
+  font: 600 13px ui-monospace, monospace;
+}
+
+body[data-dynamic-kind="engine"] .diesel-readings {
+  display: grid;
+  gap: 7px;
+}
+
+body[data-dynamic-kind="engine"] .diesel-reading {
+  min-width: 0;
+  display: grid;
+  gap: 4px;
+  padding: 7px 9px;
+  border: 1px solid #46616f66;
+  border-left: 2px solid var(--diesel-channel);
+  border-radius: 5px;
+  background: #10222e;
+  font-size: 11px;
+}
+
+body[data-dynamic-kind="engine"] .diesel-reading strong {
+  color: var(--diesel-channel);
+  font: 600 clamp(15px, 1.65vw, 22px)/1.1 ui-monospace, monospace;
+  overflow-wrap: anywhere;
+}
+
+body[data-dynamic-kind="engine"] .diesel-reading small {
+  color: #b7cbd7;
+  white-space: nowrap;
+}
+
+body[data-dynamic-kind="engine"] .diesel-reading svg {
+  display: block;
+  width: 100%;
+  height: 25px;
+  overflow: visible;
+}
+
+body[data-dynamic-kind="engine"] .diesel-local-midline {
+  stroke: #7995a5;
+  stroke-opacity: .25;
+  stroke-width: .6;
+  vector-effect: non-scaling-stroke;
+}
+
+body[data-dynamic-kind="engine"] .diesel-local-trace {
+  fill: none;
+  stroke: var(--diesel-channel);
+  stroke-width: 1.15;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
+
+body[data-dynamic-kind="engine"] .diesel-note {
+  margin: 7px 0 0;
+  color: #b7cbd7;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+body[data-dynamic-kind="engine"] .diesel-chart-head strong {
+  color: var(--diesel-channel);
+  font-size: 11px;
+}
+
+body[data-dynamic-kind="engine"] .diesel-chart svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+body[data-dynamic-kind="engine"] .diesel-grid path {
+  fill: none;
+  stroke: #7995a5;
+  stroke-opacity: .35;
+  stroke-width: .6;
+}
+
+body[data-dynamic-kind="engine"] .diesel-grid text {
+  fill: #b7cbd7;
+  font: 8px ui-monospace, monospace;
+}
+
+body[data-dynamic-kind="engine"] .diesel-range {
+  fill: none;
+  stroke: var(--diesel-channel);
+  stroke-width: 1.15;
+  stroke-linecap: round;
+}
+
+body[data-dynamic-kind="engine"] .diesel-range-full {
+  opacity: .32;
+}
+
+body[data-dynamic-kind="engine"] .diesel-cursor {
+  stroke: #f6dfa4;
+  stroke-width: 1;
+  stroke-dasharray: 2.5 2;
+}
+
+body[data-dynamic-kind="engine"] .diesel-dot {
+  fill: var(--diesel-channel);
+  stroke: #0d2230;
+  stroke-width: 1;
+}
+
+body[data-dynamic-kind="engine"] .demo-catalog-section,
+body[data-dynamic-kind="engine"] #earth-view:has(.diesel-engine-overlay:not([hidden])) :is(.north, .globe-coordinate) {
+  display: none;
+}
+
+/* The observations occupy a separate row above the schematic. */
+.diesel-change-strip:not([hidden]) {
+  position: absolute;
+  inset: 47px 12px auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 6px;
+  max-width: 545px;
+  margin-inline: auto;
+  z-index: 1;
+}
+
+.diesel-change-strip::before {
+  content: "原档变化";
+  position: absolute;
+  right: 0;
+  bottom: calc(100% + 9px);
+  padding: 3px 7px;
+  border: 1px solid #476478;
+  border-radius: 4px;
+  background: #10232f;
+  color: #bcdae8;
+  font-size: 10px;
+}
+
+.diesel-change[data-channel="torque"] { --change-color: #ffc074; }
+.diesel-change[data-channel="railPressure"] { --change-color: #f3a4ce; }
+.diesel-change[data-channel="rpm"] { --change-color: #72d9f1; }
+
+.diesel-change-strip .diesel-change {
+  position: relative;
+  display: grid;
+  min-width: 0;
+  gap: 2px;
+  padding: 5px 8px 5px 9px;
+  border: 1px solid #506b7a88;
+  border-left: 2px solid #506b7a;
+  border-radius: 5px;
+  background: #0d1c29f2;
+  color: #c8d9e2;
+  pointer-events: auto;
+  text-align: left;
+  white-space: normal;
+  font-size: 11px;
+  line-height: 1.2;
+  font-variant-numeric: tabular-nums;
+}
+
+.diesel-change[data-state="passed"] { border-left-color: var(--change-color); }
+.diesel-change-strip .diesel-change:is(:hover, :focus-visible, [data-state="active"]) {
+  border-color: var(--change-color);
+  background: color-mix(in srgb, var(--change-color) 12%, #0d1c29);
+}
+
+.diesel-change[data-state="active"] strong,
+.diesel-change[data-state="active"] .diesel-change-time {
+  color: var(--change-color);
+}
+
+.diesel-change-time {
+  color: #abc4d2;
+  font-size: 10px;
+}
+
+.diesel-change-values { color: #e5f1f6; }
+
+.diesel-engine-overlay:has(.diesel-change-strip:not([hidden]) .diesel-change[data-state="active"][data-channel="torque"]) .diesel-observed-torque,
+.diesel-engine-overlay:has(.diesel-change-strip:not([hidden]) .diesel-change[data-state="active"][data-channel="railPressure"]) .diesel-observed-railPressure,
+.diesel-engine-overlay:has(.diesel-change-strip:not([hidden]) .diesel-change[data-state="active"][data-channel="rpm"]) .diesel-observed-rpm {
+  box-shadow: 0 0 0 1px var(--active), 0 0 15px #f4d59738;
+}
+
+@media (max-width: 500px) {
+  .diesel-change-strip:not([hidden]) { inset-inline: 8px; gap: 4px; }
+  .diesel-change-strip .diesel-change { padding-inline: 4px; font-size: 10px; }
+  .diesel-change-time { font-size: 9px; }
+}
+
+@media (min-width: 701px) and (max-height: 1050px) {
+  body[data-dynamic-kind="engine"] #earth-view {
+    height: clamp(400px, 53vh, 550px);
+  }
+}
+
+@media (max-width: 700px) {
+  body[data-dynamic-kind="engine"] #current-insight {
+    grid-column: 1 / -1;
+  }
+
+  body[data-dynamic-kind="engine"] .diesel-readings {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  body[data-dynamic-kind="engine"] .diesel-reading {
+    padding: 6px;
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "archiveUrl": "https://phm-datasets.s3.amazonaws.com/NASA/5.+Battery+Data+Set.zip",
+  "archiveBytes": 209708670,
+  "archiveEtag": "\"d97c40652800c2cce87ad16b0ff15dff-13\"",
+  "rangeStatus": 206,
+  "ranges": [
+    [
+      209708648,
+      209708669
+    ],
+    [
+      209708628,
+      209708647
+    ],
+    [
+      209707738,
+      209708647
+    ],
+    [
+      50,
+      79
+    ],
+    [
+      80,
+      128
+    ],
+    [
+      129,
+      16777344
+    ],
+    [
+      16777345,
+      16781540
+    ],
+    [
+      16781541,
+      33558756
+    ],
+    [
+      33558757,
+      33562852
+    ],
+    [
+      33562853,
+      50340057
+    ],
+    [
+      50340058,
+      50344252
+    ],
+    [
+      50344253,
+      56531429
+    ]
+  ],
+  "member": "5. Battery Data Set/1. BatteryAgingARC-FY08Q4.zip",
+  "memberCrc32": "d0f56049",
+  "memberSha256": "f3a4fcd7c3434e06906f4222778445ce6ad42f49c5c78a785bdd676b7c223a2e",
+  "matFile": "B0005.mat",
+  "matCrc32": "7c2227d0",
+  "matSha256": "0eae4585baf3f200c09fe24c5ab884f1889679fc75206ca1aa19da704104f0b0",
+  "matBytes": 15956874,
+  "retrievedAtUtc": "2026-11-05T06:42:36.136632Z"
+}

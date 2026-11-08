@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 2,
+  "kind": "synchronized-observed-process",
+  "eventId": "hinnamnor-2022-0905",
+  "title": "轩岚诺：北上过程中的云系与强度",
+  "snapshot": {
+    "eventId": "hinnamnor-2022-0905",
+    "timeUtc": "2022-09-05T13:30:00Z",
+    "frame": {
+      "timeUtc": "2022-09-05T13:30:00Z",
+      "url": "assets/events/storm-dynamic/hinnamnor-b13-20220905T1330Z.png",
+      "width": 1024,
+      "height": 768,
+      "scanStartUtc": "2022-09-05T13:30:54.549Z",
+      "scanEndUtc": "2022-09-05T13:32:38.510Z",
+      "sha256": "e71c2d2a2ed5cdacb71c82f6bb7067fe1f6e70fe0f6cf6ff9cc52d86dee1d19f",
+      "stats": {
+        "minK": 191.29390810823415,
+        "maxK": 298.5154888021566,
+        "meanK": 270.33579150095443,
+        "p10K": 231.13820625145067,
+        "p50K": 280.433660041007,
+        "below235KAreaKm2": 756956.2349909449,
+        "validPixels": 786432,
+        "missingPixels": 0
+      },
+      "sourceUrls": [
+        "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/09/05/1330/HS_H08_20220905_1330_B13_FLDK_R20_S0210.DAT.bz2",
+        "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/09/05/1330/HS_H08_20220905_1330_B13_FLDK_R20_S0310.DAT.bz2"
+      ],
+      "numericData": {
+        "researchFile": "research/dynamics/storm/frames/hinnamnor-b13-20220905T1330Z-bt-centikelvin.png",
+        "sha256": "1c1692d1952ce3d2b980504d930a14493fef53555c0b00081af553512b9a2e9b",
+        "encoding": "PNG uint16",
+        "scale": 0.01,
+        "unit": "K",
+        "nodata": 0
+      }
+    },
+    "metrics": [
+      {
+        "id": "p10K",
+        "label": "窗口亮温第10百分位",
+        "unit": "K",
+        "method": "固定经纬窗口内有效像元亮温的第10百分位，按栅格像元计数；不是云高或风速。",
+        "sample": {
+          "timeUtc": "2022-09-05T13:30:00Z",
+          "value": 231.13820625145067
+        }
+      },
+      {
+        "id": "below235KAreaKm2",
+        "label": "≤235 K 像元投影面积",
+        "unit": "km²",
+        "method": "在固定窗口逐像元判断亮温≤235 K，按球面经纬网面积求和（半径6371.0088 km）；包含窗口内其他天气系统，不是云掩膜、风暴范围或降雨面积。",
+        "sample": {
+          "timeUtc": "2022-09-05T13:30:00Z",
+          "value": 756956.2349909449
+        }
+      },
+      {
+        "id": "windKt",
+        "label": "最大持续风速 · 10分钟平均",
+        "unit": "kt",
+        "method": "JMA RSMC Tokyo 原始三小时事后最佳路径分析；仅原始记录，无中间数值插值。当前值只可引用所选时刻之前最近的分析，并同时显示分析时刻。",
+        "sample": {
+          "timeUtc": "2022-09-05T12:00:00Z",
+          "value": 75
+        }
+      },
+      {
+        "id": "pressureHpa",
+        "label": "中心气压 · 事后分析",
+        "unit": "hPa",
+        "method": "JMA RSMC Tokyo 原始三小时事后最佳路径分析；仅原始记录，无中间数值插值。当前值只可引用所选时刻之前最近的分析，并同时显示分析时刻。",
+        "sample": {
+          "timeUtc": "2022-09-05T12:00:00Z",
+          "value": 955
+        }
+      }
+    ],
+    "stations": [],
+    "track": {
+      "timeUtc": "2022-09-05T12:00:00Z",
+      "lat": 32.3,
+      "lon": 126.6,
+      "pressureHpa": 955,
+      "windKt": 75,
+      "grade": 5,
+      "sourceLine": 53
+    }
+  },
+  "station": null,
+  "presentation": "fusion",
+  "relief": true,
+  "unitNotes": [
+    "红外亮温不是自然色、风速、降雨量、火山灰浓度或精确云高；显示色标截断于180–310 K，数值资料保留范围外温度。",
+    "主要按半小时选取真实扫描。官方10:00缺档，另选原始09:50和10:10，实际间隔20–30分钟；没有生成、旋转、形变或插值云图。每组两段扫描历时约两分钟。",
+    "JMA风速是最大持续风速的10分钟平均，气压和中心位置为事后最佳路径分析，不能称为每个云图时刻的直接实测。",
+    "固定窗口内的亮温统计包含其他天气系统，不是对轩岚诺云体的识别，也不是灾害影响范围；没有据此估计降雨或损失。",
+    "经纬网采用空间最近邻采样；云视差、仪器定位误差未经校正。导航往返检验验证数值实现，不等同于绝对地理精度。"
+  ],
+  "sources": [
+    {
+      "name": "JMA / NOAA 葵花八号开放数据",
+      "url": "https://registry.opendata.aws/noaa-himawari/"
+    },
+    {
+      "name": "NOAA 2022-09-05 原始HSD对象目录",
+      "url": "https://noaa-himawari8.s3.amazonaws.com/?list-type=2&prefix=AHI-L1b-FLDK/2022/09/05/"
+    },
+    {
+      "name": "JMA HSD v1.3 格式与标定指南",
+      "url": "https://www.data.jma.go.jp/mscweb/en/himawari89/space_segment/hsd_sample/HS_D_users_guide_en_v13.pdf"
+    },
+    {
+      "name": "JMA RSMC Tokyo 最佳路径档案",
+      "url": "https://www.jma.go.jp/jma/jma-eng/jma-center/rsmc-hp-pub-eg/besttrack.html"
+    },
+    {
+      "name": "JMA 最佳路径字段说明",
+      "url": "https://www.jma.go.jp/jma/jma-eng/jma-center/rsmc-hp-pub-eg/Besttracks/e_format_bst.html"
+    },
+    {
+      "name": "JMA 最大持续风速定义",
+      "url": "https://www.jma.go.jp/jma/jma-eng/jma-center/rsmc-hp-pub-eg/advisory.html"
+    }
+  ],
+  "display": {
+    "loading": false,
+    "displayReady": true,
+    "displayFailed": false,
+    "status": "displayed",
+    "requestedTimeUtc": "2022-09-05T13:30:00Z",
+    "committedTimeUtc": "2022-09-05T13:30:00Z",
+    "renderedTimeUtc": "2022-09-05T13:30:00Z",
+    "message": "逐张真实扫描 · 无形变补帧"
+  },
+  "renderingMethods": {
+    "clouds": {
+      "version": 1,
+      "source": "app/sync-cloud-layer.js",
+      "appliedToVisibleObservation": true,
+      "brightnessTemperatureMap": {
+        "coldK": 180,
+        "warmK": 310,
+        "coldGray8": 255,
+        "warmGray8": 0
+      },
+      "fusion": {
+        "enabled": true,
+        "warmFadeK": 285,
+        "opaqueK": 240,
+        "coldAlpha": 0.94,
+        "edgeFeatherDegrees": 3
+      },
+      "relief": {
+        "enabled": true,
+        "method": "same-frame texture-gradient lighting; not measured cloud height"
+      },
+      "spatialFocus": null
+    },
+    "visibleObservationTimeUtc": "2022-09-05T13:30:00Z",
+    "annotations": {
+      "enabled": true,
+      "timeUtc": "2022-09-05T13:30:00Z",
+      "displayedPinIds": [
+        "jma-current",
+        "jma-previous",
+        "storm-cold-pixel"
+      ],
+      "referenceContours": {
+        "status": "available",
+        "displayed": true,
+        "lineCount": 131,
+        "manifest": {
+          "schemaVersion": 1,
+          "derivedAtUtc": "2026-11-05T02:55:39.411991Z",
+          "method": "current-frame threshold-grid outlines and actual numeric anchors; no temporal interpolation or feature tracking"
+        },
+        "eventId": "hinnamnor-2022-0905",
+        "sourceManifest": {
+          "path": "app/data/storm-dynamic.json",
+          "sha256": "2f3f0f5b4b1ab3cc9110c5cb3adbc7817b88e519d0f4fd49156d3b9a45219f4c"
+        },
+        "timeUtc": "2022-09-05T13:30:00Z",
+        "sourceNumeric": {
+          "path": "research/dynamics/storm/frames/hinnamnor-b13-20220905T1330Z-bt-centikelvin.png",
+          "sha256": "1c1692d1952ce3d2b980504d930a14493fef53555c0b00081af553512b9a2e9b",
+          "width": 1024,
+          "height": 768,
+          "scale": 0.01,
+          "unit": "K",
+          "nodata": 0
+        },
+        "threshold": {
+          "operator": "<=",
+          "kelvin": 235,
+          "meaning": "brightness-temperature display selection; not a cloud or ash mask"
+        },
+        "grid": {
+          "stepSourcePixels": 8,
+          "maximumCellDiagonalKm": 33.17046541498518,
+          "simplification": "remove collinear boundary vertices only",
+          "errorMeaning": "格网分辨率量级，不是实地定位精度或全轮廓误差上界；细小/狭长阈值区可能漏绘，源云视差未校正。"
+        },
+        "meaning": "Current-frame coarse brightness-temperature threshold references, not measured cloud height, ash concentration or tracked motion."
+      }
+    }
+  }
+}

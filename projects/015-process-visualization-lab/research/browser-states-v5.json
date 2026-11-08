@@ -1,0 +1,98 @@
+[
+  {
+    "canvasVisible": true,
+    "id": "orbital",
+    "loading": false,
+    "overflow": false,
+    "params": {
+      "distance": 1,
+      "inclination": 5
+    },
+    "progress": 0.21,
+    "values": [
+      37.58555262998804,
+      384400,
+      0.6367086102446281
+    ]
+  },
+  {
+    "canvasVisible": true,
+    "id": "volcano",
+    "loading": false,
+    "overflow": false,
+    "params": {
+      "pressure": 0.9,
+      "viscosity": 0.45
+    },
+    "progress": 0.72,
+    "values": [
+      0.31756,
+      100,
+      64.33874999999999
+    ]
+  },
+  {
+    "canvasVisible": true,
+    "id": "quake",
+    "loading": false,
+    "overflow": false,
+    "params": {
+      "depth": 24,
+      "magnitude": 6.2
+    },
+    "progress": 0.48,
+    "values": [
+      171.1252173117685,
+      97.90117466098144,
+      1.9952623149688808
+    ]
+  },
+  {
+    "canvasVisible": true,
+    "id": "typhoon",
+    "loading": false,
+    "overflow": false,
+    "params": {
+      "radius": 100,
+      "wind": 46
+    },
+    "progress": 0.5,
+    "values": [
+      46,
+      985.666,
+      34.82850177163755
+    ]
+  },
+  {
+    "canvasVisible": true,
+    "id": "river",
+    "loading": false,
+    "overflow": false,
+    "params": {
+      "diffusion": 25,
+      "flow": 0.8
+    },
+    "progress": 0.46,
+    "values": [
+      983.2,
+      0.08438016664169311,
+      99.99766525352112
+    ]
+  },
+  {
+    "canvasVisible": true,
+    "id": "battery",
+    "loading": false,
+    "overflow": false,
+    "params": {
+      "cooling": 0.2,
+      "current": 2.4
+    },
+    "progress": 0.32,
+    "values": [
+      75.8,
+      3.7176,
+      26.75811844399639
+    ]
+  }
+]

@@ -1,0 +1,97 @@
+{
+  "retrievedAtUtc": "2026-11-04T14:43:01.184Z",
+  "startUtc": "2011-03-11T05:45:00Z",
+  "endUtc": "2011-03-11T06:05:00Z",
+  "results": [
+    {
+      "file": "raw/IU.INCN.00.BHZ.geocsv",
+      "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&loc=00&cha=BHZ&starttime=2011-03-11T05%3A45%3A00&endtime=2011-03-11T06%3A05%3A00&sta=INCN&format=geocsv",
+      "finalUrl": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&loc=00&cha=BHZ&starttime=2011-03-11T05%3A45%3A00&endtime=2011-03-11T06%3A05%3A00&sta=INCN&format=geocsv",
+      "status": 200,
+      "bytes": 924773,
+      "sha256": "d1832e666c9b4d11250d0ace68902d297b9567c7f5a8b11c5411687b28bc6948",
+      "contentType": "text/csv; charset=utf-8",
+      "retrievedAtUtc": "2026-11-04T14:42:57.258Z"
+    },
+    {
+      "file": "raw/IU.YSS.00.BHZ.geocsv",
+      "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&loc=00&cha=BHZ&starttime=2011-03-11T05%3A45%3A00&endtime=2011-03-11T06%3A05%3A00&sta=YSS&format=geocsv",
+      "finalUrl": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&loc=00&cha=BHZ&starttime=2011-03-11T05%3A45%3A00&endtime=2011-03-11T06%3A05%3A00&sta=YSS&format=geocsv",
+      "status": 200,
+      "bytes": 874223,
+      "sha256": "39f40dc436b7ae2a2600c9568de96d2d92887cde5649cc6a4f7b55c5ecdefea6",
+      "contentType": "text/csv; charset=utf-8",
+      "retrievedAtUtc": "2026-11-04T14:42:58.307Z"
+    },
+    {
+      "file": "raw/IU.TATO.00.BHZ.geocsv",
+      "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&loc=00&cha=BHZ&starttime=2011-03-11T05%3A45%3A00&endtime=2011-03-11T06%3A05%3A00&sta=TATO&format=geocsv",
+      "finalUrl": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&loc=00&cha=BHZ&starttime=2011-03-11T05%3A45%3A00&endtime=2011-03-11T06%3A05%3A00&sta=TATO&format=geocsv",
+      "status": 200,
+      "bytes": 909527,
+      "sha256": "f2dec56d67ff56c307eb63dfd0621a5a3b5e5e1c119a8537ca98991d5361acc8",
+      "contentType": "text/csv; charset=utf-8",
+      "retrievedAtUtc": "2026-11-04T14:42:58.782Z"
+    },
+    {
+      "file": "raw/channels.txt",
+      "url": "https://service.earthscope.org/fdsnws/station/1/query?net=IU&loc=00&cha=BHZ&starttime=2011-03-11T05%3A45%3A00&endtime=2011-03-11T06%3A05%3A00&sta=MAJO%2CINCN%2CTATO%2CYSS%2CGUMO%2CULN&level=channel&format=text",
+      "finalUrl": "https://service.earthscope.org/fdsnws/station/1/query?net=IU&loc=00&cha=BHZ&starttime=2011-03-11T05%3A45%3A00&endtime=2011-03-11T06%3A05%3A00&sta=MAJO%2CINCN%2CTATO%2CYSS%2CGUMO%2CULN&level=channel&format=text",
+      "status": 200,
+      "bytes": 1103,
+      "sha256": "deef9b5748159bf1a032f078f4e0a1698858dfae88c82f246df6a37d31b94414",
+      "contentType": "text/plain",
+      "retrievedAtUtc": "2026-11-04T14:42:59.099Z"
+    },
+    {
+      "file": "raw/stations.txt",
+      "url": "https://service.earthscope.org/fdsnws/station/1/query?net=IU&sta=MAJO%2CINCN%2CTATO%2CYSS%2CGUMO%2CULN&starttime=2011-03-11T05%3A45%3A00&endtime=2011-03-11T06%3A05%3A00&level=station&format=text",
+      "finalUrl": "https://service.earthscope.org/fdsnws/station/1/query?net=IU&sta=MAJO%2CINCN%2CTATO%2CYSS%2CGUMO%2CULN&starttime=2011-03-11T05%3A45%3A00&endtime=2011-03-11T06%3A05%3A00&level=station&format=text",
+      "status": 200,
+      "bytes": 583,
+      "sha256": "561259600609f64ea0ae4da944150f047a5fe23e46a74feae07c1f4080608b43",
+      "contentType": "text/plain",
+      "retrievedAtUtc": "2026-11-04T14:42:59.410Z"
+    },
+    {
+      "file": "raw/IU.GUMO.00.BHZ.geocsv",
+      "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&loc=00&cha=BHZ&starttime=2011-03-11T05%3A45%3A00&endtime=2011-03-11T06%3A05%3A00&sta=GUMO&format=geocsv",
+      "finalUrl": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&loc=00&cha=BHZ&starttime=2011-03-11T05%3A45%3A00&endtime=2011-03-11T06%3A05%3A00&sta=GUMO&format=geocsv",
+      "status": 200,
+      "bytes": 914549,
+      "sha256": "80e6b75f9b8acab481ea385085ddcb26921ce3835e388294d6b3c3085b647088",
+      "contentType": "text/csv; charset=utf-8",
+      "retrievedAtUtc": "2026-11-04T14:42:59.788Z"
+    },
+    {
+      "file": "raw/IU.ULN.00.BHZ.geocsv",
+      "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&loc=00&cha=BHZ&starttime=2011-03-11T05%3A45%3A00&endtime=2011-03-11T06%3A05%3A00&sta=ULN&format=geocsv",
+      "finalUrl": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&loc=00&cha=BHZ&starttime=2011-03-11T05%3A45%3A00&endtime=2011-03-11T06%3A05%3A00&sta=ULN&format=geocsv",
+      "status": 200,
+      "bytes": 860813,
+      "sha256": "1f1b5c4c30ce77b399416c366ab4e6a20c816c351d27a9610d8a8077fc8b0f08",
+      "contentType": "text/csv; charset=utf-8",
+      "retrievedAtUtc": "2026-11-04T14:43:00.565Z"
+    },
+    {
+      "file": "raw/IU.MAJO.00.BHZ.geocsv",
+      "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&loc=00&cha=BHZ&starttime=2011-03-11T05%3A45%3A00&endtime=2011-03-11T06%3A05%3A00&sta=MAJO&format=geocsv",
+      "finalUrl": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&loc=00&cha=BHZ&starttime=2011-03-11T05%3A45%3A00&endtime=2011-03-11T06%3A05%3A00&sta=MAJO&format=geocsv",
+      "status": 200,
+      "bytes": 935964,
+      "sha256": "957ca759f70836106707ca21bd804eb77c7a4994f648a1c157358bc267116713",
+      "contentType": "text/csv; charset=utf-8",
+      "retrievedAtUtc": "2026-11-04T14:43:00.879Z"
+    },
+    {
+      "file": "raw/event-usgs.geojson",
+      "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=usc0001xgp&format=geojson",
+      "finalUrl": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=usc0001xgp&format=geojson",
+      "status": 200,
+      "bytes": 113445,
+      "sha256": "d9cf0301f748786d5ff881edba71e1b19c5b5008b3abeb893e8e88240433ba4a",
+      "contentType": "application/json; charset=utf-8",
+      "retrievedAtUtc": "2026-11-04T14:43:01.184Z"
+    }
+  ]
+}

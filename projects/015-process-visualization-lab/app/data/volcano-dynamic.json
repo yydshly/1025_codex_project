@@ -1,0 +1,1558 @@
+{
+  "schemaVersion": 1,
+  "id": "hunga-tonga-2022-b13",
+  "kind": "volcano",
+  "title": "汤加喷发云的真实扩展",
+  "subtitle": "2022-01-15 · Himawari-8 红外观测 · 每10分钟",
+  "description": "连续卫星红外亮温场呈现喷发时段云团形态变化；两条曲线直接统计同一帧的固定区域。不是自制灰柱、喷发高度或火山灰浓度模型。",
+  "focus": {
+    "lat": -20.5532,
+    "lon": -175.3841
+  },
+  "bbox": [
+    174.0,
+    -29.0,
+    193.0,
+    -12.0
+  ],
+  "projection": "EPSG:4326",
+  "longitudeConvention": "unwrapped east longitude across antimeridian; east=193 means 167W",
+  "rowOrder": "north-to-south",
+  "pixelConvention": "bbox outer edges; centers at half-grid offsets",
+  "width": 1024,
+  "height": 916,
+  "startUtc": "2022-01-15T03:50:00Z",
+  "endUtc": "2022-01-15T07:50:00Z",
+  "cadenceSeconds": 600,
+  "coverageStatus": "complete",
+  "requestedStartUtc": "2022-01-15T03:50:00Z",
+  "requestedEndUtc": "2022-01-15T07:50:00Z",
+  "missingTimesUtc": [],
+  "timeMeaning": "timeUtc is the HSD filename nominal 10-minute timeline; scanStart/end retain actual selected-segment acquisition bounds; regional times are interpolated line-time bounds, not instantaneous exposures",
+  "palette": {
+    "whiteK": 180,
+    "blackK": 310,
+    "clippedOutsideRange": true,
+    "alpha": "255 for valid data, 0 for nodata; not a cloud mask"
+  },
+  "statisticsRegion": {
+    "center": {
+      "lat": -20.5532,
+      "lon": -175.3841
+    },
+    "radiusKm": 300.0,
+    "coldThresholdK": 220.0,
+    "earthRadiusKm": 6371.0088
+  },
+  "frames": [
+    {
+      "timeUtc": "2022-01-15T03:50:00Z",
+      "url": "assets/events/volcano-dynamic/tonga-b13-20220115T0350Z.png",
+      "scanStartUtc": "2022-01-15T03:56:03.920Z",
+      "scanEndUtc": "2022-01-15T03:58:27.651Z",
+      "regionalScanStartUtcEstimate": "2022-01-15T03:56:33.768Z",
+      "regionalScanEndUtcEstimate": "2022-01-15T03:58:15.160Z",
+      "sha256": "fb53a97716138e9a1b83475b08ee8baacaf49f13cb9423393b4563f23d3eebab",
+      "bytes": 580091,
+      "width": 1024,
+      "height": 916,
+      "stats": {
+        "minK": 194.38,
+        "maxK": 294.86,
+        "meanK": 283.21830192424306,
+        "p10K": 276.72,
+        "neighborhoodMinK": 265.31,
+        "coldAreaKm2": 0.0,
+        "validNeighborhoodAreaKm2": 282651.6421838542,
+        "neighborhoodAreaKm2": 282651.6421838542,
+        "validPixels": 937984,
+        "missingPixels": 0,
+        "statsRegion": "fixed 300 km surface-distance neighborhood of volcano catalogue location"
+      },
+      "sourceSegments": [
+        {
+          "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0350/HS_H08_20220115_0350_B13_FLDK_R20_S0710.DAT.bz2",
+          "rawFile": "research/dynamics/volcano/raw/HS_H08_20220115_0350_B13_FLDK_R20_S0710.DAT.bz2",
+          "rawSHA256": "873a2b664962eaf638e8cdee0880cd5ea180f59f823263ef5ca725ff3a1df9c1",
+          "rawBytes": 3044231,
+          "retrievedAtUtc": "2026-11-04T14:44:27.705015Z"
+        },
+        {
+          "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0350/HS_H08_20220115_0350_B13_FLDK_R20_S0810.DAT.bz2",
+          "rawFile": "research/dynamics/volcano/raw/HS_H08_20220115_0350_B13_FLDK_R20_S0810.DAT.bz2",
+          "rawSHA256": "d648fcc6bbad0655a9b0b8d941302c9bd6a5bd40a3a5c0ed75374f8251dc87be",
+          "rawBytes": 2793197,
+          "retrievedAtUtc": "2026-11-04T14:44:22.999226Z"
+        }
+      ],
+      "numericData": {
+        "url": "research/dynamics/volcano/numeric/tonga-b13-20220115T0350Z-bt-centikelvin.png",
+        "sha256": "41c48411def7f792268c54462e1c08414610342e8ff0eb93255c1ee9e7001d1a",
+        "bytes": 965300,
+        "encoding": "PNG uint16",
+        "scale": 0.01,
+        "unit": "K",
+        "nodata": 0
+      }
+    },
+    {
+      "timeUtc": "2022-01-15T04:00:00Z",
+      "url": "assets/events/volcano-dynamic/tonga-b13-20220115T0400Z.png",
+      "scanStartUtc": "2022-01-15T04:06:03.911Z",
+      "scanEndUtc": "2022-01-15T04:08:27.639Z",
+      "regionalScanStartUtcEstimate": "2022-01-15T04:06:33.759Z",
+      "regionalScanEndUtcEstimate": "2022-01-15T04:08:15.101Z",
+      "sha256": "fb974e160b263e9a5cba8a5a57d40398c1591bef60249a3f3958cbafcb88525b",
+      "bytes": 580871,
+      "width": 1024,
+      "height": 916,
+      "stats": {
+        "minK": 194.89000000000001,
+        "maxK": 294.86,
+        "meanK": 283.36910782483403,
+        "p10K": 276.84000000000003,
+        "neighborhoodMinK": 264.74,
+        "coldAreaKm2": 0.0,
+        "validNeighborhoodAreaKm2": 282651.6421838542,
+        "neighborhoodAreaKm2": 282651.6421838542,
+        "validPixels": 937984,
+        "missingPixels": 0,
+        "statsRegion": "fixed 300 km surface-distance neighborhood of volcano catalogue location"
+      },
+      "sourceSegments": [
+        {
+          "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0400/HS_H08_20220115_0400_B13_FLDK_R20_S0710.DAT.bz2",
+          "rawFile": "research/dynamics/volcano/raw/HS_H08_20220115_0400_B13_FLDK_R20_S0710.DAT.bz2",
+          "rawSHA256": "76b0a58b7cb483b1b9347aee254fe5b373f85f2edcc102e7207a115a9de497d2",
+          "rawBytes": 3043033,
+          "retrievedAtUtc": "2026-11-04T14:44:23.847789Z"
+        },
+        {
+          "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0400/HS_H08_20220115_0400_B13_FLDK_R20_S0810.DAT.bz2",
+          "rawFile": "research/dynamics/volcano/raw/HS_H08_20220115_0400_B13_FLDK_R20_S0810.DAT.bz2",
+          "rawSHA256": "d640cf3138e07fe9b3affefdec91f0ef2eec53aa5df3ac05584f6d2200cd8ff8",
+          "rawBytes": 2799987,
+          "retrievedAtUtc": "2026-11-04T14:44:24.797078Z"
+        }
+      ],
+      "numericData": {
+        "url": "research/dynamics/volcano/numeric/tonga-b13-20220115T0400Z-bt-centikelvin.png",
+        "sha256": "7fb7dc1cce9f381dc371da167b5ef156e30be4a70b953d73057f6c25c017420e",
+        "bytes": 965447,
+        "encoding": "PNG uint16",
+        "scale": 0.01,
+        "unit": "K",
+        "nodata": 0
+      }
+    },
+    {
+      "timeUtc": "2022-01-15T04:10:00Z",
+      "url": "assets/events/volcano-dynamic/tonga-b13-20220115T0410Z.png",
+      "scanStartUtc": "2022-01-15T04:16:03.899Z",
+      "scanEndUtc": "2022-01-15T04:18:27.630Z",
+      "regionalScanStartUtcEstimate": "2022-01-15T04:16:33.747Z",
+      "regionalScanEndUtcEstimate": "2022-01-15T04:18:15.087Z",
+      "sha256": "ba929064ff05eda5455d7645719bfb3dcfd5a0e695e3fcaf283b48f634335a47",
+      "bytes": 582451,
+      "width": 1024,
+      "height": 916,
+      "stats": {
+        "minK": 186.35,
+        "maxK": 294.89,
+        "meanK": 283.1693855227491,
+        "p10K": 276.97,
+        "neighborhoodMinK": 186.35,
+        "coldAreaKm2": 1147.5318652211565,
+        "validNeighborhoodAreaKm2": 282651.6421838542,
+        "neighborhoodAreaKm2": 282651.6421838542,
+        "validPixels": 937984,
+        "missingPixels": 0,
+        "statsRegion": "fixed 300 km surface-distance neighborhood of volcano catalogue location"
+      },
+      "sourceSegments": [
+        {
+          "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0410/HS_H08_20220115_0410_B13_FLDK_R20_S0710.DAT.bz2",
+          "rawFile": "research/dynamics/volcano/raw/HS_H08_20220115_0410_B13_FLDK_R20_S0710.DAT.bz2",
+          "rawSHA256": "eec0e45ea7fbc39bfa5af666bb26bc2901365a412053723ebcd047b4bc6639c3",
+          "rawBytes": 3042040,
+          "retrievedAtUtc": "2026-11-04T14:44:26.485749Z"
+        },
+        {
+          "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0410/HS_H08_20220115_0410_B13_FLDK_R20_S0810.DAT.bz2",
+          "rawFile": "research/dynamics/volcano/raw/HS_H08_20220115_0410_B13_FLDK_R20_S0810.DAT.bz2",
+          "rawSHA256": "4778554544522814b8d4dd813bce5f58a8fe3066e3b6ada486f7aca635dcca8b",
+          "rawBytes": 2803964,
+          "retrievedAtUtc": "2026-11-04T14:44:26.969056Z"
+        }
+      ],
+      "numericData": {
+        "url": "research/dynamics/volcano/numeric/tonga-b13-20220115T0410Z-bt-centikelvin.png",
+        "sha256": "c7685f5478d84e192468dedfcda7ee869708a8380ad354a8eac2056ecaf484dd",
+        "bytes": 966323,
+        "encoding": "PNG uint16",
+        "scale": 0.01,
+        "unit": "K",
+        "nodata": 0
+      }
+    },
+    {
+      "timeUtc": "2022-01-15T04:20:00Z",
+      "url": "assets/events/volcano-dynamic/tonga-b13-20220115T0420Z.png",
+      "scanStartUtc": "2022-01-15T04:26:03.889Z",
+      "scanEndUtc": "2022-01-15T04:28:27.618Z",
+      "regionalScanStartUtcEstimate": "2022-01-15T04:26:33.737Z",
+      "regionalScanEndUtcEstimate": "2022-01-15T04:28:15.132Z",
+      "sha256": "95e06732f460fab6a86908af3f4b1a1171a68bdd55e9a00a12d3cdecddf196bc",
+      "bytes": 584734,
+      "width": 1024,
+      "height": 916,
+      "stats": {
+        "minK": 176.26,
+        "maxK": 294.89,
+        "meanK": 281.3849844545949,
+        "p10K": 276.13,
+        "neighborhoodMinK": 176.26,
+        "coldAreaKm2": 7937.197092984394,
+        "validNeighborhoodAreaKm2": 282651.6421838542,
+        "neighborhoodAreaKm2": 282651.6421838542,
+        "validPixels": 937984,
+        "missingPixels": 0,
+        "statsRegion": "fixed 300 km surface-distance neighborhood of volcano catalogue location"
+      },
+      "sourceSegments": [
+        {
+          "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0420/HS_H08_20220115_0420_B13_FLDK_R20_S0710.DAT.bz2",
+          "rawFile": "research/dynamics/volcano/raw/HS_H08_20220115_0420_B13_FLDK_R20_S0710.DAT.bz2",
+          "rawSHA256": "b5545f9611472c74b826980d6cfb779a598de27d2600a4df5c7949fcbc3fe5b3",
+          "rawBytes": 3039414,
+          "retrievedAtUtc": "2026-11-04T14:43:15.732144Z"
+        },
+        {
+          "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0420/HS_H08_20220115_0420_B13_FLDK_R20_S0810.DAT.bz2",
+          "rawFile": "research/dynamics/volcano/raw/HS_H08_20220115_0420_B13_FLDK_R20_S0810.DAT.bz2",
+          "rawSHA256": "08230b9aaa6852d6eca49229e6fd8408a5a69d351acff2378249b86255c4bc5d",
+          "rawBytes": 2808346,
+          "retrievedAtUtc": "2026-11-04T14:42:26.079277Z"
+        }
+      ],
+      "numericData": {
+        "url": "research/dynamics/volcano/numeric/tonga-b13-20220115T0420Z-bt-centikelvin.png",
+        "sha256": "45341499ff87b2ff2be32c75d62c7a74cf015f1ae43240fd703caca7c808a1e2",
+        "bytes": 967254,
+        "encoding": "PNG uint16",
+        "scale": 0.01,
+        "unit": "K",
+        "nodata": 0
+      }
+    },
+    {
+      "timeUtc": "2022-01-15T04:30:00Z",
+      "url": "assets/events/volcano-dynamic/tonga-b13-20220115T0430Z.png",
+      "scanStartUtc": "2022-01-15T04:36:03.877Z",
+      "scanEndUtc": "2022-01-15T04:38:27.609Z",
+      "regionalScanStartUtcEstimate": "2022-01-15T04:36:33.726Z",
+      "regionalScanEndUtcEstimate": "2022-01-15T04:38:15.118Z",
+      "sha256": "fc75d2c9590a10b3f2ba841f0bdb72ac0f13a14a263404bd38af69388df47469",
+      "bytes": 588213,
+      "width": 1024,
+      "height": 916,
+      "stats": {
+        "minK": 186.19,
+        "maxK": 294.89,
+        "meanK": 277.3891176697192,
+        "p10K": 234.88,
+        "neighborhoodMinK": 186.19,
+        "coldAreaKm2": 9417.865978526777,
+        "validNeighborhoodAreaKm2": 282651.6421838542,
+        "neighborhoodAreaKm2": 282651.6421838542,
+        "validPixels": 937984,
+        "missingPixels": 0,
+        "statsRegion": "fixed 300 km surface-distance neighborhood of volcano catalogue location"
+      },
+      "sourceSegments": [
+        {
+          "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0430/HS_H08_20220115_0430_B13_FLDK_R20_S0710.DAT.bz2",
+          "rawFile": "research/dynamics/volcano/raw/HS_H08_20220115_0430_B13_FLDK_R20_S0710.DAT.bz2",
+          "rawSHA256": "0fc68d2489bfe2db6bfdcf5efeccc8f1def63adc866713b768c048355de5b41f",
+          "rawBytes": 3037885,
+          "retrievedAtUtc": "2026-11-04T14:44:29.439810Z"
+        },
+        {
+          "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0430/HS_H08_20220115_0430_B13_FLDK_R20_S0810.DAT.bz2",
+          "rawFile": "research/dynamics/volcano/raw/HS_H08_20220115_0430_B13_FLDK_R20_S0810.DAT.bz2",
+          "rawSHA256": "086f380d09f861d81dad82fa95dea32796bf5c66c1695574f57874cd1c714b09",
+          "rawBytes": 2809126,
+          "retrievedAtUtc": "2026-11-04T14:44:28.699565Z"
+        }
+      ],
+      "numericData": {
+        "url": "research/dynamics/volcano/numeric/tonga-b13-20220115T0430Z-bt-centikelvin.png",
+        "sha256": "0e8af540e6fae931f4933ba6855d94e6f7859d750bc544fb2a357d90c587b648",
+        "bytes": 968287,
+        "encoding": "PNG uint16",
+        "scale": 0.01,
+        "unit": "K",
+        "nodata": 0
+      }
+    },
+    {
+      "timeUtc": "2022-01-15T04:40:00Z",
+      "url": "assets/events/volcano-dynamic/tonga-b13-20220115T0440Z.png",
+      "scanStartUtc": "2022-01-15T04:46:03.868Z",
+      "scanEndUtc": "2022-01-15T04:48:27.597Z",
+      "regionalScanStartUtcEstimate": "2022-01-15T04:46:33.716Z",
+      "regionalScanEndUtcEstimate": "2022-01-15T04:48:15.110Z",
+      "sha256": "87b6c14acbc9f6036746b39d2c88cea02a5f9bb4f853a9317fb97b3c6271b766",
+      "bytes": 593872,
+      "width": 1024,
+      "height": 916,
+      "stats": {
+        "minK": 198.99,
+        "maxK": 294.99,
+        "meanK": 267.57775176553827,
+        "p10K": 220.73000000000002,
+        "neighborhoodMinK": 198.99,
+        "coldAreaKm2": 24845.626114418836,
+        "validNeighborhoodAreaKm2": 282651.6421838542,
+        "neighborhoodAreaKm2": 282651.6421838542,
+        "validPixels": 937984,
+        "missingPixels": 0,
+        "statsRegion": "fixed 300 km surface-distance neighborhood of volcano catalogue location"
+      },
+      "sourceSegments": [
+        {
+          "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0440/HS_H08_20220115_0440_B13_FLDK_R20_S0710.DAT.bz2",
+          "rawFile": "research/dynamics/volcano/raw/HS_H08_20220115_0440_B13_FLDK_R20_S0710.DAT.bz2",
+          "rawSHA256": "b425b7c9aafccdcc2f9ce97aa33e4b9ae4d6f7b1d9647f1dec9209708db6db09",
+          "rawBytes": 3039006,
+          "retrievedAtUtc": "2026-11-04T14:44:29.506110Z"
+        },
+        {
+          "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0440/HS_H08_20220115_0440_B13_FLDK_R20_S0810.DAT.bz2",
+          "rawFile": "research/dynamics/volcano/raw/HS_H08_20220115_0440_B13_FLDK_R20_S0810.DAT.bz2",
+          "rawSHA256": "531d386a10beb0b87c6b19a4de2d0c43cfcbf6b788aeb4e0e896b3b7f9167231",
+          "rawBytes": 2811979,
+          "retrievedAtUtc": "2026-11-04T14:44:30.408259Z"
+        }
+      ],
+      "numericData": {
+        "url": "research/dynamics/volcano/numeric/tonga-b13-20220115T0440Z-bt-centikelvin.png",
+        "sha256": "4cb1db63e1f95c0aea9e51db8376c355f09c95661f7220ab58119dbe33be4c50",
+        "bytes": 970839,
+        "encoding": "PNG uint16",
+        "scale": 0.01,
+        "unit": "K",
+        "nodata": 0
+      }
+    },
+    {
+      "timeUtc": "2022-01-15T04:50:00Z",
+      "url": "assets/events/volcano-dynamic/tonga-b13-20220115T0450Z.png",
+      "scanStartUtc": "2022-01-15T04:56:03.856Z",
+      "scanEndUtc": "2022-01-15T04:58:27.588Z",
+      "regionalScanStartUtcEstimate": "2022-01-15T04:56:33.704Z",
+      "regionalScanEndUtcEstimate": "2022-01-15T04:58:15.096Z",
+      "sha256": "b1500c575579232e0cfc02462cf100a7a98b760c743c5a89b6cb0f421536a701",
+      "bytes": 596615,
+      "width": 1024,
+      "height": 916,
+      "stats": {
+        "minK": 189.28,
+        "maxK": 295.07,
+        "meanK": 262.5246824544798,
+        "p10K": 224.36,
+        "neighborhoodMinK": 189.28,
+        "coldAreaKm2": 3626.6464512911734,
+        "validNeighborhoodAreaKm2": 282651.6421838542,
+        "neighborhoodAreaKm2": 282651.6421838542,
+        "validPixels": 937984,
+        "missingPixels": 0,
+        "statsRegion": "fixed 300 km surface-distance neighborhood of volcano catalogue location"
+      },
+      "sourceSegments": [
+        {
+          "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0450/HS_H08_20220115_0450_B13_FLDK_R20_S0710.DAT.bz2",
+          "rawFile": "research/dynamics/volcano/raw/HS_H08_20220115_0450_B13_FLDK_R20_S0710.DAT.bz2",
+          "rawSHA256": "5e57fdc7c5a3dff93d399ffd32160ab09dd4f8049a6eefffd940aa1c333187c2",
+          "rawBytes": 3039033,
+          "retrievedAtUtc": "2026-11-04T14:44:31.586889Z"
+        },
+        {
+          "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0450/HS_H08_20220115_0450_B13_FLDK_R20_S0810.DAT.bz2",
+          "rawFile": "research/dynamics/volcano/raw/HS_H08_20220115_0450_B13_FLDK_R20_S0810.DAT.bz2",
+          "rawSHA256": "b81e71faf3d4d125c970d39bcfca532329af1415475949833ef122301f96cf53",
+          "rawBytes": 2812474,
+          "retrievedAtUtc": "2026-11-04T14:44:31.091894Z"
+        }
+      ],
+      "numericData": {
+        "url": "research/dynamics/volcano/numeric/tonga-b13-20220115T0450Z-bt-centikelvin.png",
+        "sha256": "e94e6e0817731a1f52ffe9728d0e2e2a1092722ceae441269bc2a71fe09df7ab",
+        "bytes": 971948,
+        "encoding": "PNG uint16",
+        "scale": 0.01,
+        "unit": "K",
+        "nodata": 0
+      }
+    },
+    {
+      "timeUtc": "2022-01-15T05:00:00Z",
+      "url": "assets/events/volcano-dynamic/tonga-b13-20220115T0500Z.png",
+      "scanStartUtc": "2022-01-15T05:06:03.847Z",
+      "scanEndUtc": "2022-01-15T05:08:27.578Z",
+      "regionalScanStartUtcEstimate": "2022-01-15T05:06:33.695Z",
+      "regionalScanEndUtcEstimate": "2022-01-15T05:08:15.090Z",
+      "sha256": "da417a1ed4cfd9cfd076372e36eb53aa092f105640678e152e38af1d7d00a905",
+      "bytes": 600848,
+      "width": 1024,
+      "height": 916,
+      "stats": {
+        "minK": 197.0,
+        "maxK": 294.89,
+        "meanK": 258.56100227428493,
+        "p10K": 226.69,
+        "neighborhoodMinK": 197.0,
+        "coldAreaKm2": 5110.059971894187,
+        "validNeighborhoodAreaKm2": 282651.6421838542,
+        "neighborhoodAreaKm2": 282651.6421838542,
+        "validPixels": 937984,
+        "missingPixels": 0,
+        "statsRegion": "fixed 300 km surface-distance neighborhood of volcano catalogue location"
+      },
+      "sourceSegments": [
+        {
+          "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0500/HS_H08_20220115_0500_B13_FLDK_R20_S0710.DAT.bz2",
+          "rawFile": "research/dynamics/volcano/raw/HS_H08_20220115_0500_B13_FLDK_R20_S0710.DAT.bz2",
+          "rawSHA256": "44c8c832d4580517f8e07215dd92d6c5c9578bf649b8ae7d25b9113725342a0f",
+          "rawBytes": 3039677,
+          "retrievedAtUtc": "2026-11-04T14:44:33.445632Z"
+        },
+        {
+          "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0500/HS_H08_20220115_0500_B13_FLDK_R20_S0810.DAT.bz2",
+          "rawFile": "research/dynamics/volcano/raw/HS_H08_20220115_0500_B13_FLDK_R20_S0810.DAT.bz2",
+          "rawSHA256": "99543e23594d6748d172e05611fd336cdaf0a4c6379a6679314702aebbe8670a",
+          "rawBytes": 2815238,
+          "retrievedAtUtc": "2026-11-04T14:44:33.349103Z"
+        }
+      ],
+      "numericData": {
+        "url": "research/dynamics/volcano/numeric/tonga-b13-20220115T0500Z-bt-centikelvin.png",
+        "sha256": "4e55ea613673f6c9d8de62bee0a5e77406026eafbe6a09a5a7b7db8ea9881d91",
+        "bytes": 977065,
+        "encoding": "PNG uint16",
+        "scale": 0.01,
+        "unit": "K",
+        "nodata": 0
+      }
+    },
+    {
+      "timeUtc": "2022-01-15T05:10:00Z",
+      "url": "assets/events/volcano-dynamic/tonga-b13-20220115T0510Z.png",
+      "scanStartUtc": "2022-01-15T05:16:03.835Z",
+      "scanEndUtc": "2022-01-15T05:18:27.566Z",
+      "regionalScanStartUtcEstimate": "2022-01-15T05:16:33.683Z",
+      "regionalScanEndUtcEstimate": "2022-01-15T05:18:15.075Z",
+      "sha256": "1d3e8b99a6b81a9e5ea476b002a16f90867db718454c5de4cd0261764fab86c3",
+      "bytes": 602861,
+      "width": 1024,
+      "height": 916,
+      "stats": {
+        "minK": 190.44,
+        "maxK": 295.09000000000003,
+        "meanK": 254.43963116455004,
+        "p10K": 226.88,
+        "neighborhoodMinK": 190.44,
+        "coldAreaKm2": 3986.7883505075947,
+        "validNeighborhoodAreaKm2": 282651.6421838542,
+        "neighborhoodAreaKm2": 282651.6421838542,
+        "validPixels": 937984,
+        "missingPixels": 0,
+        "statsRegion": "fixed 300 km surface-distance neighborhood of volcano catalogue location"
+      },
+      "sourceSegments": [
+        {
+          "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0510/HS_H08_20220115_0510_B13_FLDK_R20_S0710.DAT.bz2",
+          "rawFile": "research/dynamics/volcano/raw/HS_H08_20220115_0510_B13_FLDK_R20_S0710.DAT.bz2",
+          "rawSHA256": "3c0c6cfc2ad0f99451da67fef7c4382049c1da4b5eb03903e1cab93a15593115",
+          "rawBytes": 3040416,
+          "retrievedAtUtc": "2026-11-04T14:44:33.484806Z"
+        },
+        {
+          "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0510/HS_H08_20220115_0510_B13_FLDK_R20_S0810.DAT.bz2",
+          "rawFile": "research/dynamics/volcano/raw/HS_H08_20220115_0510_B13_FLDK_R20_S0810.DAT.bz2",
+          "rawSHA256": "c74760238d7815357986e291fc2f7fd71651a5992d2dff14fed4af4643773c06",
+          "rawBytes": 2817789,
+          "retrievedAtUtc": "2026-11-04T14:44:35.382259Z"
+        }
+      ],
+      "numericData": {
+        "url": "research/dynamics/volcano/numeric/tonga-b13-20220115T0510Z-bt-centikelvin.png",
+        "sha256": "04494e5576d0eda7b1fd7873af034fc84af13905d57c3f32079264c49178b801",
+        "bytes": 978880,
+        "encoding": "PNG uint16",
+        "scale": 0.01,
+        "unit": "K",
+        "nodata": 0
+      }
+    },
+    {
+      "timeUtc": "2022-01-15T05:20:00Z",
+      "url": "assets/events/volcano-dynamic/tonga-b13-20220115T0520Z.png",
+      "scanStartUtc": "2022-01-15T05:26:03.826Z",
+      "scanEndUtc": "2022-01-15T05:28:27.557Z",
+      "regionalScanStartUtcEstimate": "2022-01-15T05:26:33.674Z",
+      "regionalScanEndUtcEstimate": "2022-01-15T05:28:15.069Z",
+      "sha256": "96d424733603b402db06abcc8dcc73bd8dd7967395e8037aefb60f7c58a73a73",
+      "bytes": 602944,
+      "width": 1024,
+      "height": 916,
+      "stats": {
+        "minK": 201.33,
+        "maxK": 295.32,
+        "meanK": 252.3117770282518,
+        "p10K": 227.95000000000002,
+        "neighborhoodMinK": 211.91,
+        "coldAreaKm2": 925.7554226099513,
+        "validNeighborhoodAreaKm2": 282651.6421838542,
+        "neighborhoodAreaKm2": 282651.6421838542,
+        "validPixels": 937984,
+        "missingPixels": 0,
+        "statsRegion": "fixed 300 km surface-distance neighborhood of volcano catalogue location"
+      },
+      "sourceSegments": [
+        {
+          "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0520/HS_H08_20220115_0520_B13_FLDK_R20_S0710.DAT.bz2",
+          "rawFile": "research/dynamics/volcano/raw/HS_H08_20220115_0520_B13_FLDK_R20_S0710.DAT.bz2",
+          "rawSHA256": "087e26056c99805e3295ceaea6a5fa68160167267d02e7a8666462aada21b3a5",
+          "rawBytes": 3038491,
+          "retrievedAtUtc": "2026-11-04T14:44:35.518934Z"
+        },
+        {
+          "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0520/HS_H08_20220115_0520_B13_FLDK_R20_S0810.DAT.bz2",
+          "rawFile": "research/dynamics/volcano/raw/HS_H08_20220115_0520_B13_FLDK_R20_S0810.DAT.bz2",
+          "rawSHA256": "623022faa90c269e7c8af9018e87f531f87cfe5f318b1d5b047bf0038e671c53",
+          "rawBytes": 2819643,
+          "retrievedAtUtc": "2026-11-04T14:44:36.299123Z"
+        }
+      ],
+      "numericData": {
+        "url": "research/dynamics/volcano/numeric/tonga-b13-20220115T0520Z-bt-centikelvin.png",
+        "sha256": "95db416cd54fe392b8682b2a4394655403281a29dd7318060ff67aa834d94dc0",
+        "bytes": 978716,
+        "encoding": "PNG uint16",
+        "scale": 0.01,
+        "unit": "K",
+        "nodata": 0
+      }
+    },
+    {
+      "timeUtc": "2022-01-15T05:30:00Z",
+      "url": "assets/events/volcano-dynamic/tonga-b13-20220115T0530Z.png",
+      "scanStartUtc": "2022-01-15T05:36:03.816Z",
+      "scanEndUtc": "2022-01-15T05:38:27.545Z",
+      "regionalScanStartUtcEstimate": "2022-01-15T05:36:33.662Z",
+      "regionalScanEndUtcEstimate": "2022-01-15T05:38:15.054Z",
+      "sha256": "ea8b5726cb083505f6c6c96add421427127c9147af47bda63b06435d3276e6f2",
+      "bytes": 602400,
+      "width": 1024,
+      "height": 916,
+      "stats": {
+        "minK": 198.18,
+        "maxK": 295.04,
+        "meanK": 253.44675220398912,
+        "p10K": 229.35,
+        "neighborhoodMinK": 201.43,
+        "coldAreaKm2": 2047.6179139493013,
+        "validNeighborhoodAreaKm2": 282651.6421838542,
+        "neighborhoodAreaKm2": 282651.6421838542,
+        "validPixels": 937984,
+        "missingPixels": 0,
+        "statsRegion": "fixed 300 km surface-distance neighborhood of volcano catalogue location"
+      },
+      "sourceSegments": [
+        {
+          "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0530/HS_H08_20220115_0530_B13_FLDK_R20_S0710.DAT.bz2",
+          "rawFile": "research/dynamics/volcano/raw/HS_H08_20220115_0530_B13_FLDK_R20_S0710.DAT.bz2",
+          "rawSHA256": "c66646ba423c7c7646bc72ac51f465ae8efe117aab7742e137e32f268c84242f",
+          "rawBytes": 3036625,
+          "retrievedAtUtc": "2026-11-04T14:44:42.307494Z"
+        },
+        {
+          "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0530/HS_H08_20220115_0530_B13_FLDK_R20_S0810.DAT.bz2",
+          "rawFile": "research/dynamics/volcano/raw/HS_H08_20220115_0530_B13_FLDK_R20_S0810.DAT.bz2",
+          "rawSHA256": "36d70310374a7b3703c3a9d01f097c7c6143e45a54d643fe696235e7f7c1e61e",
+          "rawBytes": 2820797,
+          "retrievedAtUtc": "2026-11-04T14:44:44.216833Z"
+        }
+      ],
+      "numericData": {
+        "url": "research/dynamics/volcano/numeric/tonga-b13-20220115T0530Z-bt-centikelvin.png",
+        "sha256": "7ba8ee2e9f52437cf205472b5f5823be0cb89b890440d62b48c9d27f27119b60",
+        "bytes": 978169,
+        "encoding": "PNG uint16",
+        "scale": 0.01,
+        "unit": "K",
+        "nodata": 0
+      }
+    },
+    {
+      "timeUtc": "2022-01-15T05:40:00Z",
+      "url": "assets/events/volcano-dynamic/tonga-b13-20220115T0540Z.png",
+      "scanStartUtc": "2022-01-15T05:46:03.804Z",
+      "scanEndUtc": "2022-01-15T05:48:27.536Z",
+      "regionalScanStartUtcEstimate": "2022-01-15T05:46:33.652Z",
+      "regionalScanEndUtcEstimate": "2022-01-15T05:48:15.044Z",
+      "sha256": "f5340b36e25086def726d05eadc2cae51596484c54625fd50216f1eb5ecef27f",
+      "bytes": 604579,
+      "width": 1024,
+      "height": 916,
+      "stats": {
+        "minK": 197.83,
+        "maxK": 295.27,
+        "meanK": 252.03982319749144,
+        "p10K": 228.32,
+        "neighborhoodMinK": 202.5,
+        "coldAreaKm2": 8760.508562003557,
+        "validNeighborhoodAreaKm2": 282651.6421838542,
+        "neighborhoodAreaKm2": 282651.6421838542,
+        "validPixels": 937984,
+        "missingPixels": 0,
+        "statsRegion": "fixed 300 km surface-distance neighborhood of volcano catalogue location"
+      },
+      "sourceSegments": [
+        {
+          "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0540/HS_H08_20220115_0540_B13_FLDK_R20_S0710.DAT.bz2",
+          "rawFile": "research/dynamics/volcano/raw/HS_H08_20220115_0540_B13_FLDK_R20_S0710.DAT.bz2",
+          "rawSHA256": "00c612e88d8853cd7a7213127c60baf0912faa44f5d677cc2e6a44edac567467",
+          "rawBytes": 3034871,
+          "retrievedAtUtc": "2026-11-04T14:44:38.133878Z"
+        },
+        {
+          "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0540/HS_H08_20220115_0540_B13_FLDK_R20_S0810.DAT.bz2",
+          "rawFile": "research/dynamics/volcano/raw/HS_H08_20220115_0540_B13_FLDK_R20_S0810.DAT.bz2",
+          "rawSHA256": "b5e49c69662ab454d0e1f18d2f29fe0637d4cd5fa5a3589db0cfa5644d5b4a63",
+          "rawBytes": 2821890,
+          "retrievedAtUtc": "2026-11-04T14:44:39.793371Z"
+        }
+      ],
+      "numericData": {
+        "url": "research/dynamics/volcano/numeric/tonga-b13-20220115T0540Z-bt-centikelvin.png",
+        "sha256": "2076bc5621e3bab73d17a41e53a5d0e5fdf51d39d3a7745b361e3b936d8e3882",
+        "bytes": 978597,
+        "encoding": "PNG uint16",
+        "scale": 0.01,
+        "unit": "K",
+        "nodata": 0
+      }
+    },
+    {
+      "timeUtc": "2022-01-15T05:50:00Z",
+      "url": "assets/events/volcano-dynamic/tonga-b13-20220115T0550Z.png",
+      "scanStartUtc": "2022-01-15T05:56:03.795Z",
+      "scanEndUtc": "2022-01-15T05:58:27.524Z",
+      "regionalScanStartUtcEstimate": "2022-01-15T05:56:33.643Z",
+      "regionalScanEndUtcEstimate": "2022-01-15T05:58:15.037Z",
+      "sha256": "0569347a55aa72f48e6a9d25535f8cf8e9c2670dc808ebcd452647c00c73947b",
+      "bytes": 606333,
+      "width": 1024,
+      "height": 916,
+      "stats": {
+        "minK": 199.45000000000002,
+        "maxK": 295.43,
+        "meanK": 250.04061583319464,
+        "p10K": 228.32,
+        "neighborhoodMinK": 202.5,
+        "coldAreaKm2": 10027.277082701887,
+        "validNeighborhoodAreaKm2": 282651.6421838542,
+        "neighborhoodAreaKm2": 282651.6421838542,
+        "validPixels": 937984,
+        "missingPixels": 0,
+        "statsRegion": "fixed 300 km surface-distance neighborhood of volcano catalogue location"
+      },
+      "sourceSegments": [
+        {
+          "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0550/HS_H08_20220115_0550_B13_FLDK_R20_S0710.DAT.bz2",
+          "rawFile": "research/dynamics/volcano/raw/HS_H08_20220115_0550_B13_FLDK_R20_S0710.DAT.bz2",
+          "rawSHA256": "571685dd91dd74b72b3773675ac17025228a6549db1bb77b2a4f66758f30b115",
+          "rawBytes": 3032586,
+          "retrievedAtUtc": "2026-11-04T14:44:41.755325Z"
+        },
+        {
+          "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0550/HS_H08_20220115_0550_B13_FLDK_R20_S0810.DAT.bz2",
+          "rawFile": "research/dynamics/volcano/raw/HS_H08_20220115_0550_B13_FLDK_R20_S0810.DAT.bz2",
+          "rawSHA256": "6df5fc7f15986ee8820d0a1542d9302c63a84f5095e252b7b74cb7c0312d3fb9",
+          "rawBytes": 2819461,
+          "retrievedAtUtc": "2026-11-04T14:44:43.030429Z"
+        }
+      ],
+      "numericData": {
+        "url": "research/dynamics/volcano/numeric/tonga-b13-20220115T0550Z-bt-centikelvin.png",
+        "sha256": "868e114064c4f1f798d867b82ba9a89fdd138efb6e2c5319ea01e219cefe415a",
+        "bytes": 980411,
+        "encoding": "PNG uint16",
+        "scale": 0.01,
+        "unit": "K",
+        "nodata": 0
+      }
+    },
+    {
+      "timeUtc": "2022-01-15T06:00:00Z",
+      "url": "assets/events/volcano-dynamic/tonga-b13-20220115T0600Z.png",
+      "scanStartUtc": "2022-01-15T06:06:03.783Z",
+      "scanEndUtc": "2022-01-15T06:08:27.514Z",
+      "regionalScanStartUtcEstimate": "2022-01-15T06:06:33.747Z",
+      "regionalScanEndUtcEstimate": "2022-01-15T06:08:15.023Z",
+      "sha256": "43ec4d05f7b4d613aa594a8c1b007e62ce32f1a791fe96d08c8b628909b7e7ef",
+      "bytes": 609498,
+      "width": 1024,
+      "height": 916,
+      "stats": {
+        "minK": 199.67000000000002,
+        "maxK": 295.25,
+        "meanK": 246.29553708989656,
+        "p10K": 227.20000000000002,
+        "neighborhoodMinK": 199.67000000000002,
+        "coldAreaKm2": 14996.304273456959,
+        "validNeighborhoodAreaKm2": 282651.6421838542,
+        "neighborhoodAreaKm2": 282651.6421838542,
+        "validPixels": 937984,
+        "missingPixels": 0,
+        "statsRegion": "fixed 300 km surface-distance neighborhood of volcano catalogue location"
+      },
+      "sourceSegments": [
+        {
+          "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0600/HS_H08_20220115_0600_B13_FLDK_R20_S0710.DAT.bz2",
+          "rawFile": "research/dynamics/volcano/raw/HS_H08_20220115_0600_B13_FLDK_R20_S0710.DAT.bz2",
+          "rawSHA256": "c97ecdf2c0e81756faa12fbd1c502c4b489f21bf571867e50eb6f30b80b2a6b5",
+          "rawBytes": 3030926,
+          "retrievedAtUtc": "2026-11-04T14:44:44.369560Z"
+        },
+        {
+          "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0600/HS_H08_20220115_0600_B13_FLDK_R20_S0810.DAT.bz2",
+          "rawFile": "research/dynamics/volcano/raw/HS_H08_20220115_0600_B13_FLDK_R20_S0810.DAT.bz2",
+          "rawSHA256": "e3b569952d396f45f035540ac9a734ace3ea42aabdb1aed8e87f732e3820bea6",
+          "rawBytes": 2819422,
+          "retrievedAtUtc": "2026-11-04T14:44:44.350344Z"
+        }
+      ],
+      "numericData": {
+        "url": "research/dynamics/volcano/numeric/tonga-b13-20220115T0600Z-bt-centikelvin.png",
+        "sha256": "c4c39613f1526b9a0713ed7cc269836d30d9fffefd8debb0f6b9bc1590311415",
+        "bytes": 981760,
+        "encoding": "PNG uint16",
+        "scale": 0.01,
+        "unit": "K",
+        "nodata": 0
+      }
+    },
+    {
+      "timeUtc": "2022-01-15T06:10:00Z",
+      "url": "assets/events/volcano-dynamic/tonga-b13-20220115T0610Z.png",
+      "scanStartUtc": "2022-01-15T06:16:03.774Z",
+      "scanEndUtc": "2022-01-15T06:18:27.503Z",
+      "regionalScanStartUtcEstimate": "2022-01-15T06:16:33.738Z",
+      "regionalScanEndUtcEstimate": "2022-01-15T06:18:15.016Z",
+      "sha256": "a68c91f3650ca5ebe8b753b2e80d565600798e03b7bf6fa6dbd1edd83e76c1bb",
+      "bytes": 610777,
+      "width": 1024,
+      "height": 916,
+      "stats": {
+        "minK": 195.4,
+        "maxK": 295.25,
+        "meanK": 243.43186227704672,
+        "p10K": 224.43,
+        "neighborhoodMinK": 195.4,
+        "coldAreaKm2": 22418.017810301935,
+        "validNeighborhoodAreaKm2": 282651.6421838542,
+        "neighborhoodAreaKm2": 282651.6421838542,
+        "validPixels": 937984,
+        "missingPixels": 0,
+        "statsRegion": "fixed 300 km surface-distance neighborhood of volcano catalogue location"
+      },
+      "sourceSegments": [
+        {
+          "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0610/HS_H08_20220115_0610_B13_FLDK_R20_S0710.DAT.bz2",
+          "rawFile": "research/dynamics/volcano/raw/HS_H08_20220115_0610_B13_FLDK_R20_S0710.DAT.bz2",
+          "rawSHA256": "cb6794a80bbf7150d64718aa7be7bd4abe149c589813fcdaebfdeda5cea44ae3",
+          "rawBytes": 3029531,
+          "retrievedAtUtc": "2026-11-04T14:44:46.713686Z"
+        },
+        {
+          "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0610/HS_H08_20220115_0610_B13_FLDK_R20_S0810.DAT.bz2",
+          "rawFile": "research/dynamics/volcano/raw/HS_H08_20220115_0610_B13_FLDK_R20_S0810.DAT.bz2",
+          "rawSHA256": "80acde14e96849b65a14a95162b22131a950c93320336777b211f959bd8b70a8",
+          "rawBytes": 2818177,
+          "retrievedAtUtc": "2026-11-04T14:44:46.165756Z"
+        }
+      ],
+      "numericData": {
+        "url": "research/dynamics/volcano/numeric/tonga-b13-20220115T0610Z-bt-centikelvin.png",
+        "sha256": "96128cf649e8b5f8726e60fa4f2603fb712579ce5fbb0d71f6f51bec81e3e916",
+        "bytes": 983223,
+        "encoding": "PNG uint16",
+        "scale": 0.01,
+        "unit": "K",
+        "nodata": 0
+      }
+    },
+    {
+      "timeUtc": "2022-01-15T06:20:00Z",
+      "url": "assets/events/volcano-dynamic/tonga-b13-20220115T0620Z.png",
+      "scanStartUtc": "2022-01-15T06:26:03.762Z",
+      "scanEndUtc": "2022-01-15T06:28:27.493Z",
+      "regionalScanStartUtcEstimate": "2022-01-15T06:26:33.726Z",
+      "regionalScanEndUtcEstimate": "2022-01-15T06:28:15.002Z",
+      "sha256": "23fc98fd3f08efb22d4b02ce7770875971a0ddc3546b1bd9ef75b202596b3e46",
+      "bytes": 612153,
+      "width": 1024,
+      "height": 916,
+      "stats": {
+        "minK": 194.38,
+        "maxK": 295.14,
+        "meanK": 242.29158779163828,
+        "p10K": 221.43,
+        "neighborhoodMinK": 194.38,
+        "coldAreaKm2": 26090.34572603617,
+        "validNeighborhoodAreaKm2": 282651.6421838542,
+        "neighborhoodAreaKm2": 282651.6421838542,
+        "validPixels": 937984,
+        "missingPixels": 0,
+        "statsRegion": "fixed 300 km surface-distance neighborhood of volcano catalogue location"
+      },
+      "sourceSegments": [
+        {
+          "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0620/HS_H08_20220115_0620_B13_FLDK_R20_S0710.DAT.bz2",
+          "rawFile": "research/dynamics/volcano/raw/HS_H08_20220115_0620_B13_FLDK_R20_S0710.DAT.bz2",
+          "rawSHA256": "db36ab599805e7bc1c2051703051557d8dd05f61b1e635e66beb1f39bb637266",
+          "rawBytes": 3025916,
+          "retrievedAtUtc": "2026-11-04T14:45:00.661611Z"
+        },
+        {
+          "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0620/HS_H08_20220115_0620_B13_FLDK_R20_S0810.DAT.bz2",
+          "rawFile": "research/dynamics/volcano/raw/HS_H08_20220115_0620_B13_FLDK_R20_S0810.DAT.bz2",
+          "rawSHA256": "b69a50669c86ceed487f0a8b8e88de8ce5aac2043b9d13a663a332019fdaea7b",
+          "rawBytes": 2816950,
+          "retrievedAtUtc": "2026-11-04T14:44:47.740028Z"
+        }
+      ],
+      "numericData": {
+        "url": "research/dynamics/volcano/numeric/tonga-b13-20220115T0620Z-bt-centikelvin.png",
+        "sha256": "ec35f5cf27da8c2d8891770188fd43a4486bfb8f767ded31b09f9ae46eca477a",
+        "bytes": 983595,
+        "encoding": "PNG uint16",
+        "scale": 0.01,
+        "unit": "K",
+        "nodata": 0
+      }
+    },
+    {
+      "timeUtc": "2022-01-15T06:30:00Z",
+      "url": "assets/events/volcano-dynamic/tonga-b13-20220115T0630Z.png",
+      "scanStartUtc": "2022-01-15T06:36:03.752Z",
+      "scanEndUtc": "2022-01-15T06:38:27.481Z",
+      "regionalScanStartUtcEstimate": "2022-01-15T06:36:33.717Z",
+      "regionalScanEndUtcEstimate": "2022-01-15T06:38:14.995Z",
+      "sha256": "afe4f71e9d177936415b17ba040e15cbe479ea5df4938a66e3e5065d54de026c",
+      "bytes": 612095,
+      "width": 1024,
+      "height": 916,
+      "stats": {
+        "minK": 193.20000000000002,
+        "maxK": 295.09000000000003,
+        "meanK": 242.5678896236482,
+        "p10K": 221.57,
+        "neighborhoodMinK": 193.20000000000002,
+        "coldAreaKm2": 25509.876654898064,
+        "validNeighborhoodAreaKm2": 282651.6421838542,
+        "neighborhoodAreaKm2": 282651.6421838542,
+        "validPixels": 937984,
+        "missingPixels": 0,
+        "statsRegion": "fixed 300 km surface-distance neighborhood of volcano catalogue location"
+      },
+      "sourceSegments": [
+        {
+          "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0630/HS_H08_20220115_0630_B13_FLDK_R20_S0710.DAT.bz2",
+          "rawFile": "research/dynamics/volcano/raw/HS_H08_20220115_0630_B13_FLDK_R20_S0710.DAT.bz2",
+          "rawSHA256": "e53d69dbb58a5db1731268e1979dec1a39fe49d88ed8be3e64dbfc7026894fcb",
+          "rawBytes": 3020573,
+          "retrievedAtUtc": "2026-11-04T14:44:48.497077Z"
+        },
+        {
+          "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0630/HS_H08_20220115_0630_B13_FLDK_R20_S0810.DAT.bz2",
+          "rawFile": "research/dynamics/volcano/raw/HS_H08_20220115_0630_B13_FLDK_R20_S0810.DAT.bz2",
+          "rawSHA256": "3f81070b925ebb6fafca56d4e8ae173cc0e471d3b295e8f6c40c31a0195fa268",
+          "rawBytes": 2816811,
+          "retrievedAtUtc": "2026-11-04T14:44:49.443811Z"
+        }
+      ],
+      "numericData": {
+        "url": "research/dynamics/volcano/numeric/tonga-b13-20220115T0630Z-bt-centikelvin.png",
+        "sha256": "b1d78dfc815646b93a14248572467cdc2f6aa533bd28fec418c4e7410d013ec5",
+        "bytes": 983619,
+        "encoding": "PNG uint16",
+        "scale": 0.01,
+        "unit": "K",
+        "nodata": 0
+      }
+    },
+    {
+      "timeUtc": "2022-01-15T06:40:00Z",
+      "url": "assets/events/volcano-dynamic/tonga-b13-20220115T0640Z.png",
+      "scanStartUtc": "2022-01-15T06:46:03.741Z",
+      "scanEndUtc": "2022-01-15T06:48:27.472Z",
+      "regionalScanStartUtcEstimate": "2022-01-15T06:46:33.705Z",
+      "regionalScanEndUtcEstimate": "2022-01-15T06:48:15.042Z",
+      "sha256": "255cf8458860a26c17f3571da0f1544ec013984b90a015d7d561188fb5c999ad",
+      "bytes": 613193,
+      "width": 1024,
+      "height": 916,
+      "stats": {
+        "minK": 191.85,
+        "maxK": 295.12,
+        "meanK": 241.7045785016484,
+        "p10K": 220.3,
+        "neighborhoodMinK": 191.85,
+        "coldAreaKm2": 27627.00643336091,
+        "validNeighborhoodAreaKm2": 282651.6421838542,
+        "neighborhoodAreaKm2": 282651.6421838542,
+        "validPixels": 937984,
+        "missingPixels": 0,
+        "statsRegion": "fixed 300 km surface-distance neighborhood of volcano catalogue location"
+      },
+      "sourceSegments": [
+        {
+          "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0640/HS_H08_20220115_0640_B13_FLDK_R20_S0710.DAT.bz2",
+          "rawFile": "research/dynamics/volcano/raw/HS_H08_20220115_0640_B13_FLDK_R20_S0710.DAT.bz2",
+          "rawSHA256": "6903c320b1d5c94667c3f8e19b35699fc1aad5855c21e50178c6365eb113e4ad",
+          "rawBytes": 3018067,
+          "retrievedAtUtc": "2026-11-04T14:44:57.268223Z"
+        },
+        {
+          "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0640/HS_H08_20220115_0640_B13_FLDK_R20_S0810.DAT.bz2",
+          "rawFile": "research/dynamics/volcano/raw/HS_H08_20220115_0640_B13_FLDK_R20_S0810.DAT.bz2",
+          "rawSHA256": "b532ef88437c1d723fc7eae425adfc6bc55aec1588d0e29e18ee41c63da75cb2",
+          "rawBytes": 2810727,
+          "retrievedAtUtc": "2026-11-04T14:44:50.987143Z"
+        }
+      ],
+      "numericData": {
+        "url": "research/dynamics/volcano/numeric/tonga-b13-20220115T0640Z-bt-centikelvin.png",
+        "sha256": "ffe6b5f5f66d14f9f600274bb357d289774fd023bd402a45cc63cf0998b66385",
+        "bytes": 983749,
+        "encoding": "PNG uint16",
+        "scale": 0.01,
+        "unit": "K",
+        "nodata": 0
+      }
+    },
+    {
+      "timeUtc": "2022-01-15T06:50:00Z",
+      "url": "assets/events/volcano-dynamic/tonga-b13-20220115T0650Z.png",
+      "scanStartUtc": "2022-01-15T06:56:03.731Z",
+      "scanEndUtc": "2022-01-15T06:58:27.460Z",
+      "regionalScanStartUtcEstimate": "2022-01-15T06:56:33.695Z",
+      "regionalScanEndUtcEstimate": "2022-01-15T06:58:15.034Z",
+      "sha256": "f85c91138738d095d417842b5854d7152a6083adfd144a4ad24a3a7000defd63",
+      "bytes": 613853,
+      "width": 1024,
+      "height": 916,
+      "stats": {
+        "minK": 190.87,
+        "maxK": 295.02,
+        "meanK": 240.00111575146894,
+        "p10K": 217.66,
+        "neighborhoodMinK": 190.87,
+        "coldAreaKm2": 31553.25757829637,
+        "validNeighborhoodAreaKm2": 282651.6421838542,
+        "neighborhoodAreaKm2": 282651.6421838542,
+        "validPixels": 937984,
+        "missingPixels": 0,
+        "statsRegion": "fixed 300 km surface-distance neighborhood of volcano catalogue location"
+      },
+      "sourceSegments": [
+        {
+          "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0650/HS_H08_20220115_0650_B13_FLDK_R20_S0710.DAT.bz2",
+          "rawFile": "research/dynamics/volcano/raw/HS_H08_20220115_0650_B13_FLDK_R20_S0710.DAT.bz2",
+          "rawSHA256": "e45dfb330f93360a1351e086b375714a04c6906bf47279bcfd6eb9b670c9f696",
+          "rawBytes": 3016906,
+          "retrievedAtUtc": "2026-11-04T14:44:52.244357Z"
+        },
+        {
+          "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0650/HS_H08_20220115_0650_B13_FLDK_R20_S0810.DAT.bz2",
+          "rawFile": "research/dynamics/volcano/raw/HS_H08_20220115_0650_B13_FLDK_R20_S0810.DAT.bz2",
+          "rawSHA256": "6f1e7bba0e7dd3283e542e99174bd77bbef3a15768f96bbc107c309a11c184c2",
+          "rawBytes": 2809982,
+          "retrievedAtUtc": "2026-11-04T14:44:53.495908Z"
+        }
+      ],
+      "numericData": {
+        "url": "research/dynamics/volcano/numeric/tonga-b13-20220115T0650Z-bt-centikelvin.png",
+        "sha256": "9de6329c67c51879f5f32fdc7a6895002f9b1aa01c3cc0683c15bf489407e3a4",
+        "bytes": 984553,
+        "encoding": "PNG uint16",
+        "scale": 0.01,
+        "unit": "K",
+        "nodata": 0
+      }
+    },
+    {
+      "timeUtc": "2022-01-15T07:00:00Z",
+      "url": "assets/events/volcano-dynamic/tonga-b13-20220115T0700Z.png",
+      "scanStartUtc": "2022-01-15T07:06:03.719Z",
+      "scanEndUtc": "2022-01-15T07:08:27.451Z",
+      "regionalScanStartUtcEstimate": "2022-01-15T07:06:33.684Z",
+      "regionalScanEndUtcEstimate": "2022-01-15T07:08:15.021Z",
+      "sha256": "a09ad4a2f832cd687ede776c078afbfd7a33bf7ff385fc4ccc35ff8c34d8186e",
+      "bytes": 615937,
+      "width": 1024,
+      "height": 916,
+      "stats": {
+        "minK": 192.26,
+        "maxK": 294.99,
+        "meanK": 238.24122498899226,
+        "p10K": 211.91,
+        "neighborhoodMinK": 192.26,
+        "coldAreaKm2": 36937.416876079966,
+        "validNeighborhoodAreaKm2": 282651.6421838542,
+        "neighborhoodAreaKm2": 282651.6421838542,
+        "validPixels": 937984,
+        "missingPixels": 0,
+        "statsRegion": "fixed 300 km surface-distance neighborhood of volcano catalogue location"
+      },
+      "sourceSegments": [
+        {
+          "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0700/HS_H08_20220115_0700_B13_FLDK_R20_S0710.DAT.bz2",
+          "rawFile": "research/dynamics/volcano/raw/HS_H08_20220115_0700_B13_FLDK_R20_S0710.DAT.bz2",
+          "rawSHA256": "ba4acdc1b3dd803e8766403d5686990f910fbaae940ec9b62360f4931ffb4e18",
+          "rawBytes": 3013603,
+          "retrievedAtUtc": "2026-11-04T14:44:54.850519Z"
+        },
+        {
+          "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0700/HS_H08_20220115_0700_B13_FLDK_R20_S0810.DAT.bz2",
+          "rawFile": "research/dynamics/volcano/raw/HS_H08_20220115_0700_B13_FLDK_R20_S0810.DAT.bz2",
+          "rawSHA256": "f87977ebcf18629a50d28b8bedf78b53917f9ba886012019b2d10d5740e203e2",
+          "rawBytes": 2804307,
+          "retrievedAtUtc": "2026-11-04T14:45:02.296516Z"
+        }
+      ],
+      "numericData": {
+        "url": "research/dynamics/volcano/numeric/tonga-b13-20220115T0700Z-bt-centikelvin.png",
+        "sha256": "2c744eda115ab5de8664485fbe0ccb5f3c92e2f0708706cb403fd2cbd4c941e5",
+        "bytes": 985561,
+        "encoding": "PNG uint16",
+        "scale": 0.01,
+        "unit": "K",
+        "nodata": 0
+      }
+    },
+    {
+      "timeUtc": "2022-01-15T07:10:00Z",
+      "url": "assets/events/volcano-dynamic/tonga-b13-20220115T0710Z.png",
+      "scanStartUtc": "2022-01-15T07:16:03.710Z",
+      "scanEndUtc": "2022-01-15T07:18:27.439Z",
+      "regionalScanStartUtcEstimate": "2022-01-15T07:16:33.674Z",
+      "regionalScanEndUtcEstimate": "2022-01-15T07:18:15.013Z",
+      "sha256": "e802f56040c89756e96ee922d5d354920ce59b4f57cdd9fb36765cab78752282",
+      "bytes": 616318,
+      "width": 1024,
+      "height": 916,
+      "stats": {
+        "minK": 191.85,
+        "maxK": 294.99,
+        "meanK": 236.62827445844272,
+        "p10K": 206.51,
+        "neighborhoodMinK": 191.85,
+        "coldAreaKm2": 42785.002204128774,
+        "validNeighborhoodAreaKm2": 282651.6421838542,
+        "neighborhoodAreaKm2": 282651.6421838542,
+        "validPixels": 937984,
+        "missingPixels": 0,
+        "statsRegion": "fixed 300 km surface-distance neighborhood of volcano catalogue location"
+      },
+      "sourceSegments": [
+        {
+          "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0710/HS_H08_20220115_0710_B13_FLDK_R20_S0710.DAT.bz2",
+          "rawFile": "research/dynamics/volcano/raw/HS_H08_20220115_0710_B13_FLDK_R20_S0710.DAT.bz2",
+          "rawSHA256": "ee6a4a02365bab461f5b92a969cca5dadf5e15d45b3e599a1a53e8c1dc166c39",
+          "rawBytes": 3006631,
+          "retrievedAtUtc": "2026-11-04T14:45:06.484018Z"
+        },
+        {
+          "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0710/HS_H08_20220115_0710_B13_FLDK_R20_S0810.DAT.bz2",
+          "rawFile": "research/dynamics/volcano/raw/HS_H08_20220115_0710_B13_FLDK_R20_S0810.DAT.bz2",
+          "rawSHA256": "3ca2f6721237ecd49dfc34743767543b7fa790b40447b6359d00fc537d4e1415",
+          "rawBytes": 2797574,
+          "retrievedAtUtc": "2026-11-04T14:45:02.571111Z"
+        }
+      ],
+      "numericData": {
+        "url": "research/dynamics/volcano/numeric/tonga-b13-20220115T0710Z-bt-centikelvin.png",
+        "sha256": "9dd8ec46b9e7369dd6a4026c8f9fe59ab15335834ff1275f0ee4912d72ad0a6c",
+        "bytes": 986593,
+        "encoding": "PNG uint16",
+        "scale": 0.01,
+        "unit": "K",
+        "nodata": 0
+      }
+    },
+    {
+      "timeUtc": "2022-01-15T07:20:00Z",
+      "url": "assets/events/volcano-dynamic/tonga-b13-20220115T0720Z.png",
+      "scanStartUtc": "2022-01-15T07:26:03.698Z",
+      "scanEndUtc": "2022-01-15T07:28:27.429Z",
+      "regionalScanStartUtcEstimate": "2022-01-15T07:26:33.662Z",
+      "regionalScanEndUtcEstimate": "2022-01-15T07:28:14.999Z",
+      "sha256": "54807e827d445b50728b0b514d5acae43064de6087fa39d9b273114838bcf316",
+      "bytes": 617431,
+      "width": 1024,
+      "height": 916,
+      "stats": {
+        "minK": 192.4,
+        "maxK": 295.02,
+        "meanK": 235.02101417372572,
+        "p10K": 202.81,
+        "neighborhoodMinK": 192.4,
+        "coldAreaKm2": 48713.68905971386,
+        "validNeighborhoodAreaKm2": 282651.6421838542,
+        "neighborhoodAreaKm2": 282651.6421838542,
+        "validPixels": 937984,
+        "missingPixels": 0,
+        "statsRegion": "fixed 300 km surface-distance neighborhood of volcano catalogue location"
+      },
+      "sourceSegments": [
+        {
+          "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0720/HS_H08_20220115_0720_B13_FLDK_R20_S0710.DAT.bz2",
+          "rawFile": "research/dynamics/volcano/raw/HS_H08_20220115_0720_B13_FLDK_R20_S0710.DAT.bz2",
+          "rawSHA256": "7c36ff55d9725b4babcc0d614b540a45500c0b31819ccc0c0037d911f7885740",
+          "rawBytes": 3003431,
+          "retrievedAtUtc": "2026-11-04T14:45:12.054811Z"
+        },
+        {
+          "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0720/HS_H08_20220115_0720_B13_FLDK_R20_S0810.DAT.bz2",
+          "rawFile": "research/dynamics/volcano/raw/HS_H08_20220115_0720_B13_FLDK_R20_S0810.DAT.bz2",
+          "rawSHA256": "ed62dffd3368e3f25e679de5e666e07144875b1c57804fb0b6b89af32b771e7c",
+          "rawBytes": 2790737,
+          "retrievedAtUtc": "2026-11-04T14:45:04.288152Z"
+        }
+      ],
+      "numericData": {
+        "url": "research/dynamics/volcano/numeric/tonga-b13-20220115T0720Z-bt-centikelvin.png",
+        "sha256": "206e71790d4c063aeb5222b05a637b022a600e1aba88ae5216f2178d5fd67610",
+        "bytes": 986718,
+        "encoding": "PNG uint16",
+        "scale": 0.01,
+        "unit": "K",
+        "nodata": 0
+      }
+    },
+    {
+      "timeUtc": "2022-01-15T07:30:00Z",
+      "url": "assets/events/volcano-dynamic/tonga-b13-20220115T0730Z.png",
+      "scanStartUtc": "2022-01-15T07:36:03.688Z",
+      "scanEndUtc": "2022-01-15T07:38:27.417Z",
+      "regionalScanStartUtcEstimate": "2022-01-15T07:36:33.653Z",
+      "regionalScanEndUtcEstimate": "2022-01-15T07:38:14.992Z",
+      "sha256": "bb4a12c884f6287af5d7a868ca7ea59ce34fb089b409ba3c6053b87e9cb01bf5",
+      "bytes": 617400,
+      "width": 1024,
+      "height": 916,
+      "stats": {
+        "minK": 190.3,
+        "maxK": 294.99,
+        "meanK": 233.55565057369387,
+        "p10K": 200.45000000000002,
+        "neighborhoodMinK": 190.3,
+        "coldAreaKm2": 55043.26041857357,
+        "validNeighborhoodAreaKm2": 282651.6421838542,
+        "neighborhoodAreaKm2": 282651.6421838542,
+        "validPixels": 937984,
+        "missingPixels": 0,
+        "statsRegion": "fixed 300 km surface-distance neighborhood of volcano catalogue location"
+      },
+      "sourceSegments": [
+        {
+          "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0730/HS_H08_20220115_0730_B13_FLDK_R20_S0710.DAT.bz2",
+          "rawFile": "research/dynamics/volcano/raw/HS_H08_20220115_0730_B13_FLDK_R20_S0710.DAT.bz2",
+          "rawSHA256": "4e8c1bd053590b523c1ea2cbf74b657c92dee4408ce8c857f79c32c3d5393e37",
+          "rawBytes": 2999995,
+          "retrievedAtUtc": "2026-11-04T14:45:07.415239Z"
+        },
+        {
+          "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0730/HS_H08_20220115_0730_B13_FLDK_R20_S0810.DAT.bz2",
+          "rawFile": "research/dynamics/volcano/raw/HS_H08_20220115_0730_B13_FLDK_R20_S0810.DAT.bz2",
+          "rawSHA256": "b269daedd57aa7c42b0e4a3e19549722f20f660b160e979d8b87ac6db12a51ea",
+          "rawBytes": 2784452,
+          "retrievedAtUtc": "2026-11-04T14:45:11.691370Z"
+        }
+      ],
+      "numericData": {
+        "url": "research/dynamics/volcano/numeric/tonga-b13-20220115T0730Z-bt-centikelvin.png",
+        "sha256": "0c81c51f71d6025e9e99738fd45ef5f070fbdeafff37be38db9a1d0dbde8a839",
+        "bytes": 986711,
+        "encoding": "PNG uint16",
+        "scale": 0.01,
+        "unit": "K",
+        "nodata": 0
+      }
+    },
+    {
+      "timeUtc": "2022-01-15T07:40:00Z",
+      "url": "assets/events/volcano-dynamic/tonga-b13-20220115T0740Z.png",
+      "scanStartUtc": "2022-01-15T07:46:03.677Z",
+      "scanEndUtc": "2022-01-15T07:48:27.408Z",
+      "regionalScanStartUtcEstimate": "2022-01-15T07:46:33.645Z",
+      "regionalScanEndUtcEstimate": "2022-01-15T07:48:14.978Z",
+      "sha256": "bd932287b49eed44c0dace10fa490a921764c9eb1a808394daab20ca1de61e26",
+      "bytes": 616399,
+      "width": 1024,
+      "height": 916,
+      "stats": {
+        "minK": 191.71,
+        "maxK": 295.07,
+        "meanK": 232.07391217552328,
+        "p10K": 199.22,
+        "neighborhoodMinK": 191.71,
+        "coldAreaKm2": 62712.25924263254,
+        "validNeighborhoodAreaKm2": 282651.6421838542,
+        "neighborhoodAreaKm2": 282651.6421838542,
+        "validPixels": 937984,
+        "missingPixels": 0,
+        "statsRegion": "fixed 300 km surface-distance neighborhood of volcano catalogue location"
+      },
+      "sourceSegments": [
+        {
+          "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0740/HS_H08_20220115_0740_B13_FLDK_R20_S0710.DAT.bz2",
+          "rawFile": "research/dynamics/volcano/raw/HS_H08_20220115_0740_B13_FLDK_R20_S0710.DAT.bz2",
+          "rawSHA256": "96521634a2bc83b39614e6980c8a113d8a34f499f7af6e63861fd8cbac0becf9",
+          "rawBytes": 3000368,
+          "retrievedAtUtc": "2026-11-04T14:45:09.216758Z"
+        },
+        {
+          "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0740/HS_H08_20220115_0740_B13_FLDK_R20_S0810.DAT.bz2",
+          "rawFile": "research/dynamics/volcano/raw/HS_H08_20220115_0740_B13_FLDK_R20_S0810.DAT.bz2",
+          "rawSHA256": "65add423914f3add55e50024d0afae8c9ff41a3cba79b508220f6e794a556e15",
+          "rawBytes": 2776780,
+          "retrievedAtUtc": "2026-11-04T14:45:18.982966Z"
+        }
+      ],
+      "numericData": {
+        "url": "research/dynamics/volcano/numeric/tonga-b13-20220115T0740Z-bt-centikelvin.png",
+        "sha256": "196713164e9c4b35711b279177566ce1521ccd8a015603c2711a9d77c47e3de3",
+        "bytes": 986616,
+        "encoding": "PNG uint16",
+        "scale": 0.01,
+        "unit": "K",
+        "nodata": 0
+      }
+    },
+    {
+      "timeUtc": "2022-01-15T07:50:00Z",
+      "url": "assets/events/volcano-dynamic/tonga-b13-20220115T0750Z.png",
+      "scanStartUtc": "2022-01-15T07:56:03.667Z",
+      "scanEndUtc": "2022-01-15T07:58:27.396Z",
+      "regionalScanStartUtcEstimate": "2022-01-15T07:56:33.635Z",
+      "regionalScanEndUtcEstimate": "2022-01-15T07:58:14.970Z",
+      "sha256": "67755de564fa3b53cbfda45af29428a7c75ca4792b07a7b72ae4579d4a6c1fb8",
+      "bytes": 618500,
+      "width": 1024,
+      "height": 916,
+      "stats": {
+        "minK": 191.57,
+        "maxK": 294.99,
+        "meanK": 230.62677820530516,
+        "p10K": 198.41,
+        "neighborhoodMinK": 191.57,
+        "coldAreaKm2": 69711.22906468985,
+        "validNeighborhoodAreaKm2": 282651.6421838542,
+        "neighborhoodAreaKm2": 282651.6421838542,
+        "validPixels": 937984,
+        "missingPixels": 0,
+        "statsRegion": "fixed 300 km surface-distance neighborhood of volcano catalogue location"
+      },
+      "sourceSegments": [
+        {
+          "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0750/HS_H08_20220115_0750_B13_FLDK_R20_S0710.DAT.bz2",
+          "rawFile": "research/dynamics/volcano/raw/HS_H08_20220115_0750_B13_FLDK_R20_S0710.DAT.bz2",
+          "rawSHA256": "1e0f7b7a83be05f8f631c27912e4e3bffaff33d3d3e59692810c2240275ae68f",
+          "rawBytes": 2993395,
+          "retrievedAtUtc": "2026-11-04T14:45:15.700050Z"
+        },
+        {
+          "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0750/HS_H08_20220115_0750_B13_FLDK_R20_S0810.DAT.bz2",
+          "rawFile": "research/dynamics/volcano/raw/HS_H08_20220115_0750_B13_FLDK_R20_S0810.DAT.bz2",
+          "rawSHA256": "c3a388671ca2146538625ac5d6dbac18b7c592b8e9f5b8e03198dc006e11cd77",
+          "rawBytes": 2765932,
+          "retrievedAtUtc": "2026-11-04T14:45:16.951122Z"
+        }
+      ],
+      "numericData": {
+        "url": "research/dynamics/volcano/numeric/tonga-b13-20220115T0750Z-bt-centikelvin.png",
+        "sha256": "d2fb0af21c86460b8a1d4c58bcb7936732cfabfcdf639bbacaacece019faeb69",
+        "bytes": 986889,
+        "encoding": "PNG uint16",
+        "scale": 0.01,
+        "unit": "K",
+        "nodata": 0
+      }
+    }
+  ],
+  "series": [
+    {
+      "id": "coldAreaKm2",
+      "label": "300公里内低温区域面积（<220K）",
+      "unit": "km²",
+      "color": "#76dce9",
+      "maxAgeSeconds": 0,
+      "samples": [
+        {
+          "timeUtc": "2022-01-15T03:50:00Z",
+          "value": 0.0
+        },
+        {
+          "timeUtc": "2022-01-15T04:00:00Z",
+          "value": 0.0
+        },
+        {
+          "timeUtc": "2022-01-15T04:10:00Z",
+          "value": 1147.5318652211565
+        },
+        {
+          "timeUtc": "2022-01-15T04:20:00Z",
+          "value": 7937.197092984394
+        },
+        {
+          "timeUtc": "2022-01-15T04:30:00Z",
+          "value": 9417.865978526777
+        },
+        {
+          "timeUtc": "2022-01-15T04:40:00Z",
+          "value": 24845.626114418836
+        },
+        {
+          "timeUtc": "2022-01-15T04:50:00Z",
+          "value": 3626.6464512911734
+        },
+        {
+          "timeUtc": "2022-01-15T05:00:00Z",
+          "value": 5110.059971894187
+        },
+        {
+          "timeUtc": "2022-01-15T05:10:00Z",
+          "value": 3986.7883505075947
+        },
+        {
+          "timeUtc": "2022-01-15T05:20:00Z",
+          "value": 925.7554226099513
+        },
+        {
+          "timeUtc": "2022-01-15T05:30:00Z",
+          "value": 2047.6179139493013
+        },
+        {
+          "timeUtc": "2022-01-15T05:40:00Z",
+          "value": 8760.508562003557
+        },
+        {
+          "timeUtc": "2022-01-15T05:50:00Z",
+          "value": 10027.277082701887
+        },
+        {
+          "timeUtc": "2022-01-15T06:00:00Z",
+          "value": 14996.304273456959
+        },
+        {
+          "timeUtc": "2022-01-15T06:10:00Z",
+          "value": 22418.017810301935
+        },
+        {
+          "timeUtc": "2022-01-15T06:20:00Z",
+          "value": 26090.34572603617
+        },
+        {
+          "timeUtc": "2022-01-15T06:30:00Z",
+          "value": 25509.876654898064
+        },
+        {
+          "timeUtc": "2022-01-15T06:40:00Z",
+          "value": 27627.00643336091
+        },
+        {
+          "timeUtc": "2022-01-15T06:50:00Z",
+          "value": 31553.25757829637
+        },
+        {
+          "timeUtc": "2022-01-15T07:00:00Z",
+          "value": 36937.416876079966
+        },
+        {
+          "timeUtc": "2022-01-15T07:10:00Z",
+          "value": 42785.002204128774
+        },
+        {
+          "timeUtc": "2022-01-15T07:20:00Z",
+          "value": 48713.68905971386
+        },
+        {
+          "timeUtc": "2022-01-15T07:30:00Z",
+          "value": 55043.26041857357
+        },
+        {
+          "timeUtc": "2022-01-15T07:40:00Z",
+          "value": 62712.25924263254
+        },
+        {
+          "timeUtc": "2022-01-15T07:50:00Z",
+          "value": 69711.22906468985
+        }
+      ],
+      "method": "同一帧 uint16 亮温场，在火山目录位置固定300公里邻域内统计；面积按球面网格面积加权，P10为面积加权第10百分位。未识别火山灰或区分气象云。"
+    },
+    {
+      "id": "p10K",
+      "label": "300公里内亮温 P10",
+      "unit": "K",
+      "color": "#f5b163",
+      "maxAgeSeconds": 0,
+      "samples": [
+        {
+          "timeUtc": "2022-01-15T03:50:00Z",
+          "value": 276.72
+        },
+        {
+          "timeUtc": "2022-01-15T04:00:00Z",
+          "value": 276.84000000000003
+        },
+        {
+          "timeUtc": "2022-01-15T04:10:00Z",
+          "value": 276.97
+        },
+        {
+          "timeUtc": "2022-01-15T04:20:00Z",
+          "value": 276.13
+        },
+        {
+          "timeUtc": "2022-01-15T04:30:00Z",
+          "value": 234.88
+        },
+        {
+          "timeUtc": "2022-01-15T04:40:00Z",
+          "value": 220.73000000000002
+        },
+        {
+          "timeUtc": "2022-01-15T04:50:00Z",
+          "value": 224.36
+        },
+        {
+          "timeUtc": "2022-01-15T05:00:00Z",
+          "value": 226.69
+        },
+        {
+          "timeUtc": "2022-01-15T05:10:00Z",
+          "value": 226.88
+        },
+        {
+          "timeUtc": "2022-01-15T05:20:00Z",
+          "value": 227.95000000000002
+        },
+        {
+          "timeUtc": "2022-01-15T05:30:00Z",
+          "value": 229.35
+        },
+        {
+          "timeUtc": "2022-01-15T05:40:00Z",
+          "value": 228.32
+        },
+        {
+          "timeUtc": "2022-01-15T05:50:00Z",
+          "value": 228.32
+        },
+        {
+          "timeUtc": "2022-01-15T06:00:00Z",
+          "value": 227.20000000000002
+        },
+        {
+          "timeUtc": "2022-01-15T06:10:00Z",
+          "value": 224.43
+        },
+        {
+          "timeUtc": "2022-01-15T06:20:00Z",
+          "value": 221.43
+        },
+        {
+          "timeUtc": "2022-01-15T06:30:00Z",
+          "value": 221.57
+        },
+        {
+          "timeUtc": "2022-01-15T06:40:00Z",
+          "value": 220.3
+        },
+        {
+          "timeUtc": "2022-01-15T06:50:00Z",
+          "value": 217.66
+        },
+        {
+          "timeUtc": "2022-01-15T07:00:00Z",
+          "value": 211.91
+        },
+        {
+          "timeUtc": "2022-01-15T07:10:00Z",
+          "value": 206.51
+        },
+        {
+          "timeUtc": "2022-01-15T07:20:00Z",
+          "value": 202.81
+        },
+        {
+          "timeUtc": "2022-01-15T07:30:00Z",
+          "value": 200.45000000000002
+        },
+        {
+          "timeUtc": "2022-01-15T07:40:00Z",
+          "value": 199.22
+        },
+        {
+          "timeUtc": "2022-01-15T07:50:00Z",
+          "value": 198.41
+        }
+      ],
+      "method": "同一帧 uint16 亮温场，在火山目录位置固定300公里邻域内统计；面积按球面网格面积加权，P10为面积加权第10百分位。未识别火山灰或区分气象云。"
+    }
+  ],
+  "sources": [
+    {
+      "name": "JMA Himawari-8 / NOAA 公开数据及使用条件",
+      "url": "https://registry.opendata.aws/noaa-himawari/"
+    },
+    {
+      "name": "JMA HSD 格式、定标与时间说明",
+      "url": "https://www.data.jma.go.jp/mscweb/en/himawari89/space_segment/hsd_sample/HS_D_users_guide_en_v13.pdf"
+    },
+    {
+      "name": "Smithsonian 火山目录位置",
+      "url": "https://volcano.si.edu/volcano.cfm?vn=243040"
+    },
+    {
+      "name": "NASA 对同次喷发的连续红外及双星测高研究说明",
+      "url": "https://science.nasa.gov/earth/earth-observatory/tonga-volcano-plume-reached-the-mesosphere-149474/"
+    }
+  ],
+  "limitations": [
+    "单通道红外亮温不等于火山灰浓度、喷发高度或地表温度；气象云也可产生低温信号。",
+    "固定300公里邻域限制统计范围，扩展到区域外的云不计入；面积不是整片喷发云的实际面积。",
+    "未修正高空云的视差，表面坐标投影可能偏离云的真实地理位置；不能据此量测精确羽流边界或地面影响。",
+    "图像是实测数据定标、空间最近邻重投影和固定灰阶映射的派生展示；没有时间插值或补帧。",
+    "亮温随高度不总单调，尤其本次穿越平流层/中间层；不能用本图亮温直接推算高度。",
+    "若页面加入立体起伏、边缘淡化或照明，均只是展示增强，不代表实测三维高度。"
+  ],
+  "processing": {
+    "calibration": "HSD block5 gain/offset -> spectral radiance -> Planck -> band brightness-temperature polynomial",
+    "spatialResampling": "nearest neighbor",
+    "temporalInterpolation": "none",
+    "gsics": "not additionally applied",
+    "navigationCode": "research/high-frequency-clouds/process_himawari.py",
+    "navigationCodeSHA256": "c3ea318c05a0ad3ee08da34a72197fc5df3d880176fc92fe17921a5e5b0a5bc9",
+    "processor": "research/dynamics/volcano/process_volcano.py",
+    "processorSHA256": "890a426fbfa320bfbffd82605c0e0fe258e8bba39771795321b64ab8a69a02b4"
+  },
+  "credit": "JMA Himawari-8 / NOAA Open Data; 本项目定标、重投影与统计。派生图不是未经修改的原始文件，不暗示 JMA/NOAA 背书。"
+}

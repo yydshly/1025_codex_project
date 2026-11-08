@@ -1,0 +1,64 @@
+{
+  "status": "passed",
+  "verifiedAtUtc": "2026-11-04T14:48:15.092064Z",
+  "assetSHA256": "b09b02e3712ce500c3c16279b275a65413dea5e4054bbb8b62542472b37fa3fe",
+  "stationCount": 6,
+  "totalVerifiedRawSamples": 144000,
+  "totalVerifiedEnvelopes": 7200,
+  "eventMetadata": "matched official saved USGS GeoJSON",
+  "stations": [
+    {
+      "id": "IU.MAJO.00.BHZ",
+      "sourceSamples": 24000,
+      "verifiedEnvelopeWindows": 1200,
+      "sourceHash": "matched",
+      "peakValueAndTimestampAndSourceLine": "matched",
+      "minMaxAndSampleCount": "matched"
+    },
+    {
+      "id": "IU.INCN.00.BHZ",
+      "sourceSamples": 24000,
+      "verifiedEnvelopeWindows": 1200,
+      "sourceHash": "matched",
+      "peakValueAndTimestampAndSourceLine": "matched",
+      "minMaxAndSampleCount": "matched"
+    },
+    {
+      "id": "IU.TATO.00.BHZ",
+      "sourceSamples": 24000,
+      "verifiedEnvelopeWindows": 1200,
+      "sourceHash": "matched",
+      "peakValueAndTimestampAndSourceLine": "matched",
+      "minMaxAndSampleCount": "matched"
+    },
+    {
+      "id": "IU.YSS.00.BHZ",
+      "sourceSamples": 24000,
+      "verifiedEnvelopeWindows": 1200,
+      "sourceHash": "matched",
+      "peakValueAndTimestampAndSourceLine": "matched",
+      "minMaxAndSampleCount": "matched"
+    },
+    {
+      "id": "IU.GUMO.00.BHZ",
+      "sourceSamples": 24000,
+      "verifiedEnvelopeWindows": 1200,
+      "sourceHash": "matched",
+      "peakValueAndTimestampAndSourceLine": "matched",
+      "minMaxAndSampleCount": "matched"
+    },
+    {
+      "id": "IU.ULN.00.BHZ",
+      "sourceSamples": 24000,
+      "verifiedEnvelopeWindows": 1200,
+      "sourceHash": "matched",
+      "peakValueAndTimestampAndSourceLine": "matched",
+      "minMaxAndSampleCount": "matched"
+    }
+  ],
+  "notVerified": [
+    "Instrument response correction is not applied.",
+    "No physical-unit calibration or independent phase picking.",
+    "No professional clipping/response quality assessment or UI/browser verification."
+  ]
+}

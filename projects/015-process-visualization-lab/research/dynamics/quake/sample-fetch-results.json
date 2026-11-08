@@ -1,0 +1,22 @@
+[
+  {
+    "file": "sample-ascii.txt",
+    "error": "<urlopen error [Errno 11001] getaddrinfo failed>",
+    "url": "https://service.iris.edu/irisws/timeseries/1/query?net=IU&sta=MAJO&loc=00&cha=BHZ&start=2011-03-11T05:45:00&end=2011-03-11T05:55:00&output=ascii"
+  },
+  {
+    "file": "sample-mseed.mseed",
+    "error": "<urlopen error [Errno 11001] getaddrinfo failed>",
+    "url": "https://service.iris.edu/fdsnws/dataselect/1/query?net=IU&sta=MAJO&loc=00&cha=BHZ&starttime=2011-03-11T05:45:00&endtime=2011-03-11T05:55:00"
+  },
+  {
+    "file": "sample-station.txt",
+    "error": "<urlopen error [Errno 11001] getaddrinfo failed>",
+    "url": "https://service.iris.edu/fdsnws/station/1/query?net=IU&sta=MAJO&loc=00&cha=BHZ&starttime=2011-03-11T05:45:00&endtime=2011-03-11T05:55:00&level=channel&format=text"
+  },
+  {
+    "file": "event-usgs.json",
+    "error": "<urlopen error [Errno 11001] getaddrinfo failed>",
+    "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=usc0001xgp&format=geojson"
+  }
+]

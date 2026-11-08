@@ -1,0 +1,31 @@
+{
+  "version": "wide-v10",
+  "bbox": [
+    85,
+    -10,
+    165,
+    55
+  ],
+  "projection": "EPSG:4326",
+  "width": 2048,
+  "height": 1664,
+  "rawRoot": "../raw",
+  "newDownloads": 0,
+  "basePipelineSha256": "c3ea318c05a0ad3ee08da34a72197fc5df3d880176fc92fe17921a5e5b0a5bc9",
+  "pipelineSha256": "5ddaa1ff29931e6fabf902242f622f3be4c98c36ccafd77c9d2d6fd49b1bb8fd",
+  "changes": [
+    "output directory",
+    "bbox and image dimensions",
+    "reuse parent raw files and missing-observation record"
+  ],
+  "unchanged": [
+    "source files",
+    "nominal and actual scan times",
+    "radiometric calibration",
+    "nearest-neighbor spatial resampling",
+    "no temporal interpolation",
+    "grayscale 180 K white / 310 K black",
+    "alpha 255 valid / 0 missing; not a cloud mask"
+  ],
+  "pipelineNormalizedTextSha256": "228fbece6fc3324f898395047d50e04894ea292d2dfa6f50cbe6f4ef74378837"
+}

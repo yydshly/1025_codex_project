@@ -1,0 +1,19 @@
+{
+  "files": 94,
+  "bytes": 98531602,
+  "everyCopiedHashMatched": true,
+  "unchangedOriginalObservationBundle": true,
+  "deletedFiles": 0,
+  "rawHsdCopied": false,
+  "finalEvidenceFiles": [
+    "assets/images/cloud-relief-v11.png",
+    "assets/images/cloud-change-v11.png",
+    "assets/images/cloud-relief-detail-v11.png",
+    "assets/images/cloud-raw-v11.png",
+    "assets/images/cloud-mobile-v11.png",
+    "README.md",
+    "research/verification-v11.json",
+    "research/iteration-v11.md"
+  ],
+  "finalEvidenceHashMatched": true
+}

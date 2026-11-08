@@ -1,0 +1,16 @@
+{
+  "csv": {
+    "url": "https://www.sciencebase.gov/catalog/file/get/68519976d4be027dac17ddd1?f=__disk__60%2F40%2F91%2F6040912b0f880057e48b51dca8d05c79265cc5a0",
+    "file": "research/dynamics/big-piney/raw/observations.csv",
+    "retrievedAtUtc": "2026-11-05T05:28:22.277Z",
+    "bytes": 1436284,
+    "sha256": "38a1f6f303e737cbcc9869ae0f0b04b6371fa56a829a84917a1fe570c73d02d3"
+  },
+  "metadata": {
+    "url": "https://data.usgs.gov/datacatalog/metadata/USGS.68519976d4be027dac17ddd1.xml",
+    "file": "research/dynamics/big-piney/raw/metadata.xml",
+    "retrievedAtUtc": "2026-11-05T05:28:24.527Z",
+    "bytes": 19055,
+    "sha256": "241028ad3d998f9d1d64c416fc9c0f89a41fdf009ceb3ce66595b509f7a4e979"
+  }
+}

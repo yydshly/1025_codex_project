@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "frames": 23,
+  "sourceSegments": 46,
+  "originalTrackRecords": 4,
+  "independentScalarCalibrationSamples": 2760,
+  "maximumCentikelvinQuantizationErrorK": 0.00499169750571582,
+  "maximumCoordinateRoundTripErrorDegrees": 2.2737367544323206e-13,
+  "totalMissingPixels": 0,
+  "uniqueDisplayHashes": 23,
+  "actualFrameIntervalSeconds": [
+    1200.0,
+    1800.0
+  ],
+  "checks": [
+    "original HSD SHA256 and segment row ownership",
+    "scalar source counts → radiance → Planck → corrected brightness temperature",
+    "geographic forward/inverse navigation",
+    "uint16 numeric retention and fixed grayscale encoding",
+    "all frame UTC and source-segment scan intervals",
+    "same-frame statistics including area quantization bounds",
+    "JMA original rows and time series without interpolated records"
+  ]
+}

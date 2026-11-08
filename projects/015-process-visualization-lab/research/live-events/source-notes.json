@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "verifiedOnUtc": "2026-11-04",
+  "purpose": "为同一地球提供可人工刷新、可追溯的真实事件来源记录，不生成自然过程动画或推测影响范围。",
+  "reproduce": {
+    "requirements": "Node.js >=22；浏览器使用原生 fetch。无 API 密钥或额外依赖。",
+    "updateCommand": "node scripts/update-earth-events.mjs",
+    "offlineVerificationCommand": "node research/live-events/verify-live-events.mjs",
+    "snapshot": "app/data/earth-events-snapshot.json",
+    "sourceArchive": "research/live-events/raw/<UTC-run-id>/",
+    "atomicity": "仅全部来源成功且通过 schema 验证时，用临时文件加 rename 替换 app 快照。失败尝试另留 receipt，原快照保留。浏览器同样应在任一 source.status=error 时保留上次完整快照并显示刷新失败。",
+    "time": "无 now 注入时，retrievedAtUtc 是实际下载/解析完成时间。now 仅为测试用确定性时钟。失败 source 的时间明确标为 failed-attempt-completion-not-successful-retrieval。",
+    "rawIntegrity": "receipt 对各请求 JSON 响应正文字节保存 SHA256、下载时间、HTTP 状态、URL、响应头及相对路径。浏览器无需保存原始文件。"
+  },
+  "sources": [
+    {
+      "id": "usgs_quakes",
+      "documentation": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php",
+      "endpoint": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_month.geojson",
+      "semantics": "过去30天 M4.5+，只保留 properties.type=earthquake。geometry 为 [longitude,latitude,depthKm]。time 为事件发生时间，updated 是目录修订时间，二者不混用；负深度及不同震级类型按原值保留。",
+      "limitations": "目录有修订且非全球所有微小地震。单个震中/深度不是 ShakeMap、实测波形或地表震动范围。官方称该组 feed 每分钟更新；应用仅按用户按钮更新。"
+    },
+    {
+      "id": "eonet_recent",
+      "documentation": "https://eonet.gsfc.nasa.gov/docs/v3",
+      "endpoint": "https://eonet.gsfc.nasa.gov/api/v3/events?status=open&days=90",
+      "semantics": "只接受 volcanoes 或 severeStorms 中标题明确为 Typhoon/Hurricane/Tropical Cyclone/Storm/Depression 的条目。当前快照90天无火山；2个明确热带气旋。每个时刻只显示来源有效 Point，不转换 Polygon 中心，不插值、不补点。",
+      "limitations": "EONET 是多来源编目，open 是目录状态，不保证当刻活跃。几何时间常为00:00Z，可能只有日期精度。源提供的 magnitudeValue 与 magnitudeUnit 原样保存为 value/valueUnit，不推断风速平均时段；来源位置序列不等于完整最佳路径或风场。"
+    },
+    {
+      "id": "eonet_volcano_open",
+      "documentation": "https://eonet.gsfc.nasa.gov/docs/v3",
+      "endpoint": "https://eonet.gsfc.nasa.gov/api/v3/events?status=open&category=volcanoes",
+      "semantics": "不设 days，用作开放火山事件目录。当前32条，最新报告定位为2026-06-15，不能统称近期喷发。时间逐条显示，定位不代表火山灰或熔岩范围。",
+      "limitations": "与 USGS 近期火山通报可能对应同一火山，保留不同来源记录，不把记录数称为独立火山数。若近期源和开放目录包含同一 EONET ID，按 ID 去重并优先保留近期源。"
+    },
+    {
+      "id": "usgs_volcano_status",
+      "documentation": "https://volcanoes.usgs.gov/hans-public/api/volcano/",
+      "coordinateDocumentation": "https://volcanoes.usgs.gov/vsc/api/volcanoApi/",
+      "reuseDocumentation": "https://volcanoes.usgs.gov/hans-public/resources/",
+      "endpoint": "https://volcanoes.usgs.gov/hans-public/api/volcano/getElevatedVolcanoes",
+      "coordinateEndpoint": "https://volcanoes.usgs.gov/vsc/api/volcanoApi/geojson",
+      "semantics": "较高警戒级别的 USGS 火山状态通报，以 vnum 精确连接火山目录坐标。sent_unixtime 为通报发布时间，不是喷发开始；坐标为火山目录位置，不是仪器台站。alertLevel/colorCode 保留官方值，不转为假定数值强度。",
+      "limitations": "USGS 覆盖的火山不是全球全部火山。通报可以描述活动增加、减少或例行更新。官方允许使用这些公开接口，但说明文档有限、接口可能变化且不保证持续支持。",
+      "matchedSynopsis": "仅当坐标目录 noticeId 与 HANS notice_identifier 完全一致时附加该条官方摘要，避免不同缓存版本混用。"
+    }
+  ],
+  "cors": {
+    "verified": true,
+    "method": "五个实际 GET 响应均返回 Access-Control-Allow-Origin: *；精确响应头保存于成功 receipt。",
+    "browserRequest": "无认证、credentials:omit、Accept:application/json、mode:cors。无需代理。CORS 可随服务策略变化，失败按源显式报告。"
+  },
+  "normalization": {
+    "coordinates": "仅源提供的有限数值、合法范围 Point；不由名称地理编码，不推断范围。",
+    "duplicates": "同事件同 UTC 时刻保留源数组中首个有效 Point；不同时刻严格排序。冲突计数保留于 diagnostics/normalizationNotes。",
+    "validation": "所有 observation 时间严格递增无重复且不晚于资料获取时刻；event.lastObservedUtc 等于末条 observation。任一源产生 schema 错误则该源 status=error。",
+    "media": "本版未加入无时间证明的火山照片或动态合成素材，不将目录点伪装为实况画面。"
+  }
+}

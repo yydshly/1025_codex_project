@@ -1,0 +1,71 @@
+{
+  "version": "5.0.0",
+  "date": "2026-11-04",
+  "verified": {
+    "sixThemesRendered": true,
+    "browserModelValues": 18,
+    "tolerance": 1e-9,
+    "playingAnnotationSample": {
+      "annotations": [
+        "P 波 · 281.5 km",
+        "S 波 · 163.0 km"
+      ],
+      "running": "暂停演示",
+      "values": [
+        281.49388260419533,
+        163.0435671845029,
+        1.9952623149688808
+      ]
+    },
+    "pausedReadouts": true,
+    "mobile": {
+      "canvasWidth": 344.66668701171875,
+      "charts": 3,
+      "overflow": false,
+      "scrollWidth": 375,
+      "width": 390
+    },
+    "localWindowRoundTrip": {
+      "values": [
+        47,
+        984.5965,
+        35.585643114499234
+      ],
+      "wind": 47,
+      "windLabel": "47 m/s"
+    },
+    "consoleErrors": [],
+    "maxVolcanoFitsFrame": true,
+    "overviewControlsUnobstructed": true
+  },
+  "pausedScreenshotComparison": {
+    "width": 1424,
+    "height": 1232,
+    "changedPixels": 185,
+    "maxChannelDifference": 4,
+    "interpretation": "两个稳定的完整截图有微小像素差异；读数与进度冻结，未宣称像素完全相同。"
+  },
+  "screenshots": [
+    "globe-typhoon-v5.png",
+    "globe-volcano-v5.png",
+    "globe-volcano-max-v5.png",
+    "globe-quake-v5.png",
+    "globe-overview-v5.png",
+    "globe-orbital-v5.png",
+    "globe-river-v5.png",
+    "globe-battery-v5.png",
+    "globe-mobile-v5.png"
+  ],
+  "limits": [
+    "NASA地表素材叠加教学模型，不是真实灾害观测。",
+    "火山灰柱、云顶和海洋反光为视觉表达；未增加实测字段。",
+    "没有进行性能基准、专业科学验证或完整无障碍认证。",
+    "以原视频的中央地球和两翼信息为呈现参考，未宣称原样复刻。"
+  ],
+  "checks": {
+    "projectCheck": "passed",
+    "testsPassed": 12,
+    "rootRegistryCheck": "passed",
+    "projectsInRegistry": 15
+  }
+}

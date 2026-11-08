@@ -1,0 +1,298 @@
+{
+  "satellite": "Himawari-8",
+  "formatVersion": "1.3",
+  "nativeColumns": 5500,
+  "nativeLines": 5500,
+  "scanStartUtc": "2018-09-16T09:20:20.758Z",
+  "scanEndUtc": "2018-09-16T09:29:40.154Z",
+  "createdAtUtc": "2018-09-16T09:31:08.000Z",
+  "qualityFlags": [
+    0,
+    0,
+    77,
+    1
+  ],
+  "errorLineCount": 0,
+  "navigationCorrection": {
+    "rotationMicroradians": 0.0,
+    "allShiftsZero": true,
+    "records": 20
+  },
+  "projection": {
+    "name": "normalized geostationary",
+    "subLongitude": 140.7,
+    "CFAC": 20466275,
+    "LFAC": 20466275,
+    "COFF": 2750.5,
+    "LOFF": 2750.5,
+    "satelliteDistanceFromEarthCenterKm": 42164.0,
+    "equatorialRadiusKm": 6378.137,
+    "polarRadiusKm": 6356.7523
+  },
+  "calibration": {
+    "band": 13,
+    "wavelengthMicrometers": 10.4073,
+    "validBits": 12,
+    "invalidCountValues": [
+      65535,
+      65534
+    ],
+    "gain": -0.003752547757067497,
+    "offset": 15.197821038469975,
+    "c0": -0.116127314573644,
+    "c1": 1.00099153832169,
+    "c2": -1.76961091570947e-06,
+    "speedOfLight": 299792458.0,
+    "planckConstant": 6.62606957e-34,
+    "boltzmannConstant": 1.3806488e-23
+  },
+  "lineTimes": [
+    {
+      "line": 1,
+      "timeUtc": "2018-09-16T09:20:20.758Z"
+    },
+    {
+      "line": 198,
+      "timeUtc": "2018-09-16T09:20:37.834Z"
+    },
+    {
+      "line": 442,
+      "timeUtc": "2018-09-16T09:20:54.109Z"
+    },
+    {
+      "line": 550,
+      "timeUtc": "2018-09-16T09:20:54.109Z"
+    },
+    {
+      "line": 551,
+      "timeUtc": "2018-09-16T09:20:54.109Z"
+    },
+    {
+      "line": 685,
+      "timeUtc": "2018-09-16T09:21:19.287Z"
+    },
+    {
+      "line": 928,
+      "timeUtc": "2018-09-16T09:21:40.793Z"
+    },
+    {
+      "line": 1100,
+      "timeUtc": "2018-09-16T09:21:40.793Z"
+    },
+    {
+      "line": 1101,
+      "timeUtc": "2018-09-16T09:21:40.793Z"
+    },
+    {
+      "line": 1171,
+      "timeUtc": "2018-09-16T09:22:07.967Z"
+    },
+    {
+      "line": 1414,
+      "timeUtc": "2018-09-16T09:22:38.067Z"
+    },
+    {
+      "line": 1650,
+      "timeUtc": "2018-09-16T09:22:38.067Z"
+    },
+    {
+      "line": 1651,
+      "timeUtc": "2018-09-16T09:22:38.067Z"
+    },
+    {
+      "line": 1657,
+      "timeUtc": "2018-09-16T09:23:06.467Z"
+    },
+    {
+      "line": 1900,
+      "timeUtc": "2018-09-16T09:23:35.261Z"
+    },
+    {
+      "line": 2143,
+      "timeUtc": "2018-09-16T09:24:04.340Z"
+    },
+    {
+      "line": 2200,
+      "timeUtc": "2018-09-16T09:24:04.340Z"
+    },
+    {
+      "line": 2201,
+      "timeUtc": "2018-09-16T09:24:04.340Z"
+    },
+    {
+      "line": 2386,
+      "timeUtc": "2018-09-16T09:24:33.566Z"
+    },
+    {
+      "line": 2629,
+      "timeUtc": "2018-09-16T09:25:05.042Z"
+    },
+    {
+      "line": 2750,
+      "timeUtc": "2018-09-16T09:25:05.042Z"
+    },
+    {
+      "line": 2751,
+      "timeUtc": "2018-09-16T09:25:05.042Z"
+    },
+    {
+      "line": 2871,
+      "timeUtc": "2018-09-16T09:25:34.344Z"
+    },
+    {
+      "line": 3111,
+      "timeUtc": "2018-09-16T09:26:03.583Z"
+    },
+    {
+      "line": 3300,
+      "timeUtc": "2018-09-16T09:26:03.583Z"
+    },
+    {
+      "line": 3301,
+      "timeUtc": "2018-09-16T09:26:03.583Z"
+    },
+    {
+      "line": 3351,
+      "timeUtc": "2018-09-16T09:26:32.664Z"
+    },
+    {
+      "line": 3592,
+      "timeUtc": "2018-09-16T09:27:01.456Z"
+    },
+    {
+      "line": 3833,
+      "timeUtc": "2018-09-16T09:27:32.073Z"
+    },
+    {
+      "line": 3850,
+      "timeUtc": "2018-09-16T09:27:32.073Z"
+    },
+    {
+      "line": 3851,
+      "timeUtc": "2018-09-16T09:27:32.073Z"
+    },
+    {
+      "line": 4075,
+      "timeUtc": "2018-09-16T09:28:00.034Z"
+    },
+    {
+      "line": 4318,
+      "timeUtc": "2018-09-16T09:28:27.314Z"
+    },
+    {
+      "line": 4400,
+      "timeUtc": "2018-09-16T09:28:27.314Z"
+    },
+    {
+      "line": 4401,
+      "timeUtc": "2018-09-16T09:28:27.314Z"
+    },
+    {
+      "line": 4561,
+      "timeUtc": "2018-09-16T09:28:53.709Z"
+    },
+    {
+      "line": 4805,
+      "timeUtc": "2018-09-16T09:29:06.713Z"
+    },
+    {
+      "line": 4950,
+      "timeUtc": "2018-09-16T09:29:06.713Z"
+    },
+    {
+      "line": 4951,
+      "timeUtc": "2018-09-16T09:29:06.713Z"
+    },
+    {
+      "line": 5051,
+      "timeUtc": "2018-09-16T09:29:30.599Z"
+    },
+    {
+      "line": 5299,
+      "timeUtc": "2018-09-16T09:29:40.154Z"
+    },
+    {
+      "line": 5500,
+      "timeUtc": "2018-09-16T09:29:40.154Z"
+    }
+  ],
+  "frame": {
+    "id": "himawari-b13-20180916T0920Z",
+    "timeUtc": "2018-09-16T09:20:00Z",
+    "timeMeaning": "nominal observation timeline start; each scan spans minutes, not an instantaneous exposure",
+    "scanStartUtc": "2018-09-16T09:20:20.758Z",
+    "scanEndUtc": "2018-09-16T09:29:40.154Z",
+    "regionalScanStartUtcEstimate": "2018-09-16T09:20:47.839Z",
+    "regionalScanEndUtcEstimate": "2018-09-16T09:26:03.583Z",
+    "regionalTimeMethod": "linear interpolation of HSD block 9 line observation timestamps; estimated bounds only",
+    "url": "frames/himawari-b13-20180916T0920Z.png",
+    "width": 2048,
+    "height": 1664,
+    "bbox": [
+      85.0,
+      -10.0,
+      165.0,
+      55.0
+    ],
+    "projection": "EPSG:4326",
+    "rowOrder": "north-to-south",
+    "pixelConvention": "bbox gives outer pixel edges; pixel centers at half-cell offsets",
+    "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2018/09/16/0920/HS_H08_20180916_0920_B13_FLDK_R20_S0101.DAT.bz2",
+    "rawFile": "../raw/HS_H08_20180916_0920_B13_FLDK_R20_S0101.DAT.bz2",
+    "rawBytes": 24060921,
+    "rawSHA256": "6bfdd7a591aa773865ac0db02adb45564ee4ea60eb2b57d3882cdbbad42beb5c",
+    "sha256": "a1009e3fab27b6eae47d2ab57010cfcb8930c9622605f3b59de9ce8522f5d0ae",
+    "retrievedAtUtc": "2026-11-04T12:40:04Z",
+    "brightnessTemperatureData": {
+      "url": "frames/himawari-b13-20180916T0920Z-bt-centikelvin.png",
+      "sha256": "9b0fefd1e1dbda9ab405db385fb62102250060622ac1bd793c8953185ff899f8",
+      "encoding": "PNG uint16",
+      "scale": 0.01,
+      "unit": "K",
+      "nodata": 0
+    },
+    "statistics": {
+      "minK": 188.07480132992887,
+      "maxK": 306.04345864401887,
+      "validPixels": 3407872,
+      "missingPixels": 0
+    },
+    "coordinateChecks": [
+      {
+        "lon": 85.0,
+        "lat": -10.0,
+        "nativeColumn1Based": 360.7524422517672,
+        "nativeLine1Based": 3255.527123933765,
+        "roundTripMaxErrorDegrees": 1.8474111129762605e-13
+      },
+      {
+        "lon": 85.0,
+        "lat": 55.0,
+        "nativeColumn1Based": 1401.4387817068875,
+        "nativeLine1Based": 448.84727820835724,
+        "roundTripMaxErrorDegrees": 9.663381206337363e-13
+      },
+      {
+        "lon": 165.0,
+        "lat": -10.0,
+        "nativeColumn1Based": 4017.7607609672405,
+        "nativeLine1Based": 3289.2511930080623,
+        "roundTripMaxErrorDegrees": 8.526512829121202e-14
+      },
+      {
+        "lon": 165.0,
+        "lat": 55.0,
+        "nativeColumn1Based": 3445.5723026548285,
+        "nativeLine1Based": 369.1835064796428,
+        "roundTripMaxErrorDegrees": 1.7053025658242404e-13
+      },
+      {
+        "lon": 114.1742,
+        "lat": 22.3019,
+        "nativeColumn1Based": 1473.5011175889877,
+        "nativeLine1Based": 1588.1520616739663,
+        "roundTripMaxErrorDegrees": 1.4210854715202004e-14
+      }
+    ]
+  }
+}

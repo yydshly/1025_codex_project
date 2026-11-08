@@ -1,0 +1,18 @@
+{
+  "name": "process-visualization-lab",
+  "version": "17.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "preview": "node scripts/serve.mjs",
+    "build:site": "node scripts/build-site.mjs",
+    "check": "node scripts/check.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "data:update": "node scripts/update-earth-events.mjs",
+    "check:dynamics": "node scripts/check-dynamics.mjs",
+    "check:narration": "node scripts/check-narration.mjs"
+  }
+}

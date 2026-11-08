@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "event": "2022-01-15 Hunga Tonga-Hunga Ha'apai eruption",
+  "product": "JMA Himawari-8 AHI B13 calibrated infrared brightness-temperature sequence",
+  "coverage": {
+    "nominalStartUtc": "2022-01-15T03:50:00Z",
+    "nominalEndUtc": "2022-01-15T07:50:00Z",
+    "cadenceSeconds": 600,
+    "frames": 25,
+    "rawFiles": 50,
+    "segments": [7, 8],
+    "missingTimesUtc": [],
+    "bbox": [174, -29, 193, -12],
+    "longitudeMeaning": "Unwrapped east longitude across the antimeridian: 193E equals 167W; do not clamp to +/-180 before building the regional grid.",
+    "projection": "EPSG:4326",
+    "width": 1024,
+    "height": 916,
+    "pixelConvention": "bbox outer edges, pixel centers at half-grid offsets, rows north-to-south"
+  },
+  "provenance": {
+    "registry": "https://registry.opendata.aws/noaa-himawari/",
+    "sourceBucket": "https://noaa-himawari8.s3.amazonaws.com/",
+    "formatGuide": "https://www.data.jma.go.jp/mscweb/en/himawari89/space_segment/hsd_sample/HS_D_users_guide_en_v13.pdf",
+    "eventContext": "https://science.nasa.gov/earth/earth-observatory/tonga-volcano-plume-reached-the-mesosphere-149474/",
+    "volcanoPosition": "https://volcano.si.edu/volcano.cfm?vn=243040",
+    "position": {"lat": -20.5532, "lon": -175.3841},
+    "positionMeaning": "Official volcano catalogue position, not a plume centroid or measurement station",
+    "rawReceipt": "download-receipt.json",
+    "listings": "s3-20220115T03-list.xml through s3-20220115T07-list.xml; complete untruncated listings; selected objects in listed-objects.json",
+    "reuse": "JMA produces the data; NOAA is authorized to distribute it freely and openly. Attribute JMA/NOAA; transformed output is not original unaltered data and must not imply endorsement."
+  },
+  "time": {
+    "nominal": "Filename hhnn is the UTC start of the nominal ten-minute timeline, not the instantaneous exposure time at Tonga.",
+    "scanBounds": "Each frame preserves actual header start/end over the two delivered segments. The Tonga-region acquisition is several minutes after the nominal label.",
+    "regionalBounds": "Bounds estimated by interpolation of HSD block9 line times; no claim of exact per-pixel timestamps.",
+    "series": "Charts share the corresponding frame's nominal label and derive from its numeric raster. No temporal interpolation or repeated filler frames."
+  },
+  "processing": {
+    "raw": "HSD bzip2 segmented full disk B13 10.4 micrometres, native nominal 2 km resolution at sub-satellite point; actual projected sampling varies across the disk.",
+    "navigation": "HSD block3 geostationary/WGS84 parameters. Global 1-based native rows are shifted by segment first_line, not assumed to start at zero. Block8 rotation and shifts must all be zero.",
+    "calibration": "HSD block5 gain and offset convert DN to spectral radiance per micrometre. Planck inversion plus band polynomial gives brightness temperature. No extra GSICS correction.",
+    "resampling": "Nearest neighbor only in space. 1024x916 is the display grid size, not a claim of new instrument resolution.",
+    "numeric": "PNG uint16 centikelvin with 0 nodata; rounding error at most 0.005 K relative to calibrated pixels. All plotted statistics derive from this delivered numeric raster.",
+    "display": "RGBA, black at310 K and white at180 K, clamped outside that range. Alpha255 only for valid data. This is a display mapping, not a cloud mask.",
+    "quality": "Reject nonzero operational quality flag1, nonzero navigation corrections, and error lines. Quality flags3/4 are recorded as processing-center-only fields per JMA guide, not interpreted as image failures.",
+    "statistics": "At each actual frame, fixed300 km great-circle neighborhood around the official volcano coordinate; spherical cell areas use R=6371.0088 km. Sum cells with BT<220 K; P10 is the area-weighted10th percentile. These are display-analysis choices, not validated volcanic ash classification."
+  },
+  "limitations": [
+    "Weather clouds are retained. One IR channel cannot separate all volcanic material from meteorological clouds or infer ash concentration.",
+    "Cloud parallax is not corrected. Very high eruption clouds can be displaced significantly in a surface-projected image; points and area are not an exact ground hazard footprint.",
+    "The fixed300 km area excludes all pixels farther away, so it is not total plume area. Values can fall or rise due to temperature changes and transport, not only material quantity.",
+    "Brightness temperature is not plume height. The cited NASA work used two satellites and geometric stereoscopy; this single-channel product does not reproduce that height retrieval.",
+    "If the UI uses lighting, surface elevation or boundary fading, those are display aids and must not be described as measured three-dimensional structure."
+  ],
+  "reproduction": {
+    "dependencies": "Python3.10+ with numpy and Pillow; PowerShell7 for bounded public downloads. Shared navigation helper is research/high-frequency-clouds/process_himawari.py and its SHA256 is retained in manifest.",
+    "fetchCommand": "pwsh -NoProfile -File research/dynamics/volcano/fetch-tonga.ps1",
+    "processCommand": "python research/dynamics/volcano/process_volcano.py",
+    "sampleCommand": "python research/dynamics/volcano/process_volcano.py --times 0420",
+    "sampleWarning": "The sample command writes an explicitly sample-only manifest; run the full processor afterward for the25-frame delivery.",
+    "verifyCommand": "python research/dynamics/volcano/verify_volcano.py",
+    "files": "Application display PNGs live in app/assets/events/volcano-dynamic. Numeric rasters and segment metadata live under this research directory. Raw HSD files are retained in D staging; fetch again if raw originals were intentionally omitted from the delivered package."
+  }
+}

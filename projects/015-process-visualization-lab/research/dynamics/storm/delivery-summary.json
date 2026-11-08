@@ -1,0 +1,17 @@
+{
+  "frames": 23,
+  "sourceSegmentsUsed": 46,
+  "rawBytesUsed": 114220782,
+  "rawCandidatesRetained": 64,
+  "allRawCandidateBytes": 156471237,
+  "displayBytes": 12489879,
+  "bbox": [
+    112,
+    22,
+    140,
+    43
+  ],
+  "width": 1024,
+  "height": 768,
+  "trackRecords": 4
+}

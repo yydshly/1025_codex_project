@@ -1,0 +1,120 @@
+{
+  "version": "12.0.0",
+  "status": "verified-local",
+  "entry": "http://127.0.0.1:4175/app/index.html#events",
+  "changes": [
+    "Full sphere fits both camera dimensions by default and on reset; explicit detail retained.",
+    "Refreshable official event catalog with search, category filters, source timestamps and evidence exports.",
+    "Actual earthquake occurrence sequence and discrete source report positions.",
+    "Six existing principle animations exposed with current capabilities and additional data requirements."
+  ],
+  "sourceSnapshot": {
+    "retrievedAtUtc": "2026-11-04T14:15:36.397Z",
+    "records": 757,
+    "defaultVisibleRecords": 725,
+    "quake": 720,
+    "storm": 2,
+    "usgsVolcanoNotices": 3,
+    "olderEonetVolcanoRecords": 32,
+    "olderRecordsHiddenByDefault": true
+  },
+  "validation": {
+    "stagingCheck": "passed",
+    "automatedTests": 120,
+    "failed": 0,
+    "sourceReplay": "research/live-events/validation-report.json",
+    "deliveredProjectTests": "passed",
+    "deliveredProjectCheck": "passed",
+    "repositoryIndexCheck": "passed",
+    "localPageHttpStatus": 200
+  },
+  "browser": {
+    "status": "passed",
+    "entry": "http://127.0.0.1:4175/app/index.html#events",
+    "desktopViewport": [
+      1440,
+      1200
+    ],
+    "mobileViewport": [
+      390,
+      844
+    ],
+    "viewportRestored": true,
+    "consoleWarningsAndErrors": [],
+    "fullSphere": "Visible on desktop and mobile; reset from cloud detail returns to full globe.",
+    "officialRefresh": {
+      "retrievedAtUtc": "2026-11-04T14:30:14.267Z",
+      "sourceGroupsSucceeded": 4,
+      "visibleRecords": 725
+    },
+    "earthquakeReplay": {
+      "selectedUtc": "2026-10-06T19:02:01.001Z",
+      "selectedRecord": "24/720",
+      "factsAndChartsMatch": true
+    },
+    "stormReplay": {
+      "selectedUtc": "2026-11-03T00:00:00.000Z",
+      "selectedRecord": "42/47",
+      "factsAndChartsMatch": true
+    },
+    "volcano": {
+      "selected": "Kilauea",
+      "status": "WATCH / ORANGE",
+      "defaultRecords": 3,
+      "withOlderReports": 35
+    },
+    "search": "Case-specific match and empty-result clearing verified.",
+    "export": {
+      "eventId": "usgs-quake:us7000tvwj",
+      "selectedUtc": "2026-11-04T07:40:12.288Z",
+      "magnitude": 5,
+      "depthKm": 49.074,
+      "sourceAndSelectedObservationMatch": true
+    },
+    "retainedMangkhut": "Synchronized clouds and observation panels render at 13:00 HKT; detail then reset restores complete Earth.",
+    "capabilities": "Six cards expose existing principle animations and the additional observation requirements; volcano animation playback verified.",
+    "volcanoVisualReview": "Southern white-grey geography is Antarctica in the historical Blue Marble basemap, not a second volcanic plume. No shader change.",
+    "mobile": "Complete sphere; document scrollWidth 375 <= viewport width 390; controls remain within viewport.",
+    "limitations": [
+      "Failure preservation and request races verified with controlled automated tests, not browser network fault injection.",
+      "No quantitative low-end device performance benchmark."
+    ]
+  },
+  "boundaries": [
+    "Catalog points and fixed symbols are not measured shockwaves, plumes, lava, rainfall or impacts.",
+    "USGS volcanic notices are release times, not eruption origin times; EONET open state is not a current activity guarantee.",
+    "Current storm report positions do not replace the detailed Mangkhut historical cloud/ground observation package.",
+    "River/battery remain teaching models; real engines, river pollution fields and device telemetry are not connected."
+  ],
+  "verifiedAtUtc": "2026-11-04T14:35:40.427847+00:00",
+  "screenshots": [
+    {
+      "file": "assets/images/events-globe-v12.png",
+      "sha256": "a9ba0c97c59e3782f5bdcfa31d22e0200b6bc16291498944a33584f91b794c81"
+    },
+    {
+      "file": "assets/images/volcano-report-v12.png",
+      "sha256": "21204f53a7cc8e2cf64ad9db739dd58e70f70441b108d6de37213fffda58c687"
+    },
+    {
+      "file": "assets/images/storm-reports-v12.png",
+      "sha256": "edb437bff36182b50e2060affcfb74418ad7d5e7d5967e0670d8e520f3c705fe"
+    },
+    {
+      "file": "assets/images/mangkhut-whole-v12.png",
+      "sha256": "aaa2961c2593a6ac2836c731256b7f764b66571f050ece004ac1474e859e7f92"
+    },
+    {
+      "file": "assets/images/capabilities-v12.png",
+      "sha256": "62872abc98386d24793cd8a1f9e49f924505c998e01b84f02874e46a7e9d2211"
+    },
+    {
+      "file": "assets/images/volcano-principle-v12.png",
+      "sha256": "5b71dd826d986e174a55acdbae99d63488eb50580d9bb31f958ac9c268b2b42e"
+    },
+    {
+      "file": "assets/images/events-mobile-v12.png",
+      "sha256": "1eb7d7af7a397abafbbbc2bd26f63ffa268a1d6c1b98bcc4ce909b5b05df6677"
+    }
+  ]
+}

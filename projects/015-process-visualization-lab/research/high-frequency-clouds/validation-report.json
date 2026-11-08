@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "frames": 72,
+  "missingTimesUtc": [
+    "2018-09-16T02:40:00Z"
+  ],
+  "startTimeUtc": "2018-09-16T00:00:00Z",
+  "endTimeUtc": "2018-09-16T12:00:00Z",
+  "rawBytes": 1742759961,
+  "displayImageBytes": 50420458,
+  "brightnessTemperatureDataBytes": 91324062,
+  "operationalQualityFlag1Values": [
+    0
+  ],
+  "minimumAdjacentChangedPixels": 661714,
+  "checks": [
+    "clock vs actual archive availability",
+    "all source and output SHA-256 hashes",
+    "frame dimensions/CRS/bbox",
+    "scan windows inside nominal 10-minute intervals",
+    "numeric nodata matches image alpha",
+    "valid radiometric range",
+    "all operation quality flags clear"
+  ],
+  "independentReview": {
+    "reviewer": "real_weather_sources agent",
+    "method": "Independent ECEF-to-observation-angle calculation for six locations and independent micron-unit Planck calculation from raw DN for four output pixels.",
+    "result": "No header, unit, indexing or coordinate-transform defect found for the reviewed 00:00 sample.",
+    "sampleKelvinNearHongKong": 231.9526,
+    "sampleQuantizedCentikelvin": 23195,
+    "limit": "Agreement of transform implementations is not measured absolute geolocation accuracy. Cloud parallax and instrument errors remain."
+  }
+}

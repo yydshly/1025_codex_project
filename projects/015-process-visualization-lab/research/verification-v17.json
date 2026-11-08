@@ -1,0 +1,57 @@
+{
+  "version": "17.0.0",
+  "status": "verified-local",
+  "verifiedAtUtc": "2026-11-05T04:29:34.817445+00:00",
+  "localUrl": "http://127.0.0.1:4175/app/index.html#dynamic-storm",
+  "planUrl": "http://127.0.0.1:4175/research/implementation-plan.html",
+  "publicDeployment": false,
+  "scope": "First agreed work batch: failure recovery, truthful export, dependency corrections and seven concrete scene/operating specifications.",
+  "implemented": [
+    "End-of-window replay starts only after a successful first-frame commit; pause/seek invalidates pending replay intent.",
+    "Export schema2 preserves original observations and separately records requested/committed/rendered clocks and readiness/failure.",
+    "Cloud rendering methods and current reference contour provenance are exported, including numeric input hash and actual visible state.",
+    "MiniMax manifest failure is retryable on reselect/restart; successful manifest cached, missing/audio/manifest failures distinguishable.",
+    "Reference-contour failure has explicit status and retry; pending requests deduplicate, page exit aborts and does not restore old overlays.",
+    "Feature coordinates are bound to eventID and exact frame time, preventing same-kind/time features from a different event.",
+    "Readable seven-scene plan and operating specifications; independent per-direction admission replaces all-directions blocking dependencies."
+  ],
+  "automated": {
+    "testsPassed": 260,
+    "testsFailed": 0,
+    "projectCheck": "passed including original source/observation hashes,48 dynamic frames,72Mangkhut frames,70derived pairs,36MiniMax WAV/text hashes,and seven-scene report structure",
+    "repositoryCheck": "passed:15projects/index/cover references",
+    "newFailureRegressions": 16
+  },
+  "browser": {
+    "observed": [
+      "Latest storm endpoint Earth/story/chart clock13:30UTC; downloaded export schema2 displayed status and same rendered clock.",
+      "Downloaded export contains actual Hinnamnor feature eventID/time and numeric input hash; copied unchanged to research/qa-v17/storm-ready-export.json.",
+      "Existing MiniMax chapter UI loaded matching audio manifest and subtitles; existing process retained.",
+      "Readable report contains7scene cards and shows implemented first-batch work separately from planned capabilities.",
+      "Desktop report screenshot1440x1000 and390x844scene layout inspected; mobile document horizontal overflow=false.",
+      "No browser console errors observed; temporary viewport override reset; product and plan tabs retained."
+    ],
+    "failurePathMethod": "Failure/retry/cancellation behavior verified in actual module/controller automated harnesses; no browser-network fault injection claimed."
+  },
+  "dataChanges": {
+    "newObservations": false,
+    "newScenarioConnections": 0,
+    "newAudio": false,
+    "originalInputs": "Unchanged and full integrity check passed."
+  },
+  "remaining": [
+    "Shared presentation and generic scene registration remain specified-pending-implementation.",
+    "Persistent per-source update service and dynamic script/audio generation pipeline remain planned.",
+    "New celestial/water/device real-data scenes are not implemented by writing specifications.",
+    "Visual fidelity and user comprehension have not been accepted as complete."
+  ],
+  "screenshots": [
+    "assets/images/implementation-v17.png",
+    "assets/images/implementation-scene-v17.png"
+  ],
+  "specifications": [
+    "research/implementation-roadmap.json",
+    "research/scenario-specifications.json",
+    "research/operating-contracts.json"
+  ]
+}

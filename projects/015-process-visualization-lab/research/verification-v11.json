@@ -1,0 +1,161 @@
+{
+  "version": "11.0.0",
+  "status": "verified-local-prototype",
+  "implementationRecordedDate": "2026-11-04",
+  "verifiedAtUtc": "2026-11-04T13:54:54.967153+00:00",
+  "entry": "http://127.0.0.1:4175/app/index.html#typhoon-real",
+  "scope": "Same-frame texture lighting, cloud detail camera, and optional derived ten-minute fixed-grid brightness-temperature differences over the existing synchronized historical observations.",
+  "observations": {
+    "sourceCloudFrames": 72,
+    "clockTicks": 73,
+    "missingCloudUtc": "2018-09-16T02:40:00Z",
+    "projection": "EPSG:4326",
+    "bbox": [
+      85,
+      -10,
+      165,
+      55
+    ],
+    "frameSize": [
+      2048,
+      1664
+    ],
+    "groundSeriesScope": "Existing wind, district rainfall range, sea-level and JMA source records and selection rules retained; no new or recalculated station series intended in this presentation iteration.",
+    "finalSourceEqualityVerification": "Original v10 synchronized source bundle was byte-identical before delivery; no original source fields or station series changed. Original 72 cloud PNG hashes pass project check."
+  },
+  "presentation": {
+    "defaultMode": "fusion",
+    "reliefEnabledByDefault": true,
+    "reliefMethod": "Display-only lighting from spatial gradients in the same source frame; no physical height retrieval, observed shadow or optical-depth estimate.",
+    "detailView": "Closer camera framing of the same registered raster; no additional source resolution.",
+    "changeEnabledByDefault": false,
+    "rawMode": "Same unfused brightness-temperature display frame; relief and change overlay disabled.",
+    "cloudCacheTextures": 4,
+    "changeCacheTextures": 2,
+    "temporalInterpolation": false,
+    "opticalFlow": false,
+    "syntheticCloudMotion": false
+  },
+  "derivedChange": {
+    "kind": "derived fixed-grid brightness-temperature difference display",
+    "pairs": 70,
+    "intervalSeconds": 600,
+    "formula": "currentUint16 * 0.01 - previousUint16 * 0.01, with signed subtraction in the offline implementation",
+    "inputQuantizationStepK": 0.01,
+    "inputData": "Retained wide-v10 uint16 brightness-temperature rasters, not the quantized 8-bit display PNGs.",
+    "newSourceDownloadsForDerivation": 0,
+    "eitherTemperatureBelowK": 265,
+    "transitionAbsDeltaK": [
+      4,
+      12
+    ],
+    "maximumAlphaByte": 166,
+    "negativeDifferenceColor": "#4cdcee",
+    "positiveDifferenceColor": "#f5b163",
+    "unavailableClockTimesUtc": [
+      "2018-09-16T00:00:00Z",
+      "2018-09-16T02:40:00Z",
+      "2018-09-16T02:50:00Z"
+    ],
+    "selection": "Exact UTC instant; no nearest frame and no comparison across the missing scan.",
+    "bundleContract": "All valid source pairs must exist, with matching source numeric hashes, grid, dimensions and exactly 600 seconds between nominal times.",
+    "sourceManifest": "research/high-frequency-clouds/change-v11/manifest.json",
+    "rasterValidationReport": "research/high-frequency-clouds/change-v11/validation-report.json",
+    "runtimeManifest": "app/data/mangkhut-cloud-changes.json",
+    "meaning": "Change at fixed geographic grid cells, not the temperature tendency of a tracked cloud parcel, wind, cloud velocity or rainfall."
+  },
+  "playbackImplementation": {
+    "preparation": "Prepare the next real cloud frame and, if enabled, its change image before selecting the shared clock.",
+    "cacheCommit": "Cloud binds synchronously from cache; change waits for the same cloud-ready promise, then binds within microtasks before the next render. Slow cloud loading clears prior changes immediately.",
+    "invalidation": "Manual selection, toggles, mode changes and clear/dispose invalidate superseded selections; late image callbacks cannot restore old pairs.",
+    "failure": "Missing pair and loading failure have explicit states; no old overlay is presented as the new pair.",
+    "finalIntegrationValidation": "13 controlled asynchronous regression tests invoke actual app functions; passed."
+  },
+  "validation": {
+    "projectCheck": {
+      "status": "passed",
+      "locations": [
+        "D staging",
+        "E original project"
+      ],
+      "command": "npm.cmd run check"
+    },
+    "automatedTests": {
+      "status": "passed",
+      "command": "npm.cmd test",
+      "passed": 88,
+      "failed": 0,
+      "location": "E original project"
+    },
+    "repositoryCheck": {
+      "status": "passed",
+      "projects": 15
+    },
+    "copiedFileSHA256Verification": {
+      "files": 94,
+      "bytes": 98531602,
+      "everyCopiedHashMatched": true,
+      "unchangedOriginalObservationBundle": true,
+      "deletedFiles": 0,
+      "rawHsdCopied": false
+    },
+    "rasterValidation": "All 70 pairs, 72 numeric inputs, every displayed pixel and independent alpha formula verified; see change-v11/validation-report.json."
+  },
+  "browser": {
+    "status": "passed",
+    "desktopViewport": [
+      1440,
+      1200
+    ],
+    "mobileViewport": [
+      390,
+      844
+    ],
+    "consoleWarningsAndErrors": 0,
+    "checksPassed": [
+      "Actual GPU rendering of same-frame relief, near camera and derived change overlay.",
+      "Relief toggle preserves 13:00 clock and original 111.12 km/h, 2–48 mm, 3.7 m observations.",
+      "12:50–13:00 change overlay and selected clock match.",
+      "08:00 has no prior pair; 10:40 has no current cloud; 10:50 retains cloud without a pair; 11:00 restores valid change.",
+      "Raw mode disables both enhancements without changing selected time.",
+      "2x full playback reaches 20:00 and stops with 19:50–20:00 change and all four chart clocks at 20:00.",
+      "Full path A/B and principle modes remain accessible; change and detail controls hide when irrelevant.",
+      "Downloaded JSON retains selected/rendered cloud/pair time, formula, source hashes and actual station definitions.",
+      "390px mobile has no horizontal overflow; controls remain within viewport."
+    ],
+    "locations": "D staging full playback/missing-scan/export checks; delivered E original for desktop/mobile, modes, relief, change, raw and console. Delivered files were byte-verified.",
+    "loadingRaceTests": "Node VM with controlled promises, not browser network throttling.",
+    "finalState": "E localhost4175, 13:00 paused, fusion+relief enabled, change disabled, regional camera, default viewport restored.",
+    "performanceScope": "Real browser rendering verified; no quantitative low-end hardware benchmark."
+  },
+  "screenshots": [
+    {
+      "path": "assets/images/cloud-relief-v11.png",
+      "status": "captured-from-delivered-E-page"
+    },
+    {
+      "path": "assets/images/cloud-change-v11.png",
+      "status": "captured-from-delivered-E-page"
+    },
+    {
+      "path": "assets/images/cloud-relief-detail-v11.png",
+      "status": "captured-from-delivered-E-page"
+    },
+    {
+      "path": "assets/images/cloud-raw-v11.png",
+      "status": "captured-from-delivered-E-page"
+    },
+    {
+      "path": "assets/images/cloud-mobile-v11.png",
+      "status": "captured-from-delivered-E-page"
+    }
+  ],
+  "boundaries": [
+    "Lighting is a display aid from the same-frame texture, not observed cloud height, shadow, optical depth or a reconstructed 3D volume.",
+    "Fixed-grid brightness-temperature differences can include feature displacement, temperature and observation/navigation effects; the cause is not inferred.",
+    "The 265 K selection and 4–12 K opacity ramp are display choices, not cloud classification or confidence measures.",
+    "Nominal ten-minute pairs are scans spanning minutes, not two instantaneous exposures; parallax remains uncorrected.",
+    "Source uint16 precision is a storage convention, not a claim of 0.01 K measurement accuracy."
+  ],
+  "previousVerification": "research/verification-v10.json"
+}

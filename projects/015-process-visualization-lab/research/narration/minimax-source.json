@@ -1,0 +1,1046 @@
+{
+  "provider": "MiniMax",
+  "endpoint": "https://api.minimax.cn/v1/t2a_v2",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentle_Senior",
+  "speed": 0.95,
+  "emotion": "calm",
+  "locale": "zh-CN",
+  "format": "wav",
+  "sampleRate": 32000,
+  "channels": 1,
+  "generatedAt": "2026-11-06T03:02:42.938Z",
+  "scriptSha256": "bb34610af3d90d79754ce1ee77690169e0a70c09b3af835ed3296b8cd06a3a44",
+  "registeredTourSha256": "368d209698f497fdc7b3db06e90a67434fbb110c65197b2bed32cb05104f997d",
+  "sourceScript": "app/narration-script.js",
+  "registeredSourceScript": "app/dynamic-events.js",
+  "adaptedFrom": "projects/003-unified-learning-design/scripts/generate-minimax-voice.mjs",
+  "documentation": [
+    "https://platform.minimax.cn/docs/api-reference/speech-t2a-http",
+    "https://platform.minimax.cn/docs/api-reference/errorcode",
+    "https://github.com/MiniMax-AI/skills/blob/main/skills/frontend-dev/references/minimax-voice-catalog.md"
+  ],
+  "feeNote": "Provider usage characters are recorded per successful clip; monetary charges are not returned or estimated.",
+  "clips": {
+    "overview-0": {
+      "inputHash": "14c98359b0f394fa2670c07a91908822fae39c736d82121a25228688ac74f41c",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073a8481dc229171686d5351111ef9ed",
+        "usage_characters": 154,
+        "audio_length": 17400,
+        "audio_sample_rate": 32000,
+        "audio_size": 1114764,
+        "word_count": 81,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-04T15:38:42.906Z"
+    },
+    "overview-1": {
+      "inputHash": "03dd1cfbf3d8c1dd09725c9d1de82b8bcd780f87484e9f29d628a1bf9f0868e1",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073a849bbce8a6f401c47095c52a3938",
+        "usage_characters": 159,
+        "audio_length": 18400,
+        "audio_sample_rate": 32000,
+        "audio_size": 1178764,
+        "word_count": 83,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-04T15:39:10.021Z"
+    },
+    "overview-2": {
+      "inputHash": "67474a260a19461b70487d37e93848cad012dca62fe022f973bf65cb68cc8c87",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073a849efca87536091585e000307226",
+        "usage_characters": 164,
+        "audio_length": 19100,
+        "audio_sample_rate": 32000,
+        "audio_size": 1223564,
+        "word_count": 85,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-04T15:39:12.074Z"
+    },
+    "overview-3": {
+      "inputHash": "29a51ebbf49301b9d09ee67b38a9da46133099fbf985c2f2a3f3c57d409b07f1",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073a84a096fcab4850b6ce184bef077b",
+        "usage_characters": 167,
+        "audio_length": 19000,
+        "audio_sample_rate": 32000,
+        "audio_size": 1217164,
+        "word_count": 87,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-04T15:39:13.718Z"
+    },
+    "overview-4": {
+      "inputHash": "24b2ae3e6bc7c7621856ca994d1d8ddf1db7eb862f12a79793ca2624b249b7ec",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073a84a127349eb7bbce61cf6e7cfa51",
+        "usage_characters": 157,
+        "audio_length": 18300,
+        "audio_sample_rate": 32000,
+        "audio_size": 1172364,
+        "word_count": 82,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-04T15:39:15.515Z"
+    },
+    "overview-5": {
+      "inputHash": "7f3c2a2ff9d850f7f6f4dd7d88b07177a42b56c6ba935c978a82e0593f716b9b",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073a84a3f47d472ebdc62098eef246ac",
+        "usage_characters": 159,
+        "audio_length": 18600,
+        "audio_sample_rate": 32000,
+        "audio_size": 1191564,
+        "word_count": 83,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-04T15:39:17.226Z"
+    },
+    "overview-6": {
+      "inputHash": "84e8c6ca5ffeb44a9c638d0cb2253fdd7063ef63fa133fc3aaa08233f3d29708",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073a84a539d05fb42494cafa9d4b8a80",
+        "usage_characters": 164,
+        "audio_length": 19400,
+        "audio_sample_rate": 32000,
+        "audio_size": 1242764,
+        "word_count": 86,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-04T15:39:19.613Z"
+    },
+    "overview-7": {
+      "inputHash": "addcc8c632d3323c38a6e83ecdd1a32ba13a38f930941ef64da4abb9aa49e952",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073a84a720664cff3d0ef0051360edb0",
+        "usage_characters": 167,
+        "audio_length": 19400,
+        "audio_sample_rate": 32000,
+        "audio_size": 1242764,
+        "word_count": 88,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-04T15:39:21.387Z"
+    },
+    "volcano-0": {
+      "inputHash": "5c4f4944c82f542e6b1068279874cbe4b9688cc6c69c3c3a112c85deec2639b5",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073bbf140068dfb921f8e7a5260c9a5d",
+        "usage_characters": 149,
+        "audio_length": 17693,
+        "audio_sample_rate": 32000,
+        "audio_size": 1133556,
+        "word_count": 78,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-05T14:00:53.670Z"
+    },
+    "volcano-1": {
+      "inputHash": "a19c22ef12f88890ff9910b98273277b8ab2c672c08669c72806abb3396ea297",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073bc38107a2890ec44bf916bd949c2f",
+        "usage_characters": 152,
+        "audio_length": 18300,
+        "audio_sample_rate": 32000,
+        "audio_size": 1172364,
+        "word_count": 79,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-05T14:19:46.957Z"
+    },
+    "volcano-2": {
+      "inputHash": "07b3210621af347729f915d446ab541b54ae1ca61cd1717b00d126fc46f5f021",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073bc383a3191c8795cd1f955b8f2884",
+        "usage_characters": 159,
+        "audio_length": 19200,
+        "audio_sample_rate": 32000,
+        "audio_size": 1229964,
+        "word_count": 83,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-05T14:19:48.920Z"
+    },
+    "volcano-3": {
+      "inputHash": "a7adaa1aeb5965968038c5361762c9e1dcef2224378f10eeda7b11835252d981",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073a84a984338113070b0a82d6e9cc87",
+        "usage_characters": 156,
+        "audio_length": 17300,
+        "audio_sample_rate": 32000,
+        "audio_size": 1108364,
+        "word_count": 81,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-04T15:39:22.945Z"
+    },
+    "volcano-4": {
+      "inputHash": "0b3b71d15c7947d5affa95f2a8a7fc2cd75cb4140eff1923943ca2a858192397",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073bd6322751aa6829bc765f293359a6",
+        "usage_characters": 166,
+        "audio_length": 18200,
+        "audio_sample_rate": 32000,
+        "audio_size": 1165964,
+        "word_count": 86,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-05T15:39:31.253Z"
+    },
+    "volcano-5": {
+      "inputHash": "59fdcadae63318393d7ae03cbe6de4bb615513943a55439dd66bd1b0f647fc09",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073a84acfb11b885fe1c85ee22993c84",
+        "usage_characters": 157,
+        "audio_length": 18000,
+        "audio_sample_rate": 32000,
+        "audio_size": 1153164,
+        "word_count": 82,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-04T15:39:26.596Z"
+    },
+    "volcano-6": {
+      "inputHash": "4b958fe81a0fa7857eba93ead8cb008c98808c8a108a3fc1d1960a2989e47689",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073bdd578bdc3210732b66c6650e6a70",
+        "usage_characters": 159,
+        "audio_length": 18100,
+        "audio_sample_rate": 32000,
+        "audio_size": 1159564,
+        "word_count": 83,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-05T16:10:08.883Z"
+    },
+    "quake-0": {
+      "inputHash": "35ab6a823ab8e10cf4a70ac9c0a36918fde6e01466057cb57d8c3d972bedf497",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073be5960aafc134bae5da3a5ffa14d7",
+        "usage_characters": 137,
+        "audio_length": 16900,
+        "audio_sample_rate": 32000,
+        "audio_size": 1082764,
+        "word_count": 72,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-05T16:45:11.647Z"
+    },
+    "quake-1": {
+      "inputHash": "22b91a45cc2f9c6eaf55542e20ee2dda9182b13bd634a4464da35ad9797edb1a",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073be5986e908ec72ad0124ff0f31509",
+        "usage_characters": 138,
+        "audio_length": 15600,
+        "audio_sample_rate": 32000,
+        "audio_size": 999564,
+        "word_count": 72,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-05T16:45:13.630Z"
+    },
+    "quake-2": {
+      "inputHash": "7a7cdf8f533f8a31cc3d0773bd99ee866c53825a2c80cf52a735e1c0c41699d3",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073be59a5c53dc2734433860da018472",
+        "usage_characters": 134,
+        "audio_length": 15200,
+        "audio_sample_rate": 32000,
+        "audio_size": 973964,
+        "word_count": 70,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-05T16:45:15.433Z"
+    },
+    "quake-3": {
+      "inputHash": "adfffc1fb27bedae560ef8b2b76ca6a8506caac722ca2ca9b2f4faa46fafcd5a",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073be59c65d1881cc942852bf6b15f93",
+        "usage_characters": 146,
+        "audio_length": 16800,
+        "audio_sample_rate": 32000,
+        "audio_size": 1076364,
+        "word_count": 76,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-05T16:45:17.377Z"
+    },
+    "storm-0": {
+      "inputHash": "786437e8c61c0fef64dcdd25d7ae7f6e65ad0350b300e9d91b968b4e6580c2de",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073bf352c1f4f3cbc0fbddb6fe0aa2e2",
+        "usage_characters": 162,
+        "audio_length": 19100,
+        "audio_sample_rate": 32000,
+        "audio_size": 1223564,
+        "word_count": 85,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-05T17:43:47.660Z"
+    },
+    "storm-1": {
+      "inputHash": "b40d75c63cbf182ef7bd0096292116f154dbd7a7dde8427237b058ce926ff348",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073bf3548071ae14391aa764e9461795",
+        "usage_characters": 171,
+        "audio_length": 19700,
+        "audio_sample_rate": 32000,
+        "audio_size": 1261964,
+        "word_count": 89,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-05T17:43:49.781Z"
+    },
+    "storm-2": {
+      "inputHash": "1980deb6c3a1727a36480e0bf246c95812aef6ce68eeb4cfada26d0c594ffa40",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073bf356c6aeed6fe1c25fb03ce16749",
+        "usage_characters": 161,
+        "audio_length": 18900,
+        "audio_sample_rate": 32000,
+        "audio_size": 1210764,
+        "word_count": 84,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-05T17:43:52.379Z"
+    },
+    "storm-3": {
+      "inputHash": "0ca1a775ab641e5f71112998146d7f9cc77442a5f0f4af605e9b4ae05646238c",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073bf462eebc6131200b41d3c07ea5b3",
+        "usage_characters": 165,
+        "audio_length": 19500,
+        "audio_sample_rate": 32000,
+        "audio_size": 1249164,
+        "word_count": 87,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-05T17:48:19.797Z"
+    },
+    "mangkhut-0": {
+      "inputHash": "7ac81205a12320b1829e38d74fcc84ca41fc0924e8d82d4f36546f3edb1a018f",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073be23155dda2bf5bebd0a414a76293",
+        "usage_characters": 153,
+        "audio_length": 17100,
+        "audio_sample_rate": 32000,
+        "audio_size": 1095564,
+        "word_count": 80,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-05T16:30:44.803Z"
+    },
+    "mangkhut-1": {
+      "inputHash": "fa955859a57e5dfe3bfd12caa5bcb9acd366c82d7971cf1e48777d491d309a32",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073be2388e2509a8ecae70752a8a0e3d",
+        "usage_characters": 139,
+        "audio_length": 15700,
+        "audio_sample_rate": 32000,
+        "audio_size": 1005964,
+        "word_count": 73,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-05T16:30:50.612Z"
+    },
+    "mangkhut-2": {
+      "inputHash": "dc235bfcda68aded351ef0fdcb55a2b335988f2d87e074448207a8fbbf1fb5a7",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073be23c48e2d58fd083b4a3738220bb",
+        "usage_characters": 149,
+        "audio_length": 17500,
+        "audio_sample_rate": 32000,
+        "audio_size": 1121164,
+        "word_count": 77,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-05T16:30:55.065Z"
+    },
+    "mangkhut-3": {
+      "inputHash": "93e8cbed4519f3d1baa8cce9b8b13a0882fe1ea1c51f74384142126624d8315a",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073be24182a08b309f81e22a1990fbac",
+        "usage_characters": 160,
+        "audio_length": 17100,
+        "audio_sample_rate": 32000,
+        "audio_size": 1095564,
+        "word_count": 83,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-05T16:31:00.326Z"
+    },
+    "mangkhut-4": {
+      "inputHash": "7b642995ed9a61c40f649e0143f8252c886441b3dccd6ee2aa9d86538a59e706",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073b98bcd432026b9f4c81270560afba",
+        "usage_characters": 147,
+        "audio_length": 17700,
+        "audio_sample_rate": 32000,
+        "audio_size": 1133964,
+        "word_count": 77,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-05T11:17:18.165Z"
+    },
+    "mangkhut-5": {
+      "inputHash": "091ceb9ac2f7b8510696e033f1963c4fb8aff2d85b0dbb40a3029e0f6698da50",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073be246ab9a24ff83b7bb0d03ef7f02",
+        "usage_characters": 162,
+        "audio_length": 18500,
+        "audio_sample_rate": 32000,
+        "audio_size": 1185164,
+        "word_count": 85,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-05T16:31:04.891Z"
+    },
+    "orbital-0": {
+      "inputHash": "4afd12a4f091e855a01aba96d7b11bb0bf4d7f49e09750890affd7ccd92e105b",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073a84c621209000f647b8b7dcbb6886",
+        "usage_characters": 153,
+        "audio_length": 18200,
+        "audio_sample_rate": 32000,
+        "audio_size": 1165964,
+        "word_count": 80,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-04T15:39:52.419Z"
+    },
+    "orbital-1": {
+      "inputHash": "e4f09be0be1a275a5874744517a1e60b6fd6d3a83ed26189ebc79d8bbd282e90",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073a84c8c35988b6f28d12a6f5b95171",
+        "usage_characters": 158,
+        "audio_length": 17960,
+        "audio_sample_rate": 32000,
+        "audio_size": 1150646,
+        "word_count": 83,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-04T15:39:54.406Z"
+    },
+    "principleVolcano-0": {
+      "inputHash": "60a9f01b5d240f0781511710f6fc355c5cdb929606b989ed676370fb7504c5fe",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073a84ca4fb06aadf443eaeeedd3d39a",
+        "usage_characters": 157,
+        "audio_length": 18200,
+        "audio_sample_rate": 32000,
+        "audio_size": 1165964,
+        "word_count": 82,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-04T15:39:56.094Z"
+    },
+    "principleVolcano-1": {
+      "inputHash": "0315464db0ed52d637b8f551ad207025067c151ede8325f6dfe7cfa29baf438f",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073a84cc23d6514e03161cbc5a17e35e",
+        "usage_characters": 158,
+        "audio_length": 18900,
+        "audio_sample_rate": 32000,
+        "audio_size": 1210764,
+        "word_count": 83,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-04T15:39:57.977Z"
+    },
+    "principleQuake-0": {
+      "inputHash": "2239a117a251ad2ce9891bf7b3354928b103c7d76f120d1b2628bc7bf17725d2",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073a84cda33c1a40d280e5f84f0fa90b",
+        "usage_characters": 152,
+        "audio_length": 17400,
+        "audio_sample_rate": 32000,
+        "audio_size": 1114764,
+        "word_count": 79,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-04T15:39:59.691Z"
+    },
+    "principleQuake-1": {
+      "inputHash": "3d65658ce243fb7b4961bfc2d799e1c1ce05dec47e6bb683c27348816931d4ac",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073a84cfaef75ec5d170375544a606ea",
+        "usage_characters": 161,
+        "audio_length": 19500,
+        "audio_sample_rate": 32000,
+        "audio_size": 1249164,
+        "word_count": 84,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-04T15:40:01.493Z"
+    },
+    "principleTyphoon-0": {
+      "inputHash": "72d5fbfaa1a95e17ceff267678bfbb164acf4f38d27884ccabcc2423c9d840e6",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073a84d13a260397451f5acd763cfa5b",
+        "usage_characters": 157,
+        "audio_length": 17900,
+        "audio_sample_rate": 32000,
+        "audio_size": 1146764,
+        "word_count": 82,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-04T15:40:03.289Z"
+    },
+    "principleTyphoon-1": {
+      "inputHash": "53f5b0c8feb60f61cbef91115d453dda1c3c1dfb3a9e65c65e0c909ddac9378d",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073a84d3ee1e2823c88380808e659953",
+        "usage_characters": 160,
+        "audio_length": 18100,
+        "audio_sample_rate": 32000,
+        "audio_size": 1159564,
+        "word_count": 83,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-04T15:40:04.953Z"
+    },
+    "river-0": {
+      "inputHash": "a312ce4eedf773eea37bb67a15e92bda9d5f0388f55a42f7e5aaa6389652ff5f",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073a84d407d0b8095f39cce542e79a03",
+        "usage_characters": 155,
+        "audio_length": 17774,
+        "audio_sample_rate": 32000,
+        "audio_size": 1138756,
+        "word_count": 80,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-04T15:40:06.628Z"
+    },
+    "river-1": {
+      "inputHash": "b5cce14297f80fe69ceae959f78e90da867662eae49a6788373bdf68688bcca8",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073a84d637c8fb3443649abad7dd1da0",
+        "usage_characters": 167,
+        "audio_length": 19900,
+        "audio_sample_rate": 32000,
+        "audio_size": 1274764,
+        "word_count": 87,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-04T15:40:08.729Z"
+    },
+    "battery-0": {
+      "inputHash": "3d5bfc8cd8d25ada19c9e6856e4c669f4d73e1b59d8b1ac1427e59ab70d39b87",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073a84d8a524f276e4e2d9abc9b34037",
+        "usage_characters": 164,
+        "audio_length": 18200,
+        "audio_sample_rate": 32000,
+        "audio_size": 1165964,
+        "word_count": 85,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-04T15:40:10.563Z"
+    },
+    "battery-1": {
+      "inputHash": "1b7b60110b6f49d3f87649b4db2b47254a843f3b81c296540a62e3bae6f7df9f",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073a84da83ed7e51877ca0d26772bd78",
+        "usage_characters": 159,
+        "audio_length": 17600,
+        "audio_sample_rate": 32000,
+        "audio_size": 1127564,
+        "word_count": 84,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-04T15:40:12.247Z"
+    },
+    "dixie-2021-airborne-ir-0": {
+      "inputHash": "bb9b2d47f0975480f0d8cd1a45469b4f16d4f9b21b06ce1aef0ae94db390323f",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073bf115dbdcc7f536dc71d358fd69e4",
+        "usage_characters": 150,
+        "audio_length": 17300,
+        "audio_sample_rate": 32000,
+        "audio_size": 1108364,
+        "word_count": 78,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-05T17:34:14.679Z"
+    },
+    "dixie-2021-airborne-ir-1": {
+      "inputHash": "4b757560d4d9ae81ebfe32bc3955d21634037f059d3af1444b1b0b51c609e960",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073bf117c17e30d901636572e85d2370",
+        "usage_characters": 160,
+        "audio_length": 18200,
+        "audio_sample_rate": 32000,
+        "audio_size": 1165964,
+        "word_count": 84,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-05T17:34:16.851Z"
+    },
+    "dixie-2021-airborne-ir-2": {
+      "inputHash": "a95e3389945e97ee48fb86a711568dfa20f3a419a77fdb7dd845076b229c10ac",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073bf11ac288dc8d9f1ce1c128af0081",
+        "usage_characters": 167,
+        "audio_length": 18761,
+        "audio_sample_rate": 32000,
+        "audio_size": 1201910,
+        "word_count": 87,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-05T17:34:19.172Z"
+    },
+    "dixie-2021-airborne-ir-3": {
+      "inputHash": "8de85df5288d982a7631f04e52d59b55549cf064a49c902748c4ecd6ecd37fb7",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073bf11c014c966a5c259726970b0d5b",
+        "usage_characters": 141,
+        "audio_length": 17200,
+        "audio_sample_rate": 32000,
+        "audio_size": 1101964,
+        "word_count": 74,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-05T17:34:21.619Z"
+    },
+    "dixie-2021-airborne-ir-4": {
+      "inputHash": "b6e49b14d61e355110bc880b0afc0e7a5bd583745e31005a930622439baa86d0",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073bf11e4cfd363a7607cb4c704c1312",
+        "usage_characters": 187,
+        "audio_length": 22900,
+        "audio_sample_rate": 32000,
+        "audio_size": 1466764,
+        "word_count": 99,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-05T17:34:24.036Z"
+    },
+    "hualien-2024-observed-stations-0": {
+      "inputHash": "8040060fb3a189b971648c7e47e4c184eaa5ab9625026d90dacd810c63b15831",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073be59e0203019485970697694c536d",
+        "usage_characters": 132,
+        "audio_length": 15300,
+        "audio_sample_rate": 32000,
+        "audio_size": 980364,
+        "word_count": 69,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-05T16:45:19.240Z"
+    },
+    "hualien-2024-observed-stations-1": {
+      "inputHash": "5a36bdc1828d0ce8e589fedff6519adc5dcaee7ff0c7387af02b15ece33e4c6e",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073be5a02359dda4f60267e848c2f252",
+        "usage_characters": 136,
+        "audio_length": 16700,
+        "audio_sample_rate": 32000,
+        "audio_size": 1069964,
+        "word_count": 72,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-05T16:45:21.179Z"
+    },
+    "hualien-2024-observed-stations-2": {
+      "inputHash": "4f048c63b5485031fc6df6d6062c4ff4187a01af6e7ffcc28defd0231d9194f4",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073be5a203f51b4e60135e0b5c1f405d",
+        "usage_characters": 133,
+        "audio_length": 14300,
+        "audio_sample_rate": 32000,
+        "audio_size": 916364,
+        "word_count": 69,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-05T16:45:22.997Z"
+    },
+    "hualien-2024-observed-stations-3": {
+      "inputHash": "d628f3fc4447c068ff5b3f8663c4fc15e8d113df903b3cf1fc110d36ab7b2bac",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073be5a459ded2140ee40c6c9423cab9",
+        "usage_characters": 148,
+        "audio_length": 17700,
+        "audio_sample_rate": 32000,
+        "audio_size": 1133964,
+        "word_count": 78,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-05T16:45:24.903Z"
+    },
+    "big-piney-2021-tracer-0": {
+      "inputHash": "8a5153d693fcea2839bb0b54c7e8d959d68277565168cc102fd40468479540c3",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073be8fab079d39a5a13983babf52e75",
+        "usage_characters": 131,
+        "audio_length": 14500,
+        "audio_sample_rate": 32000,
+        "audio_size": 929164,
+        "word_count": 69,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-05T16:59:39.170Z"
+    },
+    "big-piney-2021-tracer-1": {
+      "inputHash": "98cb55f921857ef08c09c4de83b201db4d506e77840c250796954d70336e0b69",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073be8fc32ec757683f243571a30c4f9",
+        "usage_characters": 146,
+        "audio_length": 17300,
+        "audio_sample_rate": 32000,
+        "audio_size": 1108364,
+        "word_count": 76,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-05T16:59:41.233Z"
+    },
+    "big-piney-2021-tracer-2": {
+      "inputHash": "4c9e67916c4074ec5174b95469cd5ca0ba6833202605b99ba15c8455a81361ee",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073be8fe31b37f79d1ab6072bb4ecad9",
+        "usage_characters": 142,
+        "audio_length": 16800,
+        "audio_sample_rate": 32000,
+        "audio_size": 1076364,
+        "word_count": 74,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-05T16:59:43.115Z"
+    },
+    "big-piney-2021-tracer-3": {
+      "inputHash": "fc090a46735e5236933a83514b5e4146982ca132cf5bbd7b01fd23141742a3c2",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073be900529914ead55787a406e9598b",
+        "usage_characters": 149,
+        "audio_length": 17900,
+        "audio_sample_rate": 32000,
+        "audio_size": 1146764,
+        "word_count": 78,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-05T16:59:45.197Z"
+    },
+    "big-piney-2021-tracer-4": {
+      "inputHash": "4c2d9783d31ae673d2387dc669767b344b3e8c93d14ef9612c9505f4261c8a63",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073be902c7fe9342cbf725fe73651f42",
+        "usage_characters": 153,
+        "audio_length": 17600,
+        "audio_sample_rate": 32000,
+        "audio_size": 1127564,
+        "word_count": 80,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-05T16:59:47.538Z"
+    },
+    "san-francisco-2025-01-15-tide-0": {
+      "inputHash": "efe13355c5f2110cc44ceec5e5dad414fea648daebc4bf1604d065afa10d770f",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073bdab18743b317e0fd64cc6d0ceb9d",
+        "usage_characters": 123,
+        "audio_length": 14500,
+        "audio_sample_rate": 32000,
+        "audio_size": 929164,
+        "word_count": 65,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-05T15:58:45.581Z"
+    },
+    "san-francisco-2025-01-15-tide-1": {
+      "inputHash": "5a3d2b4370e3f86ca651fc109e497fec672694f61a3fa82240a5f6221321b787",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073bcea87a23662a903efebc007ac7f6",
+        "usage_characters": 199,
+        "audio_length": 23200,
+        "audio_sample_rate": 32000,
+        "audio_size": 1485964,
+        "word_count": 105,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-05T15:07:21.748Z"
+    },
+    "san-francisco-2025-01-15-tide-2": {
+      "inputHash": "ba9a5fcf2374ae8d313ea5c2a4ce89a1ad3923d5477f871cb71e237b33aceb82",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073bdab63b81d1e9c56fd6e610acc34b",
+        "usage_characters": 154,
+        "audio_length": 19700,
+        "audio_sample_rate": 32000,
+        "audio_size": 1261964,
+        "word_count": 82,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-05T15:58:50.068Z"
+    },
+    "san-francisco-2025-01-15-tide-3": {
+      "inputHash": "9fb5e2a4772063feb26c74e24bea9126b296e7e9476480c5f0b90de09ec0a659",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073bd6342558902c67156d7b295ea8b6",
+        "usage_characters": 188,
+        "audio_length": 21800,
+        "audio_sample_rate": 32000,
+        "audio_size": 1396364,
+        "word_count": 98,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-05T15:39:33.252Z"
+    },
+    "san-francisco-2025-01-15-tide-4": {
+      "inputHash": "c8f20fc06f36507d92c069756528ada1c1cda1e467fd99f94bf2c70b1364cb4e",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073b80b2b2d8ed0eafe6308659919cb1",
+        "usage_characters": 117,
+        "audio_length": 14500,
+        "audio_sample_rate": 32000,
+        "audio_size": 929164,
+        "word_count": 61,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-05T09:34:43.772Z"
+    },
+    "san-francisco-2025-01-15-tide-5": {
+      "inputHash": "4bfd1099b694b777f1dbfe3bf2049fc6be83f6ff5dedc57e8876d4a6311b2ce9",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073b80b4cf2f79fe948b8e5ed99b52dd",
+        "usage_characters": 120,
+        "audio_length": 14400,
+        "audio_sample_rate": 32000,
+        "audio_size": 922764,
+        "word_count": 63,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-05T09:34:45.496Z"
+    },
+    "san-francisco-2025-01-15-tide-6": {
+      "inputHash": "e25d7702cede65794bf186c1a9168e47a79926d793cd3b0fb0ebc8b9812ee6b4",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073b80b6a26121554d6f58712cc72b4c",
+        "usage_characters": 134,
+        "audio_length": 17100,
+        "audio_sample_rate": 32000,
+        "audio_size": 1095564,
+        "word_count": 70,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-05T09:34:47.676Z"
+    },
+    "san-francisco-2025-01-15-tide-7": {
+      "inputHash": "6726ed3cbfb151cb46e749648c4c6147cff567523aae057da569d5b1f35ab261",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073bd636a2dc7947d5adca5c1499c34d",
+        "usage_characters": 182,
+        "audio_length": 21500,
+        "audio_sample_rate": 32000,
+        "audio_size": 1377164,
+        "word_count": 95,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-05T15:39:35.312Z"
+    },
+    "primer-volcano-0": {
+      "inputHash": "b8ef4a9e89849e4a2dfec66348c08160602de55e17b57237e9d4273faf97c2aa",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073c764d2bd26a68a74749bf89efcc35",
+        "usage_characters": 661,
+        "audio_length": 77400,
+        "audio_sample_rate": 32000,
+        "audio_size": 4954764,
+        "word_count": 348,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-06T03:02:42.424Z"
+    },
+    "primer-storm-0": {
+      "inputHash": "0d462966e8bec4af1ed844a8f0e4d5c28eb93c4299193b62456efe115b4df24e",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073c728923b2930fd32b0c242d5e4f5a",
+        "usage_characters": 409,
+        "audio_length": 49480,
+        "audio_sample_rate": 32000,
+        "audio_size": 3167942,
+        "word_count": 214,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-06T02:46:38.168Z"
+    },
+    "primer-quake-0": {
+      "inputHash": "69b579ec869e253e0e48478fa048f7753423cb0b87af208b1d822708bd517bbe",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073c73be1b9e5c06c90060ef122681d3",
+        "usage_characters": 359,
+        "audio_length": 41700,
+        "audio_sample_rate": 32000,
+        "audio_size": 2669964,
+        "word_count": 189,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-06T02:51:48.646Z"
+    },
+    "primer-wildfire-0": {
+      "inputHash": "8d9854e23817f18dba4dce7623a25020f130504a1a48fc07fade18188e213168",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073bc9dc48dffa67d48eb3499a5d8a93",
+        "usage_characters": 177,
+        "audio_length": 21600,
+        "audio_sample_rate": 32000,
+        "audio_size": 1383564,
+        "word_count": 93,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-05T14:46:54.276Z"
+    },
+    "primer-river-0": {
+      "inputHash": "3e67f3f8599975eac7c794c52ad5c6c9c43b4b3c0c36dae2b650336780612a55",
+      "provider": {
+        "statusCode": 0,
+        "completed": true,
+        "traceId": "073bc9dfb9249e5c59214ca7e579a8c0",
+        "usage_characters": 182,
+        "audio_length": 20600,
+        "audio_sample_rate": 32000,
+        "audio_size": 1319564,
+        "word_count": 95,
+        "audio_channel": 1
+      },
+      "generatedAt": "2026-11-05T14:46:56.620Z"
+    }
+  }
+}

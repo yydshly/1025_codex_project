@@ -1,0 +1,57 @@
+{
+  "status": "passed",
+  "assetSHA256": "7de6aaa6f52aa0295c8544f7b124646fae76927561d914572c94a11025a7bc9c",
+  "sourceFilesVerified": 6,
+  "eventMetadata": "matched archived USGS GeoJSON",
+  "stationMetadata": "matched archived EarthScope station and channel responses",
+  "verifiedAtUtc": "2026-11-05T05:14:53.989437Z",
+  "totalVerifiedRawSamples": 38400,
+  "totalVerifiedEnvelopes": 1440,
+  "stations": [
+    {
+      "id": "IU.TATO.00.BHZ",
+      "nativeRateHz": 20.0,
+      "sourceSamples": 9600,
+      "verifiedEnvelopeWindows": 480,
+      "partialWindows": 0,
+      "missingWindows": 0,
+      "absolutePeak": {
+        "timeUtc": "2024-04-02T23:58:48Z",
+        "peakTimeUtc": "2024-04-02T23:58:47.419538Z",
+        "value": -47807878.0,
+        "rawValue": -48148237,
+        "sourceLine": 2168
+      }
+    },
+    {
+      "id": "IU.INCN.00.BHZ",
+      "nativeRateHz": 20.0,
+      "sourceSamples": 9600,
+      "verifiedEnvelopeWindows": 480,
+      "partialWindows": 0,
+      "missingWindows": 0,
+      "absolutePeak": {
+        "timeUtc": "2024-04-03T00:04:37Z",
+        "peakTimeUtc": "2024-04-03T00:04:36.219538Z",
+        "value": 2042869.0,
+        "rawValue": 2041251,
+        "sourceLine": 9220
+      }
+    },
+    {
+      "id": "IU.MAJO.00.BHZ",
+      "nativeRateHz": 40.0,
+      "sourceSamples": 19200,
+      "verifiedEnvelopeWindows": 480,
+      "partialWindows": 0,
+      "missingWindows": 0,
+      "absolutePeak": {
+        "timeUtc": "2024-04-03T00:02:59Z",
+        "peakTimeUtc": "2024-04-03T00:02:58.069538Z",
+        "value": 210184.0,
+        "rawValue": 211015,
+        "sourceLine": 14418
+      }
+    }
+  ]
+}

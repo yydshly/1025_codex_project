@@ -1,0 +1,184 @@
+{
+  "event": "Typhoon Mangkhut (2018)",
+  "source_page": "https://science.nasa.gov/earth/earth-observatory/typhoon-mangkhut-reaches-luzon-92761/",
+  "source_title": "Typhoon Mangkhut Reaches Luzon",
+  "source_agency": "NASA Earth Observatory",
+  "image": {
+    "download_url": "https://assets.science.nasa.gov/dynamicimage/assets/science/esd/eo/images/imagerecords/92000/92761/typhoonmangkhut_viirs_2018257.jpg",
+    "intended_local_path": "app/assets/events/mangkhut-20180914.jpg",
+    "download_status": "success",
+    "file_created": true,
+    "type": "natural-color satellite image",
+    "platform": "Suomi NPP",
+    "instrument": "VIIRS",
+    "credit": "NASA Earth Observatory image by Lauren Dauphin, using VIIRS data from the Suomi National Polar-orbiting Partnership.",
+    "observed_date": "2018-09-14",
+    "observation_time_precision": "date_only_with_qualitative_local_time",
+    "observation_time_utc": null,
+    "observation_time_source_text": "just after midday",
+    "time_caution": "The source gives no exact observation UTC. Website 00:00 date fields are not an observation time; the article's 12:00 UTC is a JTWC report time and must not be assigned to this image.",
+    "publication_date": "2018-09-16",
+    "no_image_edits": true,
+    "rendering_constraints": [
+      "Display as a real image from 2018-09-14.",
+      "Do not claim this still image is synchronized with every six-hour best-track record.",
+      "Do not use this image as another date's observation.",
+      "Keep source and image credit visible."
+    ],
+    "download_method": "browser_download_then_local_copy",
+    "copied_at_utc": "2026-11-04T10:58:34.7299488Z",
+    "width": 720,
+    "height": 480,
+    "bytes": 111309,
+    "sha256": "8452ec09c2841d6503fc4ca231a7f013db0ee793802483bad5bddb8d44d63c05",
+    "downloaded_file_last_modified_utc": "2026-11-04T10:56:49.1630388Z"
+  },
+  "optional_daily_mosaic": {
+    "download_url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi?SERVICE=WMS&REQUEST=GetMap&VERSION=1.1.1&LAYERS=VIIRS_SNPP_CorrectedReflectance_TrueColor&STYLES=&FORMAT=image/jpeg&SRS=EPSG:4326&BBOX=-180,-90,180,90&WIDTH=4096&HEIGHT=2048&TIME=2018-09-14",
+    "intended_local_path": "app/assets/events/mangkhut-earth-20180914.jpg",
+    "download_status": "success",
+    "file_created": true,
+    "validation_status": "view_image: global land/ocean/cloud mosaic confirmed, not an error page; original coverage gaps preserved",
+    "documentation_url": "https://nasa-gibs.github.io/gibs-api-docs/access-basics/",
+    "service": "NASA GIBS WMS",
+    "version": "1.1.1",
+    "layer": "VIIRS_SNPP_CorrectedReflectance_TrueColor",
+    "projection": "EPSG:4326",
+    "bbox_lonlat": [
+      -180,
+      -90,
+      180,
+      90
+    ],
+    "requested_size": [
+      4096,
+      2048
+    ],
+    "date": "2018-09-14",
+    "temporal_type": "daily mosaic, not an instantaneous global observation",
+    "rendering_constraints": [
+      "Label the image as a 2018-09-14 daily composite, not an instantaneous global observation.",
+      "Do not synchronize a daily composite as hourly or six-hourly imagery.",
+      "Only use this image for its own observation date.",
+      "Preserve real coverage gaps; do not fabricate missing cloud systems."
+    ],
+    "download_method": "browser_download_then_local_copy",
+    "copied_at_utc": "2026-11-04T11:07:07.8383879Z",
+    "width": 4096,
+    "height": 2048,
+    "bytes": 2500157,
+    "sha256": "a15be8f49c39e2a98960db022d654ec88e86201da39f006d9d63dd1e4f479ce9",
+    "downloaded_file_last_modified_utc": "2026-11-04T11:03:31.9778301Z"
+  },
+  "provenance_checked_date": "2026-11-04",
+  "notes": [
+    "The NASA page presents a natural-color image and an infrared brightness-temperature image, not a wide/close pair.",
+    "The selected article URL is the natural-color official display image.",
+    "Shell and Node downloads initially failed due to DNS access; browser downloads subsequently succeeded. Original bytes were copied without image editing.",
+    "Parent agent visually verified that the GIBS global image shows correctly aligned land, ocean, and the observed tropical cyclones."
+  ],
+  "daily_mosaics": {
+    "manifest": "app/data/imagery-manifest.json",
+    "download_status": "success",
+    "projection": "EPSG:4326",
+    "temporal_type": "daily mosaic, not an instantaneous global observation",
+    "bbox_lonlat": [
+      -180,
+      -90,
+      180,
+      90
+    ],
+    "frames": [
+      {
+        "date": "2018-09-12",
+        "url": "assets/events/mangkhut-earth-20180912.jpg",
+        "sourceUrl": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi?SERVICE=WMS&REQUEST=GetMap&VERSION=1.1.1&LAYERS=VIIRS_SNPP_CorrectedReflectance_TrueColor&STYLES=&FORMAT=image/jpeg&SRS=EPSG:4326&BBOX=-180,-90,180,90&WIDTH=4096&HEIGHT=2048&TIME=2018-09-12",
+        "width": 4096,
+        "height": 2048,
+        "sha256": "23445892090bc76de63364c3862135b3d2def0324fd45685954dd1602f1bafd4",
+        "bytes": 2505294,
+        "downloadMethod": "browser_download_then_local_copy",
+        "downloadedFileLastModifiedUtc": "2026-11-04T10:59:05.1363929Z",
+        "verifiedAtUtc": "2026-11-04T11:07:07.8383879Z",
+        "visualValidation": "view_image: global land/ocean/cloud mosaic confirmed, not an error page; original coverage gaps preserved"
+      },
+      {
+        "date": "2018-09-13",
+        "url": "assets/events/mangkhut-earth-20180913.jpg",
+        "sourceUrl": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi?SERVICE=WMS&REQUEST=GetMap&VERSION=1.1.1&LAYERS=VIIRS_SNPP_CorrectedReflectance_TrueColor&STYLES=&FORMAT=image/jpeg&SRS=EPSG:4326&BBOX=-180,-90,180,90&WIDTH=4096&HEIGHT=2048&TIME=2018-09-13",
+        "width": 4096,
+        "height": 2048,
+        "sha256": "188287dae516482396d721d00b9785d33d6e7c9ca3194184f31d74624281fa13",
+        "bytes": 2205260,
+        "downloadMethod": "browser_download_then_local_copy",
+        "downloadedFileLastModifiedUtc": "2026-11-04T11:01:21.9748725Z",
+        "verifiedAtUtc": "2026-11-04T11:07:07.8383879Z",
+        "visualValidation": "view_image: global land/ocean/cloud mosaic confirmed, not an error page; original coverage gaps preserved"
+      },
+      {
+        "date": "2018-09-14",
+        "url": "assets/events/mangkhut-earth-20180914.jpg",
+        "sourceUrl": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi?SERVICE=WMS&REQUEST=GetMap&VERSION=1.1.1&LAYERS=VIIRS_SNPP_CorrectedReflectance_TrueColor&STYLES=&FORMAT=image/jpeg&SRS=EPSG:4326&BBOX=-180,-90,180,90&WIDTH=4096&HEIGHT=2048&TIME=2018-09-14",
+        "width": 4096,
+        "height": 2048,
+        "sha256": "a15be8f49c39e2a98960db022d654ec88e86201da39f006d9d63dd1e4f479ce9",
+        "bytes": 2500157,
+        "downloadMethod": "browser_download_then_local_copy",
+        "downloadedFileLastModifiedUtc": "2026-11-04T11:03:31.9778301Z",
+        "verifiedAtUtc": "2026-11-04T11:07:07.8383879Z",
+        "visualValidation": "view_image: global land/ocean/cloud mosaic confirmed, not an error page; original coverage gaps preserved"
+      },
+      {
+        "date": "2018-09-15",
+        "url": "assets/events/mangkhut-earth-20180915.jpg",
+        "sourceUrl": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi?SERVICE=WMS&REQUEST=GetMap&VERSION=1.1.1&LAYERS=VIIRS_SNPP_CorrectedReflectance_TrueColor&STYLES=&FORMAT=image/jpeg&SRS=EPSG:4326&BBOX=-180,-90,180,90&WIDTH=4096&HEIGHT=2048&TIME=2018-09-15",
+        "width": 4096,
+        "height": 2048,
+        "sha256": "758d15d0e086a277e528d2c442ba4739c163cf5d75ab48f5ffe979da935aa5af",
+        "bytes": 2485297,
+        "downloadMethod": "browser_download_then_local_copy",
+        "downloadedFileLastModifiedUtc": "2026-11-04T11:05:30.955001Z",
+        "verifiedAtUtc": "2026-11-04T11:07:07.8383879Z",
+        "visualValidation": "view_image: global land/ocean/cloud mosaic confirmed, not an error page; original coverage gaps preserved"
+      },
+      {
+        "date": "2018-09-16",
+        "url": "assets/events/mangkhut-earth-20180916.jpg",
+        "sourceUrl": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi?SERVICE=WMS&REQUEST=GetMap&VERSION=1.1.1&LAYERS=VIIRS_SNPP_CorrectedReflectance_TrueColor&STYLES=&FORMAT=image/jpeg&SRS=EPSG:4326&BBOX=-180,-90,180,90&WIDTH=4096&HEIGHT=2048&TIME=2018-09-16",
+        "width": 4096,
+        "height": 2048,
+        "sha256": "53b3c27fd8632111a927da27cb0e3105138c4df45de0882bd65d3048b15cb372",
+        "bytes": 2463694,
+        "downloadMethod": "browser_download_then_local_copy",
+        "downloadedFileLastModifiedUtc": "2026-11-04T11:06:17.4149072Z",
+        "verifiedAtUtc": "2026-11-04T11:08:11.5037819Z",
+        "visualValidation": "view_image: global land/ocean/cloud mosaic confirmed, not an error page; original coverage gaps preserved"
+      },
+      {
+        "date": "2018-09-17",
+        "url": "assets/events/mangkhut-earth-20180917.jpg",
+        "sourceUrl": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi?SERVICE=WMS&REQUEST=GetMap&VERSION=1.1.1&LAYERS=VIIRS_SNPP_CorrectedReflectance_TrueColor&STYLES=&FORMAT=image/jpeg&SRS=EPSG:4326&BBOX=-180,-90,180,90&WIDTH=4096&HEIGHT=2048&TIME=2018-09-17",
+        "width": 4096,
+        "height": 2048,
+        "sha256": "c0ba1195a5d58afb8de70e516aee6050aeb60fcd375f189721961c9367b69cf2",
+        "bytes": 2481314,
+        "downloadMethod": "browser_download_then_local_copy",
+        "downloadedFileLastModifiedUtc": "2026-11-04T11:06:53.5102130Z",
+        "verifiedAtUtc": "2026-11-04T11:08:11.5037819Z",
+        "visualValidation": "view_image: global land/ocean/cloud mosaic confirmed, not an error page; original coverage gaps preserved"
+      }
+    ],
+    "rendering_constraints": [
+      "Use each daily image only for its own date.",
+      "Do not claim hour-by-hour observations or interpolate fabricated cloud movement.",
+      "Global composites combine satellite swaths acquired at different times during the day.",
+      "Preserve original coverage gaps and retain source attribution."
+    ],
+    "date_range": [
+      "2018-09-12",
+      "2018-09-17"
+    ],
+    "all_frames_visually_validated": true,
+    "validation_completed_at_utc": "2026-11-04T11:08:11.5037819Z"
+  }
+}

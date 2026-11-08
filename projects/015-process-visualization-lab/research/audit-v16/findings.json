@@ -1,0 +1,40 @@
+{
+  "reviewedAtUtc": "2026-11-05T03:36:03.142055+00:00",
+  "scope": "Current default entry, Tonga full-Earth and close-up views; read-only source review of implemented capabilities. No product code changed.",
+  "verdict": "A traceable four-case interactive prototype; presentation, explanation and repeatable event onboarding do not yet meet the intended product experience.",
+  "steps": [
+    {
+      "step": 1,
+      "name": "默认入口",
+      "health": "需改进",
+      "screenshot": "01-entry.png",
+      "finding": "过程原理与真实事件入口并列；当前总览先显示多个独立教学模型，真实解读主任务不突出。"
+    },
+    {
+      "step": 2,
+      "name": "真实事件完整地球",
+      "health": "未达呈现目标",
+      "screenshot": "02-real-globe.png",
+      "finding": "小范围过程在地球尺度上很小；当前约900px窗口里三列信息、顶部卡片与地球争抢空间，用户需滚动才能核对。"
+    },
+    {
+      "step": 3,
+      "name": "过程特写",
+      "health": "有实测变化但解读不足",
+      "screenshot": "03-close-up.png",
+      "finding": "云图可见真实形态，但标注框覆盖云区、参考轮廓较弱，正文与坐标字小；读数重复出现，当前结论主要是区域面积和P10。"
+    }
+  ],
+  "capabilityGaps": [
+    "云系主要为固定半径球面观测纹理和同帧明暗增强；没有接入测得的云高、灰浓度、地下波场。",
+    "真实事件解读主要回答读数怎样变；原因、具体地点影响及关键结论仍需用户自行组织。",
+    "MiniMax播放既有36段预生成音轨与固定流程，不能围绕任意当前选区或用户提问动态解读。",
+    "四个动态事件及关键节点人工编排，官方目录刷新不会自动生成同等级动态案例。",
+    "地月、河流污染、电池主要为教学模型，发动机真实资料未接入。"
+  ],
+  "accessibilityRisks": [
+    "当前窗口部分说明、图表坐标和状态字较小且对比偏弱；截图不能确认WCAG符合性或屏幕阅读器完整体验。"
+  ],
+  "recommendation": "先用山竹完成地球定位、局部过程、少量关键标注、相关观测曲线和证据支持结论的完整解读，再以另一事件检验可复用接入流程。",
+  "limits": "Visual observations use only current-run browser captures. Data/narration/extension facts were checked against current source. No user comprehension study, full accessibility audit or current reference-video frame-by-frame comparison performed."
+}

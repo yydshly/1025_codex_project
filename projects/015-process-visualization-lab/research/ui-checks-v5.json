@@ -1,0 +1,32 @@
+{
+  "mobile": {
+    "canvasWidth": 344.66668701171875,
+    "charts": 3,
+    "overflow": false,
+    "scrollWidth": 375,
+    "width": 390
+  },
+  "playingAnnotationSample": {
+    "annotations": [
+      "P 波 · 281.5 km",
+      "S 波 · 163.0 km"
+    ],
+    "running": "暂停演示",
+    "values": [
+      281.49388260419533,
+      163.0435671845029,
+      1.9952623149688808
+    ]
+  },
+  "localSync": {
+    "values": [
+      47,
+      984.5965,
+      35.585643114499234
+    ],
+    "wind": 47,
+    "windLabel": "47 m/s"
+  },
+  "pausedReadouts": true,
+  "consoleErrors": []
+}

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "nextId": 14,
+  "nextId": 16,
   "projects": [
     {
       "id": "001",
@@ -219,6 +219,24 @@
       "cover": "assets/images/overview-v1.png",
       "demoUrl": "https://yydshly.github.io/1025_codex_project/013-scenic-motion-lab/",
       "createdAt": "2026-10-31"
+    },
+    {
+      "id": "015",
+      "slug": "process-visualization-lab",
+      "name": "观象 · 地球过程与真实事件",
+      "summary": "从 50 站参考库与地月视频出发，研究怎样用固定参照、同一时间轴和真实资料解释地球变化。公开八个历史案例与 NASA B0005 放电实验，原理、画面、批注、曲线和中文讲解可按关键时刻核对。适用于课堂、展陈与历史复盘；柴油机为本地实验，洪水、污染迁移与持续观测为扩展方向。",
+      "source": "https://github.com/yydshly/1025_codex_project",
+      "sourceName": "本库原创产品与科学资料参考",
+      "status": "building",
+      "tags": [
+        "交互地球",
+        "过程可视化",
+        "真实事件",
+        "资料溯源"
+      ],
+      "cover": "assets/images/guanxiang-research-overview.png",
+      "demoUrl": "",
+      "createdAt": "2026-11-04"
     }
   ]
 }

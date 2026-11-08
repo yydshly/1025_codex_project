@@ -1,0 +1,646 @@
+{
+  "formatGuide": "https://www.data.jma.go.jp/mscweb/en/himawari89/space_segment/hsd_sample/HS_D_users_guide_en_v13.pdf",
+  "policy": "Deliver only operation flag 0. Window ends before flagged 14:00-15:00 period. No source flag is changed.",
+  "segments": [
+    {
+      "file": "HS_H08_20220905_0300_B13_FLDK_R20_S0210.DAT.bz2",
+      "nominalTimeUtc": "2022-09-05T03:00:00Z",
+      "operationFlag": 0,
+      "selectedWindow": true,
+      "qualityFlagValid": true,
+      "possibleSolarDegradation": false,
+      "solarEclipse": false,
+      "accepted": true
+    },
+    {
+      "file": "HS_H08_20220905_0300_B13_FLDK_R20_S0310.DAT.bz2",
+      "nominalTimeUtc": "2022-09-05T03:00:00Z",
+      "operationFlag": 0,
+      "selectedWindow": true,
+      "qualityFlagValid": true,
+      "possibleSolarDegradation": false,
+      "solarEclipse": false,
+      "accepted": true
+    },
+    {
+      "file": "HS_H08_20220905_0330_B13_FLDK_R20_S0210.DAT.bz2",
+      "nominalTimeUtc": "2022-09-05T03:30:00Z",
+      "operationFlag": 0,
+      "selectedWindow": true,
+      "qualityFlagValid": true,
+      "possibleSolarDegradation": false,
+      "solarEclipse": false,
+      "accepted": true
+    },
+    {
+      "file": "HS_H08_20220905_0330_B13_FLDK_R20_S0310.DAT.bz2",
+      "nominalTimeUtc": "2022-09-05T03:30:00Z",
+      "operationFlag": 0,
+      "selectedWindow": true,
+      "qualityFlagValid": true,
+      "possibleSolarDegradation": false,
+      "solarEclipse": false,
+      "accepted": true
+    },
+    {
+      "file": "HS_H08_20220905_0400_B13_FLDK_R20_S0210.DAT.bz2",
+      "nominalTimeUtc": "2022-09-05T04:00:00Z",
+      "operationFlag": 0,
+      "selectedWindow": true,
+      "qualityFlagValid": true,
+      "possibleSolarDegradation": false,
+      "solarEclipse": false,
+      "accepted": true
+    },
+    {
+      "file": "HS_H08_20220905_0400_B13_FLDK_R20_S0310.DAT.bz2",
+      "nominalTimeUtc": "2022-09-05T04:00:00Z",
+      "operationFlag": 0,
+      "selectedWindow": true,
+      "qualityFlagValid": true,
+      "possibleSolarDegradation": false,
+      "solarEclipse": false,
+      "accepted": true
+    },
+    {
+      "file": "HS_H08_20220905_0430_B13_FLDK_R20_S0210.DAT.bz2",
+      "nominalTimeUtc": "2022-09-05T04:30:00Z",
+      "operationFlag": 0,
+      "selectedWindow": true,
+      "qualityFlagValid": true,
+      "possibleSolarDegradation": false,
+      "solarEclipse": false,
+      "accepted": true
+    },
+    {
+      "file": "HS_H08_20220905_0430_B13_FLDK_R20_S0310.DAT.bz2",
+      "nominalTimeUtc": "2022-09-05T04:30:00Z",
+      "operationFlag": 0,
+      "selectedWindow": true,
+      "qualityFlagValid": true,
+      "possibleSolarDegradation": false,
+      "solarEclipse": false,
+      "accepted": true
+    },
+    {
+      "file": "HS_H08_20220905_0500_B13_FLDK_R20_S0210.DAT.bz2",
+      "nominalTimeUtc": "2022-09-05T05:00:00Z",
+      "operationFlag": 0,
+      "selectedWindow": true,
+      "qualityFlagValid": true,
+      "possibleSolarDegradation": false,
+      "solarEclipse": false,
+      "accepted": true
+    },
+    {
+      "file": "HS_H08_20220905_0500_B13_FLDK_R20_S0310.DAT.bz2",
+      "nominalTimeUtc": "2022-09-05T05:00:00Z",
+      "operationFlag": 0,
+      "selectedWindow": true,
+      "qualityFlagValid": true,
+      "possibleSolarDegradation": false,
+      "solarEclipse": false,
+      "accepted": true
+    },
+    {
+      "file": "HS_H08_20220905_0530_B13_FLDK_R20_S0210.DAT.bz2",
+      "nominalTimeUtc": "2022-09-05T05:30:00Z",
+      "operationFlag": 0,
+      "selectedWindow": true,
+      "qualityFlagValid": true,
+      "possibleSolarDegradation": false,
+      "solarEclipse": false,
+      "accepted": true
+    },
+    {
+      "file": "HS_H08_20220905_0530_B13_FLDK_R20_S0310.DAT.bz2",
+      "nominalTimeUtc": "2022-09-05T05:30:00Z",
+      "operationFlag": 0,
+      "selectedWindow": true,
+      "qualityFlagValid": true,
+      "possibleSolarDegradation": false,
+      "solarEclipse": false,
+      "accepted": true
+    },
+    {
+      "file": "HS_H08_20220905_0600_B13_FLDK_R20_S0210.DAT.bz2",
+      "nominalTimeUtc": "2022-09-05T06:00:00Z",
+      "operationFlag": 0,
+      "selectedWindow": true,
+      "qualityFlagValid": true,
+      "possibleSolarDegradation": false,
+      "solarEclipse": false,
+      "accepted": true
+    },
+    {
+      "file": "HS_H08_20220905_0600_B13_FLDK_R20_S0310.DAT.bz2",
+      "nominalTimeUtc": "2022-09-05T06:00:00Z",
+      "operationFlag": 0,
+      "selectedWindow": true,
+      "qualityFlagValid": true,
+      "possibleSolarDegradation": false,
+      "solarEclipse": false,
+      "accepted": true
+    },
+    {
+      "file": "HS_H08_20220905_0630_B13_FLDK_R20_S0210.DAT.bz2",
+      "nominalTimeUtc": "2022-09-05T06:30:00Z",
+      "operationFlag": 0,
+      "selectedWindow": true,
+      "qualityFlagValid": true,
+      "possibleSolarDegradation": false,
+      "solarEclipse": false,
+      "accepted": true
+    },
+    {
+      "file": "HS_H08_20220905_0630_B13_FLDK_R20_S0310.DAT.bz2",
+      "nominalTimeUtc": "2022-09-05T06:30:00Z",
+      "operationFlag": 0,
+      "selectedWindow": true,
+      "qualityFlagValid": true,
+      "possibleSolarDegradation": false,
+      "solarEclipse": false,
+      "accepted": true
+    },
+    {
+      "file": "HS_H08_20220905_0700_B13_FLDK_R20_S0210.DAT.bz2",
+      "nominalTimeUtc": "2022-09-05T07:00:00Z",
+      "operationFlag": 0,
+      "selectedWindow": true,
+      "qualityFlagValid": true,
+      "possibleSolarDegradation": false,
+      "solarEclipse": false,
+      "accepted": true
+    },
+    {
+      "file": "HS_H08_20220905_0700_B13_FLDK_R20_S0310.DAT.bz2",
+      "nominalTimeUtc": "2022-09-05T07:00:00Z",
+      "operationFlag": 0,
+      "selectedWindow": true,
+      "qualityFlagValid": true,
+      "possibleSolarDegradation": false,
+      "solarEclipse": false,
+      "accepted": true
+    },
+    {
+      "file": "HS_H08_20220905_0730_B13_FLDK_R20_S0210.DAT.bz2",
+      "nominalTimeUtc": "2022-09-05T07:30:00Z",
+      "operationFlag": 0,
+      "selectedWindow": true,
+      "qualityFlagValid": true,
+      "possibleSolarDegradation": false,
+      "solarEclipse": false,
+      "accepted": true
+    },
+    {
+      "file": "HS_H08_20220905_0730_B13_FLDK_R20_S0310.DAT.bz2",
+      "nominalTimeUtc": "2022-09-05T07:30:00Z",
+      "operationFlag": 0,
+      "selectedWindow": true,
+      "qualityFlagValid": true,
+      "possibleSolarDegradation": false,
+      "solarEclipse": false,
+      "accepted": true
+    },
+    {
+      "file": "HS_H08_20220905_0800_B13_FLDK_R20_S0210.DAT.bz2",
+      "nominalTimeUtc": "2022-09-05T08:00:00Z",
+      "operationFlag": 0,
+      "selectedWindow": true,
+      "qualityFlagValid": true,
+      "possibleSolarDegradation": false,
+      "solarEclipse": false,
+      "accepted": true
+    },
+    {
+      "file": "HS_H08_20220905_0800_B13_FLDK_R20_S0310.DAT.bz2",
+      "nominalTimeUtc": "2022-09-05T08:00:00Z",
+      "operationFlag": 0,
+      "selectedWindow": true,
+      "qualityFlagValid": true,
+      "possibleSolarDegradation": false,
+      "solarEclipse": false,
+      "accepted": true
+    },
+    {
+      "file": "HS_H08_20220905_0830_B13_FLDK_R20_S0210.DAT.bz2",
+      "nominalTimeUtc": "2022-09-05T08:30:00Z",
+      "operationFlag": 0,
+      "selectedWindow": true,
+      "qualityFlagValid": true,
+      "possibleSolarDegradation": false,
+      "solarEclipse": false,
+      "accepted": true
+    },
+    {
+      "file": "HS_H08_20220905_0830_B13_FLDK_R20_S0310.DAT.bz2",
+      "nominalTimeUtc": "2022-09-05T08:30:00Z",
+      "operationFlag": 0,
+      "selectedWindow": true,
+      "qualityFlagValid": true,
+      "possibleSolarDegradation": false,
+      "solarEclipse": false,
+      "accepted": true
+    },
+    {
+      "file": "HS_H08_20220905_0900_B13_FLDK_R20_S0210.DAT.bz2",
+      "nominalTimeUtc": "2022-09-05T09:00:00Z",
+      "operationFlag": 0,
+      "selectedWindow": true,
+      "qualityFlagValid": true,
+      "possibleSolarDegradation": false,
+      "solarEclipse": false,
+      "accepted": true
+    },
+    {
+      "file": "HS_H08_20220905_0900_B13_FLDK_R20_S0310.DAT.bz2",
+      "nominalTimeUtc": "2022-09-05T09:00:00Z",
+      "operationFlag": 0,
+      "selectedWindow": true,
+      "qualityFlagValid": true,
+      "possibleSolarDegradation": false,
+      "solarEclipse": false,
+      "accepted": true
+    },
+    {
+      "file": "HS_H08_20220905_0930_B13_FLDK_R20_S0210.DAT.bz2",
+      "nominalTimeUtc": "2022-09-05T09:30:00Z",
+      "operationFlag": 0,
+      "selectedWindow": true,
+      "qualityFlagValid": true,
+      "possibleSolarDegradation": false,
+      "solarEclipse": false,
+      "accepted": true
+    },
+    {
+      "file": "HS_H08_20220905_0930_B13_FLDK_R20_S0310.DAT.bz2",
+      "nominalTimeUtc": "2022-09-05T09:30:00Z",
+      "operationFlag": 0,
+      "selectedWindow": true,
+      "qualityFlagValid": true,
+      "possibleSolarDegradation": false,
+      "solarEclipse": false,
+      "accepted": true
+    },
+    {
+      "file": "HS_H08_20220905_0950_B13_FLDK_R20_S0210.DAT.bz2",
+      "nominalTimeUtc": "2022-09-05T09:50:00Z",
+      "operationFlag": 0,
+      "selectedWindow": true,
+      "qualityFlagValid": true,
+      "possibleSolarDegradation": false,
+      "solarEclipse": false,
+      "accepted": true
+    },
+    {
+      "file": "HS_H08_20220905_0950_B13_FLDK_R20_S0310.DAT.bz2",
+      "nominalTimeUtc": "2022-09-05T09:50:00Z",
+      "operationFlag": 0,
+      "selectedWindow": true,
+      "qualityFlagValid": true,
+      "possibleSolarDegradation": false,
+      "solarEclipse": false,
+      "accepted": true
+    },
+    {
+      "file": "HS_H08_20220905_1010_B13_FLDK_R20_S0210.DAT.bz2",
+      "nominalTimeUtc": "2022-09-05T10:10:00Z",
+      "operationFlag": 0,
+      "selectedWindow": true,
+      "qualityFlagValid": true,
+      "possibleSolarDegradation": false,
+      "solarEclipse": false,
+      "accepted": true
+    },
+    {
+      "file": "HS_H08_20220905_1010_B13_FLDK_R20_S0310.DAT.bz2",
+      "nominalTimeUtc": "2022-09-05T10:10:00Z",
+      "operationFlag": 0,
+      "selectedWindow": true,
+      "qualityFlagValid": true,
+      "possibleSolarDegradation": false,
+      "solarEclipse": false,
+      "accepted": true
+    },
+    {
+      "file": "HS_H08_20220905_1030_B13_FLDK_R20_S0210.DAT.bz2",
+      "nominalTimeUtc": "2022-09-05T10:30:00Z",
+      "operationFlag": 0,
+      "selectedWindow": true,
+      "qualityFlagValid": true,
+      "possibleSolarDegradation": false,
+      "solarEclipse": false,
+      "accepted": true
+    },
+    {
+      "file": "HS_H08_20220905_1030_B13_FLDK_R20_S0310.DAT.bz2",
+      "nominalTimeUtc": "2022-09-05T10:30:00Z",
+      "operationFlag": 0,
+      "selectedWindow": true,
+      "qualityFlagValid": true,
+      "possibleSolarDegradation": false,
+      "solarEclipse": false,
+      "accepted": true
+    },
+    {
+      "file": "HS_H08_20220905_1100_B13_FLDK_R20_S0210.DAT.bz2",
+      "nominalTimeUtc": "2022-09-05T11:00:00Z",
+      "operationFlag": 0,
+      "selectedWindow": true,
+      "qualityFlagValid": true,
+      "possibleSolarDegradation": false,
+      "solarEclipse": false,
+      "accepted": true
+    },
+    {
+      "file": "HS_H08_20220905_1100_B13_FLDK_R20_S0310.DAT.bz2",
+      "nominalTimeUtc": "2022-09-05T11:00:00Z",
+      "operationFlag": 0,
+      "selectedWindow": true,
+      "qualityFlagValid": true,
+      "possibleSolarDegradation": false,
+      "solarEclipse": false,
+      "accepted": true
+    },
+    {
+      "file": "HS_H08_20220905_1130_B13_FLDK_R20_S0210.DAT.bz2",
+      "nominalTimeUtc": "2022-09-05T11:30:00Z",
+      "operationFlag": 0,
+      "selectedWindow": true,
+      "qualityFlagValid": true,
+      "possibleSolarDegradation": false,
+      "solarEclipse": false,
+      "accepted": true
+    },
+    {
+      "file": "HS_H08_20220905_1130_B13_FLDK_R20_S0310.DAT.bz2",
+      "nominalTimeUtc": "2022-09-05T11:30:00Z",
+      "operationFlag": 0,
+      "selectedWindow": true,
+      "qualityFlagValid": true,
+      "possibleSolarDegradation": false,
+      "solarEclipse": false,
+      "accepted": true
+    },
+    {
+      "file": "HS_H08_20220905_1200_B13_FLDK_R20_S0210.DAT.bz2",
+      "nominalTimeUtc": "2022-09-05T12:00:00Z",
+      "operationFlag": 0,
+      "selectedWindow": true,
+      "qualityFlagValid": true,
+      "possibleSolarDegradation": false,
+      "solarEclipse": false,
+      "accepted": true
+    },
+    {
+      "file": "HS_H08_20220905_1200_B13_FLDK_R20_S0310.DAT.bz2",
+      "nominalTimeUtc": "2022-09-05T12:00:00Z",
+      "operationFlag": 0,
+      "selectedWindow": true,
+      "qualityFlagValid": true,
+      "possibleSolarDegradation": false,
+      "solarEclipse": false,
+      "accepted": true
+    },
+    {
+      "file": "HS_H08_20220905_1230_B13_FLDK_R20_S0210.DAT.bz2",
+      "nominalTimeUtc": "2022-09-05T12:30:00Z",
+      "operationFlag": 0,
+      "selectedWindow": true,
+      "qualityFlagValid": true,
+      "possibleSolarDegradation": false,
+      "solarEclipse": false,
+      "accepted": true
+    },
+    {
+      "file": "HS_H08_20220905_1230_B13_FLDK_R20_S0310.DAT.bz2",
+      "nominalTimeUtc": "2022-09-05T12:30:00Z",
+      "operationFlag": 0,
+      "selectedWindow": true,
+      "qualityFlagValid": true,
+      "possibleSolarDegradation": false,
+      "solarEclipse": false,
+      "accepted": true
+    },
+    {
+      "file": "HS_H08_20220905_1300_B13_FLDK_R20_S0210.DAT.bz2",
+      "nominalTimeUtc": "2022-09-05T13:00:00Z",
+      "operationFlag": 0,
+      "selectedWindow": true,
+      "qualityFlagValid": true,
+      "possibleSolarDegradation": false,
+      "solarEclipse": false,
+      "accepted": true
+    },
+    {
+      "file": "HS_H08_20220905_1300_B13_FLDK_R20_S0310.DAT.bz2",
+      "nominalTimeUtc": "2022-09-05T13:00:00Z",
+      "operationFlag": 0,
+      "selectedWindow": true,
+      "qualityFlagValid": true,
+      "possibleSolarDegradation": false,
+      "solarEclipse": false,
+      "accepted": true
+    },
+    {
+      "file": "HS_H08_20220905_1330_B13_FLDK_R20_S0210.DAT.bz2",
+      "nominalTimeUtc": "2022-09-05T13:30:00Z",
+      "operationFlag": 0,
+      "selectedWindow": true,
+      "qualityFlagValid": true,
+      "possibleSolarDegradation": false,
+      "solarEclipse": false,
+      "accepted": true
+    },
+    {
+      "file": "HS_H08_20220905_1330_B13_FLDK_R20_S0310.DAT.bz2",
+      "nominalTimeUtc": "2022-09-05T13:30:00Z",
+      "operationFlag": 0,
+      "selectedWindow": true,
+      "qualityFlagValid": true,
+      "possibleSolarDegradation": false,
+      "solarEclipse": false,
+      "accepted": true
+    },
+    {
+      "file": "HS_H08_20220905_1400_B13_FLDK_R20_S0210.DAT.bz2",
+      "nominalTimeUtc": "2022-09-05T14:00:00Z",
+      "operationFlag": 64,
+      "selectedWindow": false,
+      "qualityFlagValid": true,
+      "possibleSolarDegradation": true,
+      "solarEclipse": false,
+      "accepted": false
+    },
+    {
+      "file": "HS_H08_20220905_1400_B13_FLDK_R20_S0310.DAT.bz2",
+      "nominalTimeUtc": "2022-09-05T14:00:00Z",
+      "operationFlag": 64,
+      "selectedWindow": false,
+      "qualityFlagValid": true,
+      "possibleSolarDegradation": true,
+      "solarEclipse": false,
+      "accepted": false
+    },
+    {
+      "file": "HS_H08_20220905_1430_B13_FLDK_R20_S0210.DAT.bz2",
+      "nominalTimeUtc": "2022-09-05T14:30:00Z",
+      "operationFlag": 65,
+      "selectedWindow": false,
+      "qualityFlagValid": true,
+      "possibleSolarDegradation": true,
+      "solarEclipse": true,
+      "accepted": false
+    },
+    {
+      "file": "HS_H08_20220905_1430_B13_FLDK_R20_S0310.DAT.bz2",
+      "nominalTimeUtc": "2022-09-05T14:30:00Z",
+      "operationFlag": 1,
+      "selectedWindow": false,
+      "qualityFlagValid": true,
+      "possibleSolarDegradation": false,
+      "solarEclipse": true,
+      "accepted": false
+    },
+    {
+      "file": "HS_H08_20220905_1500_B13_FLDK_R20_S0210.DAT.bz2",
+      "nominalTimeUtc": "2022-09-05T15:00:00Z",
+      "operationFlag": 64,
+      "selectedWindow": false,
+      "qualityFlagValid": true,
+      "possibleSolarDegradation": true,
+      "solarEclipse": false,
+      "accepted": false
+    },
+    {
+      "file": "HS_H08_20220905_1500_B13_FLDK_R20_S0310.DAT.bz2",
+      "nominalTimeUtc": "2022-09-05T15:00:00Z",
+      "operationFlag": 64,
+      "selectedWindow": false,
+      "qualityFlagValid": true,
+      "possibleSolarDegradation": true,
+      "solarEclipse": false,
+      "accepted": false
+    },
+    {
+      "file": "HS_H08_20220905_1530_B13_FLDK_R20_S0210.DAT.bz2",
+      "nominalTimeUtc": "2022-09-05T15:30:00Z",
+      "operationFlag": 0,
+      "selectedWindow": false,
+      "qualityFlagValid": true,
+      "possibleSolarDegradation": false,
+      "solarEclipse": false,
+      "accepted": false
+    },
+    {
+      "file": "HS_H08_20220905_1530_B13_FLDK_R20_S0310.DAT.bz2",
+      "nominalTimeUtc": "2022-09-05T15:30:00Z",
+      "operationFlag": 0,
+      "selectedWindow": false,
+      "qualityFlagValid": true,
+      "possibleSolarDegradation": false,
+      "solarEclipse": false,
+      "accepted": false
+    },
+    {
+      "file": "HS_H08_20220905_1600_B13_FLDK_R20_S0210.DAT.bz2",
+      "nominalTimeUtc": "2022-09-05T16:00:00Z",
+      "operationFlag": 0,
+      "selectedWindow": false,
+      "qualityFlagValid": true,
+      "possibleSolarDegradation": false,
+      "solarEclipse": false,
+      "accepted": false
+    },
+    {
+      "file": "HS_H08_20220905_1600_B13_FLDK_R20_S0310.DAT.bz2",
+      "nominalTimeUtc": "2022-09-05T16:00:00Z",
+      "operationFlag": 0,
+      "selectedWindow": false,
+      "qualityFlagValid": true,
+      "possibleSolarDegradation": false,
+      "solarEclipse": false,
+      "accepted": false
+    },
+    {
+      "file": "HS_H08_20220905_1630_B13_FLDK_R20_S0210.DAT.bz2",
+      "nominalTimeUtc": "2022-09-05T16:30:00Z",
+      "operationFlag": 0,
+      "selectedWindow": false,
+      "qualityFlagValid": true,
+      "possibleSolarDegradation": false,
+      "solarEclipse": false,
+      "accepted": false
+    },
+    {
+      "file": "HS_H08_20220905_1630_B13_FLDK_R20_S0310.DAT.bz2",
+      "nominalTimeUtc": "2022-09-05T16:30:00Z",
+      "operationFlag": 0,
+      "selectedWindow": false,
+      "qualityFlagValid": true,
+      "possibleSolarDegradation": false,
+      "solarEclipse": false,
+      "accepted": false
+    },
+    {
+      "file": "HS_H08_20220905_1700_B13_FLDK_R20_S0210.DAT.bz2",
+      "nominalTimeUtc": "2022-09-05T17:00:00Z",
+      "operationFlag": 0,
+      "selectedWindow": false,
+      "qualityFlagValid": true,
+      "possibleSolarDegradation": false,
+      "solarEclipse": false,
+      "accepted": false
+    },
+    {
+      "file": "HS_H08_20220905_1700_B13_FLDK_R20_S0310.DAT.bz2",
+      "nominalTimeUtc": "2022-09-05T17:00:00Z",
+      "operationFlag": 0,
+      "selectedWindow": false,
+      "qualityFlagValid": true,
+      "possibleSolarDegradation": false,
+      "solarEclipse": false,
+      "accepted": false
+    },
+    {
+      "file": "HS_H08_20220905_1730_B13_FLDK_R20_S0210.DAT.bz2",
+      "nominalTimeUtc": "2022-09-05T17:30:00Z",
+      "operationFlag": 0,
+      "selectedWindow": false,
+      "qualityFlagValid": true,
+      "possibleSolarDegradation": false,
+      "solarEclipse": false,
+      "accepted": false
+    },
+    {
+      "file": "HS_H08_20220905_1730_B13_FLDK_R20_S0310.DAT.bz2",
+      "nominalTimeUtc": "2022-09-05T17:30:00Z",
+      "operationFlag": 0,
+      "selectedWindow": false,
+      "qualityFlagValid": true,
+      "possibleSolarDegradation": false,
+      "solarEclipse": false,
+      "accepted": false
+    },
+    {
+      "file": "HS_H08_20220905_1800_B13_FLDK_R20_S0210.DAT.bz2",
+      "nominalTimeUtc": "2022-09-05T18:00:00Z",
+      "operationFlag": 0,
+      "selectedWindow": false,
+      "qualityFlagValid": true,
+      "possibleSolarDegradation": false,
+      "solarEclipse": false,
+      "accepted": false
+    },
+    {
+      "file": "HS_H08_20220905_1800_B13_FLDK_R20_S0310.DAT.bz2",
+      "nominalTimeUtc": "2022-09-05T18:00:00Z",
+      "operationFlag": 0,
+      "selectedWindow": false,
+      "qualityFlagValid": true,
+      "possibleSolarDegradation": false,
+      "solarEclipse": false,
+      "accepted": false
+    }
+  ]
+}

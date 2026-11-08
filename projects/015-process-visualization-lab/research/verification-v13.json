@@ -1,0 +1,141 @@
+{
+  "version": "13.0.0",
+  "status": "verified-local",
+  "verifiedAtUtc": "2026-11-04T15:13:21.346940+00:00",
+  "entry": "http://127.0.0.1:4175/app/index.html#dynamic-volcano",
+  "data": {
+    "volcano": {
+      "event": "Tonga 2022-01-15",
+      "frames": 25,
+      "intervalSeconds": 600,
+      "startUtc": "2022-01-15T03:50:00Z",
+      "endUtc": "2022-01-15T07:50:00Z",
+      "report": "dynamics/volcano/validation-report.json"
+    },
+    "quake": {
+      "event": "Tohoku 2011-03-11",
+      "stations": 6,
+      "sourceSamples": 144000,
+      "oneSecondWindows": 7200,
+      "commonTicks": 1200,
+      "unit": "baseline-subtracted counts; per-station display normalization",
+      "report": "dynamics/quake/verification.json"
+    },
+    "storm": {
+      "event": "Hinnamnor 2022-09-05",
+      "frames": 23,
+      "intervalSeconds": [
+        1200,
+        1800
+      ],
+      "startUtc": "2022-09-05T03:00:00Z",
+      "endUtc": "2022-09-05T13:30:00Z",
+      "bestTrackRecords": 4,
+      "report": "dynamics/storm/validation-report.json"
+    }
+  },
+  "checks": {
+    "automatedTests": 137,
+    "passed": 137,
+    "failed": 0,
+    "deliveredProjectCheck": "passed",
+    "displayAndNumericHashes": "48 observed frames passed",
+    "rawSourcesCopied": "per-file SHA256 in delivery-v13.json",
+    "mangkhutBundlesUnchanged": true,
+    "repositoryIndexCheck": "passed"
+  },
+  "browser": {
+    "status": "passed",
+    "entryPort": 4175,
+    "desktopViewport": [
+      1440,
+      1200
+    ],
+    "mobileViewport": [
+      390,
+      844
+    ],
+    "mobileScrollWidth": 375,
+    "viewportRestored": true,
+    "consoleWarningsAndErrors": [],
+    "volcano": {
+      "startUtc": "2022-01-15T03:50:00Z",
+      "endUtc": "2022-01-15T07:50:00Z",
+      "playbackReachedLastFrame": true,
+      "earthLeftRightChartsSameUtc": true,
+      "endColdAreaKm2Rounded": 69711.2,
+      "endP10KRounded": 198.4,
+      "actualScanIntervalShown": true,
+      "rawFusionSwitchPreservesClock": true,
+      "fullGlobeAndExplicitCloseViewChecked": true
+    },
+    "quake": {
+      "playbackReachedUtc": "2011-03-11T06:05:00Z",
+      "earthLeftRightChartsSameUtc": true,
+      "stationSelectionVerified": "IU.INCN.00.BHZ",
+      "finalPeakValueCounts": 1514753,
+      "finalPeakUtc": "2011-03-11T06:04:59.969539Z"
+    },
+    "storm": {
+      "playbackReachedUtc": "2022-09-05T13:30:00Z",
+      "earthLeftRightChartsSameUtc": true,
+      "lastOfficialAnalysisUtc": "2022-09-05T12:00:00Z",
+      "windKt": 75,
+      "pressureHpa": 955,
+      "exportedJsonSourceTimesAndMetricsVerified": true
+    },
+    "mangkhutRetained": {
+      "selectedHkt": "2018-09-16 13:00",
+      "windKmh": 111.12,
+      "rainDistrictRangeMm": [
+        2,
+        48
+      ],
+      "rainWindowHkt": "11:45-12:45",
+      "seaLevelM": 3.7,
+      "seaLevelDatum": "UHSLC station zero",
+      "cloudActualScanHkt": "13:00-13:09",
+      "fullSphereVisible": true
+    },
+    "layouts": "Desktop, 390px phone, and restored app-panel width checked; mobile and medium-width navigation corrected.",
+    "limits": "Controlled automated requests test races/failures; no browser network-fault injection or low-end GPU benchmark."
+  },
+  "screenshots": [
+    {
+      "file": "assets/images/dynamic-volcano-before-v13.png",
+      "sha256": "f6296aed5a50911156626fd8a09174d8928427b4ed8e4bbaf9aa771e1574fec8"
+    },
+    {
+      "file": "assets/images/dynamic-volcano-v13.png",
+      "sha256": "dd71f1d7acd108bc18495b5650a9060f3a777541005083918a5d0af51ba8a5d6"
+    },
+    {
+      "file": "assets/images/dynamic-globe-v13.png",
+      "sha256": "bed69f4f54bee000cbefe9677fd78aeae76b722e14362a366fd772e98448aa69"
+    },
+    {
+      "file": "assets/images/dynamic-quake-v13.png",
+      "sha256": "13eed6f4b08c1bbeb8a0db1245caa6b4080a6f781892018c9e3a88abf459f947"
+    },
+    {
+      "file": "assets/images/dynamic-storm-v13.png",
+      "sha256": "d3223863d0d9f93fe94ee1692dfb0367c14aa2eafdf6a9b33dcfe6d7e4dd7410"
+    },
+    {
+      "file": "assets/images/dynamic-mobile-v13.png",
+      "sha256": "b9efe34480d133f3237b3c326f716563180dac5c5cecf43757c38b3ed2df9633"
+    },
+    {
+      "file": "assets/images/mangkhut-retained-v13.png",
+      "sha256": "2bdaadf4db821a826bfbd31684f2b80b3708de7601585f5f12102662051f1eba"
+    }
+  ],
+  "boundaries": [
+    "Historical selected observed events, not current disaster monitoring.",
+    "Satellite clock is nominal scan time; actual segment scan interval shown separately.",
+    "IR spatial gradients add optional display lighting, not measured cloud height, ash concentration, rain or wind.",
+    "Fixed 300km Tonga statistics region is not an impact boundary.",
+    "Seismic glyph sizes and waveform-strip positions are display encoding, not actual ground displacement or an interpolated propagation field.",
+    "Browser slow-network failure injection and low-end GPU performance benchmarking not performed; races/failures covered by controlled tests."
+  ]
+}

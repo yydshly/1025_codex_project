@@ -1,0 +1,35 @@
+[
+  {
+    "file": "uhslc-erddap-quarry-bay-20180915-17-hkt.csv",
+    "url": "https://uhslc.soest.hawaii.edu/erddap/tabledap/global_hourly_rqds.csv?time,sea_level,quality,reference_datum,station_name,version&uhslc_id=329&version=%22B%22&time%3E=2018-09-14T16:00:00Z&time%3C2018-09-17T16:00:00Z",
+    "bytes": 3968,
+    "sha256": "9181fcbf9235b327d00550aa2e484e4ad10ff49dff3f49ee2da5f8008febf2b8",
+    "retrievedAtUtc": "2026-11-04T12:24:39.777858Z"
+  },
+  {
+    "file": "uhslc-datainfo.html",
+    "url": "https://uhslc.soest.hawaii.edu/datainfo/",
+    "bytes": 1546176,
+    "sha256": "9dee2777cd2eba829f0dc107b8b1dd372d902d2b454a61af086f146aa1766032",
+    "retrievedAtUtc": "2026-11-04T12:24:41.983685Z"
+  },
+  {
+    "file": "gloss-077-quarry-bay.html",
+    "url": "https://www.bodc.ac.uk/resources/inventories/gloss_handbook/stations/77/",
+    "bytes": 39908,
+    "sha256": "0037b31936937755acc907441a215c301312b02cc640e24228eca9831349bd96",
+    "retrievedAtUtc": "2026-11-04T12:24:41.202345Z"
+  },
+  {
+    "file": "hko-stations.html",
+    "url": "https://www.hko.gov.hk/en/cis/stn.htm",
+    "error": "<urlopen error [Errno 2] No such file or directory>"
+  },
+  {
+    "file": "uhslc-erddap-rqds-metadata.html",
+    "url": "https://uhslc.soest.hawaii.edu/erddap/info/global_hourly_rqds/index.html",
+    "bytes": 50427,
+    "sha256": "9966e612f85b237cd29ce453ecc62a9727adcb229d47caf3df4f64a62e99a6fc",
+    "retrievedAtUtc": "2026-11-04T12:24:39.690925Z"
+  }
+]

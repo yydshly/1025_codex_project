@@ -1,0 +1,73 @@
+{
+  "version": "14.0.0",
+  "status": "verified-local",
+  "verifiedAtUtc": "2026-11-04T23:50:38.182087+08:00",
+  "localUrl": "http://127.0.0.1:4175/app/index.html#overview",
+  "publicDeployment": false,
+  "change": "MiniMax one-click guided narration drives the existing earth, observed ticks and matching charts.",
+  "audio": {
+    "provider": "MiniMax",
+    "model": "speech-2.8-hd",
+    "voice": "Chinese (Mandarin)_Gentle_Senior",
+    "clips": 36,
+    "tourCount": 11,
+    "overviewChapters": 8,
+    "overviewAudioSeconds": 149.6,
+    "allAudioSeconds": 666.696,
+    "sampleRate": 32000,
+    "channels": 1,
+    "generationTestsPassed": 5,
+    "independentValidation": "scripts/check-narration.mjs",
+    "runtimeNetwork": "local WAV playback only; no provider API calls from browser",
+    "subjectivePronunciationReview": "Not a word-by-word ASR or human pronunciation review."
+  },
+  "automated": {
+    "projectTestsPassed": 167,
+    "generatorTestsPassed": 5,
+    "projectCheck": "passed including original event data integrity and all narration PCM/text/hash checks",
+    "delivery": "exact whitelist copies SHA256 compared",
+    "repositoryIndexCheck": "passed: 15 projects, directories, covers and generated README agree"
+  },
+  "browser": {
+    "engine": "IAB Chromium",
+    "desktop": {
+      "width": 1440,
+      "height": 1000
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "horizontalOverflow": false,
+      "timelineFullyAboveNarrationDock": true
+    },
+    "checks": [
+      "Visible global one-click and contextual narration entries.",
+      "MiniMax overview completed automatically through all eight chapters, ended at Mangkhut 13:00 UTC+8 and opened sources.",
+      "Actual HTMLAudioElement MiniMax source, finite duration, advancing currentTime and paused state verified.",
+      "Tonga, Tohoku and Hinnamnor earth/current-insight/charts observedTime attributes match during narrated progression.",
+      "Mangkhut 12:00 to 13:00 progression uses the preserved cloud, wind/rain/sea-level controller.",
+      "Chapter navigation, pause/continue, current-event narration and desktop/phone layout verified.",
+      "First manual slider End after narration exits guide, stops audio and selects Hinnamnor 13:30 UTC on earth/charts together.",
+      "No console errors observed in the completed tour.",
+      "Delivered port 4175 WAV HEAD returns HTTP 200 and audio/wav."
+    ]
+  },
+  "preserved": [
+    "Original 25 Tonga frames",
+    "Original six station Tohoku data",
+    "Original 23 Hinnamnor frames",
+    "Mangkhut replay and data",
+    "Live event directory",
+    "Six principle topics"
+  ],
+  "screenshots": [
+    "assets/images/narration-entry-v14.png",
+    "assets/images/narration-v14.png",
+    "assets/images/narration-mobile-v14.png"
+  ],
+  "notes": [
+    "No synthetic observations or extra scene renderer added.",
+    "Audio is generated narration of original explanatory text, not observed sound.",
+    "Windows exploratory clips remain in D staging and are not in the E project delivery."
+  ]
+}

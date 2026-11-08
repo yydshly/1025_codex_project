@@ -1,0 +1,51 @@
+{
+  "version": "4.0.0",
+  "date": "2026-11-04",
+  "verified": {
+    "sixThemesAnd18TimeSeriesValues": true,
+    "leftProfileMarkersMatchModels": true,
+    "deepQuakeShortcutPOnly": true,
+    "viscousVolcanoShortcutEruption": true,
+    "pausedReadout": true,
+    "mobile": {
+      "width": 390,
+      "overflow": false
+    },
+    "overview": {
+      "labels": [
+        "火山 · 喷发强度",
+        "地震 · P波地表半径",
+        "台风 · 当前最大风速"
+      ],
+      "progress": 0,
+      "values": [
+        58.29583724569516,
+        196.5400722499104,
+        46
+      ]
+    },
+    "consoleErrors": []
+  },
+  "screenshots": [
+    "globe-overview-v4.png",
+    "globe-typhoon-v4.png",
+    "globe-volcano-before-v4.png",
+    "globe-volcano-v4.png",
+    "globe-quake-v4.png",
+    "globe-mobile-v4.png"
+  ],
+  "limits": [
+    "教学场景；火山灰柱不是扩散求解或实测高度。",
+    "地震波环半径×8；台风风场、路径和测点距离统一×8局部平面示意。",
+    "未进行实际灾害预报、性能基准或完整无障碍认证。"
+  ],
+  "pausedPixelComparison": {
+    "status": "inconclusive",
+    "reason": "连续裁剪截图取到了不同页面区域，已拒绝作为冻结验证。模型进度与读数暂停检查通过；未据此宣称像素级冻结已验证。"
+  },
+  "tests": {
+    "modelAndInsightTests": 11,
+    "browserModelValuesCompared": 18,
+    "comparisonTolerance": 1e-9
+  }
+}

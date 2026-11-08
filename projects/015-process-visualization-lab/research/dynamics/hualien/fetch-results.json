@@ -1,0 +1,72 @@
+{
+  "retrievedAtUtc": "2026-11-05T05:00:36.736Z",
+  "startUtc": "2024-04-02T23:57:00Z",
+  "endUtc": "2024-04-03T00:05:00Z",
+  "stationCodes": [
+    "TATO",
+    "INCN",
+    "MAJO"
+  ],
+  "results": [
+    {
+      "file": "raw/IU.TATO.00.BHZ.geocsv",
+      "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&loc=00&cha=BHZ&starttime=2024-04-02T23%3A57%3A00&endtime=2024-04-03T00%3A05%3A00&sta=TATO&format=geocsv",
+      "finalUrl": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&loc=00&cha=BHZ&starttime=2024-04-02T23%3A57%3A00&endtime=2024-04-03T00%3A05%3A00&sta=TATO&format=geocsv",
+      "status": 200,
+      "contentType": "text/csv; charset=utf-8",
+      "bytes": 359334,
+      "sha256": "4cade995003b22082fc822f139f8d29916d3c4da3526d41a72e9dc9e0ab51812",
+      "retrievedAtUtc": "2026-11-05T05:00:35.686Z"
+    },
+    {
+      "file": "raw/IU.INCN.00.BHZ.geocsv",
+      "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&loc=00&cha=BHZ&starttime=2024-04-02T23%3A57%3A00&endtime=2024-04-03T00%3A05%3A00&sta=INCN&format=geocsv",
+      "finalUrl": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&loc=00&cha=BHZ&starttime=2024-04-02T23%3A57%3A00&endtime=2024-04-03T00%3A05%3A00&sta=INCN&format=geocsv",
+      "status": 200,
+      "contentType": "text/csv; charset=utf-8",
+      "bytes": 339819,
+      "sha256": "0360d5b26c0ae4c56d5184b1594e36dbb0cc7f49eb29dc428f80e3376dff664d",
+      "retrievedAtUtc": "2026-11-05T05:00:35.759Z"
+    },
+    {
+      "file": "raw/IU.MAJO.00.BHZ.geocsv",
+      "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&loc=00&cha=BHZ&starttime=2024-04-02T23%3A57%3A00&endtime=2024-04-03T00%3A05%3A00&sta=MAJO&format=geocsv",
+      "finalUrl": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&loc=00&cha=BHZ&starttime=2024-04-02T23%3A57%3A00&endtime=2024-04-03T00%3A05%3A00&sta=MAJO&format=geocsv",
+      "status": 200,
+      "contentType": "text/csv; charset=utf-8",
+      "bytes": 654571,
+      "sha256": "b6956915573be896985273d0e28d8bde121fae0bb4017d34e941b11478d09e3c",
+      "retrievedAtUtc": "2026-11-05T05:00:36.724Z"
+    },
+    {
+      "file": "raw/channels.txt",
+      "url": "https://service.earthscope.org/fdsnws/station/1/query?net=IU&loc=00&cha=BHZ&starttime=2024-04-02T23%3A57%3A00&endtime=2024-04-03T00%3A05%3A00&sta=TATO%2CINCN%2CMAJO&level=channel&format=text",
+      "finalUrl": "https://service.earthscope.org/fdsnws/station/1/query?net=IU&loc=00&cha=BHZ&starttime=2024-04-02T23%3A57%3A00&endtime=2024-04-03T00%3A05%3A00&sta=TATO%2CINCN%2CMAJO&level=channel&format=text",
+      "status": 200,
+      "contentType": "text/plain",
+      "bytes": 598,
+      "sha256": "ca8cc10225e641aa34df2176c49432f2932e49cc2ecfeb3c1b4fec265cf90069",
+      "retrievedAtUtc": "2026-11-05T05:00:35.023Z"
+    },
+    {
+      "file": "raw/stations.txt",
+      "url": "https://service.earthscope.org/fdsnws/station/1/query?net=IU&loc=00&cha=BHZ&starttime=2024-04-02T23%3A57%3A00&endtime=2024-04-03T00%3A05%3A00&sta=TATO%2CINCN%2CMAJO&level=station&format=text",
+      "finalUrl": "https://service.earthscope.org/fdsnws/station/1/query?net=IU&loc=00&cha=BHZ&starttime=2024-04-02T23%3A57%3A00&endtime=2024-04-03T00%3A05%3A00&sta=TATO%2CINCN%2CMAJO&level=station&format=text",
+      "status": 200,
+      "contentType": "text/plain",
+      "bytes": 321,
+      "sha256": "736f8b65df38a0b4c6577cd4b002cbad1fd61e8a68865b8c8cfc94b6d0a02b56",
+      "retrievedAtUtc": "2026-11-05T05:00:34.661Z"
+    },
+    {
+      "file": "raw/event-usgs.geojson",
+      "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us7000m9g4&format=geojson",
+      "finalUrl": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us7000m9g4&format=geojson",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bytes": 97702,
+      "sha256": "4c10ee914df94720caecfc19aedbfb97e3d2c6d2b60618b52d0c6041f43b6dd2",
+      "retrievedAtUtc": "2026-11-05T05:00:35.040Z"
+    }
+  ]
+}

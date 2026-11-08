@@ -1,0 +1,203 @@
+.case-lesson[hidden], .case-featured[hidden], .case-lesson [hidden] { display: none; }
+body[data-case-lesson] .observatory { display: block; }
+body[data-case-lesson] :is(.left-panels,.right-panels,#earth-canvas,#geo-labels,#earth-loading,.globe-coordinate,.north,.view-tools,#archive-imagery-note,#observed-story-band,.observed-cloud-callouts,#observation-flow-controls,#observed-keyframes,#observed-story-legend,#dynamic-controls,#dixie-controls,.hunga-mode-row,#sync-presentation-tools,#demo-stage-tabs,#demo-delta-panel,#visual-key,.scene-caption,.timeline,.earth-caption) { display: none; }
+body[data-case-lesson] #earth-view { height: auto; min-height: 0; overflow: visible; aspect-ratio: auto; }
+body[data-case-lesson="volcano"] #dynamic-toolbar { display: none; }
+.case-lesson {
+ display: grid;
+ grid-template-columns: minmax(248px, .73fr) minmax(0, 1.5fr);
+ align-items: center;
+ gap: clamp(16px, 3vw, 42px);
+ padding: clamp(18px, 3vw, 38px);
+ color: #eef7ff;
+ background: radial-gradient(ellipse at 74% 20%, #183950, #0b1a2c 62%, #0b1726);
+ border: 1px solid #345467;
+ border-radius: 14px;
+}
+.case-lesson-kicker { color: #86e7dc; font-size: .76rem; font-weight: 700; letter-spacing: .08em; }
+.case-lesson h2 { margin: 8px 0 13px; font-size: clamp(1.15rem, 1.95vw, 1.72rem); line-height: 1.25; }
+.case-lesson ol { margin: 0 0 16px; padding: 0; list-style: none; counter-reset: cue; display: grid; gap: 3px; }
+.case-lesson li { counter-increment: cue; padding: 5px 8px; color: #afc3d0; border-left: 2px solid transparent; font-size: .84rem; }
+.case-lesson li::before { content: "0" counter(cue); color: #97c8d5; font-variant-numeric: tabular-nums; margin-right: .7em; }
+.case-lesson li[aria-current="step"] { border-color: #79e4d7; background: #1b3b4b; color: #f6fbff; }
+.case-lesson-bridge { font-size: .78rem; line-height: 1.5; }
+.case-lesson-bridge p { color: #c2d3df; margin: 4px 0; }
+.case-lesson-bridge a { color: #94e0ed; text-underline-offset: 3px; }
+.case-lesson-copy > button { display: block; margin: 0 0 12px; border: 1px solid #4d9da9; color: #c5fffa; background: #163d4b; }
+.case-lesson-visual { min-width: 0; }
+.case-lesson-diagram { display: block; width: 100%; max-height: min(36vh, 370px); border: 1px solid #35566d; border-radius: 11px; background: #0e2135; }
+.case-lesson-visual p { margin: 6px 0 0; color: #b9ccdd; font-size: .72rem; text-align: right; }
+.case-lesson svg text { fill: #f4f9ff; stroke: #102136; stroke-width: 3px; paint-order: stroke; font: 700 17px system-ui, sans-serif; }
+.case-lesson .water { fill: #103a51; }
+.case-lesson .land { fill: #294157; }
+.case-lesson .hot { fill: #ffc68b; }
+.case-lesson .plume { fill: #dae9ff; }
+.case-lesson .accent { fill: none; stroke-width: 4px; stroke-linecap: round; stroke-linejoin: round; }
+.case-lesson .cyan { stroke: #6fe5e0; }
+.case-lesson .orange { stroke: #ffb377; }
+.case-lesson .pale { stroke: #cfdeed; }
+.case-lesson .lead { fill: none; stroke: #7298ad; stroke-width: 1.5px; stroke-dasharray: 4 6; }
+.case-lesson #fire-edge { fill: #f9814e; }
+.case-lesson .river-samples circle { fill: #13293e; stroke: #84c4df; stroke-width: 2px; }
+.case-lesson .river-samples .arrived { fill: #8bf5cb; stroke: #d5fff1; }
+.case-guided-button { border-color: #47818c; color: #a6f3eb; }
+.case-featured { width: min(1320px, calc(100% - 48px)); margin: 18px auto; display: none; gap: 8px; }
+body[data-dynamic-kind="tide"]:not(.narration-active) .case-featured { display: grid; }
+.case-featured h2 { margin: 0; font-size: .84rem; color: #bcd7e4; }
+.case-featured-list { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 8px; }
+.case-featured-list button { display: flex; align-items: center; gap: 9px; min-width: 0; text-align: left; background: #0d2032; border-color: #32576a; padding: 7px; }
+.case-featured-list img { width: clamp(42px, 6vw, 79px); aspect-ratio: 1.42; object-fit: cover; flex: none; border-radius: 4px; }
+.case-featured-list strong,.case-featured-list span { display: block; }
+.case-featured-list strong { color: #9de9e1; font-size: .81rem; }
+.case-featured-list span { color: #e3edf5; margin-top: 3px; font-size: .78rem; line-height: 1.35; }
+.case-featured-list small { display: block; margin-top: 3px; color: #abc2ce; font-size: .67rem; }
+body[data-case-lesson] .case-featured { display: none; }
+@media (max-width: 710px) {
+ .case-lesson { grid-template-columns: 1fr; gap: 12px; }
+ .case-lesson-visual { grid-row: 1; }
+ .case-lesson-diagram { max-height: 210px; }
+ .case-lesson h2 { margin: 6px 0; }
+ .case-lesson ol { margin-bottom: 9px; }
+ .case-lesson li { padding-block: 3px; }
+ .case-featured-list { grid-template-columns: repeat(3,minmax(200px,1fr)); overflow-x: auto; padding-bottom: 4px; }
+}
+
+.case-lesson li:has(button) { padding-block: 0; }
+.case-lesson li:has(button)::before { display: none; }
+.case-lesson li button {
+ display: block;
+ width: 100%;
+ margin: 0;
+ padding: 6px 8px;
+ text-align: left;
+ border: 1px solid transparent;
+ border-radius: 4px;
+ color: #bed2de;
+ background: transparent;
+}
+.case-lesson li button::before { content: "0" counter(cue); margin-right: .65em; color: #97c8d5; }
+.case-lesson li button[aria-current="step"] { color: #f6fbff; background: #1b3b4b; border-color: #65c5bd; }
+.case-lesson .case-lesson-detail { text-align: left; line-height: 1.55; color: #e1eef5; font-size: .85rem; }
+.case-lesson .case-lesson-overview { margin: 0 0 10px; border-left: 2px solid #86e7dc; padding: 4px 0 4px 10px; color: #e8f7fa; text-align: left; font-size: .87rem; line-height: 1.5; }
+.case-lesson .storm-primer-water { fill: url(#storm-warm-water); }
+.case-lesson .storm-primer-cloud { fill: #bacfe1; opacity: .86; }
+.case-lesson .storm-primer-low { fill: #17344a; stroke: #ffc68b; stroke-width: 2; }
+.case-lesson .storm-primer-particle { fill: #f5fffe; }
+body:is([data-case-lesson="storm"],[data-case-lesson="quake"],[data-case-lesson="volcano"]) #narration-dock .narration-body { display: none; }
+
+.case-lesson .geology-rock { fill: #27394b; }
+.case-lesson .geology-rock-light { fill: #394a58; }
+.case-lesson .geology-strata { fill: none; stroke: #9aaeb3; stroke-width: 2; opacity: .65; }
+.case-lesson .geology-fault { fill: none; stroke: #e7be8e; stroke-width: 2; stroke-dasharray: 6 5; }
+.case-lesson .geology-lock { fill: #27394b; stroke: #ffd4a2; stroke-width: 3; }
+.case-lesson .geology-chart { fill: #102137; stroke: #4d687f; }
+.case-lesson .geology-chart + text { font-size: 13px; }
+.case-lesson .geology-axis { fill: none; stroke: #7994aa; stroke-width: 1.5; }
+.case-lesson .geology-p-wave,.case-lesson .geology-s-wave { fill: none; stroke-width: 3; }
+.case-lesson .geology-p-wave,.case-lesson .geology-waveform { stroke: #6fe5e0; }
+.case-lesson .geology-s-wave { stroke: #d6b7ff; stroke-dasharray: 8 5; }
+.case-lesson .geology-waveform { fill: none; stroke-width: 2; }
+body[data-case-lesson="volcano"] .case-lesson-diagram {
+ max-height: min(43vh, 400px);
+ background: linear-gradient(180deg,#142b42,#101c2f 58%);
+}
+.case-lesson .volcano-caption { fill: #c6dce7; font-size: 14px; }
+.case-lesson .volcano-small { font-size: 15px; }
+.case-lesson .volcano-card { fill: #17293d; stroke: #506682; }
+.case-lesson .volcano-result { fill: #49373b; stroke: #d18e6e; }
+.case-lesson .volcano-flow,.case-lesson .volcano-hot-path {
+ fill: none; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round;
+}
+.case-lesson .volcano-water-flow { stroke: #77dcf7; }
+.case-lesson .volcano-heat-flow { stroke: #ffb16c; }
+.case-lesson .volcano-plate-flow { stroke: #bed4e9; }
+.case-lesson .volcano-seafloor { fill: none; stroke: #8bb6cb; stroke-width: 2; }
+.case-lesson .volcano-line,.case-lesson .volcano-strata { fill: none; stroke: #91abc0; stroke-width: 1.4; }
+.case-lesson .volcano-line { stroke-dasharray: 3 5; opacity: .62; }
+.case-lesson .volcano-strata { opacity: .37; }
+.case-lesson .volcano-conduit-edge,.case-lesson .volcano-conduit { fill: none; stroke-linecap: round; }
+.case-lesson .volcano-conduit-edge { stroke: #472c32; stroke-width: 18; }
+.case-lesson .volcano-conduit { stroke: #b5624c; stroke-width: 9; }
+.case-lesson .volcano-reservoir { fill: url(#volcano-magma); stroke: #f4a578; stroke-width: 2; }
+.case-lesson .volcano-hot-path { stroke: #ffd591; stroke-width: 5; }
+.case-lesson .volcano-plate-particle { fill: #d6ebff; }
+.case-lesson .volcano-water-particle { fill: #9bebff; }
+.case-lesson .volcano-gas-particle { fill: #ffd992; stroke: #fff1ce; stroke-width: 1.3; }
+.case-lesson .volcano-fragment { fill: #ffad78; stroke: #9b493a; stroke-width: 1.3; }
+@media (max-width: 710px) {
+ body[data-case-lesson="volcano"] .case-lesson-diagram { max-height: 245px; }
+}
+
+.volcano-shot {
+ position: relative;
+ isolation: isolate;
+ height: clamp(260px, 49vh, 480px);
+ overflow: hidden;
+ border: 1px solid #40647b;
+ border-radius: 12px;
+ background: radial-gradient(ellipse at 49% 31%, #193a51, #101d2e 68%, #090f1c);
+}
+.volcano-shot canvas,.volcano-shot-veil,.volcano-shot-leaders {
+ position: absolute;
+ inset: 0;
+ width: 100%;
+ height: 100%;
+}
+.volcano-shot-veil { pointer-events: none; background: #17364b; opacity: 0; }
+.volcano-shot-leaders { pointer-events: none; }
+.volcano-shot-leaders path { fill: none; stroke: currentColor; stroke-width: 1; stroke-opacity: .72; }
+.volcano-shot-header { position: absolute; inset: 12px 14px auto; display: flex; align-items: center; gap: 9px; }
+.volcano-shot-header span {
+ flex: none;
+ padding: 3px 6px;
+ border: 1px solid #69d4c88a;
+ border-radius: 4px;
+ background: #08252e;
+ color: #a5f2e8;
+ font-size: .65rem;
+}
+.volcano-shot-header strong { color: #deecf4; font-size: .78rem; text-shadow: 0 1px 4px #030913; }
+.volcano-shot-note {
+ position: absolute;
+ transform: translateY(-100%);
+ max-width: min(41%, 185px);
+ padding: 4px 7px;
+ border-bottom: 1px solid #71b8cf;
+ border-radius: 4px 4px 0 0;
+ background: #0a192af0;
+ color: #d9f4ff;
+ font-size: clamp(.65rem, 1.05vw, .81rem);
+ line-height: 1.35;
+ pointer-events: none;
+}
+.volcano-shot-note[data-slot$="left"] { left: 15px; }
+.volcano-shot-note[data-slot$="right"] { right: 15px; text-align: right; }
+.volcano-shot-note[data-tone="warm"] { color: #ffe1bb; border-color: #e79a62; }
+.volcano-shot-context {
+ position: absolute;
+ left: 13px;
+ bottom: 10px;
+ max-width: calc(100% - 104px);
+ padding: 5px 8px;
+ border-radius: 5px;
+ background: #1b2738eb;
+ color: #ffe0b9;
+ font-size: .73rem;
+ line-height: 1.3;
+}
+.volcano-shot-angle {
+ position: absolute;
+ right: 9px;
+ bottom: 9px;
+ padding: 4px 7px;
+ border: 1px solid #527288;
+ background: #14273b;
+ color: #deedf6;
+ font-size: .71rem;
+}
+.volcano-shot-angle[aria-pressed="true"] { background: #255065; color: #fff; border-color: #8ad4da; }
+@media (max-width: 710px) {
+ .volcano-shot { height: clamp(240px, 55vw, 335px); }
+ .volcano-shot-header { inset: 8px 9px auto; gap: 6px; }
+ .volcano-shot-header strong { font-size: .69rem; }
+}

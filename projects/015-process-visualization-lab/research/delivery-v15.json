@@ -1,0 +1,108 @@
+{
+  "version": "15.0.0",
+  "canonicalRoot": "E:\\codex_project\\1025_codex_project\\projects\\015-process-visualization-lab",
+  "status": "project-written-and-stage-hash-verified",
+  "fileCount": 20,
+  "files": [
+    {
+      "file": "app/index.html",
+      "bytes": 23866,
+      "sha256": "68b010edfacdebd0d7b2a5551898a1d0c2e0e4422292a6d71b5b8f7d74c6d584"
+    },
+    {
+      "file": "app/globe.html",
+      "bytes": 23866,
+      "sha256": "68b010edfacdebd0d7b2a5551898a1d0c2e0e4422292a6d71b5b8f7d74c6d584"
+    },
+    {
+      "file": "app/globe-app.js",
+      "bytes": 74165,
+      "sha256": "ac1d1fc5b989e95b027d23778a61be6ec33fa509ff87bedfc72dd32fff5b4b20"
+    },
+    {
+      "file": "app/dynamic-player.js",
+      "bytes": 22381,
+      "sha256": "aeb2cb129c40c01162d7131d4147ee4d0f1b2deebb5636c03ef8aeaf68b2641c"
+    },
+    {
+      "file": "app/demo-session.js",
+      "bytes": 8604,
+      "sha256": "d149a359f69f43b67868b540fb9e65f5638451b2abecbeada3f303a3b0a04224"
+    },
+    {
+      "file": "app/demo-evidence-data.js",
+      "bytes": 13672,
+      "sha256": "3ad4dba58d0ae78fb5443abb542d914bab30d15f04edaf69447c3e7540b5b890"
+    },
+    {
+      "file": "app/demo-workbench.js",
+      "bytes": 15259,
+      "sha256": "170b2e8e5d331f1f6e21553a43746ee349150d946f9d055abc59b916dd1e0f04"
+    },
+    {
+      "file": "app/demo-workbench.css",
+      "bytes": 9193,
+      "sha256": "89a378f2c6a1aa4ec46fa49525a6e99606b8d02e595873b090a0f9aa0a5d8bb8"
+    },
+    {
+      "file": "tests/dynamic-player.test.mjs",
+      "bytes": 20748,
+      "sha256": "ca595e52f4ba31a865834e255c781bbd86342e837ecc8cbbedfd20591ba510c3"
+    },
+    {
+      "file": "tests/demo-session.test.mjs",
+      "bytes": 13978,
+      "sha256": "aafe499e97c6ed0ec773d7c11bda755b91036f75a7a4f381a36ee342b020d1b4"
+    },
+    {
+      "file": "tests/demo-evidence-data.test.mjs",
+      "bytes": 9309,
+      "sha256": "fd02d6bfd97ae4287ee21507db35c07828bebc7e7a8099910bb2bf83a288e70d"
+    },
+    {
+      "file": "tests/demo-workbench.test.mjs",
+      "bytes": 7901,
+      "sha256": "86168174883c169c898ab046defbf4d64b36e40b5edf9a5f401a8db6421dfa00"
+    },
+    {
+      "file": "tests/sync-playback.test.mjs",
+      "bytes": 13854,
+      "sha256": "03af42a56454de4155055cf3ca08564eef2f9d2d51259d8cc99699bc57be493f"
+    },
+    {
+      "file": "scripts/check.mjs",
+      "bytes": 13541,
+      "sha256": "4845e89c60a7b1347e303954e98f971b25d091072db03cfc62e29a883e98efb8"
+    },
+    {
+      "file": "package.json",
+      "bytes": 478,
+      "sha256": "3fe3eae9ae24fbb72368ce67e9c9339f8460016e35a8ffe3bdc7dc03d6e8c0dc"
+    },
+    {
+      "file": "README.md",
+      "bytes": 35466,
+      "sha256": "ddfe6fd3425aa757129782df73a3ce5792fc8f6069d8b8638fd3ae63ff018df8"
+    },
+    {
+      "file": "research/verification-v15.json",
+      "bytes": 3047,
+      "sha256": "20140ea07b947bd8d527fbc85701deff94ce262ba0a6f770762067e0fe3b8ce0"
+    },
+    {
+      "file": "assets/images/demo-volcano-v15.png",
+      "bytes": 112603,
+      "sha256": "ec4a423284cc22174a1458826e9fe183635e958f1ddea569cd52f7a9dd71a466"
+    },
+    {
+      "file": "assets/images/demo-mobile-v15.png",
+      "bytes": 41703,
+      "sha256": "652669d3e299cb1349c160a93e54d19e3f334140a9ce0c70b967b356ffaa8ceb"
+    },
+    {
+      "file": "assets/images/demo-quake-v15.png",
+      "bytes": 114269,
+      "sha256": "7bcd3ac67d5d1971448caaefbbdf3b364f5d74f89339ebeb69e21338228ca69a"
+    }
+  ]
+}

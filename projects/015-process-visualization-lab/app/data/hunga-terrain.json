@@ -1,0 +1,49 @@
+{
+  "grid": {
+    "cols": 440,
+    "rows": 320,
+    "stepM": 50,
+    "transect": 160,
+    "crs": "EPSG:32701",
+    "bounds": [
+      657450,
+      7718500,
+      679450,
+      7734500
+    ]
+  },
+  "anchor": [
+    -175.38410511050938,
+    -20.55288891234977
+  ],
+  "east": [
+    -175.37451527895564,
+    -20.552799190689022
+  ],
+  "samples": [
+    {
+      "id": "west",
+      "col": 120
+    },
+    {
+      "id": "crater",
+      "col": 220
+    },
+    {
+      "id": "east",
+      "col": 320
+    }
+  ],
+  "surveys": {
+    "pre": {
+      "url": "assets/events/hunga-terrain/pre-elevation.json",
+      "sourceMd5": "74e40db60cbe1bfefc147221896ecdd3",
+      "sha256": "80e1b59d090ebbbe41e1f78fa082c5c65043f822c41e217ee2d86929d8dc808f"
+    },
+    "post": {
+      "url": "assets/events/hunga-terrain/post-elevation.json",
+      "sourceMd5": "bea1413433d77e6360775a29a05fc955",
+      "sha256": "b103dffeabac3cf113faa8ff9d75ca85bf8d1348ec8e5eae9a601d0961ae9648"
+    }
+  }
+}

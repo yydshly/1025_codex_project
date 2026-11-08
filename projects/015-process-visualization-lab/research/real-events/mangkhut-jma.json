@@ -1,0 +1,1185 @@
+{
+  "schemaVersion": 1,
+  "eventId": "jma-1822",
+  "name": "MANGKHUT",
+  "nameZh": "山竹",
+  "year": 2018,
+  "dataType": "official-retrospective-best-track-analysis",
+  "displayLabel": "日本气象厅事后最佳路径分析",
+  "source": {
+    "agency": "Japan Meteorological Agency / RSMC Tokyo - Typhoon Center",
+    "pageUrl": "https://www.jma.go.jp/jma/jma-eng/jma-center/rsmc-hp-pub-eg/besttrack.html",
+    "downloadUrl": "https://www.jma.go.jp/jma/jma-eng/jma-center/rsmc-hp-pub-eg/Besttracks/bst_all.zip",
+    "archiveMember": "bst_all.txt",
+    "archiveBytesAtDownload": 747389,
+    "downloadedAtUtc": "2026-11-04T10:49:14.1540844Z",
+    "sourceRevisionDate": "2018-10-26",
+    "extractedOriginalFile": "mangkhut-jma-source.txt",
+    "extractedOriginalSha256": "4e3790dbe1788c957c69587b302ed72366def3b0adb4910cf970f23211b4b723",
+    "extraction": "Original fixed-width header and all 46 data rows for international ID 1822 extracted in memory from the official ZIP; only this event was saved. Line endings normalized to LF; no numerical values changed.",
+    "formatUrl": "https://www.jma.go.jp/jma/jma-eng/jma-center/rsmc-hp-pub-eg/Besttracks/e_format_bst.html",
+    "windDefinitionUrl": "https://www.jma.go.jp/jma/jma-eng/jma-center/rsmc-hp-pub-eg/advisory.html",
+    "bestTrackNatureUrl": "https://www.jma.go.jp/jma/jma-eng/jma-center/rsmc-hp-pub-eg/AnnualReport/2022/Text/Text2022.pdf",
+    "termsUrl": "https://www.jma.go.jp/jma/en/copyright.html",
+    "attribution": "Based on RSMC Tokyo best-track data (Japan Meteorological Agency). Extracted, parsed and visualized by this product; this visualization is not an official JMA product.",
+    "termsSummary": "JMA website content is under Public Data License 1.0 unless a specific notice says otherwise. Cite the source and identify edits; do not imply government authorship. Third-party material and specific notices may have other conditions. The terms state compatibility with CC BY 4.0."
+  },
+  "units": {
+    "timeUtc": "UTC; source format yymmddhh",
+    "lat": "degrees north; original stored in 0.1 degree",
+    "lon": "degrees east; original stored in 0.1 degree",
+    "pressureHpa": "hPa; central pressure",
+    "windKt": "knot; maximum sustained wind, 10-minute averaging period",
+    "windKmh": "km/h; derived conversion only, 1 knot = 1.852 km/h",
+    "radii": "nautical mile; longest and shortest radius of winds at least 30/50 kt",
+    "intervalHours": 6
+  },
+  "interpretation": {
+    "category": "Post-event analysis based on meteorological evidence; not a forecast and not direct instrument measurements at every track location.",
+    "noInterpolation": "All records are original 6-hour analysis times; no extra points or wind values have been generated.",
+    "missingPolicy": "Blank fields become null. Source wind token 000 is conservatively withheld as null rather than displayed as zero wind; in this event all seven such records are grade 2 (tropical depression). The original token is retained. No stronger interpretation of this token is asserted.",
+    "windRadiiZeroPolicy": "An explicitly reported direction 0 and radius 0 is retained as 0 per the JMA format. This differs from blank, unavailable wind-radius fields.",
+    "use": "Drive actual-time center tracks, center wind and pressure curves, and reported long/short wind-radius summaries.",
+    "limits": "Track records do not contain satellite pixels, a full wind field, cloud height, rain distribution, city impacts or station wind measurements. A radius summary is not an observed polygon or a complete spatial wind field. Do not generate cloud spirals and present them as recorded imagery.",
+    "localTimeDisplay": "Convert from UTC for display, e.g. Hong Kong/Beijing = UTC+08:00; keep the stored UTC unchanged.",
+    "agencyComparability": "Keep JMA 10-minute winds separate from other agency estimates; do not silently mix with JTWC 1-minute wind or HKO best-track values."
+  },
+  "summary": {
+    "recordCount": 46,
+    "startTimeUtc": "2018-09-06T12:00:00Z",
+    "endTimeUtc": "2018-09-17T18:00:00Z",
+    "intervalHours": 6,
+    "reportedWindCount": 39,
+    "unreportedWindCount": 7,
+    "peakWindKt": 110,
+    "minimumCentralPressureHpa": 905
+  },
+  "records": [
+    {
+      "timeUtc": "2018-09-06T12:00:00Z",
+      "lat": 11.8,
+      "lon": 170.2,
+      "pressureHpa": 1008,
+      "windKt": null,
+      "windKmh": null,
+      "grade": 2,
+      "gradeLabel": "TD",
+      "radii50kt": null,
+      "radii30kt": null,
+      "japaneseLandfallIndicator": null,
+      "rawWindToken": "000",
+      "windDataStatus": "not-reported-numerically",
+      "sourceLine": 2
+    },
+    {
+      "timeUtc": "2018-09-06T18:00:00Z",
+      "lat": 12,
+      "lon": 169.2,
+      "pressureHpa": 1008,
+      "windKt": null,
+      "windKmh": null,
+      "grade": 2,
+      "gradeLabel": "TD",
+      "radii50kt": null,
+      "radii30kt": null,
+      "japaneseLandfallIndicator": null,
+      "rawWindToken": "000",
+      "windDataStatus": "not-reported-numerically",
+      "sourceLine": 3
+    },
+    {
+      "timeUtc": "2018-09-07T00:00:00Z",
+      "lat": 12,
+      "lon": 167.8,
+      "pressureHpa": 1008,
+      "windKt": null,
+      "windKmh": null,
+      "grade": 2,
+      "gradeLabel": "TD",
+      "radii50kt": null,
+      "radii30kt": null,
+      "japaneseLandfallIndicator": null,
+      "rawWindToken": "000",
+      "windDataStatus": "not-reported-numerically",
+      "sourceLine": 4
+    },
+    {
+      "timeUtc": "2018-09-07T06:00:00Z",
+      "lat": 12.3,
+      "lon": 166.6,
+      "pressureHpa": 1006,
+      "windKt": null,
+      "windKmh": null,
+      "grade": 2,
+      "gradeLabel": "TD",
+      "radii50kt": null,
+      "radii30kt": null,
+      "japaneseLandfallIndicator": null,
+      "rawWindToken": "000",
+      "windDataStatus": "not-reported-numerically",
+      "sourceLine": 5
+    },
+    {
+      "timeUtc": "2018-09-07T12:00:00Z",
+      "lat": 12.7,
+      "lon": 165.4,
+      "pressureHpa": 1000,
+      "windKt": 35,
+      "windKmh": 64.82,
+      "grade": 3,
+      "gradeLabel": "TS",
+      "radii50kt": {
+        "directionCode": 0,
+        "longestDirection": null,
+        "longestNm": 0,
+        "shortestNm": 0
+      },
+      "radii30kt": {
+        "directionCode": 9,
+        "longestDirection": "symmetric",
+        "longestNm": 150,
+        "shortestNm": 150
+      },
+      "japaneseLandfallIndicator": null,
+      "rawWindToken": "035",
+      "windDataStatus": "reported",
+      "sourceLine": 6
+    },
+    {
+      "timeUtc": "2018-09-07T18:00:00Z",
+      "lat": 13,
+      "lon": 163.9,
+      "pressureHpa": 1000,
+      "windKt": 35,
+      "windKmh": 64.82,
+      "grade": 3,
+      "gradeLabel": "TS",
+      "radii50kt": {
+        "directionCode": 0,
+        "longestDirection": null,
+        "longestNm": 0,
+        "shortestNm": 0
+      },
+      "radii30kt": {
+        "directionCode": 9,
+        "longestDirection": "symmetric",
+        "longestNm": 150,
+        "shortestNm": 150
+      },
+      "japaneseLandfallIndicator": null,
+      "rawWindToken": "035",
+      "windDataStatus": "reported",
+      "sourceLine": 7
+    },
+    {
+      "timeUtc": "2018-09-08T00:00:00Z",
+      "lat": 13.6,
+      "lon": 162.3,
+      "pressureHpa": 998,
+      "windKt": 40,
+      "windKmh": 74.08,
+      "grade": 3,
+      "gradeLabel": "TS",
+      "radii50kt": {
+        "directionCode": 0,
+        "longestDirection": null,
+        "longestNm": 0,
+        "shortestNm": 0
+      },
+      "radii30kt": {
+        "directionCode": 9,
+        "longestDirection": "symmetric",
+        "longestNm": 150,
+        "shortestNm": 150
+      },
+      "japaneseLandfallIndicator": null,
+      "rawWindToken": "040",
+      "windDataStatus": "reported",
+      "sourceLine": 8
+    },
+    {
+      "timeUtc": "2018-09-08T06:00:00Z",
+      "lat": 14.3,
+      "lon": 160.6,
+      "pressureHpa": 996,
+      "windKt": 40,
+      "windKmh": 74.08,
+      "grade": 3,
+      "gradeLabel": "TS",
+      "radii50kt": {
+        "directionCode": 0,
+        "longestDirection": null,
+        "longestNm": 0,
+        "shortestNm": 0
+      },
+      "radii30kt": {
+        "directionCode": 9,
+        "longestDirection": "symmetric",
+        "longestNm": 150,
+        "shortestNm": 150
+      },
+      "japaneseLandfallIndicator": null,
+      "rawWindToken": "040",
+      "windDataStatus": "reported",
+      "sourceLine": 9
+    },
+    {
+      "timeUtc": "2018-09-08T12:00:00Z",
+      "lat": 14.5,
+      "lon": 159.2,
+      "pressureHpa": 992,
+      "windKt": 45,
+      "windKmh": 83.34,
+      "grade": 3,
+      "gradeLabel": "TS",
+      "radii50kt": {
+        "directionCode": 0,
+        "longestDirection": null,
+        "longestNm": 0,
+        "shortestNm": 0
+      },
+      "radii30kt": {
+        "directionCode": 9,
+        "longestDirection": "symmetric",
+        "longestNm": 150,
+        "shortestNm": 150
+      },
+      "japaneseLandfallIndicator": null,
+      "rawWindToken": "045",
+      "windDataStatus": "reported",
+      "sourceLine": 10
+    },
+    {
+      "timeUtc": "2018-09-08T18:00:00Z",
+      "lat": 14.6,
+      "lon": 157.4,
+      "pressureHpa": 990,
+      "windKt": 50,
+      "windKmh": 92.6,
+      "grade": 4,
+      "gradeLabel": "STS",
+      "radii50kt": {
+        "directionCode": 0,
+        "longestDirection": null,
+        "longestNm": 0,
+        "shortestNm": 0
+      },
+      "radii30kt": {
+        "directionCode": 9,
+        "longestDirection": "symmetric",
+        "longestNm": 160,
+        "shortestNm": 160
+      },
+      "japaneseLandfallIndicator": null,
+      "rawWindToken": "050",
+      "windDataStatus": "reported",
+      "sourceLine": 11
+    },
+    {
+      "timeUtc": "2018-09-09T00:00:00Z",
+      "lat": 14.8,
+      "lon": 155.2,
+      "pressureHpa": 975,
+      "windKt": 65,
+      "windKmh": 120.38,
+      "grade": 5,
+      "gradeLabel": "TY",
+      "radii50kt": {
+        "directionCode": 9,
+        "longestDirection": "symmetric",
+        "longestNm": 60,
+        "shortestNm": 60
+      },
+      "radii30kt": {
+        "directionCode": 9,
+        "longestDirection": "symmetric",
+        "longestNm": 180,
+        "shortestNm": 180
+      },
+      "japaneseLandfallIndicator": null,
+      "rawWindToken": "065",
+      "windDataStatus": "reported",
+      "sourceLine": 12
+    },
+    {
+      "timeUtc": "2018-09-09T06:00:00Z",
+      "lat": 15.3,
+      "lon": 152.9,
+      "pressureHpa": 975,
+      "windKt": 65,
+      "windKmh": 120.38,
+      "grade": 5,
+      "gradeLabel": "TY",
+      "radii50kt": {
+        "directionCode": 9,
+        "longestDirection": "symmetric",
+        "longestNm": 60,
+        "shortestNm": 60
+      },
+      "radii30kt": {
+        "directionCode": 9,
+        "longestDirection": "symmetric",
+        "longestNm": 180,
+        "shortestNm": 180
+      },
+      "japaneseLandfallIndicator": null,
+      "rawWindToken": "065",
+      "windDataStatus": "reported",
+      "sourceLine": 13
+    },
+    {
+      "timeUtc": "2018-09-09T12:00:00Z",
+      "lat": 15.1,
+      "lon": 151.4,
+      "pressureHpa": 970,
+      "windKt": 70,
+      "windKmh": 129.64,
+      "grade": 5,
+      "gradeLabel": "TY",
+      "radii50kt": {
+        "directionCode": 9,
+        "longestDirection": "symmetric",
+        "longestNm": 60,
+        "shortestNm": 60
+      },
+      "radii30kt": {
+        "directionCode": 9,
+        "longestDirection": "symmetric",
+        "longestNm": 180,
+        "shortestNm": 180
+      },
+      "japaneseLandfallIndicator": null,
+      "rawWindToken": "070",
+      "windDataStatus": "reported",
+      "sourceLine": 14
+    },
+    {
+      "timeUtc": "2018-09-09T18:00:00Z",
+      "lat": 14.6,
+      "lon": 149.1,
+      "pressureHpa": 955,
+      "windKt": 80,
+      "windKmh": 148.16,
+      "grade": 5,
+      "gradeLabel": "TY",
+      "radii50kt": {
+        "directionCode": 9,
+        "longestDirection": "symmetric",
+        "longestNm": 70,
+        "shortestNm": 70
+      },
+      "radii30kt": {
+        "directionCode": 9,
+        "longestDirection": "symmetric",
+        "longestNm": 180,
+        "shortestNm": 180
+      },
+      "japaneseLandfallIndicator": null,
+      "rawWindToken": "080",
+      "windDataStatus": "reported",
+      "sourceLine": 15
+    },
+    {
+      "timeUtc": "2018-09-10T00:00:00Z",
+      "lat": 14.6,
+      "lon": 147.5,
+      "pressureHpa": 955,
+      "windKt": 80,
+      "windKmh": 148.16,
+      "grade": 5,
+      "gradeLabel": "TY",
+      "radii50kt": {
+        "directionCode": 9,
+        "longestDirection": "symmetric",
+        "longestNm": 70,
+        "shortestNm": 70
+      },
+      "radii30kt": {
+        "directionCode": 9,
+        "longestDirection": "symmetric",
+        "longestNm": 180,
+        "shortestNm": 180
+      },
+      "japaneseLandfallIndicator": null,
+      "rawWindToken": "080",
+      "windDataStatus": "reported",
+      "sourceLine": 16
+    },
+    {
+      "timeUtc": "2018-09-10T06:00:00Z",
+      "lat": 14.4,
+      "lon": 145.6,
+      "pressureHpa": 955,
+      "windKt": 80,
+      "windKmh": 148.16,
+      "grade": 5,
+      "gradeLabel": "TY",
+      "radii50kt": {
+        "directionCode": 9,
+        "longestDirection": "symmetric",
+        "longestNm": 70,
+        "shortestNm": 70
+      },
+      "radii30kt": {
+        "directionCode": 9,
+        "longestDirection": "symmetric",
+        "longestNm": 180,
+        "shortestNm": 180
+      },
+      "japaneseLandfallIndicator": null,
+      "rawWindToken": "080",
+      "windDataStatus": "reported",
+      "sourceLine": 17
+    },
+    {
+      "timeUtc": "2018-09-10T12:00:00Z",
+      "lat": 14.2,
+      "lon": 144.2,
+      "pressureHpa": 950,
+      "windKt": 85,
+      "windKmh": 157.42,
+      "grade": 5,
+      "gradeLabel": "TY",
+      "radii50kt": {
+        "directionCode": 9,
+        "longestDirection": "symmetric",
+        "longestNm": 70,
+        "shortestNm": 70
+      },
+      "radii30kt": {
+        "directionCode": 9,
+        "longestDirection": "symmetric",
+        "longestNm": 180,
+        "shortestNm": 180
+      },
+      "japaneseLandfallIndicator": null,
+      "rawWindToken": "085",
+      "windDataStatus": "reported",
+      "sourceLine": 18
+    },
+    {
+      "timeUtc": "2018-09-10T18:00:00Z",
+      "lat": 14,
+      "lon": 142.6,
+      "pressureHpa": 940,
+      "windKt": 90,
+      "windKmh": 166.68,
+      "grade": 5,
+      "gradeLabel": "TY",
+      "radii50kt": {
+        "directionCode": 9,
+        "longestDirection": "symmetric",
+        "longestNm": 80,
+        "shortestNm": 80
+      },
+      "radii30kt": {
+        "directionCode": 9,
+        "longestDirection": "symmetric",
+        "longestNm": 180,
+        "shortestNm": 180
+      },
+      "japaneseLandfallIndicator": null,
+      "rawWindToken": "090",
+      "windDataStatus": "reported",
+      "sourceLine": 19
+    },
+    {
+      "timeUtc": "2018-09-11T00:00:00Z",
+      "lat": 14,
+      "lon": 141.3,
+      "pressureHpa": 935,
+      "windKt": 95,
+      "windKmh": 175.94,
+      "grade": 5,
+      "gradeLabel": "TY",
+      "radii50kt": {
+        "directionCode": 9,
+        "longestDirection": "symmetric",
+        "longestNm": 90,
+        "shortestNm": 90
+      },
+      "radii30kt": {
+        "directionCode": 9,
+        "longestDirection": "symmetric",
+        "longestNm": 180,
+        "shortestNm": 180
+      },
+      "japaneseLandfallIndicator": null,
+      "rawWindToken": "095",
+      "windDataStatus": "reported",
+      "sourceLine": 20
+    },
+    {
+      "timeUtc": "2018-09-11T06:00:00Z",
+      "lat": 13.9,
+      "lon": 139.8,
+      "pressureHpa": 915,
+      "windKt": 105,
+      "windKmh": 194.46,
+      "grade": 5,
+      "gradeLabel": "TY",
+      "radii50kt": {
+        "directionCode": 9,
+        "longestDirection": "symmetric",
+        "longestNm": 110,
+        "shortestNm": 110
+      },
+      "radii30kt": {
+        "directionCode": 9,
+        "longestDirection": "symmetric",
+        "longestNm": 180,
+        "shortestNm": 180
+      },
+      "japaneseLandfallIndicator": null,
+      "rawWindToken": "105",
+      "windDataStatus": "reported",
+      "sourceLine": 21
+    },
+    {
+      "timeUtc": "2018-09-11T12:00:00Z",
+      "lat": 13.7,
+      "lon": 138.7,
+      "pressureHpa": 905,
+      "windKt": 110,
+      "windKmh": 203.72,
+      "grade": 5,
+      "gradeLabel": "TY",
+      "radii50kt": {
+        "directionCode": 9,
+        "longestDirection": "symmetric",
+        "longestNm": 110,
+        "shortestNm": 110
+      },
+      "radii30kt": {
+        "directionCode": 9,
+        "longestDirection": "symmetric",
+        "longestNm": 210,
+        "shortestNm": 210
+      },
+      "japaneseLandfallIndicator": null,
+      "rawWindToken": "110",
+      "windDataStatus": "reported",
+      "sourceLine": 22
+    },
+    {
+      "timeUtc": "2018-09-11T18:00:00Z",
+      "lat": 14,
+      "lon": 137.4,
+      "pressureHpa": 905,
+      "windKt": 110,
+      "windKmh": 203.72,
+      "grade": 5,
+      "gradeLabel": "TY",
+      "radii50kt": {
+        "directionCode": 9,
+        "longestDirection": "symmetric",
+        "longestNm": 110,
+        "shortestNm": 110
+      },
+      "radii30kt": {
+        "directionCode": 9,
+        "longestDirection": "symmetric",
+        "longestNm": 240,
+        "shortestNm": 240
+      },
+      "japaneseLandfallIndicator": null,
+      "rawWindToken": "110",
+      "windDataStatus": "reported",
+      "sourceLine": 23
+    },
+    {
+      "timeUtc": "2018-09-12T00:00:00Z",
+      "lat": 13.9,
+      "lon": 136.2,
+      "pressureHpa": 905,
+      "windKt": 110,
+      "windKmh": 203.72,
+      "grade": 5,
+      "gradeLabel": "TY",
+      "radii50kt": {
+        "directionCode": 9,
+        "longestDirection": "symmetric",
+        "longestNm": 110,
+        "shortestNm": 110
+      },
+      "radii30kt": {
+        "directionCode": 9,
+        "longestDirection": "symmetric",
+        "longestNm": 240,
+        "shortestNm": 240
+      },
+      "japaneseLandfallIndicator": null,
+      "rawWindToken": "110",
+      "windDataStatus": "reported",
+      "sourceLine": 24
+    },
+    {
+      "timeUtc": "2018-09-12T06:00:00Z",
+      "lat": 14,
+      "lon": 135.2,
+      "pressureHpa": 905,
+      "windKt": 110,
+      "windKmh": 203.72,
+      "grade": 5,
+      "gradeLabel": "TY",
+      "radii50kt": {
+        "directionCode": 9,
+        "longestDirection": "symmetric",
+        "longestNm": 110,
+        "shortestNm": 110
+      },
+      "radii30kt": {
+        "directionCode": 9,
+        "longestDirection": "symmetric",
+        "longestNm": 240,
+        "shortestNm": 240
+      },
+      "japaneseLandfallIndicator": null,
+      "rawWindToken": "110",
+      "windDataStatus": "reported",
+      "sourceLine": 25
+    },
+    {
+      "timeUtc": "2018-09-12T12:00:00Z",
+      "lat": 14.3,
+      "lon": 134,
+      "pressureHpa": 905,
+      "windKt": 110,
+      "windKmh": 203.72,
+      "grade": 5,
+      "gradeLabel": "TY",
+      "radii50kt": {
+        "directionCode": 9,
+        "longestDirection": "symmetric",
+        "longestNm": 110,
+        "shortestNm": 110
+      },
+      "radii30kt": {
+        "directionCode": 1,
+        "longestDirection": "NE",
+        "longestNm": 280,
+        "shortestNm": 240
+      },
+      "japaneseLandfallIndicator": null,
+      "rawWindToken": "110",
+      "windDataStatus": "reported",
+      "sourceLine": 26
+    },
+    {
+      "timeUtc": "2018-09-12T18:00:00Z",
+      "lat": 14.4,
+      "lon": 132.5,
+      "pressureHpa": 905,
+      "windKt": 110,
+      "windKmh": 203.72,
+      "grade": 5,
+      "gradeLabel": "TY",
+      "radii50kt": {
+        "directionCode": 9,
+        "longestDirection": "symmetric",
+        "longestNm": 110,
+        "shortestNm": 110
+      },
+      "radii30kt": {
+        "directionCode": 1,
+        "longestDirection": "NE",
+        "longestNm": 300,
+        "shortestNm": 240
+      },
+      "japaneseLandfallIndicator": null,
+      "rawWindToken": "110",
+      "windDataStatus": "reported",
+      "sourceLine": 27
+    },
+    {
+      "timeUtc": "2018-09-13T00:00:00Z",
+      "lat": 14.5,
+      "lon": 131.4,
+      "pressureHpa": 905,
+      "windKt": 110,
+      "windKmh": 203.72,
+      "grade": 5,
+      "gradeLabel": "TY",
+      "radii50kt": {
+        "directionCode": 9,
+        "longestDirection": "symmetric",
+        "longestNm": 110,
+        "shortestNm": 110
+      },
+      "radii30kt": {
+        "directionCode": 1,
+        "longestDirection": "NE",
+        "longestNm": 300,
+        "shortestNm": 240
+      },
+      "japaneseLandfallIndicator": null,
+      "rawWindToken": "110",
+      "windDataStatus": "reported",
+      "sourceLine": 28
+    },
+    {
+      "timeUtc": "2018-09-13T06:00:00Z",
+      "lat": 14.8,
+      "lon": 130,
+      "pressureHpa": 905,
+      "windKt": 110,
+      "windKmh": 203.72,
+      "grade": 5,
+      "gradeLabel": "TY",
+      "radii50kt": {
+        "directionCode": 9,
+        "longestDirection": "symmetric",
+        "longestNm": 110,
+        "shortestNm": 110
+      },
+      "radii30kt": {
+        "directionCode": 1,
+        "longestDirection": "NE",
+        "longestNm": 300,
+        "shortestNm": 240
+      },
+      "japaneseLandfallIndicator": null,
+      "rawWindToken": "110",
+      "windDataStatus": "reported",
+      "sourceLine": 29
+    },
+    {
+      "timeUtc": "2018-09-13T12:00:00Z",
+      "lat": 14.9,
+      "lon": 128.9,
+      "pressureHpa": 905,
+      "windKt": 110,
+      "windKmh": 203.72,
+      "grade": 5,
+      "gradeLabel": "TY",
+      "radii50kt": {
+        "directionCode": 9,
+        "longestDirection": "symmetric",
+        "longestNm": 120,
+        "shortestNm": 120
+      },
+      "radii30kt": {
+        "directionCode": 3,
+        "longestDirection": "SE",
+        "longestNm": 400,
+        "shortestNm": 300
+      },
+      "japaneseLandfallIndicator": null,
+      "rawWindToken": "110",
+      "windDataStatus": "reported",
+      "sourceLine": 30
+    },
+    {
+      "timeUtc": "2018-09-13T18:00:00Z",
+      "lat": 15.2,
+      "lon": 127.9,
+      "pressureHpa": 905,
+      "windKt": 110,
+      "windKmh": 203.72,
+      "grade": 5,
+      "gradeLabel": "TY",
+      "radii50kt": {
+        "directionCode": 9,
+        "longestDirection": "symmetric",
+        "longestNm": 120,
+        "shortestNm": 120
+      },
+      "radii30kt": {
+        "directionCode": 3,
+        "longestDirection": "SE",
+        "longestNm": 400,
+        "shortestNm": 300
+      },
+      "japaneseLandfallIndicator": null,
+      "rawWindToken": "110",
+      "windDataStatus": "reported",
+      "sourceLine": 31
+    },
+    {
+      "timeUtc": "2018-09-14T00:00:00Z",
+      "lat": 16,
+      "lon": 126.9,
+      "pressureHpa": 905,
+      "windKt": 110,
+      "windKmh": 203.72,
+      "grade": 5,
+      "gradeLabel": "TY",
+      "radii50kt": {
+        "directionCode": 9,
+        "longestDirection": "symmetric",
+        "longestNm": 120,
+        "shortestNm": 120
+      },
+      "radii30kt": {
+        "directionCode": 3,
+        "longestDirection": "SE",
+        "longestNm": 400,
+        "shortestNm": 300
+      },
+      "japaneseLandfallIndicator": null,
+      "rawWindToken": "110",
+      "windDataStatus": "reported",
+      "sourceLine": 32
+    },
+    {
+      "timeUtc": "2018-09-14T06:00:00Z",
+      "lat": 16.7,
+      "lon": 125.7,
+      "pressureHpa": 905,
+      "windKt": 110,
+      "windKmh": 203.72,
+      "grade": 5,
+      "gradeLabel": "TY",
+      "radii50kt": {
+        "directionCode": 9,
+        "longestDirection": "symmetric",
+        "longestNm": 120,
+        "shortestNm": 120
+      },
+      "radii30kt": {
+        "directionCode": 3,
+        "longestDirection": "SE",
+        "longestNm": 400,
+        "shortestNm": 300
+      },
+      "japaneseLandfallIndicator": null,
+      "rawWindToken": "110",
+      "windDataStatus": "reported",
+      "sourceLine": 33
+    },
+    {
+      "timeUtc": "2018-09-14T12:00:00Z",
+      "lat": 17.4,
+      "lon": 124.1,
+      "pressureHpa": 905,
+      "windKt": 110,
+      "windKmh": 203.72,
+      "grade": 5,
+      "gradeLabel": "TY",
+      "radii50kt": {
+        "directionCode": 9,
+        "longestDirection": "symmetric",
+        "longestNm": 120,
+        "shortestNm": 120
+      },
+      "radii30kt": {
+        "directionCode": 3,
+        "longestDirection": "SE",
+        "longestNm": 400,
+        "shortestNm": 300
+      },
+      "japaneseLandfallIndicator": null,
+      "rawWindToken": "110",
+      "windDataStatus": "reported",
+      "sourceLine": 34
+    },
+    {
+      "timeUtc": "2018-09-14T18:00:00Z",
+      "lat": 18,
+      "lon": 122.3,
+      "pressureHpa": 905,
+      "windKt": 110,
+      "windKmh": 203.72,
+      "grade": 5,
+      "gradeLabel": "TY",
+      "radii50kt": {
+        "directionCode": 9,
+        "longestDirection": "symmetric",
+        "longestNm": 120,
+        "shortestNm": 120
+      },
+      "radii30kt": {
+        "directionCode": 2,
+        "longestDirection": "E",
+        "longestNm": 400,
+        "shortestNm": 300
+      },
+      "japaneseLandfallIndicator": null,
+      "rawWindToken": "110",
+      "windDataStatus": "reported",
+      "sourceLine": 35
+    },
+    {
+      "timeUtc": "2018-09-15T00:00:00Z",
+      "lat": 18,
+      "lon": 120.5,
+      "pressureHpa": 940,
+      "windKt": 90,
+      "windKmh": 166.68,
+      "grade": 5,
+      "gradeLabel": "TY",
+      "radii50kt": {
+        "directionCode": 9,
+        "longestDirection": "symmetric",
+        "longestNm": 120,
+        "shortestNm": 120
+      },
+      "radii30kt": {
+        "directionCode": 2,
+        "longestDirection": "E",
+        "longestNm": 400,
+        "shortestNm": 300
+      },
+      "japaneseLandfallIndicator": null,
+      "rawWindToken": "090",
+      "windDataStatus": "reported",
+      "sourceLine": 36
+    },
+    {
+      "timeUtc": "2018-09-15T06:00:00Z",
+      "lat": 18.5,
+      "lon": 119.7,
+      "pressureHpa": 940,
+      "windKt": 90,
+      "windKmh": 166.68,
+      "grade": 5,
+      "gradeLabel": "TY",
+      "radii50kt": {
+        "directionCode": 9,
+        "longestDirection": "symmetric",
+        "longestNm": 120,
+        "shortestNm": 120
+      },
+      "radii30kt": {
+        "directionCode": 2,
+        "longestDirection": "E",
+        "longestNm": 400,
+        "shortestNm": 300
+      },
+      "japaneseLandfallIndicator": null,
+      "rawWindToken": "090",
+      "windDataStatus": "reported",
+      "sourceLine": 37
+    },
+    {
+      "timeUtc": "2018-09-15T12:00:00Z",
+      "lat": 19.2,
+      "lon": 118.3,
+      "pressureHpa": 950,
+      "windKt": 85,
+      "windKmh": 157.42,
+      "grade": 5,
+      "gradeLabel": "TY",
+      "radii50kt": {
+        "directionCode": 9,
+        "longestDirection": "symmetric",
+        "longestNm": 120,
+        "shortestNm": 120
+      },
+      "radii30kt": {
+        "directionCode": 2,
+        "longestDirection": "E",
+        "longestNm": 350,
+        "shortestNm": 240
+      },
+      "japaneseLandfallIndicator": null,
+      "rawWindToken": "085",
+      "windDataStatus": "reported",
+      "sourceLine": 38
+    },
+    {
+      "timeUtc": "2018-09-15T18:00:00Z",
+      "lat": 19.8,
+      "lon": 117,
+      "pressureHpa": 955,
+      "windKt": 80,
+      "windKmh": 148.16,
+      "grade": 5,
+      "gradeLabel": "TY",
+      "radii50kt": {
+        "directionCode": 9,
+        "longestDirection": "symmetric",
+        "longestNm": 120,
+        "shortestNm": 120
+      },
+      "radii30kt": {
+        "directionCode": 2,
+        "longestDirection": "E",
+        "longestNm": 350,
+        "shortestNm": 240
+      },
+      "japaneseLandfallIndicator": null,
+      "rawWindToken": "080",
+      "windDataStatus": "reported",
+      "sourceLine": 39
+    },
+    {
+      "timeUtc": "2018-09-16T00:00:00Z",
+      "lat": 20.6,
+      "lon": 115.3,
+      "pressureHpa": 960,
+      "windKt": 75,
+      "windKmh": 138.9,
+      "grade": 5,
+      "gradeLabel": "TY",
+      "radii50kt": {
+        "directionCode": 9,
+        "longestDirection": "symmetric",
+        "longestNm": 90,
+        "shortestNm": 90
+      },
+      "radii30kt": {
+        "directionCode": 2,
+        "longestDirection": "E",
+        "longestNm": 350,
+        "shortestNm": 240
+      },
+      "japaneseLandfallIndicator": null,
+      "rawWindToken": "075",
+      "windDataStatus": "reported",
+      "sourceLine": 40
+    },
+    {
+      "timeUtc": "2018-09-16T06:00:00Z",
+      "lat": 21.7,
+      "lon": 113.5,
+      "pressureHpa": 960,
+      "windKt": 75,
+      "windKmh": 138.9,
+      "grade": 5,
+      "gradeLabel": "TY",
+      "radii50kt": {
+        "directionCode": 9,
+        "longestDirection": "symmetric",
+        "longestNm": 90,
+        "shortestNm": 90
+      },
+      "radii30kt": {
+        "directionCode": 2,
+        "longestDirection": "E",
+        "longestNm": 350,
+        "shortestNm": 210
+      },
+      "japaneseLandfallIndicator": null,
+      "rawWindToken": "075",
+      "windDataStatus": "reported",
+      "sourceLine": 41
+    },
+    {
+      "timeUtc": "2018-09-16T12:00:00Z",
+      "lat": 22.2,
+      "lon": 111.6,
+      "pressureHpa": 970,
+      "windKt": 65,
+      "windKmh": 120.38,
+      "grade": 5,
+      "gradeLabel": "TY",
+      "radii50kt": {
+        "directionCode": 9,
+        "longestDirection": "symmetric",
+        "longestNm": 90,
+        "shortestNm": 90
+      },
+      "radii30kt": {
+        "directionCode": 2,
+        "longestDirection": "E",
+        "longestNm": 300,
+        "shortestNm": 180
+      },
+      "japaneseLandfallIndicator": null,
+      "rawWindToken": "065",
+      "windDataStatus": "reported",
+      "sourceLine": 42
+    },
+    {
+      "timeUtc": "2018-09-16T18:00:00Z",
+      "lat": 22.7,
+      "lon": 109.7,
+      "pressureHpa": 980,
+      "windKt": 55,
+      "windKmh": 101.86,
+      "grade": 4,
+      "gradeLabel": "STS",
+      "radii50kt": {
+        "directionCode": 9,
+        "longestDirection": "symmetric",
+        "longestNm": 90,
+        "shortestNm": 90
+      },
+      "radii30kt": {
+        "directionCode": 2,
+        "longestDirection": "E",
+        "longestNm": 300,
+        "shortestNm": 180
+      },
+      "japaneseLandfallIndicator": null,
+      "rawWindToken": "055",
+      "windDataStatus": "reported",
+      "sourceLine": 43
+    },
+    {
+      "timeUtc": "2018-09-17T00:00:00Z",
+      "lat": 23.2,
+      "lon": 108.3,
+      "pressureHpa": 992,
+      "windKt": 45,
+      "windKmh": 83.34,
+      "grade": 3,
+      "gradeLabel": "TS",
+      "radii50kt": {
+        "directionCode": 0,
+        "longestDirection": null,
+        "longestNm": 0,
+        "shortestNm": 0
+      },
+      "radii30kt": {
+        "directionCode": 4,
+        "longestDirection": "S",
+        "longestNm": 300,
+        "shortestNm": 180
+      },
+      "japaneseLandfallIndicator": null,
+      "rawWindToken": "045",
+      "windDataStatus": "reported",
+      "sourceLine": 44
+    },
+    {
+      "timeUtc": "2018-09-17T06:00:00Z",
+      "lat": 24,
+      "lon": 107,
+      "pressureHpa": 998,
+      "windKt": null,
+      "windKmh": null,
+      "grade": 2,
+      "gradeLabel": "TD",
+      "radii50kt": null,
+      "radii30kt": null,
+      "japaneseLandfallIndicator": null,
+      "rawWindToken": "000",
+      "windDataStatus": "not-reported-numerically",
+      "sourceLine": 45
+    },
+    {
+      "timeUtc": "2018-09-17T12:00:00Z",
+      "lat": 24,
+      "lon": 105.6,
+      "pressureHpa": 1002,
+      "windKt": null,
+      "windKmh": null,
+      "grade": 2,
+      "gradeLabel": "TD",
+      "radii50kt": null,
+      "radii30kt": null,
+      "japaneseLandfallIndicator": null,
+      "rawWindToken": "000",
+      "windDataStatus": "not-reported-numerically",
+      "sourceLine": 46
+    },
+    {
+      "timeUtc": "2018-09-17T18:00:00Z",
+      "lat": 24.1,
+      "lon": 103.9,
+      "pressureHpa": 1004,
+      "windKt": null,
+      "windKmh": null,
+      "grade": 2,
+      "gradeLabel": "TD",
+      "radii50kt": null,
+      "radii30kt": null,
+      "japaneseLandfallIndicator": null,
+      "rawWindToken": "000",
+      "windDataStatus": "not-reported-numerically",
+      "sourceLine": 47
+    }
+  ]
+}

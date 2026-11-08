@@ -66,6 +66,13 @@
       "publicDirectory": "app",
       "extraAssets": [],
       "guidePage": "overview.html"
+    },
+    {
+      "directory": "015-process-visualization-lab",
+      "publicDirectory": "dist/site",
+      "extraAssets": [
+        "assets/images/guanxiang-research-overview.png"
+      ]
     }
   ]
 }

@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#030914"><title>观象 · 地球过程图谱</title><link rel="stylesheet" href="globe.css"><link rel="stylesheet" href="globe-polish.css"><link rel="stylesheet" href="view-navigation.css"><link rel="stylesheet" href="archive-mode.css"><link rel="stylesheet" href="event-analysis.css"><link rel="stylesheet" href="sync-observations.css"><link rel="stylesheet" href="event-explorer.css"><link rel="stylesheet" href="dynamic-process.css"><link rel="stylesheet" href="narration.css"><link rel="stylesheet" href="demo-workbench.css"><link rel="stylesheet" href="observed-presentation.css"><link rel="stylesheet" href="real-motion.css" data-real-motion-style><link rel="stylesheet" href="observation-flow.css"><link rel="stylesheet" href="river-observation.css"><link rel="stylesheet" href="tide-observation.css"><link rel="stylesheet" href="battery-observation.css"><link rel="stylesheet" href="diesel-observation.css"><link rel="stylesheet" href="case-lesson.css"><script type="importmap">{"imports":{"three":"./vendor/three.module.js"}}</script><script type="module" src="globe-app.js"></script></head>
+<body>
+<a class="skip" href="#earth-view">跳到观察画面</a>
+<header><a class="brand" href="#home" aria-label="观象首页"><span class="brand-mark">◎</span><strong>观象</strong><span class="brand-en">EARTH / PROCESS ATLAS</span></a><div class="header-info"><span class="dot"></span><span id="header-data-kind">交互地球 · 情景演示</span><button type="button" id="start-narration" aria-expanded="false" aria-controls="narration-dock">▶ 场景讲解</button><button id="about">资料与说明 ↗</button></div></header>
+<nav class="view-switcher" aria-label="项目主入口">
+  <button type="button" id="open-dynamic" aria-pressed="true"><strong>地球过程</strong><span>在地球上观察真实变化</span></button>
+  <button type="button" id="open-lab" aria-pressed="false"><strong>实验与设备</strong><span>用实测读数观察设备</span></button>
+</nav>
+<nav class="section-nav" aria-label="当前栏目场景">
+  <div class="section-topics" data-earth-only>
+    <button type="button" data-scene-route="dynamic-tide-san-francisco" data-scene-kind="tide" aria-pressed="true">地月潮汐</button>
+    <button type="button" data-scene-route="typhoon-real" data-scene-kind="storm" aria-pressed="false">台风</button>
+    <button type="button" data-scene-route="dynamic-quake" data-scene-kind="quake" aria-pressed="false">地震</button>
+    <button type="button" data-scene-route="dynamic-volcano" data-scene-kind="volcano" aria-pressed="false">火山</button>
+    <button type="button" data-scene-route="dynamic-wildfire-dixie" data-scene-kind="wildfire" aria-pressed="false">山火</button>
+    <button type="button" data-scene-route="dynamic-river-big-piney" data-scene-kind="river" aria-pressed="false">河流</button>
+  </div>
+  <div class="section-topics" data-lab-only>
+    <button type="button" data-scene-route="dynamic-battery-b0005" data-scene-kind="battery" aria-pressed="false">电芯放电</button>
+    <button type="button" data-scene-route="dynamic-engine-jlu-diesel" data-scene-kind="engine" aria-pressed="false">柴油机台架</button>
+  </div>
+  <div class="section-tools">
+    <button type="button" id="browse-capabilities"><span data-earth-only>场景与原理</span><span data-lab-only>设备案例</span> ↓</button>
+    <button type="button" id="open-events" data-earth-only aria-pressed="false">官方事件目录 ↗</button>
+  </div>
+</nav>
+<div class="title-row"><div><p class="eyebrow">ONE EARTH. MANY PROCESSES.</p><h1>在同一个地球上，看见变化。</h1></div><p data-earth-only>选择过程，定位区域，观察演变。<br><span>拖动地球旋转 · 滚轮缩放</span></p><p data-lab-only>观察设备近景，对照实测曲线。<br><span>拖动模型旋转 · 滚轮缩放</span></p></div>
+<div class="narration-entry"><span class="entry-orbit" aria-hidden="true">◎</span><strong data-earth-only>跟着地球，看懂一次真实变化。</strong><strong data-lab-only>跟着实测记录，读懂一次设备变化。</strong><span data-earth-only>一键介绍产品 · 自动定位画面 · 中文语音与字幕</span><span data-lab-only>结构近景 · 实验记录 · 同步字幕</span><button type="button" id="narrate-current">讲解当前内容 ↗</button></div>
+<section class="demo-catalog-section" aria-labelledby="demo-catalog-title" data-earth-only><div class="demo-catalog-heading"><div><small>OBSERVE / COMPARE / VERIFY</small><h2 id="demo-catalog-title">选一个问题，直接看真实变化。</h2></div><p>地球持续演变，关键位置标注，讲解与图表同步。<br>四个配套演示，均由同一地球和实际记录驱动。</p></div><div id="demo-catalog"></div></section>
+<section id="demo-workbench" aria-labelledby="demo-question" hidden><div class="demo-bench-heading"><div><small id="demo-task-name"></small><h2 id="demo-question"></h2><p id="demo-takeaway"></p></div><button type="button" id="demo-close">退出演示 ×</button></div><div class="demo-task-actions"><button type="button" id="demo-show-a">① 看起点 A</button><button type="button" id="demo-run">Ⅱ 暂停过程</button><button type="button" id="demo-show-b">③ 定位关键时刻</button><button type="button" id="demo-sources">核对 A/B 证据 ↗</button><button type="button" id="demo-narrate">边播放边听讲解</button><span id="demo-status" role="status"></span></div><div class="demo-process-track"><div id="demo-process-progress"></div></div></section>
+<nav id="layers" aria-label="选择过程"></nav>
+<section id="archive-switch" class="archive-switch" aria-label="台风呈现模式" hidden><div class="archive-mode-buttons" role="group" aria-label="选择原理或真实事件"><button type="button" id="mode-principle" aria-pressed="true"><span class="mode-dot"></span>原理演示</button><button type="button" id="mode-records" aria-pressed="false">全程路径对比</button><button type="button" id="mode-archive" aria-pressed="false"><span class="mode-dot"></span>香港同步观测</button></div><p id="mode-description">切换当前地球与两侧图表：原理演示解释机制，真实山竹回看官方事件档案。</p><button type="button" id="open-real-motion" hidden>▶ 看真实动态影像</button><button type="button" id="guide-toggle" hidden>▶ 开始事件解读</button></section>
+<section id="live-toolbar" class="live-toolbar" hidden><div><strong id="live-status" role="status">正在读取事件目录…</strong><small>默认隐藏较早开放火山报告；各来源覆盖范围和更新频率不同。</small></div><label>检索事件<input id="live-search" type="search" placeholder="地名、名称或事件ID" autocomplete="off"></label><label class="live-older-toggle"><input id="live-older" type="checkbox">较早火山报告</label><span id="live-result-count"></span><button type="button" id="live-refresh">更新官方资料 ↻</button></section>
+<section id="dynamic-toolbar" class="dynamic-toolbar" hidden><strong id="dynamic-summary">真实观测 · 同一时间轴</strong><small id="dynamic-status" role="status">读取资料中</small><button type="button" id="observation-data-retry" hidden>重试观测加载</button></section>
+<main class="observatory">
+<aside class="left-panels">
+<section class="panel context"><div class="panel-label"><span id="section-index">00 / OVERVIEW</span><span class="corner">⌖</span></div><h2 id="topic-title">地球过程总览</h2><p id="topic-description"></p><div class="location"><span data-earth-only>空间定位</span><span data-lab-only>实验来源</span><strong id="location-name"></strong><small id="location-coordinates"></small></div><div id="scale-note" class="scale-note"></div></section>
+<section id="observed-locations" class="panel" hidden><div class="panel-label">此刻看哪里 <span>点击对应曲线 ↗</span></div><div id="story-location-list"></div></section>
+<section id="current-insight" class="panel current-insight" aria-label="当前过程的状态图"></section>
+<section class="panel conditions"><div class="panel-label"><span id="conditions-title">改变条件</span><button id="reset-conditions">重置</button></div><div id="parameters"></div><p id="param-guide"></p></section>
+<button id="open-local" class="local-button"><span>↗</span><div><strong>打开局部放大窗</strong><small>地球上的位置 → 内部过程</small></div></button>
+</aside>
+<section class="earth-column" aria-label="过程回放场景">
+<section id="tide-lesson-entry" aria-label="潮汐导览">
+  <div>
+    <span class="tide-entry-kicker">地月潮汐 · 旧金山港</span>
+    <h2>月亮落下时，港口水位还在涨吗？</h2>
+  </div>
+  <div class="tide-entry-actions"><button type="button" id="tide-learn">▶ 开始观察</button><button type="button" id="tide-watch-harbor">直接看港口实测 →</button></div>
+</section>
+<section id="hunga-lesson-entry" aria-label="汤加火山导览">
+  <div><strong>汤加为什么会有火山，岩浆又怎样喷出来？</strong><span>从地球飞到汤加 → 看三维剖面 → 对照海底实测与卫星云图</span></div>
+  <button type="button" id="hunga-learn">▶ 开始汤加火山导览</button>
+</section>
+<section id="mangkhut-lesson-entry" aria-label="山竹台风导览">
+  <div><strong>山竹经过香港时，风、雨和水位一起变化吗？</strong><span>先看台风怎样形成 → 再用香港实测核对风、雨和水位</span></div>
+  <button type="button" id="mangkhut-learn">▶ 开始山竹导览</button>
+</section>
+<section id="hunga-recap" class="observation-recap" aria-labelledby="hunga-recap-title" hidden>
+  <div><span>结论 · 两种观测</span><h2 id="hunga-recap-title">海底看测深，海上看红外扫描</h2><p>两期测深比较同一位置。当天扫描记录低温云区怎样展开。</p></div>
+  <div class="observation-recap-actions"><button type="button" data-hunga-evidence="terrain" aria-pressed="false">海底 · 回看火山口测深差值</button><button type="button" data-hunga-evidence="cloud" aria-pressed="true">海上 · 回看低温云区</button></div>
+</section>
+<section id="observed-story-band" aria-label="此刻的真实变化" hidden><div class="story-band-top"><span id="story-phase">真实观测</span><span id="story-sync-status"></span><span id="story-voice-status"></span></div><h2 id="story-headline"></h2><p id="story-summary"></p><div class="story-band-actions"><button type="button" id="story-narrate">▶ MiniMax 边播边讲</button><button type="button" id="story-annotations" aria-pressed="true">位置标注 ✓</button><span id="story-focus-hint">点击地球标注，核对对应曲线</span></div></section>
+<div id="observation-flow-controls" role="group" aria-label="观察方式" hidden>
+  <button type="button" id="observation-watch" aria-pressed="false" aria-controls="earth-view timeline">▶ 从地球开始观察</button>
+  <label id="observation-event-picker" hidden><span data-earth-only>切换事件</span><span data-lab-only>切换设备</span><select id="observation-event-select"></select></label>
+  <button type="button" id="observation-details" aria-expanded="false" aria-controls="readouts charts">全部读数与曲线</button>
+</div>
+<div class="earth-caption"><span><i class="dot"></i><b id="view-label">全球概览</b></span><span id="view-mode">多过程合成 · 独立时标</span></div>
+<section id="dixie-controls" aria-label="Dixie 山火证据图层与测站风" hidden>
+  <div class="dixie-modes" role="group" aria-label="地形和燃料植被图层">
+    <button type="button" data-fire-mode="terrain" aria-pressed="true">高程地形</button><button type="button" data-fire-mode="fuel" aria-pressed="false">火前燃料植被</button><button type="button" data-fire-mode="topo" aria-pressed="false">地名地图</button>
+  </div>
+  <label for="dixie-hour">测站风 · 当地小时 <output id="dixie-hour-value" for="dixie-hour"></output></label>
+  <input id="dixie-hour" type="range" min="0" max="47" value="16" step="1" aria-label="测站风记录的当地小时">
+  <div id="dixie-layer-key"></div>
+</section>
+<div class="hunga-mode-row">
+  <button id="hunga-terrain-toggle" type="button" aria-pressed="false" aria-controls="hunga-terrain" hidden>下潜到海底 · 看三维火山口</button>
+  <section id="hunga-terrain" aria-label="三维海底地形控制" hidden>
+    <div role="group" aria-label="选择测绘资料">
+      <button type="button" data-hunga-survey="pre" aria-pressed="false">喷发前</button>
+      <button type="button" data-hunga-survey="post" aria-pressed="false">喷发后</button>
+      <button type="button" data-hunga-survey="change" aria-pressed="true">测深差值</button>
+      <button type="button" data-hunga-survey="section" aria-pressed="false">前后剖面</button>
+    </div>
+    <div role="group" aria-label="海底地形预设视角">
+      <button type="button" data-hunga-angle="top" aria-pressed="false">俯视</button>
+      <button type="button" data-hunga-angle="oblique" aria-pressed="true">斜看</button>
+      <button type="button" data-hunga-angle="side" aria-pressed="false">侧看</button>
+    </div>
+    <div role="group" aria-label="定位剖面测点">
+      <button type="button" data-hunga-spot="west" aria-pressed="false">西侧坡面</button>
+      <button type="button" data-hunga-spot="crater" aria-pressed="true">火山口</button>
+      <button type="button" data-hunga-spot="east" aria-pressed="false">东侧坡面</button>
+    </div>
+  </section>
+  <div class="hunga-clocks"><strong id="hunga-survey-clock"></strong></div>
+  <div id="hunga-change-key" hidden></div>
+</div>
+<section id="observation-followup" class="flow-followup" aria-label="观察结束后的下一步" hidden>
+  <div><strong>演示已结束</strong><span>接着听讲解，了解刚才看到的变化和对应证据。</span></div>
+  <button type="button" id="observation-continue" class="flow-next">▶ 讲解这个场景</button>
+</section>
+<div id="demo-stage-tabs" role="group" aria-label="演示呈现方式" hidden><button type="button" data-demo-view="earth" aria-pressed="true">地球动态</button><button type="button" data-demo-view="compare" aria-pressed="false">真实前后对照</button><button type="button" data-demo-act="a">看 A</button><button type="button" data-demo-act="play" id="demo-mini-play">▶ 看变化</button><button type="button" data-demo-act="b">看 B</button><button type="button" id="demo-continue" class="flow-next" hidden>▶ 接着听这段讲解</button><span>青线 A 固定起点 · 金线 B 当前时刻</span></div><div class="observation-stage" id="observation-stage"><div id="earth-view" class="earth-view"><canvas id="earth-canvas" tabindex="0" aria-label="交互地球，拖动旋转、滚轮缩放，空格播放或暂停"></canvas><section id="demo-compare-view" aria-label="真实前后对照视图" hidden><p id="demo-compare-caption" class="demo-compare-caption"></p><div id="demo-compare-content"></div><label id="demo-split-control">A / B 分隔线 <input id="demo-split" type="range" min="0" max="100" value="50" aria-label="移动前后影像对照分隔线"><output id="demo-split-value">50%</output></label></section><div id="geo-labels" class="geo-labels"></div><aside id="dixie-guide-note" aria-label="当前山火证据" hidden></aside><div id="earth-loading" role="status">正在准备观察画面…</div><div class="globe-coordinate" data-earth-only>EARTH<br><span>经纬度 · 示意定位</span></div><div class="north" data-earth-only>N <span>↑</span></div><div id="archive-imagery-note" class="archive-imagery-note" role="status" aria-live="polite" hidden><span id="archive-image-type">NASA / VIIRS · 真实卫星日合成</span><span id="archive-image-date">2018-09-14</span><span id="archive-image-status">当天多次扫描拼接，不是所选时刻的瞬时云图。</span></div><div class="view-tools"><div id="dynamic-view-tools" role="group" aria-label="真实过程视角" hidden><button type="button" id="dynamic-full" aria-pressed="true">完整地球</button><button type="button" id="dynamic-close" aria-pressed="false">过程特写 · 局部</button></div><div id="live-view-tools" role="group" aria-label="事件视角" hidden><button type="button" id="live-whole" aria-pressed="true">完整地球</button><button type="button" id="live-detail" aria-pressed="false">事件近看</button></div><div id="archive-view-tools" class="archive-view-tools" role="group" aria-label="真实事件视角" hidden><button type="button" id="archive-regional" aria-pressed="true">区域近看</button><button type="button" id="archive-detail" aria-pressed="false" hidden>云带特写</button><button type="button" id="archive-global" aria-pressed="false">全球路径</button></div><button id="reset-view" title="返回初始观察角度">复位视角</button><button id="rotate" aria-pressed="false">自动环绕</button><button id="focus" aria-pressed="false">放大观看 ⤢</button></div></div>
+<section id="tide-focus-evidence" aria-label="月落与潮位同刻证据" hidden></section>
+</div>
+<div id="sync-presentation-tools" class="sync-presentation-tools" hidden><div role="group" aria-label="卫星影像呈现"><button id="cloud-fusion" type="button" aria-pressed="true">云系融合</button><button id="cloud-raw" type="button" aria-pressed="false">原始亮温</button></div><div class="sync-enhancements" role="group" aria-label="云系阅读增强"><button id="cloud-relief" type="button" aria-pressed="true">立体光照</button><button id="cloud-changes" type="button" aria-pressed="false">10分钟变化</button></div><span id="sync-cloud-mode-hint">真实红外 · 固定亮温映射</span><div class="sync-step-tools"><button id="sync-prev" type="button" aria-label="前一张真实观测，前进方向为过去十分钟">← 10分钟</button><button id="sync-next" type="button" aria-label="后一张真实观测，前进十分钟">10分钟 →</button></div></div>
+<div id="storm-evidence" aria-label="轩岚诺云图与中心分析" hidden></div>
+<div id="sync-change-status" class="sync-change-status" role="status" hidden></div>
+<div id="dynamic-controls" hidden><div class="dynamic-satellite-tools"><button type="button" data-presentation="fusion" aria-pressed="true">云系融合</button><button type="button" data-presentation="raw" aria-pressed="false">原始亮温</button><button type="button" id="dynamic-relief" aria-pressed="true">纹理光照</button></div><div><button type="button" id="dynamic-prev" aria-label="前一个真实观测">← 上一观测</button><button type="button" id="dynamic-next" aria-label="后一个真实观测">下一观测 →</button></div></div>
+<div id="observed-story-legend" hidden><span><i class="story-legend-swatch"></i><span id="story-cloud-key" hidden><span class="story-cloud-old">上幅低温边缘</span><span class="story-cloud-new">本幅新增低温区</span></span><span id="story-geometry-note" role="status"></span> <button type="button" id="story-feature-retry" hidden>重试参考轮廓</button></span><details id="story-notes"><summary>这一步的依据 ↗</summary><div id="story-note-list"></div></details></div><div id="observed-keyframes" aria-label="定位真实关键时刻" hidden></div>
+<div id="visual-key" class="visual-key" aria-label="画面图例"></div><div class="scene-caption"><span class="caption-line"></span><p id="scene-caption"></p></div>
+<div id="stage-steps" class="stage-steps" aria-label="过程阶段"></div><div class="timeline"><button id="play" aria-label="暂停演示">Ⅱ</button><div class="time-track"><div class="time-label"><span id="time-label">合成演示进度</span><output id="time-value"></output></div><input id="timeline" type="range" min="0" max="1000" value="350" aria-label="过程时间"><div class="time-ends"><span id="time-start">开始</span><span id="time-end">结束</span></div></div><button id="restart" aria-label="重新播放">↺</button><select id="speed" aria-label="播放速度"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="2">2×</option></select></div>
+<section id="demo-delta-panel" aria-labelledby="demo-delta-title" hidden><div class="demo-evidence-head"><h3 id="demo-delta-title">前后到底变了多少？</h3><span id="demo-evidence-note"></span></div><div class="demo-ab-clock"><span id="demo-clock-a"></span><span id="demo-clock-b"></span></div><div id="demo-deltas"></div><details id="demo-evidence-details"><summary>展开 A / B 的观测时间与口径</summary><div id="demo-source-evidence"></div><button type="button" id="demo-original-sources">打开当前原始来源 ↗</button></details></section>
+</section>
+<aside class="right-panels"><section class="panel telemetry"><div class="panel-label"><span id="readout-title">过程导览</span><span class="corner">↗</span></div><div id="readouts"></div></section><section class="panel charts"><div class="panel-label"><span id="chart-title">对应过程曲线</span><span id="chart-domain"></span></div><div id="charts"></div></section><section class="panel meaning"><div class="panel-label"><span id="meaning-title">此刻看什么</span><span>◎</span></div><p id="explanation"></p><button type="button" id="open-conclusion" hidden>整理这段对比 · 带出处的结论 ↗</button><button id="next-topic">探索下一个过程 →</button></section></aside>
+</main>
+<section id="capabilities-panel" class="capabilities-panel" aria-labelledby="capabilities-title"><div class="capabilities-heading"><div><span class="eyebrow">EXPLORE / 从事件到机制</span><h2 id="capabilities-title" tabindex="-1">地球场景与原理</h2></div><p>引导讲解先解释原理和影响，再指向真实案例的画面、批注和图表。也可以直接进入回放。</p></div><div class="capabilities-grid">
+<article><span class="capability-icon">☾</span><h3>地月与潮汐</h3><b>已接入 · 旧金山港月球星历与潮位</b><p>从港口看月球越过地平线，对照 NOAA 实测与调和预报。</p><button type="button" data-capability-dynamic="tide-san-francisco">打开旧金山港实测回放 →</button><small>月球使用 JPL 站点星历，潮位相对 MLLW。三组记录按 UTC 对齐。</small><button type="button" data-capability-topic="orbital">打开地月原理 →</button></article>
+<article><span class="capability-icon">◉</span><h3>台风</h3><b>已接入 · 轩岚诺云系／山竹同步观测</b><button type="button" data-capability-dynamic="storm">查看轩岚诺真实云系 →</button><p>近期气旋查看报告位置；山竹案例把云、风、雨与海水位同步呈现。</p><small>继续接入：当前卫星帧、官方预警、雷达、当地测站与预报集合，各自注明有效时间。</small><button type="button" data-capability-kind="storm">查看气旋报告 →</button><button type="button" id="open-archive" data-capability-archive>打开山竹同步回放</button><button type="button" data-capability-topic="typhoon">播放气旋原理</button></article>
+<article><span class="capability-icon">⌁</span><h3>地震</h3><b>已接入 · 两次地震的实测波形</b><p>查看 2011 年日本东北地震的六站记录，或切到 2024 年花莲地震的三站记录。地球上的信号和所选台站的曲线跟随同一时钟。</p><button type="button" data-capability-dynamic="quake">打开日本东北地震 →</button><button type="button" data-capability-dynamic="quake-hualien">打开花莲地震 →</button><small>继续扩展：经仪器响应校正的物理振幅、更多台站与ShakeMap。当前counts不能跨仪器比较震动强弱。</small><button type="button" data-capability-kind="quake">查看真实地震 →</button><button type="button" data-capability-topic="quake">播放波传播原理</button></article>
+<article><span class="capability-icon">△</span><h3>火山</h3><b>已接入 · 汤加喷发连续红外扫描</b><p>看卫星记录中的云区扩展，并对照喷发前后的实测海底地形与火山口剖面。</p><button type="button" data-capability-dynamic="volcano">查看真实喷发过程 →</button><small>继续扩展：多光谱灰云识别、灰柱高度、热异常和风场。当前红外展示云团变化，不反演灰浓度。</small><button type="button" data-capability-kind="volcano">查看火山报告 →</button><button type="button" data-capability-topic="volcano">播放喷发原理</button></article>
+<article><span class="capability-icon">◇</span><h3>山火</h3><b>已接入 · Dixie 航空红外边界</b><p>逐期看火区扩展，对照测站风、地形和火前燃料植被。</p><button type="button" data-capability-dynamic="wildfire-dixie">打开 Dixie 山火复盘 →</button><small>主时间轴按制图日期播放；附近测站风可逐小时核对。</small></article>
+<article><span class="capability-icon">≈</span><h3>河流与污染迁移</h3><b>已接入 · Big Piney 河实地示踪</b><p>沿真实河段看三个下游断面两岸的浓度先后抬升，逐个核对实测曲线。</p><button type="button" data-capability-dynamic="river-big-piney">打开 Big Piney 实测回放 →</button><small>现场受控染料实验。动态柱对应六个实测点。</small><button type="button" data-capability-topic="river">打开河流原理 →</button></article>
+</div></section>
+<section id="lab-capabilities-panel" class="capabilities-panel" aria-labelledby="lab-capabilities-title" hidden>
+  <div class="capabilities-heading">
+    <div><span class="eyebrow">LAB / 实验记录</span><h2 id="lab-capabilities-title" tabindex="-1">实验与设备</h2></div>
+    <p>直接进入设备近景。实测记录、关键时刻和曲线沿同一条时间轴回放。</p>
+  </div>
+  <div class="capabilities-grid">
+    <article>
+      <span class="capability-icon">▤</span><h3>NASA B0005 电芯</h3>
+      <b>首次放电实验</b>
+      <p>看电芯电压、输出电流和温度随放电变化，对照圆柱电芯结构。</p>
+      <small>仪表与曲线取自 NASA 实测记录。电芯剖面用于说明结构。</small>
+      <button type="button" data-capability-dynamic="battery-b0005">打开电芯近景 →</button>
+    </article>
+    <article>
+      <span class="capability-icon">⚙</span><h3>吉林大学柴油机台架</h3>
+      <b>ETC 台架实验</b>
+      <p>对照实测转速、扭矩和原档轨压，观察曲轴与活塞的示意运动。</p>
+      <small>结构按实测转速慢放。柴油机回放使用本机研究数据。</small>
+      <button type="button" data-capability-dynamic="engine-jlu-diesel">打开柴油机近景 →</button>
+    </article>
+  </div>
+</section>
+<footer><span id="footer-data-kind">地球影像：NASA · 过程：独立教学模型</span><span id="footer-data-scope">地理位置用于情景定位，非当前灾害或监测数据</span><button id="export">导出当前观察 ↓</button></footer>
+<details id="sources-panel"><summary>模型范围、空间尺度与资料来源 <span>＋</span></summary><div class="sources-content"><div><div id="scope-introduction"><h3>怎样阅读这个地球</h3><p>地球提供共同的空间背景。概览中的各个教学情景使用独立的过程时间，标记与特效使用便于辨认的显示尺度。</p><p>打开河流的局部放大窗，可以观察示意河段的变化。</p></div><p id="limitation"></p></div><div><h3>当前主题与资料来源</h3><ul id="source-links"></ul><a class="archive-source-page" href="real-event.html" data-earth-only>山竹完整证据与来源页 ↗</a><a href="https://x.com/xiaoying_eth/status/2116389253060190271" target="_blank" rel="noopener" data-earth-only>原视频 · 布局与视觉表达参考 ↗</a></div></div></details>
+<dialog id="local-dialog"><div class="dialog-head"><div><span class="eyebrow">LOCAL PROCESS / 局部放大</span><h2 id="local-title"></h2></div><button id="close-local" aria-label="关闭局部放大窗">关闭 ×</button></div><div class="local-location" id="local-location"></div><iframe id="local-frame" title="局部过程放大演示" src="about:blank"></iframe></dialog>
+
+<dialog id="archive-evidence-dialog" aria-labelledby="archive-evidence-title" aria-describedby="archive-evidence-scope">
+  <div class="dialog-head archive-evidence-head"><div><span class="eyebrow">MANGKHUT / 真实观测证据</span><h2 id="archive-evidence-title">从云系到本地影响</h2></div><button type="button" id="close-archive-evidence" aria-label="关闭山竹观测证据">关闭 ×</button></div>
+  <div class="archive-evidence-body"><p id="archive-evidence-scope" class="archive-evidence-scope">以下影像、测站峰值与视频各有自己的时间范围，不随地球时间轴改变。保留各自的来源和统计口径。</p>
+    <div class="archive-evidence-grid">
+      <figure class="archive-satellite-evidence"><img src="assets/events/mangkhut-20180914.jpg" alt="NASA Suomi NPP VIIRS在2018年9月14日拍摄的山竹自然色影像，吕宋岛以东可见台风眼和外围云系" width="720" height="480" loading="lazy"><figcaption><span class="archive-evidence-badge">真实卫星影像 · 2018-09-14</span><h3>登陆前，先看清云系范围</h3><p>云的边界不等于强风或降雨的边界。原文仅说明当地中午过后，未给精确 UTC。</p><small>NASA Earth Observatory / Lauren Dauphin · Suomi NPP VIIRS 数据</small><a href="https://science.nasa.gov/earth/earth-observatory/typhoon-mangkhut-reaches-luzon-92761/" target="_blank" rel="noopener noreferrer">核对 NASA 原始影像与说明 ↗</a></figcaption></figure>
+      <article class="archive-impact-evidence"><span class="archive-evidence-badge">香港天文台 · 事件测站记录</span><h3>中心没有经过香港，影响仍然严重</h3><p>2018年9月16日约13时，中心最接近时在天文台总部西南偏南约100公里。外围雨带与当地风势，要结合本地观测理解。</p><div class="archive-impact-values"><div><strong>161 <small>km/h</small></strong><span>横澜岛最高60分钟平均风速</span></div><div><strong>3.88 <small>m</small></strong><span>鲗鱼涌最高潮位 · 海图基准面以上</span></div></div><p class="archive-evidence-caution">以上均为此次事件的测站峰值，非时间轴当前读数。3.88 m 不是街道积水深度，也不等于风暴潮增水。</p><a href="https://www.hko.gov.hk/en/publica/tc/tc2018/section3_5rpt.html" target="_blank" rel="noopener noreferrer">阅读香港天文台事件报告 ↗</a><a href="https://www.hko.gov.hk/en/publica/tc/tc2018/table352.html" target="_blank" rel="noopener noreferrer">核对60分钟平均风速表 ↗</a></article>
+      <article class="archive-motion-evidence"><span class="archive-evidence-badge">官方动态资料 · 外部播放</span><h3>看雨带怎样经过香港</h3><p>卫星看云顶，雷达看降水回波。通过官方动画核对外围雨带经过的过程。</p><a class="archive-video-link" href="https://www.youtube.com/watch?v=nkEEqf8-ksQ" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">▶</span><div><strong>打开香港天文台雷达回放 ↗</strong><small>前往官方视频观看</small></div></a><a href="https://youtu.be/-FnPblM5w1E" target="_blank" rel="noopener noreferrer">打开官方红外卫星动画 ↗</a><a href="https://www.hko.gov.hk/en/informtc/mangkhut18/mangkhut.htm" target="_blank" rel="noopener noreferrer">核对山竹专题档案 ↗</a></article>
+    </div><a class="archive-complete-source" href="real-event.html#evidence">查看完整山竹证据与来源页 ↗</a>
+  </div>
+</dialog>
+<dialog id="comparison-dialog" aria-labelledby="comparison-title">
+<div class="dialog-head"><div><span class="eyebrow">EVIDENCE / 可核对的事件结论</span><h2 id="comparison-title"></h2></div><button type="button" id="close-comparison" aria-label="关闭对比结论">关闭 ×</button></div>
+<div id="comparison-report" class="comparison-report-body"></div>
+<div class="report-actions"><button type="button" id="copy-comparison">复制结论与出处</button><button type="button" id="download-comparison">下载结论 TXT ↓</button><span id="copy-result" role="status"></span></div>
+</dialog>
+<div id="notice" role="status" aria-live="polite"></div>
+<section id="narration-dock" aria-label="过程讲解播放器" hidden>
+<div class="narration-top"><span class="narration-live">◉ 导览进行中</span><span id="narration-tour"></span><span id="narration-count"></span><span id="narration-audio-status">准备中文语音</span><button type="button" id="narration-follow-camera" hidden>回到讲解镜头</button><button type="button" id="narration-sound" aria-pressed="true" aria-label="开启或关闭讲解声音">声音开</button><button type="button" id="narration-close" aria-label="退出讲解">退出 ×</button></div>
+<div class="narration-body"><div><h2 id="narration-title"></h2><small id="narration-scene-time"></small></div><div><p id="narration-text" aria-live="polite"></p><span id="narration-status" role="status"></span></div></div>
+<section id="narration-finish" class="flow-followup" aria-label="讲解结束后的下一步" hidden>
+  <div><strong id="narration-finish-title">这一段看完了</strong><span id="narration-finish-note"></span></div>
+  <button type="button" id="narration-continue" class="flow-next"></button>
+  <button type="button" id="narration-browse">选其他场景 ↓</button>
+</section>
+<label id="narration-case-picker" for="narration-case-select" hidden>
+  <span id="narration-case-label">跳到案例</span>
+  <select id="narration-case-select"></select>
+</label>
+<div class="narration-bottom"><nav id="narration-chapters" aria-label="选择讲解章节"></nav><div class="narration-buttons"><button type="button" id="narration-locate">定位讲解区域 ↗</button><button type="button" id="narration-prev" aria-label="讲解上一章">← 上一章</button><button type="button" id="narration-pause">Ⅱ 暂停</button><button type="button" id="narration-next" aria-label="讲解下一章">下一章 →</button></div></div><div class="narration-track" aria-hidden="true"><div id="narration-progress"></div></div>
+<audio id="narration-audio" preload="auto"></audio></section>
+</body></html>
+

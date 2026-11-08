@@ -1,0 +1,1522 @@
+[
+  {
+    "path": "README.md",
+    "sha256": "05f7e787733d7a1e10ca1650a5965f740f94af7b9853b7c4c5eb31f01b522de4",
+    "bytes": 19107
+  },
+  {
+    "path": "app/archive-globe-layer.js",
+    "sha256": "39cf43a677c50000ea9652203ca72eb5f72b8f3faa8bd9069d725fdd8b2c8f0c",
+    "bytes": 6930
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T0000Z.png",
+    "sha256": "f5d0b34f4ff4e65d985147ded70850d43a59b09ea07b4f924e7e4a905ccbbc8a",
+    "bytes": 709158
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T0010Z.png",
+    "sha256": "fdbd7b8ee23f2f416bf2e02dafa749f330a4f7796efb1bf5f6ae1d79448820af",
+    "bytes": 709151
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T0020Z.png",
+    "sha256": "61011b23936f470cef64f7e431fd5739097c6946872b265f1fd8d82666f0d4f1",
+    "bytes": 708964
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T0030Z.png",
+    "sha256": "8856acd9d112a22c6f10a1047e449be6e9627eea83a34932a6ad9e6a4eb99002",
+    "bytes": 708291
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T0040Z.png",
+    "sha256": "bb13ee1702c747c56ad6936e8a61841927dd1d1a30486c7abfbc30349bfdc3ec",
+    "bytes": 709208
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T0050Z.png",
+    "sha256": "7ae6cd64fe8d2e32d5e6c4eb2e509054e0c7df5f79edd65799c6db6f94ecf6d1",
+    "bytes": 709506
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T0100Z.png",
+    "sha256": "306895c6dbdc3e07a7c8ed667d44662de913e23f4b04437197ae8b0c0196de10",
+    "bytes": 708875
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T0110Z.png",
+    "sha256": "e61b60cab4c28b44734260315893d1fd76c3c7c31005400588547667b858af1e",
+    "bytes": 709917
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T0120Z.png",
+    "sha256": "b1d4bac513f05b21a148f100e042be5d3bcb6c69c60cac2210147ddad303bb82",
+    "bytes": 709533
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T0130Z.png",
+    "sha256": "4b6adfc39ae0f16d7f5e6966921b48aa5498d143c8745339be98b261d7a050ec",
+    "bytes": 708466
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T0140Z.png",
+    "sha256": "74bb735a8eabde3ed04906b594b8c7d734ecb40b4f7e670c7d73bd2d3c980bfb",
+    "bytes": 709127
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T0150Z.png",
+    "sha256": "323f17fa0c97cc2ecc2f748c27608f0b41454399a5262d88bc0c72ff98e8d621",
+    "bytes": 709240
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T0200Z.png",
+    "sha256": "8d36336da9e55e98a0bebce2e975cc2f3178273191261cba2ee91094e0f8acc5",
+    "bytes": 710445
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T0210Z.png",
+    "sha256": "b6c1eaed698a21eb3f30501b99244188c4e71609cfc764cc5a20dba5723b84c8",
+    "bytes": 711882
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T0220Z.png",
+    "sha256": "ac25d1bf74b3bc9cb315a29e946450c8d050e430c4f2f50bd847f52ad19072c5",
+    "bytes": 712388
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T0230Z.png",
+    "sha256": "b1a39e593c199073d2ef578de13d81932b0a822d6ae4840c9c1ed1310e356080",
+    "bytes": 711831
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T0250Z.png",
+    "sha256": "27d9d0f7b7c4c8c47b391e6ead64017dbc46d9e8569f43af2bda99ed39679aab",
+    "bytes": 713643
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T0300Z.png",
+    "sha256": "2ed9b376a87d7dddf0f2c59aee211a916b37c9f3c74e0cf6ee5fb405365cf1ec",
+    "bytes": 712905
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T0310Z.png",
+    "sha256": "66457c2414184b14466b7dec9c9663c0dc65f99e0a0728baa3ddfa32a639b73b",
+    "bytes": 711100
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T0320Z.png",
+    "sha256": "c10801edf21fefeef72a04efeaed4ee047260601ac537caff3d1a39b5cd27674",
+    "bytes": 711174
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T0330Z.png",
+    "sha256": "cfdc952c0b222aecdda8298584c4b37e401f53d6a8b634d1c991844b9d27bdcf",
+    "bytes": 711683
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T0340Z.png",
+    "sha256": "16f5daaa378a395abeddcf540cb9112971562db328ecc67319116d999cd8b2fd",
+    "bytes": 711399
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T0350Z.png",
+    "sha256": "aecb1ad729891412ea1a9b93a87997856df1f7c16851b87c78cdf22a1e6fa44b",
+    "bytes": 710499
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T0400Z.png",
+    "sha256": "a0aa7d7edc00addd4c05d53466be94c178141b55f30002bc830366da698cfb30",
+    "bytes": 710626
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T0410Z.png",
+    "sha256": "9a8e2a04678cf7900665cfd3e6a805e137d6c1790bd1417c2c69c9bad62e571a",
+    "bytes": 710144
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T0420Z.png",
+    "sha256": "0b3aa1e7716034ee61534148c7e91c7e8aee2ff3f2f2eab9b9ff0dd558dad317",
+    "bytes": 709885
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T0430Z.png",
+    "sha256": "4d421d110ab04a9634b924fcda9a85d7d79af6cd7cb621ec5ce971f9bed9cbf2",
+    "bytes": 710196
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T0440Z.png",
+    "sha256": "780975fd1cfa642b551bdb1c597d524083233f2788546d3f548a103560b5b040",
+    "bytes": 708541
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T0450Z.png",
+    "sha256": "ab2fef8a6d92d612b91bdfc4506550f2324beae7940d3ced0212457feeba70ec",
+    "bytes": 706902
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T0500Z.png",
+    "sha256": "ae99131a0297a1a08f95cee35fcc52fa4a57c7b4813cabe9aa400e32ab240309",
+    "bytes": 707512
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T0510Z.png",
+    "sha256": "525febd5e80c83ca3f7ca5b5a6bd0314f0be28b7c7f09c6dec62543df4f3e57c",
+    "bytes": 707373
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T0520Z.png",
+    "sha256": "33f1fc25776b733cc2a1d002f0f0ac2b08f856fda796afdb68628ba2becd55ae",
+    "bytes": 706043
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T0530Z.png",
+    "sha256": "e14c8622a53936642718b6599ea3e867d793700ec9b3b4aa2f4e453595adc848",
+    "bytes": 706982
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T0540Z.png",
+    "sha256": "2b5eca59d578092ed84a983fc6e8edd32d2a788eed9d0609939013430ecf1ea4",
+    "bytes": 707472
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T0550Z.png",
+    "sha256": "3fbd8ec3fedfd84a5272d72fe56c454f8f98bbefc95adba2cab73d9db6a398a0",
+    "bytes": 707919
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T0600Z.png",
+    "sha256": "c260511453d6d4c682a59bb8f78dd289740c797f116dfef9885de7622def0537",
+    "bytes": 707771
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T0610Z.png",
+    "sha256": "97f9cab106da806c3a5a67b2e7a103ee943a1c54e40482e70850b0bd27a84eca",
+    "bytes": 707616
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T0620Z.png",
+    "sha256": "605534e42160adc53b499d1e4d267ac8a6b02f69f5ee1807e03743cc6eb876fb",
+    "bytes": 707432
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T0630Z.png",
+    "sha256": "43f0b1ff96026dfbf1fc0f166d82d669b95f9ec611dbdb2d9c3b227e726ff597",
+    "bytes": 707836
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T0640Z.png",
+    "sha256": "b863450aca1f4f4d9a8fdecc870fd948d9a934bb9073b798d4d54cd09e1b9166",
+    "bytes": 708782
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T0650Z.png",
+    "sha256": "4a078562ddf0461099f288e23a35568ed62241814c5fb7f487fd67c872afc817",
+    "bytes": 707928
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T0700Z.png",
+    "sha256": "625d8554dacadd08aaa9561d2d255890d570f52e2d0aa79c274d8f5240a93315",
+    "bytes": 707059
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T0710Z.png",
+    "sha256": "c53fa0111c939b7727cda3eaba6c4d9cf3326b50d078578bb00ec50c8d828611",
+    "bytes": 706152
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T0720Z.png",
+    "sha256": "5cfea8b7eceea0770b12356d343c212261f1b6ef81ca4b33f7c53deb8ba39d16",
+    "bytes": 703851
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T0730Z.png",
+    "sha256": "1906293c4f9485877a1613d49312a4fc8c69fde6f18bee3c0344ecf4a186b55b",
+    "bytes": 702306
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T0740Z.png",
+    "sha256": "d48166b72a2a721276db4cc5f1873fe0994045e89da208f9baa1e32ba417b7b8",
+    "bytes": 701620
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T0750Z.png",
+    "sha256": "e7a3c7356fd7d90513a525f1b3aa1dab3e2c5015c7d695e3e569f07a63d0ba57",
+    "bytes": 700658
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T0800Z.png",
+    "sha256": "8c864eaf15a63f3e16c0679116d84803149124f92dba15219c9af9750e540753",
+    "bytes": 699247
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T0810Z.png",
+    "sha256": "a7a56f41fb0383cba5e71543068f64c4e331e4a239fdb5c5ec361c8f3d1d52ab",
+    "bytes": 696277
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T0820Z.png",
+    "sha256": "6ac84b18b07e0d4dc51bace52c091805c1dff4c528a8361d2f470990fd3d7e81",
+    "bytes": 694770
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T0830Z.png",
+    "sha256": "fb6fedacfbc77f32204e1e0132450bec91260b2ffb1fa9444ac3cd6dfbefd275",
+    "bytes": 692840
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T0840Z.png",
+    "sha256": "3a63534a10b83bf233dd1708456c0b349f09d772dca1e5a0f2c2cd16b8224521",
+    "bytes": 692407
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T0850Z.png",
+    "sha256": "0e2752345dab9e7d14bf586c97a6510603520d97cbb782fe6da37bc87be5c180",
+    "bytes": 690100
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T0900Z.png",
+    "sha256": "8d52daca8efdbabcb8f7a0d14291845d461ad33b40cc7599eaa6ef5e59299d64",
+    "bytes": 687482
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T0910Z.png",
+    "sha256": "8e90588d998f010a8cf5fb22c53f555a8ca6c438eb9c6b0a734753aaf40a721e",
+    "bytes": 687402
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T0920Z.png",
+    "sha256": "2ffd0630684c6a86de720f75f579d918793a41a5b822aa3c874e91e6161d7148",
+    "bytes": 686415
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T0930Z.png",
+    "sha256": "1de10c5bd6cafd586ca8ae220af8660a1a4f44f01ecc0cc39787f9b0dae2c917",
+    "bytes": 684776
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T0940Z.png",
+    "sha256": "925417459495e4d0214a009bf53070ecc9e46de79d5260782af469b249c3a084",
+    "bytes": 682836
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T0950Z.png",
+    "sha256": "4b9c09e372a6d1cbdae54414ab717b30680e61531bd87c9daabf26b107bc52ae",
+    "bytes": 681484
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T1000Z.png",
+    "sha256": "a45887eb7dcb2db03e36b61863c7dc6fedf5dd615b4f5d1a0963258d7aea3997",
+    "bytes": 680381
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T1010Z.png",
+    "sha256": "1de37904cca011bd6de5b5bdf9b7d45af30deb2fc883a9a9852d54493ee44834",
+    "bytes": 679337
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T1020Z.png",
+    "sha256": "5e53956bfd16c74100f4759ccd00a63d207991ffb727c819b8e449af48ceec13",
+    "bytes": 678781
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T1030Z.png",
+    "sha256": "bd80e3f37d356cb2a431695bbbe70e102d852e78c3442922ada85281fe6bc05b",
+    "bytes": 678468
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T1040Z.png",
+    "sha256": "1814c924cf3935f9e6dd2bdd58d2516d3ed4eb8ab4dbd40522f544e8135acd60",
+    "bytes": 678833
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T1050Z.png",
+    "sha256": "c21a2743ec2945fee6285fce903710004fcae42ad610f70ab9c050ff377d6cdc",
+    "bytes": 679353
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T1100Z.png",
+    "sha256": "abef9df5041e6aaaece6741daaf0270df240bdc2a1cb2fdeae11253c9e8b526e",
+    "bytes": 679318
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T1110Z.png",
+    "sha256": "6e5789ff419122b1592e6d71aee9ac699c4e9abc47d2f07971c67a05d04453e3",
+    "bytes": 678243
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T1120Z.png",
+    "sha256": "d57c86c3d6dfea0a30b4785fc4cdce870a7502598c3c068cb725dce6eea99cf9",
+    "bytes": 679122
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T1130Z.png",
+    "sha256": "f082d778c423a369d3c6190450a945c3e7dbe9658bf836d5c6f06ecf52e2067c",
+    "bytes": 679515
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T1140Z.png",
+    "sha256": "3e9e79766eee82730c7690d19308acaf0c57000bff33795ffedb0261e8185be3",
+    "bytes": 681008
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T1150Z.png",
+    "sha256": "83e189221a2a71c035d42e2a5a8e55b9c7957cbff746b97adcb8933bfd0ac876",
+    "bytes": 682168
+  },
+  {
+    "path": "app/assets/events/himawari8-b13/himawari-b13-20180916T1200Z.png",
+    "sha256": "0f1aa74b107b2488d650327635ed5ea9f865bef4da0fa41d85e2f0c04fb92df9",
+    "bytes": 682904
+  },
+  {
+    "path": "app/data/mangkhut-synchronized.json",
+    "sha256": "d4879d9082163ef06640c36eae8353d040402d8fefc359035fe7d573ee1a6601",
+    "bytes": 482734
+  },
+  {
+    "path": "app/globe-app.js",
+    "sha256": "7c92071b6c479734cdef5442ee6ea5228abcc13b37159298dfbfe7f9aa0aa080",
+    "bytes": 55322
+  },
+  {
+    "path": "app/globe-engine.js",
+    "sha256": "aebb832c9f04319221012c3bbdaca750280274e379175f4be126eb06be217a0a",
+    "bytes": 30495
+  },
+  {
+    "path": "app/globe.html",
+    "sha256": "7f53e9f5ea4926b7abc9495d289da274b8065ea3dec696a9d800f03768bd6b6c",
+    "bytes": 12406
+  },
+  {
+    "path": "app/index.html",
+    "sha256": "7f53e9f5ea4926b7abc9495d289da274b8065ea3dec696a9d800f03768bd6b6c",
+    "bytes": 12406
+  },
+  {
+    "path": "app/sync-cloud-layer.js",
+    "sha256": "5677a253028cc6276152a3c88ddb15c85a46cc4064bcd3a4a5e4b01f378903db",
+    "bytes": 7808
+  },
+  {
+    "path": "app/sync-observation-view.js",
+    "sha256": "fd748ca7a57c2e9027c73caff9361e45319824f94c704221f1fa7c267ecc612f",
+    "bytes": 7360
+  },
+  {
+    "path": "app/sync-observations.css",
+    "sha256": "6afadb5d2737190f663872b79544df024662577c888d06c10fc5e5995a0183b3",
+    "bytes": 4523
+  },
+  {
+    "path": "app/sync-station-layer.js",
+    "sha256": "7b490d9d00205e40f5a7e2bef5fde8acdea43bf7d3c405e83322ab6e6fb824dd",
+    "bytes": 8656
+  },
+  {
+    "path": "app/sync-timeline.js",
+    "sha256": "631276d48d27a7fdbf2a05522d799d0945ceedb422023a0bd970568e557ec024",
+    "bytes": 4984
+  },
+  {
+    "path": "package.json",
+    "sha256": "c5ea908add30ef331337001c3a23df72a8678f026c3330a2f9fc088a10af98ec",
+    "bytes": 568
+  },
+  {
+    "path": "research/high-frequency-clouds/README.md",
+    "sha256": "4d2be8dabb701c4389cdc6e02046e1386283b723a1227119ea5aa6bfa5bed873",
+    "bytes": 4315
+  },
+  {
+    "path": "research/high-frequency-clouds/fetch_half_day.ps1",
+    "sha256": "3645ba4a8949f66b649396cf7a3df9227dd2d41a4f3619b29339299b99e81846",
+    "bytes": 3235
+  },
+  {
+    "path": "research/high-frequency-clouds/first-six-objects.json",
+    "sha256": "59c7b0018cb221d5f1c15ab62249191cf607abad29d947b0d63bf0c0ada655fb",
+    "bytes": 767
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T0000Z-bt-centikelvin.png",
+    "sha256": "675f8fe855ace893f7b2643c53f9e53a932637262239cbc5cbf2fa8682ce895d",
+    "bytes": 1271861
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T0010Z-bt-centikelvin.png",
+    "sha256": "2420bf14ee1e9109f1b1157e5c6b1e0d638945986aa73af4a4941076473717c3",
+    "bytes": 1271459
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T0020Z-bt-centikelvin.png",
+    "sha256": "e25c6998316f40b6c26a1bac8f201408e60abe067c79de4fdedb28580d7443ee",
+    "bytes": 1272132
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T0030Z-bt-centikelvin.png",
+    "sha256": "1da593310a978e0b0df4116360732e75b5e98af496af39a59fe903abc8fe73a8",
+    "bytes": 1271900
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T0040Z-bt-centikelvin.png",
+    "sha256": "263d27b8075b5345508bb134865da7b05c551a7145beabfec7fde6439c3cbd0b",
+    "bytes": 1271497
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T0050Z-bt-centikelvin.png",
+    "sha256": "df767be02c72eedff96862c9867e7792fcac86997c6fbcfae90939abd1dc5efb",
+    "bytes": 1270394
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T0100Z-bt-centikelvin.png",
+    "sha256": "5ca6808a5879bda8520ec9a81b173acb7ced37e19ce3c6e2293442be503c4ca5",
+    "bytes": 1270507
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T0110Z-bt-centikelvin.png",
+    "sha256": "60c8aab8028a6f2fbedec6a856993e6491193f7af4dc2352f28a5aff97d0db95",
+    "bytes": 1270095
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T0120Z-bt-centikelvin.png",
+    "sha256": "72a36914e23031fc49a4786c995b399e6c5a7cfefcdb3c4c47afbd12e1e6e308",
+    "bytes": 1269995
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T0130Z-bt-centikelvin.png",
+    "sha256": "f9ee49f2ecb83b0554483c59903e202a0a0aa2e9b609b84f8cfde08d40179afb",
+    "bytes": 1269655
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T0140Z-bt-centikelvin.png",
+    "sha256": "92e302a82b52de35e9abe5ee99902c0455ff91e69f0bb76a92bed83ef92c345c",
+    "bytes": 1269772
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T0150Z-bt-centikelvin.png",
+    "sha256": "06f5de48075911452abbb49ef867fcf27e2205a8c3e7bed95a4ac5de8dfcc367",
+    "bytes": 1270114
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T0200Z-bt-centikelvin.png",
+    "sha256": "2121f056cc8d0081e077799ac364432e71489c9be1c89e7250a225857a55a87e",
+    "bytes": 1269770
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T0210Z-bt-centikelvin.png",
+    "sha256": "ce8d982101bf1c707bfdf354507f4215f4269ee3206873f0fd0dd88c408871f8",
+    "bytes": 1270562
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T0220Z-bt-centikelvin.png",
+    "sha256": "c11fdfd7bd005b47752c7475d1d94081ccef36e9e4268ccead5bd45a809ee11d",
+    "bytes": 1270931
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T0230Z-bt-centikelvin.png",
+    "sha256": "90d9c8f42cea58505c85197e36313a99f9310a20901eb37977c5bf0169ea2779",
+    "bytes": 1271421
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T0250Z-bt-centikelvin.png",
+    "sha256": "739797d9b5a93b5e56f257955366218783c12305432c7b2261ce1ca501381362",
+    "bytes": 1272308
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T0300Z-bt-centikelvin.png",
+    "sha256": "dae15dc0c2037bb8870049af29ba0a8ab95052c0fa32e404ef4cb0c8bc393aee",
+    "bytes": 1272958
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T0310Z-bt-centikelvin.png",
+    "sha256": "cbf965e24362d778ef0089b96d61a74ecb1e0452620259aa14839f70fcb0fce2",
+    "bytes": 1272602
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T0320Z-bt-centikelvin.png",
+    "sha256": "bfb632fc358cc884f60dd646715d832438a28dbf87134d584ac60d6b0b2486e5",
+    "bytes": 1273093
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T0330Z-bt-centikelvin.png",
+    "sha256": "d91ff1bda12208298093a87ca60502cf1c8776bf26a2bab2391412073fbf13ca",
+    "bytes": 1273597
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T0340Z-bt-centikelvin.png",
+    "sha256": "a1bca6bb31d209b172cc4d5be6ab69e2d0ebe6f5dd18a72d4095f16133556390",
+    "bytes": 1273789
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T0350Z-bt-centikelvin.png",
+    "sha256": "79474caf8d9c061d6f6ae67df8442a702865c5e46279c353174b0f367340a01e",
+    "bytes": 1273370
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T0400Z-bt-centikelvin.png",
+    "sha256": "3b66c1d02a56020d33d2067fee40f57b64ffd4007044f9e161f952aaeca6db95",
+    "bytes": 1272988
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T0410Z-bt-centikelvin.png",
+    "sha256": "8f9aa5126a43abfcc3b86544aa4a72977a139a9bbdf3414aea5030cdd301241f",
+    "bytes": 1273394
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T0420Z-bt-centikelvin.png",
+    "sha256": "b0267a9a46245480bf4142df01bf3b094b182926f6b3617b427b6fb1f4e854a8",
+    "bytes": 1274059
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T0430Z-bt-centikelvin.png",
+    "sha256": "84e4d099e5b8dee6ac35f8c226d1b3f0487c3b65587cd58ab341781575fd7bb9",
+    "bytes": 1273141
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T0440Z-bt-centikelvin.png",
+    "sha256": "80034d3028e58d3784a5a9f4598069bc7b0128e929553cdf49dc7969afe49d0f",
+    "bytes": 1272730
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T0450Z-bt-centikelvin.png",
+    "sha256": "43ebd7c29587969898c27dc73fff5654995f1862d012327905e1a88fa7ef882f",
+    "bytes": 1272718
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T0500Z-bt-centikelvin.png",
+    "sha256": "f2e27f2f0e3f45a4f699c91b0b7049337c021a397cdf1283dd355c36cf0fe677",
+    "bytes": 1273162
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T0510Z-bt-centikelvin.png",
+    "sha256": "e51d05df438cc1dc765d0af0ce89b762c385e367e5dace80d74cba2e3097125b",
+    "bytes": 1272977
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T0520Z-bt-centikelvin.png",
+    "sha256": "dbccfb02b10b333f99da6e406676ab3df8ec5869dd92cfaa14858df60ffcae5f",
+    "bytes": 1273106
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T0530Z-bt-centikelvin.png",
+    "sha256": "f31ad81dec49ebcb30b007373cb965c449641fa2a3f04d2ac28532cdffa08343",
+    "bytes": 1272870
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T0540Z-bt-centikelvin.png",
+    "sha256": "f5ea1fe706012dd121414bad184e4ef78e9222f6dabaa20fafd6c44ceea51618",
+    "bytes": 1272917
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T0550Z-bt-centikelvin.png",
+    "sha256": "2233a5c13ce642fc26d4e1db8fbe92dfa3566ef9850ca1602871f68a50f11b4d",
+    "bytes": 1274779
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T0600Z-bt-centikelvin.png",
+    "sha256": "d6aab0da16650e135aaf743d80b8adac1bcba6e3dd33396608cb8bdb46b270c6",
+    "bytes": 1272895
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T0610Z-bt-centikelvin.png",
+    "sha256": "cf469e74924082bb79e1e265bf31a3c7885d2be00ae8b342aee4d2306cdb8844",
+    "bytes": 1272206
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T0620Z-bt-centikelvin.png",
+    "sha256": "64d6489db2cb80e65614ed0da4f3d43af7dada0a1532129390ba1d99e81ab88c",
+    "bytes": 1272107
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T0630Z-bt-centikelvin.png",
+    "sha256": "58f78cdb52dd3ea145a73e176d6323e188f5bf7bb85a6020248df4685a64eaf0",
+    "bytes": 1273455
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T0640Z-bt-centikelvin.png",
+    "sha256": "34896a30997b0e3b4e0ff4003b272ec76bc4062cd2b69bb6b858ea5ad0767896",
+    "bytes": 1273728
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T0650Z-bt-centikelvin.png",
+    "sha256": "499f8581bf191aeba4fac2ed6405904578ceab627f4c48ce6b864d19431f18eb",
+    "bytes": 1273025
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T0700Z-bt-centikelvin.png",
+    "sha256": "a4eb8029084eef389ae511f1162b5d0741c01b999694258237a302201716da4c",
+    "bytes": 1272286
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T0710Z-bt-centikelvin.png",
+    "sha256": "ef088e22b3fca3752baeebf1e20d3819c658bc0cd5445c7819d33bd5aa2f7831",
+    "bytes": 1272156
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T0720Z-bt-centikelvin.png",
+    "sha256": "b8d0e51ddcfdb4edbaf05b791c51854d771271fa903881b332ab9db3fd20f3fa",
+    "bytes": 1272677
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T0730Z-bt-centikelvin.png",
+    "sha256": "218fd7d70108bc84f89007e07c3bfb8fe8a154bab2f0ce29cd52a560acac6278",
+    "bytes": 1270997
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T0740Z-bt-centikelvin.png",
+    "sha256": "d2b1907f0b8e8b0c747f4dea27280436f8d0dc3a06148bcb79c82790edaf9281",
+    "bytes": 1269788
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T0750Z-bt-centikelvin.png",
+    "sha256": "1d675b5e95af4fce21459ea7ab757f3fcee5b80a2f250ce35cb47d64692db176",
+    "bytes": 1269327
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T0800Z-bt-centikelvin.png",
+    "sha256": "3c102f33e59896a89d7508c26efae185e0aee583c96952b6aed205c290bd95d3",
+    "bytes": 1268483
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T0810Z-bt-centikelvin.png",
+    "sha256": "e3b2a0745f1d8b14f7d7ed7064dc04ffbf22ea0a18cf34de8a49c62ebf7c862d",
+    "bytes": 1267021
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T0820Z-bt-centikelvin.png",
+    "sha256": "7a24e8f782cb3fedcbc40d988377232a80c8b1c71bb59ed65e2bd3b3e0b0ba44",
+    "bytes": 1266918
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T0830Z-bt-centikelvin.png",
+    "sha256": "46f927970504628012de4fc6996d3ef67fc684de5b81f86952fc3bb6d647da0c",
+    "bytes": 1265135
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T0840Z-bt-centikelvin.png",
+    "sha256": "24448cc054359ab7b0256abab0cad4250af9088644cee1cacdc9ee9212e5c02c",
+    "bytes": 1264279
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T0850Z-bt-centikelvin.png",
+    "sha256": "6245df4075068ee88e4c48d5311b4d49af6fa96970e114f65ef32bb8cdaf9d0e",
+    "bytes": 1263953
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T0900Z-bt-centikelvin.png",
+    "sha256": "f40c6f7d612d79530c80b29efa37c553d8bffbb4a1614966b17f99346d2ab7cb",
+    "bytes": 1263192
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T0910Z-bt-centikelvin.png",
+    "sha256": "ed62b2f138e374e0487035be61e1c93bc688e7e91611b9906882e4bbf36e3b4c",
+    "bytes": 1261865
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T0920Z-bt-centikelvin.png",
+    "sha256": "6f541f71eed0836897a0ccd511ad481182950cf8acaf0d69cf1cb2ba338be8ea",
+    "bytes": 1263001
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T0930Z-bt-centikelvin.png",
+    "sha256": "71ef27cd9244bd7c6fcdf9eea00ff41faf666cc33e0ca5b8e8c773e54f0316f2",
+    "bytes": 1261454
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T0940Z-bt-centikelvin.png",
+    "sha256": "04bf21884958a8e4bd6d6f5e4f3238c2331d851fdfaebaba4177b6c0eee2762e",
+    "bytes": 1260874
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T0950Z-bt-centikelvin.png",
+    "sha256": "a09cef9819075398eace4924a7d185a8780a03cbac41b5f44d97a5e6efd5d5a0",
+    "bytes": 1259516
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T1000Z-bt-centikelvin.png",
+    "sha256": "fd1c907a7fe295edc896fb5b933c4b7a696ca4047ae0cf9d4d9d9ec642fa7f49",
+    "bytes": 1259686
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T1010Z-bt-centikelvin.png",
+    "sha256": "e0f073449bbfbd2d44870ec11b840a53d3a1bd1180162b0cae82239d04f50616",
+    "bytes": 1258946
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T1020Z-bt-centikelvin.png",
+    "sha256": "432d0bd7d3ceccda4c456f3d637e500647e6d1fba79b00b927efa7c34a237ae2",
+    "bytes": 1258470
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T1030Z-bt-centikelvin.png",
+    "sha256": "29bf6eebda858760ea7626cb78053c47e05588cc6f4fbe48619c25cf70c2713d",
+    "bytes": 1258999
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T1040Z-bt-centikelvin.png",
+    "sha256": "88c7aa4ab98ef7bd20ae16ab08793621252cfb1218fdd10444c9c2c1299e3f68",
+    "bytes": 1258418
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T1050Z-bt-centikelvin.png",
+    "sha256": "0e28f5f3545d5c71d67918d59cea50b0300b25fabd3690b0e296b150fb328db2",
+    "bytes": 1258692
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T1100Z-bt-centikelvin.png",
+    "sha256": "caa0a1af50092157da3ff09b96bd028b55fb423b5ae32f6a50c0f1d436d20330",
+    "bytes": 1259594
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T1110Z-bt-centikelvin.png",
+    "sha256": "e27000668fcb08ca74300c0a29c390cb4790ef4f5d252ca87ce0f4c9c3e3f313",
+    "bytes": 1258270
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T1120Z-bt-centikelvin.png",
+    "sha256": "c9f168b985dc5d573f73be7971715f6d3a52fc06ca0c86aad8ab79cb1a5e3563",
+    "bytes": 1258427
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T1130Z-bt-centikelvin.png",
+    "sha256": "66d23dc89bca6836d210cb22e9cf19828cf8278d886697c69d2f46deb0e37a0a",
+    "bytes": 1259222
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T1140Z-bt-centikelvin.png",
+    "sha256": "f3e955d5f1425d06558eb7df34ad6b4729b7f00fb40cb9df3c53861dfa64a575",
+    "bytes": 1260539
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T1150Z-bt-centikelvin.png",
+    "sha256": "e01c424a27aae97033e94b09ca8ae540754b15eab2d81b8e5e9865fb87db1a7d",
+    "bytes": 1260180
+  },
+  {
+    "path": "research/high-frequency-clouds/frames/himawari-b13-20180916T1200Z-bt-centikelvin.png",
+    "sha256": "3f2f42d53ce7a906f79eb1865d5c6b455901661ca63d7e6efe806587c78be304",
+    "bytes": 1261658
+  },
+  {
+    "path": "research/high-frequency-clouds/half-day-objects.json",
+    "sha256": "b1bfd7c7ce9a795691e47de6be71f2794186493e304b477f1a20f45021df1307",
+    "bytes": 16493
+  },
+  {
+    "path": "research/high-frequency-clouds/himawari-b13-manifest.json",
+    "sha256": "a014d0953ef854c9521fe0fce425b8d82788c9d21b87e08cda32dacad885230f",
+    "bytes": 223967
+  },
+  {
+    "path": "research/high-frequency-clouds/missing-observations.json",
+    "sha256": "e2951445afb9396b13e0c4c8d9f4650c76945b705e81638e08b0127e2f363ffa",
+    "bytes": 199
+  },
+  {
+    "path": "research/high-frequency-clouds/process_downloads.py",
+    "sha256": "84262a772cbe5ee069a3c0ed601f0d72abf5a361782a78e69377fc00c1a93e42",
+    "bytes": 1107
+  },
+  {
+    "path": "research/high-frequency-clouds/process_himawari.py",
+    "sha256": "c3ea318c05a0ad3ee08da34a72197fc5df3d880176fc92fe17921a5e5b0a5bc9",
+    "bytes": 14536
+  },
+  {
+    "path": "research/high-frequency-clouds/s3-20180916T00-hour-list.xml",
+    "sha256": "c7411030ef89d5df90355a7a15faf64a12f67c30779e065687a4dbe73868f85b",
+    "bytes": 36716
+  },
+  {
+    "path": "research/high-frequency-clouds/s3-20180916T0000-list.xml",
+    "sha256": "3fbc36a350262f5e4b40de62167cf29f7a80a577e63387334a0c81084cb51931",
+    "bytes": 6348
+  },
+  {
+    "path": "research/high-frequency-clouds/s3-20180916T01-hour-list.xml",
+    "sha256": "5fc40e4f9dba32544c67bb5e30d7a775a6156652369e9a38bd1501915a106328",
+    "bytes": 36716
+  },
+  {
+    "path": "research/high-frequency-clouds/s3-20180916T02-hour-list.xml",
+    "sha256": "1197d647265d63bf4e15d896538c6d06dfc4cdac059f2f5673a9d6a9fac73c57",
+    "bytes": 30642
+  },
+  {
+    "path": "research/high-frequency-clouds/s3-20180916T03-hour-list.xml",
+    "sha256": "932fc93c147e58d8beace86f8f39a0925bd20c9b7555a143c46be5e3ba7dfc49",
+    "bytes": 36716
+  },
+  {
+    "path": "research/high-frequency-clouds/s3-20180916T04-hour-list.xml",
+    "sha256": "e1368fc652bc0b40d022c58ab24875c3a4a946e657c28437ca22444e8aaeabe4",
+    "bytes": 36716
+  },
+  {
+    "path": "research/high-frequency-clouds/s3-20180916T05-hour-list.xml",
+    "sha256": "18c462771b91aeeadf73dd07b933330f9c1daeef571ce9c7414b9eac21859d19",
+    "bytes": 36710
+  },
+  {
+    "path": "research/high-frequency-clouds/s3-20180916T06-hour-list.xml",
+    "sha256": "f505593efe87e439d043fae94be32bf547e66ff96f9763a9075894dcd0c06dfa",
+    "bytes": 36698
+  },
+  {
+    "path": "research/high-frequency-clouds/s3-20180916T07-hour-list.xml",
+    "sha256": "08fef6511c18f98771a3b7d7eabdfb7d1f03658d60af81e9cbe39bc2c648b34e",
+    "bytes": 36692
+  },
+  {
+    "path": "research/high-frequency-clouds/s3-20180916T08-hour-list.xml",
+    "sha256": "55306f0167e21f6a27befaa1cd973e85644e947f9a4477076d574cc60f8e4956",
+    "bytes": 36687
+  },
+  {
+    "path": "research/high-frequency-clouds/s3-20180916T09-hour-list.xml",
+    "sha256": "b81fc813f6027801d0ddd4a02c583f99c43db6cfcfb1f2671d4e28250fad901b",
+    "bytes": 36651
+  },
+  {
+    "path": "research/high-frequency-clouds/s3-20180916T10-hour-list.xml",
+    "sha256": "9ccbc4af4b6276e2d8fe8cafb108de47c58d9d902363544428dba61f28fd8d29",
+    "bytes": 36620
+  },
+  {
+    "path": "research/high-frequency-clouds/s3-20180916T11-hour-list.xml",
+    "sha256": "a6358fff4690d5296a2d00d85ff9cb8fe7244fbb00e4f055fe71f063db560d5d",
+    "bytes": 36588
+  },
+  {
+    "path": "research/high-frequency-clouds/s3-20180916T12-hour-list.xml",
+    "sha256": "23e3a7d4f8969c867fa32a325f79b0600ec3f53f81e2e94878d46789ea8fcfaa",
+    "bytes": 6326
+  },
+  {
+    "path": "research/high-frequency-clouds/source-assessment.json",
+    "sha256": "16c5d9db0d4950b2a11348025e24ee97032395090b5d9ee103c2193e1ccbfd5f",
+    "bytes": 2631
+  },
+  {
+    "path": "research/high-frequency-clouds/validation-report.json",
+    "sha256": "66d5d737e615bf5468cac74e6a4cb2377ab1a8c14f85de5a04aace492dfde91f",
+    "bytes": 1292
+  },
+  {
+    "path": "research/high-frequency-clouds/verify_frames.py",
+    "sha256": "9541f238bafd4e6ef24e17b7ebf5633d1dd35a6cc7f047af9967685aca55fd96",
+    "bytes": 4329
+  },
+  {
+    "path": "research/hko-mangkhut-observations/README.md",
+    "sha256": "bd4dc57a15b9a862c5f480749127206f62a8b02f0f665835592f6c724e8eec81",
+    "bytes": 6053
+  },
+  {
+    "path": "research/hko-mangkhut-observations/archive-20180915-17-hko.json",
+    "sha256": "d9547c1e7d979f82ffb82e32048b9c33d4b0b8a80c66905c4bc1ce7b002dc33c",
+    "bytes": 11731
+  },
+  {
+    "path": "research/hko-mangkhut-observations/hko-all-district-rain-windows.json",
+    "sha256": "78c230e3aff782dc300d30bf7debd4048688a314df6e37d25d0182d52cadde14",
+    "bytes": 97833
+  },
+  {
+    "path": "research/hko-mangkhut-observations/hko-rss-20180916-1415.xml",
+    "sha256": "770d9c79670781608c851d8ead1e2143d76bd854844c3e919dd0135bca339b45",
+    "bytes": 7915
+  },
+  {
+    "path": "research/hko-mangkhut-observations/hko-rss-versions.json",
+    "sha256": "a353e8a171fdbb23a6c532501c32a8b665e5697af6bf66f18f65b1cd9fa079c2",
+    "bytes": 3425
+  },
+  {
+    "path": "research/hko-mangkhut-observations/hong-kong-wind-rain.json",
+    "sha256": "e8e0551a4bef577ee7980088d17e2a0dd65451537a3466b7002c493b8a04d8c1",
+    "bytes": 149983
+  },
+  {
+    "path": "research/hko-mangkhut-observations/isd-format-document.pdf",
+    "sha256": "1be604b08b5f7c2429e6aef178ff8893019c234bc7bc51bfb7ec1e16a6682f04",
+    "bytes": 1187390
+  },
+  {
+    "path": "research/hko-mangkhut-observations/noaa-airport-sample.json",
+    "sha256": "dddc073faf2345ebaa0f7ce4dd236c26a052e230cc846ed1db3a10991da9de39",
+    "bytes": 96540
+  },
+  {
+    "path": "research/hko-mangkhut-observations/noaa-isd-history.txt",
+    "sha256": "1994747ab4af1b97e63adb434b4d0d022f2daee76f0c144ea9ab46be2d906604",
+    "bytes": 2914601
+  },
+  {
+    "path": "research/hko-mangkhut-observations/noaa-station-metadata.json",
+    "sha256": "fc6376a1f3712c51b068cd8cb35a68e8e7bc2f35e0b461ec32cd776d00c3ab3d",
+    "bytes": 643
+  },
+  {
+    "path": "research/hko-mangkhut-observations/parse-observations.py",
+    "sha256": "13cc5aa05b30dd55c863d21e03af2e40612d73a6829a3ceb19b55e691e3d3a91",
+    "bytes": 12231
+  },
+  {
+    "path": "research/hko-mangkhut-observations/provenance.json",
+    "sha256": "33aaa698d65449672d30e0ff228a3bc4b5630e05ce452437b9f3ac64c14ceb88",
+    "bytes": 1358
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-file-integrity.json",
+    "sha256": "5e33b7342d85418aaa47916414a1f1bd056f7b492f55abfff87fab60caad7087",
+    "bytes": 17408
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180915-0015-CurrentWeather.xml",
+    "sha256": "6967d1adb95a15d7ef26bc39a12073646f21f223fa413ddd829792c587da0846",
+    "bytes": 5919
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180915-0115-CurrentWeather.xml",
+    "sha256": "b6f9d1186c7f5a4d641d72d7391ae3a18a44ee1afcc7daf8198f3ae452627c3a",
+    "bytes": 5917
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180915-0215-CurrentWeather.xml",
+    "sha256": "2465775af5d9168a5593af648dfad66678260cf87e8ec9db322a7d007e964a50",
+    "bytes": 5917
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180915-0315-CurrentWeather.xml",
+    "sha256": "e0fa90468a276af6cbc540e867137dfba6ced47ed761f7f018da2f524503b089",
+    "bytes": 5917
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180915-0415-CurrentWeather.xml",
+    "sha256": "6d1498e9b3cf756120702ae70b990cd7c288654c716c5326d178485f348ba91d",
+    "bytes": 5917
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180915-0515-CurrentWeather.xml",
+    "sha256": "b3a47abab5d4f20f07d6318f68b9fdfdc56090e2c3a769020efb772944c25c90",
+    "bytes": 5917
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180915-0615-CurrentWeather.xml",
+    "sha256": "4f9b50540f8d0220680f02c8e39d493ef31764a5943ec476b8f65138780c44d1",
+    "bytes": 5917
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180915-0715-CurrentWeather.xml",
+    "sha256": "709cc75d9b0f6eeeaa208c87ebda878bf4ab665b19a238d3c0c20c8d2c6c765b",
+    "bytes": 5917
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180915-0815-CurrentWeather.xml",
+    "sha256": "265547ec330fbecb38195e27860b95f2b41a874deb2ddd64a439711b0b4ec839",
+    "bytes": 6061
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180915-0915-CurrentWeather.xml",
+    "sha256": "9400e226e7317b21c3af27801c2beb74da2fdef594a5fee2abf4551e707cb557",
+    "bytes": 6175
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180915-1015-CurrentWeather.xml",
+    "sha256": "dcbb81512b8438ce9efafaf7f24af6a6900121e2a044a720f24f03d560d008b8",
+    "bytes": 6065
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180915-1115-CurrentWeather.xml",
+    "sha256": "df3fb1dc000948394d4e4082e3f9b223665f50baadc5821dd39f09b5fcdb414b",
+    "bytes": 6061
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180915-1215-CurrentWeather.xml",
+    "sha256": "44c2f5e3073fd33a0b4823f444983e02014316294e7022e89464061b55c66211",
+    "bytes": 6172
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180915-1315-CurrentWeather.xml",
+    "sha256": "55ebcdee36e189d8ea8bad4e9117c92ed97134e2e5de2be917842ff14adb456d",
+    "bytes": 6066
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180915-1415-CurrentWeather.xml",
+    "sha256": "465f89672abfbbd2df8af1682ce29dd5fc674a3b498e7ed49d01c879fb0dd728",
+    "bytes": 6065
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180915-1515-CurrentWeather.xml",
+    "sha256": "dc6ed28f30b35bc29014629f29fdd637f731d58b77967bc49cb828ce7a8bbc7b",
+    "bytes": 6064
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180915-1615-CurrentWeather.xml",
+    "sha256": "84dd3c56a3208dec077167ed9b905e1cc886b1cac24a54bd5d1ce8ab6ee73f6b",
+    "bytes": 6064
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180915-1630-CurrentWeather.xml",
+    "sha256": "181245c5fa23e45c94e79c9afbc9e3e63c62b178ec0fa4addf968316fc31b7ba",
+    "bytes": 6071
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180915-1715-CurrentWeather.xml",
+    "sha256": "3a09c5a16f92c29a5ad0a6c722ada0a9c397225e39d40d69f09080df4bb17b84",
+    "bytes": 6059
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180915-1815-CurrentWeather.xml",
+    "sha256": "e18f9be01334b3eef1002fafc2237679c0da404ee504fbcc00021ac06e5fd62a",
+    "bytes": 6061
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180915-1915-CurrentWeather.xml",
+    "sha256": "e3c15a2c845928386e1b3b42d1b5f237da606f9d8b5719e6abe48c9a512de578",
+    "bytes": 5917
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180915-2015-CurrentWeather.xml",
+    "sha256": "7c167f966cee2bfb9b67b1af70f1e601fa7bb4eec08a862a61518c7ef9ebc019",
+    "bytes": 5917
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180915-2115-CurrentWeather.xml",
+    "sha256": "788b1470c3332c58559186c973ea06188c63bdd324b0fa29f6c2c235eb0c68a7",
+    "bytes": 5917
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180915-2130-CurrentWeather.xml",
+    "sha256": "1d1359261a36d48f6251bfa074fab288ec1bd9a624fb49abbe269cc7b2a4a0b1",
+    "bytes": 5917
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180915-2215-CurrentWeather.xml",
+    "sha256": "53eff05c76612aee00468c0f29836850f00a3dd98844d3daa89e6f7c759a0a0d",
+    "bytes": 5918
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180915-2315-CurrentWeather.xml",
+    "sha256": "e2d35ebe0b04ab6c7165efdcbcbd78f535f9f701b7adddfca9cb6d5ab7229741",
+    "bytes": 6069
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180915-2330-CurrentWeather.xml",
+    "sha256": "3af3fdf124cb88d6762896c35bdeba83a6d9b3df5b5a9b52ba10e42adbcdd402",
+    "bytes": 5906
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180916-0015-CurrentWeather.xml",
+    "sha256": "778996bcf9edc78f1e5884cf0b5295241a75cbb528a8f98a495221b7faffe777",
+    "bytes": 5907
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180916-0115-CurrentWeather.xml",
+    "sha256": "f6fbd1b82b1c7e047af272940ddda495f9ff89f91f958e682d9f287ef7e2a1e8",
+    "bytes": 5761
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180916-0130-CurrentWeather.xml",
+    "sha256": "59bdad0a86bc553cf6d30151523b8a9deca60b0caca9bb924206cbb43adffaa0",
+    "bytes": 5761
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180916-0215-CurrentWeather.xml",
+    "sha256": "174690757d16b5a9e7fe7c7de663411488b9743bbcbca323062f2ad8e52a4090",
+    "bytes": 5754
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180916-0315-CurrentWeather.xml",
+    "sha256": "2051f69f30c6bbb129e9049364337bb5e477321b7696d173ec264a3e29e8eaca",
+    "bytes": 5754
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180916-0415-CurrentWeather.xml",
+    "sha256": "9d2121584c8750cc328ea966fea5de952439d54e0484e3610e6633bb1cf522a4",
+    "bytes": 5754
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180916-0515-CurrentWeather.xml",
+    "sha256": "be5621e146959a17779700365a6f61df3b783bfa8cbbdb0406808b307be00363",
+    "bytes": 5754
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180916-0615-CurrentWeather.xml",
+    "sha256": "2a3249150efe32f402e0a39eef64983c81d5cc9ad71ca34fd8e2250e1924d6d6",
+    "bytes": 7514
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180916-0715-CurrentWeather.xml",
+    "sha256": "03f3cfe2ec21d32193a4f3b8341b6ac51b1a36cc629af5c28e61c68d552b9027",
+    "bytes": 7509
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180916-0800-CurrentWeather.xml",
+    "sha256": "f6ff56f6f430580ca578965e7f6be2f7fe308094345b97e5db06ca9c0ddbe9cd",
+    "bytes": 7516
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180916-0815-CurrentWeather.xml",
+    "sha256": "de7b8c92634d1920d411bdf782dec2ccdb0d4d9bc0cbf6e0ce075516c830a2cb",
+    "bytes": 7766
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180916-0915-CurrentWeather.xml",
+    "sha256": "34861e31bfb240c9d59ff2e232bc33f8b747e2baf2dc1bd2c9e4d48e9e6b529b",
+    "bytes": 7961
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180916-0945-CurrentWeather.xml",
+    "sha256": "ad38b0379c26528dcac4314afe1d46d87e3a937baf9e4a48e1b4ddc34630457d",
+    "bytes": 7962
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180916-1015-CurrentWeather.xml",
+    "sha256": "7a99629a871e2918645bc1441dbc2c22e940d96b05d8ad7bc65c2bbe4fbbcbce",
+    "bytes": 7835
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180916-1100-CurrentWeather.xml",
+    "sha256": "5da9e3fe971c0dfb1392d3dbb35bf7f4f7ef0637abc18ddc47508bf64c3203c3",
+    "bytes": 7841
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180916-1115-CurrentWeather.xml",
+    "sha256": "b4e84edcca9d50f13ba16c521675bc3051befe86f9cee52bd2e1df0952fa22dc",
+    "bytes": 7845
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180916-1145-CurrentWeather.xml",
+    "sha256": "3262e04e8d161964f9887f9e3642b61e0797bb7f2f9b45ddf02426e753d1bd88",
+    "bytes": 7939
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180916-1215-CurrentWeather.xml",
+    "sha256": "6e45df3eaa4f11887ca61fb79396c17fe90ac9bf6161303da3831c7afb476dae",
+    "bytes": 8053
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180916-1315-CurrentWeather.xml",
+    "sha256": "acb556c977a38a7a51c3f7a21be416a1bccb8e70faca20277387c9639d6dd309",
+    "bytes": 7924
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180916-1415-CurrentWeather.xml",
+    "sha256": "770d9c79670781608c851d8ead1e2143d76bd854844c3e919dd0135bca339b45",
+    "bytes": 7915
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180916-1431-CurrentWeather.xml",
+    "sha256": "71d9008c5234d4228b8d28d6063d2a12409b6588eacbef156e2a4a9035206da1",
+    "bytes": 7964
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180916-1515-CurrentWeather.xml",
+    "sha256": "d1871f79deb785bebfc3ef17e340d2217eda0505307b534f1a5609b2a790cd43",
+    "bytes": 7957
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180916-1615-CurrentWeather.xml",
+    "sha256": "2388851fe96b8710fa670fe18761ab508a519a55e1c4d81680755ecf5b71c4ca",
+    "bytes": 7945
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180916-1715-CurrentWeather.xml",
+    "sha256": "0def72fe905cb8ad6279f04beacdde8fa2490b327a2e749f4ca4642dbc0da14b",
+    "bytes": 7944
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180916-1815-CurrentWeather.xml",
+    "sha256": "debcbf208f9ca7571b81e9028cb1e26758c4a9372a3654c158ef1090eb2bb85a",
+    "bytes": 7753
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180916-1900-CurrentWeather.xml",
+    "sha256": "8d7f01304e8a206f8fba0d6b16ce6046f5c44e042a364e94b9dd40d3b4a09cb9",
+    "bytes": 7762
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180916-1915-CurrentWeather.xml",
+    "sha256": "8c3a8780f9b4c18cf44f910ff64fe09316d9e0326eb08275b2a8c870fb6b8af5",
+    "bytes": 6841
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180916-1945-CurrentWeather.xml",
+    "sha256": "04f4e4c0f87f1a90220fd25fdf94d4b228c317094aefcb957479ab7b0459a486",
+    "bytes": 6847
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180916-2015-CurrentWeather.xml",
+    "sha256": "fb665d14d90037c7cbc6328a1e1d409de82dbe57cfff5ac5af50c90f2af80b75",
+    "bytes": 7491
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180916-2115-CurrentWeather.xml",
+    "sha256": "76f317e78cfe0927898e97011b4fa038b0a26ba8bb8623f757886fd89ed26bbd",
+    "bytes": 7806
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180916-2215-CurrentWeather.xml",
+    "sha256": "bbcd4b4f3567fc3843af1ae377a4eddbe8a423569036d5f137eb46286c241b4e",
+    "bytes": 7792
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180916-2245-CurrentWeather.xml",
+    "sha256": "764d7a1800479911a208a0b71f5330a9a0a9340bf5f48c574d6f44982db81853",
+    "bytes": 7874
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180916-2315-CurrentWeather.xml",
+    "sha256": "6b995b5953512563daec45e5a2d7affc474fc70d0a3cbb7c1cf39a7b9812e7cf",
+    "bytes": 7867
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180916-2345-CurrentWeather.xml",
+    "sha256": "00ac0497d63bdcd88c08e4403b2197ec8b3cb5e821cc12b77d1a9878d2cb9d1e",
+    "bytes": 7781
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180917-0015-CurrentWeather.xml",
+    "sha256": "2149f616d5e4f14ad09eec94d6be87f0a3014c479defc7b107c4a83970f47f85",
+    "bytes": 7673
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180917-0045-CurrentWeather.xml",
+    "sha256": "e0afcf4df852b41f9d274b81a6c96c653ffdca903f9e7aa3dc852f9898cf57a2",
+    "bytes": 7535
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180917-0115-CurrentWeather.xml",
+    "sha256": "5367ebd892d098762c51309c2dc423ab0bfce17c3a808969ff442941b9c4dee7",
+    "bytes": 7337
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180917-0215-CurrentWeather.xml",
+    "sha256": "9e89b34845fbb39ce592dc260bccce8fa26f09dd4b0664398b8bfcb537d3199f",
+    "bytes": 7218
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180917-0315-CurrentWeather.xml",
+    "sha256": "a4f1b636f5adfb24301bf70e9fc0f77b9717dda7fd4caa8a8a450a2f45656177",
+    "bytes": 6212
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180917-0415-CurrentWeather.xml",
+    "sha256": "63f8b69dd26f04de00f53938c64bfec6b495df0ccaaa6d187e68e7b0733e18cc",
+    "bytes": 7073
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180917-0445-CurrentWeather.xml",
+    "sha256": "58fdae9b99a66713bd25e02ee2760494b20a3eec396fa5e9368483b40420ce97",
+    "bytes": 7234
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180917-0515-CurrentWeather.xml",
+    "sha256": "db2e92861a6988b8c8110a8ca359facac5947b9be38ff7cc8e6e68f0fdcfb321",
+    "bytes": 7565
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180917-0530-CurrentWeather.xml",
+    "sha256": "712fd14b8d457364bfd12c5b188c4eb87e2a8b13fc935e3b34934f35553377fc",
+    "bytes": 7572
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180917-0615-CurrentWeather.xml",
+    "sha256": "bb7215d18d79dcfd5a8f3d583a4e8055979716ca4cdfc4060fc5bd80ea15dcdf",
+    "bytes": 6946
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180917-0645-CurrentWeather.xml",
+    "sha256": "2cb23dda540976172df0deef9f3b7b79d2e6c928c676a09222899a39b50b1d2e",
+    "bytes": 6792
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180917-0715-CurrentWeather.xml",
+    "sha256": "da08d3ae828b44a9ed091647d72a844138c453a8b7fca426290edcc60bfe297f",
+    "bytes": 6311
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180917-0815-CurrentWeather.xml",
+    "sha256": "d283669fa18c207d43425c03323ce3c1f311489d9e603a54f0cc2a108dc4e4c0",
+    "bytes": 6446
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180917-0915-CurrentWeather.xml",
+    "sha256": "f98febd60b2bc12bef728d477dc26c799280f98c819d9d5a06ad00a722380811",
+    "bytes": 6378
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180917-0930-CurrentWeather.xml",
+    "sha256": "827cf62ee353d48f70e2ef2985a20b2ca0e31768f286a6756c098d7ea14c3716",
+    "bytes": 6378
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180917-1015-CurrentWeather.xml",
+    "sha256": "36e9ce939314c8aa6164095be26fdc71df15ecc9507fb5430ab6e426999c25e9",
+    "bytes": 6163
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180917-1115-CurrentWeather.xml",
+    "sha256": "4de4424d4fe0372ac10316c2b270d799d3202bbce791bf3f78d234f10a86dc73",
+    "bytes": 6078
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180917-1130-CurrentWeather.xml",
+    "sha256": "2a479a6cd1f89956607a2707f1d52cfeffa454727b5dec12f8235353c646def4",
+    "bytes": 6036
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180917-1215-CurrentWeather.xml",
+    "sha256": "33a25be67151dc506067767aedd12da19f96eadcfa095a189337c02631aec1f1",
+    "bytes": 6163
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180917-1315-CurrentWeather.xml",
+    "sha256": "2aa0c5235aa24070d99dc6faa6b4e4f7ea4f873fde160dd872fb013e032f0ffb",
+    "bytes": 6228
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180917-1415-CurrentWeather.xml",
+    "sha256": "56274c09e3fc954494bc8da9e50faac6d0dd84b41e0d6e4acdafab060a2ded18",
+    "bytes": 6035
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180917-1445-CurrentWeather.xml",
+    "sha256": "adf0e76b4d291ba0dda0063c38fbbfd962c43fe1cc4b79294085594a4aec1561",
+    "bytes": 6042
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180917-1515-CurrentWeather.xml",
+    "sha256": "89cb12c22004f00eeaa89c221432c593aa87e2c157729dfbdb1ad7367c7dc23c",
+    "bytes": 6039
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180917-1615-CurrentWeather.xml",
+    "sha256": "3fa98ef13c76870a713971204d725db455c47da8542667831617622b022de332",
+    "bytes": 6218
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180917-1715-CurrentWeather.xml",
+    "sha256": "85d3cf7b9d495bd5a5a4426b35143a4a40bc4e2e75f24de607761d0da7425380",
+    "bytes": 6494
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180917-1815-CurrentWeather.xml",
+    "sha256": "9df849b1caf3b7c8a3bf7cf23897564fa36d016a71b76b8c075ce830f61ddea8",
+    "bytes": 6409
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180917-1915-CurrentWeather.xml",
+    "sha256": "6991d75fce389d4c0af8c638ecf392af66fa6215b9e630cc6ec4f192e8dcf795",
+    "bytes": 5795
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180917-2015-CurrentWeather.xml",
+    "sha256": "0bc37c41d68a47761a3db75064a433fa099d86b77a5bae3aabe7b60cda3f6b9d",
+    "bytes": 5794
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180917-2115-CurrentWeather.xml",
+    "sha256": "2d42f77817a6d12e47d8551ccd954174ba8b498899054f46268fcf9a50b948f9",
+    "bytes": 5443
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180917-2215-CurrentWeather.xml",
+    "sha256": "35b2b6b55b397be82b99fe5257997dd3ac782b0a802f62d670b1298ffb6a9042",
+    "bytes": 6235
+  },
+  {
+    "path": "research/hko-mangkhut-observations/raw-rss/20180917-2315-CurrentWeather.xml",
+    "sha256": "bc4602222c356e5f2482012f696b1bc9ed78c86f4e6e983ad6605c61e45a3d86",
+    "bytes": 5939
+  },
+  {
+    "path": "research/hko-mangkhut-observations/rss-download-metadata.json",
+    "sha256": "f1a7f182f96fbd652fea07a9c37f6ba080f29e98219327ac9d8eb783670bf8a8",
+    "bytes": 590
+  },
+  {
+    "path": "research/real-events/hong-kong-sea-level/extract-quarry-bay.py",
+    "sha256": "089bced9458e91f7c5aab5df00ebbbf71d88674d98e9f1b14ce6f4b0df24fdf1",
+    "bytes": 10392
+  },
+  {
+    "path": "research/real-events/hong-kong-sea-level/findings.txt",
+    "sha256": "769503c0a1ebea58832cffed4ab31554a18c7aa5057b5d0f3f0ce69bdf6f5a6f",
+    "bytes": 3593
+  },
+  {
+    "path": "research/real-events/hong-kong-sea-level/gloss-077-quarry-bay.html",
+    "sha256": "0037b31936937755acc907441a215c301312b02cc640e24228eca9831349bd96",
+    "bytes": 39908
+  },
+  {
+    "path": "research/real-events/hong-kong-sea-level/quarry-bay-mangkhut-2018-hourly.json",
+    "sha256": "bfe9693cfdef490589d30ed92b790f3fb1109a22dcaca0a36adedc1c199c9527",
+    "bytes": 74512
+  },
+  {
+    "path": "research/real-events/hong-kong-sea-level/quarry-bay-mangkhut-2018-original-rows.csv",
+    "sha256": "13605a1c4206a6a43d97d06fc3927351f0c81fc295d33f8830335595ffad0d0e",
+    "bytes": 4930
+  },
+  {
+    "path": "research/real-events/hong-kong-sea-level/supporting-download-manifest.json",
+    "sha256": "5f45f3f22f2269d0e760fb40870b4247a935430162fb10bd7d2672993711402a",
+    "bytes": 1491
+  },
+  {
+    "path": "research/real-events/hong-kong-sea-level/uhslc-datainfo.html",
+    "sha256": "9dee2777cd2eba829f0dc107b8b1dd372d902d2b454a61af086f146aa1766032",
+    "bytes": 1546176
+  },
+  {
+    "path": "research/real-events/hong-kong-sea-level/uhslc-erddap-quarry-bay-20180915-17-hkt.csv",
+    "sha256": "9181fcbf9235b327d00550aa2e484e4ad10ff49dff3f49ee2da5f8008febf2b8",
+    "bytes": 3968
+  },
+  {
+    "path": "research/real-events/hong-kong-sea-level/uhslc-erddap-rqds-metadata.html",
+    "sha256": "9966e612f85b237cd29ce453ecc62a9727adcb229d47caf3df4f64a62e99a6fc",
+    "bytes": 50427
+  },
+  {
+    "path": "research/real-events/hong-kong-sea-level/uhslc-h329b.csv",
+    "sha256": "b9677903cbe7fc7904dcb800ab8265790267d2b596623ffb4325890c262047cc",
+    "bytes": 5936146
+  },
+  {
+    "path": "research/real-events/hong-kong-sea-level/uhslc-qa329b.dmt",
+    "sha256": "52060c630310cf26a45c073952235c009fb9c7b50aed9cb9859851efcf477e66",
+    "bytes": 7957
+  },
+  {
+    "path": "scripts/build-sync-bundle.py",
+    "sha256": "0e093f7060d469c790e2eae1a276c4b148613423cec0bbe933df3a65cd3a0fd3",
+    "bytes": 4075
+  },
+  {
+    "path": "scripts/check.mjs",
+    "sha256": "c24436cf940aa0ae2646cdda40a3daa6258b82696a651987642fd18193b1d0e1",
+    "bytes": 10177
+  },
+  {
+    "path": "tests/sync-cloud-layer.test.mjs",
+    "sha256": "fd0818f114d3b4414830fb8c377fc135a534e228945138b792e3346efe78a411",
+    "bytes": 7199
+  },
+  {
+    "path": "tests/sync-station-layer.test.mjs",
+    "sha256": "2a6f13c0e77d0fe491e59e87d9ac814a1b505d001266b90967e352516aeef74c",
+    "bytes": 4250
+  },
+  {
+    "path": "tests/sync-timeline.test.mjs",
+    "sha256": "fa0656ff6ac762fe5f056b215ff24f7b219a9032dda5cde83786c851a01c8ad7",
+    "bytes": 3587
+  }
+]

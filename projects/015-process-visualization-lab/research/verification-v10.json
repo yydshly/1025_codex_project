@@ -1,0 +1,81 @@
+{
+  "version": "10.0.0",
+  "verifiedAtUtc": "2026-11-04T13:27:01.618508+00:00",
+  "entry": "http://127.0.0.1:4175/app/index.html#typhoon-real",
+  "result": "Default IR cold-region fusion over a geographic Earth; wide real observation frames and raw-brightness-temperature toggle; synchronized historical clock retained.",
+  "observations": {
+    "sameSourceHsdFilesAsV9": 72,
+    "newSourceDownloads": 0,
+    "observationClockTicks": 73,
+    "missingCloudUtc": "2018-09-16T02:40:00Z",
+    "bbox": [
+      85,
+      -10,
+      165,
+      55
+    ],
+    "frameSize": [
+      2048,
+      1664
+    ],
+    "displayPngBytes": 208624292,
+    "numericBrightnessTemperatureBytes": 357746359,
+    "windRainSeaLevelSeries": "All original records equal v9 exactly; no values, sampling times or source metadata changed.",
+    "sourceIdentity": "Every satellite sourceURL/rawSHA256/nominalTime/fullDiskScanStartEnd equals v9."
+  },
+  "presentation": {
+    "default": "fusion",
+    "alternative": "raw",
+    "warmTransparentKelvin": 285,
+    "coldOpacityKelvin": 240,
+    "coldDisplayOpacity": 0.94,
+    "edgeFeatherGeographicDegrees": 3,
+    "cacheTextures": 4,
+    "temporalInterpolation": false,
+    "syntheticCloudMotion": false,
+    "physicalCloudClassification": false,
+    "rawMode": "same observed PNG without fusion palette or edge feather",
+    "brightnessThresholds": "Approximate inversion of quantized/clipped8-bit palette for display only; uint16 scientific data retained separately."
+  },
+  "validation": {
+    "projectCheck": "passed in staging and original project",
+    "automatedTestsPassed": 51,
+    "affectedCloudTestsAfterFinalCacheReduction": 11,
+    "delayedCallbackRegressionPassed": 9,
+    "delayedCallbackMethod": "Independent controlled TextureLoader callbacks in Node VM invoking actual app,cloud-layer,timeline code; not a browser network-throttling test.",
+    "wideRasterVerification": "research/high-frequency-clouds/wide-v10/validation-report.json",
+    "copiedFileSHA256Verification": "234files/567835718bytes; all copied hashes match; no deleted files."
+  },
+  "browser": {
+    "desktopViewport": [
+      1440,
+      1100
+    ],
+    "mobileViewport": [
+      390,
+      844
+    ],
+    "consoleWarningsAndErrors": [],
+    "actualEntryFullPlayback": "2x08:00 to20:00;73/73 auto-stop;all four chart clocks2018-09-16T12:00:00.000Z;actual cloud20:00-20:09",
+    "stepButtons": "13:00->13:10->13:00;cloud and all four chart clocks follow,actual station samples keep timestamps.",
+    "presentationToggle": "raw/fusion leaves selected time and all station values unchanged.",
+    "gap": "10:40showsmissing frame and geographic base;no preceding cloud reused.",
+    "modeRestoration": "principle view retains2parameters/3model charts;full-track A/B view retained;fusion tools hidden outside synchronized mode.",
+    "mobile": "no horizontal overflow;globe framing and time-card position adjusted;full-width charts retained.",
+    "export": "Actual browser JSON downloaded and inspected at13:00:loaded/selected frame matches;fusion mode and widercoverage included;111.12km/h,2-48mm range,3.7m retained.",
+    "finalState": "13:00 paused,fusion active,1x,viewport override reset,deliverable tab retained."
+  },
+  "failureBehavior": "Autoplay preloads before committing time/UI/image. A failed preload enters the target time with an explicit loading state and retries once; failure shows no cloud and a failure label. Missing source times have a distinct missing label. Old requests cannot advance after pause/seek/mode changes.",
+  "boundaries": [
+    "Cold-region opacity is a display mapping, not cloud fraction, optical depth or cloud height. Warm clouds may fade; cold surface may appear.",
+    "Feathering only changes display opacity at coverage edge, not source validity or scientific rasters.",
+    "Historical geographic texture and viewing illumination are presentation aids, not contemporaneous satellite natural-color imagery.",
+    "Full disk scans span minutes; cloud parallax remains uncorrected; no new observation times created."
+  ],
+  "screenshots": [
+    "assets/images/cloud-fusion-v10.png",
+    "assets/images/cloud-fusion-v10-evening.png",
+    "assets/images/cloud-fusion-v10-raw.png",
+    "assets/images/cloud-fusion-v10-mobile.png"
+  ]
+}

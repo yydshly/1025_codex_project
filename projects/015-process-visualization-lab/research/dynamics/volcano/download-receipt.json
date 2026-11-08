@@ -1,0 +1,452 @@
+[
+  {
+    "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0350/HS_H08_20220115_0350_B13_FLDK_R20_S0710.DAT.bz2",
+    "nominalTimeUtc": "2022-01-15T03:50:00Z",
+    "file": "raw/HS_H08_20220115_0350_B13_FLDK_R20_S0710.DAT.bz2",
+    "bytes": 3044231,
+    "sha256": "873a2b664962eaf638e8cdee0880cd5ea180f59f823263ef5ca725ff3a1df9c1",
+    "retrievedAtUtc": "2026-11-04T14:44:27.7050151Z",
+    "status": "ok"
+  },
+  {
+    "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0350/HS_H08_20220115_0350_B13_FLDK_R20_S0810.DAT.bz2",
+    "nominalTimeUtc": "2022-01-15T03:50:00Z",
+    "file": "raw/HS_H08_20220115_0350_B13_FLDK_R20_S0810.DAT.bz2",
+    "bytes": 2793197,
+    "sha256": "d648fcc6bbad0655a9b0b8d941302c9bd6a5bd40a3a5c0ed75374f8251dc87be",
+    "retrievedAtUtc": "2026-11-04T14:44:22.9992259Z",
+    "status": "ok"
+  },
+  {
+    "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0400/HS_H08_20220115_0400_B13_FLDK_R20_S0710.DAT.bz2",
+    "nominalTimeUtc": "2022-01-15T04:00:00Z",
+    "file": "raw/HS_H08_20220115_0400_B13_FLDK_R20_S0710.DAT.bz2",
+    "bytes": 3043033,
+    "sha256": "76b0a58b7cb483b1b9347aee254fe5b373f85f2edcc102e7207a115a9de497d2",
+    "retrievedAtUtc": "2026-11-04T14:44:23.8477885Z",
+    "status": "ok"
+  },
+  {
+    "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0400/HS_H08_20220115_0400_B13_FLDK_R20_S0810.DAT.bz2",
+    "nominalTimeUtc": "2022-01-15T04:00:00Z",
+    "file": "raw/HS_H08_20220115_0400_B13_FLDK_R20_S0810.DAT.bz2",
+    "bytes": 2799987,
+    "sha256": "d640cf3138e07fe9b3affefdec91f0ef2eec53aa5df3ac05584f6d2200cd8ff8",
+    "retrievedAtUtc": "2026-11-04T14:44:24.7970777Z",
+    "status": "ok"
+  },
+  {
+    "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0410/HS_H08_20220115_0410_B13_FLDK_R20_S0710.DAT.bz2",
+    "nominalTimeUtc": "2022-01-15T04:10:00Z",
+    "file": "raw/HS_H08_20220115_0410_B13_FLDK_R20_S0710.DAT.bz2",
+    "bytes": 3042040,
+    "sha256": "eec0e45ea7fbc39bfa5af666bb26bc2901365a412053723ebcd047b4bc6639c3",
+    "retrievedAtUtc": "2026-11-04T14:44:26.4857492Z",
+    "status": "ok"
+  },
+  {
+    "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0410/HS_H08_20220115_0410_B13_FLDK_R20_S0810.DAT.bz2",
+    "nominalTimeUtc": "2022-01-15T04:10:00Z",
+    "file": "raw/HS_H08_20220115_0410_B13_FLDK_R20_S0810.DAT.bz2",
+    "bytes": 2803964,
+    "sha256": "4778554544522814b8d4dd813bce5f58a8fe3066e3b6ada486f7aca635dcca8b",
+    "retrievedAtUtc": "2026-11-04T14:44:26.9690563Z",
+    "status": "ok"
+  },
+  {
+    "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0420/HS_H08_20220115_0420_B13_FLDK_R20_S0710.DAT.bz2",
+    "nominalTimeUtc": "2022-01-15T04:20:00Z",
+    "file": "raw/HS_H08_20220115_0420_B13_FLDK_R20_S0710.DAT.bz2",
+    "bytes": 3039414,
+    "sha256": "b5545f9611472c74b826980d6cfb779a598de27d2600a4df5c7949fcbc3fe5b3",
+    "retrievedAtUtc": "2026-11-04T14:43:15.7321443Z",
+    "status": "ok"
+  },
+  {
+    "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0420/HS_H08_20220115_0420_B13_FLDK_R20_S0810.DAT.bz2",
+    "nominalTimeUtc": "2022-01-15T04:20:00Z",
+    "file": "raw/HS_H08_20220115_0420_B13_FLDK_R20_S0810.DAT.bz2",
+    "bytes": 2808346,
+    "sha256": "08230b9aaa6852d6eca49229e6fd8408a5a69d351acff2378249b86255c4bc5d",
+    "retrievedAtUtc": "2026-11-04T14:42:26.0792766Z",
+    "status": "ok"
+  },
+  {
+    "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0430/HS_H08_20220115_0430_B13_FLDK_R20_S0710.DAT.bz2",
+    "nominalTimeUtc": "2022-01-15T04:30:00Z",
+    "file": "raw/HS_H08_20220115_0430_B13_FLDK_R20_S0710.DAT.bz2",
+    "bytes": 3037885,
+    "sha256": "0fc68d2489bfe2db6bfdcf5efeccc8f1def63adc866713b768c048355de5b41f",
+    "retrievedAtUtc": "2026-11-04T14:44:29.4398102Z",
+    "status": "ok"
+  },
+  {
+    "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0430/HS_H08_20220115_0430_B13_FLDK_R20_S0810.DAT.bz2",
+    "nominalTimeUtc": "2022-01-15T04:30:00Z",
+    "file": "raw/HS_H08_20220115_0430_B13_FLDK_R20_S0810.DAT.bz2",
+    "bytes": 2809126,
+    "sha256": "086f380d09f861d81dad82fa95dea32796bf5c66c1695574f57874cd1c714b09",
+    "retrievedAtUtc": "2026-11-04T14:44:28.6995649Z",
+    "status": "ok"
+  },
+  {
+    "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0440/HS_H08_20220115_0440_B13_FLDK_R20_S0710.DAT.bz2",
+    "nominalTimeUtc": "2022-01-15T04:40:00Z",
+    "file": "raw/HS_H08_20220115_0440_B13_FLDK_R20_S0710.DAT.bz2",
+    "bytes": 3039006,
+    "sha256": "b425b7c9aafccdcc2f9ce97aa33e4b9ae4d6f7b1d9647f1dec9209708db6db09",
+    "retrievedAtUtc": "2026-11-04T14:44:29.5061102Z",
+    "status": "ok"
+  },
+  {
+    "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0440/HS_H08_20220115_0440_B13_FLDK_R20_S0810.DAT.bz2",
+    "nominalTimeUtc": "2022-01-15T04:40:00Z",
+    "file": "raw/HS_H08_20220115_0440_B13_FLDK_R20_S0810.DAT.bz2",
+    "bytes": 2811979,
+    "sha256": "531d386a10beb0b87c6b19a4de2d0c43cfcbf6b788aeb4e0e896b3b7f9167231",
+    "retrievedAtUtc": "2026-11-04T14:44:30.4082595Z",
+    "status": "ok"
+  },
+  {
+    "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0450/HS_H08_20220115_0450_B13_FLDK_R20_S0710.DAT.bz2",
+    "nominalTimeUtc": "2022-01-15T04:50:00Z",
+    "file": "raw/HS_H08_20220115_0450_B13_FLDK_R20_S0710.DAT.bz2",
+    "bytes": 3039033,
+    "sha256": "5e57fdc7c5a3dff93d399ffd32160ab09dd4f8049a6eefffd940aa1c333187c2",
+    "retrievedAtUtc": "2026-11-04T14:44:31.5868885Z",
+    "status": "ok"
+  },
+  {
+    "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0450/HS_H08_20220115_0450_B13_FLDK_R20_S0810.DAT.bz2",
+    "nominalTimeUtc": "2022-01-15T04:50:00Z",
+    "file": "raw/HS_H08_20220115_0450_B13_FLDK_R20_S0810.DAT.bz2",
+    "bytes": 2812474,
+    "sha256": "b81e71faf3d4d125c970d39bcfca532329af1415475949833ef122301f96cf53",
+    "retrievedAtUtc": "2026-11-04T14:44:31.0918944Z",
+    "status": "ok"
+  },
+  {
+    "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0500/HS_H08_20220115_0500_B13_FLDK_R20_S0710.DAT.bz2",
+    "nominalTimeUtc": "2022-01-15T05:00:00Z",
+    "file": "raw/HS_H08_20220115_0500_B13_FLDK_R20_S0710.DAT.bz2",
+    "bytes": 3039677,
+    "sha256": "44c8c832d4580517f8e07215dd92d6c5c9578bf649b8ae7d25b9113725342a0f",
+    "retrievedAtUtc": "2026-11-04T14:44:33.4456325Z",
+    "status": "ok"
+  },
+  {
+    "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0500/HS_H08_20220115_0500_B13_FLDK_R20_S0810.DAT.bz2",
+    "nominalTimeUtc": "2022-01-15T05:00:00Z",
+    "file": "raw/HS_H08_20220115_0500_B13_FLDK_R20_S0810.DAT.bz2",
+    "bytes": 2815238,
+    "sha256": "99543e23594d6748d172e05611fd336cdaf0a4c6379a6679314702aebbe8670a",
+    "retrievedAtUtc": "2026-11-04T14:44:33.3491030Z",
+    "status": "ok"
+  },
+  {
+    "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0510/HS_H08_20220115_0510_B13_FLDK_R20_S0710.DAT.bz2",
+    "nominalTimeUtc": "2022-01-15T05:10:00Z",
+    "file": "raw/HS_H08_20220115_0510_B13_FLDK_R20_S0710.DAT.bz2",
+    "bytes": 3040416,
+    "sha256": "3c0c6cfc2ad0f99451da67fef7c4382049c1da4b5eb03903e1cab93a15593115",
+    "retrievedAtUtc": "2026-11-04T14:44:33.4848064Z",
+    "status": "ok"
+  },
+  {
+    "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0510/HS_H08_20220115_0510_B13_FLDK_R20_S0810.DAT.bz2",
+    "nominalTimeUtc": "2022-01-15T05:10:00Z",
+    "file": "raw/HS_H08_20220115_0510_B13_FLDK_R20_S0810.DAT.bz2",
+    "bytes": 2817789,
+    "sha256": "c74760238d7815357986e291fc2f7fd71651a5992d2dff14fed4af4643773c06",
+    "retrievedAtUtc": "2026-11-04T14:44:35.3822594Z",
+    "status": "ok"
+  },
+  {
+    "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0520/HS_H08_20220115_0520_B13_FLDK_R20_S0710.DAT.bz2",
+    "nominalTimeUtc": "2022-01-15T05:20:00Z",
+    "file": "raw/HS_H08_20220115_0520_B13_FLDK_R20_S0710.DAT.bz2",
+    "bytes": 3038491,
+    "sha256": "087e26056c99805e3295ceaea6a5fa68160167267d02e7a8666462aada21b3a5",
+    "retrievedAtUtc": "2026-11-04T14:44:35.5189341Z",
+    "status": "ok"
+  },
+  {
+    "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0520/HS_H08_20220115_0520_B13_FLDK_R20_S0810.DAT.bz2",
+    "nominalTimeUtc": "2022-01-15T05:20:00Z",
+    "file": "raw/HS_H08_20220115_0520_B13_FLDK_R20_S0810.DAT.bz2",
+    "bytes": 2819643,
+    "sha256": "623022faa90c269e7c8af9018e87f531f87cfe5f318b1d5b047bf0038e671c53",
+    "retrievedAtUtc": "2026-11-04T14:44:36.2991227Z",
+    "status": "ok"
+  },
+  {
+    "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0530/HS_H08_20220115_0530_B13_FLDK_R20_S0710.DAT.bz2",
+    "nominalTimeUtc": "2022-01-15T05:30:00Z",
+    "file": "raw/HS_H08_20220115_0530_B13_FLDK_R20_S0710.DAT.bz2",
+    "bytes": 3036625,
+    "sha256": "c66646ba423c7c7646bc72ac51f465ae8efe117aab7742e137e32f268c84242f",
+    "retrievedAtUtc": "2026-11-04T14:44:42.3074943Z",
+    "status": "ok"
+  },
+  {
+    "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0530/HS_H08_20220115_0530_B13_FLDK_R20_S0810.DAT.bz2",
+    "nominalTimeUtc": "2022-01-15T05:30:00Z",
+    "file": "raw/HS_H08_20220115_0530_B13_FLDK_R20_S0810.DAT.bz2",
+    "bytes": 2820797,
+    "sha256": "36d70310374a7b3703c3a9d01f097c7c6143e45a54d643fe696235e7f7c1e61e",
+    "retrievedAtUtc": "2026-11-04T14:44:44.2168326Z",
+    "status": "ok"
+  },
+  {
+    "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0540/HS_H08_20220115_0540_B13_FLDK_R20_S0710.DAT.bz2",
+    "nominalTimeUtc": "2022-01-15T05:40:00Z",
+    "file": "raw/HS_H08_20220115_0540_B13_FLDK_R20_S0710.DAT.bz2",
+    "bytes": 3034871,
+    "sha256": "00c612e88d8853cd7a7213127c60baf0912faa44f5d677cc2e6a44edac567467",
+    "retrievedAtUtc": "2026-11-04T14:44:38.1338777Z",
+    "status": "ok"
+  },
+  {
+    "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0540/HS_H08_20220115_0540_B13_FLDK_R20_S0810.DAT.bz2",
+    "nominalTimeUtc": "2022-01-15T05:40:00Z",
+    "file": "raw/HS_H08_20220115_0540_B13_FLDK_R20_S0810.DAT.bz2",
+    "bytes": 2821890,
+    "sha256": "b5e49c69662ab454d0e1f18d2f29fe0637d4cd5fa5a3589db0cfa5644d5b4a63",
+    "retrievedAtUtc": "2026-11-04T14:44:39.7933709Z",
+    "status": "ok"
+  },
+  {
+    "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0550/HS_H08_20220115_0550_B13_FLDK_R20_S0710.DAT.bz2",
+    "nominalTimeUtc": "2022-01-15T05:50:00Z",
+    "file": "raw/HS_H08_20220115_0550_B13_FLDK_R20_S0710.DAT.bz2",
+    "bytes": 3032586,
+    "sha256": "571685dd91dd74b72b3773675ac17025228a6549db1bb77b2a4f66758f30b115",
+    "retrievedAtUtc": "2026-11-04T14:44:41.7553253Z",
+    "status": "ok"
+  },
+  {
+    "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0550/HS_H08_20220115_0550_B13_FLDK_R20_S0810.DAT.bz2",
+    "nominalTimeUtc": "2022-01-15T05:50:00Z",
+    "file": "raw/HS_H08_20220115_0550_B13_FLDK_R20_S0810.DAT.bz2",
+    "bytes": 2819461,
+    "sha256": "6df5fc7f15986ee8820d0a1542d9302c63a84f5095e252b7b74cb7c0312d3fb9",
+    "retrievedAtUtc": "2026-11-04T14:44:43.0304288Z",
+    "status": "ok"
+  },
+  {
+    "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0600/HS_H08_20220115_0600_B13_FLDK_R20_S0710.DAT.bz2",
+    "nominalTimeUtc": "2022-01-15T06:00:00Z",
+    "file": "raw/HS_H08_20220115_0600_B13_FLDK_R20_S0710.DAT.bz2",
+    "bytes": 3030926,
+    "sha256": "c97ecdf2c0e81756faa12fbd1c502c4b489f21bf571867e50eb6f30b80b2a6b5",
+    "retrievedAtUtc": "2026-11-04T14:44:44.3695602Z",
+    "status": "ok"
+  },
+  {
+    "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0600/HS_H08_20220115_0600_B13_FLDK_R20_S0810.DAT.bz2",
+    "nominalTimeUtc": "2022-01-15T06:00:00Z",
+    "file": "raw/HS_H08_20220115_0600_B13_FLDK_R20_S0810.DAT.bz2",
+    "bytes": 2819422,
+    "sha256": "e3b569952d396f45f035540ac9a734ace3ea42aabdb1aed8e87f732e3820bea6",
+    "retrievedAtUtc": "2026-11-04T14:44:44.3503442Z",
+    "status": "ok"
+  },
+  {
+    "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0610/HS_H08_20220115_0610_B13_FLDK_R20_S0710.DAT.bz2",
+    "nominalTimeUtc": "2022-01-15T06:10:00Z",
+    "file": "raw/HS_H08_20220115_0610_B13_FLDK_R20_S0710.DAT.bz2",
+    "bytes": 3029531,
+    "sha256": "cb6794a80bbf7150d64718aa7be7bd4abe149c589813fcdaebfdeda5cea44ae3",
+    "retrievedAtUtc": "2026-11-04T14:44:46.7136857Z",
+    "status": "ok"
+  },
+  {
+    "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0610/HS_H08_20220115_0610_B13_FLDK_R20_S0810.DAT.bz2",
+    "nominalTimeUtc": "2022-01-15T06:10:00Z",
+    "file": "raw/HS_H08_20220115_0610_B13_FLDK_R20_S0810.DAT.bz2",
+    "bytes": 2818177,
+    "sha256": "80acde14e96849b65a14a95162b22131a950c93320336777b211f959bd8b70a8",
+    "retrievedAtUtc": "2026-11-04T14:44:46.1657563Z",
+    "status": "ok"
+  },
+  {
+    "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0620/HS_H08_20220115_0620_B13_FLDK_R20_S0710.DAT.bz2",
+    "nominalTimeUtc": "2022-01-15T06:20:00Z",
+    "file": "raw/HS_H08_20220115_0620_B13_FLDK_R20_S0710.DAT.bz2",
+    "bytes": 3025916,
+    "sha256": "db36ab599805e7bc1c2051703051557d8dd05f61b1e635e66beb1f39bb637266",
+    "retrievedAtUtc": "2026-11-04T14:45:00.6616114Z",
+    "status": "ok"
+  },
+  {
+    "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0620/HS_H08_20220115_0620_B13_FLDK_R20_S0810.DAT.bz2",
+    "nominalTimeUtc": "2022-01-15T06:20:00Z",
+    "file": "raw/HS_H08_20220115_0620_B13_FLDK_R20_S0810.DAT.bz2",
+    "bytes": 2816950,
+    "sha256": "b69a50669c86ceed487f0a8b8e88de8ce5aac2043b9d13a663a332019fdaea7b",
+    "retrievedAtUtc": "2026-11-04T14:44:47.7400282Z",
+    "status": "ok"
+  },
+  {
+    "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0630/HS_H08_20220115_0630_B13_FLDK_R20_S0710.DAT.bz2",
+    "nominalTimeUtc": "2022-01-15T06:30:00Z",
+    "file": "raw/HS_H08_20220115_0630_B13_FLDK_R20_S0710.DAT.bz2",
+    "bytes": 3020573,
+    "sha256": "e53d69dbb58a5db1731268e1979dec1a39fe49d88ed8be3e64dbfc7026894fcb",
+    "retrievedAtUtc": "2026-11-04T14:44:48.4970769Z",
+    "status": "ok"
+  },
+  {
+    "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0630/HS_H08_20220115_0630_B13_FLDK_R20_S0810.DAT.bz2",
+    "nominalTimeUtc": "2022-01-15T06:30:00Z",
+    "file": "raw/HS_H08_20220115_0630_B13_FLDK_R20_S0810.DAT.bz2",
+    "bytes": 2816811,
+    "sha256": "3f81070b925ebb6fafca56d4e8ae173cc0e471d3b295e8f6c40c31a0195fa268",
+    "retrievedAtUtc": "2026-11-04T14:44:49.4438113Z",
+    "status": "ok"
+  },
+  {
+    "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0640/HS_H08_20220115_0640_B13_FLDK_R20_S0710.DAT.bz2",
+    "nominalTimeUtc": "2022-01-15T06:40:00Z",
+    "file": "raw/HS_H08_20220115_0640_B13_FLDK_R20_S0710.DAT.bz2",
+    "bytes": 3018067,
+    "sha256": "6903c320b1d5c94667c3f8e19b35699fc1aad5855c21e50178c6365eb113e4ad",
+    "retrievedAtUtc": "2026-11-04T14:44:57.2682229Z",
+    "status": "ok"
+  },
+  {
+    "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0640/HS_H08_20220115_0640_B13_FLDK_R20_S0810.DAT.bz2",
+    "nominalTimeUtc": "2022-01-15T06:40:00Z",
+    "file": "raw/HS_H08_20220115_0640_B13_FLDK_R20_S0810.DAT.bz2",
+    "bytes": 2810727,
+    "sha256": "b532ef88437c1d723fc7eae425adfc6bc55aec1588d0e29e18ee41c63da75cb2",
+    "retrievedAtUtc": "2026-11-04T14:44:50.9871428Z",
+    "status": "ok"
+  },
+  {
+    "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0650/HS_H08_20220115_0650_B13_FLDK_R20_S0710.DAT.bz2",
+    "nominalTimeUtc": "2022-01-15T06:50:00Z",
+    "file": "raw/HS_H08_20220115_0650_B13_FLDK_R20_S0710.DAT.bz2",
+    "bytes": 3016906,
+    "sha256": "e45dfb330f93360a1351e086b375714a04c6906bf47279bcfd6eb9b670c9f696",
+    "retrievedAtUtc": "2026-11-04T14:44:52.2443569Z",
+    "status": "ok"
+  },
+  {
+    "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0650/HS_H08_20220115_0650_B13_FLDK_R20_S0810.DAT.bz2",
+    "nominalTimeUtc": "2022-01-15T06:50:00Z",
+    "file": "raw/HS_H08_20220115_0650_B13_FLDK_R20_S0810.DAT.bz2",
+    "bytes": 2809982,
+    "sha256": "6f1e7bba0e7dd3283e542e99174bd77bbef3a15768f96bbc107c309a11c184c2",
+    "retrievedAtUtc": "2026-11-04T14:44:53.4959075Z",
+    "status": "ok"
+  },
+  {
+    "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0700/HS_H08_20220115_0700_B13_FLDK_R20_S0710.DAT.bz2",
+    "nominalTimeUtc": "2022-01-15T07:00:00Z",
+    "file": "raw/HS_H08_20220115_0700_B13_FLDK_R20_S0710.DAT.bz2",
+    "bytes": 3013603,
+    "sha256": "ba4acdc1b3dd803e8766403d5686990f910fbaae940ec9b62360f4931ffb4e18",
+    "retrievedAtUtc": "2026-11-04T14:44:54.8505193Z",
+    "status": "ok"
+  },
+  {
+    "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0700/HS_H08_20220115_0700_B13_FLDK_R20_S0810.DAT.bz2",
+    "nominalTimeUtc": "2022-01-15T07:00:00Z",
+    "file": "raw/HS_H08_20220115_0700_B13_FLDK_R20_S0810.DAT.bz2",
+    "bytes": 2804307,
+    "sha256": "f87977ebcf18629a50d28b8bedf78b53917f9ba886012019b2d10d5740e203e2",
+    "retrievedAtUtc": "2026-11-04T14:45:02.2965161Z",
+    "status": "ok"
+  },
+  {
+    "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0710/HS_H08_20220115_0710_B13_FLDK_R20_S0710.DAT.bz2",
+    "nominalTimeUtc": "2022-01-15T07:10:00Z",
+    "file": "raw/HS_H08_20220115_0710_B13_FLDK_R20_S0710.DAT.bz2",
+    "bytes": 3006631,
+    "sha256": "ee6a4a02365bab461f5b92a969cca5dadf5e15d45b3e599a1a53e8c1dc166c39",
+    "retrievedAtUtc": "2026-11-04T14:45:06.4840176Z",
+    "status": "ok"
+  },
+  {
+    "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0710/HS_H08_20220115_0710_B13_FLDK_R20_S0810.DAT.bz2",
+    "nominalTimeUtc": "2022-01-15T07:10:00Z",
+    "file": "raw/HS_H08_20220115_0710_B13_FLDK_R20_S0810.DAT.bz2",
+    "bytes": 2797574,
+    "sha256": "3ca2f6721237ecd49dfc34743767543b7fa790b40447b6359d00fc537d4e1415",
+    "retrievedAtUtc": "2026-11-04T14:45:02.5711114Z",
+    "status": "ok"
+  },
+  {
+    "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0720/HS_H08_20220115_0720_B13_FLDK_R20_S0710.DAT.bz2",
+    "nominalTimeUtc": "2022-01-15T07:20:00Z",
+    "file": "raw/HS_H08_20220115_0720_B13_FLDK_R20_S0710.DAT.bz2",
+    "bytes": 3003431,
+    "sha256": "7c36ff55d9725b4babcc0d614b540a45500c0b31819ccc0c0037d911f7885740",
+    "retrievedAtUtc": "2026-11-04T14:45:12.0548106Z",
+    "status": "ok"
+  },
+  {
+    "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0720/HS_H08_20220115_0720_B13_FLDK_R20_S0810.DAT.bz2",
+    "nominalTimeUtc": "2022-01-15T07:20:00Z",
+    "file": "raw/HS_H08_20220115_0720_B13_FLDK_R20_S0810.DAT.bz2",
+    "bytes": 2790737,
+    "sha256": "ed62dffd3368e3f25e679de5e666e07144875b1c57804fb0b6b89af32b771e7c",
+    "retrievedAtUtc": "2026-11-04T14:45:04.2881518Z",
+    "status": "ok"
+  },
+  {
+    "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0730/HS_H08_20220115_0730_B13_FLDK_R20_S0710.DAT.bz2",
+    "nominalTimeUtc": "2022-01-15T07:30:00Z",
+    "file": "raw/HS_H08_20220115_0730_B13_FLDK_R20_S0710.DAT.bz2",
+    "bytes": 2999995,
+    "sha256": "4e8c1bd053590b523c1ea2cbf74b657c92dee4408ce8c857f79c32c3d5393e37",
+    "retrievedAtUtc": "2026-11-04T14:45:07.4152386Z",
+    "status": "ok"
+  },
+  {
+    "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0730/HS_H08_20220115_0730_B13_FLDK_R20_S0810.DAT.bz2",
+    "nominalTimeUtc": "2022-01-15T07:30:00Z",
+    "file": "raw/HS_H08_20220115_0730_B13_FLDK_R20_S0810.DAT.bz2",
+    "bytes": 2784452,
+    "sha256": "b269daedd57aa7c42b0e4a3e19549722f20f660b160e979d8b87ac6db12a51ea",
+    "retrievedAtUtc": "2026-11-04T14:45:11.6913695Z",
+    "status": "ok"
+  },
+  {
+    "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0740/HS_H08_20220115_0740_B13_FLDK_R20_S0710.DAT.bz2",
+    "nominalTimeUtc": "2022-01-15T07:40:00Z",
+    "file": "raw/HS_H08_20220115_0740_B13_FLDK_R20_S0710.DAT.bz2",
+    "bytes": 3000368,
+    "sha256": "96521634a2bc83b39614e6980c8a113d8a34f499f7af6e63861fd8cbac0becf9",
+    "retrievedAtUtc": "2026-11-04T14:45:09.2167581Z",
+    "status": "ok"
+  },
+  {
+    "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0740/HS_H08_20220115_0740_B13_FLDK_R20_S0810.DAT.bz2",
+    "nominalTimeUtc": "2022-01-15T07:40:00Z",
+    "file": "raw/HS_H08_20220115_0740_B13_FLDK_R20_S0810.DAT.bz2",
+    "bytes": 2776780,
+    "sha256": "65add423914f3add55e50024d0afae8c9ff41a3cba79b508220f6e794a556e15",
+    "retrievedAtUtc": "2026-11-04T14:45:18.9829663Z",
+    "status": "ok"
+  },
+  {
+    "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0750/HS_H08_20220115_0750_B13_FLDK_R20_S0710.DAT.bz2",
+    "nominalTimeUtc": "2022-01-15T07:50:00Z",
+    "file": "raw/HS_H08_20220115_0750_B13_FLDK_R20_S0710.DAT.bz2",
+    "bytes": 2993395,
+    "sha256": "1e0f7b7a83be05f8f631c27912e4e3bffaff33d3d3e59692810c2240275ae68f",
+    "retrievedAtUtc": "2026-11-04T14:45:15.7000504Z",
+    "status": "ok"
+  },
+  {
+    "sourceUrl": "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/01/15/0750/HS_H08_20220115_0750_B13_FLDK_R20_S0810.DAT.bz2",
+    "nominalTimeUtc": "2022-01-15T07:50:00Z",
+    "file": "raw/HS_H08_20220115_0750_B13_FLDK_R20_S0810.DAT.bz2",
+    "bytes": 2765932,
+    "sha256": "c3a388671ca2146538625ac5d6dbac18b7c592b8e9f5b8e03198dc006e11cd77",
+    "retrievedAtUtc": "2026-11-04T14:45:16.9511218Z",
+    "status": "ok"
+  }
+]
