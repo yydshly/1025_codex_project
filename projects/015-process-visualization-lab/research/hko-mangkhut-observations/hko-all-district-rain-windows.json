@@ -1,0 +1,3151 @@
+{
+  "records": [
+    {
+      "timeUtc": "2018-09-15T21:45:00Z",
+      "windowStartUtc": "2018-09-15T20:45:00Z",
+      "windowEndUtc": "2018-09-15T21:45:00Z",
+      "windowMinutes": 60,
+      "publishedAtUtc": "2018-09-15T22:02:00Z",
+      "sourceWindowText": "Between 4:45 and 5:45 a.m., the",
+      "districts": {
+        "Sham Shui Po": {
+          "lowerMm": 7,
+          "upperMm": 7,
+          "sourceText": "7 mm;"
+        },
+        "Kwai Tsing": {
+          "lowerMm": 4,
+          "upperMm": 7,
+          "sourceText": "4 to 7 mm;"
+        },
+        "Sha Tin": {
+          "lowerMm": 4,
+          "upperMm": 7,
+          "sourceText": "4 to 7 mm;"
+        },
+        "Yau Tsim Mong": {
+          "lowerMm": 4,
+          "upperMm": 5,
+          "sourceText": "4 to 5 mm;"
+        },
+        "Wong Tai Sin": {
+          "lowerMm": 3,
+          "upperMm": 8,
+          "sourceText": "3 to 8 mm;"
+        },
+        "Kowloon City": {
+          "lowerMm": 3,
+          "upperMm": 6,
+          "sourceText": "3 to 6 mm;"
+        },
+        "Southern District": {
+          "lowerMm": 3,
+          "upperMm": 6,
+          "sourceText": "3 to 6 mm;"
+        },
+        "Kwun Tong": {
+          "lowerMm": 3,
+          "upperMm": 4,
+          "sourceText": "3 to 4 mm;"
+        },
+        "Sai Kung": {
+          "lowerMm": 2,
+          "upperMm": 6,
+          "sourceText": "2 to 6 mm;"
+        },
+        "Tsuen Wan": {
+          "lowerMm": 2,
+          "upperMm": 5,
+          "sourceText": "2 to 5 mm;"
+        },
+        "Central & Western District": {
+          "lowerMm": 2,
+          "upperMm": 4,
+          "sourceText": "2 to 4 mm;"
+        },
+        "Eastern District": {
+          "lowerMm": 2,
+          "upperMm": 4,
+          "sourceText": "2 to 4 mm;"
+        },
+        "Wan Chai": {
+          "lowerMm": 1,
+          "upperMm": 4,
+          "sourceText": "1 to 4 mm;"
+        },
+        "Tai Po": {
+          "lowerMm": 0,
+          "upperMm": 6,
+          "sourceText": "0 to 6 mm;"
+        },
+        "Islands District": {
+          "lowerMm": 0,
+          "upperMm": 5,
+          "sourceText": "0 to 5 mm;"
+        },
+        "North District": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm;"
+        },
+        "Yuen Long": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm."
+        }
+      },
+      "sourceSnapshots": [
+        {
+          "snapshotTimestampHkt": "20180916-0615",
+          "publishedAtUtc": "2018-09-15T22:02:00Z",
+          "file": "raw-rss/20180916-0615-CurrentWeather.xml",
+          "url": "https://app.data.gov.hk/v1/historical-archive/get-file?url=https%3A%2F%2Frss.weather.gov.hk%2Frss%2FCurrentWeather.xml&time=20180916-0615",
+          "sha256": "2a3249150efe32f402e0a39eef64983c81d5cc9ad71ca34fd8e2250e1924d6d6"
+        }
+      ]
+    },
+    {
+      "timeUtc": "2018-09-15T22:45:00Z",
+      "windowStartUtc": "2018-09-15T21:45:00Z",
+      "windowEndUtc": "2018-09-15T22:45:00Z",
+      "windowMinutes": 60,
+      "publishedAtUtc": "2018-09-15T23:02:00Z",
+      "sourceWindowText": "Between 5:45 and 6:45 a.m., the",
+      "districts": {
+        "Sham Shui Po": {
+          "lowerMm": 2,
+          "upperMm": 2,
+          "sourceText": "2 mm;"
+        },
+        "Sha Tin": {
+          "lowerMm": 1,
+          "upperMm": 2,
+          "sourceText": "1 to 2 mm;"
+        },
+        "Kwai Tsing": {
+          "lowerMm": 1,
+          "upperMm": 1,
+          "sourceText": "1 mm;"
+        },
+        "Kowloon City": {
+          "lowerMm": 0,
+          "upperMm": 2,
+          "sourceText": "0 to 2 mm;"
+        },
+        "North District": {
+          "lowerMm": 0,
+          "upperMm": 2,
+          "sourceText": "0 to 2 mm;"
+        },
+        "Tai Po": {
+          "lowerMm": 0,
+          "upperMm": 2,
+          "sourceText": "0 to 2 mm;"
+        },
+        "Tsuen Wan": {
+          "lowerMm": 0,
+          "upperMm": 2,
+          "sourceText": "0 to 2 mm;"
+        },
+        "Tuen Mun": {
+          "lowerMm": 0,
+          "upperMm": 2,
+          "sourceText": "0 to 2 mm;"
+        },
+        "Yuen Long": {
+          "lowerMm": 0,
+          "upperMm": 2,
+          "sourceText": "0 to 2 mm;"
+        },
+        "Central & Western District": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm;"
+        },
+        "Eastern District": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm;"
+        },
+        "Islands District": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm;"
+        },
+        "Kwun Tong": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm;"
+        },
+        "Sai Kung": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm;"
+        },
+        "Southern District": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm;"
+        },
+        "Wong Tai Sin": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm;"
+        },
+        "Yau Tsim Mong": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm."
+        }
+      },
+      "sourceSnapshots": [
+        {
+          "snapshotTimestampHkt": "20180916-0715",
+          "publishedAtUtc": "2018-09-15T23:02:00Z",
+          "file": "raw-rss/20180916-0715-CurrentWeather.xml",
+          "url": "https://app.data.gov.hk/v1/historical-archive/get-file?url=https%3A%2F%2Frss.weather.gov.hk%2Frss%2FCurrentWeather.xml&time=20180916-0715",
+          "sha256": "03f3cfe2ec21d32193a4f3b8341b6ac51b1a36cc629af5c28e61c68d552b9027"
+        },
+        {
+          "snapshotTimestampHkt": "20180916-0800",
+          "publishedAtUtc": "2018-09-15T23:41:00Z",
+          "file": "raw-rss/20180916-0800-CurrentWeather.xml",
+          "url": "https://app.data.gov.hk/v1/historical-archive/get-file?url=https%3A%2F%2Frss.weather.gov.hk%2Frss%2FCurrentWeather.xml&time=20180916-0800",
+          "sha256": "f6ff56f6f430580ca578965e7f6be2f7fe308094345b97e5db06ca9c0ddbe9cd"
+        }
+      ]
+    },
+    {
+      "timeUtc": "2018-09-15T23:45:00Z",
+      "windowStartUtc": "2018-09-15T22:45:00Z",
+      "windowEndUtc": "2018-09-15T23:45:00Z",
+      "windowMinutes": 60,
+      "publishedAtUtc": "2018-09-16T00:02:00Z",
+      "sourceWindowText": "Between 6:45 and 7:45 a.m., the",
+      "districts": {
+        "Yau Tsim Mong": {
+          "lowerMm": 9,
+          "upperMm": 10,
+          "sourceText": "9 to 10 mm;"
+        },
+        "Sai Kung": {
+          "lowerMm": 8,
+          "upperMm": 12,
+          "sourceText": "8 to 12 mm;"
+        },
+        "Sham Shui Po": {
+          "lowerMm": 8,
+          "upperMm": 12,
+          "sourceText": "8 to 12 mm;"
+        },
+        "Southern District": {
+          "lowerMm": 8,
+          "upperMm": 12,
+          "sourceText": "8 to 12 mm;"
+        },
+        "Wan Chai": {
+          "lowerMm": 8,
+          "upperMm": 10,
+          "sourceText": "8 to 10 mm;"
+        },
+        "Eastern District": {
+          "lowerMm": 5,
+          "upperMm": 11,
+          "sourceText": "5 to 11 mm;"
+        },
+        "Kwai Tsing": {
+          "lowerMm": 4,
+          "upperMm": 8,
+          "sourceText": "4 to 8 mm;"
+        },
+        "Sha Tin": {
+          "lowerMm": 4,
+          "upperMm": 8,
+          "sourceText": "4 to 8 mm;"
+        },
+        "Wong Tai Sin": {
+          "lowerMm": 4,
+          "upperMm": 14,
+          "sourceText": "4 to 14 mm;"
+        },
+        "Central & Western District": {
+          "lowerMm": 4,
+          "upperMm": 11,
+          "sourceText": "4 to 11 mm;"
+        },
+        "Tsuen Wan": {
+          "lowerMm": 3,
+          "upperMm": 6,
+          "sourceText": "3 to 6 mm;"
+        },
+        "North District": {
+          "lowerMm": 2,
+          "upperMm": 5,
+          "sourceText": "2 to 5 mm;"
+        },
+        "Kwun Tong": {
+          "lowerMm": 12,
+          "upperMm": 14,
+          "sourceText": "12 to 14 mm;"
+        },
+        "Kowloon City": {
+          "lowerMm": 10,
+          "upperMm": 11,
+          "sourceText": "10 to 11 mm;"
+        },
+        "Yuen Long": {
+          "lowerMm": 1,
+          "upperMm": 4,
+          "sourceText": "1 to 4 mm;"
+        },
+        "Tuen Mun": {
+          "lowerMm": 1,
+          "upperMm": 2,
+          "sourceText": "1 to 2 mm;"
+        },
+        "Islands District": {
+          "lowerMm": 0,
+          "upperMm": 9,
+          "sourceText": "0 to 9 mm;"
+        },
+        "Tai Po": {
+          "lowerMm": 0,
+          "upperMm": 8,
+          "sourceText": "0 to 8 mm."
+        }
+      },
+      "sourceSnapshots": [
+        {
+          "snapshotTimestampHkt": "20180916-0815",
+          "publishedAtUtc": "2018-09-16T00:02:00Z",
+          "file": "raw-rss/20180916-0815-CurrentWeather.xml",
+          "url": "https://app.data.gov.hk/v1/historical-archive/get-file?url=https%3A%2F%2Frss.weather.gov.hk%2Frss%2FCurrentWeather.xml&time=20180916-0815",
+          "sha256": "de7b8c92634d1920d411bdf782dec2ccdb0d4d9bc0cbf6e0ce075516c830a2cb"
+        }
+      ]
+    },
+    {
+      "timeUtc": "2018-09-16T00:45:00Z",
+      "windowStartUtc": "2018-09-15T23:45:00Z",
+      "windowEndUtc": "2018-09-16T00:45:00Z",
+      "windowMinutes": 60,
+      "publishedAtUtc": "2018-09-16T01:11:00Z",
+      "sourceWindowText": "Between 7:45 and 8:45 a.m., the",
+      "districts": {
+        "Wong Tai Sin": {
+          "lowerMm": 9,
+          "upperMm": 26,
+          "sourceText": "9 to 26 mm;"
+        },
+        "North District": {
+          "lowerMm": 8,
+          "upperMm": 20,
+          "sourceText": "8 to 20 mm;"
+        },
+        "Islands District": {
+          "lowerMm": 7,
+          "upperMm": 24,
+          "sourceText": "7 to 24 mm;"
+        },
+        "Tuen Mun": {
+          "lowerMm": 6,
+          "upperMm": 16,
+          "sourceText": "6 to 16 mm;"
+        },
+        "Eastern District": {
+          "lowerMm": 5,
+          "upperMm": 12,
+          "sourceText": "5 to 12 mm;"
+        },
+        "Sai Kung": {
+          "lowerMm": 4,
+          "upperMm": 24,
+          "sourceText": "4 to 24 mm;"
+        },
+        "Central & Western District": {
+          "lowerMm": 4,
+          "upperMm": 14,
+          "sourceText": "4 to 14 mm;"
+        },
+        "Sham Shui Po": {
+          "lowerMm": 24,
+          "upperMm": 26,
+          "sourceText": "24 to 26 mm;"
+        },
+        "Kwai Tsing": {
+          "lowerMm": 19,
+          "upperMm": 26,
+          "sourceText": "19 to 26 mm;"
+        },
+        "Sha Tin": {
+          "lowerMm": 18,
+          "upperMm": 31,
+          "sourceText": "18 to 31 mm;"
+        },
+        "Yau Tsim Mong": {
+          "lowerMm": 16,
+          "upperMm": 17,
+          "sourceText": "16 to 17 mm;"
+        },
+        "Tsuen Wan": {
+          "lowerMm": 13,
+          "upperMm": 24,
+          "sourceText": "13 to 24 mm;"
+        },
+        "Kowloon City": {
+          "lowerMm": 12,
+          "upperMm": 20,
+          "sourceText": "12 to 20 mm;"
+        },
+        "Kwun Tong": {
+          "lowerMm": 12,
+          "upperMm": 19,
+          "sourceText": "12 to 19 mm;"
+        },
+        "Wan Chai": {
+          "lowerMm": 11,
+          "upperMm": 13,
+          "sourceText": "11 to 13 mm;"
+        },
+        "Yuen Long": {
+          "lowerMm": 10,
+          "upperMm": 18,
+          "sourceText": "10 to 18 mm;"
+        },
+        "Southern District": {
+          "lowerMm": 10,
+          "upperMm": 15,
+          "sourceText": "10 to 15 mm;"
+        },
+        "Tai Po": {
+          "lowerMm": 0,
+          "upperMm": 24,
+          "sourceText": "0 to 24 mm."
+        }
+      },
+      "sourceSnapshots": [
+        {
+          "snapshotTimestampHkt": "20180916-0915",
+          "publishedAtUtc": "2018-09-16T01:11:00Z",
+          "file": "raw-rss/20180916-0915-CurrentWeather.xml",
+          "url": "https://app.data.gov.hk/v1/historical-archive/get-file?url=https%3A%2F%2Frss.weather.gov.hk%2Frss%2FCurrentWeather.xml&time=20180916-0915",
+          "sha256": "34861e31bfb240c9d59ff2e232bc33f8b747e2baf2dc1bd2c9e4d48e9e6b529b"
+        },
+        {
+          "snapshotTimestampHkt": "20180916-0945",
+          "publishedAtUtc": "2018-09-16T01:41:00Z",
+          "file": "raw-rss/20180916-0945-CurrentWeather.xml",
+          "url": "https://app.data.gov.hk/v1/historical-archive/get-file?url=https%3A%2F%2Frss.weather.gov.hk%2Frss%2FCurrentWeather.xml&time=20180916-0945",
+          "sha256": "ad38b0379c26528dcac4314afe1d46d87e3a937baf9e4a48e1b4ddc34630457d"
+        }
+      ]
+    },
+    {
+      "timeUtc": "2018-09-16T01:45:00Z",
+      "windowStartUtc": "2018-09-16T00:45:00Z",
+      "windowEndUtc": "2018-09-16T01:45:00Z",
+      "windowMinutes": 60,
+      "publishedAtUtc": "2018-09-16T02:02:00Z",
+      "sourceWindowText": "Between 8:45 and 9:45 a.m., the",
+      "districts": {
+        "Kwun Tong": {
+          "lowerMm": 8,
+          "upperMm": 11,
+          "sourceText": "8 to 11 mm;"
+        },
+        "Tuen Mun": {
+          "lowerMm": 7,
+          "upperMm": 17,
+          "sourceText": "7 to 17 mm;"
+        },
+        "Kowloon City": {
+          "lowerMm": 7,
+          "upperMm": 16,
+          "sourceText": "7 to 16 mm;"
+        },
+        "Wan Chai": {
+          "lowerMm": 7,
+          "upperMm": 11,
+          "sourceText": "7 to 11 mm;"
+        },
+        "Wong Tai Sin": {
+          "lowerMm": 6,
+          "upperMm": 18,
+          "sourceText": "6 to 18 mm;"
+        },
+        "Southern District": {
+          "lowerMm": 6,
+          "upperMm": 12,
+          "sourceText": "6 to 12 mm;"
+        },
+        "Islands District": {
+          "lowerMm": 5,
+          "upperMm": 44,
+          "sourceText": "5 to 44 mm;"
+        },
+        "Eastern District": {
+          "lowerMm": 4,
+          "upperMm": 9,
+          "sourceText": "4 to 9 mm;"
+        },
+        "North District": {
+          "lowerMm": 4,
+          "upperMm": 19,
+          "sourceText": "4 to 19 mm;"
+        },
+        "Central & Western District": {
+          "lowerMm": 4,
+          "upperMm": 15,
+          "sourceText": "4 to 15 mm;"
+        },
+        "Sai Kung": {
+          "lowerMm": 3,
+          "upperMm": 12,
+          "sourceText": "3 to 12 mm;"
+        },
+        "Kwai Tsing": {
+          "lowerMm": 26,
+          "upperMm": 29,
+          "sourceText": "26 to 29 mm;"
+        },
+        "Sham Shui Po": {
+          "lowerMm": 21,
+          "upperMm": 24,
+          "sourceText": "21 to 24 mm;"
+        },
+        "Sha Tin": {
+          "lowerMm": 15,
+          "upperMm": 30,
+          "sourceText": "15 to 30 mm;"
+        },
+        "Tsuen Wan": {
+          "lowerMm": 11,
+          "upperMm": 33,
+          "sourceText": "11 to 33 mm;"
+        },
+        "Yuen Long": {
+          "lowerMm": 11,
+          "upperMm": 19,
+          "sourceText": "11 to 19 mm;"
+        },
+        "Yau Tsim Mong": {
+          "lowerMm": 10,
+          "upperMm": 11,
+          "sourceText": "10 to 11 mm;"
+        },
+        "Tai Po": {
+          "lowerMm": 0,
+          "upperMm": 21,
+          "sourceText": "0 to 21 mm."
+        }
+      },
+      "sourceSnapshots": [
+        {
+          "snapshotTimestampHkt": "20180916-1015",
+          "publishedAtUtc": "2018-09-16T02:02:00Z",
+          "file": "raw-rss/20180916-1015-CurrentWeather.xml",
+          "url": "https://app.data.gov.hk/v1/historical-archive/get-file?url=https%3A%2F%2Frss.weather.gov.hk%2Frss%2FCurrentWeather.xml&time=20180916-1015",
+          "sha256": "7a99629a871e2918645bc1441dbc2c22e940d96b05d8ad7bc65c2bbe4fbbcbce"
+        },
+        {
+          "snapshotTimestampHkt": "20180916-1100",
+          "publishedAtUtc": "2018-09-16T02:56:00Z",
+          "file": "raw-rss/20180916-1100-CurrentWeather.xml",
+          "url": "https://app.data.gov.hk/v1/historical-archive/get-file?url=https%3A%2F%2Frss.weather.gov.hk%2Frss%2FCurrentWeather.xml&time=20180916-1100",
+          "sha256": "5da9e3fe971c0dfb1392d3dbb35bf7f4f7ef0637abc18ddc47508bf64c3203c3"
+        }
+      ]
+    },
+    {
+      "timeUtc": "2018-09-16T02:45:00Z",
+      "windowStartUtc": "2018-09-16T01:45:00Z",
+      "windowEndUtc": "2018-09-16T02:45:00Z",
+      "windowMinutes": 60,
+      "publishedAtUtc": "2018-09-16T03:02:00Z",
+      "sourceWindowText": "Between 9:45 and 10:45 a.m., the",
+      "districts": {
+        "Sai Kung": {
+          "lowerMm": 9,
+          "upperMm": 32,
+          "sourceText": "9 to 32 mm;"
+        },
+        "Central & Western District": {
+          "lowerMm": 8,
+          "upperMm": 35,
+          "sourceText": "8 to 35 mm;"
+        },
+        "Sham Shui Po": {
+          "lowerMm": 43,
+          "upperMm": 46,
+          "sourceText": "43 to 46 mm;"
+        },
+        "Kwai Tsing": {
+          "lowerMm": 37,
+          "upperMm": 52,
+          "sourceText": "37 to 52 mm;"
+        },
+        "Kwun Tong": {
+          "lowerMm": 27,
+          "upperMm": 32,
+          "sourceText": "27 to 32 mm;"
+        },
+        "Wan Chai": {
+          "lowerMm": 25,
+          "upperMm": 32,
+          "sourceText": "25 to 32 mm;"
+        },
+        "Kowloon City": {
+          "lowerMm": 23,
+          "upperMm": 41,
+          "sourceText": "23 to 41 mm;"
+        },
+        "Yau Tsim Mong": {
+          "lowerMm": 23,
+          "upperMm": 35,
+          "sourceText": "23 to 35 mm;"
+        },
+        "Tai Po": {
+          "lowerMm": 15,
+          "upperMm": 39,
+          "sourceText": "15 to 39 mm;"
+        },
+        "Tuen Mun": {
+          "lowerMm": 14,
+          "upperMm": 38,
+          "sourceText": "14 to 38 mm;"
+        },
+        "Wong Tai Sin": {
+          "lowerMm": 14,
+          "upperMm": 37,
+          "sourceText": "14 to 37 mm;"
+        },
+        "Yuen Long": {
+          "lowerMm": 14,
+          "upperMm": 37,
+          "sourceText": "14 to 37 mm;"
+        },
+        "North District": {
+          "lowerMm": 12,
+          "upperMm": 27,
+          "sourceText": "12 to 27 mm;"
+        },
+        "Tsuen Wan": {
+          "lowerMm": 11,
+          "upperMm": 51,
+          "sourceText": "11 to 51 mm;"
+        },
+        "Sha Tin": {
+          "lowerMm": 11,
+          "upperMm": 49,
+          "sourceText": "11 to 49 mm;"
+        },
+        "Eastern District": {
+          "lowerMm": 11,
+          "upperMm": 31,
+          "sourceText": "11 to 31 mm;"
+        },
+        "Southern District": {
+          "lowerMm": 11,
+          "upperMm": 30,
+          "sourceText": "11 to 30 mm;"
+        },
+        "Islands District": {
+          "lowerMm": 10,
+          "upperMm": 47,
+          "sourceText": "10 to 47 mm."
+        }
+      },
+      "sourceSnapshots": [
+        {
+          "snapshotTimestampHkt": "20180916-1115",
+          "publishedAtUtc": "2018-09-16T03:02:00Z",
+          "file": "raw-rss/20180916-1115-CurrentWeather.xml",
+          "url": "https://app.data.gov.hk/v1/historical-archive/get-file?url=https%3A%2F%2Frss.weather.gov.hk%2Frss%2FCurrentWeather.xml&time=20180916-1115",
+          "sha256": "b4e84edcca9d50f13ba16c521675bc3051befe86f9cee52bd2e1df0952fa22dc"
+        },
+        {
+          "snapshotTimestampHkt": "20180916-1145",
+          "publishedAtUtc": "2018-09-16T03:26:00Z",
+          "file": "raw-rss/20180916-1145-CurrentWeather.xml",
+          "url": "https://app.data.gov.hk/v1/historical-archive/get-file?url=https%3A%2F%2Frss.weather.gov.hk%2Frss%2FCurrentWeather.xml&time=20180916-1145",
+          "sha256": "3262e04e8d161964f9887f9e3642b61e0797bb7f2f9b45ddf02426e753d1bd88"
+        }
+      ]
+    },
+    {
+      "timeUtc": "2018-09-16T03:45:00Z",
+      "windowStartUtc": "2018-09-16T02:45:00Z",
+      "windowEndUtc": "2018-09-16T03:45:00Z",
+      "windowMinutes": 60,
+      "publishedAtUtc": "2018-09-16T04:02:00Z",
+      "sourceWindowText": "Between 10:45 and 11:45 a.m., the",
+      "districts": {
+        "Sha Tin": {
+          "lowerMm": 8,
+          "upperMm": 33,
+          "sourceText": "8 to 33 mm;"
+        },
+        "Eastern District": {
+          "lowerMm": 7,
+          "upperMm": 42,
+          "sourceText": "7 to 42 mm;"
+        },
+        "Central & Western District": {
+          "lowerMm": 7,
+          "upperMm": 39,
+          "sourceText": "7 to 39 mm;"
+        },
+        "Southern District": {
+          "lowerMm": 6,
+          "upperMm": 35,
+          "sourceText": "6 to 35 mm;"
+        },
+        "Islands District": {
+          "lowerMm": 4,
+          "upperMm": 48,
+          "sourceText": "4 to 48 mm;"
+        },
+        "Sai Kung": {
+          "lowerMm": 4,
+          "upperMm": 31,
+          "sourceText": "4 to 31 mm;"
+        },
+        "Sham Shui Po": {
+          "lowerMm": 32,
+          "upperMm": 37,
+          "sourceText": "32 to 37 mm;"
+        },
+        "Wan Chai": {
+          "lowerMm": 26,
+          "upperMm": 27,
+          "sourceText": "26 to 27 mm;"
+        },
+        "Yuen Long": {
+          "lowerMm": 23,
+          "upperMm": 46,
+          "sourceText": "23 to 46 mm;"
+        },
+        "Kowloon City": {
+          "lowerMm": 21,
+          "upperMm": 32,
+          "sourceText": "21 to 32 mm;"
+        },
+        "Yau Tsim Mong": {
+          "lowerMm": 20,
+          "upperMm": 29,
+          "sourceText": "20 to 29 mm;"
+        },
+        "Kwai Tsing": {
+          "lowerMm": 19,
+          "upperMm": 35,
+          "sourceText": "19 to 35 mm;"
+        },
+        "Kwun Tong": {
+          "lowerMm": 18,
+          "upperMm": 31,
+          "sourceText": "18 to 31 mm;"
+        },
+        "Tsuen Wan": {
+          "lowerMm": 16,
+          "upperMm": 60,
+          "sourceText": "16 to 60 mm;"
+        },
+        "Tuen Mun": {
+          "lowerMm": 16,
+          "upperMm": 49,
+          "sourceText": "16 to 49 mm;"
+        },
+        "Wong Tai Sin": {
+          "lowerMm": 13,
+          "upperMm": 32,
+          "sourceText": "13 to 32 mm;"
+        },
+        "Tai Po": {
+          "lowerMm": 13,
+          "upperMm": 29,
+          "sourceText": "13 to 29 mm;"
+        },
+        "North District": {
+          "lowerMm": 10,
+          "upperMm": 42,
+          "sourceText": "10 to 42 mm."
+        }
+      },
+      "sourceSnapshots": [
+        {
+          "snapshotTimestampHkt": "20180916-1215",
+          "publishedAtUtc": "2018-09-16T04:02:00Z",
+          "file": "raw-rss/20180916-1215-CurrentWeather.xml",
+          "url": "https://app.data.gov.hk/v1/historical-archive/get-file?url=https%3A%2F%2Frss.weather.gov.hk%2Frss%2FCurrentWeather.xml&time=20180916-1215",
+          "sha256": "6e45df3eaa4f11887ca61fb79396c17fe90ac9bf6161303da3831c7afb476dae"
+        }
+      ]
+    },
+    {
+      "timeUtc": "2018-09-16T04:45:00Z",
+      "windowStartUtc": "2018-09-16T03:45:00Z",
+      "windowEndUtc": "2018-09-16T04:45:00Z",
+      "windowMinutes": 60,
+      "publishedAtUtc": "2018-09-16T05:02:00Z",
+      "sourceWindowText": "Between 11:45 a.m. and 12:45 p.m., the",
+      "districts": {
+        "Tuen Mun": {
+          "lowerMm": 9,
+          "upperMm": 44,
+          "sourceText": "9 to 44 mm;"
+        },
+        "Yuen Long": {
+          "lowerMm": 9,
+          "upperMm": 38,
+          "sourceText": "9 to 38 mm;"
+        },
+        "Tsuen Wan": {
+          "lowerMm": 8,
+          "upperMm": 32,
+          "sourceText": "8 to 32 mm;"
+        },
+        "Southern District": {
+          "lowerMm": 7,
+          "upperMm": 22,
+          "sourceText": "7 to 22 mm;"
+        },
+        "Wong Tai Sin": {
+          "lowerMm": 7,
+          "upperMm": 16,
+          "sourceText": "7 to 16 mm;"
+        },
+        "Yau Tsim Mong": {
+          "lowerMm": 7,
+          "upperMm": 16,
+          "sourceText": "7 to 16 mm;"
+        },
+        "North District": {
+          "lowerMm": 6,
+          "upperMm": 23,
+          "sourceText": "6 to 23 mm;"
+        },
+        "Tai Po": {
+          "lowerMm": 6,
+          "upperMm": 20,
+          "sourceText": "6 to 20 mm;"
+        },
+        "Kwun Tong": {
+          "lowerMm": 6,
+          "upperMm": 14,
+          "sourceText": "6 to 14 mm;"
+        },
+        "Sha Tin": {
+          "lowerMm": 5,
+          "upperMm": 19,
+          "sourceText": "5 to 19 mm;"
+        },
+        "Central & Western District": {
+          "lowerMm": 4,
+          "upperMm": 22,
+          "sourceText": "4 to 22 mm;"
+        },
+        "Eastern District": {
+          "lowerMm": 2,
+          "upperMm": 48,
+          "sourceText": "2 to 48 mm;"
+        },
+        "Sham Shui Po": {
+          "lowerMm": 15,
+          "upperMm": 20,
+          "sourceText": "15 to 20 mm;"
+        },
+        "Wan Chai": {
+          "lowerMm": 13,
+          "upperMm": 16,
+          "sourceText": "13 to 16 mm;"
+        },
+        "Kwai Tsing": {
+          "lowerMm": 11,
+          "upperMm": 25,
+          "sourceText": "11 to 25 mm;"
+        },
+        "Kowloon City": {
+          "lowerMm": 10,
+          "upperMm": 17,
+          "sourceText": "10 to 17 mm;"
+        },
+        "Islands District": {
+          "lowerMm": 1,
+          "upperMm": 26,
+          "sourceText": "1 to 26 mm;"
+        },
+        "Sai Kung": {
+          "lowerMm": 0,
+          "upperMm": 14,
+          "sourceText": "0 to 14 mm."
+        }
+      },
+      "sourceSnapshots": [
+        {
+          "snapshotTimestampHkt": "20180916-1315",
+          "publishedAtUtc": "2018-09-16T05:02:00Z",
+          "file": "raw-rss/20180916-1315-CurrentWeather.xml",
+          "url": "https://app.data.gov.hk/v1/historical-archive/get-file?url=https%3A%2F%2Frss.weather.gov.hk%2Frss%2FCurrentWeather.xml&time=20180916-1315",
+          "sha256": "acb556c977a38a7a51c3f7a21be416a1bccb8e70faca20277387c9639d6dd309"
+        }
+      ]
+    },
+    {
+      "timeUtc": "2018-09-16T05:45:00Z",
+      "windowStartUtc": "2018-09-16T04:45:00Z",
+      "windowEndUtc": "2018-09-16T05:45:00Z",
+      "windowMinutes": 60,
+      "publishedAtUtc": "2018-09-16T06:02:00Z",
+      "sourceWindowText": "Between 12:45 and 1:45 p.m., the",
+      "districts": {
+        "Tuen Mun": {
+          "lowerMm": 8,
+          "upperMm": 23,
+          "sourceText": "8 to 23 mm;"
+        },
+        "Yau Tsim Mong": {
+          "lowerMm": 7,
+          "upperMm": 13,
+          "sourceText": "7 to 13 mm;"
+        },
+        "Central & Western District": {
+          "lowerMm": 6,
+          "upperMm": 21,
+          "sourceText": "6 to 21 mm;"
+        },
+        "Kwai Tsing": {
+          "lowerMm": 6,
+          "upperMm": 20,
+          "sourceText": "6 to 20 mm;"
+        },
+        "Southern District": {
+          "lowerMm": 6,
+          "upperMm": 16,
+          "sourceText": "6 to 16 mm;"
+        },
+        "Wong Tai Sin": {
+          "lowerMm": 6,
+          "upperMm": 15,
+          "sourceText": "6 to 15 mm;"
+        },
+        "Kowloon City": {
+          "lowerMm": 6,
+          "upperMm": 13,
+          "sourceText": "6 to 13 mm;"
+        },
+        "Yuen Long": {
+          "lowerMm": 5,
+          "upperMm": 31,
+          "sourceText": "5 to 31 mm;"
+        },
+        "Tsuen Wan": {
+          "lowerMm": 5,
+          "upperMm": 25,
+          "sourceText": "5 to 25 mm;"
+        },
+        "Kwun Tong": {
+          "lowerMm": 4,
+          "upperMm": 10,
+          "sourceText": "4 to 10 mm;"
+        },
+        "Sha Tin": {
+          "lowerMm": 3,
+          "upperMm": 19,
+          "sourceText": "3 to 19 mm;"
+        },
+        "North District": {
+          "lowerMm": 3,
+          "upperMm": 13,
+          "sourceText": "3 to 13 mm;"
+        },
+        "Islands District": {
+          "lowerMm": 2,
+          "upperMm": 38,
+          "sourceText": "2 to 38 mm;"
+        },
+        "Tai Po": {
+          "lowerMm": 2,
+          "upperMm": 12,
+          "sourceText": "2 to 12 mm;"
+        },
+        "Sham Shui Po": {
+          "lowerMm": 14,
+          "upperMm": 17,
+          "sourceText": "14 to 17 mm;"
+        },
+        "Wan Chai": {
+          "lowerMm": 11,
+          "upperMm": 16,
+          "sourceText": "11 to 16 mm;"
+        },
+        "Eastern District": {
+          "lowerMm": 1,
+          "upperMm": 11,
+          "sourceText": "1 to 11 mm;"
+        },
+        "Sai Kung": {
+          "lowerMm": 0,
+          "upperMm": 7,
+          "sourceText": "0 to 7 mm."
+        }
+      },
+      "sourceSnapshots": [
+        {
+          "snapshotTimestampHkt": "20180916-1415",
+          "publishedAtUtc": "2018-09-16T06:02:00Z",
+          "file": "raw-rss/20180916-1415-CurrentWeather.xml",
+          "url": "https://app.data.gov.hk/v1/historical-archive/get-file?url=https%3A%2F%2Frss.weather.gov.hk%2Frss%2FCurrentWeather.xml&time=20180916-1415",
+          "sha256": "770d9c79670781608c851d8ead1e2143d76bd854844c3e919dd0135bca339b45"
+        },
+        {
+          "snapshotTimestampHkt": "20180916-1431",
+          "publishedAtUtc": "2018-09-16T06:21:00Z",
+          "file": "raw-rss/20180916-1431-CurrentWeather.xml",
+          "url": "https://app.data.gov.hk/v1/historical-archive/get-file?url=https%3A%2F%2Frss.weather.gov.hk%2Frss%2FCurrentWeather.xml&time=20180916-1431",
+          "sha256": "71d9008c5234d4228b8d28d6063d2a12409b6588eacbef156e2a4a9035206da1"
+        }
+      ]
+    },
+    {
+      "timeUtc": "2018-09-16T06:45:00Z",
+      "windowStartUtc": "2018-09-16T05:45:00Z",
+      "windowEndUtc": "2018-09-16T06:45:00Z",
+      "windowMinutes": 60,
+      "publishedAtUtc": "2018-09-16T07:02:00Z",
+      "sourceWindowText": "Between 1:45 and 2:45 p.m., the",
+      "districts": {
+        "Wan Chai": {
+          "lowerMm": 8,
+          "upperMm": 14,
+          "sourceText": "8 to 14 mm;"
+        },
+        "Kowloon City": {
+          "lowerMm": 8,
+          "upperMm": 13,
+          "sourceText": "8 to 13 mm;"
+        },
+        "Tsuen Wan": {
+          "lowerMm": 7,
+          "upperMm": 30,
+          "sourceText": "7 to 30 mm;"
+        },
+        "Tuen Mun": {
+          "lowerMm": 7,
+          "upperMm": 16,
+          "sourceText": "7 to 16 mm;"
+        },
+        "Kwun Tong": {
+          "lowerMm": 7,
+          "upperMm": 14,
+          "sourceText": "7 to 14 mm;"
+        },
+        "Yau Tsim Mong": {
+          "lowerMm": 7,
+          "upperMm": 12,
+          "sourceText": "7 to 12 mm;"
+        },
+        "Central & Western District": {
+          "lowerMm": 6,
+          "upperMm": 16,
+          "sourceText": "6 to 16 mm;"
+        },
+        "Yuen Long": {
+          "lowerMm": 5,
+          "upperMm": 27,
+          "sourceText": "5 to 27 mm;"
+        },
+        "Sha Tin": {
+          "lowerMm": 4,
+          "upperMm": 19,
+          "sourceText": "4 to 19 mm;"
+        },
+        "Kwai Tsing": {
+          "lowerMm": 4,
+          "upperMm": 16,
+          "sourceText": "4 to 16 mm;"
+        },
+        "Southern District": {
+          "lowerMm": 4,
+          "upperMm": 12,
+          "sourceText": "4 to 12 mm;"
+        },
+        "Tai Po": {
+          "lowerMm": 3,
+          "upperMm": 15,
+          "sourceText": "3 to 15 mm;"
+        },
+        "Eastern District": {
+          "lowerMm": 3,
+          "upperMm": 12,
+          "sourceText": "3 to 12 mm;"
+        },
+        "Islands District": {
+          "lowerMm": 2,
+          "upperMm": 40,
+          "sourceText": "2 to 40 mm;"
+        },
+        "Sai Kung": {
+          "lowerMm": 2,
+          "upperMm": 11,
+          "sourceText": "2 to 11 mm;"
+        },
+        "Wong Tai Sin": {
+          "lowerMm": 12,
+          "upperMm": 16,
+          "sourceText": "12 to 16 mm;"
+        },
+        "Sham Shui Po": {
+          "lowerMm": 12,
+          "upperMm": 15,
+          "sourceText": "12 to 15 mm;"
+        },
+        "North District": {
+          "lowerMm": 1,
+          "upperMm": 20,
+          "sourceText": "1 to 20 mm."
+        }
+      },
+      "sourceSnapshots": [
+        {
+          "snapshotTimestampHkt": "20180916-1515",
+          "publishedAtUtc": "2018-09-16T07:02:00Z",
+          "file": "raw-rss/20180916-1515-CurrentWeather.xml",
+          "url": "https://app.data.gov.hk/v1/historical-archive/get-file?url=https%3A%2F%2Frss.weather.gov.hk%2Frss%2FCurrentWeather.xml&time=20180916-1515",
+          "sha256": "d1871f79deb785bebfc3ef17e340d2217eda0505307b534f1a5609b2a790cd43"
+        }
+      ]
+    },
+    {
+      "timeUtc": "2018-09-16T07:45:00Z",
+      "windowStartUtc": "2018-09-16T06:45:00Z",
+      "windowEndUtc": "2018-09-16T07:45:00Z",
+      "windowMinutes": 60,
+      "publishedAtUtc": "2018-09-16T08:02:00Z",
+      "sourceWindowText": "Between 2:45 and 3:45 p.m., the",
+      "districts": {
+        "Sham Shui Po": {
+          "lowerMm": 7,
+          "upperMm": 9,
+          "sourceText": "7 to 9 mm;"
+        },
+        "Sha Tin": {
+          "lowerMm": 7,
+          "upperMm": 18,
+          "sourceText": "7 to 18 mm;"
+        },
+        "Yau Tsim Mong": {
+          "lowerMm": 6,
+          "upperMm": 8,
+          "sourceText": "6 to 8 mm;"
+        },
+        "Wan Chai": {
+          "lowerMm": 5,
+          "upperMm": 7,
+          "sourceText": "5 to 7 mm;"
+        },
+        "Wong Tai Sin": {
+          "lowerMm": 4,
+          "upperMm": 8,
+          "sourceText": "4 to 8 mm;"
+        },
+        "Tuen Mun": {
+          "lowerMm": 3,
+          "upperMm": 9,
+          "sourceText": "3 to 9 mm;"
+        },
+        "Kowloon City": {
+          "lowerMm": 3,
+          "upperMm": 6,
+          "sourceText": "3 to 6 mm;"
+        },
+        "Kwun Tong": {
+          "lowerMm": 3,
+          "upperMm": 6,
+          "sourceText": "3 to 6 mm;"
+        },
+        "Tai Po": {
+          "lowerMm": 3,
+          "upperMm": 13,
+          "sourceText": "3 to 13 mm;"
+        },
+        "Kwai Tsing": {
+          "lowerMm": 3,
+          "upperMm": 11,
+          "sourceText": "3 to 11 mm;"
+        },
+        "Central & Western District": {
+          "lowerMm": 2,
+          "upperMm": 7,
+          "sourceText": "2 to 7 mm;"
+        },
+        "Eastern District": {
+          "lowerMm": 2,
+          "upperMm": 7,
+          "sourceText": "2 to 7 mm;"
+        },
+        "Tsuen Wan": {
+          "lowerMm": 2,
+          "upperMm": 14,
+          "sourceText": "2 to 14 mm;"
+        },
+        "Southern District": {
+          "lowerMm": 1,
+          "upperMm": 4,
+          "sourceText": "1 to 4 mm;"
+        },
+        "North District": {
+          "lowerMm": 1,
+          "upperMm": 23,
+          "sourceText": "1 to 23 mm;"
+        },
+        "Sai Kung": {
+          "lowerMm": 1,
+          "upperMm": 10,
+          "sourceText": "1 to 10 mm;"
+        },
+        "Islands District": {
+          "lowerMm": 0,
+          "upperMm": 24,
+          "sourceText": "0 to 24 mm;"
+        },
+        "Yuen Long": {
+          "lowerMm": 0,
+          "upperMm": 18,
+          "sourceText": "0 to 18 mm."
+        }
+      },
+      "sourceSnapshots": [
+        {
+          "snapshotTimestampHkt": "20180916-1615",
+          "publishedAtUtc": "2018-09-16T08:02:00Z",
+          "file": "raw-rss/20180916-1615-CurrentWeather.xml",
+          "url": "https://app.data.gov.hk/v1/historical-archive/get-file?url=https%3A%2F%2Frss.weather.gov.hk%2Frss%2FCurrentWeather.xml&time=20180916-1615",
+          "sha256": "2388851fe96b8710fa670fe18761ab508a519a55e1c4d81680755ecf5b71c4ca"
+        }
+      ]
+    },
+    {
+      "timeUtc": "2018-09-16T08:45:00Z",
+      "windowStartUtc": "2018-09-16T07:45:00Z",
+      "windowEndUtc": "2018-09-16T08:45:00Z",
+      "windowMinutes": 60,
+      "publishedAtUtc": "2018-09-16T09:02:00Z",
+      "sourceWindowText": "Between 3:45 and 4:45 p.m., the",
+      "districts": {
+        "North District": {
+          "lowerMm": 7,
+          "upperMm": 16,
+          "sourceText": "7 to 16 mm;"
+        },
+        "Sham Shui Po": {
+          "lowerMm": 6,
+          "upperMm": 7,
+          "sourceText": "6 to 7 mm;"
+        },
+        "Sha Tin": {
+          "lowerMm": 6,
+          "upperMm": 12,
+          "sourceText": "6 to 12 mm;"
+        },
+        "Tuen Mun": {
+          "lowerMm": 5,
+          "upperMm": 13,
+          "sourceText": "5 to 13 mm;"
+        },
+        "Yau Tsim Mong": {
+          "lowerMm": 4,
+          "upperMm": 7,
+          "sourceText": "4 to 7 mm;"
+        },
+        "Kwun Tong": {
+          "lowerMm": 4,
+          "upperMm": 6,
+          "sourceText": "4 to 6 mm;"
+        },
+        "Wong Tai Sin": {
+          "lowerMm": 3,
+          "upperMm": 6,
+          "sourceText": "3 to 6 mm;"
+        },
+        "Tsuen Wan": {
+          "lowerMm": 3,
+          "upperMm": 13,
+          "sourceText": "3 to 13 mm;"
+        },
+        "Kwai Tsing": {
+          "lowerMm": 2,
+          "upperMm": 9,
+          "sourceText": "2 to 9 mm;"
+        },
+        "Eastern District": {
+          "lowerMm": 2,
+          "upperMm": 6,
+          "sourceText": "2 to 6 mm;"
+        },
+        "Kowloon City": {
+          "lowerMm": 2,
+          "upperMm": 5,
+          "sourceText": "2 to 5 mm;"
+        },
+        "Wan Chai": {
+          "lowerMm": 2,
+          "upperMm": 4,
+          "sourceText": "2 to 4 mm;"
+        },
+        "Yuen Long": {
+          "lowerMm": 2,
+          "upperMm": 14,
+          "sourceText": "2 to 14 mm;"
+        },
+        "Tai Po": {
+          "lowerMm": 2,
+          "upperMm": 13,
+          "sourceText": "2 to 13 mm;"
+        },
+        "Central & Western District": {
+          "lowerMm": 1,
+          "upperMm": 5,
+          "sourceText": "1 to 5 mm;"
+        },
+        "Sai Kung": {
+          "lowerMm": 1,
+          "upperMm": 5,
+          "sourceText": "1 to 5 mm;"
+        },
+        "Southern District": {
+          "lowerMm": 0,
+          "upperMm": 3,
+          "sourceText": "0 to 3 mm;"
+        },
+        "Islands District": {
+          "lowerMm": 0,
+          "upperMm": 12,
+          "sourceText": "0 to 12 mm."
+        }
+      },
+      "sourceSnapshots": [
+        {
+          "snapshotTimestampHkt": "20180916-1715",
+          "publishedAtUtc": "2018-09-16T09:02:00Z",
+          "file": "raw-rss/20180916-1715-CurrentWeather.xml",
+          "url": "https://app.data.gov.hk/v1/historical-archive/get-file?url=https%3A%2F%2Frss.weather.gov.hk%2Frss%2FCurrentWeather.xml&time=20180916-1715",
+          "sha256": "0def72fe905cb8ad6279f04beacdde8fa2490b327a2e749f4ca4642dbc0da14b"
+        }
+      ]
+    },
+    {
+      "timeUtc": "2018-09-16T09:45:00Z",
+      "windowStartUtc": "2018-09-16T08:45:00Z",
+      "windowEndUtc": "2018-09-16T09:45:00Z",
+      "windowMinutes": 60,
+      "publishedAtUtc": "2018-09-16T10:02:00Z",
+      "sourceWindowText": "Between 4:45 and 5:45 p.m., the",
+      "districts": {
+        "Yau Tsim Mong": {
+          "lowerMm": 4,
+          "upperMm": 9,
+          "sourceText": "4 to 9 mm;"
+        },
+        "North District": {
+          "lowerMm": 3,
+          "upperMm": 16,
+          "sourceText": "3 to 16 mm;"
+        },
+        "Tuen Mun": {
+          "lowerMm": 3,
+          "upperMm": 16,
+          "sourceText": "3 to 16 mm;"
+        },
+        "Eastern District": {
+          "lowerMm": 3,
+          "upperMm": 3,
+          "sourceText": "3 mm;"
+        },
+        "Sha Tin": {
+          "lowerMm": 2,
+          "upperMm": 7,
+          "sourceText": "2 to 7 mm;"
+        },
+        "Kowloon City": {
+          "lowerMm": 2,
+          "upperMm": 5,
+          "sourceText": "2 to 5 mm;"
+        },
+        "Wong Tai Sin": {
+          "lowerMm": 2,
+          "upperMm": 5,
+          "sourceText": "2 to 5 mm;"
+        },
+        "Kwun Tong": {
+          "lowerMm": 2,
+          "upperMm": 4,
+          "sourceText": "2 to 4 mm;"
+        },
+        "Sai Kung": {
+          "lowerMm": 1,
+          "upperMm": 6,
+          "sourceText": "1 to 6 mm;"
+        },
+        "Central & Western District": {
+          "lowerMm": 1,
+          "upperMm": 2,
+          "sourceText": "1 to 2 mm;"
+        },
+        "Yuen Long": {
+          "lowerMm": 1,
+          "upperMm": 14,
+          "sourceText": "1 to 14 mm;"
+        },
+        "Tai Po": {
+          "lowerMm": 1,
+          "upperMm": 12,
+          "sourceText": "1 to 12 mm;"
+        },
+        "Kwai Tsing": {
+          "lowerMm": 0,
+          "upperMm": 9,
+          "sourceText": "0 to 9 mm;"
+        },
+        "Tsuen Wan": {
+          "lowerMm": 0,
+          "upperMm": 9,
+          "sourceText": "0 to 9 mm;"
+        },
+        "Southern District": {
+          "lowerMm": 0,
+          "upperMm": 2,
+          "sourceText": "0 to 2 mm;"
+        },
+        "Islands District": {
+          "lowerMm": 0,
+          "upperMm": 12,
+          "sourceText": "0 to 12 mm."
+        }
+      },
+      "sourceSnapshots": [
+        {
+          "snapshotTimestampHkt": "20180916-1815",
+          "publishedAtUtc": "2018-09-16T10:02:00Z",
+          "file": "raw-rss/20180916-1815-CurrentWeather.xml",
+          "url": "https://app.data.gov.hk/v1/historical-archive/get-file?url=https%3A%2F%2Frss.weather.gov.hk%2Frss%2FCurrentWeather.xml&time=20180916-1815",
+          "sha256": "debcbf208f9ca7571b81e9028cb1e26758c4a9372a3654c158ef1090eb2bb85a"
+        },
+        {
+          "snapshotTimestampHkt": "20180916-1900",
+          "publishedAtUtc": "2018-09-16T10:51:00Z",
+          "file": "raw-rss/20180916-1900-CurrentWeather.xml",
+          "url": "https://app.data.gov.hk/v1/historical-archive/get-file?url=https%3A%2F%2Frss.weather.gov.hk%2Frss%2FCurrentWeather.xml&time=20180916-1900",
+          "sha256": "8d7f01304e8a206f8fba0d6b16ce6046f5c44e042a364e94b9dd40d3b4a09cb9"
+        }
+      ]
+    },
+    {
+      "timeUtc": "2018-09-16T10:45:00Z",
+      "windowStartUtc": "2018-09-16T09:45:00Z",
+      "windowEndUtc": "2018-09-16T10:45:00Z",
+      "windowMinutes": 60,
+      "publishedAtUtc": "2018-09-16T11:02:00Z",
+      "sourceWindowText": "Between 5:45 and 6:45 p.m., the",
+      "districts": {
+        "North District": {
+          "lowerMm": 3,
+          "upperMm": 8,
+          "sourceText": "3 to 8 mm;"
+        },
+        "Tai Po": {
+          "lowerMm": 3,
+          "upperMm": 5,
+          "sourceText": "3 to 5 mm;"
+        },
+        "Tuen Mun": {
+          "lowerMm": 1,
+          "upperMm": 8,
+          "sourceText": "1 to 8 mm;"
+        },
+        "Sha Tin": {
+          "lowerMm": 0,
+          "upperMm": 6,
+          "sourceText": "0 to 6 mm;"
+        },
+        "Sai Kung": {
+          "lowerMm": 0,
+          "upperMm": 2,
+          "sourceText": "0 to 2 mm;"
+        },
+        "Tsuen Wan": {
+          "lowerMm": 0,
+          "upperMm": 2,
+          "sourceText": "0 to 2 mm;"
+        },
+        "Yuen Long": {
+          "lowerMm": 0,
+          "upperMm": 2,
+          "sourceText": "0 to 2 mm;"
+        },
+        "Islands District": {
+          "lowerMm": 0,
+          "upperMm": 11,
+          "sourceText": "0 to 11 mm."
+        }
+      },
+      "sourceSnapshots": [
+        {
+          "snapshotTimestampHkt": "20180916-1915",
+          "publishedAtUtc": "2018-09-16T11:02:00Z",
+          "file": "raw-rss/20180916-1915-CurrentWeather.xml",
+          "url": "https://app.data.gov.hk/v1/historical-archive/get-file?url=https%3A%2F%2Frss.weather.gov.hk%2Frss%2FCurrentWeather.xml&time=20180916-1915",
+          "sha256": "8c3a8780f9b4c18cf44f910ff64fe09316d9e0326eb08275b2a8c870fb6b8af5"
+        },
+        {
+          "snapshotTimestampHkt": "20180916-1945",
+          "publishedAtUtc": "2018-09-16T11:41:00Z",
+          "file": "raw-rss/20180916-1945-CurrentWeather.xml",
+          "url": "https://app.data.gov.hk/v1/historical-archive/get-file?url=https%3A%2F%2Frss.weather.gov.hk%2Frss%2FCurrentWeather.xml&time=20180916-1945",
+          "sha256": "04f4e4c0f87f1a90220fd25fdf94d4b228c317094aefcb957479ab7b0459a486"
+        }
+      ]
+    },
+    {
+      "timeUtc": "2018-09-16T11:45:00Z",
+      "windowStartUtc": "2018-09-16T10:45:00Z",
+      "windowEndUtc": "2018-09-16T11:45:00Z",
+      "windowMinutes": 60,
+      "publishedAtUtc": "2018-09-16T12:02:00Z",
+      "sourceWindowText": "Between 6:45 and 7:45 p.m., the",
+      "districts": {
+        "Sai Kung": {
+          "lowerMm": 4,
+          "upperMm": 21,
+          "sourceText": "4 to 21 mm;"
+        },
+        "Tai Po": {
+          "lowerMm": 2,
+          "upperMm": 19,
+          "sourceText": "2 to 19 mm;"
+        },
+        "Sha Tin": {
+          "lowerMm": 1,
+          "upperMm": 12,
+          "sourceText": "1 to 12 mm;"
+        },
+        "Kwun Tong": {
+          "lowerMm": 1,
+          "upperMm": 1,
+          "sourceText": "1 mm;"
+        },
+        "Wong Tai Sin": {
+          "lowerMm": 1,
+          "upperMm": 1,
+          "sourceText": "1 mm;"
+        },
+        "Tuen Mun": {
+          "lowerMm": 0,
+          "upperMm": 4,
+          "sourceText": "0 to 4 mm;"
+        },
+        "Islands District": {
+          "lowerMm": 0,
+          "upperMm": 3,
+          "sourceText": "0 to 3 mm;"
+        },
+        "Tsuen Wan": {
+          "lowerMm": 0,
+          "upperMm": 3,
+          "sourceText": "0 to 3 mm;"
+        },
+        "Yuen Long": {
+          "lowerMm": 0,
+          "upperMm": 3,
+          "sourceText": "0 to 3 mm;"
+        },
+        "North District": {
+          "lowerMm": 0,
+          "upperMm": 16,
+          "sourceText": "0 to 16 mm;"
+        },
+        "Eastern District": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm;"
+        },
+        "Kowloon City": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm;"
+        },
+        "Kwai Tsing": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm;"
+        },
+        "Sham Shui Po": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm;"
+        },
+        "Yau Tsim Mong": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm."
+        }
+      },
+      "sourceSnapshots": [
+        {
+          "snapshotTimestampHkt": "20180916-2015",
+          "publishedAtUtc": "2018-09-16T12:02:00Z",
+          "file": "raw-rss/20180916-2015-CurrentWeather.xml",
+          "url": "https://app.data.gov.hk/v1/historical-archive/get-file?url=https%3A%2F%2Frss.weather.gov.hk%2Frss%2FCurrentWeather.xml&time=20180916-2015",
+          "sha256": "fb665d14d90037c7cbc6328a1e1d409de82dbe57cfff5ac5af50c90f2af80b75"
+        }
+      ]
+    },
+    {
+      "timeUtc": "2018-09-16T12:45:00Z",
+      "windowStartUtc": "2018-09-16T11:45:00Z",
+      "windowEndUtc": "2018-09-16T12:45:00Z",
+      "windowMinutes": 60,
+      "publishedAtUtc": "2018-09-16T13:02:00Z",
+      "sourceWindowText": "Between 7:45 and 8:45 p.m., the",
+      "districts": {
+        "Kowloon City": {
+          "lowerMm": 9,
+          "upperMm": 15,
+          "sourceText": "9 to 15 mm;"
+        },
+        "Eastern District": {
+          "lowerMm": 8,
+          "upperMm": 14,
+          "sourceText": "8 to 14 mm;"
+        },
+        "Yau Tsim Mong": {
+          "lowerMm": 8,
+          "upperMm": 12,
+          "sourceText": "8 to 12 mm;"
+        },
+        "Wan Chai": {
+          "lowerMm": 7,
+          "upperMm": 9,
+          "sourceText": "7 to 9 mm;"
+        },
+        "Sham Shui Po": {
+          "lowerMm": 7,
+          "upperMm": 13,
+          "sourceText": "7 to 13 mm;"
+        },
+        "Tsuen Wan": {
+          "lowerMm": 6,
+          "upperMm": 17,
+          "sourceText": "6 to 17 mm;"
+        },
+        "Wong Tai Sin": {
+          "lowerMm": 6,
+          "upperMm": 16,
+          "sourceText": "6 to 16 mm;"
+        },
+        "Central & Western District": {
+          "lowerMm": 5,
+          "upperMm": 10,
+          "sourceText": "5 to 10 mm;"
+        },
+        "Yuen Long": {
+          "lowerMm": 4,
+          "upperMm": 20,
+          "sourceText": "4 to 20 mm;"
+        },
+        "Tuen Mun": {
+          "lowerMm": 3,
+          "upperMm": 16,
+          "sourceText": "3 to 16 mm;"
+        },
+        "Sai Kung": {
+          "lowerMm": 3,
+          "upperMm": 15,
+          "sourceText": "3 to 15 mm;"
+        },
+        "Kwai Tsing": {
+          "lowerMm": 3,
+          "upperMm": 13,
+          "sourceText": "3 to 13 mm;"
+        },
+        "Southern District": {
+          "lowerMm": 3,
+          "upperMm": 11,
+          "sourceText": "3 to 11 mm;"
+        },
+        "Kwun Tong": {
+          "lowerMm": 14,
+          "upperMm": 18,
+          "sourceText": "14 to 18 mm;"
+        },
+        "North District": {
+          "lowerMm": 12,
+          "upperMm": 20,
+          "sourceText": "12 to 20 mm;"
+        },
+        "Tai Po": {
+          "lowerMm": 1,
+          "upperMm": 26,
+          "sourceText": "1 to 26 mm;"
+        },
+        "Sha Tin": {
+          "lowerMm": 1,
+          "upperMm": 22,
+          "sourceText": "1 to 22 mm;"
+        },
+        "Islands District": {
+          "lowerMm": 1,
+          "upperMm": 15,
+          "sourceText": "1 to 15 mm."
+        }
+      },
+      "sourceSnapshots": [
+        {
+          "snapshotTimestampHkt": "20180916-2115",
+          "publishedAtUtc": "2018-09-16T13:02:00Z",
+          "file": "raw-rss/20180916-2115-CurrentWeather.xml",
+          "url": "https://app.data.gov.hk/v1/historical-archive/get-file?url=https%3A%2F%2Frss.weather.gov.hk%2Frss%2FCurrentWeather.xml&time=20180916-2115",
+          "sha256": "76f317e78cfe0927898e97011b4fa038b0a26ba8bb8623f757886fd89ed26bbd"
+        }
+      ]
+    },
+    {
+      "timeUtc": "2018-09-16T13:45:00Z",
+      "windowStartUtc": "2018-09-16T12:45:00Z",
+      "windowEndUtc": "2018-09-16T13:45:00Z",
+      "windowMinutes": 60,
+      "publishedAtUtc": "2018-09-16T14:02:00Z",
+      "sourceWindowText": "Between 8:45 and 9:45 p.m., the",
+      "districts": {
+        "Sham Shui Po": {
+          "lowerMm": 5,
+          "upperMm": 6,
+          "sourceText": "5 to 6 mm;"
+        },
+        "Yau Tsim Mong": {
+          "lowerMm": 4,
+          "upperMm": 6,
+          "sourceText": "4 to 6 mm;"
+        },
+        "Tuen Mun": {
+          "lowerMm": 4,
+          "upperMm": 15,
+          "sourceText": "4 to 15 mm;"
+        },
+        "Tsuen Wan": {
+          "lowerMm": 4,
+          "upperMm": 12,
+          "sourceText": "4 to 12 mm;"
+        },
+        "Kowloon City": {
+          "lowerMm": 3,
+          "upperMm": 6,
+          "sourceText": "3 to 6 mm;"
+        },
+        "Wan Chai": {
+          "lowerMm": 3,
+          "upperMm": 4,
+          "sourceText": "3 to 4 mm;"
+        },
+        "Central & Western District": {
+          "lowerMm": 2,
+          "upperMm": 8,
+          "sourceText": "2 to 8 mm;"
+        },
+        "Kwai Tsing": {
+          "lowerMm": 2,
+          "upperMm": 8,
+          "sourceText": "2 to 8 mm;"
+        },
+        "Wong Tai Sin": {
+          "lowerMm": 2,
+          "upperMm": 5,
+          "sourceText": "2 to 5 mm;"
+        },
+        "Kwun Tong": {
+          "lowerMm": 2,
+          "upperMm": 3,
+          "sourceText": "2 to 3 mm;"
+        },
+        "North District": {
+          "lowerMm": 1,
+          "upperMm": 8,
+          "sourceText": "1 to 8 mm;"
+        },
+        "Tai Po": {
+          "lowerMm": 1,
+          "upperMm": 8,
+          "sourceText": "1 to 8 mm;"
+        },
+        "Eastern District": {
+          "lowerMm": 1,
+          "upperMm": 5,
+          "sourceText": "1 to 5 mm;"
+        },
+        "Southern District": {
+          "lowerMm": 1,
+          "upperMm": 4,
+          "sourceText": "1 to 4 mm;"
+        },
+        "Yuen Long": {
+          "lowerMm": 1,
+          "upperMm": 15,
+          "sourceText": "1 to 15 mm;"
+        },
+        "Islands District": {
+          "lowerMm": 1,
+          "upperMm": 10,
+          "sourceText": "1 to 10 mm;"
+        },
+        "Sha Tin": {
+          "lowerMm": 0,
+          "upperMm": 8,
+          "sourceText": "0 to 8 mm;"
+        },
+        "Sai Kung": {
+          "lowerMm": 0,
+          "upperMm": 2,
+          "sourceText": "0 to 2 mm."
+        }
+      },
+      "sourceSnapshots": [
+        {
+          "snapshotTimestampHkt": "20180916-2215",
+          "publishedAtUtc": "2018-09-16T14:02:00Z",
+          "file": "raw-rss/20180916-2215-CurrentWeather.xml",
+          "url": "https://app.data.gov.hk/v1/historical-archive/get-file?url=https%3A%2F%2Frss.weather.gov.hk%2Frss%2FCurrentWeather.xml&time=20180916-2215",
+          "sha256": "bbcd4b4f3567fc3843af1ae377a4eddbe8a423569036d5f137eb46286c241b4e"
+        },
+        {
+          "snapshotTimestampHkt": "20180916-2245",
+          "publishedAtUtc": "2018-09-16T14:31:00Z",
+          "file": "raw-rss/20180916-2245-CurrentWeather.xml",
+          "url": "https://app.data.gov.hk/v1/historical-archive/get-file?url=https%3A%2F%2Frss.weather.gov.hk%2Frss%2FCurrentWeather.xml&time=20180916-2245",
+          "sha256": "764d7a1800479911a208a0b71f5330a9a0a9340bf5f48c574d6f44982db81853"
+        }
+      ]
+    },
+    {
+      "timeUtc": "2018-09-16T14:45:00Z",
+      "windowStartUtc": "2018-09-16T13:45:00Z",
+      "windowEndUtc": "2018-09-16T14:45:00Z",
+      "windowMinutes": 60,
+      "publishedAtUtc": "2018-09-16T15:02:00Z",
+      "sourceWindowText": "Between 9:45 and 10:45 p.m., the",
+      "districts": {
+        "Sham Shui Po": {
+          "lowerMm": 3,
+          "upperMm": 4,
+          "sourceText": "3 to 4 mm;"
+        },
+        "Wan Chai": {
+          "lowerMm": 3,
+          "upperMm": 4,
+          "sourceText": "3 to 4 mm;"
+        },
+        "Yau Tsim Mong": {
+          "lowerMm": 3,
+          "upperMm": 3,
+          "sourceText": "3 mm;"
+        },
+        "Central & Western District": {
+          "lowerMm": 2,
+          "upperMm": 5,
+          "sourceText": "2 to 5 mm;"
+        },
+        "North District": {
+          "lowerMm": 2,
+          "upperMm": 5,
+          "sourceText": "2 to 5 mm;"
+        },
+        "Tsuen Wan": {
+          "lowerMm": 2,
+          "upperMm": 5,
+          "sourceText": "2 to 5 mm;"
+        },
+        "Kowloon City": {
+          "lowerMm": 2,
+          "upperMm": 4,
+          "sourceText": "2 to 4 mm;"
+        },
+        "Kwun Tong": {
+          "lowerMm": 2,
+          "upperMm": 3,
+          "sourceText": "2 to 3 mm;"
+        },
+        "Tuen Mun": {
+          "lowerMm": 2,
+          "upperMm": 10,
+          "sourceText": "2 to 10 mm;"
+        },
+        "Yuen Long": {
+          "lowerMm": 1,
+          "upperMm": 6,
+          "sourceText": "1 to 6 mm;"
+        },
+        "Tai Po": {
+          "lowerMm": 1,
+          "upperMm": 5,
+          "sourceText": "1 to 5 mm;"
+        },
+        "Eastern District": {
+          "lowerMm": 1,
+          "upperMm": 4,
+          "sourceText": "1 to 4 mm;"
+        },
+        "Kwai Tsing": {
+          "lowerMm": 1,
+          "upperMm": 4,
+          "sourceText": "1 to 4 mm;"
+        },
+        "Southern District": {
+          "lowerMm": 1,
+          "upperMm": 3,
+          "sourceText": "1 to 3 mm;"
+        },
+        "Wong Tai Sin": {
+          "lowerMm": 1,
+          "upperMm": 3,
+          "sourceText": "1 to 3 mm;"
+        },
+        "Islands District": {
+          "lowerMm": 0,
+          "upperMm": 6,
+          "sourceText": "0 to 6 mm;"
+        },
+        "Sha Tin": {
+          "lowerMm": 0,
+          "upperMm": 5,
+          "sourceText": "0 to 5 mm;"
+        },
+        "Sai Kung": {
+          "lowerMm": 0,
+          "upperMm": 2,
+          "sourceText": "0 to 2 mm."
+        }
+      },
+      "sourceSnapshots": [
+        {
+          "snapshotTimestampHkt": "20180916-2315",
+          "publishedAtUtc": "2018-09-16T15:02:00Z",
+          "file": "raw-rss/20180916-2315-CurrentWeather.xml",
+          "url": "https://app.data.gov.hk/v1/historical-archive/get-file?url=https%3A%2F%2Frss.weather.gov.hk%2Frss%2FCurrentWeather.xml&time=20180916-2315",
+          "sha256": "6b995b5953512563daec45e5a2d7affc474fc70d0a3cbb7c1cf39a7b9812e7cf"
+        },
+        {
+          "snapshotTimestampHkt": "20180916-2345",
+          "publishedAtUtc": "2018-09-16T15:31:00Z",
+          "file": "raw-rss/20180916-2345-CurrentWeather.xml",
+          "url": "https://app.data.gov.hk/v1/historical-archive/get-file?url=https%3A%2F%2Frss.weather.gov.hk%2Frss%2FCurrentWeather.xml&time=20180916-2345",
+          "sha256": "00ac0497d63bdcd88c08e4403b2197ec8b3cb5e821cc12b77d1a9878d2cb9d1e"
+        }
+      ]
+    },
+    {
+      "timeUtc": "2018-09-16T15:45:00Z",
+      "windowStartUtc": "2018-09-16T14:45:00Z",
+      "windowEndUtc": "2018-09-16T15:45:00Z",
+      "windowMinutes": 60,
+      "publishedAtUtc": "2018-09-16T16:02:00Z",
+      "sourceWindowText": "Between 10:45 and 11:45 p.m., the",
+      "districts": {
+        "North District": {
+          "lowerMm": 2,
+          "upperMm": 5,
+          "sourceText": "2 to 5 mm;"
+        },
+        "Yuen Long": {
+          "lowerMm": 1,
+          "upperMm": 6,
+          "sourceText": "1 to 6 mm;"
+        },
+        "Tai Po": {
+          "lowerMm": 1,
+          "upperMm": 4,
+          "sourceText": "1 to 4 mm;"
+        },
+        "Tsuen Wan": {
+          "lowerMm": 1,
+          "upperMm": 3,
+          "sourceText": "1 to 3 mm;"
+        },
+        "Kowloon City": {
+          "lowerMm": 1,
+          "upperMm": 1,
+          "sourceText": "1 mm;"
+        },
+        "Sham Shui Po": {
+          "lowerMm": 1,
+          "upperMm": 1,
+          "sourceText": "1 mm;"
+        },
+        "Yau Tsim Mong": {
+          "lowerMm": 1,
+          "upperMm": 1,
+          "sourceText": "1 mm;"
+        },
+        "Sha Tin": {
+          "lowerMm": 0,
+          "upperMm": 3,
+          "sourceText": "0 to 3 mm;"
+        },
+        "Tuen Mun": {
+          "lowerMm": 0,
+          "upperMm": 3,
+          "sourceText": "0 to 3 mm;"
+        },
+        "Islands District": {
+          "lowerMm": 0,
+          "upperMm": 2,
+          "sourceText": "0 to 2 mm;"
+        },
+        "Kwai Tsing": {
+          "lowerMm": 0,
+          "upperMm": 2,
+          "sourceText": "0 to 2 mm;"
+        },
+        "Central & Western District": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm;"
+        },
+        "Eastern District": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm;"
+        },
+        "Kwun Tong": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm;"
+        },
+        "Sai Kung": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm;"
+        },
+        "Wan Chai": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm;"
+        },
+        "Wong Tai Sin": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm."
+        }
+      },
+      "sourceSnapshots": [
+        {
+          "snapshotTimestampHkt": "20180917-0015",
+          "publishedAtUtc": "2018-09-16T16:02:00Z",
+          "file": "raw-rss/20180917-0015-CurrentWeather.xml",
+          "url": "https://app.data.gov.hk/v1/historical-archive/get-file?url=https%3A%2F%2Frss.weather.gov.hk%2Frss%2FCurrentWeather.xml&time=20180917-0015",
+          "sha256": "2149f616d5e4f14ad09eec94d6be87f0a3014c479defc7b107c4a83970f47f85"
+        },
+        {
+          "snapshotTimestampHkt": "20180917-0045",
+          "publishedAtUtc": "2018-09-16T16:31:00Z",
+          "file": "raw-rss/20180917-0045-CurrentWeather.xml",
+          "url": "https://app.data.gov.hk/v1/historical-archive/get-file?url=https%3A%2F%2Frss.weather.gov.hk%2Frss%2FCurrentWeather.xml&time=20180917-0045",
+          "sha256": "e0afcf4df852b41f9d274b81a6c96c653ffdca903f9e7aa3dc852f9898cf57a2"
+        }
+      ]
+    },
+    {
+      "timeUtc": "2018-09-16T16:45:00Z",
+      "windowStartUtc": "2018-09-16T15:45:00Z",
+      "windowEndUtc": "2018-09-16T16:45:00Z",
+      "windowMinutes": 60,
+      "publishedAtUtc": "2018-09-16T17:02:00Z",
+      "sourceWindowText": "Between 11:45 p.m. and 0:45 a.m., the",
+      "districts": {
+        "Tuen Mun": {
+          "lowerMm": 1,
+          "upperMm": 5,
+          "sourceText": "1 to 5 mm;"
+        },
+        "Wan Chai": {
+          "lowerMm": 1,
+          "upperMm": 1,
+          "sourceText": "1 mm;"
+        },
+        "Yuen Long": {
+          "lowerMm": 0,
+          "upperMm": 3,
+          "sourceText": "0 to 3 mm;"
+        },
+        "North District": {
+          "lowerMm": 0,
+          "upperMm": 2,
+          "sourceText": "0 to 2 mm;"
+        },
+        "Sha Tin": {
+          "lowerMm": 0,
+          "upperMm": 2,
+          "sourceText": "0 to 2 mm;"
+        },
+        "Tai Po": {
+          "lowerMm": 0,
+          "upperMm": 2,
+          "sourceText": "0 to 2 mm;"
+        },
+        "Central & Western District": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm;"
+        },
+        "Eastern District": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm;"
+        },
+        "Islands District": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm;"
+        },
+        "Kowloon City": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm;"
+        },
+        "Kwun Tong": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm;"
+        },
+        "Sai Kung": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm;"
+        },
+        "Southern District": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm;"
+        },
+        "Tsuen Wan": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm;"
+        },
+        "Wong Tai Sin": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm;"
+        },
+        "Yau Tsim Mong": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm."
+        }
+      },
+      "sourceSnapshots": [
+        {
+          "snapshotTimestampHkt": "20180917-0115",
+          "publishedAtUtc": "2018-09-16T17:02:00Z",
+          "file": "raw-rss/20180917-0115-CurrentWeather.xml",
+          "url": "https://app.data.gov.hk/v1/historical-archive/get-file?url=https%3A%2F%2Frss.weather.gov.hk%2Frss%2FCurrentWeather.xml&time=20180917-0115",
+          "sha256": "5367ebd892d098762c51309c2dc423ab0bfce17c3a808969ff442941b9c4dee7"
+        }
+      ]
+    },
+    {
+      "timeUtc": "2018-09-16T17:45:00Z",
+      "windowStartUtc": "2018-09-16T16:45:00Z",
+      "windowEndUtc": "2018-09-16T17:45:00Z",
+      "windowMinutes": 60,
+      "publishedAtUtc": "2018-09-16T18:02:00Z",
+      "sourceWindowText": "Between 0:45 and 1:45 a.m., the",
+      "districts": {
+        "Kowloon City": {
+          "lowerMm": 3,
+          "upperMm": 5,
+          "sourceText": "3 to 5 mm;"
+        },
+        "Kwun Tong": {
+          "lowerMm": 3,
+          "upperMm": 4,
+          "sourceText": "3 to 4 mm;"
+        },
+        "Yau Tsim Mong": {
+          "lowerMm": 3,
+          "upperMm": 4,
+          "sourceText": "3 to 4 mm;"
+        },
+        "Eastern District": {
+          "lowerMm": 2,
+          "upperMm": 6,
+          "sourceText": "2 to 6 mm;"
+        },
+        "Wong Tai Sin": {
+          "lowerMm": 1,
+          "upperMm": 6,
+          "sourceText": "1 to 6 mm;"
+        },
+        "Wan Chai": {
+          "lowerMm": 1,
+          "upperMm": 1,
+          "sourceText": "1 mm;"
+        },
+        "Tai Po": {
+          "lowerMm": 0,
+          "upperMm": 9,
+          "sourceText": "0 to 9 mm;"
+        },
+        "Sha Tin": {
+          "lowerMm": 0,
+          "upperMm": 7,
+          "sourceText": "0 to 7 mm;"
+        },
+        "Yuen Long": {
+          "lowerMm": 0,
+          "upperMm": 7,
+          "sourceText": "0 to 7 mm;"
+        },
+        "Southern District": {
+          "lowerMm": 0,
+          "upperMm": 4,
+          "sourceText": "0 to 4 mm;"
+        },
+        "Tsuen Wan": {
+          "lowerMm": 0,
+          "upperMm": 4,
+          "sourceText": "0 to 4 mm;"
+        },
+        "Tuen Mun": {
+          "lowerMm": 0,
+          "upperMm": 4,
+          "sourceText": "0 to 4 mm;"
+        },
+        "Kwai Tsing": {
+          "lowerMm": 0,
+          "upperMm": 2,
+          "sourceText": "0 to 2 mm;"
+        },
+        "Sai Kung": {
+          "lowerMm": 0,
+          "upperMm": 2,
+          "sourceText": "0 to 2 mm;"
+        },
+        "North District": {
+          "lowerMm": 0,
+          "upperMm": 10,
+          "sourceText": "0 to 10 mm."
+        }
+      },
+      "sourceSnapshots": [
+        {
+          "snapshotTimestampHkt": "20180917-0215",
+          "publishedAtUtc": "2018-09-16T18:02:00Z",
+          "file": "raw-rss/20180917-0215-CurrentWeather.xml",
+          "url": "https://app.data.gov.hk/v1/historical-archive/get-file?url=https%3A%2F%2Frss.weather.gov.hk%2Frss%2FCurrentWeather.xml&time=20180917-0215",
+          "sha256": "9e89b34845fbb39ce592dc260bccce8fa26f09dd4b0664398b8bfcb537d3199f"
+        }
+      ]
+    },
+    {
+      "timeUtc": "2018-09-16T18:45:00Z",
+      "windowStartUtc": "2018-09-16T17:45:00Z",
+      "windowEndUtc": "2018-09-16T18:45:00Z",
+      "windowMinutes": 60,
+      "publishedAtUtc": "2018-09-16T19:02:00Z",
+      "sourceWindowText": "Between 1:45 and 2:45 a.m., the",
+      "districts": {
+        "North District": {
+          "lowerMm": 0,
+          "upperMm": 2,
+          "sourceText": "0 to 2 mm;"
+        },
+        "Yuen Long": {
+          "lowerMm": 0,
+          "upperMm": 2,
+          "sourceText": "0 to 2 mm;"
+        },
+        "Sha Tin": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm;"
+        },
+        "Tai Po": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm."
+        }
+      },
+      "sourceSnapshots": [
+        {
+          "snapshotTimestampHkt": "20180917-0315",
+          "publishedAtUtc": "2018-09-16T19:02:00Z",
+          "file": "raw-rss/20180917-0315-CurrentWeather.xml",
+          "url": "https://app.data.gov.hk/v1/historical-archive/get-file?url=https%3A%2F%2Frss.weather.gov.hk%2Frss%2FCurrentWeather.xml&time=20180917-0315",
+          "sha256": "a4f1b636f5adfb24301bf70e9fc0f77b9717dda7fd4caa8a8a450a2f45656177"
+        }
+      ]
+    },
+    {
+      "timeUtc": "2018-09-16T19:45:00Z",
+      "windowStartUtc": "2018-09-16T18:45:00Z",
+      "windowEndUtc": "2018-09-16T19:45:00Z",
+      "windowMinutes": 60,
+      "publishedAtUtc": "2018-09-16T20:02:00Z",
+      "sourceWindowText": "Between 2:45 and 3:45 a.m., the",
+      "districts": {
+        "Sham Shui Po": {
+          "lowerMm": 3,
+          "upperMm": 8,
+          "sourceText": "3 to 8 mm;"
+        },
+        "Kwai Tsing": {
+          "lowerMm": 1,
+          "upperMm": 6,
+          "sourceText": "1 to 6 mm;"
+        },
+        "Wan Chai": {
+          "lowerMm": 1,
+          "upperMm": 4,
+          "sourceText": "1 to 4 mm;"
+        },
+        "Yau Tsim Mong": {
+          "lowerMm": 1,
+          "upperMm": 2,
+          "sourceText": "1 to 2 mm;"
+        },
+        "Tsuen Wan": {
+          "lowerMm": 0,
+          "upperMm": 5,
+          "sourceText": "0 to 5 mm;"
+        },
+        "North District": {
+          "lowerMm": 0,
+          "upperMm": 4,
+          "sourceText": "0 to 4 mm;"
+        },
+        "Southern District": {
+          "lowerMm": 0,
+          "upperMm": 4,
+          "sourceText": "0 to 4 mm;"
+        },
+        "Yuen Long": {
+          "lowerMm": 0,
+          "upperMm": 4,
+          "sourceText": "0 to 4 mm;"
+        },
+        "Central & Western District": {
+          "lowerMm": 0,
+          "upperMm": 3,
+          "sourceText": "0 to 3 mm;"
+        },
+        "Eastern District": {
+          "lowerMm": 0,
+          "upperMm": 3,
+          "sourceText": "0 to 3 mm;"
+        },
+        "Sha Tin": {
+          "lowerMm": 0,
+          "upperMm": 3,
+          "sourceText": "0 to 3 mm;"
+        },
+        "Kowloon City": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm;"
+        },
+        "Tai Po": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm."
+        }
+      },
+      "sourceSnapshots": [
+        {
+          "snapshotTimestampHkt": "20180917-0415",
+          "publishedAtUtc": "2018-09-16T20:02:00Z",
+          "file": "raw-rss/20180917-0415-CurrentWeather.xml",
+          "url": "https://app.data.gov.hk/v1/historical-archive/get-file?url=https%3A%2F%2Frss.weather.gov.hk%2Frss%2FCurrentWeather.xml&time=20180917-0415",
+          "sha256": "63f8b69dd26f04de00f53938c64bfec6b495df0ccaaa6d187e68e7b0733e18cc"
+        },
+        {
+          "snapshotTimestampHkt": "20180917-0445",
+          "publishedAtUtc": "2018-09-16T20:31:00Z",
+          "file": "raw-rss/20180917-0445-CurrentWeather.xml",
+          "url": "https://app.data.gov.hk/v1/historical-archive/get-file?url=https%3A%2F%2Frss.weather.gov.hk%2Frss%2FCurrentWeather.xml&time=20180917-0445",
+          "sha256": "58fdae9b99a66713bd25e02ee2760494b20a3eec396fa5e9368483b40420ce97"
+        }
+      ]
+    },
+    {
+      "timeUtc": "2018-09-16T20:45:00Z",
+      "windowStartUtc": "2018-09-16T19:45:00Z",
+      "windowEndUtc": "2018-09-16T20:45:00Z",
+      "windowMinutes": 60,
+      "publishedAtUtc": "2018-09-16T21:02:00Z",
+      "sourceWindowText": "Between 3:45 and 4:45 a.m., lightning was detected within New Territories West. The",
+      "districts": {
+        "Central & Western District": {
+          "lowerMm": 8,
+          "upperMm": 19,
+          "sourceText": "8 to 19 mm;"
+        },
+        "Sham Shui Po": {
+          "lowerMm": 7,
+          "upperMm": 13,
+          "sourceText": "7 to 13 mm;"
+        },
+        "Yau Tsim Mong": {
+          "lowerMm": 3,
+          "upperMm": 4,
+          "sourceText": "3 to 4 mm;"
+        },
+        "Wan Chai": {
+          "lowerMm": 2,
+          "upperMm": 5,
+          "sourceText": "2 to 5 mm;"
+        },
+        "Kwai Tsing": {
+          "lowerMm": 11,
+          "upperMm": 26,
+          "sourceText": "11 to 26 mm;"
+        },
+        "Islands District": {
+          "lowerMm": 0,
+          "upperMm": 6,
+          "sourceText": "0 to 6 mm;"
+        },
+        "Kowloon City": {
+          "lowerMm": 0,
+          "upperMm": 4,
+          "sourceText": "0 to 4 mm;"
+        },
+        "Sha Tin": {
+          "lowerMm": 0,
+          "upperMm": 3,
+          "sourceText": "0 to 3 mm;"
+        },
+        "Yuen Long": {
+          "lowerMm": 0,
+          "upperMm": 29,
+          "sourceText": "0 to 29 mm;"
+        },
+        "Tsuen Wan": {
+          "lowerMm": 0,
+          "upperMm": 27,
+          "sourceText": "0 to 27 mm;"
+        },
+        "Eastern District": {
+          "lowerMm": 0,
+          "upperMm": 2,
+          "sourceText": "0 to 2 mm;"
+        },
+        "Southern District": {
+          "lowerMm": 0,
+          "upperMm": 16,
+          "sourceText": "0 to 16 mm;"
+        },
+        "North District": {
+          "lowerMm": 0,
+          "upperMm": 10,
+          "sourceText": "0 to 10 mm;"
+        },
+        "Sai Kung": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm;"
+        },
+        "Tai Po": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm;"
+        },
+        "Tuen Mun": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm."
+        }
+      },
+      "sourceSnapshots": [
+        {
+          "snapshotTimestampHkt": "20180917-0515",
+          "publishedAtUtc": "2018-09-16T21:02:00Z",
+          "file": "raw-rss/20180917-0515-CurrentWeather.xml",
+          "url": "https://app.data.gov.hk/v1/historical-archive/get-file?url=https%3A%2F%2Frss.weather.gov.hk%2Frss%2FCurrentWeather.xml&time=20180917-0515",
+          "sha256": "db2e92861a6988b8c8110a8ca359facac5947b9be38ff7cc8e6e68f0fdcfb321"
+        },
+        {
+          "snapshotTimestampHkt": "20180917-0530",
+          "publishedAtUtc": "2018-09-16T21:21:00Z",
+          "file": "raw-rss/20180917-0530-CurrentWeather.xml",
+          "url": "https://app.data.gov.hk/v1/historical-archive/get-file?url=https%3A%2F%2Frss.weather.gov.hk%2Frss%2FCurrentWeather.xml&time=20180917-0530",
+          "sha256": "712fd14b8d457364bfd12c5b188c4eb87e2a8b13fc935e3b34934f35553377fc"
+        }
+      ]
+    },
+    {
+      "timeUtc": "2018-09-16T21:45:00Z",
+      "windowStartUtc": "2018-09-16T20:45:00Z",
+      "windowEndUtc": "2018-09-16T21:45:00Z",
+      "windowMinutes": 60,
+      "publishedAtUtc": "2018-09-16T22:02:00Z",
+      "sourceWindowText": "Between 4:45 and 5:45 a.m., the",
+      "districts": {
+        "Yuen Long": {
+          "lowerMm": 0,
+          "upperMm": 8,
+          "sourceText": "0 to 8 mm;"
+        },
+        "Tsuen Wan": {
+          "lowerMm": 0,
+          "upperMm": 5,
+          "sourceText": "0 to 5 mm;"
+        },
+        "Tuen Mun": {
+          "lowerMm": 0,
+          "upperMm": 28,
+          "sourceText": "0 to 28 mm;"
+        },
+        "North District": {
+          "lowerMm": 0,
+          "upperMm": 2,
+          "sourceText": "0 to 2 mm;"
+        },
+        "Islands District": {
+          "lowerMm": 0,
+          "upperMm": 14,
+          "sourceText": "0 to 14 mm;"
+        },
+        "Central & Western District": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm;"
+        },
+        "Kwai Tsing": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm;"
+        },
+        "Sha Tin": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm;"
+        },
+        "Southern District": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm;"
+        },
+        "Tai Po": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm."
+        }
+      },
+      "sourceSnapshots": [
+        {
+          "snapshotTimestampHkt": "20180917-0615",
+          "publishedAtUtc": "2018-09-16T22:02:00Z",
+          "file": "raw-rss/20180917-0615-CurrentWeather.xml",
+          "url": "https://app.data.gov.hk/v1/historical-archive/get-file?url=https%3A%2F%2Frss.weather.gov.hk%2Frss%2FCurrentWeather.xml&time=20180917-0615",
+          "sha256": "bb7215d18d79dcfd5a8f3d583a4e8055979716ca4cdfc4060fc5bd80ea15dcdf"
+        },
+        {
+          "snapshotTimestampHkt": "20180917-0645",
+          "publishedAtUtc": "2018-09-16T22:30:00Z",
+          "file": "raw-rss/20180917-0645-CurrentWeather.xml",
+          "url": "https://app.data.gov.hk/v1/historical-archive/get-file?url=https%3A%2F%2Frss.weather.gov.hk%2Frss%2FCurrentWeather.xml&time=20180917-0645",
+          "sha256": "2cb23dda540976172df0deef9f3b7b79d2e6c928c676a09222899a39b50b1d2e"
+        }
+      ]
+    },
+    {
+      "timeUtc": "2018-09-16T22:45:00Z",
+      "windowStartUtc": "2018-09-16T21:45:00Z",
+      "windowEndUtc": "2018-09-16T22:45:00Z",
+      "windowMinutes": 60,
+      "publishedAtUtc": "2018-09-16T23:02:00Z",
+      "sourceWindowText": "Between 5:45 and 6:45 a.m., the",
+      "districts": {
+        "Yuen Long": {
+          "lowerMm": 0,
+          "upperMm": 4,
+          "sourceText": "0 to 4 mm;"
+        },
+        "Tuen Mun": {
+          "lowerMm": 0,
+          "upperMm": 3,
+          "sourceText": "0 to 3 mm;"
+        },
+        "North District": {
+          "lowerMm": 0,
+          "upperMm": 2,
+          "sourceText": "0 to 2 mm;"
+        },
+        "Islands District": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm;"
+        },
+        "Sha Tin": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm."
+        }
+      },
+      "sourceSnapshots": [
+        {
+          "snapshotTimestampHkt": "20180917-0715",
+          "publishedAtUtc": "2018-09-16T23:02:00Z",
+          "file": "raw-rss/20180917-0715-CurrentWeather.xml",
+          "url": "https://app.data.gov.hk/v1/historical-archive/get-file?url=https%3A%2F%2Frss.weather.gov.hk%2Frss%2FCurrentWeather.xml&time=20180917-0715",
+          "sha256": "da08d3ae828b44a9ed091647d72a844138c453a8b7fca426290edcc60bfe297f"
+        }
+      ]
+    },
+    {
+      "timeUtc": "2018-09-16T23:45:00Z",
+      "windowStartUtc": "2018-09-16T22:45:00Z",
+      "windowEndUtc": "2018-09-16T23:45:00Z",
+      "windowMinutes": 60,
+      "publishedAtUtc": "2018-09-17T00:02:00Z",
+      "sourceWindowText": "Between 6:45 and 7:45 a.m., the",
+      "districts": {
+        "North District": {
+          "lowerMm": 0,
+          "upperMm": 4,
+          "sourceText": "0 to 4 mm;"
+        },
+        "Yuen Long": {
+          "lowerMm": 0,
+          "upperMm": 3,
+          "sourceText": "0 to 3 mm;"
+        },
+        "Islands District": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm;"
+        },
+        "Sha Tin": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm;"
+        },
+        "Tai Po": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm."
+        }
+      },
+      "sourceSnapshots": [
+        {
+          "snapshotTimestampHkt": "20180917-0815",
+          "publishedAtUtc": "2018-09-17T00:02:00Z",
+          "file": "raw-rss/20180917-0815-CurrentWeather.xml",
+          "url": "https://app.data.gov.hk/v1/historical-archive/get-file?url=https%3A%2F%2Frss.weather.gov.hk%2Frss%2FCurrentWeather.xml&time=20180917-0815",
+          "sha256": "d283669fa18c207d43425c03323ce3c1f311489d9e603a54f0cc2a108dc4e4c0"
+        }
+      ]
+    },
+    {
+      "timeUtc": "2018-09-17T00:45:00Z",
+      "windowStartUtc": "2018-09-16T23:45:00Z",
+      "windowEndUtc": "2018-09-17T00:45:00Z",
+      "windowMinutes": 60,
+      "publishedAtUtc": "2018-09-17T01:10:00Z",
+      "sourceWindowText": "Between 7:45 and 8:45 a.m., the",
+      "districts": {
+        "North District": {
+          "lowerMm": 0,
+          "upperMm": 4,
+          "sourceText": "0 to 4 mm;"
+        },
+        "Tsuen Wan": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm;"
+        },
+        "Yuen Long": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm."
+        }
+      },
+      "sourceSnapshots": [
+        {
+          "snapshotTimestampHkt": "20180917-0915",
+          "publishedAtUtc": "2018-09-17T01:10:00Z",
+          "file": "raw-rss/20180917-0915-CurrentWeather.xml",
+          "url": "https://app.data.gov.hk/v1/historical-archive/get-file?url=https%3A%2F%2Frss.weather.gov.hk%2Frss%2FCurrentWeather.xml&time=20180917-0915",
+          "sha256": "f98febd60b2bc12bef728d477dc26c799280f98c819d9d5a06ad00a722380811"
+        },
+        {
+          "snapshotTimestampHkt": "20180917-0930",
+          "publishedAtUtc": "2018-09-17T01:10:00Z",
+          "file": "raw-rss/20180917-0930-CurrentWeather.xml",
+          "url": "https://app.data.gov.hk/v1/historical-archive/get-file?url=https%3A%2F%2Frss.weather.gov.hk%2Frss%2FCurrentWeather.xml&time=20180917-0930",
+          "sha256": "827cf62ee353d48f70e2ef2985a20b2ca0e31768f286a6756c098d7ea14c3716"
+        }
+      ]
+    },
+    {
+      "timeUtc": "2018-09-17T01:45:00Z",
+      "windowStartUtc": "2018-09-17T00:45:00Z",
+      "windowEndUtc": "2018-09-17T01:45:00Z",
+      "windowMinutes": 60,
+      "publishedAtUtc": "2018-09-17T02:02:00Z",
+      "sourceWindowText": "Between 8:45 and 9:45 a.m., the",
+      "districts": {
+        "Sha Tin": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm;"
+        },
+        "Yuen Long": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm."
+        }
+      },
+      "sourceSnapshots": [
+        {
+          "snapshotTimestampHkt": "20180917-1015",
+          "publishedAtUtc": "2018-09-17T02:02:00Z",
+          "file": "raw-rss/20180917-1015-CurrentWeather.xml",
+          "url": "https://app.data.gov.hk/v1/historical-archive/get-file?url=https%3A%2F%2Frss.weather.gov.hk%2Frss%2FCurrentWeather.xml&time=20180917-1015",
+          "sha256": "36e9ce939314c8aa6164095be26fdc71df15ecc9507fb5430ab6e426999c25e9"
+        }
+      ]
+    },
+    {
+      "timeUtc": "2018-09-17T02:45:00Z",
+      "windowStartUtc": "2018-09-17T01:45:00Z",
+      "windowEndUtc": "2018-09-17T02:45:00Z",
+      "windowMinutes": 60,
+      "publishedAtUtc": "2018-09-17T03:02:00Z",
+      "sourceWindowText": "Between 9:45 and 10:45 a.m., the",
+      "districts": {
+        "Sha Tin": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm."
+        }
+      },
+      "sourceSnapshots": [
+        {
+          "snapshotTimestampHkt": "20180917-1115",
+          "publishedAtUtc": "2018-09-17T03:02:00Z",
+          "file": "raw-rss/20180917-1115-CurrentWeather.xml",
+          "url": "https://app.data.gov.hk/v1/historical-archive/get-file?url=https%3A%2F%2Frss.weather.gov.hk%2Frss%2FCurrentWeather.xml&time=20180917-1115",
+          "sha256": "4de4424d4fe0372ac10316c2b270d799d3202bbce791bf3f78d234f10a86dc73"
+        },
+        {
+          "snapshotTimestampHkt": "20180917-1130",
+          "publishedAtUtc": "2018-09-17T03:21:00Z",
+          "file": "raw-rss/20180917-1130-CurrentWeather.xml",
+          "url": "https://app.data.gov.hk/v1/historical-archive/get-file?url=https%3A%2F%2Frss.weather.gov.hk%2Frss%2FCurrentWeather.xml&time=20180917-1130",
+          "sha256": "2a479a6cd1f89956607a2707f1d52cfeffa454727b5dec12f8235353c646def4"
+        }
+      ]
+    },
+    {
+      "timeUtc": "2018-09-17T03:45:00Z",
+      "windowStartUtc": "2018-09-17T02:45:00Z",
+      "windowEndUtc": "2018-09-17T03:45:00Z",
+      "windowMinutes": 60,
+      "publishedAtUtc": "2018-09-17T04:02:00Z",
+      "sourceWindowText": "Between 10:45 and 11:45 a.m., the",
+      "districts": {
+        "North District": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm."
+        }
+      },
+      "sourceSnapshots": [
+        {
+          "snapshotTimestampHkt": "20180917-1215",
+          "publishedAtUtc": "2018-09-17T04:02:00Z",
+          "file": "raw-rss/20180917-1215-CurrentWeather.xml",
+          "url": "https://app.data.gov.hk/v1/historical-archive/get-file?url=https%3A%2F%2Frss.weather.gov.hk%2Frss%2FCurrentWeather.xml&time=20180917-1215",
+          "sha256": "33a25be67151dc506067767aedd12da19f96eadcfa095a189337c02631aec1f1"
+        }
+      ]
+    },
+    {
+      "timeUtc": "2018-09-17T04:45:00Z",
+      "windowStartUtc": "2018-09-17T03:45:00Z",
+      "windowEndUtc": "2018-09-17T04:45:00Z",
+      "windowMinutes": 60,
+      "publishedAtUtc": "2018-09-17T05:02:00Z",
+      "sourceWindowText": "Between 11:45 a.m. and 12:45 p.m., the",
+      "districts": {
+        "North District": {
+          "lowerMm": 0,
+          "upperMm": 2,
+          "sourceText": "0 to 2 mm;"
+        },
+        "Sha Tin": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm;"
+        },
+        "Yuen Long": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm."
+        }
+      },
+      "sourceSnapshots": [
+        {
+          "snapshotTimestampHkt": "20180917-1315",
+          "publishedAtUtc": "2018-09-17T05:02:00Z",
+          "file": "raw-rss/20180917-1315-CurrentWeather.xml",
+          "url": "https://app.data.gov.hk/v1/historical-archive/get-file?url=https%3A%2F%2Frss.weather.gov.hk%2Frss%2FCurrentWeather.xml&time=20180917-1315",
+          "sha256": "2aa0c5235aa24070d99dc6faa6b4e4f7ea4f873fde160dd872fb013e032f0ffb"
+        }
+      ]
+    },
+    {
+      "timeUtc": "2018-09-17T05:45:00Z",
+      "windowStartUtc": "2018-09-17T04:45:00Z",
+      "windowEndUtc": "2018-09-17T05:45:00Z",
+      "windowMinutes": 60,
+      "publishedAtUtc": "2018-09-17T06:02:00Z",
+      "sourceWindowText": "Between 12:45 and 1:45 p.m., the",
+      "districts": {
+        "Sha Tin": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm."
+        }
+      },
+      "sourceSnapshots": [
+        {
+          "snapshotTimestampHkt": "20180917-1415",
+          "publishedAtUtc": "2018-09-17T06:02:00Z",
+          "file": "raw-rss/20180917-1415-CurrentWeather.xml",
+          "url": "https://app.data.gov.hk/v1/historical-archive/get-file?url=https%3A%2F%2Frss.weather.gov.hk%2Frss%2FCurrentWeather.xml&time=20180917-1415",
+          "sha256": "56274c09e3fc954494bc8da9e50faac6d0dd84b41e0d6e4acdafab060a2ded18"
+        },
+        {
+          "snapshotTimestampHkt": "20180917-1445",
+          "publishedAtUtc": "2018-09-17T06:41:00Z",
+          "file": "raw-rss/20180917-1445-CurrentWeather.xml",
+          "url": "https://app.data.gov.hk/v1/historical-archive/get-file?url=https%3A%2F%2Frss.weather.gov.hk%2Frss%2FCurrentWeather.xml&time=20180917-1445",
+          "sha256": "adf0e76b4d291ba0dda0063c38fbbfd962c43fe1cc4b79294085594a4aec1561"
+        }
+      ]
+    },
+    {
+      "timeUtc": "2018-09-17T06:45:00Z",
+      "windowStartUtc": "2018-09-17T05:45:00Z",
+      "windowEndUtc": "2018-09-17T06:45:00Z",
+      "windowMinutes": 60,
+      "publishedAtUtc": "2018-09-17T07:02:00Z",
+      "sourceWindowText": "Between 1:45 and 2:45 p.m., the",
+      "districts": {
+        "Sha Tin": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm."
+        }
+      },
+      "sourceSnapshots": [
+        {
+          "snapshotTimestampHkt": "20180917-1515",
+          "publishedAtUtc": "2018-09-17T07:02:00Z",
+          "file": "raw-rss/20180917-1515-CurrentWeather.xml",
+          "url": "https://app.data.gov.hk/v1/historical-archive/get-file?url=https%3A%2F%2Frss.weather.gov.hk%2Frss%2FCurrentWeather.xml&time=20180917-1515",
+          "sha256": "89cb12c22004f00eeaa89c221432c593aa87e2c157729dfbdb1ad7367c7dc23c"
+        }
+      ]
+    },
+    {
+      "timeUtc": "2018-09-17T07:45:00Z",
+      "windowStartUtc": "2018-09-17T06:45:00Z",
+      "windowEndUtc": "2018-09-17T07:45:00Z",
+      "windowMinutes": 60,
+      "publishedAtUtc": "2018-09-17T08:02:00Z",
+      "sourceWindowText": "Between 2:45 and 3:45 p.m., the",
+      "districts": {
+        "North District": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm;"
+        },
+        "Sha Tin": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm;"
+        },
+        "Tai Po": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm."
+        }
+      },
+      "sourceSnapshots": [
+        {
+          "snapshotTimestampHkt": "20180917-1615",
+          "publishedAtUtc": "2018-09-17T08:02:00Z",
+          "file": "raw-rss/20180917-1615-CurrentWeather.xml",
+          "url": "https://app.data.gov.hk/v1/historical-archive/get-file?url=https%3A%2F%2Frss.weather.gov.hk%2Frss%2FCurrentWeather.xml&time=20180917-1615",
+          "sha256": "3fa98ef13c76870a713971204d725db455c47da8542667831617622b022de332"
+        }
+      ]
+    },
+    {
+      "timeUtc": "2018-09-17T08:45:00Z",
+      "windowStartUtc": "2018-09-17T07:45:00Z",
+      "windowEndUtc": "2018-09-17T08:45:00Z",
+      "windowMinutes": 60,
+      "publishedAtUtc": "2018-09-17T09:02:00Z",
+      "sourceWindowText": "Between 3:45 and 4:45 p.m., the",
+      "districts": {
+        "Tai Po": {
+          "lowerMm": 0,
+          "upperMm": 6,
+          "sourceText": "0 to 6 mm;"
+        },
+        "Yuen Long": {
+          "lowerMm": 0,
+          "upperMm": 5,
+          "sourceText": "0 to 5 mm;"
+        },
+        "Tsuen Wan": {
+          "lowerMm": 0,
+          "upperMm": 4,
+          "sourceText": "0 to 4 mm;"
+        },
+        "North District": {
+          "lowerMm": 0,
+          "upperMm": 3,
+          "sourceText": "0 to 3 mm;"
+        },
+        "Kwai Tsing": {
+          "lowerMm": 0,
+          "upperMm": 2,
+          "sourceText": "0 to 2 mm;"
+        },
+        "Sha Tin": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm."
+        }
+      },
+      "sourceSnapshots": [
+        {
+          "snapshotTimestampHkt": "20180917-1715",
+          "publishedAtUtc": "2018-09-17T09:02:00Z",
+          "file": "raw-rss/20180917-1715-CurrentWeather.xml",
+          "url": "https://app.data.gov.hk/v1/historical-archive/get-file?url=https%3A%2F%2Frss.weather.gov.hk%2Frss%2FCurrentWeather.xml&time=20180917-1715",
+          "sha256": "85d3cf7b9d495bd5a5a4426b35143a4a40bc4e2e75f24de607761d0da7425380"
+        }
+      ]
+    },
+    {
+      "timeUtc": "2018-09-17T09:45:00Z",
+      "windowStartUtc": "2018-09-17T08:45:00Z",
+      "windowEndUtc": "2018-09-17T09:45:00Z",
+      "windowMinutes": 60,
+      "publishedAtUtc": "2018-09-17T10:02:00Z",
+      "sourceWindowText": "Between 4:45 and 5:45 p.m., the",
+      "districts": {
+        "Yuen Long": {
+          "lowerMm": 0,
+          "upperMm": 6,
+          "sourceText": "0 to 6 mm;"
+        },
+        "North District": {
+          "lowerMm": 0,
+          "upperMm": 2,
+          "sourceText": "0 to 2 mm;"
+        },
+        "Kowloon City": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm;"
+        },
+        "Tsuen Wan": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm;"
+        },
+        "Tuen Mun": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm."
+        }
+      },
+      "sourceSnapshots": [
+        {
+          "snapshotTimestampHkt": "20180917-1815",
+          "publishedAtUtc": "2018-09-17T10:02:00Z",
+          "file": "raw-rss/20180917-1815-CurrentWeather.xml",
+          "url": "https://app.data.gov.hk/v1/historical-archive/get-file?url=https%3A%2F%2Frss.weather.gov.hk%2Frss%2FCurrentWeather.xml&time=20180917-1815",
+          "sha256": "9df849b1caf3b7c8a3bf7cf23897564fa36d016a71b76b8c075ce830f61ddea8"
+        }
+      ]
+    },
+    {
+      "timeUtc": "2018-09-17T10:45:00Z",
+      "windowStartUtc": "2018-09-17T09:45:00Z",
+      "windowEndUtc": "2018-09-17T10:45:00Z",
+      "windowMinutes": 60,
+      "publishedAtUtc": "2018-09-17T11:11:00Z",
+      "sourceWindowText": "Between 5:45 and 6:45 p.m., the",
+      "districts": {
+        "North District": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm;"
+        },
+        "Sha Tin": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm."
+        }
+      },
+      "sourceSnapshots": [
+        {
+          "snapshotTimestampHkt": "20180917-1915",
+          "publishedAtUtc": "2018-09-17T11:11:00Z",
+          "file": "raw-rss/20180917-1915-CurrentWeather.xml",
+          "url": "https://app.data.gov.hk/v1/historical-archive/get-file?url=https%3A%2F%2Frss.weather.gov.hk%2Frss%2FCurrentWeather.xml&time=20180917-1915",
+          "sha256": "6991d75fce389d4c0af8c638ecf392af66fa6215b9e630cc6ec4f192e8dcf795"
+        }
+      ]
+    },
+    {
+      "timeUtc": "2018-09-17T11:45:00Z",
+      "windowStartUtc": "2018-09-17T10:45:00Z",
+      "windowEndUtc": "2018-09-17T11:45:00Z",
+      "windowMinutes": 60,
+      "publishedAtUtc": "2018-09-17T12:02:00Z",
+      "sourceWindowText": "Between 6:45 and 7:45 p.m., the",
+      "districts": {
+        "North District": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm;"
+        },
+        "Tai Po": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm."
+        }
+      },
+      "sourceSnapshots": [
+        {
+          "snapshotTimestampHkt": "20180917-2015",
+          "publishedAtUtc": "2018-09-17T12:02:00Z",
+          "file": "raw-rss/20180917-2015-CurrentWeather.xml",
+          "url": "https://app.data.gov.hk/v1/historical-archive/get-file?url=https%3A%2F%2Frss.weather.gov.hk%2Frss%2FCurrentWeather.xml&time=20180917-2015",
+          "sha256": "0bc37c41d68a47761a3db75064a433fa099d86b77a5bae3aabe7b60cda3f6b9d"
+        }
+      ]
+    },
+    {
+      "timeUtc": "2018-09-17T13:45:00Z",
+      "windowStartUtc": "2018-09-17T12:45:00Z",
+      "windowEndUtc": "2018-09-17T13:45:00Z",
+      "windowMinutes": 60,
+      "publishedAtUtc": "2018-09-17T14:02:00Z",
+      "sourceWindowText": "Between 8:45 and 9:45 p.m., the",
+      "districts": {
+        "Central & Western District": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm;"
+        },
+        "Kwai Tsing": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm;"
+        },
+        "North District": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm;"
+        },
+        "Sha Tin": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm;"
+        },
+        "Sham Shui Po": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm;"
+        },
+        "Wan Chai": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm;"
+        },
+        "Yau Tsim Mong": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm;"
+        },
+        "Yuen Long": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm."
+        }
+      },
+      "sourceSnapshots": [
+        {
+          "snapshotTimestampHkt": "20180917-2215",
+          "publishedAtUtc": "2018-09-17T14:02:00Z",
+          "file": "raw-rss/20180917-2215-CurrentWeather.xml",
+          "url": "https://app.data.gov.hk/v1/historical-archive/get-file?url=https%3A%2F%2Frss.weather.gov.hk%2Frss%2FCurrentWeather.xml&time=20180917-2215",
+          "sha256": "35b2b6b55b397be82b99fe5257997dd3ac782b0a802f62d670b1298ffb6a9042"
+        }
+      ]
+    },
+    {
+      "timeUtc": "2018-09-17T14:45:00Z",
+      "windowStartUtc": "2018-09-17T13:45:00Z",
+      "windowEndUtc": "2018-09-17T14:45:00Z",
+      "windowMinutes": 60,
+      "publishedAtUtc": "2018-09-17T15:02:00Z",
+      "sourceWindowText": "Between 9:45 and 10:45 p.m., the",
+      "districts": {
+        "North District": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm;"
+        },
+        "Sha Tin": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm;"
+        },
+        "Tai Po": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm;"
+        },
+        "Wong Tai Sin": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm;"
+        },
+        "Yuen Long": {
+          "lowerMm": 0,
+          "upperMm": 1,
+          "sourceText": "0 to 1 mm."
+        }
+      },
+      "sourceSnapshots": [
+        {
+          "snapshotTimestampHkt": "20180917-2315",
+          "publishedAtUtc": "2018-09-17T15:02:00Z",
+          "file": "raw-rss/20180917-2315-CurrentWeather.xml",
+          "url": "https://app.data.gov.hk/v1/historical-archive/get-file?url=https%3A%2F%2Frss.weather.gov.hk%2Frss%2FCurrentWeather.xml&time=20180917-2315",
+          "sha256": "bc4602222c356e5f2482012f696b1bc9ed78c86f4e6e983ad6605c61e45a3d86"
+        }
+      ]
+    }
+  ],
+  "notes": "Raw numeric table decoding; do not sum overlapping windows or fill absent districts."
+}

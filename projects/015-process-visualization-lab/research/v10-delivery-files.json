@@ -1,0 +1,1172 @@
+[
+  {
+    "path": "README.md",
+    "sha256": "87fb1df29b5ca5a2548b531e2100c7c075250d6e81e8a8e42305eccdc03707ec",
+    "bytes": 21777
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T0000Z.png",
+    "sha256": "b86f379d52c5dc90f24e6d867668dc72c59c74ab4dfc1fe0acb3cbfd85fb57e3",
+    "bytes": 2785141
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T0010Z.png",
+    "sha256": "fb3496dbcfe947e9063b66ebb721f617856e47ceab223a8eb355655255b91155",
+    "bytes": 2789010
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T0020Z.png",
+    "sha256": "aab6d3fe5c9cb287e403a85534e4a94f8acc1485336bd654cf33469df6eaed3c",
+    "bytes": 2794694
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T0030Z.png",
+    "sha256": "65e170afebd65896dcd7526016b89fb97e3181daadd0822ef00b51f468f58ed1",
+    "bytes": 2799336
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T0040Z.png",
+    "sha256": "56d345a81859e3af9242caa0aeb0e2da30f89d3f227c1d120f9d53306e42f8d4",
+    "bytes": 2806582
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T0050Z.png",
+    "sha256": "f52a5ce5178ba5d4ae5f616f7c671de83f5a8a82df2f8def114ead365b648c46",
+    "bytes": 2812986
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T0100Z.png",
+    "sha256": "aa725a7e0a37257a9a3a2719e4c42852f3b124124edac24a25bdca39d07dd800",
+    "bytes": 2821149
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T0110Z.png",
+    "sha256": "64702e33cf7dcc16f99deef382efc0d1e4e82a47241e993125dfd5e083ae415a",
+    "bytes": 2827382
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T0120Z.png",
+    "sha256": "d65e721b08fadd994a21cded7c9e763c05e80e04649d268c35110ccf1088aaf3",
+    "bytes": 2831012
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T0130Z.png",
+    "sha256": "053325526ee0b2695444f6aaeaa534b2a0a0f760d6b903330c65398252593df3",
+    "bytes": 2842273
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T0140Z.png",
+    "sha256": "a81f67f061ce6aa50237111e7ff05f1ebf05f725c8a8e7e211fdae84f98c4cfa",
+    "bytes": 2849610
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T0150Z.png",
+    "sha256": "9cb37699d1bf4c1b70cdd4f47b644c5fe4c9df1b4a4e5861c28234b8fef5f416",
+    "bytes": 2860826
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T0200Z.png",
+    "sha256": "fa6f40e9c603e1b1bd1283902abebd1afa1576b75b657fcbf2b2a8d1211dec6f",
+    "bytes": 2871061
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T0210Z.png",
+    "sha256": "7fa77d0d1d619438cfcb14b943035892bfe9fd6d036a2dbe8d9deb0e1615df9e",
+    "bytes": 2884555
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T0220Z.png",
+    "sha256": "bfa7908adc6e54e6f397a8c6b18b8d7706001294b889c3da698504c14eb074f4",
+    "bytes": 2889931
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T0230Z.png",
+    "sha256": "8f39f46ae361af2824cd7c714ec43c6fe8cdbd8777c9d8fe4b25e0f554da5ba8",
+    "bytes": 2901963
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T0250Z.png",
+    "sha256": "182f4f8d98ea971c3c5e54505e3273205a0fc8de17ea37dd8f01c4d3e04ad25c",
+    "bytes": 2915567
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T0300Z.png",
+    "sha256": "e63f5052de9558c6dd8744908a0ea8efd0cfb1177b7fdd3c0bba05a44151e9de",
+    "bytes": 2921452
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T0310Z.png",
+    "sha256": "946cf5ab60dcf4bab76f0f395ad305eb025664a40b6840fc30311a25c7a794fa",
+    "bytes": 2927115
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T0320Z.png",
+    "sha256": "5d821a52b912d1e1847d7b10b726a16583d718dff4d41f0b73f76d7c06b47005",
+    "bytes": 2936468
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T0330Z.png",
+    "sha256": "73e8c43a463b88520a2d3a6e495c6ff461d0a330fa57f889834617fc2711a706",
+    "bytes": 2942133
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T0340Z.png",
+    "sha256": "11b68f7eabe980dbab2f4f122f02d21b68c03f9bc8e86137cd09fd5914ab1fdd",
+    "bytes": 2948661
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T0350Z.png",
+    "sha256": "645791030aef8c726d2c0e6e069a3b738539233d3496a6809a4ff4c454d33709",
+    "bytes": 2956155
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T0400Z.png",
+    "sha256": "4fa07d92a193404a3643109e68c5be1aea9e27851619e84555286a7d88e8efad",
+    "bytes": 2960850
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T0410Z.png",
+    "sha256": "247288a73edd1387cb7882a0153a46249ace8da20a671bbc06345fc3ca11d6cd",
+    "bytes": 2964826
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T0420Z.png",
+    "sha256": "98396cd33ad7bec16daf3d0541d4e1b898179c417f5af0fcf73b66f3e0d6f237",
+    "bytes": 2972353
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T0430Z.png",
+    "sha256": "256d85e59441da607c8a0dcf33beed3ff7cbaf97bd905e9bb0a13673f721cc17",
+    "bytes": 2976477
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T0440Z.png",
+    "sha256": "d821cf34c62d8d712aea7040fc664f0f3b3738d3b0df061ecb2c82ed8018e183",
+    "bytes": 2980327
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T0450Z.png",
+    "sha256": "f68016867c6833ec0cce35e4d378acede14cbf168c6617747b05c7933f600eaa",
+    "bytes": 2982229
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T0500Z.png",
+    "sha256": "644e3c36773bcf531a17d06f0e759b3bfe6120ce8f8275243601c639e04113ab",
+    "bytes": 2983124
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T0510Z.png",
+    "sha256": "04f1b402da19898792a12c83f115b7ef1fd36a26ac4507dee48ad653a6eb870b",
+    "bytes": 2985191
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T0520Z.png",
+    "sha256": "f598e07f82ece5a6239e9d1d7d09a28931a691ee02524a8e3ffbba250720790a",
+    "bytes": 2987050
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T0530Z.png",
+    "sha256": "d29b9444f76e518b7b12d76cec212f2415a074cb986ba217a1205c21f7a8a1c4",
+    "bytes": 2989347
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T0540Z.png",
+    "sha256": "a1d3dcbd19d4a600298ec7b0e25026695bc2f2089ab551adddaaca519332f0e2",
+    "bytes": 2989051
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T0550Z.png",
+    "sha256": "0a1e311fc46c23ca8f81d69761dce21251d9c5e24b581a9e7c4132e4619059d4",
+    "bytes": 2991846
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T0600Z.png",
+    "sha256": "a0d3ee42733622ff5515b7d1fc27adc53d7c534e5f9b1007cfa022eaf2fc1fa7",
+    "bytes": 2989621
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T0610Z.png",
+    "sha256": "3cd37e2dd5ebf59cf2782d63423dbcef7a554e06936109891dd3ea5c72cd2fe9",
+    "bytes": 2988763
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T0620Z.png",
+    "sha256": "cf2930256e580180103842f4b5fa62f5d49093df06c7c5d92a243806fa1bf945",
+    "bytes": 2988990
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T0630Z.png",
+    "sha256": "19134dea43d294c03aa163f264d52b8425a0a3cb3e4d7bf3b8a108dfb4f15670",
+    "bytes": 2985653
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T0640Z.png",
+    "sha256": "b705cd7c243584bb6ee096eb83c3f1cd2dbeeebdb9b78d0a1dccc928eec20ad7",
+    "bytes": 2981946
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T0650Z.png",
+    "sha256": "8566ff0cb0d8c511b0f1a0c955c35d2d001405f89ef79a55bfba8ef72e2c20d3",
+    "bytes": 2980521
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T0700Z.png",
+    "sha256": "1040e39ec8e828042b8322f963b8b413f2ad46d1cdcb3b9ff5a87ce8e743d021",
+    "bytes": 2976383
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T0710Z.png",
+    "sha256": "37c37ce9882755d7170c7d3160f7c61b5f71747131aa82954a52608797a8cd57",
+    "bytes": 2972991
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T0720Z.png",
+    "sha256": "d6a4e76d3b6889852bba8b7c734badc66d2da60c910a0031bfbcc4dd7dec73e6",
+    "bytes": 2966753
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T0730Z.png",
+    "sha256": "16608af04222a586e70dce31ad15f5181272577a03f3c2a6f82a9888d8092d6b",
+    "bytes": 2962524
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T0740Z.png",
+    "sha256": "cceda04076c9b6f014e4d1b6d935121d1ee5fadedf184b467b5dac39bd9a6c74",
+    "bytes": 2958881
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T0750Z.png",
+    "sha256": "f3f0b64cc1630ac8c6c45a26e136865a11c660b84e7c6f1261d091ac7d4d54a8",
+    "bytes": 2951654
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T0800Z.png",
+    "sha256": "b9fb0b386645a29a065875e7048a2d36d7145534059c34fd540193a0db0100a2",
+    "bytes": 2942643
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T0810Z.png",
+    "sha256": "e128a20edcfbe2557c47dbb188b57a83fe7f520668fc95b99fcd73156d58ba6f",
+    "bytes": 2933537
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T0820Z.png",
+    "sha256": "dc02a955332fd53f998309ad17fd64b59f0365a6c1f4eb03de1593482a6fa792",
+    "bytes": 2921090
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T0830Z.png",
+    "sha256": "361e4fb57b3c270383f7f3db7cbe1601030ef3d8e369e073ab326f0e3e70c9b1",
+    "bytes": 2913644
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T0840Z.png",
+    "sha256": "9f25c239e9e8b6e7ddaa503aa871ac8db7cbfd3526aee2a6b2114c3d6cf002a8",
+    "bytes": 2908403
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T0850Z.png",
+    "sha256": "709d11e663294e7f4f93d469920350edf32b941596cec95946601cbba0e3ef48",
+    "bytes": 2896190
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T0900Z.png",
+    "sha256": "3d302bbbddec32da7832ce3b917a52f388de2017c15c2f3a02977469d3e5f552",
+    "bytes": 2888575
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T0910Z.png",
+    "sha256": "a443af6fad825360018c9a01ff98c8414097e0fcfa2e526d32140309aa8bc9bf",
+    "bytes": 2879367
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T0920Z.png",
+    "sha256": "a1009e3fab27b6eae47d2ab57010cfcb8930c9622605f3b59de9ce8522f5d0ae",
+    "bytes": 2870367
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T0930Z.png",
+    "sha256": "bba41ae4a7dd98ea2e06b2eb97afedc7df7e942848b5c3a62cf2e26950487647",
+    "bytes": 2864626
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T0940Z.png",
+    "sha256": "6ec944d5571957e6379d86034a19927412a27da1eba44932521588b3bb3ed308",
+    "bytes": 2855153
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T0950Z.png",
+    "sha256": "e9aecef7cf52c717b5f7a4812875d4d9b4167f5dc7992eb7dfd1238488d66bee",
+    "bytes": 2847438
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T1000Z.png",
+    "sha256": "7d2bc57146a932542dc911ddf464d5a4c4ae8f29a1eb0cbe06840bab31f2af67",
+    "bytes": 2841663
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T1010Z.png",
+    "sha256": "739b192be5e3d7d2133c4c04737a0a4088dc781c328a8b200a1d5f810e85ae4d",
+    "bytes": 2835560
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T1020Z.png",
+    "sha256": "a688ee6cef60a5ca92c5756875933e9fe2a3232192ea1e8ed4f72712c4b58aa1",
+    "bytes": 2831346
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T1030Z.png",
+    "sha256": "ad3939621aec1365ed140799fea366a373585a870db738ae8ad715368ebc91e7",
+    "bytes": 2825354
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T1040Z.png",
+    "sha256": "a467abb7e3f00c498233d51e05fe26b535a97eeabeacd8e0613f0728c11663f4",
+    "bytes": 2819214
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T1050Z.png",
+    "sha256": "515cd5c01c35d6d4f7e7f9545fad487301af744c281534895afad2b8b24026f8",
+    "bytes": 2813719
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T1100Z.png",
+    "sha256": "e0690111cf3bfbed7cb3b538383a786bcd1128874381112b1ed1bbdf4d3ce4e3",
+    "bytes": 2809754
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T1110Z.png",
+    "sha256": "494511c110161c0e845730bbca842b6db312b17a4aa7beb504b59db8f2034b67",
+    "bytes": 2802003
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T1120Z.png",
+    "sha256": "7e9f5f28752c5e0ad210922637e532e14f3fae0b642d1976eb4ebe4baf45addc",
+    "bytes": 2798085
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T1130Z.png",
+    "sha256": "bf64779d2685d65c00e8d2b6186b0778fef1839bded4335f5a9825ecb60b594c",
+    "bytes": 2792168
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T1140Z.png",
+    "sha256": "a07c11e0e5cd8b3b75821ca7207359146d3b0f0cdc85ec15ee14d73547d7384c",
+    "bytes": 2787683
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T1150Z.png",
+    "sha256": "6f33e0026d9f481e86998ccf9f8a03366a899af83748f47cd2d030ee381cd19c",
+    "bytes": 2783519
+  },
+  {
+    "path": "app/assets/events/himawari8-b13-wide/himawari-b13-20180916T1200Z.png",
+    "sha256": "f6f3ea43e3dd7e47ef3c2600461994669f31d59e550e40117f1fd9b55d38d5a8",
+    "bytes": 2780778
+  },
+  {
+    "path": "app/data/mangkhut-synchronized.json",
+    "sha256": "f6a7695c3281013ba257bc167453126234ca7ef3ffeebf26267129870e68dccc",
+    "bytes": 484729
+  },
+  {
+    "path": "app/globe-app.js",
+    "sha256": "d5c5ea6a4e2265a9746eb45499a50a0c133cbd4fe71a60504184e4f70d226cd5",
+    "bytes": 58361
+  },
+  {
+    "path": "app/globe-engine.js",
+    "sha256": "045c8f5c91c5f3befd372505361b3dfe0899916ecf584a3382f155209cecda1c",
+    "bytes": 30877
+  },
+  {
+    "path": "app/globe.html",
+    "sha256": "489aeca998262d353cb84127bc82838fb009d1b57244cf75a13b36d9f5d424d4",
+    "bytes": 13048
+  },
+  {
+    "path": "app/index.html",
+    "sha256": "489aeca998262d353cb84127bc82838fb009d1b57244cf75a13b36d9f5d424d4",
+    "bytes": 13048
+  },
+  {
+    "path": "app/sync-cloud-layer.js",
+    "sha256": "c1a750dcd60d7b301a0ea3b6e970295eac1f3aa78720adf14556dd658c9628cb",
+    "bytes": 13631
+  },
+  {
+    "path": "app/sync-observations.css",
+    "sha256": "b53808044234852ceaf2982019e6f33816c1c11430e121fcb7e95471b393a6b5",
+    "bytes": 6539
+  },
+  {
+    "path": "package.json",
+    "sha256": "3daef9d97641cecfc2a0ed2ee133b19afe391f628c22a5db8cd1d2cba2cfcaa2",
+    "bytes": 569
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/README.md",
+    "sha256": "f3dd1b210c09c186f8f10e80e1b72c3ec9f8d9a2a51be5ca90020ed6734b0336",
+    "bytes": 3532
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0000Z-bt-centikelvin.png",
+    "sha256": "55024dcf9785527ba9ede701fbc53d4e4964f0fd85e91a8660789577f46c5baa",
+    "bytes": 4911598
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0000Z.json",
+    "sha256": "6304d5917264b40602f524958174320f366158caecd3a3b3663e42e041de82d6",
+    "bytes": 7559
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0010Z-bt-centikelvin.png",
+    "sha256": "2cd2ac9e051377df89faa6f5c2e4dcb6b2887bc744000bdbeaaf69ad2b1a04e7",
+    "bytes": 4913477
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0010Z.json",
+    "sha256": "4374fd2db8385796e345108165a0a229c9849db49ceabf507c376f02fa0161e1",
+    "bytes": 7558
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0020Z-bt-centikelvin.png",
+    "sha256": "924d803d9899d8eae853df264fb8bd67c9d3e23f04ea806498dfff0008c34c3b",
+    "bytes": 4915623
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0020Z.json",
+    "sha256": "bc334f6a947e97142f9389305852e5a3de6f44dd3f435baef191afacae904187",
+    "bytes": 7557
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0030Z-bt-centikelvin.png",
+    "sha256": "b78b1acb5a420a1f2d8b9790f2177eb99877f0d103284e4aa5db652a7260e398",
+    "bytes": 4918847
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0030Z.json",
+    "sha256": "39366c25009072ad580bc74010869fa7495a4b24e2d753c6d4dd1998e72a5385",
+    "bytes": 7557
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0040Z-bt-centikelvin.png",
+    "sha256": "ebca5710e73ccfb30c9c25b2b0ba693b54becbe060e13b8e321bdd0b3a5eb44f",
+    "bytes": 4922487
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0040Z.json",
+    "sha256": "63debb420ff76f09c23dcde06663c0dd1a8546b14baa752133e6ce4510ca07ee",
+    "bytes": 7557
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0050Z-bt-centikelvin.png",
+    "sha256": "8d8e5747dc66040d12e966c307fd8757f257c6548e302508a8d15ce4a54961e4",
+    "bytes": 4924485
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0050Z.json",
+    "sha256": "ac420ab48b79aec72ba879b4917830eb9778da9c7494bd34085fd39192e3ea50",
+    "bytes": 7558
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0100Z-bt-centikelvin.png",
+    "sha256": "339faa9b18dac281388d49e701d32f7570e334d7fa361ce62f3c1b49db03c4fc",
+    "bytes": 4925833
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0100Z.json",
+    "sha256": "fd63b67f7a30f45a31acd1d6225d007066d2e3cda9c50b54eb88295b430dee8f",
+    "bytes": 7558
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0110Z-bt-centikelvin.png",
+    "sha256": "edd2727b41be25e5d52a447a3ebd5b222824e2cf011a24df83721f744bc0086a",
+    "bytes": 4929309
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0110Z.json",
+    "sha256": "59a1d011d578c605083c35759a52f88d7138f5868bf52bb5ed299fa1fa8dbefd",
+    "bytes": 7558
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0120Z-bt-centikelvin.png",
+    "sha256": "d882a43f6c49f767f2d762b0f0c9444250acbd8646646a42a84342dda44efcbf",
+    "bytes": 4934242
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0120Z.json",
+    "sha256": "7eb0fe3bdc8f7246986bdd7a71d22d8837ada238e7d98e9ede7fe55a2f304826",
+    "bytes": 7558
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0130Z-bt-centikelvin.png",
+    "sha256": "97ec311d3b0600edcfc458d59c2ba7173873c2c7bd3b9308ad483ecb4d727dfc",
+    "bytes": 4937850
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0130Z.json",
+    "sha256": "66f00716ea83e5f8b87cdb9e99b679ef8cc1086b75cf36369a3608bd59278890",
+    "bytes": 7558
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0140Z-bt-centikelvin.png",
+    "sha256": "800764b4bb2910dc2ff863a1583d1364d6bb0e61950b3b3e10d688d94ae48261",
+    "bytes": 4944411
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0140Z.json",
+    "sha256": "b9276ce6762b67dd5bc047128403f7bda7d69f8c2f003d24d2adba7756b3b151",
+    "bytes": 7556
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0150Z-bt-centikelvin.png",
+    "sha256": "217c7cb125c9e3e1a07cbeca9a18d173d2517ebca9b0bf0022e526b58483472b",
+    "bytes": 4948657
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0150Z.json",
+    "sha256": "43d8d8853cf74e8b5ec1f8aa6c41d37e049dd35dbd8b3b248e66873222f0ac19",
+    "bytes": 7558
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0200Z-bt-centikelvin.png",
+    "sha256": "cd3b59e5a9f35d7d664242899b16bbbe8fc44333018764dfbb5e7d234f782e9a",
+    "bytes": 4953622
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0200Z.json",
+    "sha256": "9b5c1c1e0e8013102db058739085a90f0fa0c7dfd4ab68ca56e37ba04e75f7f5",
+    "bytes": 7559
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0210Z-bt-centikelvin.png",
+    "sha256": "3f938fe0e79a8206576d73aeb2b6291b3b5f7c621241871b8e939529a8262788",
+    "bytes": 4958841
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0210Z.json",
+    "sha256": "bf5d3f44ba4e1f30b3105a288d87409b19422f4e2ba2e1aff529518fe733ec56",
+    "bytes": 7559
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0220Z-bt-centikelvin.png",
+    "sha256": "07d00ec0600ac949117b5a13bdb4e7ebdb15dc47b8854070e28ca767f656cb56",
+    "bytes": 4962724
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0220Z.json",
+    "sha256": "ae767b15add4e8c84ef9ea7c6d1ba6d35ab420cb0b0013a40c57d271b823344b",
+    "bytes": 7556
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0230Z-bt-centikelvin.png",
+    "sha256": "3ceab44d909f071979a03c73155f3ed02072c695c7611da9b8b9845c00b020ba",
+    "bytes": 4969893
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0230Z.json",
+    "sha256": "f6849b847a8c21b5d9b94107b78ae24b5fd0d05fde4f2a8c9652743069ebc2e9",
+    "bytes": 7557
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0250Z-bt-centikelvin.png",
+    "sha256": "ca56bd9a9fea5ab19200a592661e3e3bb29141e0e9d939b99818372c7b30df12",
+    "bytes": 4979170
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0250Z.json",
+    "sha256": "811ff77669848c86dd550f368d47e46c9d5214fb4e40cae55055aab9a014e165",
+    "bytes": 7558
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0300Z-bt-centikelvin.png",
+    "sha256": "6d08f21badd09872593d14fe9002f6bcf2b7cea5697a0fc1ec71271a8642f515",
+    "bytes": 4981936
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0300Z.json",
+    "sha256": "b7bc2f600a56fb12a7cce0a427c793d64c89f90ce65113d46ea181415d643765",
+    "bytes": 7559
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0310Z-bt-centikelvin.png",
+    "sha256": "1d5335055da293926b0511ae4764ec4b858f32a6af67275a01be6bf1279dcf39",
+    "bytes": 4987254
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0310Z.json",
+    "sha256": "9dc349b8faadca141acd192209be204786fc2649e43590641fbe7ed92a1bd370",
+    "bytes": 7557
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0320Z-bt-centikelvin.png",
+    "sha256": "fea14c1d17474dd665859eee907b8f8c4d17925baa82cb86a83ddf92654d67ae",
+    "bytes": 4993184
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0320Z.json",
+    "sha256": "af3c40ffd1ee5bf0857ad1485283cb8ce1e31a0005cce801fa9bcf2b44f57704",
+    "bytes": 7558
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0330Z-bt-centikelvin.png",
+    "sha256": "d7f144c9c67d4cb224ed20713a68b4fce056826beb447c9673d6451d0cdddca1",
+    "bytes": 4995997
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0330Z.json",
+    "sha256": "b9f90b546404488da9655d1286fcef121aafc7c342e02729164696a667c3a3b8",
+    "bytes": 7558
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0340Z-bt-centikelvin.png",
+    "sha256": "3e1b45be6401867247506e0b483d13033a47df025ee327b8bb622aa0781765ca",
+    "bytes": 4999283
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0340Z.json",
+    "sha256": "7c61fe27bfacf7c73972f93d3df625541be7b502a0d2a529d5be1f5c5144c7ab",
+    "bytes": 7559
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0350Z-bt-centikelvin.png",
+    "sha256": "fe99f712de15e2d140e38cd13d0ecfb862740c98fc8043317a7bcddba290a8f3",
+    "bytes": 5003928
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0350Z.json",
+    "sha256": "94a3d82c249367aaa7b8898ab6931fe6c8e597e3bf86cd74df55fc568e814e12",
+    "bytes": 7558
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0400Z-bt-centikelvin.png",
+    "sha256": "3577255e044555ef30ddd7b19bc102fd442a1d1ed7736b146385205077447614",
+    "bytes": 5005769
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0400Z.json",
+    "sha256": "b558cfa10f28e4612f8d2d23199ad5426e270883d1819addd21bf42e46029dc1",
+    "bytes": 7558
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0410Z-bt-centikelvin.png",
+    "sha256": "7026f00df732cac9cd07e2981b0fc2575c4db33799d9501d64986fcee7807348",
+    "bytes": 5010309
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0410Z.json",
+    "sha256": "a5f7f39419e7a4a70878563f507d747ac0df7ad5f38bfe6029ba3a273c3c5ba3",
+    "bytes": 7559
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0420Z-bt-centikelvin.png",
+    "sha256": "0635ed646dc5d8d9c247f57ac633ca5a16718c8dcd97ab064d877b831a8ca354",
+    "bytes": 5012837
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0420Z.json",
+    "sha256": "5c74b226b027647e1f52511484ce28a16d887f550a82845fadf7df6f12db1958",
+    "bytes": 7558
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0430Z-bt-centikelvin.png",
+    "sha256": "cdb1d1d4746105a8fb3018064e9fd52d252143b7857f20d012db4238bbffb722",
+    "bytes": 5012731
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0430Z.json",
+    "sha256": "474663a2b03cdc270254e11b3750a56c6324e0e9e7f1a247b0937d35f26b7f3c",
+    "bytes": 7559
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0440Z-bt-centikelvin.png",
+    "sha256": "27797973b964b40a9f69debba8da87a6c7ae17020ae765b1a384d9dccce6e3ff",
+    "bytes": 5014788
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0440Z.json",
+    "sha256": "dd8686e9c73dc0c531a760ca79264e400186f2faaf38d023acc985009c9e6f6c",
+    "bytes": 7559
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0450Z-bt-centikelvin.png",
+    "sha256": "7ea42409fc5051b156ce582582a8acb1cb6cce89711b383eebcfe9e14e8dcdb2",
+    "bytes": 5017137
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0450Z.json",
+    "sha256": "0f49ff7dbd656af7aa5d23098a0294129383c95f7749b1d095dfcbf66d7b1842",
+    "bytes": 7558
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0500Z-bt-centikelvin.png",
+    "sha256": "d7ff7c13068e9b038ee2e84e103e9ebbbb0fe26591edb4d4b49398961a63596f",
+    "bytes": 5018671
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0500Z.json",
+    "sha256": "a8403c74c10ac7471fe33b2018f9712920ee7d7d4f53bf2e8e3528e707477e72",
+    "bytes": 7557
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0510Z-bt-centikelvin.png",
+    "sha256": "29d41d672a60a8565cc9b5f1a1e2b694aa173a5b9680a9dfa7c305fc61330f4b",
+    "bytes": 5017892
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0510Z.json",
+    "sha256": "50d9b205ed0bfb5e46cd749e2874674361f7e13b8b67ca9da9ba0b4c0f4e8caf",
+    "bytes": 7558
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0520Z-bt-centikelvin.png",
+    "sha256": "c62c6840176fc7ab65e785ece66344df9999c5403ba051264bd0c5c3bb00778f",
+    "bytes": 5019244
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0520Z.json",
+    "sha256": "478985beed997454034c0bb979c8d1229b4b9e4264eeeb579ad5ea7a7e0ea72d",
+    "bytes": 7557
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0530Z-bt-centikelvin.png",
+    "sha256": "a111a21628a5b5e40dd12c5367162324c3a1706050817741a94178485fadded5",
+    "bytes": 5020144
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0530Z.json",
+    "sha256": "d3c7847f4a6cc4fb5b44ff824eb83fd00da5a2290da96c14f1825f8b51d7dd51",
+    "bytes": 7559
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0540Z-bt-centikelvin.png",
+    "sha256": "46b27c1324572a1d272ebed6e498a1feb51b4a7bf5ea1eb8721d00320077309d",
+    "bytes": 5019910
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0540Z.json",
+    "sha256": "408263d5cb52765b7ce268be6780e8b60d9794464f8f7deadbe6c587436324c3",
+    "bytes": 7558
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0550Z-bt-centikelvin.png",
+    "sha256": "a6266b3de5a04fc77cab656ac24abf08657dbbaf36805a185e0139fdeba4f313",
+    "bytes": 5019933
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0550Z.json",
+    "sha256": "3b986cd1ab38e45574c07554edd5631af778e57c166ea56ca91c4b56317ebad0",
+    "bytes": 7557
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0600Z-bt-centikelvin.png",
+    "sha256": "f02b00d22799ecae417cab708e39aad38668e6d93af099884f6770ac6113337f",
+    "bytes": 5017962
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0600Z.json",
+    "sha256": "7f85d22078cdab486e10e7a363ed053b637912ca462f4c4a7277d1d69f3ff3b5",
+    "bytes": 7558
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0610Z-bt-centikelvin.png",
+    "sha256": "05b799beab89ca94f9baad002a5a4d5c8ebbdd495631a971761f4b207f9ec6aa",
+    "bytes": 5016961
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0610Z.json",
+    "sha256": "62c42a901279ca5c174548a23d08993af90b3b9e52ec99b16b0a41a5321ab50f",
+    "bytes": 7559
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0620Z-bt-centikelvin.png",
+    "sha256": "a27edeb828ea71bd8d5f5e3963b7e2932318842f424f82b05c6855b0f069ad8d",
+    "bytes": 5015917
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0620Z.json",
+    "sha256": "6200bb81498079b39f8ca35dd69b1474e547cf6e9cdf09a5917a530d53f252f2",
+    "bytes": 7559
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0630Z-bt-centikelvin.png",
+    "sha256": "736e24a6566fb226a53f8e57c2cc57b0483ceb0966bf941bc6b68fbbbacac223",
+    "bytes": 5015739
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0630Z.json",
+    "sha256": "3d4e4c4a4197935051be8af7687f4744ad4c9309163e245b8f0402cd07abbf02",
+    "bytes": 7558
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0640Z-bt-centikelvin.png",
+    "sha256": "d5f355fd285f526c352c5e4939516d185d1d364815f09b4f731cb92211585316",
+    "bytes": 5013953
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0640Z.json",
+    "sha256": "ad5454f07edc002f9571b4427463166aca74576fbec5363af6143e15e241faa8",
+    "bytes": 7559
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0650Z-bt-centikelvin.png",
+    "sha256": "c08727fa693d92a69d903aae2ab31e6300811a78a7cec73d2cb11ef8182bd5d4",
+    "bytes": 5011709
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0650Z.json",
+    "sha256": "f099bf1fd91092ed2c8cdfca29fa29ae3bfde8eb85f9df67690fb87773c08a5e",
+    "bytes": 7558
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0700Z-bt-centikelvin.png",
+    "sha256": "41740ad39def63bbc3c17c3c0e3c181ae831f164b68c36cc46cec27abae57d42",
+    "bytes": 5008732
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0700Z.json",
+    "sha256": "1c66014092e2ca97f154bf4f5d85a9a5d6187e3b8ca71ef8ae0f170a571e0447",
+    "bytes": 7558
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0710Z-bt-centikelvin.png",
+    "sha256": "a68a91b2c97616408f699d6ad923cdc05e8738fec10ae8f75f0fccd02f656776",
+    "bytes": 5004688
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0710Z.json",
+    "sha256": "00d7a616db6d2d6e63afa3fc3441f934ed7714ce6541a3082b0ed172a5bde6bf",
+    "bytes": 7558
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0720Z-bt-centikelvin.png",
+    "sha256": "f17d0d7157f5e42f2797fce8d266d443911068acfdc0c4e170b723ee38559019",
+    "bytes": 5003684
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0720Z.json",
+    "sha256": "4769751b24831812a47ed1c378b742bbbcbbd902de0b5a352ba6400dab6b6156",
+    "bytes": 7558
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0730Z-bt-centikelvin.png",
+    "sha256": "955a7dc6f325bdff3b2c50de4d7eef8335c92a820fba911a0d9a521ca40102aa",
+    "bytes": 5000398
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0730Z.json",
+    "sha256": "e69a6f9ddf609f49d8352ead1a09aced824111c5b36a225965e1b7daffd6e075",
+    "bytes": 7558
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0740Z-bt-centikelvin.png",
+    "sha256": "cc3d18c0f6bfc765c9930c10df65a24f4468df7c930276fd357d2ec29531445d",
+    "bytes": 4997959
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0740Z.json",
+    "sha256": "91f516c3052ffe04e668d2ce6c3c550548a72610294301120c9f96b68d6e72b9",
+    "bytes": 7557
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0750Z-bt-centikelvin.png",
+    "sha256": "cea054e6e07c1cc96a6de5ec7c75e2faad695cea14a95e847513144bcfffa7fb",
+    "bytes": 4994737
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0750Z.json",
+    "sha256": "4e3c3a0ffe13ba6d1731dae774f410aeec5f18bace5d9c372dadf5eeef1f4f1a",
+    "bytes": 7558
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0800Z-bt-centikelvin.png",
+    "sha256": "33625534e7da642d3c7e6e9bd4ef27ca6092090fa17c7cd36a3727f311de070d",
+    "bytes": 4990550
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0800Z.json",
+    "sha256": "f55dfb8cb89d0e1d7a7455fa92db257cf72efcb8f226e8a5c0a53d129b2df5d4",
+    "bytes": 7558
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0810Z-bt-centikelvin.png",
+    "sha256": "75ae995070099eb0fefb8d193813a6d0faa03bfda1612a5b1bf0f92b3f644a62",
+    "bytes": 4984446
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0810Z.json",
+    "sha256": "ca2125f400ffb9c44a1d7627db0e304ccba1d3f00b86009e314a560979300006",
+    "bytes": 7557
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0820Z-bt-centikelvin.png",
+    "sha256": "fff17b11928b72f35c1a1d767d3aeee4d190aa965406d2da15e603c31283c29d",
+    "bytes": 4979036
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0820Z.json",
+    "sha256": "4d37a244e15fd7d5102d1837b3ae8cf53230b896153864c2e039531bf48b4c90",
+    "bytes": 7558
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0830Z-bt-centikelvin.png",
+    "sha256": "ed059ae7cc3157e7c0d295e71b95b0b80a780dbdf2dd98ff229a609f32ad623b",
+    "bytes": 4974731
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0830Z.json",
+    "sha256": "b2b8a3fdb966c251485d1621dd85f7bb85ceed53e2f4d3fa305b8c060ee9f2cf",
+    "bytes": 7558
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0840Z-bt-centikelvin.png",
+    "sha256": "0cb7fd7e4d6aec36d1a0ec9ce2575292626596d791e6f834cb165492b8c6c529",
+    "bytes": 4968705
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0840Z.json",
+    "sha256": "259b1b7fed5154b30336390434b70e7bbbd12ca3d7cbc1565d24f94ac5620c91",
+    "bytes": 7557
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0850Z-bt-centikelvin.png",
+    "sha256": "2dd98dca4b09a221a856476c2664ef93a6051e745f80e4458e9df7445e2a5914",
+    "bytes": 4961726
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0850Z.json",
+    "sha256": "ca028e17cb23cdb760e56c0f9fbec6dd45956de54696e86adb5b2b6f29359a1d",
+    "bytes": 7559
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0900Z-bt-centikelvin.png",
+    "sha256": "717111290bc6e2ce18e0a6116248b19dc213610976b6e3cc0e642fdc93722380",
+    "bytes": 4960479
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0900Z.json",
+    "sha256": "ffbfb8e29564dd1d23df6f4d55c3749d70de61131e28dcfafd02a2bd06fa2d3f",
+    "bytes": 7557
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0910Z-bt-centikelvin.png",
+    "sha256": "0e68fc413edc5142aebb2bb7437e6ec8c580749cd834f29e8db7c90aa9ef9f06",
+    "bytes": 4955246
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0910Z.json",
+    "sha256": "88b1c87a5233daf16437a980493faf287601ed286c6994c79b5f4176b3246d6f",
+    "bytes": 7557
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0920Z-bt-centikelvin.png",
+    "sha256": "9b0fefd1e1dbda9ab405db385fb62102250060622ac1bd793c8953185ff899f8",
+    "bytes": 4951705
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0920Z.json",
+    "sha256": "d534edaffbe8c83dc5145953218e33f4f3e5ca756a1834bced3d70589ec7c610",
+    "bytes": 7559
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0930Z-bt-centikelvin.png",
+    "sha256": "5e2953943d8c182c58f603246f560585ede1966001f78ca7f18797ebd57ce311",
+    "bytes": 4947783
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0930Z.json",
+    "sha256": "1078df254d0f28074bd80e088cb845982726e312835c2e8a937480abc8df654c",
+    "bytes": 7559
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0940Z-bt-centikelvin.png",
+    "sha256": "ac69874ad488694a996599827b651404f936ea29362773e1e0b1289231578d1d",
+    "bytes": 4941629
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0940Z.json",
+    "sha256": "e09398526cf4f75bcbeaf888bdc821504da1d80877c9dff962020ea144e1485f",
+    "bytes": 7557
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0950Z-bt-centikelvin.png",
+    "sha256": "76ab470f48aa033cd4d0d110dde9c23fd3a0882ff38e32c9c4e27b690f283ccc",
+    "bytes": 4936051
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T0950Z.json",
+    "sha256": "b89ffa5f8132802ef53d46143ec95f70f9ab6c943cf11a7c4801727be018ca58",
+    "bytes": 7557
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T1000Z-bt-centikelvin.png",
+    "sha256": "3bb4dfdd392c023159518083300d820bb2913152be5a9d808aaa51b953a191f6",
+    "bytes": 4934016
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T1000Z.json",
+    "sha256": "cfabce8054212d09003490ff999127ad3e885834bc53d6071b333d8005a0ecc6",
+    "bytes": 7558
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T1010Z-bt-centikelvin.png",
+    "sha256": "6533498720fc2edc9d445b1925aa22b0a6fab702e46fbc6e3ae56280a8299fb4",
+    "bytes": 4930046
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T1010Z.json",
+    "sha256": "8c13d3fe24f62ec0bdc1ee426235f5b01bb8c3d3ade6bf1f3369aff583caee14",
+    "bytes": 7558
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T1020Z-bt-centikelvin.png",
+    "sha256": "4bc99d008bb92f2fedeb804755e7c15de96876c58954b8b8753a50f71fce31d3",
+    "bytes": 4928854
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T1020Z.json",
+    "sha256": "2cb99b3920330b06f408c8d6d31fbba7dcd1448cd82ae59ecbd605461ac8e133",
+    "bytes": 7558
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T1030Z-bt-centikelvin.png",
+    "sha256": "028cd8dd5b5b926fe7264ab097cb5fda85fe790c6932e5f81a50d6d272e923b1",
+    "bytes": 4925412
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T1030Z.json",
+    "sha256": "6b566c00c290ef0a059e39ee1224a33c451c1a3a343c62ddc32a61943b4da42d",
+    "bytes": 7559
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T1040Z-bt-centikelvin.png",
+    "sha256": "0efe26cac71402ce2ae76b076adfe5a266feb7923df16e8f5d1d5cb8115412ec",
+    "bytes": 4925510
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T1040Z.json",
+    "sha256": "435e1b9f9948e5bb11720d4e6b20aff8bd8bd86abe222bde36cd48ef94705e68",
+    "bytes": 7557
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T1050Z-bt-centikelvin.png",
+    "sha256": "da97cecab250287c6d566387d1f1626ecc427b110f8d8319f217c32d5d013eef",
+    "bytes": 4920753
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T1050Z.json",
+    "sha256": "e165e22bff2b178ab2aa6296af3db07b085478bc51da0127b19aa980ee388865",
+    "bytes": 7558
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T1100Z-bt-centikelvin.png",
+    "sha256": "52f53d9b2c4ee8e768bbefe1a46a564bf7f96911fadc8fbdba25ede092f51702",
+    "bytes": 4923471
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T1100Z.json",
+    "sha256": "3a544b11eec62ec9444f0faab181f1d64680860f76f2965633e6cf33aff0f588",
+    "bytes": 7558
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T1110Z-bt-centikelvin.png",
+    "sha256": "62b1fae23d7a13dad3cf250a030f126ebbc07d9f065145b3bcd38b3e47ed4d99",
+    "bytes": 4920298
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T1110Z.json",
+    "sha256": "e659f08707ca3a6b8119960797d995c64cf70971d6cbecdbf1224d30a87cad1a",
+    "bytes": 7557
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T1120Z-bt-centikelvin.png",
+    "sha256": "83871016c72e1acd0e4d332da32bb088847e084ed50f72f9e76474d53353d206",
+    "bytes": 4917429
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T1120Z.json",
+    "sha256": "256c4259967268abeb5e809c5f52dc06149d97252d77108704efd2677250c451",
+    "bytes": 7558
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T1130Z-bt-centikelvin.png",
+    "sha256": "32141a44309be894a42d1fcbb8fa8cecaba971467faf5818d8def4f9d9f65704",
+    "bytes": 4916525
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T1130Z.json",
+    "sha256": "8d1bc48556ffd062edb6ddf8485ed7fcc6a6e7564d5ba20ae8a67b5fcc1c3ce7",
+    "bytes": 7556
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T1140Z-bt-centikelvin.png",
+    "sha256": "b97825b7db537b3414c7d0ab3af9253cfdd06890a3780eb6af3ac74f22d22ae5",
+    "bytes": 4916619
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T1140Z.json",
+    "sha256": "6fa51afbb186d077952bbaf6bf2fc3944eca06f963dfc3417145b5bf4d9ae0a5",
+    "bytes": 7559
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T1150Z-bt-centikelvin.png",
+    "sha256": "888f67ac2bfcfd24c845b8bdf974a508899e15a5604ff4951d60efd37d219293",
+    "bytes": 4915337
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T1150Z.json",
+    "sha256": "c356eaa580f1cf4726d0580077b27c378fa96258962f2997d76d73e48776894f",
+    "bytes": 7559
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T1200Z-bt-centikelvin.png",
+    "sha256": "ee788cb6e221f00af543bfd397d1cb0258d08b186b96a7c2fd49561ea5303621",
+    "bytes": 4915547
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/frames/himawari-b13-20180916T1200Z.json",
+    "sha256": "cf6abe7277633e929bccc5cbe707241662dc0e3618ee68a015d2e8443946bfe6",
+    "bytes": 7558
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/himawari-b13-manifest.json",
+    "sha256": "8b1d832fefcb2d568630d97be3cabcec6490a469e468686d80a6a725bc886b39",
+    "bytes": 224955
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/process_himawari.py",
+    "sha256": "5ddaa1ff29931e6fabf902242f622f3be4c98c36ccafd77c9d2d6fd49b1bb8fd",
+    "bytes": 14795
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/processing-config.json",
+    "sha256": "f849fc3c0834b9dda5068af489bd8bea683f7c10e127f29e22508f69b0452488",
+    "bytes": 915
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/validation-report.json",
+    "sha256": "9ef019541ac80337ad7d8ede7c54e27e6615b7468a7b5f1a248a78b8193eadca",
+    "bytes": 1221
+  },
+  {
+    "path": "research/high-frequency-clouds/wide-v10/verify_wide.py",
+    "sha256": "8baa595577421c34a35ca1ad67c67220e696d0ec1e92b28236acefcaf6ffdd26",
+    "bytes": 4245
+  },
+  {
+    "path": "scripts/build-sync-bundle.py",
+    "sha256": "cf7f3ab36abc14d372e8c77461a3f5af6dcac3cd269d59c6f2d21492ba225212",
+    "bytes": 4258
+  },
+  {
+    "path": "scripts/check.mjs",
+    "sha256": "972204b4b1c3ada8610c9d81830f865cf130a9b5f239d79aa0022e3f25ddb0d4",
+    "bytes": 10179
+  },
+  {
+    "path": "tests/sync-cloud-layer.test.mjs",
+    "sha256": "dd2c43ede85faf2d47cb5b0f559910e9211f5e4ae060665ae303e6790a6ac80b",
+    "bytes": 14217
+  }
+]

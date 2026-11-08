@@ -1,0 +1,1852 @@
+{
+  "schemaVersion": 1,
+  "id": "nasa-b0005-first-discharge",
+  "kind": "battery",
+  "title": "NASA B0005 首次放电实测",
+  "subtitle": "NASA Ames 电池老化实验 · 197 条原始采样",
+  "description": "沿原始放电经过时间查看端电压、输出电流和电芯温度。",
+  "focus": null,
+  "sampleId": "B0005",
+  "sourceCycleIndex": 1,
+  "sourceCycleType": "discharge",
+  "sourceLocalTime": "2008-04-02T15:25:41.593",
+  "sourceStartTime": [
+    2008.0,
+    4.0,
+    2.0,
+    15.0,
+    25.0,
+    41.593
+  ],
+  "ambientTemperatureC": 24.0,
+  "capacityAh": 1.8564874208181574,
+  "channels": [
+    {
+      "id": "voltage",
+      "field": "voltageV",
+      "sourceField": "Voltage_measured",
+      "label": "电芯端电压",
+      "unit": "V"
+    },
+    {
+      "id": "current",
+      "field": "currentA",
+      "sourceField": "Current_measured",
+      "label": "电芯输出电流",
+      "unit": "A"
+    },
+    {
+      "id": "temperature",
+      "field": "temperatureC",
+      "sourceField": "Temperature_measured",
+      "label": "电芯温度",
+      "unit": "°C"
+    }
+  ],
+  "samples": [
+    {
+      "sourceRow": 1,
+      "voltageV": 4.191491807505295,
+      "currentA": -0.004901589207462691,
+      "temperatureC": 24.330033885570543,
+      "elapsedSeconds": 0.0,
+      "loadCurrentA": -0.0006,
+      "loadVoltageV": 0.0
+    },
+    {
+      "sourceRow": 2,
+      "voltageV": 4.190749067776103,
+      "currentA": -0.0014780055516425076,
+      "temperatureC": 24.325993424022467,
+      "elapsedSeconds": 16.781,
+      "loadCurrentA": -0.0006,
+      "loadVoltageV": 4.206
+    },
+    {
+      "sourceRow": 3,
+      "voltageV": 3.9748709122299895,
+      "currentA": -2.0125283240860368,
+      "temperatureC": 24.389085127564876,
+      "elapsedSeconds": 35.702999999999996,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 3.062
+    },
+    {
+      "sourceRow": 4,
+      "voltageV": 3.9517167075108937,
+      "currentA": -2.0139793620987403,
+      "temperatureC": 24.544752316727223,
+      "elapsedSeconds": 53.781,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 3.03
+    },
+    {
+      "sourceRow": 5,
+      "voltageV": 3.934352489432596,
+      "currentA": -2.011143595991146,
+      "temperatureC": 24.731385200934106,
+      "elapsedSeconds": 71.922,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 3.011
+    },
+    {
+      "sourceRow": 6,
+      "voltageV": 3.920058441667911,
+      "currentA": -2.0130066278129433,
+      "temperatureC": 24.909816397303786,
+      "elapsedSeconds": 90.094,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.991
+    },
+    {
+      "sourceRow": 7,
+      "voltageV": 3.9079035099130923,
+      "currentA": -2.0143996570526377,
+      "temperatureC": 25.105884152527363,
+      "elapsedSeconds": 108.281,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.977
+    },
+    {
+      "sourceRow": 8,
+      "voltageV": 3.8970357216910942,
+      "currentA": -2.01160288530172,
+      "temperatureC": 25.3170185607883,
+      "elapsedSeconds": 126.453,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.967
+    },
+    {
+      "sourceRow": 9,
+      "voltageV": 3.8874765805404445,
+      "currentA": -2.0180146876333027,
+      "temperatureC": 25.50942310048985,
+      "elapsedSeconds": 144.641,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.959
+    },
+    {
+      "sourceRow": 10,
+      "voltageV": 3.878958592475142,
+      "currentA": -2.0131347535115096,
+      "temperatureC": 25.70360345147403,
+      "elapsedSeconds": 162.844,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.951
+    },
+    {
+      "sourceRow": 11,
+      "voltageV": 3.871015984807792,
+      "currentA": -2.0131622022459528,
+      "temperatureC": 25.887208193567197,
+      "elapsedSeconds": 181.016,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.943
+    },
+    {
+      "sourceRow": 12,
+      "voltageV": 3.863479677493402,
+      "currentA": -2.0130302341846087,
+      "temperatureC": 26.077814856061327,
+      "elapsedSeconds": 199.219,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.935
+    },
+    {
+      "sourceRow": 13,
+      "voltageV": 3.856660507031456,
+      "currentA": -2.013710498518572,
+      "temperatureC": 26.254314624563154,
+      "elapsedSeconds": 217.391,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.93
+    },
+    {
+      "sourceRow": 14,
+      "voltageV": 3.850013579168339,
+      "currentA": -2.0141501374546595,
+      "temperatureC": 26.436710686894443,
+      "elapsedSeconds": 235.594,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.925
+    },
+    {
+      "sourceRow": 15,
+      "voltageV": 3.8438419054138055,
+      "currentA": -2.0134639832409995,
+      "temperatureC": 26.61127890990982,
+      "elapsedSeconds": 253.75,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.925
+    },
+    {
+      "sourceRow": 16,
+      "voltageV": 3.837687975719061,
+      "currentA": -2.012645836387535,
+      "temperatureC": 26.781347653774752,
+      "elapsedSeconds": 271.984,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.919
+    },
+    {
+      "sourceRow": 17,
+      "voltageV": 3.831938252983524,
+      "currentA": -2.013409300587134,
+      "temperatureC": 26.957458850986356,
+      "elapsedSeconds": 290.141,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.913
+    },
+    {
+      "sourceRow": 18,
+      "voltageV": 3.826414443009924,
+      "currentA": -2.013145499824814,
+      "temperatureC": 27.129800142459914,
+      "elapsedSeconds": 308.359,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.907
+    },
+    {
+      "sourceRow": 19,
+      "voltageV": 3.8210957343825593,
+      "currentA": -2.0120412894303126,
+      "temperatureC": 27.305824075615053,
+      "elapsedSeconds": 326.5,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.902
+    },
+    {
+      "sourceRow": 20,
+      "voltageV": 3.815896664668625,
+      "currentA": -2.0144632529994038,
+      "temperatureC": 27.464816676940977,
+      "elapsedSeconds": 344.75,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.897
+    },
+    {
+      "sourceRow": 21,
+      "voltageV": 3.8106968219063564,
+      "currentA": -2.013140029715948,
+      "temperatureC": 27.617964522755162,
+      "elapsedSeconds": 362.906,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.892
+    },
+    {
+      "sourceRow": 22,
+      "voltageV": 3.8058373809696873,
+      "currentA": -2.0092264361962906,
+      "temperatureC": 27.775477825458733,
+      "elapsedSeconds": 381.047,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.887
+    },
+    {
+      "sourceRow": 23,
+      "voltageV": 3.801121633463299,
+      "currentA": -2.0146661803839097,
+      "temperatureC": 27.93132997915235,
+      "elapsedSeconds": 399.187,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.882
+    },
+    {
+      "sourceRow": 24,
+      "voltageV": 3.7962931305502456,
+      "currentA": -2.013218328840318,
+      "temperatureC": 28.07896948157122,
+      "elapsedSeconds": 417.281,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.877
+    },
+    {
+      "sourceRow": 25,
+      "voltageV": 3.7914489063900754,
+      "currentA": -2.011514220111743,
+      "temperatureC": 28.233503103314952,
+      "elapsedSeconds": 435.484,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.872
+    },
+    {
+      "sourceRow": 26,
+      "voltageV": 3.78662468670613,
+      "currentA": -2.0122022798127417,
+      "temperatureC": 28.378779409387704,
+      "elapsedSeconds": 453.672,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.867
+    },
+    {
+      "sourceRow": 27,
+      "voltageV": 3.782062923033413,
+      "currentA": -2.0138533447712548,
+      "temperatureC": 28.52252419508983,
+      "elapsedSeconds": 471.812,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.863
+    },
+    {
+      "sourceRow": 28,
+      "voltageV": 3.7771754018686496,
+      "currentA": -2.012131460111624,
+      "temperatureC": 28.6658983307403,
+      "elapsedSeconds": 490.203,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.858
+    },
+    {
+      "sourceRow": 29,
+      "voltageV": 3.7724062939793614,
+      "currentA": -2.010701731407519,
+      "temperatureC": 28.816718288957553,
+      "elapsedSeconds": 508.344,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.853
+    },
+    {
+      "sourceRow": 30,
+      "voltageV": 3.7679374591949557,
+      "currentA": -2.01208603752232,
+      "temperatureC": 28.932748936688018,
+      "elapsedSeconds": 526.625,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.849
+    },
+    {
+      "sourceRow": 31,
+      "voltageV": 3.7632293036403497,
+      "currentA": -2.0122939193277443,
+      "temperatureC": 29.0704460950252,
+      "elapsedSeconds": 544.922,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.845
+    },
+    {
+      "sourceRow": 32,
+      "voltageV": 3.7585114920291285,
+      "currentA": -2.0134659783611792,
+      "temperatureC": 29.184586265911197,
+      "elapsedSeconds": 563.125,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.84
+    },
+    {
+      "sourceRow": 33,
+      "voltageV": 3.754213210075249,
+      "currentA": -2.013587960930042,
+      "temperatureC": 29.292444107327626,
+      "elapsedSeconds": 581.406,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.835
+    },
+    {
+      "sourceRow": 34,
+      "voltageV": 3.7496292028995617,
+      "currentA": -2.0128470572358244,
+      "temperatureC": 29.4027458081941,
+      "elapsedSeconds": 599.656,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.831
+    },
+    {
+      "sourceRow": 35,
+      "voltageV": 3.7451688596363826,
+      "currentA": -2.0124262827670187,
+      "temperatureC": 29.498965095148666,
+      "elapsedSeconds": 617.875,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.827
+    },
+    {
+      "sourceRow": 36,
+      "voltageV": 3.7410050087611926,
+      "currentA": -2.012455650506209,
+      "temperatureC": 29.593702926896327,
+      "elapsedSeconds": 636.047,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.823
+    },
+    {
+      "sourceRow": 37,
+      "voltageV": 3.736699828857414,
+      "currentA": -2.0133848004978523,
+      "temperatureC": 29.681428273132017,
+      "elapsedSeconds": 654.422,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.819
+    },
+    {
+      "sourceRow": 38,
+      "voltageV": 3.73248270531015,
+      "currentA": -2.012628857345505,
+      "temperatureC": 29.76670141542565,
+      "elapsedSeconds": 672.594,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.815
+    },
+    {
+      "sourceRow": 39,
+      "voltageV": 3.7283525544000353,
+      "currentA": -2.0155053619337076,
+      "temperatureC": 29.83908101440069,
+      "elapsedSeconds": 690.812,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.81
+    },
+    {
+      "sourceRow": 40,
+      "voltageV": 3.724533235478666,
+      "currentA": -2.011329657572897,
+      "temperatureC": 29.910875731095434,
+      "elapsedSeconds": 708.937,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.807
+    },
+    {
+      "sourceRow": 41,
+      "voltageV": 3.7206510260877064,
+      "currentA": -2.0108790415318465,
+      "temperatureC": 29.982244319075193,
+      "elapsedSeconds": 727.266,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.803
+    },
+    {
+      "sourceRow": 42,
+      "voltageV": 3.7164090082277776,
+      "currentA": -2.0129961302858654,
+      "temperatureC": 30.03264277840019,
+      "elapsedSeconds": 745.578,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.799
+    },
+    {
+      "sourceRow": 43,
+      "voltageV": 3.7127918378393843,
+      "currentA": -2.01075794856787,
+      "temperatureC": 30.094357850362577,
+      "elapsedSeconds": 763.797,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.795
+    },
+    {
+      "sourceRow": 44,
+      "voltageV": 3.7084276144367743,
+      "currentA": -2.0137012692563894,
+      "temperatureC": 30.1385033025236,
+      "elapsedSeconds": 782.109,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.791
+    },
+    {
+      "sourceRow": 45,
+      "voltageV": 3.7047917716546044,
+      "currentA": -2.0111444364618514,
+      "temperatureC": 30.18676402113827,
+      "elapsedSeconds": 800.484,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.787
+    },
+    {
+      "sourceRow": 46,
+      "voltageV": 3.700682577796298,
+      "currentA": -2.012174075768356,
+      "temperatureC": 30.237829191847663,
+      "elapsedSeconds": 818.797,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.783
+    },
+    {
+      "sourceRow": 47,
+      "voltageV": 3.6967577147701225,
+      "currentA": -2.01231592461865,
+      "temperatureC": 30.280514742929128,
+      "elapsedSeconds": 837.016,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.779
+    },
+    {
+      "sourceRow": 48,
+      "voltageV": 3.6930393322124,
+      "currentA": -2.0120123756511448,
+      "temperatureC": 30.334837313988494,
+      "elapsedSeconds": 855.25,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.775
+    },
+    {
+      "sourceRow": 49,
+      "voltageV": 3.689176796697776,
+      "currentA": -2.0120803747271694,
+      "temperatureC": 30.386284604555797,
+      "elapsedSeconds": 873.578,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.772
+    },
+    {
+      "sourceRow": 50,
+      "voltageV": 3.685214481541968,
+      "currentA": -2.0107110810878415,
+      "temperatureC": 30.422588674734524,
+      "elapsedSeconds": 891.812,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.768
+    },
+    {
+      "sourceRow": 51,
+      "voltageV": 3.681493741415728,
+      "currentA": -2.013344119617849,
+      "temperatureC": 30.47429007075274,
+      "elapsedSeconds": 910.141,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.765
+    },
+    {
+      "sourceRow": 52,
+      "voltageV": 3.6777922137897634,
+      "currentA": -2.0110307397305536,
+      "temperatureC": 30.521639036326526,
+      "elapsedSeconds": 928.391,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.761
+    },
+    {
+      "sourceRow": 53,
+      "voltageV": 3.6740618131820946,
+      "currentA": -2.0126836937029475,
+      "temperatureC": 30.56564255984485,
+      "elapsedSeconds": 946.719,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.757
+    },
+    {
+      "sourceRow": 54,
+      "voltageV": 3.6703017649960348,
+      "currentA": -2.0114412418104908,
+      "temperatureC": 30.614342540274404,
+      "elapsedSeconds": 965.047,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.753
+    },
+    {
+      "sourceRow": 55,
+      "voltageV": 3.666733911530225,
+      "currentA": -2.0127904770485,
+      "temperatureC": 30.65539856459504,
+      "elapsedSeconds": 983.391,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.749
+    },
+    {
+      "sourceRow": 56,
+      "voltageV": 3.6629980495062586,
+      "currentA": -2.011569191758114,
+      "temperatureC": 30.703512411809328,
+      "elapsedSeconds": 1001.766,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.746
+    },
+    {
+      "sourceRow": 57,
+      "voltageV": 3.659664386801439,
+      "currentA": -2.0126631912960185,
+      "temperatureC": 30.75861687077348,
+      "elapsedSeconds": 1020.172,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.743
+    },
+    {
+      "sourceRow": 58,
+      "voltageV": 3.6558941361243935,
+      "currentA": -2.0139053880760813,
+      "temperatureC": 30.805908655557538,
+      "elapsedSeconds": 1038.594,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.739
+    },
+    {
+      "sourceRow": 59,
+      "voltageV": 3.6523265130031755,
+      "currentA": -2.010715775544467,
+      "temperatureC": 30.859714600620457,
+      "elapsedSeconds": 1056.922,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.735
+    },
+    {
+      "sourceRow": 60,
+      "voltageV": 3.648763482293651,
+      "currentA": -2.012021545570249,
+      "temperatureC": 30.910104091858255,
+      "elapsedSeconds": 1075.203,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.732
+    },
+    {
+      "sourceRow": 61,
+      "voltageV": 3.6455468592716467,
+      "currentA": -2.009214327441653,
+      "temperatureC": 30.955158203441794,
+      "elapsedSeconds": 1093.687,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.729
+    },
+    {
+      "sourceRow": 62,
+      "voltageV": 3.6420762548373222,
+      "currentA": -2.0137098496526478,
+      "temperatureC": 31.00631131316394,
+      "elapsedSeconds": 1112.0,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.725
+    },
+    {
+      "sourceRow": 63,
+      "voltageV": 3.6384640630533522,
+      "currentA": -2.012817105537171,
+      "temperatureC": 31.06151882732067,
+      "elapsedSeconds": 1130.328,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.722
+    },
+    {
+      "sourceRow": 64,
+      "voltageV": 3.6350760693865416,
+      "currentA": -2.0140626569872073,
+      "temperatureC": 31.121401494237123,
+      "elapsedSeconds": 1148.75,
+      "loadCurrentA": -1.9984,
+      "loadVoltageV": 2.719
+    },
+    {
+      "sourceRow": 65,
+      "voltageV": 3.6316648242502687,
+      "currentA": -2.0110737646568038,
+      "temperatureC": 31.162425809723153,
+      "elapsedSeconds": 1167.125,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.715
+    },
+    {
+      "sourceRow": 66,
+      "voltageV": 3.628578536468816,
+      "currentA": -2.010892908444055,
+      "temperatureC": 31.224806538316223,
+      "elapsedSeconds": 1185.641,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.712
+    },
+    {
+      "sourceRow": 67,
+      "voltageV": 3.625012599283518,
+      "currentA": -2.012403944593161,
+      "temperatureC": 31.27691155461776,
+      "elapsedSeconds": 1203.984,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.709
+    },
+    {
+      "sourceRow": 68,
+      "voltageV": 3.6215822268112277,
+      "currentA": -2.0132359077233173,
+      "temperatureC": 31.329021354767168,
+      "elapsedSeconds": 1222.406,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.705
+    },
+    {
+      "sourceRow": 69,
+      "voltageV": 3.618461251661822,
+      "currentA": -2.0141938465196407,
+      "temperatureC": 31.377583838007816,
+      "elapsedSeconds": 1240.797,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.702
+    },
+    {
+      "sourceRow": 70,
+      "voltageV": 3.615067251937504,
+      "currentA": -2.0126366754770078,
+      "temperatureC": 31.439329349553738,
+      "elapsedSeconds": 1259.156,
+      "loadCurrentA": -1.9984,
+      "loadVoltageV": 2.699
+    },
+    {
+      "sourceRow": 71,
+      "voltageV": 3.6118818087581213,
+      "currentA": -2.0122103196974557,
+      "temperatureC": 31.49875419125704,
+      "elapsedSeconds": 1277.547,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.696
+    },
+    {
+      "sourceRow": 72,
+      "voltageV": 3.608578677267317,
+      "currentA": -2.011552238457628,
+      "temperatureC": 31.554685554736025,
+      "elapsedSeconds": 1295.906,
+      "loadCurrentA": -1.9984,
+      "loadVoltageV": 2.693
+    },
+    {
+      "sourceRow": 73,
+      "voltageV": 3.6055349411099233,
+      "currentA": -2.0140642055357367,
+      "temperatureC": 31.603942615720726,
+      "elapsedSeconds": 1314.297,
+      "loadCurrentA": -1.9984,
+      "loadVoltageV": 2.689
+    },
+    {
+      "sourceRow": 74,
+      "voltageV": 3.6021858993564058,
+      "currentA": -2.0118993923590667,
+      "temperatureC": 31.6581151604487,
+      "elapsedSeconds": 1332.687,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.686
+    },
+    {
+      "sourceRow": 75,
+      "voltageV": 3.598857145114916,
+      "currentA": -2.015418659421735,
+      "temperatureC": 31.700917686184457,
+      "elapsedSeconds": 1351.203,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.683
+    },
+    {
+      "sourceRow": 76,
+      "voltageV": 3.5957670937938047,
+      "currentA": -2.0127496500225766,
+      "temperatureC": 31.758563275374726,
+      "elapsedSeconds": 1369.687,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.679
+    },
+    {
+      "sourceRow": 77,
+      "voltageV": 3.5930166635689296,
+      "currentA": -2.0138512952228385,
+      "temperatureC": 31.811383026189695,
+      "elapsedSeconds": 1388.125,
+      "loadCurrentA": -1.9984,
+      "loadVoltageV": 2.677
+    },
+    {
+      "sourceRow": 78,
+      "voltageV": 3.589710093997269,
+      "currentA": -2.0135540833621937,
+      "temperatureC": 31.869243502981195,
+      "elapsedSeconds": 1406.578,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.673
+    },
+    {
+      "sourceRow": 79,
+      "voltageV": 3.5866522032766084,
+      "currentA": -2.0163099096877253,
+      "temperatureC": 31.91584617496636,
+      "elapsedSeconds": 1425.062,
+      "loadCurrentA": -1.9984,
+      "loadVoltageV": 2.671
+    },
+    {
+      "sourceRow": 80,
+      "voltageV": 3.583442038235367,
+      "currentA": -2.0127709962440115,
+      "temperatureC": 31.964417387723174,
+      "elapsedSeconds": 1443.609,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.667
+    },
+    {
+      "sourceRow": 81,
+      "voltageV": 3.580485344347141,
+      "currentA": -2.012822716309189,
+      "temperatureC": 32.01315881764927,
+      "elapsedSeconds": 1462.047,
+      "loadCurrentA": -1.9984,
+      "loadVoltageV": 2.664
+    },
+    {
+      "sourceRow": 82,
+      "voltageV": 3.577250478130265,
+      "currentA": -2.012519953474933,
+      "temperatureC": 32.06671887324482,
+      "elapsedSeconds": 1480.547,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.661
+    },
+    {
+      "sourceRow": 83,
+      "voltageV": 3.5743688339111253,
+      "currentA": -2.011585027857753,
+      "temperatureC": 32.11931241437056,
+      "elapsedSeconds": 1499.031,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.658
+    },
+    {
+      "sourceRow": 84,
+      "voltageV": 3.5712851276871667,
+      "currentA": -2.0162285132879596,
+      "temperatureC": 32.16182646107055,
+      "elapsedSeconds": 1517.672,
+      "loadCurrentA": -1.9984,
+      "loadVoltageV": 2.655
+    },
+    {
+      "sourceRow": 85,
+      "voltageV": 3.568720665506147,
+      "currentA": -2.012227513512012,
+      "temperatureC": 32.21984558129608,
+      "elapsedSeconds": 1536.109,
+      "loadCurrentA": -1.9984,
+      "loadVoltageV": 2.652
+    },
+    {
+      "sourceRow": 86,
+      "voltageV": 3.5655546732997907,
+      "currentA": -2.013824259805759,
+      "temperatureC": 32.26525994564743,
+      "elapsedSeconds": 1554.781,
+      "loadCurrentA": -1.9984,
+      "loadVoltageV": 2.649
+    },
+    {
+      "sourceRow": 87,
+      "voltageV": 3.562595408782016,
+      "currentA": -2.013887804659261,
+      "temperatureC": 32.314372051414715,
+      "elapsedSeconds": 1573.281,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.646
+    },
+    {
+      "sourceRow": 88,
+      "voltageV": 3.559784470410582,
+      "currentA": -2.0108430845976044,
+      "temperatureC": 32.370839882731325,
+      "elapsedSeconds": 1591.859,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.643
+    },
+    {
+      "sourceRow": 89,
+      "voltageV": 3.556893753831353,
+      "currentA": -2.010678198048069,
+      "temperatureC": 32.41202452924694,
+      "elapsedSeconds": 1610.406,
+      "loadCurrentA": -1.9984,
+      "loadVoltageV": 2.64
+    },
+    {
+      "sourceRow": 90,
+      "voltageV": 3.553973587540843,
+      "currentA": -2.013477429843029,
+      "temperatureC": 32.44708743388991,
+      "elapsedSeconds": 1628.953,
+      "loadCurrentA": -1.9984,
+      "loadVoltageV": 2.638
+    },
+    {
+      "sourceRow": 91,
+      "voltageV": 3.551197827421948,
+      "currentA": -2.013286566822403,
+      "temperatureC": 32.50304552076205,
+      "elapsedSeconds": 1647.562,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.635
+    },
+    {
+      "sourceRow": 92,
+      "voltageV": 3.5485155995774695,
+      "currentA": -2.011740383270553,
+      "temperatureC": 32.553065051986884,
+      "elapsedSeconds": 1666.062,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.632
+    },
+    {
+      "sourceRow": 93,
+      "voltageV": 3.5458058311007727,
+      "currentA": -2.0130222067974155,
+      "temperatureC": 32.5989989552268,
+      "elapsedSeconds": 1684.656,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.629
+    },
+    {
+      "sourceRow": 94,
+      "voltageV": 3.5431107215501156,
+      "currentA": -2.013411432030162,
+      "temperatureC": 32.64351728885966,
+      "elapsedSeconds": 1703.219,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.626
+    },
+    {
+      "sourceRow": 95,
+      "voltageV": 3.540293557597872,
+      "currentA": -2.013698959876419,
+      "temperatureC": 32.690300195578764,
+      "elapsedSeconds": 1721.891,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.624
+    },
+    {
+      "sourceRow": 96,
+      "voltageV": 3.537401005590436,
+      "currentA": -2.013064141778605,
+      "temperatureC": 32.730074455102304,
+      "elapsedSeconds": 1740.437,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.621
+    },
+    {
+      "sourceRow": 97,
+      "voltageV": 3.5351870427542216,
+      "currentA": -2.0110514146671736,
+      "temperatureC": 32.779918655246846,
+      "elapsedSeconds": 1759.016,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.618
+    },
+    {
+      "sourceRow": 98,
+      "voltageV": 3.5325089411636674,
+      "currentA": -2.012815244329944,
+      "temperatureC": 32.82181469931217,
+      "elapsedSeconds": 1777.641,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.616
+    },
+    {
+      "sourceRow": 99,
+      "voltageV": 3.5299033377316102,
+      "currentA": -2.0148401368014133,
+      "temperatureC": 32.86578626864282,
+      "elapsedSeconds": 1796.328,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.613
+    },
+    {
+      "sourceRow": 100,
+      "voltageV": 3.5275475345562626,
+      "currentA": -2.0129686752427793,
+      "temperatureC": 32.90915818545944,
+      "elapsedSeconds": 1815.047,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.61
+    },
+    {
+      "sourceRow": 101,
+      "voltageV": 3.5250155059872195,
+      "currentA": -2.0137554374049196,
+      "temperatureC": 32.95555573054014,
+      "elapsedSeconds": 1833.75,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.608
+    },
+    {
+      "sourceRow": 102,
+      "voltageV": 3.5226033573884603,
+      "currentA": -2.0119977076121405,
+      "temperatureC": 32.983756223362334,
+      "elapsedSeconds": 1852.391,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.606
+    },
+    {
+      "sourceRow": 103,
+      "voltageV": 3.5201127792301476,
+      "currentA": -2.011265054968487,
+      "temperatureC": 33.028157482792835,
+      "elapsedSeconds": 1871.078,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.603
+    },
+    {
+      "sourceRow": 104,
+      "voltageV": 3.5179689456722643,
+      "currentA": -2.010186980979301,
+      "temperatureC": 33.06736385250343,
+      "elapsedSeconds": 1889.844,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.6
+    },
+    {
+      "sourceRow": 105,
+      "voltageV": 3.5153862484304494,
+      "currentA": -2.0125204660350757,
+      "temperatureC": 33.11495219390969,
+      "elapsedSeconds": 1908.578,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.598
+    },
+    {
+      "sourceRow": 106,
+      "voltageV": 3.5132836904357765,
+      "currentA": -2.0135954787601995,
+      "temperatureC": 33.160279476682916,
+      "elapsedSeconds": 1927.281,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.596
+    },
+    {
+      "sourceRow": 107,
+      "voltageV": 3.5111398620917647,
+      "currentA": -2.0130695572564217,
+      "temperatureC": 33.20376347715873,
+      "elapsedSeconds": 1946.031,
+      "loadCurrentA": -1.9984,
+      "loadVoltageV": 2.594
+    },
+    {
+      "sourceRow": 108,
+      "voltageV": 3.5088048409150656,
+      "currentA": -2.0121285589478077,
+      "temperatureC": 33.23715597360877,
+      "elapsedSeconds": 1964.891,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.591
+    },
+    {
+      "sourceRow": 109,
+      "voltageV": 3.5068911484708996,
+      "currentA": -2.0116508334334893,
+      "temperatureC": 33.28336571800471,
+      "elapsedSeconds": 1983.703,
+      "loadCurrentA": -1.9984,
+      "loadVoltageV": 2.589
+    },
+    {
+      "sourceRow": 110,
+      "voltageV": 3.504711595241825,
+      "currentA": -2.0109261555754006,
+      "temperatureC": 33.31893013910395,
+      "elapsedSeconds": 2002.484,
+      "loadCurrentA": -1.9984,
+      "loadVoltageV": 2.587
+    },
+    {
+      "sourceRow": 111,
+      "voltageV": 3.5027863690522647,
+      "currentA": -2.0150827459752803,
+      "temperatureC": 33.354143538103976,
+      "elapsedSeconds": 2021.187,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.585
+    },
+    {
+      "sourceRow": 112,
+      "voltageV": 3.5006411924363916,
+      "currentA": -2.0125090167753217,
+      "temperatureC": 33.39763348309851,
+      "elapsedSeconds": 2039.906,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.583
+    },
+    {
+      "sourceRow": 113,
+      "voltageV": 3.498840324724502,
+      "currentA": -2.0153399541495163,
+      "temperatureC": 33.44167146795547,
+      "elapsedSeconds": 2058.641,
+      "loadCurrentA": -1.9984,
+      "loadVoltageV": 2.581
+    },
+    {
+      "sourceRow": 114,
+      "voltageV": 3.4965100917307734,
+      "currentA": -2.01178460382067,
+      "temperatureC": 33.48501453651206,
+      "elapsedSeconds": 2077.406,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.579
+    },
+    {
+      "sourceRow": 115,
+      "voltageV": 3.494762083941214,
+      "currentA": -2.0141406052790485,
+      "temperatureC": 33.531282695718424,
+      "elapsedSeconds": 2096.312,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.577
+    },
+    {
+      "sourceRow": 116,
+      "voltageV": 3.49264904176421,
+      "currentA": -2.011955438626154,
+      "temperatureC": 33.5673161733715,
+      "elapsedSeconds": 2115.047,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.575
+    },
+    {
+      "sourceRow": 117,
+      "voltageV": 3.490903811475105,
+      "currentA": -2.0117008155468996,
+      "temperatureC": 33.60771948100527,
+      "elapsedSeconds": 2133.969,
+      "loadCurrentA": -1.9984,
+      "loadVoltageV": 2.573
+    },
+    {
+      "sourceRow": 118,
+      "voltageV": 3.488848632551381,
+      "currentA": -2.0122905398568998,
+      "temperatureC": 33.66266784979646,
+      "elapsedSeconds": 2152.812,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.571
+    },
+    {
+      "sourceRow": 119,
+      "voltageV": 3.486869289553692,
+      "currentA": -2.0112903504210333,
+      "temperatureC": 33.70836355147667,
+      "elapsedSeconds": 2171.625,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.569
+    },
+    {
+      "sourceRow": 120,
+      "voltageV": 3.4849958723381325,
+      "currentA": -2.011624701198909,
+      "temperatureC": 33.77033764632846,
+      "elapsedSeconds": 2190.547,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.567
+    },
+    {
+      "sourceRow": 121,
+      "voltageV": 3.4831738120107745,
+      "currentA": -2.0136155754500633,
+      "temperatureC": 33.81562187018666,
+      "elapsedSeconds": 2209.422,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.565
+    },
+    {
+      "sourceRow": 122,
+      "voltageV": 3.480996352828119,
+      "currentA": -2.0119309097631826,
+      "temperatureC": 33.85394213039995,
+      "elapsedSeconds": 2228.297,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.563
+    },
+    {
+      "sourceRow": 123,
+      "voltageV": 3.479328828837194,
+      "currentA": -2.015181645434741,
+      "temperatureC": 33.90438752528228,
+      "elapsedSeconds": 2247.219,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.561
+    },
+    {
+      "sourceRow": 124,
+      "voltageV": 3.477212881390962,
+      "currentA": -2.014043673338185,
+      "temperatureC": 33.95309699786346,
+      "elapsedSeconds": 2265.969,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.559
+    },
+    {
+      "sourceRow": 125,
+      "voltageV": 3.4753105413831458,
+      "currentA": -2.013217760628927,
+      "temperatureC": 34.00238375569582,
+      "elapsedSeconds": 2284.937,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.557
+    },
+    {
+      "sourceRow": 126,
+      "voltageV": 3.473443290386014,
+      "currentA": -2.011669638943265,
+      "temperatureC": 34.04779830166837,
+      "elapsedSeconds": 2303.859,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.555
+    },
+    {
+      "sourceRow": 127,
+      "voltageV": 3.4711879019081686,
+      "currentA": -2.0128933420251287,
+      "temperatureC": 34.09934357050654,
+      "elapsedSeconds": 2322.797,
+      "loadCurrentA": -1.9984,
+      "loadVoltageV": 2.553
+    },
+    {
+      "sourceRow": 128,
+      "voltageV": 3.469158039902223,
+      "currentA": -2.0119443831543045,
+      "temperatureC": 34.140884767723,
+      "elapsedSeconds": 2341.766,
+      "loadCurrentA": -1.9984,
+      "loadVoltageV": 2.551
+    },
+    {
+      "sourceRow": 129,
+      "voltageV": 3.4671579943063167,
+      "currentA": -2.012427484501588,
+      "temperatureC": 34.19289487277824,
+      "elapsedSeconds": 2360.594,
+      "loadCurrentA": -1.9984,
+      "loadVoltageV": 2.549
+    },
+    {
+      "sourceRow": 130,
+      "voltageV": 3.465097993031564,
+      "currentA": -2.010299629981853,
+      "temperatureC": 34.24423216160412,
+      "elapsedSeconds": 2379.578,
+      "loadCurrentA": -1.9984,
+      "loadVoltageV": 2.547
+    },
+    {
+      "sourceRow": 131,
+      "voltageV": 3.463197485444895,
+      "currentA": -2.012658501123071,
+      "temperatureC": 34.30023373795492,
+      "elapsedSeconds": 2398.672,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.545
+    },
+    {
+      "sourceRow": 132,
+      "voltageV": 3.460765705112582,
+      "currentA": -2.013968219184656,
+      "temperatureC": 34.34762219832119,
+      "elapsedSeconds": 2417.797,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.542
+    },
+    {
+      "sourceRow": 133,
+      "voltageV": 3.4585295432468413,
+      "currentA": -2.0144535347695864,
+      "temperatureC": 34.4037155027466,
+      "elapsedSeconds": 2436.906,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.54
+    },
+    {
+      "sourceRow": 134,
+      "voltageV": 3.4563759463501422,
+      "currentA": -2.010759639842223,
+      "temperatureC": 34.4552007473828,
+      "elapsedSeconds": 2455.969,
+      "loadCurrentA": -1.9984,
+      "loadVoltageV": 2.538
+    },
+    {
+      "sourceRow": 135,
+      "voltageV": 3.4538210537417333,
+      "currentA": -2.0121779984073713,
+      "temperatureC": 34.530969550868825,
+      "elapsedSeconds": 2474.984,
+      "loadCurrentA": -1.9984,
+      "loadVoltageV": 2.536
+    },
+    {
+      "sourceRow": 136,
+      "voltageV": 3.4515907122275227,
+      "currentA": -2.0087093465325,
+      "temperatureC": 34.57901217997282,
+      "elapsedSeconds": 2494.031,
+      "loadCurrentA": -1.9984,
+      "loadVoltageV": 2.534
+    },
+    {
+      "sourceRow": 137,
+      "voltageV": 3.4493434152393183,
+      "currentA": -2.016679128578936,
+      "temperatureC": 34.641933413168545,
+      "elapsedSeconds": 2513.187,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.531
+    },
+    {
+      "sourceRow": 138,
+      "voltageV": 3.446911775455076,
+      "currentA": -2.0138586708540003,
+      "temperatureC": 34.71979044243843,
+      "elapsedSeconds": 2532.391,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.528
+    },
+    {
+      "sourceRow": 139,
+      "voltageV": 3.444337080026871,
+      "currentA": -2.0115758127460204,
+      "temperatureC": 34.774690778345644,
+      "elapsedSeconds": 2551.547,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.526
+    },
+    {
+      "sourceRow": 140,
+      "voltageV": 3.4418610480967886,
+      "currentA": -2.011119043674645,
+      "temperatureC": 34.836805177330966,
+      "elapsedSeconds": 2570.578,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.524
+    },
+    {
+      "sourceRow": 141,
+      "voltageV": 3.4389402660812247,
+      "currentA": -2.013523872307681,
+      "temperatureC": 34.90772240297295,
+      "elapsedSeconds": 2589.703,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.521
+    },
+    {
+      "sourceRow": 142,
+      "voltageV": 3.4363610349510556,
+      "currentA": -2.0112922215928988,
+      "temperatureC": 34.96834032784512,
+      "elapsedSeconds": 2608.797,
+      "loadCurrentA": -1.9984,
+      "loadVoltageV": 2.518
+    },
+    {
+      "sourceRow": 143,
+      "voltageV": 3.4336708090485026,
+      "currentA": -2.0138901413030603,
+      "temperatureC": 35.03904430728114,
+      "elapsedSeconds": 2627.953,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.516
+    },
+    {
+      "sourceRow": 144,
+      "voltageV": 3.4308965803729032,
+      "currentA": -2.0126687404943913,
+      "temperatureC": 35.09556778980695,
+      "elapsedSeconds": 2647.234,
+      "loadCurrentA": -1.9984,
+      "loadVoltageV": 2.513
+    },
+    {
+      "sourceRow": 145,
+      "voltageV": 3.4278208975786204,
+      "currentA": -2.0128414375740236,
+      "temperatureC": 35.17021564015686,
+      "elapsedSeconds": 2666.516,
+      "loadCurrentA": -1.9984,
+      "loadVoltageV": 2.51
+    },
+    {
+      "sourceRow": 146,
+      "voltageV": 3.4248440591339078,
+      "currentA": -2.0110968292008407,
+      "temperatureC": 35.2465914739535,
+      "elapsedSeconds": 2685.812,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.507
+    },
+    {
+      "sourceRow": 147,
+      "voltageV": 3.4217572691161324,
+      "currentA": -2.01176990089421,
+      "temperatureC": 35.32264085179671,
+      "elapsedSeconds": 2704.969,
+      "loadCurrentA": -1.9984,
+      "loadVoltageV": 2.504
+    },
+    {
+      "sourceRow": 148,
+      "voltageV": 3.4187463240429086,
+      "currentA": -2.010560853989072,
+      "temperatureC": 35.396462624288304,
+      "elapsedSeconds": 2724.203,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.501
+    },
+    {
+      "sourceRow": 149,
+      "voltageV": 3.415457808616587,
+      "currentA": -2.012447887937708,
+      "temperatureC": 35.45856314881188,
+      "elapsedSeconds": 2743.453,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.498
+    },
+    {
+      "sourceRow": 150,
+      "voltageV": 3.4117760087144955,
+      "currentA": -2.009914541451216,
+      "temperatureC": 35.54801733273433,
+      "elapsedSeconds": 2762.625,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.494
+    },
+    {
+      "sourceRow": 151,
+      "voltageV": 3.408293969372279,
+      "currentA": -2.0152481947556304,
+      "temperatureC": 35.60928065434749,
+      "elapsedSeconds": 2781.922,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.491
+    },
+    {
+      "sourceRow": 152,
+      "voltageV": 3.404357793933063,
+      "currentA": -2.0150953474129545,
+      "temperatureC": 35.68496007922167,
+      "elapsedSeconds": 2801.25,
+      "loadCurrentA": -1.9984,
+      "loadVoltageV": 2.487
+    },
+    {
+      "sourceRow": 153,
+      "voltageV": 3.4002362406403064,
+      "currentA": -2.012875924788009,
+      "temperatureC": 35.75662514280143,
+      "elapsedSeconds": 2820.625,
+      "loadCurrentA": -1.9984,
+      "loadVoltageV": 2.483
+    },
+    {
+      "sourceRow": 154,
+      "voltageV": 3.3961307178717886,
+      "currentA": -2.009719858043891,
+      "temperatureC": 35.82367474198864,
+      "elapsedSeconds": 2839.937,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.479
+    },
+    {
+      "sourceRow": 155,
+      "voltageV": 3.391813378425516,
+      "currentA": -2.012525609775728,
+      "temperatureC": 35.909448597175476,
+      "elapsedSeconds": 2859.234,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.475
+    },
+    {
+      "sourceRow": 156,
+      "voltageV": 3.3870482919863876,
+      "currentA": -2.0124717716077494,
+      "temperatureC": 35.99556666034473,
+      "elapsedSeconds": 2878.578,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.47
+    },
+    {
+      "sourceRow": 157,
+      "voltageV": 3.382030920346834,
+      "currentA": -2.0123914449852918,
+      "temperatureC": 36.068027010769285,
+      "elapsedSeconds": 2897.937,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.466
+    },
+    {
+      "sourceRow": 158,
+      "voltageV": 3.3765480941020134,
+      "currentA": -2.0117711404942584,
+      "temperatureC": 36.15179923917471,
+      "elapsedSeconds": 2917.281,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.46
+    },
+    {
+      "sourceRow": 159,
+      "voltageV": 3.3704516808092,
+      "currentA": -2.013057210639712,
+      "temperatureC": 36.2262079731765,
+      "elapsedSeconds": 2936.687,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.454
+    },
+    {
+      "sourceRow": 160,
+      "voltageV": 3.3637870289545013,
+      "currentA": -2.0131297744697148,
+      "temperatureC": 36.31758398444011,
+      "elapsedSeconds": 2956.078,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.448
+    },
+    {
+      "sourceRow": 161,
+      "voltageV": 3.356852193816097,
+      "currentA": -2.0105045067999914,
+      "temperatureC": 36.401752685802634,
+      "elapsedSeconds": 2975.453,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.442
+    },
+    {
+      "sourceRow": 162,
+      "voltageV": 3.348677494802443,
+      "currentA": -2.013446754531448,
+      "temperatureC": 36.48121162070499,
+      "elapsedSeconds": 2994.969,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.434
+    },
+    {
+      "sourceRow": 163,
+      "voltageV": 3.3395908974645954,
+      "currentA": -2.0119982113302872,
+      "temperatureC": 36.57401014102597,
+      "elapsedSeconds": 3014.453,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.426
+    },
+    {
+      "sourceRow": 164,
+      "voltageV": 3.3296351274331917,
+      "currentA": -2.0140764480537103,
+      "temperatureC": 36.67762685521643,
+      "elapsedSeconds": 3033.891,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.416
+    },
+    {
+      "sourceRow": 165,
+      "voltageV": 3.3182079062628267,
+      "currentA": -2.0100685422582028,
+      "temperatureC": 36.76747018030684,
+      "elapsedSeconds": 3053.375,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.405
+    },
+    {
+      "sourceRow": 166,
+      "voltageV": 3.304941442777412,
+      "currentA": -2.0138669451353235,
+      "temperatureC": 36.86185499041584,
+      "elapsedSeconds": 3072.859,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.394
+    },
+    {
+      "sourceRow": 167,
+      "voltageV": 3.2903773656630855,
+      "currentA": -2.0110127332259826,
+      "temperatureC": 36.97598236979883,
+      "elapsedSeconds": 3092.328,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.38
+    },
+    {
+      "sourceRow": 168,
+      "voltageV": 3.273715693930023,
+      "currentA": -2.0123113782132838,
+      "temperatureC": 37.069216184006486,
+      "elapsedSeconds": 3111.828,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.364
+    },
+    {
+      "sourceRow": 169,
+      "voltageV": 3.2545164612946103,
+      "currentA": -2.011090197818606,
+      "temperatureC": 37.18107260277641,
+      "elapsedSeconds": 3131.234,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.346
+    },
+    {
+      "sourceRow": 170,
+      "voltageV": 3.233102643098978,
+      "currentA": -2.0112350674844652,
+      "temperatureC": 37.309579600466215,
+      "elapsedSeconds": 3150.672,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.327
+    },
+    {
+      "sourceRow": 171,
+      "voltageV": 3.20827869027007,
+      "currentA": -2.0117170273952336,
+      "temperatureC": 37.42044437694226,
+      "elapsedSeconds": 3170.187,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.303
+    },
+    {
+      "sourceRow": 172,
+      "voltageV": 3.179961764719949,
+      "currentA": -2.0110614531850426,
+      "temperatureC": 37.56172724489691,
+      "elapsedSeconds": 3189.734,
+      "loadCurrentA": -1.9984,
+      "loadVoltageV": 2.277
+    },
+    {
+      "sourceRow": 173,
+      "voltageV": 3.1472229932322944,
+      "currentA": -2.011689985187744,
+      "temperatureC": 37.693381806329896,
+      "elapsedSeconds": 3209.297,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.247
+    },
+    {
+      "sourceRow": 174,
+      "voltageV": 3.109330581432899,
+      "currentA": -2.01339607190516,
+      "temperatureC": 37.84042744121261,
+      "elapsedSeconds": 3229.016,
+      "loadCurrentA": -1.9984,
+      "loadVoltageV": 2.213
+    },
+    {
+      "sourceRow": 175,
+      "voltageV": 3.0653815793591006,
+      "currentA": -2.0148081760145495,
+      "temperatureC": 37.98252485952108,
+      "elapsedSeconds": 3248.625,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.173
+    },
+    {
+      "sourceRow": 176,
+      "voltageV": 3.0130612235668974,
+      "currentA": -2.011094695691653,
+      "temperatureC": 38.13325491125274,
+      "elapsedSeconds": 3268.328,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.125
+    },
+    {
+      "sourceRow": 177,
+      "voltageV": 2.949205490547093,
+      "currentA": -2.0142169702032073,
+      "temperatureC": 38.303031212600615,
+      "elapsedSeconds": 3287.969,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 2.068
+    },
+    {
+      "sourceRow": 178,
+      "voltageV": 2.866018014123437,
+      "currentA": -2.0106091492141824,
+      "temperatureC": 38.476445717871556,
+      "elapsedSeconds": 3307.625,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 1.998
+    },
+    {
+      "sourceRow": 179,
+      "voltageV": 2.757251912656085,
+      "currentA": -2.014111593729131,
+      "temperatureC": 38.66860353851798,
+      "elapsedSeconds": 3327.234,
+      "loadCurrentA": -1.9984,
+      "loadVoltageV": 1.906
+    },
+    {
+      "sourceRow": 180,
+      "voltageV": 2.612467347907089,
+      "currentA": -2.0126390990973206,
+      "temperatureC": 38.90411223853603,
+      "elapsedSeconds": 3346.937,
+      "loadCurrentA": -1.9982,
+      "loadVoltageV": 1.782
+    },
+    {
+      "sourceRow": 181,
+      "voltageV": 2.998125197302409,
+      "currentA": -0.004200625134143683,
+      "temperatureC": 38.98218133148803,
+      "elapsedSeconds": 3366.781,
+      "loadCurrentA": -0.0004,
+      "loadVoltageV": 0.0
+    },
+    {
+      "sourceRow": 182,
+      "voltageV": 3.070351070397463,
+      "currentA": -0.00292880440280358,
+      "temperatureC": 38.75044301595434,
+      "elapsedSeconds": 3386.641,
+      "loadCurrentA": -0.0006,
+      "loadVoltageV": 0.001
+    },
+    {
+      "sourceRow": 183,
+      "voltageV": 3.1162693589147907,
+      "currentA": -0.00023120017174947286,
+      "temperatureC": 38.445169544822846,
+      "elapsedSeconds": 3406.656,
+      "loadCurrentA": -0.0006,
+      "loadVoltageV": 0.0
+    },
+    {
+      "sourceRow": 184,
+      "voltageV": 3.1486527065601044,
+      "currentA": -0.0012313661009388862,
+      "temperatureC": 38.119008621408526,
+      "elapsedSeconds": 3426.625,
+      "loadCurrentA": -0.0006,
+      "loadVoltageV": 0.0
+    },
+    {
+      "sourceRow": 185,
+      "voltageV": 3.1729060552867048,
+      "currentA": -0.001014383952885054,
+      "temperatureC": 37.76735043093503,
+      "elapsedSeconds": 3446.875,
+      "loadCurrentA": -0.0006,
+      "loadVoltageV": 0.001
+    },
+    {
+      "sourceRow": 186,
+      "voltageV": 3.1910261081380074,
+      "currentA": -0.001654597353736202,
+      "temperatureC": 37.4450587151611,
+      "elapsedSeconds": 3466.984,
+      "loadCurrentA": -0.0006,
+      "loadVoltageV": 0.0
+    },
+    {
+      "sourceRow": 187,
+      "voltageV": 3.2060361324327813,
+      "currentA": -0.003069055029110122,
+      "temperatureC": 37.11174647655056,
+      "elapsedSeconds": 3487.078,
+      "loadCurrentA": -0.0006,
+      "loadVoltageV": 0.0
+    },
+    {
+      "sourceRow": 188,
+      "voltageV": 3.2184494026949326,
+      "currentA": -0.0015567172628202317,
+      "temperatureC": 36.79878981821673,
+      "elapsedSeconds": 3507.328,
+      "loadCurrentA": -0.0006,
+      "loadVoltageV": 0.0
+    },
+    {
+      "sourceRow": 189,
+      "voltageV": 3.228753411472076,
+      "currentA": -0.0034577335537707213,
+      "temperatureC": 36.479164826275635,
+      "elapsedSeconds": 3527.562,
+      "loadCurrentA": -0.0006,
+      "loadVoltageV": 0.0
+    },
+    {
+      "sourceRow": 190,
+      "voltageV": 3.2380951342838293,
+      "currentA": 0.00023140580610699256,
+      "temperatureC": 36.180144923617554,
+      "elapsedSeconds": 3547.781,
+      "loadCurrentA": -0.0006,
+      "loadVoltageV": 0.0
+    },
+    {
+      "sourceRow": 191,
+      "voltageV": 3.245843999200618,
+      "currentA": 0.000728585272845447,
+      "temperatureC": 35.874764699410164,
+      "elapsedSeconds": 3568.062,
+      "loadCurrentA": -0.0006,
+      "loadVoltageV": 0.0
+    },
+    {
+      "sourceRow": 192,
+      "voltageV": 3.2526143396330323,
+      "currentA": -0.0026591808498747614,
+      "temperatureC": 35.585843935470656,
+      "elapsedSeconds": 3588.328,
+      "loadCurrentA": -0.0004,
+      "loadVoltageV": 0.0
+    },
+    {
+      "sourceRow": 193,
+      "voltageV": 3.258704513444923,
+      "currentA": -0.001512579830333834,
+      "temperatureC": 35.29671122671737,
+      "elapsedSeconds": 3608.594,
+      "loadCurrentA": -0.0006,
+      "loadVoltageV": 0.0
+    },
+    {
+      "sourceRow": 194,
+      "voltageV": 3.264120580580119,
+      "currentA": -0.0015316912571288047,
+      "temperatureC": 35.02173780114168,
+      "elapsedSeconds": 3628.953,
+      "loadCurrentA": -0.0006,
+      "loadVoltageV": 0.0
+    },
+    {
+      "sourceRow": 195,
+      "voltageV": 3.2690299526255497,
+      "currentA": -0.0004056777892419465,
+      "temperatureC": 34.75487141965583,
+      "elapsedSeconds": 3649.375,
+      "loadCurrentA": -0.0006,
+      "loadVoltageV": 0.0
+    },
+    {
+      "sourceRow": 196,
+      "voltageV": 3.2732067322427087,
+      "currentA": -0.0003875958384859309,
+      "temperatureC": 34.49007847949452,
+      "elapsedSeconds": 3669.875,
+      "loadCurrentA": -0.0006,
+      "loadVoltageV": 0.0
+    },
+    {
+      "sourceRow": 197,
+      "voltageV": 3.277169976825196,
+      "currentA": -0.006528351251606992,
+      "temperatureC": 34.230852841540965,
+      "elapsedSeconds": 3690.234,
+      "loadCurrentA": -0.0006,
+      "loadVoltageV": 0.0
+    }
+  ],
+  "moments": {
+    "first": 0.0,
+    "firstUnderLoad": 35.702999999999996,
+    "halfway": 1852.391,
+    "minVoltage": 3346.937,
+    "maxTemperature": 3366.781,
+    "last": 3690.234
+  },
+  "sources": [
+    {
+      "id": "nasa-catalog",
+      "name": "NASA 电池老化实验与字段说明",
+      "url": "https://data.nasa.gov/dataset/li-ion-battery-aging-datasets"
+    },
+    {
+      "id": "nasa-mat",
+      "name": "NASA B0005 原始测量档案",
+      "url": "https://phm-datasets.s3.amazonaws.com/NASA/5.+Battery+Data+Set.zip",
+      "file": "research/dynamics/b0005/raw/B0005.mat",
+      "bytes": 15956874,
+      "sha256": "0eae4585baf3f200c09fe24c5ab884f1889679fc75206ca1aa19da704104f0b0",
+      "member": "5. Battery Data Set/1. BatteryAgingARC-FY08Q4.zip",
+      "matFile": "B0005.mat"
+    }
+  ],
+  "limitations": [
+    "回放以实验经过时间为轴。源日期未标时区，采样间隔随记录变化。",
+    "电流保留原始正负号，负值对应本次放电方向。端电压、电芯输出电流和电芯温度来自电池实测通道。",
+    "NASA 资料将实验归于 Ames PCoE 测试台。源文件未提供本电芯测试台的地理坐标。",
+    "电芯剖面为通用圆柱电芯结构示意。实测温度为单个电芯温度通道的读数。"
+  ]
+}

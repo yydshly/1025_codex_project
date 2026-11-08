@@ -1,0 +1,984 @@
+{
+  "schemaVersion": 1,
+  "revision": 1,
+  "title": "七方向真实场景交付规格",
+  "date": "2026-11-05",
+  "status": "specified-pending-implementation",
+  "completionPolicy": "规格写入与数据接入分开；所有新样本、接口调用、画面、解释与复用能力分别验收。",
+  "sourceEvidenceRef": "research/implementation-roadmap.json#/sourcesChecked",
+  "levels": [
+    {
+      "id": "registered",
+      "meaning": "用户任务、范围和来源任务已登记，不代表数据已取得。"
+    },
+    {
+      "id": "sample-admitted",
+      "meaning": "具体小样本已获取、解析并通过资料门槛。"
+    },
+    {
+      "id": "observations-connected",
+      "meaning": "原始量可按真实时间/相对时长显示并回查。"
+    },
+    {
+      "id": "process-visible",
+      "meaning": "资料支持的动态可见对象已与曲线、时间对应。"
+    },
+    {
+      "id": "explanation-accepted",
+      "meaning": "结论有证据，首次使用者完成理解任务。"
+    },
+    {
+      "id": "reusable",
+      "meaning": "第二个事件、站点或兼容日志通过同样配置流程接入。"
+    }
+  ],
+  "sharedPresentationRules": {
+    "mainEvidenceChartsMaximum": 2,
+    "geographicLabels": "只保留与当前问题相关的少量可点击标注，不遮挡关键变化区域；小屏优先隐藏次要标签而非覆盖主体。",
+    "camera": "镜头只帮助空间定位，停留的观测时刻始终可见；视角运动不冒充过程动态。",
+    "rawEvidence": "每个派生/增强视图可返回原始可用图像或记录，来源和处理说明按需展开。",
+    "semanticLayers": "观测、遥感派生、分析、预报、教学/自建模型分别显示类型和时刻。",
+    "scale": "显示比例放大、云视差、采样尺度和设备测点覆盖在相关视图可见。",
+    "motion": "播放/暂停/逐步、键盘和减少动态偏好可用，自动镜头可被用户接管。"
+  },
+  "scenarios": [
+    {
+      "id": "weather",
+      "name": "台风与天气",
+      "primaryUser": "科普、新闻解读或教学中的事件阅读者",
+      "question": "这段时间云系怎样变化，哪些本地观测随之发生了变化？",
+      "firstVersionScope": {
+        "region": "首版限定东亚/西太平洋一个支持区域",
+        "cases": "保留山竹、轩岚诺；新增一场资料充分事件",
+        "timeWindow": "每事件明确有资料的短窗口，近期资料另列有效时刻、延迟和覆盖，不承诺全球全天候。"
+      },
+      "currentState": {
+        "newSourceAdmission": "not-performed-in-this-revision",
+        "newImplementation": "not-started",
+        "sourceDocumentation": "部分官方文档已在父任务核实；逐候选状态见sourceCandidates。",
+        "boundary": "新数据、图层、模型、后台和讲解生成均不得因本规格写入而标为完成。",
+        "existing": "已有两个人工整理历史案例；近期目录不等于完整云图及站点接入。"
+      },
+      "sourceCandidates": [
+        {
+          "name": "NOAA/JMA Himawari AWS Registry",
+          "url": "https://registry.opendata.aws/noaa-himawari/",
+          "admission": "candidate-not-sample-admitted",
+          "purpose": "真实扫描栅格及扫描起止",
+          "documentationStatus": "official-documentation-checked-2026-11-05"
+        },
+        {
+          "name": "NOAA CO-OPS API",
+          "url": "https://api.tidesandcurrents.noaa.gov/api/prod/",
+          "admission": "candidate-not-sample-admitted",
+          "purpose": "在支持区域内候选气象/水位站观测；并不替代香港来源",
+          "documentationStatus": "official-documentation-checked-2026-11-05"
+        }
+      ],
+      "timeContract": {
+        "kind": "absolute",
+        "clock": "UTC存储，显示时区可选；每一量保留自己的有效/采样/累计窗口。"
+      },
+      "spaceContract": {
+        "kind": "geographic",
+        "frame": "WGS84，遥感保留原投影、重投影和视差限制。"
+      },
+      "visibleObjects": [
+        "实际扫描中的云系纹理逐帧替换",
+        "官方分析中心与真实分析时刻",
+        "选定本地站点的实测标记",
+        "具备方法和输入版本的变化参考轮廓"
+      ],
+      "observationScale": [
+        "全球/区域地球定位",
+        "卫星可用窗口内的云带特写",
+        "选定站点及其观测范围"
+      ],
+      "cameraSequence": [
+        "完整地球标出事件与观测区域",
+        "平滑靠近当前资料覆盖区，保留地理上下文",
+        "播放背景-明显变化-后期三个有观测支持的片段",
+        "聚焦一个相关站点并突出同刻曲线",
+        "回到区域视图给出有依据的简短结论"
+      ],
+      "primaryIndicators": [
+        {
+          "id": "local-wind",
+          "name": "所选站平均风",
+          "unit": "按来源原单位及平均时长，换算另记方法",
+          "sourceType": "observed"
+        },
+        {
+          "id": "local-rain",
+          "name": "所选站或已明确地区的累计降雨",
+          "unit": "mm及实际累计窗口；地区范围不取中点",
+          "sourceType": "observed"
+        }
+      ],
+      "optionalEvidence": [
+        "海水位可切换为主指标，保留基准面",
+        "JMA中心风/气压属于分析，和站点风分开",
+        "风场若使用分析或预报产品，说明类型和时效，不称真实空气粒子轨迹"
+      ],
+      "userFlow": [
+        "选事件/日期",
+        "播放关键变化或选择时刻",
+        "点选云区或站点，核对1–2条主要曲线",
+        "打开依据并带走该片段结论"
+      ],
+      "explanationResult": {
+        "type": "event-summary",
+        "content": [
+          "事件/区域/窗口",
+          "可观察云系变化",
+          "当地实际记录及时间差",
+          "来源解释与尚不能判断的部分"
+        ],
+        "replay": "保存eventId、资料版本、片段起止和可恢复视角。"
+      },
+      "admissionConditions": [
+        "扫描像元定位、时间、投影和许可明确",
+        "至少一个本地量有足够窗口内记录；缺报和累计区间保留",
+        "中心来源与扫描各有时刻，不能混为同次观测",
+        "新事件样本通过当前数值与图像独立核验"
+      ],
+      "completionByCapability": [
+        {
+          "capability": "cloud-and-station-story",
+          "required": [
+            "sample-admitted",
+            "process-visible",
+            "explanation-accepted"
+          ]
+        },
+        {
+          "capability": "recent-updating",
+          "required": [
+            "per-source-update-receipt",
+            "stale-and-failure-visible"
+          ]
+        },
+        {
+          "capability": "reusable-case",
+          "required": [
+            "second-case-through-config"
+          ]
+        }
+      ],
+      "excludedFromFirstVersion": [
+        "全球无缝实时覆盖",
+        "无数据支持的体积云高",
+        "由云亮度直接推出降雨/风速或当地受灾",
+        "自由问答自动因果推断"
+      ]
+    },
+    {
+      "id": "quake",
+      "name": "地震",
+      "primaryUser": "希望理解一次地震及测站记录的普通阅读者",
+      "question": "同一场地震在不同地方实际记录到了什么，记录与当地震动产品有什么区别？",
+      "firstVersionScope": {
+        "eventSelection": "新增一场具有可用台站或官方震动产品的事件",
+        "stations": "先有限数量台站，避免一次载入全球波形",
+        "window": "明确震前、主要信号与后续片段，采样窗口按原资料。"
+      },
+      "currentState": {
+        "newSourceAdmission": "not-performed-in-this-revision",
+        "newImplementation": "not-started",
+        "sourceDocumentation": "部分官方文档已在父任务核实；逐候选状态见sourceCandidates。",
+        "boundary": "新数据、图层、模型、后台和讲解生成均不得因本规格写入而标为完成。",
+        "existing": "已有USGS目录和东北地震六台站历史counts；未据此具备通用物理振幅或真实传播场。"
+      },
+      "sourceCandidates": [
+        {
+          "name": "USGS Earthquake Catalog",
+          "url": "https://earthquake.usgs.gov/fdsnws/event/1/",
+          "admission": "candidate-not-sample-admitted",
+          "purpose": "事件发生时间、震级、深度与官方产品入口",
+          "documentationStatus": "official-documentation-checked-2026-11-05"
+        },
+        {
+          "name": "EarthScope waveforms",
+          "url": "https://service.earthscope.org/fdsnws/dataselect/1/",
+          "admission": "candidate-not-sample-admitted",
+          "purpose": "候选台站波形；具体事件、通道、响应元数据需再取样",
+          "documentationStatus": "specific-source-or-access-still-to-verify"
+        }
+      ],
+      "timeContract": {
+        "kind": "absolute",
+        "clock": "统一窗末UTC；峰值采样、波形采样与发震时间单列。"
+      },
+      "spaceContract": {
+        "kind": "geographic",
+        "frame": "震中/震源深度和台站坐标分别表达；深度不是地表范围。"
+      },
+      "visibleObjects": [
+        "实测台站位置",
+        "各台站实际波形随同一时钟起伏",
+        "所选台站的当前真实样本与局部波形条带",
+        "有可用官方产品时显示其估计震动分布并注明产品类型"
+      ],
+      "observationScale": [
+        "完整地球定位事件",
+        "区域视图看台站分布",
+        "所选站的短时波形特写"
+      ],
+      "cameraSequence": [
+        "定位震中、时刻与有限台站",
+        "靠近台站区域，明确地表与震源深度",
+        "从震前到主要信号片段，台站实测条带和曲线同步",
+        "切换另一台站，保持相同UTC，说明单位及可比条件",
+        "回到事件区域总结观测与估计各自支持的结论"
+      ],
+      "primaryIndicators": [
+        {
+          "id": "selected-station-record",
+          "name": "所选台站真实记录",
+          "unit": "按通道元数据；未校正保留counts，物理单位仅在响应校正后提供",
+          "sourceType": "observed"
+        },
+        {
+          "id": "official-shaking",
+          "name": "官方震动估计",
+          "unit": "按产品定义，产品不可用则隐藏",
+          "sourceType": "analysis",
+          "optional": true
+        }
+      ],
+      "optionalEvidence": [
+        "震级、深度与修订时间作事件背景",
+        "各站响应不同，不用归一化柱长跨站排名",
+        "P/S理论到时若后续提供，另列模型与介质假设"
+      ],
+      "userFlow": [
+        "选事件及台站",
+        "回放同一UTC片段",
+        "比较明确可比口径下的记录",
+        "核对原波形/通道和官方产品"
+      ],
+      "explanationResult": {
+        "type": "record-comparison",
+        "content": [
+          "各站实际可用记录与缺测",
+          "选定片段的信号起伏",
+          "震级与局地观测/估计的区别",
+          "仪器响应和解释边界"
+        ],
+        "replay": "事件、站点、通道、窗口和校正版本可恢复。"
+      },
+      "admissionConditions": [
+        "事件及台站坐标、通道、时间和实际采样可核对",
+        "有响应元数据才校正物理单位；校正方法与滤波参数保存",
+        "官方分布产品有版本、有效时间及定义",
+        "本地波形和其他台站之间不插值成真实传播场"
+      ],
+      "completionByCapability": [
+        {
+          "capability": "station-records",
+          "required": [
+            "sample-admitted",
+            "process-visible"
+          ]
+        },
+        {
+          "capability": "physical-amplitude",
+          "required": [
+            "instrument-response",
+            "calibration-method",
+            "independent-check"
+          ]
+        },
+        {
+          "capability": "local-impact-explanation",
+          "required": [
+            "suitable-official-product",
+            "source-backed-interpretation"
+          ]
+        }
+      ],
+      "excludedFromFirstVersion": [
+        "仅凭震中生成真实P/S波环",
+        "不同counts或归一化针柱直接比较强弱",
+        "自动将信号峰值标成已观测P/S到时",
+        "没有数据的街区级损失预测"
+      ]
+    },
+    {
+      "id": "volcano",
+      "name": "火山",
+      "primaryUser": "希望理解喷发观测的科普和事件阅读者",
+      "question": "这次活动在卫星上实际出现了哪些变化，哪些是云、热异常或明确报告的喷发信息？",
+      "firstVersionScope": {
+        "selection": "选择一个持续红外与至少一种新增观测维度可核验的火山事件",
+        "region": "一个火山及明确观测窗口",
+        "newDimension": "优先可核验热异常；灰云、气体、柱高按各自资料单独准入。"
+      },
+      "currentState": {
+        "newSourceAdmission": "not-performed-in-this-revision",
+        "newImplementation": "not-started",
+        "sourceDocumentation": "部分官方文档已在父任务核实；逐候选状态见sourceCandidates。",
+        "boundary": "新数据、图层、模型、后台和讲解生成均不得因本规格写入而标为完成。",
+        "existing": "已有汤加连续红外云区与官方报告目录；未反演灰浓度、云高或热源强度。"
+      },
+      "sourceCandidates": [
+        {
+          "name": "NOAA/JMA Himawari AWS Registry",
+          "url": "https://registry.opendata.aws/noaa-himawari/",
+          "admission": "candidate-not-sample-admitted",
+          "purpose": "逐帧亮温观测",
+          "documentationStatus": "official-documentation-checked-2026-11-05"
+        },
+        {
+          "name": "Smithsonian/USGS Volcanic Activity Report",
+          "url": "https://volcano.si.edu/reports_weekly.cfm",
+          "admission": "candidate-not-sample-admitted",
+          "purpose": "官方活动背景与报告期间",
+          "documentationStatus": "official-documentation-checked-2026-11-05"
+        },
+        {
+          "name": "NASA FIRMS API",
+          "url": "https://firms.modaps.eosdis.nasa.gov/api/",
+          "admission": "candidate-not-sample-admitted",
+          "purpose": "热异常候选；需质量筛选和火山活动证据，热点不自动判为喷发",
+          "documentationStatus": "official-documentation-checked-2026-11-05"
+        }
+      ],
+      "timeContract": {
+        "kind": "absolute",
+        "clock": "扫描时刻、扫描窗、热点探测时刻和报告期间分别保留。"
+      },
+      "spaceContract": {
+        "kind": "geographic",
+        "frame": "火山目录位置、栅格投影、热点像元范围及云视差限制。"
+      },
+      "visibleObjects": [
+        "真实红外中的云区形态随扫描变化",
+        "满足质量条件的实际热异常像元及探测时间",
+        "阈值轮廓或变化覆盖层注明算法与采样尺度",
+        "如有观测/报告高度，使用独立数值标注而不凭外观拉伸灰柱"
+      ],
+      "observationScale": [
+        "区域定位与火山周边窗口",
+        "低温区/热异常的实际分辨率",
+        "明确圈定的统计区域"
+      ],
+      "cameraSequence": [
+        "地球定位火山与资料覆盖",
+        "靠近观测窗口，先看背景帧",
+        "播放新低温云区或实际热异常出现、扩展/减弱片段",
+        "对齐一项新增观测与原始依据",
+        "切回区域视角区分已看见与尚未测得的内容"
+      ],
+      "primaryIndicators": [
+        {
+          "id": "cold-area",
+          "name": "固定范围低温像元面积",
+          "unit": "km²及温度阈值、统计圈/窗口定义",
+          "sourceType": "derived"
+        },
+        {
+          "id": "thermal-observation",
+          "name": "热异常产品的有效量",
+          "unit": "按原产品字段；FRP仅在该产品实际提供并通过质量核验时使用",
+          "sourceType": "retrieved",
+          "optional": true
+        }
+      ],
+      "optionalEvidence": [
+        "有出处柱高须说明海拔/离地和期间",
+        "灰云识别、多光谱/SO₂均各自列准入状态",
+        "同一低温区域可能含气象云，区域P10不冒充单点测温"
+      ],
+      "userFlow": [
+        "选事件及观测窗口",
+        "播放真实扫描",
+        "切换已具备的观测维度",
+        "核对报告、原始图和统计说明"
+      ],
+      "explanationResult": {
+        "type": "observation-explanation",
+        "content": [
+          "真实可见变化",
+          "新增观测支持什么",
+          "火山报告的实际期间",
+          "灰云/气象云/高度尚不能判断之处"
+        ],
+        "replay": "输入影像、数值网格、质量掩膜和派生算法版本齐备。"
+      },
+      "admissionConditions": [
+        "新增维度具体文件可获取与解析",
+        "热点与火山活动关联有证据，不由最近距离自动认定",
+        "阈值、ROI、网格、定标和投影保存",
+        "高度/气体/灰云字段缺失时保持未接入"
+      ],
+      "completionByCapability": [
+        {
+          "capability": "infrared-change",
+          "required": [
+            "sample-admitted",
+            "process-visible"
+          ]
+        },
+        {
+          "capability": "new-observation-dimension",
+          "required": [
+            "separate-source-admission",
+            "quality-check",
+            "explanation-accepted"
+          ]
+        },
+        {
+          "capability": "height-or-ash",
+          "required": [
+            "specific-product-admitted"
+          ],
+          "independentFrom": "红外场景完成度"
+        }
+      ],
+      "excludedFromFirstVersion": [
+        "热异常直接等于喷发",
+        "低温云区等于灰云浓度",
+        "无测高资料的真实三维灰柱",
+        "模拟粒子替代灰云观测"
+      ]
+    },
+    {
+      "id": "celestial-tide",
+      "name": "地月与港口潮汐",
+      "primaryUser": "希望理解指定日期地月关系和一个港口潮位的学习者",
+      "question": "这个日期月球相对地球的位置和月相怎样变化，同一港口实测与潮汐预报怎样对应？",
+      "firstVersionScope": {
+        "celestial": "仅地球、月球、太阳方向与月相几何",
+        "port": "先一个观测/预报均可核验的港口",
+        "time": "一个明确窗口和可支持日期选择；其他行星、日月食与卫星轨道另列候选。"
+      },
+      "currentState": {
+        "newSourceAdmission": "not-performed-in-this-revision",
+        "newImplementation": "not-started",
+        "sourceDocumentation": "部分官方文档已在父任务核实；逐候选状态见sourceCandidates。",
+        "boundary": "新数据、图层、模型、后台和讲解生成均不得因本规格写入而标为完成。",
+        "existing": "地月页仍为原理模型；山竹站点海水位不构成地月-港口潮汐链路。"
+      },
+      "sourceCandidates": [
+        {
+          "name": "JPL Horizons API",
+          "url": "https://ssd-api.jpl.nasa.gov/doc/horizons.html",
+          "admission": "candidate-not-sample-admitted",
+          "purpose": "有出处的数值星历计算",
+          "documentationStatus": "official-documentation-checked-2026-11-05"
+        },
+        {
+          "name": "NOAA CO-OPS API",
+          "url": "https://api.tidesandcurrents.noaa.gov/api/prod/",
+          "admission": "candidate-not-sample-admitted",
+          "purpose": "港口站实测水位与潮汐预报",
+          "documentationStatus": "official-documentation-checked-2026-11-05"
+        }
+      ],
+      "timeContract": {
+        "kind": "absolute",
+        "clock": "UTC主时钟；星历使用的UT/TDB、光行时/观察设置及转换说明单列。"
+      },
+      "spaceContract": {
+        "kind": "orbital",
+        "secondary": "geographic",
+        "frame": "星历参考中心/坐标系/距离单位与地球站点坐标分开。"
+      },
+      "visibleObjects": [
+        "按星历位置驱动的地月相对运动",
+        "依据日月几何计算的月相明暗",
+        "选定港口测站实测水位及预报曲线游标",
+        "地球定位与轨道视角可切换，显示比例说明"
+      ],
+      "observationScale": [
+        "地月距离与天体尺寸按说明统一或分离缩放",
+        "港口观测定位",
+        "站点水位基准面"
+      ],
+      "cameraSequence": [
+        "从地球定位所选港口",
+        "拉远到地月关系，明确尺寸/距离显示比例",
+        "沿所选时间窗推进星历与月相",
+        "回到港口，同时比较实测与预报水位",
+        "总结地月几何、预报与实际水位各自的含义"
+      ],
+      "primaryIndicators": [
+        {
+          "id": "moon-phase",
+          "name": "月面照明比例/相位",
+          "unit": "%或角度，按星历/几何定义",
+          "sourceType": "derived"
+        },
+        {
+          "id": "water-level",
+          "name": "港口水位",
+          "unit": "m及明确基准，观测与预报分线",
+          "sourceTypes": [
+            "observed",
+            "forecast"
+          ],
+          "displayRule": "相同量的观测和预报使用分开序列，不合成单条实测。"
+        }
+      ],
+      "optionalEvidence": [
+        "星历不是每帧仪器直接测量",
+        "潮汐预报与实测差值不自动归因为气象增水",
+        "当地海岸地形与气象影响须有独立来源解释"
+      ],
+      "userFlow": [
+        "选港口和日期",
+        "播放地月关系",
+        "查看同一站观测与预报",
+        "保存日期窗口及依据"
+      ],
+      "explanationResult": {
+        "type": "celestial-and-station-note",
+        "content": [
+          "地月相位与相对位置",
+          "站点水位及预报的实际窗口",
+          "预报与实测差异",
+          "基准、时标和不能仅由日月解释的因素"
+        ],
+        "replay": "查询参数、参考系、时标、站点和数据版本可恢复。"
+      },
+      "admissionConditions": [
+        "星历小样本解析并与官方输出核对",
+        "港口有兼容基准与覆盖的实测及预报",
+        "UT/TDB等时标转换、观察地点和月相算法明确",
+        "比例放大仅显示用，不改位置计算与测站记录"
+      ],
+      "completionByCapability": [
+        {
+          "capability": "ephemeris-view",
+          "required": [
+            "ephemeris-sample-admitted",
+            "reference-frame-check",
+            "process-visible"
+          ]
+        },
+        {
+          "capability": "port-tide-comparison",
+          "required": [
+            "station-sample-admitted",
+            "datum-check",
+            "explanation-accepted"
+          ]
+        },
+        {
+          "capability": "other-celestial",
+          "state": "out-of-first-version"
+        }
+      ],
+      "excludedFromFirstVersion": [
+        "其他行星/食/卫星轨道",
+        "理想潮汐鼓包等同当地实测",
+        "仅按月球位置直接推算港口高潮",
+        "夸张引力变形冒充实际海面"
+      ]
+    },
+    {
+      "id": "river-pollution",
+      "name": "河流与污染迁移",
+      "primaryUser": "区域环境观察者或环境教育阅读者",
+      "question": "同一河段上下游实际测到了什么，污染物是否以及何时到达下游有多少证据？",
+      "firstVersionScope": {
+        "river": "一段能确认上下游关系的河段",
+        "observations": "同一污染指标及相容单位/检测方法的配对测站，另有流量/水位",
+        "transport": "资料具备后单列经验证迁移推演；第一步观测不计为迁移完成。"
+      },
+      "currentState": {
+        "newSourceAdmission": "not-performed-in-this-revision",
+        "newImplementation": "not-started",
+        "sourceDocumentation": "部分官方文档已在父任务核实；逐候选状态见sourceCandidates。",
+        "boundary": "新数据、图层、模型、后台和讲解生成均不得因本规格写入而标为完成。",
+        "existing": "仅有教学输运模型，未接真实污染事件。"
+      },
+      "sourceCandidates": [
+        {
+          "name": "USGS Water Data APIs",
+          "url": "https://api.waterdata.usgs.gov/docs/",
+          "admission": "candidate-not-sample-admitted",
+          "purpose": "流量/水位、监测位置与可用连续测量",
+          "documentationStatus": "official-documentation-checked-2026-11-05"
+        },
+        {
+          "name": "Water Quality Portal",
+          "url": "https://www.waterqualitydata.us/webservices_documentation/",
+          "admission": "candidate-not-sample-admitted",
+          "purpose": "离散水质样本、方法与质量字段；核验新接口及时窗",
+          "documentationStatus": "official-documentation-checked-2026-11-05"
+        },
+        {
+          "name": "OpenStreetMap reference",
+          "url": "https://www.openstreetmap.org/",
+          "admission": "candidate-not-sample-admitted",
+          "purpose": "河网几何候选，真实河道拓扑与许可仍需核验",
+          "documentationStatus": "specific-source-or-access-still-to-verify"
+        }
+      ],
+      "timeContract": {
+        "kind": "absolute",
+        "clock": "采样时刻、实验结果发布和累计/分析窗口分开；离散样本不插成连续实测。"
+      },
+      "spaceContract": {
+        "kind": "geographic",
+        "secondary": "local-river",
+        "frame": "河网坐标、流向、上下游拓扑与沿程距离。"
+      },
+      "visibleObjects": [
+        "真实河网和实际测站位置",
+        "各站样本随时间出现，保留检出限、缺测和不确定位置",
+        "流量/水位与相同采样时间对照",
+        "迁移资料与验证均具备后，单独显示标为模型的沿河推演"
+      ],
+      "observationScale": [
+        "地球定位流域",
+        "河段上下游",
+        "测站采样窗口与公里沿程"
+      ],
+      "cameraSequence": [
+        "定位流域并靠近选定河段",
+        "标明上下游与采样位置",
+        "依次显示实际样本，比较污染指标与流量",
+        "有模型时切换观测/推演并展示验证测站",
+        "总结已测到的变化与尚不能推断的到达过程"
+      ],
+      "primaryIndicators": [
+        {
+          "id": "concentration",
+          "name": "同一污染指标浓度",
+          "unit": "按指标和方法原单位；检出限/低于检出限单列",
+          "sourceType": "observed"
+        },
+        {
+          "id": "discharge",
+          "name": "流量",
+          "unit": "m³/s或有记录的原单位与换算",
+          "sourceType": "observed"
+        }
+      ],
+      "optionalEvidence": [
+        "仅温度或水位数据不标为污染事件",
+        "站点之间连线服务定位，不代表真实浓度羽流",
+        "通量需要同时有效的浓度与流量及方法，不能任意相乘"
+      ],
+      "userFlow": [
+        "选河段与指标",
+        "看真实样本时序",
+        "核对上下游配对与流量",
+        "仅在可用时打开迁移推演及验证"
+      ],
+      "explanationResult": {
+        "type": "environment-record",
+        "content": [
+          "实际采样位置与时间",
+          "上下游记录及可比条件",
+          "是否有到达证据及时间分辨率",
+          "模型与实测差异和未知部分"
+        ],
+        "replay": "采样记录、方法、河网版本及模型版本分别保存。"
+      },
+      "admissionConditions": [
+        "上下游拓扑明确，同一指标可比且样本密度支持所提问题",
+        "结果单位、分析方法、检出限、质量码齐备",
+        "迁移需排放时间/量、流量、断面或必要水动力、边界和独立验证",
+        "WQP具体接口版本及2024年后资料覆盖另取样确认"
+      ],
+      "completionByCapability": [
+        {
+          "capability": "water-quality-observation",
+          "required": [
+            "sample-admitted",
+            "paired-station-check",
+            "process-visible"
+          ]
+        },
+        {
+          "capability": "pollutant-transport",
+          "required": [
+            "source-boundary-conditions",
+            "transport-model",
+            "independent-validation",
+            "explanation-accepted"
+          ],
+          "independentFrom": "测站观测可用"
+        }
+      ],
+      "excludedFromFirstVersion": [
+        "由零散测站生成真实连续污染羽流",
+        "未经验证的到达时间预测",
+        "浓度与通量混用",
+        "把教学染色动画算作真实迁移完成"
+      ]
+    },
+    {
+      "id": "battery",
+      "name": "电池真实运行",
+      "primaryUser": "电池实验学习者或有日志授权的设备分析者",
+      "question": "一次实际充放电或循环中，电压和测点温度怎样响应工况变化？",
+      "firstVersionScope": {
+        "object": "一个明确化学体系与额定参数的实测单电芯或电池包",
+        "log": "一份可复现公开实验或授权BMS日志，再验证第二份兼容日志",
+        "location": "没有真实地点则从实验案例库进入局部设备，不放虚假地球点。"
+      },
+      "currentState": {
+        "newSourceAdmission": "not-performed-in-this-revision",
+        "newImplementation": "not-started",
+        "sourceDocumentation": "部分官方文档已在父任务核实；逐候选状态见sourceCandidates。",
+        "boundary": "新数据、图层、模型、后台和讲解生成均不得因本规格写入而标为完成。",
+        "existing": "仅有假想电芯模型，没有真实BMS/实验日志接入。"
+      },
+      "sourceCandidates": [
+        {
+          "name": "NASA PCoE Repository",
+          "url": "https://www.nasa.gov/intelligent-systems-division/discovery-and-systems-health/pcoe/pcoe-data-set-repository/",
+          "admission": "candidate-not-sample-admitted",
+          "purpose": "电池实验资料候选，具体可下载文件与通道另取样",
+          "documentationStatus": "official-documentation-checked-2026-11-05"
+        },
+        {
+          "name": "Authorized BMS logs",
+          "url": null,
+          "admission": "candidate-not-sample-admitted",
+          "purpose": "自有或已获授权日志；具体文件和数据范围待确定",
+          "documentationStatus": "specific-source-or-access-still-to-verify"
+        }
+      ],
+      "timeContract": {
+        "kind": "elapsed",
+        "alternative": "absolute或cycle，只有来源有真实UTC才映射日历",
+        "clock": "原始采样时长与循环编号；跨循环间隔未知时不补造。"
+      },
+      "spaceContract": {
+        "kind": "device",
+        "optional": "geographic仅已知真实设施位置",
+        "frame": "局部结构、测点位置与部件ID，单位按结构资料。"
+      },
+      "visibleObjects": [
+        "真实测点与对应部件",
+        "实际工况段及电压/温度时序",
+        "仅已测点着色并显示数值",
+        "切换循环时显示原测容量，模型估计单列"
+      ],
+      "observationScale": [
+        "设施为可选入口",
+        "电池包/单电芯局部",
+        "实际测点分布；不推断未测内部场"
+      ],
+      "cameraSequence": [
+        "选择实验或已知设施",
+        "进入明确电芯/包及测点",
+        "播放实际工况切换与测量响应",
+        "选择另一循环或日志，保持口径",
+        "生成该次运行片段的测量复盘"
+      ],
+      "primaryIndicators": [
+        {
+          "id": "voltage",
+          "name": "实测电压",
+          "unit": "V",
+          "sourceType": "observed"
+        },
+        {
+          "id": "temperature",
+          "name": "实测测点温度",
+          "unit": "°C及传感器位置",
+          "sourceType": "observed"
+        }
+      ],
+      "optionalEvidence": [
+        "电流/负载作为工况背景或切换主指标",
+        "容量衰减在循环模式另显示实际测试容量",
+        "SOC/SOH与内部温度场分别列估计或模型，保留算法和验证"
+      ],
+      "userFlow": [
+        "选日志/工况/循环",
+        "播放相对时长",
+        "点测点对应原始通道",
+        "保存运行复盘及原行依据"
+      ],
+      "explanationResult": {
+        "type": "device-run-review",
+        "content": [
+          "日志对象与工况",
+          "真实测点响应与变化时段",
+          "跨循环比较的可比条件",
+          "估计量和没有传感器的位置"
+        ],
+        "replay": "日志版本、通道、相对窗口和循环ID可恢复。"
+      },
+      "admissionConditions": [
+        "日志确为实测而非仿真，试验条件和通道说明齐备",
+        "时间/循环定义、采样/量程/异常码和单位可解析",
+        "结构与测点对应有依据，缺坐标则用部件列表不虚构内部位置",
+        "私人设备标识及位置按授权范围保存和导出"
+      ],
+      "completionByCapability": [
+        {
+          "capability": "sensor-replay",
+          "required": [
+            "real-log-admitted",
+            "DEVICE-ADAPTER",
+            "process-visible"
+          ]
+        },
+        {
+          "capability": "capacity-comparison",
+          "required": [
+            "comparable-cycle-test",
+            "method-check"
+          ]
+        },
+        {
+          "capability": "state-or-internal-field",
+          "required": [
+            "separate-model",
+            "validation"
+          ],
+          "independentFrom": "实测日志回放"
+        }
+      ],
+      "excludedFromFirstVersion": [
+        "没有依据的设备地理地址",
+        "传感器外壳温度冒充内部温度",
+        "未验证寿命预测",
+        "仿真放电曲线冒充真实日志"
+      ]
+    },
+    {
+      "id": "engine",
+      "name": "发动机真实运行",
+      "primaryUser": "有实测日志的发动机试验或运行分析者",
+      "question": "一次实际负载或转速工况变化中，发动机记录的响应怎样变化？",
+      "firstVersionScope": {
+        "type": "先确定具体发动机类型与所选运行问题，不能混用内燃机和航空涡扇结构/通道",
+        "log": "一份具有通道说明与试验条件的真实运行日志",
+        "model": "第一版只做日志和结构对应，不承诺故障诊断或内部流场重建。"
+      },
+      "currentState": {
+        "newSourceAdmission": "not-performed-in-this-revision",
+        "newImplementation": "not-started",
+        "sourceDocumentation": "部分官方文档已在父任务核实；逐候选状态见sourceCandidates。",
+        "boundary": "新数据、图层、模型、后台和讲解生成均不得因本规格写入而标为完成。",
+        "existing": "没有真实发动机日志接入；不能把C-MAPSS资料作为实测完成。"
+      },
+      "sourceCandidates": [
+        {
+          "name": "Authorized engine telemetry",
+          "url": null,
+          "admission": "candidate-not-sample-admitted",
+          "purpose": "授权试验台或实际运行日志；需确定设备类型、通道、结构和数据授权",
+          "documentationStatus": "specific-source-or-access-still-to-verify"
+        },
+        {
+          "name": "NASA PCoE Repository",
+          "url": "https://www.nasa.gov/intelligent-systems-division/discovery-and-systems-health/pcoe/pcoe-data-set-repository/",
+          "admission": "candidate-not-sample-admitted",
+          "purpose": "仅用于辨别资料性质与候选研究；C-MAPSS为仿真，不通过实测准入",
+          "documentationStatus": "official-documentation-checked-2026-11-05"
+        }
+      ],
+      "timeContract": {
+        "kind": "elapsed",
+        "alternative": "absolute仅在日志提供真实UTC时",
+        "clock": "试验时长、工况段、可能的循环单独表达。"
+      },
+      "spaceContract": {
+        "kind": "device",
+        "optional": "geographic仅真实设施位置已知",
+        "frame": "所选发动机结构与测点/部件坐标。"
+      },
+      "visibleObjects": [
+        "真实设备的部件/测点入口",
+        "运行日志中的实际转速、负载与温度随时长变化",
+        "只对有对应关系的部件作数值标注",
+        "工况切换节点有原日志或试验记录依据"
+      ],
+      "observationScale": [
+        "可选设施入口",
+        "具体型号/类型的局部结构",
+        "实际传感器覆盖的部件"
+      ],
+      "cameraSequence": [
+        "选择具体发动机与实测日志",
+        "定位本次工况切换",
+        "播放实际响应并突出对应部件/曲线",
+        "切另一运行片段核对可比条件",
+        "输出本次变化的运行复盘"
+      ],
+      "primaryIndicators": [
+        {
+          "id": "rpm",
+          "name": "实际转速",
+          "unit": "rpm或明确原单位",
+          "sourceType": "observed"
+        },
+        {
+          "id": "temperature",
+          "name": "实际测点温度",
+          "unit": "°C或K并注明测点及换算",
+          "sourceType": "observed"
+        }
+      ],
+      "optionalEvidence": [
+        "负载/扭矩作工况背景或切换主指标",
+        "振动/压力等按实际日志单独准入",
+        "诊断结论需另有标签、模型和独立验证"
+      ],
+      "userFlow": [
+        "选类型/日志",
+        "选择工况片段",
+        "点部件对应通道",
+        "保存有依据的变化复盘"
+      ],
+      "explanationResult": {
+        "type": "engine-run-review",
+        "content": [
+          "设备类型和本次工况",
+          "实际测点响应与时段",
+          "能支持的运行结论",
+          "尚未观测或没有验证的内部过程"
+        ],
+        "replay": "日志、设备类型、部件映射和窗口保存。"
+      },
+      "admissionConditions": [
+        "实际日志取样并验证确属实测，类型和工况明确",
+        "通道、单位、时长、采样、缺测与授权范围明确",
+        "真实结构与测点映射有依据",
+        "公共设备适配具备即可；不依赖电池场景全部完成",
+        "C-MAPSS/N-CMAPSS等仿真只能另标模型研究"
+      ],
+      "completionByCapability": [
+        {
+          "capability": "sensor-replay",
+          "required": [
+            "engine-real-log-admitted",
+            "DEVICE-ADAPTER",
+            "process-visible"
+          ]
+        },
+        {
+          "capability": "run-explanation",
+          "required": [
+            "source-backed-operating-context",
+            "explanation-accepted"
+          ]
+        },
+        {
+          "capability": "diagnosis-or-field",
+          "required": [
+            "separate-evidence-and-validation"
+          ],
+          "independentFrom": "实测运行回放"
+        }
+      ],
+      "excludedFromFirstVersion": [
+        "仿真数据计为真实运行完成",
+        "通用发动机动画冒充具体型号",
+        "无测点内部温度/流场",
+        "自动故障或剩余寿命判断"
+      ]
+    }
+  ]
+}

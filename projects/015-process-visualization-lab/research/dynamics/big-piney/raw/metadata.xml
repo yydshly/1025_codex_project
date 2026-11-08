@@ -1,0 +1,326 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<metadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <idinfo>
+    <citation>
+      <citeinfo>
+        <origin>Brandon J. Sansom</origin>
+        <pubdate>20250725</pubdate>
+        <title>In situ measurements of Rhodamine WT dye concentration and turbidity made during a tracer experiment on the Big Piney River near St. Robert, MO, on August 25-26, 2021</title>
+        <geoform>tabular digital data</geoform>
+        <pubinfo>
+          <pubplace>Reston, VA</pubplace>
+          <publish>U.S. Geological Survey</publish>
+        </pubinfo>
+        <othercit>Authors Open Researcher and Contributor Id (ORCID) are as follows: David J. Soucek: 0000-0002-7741-0193; Rebecca A. Dorman: 0000-0002-5748-7046; Jeffery A. Steevens: 0000-0003-3946-1229; Viviane Yargeau: 0000-0002-7332-276X; Marco Pineda:0000-0003-1926-106X; Christopher D. Metcalfe: 0000-0002-6807-9048; Erin R. Bennett: 0000-0002-7225-4988</othercit>
+        <onlink>https://doi.org/10.5066/P14DAOJF</onlink>
+      </citeinfo>
+    </citation>
+    <descript>
+      <abstract>This data release includes fluorometer measurements of Rhodamine WT dye concentration and turbidity acquired during a tracer experiment performed on the Big Piney River near St. Robert, Missouri on August 25 - 26, 2021. The primary goal of this experiment was to perform a conservative tracer injection to better understand transport and dispersion processes related to environmental DNA (eDNA) transport. The experiment involved introducing a pulse of Rhodamine WT dye into the channel 1.5 kilometers upstream of the study reach then observing the dispersion of the dye along the river using in-situ instruments. In-situ measurements of Rhodamine WT concentration were used to quantify the passage of the dye over the course of the experiment at several locations throughout the study reach. Turner C3 Submersible Fluorometers were placed at three monitoring transects located at distances from 1.5 to 3.7 kilometers downstream from the dye release transect and measured the Rhodamine WT dye concentration in parts per billion (ppb). In addition, the fluorometers measured turbidity in nephelometric turbidity units (NTU). Each fluorometer was secured to a concrete block or attached to a buoy and its position was established using a Trimble R2 real-time kinematic (RTK) integrated global navigation satellite system (GNSS) receiver. At each monitoring transect, a fluorometer was placed approximately five to ten percent of the wetted channel width off both the right and left bank. All fluorometers recorded Rhodamine WT and turbidity data every 30 seconds. At approximately 15:07 CST on August 25, 2021, twelve liters of 20% Rhodamine WT were released into the Big Piney River. The in-situ fluorometers recorded the dye concentration and turbidity at 30 second intervals as the dye transported downstream. All fluorometers were retrieved on August 26, 2025. Data were downloaded to a field laptop and transferred to external hard drives for long-term storage and a custom python script was used to post-process the Rhodamine WT data to removing the background fluorescence and despiking the data.</abstract>
+      <purpose>The primary goal of this tracer experiment was to assess the transport and dispersion of a conservative tracer in the Big Piney River near St. Robert, Missouri where parallel studies are investigating the fate and transport of environmental DNA (eDNA) from native freshwater mussels. Data from the conservative tracer study can be used to estimate dispersion through the reach and to better parameterize eDNA transport models.</purpose>
+    </descript>
+    <timeperd>
+      <timeinfo>
+        <rngdates>
+          <begdate>20210825</begdate>
+          <enddate>20210826</enddate>
+        </rngdates>
+      </timeinfo>
+      <current>ground condition</current>
+    </timeperd>
+    <status>
+      <progress>Complete</progress>
+      <update>None planned</update>
+    </status>
+    <spdom>
+      <bounding>
+        <westbc>-92.0901</westbc>
+        <eastbc>-92.0563</eastbc>
+        <northbc>37.7973</northbc>
+        <southbc>37.8270</southbc>
+      </bounding>
+    </spdom>
+    <keywords>
+      <theme>
+        <themekt>USGS Thesaurus</themekt>
+        <themekey>tracer study</themekey>
+        <themekey>streamflow</themekey>
+        <themekey>surface water</themekey>
+        <themekey>turbidity</themekey>
+      </theme>
+      <theme>
+        <themekt>None</themekt>
+        <themekey>rhodamine dye</themekey>
+        <themekey>dispersion</themekey>
+      </theme>
+      <theme>
+        <themekt>USGS Metadata Identifier</themekt>
+        <themekey>USGS:68519976d4be027dac17ddd1</themekey>
+      </theme>
+      <place>
+        <placekt>Geographic Names Information System (GNIS)</placekt>
+        <placekey>Big Piney River</placekey>
+        <placekey>Missouri</placekey>
+      </place>
+    </keywords>
+    <accconst>None. Please see 'Distribution Info' for details.</accconst>
+    <useconst>These data are marked with a Creative Common CC0 1.0 Universal License. These data are in the public domain and do not have any use constraints. It is requested that the authors be cited for any subsequent publications that reference this dataset. Users are advised to read the dataset's metadata thoroughly to understand appropriate use and data limitations.</useconst>
+    <ptcontac>
+      <cntinfo>
+        <cntperp>
+          <cntper>Brandon J Sansom</cntper>
+          <cntorg>USGS - SOUTHEAST REGION</cntorg>
+        </cntperp>
+        <cntpos>Research Hydrologist/Research Civil Engineer</cntpos>
+        <cntaddr>
+          <addrtype>mailing and physical</addrtype>
+          <address>Columbia Environmental Res Ctr,CERC - R1 Research Building</address>
+          <city>Columbia</city>
+          <state>MO</state>
+          <postal>65201</postal>
+        </cntaddr>
+        <cntvoice>573-441-2978</cntvoice>
+        <cntemail>bsansom@usgs.gov</cntemail>
+      </cntinfo>
+    </ptcontac>
+    <native>The data are provided in a comma-separated values (CSV) format and were produced on a personal computer with a Windows 10 operating system.  The file can be read using any text editor (e.g., notepad), Microsoft Excel, or a numerical computing software package such as MATLAB.  The file name is "BigPiney_RWTFluorometers.csv" and the file size is 1,386 kilobytes.</native>
+  </idinfo>
+  <dataqual>
+    <attracc>
+      <attraccr>All fluorometers used in the study were calibrated prior to deployment using a two-point (Rhodamine WT: 0 and 150 ppb; turbidity: 0 and 50 NTU) calibration procedure established by Turner. The calibration of each fluorometer was subsequently tested using a two-point test (Rhodamine WT: 5 and 200 ppb; turbidity: 5 and 75 NTU). To create calibration and test solutions for fluorescence, manufacturer-recommended standards were diluted in distilled water. If the test measurements deviated more than five percent from the test solution, the instrument was recalibrated and retested.</attraccr>
+    </attracc>
+    <logic>No formal logical accuracy tests were conducted</logic>
+    <complete>Data set is considered complete for the information presented, as described in the abstract. Users are advised to read the rest of the metadata record carefully for additional details.</complete>
+    <posacc>
+      <horizpa>
+        <horizpar>No formal positional accuracy tests were conducted</horizpar>
+      </horizpa>
+      <vertacc>
+        <vertaccr>No formal positional accuracy tests were conducted</vertaccr>
+      </vertacc>
+    </posacc>
+    <lineage>
+      <procstep>
+        <procdesc>All fluorometers used in the study were calibrated prior to deployment using a two-point (Rhodamine WT: 0 and 150 ppb; turbidity: 0 and 50 NTU) calibration procedure established by Turner. The calibration of each fluorometer was subsequently tested using a two-point test (Rhodamine WT: 5 and 200 ppb; turbidity: 5 and 75 NTU). To create calibration and test solutions for fluorescence, manufacturer-recommended standards were diluted in distilled water. If the test measurements deviated more than five percent from the test solution, the instrument was recalibrated and retested.</procdesc>
+        <procdate>20210817</procdate>
+      </procstep>
+      <procstep>
+        <procdesc>All fluorometers were deployed approximately 4.25 hours prior to the dye injection to establish baseline Rhodamine WT and turbidity concentrations. Turner C3 Submersible Fluorometers were placed at three monitoring transects located at distances from 1.5 to 3.7 kilometers downstream from the dye release transect and measured the Rhodamine WT dye concentration in parts per billion (ppb) and turbidity in nephelometric turbidity units (NTU). At each monitoring transect, a fluorometer was placed approximately five to ten percent of the wetted channel width off both the right and left bank. Fluorometers were secured to a cement block or attached to a buoy and their positions were established using a Trimble R2 real-time kinematic (RTK) integrated global navigation satellite system (GNSS) receiver. All fluorometers recorded Rhodamine WT and turbidity data every 30 seconds throughout the duration of the study.</procdesc>
+        <procdate>20210825</procdate>
+      </procstep>
+      <procstep>
+        <procdesc>At approximately 15:07 CDT on August 25, 2021, 12 L of 20% solution Rhodamine WT (RWT), diluted approximately by half with river water was released into the Big Piney River. The total volume of stock 20% RTW was divided between four individuals in separate containers. Immediately before release, individuals lined up at equal distances across the channel, diluted the stock 20% RWT in half with river water, and emptied the diluted RWT. All containers were rinsed a single time with river water. The total time for all of the dye to be released and containers rinsed was less than 15 seconds.</procdesc>
+        <procdate>20210825</procdate>
+      </procstep>
+      <procstep>
+        <procdesc>Fluorometers were retrieved from deployment locations on the morning of August 26, 2021. Data were downloaded to a field laptop and transferred to external hard drives for long-term storage.</procdesc>
+        <procdate>20210826</procdate>
+      </procstep>
+      <procstep>
+        <procdesc>A custom python script was used to post-process the Rhodamine WT data. Post-processing consisted of removing the background fluorescence, and despiking the data.</procdesc>
+        <procdate>20211031</procdate>
+      </procstep>
+    </lineage>
+  </dataqual>
+  <eainfo>
+    <detailed>
+      <enttyp>
+        <enttypl>BigPiney_RWTFluorometers.csv</enttypl>
+        <enttypd>A Comma Separated Value (CSV) file containing data from a Rhodamine WT conservative dye trace study on the Big Piney River near St. Robert, Missouri.</enttypd>
+        <enttypds>Producer Defined</enttypds>
+      </enttyp>
+      <attr>
+        <attrlabl>date</attrlabl>
+        <attrdef>A representation of time in which the smallest unit of measure is a day. The value is expressed in MM/DD/YYYY. It represents the date upon which the measurements were collected.</attrdef>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv>
+          <udom>Date values are represented as MM/DD/YYYY</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>time</attrlabl>
+        <attrdef>Time of day when measurement was recorded, expressed in 24-hour clock. Representation of time in which the smallest unit of measure is a second. The value is expressed in HH:MM:SS.</attrdef>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv>
+          <udom>Time values are expressed in 24-hour clock as HH:MM:SS</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>transect_ID</attrlabl>
+        <attrdef>The transect identification number representing the distance downstream from the dye release location. The value is expressed as a category ranging from 1 to 3.</attrdef>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>1</edomv>
+            <edomvd>Transect 1, located approximately 1485 meters downstream from the dye release location.</edomvd>
+            <edomvds>Producer defined</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>2</edomv>
+            <edomvd>Transect 2, located approximately 2650 meters downstream from the dye release location.</edomvd>
+            <edomvds>Producer defined</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>3</edomv>
+            <edomvd>Transect 3, located approximately 3670 meters downstream from the dye release location.</edomvd>
+            <edomvds>Producer defined</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>bank_side</attrlabl>
+        <attrdef>The river bank side, reference as looking downstream. The value is expressed as a category, representing either the left or right bank.</attrdef>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>LB</edomv>
+            <edomvd>The left bank, referenced from looking downstream.</edomvd>
+            <edomvds>Producer defined</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>RB</edomv>
+            <edomvd>The right bank, referenced from looking downstream.</edomvd>
+            <edomvds>Producer defined</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>easting_m</attrlabl>
+        <attrdef>Horizontal easting (X) spatial coordinate of the measurement in the UTM Zone 15, NAD 83 coordinate system, with units of meters.</attrdef>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>581228.03</rdommin>
+            <rdommax>582074.11</rdommax>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>northing_m</attrlabl>
+        <attrdef>Horizontal northing (Y) spatial coordinate of the measurement in the UTM Zone 15, NAD 83 coordinate system, with units of meters.</attrdef>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>4185261.48</rdommin>
+            <rdommax>4186726.75</rdommax>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>distdnst_m</attrlabl>
+        <attrdef>The linear distance in meters each transect is downstream from the dye release location.</attrdef>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>1485</edomv>
+            <edomvd>Transect 1, located approximately 1485 m downstream from the dye release location.</edomvd>
+            <edomvds>Producer defined</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>2650</edomv>
+            <edomvd>Transect 2, located approximately 2650 m downstream from the dye release location.</edomvd>
+            <edomvds>Producer defined</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>3670</edomv>
+            <edomvd>Transect 3, located approximately 3670 m downstream from the dye release location.</edomvd>
+            <edomvds>Producer defined</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>hrs_pst_rel</attrlabl>
+        <attrdef>Hours post dye release that each measurement was taken.</attrdef>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>-4.12</rdommin>
+            <rdommax>26.46</rdommax>
+            <attrunit>hours</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>rwt_ppb</attrlabl>
+        <attrdef>Rhodamine WT dye concentration in parts per billion (ppb) at the time each measurement was recorded on the fluorometers.</attrdef>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>0.0</rdommin>
+            <rdommax>213.76</rdommax>
+            <attrunit>parts per billion</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>turb_ntu</attrlabl>
+        <attrdef>Turbidity concentration in nephelometric turbidity units (NTU) at the time each measurement was recorded on the fluorometers.</attrdef>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>0.0</rdommin>
+            <rdommax>40.44</rdommax>
+            <attrunit>nephelometric turbidity units</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+    </detailed>
+  </eainfo>
+  <distinfo>
+    <distrib>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>USGS - None</cntorg>
+          <cntper>GS ScienceBase</cntper>
+        </cntorgp>
+        <cntaddr>
+          <addrtype>mailing and physical</addrtype>
+          <address>Denver Federal Center</address>
+          <address>Building 810, Mail Stop 302</address>
+          <city>Denver</city>
+          <state>CO</state>
+          <postal>80225</postal>
+        </cntaddr>
+        <cntvoice>1-888-275-8747</cntvoice>
+        <cntemail>sciencebase@usgs.gov</cntemail>
+      </cntinfo>
+    </distrib>
+    <distliab>Unless otherwise stated, all data, metadata and related materials are considered to satisfy the quality standards relative to the purpose for which the data were collected. Although these data and associated metadata have been reviewed for accuracy and completeness and approved for release by the U.S. Geological Survey (USGS), no warranty expressed or implied is made regarding the display or utility of the data for other purposes, nor on all computer systems, nor shall the act of distribution constitute any such warranty.</distliab>
+    <techpreq>The data are provided in a comma-separated text file that can be opened in a spreadsheet program, Microsoft Excel, a text editor, such as Notepad, or a numerical computing software package, such as MATLAB.</techpreq>
+  </distinfo>
+  <metainfo>
+    <metd>20250725</metd>
+    <metc>
+      <cntinfo>
+        <cntperp>
+          <cntper>CERC Data Manager</cntper>
+          <cntorg>U.S. Geological Survey, Columbia Environmental Research Center</cntorg>
+        </cntperp>
+        <cntpos>Data Manager</cntpos>
+        <cntaddr>
+          <addrtype>mailing and physical</addrtype>
+          <address>4200 New Haven Road</address>
+          <city>Columbia</city>
+          <state>MO</state>
+          <postal>65201</postal>
+          <country>USA</country>
+        </cntaddr>
+        <cntvoice>873-875-5399</cntvoice>
+        <cntfax>573-876-1896</cntfax>
+        <cntemail>gs-mw-cerc_data_manager@usgs.gov</cntemail>
+      </cntinfo>
+    </metc>
+    <metstdn>Content Standard for Digital Geospatial Metadata</metstdn>
+    <metstdv>FGDC-STD-001-1998</metstdv>
+  </metainfo>
+</metadata>

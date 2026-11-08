@@ -1,0 +1,761 @@
+{
+  "frames": [
+    {
+      "timeUtc": "2022-09-05T03:00:00Z",
+      "url": "assets/events/storm-dynamic/hinnamnor-b13-20220905T0300Z.png",
+      "width": 1024,
+      "height": 768,
+      "scanStartUtc": "2022-09-05T03:00:55.218Z",
+      "scanEndUtc": "2022-09-05T03:02:39.179Z",
+      "sha256": "d96bf02bdcbf9b3ecd178cf32bf0a3bbd5abda1d44a522c50afdcc0c9ed4d461",
+      "stats": {
+        "minK": 197.82924073344572,
+        "maxK": 309.04069971602456,
+        "meanK": 270.08655451968866,
+        "p10K": 227.20298057777302,
+        "p50K": 281.64936308729284,
+        "below235KAreaKm2": 1086002.7554649685,
+        "validPixels": 786432,
+        "missingPixels": 0
+      },
+      "sourceUrls": [
+        "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/09/05/0300/HS_H08_20220905_0300_B13_FLDK_R20_S0210.DAT.bz2",
+        "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/09/05/0300/HS_H08_20220905_0300_B13_FLDK_R20_S0310.DAT.bz2"
+      ],
+      "numericData": {
+        "researchFile": "research/dynamics/storm/frames/hinnamnor-b13-20220905T0300Z-bt-centikelvin.png",
+        "sha256": "ded5a9daf99dbaa0b40b660ee54c7a74df59d0d629ecf4f75c49b4c46430cdfd",
+        "encoding": "PNG uint16",
+        "scale": 0.01,
+        "unit": "K",
+        "nodata": 0
+      }
+    },
+    {
+      "timeUtc": "2022-09-05T03:30:00Z",
+      "url": "assets/events/storm-dynamic/hinnamnor-b13-20220905T0330Z.png",
+      "width": 1024,
+      "height": 768,
+      "scanStartUtc": "2022-09-05T03:30:55.187Z",
+      "scanEndUtc": "2022-09-05T03:32:39.146Z",
+      "sha256": "d8dc7ab33cf0c84a831b395eae83876408aae3d36c26f8675e0f7a86edb1d64b",
+      "stats": {
+        "minK": 196.87484158565582,
+        "maxK": 310.1962672929146,
+        "meanK": 270.3483429436642,
+        "p10K": 227.1967018673591,
+        "p50K": 282.3537866665848,
+        "below235KAreaKm2": 1098439.4907693923,
+        "validPixels": 786432,
+        "missingPixels": 0
+      },
+      "sourceUrls": [
+        "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/09/05/0330/HS_H08_20220905_0330_B13_FLDK_R20_S0210.DAT.bz2",
+        "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/09/05/0330/HS_H08_20220905_0330_B13_FLDK_R20_S0310.DAT.bz2"
+      ],
+      "numericData": {
+        "researchFile": "research/dynamics/storm/frames/hinnamnor-b13-20220905T0330Z-bt-centikelvin.png",
+        "sha256": "c7c86864752ee92234e0b8a6dcf20a20618be6bd2ed49241f76d613af269d64c",
+        "encoding": "PNG uint16",
+        "scale": 0.01,
+        "unit": "K",
+        "nodata": 0
+      }
+    },
+    {
+      "timeUtc": "2022-09-05T04:00:00Z",
+      "url": "assets/events/storm-dynamic/hinnamnor-b13-20220905T0400Z.png",
+      "width": 1024,
+      "height": 768,
+      "scanStartUtc": "2022-09-05T04:00:55.154Z",
+      "scanEndUtc": "2022-09-05T04:02:39.115Z",
+      "sha256": "32537873e4f8a18cc4ea8c241f52a24e9c855b8223f1180b7f7bad1ee292b2f7",
+      "stats": {
+        "minK": 196.87484158565582,
+        "maxK": 311.3409047462248,
+        "meanK": 270.48280139666696,
+        "p10K": 226.94483676415197,
+        "p50K": 282.8496104551758,
+        "below235KAreaKm2": 1107228.610101142,
+        "validPixels": 786432,
+        "missingPixels": 0
+      },
+      "sourceUrls": [
+        "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/09/05/0400/HS_H08_20220905_0400_B13_FLDK_R20_S0210.DAT.bz2",
+        "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/09/05/0400/HS_H08_20220905_0400_B13_FLDK_R20_S0310.DAT.bz2"
+      ],
+      "numericData": {
+        "researchFile": "research/dynamics/storm/frames/hinnamnor-b13-20220905T0400Z-bt-centikelvin.png",
+        "sha256": "8b1d48f968260db07fafd1d12349935ea46cbf270b6ed5836a43874f9acd5842",
+        "encoding": "PNG uint16",
+        "scale": 0.01,
+        "unit": "K",
+        "nodata": 0
+      }
+    },
+    {
+      "timeUtc": "2022-09-05T04:30:00Z",
+      "url": "assets/events/storm-dynamic/hinnamnor-b13-20220905T0430Z.png",
+      "width": 1024,
+      "height": 768,
+      "scanStartUtc": "2022-09-05T04:30:55.123Z",
+      "scanEndUtc": "2022-09-05T04:32:39.082Z",
+      "sha256": "76f689987068f367f0bde0c5991b177a8e428908222ad623b504ef5064c32e43",
+      "stats": {
+        "minK": 196.26631010073046,
+        "maxK": 311.8536199391763,
+        "meanK": 270.5682351487535,
+        "p10K": 226.88169025259734,
+        "p50K": 283.2560101655592,
+        "below235KAreaKm2": 1104072.7465358484,
+        "validPixels": 786432,
+        "missingPixels": 0
+      },
+      "sourceUrls": [
+        "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/09/05/0430/HS_H08_20220905_0430_B13_FLDK_R20_S0210.DAT.bz2",
+        "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/09/05/0430/HS_H08_20220905_0430_B13_FLDK_R20_S0310.DAT.bz2"
+      ],
+      "numericData": {
+        "researchFile": "research/dynamics/storm/frames/hinnamnor-b13-20220905T0430Z-bt-centikelvin.png",
+        "sha256": "a693556796a3d3ae0a4a7aa259ffc76fca3ceba5a13351f311d83cd6c30ac256",
+        "encoding": "PNG uint16",
+        "scale": 0.01,
+        "unit": "K",
+        "nodata": 0
+      }
+    },
+    {
+      "timeUtc": "2022-09-05T05:00:00Z",
+      "url": "assets/events/storm-dynamic/hinnamnor-b13-20220905T0500Z.png",
+      "width": 1024,
+      "height": 768,
+      "scanStartUtc": "2022-09-05T05:00:55.090Z",
+      "scanEndUtc": "2022-09-05T05:02:39.051Z",
+      "sha256": "cfb85a787df0bb8262f4a7481a7bb575e04e58bcb07ee2f1d43f5df9264a1630",
+      "stats": {
+        "minK": 197.35493593702904,
+        "maxK": 312.1868483417926,
+        "meanK": 270.6072814830835,
+        "p10K": 226.94483676415197,
+        "p50K": 283.1110655833489,
+        "below235KAreaKm2": 1077947.260178355,
+        "validPixels": 786432,
+        "missingPixels": 0
+      },
+      "sourceUrls": [
+        "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/09/05/0500/HS_H08_20220905_0500_B13_FLDK_R20_S0210.DAT.bz2",
+        "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/09/05/0500/HS_H08_20220905_0500_B13_FLDK_R20_S0310.DAT.bz2"
+      ],
+      "numericData": {
+        "researchFile": "research/dynamics/storm/frames/hinnamnor-b13-20220905T0500Z-bt-centikelvin.png",
+        "sha256": "f809f409fc9d9b9aecc054e5fa74dc9b73b41f3ea70496a31b45d08cd1f21f7b",
+        "encoding": "PNG uint16",
+        "scale": 0.01,
+        "unit": "K",
+        "nodata": 0
+      }
+    },
+    {
+      "timeUtc": "2022-09-05T05:30:00Z",
+      "url": "assets/events/storm-dynamic/hinnamnor-b13-20220905T0530Z.png",
+      "width": 1024,
+      "height": 768,
+      "scanStartUtc": "2022-09-05T05:30:55.059Z",
+      "scanEndUtc": "2022-09-05T05:32:39.020Z",
+      "sha256": "e412471912e3d837cbf90f5b6d67794b2ccaa611f74b348c65966ce961f80f68",
+      "stats": {
+        "minK": 197.71119788457722,
+        "maxK": 312.0314542022981,
+        "meanK": 270.6479082501717,
+        "p10K": 227.1338433063806,
+        "p50K": 283.08205030522464,
+        "below235KAreaKm2": 1070134.5966188232,
+        "validPixels": 786432,
+        "missingPixels": 0
+      },
+      "sourceUrls": [
+        "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/09/05/0530/HS_H08_20220905_0530_B13_FLDK_R20_S0210.DAT.bz2",
+        "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/09/05/0530/HS_H08_20220905_0530_B13_FLDK_R20_S0310.DAT.bz2"
+      ],
+      "numericData": {
+        "researchFile": "research/dynamics/storm/frames/hinnamnor-b13-20220905T0530Z-bt-centikelvin.png",
+        "sha256": "012609318ad6a9115862a33cb5a038a14170d0884df58694ef24d0cd33d5e321",
+        "encoding": "PNG uint16",
+        "scale": 0.01,
+        "unit": "K",
+        "nodata": 0
+      }
+    },
+    {
+      "timeUtc": "2022-09-05T06:00:00Z",
+      "url": "assets/events/storm-dynamic/hinnamnor-b13-20220905T0600Z.png",
+      "width": 1024,
+      "height": 768,
+      "scanStartUtc": "2022-09-05T06:00:55.026Z",
+      "scanEndUtc": "2022-09-05T06:02:38.987Z",
+      "sha256": "6b1251a13f7b23e1656f91755c40cfc4a27cd899135d5a68d046ceb0418e8571",
+      "stats": {
+        "minK": 197.47404813842888,
+        "maxK": 311.4525474187757,
+        "meanK": 270.64670598935885,
+        "p10K": 227.44742364142667,
+        "p50K": 283.1110655833489,
+        "below235KAreaKm2": 1066036.39844508,
+        "validPixels": 786432,
+        "missingPixels": 0
+      },
+      "sourceUrls": [
+        "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/09/05/0600/HS_H08_20220905_0600_B13_FLDK_R20_S0210.DAT.bz2",
+        "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/09/05/0600/HS_H08_20220905_0600_B13_FLDK_R20_S0310.DAT.bz2"
+      ],
+      "numericData": {
+        "researchFile": "research/dynamics/storm/frames/hinnamnor-b13-20220905T0600Z-bt-centikelvin.png",
+        "sha256": "2a3e39768ae4ab1607a66f03bb311d562ac5189a128a72c29aac0b28d2f05ed2",
+        "encoding": "PNG uint16",
+        "scale": 0.01,
+        "unit": "K",
+        "nodata": 0
+      }
+    },
+    {
+      "timeUtc": "2022-09-05T06:30:00Z",
+      "url": "assets/events/storm-dynamic/hinnamnor-b13-20220905T0630Z.png",
+      "width": 1024,
+      "height": 768,
+      "scanStartUtc": "2022-09-05T06:30:54.995Z",
+      "scanEndUtc": "2022-09-05T06:32:38.956Z",
+      "sha256": "7b4d02e53005cf50a3b0e1d5d5f32cf8fe1a746856f2e144d72246681c8466bc",
+      "stats": {
+        "minK": 198.18127236686414,
+        "maxK": 311.2738701500525,
+        "meanK": 270.63290826195356,
+        "p10K": 227.69701545566014,
+        "p50K": 283.19805866389163,
+        "below235KAreaKm2": 1054822.4691561507,
+        "validPixels": 786432,
+        "missingPixels": 0
+      },
+      "sourceUrls": [
+        "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/09/05/0630/HS_H08_20220905_0630_B13_FLDK_R20_S0210.DAT.bz2",
+        "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/09/05/0630/HS_H08_20220905_0630_B13_FLDK_R20_S0310.DAT.bz2"
+      ],
+      "numericData": {
+        "researchFile": "research/dynamics/storm/frames/hinnamnor-b13-20220905T0630Z-bt-centikelvin.png",
+        "sha256": "fae4032ecd00f506b3fc0ca0d84c69a44ac22cfb31430ce7eadcec49bb935b74",
+        "encoding": "PNG uint16",
+        "scale": 0.01,
+        "unit": "K",
+        "nodata": 0
+      }
+    },
+    {
+      "timeUtc": "2022-09-05T07:00:00Z",
+      "url": "assets/events/storm-dynamic/hinnamnor-b13-20220905T0700Z.png",
+      "width": 1024,
+      "height": 768,
+      "scanStartUtc": "2022-09-05T07:00:54.964Z",
+      "scanEndUtc": "2022-09-05T07:02:38.922Z",
+      "sha256": "cbc2b3a5fee8b608d18ef4e8d6f2719253702de4715d27832ed6790f81d2df39",
+      "stats": {
+        "minK": 195.52324500785144,
+        "maxK": 310.1737151844589,
+        "meanK": 270.5572669834971,
+        "p10K": 228.0693131456335,
+        "p50K": 283.1400720640836,
+        "below235KAreaKm2": 1028710.0714212705,
+        "validPixels": 786432,
+        "missingPixels": 0
+      },
+      "sourceUrls": [
+        "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/09/05/0700/HS_H08_20220905_0700_B13_FLDK_R20_S0210.DAT.bz2",
+        "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/09/05/0700/HS_H08_20220905_0700_B13_FLDK_R20_S0310.DAT.bz2"
+      ],
+      "numericData": {
+        "researchFile": "research/dynamics/storm/frames/hinnamnor-b13-20220905T0700Z-bt-centikelvin.png",
+        "sha256": "28b3c04026b3655417cf13c5bab01efc60cc006adb090278f9eeec7c06fd25cd",
+        "encoding": "PNG uint16",
+        "scale": 0.01,
+        "unit": "K",
+        "nodata": 0
+      }
+    },
+    {
+      "timeUtc": "2022-09-05T07:30:00Z",
+      "url": "assets/events/storm-dynamic/hinnamnor-b13-20220905T0730Z.png",
+      "width": 1024,
+      "height": 768,
+      "scanStartUtc": "2022-09-05T07:30:54.931Z",
+      "scanEndUtc": "2022-09-05T07:32:38.892Z",
+      "sha256": "20aaa5d27bddfa8def9c3c5c2829505a4fa2f51a3a7c8c49eac9de4f433844d7",
+      "stats": {
+        "minK": 195.27233910644642,
+        "maxK": 309.1544827788611,
+        "meanK": 270.56371367605635,
+        "p10K": 228.13112150437053,
+        "p50K": 283.1400720640836,
+        "below235KAreaKm2": 1004914.1460379371,
+        "validPixels": 786432,
+        "missingPixels": 0
+      },
+      "sourceUrls": [
+        "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/09/05/0730/HS_H08_20220905_0730_B13_FLDK_R20_S0210.DAT.bz2",
+        "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/09/05/0730/HS_H08_20220905_0730_B13_FLDK_R20_S0310.DAT.bz2"
+      ],
+      "numericData": {
+        "researchFile": "research/dynamics/storm/frames/hinnamnor-b13-20220905T0730Z-bt-centikelvin.png",
+        "sha256": "6667cf20fba6ecff76b92e3db9e4fa72a1ee162b3ee40e7a2f2325e60c5d0fb6",
+        "encoding": "PNG uint16",
+        "scale": 0.01,
+        "unit": "K",
+        "nodata": 0
+      }
+    },
+    {
+      "timeUtc": "2022-09-05T08:00:00Z",
+      "url": "assets/events/storm-dynamic/hinnamnor-b13-20220905T0800Z.png",
+      "width": 1024,
+      "height": 768,
+      "scanStartUtc": "2022-09-05T08:00:54.900Z",
+      "scanEndUtc": "2022-09-05T08:02:38.858Z",
+      "sha256": "26e85bb222aa3c77270ff62b891d664a32be98024012feea8ad89bed77b583ed",
+      "stats": {
+        "minK": 196.63256803972064,
+        "maxK": 307.78188116392676,
+        "meanK": 270.62646136962996,
+        "p10K": 228.31613695649415,
+        "p50K": 283.1690697550581,
+        "below235KAreaKm2": 997326.2248740159,
+        "validPixels": 786432,
+        "missingPixels": 0
+      },
+      "sourceUrls": [
+        "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/09/05/0800/HS_H08_20220905_0800_B13_FLDK_R20_S0210.DAT.bz2",
+        "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/09/05/0800/HS_H08_20220905_0800_B13_FLDK_R20_S0310.DAT.bz2"
+      ],
+      "numericData": {
+        "researchFile": "research/dynamics/storm/frames/hinnamnor-b13-20220905T0800Z-bt-centikelvin.png",
+        "sha256": "0d6e4e4a95f89cf0013e6fc5ed8e44ebedd62193b4df893e015f5959586d68c0",
+        "encoding": "PNG uint16",
+        "scale": 0.01,
+        "unit": "K",
+        "nodata": 0
+      }
+    },
+    {
+      "timeUtc": "2022-09-05T08:30:00Z",
+      "url": "assets/events/storm-dynamic/hinnamnor-b13-20220905T0830Z.png",
+      "width": 1024,
+      "height": 768,
+      "scanStartUtc": "2022-09-05T08:30:54.867Z",
+      "scanEndUtc": "2022-09-05T08:32:38.827Z",
+      "sha256": "009cdb8e2377ab9a627f64f61b265dcf4727fc1d27bcaf9f27c9919f4879cb57",
+      "stats": {
+        "minK": 192.26090308325763,
+        "maxK": 306.2301205575337,
+        "meanK": 270.67904480616045,
+        "p10K": 229.17155571676454,
+        "p50K": 283.4874664031843,
+        "below235KAreaKm2": 991171.6197718505,
+        "validPixels": 786432,
+        "missingPixels": 0
+      },
+      "sourceUrls": [
+        "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/09/05/0830/HS_H08_20220905_0830_B13_FLDK_R20_S0210.DAT.bz2",
+        "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/09/05/0830/HS_H08_20220905_0830_B13_FLDK_R20_S0310.DAT.bz2"
+      ],
+      "numericData": {
+        "researchFile": "research/dynamics/storm/frames/hinnamnor-b13-20220905T0830Z-bt-centikelvin.png",
+        "sha256": "81911be9a7fb9e87c18a45b3d3f6382440f2bddf3ed6e880606d4468de965ad0",
+        "encoding": "PNG uint16",
+        "scale": 0.01,
+        "unit": "K",
+        "nodata": 0
+      }
+    },
+    {
+      "timeUtc": "2022-09-05T09:00:00Z",
+      "url": "assets/events/storm-dynamic/hinnamnor-b13-20220905T0900Z.png",
+      "width": 1024,
+      "height": 768,
+      "scanStartUtc": "2022-09-05T09:00:54.836Z",
+      "scanEndUtc": "2022-09-05T09:02:38.797Z",
+      "sha256": "ab5b3d2250db7ff996757aa060cd9d84aa3d3e41f09140c919a8e486530dc78a",
+      "stats": {
+        "minK": 195.01978096213855,
+        "maxK": 303.9225920651945,
+        "meanK": 270.6385747125436,
+        "p10K": 229.71468902878289,
+        "p50K": 283.66069301076146,
+        "below235KAreaKm2": 947497.5007001582,
+        "validPixels": 786432,
+        "missingPixels": 0
+      },
+      "sourceUrls": [
+        "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/09/05/0900/HS_H08_20220905_0900_B13_FLDK_R20_S0210.DAT.bz2",
+        "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/09/05/0900/HS_H08_20220905_0900_B13_FLDK_R20_S0310.DAT.bz2"
+      ],
+      "numericData": {
+        "researchFile": "research/dynamics/storm/frames/hinnamnor-b13-20220905T0900Z-bt-centikelvin.png",
+        "sha256": "8ca81a33c87a8d13b6f1bc9b5577d6792a332e159c3aac1564227a1b73688f12",
+        "encoding": "PNG uint16",
+        "scale": 0.01,
+        "unit": "K",
+        "nodata": 0
+      }
+    },
+    {
+      "timeUtc": "2022-09-05T09:30:00Z",
+      "url": "assets/events/storm-dynamic/hinnamnor-b13-20220905T0930Z.png",
+      "width": 1024,
+      "height": 768,
+      "scanStartUtc": "2022-09-05T09:30:54.803Z",
+      "scanEndUtc": "2022-09-05T09:32:38.763Z",
+      "sha256": "3d992a80cb9205217f0127055c4a4431eb3d114171cb307d160f9139d5ec2930",
+      "stats": {
+        "minK": 194.12241848635193,
+        "maxK": 302.67914548402746,
+        "meanK": 270.50875070593435,
+        "p10K": 229.71468902878289,
+        "p50K": 283.2270387981926,
+        "below235KAreaKm2": 888569.5581258673,
+        "validPixels": 786432,
+        "missingPixels": 0
+      },
+      "sourceUrls": [
+        "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/09/05/0930/HS_H08_20220905_0930_B13_FLDK_R20_S0210.DAT.bz2",
+        "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/09/05/0930/HS_H08_20220905_0930_B13_FLDK_R20_S0310.DAT.bz2"
+      ],
+      "numericData": {
+        "researchFile": "research/dynamics/storm/frames/hinnamnor-b13-20220905T0930Z-bt-centikelvin.png",
+        "sha256": "2da9693e43958484600d8432acecfe72c7f95c6249d920f325ef08a2ec34878f",
+        "encoding": "PNG uint16",
+        "scale": 0.01,
+        "unit": "K",
+        "nodata": 0
+      }
+    },
+    {
+      "timeUtc": "2022-09-05T09:50:00Z",
+      "url": "assets/events/storm-dynamic/hinnamnor-b13-20220905T0950Z.png",
+      "width": 1024,
+      "height": 768,
+      "scanStartUtc": "2022-09-05T09:50:54.781Z",
+      "scanEndUtc": "2022-09-05T09:52:38.742Z",
+      "sha256": "297fa3f3e788841d66b2bd5699b44dafa392a66d4f8bd6a9f6574bb211df08a1",
+      "stats": {
+        "minK": 194.63778633575927,
+        "maxK": 301.955539957904,
+        "meanK": 270.407846690599,
+        "p10K": 229.95442104291797,
+        "p50K": 282.8205156554721,
+        "below235KAreaKm2": 866019.4002004325,
+        "validPixels": 786432,
+        "missingPixels": 0
+      },
+      "sourceUrls": [
+        "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/09/05/0950/HS_H08_20220905_0950_B13_FLDK_R20_S0210.DAT.bz2",
+        "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/09/05/0950/HS_H08_20220905_0950_B13_FLDK_R20_S0310.DAT.bz2"
+      ],
+      "numericData": {
+        "researchFile": "research/dynamics/storm/frames/hinnamnor-b13-20220905T0950Z-bt-centikelvin.png",
+        "sha256": "ade354f78870a5c06f7822a2bd9dacac654fbb55525e38eaaac782956a6ed3e9",
+        "encoding": "PNG uint16",
+        "scale": 0.01,
+        "unit": "K",
+        "nodata": 0
+      }
+    },
+    {
+      "timeUtc": "2022-09-05T10:10:00Z",
+      "url": "assets/events/storm-dynamic/hinnamnor-b13-20220905T1010Z.png",
+      "width": 1024,
+      "height": 768,
+      "scanStartUtc": "2022-09-05T10:10:54.762Z",
+      "scanEndUtc": "2022-09-05T10:12:38.721Z",
+      "sha256": "b448c63ac91189622d341a3bac3bcd4c6bbadd1bd23a9f124cf8bcb78d5e136a",
+      "stats": {
+        "minK": 190.58719811883594,
+        "maxK": 300.8369122962583,
+        "meanK": 270.30604750282083,
+        "p10K": 230.13355923440696,
+        "p50K": 282.3830243901924,
+        "below235KAreaKm2": 854848.4947167158,
+        "validPixels": 786432,
+        "missingPixels": 0
+      },
+      "sourceUrls": [
+        "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/09/05/1010/HS_H08_20220905_1010_B13_FLDK_R20_S0210.DAT.bz2",
+        "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/09/05/1010/HS_H08_20220905_1010_B13_FLDK_R20_S0310.DAT.bz2"
+      ],
+      "numericData": {
+        "researchFile": "research/dynamics/storm/frames/hinnamnor-b13-20220905T1010Z-bt-centikelvin.png",
+        "sha256": "75ba82c71530a8d594ecbcd542adaf1c5b5f3a6ff756e8f7d1eea41ae9005790",
+        "encoding": "PNG uint16",
+        "scale": 0.01,
+        "unit": "K",
+        "nodata": 0
+      }
+    },
+    {
+      "timeUtc": "2022-09-05T10:30:00Z",
+      "url": "assets/events/storm-dynamic/hinnamnor-b13-20220905T1030Z.png",
+      "width": 1024,
+      "height": 768,
+      "scanStartUtc": "2022-09-05T10:30:54.741Z",
+      "scanEndUtc": "2022-09-05T10:32:38.699Z",
+      "sha256": "5f0b6b0426b63d2a1f55b876895fc7e8d25db563e8a898ab3a4dd1280715b11c",
+      "stats": {
+        "minK": 191.29390810823415,
+        "maxK": 299.9289579234781,
+        "meanK": 270.2259999562964,
+        "p10K": 230.0739090949058,
+        "p50K": 281.97287440982086,
+        "below235KAreaKm2": 851894.3617897752,
+        "validPixels": 786432,
+        "missingPixels": 0
+      },
+      "sourceUrls": [
+        "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/09/05/1030/HS_H08_20220905_1030_B13_FLDK_R20_S0210.DAT.bz2",
+        "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/09/05/1030/HS_H08_20220905_1030_B13_FLDK_R20_S0310.DAT.bz2"
+      ],
+      "numericData": {
+        "researchFile": "research/dynamics/storm/frames/hinnamnor-b13-20220905T1030Z-bt-centikelvin.png",
+        "sha256": "bba6fedf471d3e845f4964278c5a1195d7afcc0962a36c264b0503ebbcdd268f",
+        "encoding": "PNG uint16",
+        "scale": 0.01,
+        "unit": "K",
+        "nodata": 0
+      }
+    },
+    {
+      "timeUtc": "2022-09-05T11:00:00Z",
+      "url": "assets/events/storm-dynamic/hinnamnor-b13-20220905T1100Z.png",
+      "width": 1024,
+      "height": 768,
+      "scanStartUtc": "2022-09-05T11:00:54.708Z",
+      "scanEndUtc": "2022-09-05T11:02:38.668Z",
+      "sha256": "6bba0eaf536e82369e282c0c187fa7c2a94ef514dbbe1bc1d0f5a5865067aace",
+      "stats": {
+        "minK": 191.01286942839408,
+        "maxK": 298.9140864634022,
+        "meanK": 270.17296153767705,
+        "p10K": 229.77471695408755,
+        "p50K": 281.3838451433485,
+        "below235KAreaKm2": 855650.8088044997,
+        "validPixels": 786432,
+        "missingPixels": 0
+      },
+      "sourceUrls": [
+        "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/09/05/1100/HS_H08_20220905_1100_B13_FLDK_R20_S0210.DAT.bz2",
+        "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/09/05/1100/HS_H08_20220905_1100_B13_FLDK_R20_S0310.DAT.bz2"
+      ],
+      "numericData": {
+        "researchFile": "research/dynamics/storm/frames/hinnamnor-b13-20220905T1100Z-bt-centikelvin.png",
+        "sha256": "45ee2b548bb141010150c5bba84c5005ddc442218681404f33f2187534139b30",
+        "encoding": "PNG uint16",
+        "scale": 0.01,
+        "unit": "K",
+        "nodata": 0
+      }
+    },
+    {
+      "timeUtc": "2022-09-05T11:30:00Z",
+      "url": "assets/events/storm-dynamic/hinnamnor-b13-20220905T1130Z.png",
+      "width": 1024,
+      "height": 768,
+      "scanStartUtc": "2022-09-05T11:30:54.677Z",
+      "scanEndUtc": "2022-09-05T11:32:38.628Z",
+      "sha256": "156d5e86589d98109c46c3e4b40c5116ca2c1ba31b2f4856371454bf84816cbb",
+      "stats": {
+        "minK": 195.39799692114914,
+        "maxK": 298.6402061505591,
+        "meanK": 270.1592913414459,
+        "p10K": 229.89458278739153,
+        "p50K": 280.93964418513,
+        "below235KAreaKm2": 845489.9931158468,
+        "validPixels": 786432,
+        "missingPixels": 0
+      },
+      "sourceUrls": [
+        "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/09/05/1130/HS_H08_20220905_1130_B13_FLDK_R20_S0210.DAT.bz2",
+        "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/09/05/1130/HS_H08_20220905_1130_B13_FLDK_R20_S0310.DAT.bz2"
+      ],
+      "numericData": {
+        "researchFile": "research/dynamics/storm/frames/hinnamnor-b13-20220905T1130Z-bt-centikelvin.png",
+        "sha256": "b9df62a630caaa9c4177aaf6af94a865a2387330bacaf15494a3fe50d8c05d62",
+        "encoding": "PNG uint16",
+        "scale": 0.01,
+        "unit": "K",
+        "nodata": 0
+      }
+    },
+    {
+      "timeUtc": "2022-09-05T12:00:00Z",
+      "url": "assets/events/storm-dynamic/hinnamnor-b13-20220905T1200Z.png",
+      "width": 1024,
+      "height": 768,
+      "scanStartUtc": "2022-09-05T12:00:54.644Z",
+      "scanEndUtc": "2022-09-05T12:02:38.604Z",
+      "sha256": "3ad801c67fa38a829fe6347c531ddc575a9ecaacc19eadc309a146d878802e67",
+      "stats": {
+        "minK": 194.63778633575927,
+        "maxK": 298.5404436246034,
+        "meanK": 270.1267838549937,
+        "p10K": 229.89458278739153,
+        "p50K": 280.6423378823364,
+        "below235KAreaKm2": 824269.6855300523,
+        "validPixels": 786432,
+        "missingPixels": 0
+      },
+      "sourceUrls": [
+        "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/09/05/1200/HS_H08_20220905_1200_B13_FLDK_R20_S0210.DAT.bz2",
+        "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/09/05/1200/HS_H08_20220905_1200_B13_FLDK_R20_S0310.DAT.bz2"
+      ],
+      "numericData": {
+        "researchFile": "research/dynamics/storm/frames/hinnamnor-b13-20220905T1200Z-bt-centikelvin.png",
+        "sha256": "10040f8df1a8aa5ae31d578ff997e8356d5ffa2c1310dbd24e9b960d34470829",
+        "encoding": "PNG uint16",
+        "scale": 0.01,
+        "unit": "K",
+        "nodata": 0
+      }
+    },
+    {
+      "timeUtc": "2022-09-05T12:30:00Z",
+      "url": "assets/events/storm-dynamic/hinnamnor-b13-20220905T1230Z.png",
+      "width": 1024,
+      "height": 768,
+      "scanStartUtc": "2022-09-05T12:30:54.613Z",
+      "scanEndUtc": "2022-09-05T12:32:38.574Z",
+      "sha256": "8bd92ff06e4cc253db11aacb30da4486660095d11e576381a47759aec2193935",
+      "stats": {
+        "minK": 195.01978096213855,
+        "maxK": 298.5154888021566,
+        "meanK": 270.09570046517973,
+        "p10K": 230.0739090949058,
+        "p50K": 280.3739520850857,
+        "below235KAreaKm2": 809249.8519800147,
+        "validPixels": 786432,
+        "missingPixels": 0
+      },
+      "sourceUrls": [
+        "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/09/05/1230/HS_H08_20220905_1230_B13_FLDK_R20_S0210.DAT.bz2",
+        "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/09/05/1230/HS_H08_20220905_1230_B13_FLDK_R20_S0310.DAT.bz2"
+      ],
+      "numericData": {
+        "researchFile": "research/dynamics/storm/frames/hinnamnor-b13-20220905T1230Z-bt-centikelvin.png",
+        "sha256": "1f25c88abc7d02f097f80157a190aee9a57169a85d4303b5fa9062cfd5ee070c",
+        "encoding": "PNG uint16",
+        "scale": 0.01,
+        "unit": "K",
+        "nodata": 0
+      }
+    },
+    {
+      "timeUtc": "2022-09-05T13:00:00Z",
+      "url": "assets/events/storm-dynamic/hinnamnor-b13-20220905T1300Z.png",
+      "width": 1024,
+      "height": 768,
+      "scanStartUtc": "2022-09-05T13:00:54.580Z",
+      "scanEndUtc": "2022-09-05T13:02:38.540Z",
+      "sha256": "bdb40ff9426e473807666ef446539842463a5a53b3ad83cd80c542e64758fed4",
+      "stats": {
+        "minK": 193.73123320324223,
+        "maxK": 298.56539276686203,
+        "meanK": 270.1601462393102,
+        "p10K": 230.49015635061463,
+        "p50K": 280.3142059060875,
+        "below235KAreaKm2": 796917.9446449495,
+        "validPixels": 786432,
+        "missingPixels": 0
+      },
+      "sourceUrls": [
+        "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/09/05/1300/HS_H08_20220905_1300_B13_FLDK_R20_S0210.DAT.bz2",
+        "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/09/05/1300/HS_H08_20220905_1300_B13_FLDK_R20_S0310.DAT.bz2"
+      ],
+      "numericData": {
+        "researchFile": "research/dynamics/storm/frames/hinnamnor-b13-20220905T1300Z-bt-centikelvin.png",
+        "sha256": "c6a3feac2e492cba01a032099fdc774d6d950de515d8b390b4171a44bfa2b19d",
+        "encoding": "PNG uint16",
+        "scale": 0.01,
+        "unit": "K",
+        "nodata": 0
+      }
+    },
+    {
+      "timeUtc": "2022-09-05T13:30:00Z",
+      "url": "assets/events/storm-dynamic/hinnamnor-b13-20220905T1330Z.png",
+      "width": 1024,
+      "height": 768,
+      "scanStartUtc": "2022-09-05T13:30:54.549Z",
+      "scanEndUtc": "2022-09-05T13:32:38.510Z",
+      "sha256": "e71c2d2a2ed5cdacb71c82f6bb7067fe1f6e70fe0f6cf6ff9cc52d86dee1d19f",
+      "stats": {
+        "minK": 191.29390810823415,
+        "maxK": 298.5154888021566,
+        "meanK": 270.33579150095443,
+        "p10K": 231.13820625145067,
+        "p50K": 280.433660041007,
+        "below235KAreaKm2": 756956.2349909449,
+        "validPixels": 786432,
+        "missingPixels": 0
+      },
+      "sourceUrls": [
+        "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/09/05/1330/HS_H08_20220905_1330_B13_FLDK_R20_S0210.DAT.bz2",
+        "https://noaa-himawari8.s3.amazonaws.com/AHI-L1b-FLDK/2022/09/05/1330/HS_H08_20220905_1330_B13_FLDK_R20_S0310.DAT.bz2"
+      ],
+      "numericData": {
+        "researchFile": "research/dynamics/storm/frames/hinnamnor-b13-20220905T1330Z-bt-centikelvin.png",
+        "sha256": "1c1692d1952ce3d2b980504d930a14493fef53555c0b00081af553512b9a2e9b",
+        "encoding": "PNG uint16",
+        "scale": 0.01,
+        "unit": "K",
+        "nodata": 0
+      }
+    }
+  ],
+  "bbox": [
+    112,
+    22,
+    140,
+    43
+  ],
+  "track": [
+    {
+      "timeUtc": "2022-09-05T03:00:00Z",
+      "lat": 30.2,
+      "lon": 125.1,
+      "pressureHpa": 945,
+      "windKt": 85,
+      "grade": 5,
+      "sourceLine": 50
+    },
+    {
+      "timeUtc": "2022-09-05T06:00:00Z",
+      "lat": 31.0,
+      "lon": 125.5,
+      "pressureHpa": 950,
+      "windKt": 80,
+      "grade": 5,
+      "sourceLine": 51
+    },
+    {
+      "timeUtc": "2022-09-05T09:00:00Z",
+      "lat": 31.6,
+      "lon": 126.0,
+      "pressureHpa": 950,
+      "windKt": 80,
+      "grade": 5,
+      "sourceLine": 52
+    },
+    {
+      "timeUtc": "2022-09-05T12:00:00Z",
+      "lat": 32.3,
+      "lon": 126.6,
+      "pressureHpa": 955,
+      "windKt": 75,
+      "grade": 5,
+      "sourceLine": 53
+    }
+  ]
+}

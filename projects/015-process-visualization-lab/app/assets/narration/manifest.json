@@ -1,0 +1,1105 @@
+{
+  "provider": "MiniMax",
+  "endpoint": "https://api.minimax.cn/v1/t2a_v2",
+  "model": "speech-2.8-hd",
+  "voice": "Chinese (Mandarin)_Gentle_Senior",
+  "speed": 0.95,
+  "emotion": "calm",
+  "locale": "zh-CN",
+  "format": "wav",
+  "sampleRate": 32000,
+  "channels": 1,
+  "generatedAt": "2026-11-06T03:02:42.938Z",
+  "scriptSha256": "bb34610af3d90d79754ce1ee77690169e0a70c09b3af835ed3296b8cd06a3a44",
+  "registeredTourSha256": "368d209698f497fdc7b3db06e90a67434fbb110c65197b2bed32cb05104f997d",
+  "clips": {
+    "overview-0": {
+      "url": "assets/narration/minimax/overview-0-ba66fef2e654.wav",
+      "durationSeconds": 17.4,
+      "text": "先看整个地球：中间告诉你事件在哪里，底部时钟决定看到哪一刻，两侧图表用来核对变化。当前概览是教学示意；接下来会切换到真实记录，带你按位置、时间和证据看懂一个过程。",
+      "sha256": "ba66fef2e654bda3d0a7f9d79a21ef5fcb751a97e4f4735f7ab97ae0385add09",
+      "inputHash": "14c98359b0f394fa2670c07a91908822fae39c736d82121a25228688ac74f41c",
+      "bytes": 1114764,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/overview-0-ba66fef2e654.mp3",
+        "bytes": 105021,
+        "sha256": "754fda36f89fcf9e052249dbec36f0ed4c0782d2c11e2a74326ff3e20efc1d02"
+      }
+    },
+    "overview-1": {
+      "url": "assets/narration/minimax/overview-1-de3a9e1384bb.wav",
+      "durationSeconds": 18.4,
+      "text": "先来到汤加附近，记住较早这一帧的海面和周围云区。左侧小图与地球来自同一次红外扫描，亮处对应更低的亮温。现在先不急着看数字，下一步把真实扫描连起来，观察新云团怎样出现。",
+      "sha256": "de3a9e1384bb984fd9fb597cf56e7485798dee6202f1bfb1afe660bdfdcb6fde",
+      "inputHash": "03dd1cfbf3d8c1dd09725c9d1de82b8bcd780f87484e9f29d628a1bf9f0868e1",
+      "bytes": 1178764,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/overview-1-de3a9e1384bb.mp3",
+        "bytes": 111069,
+        "sha256": "cbad5ee52b0f41b46d9fe4c3f529cad1622eb271b69dd3981222ac364d3af359"
+      }
+    },
+    "overview-2": {
+      "url": "assets/narration/minimax/overview-2-c3e5b7460a4c.wav",
+      "durationSeconds": 19.1,
+      "text": "现在逐张向后看四小时，喷发附近的小云团逐渐展开成伞状。右侧统计的是固定三百公里邻域内的低温区域，末帧约六点九七万平方公里；它帮助比较变化，不代表火山灰浓度或地面受灾范围。",
+      "sha256": "c3e5b7460a4cace9dcfd97ddb78a1950006801b917ca37bbde842a1aace931d8",
+      "inputHash": "67474a260a19461b70487d37e93848cad012dca62fe022f973bf65cb68cc8c87",
+      "bytes": 1223564,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/overview-2-c3e5b7460a4c.mp3",
+        "bytes": 115173,
+        "sha256": "a51657768b19bd02f737920afef1647da96fc1e0dd9c8b8266b9a265c0fdd10f"
+      }
+    },
+    "overview-3": {
+      "url": "assets/narration/minimax/overview-3-cadf4de36653.wav",
+      "durationSeconds": 19,
+      "text": "再看日本东北地震的松代台站。随着这段真实记录向前，针柱和右侧曲线一起进入明显起伏。这里读的是仪器计数，图形为了看清而放大；它不是地面位移，也不能用柱高比较不同台站谁震得更强。",
+      "sha256": "cadf4de3665393df9c164295545043bd51b64a5d97280fd9c1e359b093b96e40",
+      "inputHash": "29a51ebbf49301b9d09ee67b38a9da46133099fbf985c2f2a3f3c57d409b07f1",
+      "bytes": 1217164,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/overview-3-cadf4de36653.mp3",
+        "bytes": 114525,
+        "sha256": "b03d30d52c787e90b4f579d5379461c95dac335dce35929ab843d61621f5c8d3"
+      }
+    },
+    "overview-4": {
+      "url": "assets/narration/minimax/overview-4-d90a1d7a43a6.wav",
+      "durationSeconds": 18.3,
+      "text": "这次看轩岚诺。地球上的云带来自真实红外扫描，路径点另有官方分析依据。先记住这一帧的中心位置和云带形态，再看后面的记录；云的亮暗表示亮温，不能直接当作风速或雨量来读。",
+      "sha256": "d90a1d7a43a63d0b4e6dbdeff03b4ffa68251e24f84c155b211bddaa09004573",
+      "inputHash": "24b2ae3e6bc7c7621856ca994d1d8ddf1db7eb862f12a79793ca2624b249b7ec",
+      "bytes": 1172364,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/overview-4-d90a1d7a43a6.mp3",
+        "bytes": 110421,
+        "sha256": "e8f46ac27f346ec8968d06cfad8a9e7c232b218023a5b137e3b0484f5520c92c"
+      }
+    },
+    "overview-5": {
+      "url": "assets/narration/minimax/overview-5-fff269ffb278.wav",
+      "durationSeconds": 18.6,
+      "text": "继续往后，云系形态和分析中心的位置都发生了变化。结束时采用的最近官方分析风速为七十五节；分析时刻与卫星扫描时刻不同，页面分别标出。比较图表时，要先看清单位和记录时间。",
+      "sha256": "fff269ffb27896dc71c32bcca8f3cbe4476e861ce826a2eb78c685d1f1d720f9",
+      "inputHash": "7f3c2a2ff9d850f7f6f4dd7d88b07177a42b56c6ba935c978a82e0593f716b9b",
+      "bytes": 1191564,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/overview-5-fff269ffb278.mp3",
+        "bytes": 112149,
+        "sha256": "c8251b74e4863d86bb0e175a857e3f520e4a776a3a8227c22c56343740674965"
+      }
+    },
+    "overview-6": {
+      "url": "assets/narration/minimax/overview-6-0751ea44b9db.wav",
+      "durationSeconds": 19.4,
+      "text": "最后看山竹，从香港时间十二点走到十三点。云图、机场风和鲗鱼涌海水位共用一个回放时钟。十三点海水位记录为三点七米，以站点零点为基准；它不是单独的风暴潮增水，不能直接这样解释。",
+      "sha256": "0751ea44b9db923921c67743194d560004331b98bd3b4dcb48a95d51f3a5b737",
+      "inputHash": "84e8c6ca5ffeb44a9c638d0cb2253fdd7063ef63fa133fc3aaa08233f3d29708",
+      "bytes": 1242764,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/overview-6-0751ea44b9db.mp3",
+        "bytes": 116901,
+        "sha256": "c66da1c0143ed6bf7879d6f1b4c682bc80a6e7a21fc1c1f24593d974936eb84e"
+      }
+    },
+    "overview-7": {
+      "url": "assets/narration/minimax/overview-7-a9e4e81b1c4c.wav",
+      "durationSeconds": 19.4,
+      "text": "现在你可以自己选事件、拖动时钟、切换完整地球与近看视角，再把画面和曲线对照。来源区保留资料入口、时间口径和缺测说明。遇到想追问的变化，先核对证据，再判断这些记录能支持什么结论。",
+      "sha256": "a9e4e81b1c4cbf32e9b1e50ce1a3b508da0972233ea611ddfb1d0944ae6e2b38",
+      "inputHash": "addcc8c632d3323c38a6e83ecdd1a32ba13a38f930941ef64da4abb9aa49e952",
+      "bytes": 1242764,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/overview-7-a9e4e81b1c4c.mp3",
+        "bytes": 116901,
+        "sha256": "4526eaa9924216697ebead8ed25798d0ed38d8178b3e8003d2d0dea39e1f5f11"
+      }
+    },
+    "volcano-0": {
+      "url": "assets/narration/minimax/volcano-4-bff80619d00d.wav",
+      "durationSeconds": 17.693625,
+      "text": "从地球靠近汤加，再俯身看海底火山。这里是二零一五到二零一七年资料合成的地形。先看环形火山口、岛屿和向外延伸的坡面。青色线划过火山口，光标处的水深约八十二米。",
+      "sha256": "bff80619d00d37f6a9cd116a109fcc1dd25931a87499ca6bee0d025640167810",
+      "inputHash": "5c4f4944c82f542e6b1068279874cbe4b9688cc6c69c3c3a112c85deec2639b5",
+      "bytes": 1133556,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/volcano-4-bff80619d00d.mp3",
+        "bytes": 106749,
+        "sha256": "7b348d548eb1887f95893cdab9f59d30e983faf29fe56a2672ecc8fa93daad9e"
+      }
+    },
+    "volcano-1": {
+      "url": "assets/narration/minimax/volcano-5-e1748bc3680f.wav",
+      "durationSeconds": 18.3,
+      "text": "火山口底部的深红色表示加深，蓝色表示变浅。对照左边的两期水深，这个测点加深约七百七十四米。右边剖面下方的色带和三维地形共用色标，灰色斜纹标出有一期缺测的位置。",
+      "sha256": "e1748bc3680f8ef80ff5e4d8d634cbc4e8046f4999061f2edfd53490f065a205",
+      "inputHash": "a19c22ef12f88890ff9910b98273277b8ab2c672c08669c72806abb3396ea297",
+      "bytes": 1172364,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/volcano-5-e1748bc3680f.mp3",
+        "bytes": 110421,
+        "sha256": "787c3de0e6795125ae9c7870fd0ed07755a8f7731bd90e9d756adb1bafa1e850"
+      }
+    },
+    "volcano-2": {
+      "url": "assets/narration/minimax/volcano-6-c6822e9c8899.wav",
+      "durationSeconds": 19.2,
+      "text": "先看西侧坡面，标记处两期记录相差约八米，右侧剖面线在这里靠得很近。再沿剖面移到东侧，测点相差约七米。两侧的小差值还要结合测深和配准误差来读，火山口的落差在图上更明显。",
+      "sha256": "c6822e9c8899013883cc002b8eeca0e69ef999b054b51ab2a617e40476f82113",
+      "inputHash": "07b3210621af347729f915d446ab541b54ae1ca61cd1717b00d126fc46f5f021",
+      "bytes": 1229964,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/volcano-6-c6822e9c8899.mp3",
+        "bytes": 115821,
+        "sha256": "ccb85e870156088aedbfd431a73d8781cf98dad47df75eb3f2e2da28fc8c6c69"
+      }
+    },
+    "volcano-3": {
+      "url": "assets/narration/minimax/volcano-0-9396297bfb2a.wav",
+      "durationSeconds": 17.3,
+      "text": "这里是汤加喷发时段的真实红外记录。先看较早的一帧，记住火山附近和周围天气云的位置。画面亮暗对应亮温，左侧小图保留同一帧的完整灰阶，便于和地球上的增强显示互相核对。",
+      "sha256": "9396297bfb2a3c07838ecad6e3841edd8fec60a08c5eb70d9b126fe57c1acd3c",
+      "inputHash": "a7adaa1aeb5965968038c5361762c9e1dcef2224378f10eeda7b11835252d981",
+      "bytes": 1108364,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/volcano-0-9396297bfb2a.mp3",
+        "bytes": 104373,
+        "sha256": "25f89282fbe6067a48db7f0c0464aef8acb8b705a7c47997562d8af0482019fc"
+      }
+    },
+    "volcano-4": {
+      "url": "assets/narration/minimax/volcano-1-7938508c96a2.wav",
+      "durationSeconds": 18.2,
+      "text": "看前三十分钟的连续红外扫描，火山附近出现一片明亮的低温区。可以追踪它出现的位置和时间。要区分火山灰和普通天气云，还要结合其他波段或独立观测。右侧统计的是固定范围内的低温区。",
+      "sha256": "7938508c96a2053f446d031d675869865e851b598e4178712b95cae520b13fd6",
+      "inputHash": "0b3b71d15c7947d5affa95f2a8a7fc2cd75cb4140eff1923943ca2a858192397",
+      "bytes": 1165964,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/volcano-1-7938508c96a2.mp3",
+        "bytes": 109773,
+        "sha256": "ee6517dd36f0350140a8697190c95c4f9e6bb39b93c669b48060130c749d8152"
+      }
+    },
+    "volcano-5": {
+      "url": "assets/narration/minimax/volcano-2-cb5d09e913a0.wav",
+      "durationSeconds": 18,
+      "text": "继续向后，云区逐渐展开。面积曲线只统计火山周围三百公里内、亮温低于指定阈值的位置；另一条曲线反映这个范围的低温变化。它们来自同一帧，但没有把火山灰与所有气象云分开。",
+      "sha256": "cb5d09e913a0b61c9e2bb6ad15e8e830a255bc3eed1d8668e02a983daf9212de",
+      "inputHash": "59fdcadae63318393d7ae03cbe6de4bb615513943a55439dd66bd1b0f647fc09",
+      "bytes": 1153164,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/volcano-2-cb5d09e913a0.mp3",
+        "bytes": 108477,
+        "sha256": "0e69915aa599584963884a386df7a7fa03c1f4ba32d60b5347ba6e298120d558"
+      }
+    },
+    "volcano-6": {
+      "url": "assets/narration/minimax/volcano-6-df2411c13411.wav",
+      "durationSeconds": 18.1,
+      "text": "回到开场的问题。海面下，两期测深显示火山口这个测点显著加深，测绘之间的变化过程没有被连续拍到。海面上，当天的红外扫描记录了低温云区的展开。现在可以分别回看这两条证据。",
+      "sha256": "df2411c13411616f3fd1816b1b1129d792fa6d3120e6529e58ca782286684f97",
+      "inputHash": "4b958fe81a0fa7857eba93ead8cb008c98808c8a108a3fc1d1960a2989e47689",
+      "bytes": 1159564,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/volcano-6-df2411c13411.mp3",
+        "bytes": 109125,
+        "sha256": "b0fc3fa7aec263d92b6c5c7608855dc51faa82d47a71468ae5a5af29bb6c5577"
+      }
+    },
+    "quake-0": {
+      "url": "assets/narration/minimax/quake-0-9d449e37783e.wav",
+      "durationSeconds": 16.9,
+      "text": "先认准金色的震中，再把镜头移到松代台站。发震前，本站只记录到小幅起伏。时钟往前走，留意台站旁的零刻线。右图的游标和这把刻度都指向同一个一秒窗口。",
+      "sha256": "9d449e37783e34a10368970e25aeaaceb8a1da338ae40022508be57505d84a38",
+      "inputHash": "35ab6a823ab8e10cf4a70ac9c0a36918fde6e01466057cb57d8c3d972bedf497",
+      "bytes": 1082764,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/quake-0-9d449e37783e.mp3",
+        "bytes": 101997,
+        "sha256": "92b8b932e345115c1e4d1d34324f4897e64512a14c41b6f5c4c327e76cd40e18"
+      }
+    },
+    "quake-1": {
+      "url": "assets/narration/minimax/quake-1-2c82f8330426.wav",
+      "durationSeconds": 15.6,
+      "text": "现在慢放松代的强起伏。青色表示正计数，紫色表示负计数。金点标出这一秒内离零最远的一笔。到本段最大的窗口时停一下，拿画面上的金点和右边的曲线核对。",
+      "sha256": "2c82f8330426594ff718b27525a63ae2867a4b6398836c9c1a774bdcef74c9e2",
+      "inputHash": "22b91a45cc2f9c6eaf55542e20ee2dda9182b13bd634a4464da35ad9797edb1a",
+      "bytes": 999564,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/quake-1-2c82f8330426.mp3",
+        "bytes": 94221,
+        "sha256": "e3cff42e9a891898940b3ba792b6643a5994b405339ab19aefd3bf0f02548cfe"
+      }
+    },
+    "quake-2": {
+      "url": "assets/narration/minimax/quake-2-73f3202e72fc.wav",
+      "durationSeconds": 15.2,
+      "text": "现在换到韩国仁川。时钟继续向前走，右边的曲线也换到仁川。台站旁这把刻度采用仁川自己的计数范围。等它到达本段的最大窗口，再比较两个台站的时刻。",
+      "sha256": "73f3202e72fc81b0e0b3cc05b66ef25abdcab0f6dc6abe9419a3351417583c00",
+      "inputHash": "7a7cdf8f533f8a31cc3d0773bd99ee866c53825a2c80cf52a735e1c0c41699d3",
+      "bytes": 973964,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/quake-2-73f3202e72fc.mp3",
+        "bytes": 91845,
+        "sha256": "32b2431d4d01e0af079f74befabf8dc957fa3d4fa5182e98939c1e8ac0ab4572"
+      }
+    },
+    "quake-3": {
+      "url": "assets/narration/minimax/quake-3-835592777072.wav",
+      "durationSeconds": 16.8,
+      "text": "回看这段档案，仁川的最大窗口比松代晚五分十一秒。这里对照的是各站绝对峰值出现的时刻。要判断地震波何时初到，还要从波形里单独识别。结尾可以点回这两笔记录。",
+      "sha256": "83559277707274b970359e28d3d6f2dc1428e924e3bd927b6faeb72be2c97811",
+      "inputHash": "adfffc1fb27bedae560ef8b2b76ca6a8506caac722ca2ca9b2f4faa46fafcd5a",
+      "bytes": 1076364,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/quake-3-835592777072.mp3",
+        "bytes": 101349,
+        "sha256": "bbb6cb00799f3e737b16389e1c78a61cf5caa4baa9dacf56c14b6d5675748d7a"
+      }
+    },
+    "storm-0": {
+      "url": "assets/narration/minimax/storm-0-323b744d5423.wav",
+      "durationSeconds": 19.1,
+      "text": "镜头拉近东海。白线是固定的海岸，济州岛在朝鲜半岛南边。看三点的扫描，云系主体还在更南边。葵花八号用红外亮温显示云系，越亮表示亮温越低。金色中心点来自日本气象厅的事后分析。",
+      "sha256": "323b744d5423b7154214b26a1776877779a2317f0ed7c5b1c505c8a5f4ab865e",
+      "inputHash": "786437e8c61c0fef64dcdd25d7ae7f6e65ad0350b300e9d91b968b4e6580c2de",
+      "bytes": 1223564,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/storm-0-323b744d5423.mp3",
+        "bytes": 115173,
+        "sha256": "8099a669b5373c80c9824417c62bb3de3caa46348d7a3f861496ce1c0354eeb9"
+      }
+    },
+    "storm-1": {
+      "url": "assets/narration/minimax/storm-1-0d9326223495.wav",
+      "durationSeconds": 19.7,
+      "text": "把济州岛和半岛海岸留在原位。现在逐帧看，较冷的云带向北靠近半岛。青色线框出这一幅的低温区域。金线连接档案中的分析位置，中心点随着新的分析向东北移动。右侧低温面积按同一个窗口统计。",
+      "sha256": "0d93262234955752dfc3df54e31ed81044e4b684d918b6b61289e96f6172efe5",
+      "inputHash": "b40d75c63cbf182ef7bd0096292116f154dbd7a7dde8427237b058ce926ff348",
+      "bytes": 1261964,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/storm-1-0d9326223495.mp3",
+        "bytes": 118845,
+        "sha256": "cf949c2d98fd17a667dabb586ce65b565b355d033d9857656f97aca592266dc2"
+      }
+    },
+    "storm-2": {
+      "url": "assets/narration/minimax/storm-2-cd31a2585c1f.wav",
+      "durationSeconds": 18.9,
+      "text": "先看九点五十分的扫描。接下来跳到十点十分。这里缺少世界时十点的扫描，两幅都保留原来的记录。画面和右侧亮温读数一起跳。旁边的金色读数仍是九点的中心分析，直到十二点才更新。",
+      "sha256": "cd31a2585c1f4324ea98997b807394a9abf24599e470f75ca50d30c3dbed7efb",
+      "inputHash": "1980deb6c3a1727a36480e0bf246c95812aef6ce68eeb4cfada26d0c594ffa40",
+      "bytes": 1210764,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/storm-2-cd31a2585c1f.mp3",
+        "bytes": 113877,
+        "sha256": "c9dbbfe2402d215d2e326812f0c3f183810e7841dd8c70d3fa2e29c19ab1a3b6"
+      }
+    },
+    "storm-3": {
+      "url": "assets/narration/minimax/storm-3-29e740a5c26a.wav",
+      "durationSeconds": 19.5,
+      "text": "这是十三点三十分的扫描。金色读数仍来自十二点分析，风速七十五节，气压九百五十五百帕。和三点相比，中心向东北移，最大持续风速下降了十节。当地受到多少风雨影响，要再看地面的实测。",
+      "sha256": "29e740a5c26a7bef70f59c60aaaa1895ac9d287079d70b4a55bd84c7fa37de6a",
+      "inputHash": "0ca1a775ab641e5f71112998146d7f9cc77442a5f0f4af605e9b4ae05646238c",
+      "bytes": 1249164,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/storm-3-29e740a5c26a.mp3",
+        "bytes": 117549,
+        "sha256": "9e6c90ce99243bc3025ca8c1311116ee7c6082a8e2594a47690566ac53c94245"
+      }
+    },
+    "mangkhut-0": {
+      "url": "assets/narration/minimax/mangkhut-0-68b015f917f7.wav",
+      "durationSeconds": 17.1,
+      "text": "从香港时间早上八点开始。先认准珠江口和香港两个实测位置。画面保留同一片海岸作参照，接着慢放中午前的连续红外扫描。看亮色云带怎样改变，再去核对香港的风、雨和水位。",
+      "sha256": "68b015f917f74e5b4b3fb4f73a61634c0746a5906ae4a5e8ee3cf543e1afaeb0",
+      "inputHash": "7ac81205a12320b1829e38d74fcc84ca41fc0924e8d82d4f36546f3edb1a018f",
+      "bytes": 1095564,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/mangkhut-0-68b015f917f7.mp3",
+        "bytes": 103077,
+        "sha256": "73647f51adbb5e8f678e78591ad52d280c809aee2672fed6180129d0fb9509fb"
+      }
+    },
+    "mangkhut-1": {
+      "url": "assets/narration/minimax/mangkhut-1-f790a5ab2c0a.wav",
+      "durationSeconds": 15.7,
+      "text": "现在停在香港时间十二点。青色标记是香港国际机场，风来自机场报文。金色标记是鲗鱼涌潮位站，水位来自验潮记录。东区雨量汇总了多个测站，留在范围图里读。",
+      "sha256": "f790a5ab2c0a04a2a5ae7bd6dd3bf926b8a45ea3e8bd865c0b5e0d90ee4269ea",
+      "inputHash": "fa955859a57e5dfe3bfd12caa5bcb9acd366c82d7971cf1e48777d491d309a32",
+      "bytes": 1005964,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/mangkhut-1-f790a5ab2c0a.mp3",
+        "bytes": 94869,
+        "sha256": "f61b40e7432271cb41777ee477edb40235cdab4c1806bf8aa3cb2dec11fb4fb6"
+      }
+    },
+    "mangkhut-2": {
+      "url": "assets/narration/minimax/mangkhut-2-3a22b0b454cf.wav",
+      "durationSeconds": 17.5,
+      "text": "从十二点走到十三点。机场十分钟平均风速从约每小时八十公里增到一百一十一公里，风向角读风从哪来。鲗鱼涌的水位也从三点五一米升到三点七米，以该站点零点为基准。",
+      "sha256": "3a22b0b454cfba257594ea436545e47ad1f52e3b740aff2fd00c3118ee9d3bd3",
+      "inputHash": "dc235bfcda68aded351ef0fdcb55a2b335988f2d87e074448207a8fbbf1fb5a7",
+      "bytes": 1121164,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/mangkhut-2-3a22b0b454cf.mp3",
+        "bytes": 105669,
+        "sha256": "b8415671884fa638ed7472c220b833a91a36fccc7935356547b22d41c0aea84d"
+      }
+    },
+    "mangkhut-3": {
+      "url": "assets/narration/minimax/mangkhut-3-2dc809287062.wav",
+      "durationSeconds": 17.1,
+      "text": "现在仍停在十三点。东区最近的雨量窗口是十一点四十五到十二点四十五。把区内各站这一小时的累计量放在一起，最少两毫米，最多四十八毫米。画面中的蓝色范围带保留了这两个端点。",
+      "sha256": "2dc80928706208e94c9bfccf770595a23a079de5db669a96d716ed6786c98cc9",
+      "inputHash": "93e8cbed4519f3d1baa8cce9b8b13a0882fe1ea1c51f74384142126624d8315a",
+      "bytes": 1095564,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/mangkhut-3-2dc809287062.mp3",
+        "bytes": 103077,
+        "sha256": "8b06b0ca6cf2c94722fa3d777259455ba34b84243c31fbf41d59385921838e1d"
+      }
+    },
+    "mangkhut-4": {
+      "url": "assets/narration/minimax/mangkhut-5-34369aa04138.wav",
+      "durationSeconds": 17.7,
+      "text": "过了下午一点，继续沿时间轴看后面的记录，一直到晚上八点。机场风、小时雨量和验潮站水位有各自的观测时间。拖动时间轴时，留意画面和图表当前采用的是哪一条记录。",
+      "sha256": "34369aa04138eacede78fd1faf4418f59dd706ff3711bb47773e3965618cbde6",
+      "inputHash": "7b642995ed9a61c40f649e0143f8252c886441b3dccd6ee2aa9d86538a59e706",
+      "bytes": 1133964,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/mangkhut-5-34369aa04138.mp3",
+        "bytes": 106749,
+        "sha256": "2305049669c23cca8011b521c15ebd993bea8bc7cdc31f5a2b1bb08d06bab4ac"
+      }
+    },
+    "mangkhut-5": {
+      "url": "assets/narration/minimax/mangkhut-5-10ef6cf3056b.wav",
+      "durationSeconds": 18.5,
+      "text": "最后回看两个整点。十三点到十四点，机场平均风速回落，鲗鱼涌水位却从三点七米升到三点七三米。水位还会受潮汐等因素影响。点两个整点，可以把当时云图、机场风和验潮记录重新对齐。",
+      "sha256": "10ef6cf3056bd2d3165461a979de9e063f517d05e96923369f1a1aa9243e4e41",
+      "inputHash": "091ceb9ac2f7b8510696e033f1963c4fb8aff2d85b0dbb40a3029e0f6698da50",
+      "bytes": 1185164,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/mangkhut-5-10ef6cf3056b.mp3",
+        "bytes": 111501,
+        "sha256": "3362f36b95aed5267fb9e4d8fe99bfddee4d622e6cfda7c9593192ed3b51207c"
+      }
+    },
+    "orbital-0": {
+      "url": "assets/narration/minimax/orbital-0-cb35b0faa6b8.wav",
+      "durationSeconds": 18.2,
+      "text": "这一页是地月潮汐的教学模型。先观察月球在地球旁的方向，再对照月相和潮汐示意。天体大小、距离和形变分别放大过，目的是看清关系；这里不是某个海港此刻的真实潮位预报。",
+      "sha256": "cb35b0faa6b89667b4a676ba39396e0a7138c13d1b38f187f6ae507882fe6961",
+      "inputHash": "4afd12a4f091e855a01aba96d7b11bb0bf4d7f49e09750890affd7ccd92e105b",
+      "bytes": 1165964,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/orbital-0-cb35b0faa6b8.mp3",
+        "bytes": 109773,
+        "sha256": "09b8b097e28f6e17413a3e197dbf8bd19a1adee6e5d062d356c3c661333f3aea"
+      }
+    },
+    "orbital-1": {
+      "url": "assets/narration/minimax/orbital-1-c90e71aacd75.wav",
+      "durationSeconds": 17.96065625,
+      "text": "现在换到另一个月相位置，比较画面、读数和曲线怎样一起改变。你还可以调整页面提供的条件，看看模型如何响应。读完原理之后，再回到真实事件里核对观测，两种阅读方式各有用途。",
+      "sha256": "c90e71aacd7557d3ec9e052f5cf89934b32676dfcc9bfbc848ff3424e53ab5cb",
+      "inputHash": "e4f09be0be1a275a5874744517a1e60b6fd6d3a83ed26189ebc79d8bbd282e90",
+      "bytes": 1150646,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/orbital-1-c90e71aacd75.mp3",
+        "bytes": 108261,
+        "sha256": "ecb303813b5183678d3a4155c435deb1d2e4e2e9d2c1868a6d2a9d577eee33e2"
+      }
+    },
+    "principleVolcano-0": {
+      "url": "assets/narration/minimax/principleVolcano-0-e9e45df6186d.wav",
+      "durationSeconds": 18.2,
+      "text": "这里用教学示意把火山内部过程分成几个阶段，帮助你认识积聚、上升和释放。地球上的喷发柱经过放大，并不对应某次真实喷发。先看阶段位置，也可以从局部放大入口观察模型内部。",
+      "sha256": "e9e45df6186d739dfc8764702705413b3e287fed0b67c38a14de0cd01f1a8221",
+      "inputHash": "60a9f01b5d240f0781511710f6fc355c5cdb929606b989ed676370fb7504c5fe",
+      "bytes": 1165964,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/principleVolcano-0-e9e45df6186d.mp3",
+        "bytes": 109773,
+        "sha256": "6b36d8ae9b76c72f19d39483b58569ad8f2e84a5eb23ac37c8c2c46aca0210be"
+      }
+    },
+    "principleVolcano-1": {
+      "url": "assets/narration/minimax/principleVolcano-1-e39ba06f6982.wav",
+      "durationSeconds": 18.9,
+      "text": "把进度推到释放阶段，对照读数与曲线，再尝试改变一个条件，观察模型反应。想看实际发生了什么，请进入汤加真实回放；那里的云图和统计有原始观测依据，不用这里的示意灰柱代替。",
+      "sha256": "e39ba06f69820265f865d1f94fb8dec5f15686fad4c121a1845d72f8e0701b37",
+      "inputHash": "0315464db0ed52d637b8f551ad207025067c151ede8325f6dfe7cfa29baf438f",
+      "bytes": 1210764,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/principleVolcano-1-e39ba06f6982.mp3",
+        "bytes": 113877,
+        "sha256": "d93ad4396684689fd84afaedeb2a50832bdc82a62eab934c6862f61d2cb37c07"
+      }
+    },
+    "principleQuake-0": {
+      "url": "assets/narration/minimax/principleQuake-0-a69ba936da1f.wav",
+      "durationSeconds": 17.4,
+      "text": "这页用两种颜色帮助区分模型中的两类震波，并观察它们先后传播的关系。地球上的圆环为了看清而放大，不是某次地震测得的震动范围。先把画面的颜色、阶段和读数对应起来。",
+      "sha256": "a69ba936da1f38b4b91c5b352298664d83577986d43332277b88785d6fc53376",
+      "inputHash": "2239a117a251ad2ce9891bf7b3354928b103c7d76f120d1b2628bc7bf17725d2",
+      "bytes": 1114764,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/principleQuake-0-a69ba936da1f.mp3",
+        "bytes": 105021,
+        "sha256": "d5c9cdb257ef04e07a34e660efc88f0f5908c16dedaefc48c08657bebbb22630"
+      }
+    },
+    "principleQuake-1": {
+      "url": "assets/narration/minimax/principleQuake-1-c1ab9aca9423.wav",
+      "durationSeconds": 19.5,
+      "text": "继续推进模型，两类波的示意位置会随参数变化；曲线负责把这个关系说清楚。要核对真实台站记录，可以进入东北地震回放。那里读取仪器采样，不会把这套教学波环叠上去当作实测结果。",
+      "sha256": "c1ab9aca9423d89c1b98712a4bcae34290d0fac51bcf111003a5f947bdffeabb",
+      "inputHash": "3d65658ce243fb7b4961bfc2d799e1c1ce05dec47e6bb683c27348816931d4ac",
+      "bytes": 1249164,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/principleQuake-1-c1ab9aca9423.mp3",
+        "bytes": 117549,
+        "sha256": "d6eef64dbd2ed3719d1858e72dd417b51af8c95b804380bd2a96b103b2d7c2ea"
+      }
+    },
+    "principleTyphoon-0": {
+      "url": "assets/narration/minimax/principleTyphoon-0-02091a916bb5.wav",
+      "durationSeconds": 17.9,
+      "text": "这页是理想化台风风场的教学示意。先找到固定测点，再看风眼、云带和预设路径的相对位置。画面尺度经过放大，适合解释测点与风场之间的关系，不应当作当前台风的实际路径预报。",
+      "sha256": "02091a916bb537a875d68352fdb5e756e89944f2bb7ced1eb2bcb5426be9dd46",
+      "inputHash": "72d5fbfaa1a95e17ceff267678bfbb164acf4f38d27884ccabcc2423c9d840e6",
+      "bytes": 1146764,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/principleTyphoon-0-02091a916bb5.mp3",
+        "bytes": 108045,
+        "sha256": "d35ceeb1de4a21f68de73ba7cd776eb9c3307a703bea17b249244076875fd051"
+      }
+    },
+    "principleTyphoon-1": {
+      "url": "assets/narration/minimax/principleTyphoon-1-d1583416630d.wav",
+      "durationSeconds": 18.1,
+      "text": "把模型推进到风场接近测点的阶段，观察测点读数和曲线如何对应。你可以改变条件来理解这个简化关系；想看真实云系与官方分析，请切换轩岚诺或山竹，那里保留各条资料自己的时间。",
+      "sha256": "d1583416630dd5225cb5ef4335c8df9f7496b7ef7fc92ef117b00ca81f2bde96",
+      "inputHash": "53f5b0c8feb60f61cbef91115d453dda1c3c1dfb3a9e65c65e0c909ddac9378d",
+      "bytes": 1159564,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/principleTyphoon-1-d1583416630d.mp3",
+        "bytes": 109125,
+        "sha256": "cf29fb483c1524040aa25e0a573245ce81f8c1d3c230eae0a585983714ef17ee"
+      }
+    },
+    "river-0": {
+      "url": "assets/narration/minimax/river-0-80a7b62b512b.wav",
+      "durationSeconds": 17.774875,
+      "text": "河流主题用一段假想河段解释污染物随水流移动和扩散的过程。地球上的路径只是进入局部情景的入口，不是实际污染地图。先找出监测点，再观察模型里污染物与这个位置的关系。",
+      "sha256": "80a7b62b512bea4c9d8eb18ccba381f686a7d58f1ffaba19dfbd5896372e4fcd",
+      "inputHash": "a312ce4eedf773eea37bb67a15e92bda9d5f0388f55a42f7e5aaa6389652ff5f",
+      "bytes": 1138756,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/river-0-80a7b62b512b.mp3",
+        "bytes": 107181,
+        "sha256": "93f08499cfb936405a59e991a0b9718efcc6c17f62d4b2b3e1c616fe3b42107a"
+      }
+    },
+    "river-1": {
+      "url": "assets/narration/minimax/river-1-12df71c7803c.wav",
+      "durationSeconds": 19.9,
+      "text": "当模型推进到污染物经过监测点附近，右侧浓度曲线会对应变化。你可以尝试调整流速或其他页面条件，理解到达时间和扩散怎样响应。若要解读真实河流，还需要当地流量、地形与实测浓度资料。",
+      "sha256": "12df71c7803c6c1194ac4410707b79a49eb0d4f6e9375164d7ce2d2d298e0d10",
+      "inputHash": "b5cce14297f80fe69ceae959f78e90da867662eae49a6788373bdf68688bcca8",
+      "bytes": 1274764,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/river-1-12df71c7803c.mp3",
+        "bytes": 119925,
+        "sha256": "91c41b4da8e1e4758cad9c7785d0bd9260a93945ebfbc6a70f2653ff7cfedf28"
+      }
+    },
+    "battery-0": {
+      "url": "assets/narration/minimax/battery-0-0657e2867994.wav",
+      "durationSeconds": 18.2,
+      "text": "电池主题先用设施标记提供空间入口，再把视线引向一个假想电芯。这里的电量和温度来自教学模型，不是某座真实设施的监控。你可以打开局部放大窗，认识放电和散热在模型中的对应位置。",
+      "sha256": "0657e2867994fcbfbc8cf97447f96204e7ad8c8de5def7565e9c5779a6a4a1c2",
+      "inputHash": "3d5bfc8cd8d25ada19c9e6856e4c669f4d73e1b59d8b1ac1427e59ab70d39b87",
+      "bytes": 1165964,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/battery-0-0657e2867994.mp3",
+        "bytes": 109773,
+        "sha256": "e40cad37da6acdbf549668ecb86da1388befec9c7bf621e8068a270424889f70"
+      }
+    },
+    "battery-1": {
+      "url": "assets/narration/minimax/battery-1-409cbfd8d957.wav",
+      "durationSeconds": 17.6,
+      "text": "把放电过程推进到中段，对照电量、温度和两侧曲线，再尝试改变一个条件。这样能理解模型里输入与结果的关系；如果未来接入真实设备，就需要带时间戳的电流、电压、温度与设备参数。",
+      "sha256": "409cbfd8d957f191b572ac6343efd5745313aa26b397c9bab6bc0514ab40f62a",
+      "inputHash": "1b7b60110b6f49d3f87649b4db2b47254a843f3b81c296540a62e3bae6f7df9f",
+      "bytes": 1127564,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/battery-1-409cbfd8d957.mp3",
+        "bytes": 106101,
+        "sha256": "569c2d515e0d9621bcd6a3a4de93ecd79dc5876e750f8fee9bb646dee7796e07"
+      }
+    },
+    "dixie-2021-airborne-ir-0": {
+      "url": "assets/narration/minimax/dixie-2021-airborne-ir-0-3dee035c52f8.wav",
+      "durationSeconds": 17.3,
+      "text": "把镜头拉到加州北部。先看阿尔马诺湖和羽毛河峡谷，金线圈出七月二十七日档案里的火区。接下来我们用同一张地图找变化，再看测站风、地形和火前植被各能告诉我们什么。",
+      "sha256": "3dee035c52f8345a5c887fe1ea88a7bec08bddfbb1168be1027b20cb5a5b01f7",
+      "inputHash": "bb9b2d47f0975480f0d8cd1a45469b4f16d4f9b21b06ce1aef0ae94db390323f",
+      "bytes": 1108364,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/dixie-2021-airborne-ir-0-3dee035c52f8.mp3",
+        "bytes": 104373,
+        "sha256": "7442cab821f3d1d311a341c395693f03b912ddf87c357142e40ae0729bda8bec"
+      }
+    },
+    "dixie-2021-airborne-ir-1": {
+      "url": "assets/narration/minimax/dixie-2021-airborne-ir-1-a84b9ad4f454.wav",
+      "durationSeconds": 18.2,
+      "text": "金线是这一期的边界，蓝线是上一次可用边界。橙色显示新划入的范围。八月二日和三日缺档，时间轴直接跳到四日。最后两期，北侧新增约二百六十平方公里，东侧约二百三十七平方公里。",
+      "sha256": "a84b9ad4f454f77a64ac7b4bbda3a89fb884b24adcff6d5da4d3776073777867",
+      "inputHash": "4b757560d4d9ae81ebfe32bc3955d21634037f059d3af1444b1b0b51c609e960",
+      "bytes": 1165964,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/dixie-2021-airborne-ir-1-a84b9ad4f454.mp3",
+        "bytes": 109773,
+        "sha256": "4e704a0fd8796118d934d251374ebeec5fb48f367ff6322e18fdd2e831ab903e"
+      }
+    },
+    "dixie-2021-airborne-ir-2": {
+      "url": "assets/narration/minimax/dixie-2021-airborne-ir-2-dd37629e1375.wav",
+      "durationSeconds": 18.76165625,
+      "text": "看青蓝色实线，它们从测站出发。八月五日下午四点到五点，三站测得的风都带有向东分量。这与部分东侧新增区域的方位吻合。金色虚线标出新增范围的方位。用左图和风时钟可以核对其他小时。",
+      "sha256": "dd37629e1375863e84fbb5e416af49da7f99b5986ac26f184e1935ce500dd449",
+      "inputHash": "a95e3389945e97ee48fb86a711568dfa20f3a419a77fdb7dd845076b229c10ac",
+      "bytes": 1201910,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/dixie-2021-airborne-ir-2-dd37629e1375.mp3",
+        "bytes": 113229,
+        "sha256": "e9ff79f93353033a1b9782e6418fbf83229178de077d922c5a04d650ce1e591b"
+      }
+    },
+    "dixie-2021-airborne-ir-3": {
+      "url": "assets/narration/minimax/dixie-2021-airborne-ir-3-9b7d22977958.wav",
+      "durationSeconds": 17.2,
+      "text": "现在看高程阴影，顺着山脊和峡谷辨认地形。对比画面下方两条坡线。北侧新增区的中位坡度约五度，东侧约十度。这是整片新增区域的统计，可以看出两侧地形不同。",
+      "sha256": "9b7d22977958f0cc13dabc799ec88e15d9361cf78f238da490941dd97b8b1b63",
+      "inputHash": "8de85df5288d982a7631f04e52d59b55549cf064a49c902748c4ecd6ecd37fb7",
+      "bytes": 1101964,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/dixie-2021-airborne-ir-3-9b7d22977958.mp3",
+        "bytes": 103725,
+        "sha256": "f9560638b18e80ec489ab2b487c8350ae52e10e626f62319b4562d600dcbfc62"
+      }
+    },
+    "dixie-2021-airborne-ir-4": {
+      "url": "assets/narration/minimax/dixie-2021-airborne-ir-4-e2574c72c147.wav",
+      "durationSeconds": 22.9,
+      "text": "保留同一条火区边界，换到火前植被图。北侧最多的是加州红冷杉，东侧最多的是湿润混合针叶林。回看边界，北、东是主要新增区。测站风给了东侧一个线索。要解释两侧为何扩展，还需要火线时刻、近火场风和燃料湿度。",
+      "sha256": "e2574c72c1471e6be077fa38fcbfff80ed73e9e83bd14712df9fcf0113673518",
+      "inputHash": "b6e49b14d61e355110bc880b0afc0e7a5bd583745e31005a930622439baa86d0",
+      "bytes": 1466764,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/dixie-2021-airborne-ir-4-e2574c72c147.mp3",
+        "bytes": 138069,
+        "sha256": "67b8e16ec8a2f4e981565a13607a7112cffa7950b6a02c55a689090d878e8412"
+      }
+    },
+    "hualien-2024-observed-stations-0": {
+      "url": "assets/narration/minimax/hualien-2024-observed-stations-0-5cece74ebee4.wav",
+      "durationSeconds": 15.3,
+      "text": "从发震前的实测开始。金色标记指向花莲震中，另一处是台北台站。镜头靠近后，先认刻度的零线。台站上的金点和右图的游标都跟着同一个一秒记录窗口。",
+      "sha256": "5cece74ebee4afcacd31829943dfca87e9858eab42ceeee491fd4dacb8e941dd",
+      "inputHash": "8040060fb3a189b971648c7e47e4c184eaa5ab9625026d90dacd810c63b15831",
+      "bytes": 980364,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/hualien-2024-observed-stations-0-5cece74ebee4.mp3",
+        "bytes": 92277,
+        "sha256": "e68681dc5d44d50d09fa5f53740f59b7b4b3df3e0fc580f496cc2f9f496032bb"
+      }
+    },
+    "hualien-2024-observed-stations-1": {
+      "url": "assets/narration/minimax/hualien-2024-observed-stations-1-3a438f3336d6.wav",
+      "durationSeconds": 16.7,
+      "text": "看台北站，信号先小幅起伏，接着明显变大。青色是正计数，紫色是负计数。时间停到七点五十八分四十八秒时，金点落在负侧。它标出这一秒内离零最远的一笔。",
+      "sha256": "3a438f3336d60dbafe0b964d612ccaf5a0feb8e7776f7d52376d1fffc77eafc0",
+      "inputHash": "5a36bdc1828d0ce8e589fedff6519adc5dcaee7ff0c7387af02b15ece33e4c6e",
+      "bytes": 1069964,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/hualien-2024-observed-stations-1-3a438f3336d6.mp3",
+        "bytes": 100701,
+        "sha256": "a4ce79ba500e8d16e49c576e124fd36c6a0e856f25c1a7da3a79b5afc120cea3"
+      }
+    },
+    "hualien-2024-observed-stations-2": {
+      "url": "assets/narration/minimax/hualien-2024-observed-stations-2-4d2cef8390f3.wav",
+      "durationSeconds": 14.3,
+      "text": "镜头移到日本松代，时钟继续向前。右图和台站刻度换成松代的实测。它在八点零二分五十九秒出现这段记录中最大的窗口。台站各用自己的仪器计数刻度。",
+      "sha256": "4d2cef8390f30b9b132ed4d9bac079c298bf8c030abe7e57f73c50d434e015d3",
+      "inputHash": "4f048c63b5485031fc6df6d6062c4ff4187a01af6e7ffcc28defd0231d9194f4",
+      "bytes": 916364,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/hualien-2024-observed-stations-2-4d2cef8390f3.mp3",
+        "bytes": 86445,
+        "sha256": "fc7988692768e87cb3317170c14384a0f8e9e05a5472374a498e06a8a0be7b42"
+      }
+    },
+    "hualien-2024-observed-stations-3": {
+      "url": "assets/narration/minimax/hualien-2024-observed-stations-3-05d1e2fd303b.wav",
+      "durationSeconds": 17.7,
+      "text": "最后看仁川。三站在这段档案里的最大窗口，依次出现在台北、松代、仁川。点结尾的时刻可以回到各站核对。这里比较的是绝对峰值的时间，地震波初到要从波形中另行识别。",
+      "sha256": "05d1e2fd303bda945bf06ba47f5e7c8a93b95b36696d1a8cac9cca3e7338439c",
+      "inputHash": "d628f3fc4447c068ff5b3f8663c4fc15e8d113df903b3cf1fc110d36ab7b2bac",
+      "bytes": 1133964,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/hualien-2024-observed-stations-3-05d1e2fd303b.mp3",
+        "bytes": 106749,
+        "sha256": "38d1b64033075006343af111eb39b94b763348b7da091d413ead2ceab89fd7da"
+      }
+    },
+    "big-piney-2021-tracer-0": {
+      "url": "assets/narration/minimax/big-piney-2021-tracer-0-4d1f71f68373.wav",
+      "durationSeconds": 14.5,
+      "text": "先看真实河段。沿下游依次有三个断面，每个断面两岸各有一台仪器。青色标左岸，金色标右岸。时间轴以释放为零点，零点之前的记录是用来对照的背景。",
+      "sha256": "4d1f71f6837386f48508ef15d2b5abe1c602092fa9fe03672c150297c61914e1",
+      "inputHash": "8a5153d693fcea2839bb0b54c7e8d959d68277565168cc102fd40468479540c3",
+      "bytes": 929164,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/big-piney-2021-tracer-0-4d1f71f68373.mp3",
+        "bytes": 87525,
+        "sha256": "d766bba1e4ebf77813cc6d0d05d871cc946f7e83101a9a24ac63871fa8907a86"
+      }
+    },
+    "big-piney-2021-tracer-1": {
+      "url": "assets/narration/minimax/big-piney-2021-tracer-1-3c2053c85314.wav",
+      "durationSeconds": 17.3,
+      "text": "镜头靠近第一个断面。连续三笔都达到十亿分之三，就把第一笔标成持续信号的起点。金色右岸在释放后五十五分钟先出现，青色左岸晚三分半。接着看右岸柱顶升到峰值。",
+      "sha256": "3c2053c853141c9eeac36ef732285c001c9b93114b2eb58afa6423b20b6588ab",
+      "inputHash": "98cb55f921857ef08c09c4de83b201db4d506e77840c250796954d70336e0b69",
+      "bytes": 1108364,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/big-piney-2021-tracer-1-3c2053c85314.mp3",
+        "bytes": 104373,
+        "sha256": "29b5fc02b2ba6b54d7e02adec6b13c5e144318ac7a3b71bdd12559be10254eb2"
+      }
+    },
+    "big-piney-2021-tracer-2": {
+      "url": "assets/narration/minimax/big-piney-2021-tracer-2-aff35e83accd.wav",
+      "durationSeconds": 16.8,
+      "text": "沿河到第二个断面，先看青色左岸。它在释放后两小时七分半出现持续信号，金色右岸再过十分钟才出现。柱顶和曲线使用同一笔观测，换了断面仍能用同一尺度比较。",
+      "sha256": "aff35e83accddf2d566aa0f4c152a2211c85c93d5e5281bc7d75da94fe3378bc",
+      "inputHash": "4c9e67916c4074ec5174b95469cd5ca0ba6833202605b99ba15c8455a81361ee",
+      "bytes": 1076364,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/big-piney-2021-tracer-2-aff35e83accd.mp3",
+        "bytes": 101349,
+        "sha256": "95b85e6d009bb0c6201e4c501cc1aa459eceb03a075d513713218a9c758e41c0"
+      }
+    },
+    "big-piney-2021-tracer-3": {
+      "url": "assets/narration/minimax/big-piney-2021-tracer-3-6135bd39f69c.wav",
+      "durationSeconds": 17.9,
+      "text": "最后到第三个断面。左岸先出现持续信号。接着让时间向前，等到右岸自己的峰值，再看金色柱顶和右边曲线。到达说的是浓度开始持续抬升，峰值说的是这一岸测到的最高值。",
+      "sha256": "6135bd39f69cf66794e446b61f15279d0f6519e320d10843feb5e700c35bfe01",
+      "inputHash": "fc090a46735e5236933a83514b5e4146982ca132cf5bbd7b01fd23141742a3c2",
+      "bytes": 1146764,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/big-piney-2021-tracer-3-6135bd39f69c.mp3",
+        "bytes": 108045,
+        "sha256": "72f5f8d6e1123109e471bf680f355944cdcf9b62a71aa983645112a9b0b0a5f0"
+      }
+    },
+    "big-piney-2021-tracer-4": {
+      "url": "assets/narration/minimax/big-piney-2021-tracer-4-d145ee83e8c1.wav",
+      "durationSeconds": 17.6,
+      "text": "最后拉远看整段河道。三处断面的首岸记录依次出现，但先测到的岸别会变。点结尾的三个时刻，可以把断面、浓度柱和曲线一起对回去。实验后段的读数也可以沿时间轴继续核对。",
+      "sha256": "d145ee83e8c1864e470dea0b15b3e2cdcf865e070e4a20825403144a22170364",
+      "inputHash": "4c2d9783d31ae673d2387dc669767b344b3e8c93d14ef9612c9505f4261c8a63",
+      "bytes": 1127564,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/big-piney-2021-tracer-4-d145ee83e8c1.mp3",
+        "bytes": 106101,
+        "sha256": "3a8ccebd32ddad33b6d8bc3eda6d4849a80e985a16bf11c1b7af001731598edc"
+      }
+    },
+    "san-francisco-2025-01-15-tide-0": {
+      "url": "assets/narration/minimax/san-francisco-2025-01-15-tide-0-240fbe89166d.wav",
+      "durationSeconds": 14.5,
+      "text": "先看同一片浅滩。水退到低潮线，浅滩露出。水升到高潮线，浅滩被淹没。接下来从海岸拉远，看地球和月球怎样帮助我们理解这种周期性的变化。",
+      "sha256": "240fbe89166d7ddc64b7fe0ff44ebff8364817ef11c6ae3be1b96f2f753caa79",
+      "inputHash": "efe13355c5f2110cc44ceec5e5dad414fea648daebc4bf1604d065afa10d770f",
+      "bytes": 929164,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/san-francisco-2025-01-15-tide-0-240fbe89166d.mp3",
+        "bytes": 87525,
+        "sha256": "ffc9145f5bcda06f2c404ad47cd3f209574a1837bced85bad79e8802a6739ad5"
+      }
+    },
+    "san-francisco-2025-01-15-tide-1": {
+      "url": "assets/narration/minimax/san-francisco-2025-01-15-tide-0-f6484dd574af.wav",
+      "durationSeconds": 23.2,
+      "text": "海水周期性地上涨、回落，就是潮汐。看地球和月球，月球对地球各处的引力不同。在这个简化模型里，青色海面在向月侧和背月侧都隆起。地球自转，金色的示意海岸点依次经过高低水位区，旁边的水位曲线同步起伏。太阳也参与引潮。",
+      "sha256": "f6484dd574af309cc61b3f64025b8c9d7c6fbbbdc4a825689e3789892bc42ee7",
+      "inputHash": "5a3d2b4370e3f86ca651fc109e497fec672694f61a3fa82240a5f6221321b787",
+      "bytes": 1485964,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/san-francisco-2025-01-15-tide-0-f6484dd574af.mp3",
+        "bytes": 139797,
+        "sha256": "fc7e1b5be1f7e438ac9b16bbb6937bdb065e3dd37b2e5ba7cefc1dd899809d15"
+      }
+    },
+    "san-francisco-2025-01-15-tide-2": {
+      "url": "assets/narration/minimax/san-francisco-2025-01-15-tide-2-cd0ca9912fcf.wav",
+      "durationSeconds": 19.7,
+      "text": "回到同一片浅滩。沿着金点看水线怎样向岸上移动。水升到高潮线时，浅滩被淹没，航道水深也增加。落潮时，水线退回，浅滩露出。接下来飞到旧金山港，用验潮记录看这里何时涨落。",
+      "sha256": "cd0ca9912fcf0f8147c7ac0725de1ac5943463672bd4b0aa88991282da654a96",
+      "inputHash": "ba9a5fcf2374ae8d313ea5c2a4ce89a1ad3923d5477f871cb71e237b33aceb82",
+      "bytes": 1261964,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/san-francisco-2025-01-15-tide-2-cd0ca9912fcf.mp3",
+        "bytes": 118845,
+        "sha256": "b4ce4ccbd0af5904bea404014332da3d6e1be13d59bc0cecfdf72d2b34fce997"
+      }
+    },
+    "san-francisco-2025-01-15-tide-3": {
+      "url": "assets/narration/minimax/san-francisco-2025-01-15-tide-2-f9ebae513a78.wav",
+      "durationSeconds": 21.8,
+      "text": "青色标记是旧金山验潮站。现在从地球靠近港口。月升和月落说的是月球越过地平线。港口是在涨潮还是落潮，要看验潮站的水位变化。接下来看二零二五年一月十五日的两组记录，岸边水线跟着实测涨落，右边另列预报。",
+      "sha256": "f9ebae513a786af1107b0ca46f39cf816875ecf49163078e75c551133d397da0",
+      "inputHash": "9fb5e2a4772063feb26c74e24bea9126b296e7e9476480c5f0b90de09ec0a659",
+      "bytes": 1396364,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/san-francisco-2025-01-15-tide-2-f9ebae513a78.mp3",
+        "bytes": 131373,
+        "sha256": "54ca68da88bc3b0018df25506ec9850a543474537ff27c98fc0bc8ce3e0d5fb3"
+      }
+    },
+    "san-francisco-2025-01-15-tide-4": {
+      "url": "assets/narration/minimax/san-francisco-2025-01-15-tide-1-3e6de81aef5b.wav",
+      "durationSeconds": 14.5,
+      "text": "先认准零度地平线。紫色标记从线下向上移动，越过地平线后变成亮色月球。到协调世界时二点十八分这笔星历，月球已经在地平线上方。",
+      "sha256": "3e6de81aef5b9676f488d90d688a9c8529f77735676b62a1a80438b55763a43b",
+      "inputHash": "c8f20fc06f36507d92c069756528ada1c1cda1e467fd99f94bf2c70b1364cb4e",
+      "bytes": 929164,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/san-francisco-2025-01-15-tide-1-3e6de81aef5b.mp3",
+        "bytes": 87525,
+        "sha256": "f46a5e7d44fc8fe0679e4be51e6d22e153eb7f1802947233691715acb5b03168"
+      }
+    },
+    "san-francisco-2025-01-15-tide-5": {
+      "url": "assets/narration/minimax/san-francisco-2025-01-15-tide-2-1aaae47b0f3b.wav",
+      "durationSeconds": 14.4,
+      "text": "沿紫色轨迹往前看，月球会经过南方高空，高度一度达到约七十二度。接着标记向西下降，到十六点四十八分这笔星历，月球已降到地平线下。",
+      "sha256": "1aaae47b0f3b2bb6d82b9c7fc2eaa044ac2514ecf3c46e66fdd4a3dda2b89f17",
+      "inputHash": "4bfd1099b694b777f1dbfe3bf2049fc6be83f6ff5dedc57e8876d4a6311b2ce9",
+      "bytes": 922764,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/san-francisco-2025-01-15-tide-2-1aaae47b0f3b.mp3",
+        "bytes": 86877,
+        "sha256": "83776a94ae189b416ff7f0f7dbffb374192e39f2e4eb20331ad5c0c9ebe3ffc9"
+      }
+    },
+    "san-francisco-2025-01-15-tide-6": {
+      "url": "assets/narration/minimax/san-francisco-2025-01-15-tide-3-3098a686d6a1.wav",
+      "durationSeconds": 17.1,
+      "text": "现在月球在地平线下，港口的潮位尺还在上升。青色实线是验潮站实测，金色虚线是调和预报。预报最高点在十九点四十二分，实测最高点在十九点五十四分。",
+      "sha256": "3098a686d6a1d6abcfe05e10025b5aa5a07e305736d89f5072d9e6d15a405810",
+      "inputHash": "e25d7702cede65794bf186c1a9168e47a79926d793cd3b0fb0ebc8b9812ee6b4",
+      "bytes": 1095564,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/san-francisco-2025-01-15-tide-3-3098a686d6a1.mp3",
+        "bytes": 103077,
+        "sha256": "7751a38a32814502cfa898e1b9354dd771502a2549017e7b900b3bceb71e0c0c"
+      }
+    },
+    "san-francisco-2025-01-15-tide-7": {
+      "url": "assets/narration/minimax/san-francisco-2025-01-15-tide-6-5e619affa84c.wav",
+      "durationSeconds": 21.5,
+      "text": "旧金山这一天，实测最低值早于月升。月球落到地平线以下时，水位仍在上涨。月球和太阳提供引潮作用，海水响应还受海盆和海岸形状影响。要判断这个港口何时涨落，请看右侧同一水位基准下的实测和预报曲线。",
+      "sha256": "5e619affa84c949359800d075c6bae722e5cbec56de91300eb37b05814ec3ac7",
+      "inputHash": "6726ed3cbfb151cb46e749648c4c6147cff567523aae057da569d5b1f35ab261",
+      "bytes": 1377164,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/san-francisco-2025-01-15-tide-6-5e619affa84c.mp3",
+        "bytes": 129645,
+        "sha256": "ddc66133e2767d002d2023b059304b695d68311d75a90f6ea65a2b8612b62eee"
+      }
+    },
+    "primer-volcano-0": {
+      "url": "assets/narration/minimax/primer-volcano-0-f0c2cf4a6109.wav",
+      "durationSeconds": 77.4,
+      "text": "先把镜头拉远。汤加附近，太平洋板块向西沉到另一块板块下面，这叫俯冲。火山位于海沟以西，俯冲板块的上方。俯冲到深处时，板块里的含水矿物释放出水。水进入上方炽热的地幔，降低岩石开始熔融所需的温度。同样的温度下，部分岩石就能熔成岩浆。岩浆通常比周围的岩石轻，会受到向上的浮力。岩浆可以在地下暂时聚集。当压力足以撑开裂隙，就能沿裂隙继续上升。越靠近地表，岩浆受到的压力通常越低。原本溶在岩浆里的气体析出，变成气泡。气泡随减压膨胀，也会推动岩浆上升。通道连到地表或海底，岩浆和气体就可能喷出。气体容易逸出时，岩浆可以较平缓地流出。气体难以逸出时，膨胀可能把岩浆打碎，引发爆炸式喷发。这段动画解释汤加所在俯冲带的成因，以及火山喷发的一般过程。接下来，用两期测深找火山口的变化，再用当天的卫星红外图看云团展开。",
+      "sha256": "f0c2cf4a610952d83c25c4bf5a6c9fe0decf01282da2a47c5fa103d8943769a5",
+      "inputHash": "b8ef4a9e89849e4a2dfec66348c08160602de55e17b57237e9d4273faf97c2aa",
+      "bytes": 4954764,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/primer-volcano-0-f0c2cf4a6109.mp3",
+        "bytes": 464877,
+        "sha256": "64499a0e9909c2c93f7c920fa08584eff84a88392423bd74887743c9bc8a20b2"
+      }
+    },
+    "primer-storm-0": {
+      "url": "assets/narration/minimax/primer-storm-0-83d290bf14d4.wav",
+      "durationSeconds": 49.48090625,
+      "text": "海面上先有一团雷雨扰动。暖海不断给近海面的空气补充热量和水汽，暖湿空气在雷雨区上升。水汽凝结放热，让上升持续。上升的空气在高空向外流散。流出的空气比低层补进的多时，海面气压就下降，周围空气继续向低压汇入。地球自转让这股气流在北半球向运动方向的右侧偏。俯视时，气流一边往里走，一边逆时针绕着低压中心转。赤道附近，这种偏转很弱。高低层的风速或风向差太大，雷雨就难围绕同一个中心组织起来。西北太平洋上的热带气旋达到台风强度，才叫台风。",
+      "sha256": "83d290bf14d42aa096b66d46bb5937ae352c2325ad06db33af1c07770ac385db",
+      "inputHash": "0d462966e8bec4af1ed844a8f0e4d5c28eb93c4299193b62456efe115b4df24e",
+      "bytes": 3167942,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/primer-storm-0-83d290bf14d4.mp3",
+        "bytes": 297477,
+        "sha256": "3539d6af8a808f848192a206784a0361a217ec8598e663eed71cb73e710f5e63"
+      }
+    },
+    "primer-quake-0": {
+      "url": "assets/narration/minimax/primer-quake-0-886eabf12df1.wav",
+      "durationSeconds": 41.7,
+      "text": "板块一直在缓慢移动。断层是岩石中的破裂面。有的断层段被摩擦锁住，暂时滑不动。断层虽然卡住，两边较远的岩石仍在移动。像弯曲的尺子，断层附近的岩石逐渐变形，积累弹性能量。当应力超过断层能承受的阻力，卡住的一段突然滑动，破裂沿断层扩展。释放的一部分能量变成地震波，向外传开。传播更快的纵波先到，横波随后到。台站把地面的起伏记录成波形。接下来看真实记录，波开始到达和振幅最大是两个时刻。",
+      "sha256": "886eabf12df14f44cbe46a847ce678a8658dabc5f179765ce7b5571ec84a86c3",
+      "inputHash": "69b579ec869e253e0e48478fa048f7753423cb0b87af208b1d822708bd517bbe",
+      "bytes": 2669964,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/primer-quake-0-886eabf12df1.mp3",
+        "bytes": 250821,
+        "sha256": "567dceaeda52d33c0498a52d24e48769c8ede9fcc40358ab00b9770d8710f858"
+      }
+    },
+    "primer-wildfire-0": {
+      "url": "assets/narration/minimax/primer-wildfire-0-74fb4c5a8f12.wav",
+      "durationSeconds": 21.6,
+      "text": "山火沿可燃植被传播，风能把热量带向下风方向，坡面也会影响火如何蔓延。植被的种类和湿度会改变燃烧条件。进入迪克西山火，先找新增边界，再分别核对附近风、坡度与植被。每条线索只说明其中一部分。",
+      "sha256": "74fb4c5a8f1256db965b6350ed4200dacd5a8cf0b516d37538be895462b7b30a",
+      "inputHash": "8d9854e23817f18dba4dce7623a25020f130504a1a48fc07fade18188e213168",
+      "bytes": 1383564,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/primer-wildfire-0-74fb4c5a8f12.mp3",
+        "bytes": 130077,
+        "sha256": "cff16b9c572b109c11d1724f6e8fcd7b2af42b4c650b7b38ccc343d4647fae29"
+      }
+    },
+    "primer-river-0": {
+      "url": "assets/narration/minimax/primer-river-0-47c2688141cd.wav",
+      "durationSeconds": 20.6,
+      "text": "水流把物质带向下游，物质也会逐渐分散开。同一时刻，河道不同位置的浓度可能不同。了解信号到达的先后，对下游取水监测很重要。我们用一次受控染料实验来看三个断面，辨认每个断面两岸什么时候测到信号。",
+      "sha256": "47c2688141cde041a7cacc00058dc14bbe8cd23c8fc931c7360cb1cc85b446d8",
+      "inputHash": "3e67f3f8599975eac7c794c52ad5c6c9c43b4b3c0c36dae2b650336780612a55",
+      "bytes": 1319564,
+      "sampleRate": 32000,
+      "channels": 1,
+      "bits": 16,
+      "playback": {
+        "url": "assets/narration/minimax/primer-river-0-47c2688141cd.mp3",
+        "bytes": 124245,
+        "sha256": "1139790c41cac7d0b67d38452d3713b25affacd14b26743df1d6f9cf70600e75"
+      }
+    }
+  }
+}

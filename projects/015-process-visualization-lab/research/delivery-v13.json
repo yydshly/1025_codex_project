@@ -1,0 +1,1665 @@
+{
+  "version": "13.0.0",
+  "deliveredAtUtc": "2026-11-04T15:04:47.712437+00:00",
+  "files": [
+    {
+      "file": "app/assets/events/storm-dynamic/hinnamnor-b13-20220905T0300Z.png",
+      "bytes": 574063,
+      "sha256": "d96bf02bdcbf9b3ecd178cf32bf0a3bbd5abda1d44a522c50afdcc0c9ed4d461"
+    },
+    {
+      "file": "app/assets/events/storm-dynamic/hinnamnor-b13-20220905T0330Z.png",
+      "bytes": 571622,
+      "sha256": "d8dc7ab33cf0c84a831b395eae83876408aae3d36c26f8675e0f7a86edb1d64b"
+    },
+    {
+      "file": "app/assets/events/storm-dynamic/hinnamnor-b13-20220905T0400Z.png",
+      "bytes": 569790,
+      "sha256": "32537873e4f8a18cc4ea8c241f52a24e9c855b8223f1180b7f7bad1ee292b2f7"
+    },
+    {
+      "file": "app/assets/events/storm-dynamic/hinnamnor-b13-20220905T0430Z.png",
+      "bytes": 566478,
+      "sha256": "76f689987068f367f0bde0c5991b177a8e428908222ad623b504ef5064c32e43"
+    },
+    {
+      "file": "app/assets/events/storm-dynamic/hinnamnor-b13-20220905T0500Z.png",
+      "bytes": 562904,
+      "sha256": "cfb85a787df0bb8262f4a7481a7bb575e04e58bcb07ee2f1d43f5df9264a1630"
+    },
+    {
+      "file": "app/assets/events/storm-dynamic/hinnamnor-b13-20220905T0530Z.png",
+      "bytes": 560788,
+      "sha256": "e412471912e3d837cbf90f5b6d67794b2ccaa611f74b348c65966ce961f80f68"
+    },
+    {
+      "file": "app/assets/events/storm-dynamic/hinnamnor-b13-20220905T0600Z.png",
+      "bytes": 560993,
+      "sha256": "6b1251a13f7b23e1656f91755c40cfc4a27cd899135d5a68d046ceb0418e8571"
+    },
+    {
+      "file": "app/assets/events/storm-dynamic/hinnamnor-b13-20220905T0630Z.png",
+      "bytes": 557133,
+      "sha256": "7b4d02e53005cf50a3b0e1d5d5f32cf8fe1a746856f2e144d72246681c8466bc"
+    },
+    {
+      "file": "app/assets/events/storm-dynamic/hinnamnor-b13-20220905T0700Z.png",
+      "bytes": 552165,
+      "sha256": "cbc2b3a5fee8b608d18ef4e8d6f2719253702de4715d27832ed6790f81d2df39"
+    },
+    {
+      "file": "app/assets/events/storm-dynamic/hinnamnor-b13-20220905T0730Z.png",
+      "bytes": 542740,
+      "sha256": "20aaa5d27bddfa8def9c3c5c2829505a4fa2f51a3a7c8c49eac9de4f433844d7"
+    },
+    {
+      "file": "app/assets/events/storm-dynamic/hinnamnor-b13-20220905T0800Z.png",
+      "bytes": 532686,
+      "sha256": "26e85bb222aa3c77270ff62b891d664a32be98024012feea8ad89bed77b583ed"
+    },
+    {
+      "file": "app/assets/events/storm-dynamic/hinnamnor-b13-20220905T0830Z.png",
+      "bytes": 522213,
+      "sha256": "009cdb8e2377ab9a627f64f61b265dcf4727fc1d27bcaf9f27c9919f4879cb57"
+    },
+    {
+      "file": "app/assets/events/storm-dynamic/hinnamnor-b13-20220905T0900Z.png",
+      "bytes": 515621,
+      "sha256": "ab5b3d2250db7ff996757aa060cd9d84aa3d3e41f09140c919a8e486530dc78a"
+    },
+    {
+      "file": "app/assets/events/storm-dynamic/hinnamnor-b13-20220905T0930Z.png",
+      "bytes": 512114,
+      "sha256": "3d992a80cb9205217f0127055c4a4431eb3d114171cb307d160f9139d5ec2930"
+    },
+    {
+      "file": "app/assets/events/storm-dynamic/hinnamnor-b13-20220905T0950Z.png",
+      "bytes": 513126,
+      "sha256": "297fa3f3e788841d66b2bd5699b44dafa392a66d4f8bd6a9f6574bb211df08a1"
+    },
+    {
+      "file": "app/assets/events/storm-dynamic/hinnamnor-b13-20220905T1010Z.png",
+      "bytes": 513542,
+      "sha256": "b448c63ac91189622d341a3bac3bcd4c6bbadd1bd23a9f124cf8bcb78d5e136a"
+    },
+    {
+      "file": "app/assets/events/storm-dynamic/hinnamnor-b13-20220905T1030Z.png",
+      "bytes": 516626,
+      "sha256": "5f0b6b0426b63d2a1f55b876895fc7e8d25db563e8a898ab3a4dd1280715b11c"
+    },
+    {
+      "file": "app/assets/events/storm-dynamic/hinnamnor-b13-20220905T1100Z.png",
+      "bytes": 522491,
+      "sha256": "6bba0eaf536e82369e282c0c187fa7c2a94ef514dbbe1bc1d0f5a5865067aace"
+    },
+    {
+      "file": "app/assets/events/storm-dynamic/hinnamnor-b13-20220905T1130Z.png",
+      "bytes": 531802,
+      "sha256": "156d5e86589d98109c46c3e4b40c5116ca2c1ba31b2f4856371454bf84816cbb"
+    },
+    {
+      "file": "app/assets/events/storm-dynamic/hinnamnor-b13-20220905T1200Z.png",
+      "bytes": 539206,
+      "sha256": "3ad801c67fa38a829fe6347c531ddc575a9ecaacc19eadc309a146d878802e67"
+    },
+    {
+      "file": "app/assets/events/storm-dynamic/hinnamnor-b13-20220905T1230Z.png",
+      "bytes": 545083,
+      "sha256": "8bd92ff06e4cc253db11aacb30da4486660095d11e576381a47759aec2193935"
+    },
+    {
+      "file": "app/assets/events/storm-dynamic/hinnamnor-b13-20220905T1300Z.png",
+      "bytes": 549878,
+      "sha256": "bdb40ff9426e473807666ef446539842463a5a53b3ad83cd80c542e64758fed4"
+    },
+    {
+      "file": "app/assets/events/storm-dynamic/hinnamnor-b13-20220905T1330Z.png",
+      "bytes": 556815,
+      "sha256": "e71c2d2a2ed5cdacb71c82f6bb7067fe1f6e70fe0f6cf6ff9cc52d86dee1d19f"
+    },
+    {
+      "file": "app/assets/events/volcano-dynamic/tonga-b13-20220115T0350Z.png",
+      "bytes": 580091,
+      "sha256": "fb53a97716138e9a1b83475b08ee8baacaf49f13cb9423393b4563f23d3eebab"
+    },
+    {
+      "file": "app/assets/events/volcano-dynamic/tonga-b13-20220115T0400Z.png",
+      "bytes": 580871,
+      "sha256": "fb974e160b263e9a5cba8a5a57d40398c1591bef60249a3f3958cbafcb88525b"
+    },
+    {
+      "file": "app/assets/events/volcano-dynamic/tonga-b13-20220115T0410Z.png",
+      "bytes": 582451,
+      "sha256": "ba929064ff05eda5455d7645719bfb3dcfd5a0e695e3fcaf283b48f634335a47"
+    },
+    {
+      "file": "app/assets/events/volcano-dynamic/tonga-b13-20220115T0420Z.png",
+      "bytes": 584734,
+      "sha256": "95e06732f460fab6a86908af3f4b1a1171a68bdd55e9a00a12d3cdecddf196bc"
+    },
+    {
+      "file": "app/assets/events/volcano-dynamic/tonga-b13-20220115T0430Z.png",
+      "bytes": 588213,
+      "sha256": "fc75d2c9590a10b3f2ba841f0bdb72ac0f13a14a263404bd38af69388df47469"
+    },
+    {
+      "file": "app/assets/events/volcano-dynamic/tonga-b13-20220115T0440Z.png",
+      "bytes": 593872,
+      "sha256": "87b6c14acbc9f6036746b39d2c88cea02a5f9bb4f853a9317fb97b3c6271b766"
+    },
+    {
+      "file": "app/assets/events/volcano-dynamic/tonga-b13-20220115T0450Z.png",
+      "bytes": 596615,
+      "sha256": "b1500c575579232e0cfc02462cf100a7a98b760c743c5a89b6cb0f421536a701"
+    },
+    {
+      "file": "app/assets/events/volcano-dynamic/tonga-b13-20220115T0500Z.png",
+      "bytes": 600848,
+      "sha256": "da417a1ed4cfd9cfd076372e36eb53aa092f105640678e152e38af1d7d00a905"
+    },
+    {
+      "file": "app/assets/events/volcano-dynamic/tonga-b13-20220115T0510Z.png",
+      "bytes": 602861,
+      "sha256": "1d3e8b99a6b81a9e5ea476b002a16f90867db718454c5de4cd0261764fab86c3"
+    },
+    {
+      "file": "app/assets/events/volcano-dynamic/tonga-b13-20220115T0520Z.png",
+      "bytes": 602944,
+      "sha256": "96d424733603b402db06abcc8dcc73bd8dd7967395e8037aefb60f7c58a73a73"
+    },
+    {
+      "file": "app/assets/events/volcano-dynamic/tonga-b13-20220115T0530Z.png",
+      "bytes": 602400,
+      "sha256": "ea8b5726cb083505f6c6c96add421427127c9147af47bda63b06435d3276e6f2"
+    },
+    {
+      "file": "app/assets/events/volcano-dynamic/tonga-b13-20220115T0540Z.png",
+      "bytes": 604579,
+      "sha256": "f5340b36e25086def726d05eadc2cae51596484c54625fd50216f1eb5ecef27f"
+    },
+    {
+      "file": "app/assets/events/volcano-dynamic/tonga-b13-20220115T0550Z.png",
+      "bytes": 606333,
+      "sha256": "0569347a55aa72f48e6a9d25535f8cf8e9c2670dc808ebcd452647c00c73947b"
+    },
+    {
+      "file": "app/assets/events/volcano-dynamic/tonga-b13-20220115T0600Z.png",
+      "bytes": 609498,
+      "sha256": "43ec4d05f7b4d613aa594a8c1b007e62ce32f1a791fe96d08c8b628909b7e7ef"
+    },
+    {
+      "file": "app/assets/events/volcano-dynamic/tonga-b13-20220115T0610Z.png",
+      "bytes": 610777,
+      "sha256": "a68c91f3650ca5ebe8b753b2e80d565600798e03b7bf6fa6dbd1edd83e76c1bb"
+    },
+    {
+      "file": "app/assets/events/volcano-dynamic/tonga-b13-20220115T0620Z.png",
+      "bytes": 612153,
+      "sha256": "23fc98fd3f08efb22d4b02ce7770875971a0ddc3546b1bd9ef75b202596b3e46"
+    },
+    {
+      "file": "app/assets/events/volcano-dynamic/tonga-b13-20220115T0630Z.png",
+      "bytes": 612095,
+      "sha256": "afe4f71e9d177936415b17ba040e15cbe479ea5df4938a66e3e5065d54de026c"
+    },
+    {
+      "file": "app/assets/events/volcano-dynamic/tonga-b13-20220115T0640Z.png",
+      "bytes": 613193,
+      "sha256": "255cf8458860a26c17f3571da0f1544ec013984b90a015d7d561188fb5c999ad"
+    },
+    {
+      "file": "app/assets/events/volcano-dynamic/tonga-b13-20220115T0650Z.png",
+      "bytes": 613853,
+      "sha256": "f85c91138738d095d417842b5854d7152a6083adfd144a4ad24a3a7000defd63"
+    },
+    {
+      "file": "app/assets/events/volcano-dynamic/tonga-b13-20220115T0700Z.png",
+      "bytes": 615937,
+      "sha256": "a09ad4a2f832cd687ede776c078afbfd7a33bf7ff385fc4ccc35ff8c34d8186e"
+    },
+    {
+      "file": "app/assets/events/volcano-dynamic/tonga-b13-20220115T0710Z.png",
+      "bytes": 616318,
+      "sha256": "e802f56040c89756e96ee922d5d354920ce59b4f57cdd9fb36765cab78752282"
+    },
+    {
+      "file": "app/assets/events/volcano-dynamic/tonga-b13-20220115T0720Z.png",
+      "bytes": 617431,
+      "sha256": "54807e827d445b50728b0b514d5acae43064de6087fa39d9b273114838bcf316"
+    },
+    {
+      "file": "app/assets/events/volcano-dynamic/tonga-b13-20220115T0730Z.png",
+      "bytes": 617400,
+      "sha256": "bb4a12c884f6287af5d7a868ca7ea59ce34fb089b409ba3c6053b87e9cb01bf5"
+    },
+    {
+      "file": "app/assets/events/volcano-dynamic/tonga-b13-20220115T0740Z.png",
+      "bytes": 616399,
+      "sha256": "bd932287b49eed44c0dace10fa490a921764c9eb1a808394daab20ca1de61e26"
+    },
+    {
+      "file": "app/assets/events/volcano-dynamic/tonga-b13-20220115T0750Z.png",
+      "bytes": 618500,
+      "sha256": "67755de564fa3b53cbfda45af29428a7c75ca4792b07a7b72ae4579d4a6c1fb8"
+    },
+    {
+      "file": "app/data/quake-dynamic.json",
+      "bytes": 2755347,
+      "sha256": "b09b02e3712ce500c3c16279b275a65413dea5e4054bbb8b62542472b37fa3fe"
+    },
+    {
+      "file": "app/data/storm-dynamic.json",
+      "bytes": 42837,
+      "sha256": "2f3f0f5b4b1ab3cc9110c5cb3adbc7817b88e519d0f4fd49156d3b9a45219f4c"
+    },
+    {
+      "file": "app/data/volcano-dynamic.json",
+      "bytes": 67295,
+      "sha256": "5121f814c47be6bc99a928bf4bcf959559c98e36ea07c1516e377859772a58b2"
+    },
+    {
+      "file": "app/dynamic-data.js",
+      "bytes": 4401,
+      "sha256": "090a52d7b439f7beb49c589e8265c167dadf05b25595f4035eaec0406b8caeeb"
+    },
+    {
+      "file": "app/dynamic-globe-layer.js",
+      "bytes": 9119,
+      "sha256": "92501de2b41290cf9e3986464f1cb0ed097691cf3cca57f5a3c8f7a62d33a44f"
+    },
+    {
+      "file": "app/dynamic-player.js",
+      "bytes": 21081,
+      "sha256": "fa7c5d7db7a822a603e353644635d6ae96fc416af7feb12b61e7821bf824321e"
+    },
+    {
+      "file": "app/dynamic-process.css",
+      "bytes": 5466,
+      "sha256": "2f7eb4c02ec1b733bdd17ad635eeeac038df3ed91b4e15e8dcb487a90d6788e9"
+    },
+    {
+      "file": "app/globe-app.js",
+      "bytes": 68598,
+      "sha256": "0478b5bc1b8c7e28806e31fdcef3511dddf7ab3f8d1d34af49ba7a7c1554a9e5"
+    },
+    {
+      "file": "app/globe-engine.js",
+      "bytes": 41306,
+      "sha256": "546e831a8a5ea51525b905c6977a3cb8a7df7f65907749661b94e34bf692eea3"
+    },
+    {
+      "file": "app/globe.html",
+      "bytes": 19335,
+      "sha256": "e961a3d3b319090ff9dedda5ee9447c4dd14fe6213cf6da4b35552c45a682278"
+    },
+    {
+      "file": "app/index.html",
+      "bytes": 19335,
+      "sha256": "e961a3d3b319090ff9dedda5ee9447c4dd14fe6213cf6da4b35552c45a682278"
+    },
+    {
+      "file": "package.json",
+      "bytes": 418,
+      "sha256": "7e0557e3ab169f39c274397a3fb0c026b48e978fbc9da9c65f51cb9b7b604bc7"
+    },
+    {
+      "file": "README.md",
+      "bytes": 30269,
+      "sha256": "da4f66b4dbdb130a8c5fadf669c9c519b5cd391afb1601e9e82835142eba45a1"
+    },
+    {
+      "file": "research/dynamics/quake/fetch-results.json",
+      "bytes": 5966,
+      "sha256": "cbd30af94fd7a93f4c0ce789e8685329c030b50b9b63cfcaaa3242294c45965f"
+    },
+    {
+      "file": "research/dynamics/quake/fetch-waveforms.mjs",
+      "bytes": 2536,
+      "sha256": "cb61e46a069af3362f671f59e7a148bcb769f8d77f1ba494b2e183fd5af681b2"
+    },
+    {
+      "file": "research/dynamics/quake/process_waveforms.py",
+      "bytes": 11499,
+      "sha256": "d0a540387f4cab1e8f658a85b8ff1a08f19ed78cfd15c7aee7bacc74453f118c"
+    },
+    {
+      "file": "research/dynamics/quake/processing-report.json",
+      "bytes": 3126,
+      "sha256": "df683dd7bfd6d4bc23a73155b7be5c3a2f05592c0fbb91f33ddc931a712288eb"
+    },
+    {
+      "file": "research/dynamics/quake/raw/channels.txt",
+      "bytes": 1103,
+      "sha256": "deef9b5748159bf1a032f078f4e0a1698858dfae88c82f246df6a37d31b94414"
+    },
+    {
+      "file": "research/dynamics/quake/raw/event-usgs.geojson",
+      "bytes": 113445,
+      "sha256": "d9cf0301f748786d5ff881edba71e1b19c5b5008b3abeb893e8e88240433ba4a"
+    },
+    {
+      "file": "research/dynamics/quake/raw/IU.GUMO.00.BHZ.geocsv",
+      "bytes": 914549,
+      "sha256": "80e6b75f9b8acab481ea385085ddcb26921ce3835e388294d6b3c3085b647088"
+    },
+    {
+      "file": "research/dynamics/quake/raw/IU.INCN.00.BHZ.geocsv",
+      "bytes": 924773,
+      "sha256": "d1832e666c9b4d11250d0ace68902d297b9567c7f5a8b11c5411687b28bc6948"
+    },
+    {
+      "file": "research/dynamics/quake/raw/IU.MAJO.00.BHZ.geocsv",
+      "bytes": 935964,
+      "sha256": "957ca759f70836106707ca21bd804eb77c7a4994f648a1c157358bc267116713"
+    },
+    {
+      "file": "research/dynamics/quake/raw/IU.TATO.00.BHZ.geocsv",
+      "bytes": 909527,
+      "sha256": "f2dec56d67ff56c307eb63dfd0621a5a3b5e5e1c119a8537ca98991d5361acc8"
+    },
+    {
+      "file": "research/dynamics/quake/raw/IU.ULN.00.BHZ.geocsv",
+      "bytes": 860813,
+      "sha256": "1f1b5c4c30ce77b399416c366ab4e6a20c816c351d27a9610d8a8077fc8b0f08"
+    },
+    {
+      "file": "research/dynamics/quake/raw/IU.YSS.00.BHZ.geocsv",
+      "bytes": 874223,
+      "sha256": "39f40dc436b7ae2a2600c9568de96d2d92887cde5649cc6a4f7b55c5ecdefea6"
+    },
+    {
+      "file": "research/dynamics/quake/raw/stations.txt",
+      "bytes": 583,
+      "sha256": "561259600609f64ea0ae4da944150f047a5fe23e46a74feae07c1f4080608b43"
+    },
+    {
+      "file": "research/dynamics/quake/README.md",
+      "bytes": 4432,
+      "sha256": "7cf5639c9976161a83c09a28f6da18e489ffdcdf8d061a7019b235cf9d9987ce"
+    },
+    {
+      "file": "research/dynamics/quake/sample-fetch-results.json",
+      "bytes": 1033,
+      "sha256": "323eeecf53dd809a18a51ae3223cea6a3bce435858e1f230bdd9ab86ba6e126c"
+    },
+    {
+      "file": "research/dynamics/quake/verification.json",
+      "bytes": 2051,
+      "sha256": "41aedb03569f489c1c9f21cf72dfeed287c8a14099d589d9423aa9cb33010846"
+    },
+    {
+      "file": "research/dynamics/quake/verify_waveforms.py",
+      "bytes": 4170,
+      "sha256": "24664ab6579a78779f37761940141f0b9f0a6ac2948e3acab2a5b59e18f48951"
+    },
+    {
+      "file": "research/dynamics/README.md",
+      "bytes": 8524,
+      "sha256": "94687f663b9072d7fd52277eaae257fa9eb40aa62912ac09029aec9b3a6ef730"
+    },
+    {
+      "file": "research/dynamics/storm/delivery-summary.json",
+      "bytes": 292,
+      "sha256": "99a9d70423a4c0fb27bd0f8bb5adeea0e2349923cf0a60dd8c8b97f58194f7d5"
+    },
+    {
+      "file": "research/dynamics/storm/fetch_bounded.ps1",
+      "bytes": 1817,
+      "sha256": "ffc3cf66f011c3043a1a511c2916c81aa21dc6fcdf1d9676a414695dcde6ed6c"
+    },
+    {
+      "file": "research/dynamics/storm/fetch_sample.py",
+      "bytes": 1956,
+      "sha256": "cc48b740e6eea6d86e72a9ec877752e4654decc8b258916b47b3785adf46fd5a"
+    },
+    {
+      "file": "research/dynamics/storm/frames/hinnamnor-b13-20220905T0300Z-bt-centikelvin.png",
+      "bytes": 1127831,
+      "sha256": "ded5a9daf99dbaa0b40b660ee54c7a74df59d0d629ecf4f75c49b4c46430cdfd"
+    },
+    {
+      "file": "research/dynamics/storm/frames/hinnamnor-b13-20220905T0300Z.json",
+      "bytes": 6497,
+      "sha256": "905b0e316a0a01c73f3c6ff3a199500b06a5391e7569ac1324a84fb30a067519"
+    },
+    {
+      "file": "research/dynamics/storm/frames/hinnamnor-b13-20220905T0330Z-bt-centikelvin.png",
+      "bytes": 1126940,
+      "sha256": "c7c86864752ee92234e0b8a6dcf20a20618be6bd2ed49241f76d613af269d64c"
+    },
+    {
+      "file": "research/dynamics/storm/frames/hinnamnor-b13-20220905T0330Z.json",
+      "bytes": 6493,
+      "sha256": "6cd496b4373708fc95df40143c8746dabddedacc64f88153469f6e40ff7a8ec3"
+    },
+    {
+      "file": "research/dynamics/storm/frames/hinnamnor-b13-20220905T0400Z-bt-centikelvin.png",
+      "bytes": 1126461,
+      "sha256": "8b1d48f968260db07fafd1d12349935ea46cbf270b6ed5836a43874f9acd5842"
+    },
+    {
+      "file": "research/dynamics/storm/frames/hinnamnor-b13-20220905T0400Z.json",
+      "bytes": 6494,
+      "sha256": "ce12c68ac42dec593668111b3ce9570b0143362ef74934c38d7aec05ce1be31c"
+    },
+    {
+      "file": "research/dynamics/storm/frames/hinnamnor-b13-20220905T0430Z-bt-centikelvin.png",
+      "bytes": 1124552,
+      "sha256": "a693556796a3d3ae0a4a7aa259ffc76fca3ceba5a13351f311d83cd6c30ac256"
+    },
+    {
+      "file": "research/dynamics/storm/frames/hinnamnor-b13-20220905T0430Z.json",
+      "bytes": 6494,
+      "sha256": "1313dffc319a52eb83c473ccf2082740b0add43bb3719d13fa852020b0356882"
+    },
+    {
+      "file": "research/dynamics/storm/frames/hinnamnor-b13-20220905T0500Z-bt-centikelvin.png",
+      "bytes": 1123490,
+      "sha256": "f809f409fc9d9b9aecc054e5fa74dc9b73b41f3ea70496a31b45d08cd1f21f7b"
+    },
+    {
+      "file": "research/dynamics/storm/frames/hinnamnor-b13-20220905T0500Z.json",
+      "bytes": 6493,
+      "sha256": "1ab08ed46cdf496cbe867a2db583dafae127b32a88c6089c65488f931eb641a2"
+    },
+    {
+      "file": "research/dynamics/storm/frames/hinnamnor-b13-20220905T0530Z-bt-centikelvin.png",
+      "bytes": 1121453,
+      "sha256": "012609318ad6a9115862a33cb5a038a14170d0884df58694ef24d0cd33d5e321"
+    },
+    {
+      "file": "research/dynamics/storm/frames/hinnamnor-b13-20220905T0530Z.json",
+      "bytes": 6494,
+      "sha256": "bd38025bbe96d326ef9ef4fc9e060783c7942c4394fcc4f7e48127f32061e460"
+    },
+    {
+      "file": "research/dynamics/storm/frames/hinnamnor-b13-20220905T0600Z-bt-centikelvin.png",
+      "bytes": 1120899,
+      "sha256": "2a3e39768ae4ab1607a66f03bb311d562ac5189a128a72c29aac0b28d2f05ed2"
+    },
+    {
+      "file": "research/dynamics/storm/frames/hinnamnor-b13-20220905T0600Z.json",
+      "bytes": 6493,
+      "sha256": "b675cd38040701d88f06c6d6cf4e0dd69fbb9abc4083b5fe57efbb24ac34f756"
+    },
+    {
+      "file": "research/dynamics/storm/frames/hinnamnor-b13-20220905T0630Z-bt-centikelvin.png",
+      "bytes": 1118177,
+      "sha256": "fae4032ecd00f506b3fc0ca0d84c69a44ac22cfb31430ce7eadcec49bb935b74"
+    },
+    {
+      "file": "research/dynamics/storm/frames/hinnamnor-b13-20220905T0630Z.json",
+      "bytes": 6496,
+      "sha256": "dea124951d2bacdeda9997238f901d17f8bd7bd23c4420865a64968b2b3112bf"
+    },
+    {
+      "file": "research/dynamics/storm/frames/hinnamnor-b13-20220905T0700Z-bt-centikelvin.png",
+      "bytes": 1116160,
+      "sha256": "28b3c04026b3655417cf13c5bab01efc60cc006adb090278f9eeec7c06fd25cd"
+    },
+    {
+      "file": "research/dynamics/storm/frames/hinnamnor-b13-20220905T0700Z.json",
+      "bytes": 6493,
+      "sha256": "350e71606a472536c9a4dfe909132552fbfa2e8709b583006b733655b0c09bd0"
+    },
+    {
+      "file": "research/dynamics/storm/frames/hinnamnor-b13-20220905T0730Z-bt-centikelvin.png",
+      "bytes": 1111261,
+      "sha256": "6667cf20fba6ecff76b92e3db9e4fa72a1ee162b3ee40e7a2f2325e60c5d0fb6"
+    },
+    {
+      "file": "research/dynamics/storm/frames/hinnamnor-b13-20220905T0730Z.json",
+      "bytes": 6495,
+      "sha256": "14977e9910f5bbbc90566155c0a8a28d4e2354425bcf8cfc2d55d1aaa88ede5b"
+    },
+    {
+      "file": "research/dynamics/storm/frames/hinnamnor-b13-20220905T0800Z-bt-centikelvin.png",
+      "bytes": 1103517,
+      "sha256": "0d6e4e4a95f89cf0013e6fc5ed8e44ebedd62193b4df893e015f5959586d68c0"
+    },
+    {
+      "file": "research/dynamics/storm/frames/hinnamnor-b13-20220905T0800Z.json",
+      "bytes": 6495,
+      "sha256": "ce428de98191e2b52d7d19a685dcf571cc8f0124d87ad924dc05fa59817a7dcf"
+    },
+    {
+      "file": "research/dynamics/storm/frames/hinnamnor-b13-20220905T0830Z-bt-centikelvin.png",
+      "bytes": 1097729,
+      "sha256": "81911be9a7fb9e87c18a45b3d3f6382440f2bddf3ed6e880606d4468de965ad0"
+    },
+    {
+      "file": "research/dynamics/storm/frames/hinnamnor-b13-20220905T0830Z.json",
+      "bytes": 6494,
+      "sha256": "117d7fcad18dcd3625f907460c6e9dc2f9052285e7416e4504a17c3cc5d16c80"
+    },
+    {
+      "file": "research/dynamics/storm/frames/hinnamnor-b13-20220905T0900Z-bt-centikelvin.png",
+      "bytes": 1091348,
+      "sha256": "8ca81a33c87a8d13b6f1bc9b5577d6792a332e159c3aac1564227a1b73688f12"
+    },
+    {
+      "file": "research/dynamics/storm/frames/hinnamnor-b13-20220905T0900Z.json",
+      "bytes": 6494,
+      "sha256": "235d3af3f1014dffe34809d318082d3e8fdccbc43c1185c0ced58f6144b84e6a"
+    },
+    {
+      "file": "research/dynamics/storm/frames/hinnamnor-b13-20220905T0930Z-bt-centikelvin.png",
+      "bytes": 1086245,
+      "sha256": "2da9693e43958484600d8432acecfe72c7f95c6249d920f325ef08a2ec34878f"
+    },
+    {
+      "file": "research/dynamics/storm/frames/hinnamnor-b13-20220905T0930Z.json",
+      "bytes": 6495,
+      "sha256": "a30231ebde0e66faafbcbbcc7edb8e5a61084c1a879bea40d7e37e4679846dd3"
+    },
+    {
+      "file": "research/dynamics/storm/frames/hinnamnor-b13-20220905T0950Z-bt-centikelvin.png",
+      "bytes": 1086045,
+      "sha256": "ade354f78870a5c06f7822a2bd9dacac654fbb55525e38eaaac782956a6ed3e9"
+    },
+    {
+      "file": "research/dynamics/storm/frames/hinnamnor-b13-20220905T0950Z.json",
+      "bytes": 6491,
+      "sha256": "d6ae81fc2d83ca175cdb57d2734729d122bbfadd3bb2a3d45c87e1f43207732f"
+    },
+    {
+      "file": "research/dynamics/storm/frames/hinnamnor-b13-20220905T1010Z-bt-centikelvin.png",
+      "bytes": 1085440,
+      "sha256": "75ba82c71530a8d594ecbcd542adaf1c5b5f3a6ff756e8f7d1eea41ae9005790"
+    },
+    {
+      "file": "research/dynamics/storm/frames/hinnamnor-b13-20220905T1010Z.json",
+      "bytes": 6494,
+      "sha256": "67a9a9e774c12e74d6ac0c0cc9d1f1741c7abb463018d29e2f0731b20ebcbdbd"
+    },
+    {
+      "file": "research/dynamics/storm/frames/hinnamnor-b13-20220905T1030Z-bt-centikelvin.png",
+      "bytes": 1087080,
+      "sha256": "bba6fedf471d3e845f4964278c5a1195d7afcc0962a36c264b0503ebbcdd268f"
+    },
+    {
+      "file": "research/dynamics/storm/frames/hinnamnor-b13-20220905T1030Z.json",
+      "bytes": 6493,
+      "sha256": "cb0b327055c27ea484d2e883822e7fbae63b4d5515f4099fc55a91a5dfdb192a"
+    },
+    {
+      "file": "research/dynamics/storm/frames/hinnamnor-b13-20220905T1100Z-bt-centikelvin.png",
+      "bytes": 1090959,
+      "sha256": "45ee2b548bb141010150c5bba84c5005ddc442218681404f33f2187534139b30"
+    },
+    {
+      "file": "research/dynamics/storm/frames/hinnamnor-b13-20220905T1100Z.json",
+      "bytes": 6494,
+      "sha256": "445d85e45d226d1202d25c9285a0e2c5e65bebd7479ba995dbe7a85ef1c444ea"
+    },
+    {
+      "file": "research/dynamics/storm/frames/hinnamnor-b13-20220905T1130Z-bt-centikelvin.png",
+      "bytes": 1096503,
+      "sha256": "b9df62a630caaa9c4177aaf6af94a865a2387330bacaf15494a3fe50d8c05d62"
+    },
+    {
+      "file": "research/dynamics/storm/frames/hinnamnor-b13-20220905T1130Z.json",
+      "bytes": 6491,
+      "sha256": "f2ec56a85d031c3a7cf2420eb227a43d2f76221ea138a35960dfc722287da92c"
+    },
+    {
+      "file": "research/dynamics/storm/frames/hinnamnor-b13-20220905T1200Z-bt-centikelvin.png",
+      "bytes": 1100631,
+      "sha256": "10040f8df1a8aa5ae31d578ff997e8356d5ffa2c1310dbd24e9b960d34470829"
+    },
+    {
+      "file": "research/dynamics/storm/frames/hinnamnor-b13-20220905T1200Z.json",
+      "bytes": 6493,
+      "sha256": "63084d005f79692d8ef20e54ccbacefa0a9e1c27bc949a943b628241d10804b7"
+    },
+    {
+      "file": "research/dynamics/storm/frames/hinnamnor-b13-20220905T1230Z-bt-centikelvin.png",
+      "bytes": 1103895,
+      "sha256": "1f25c88abc7d02f097f80157a190aee9a57169a85d4303b5fa9062cfd5ee070c"
+    },
+    {
+      "file": "research/dynamics/storm/frames/hinnamnor-b13-20220905T1230Z.json",
+      "bytes": 6493,
+      "sha256": "90b3b9ff24c0e7a15a87bd418a788975bba9cb40319dad6c4e0dd093fc14b55a"
+    },
+    {
+      "file": "research/dynamics/storm/frames/hinnamnor-b13-20220905T1300Z-bt-centikelvin.png",
+      "bytes": 1106720,
+      "sha256": "c6a3feac2e492cba01a032099fdc774d6d950de515d8b390b4171a44bfa2b19d"
+    },
+    {
+      "file": "research/dynamics/storm/frames/hinnamnor-b13-20220905T1300Z.json",
+      "bytes": 6494,
+      "sha256": "6bf2aabdc1756255e00102993b947ed1b9b6e376b33d6aefd6aaccc381d1a1b0"
+    },
+    {
+      "file": "research/dynamics/storm/frames/hinnamnor-b13-20220905T1330Z-bt-centikelvin.png",
+      "bytes": 1109580,
+      "sha256": "1c1692d1952ce3d2b980504d930a14493fef53555c0b00081af553512b9a2e9b"
+    },
+    {
+      "file": "research/dynamics/storm/frames/hinnamnor-b13-20220905T1330Z.json",
+      "bytes": 6493,
+      "sha256": "09528303e2cd71a0bcefe3c551b2293ff086ba08f4d4a7805fdbe189095b21bd"
+    },
+    {
+      "file": "research/dynamics/storm/hinnamnor-jma-full.json",
+      "bytes": 13573,
+      "sha256": "6ce08909f18177858be3a15046342b26b49858471eca5f412743cff268b81f60"
+    },
+    {
+      "file": "research/dynamics/storm/hinnamnor-jma-source.txt",
+      "bytes": 5740,
+      "sha256": "0323294061ac01bd68986b283169b4323f02a6f5532061ecf849cd356bfa1e20"
+    },
+    {
+      "file": "research/dynamics/storm/process_storm.py",
+      "bytes": 18934,
+      "sha256": "3a1facda2b261ce06687e4769263f6115a45f163cdc74c4ee133812121a0c1e2"
+    },
+    {
+      "file": "research/dynamics/storm/quality-selection.json",
+      "bytes": 20590,
+      "sha256": "7f6b32c599bdb14cc78d90f4e49580777dfee010a23f526e8bc5f221922bdd7a"
+    },
+    {
+      "file": "research/dynamics/storm/raw/bst_all.zip",
+      "bytes": 747389,
+      "sha256": "4039571abf3724343d27cb462e2920a952314f3621d646e98958b93b99777ecb"
+    },
+    {
+      "file": "research/dynamics/storm/raw/HS_H08_20220905_0300_B13_FLDK_R20_S0210.DAT.bz2",
+      "bytes": 2223361,
+      "sha256": "f5c623f6c72a81d1592cc7d6005dc2bea39c9ae92e4ea3a018eac14026765bd6"
+    },
+    {
+      "file": "research/dynamics/storm/raw/HS_H08_20220905_0300_B13_FLDK_R20_S0310.DAT.bz2",
+      "bytes": 2744233,
+      "sha256": "e91fd9d8b786549c8211dc4ff7908c096ad8a8b8051856ced2f206d24d2463d7"
+    },
+    {
+      "file": "research/dynamics/storm/raw/HS_H08_20220905_0330_B13_FLDK_R20_S0210.DAT.bz2",
+      "bytes": 2229205,
+      "sha256": "7048420a3cda2fcd1b78b425683c11434bb9c58da03e202cebec09e03abcb1a5"
+    },
+    {
+      "file": "research/dynamics/storm/raw/HS_H08_20220905_0330_B13_FLDK_R20_S0310.DAT.bz2",
+      "bytes": 2756683,
+      "sha256": "c36ccb334e7606115fd6cd39652e12e18f4520cf3730a6af3fd965a46bfe5b35"
+    },
+    {
+      "file": "research/dynamics/storm/raw/HS_H08_20220905_0400_B13_FLDK_R20_S0210.DAT.bz2",
+      "bytes": 2236160,
+      "sha256": "0d1ce60acc8d029817e05416b8d4589e974470fbed82626e7773f29adac21e47"
+    },
+    {
+      "file": "research/dynamics/storm/raw/HS_H08_20220905_0400_B13_FLDK_R20_S0310.DAT.bz2",
+      "bytes": 2768716,
+      "sha256": "c35bef656970f835cd63cc0431efcc08c90a5e5357e92f96e4cfa5323ec2e1b5"
+    },
+    {
+      "file": "research/dynamics/storm/raw/HS_H08_20220905_0430_B13_FLDK_R20_S0210.DAT.bz2",
+      "bytes": 2244096,
+      "sha256": "63e5bef88a834804b1325b8f2f0d28810f169d69ad6e0d9d7a507e298497f166"
+    },
+    {
+      "file": "research/dynamics/storm/raw/HS_H08_20220905_0430_B13_FLDK_R20_S0310.DAT.bz2",
+      "bytes": 2780246,
+      "sha256": "a48c5b8ce9cd76e09510a21d7fcb8ae03ab8017bcf18f96f2bf50059ab9c1b9e"
+    },
+    {
+      "file": "research/dynamics/storm/raw/HS_H08_20220905_0500_B13_FLDK_R20_S0210.DAT.bz2",
+      "bytes": 2250497,
+      "sha256": "19c1e27683e85fa44ce8789ae43116bbb8b27e0ea240ca1a6eda6f95402270e3"
+    },
+    {
+      "file": "research/dynamics/storm/raw/HS_H08_20220905_0500_B13_FLDK_R20_S0310.DAT.bz2",
+      "bytes": 2788962,
+      "sha256": "85d0b1374ff232a61810c4133c2d7ce0ee37afc409a26280e392a1bf916879b6"
+    },
+    {
+      "file": "research/dynamics/storm/raw/HS_H08_20220905_0530_B13_FLDK_R20_S0210.DAT.bz2",
+      "bytes": 2254902,
+      "sha256": "a5f3c0f8fd2632e8b96b2d9585106f521d47cbff3551975bc6cbb74c5a62f67e"
+    },
+    {
+      "file": "research/dynamics/storm/raw/HS_H08_20220905_0530_B13_FLDK_R20_S0310.DAT.bz2",
+      "bytes": 2794688,
+      "sha256": "34bdce852e456e91fb4703adb4352297f7b2ddf7c4c066ccea2acede44ae5a52"
+    },
+    {
+      "file": "research/dynamics/storm/raw/HS_H08_20220905_0600_B13_FLDK_R20_S0210.DAT.bz2",
+      "bytes": 2255241,
+      "sha256": "288356a973f01232427cbf17e87fd35c4a6586c298b9c6b23484a397c6b450d4"
+    },
+    {
+      "file": "research/dynamics/storm/raw/HS_H08_20220905_0600_B13_FLDK_R20_S0310.DAT.bz2",
+      "bytes": 2801658,
+      "sha256": "a6384bd6d9d64af509526b3dae5733dd3b05643fa7437b80ec35af6fbe67bba3"
+    },
+    {
+      "file": "research/dynamics/storm/raw/HS_H08_20220905_0630_B13_FLDK_R20_S0210.DAT.bz2",
+      "bytes": 2255172,
+      "sha256": "113ea270915291d708243a59a3fb8270991d1c9ba8dfb197c20abf392f91056a"
+    },
+    {
+      "file": "research/dynamics/storm/raw/HS_H08_20220905_0630_B13_FLDK_R20_S0310.DAT.bz2",
+      "bytes": 2803600,
+      "sha256": "6bd5d03d207cea5062c35f1a4fa21ef646068838dfab5f32e14bf9ad7f249bd8"
+    },
+    {
+      "file": "research/dynamics/storm/raw/HS_H08_20220905_0700_B13_FLDK_R20_S0210.DAT.bz2",
+      "bytes": 2248325,
+      "sha256": "deff44c2e67769139445e0fb5c6f2396280344d7da34172ee0d1304ebde215e0"
+    },
+    {
+      "file": "research/dynamics/storm/raw/HS_H08_20220905_0700_B13_FLDK_R20_S0310.DAT.bz2",
+      "bytes": 2803143,
+      "sha256": "e22731df70882c4a638c6b585a2dce3e310e35ef4ed40cb02bd8910db313e4f7"
+    },
+    {
+      "file": "research/dynamics/storm/raw/HS_H08_20220905_0730_B13_FLDK_R20_S0210.DAT.bz2",
+      "bytes": 2238239,
+      "sha256": "c453c828ee021cf8c60c668f6642e6e8f29e4dffed8d6337f8f69746caca028d"
+    },
+    {
+      "file": "research/dynamics/storm/raw/HS_H08_20220905_0730_B13_FLDK_R20_S0310.DAT.bz2",
+      "bytes": 2801889,
+      "sha256": "61e93cd6e9e9890175b41951a277c26730f75f9bad349665130d7653bffb1ffd"
+    },
+    {
+      "file": "research/dynamics/storm/raw/HS_H08_20220905_0800_B13_FLDK_R20_S0210.DAT.bz2",
+      "bytes": 2216438,
+      "sha256": "3493482fc8012a2d4fbfbe96683fc468aa42c8613da3e3d8030e2087dfc35522"
+    },
+    {
+      "file": "research/dynamics/storm/raw/HS_H08_20220905_0800_B13_FLDK_R20_S0310.DAT.bz2",
+      "bytes": 2797402,
+      "sha256": "b56e0481b1d1e911dd1668e4e4ab0fe6fd366be13948f7cb13fdc487d9247d00"
+    },
+    {
+      "file": "research/dynamics/storm/raw/HS_H08_20220905_0830_B13_FLDK_R20_S0210.DAT.bz2",
+      "bytes": 2196863,
+      "sha256": "d9343e353cc5b63c72ebb6621b49910bcb39cfeb37c851bfa6b23f8fa2182f24"
+    },
+    {
+      "file": "research/dynamics/storm/raw/HS_H08_20220905_0830_B13_FLDK_R20_S0310.DAT.bz2",
+      "bytes": 2792314,
+      "sha256": "73436ce4feacf3a3e5fbcef94e94ff8a8029e22e63d696e4eea446455436d970"
+    },
+    {
+      "file": "research/dynamics/storm/raw/HS_H08_20220905_0900_B13_FLDK_R20_S0210.DAT.bz2",
+      "bytes": 2177272,
+      "sha256": "bf23d4530a1ccc5c88e747032f2fc61a4805b7c29b31c5158e622c4ded9d0fb3"
+    },
+    {
+      "file": "research/dynamics/storm/raw/HS_H08_20220905_0900_B13_FLDK_R20_S0310.DAT.bz2",
+      "bytes": 2785922,
+      "sha256": "3cbd50d0e662c829eab784fe4fd54b8386604cfb64731fd750ad913f39228aec"
+    },
+    {
+      "file": "research/dynamics/storm/raw/HS_H08_20220905_0930_B13_FLDK_R20_S0210.DAT.bz2",
+      "bytes": 2161528,
+      "sha256": "ea44205f79186399922a78b9418671b32b9099cba4ba7cb2df3a5530c7c3e4a9"
+    },
+    {
+      "file": "research/dynamics/storm/raw/HS_H08_20220905_0930_B13_FLDK_R20_S0310.DAT.bz2",
+      "bytes": 2779310,
+      "sha256": "b6ae99885a335b24f3e15d15220ab1ee8a96ad92d7b0f219bc13c8e2edd07f6b"
+    },
+    {
+      "file": "research/dynamics/storm/raw/HS_H08_20220905_0950_B13_FLDK_R20_S0210.DAT.bz2",
+      "bytes": 2154608,
+      "sha256": "96297ef37266e3a57de40b9a808c7ac56cefe59900a07de43a84b7ab39d6a7b9"
+    },
+    {
+      "file": "research/dynamics/storm/raw/HS_H08_20220905_0950_B13_FLDK_R20_S0310.DAT.bz2",
+      "bytes": 2773749,
+      "sha256": "096e2a432a90f6ee975fa0b8c172de60df2dd8df2c74d7e218d7b31505be0be7"
+    },
+    {
+      "file": "research/dynamics/storm/raw/HS_H08_20220905_1010_B13_FLDK_R20_S0210.DAT.bz2",
+      "bytes": 2146077,
+      "sha256": "2ef7235cdb2663c079c37e69f381fbbc69de367b74eca2290f11a672d2d18535"
+    },
+    {
+      "file": "research/dynamics/storm/raw/HS_H08_20220905_1010_B13_FLDK_R20_S0310.DAT.bz2",
+      "bytes": 2765365,
+      "sha256": "038c7fecaac9ea92ab12a607a279e90992d098ac710d7257bafb78f63fb96ac2"
+    },
+    {
+      "file": "research/dynamics/storm/raw/HS_H08_20220905_1030_B13_FLDK_R20_S0210.DAT.bz2",
+      "bytes": 2139691,
+      "sha256": "cdd854c38be45a17c74ce9a9f5467ff60fbb1b220eb36c8ec73b25f81df75f72"
+    },
+    {
+      "file": "research/dynamics/storm/raw/HS_H08_20220905_1030_B13_FLDK_R20_S0310.DAT.bz2",
+      "bytes": 2759069,
+      "sha256": "6cc760ad3b7bc3816364a76383f2d98318bd2799f6d793ea16d5391e10761eea"
+    },
+    {
+      "file": "research/dynamics/storm/raw/HS_H08_20220905_1100_B13_FLDK_R20_S0210.DAT.bz2",
+      "bytes": 2131799,
+      "sha256": "13b9988893212def099f20c5a1fdd8d0c98d236ac397f3299b0b1ad38615788e"
+    },
+    {
+      "file": "research/dynamics/storm/raw/HS_H08_20220905_1100_B13_FLDK_R20_S0310.DAT.bz2",
+      "bytes": 2750364,
+      "sha256": "688dd677ff49b561bac274c7a99a6ffc0d9d7cc0a9ab0a465b88850bda76220b"
+    },
+    {
+      "file": "research/dynamics/storm/raw/HS_H08_20220905_1130_B13_FLDK_R20_S0210.DAT.bz2",
+      "bytes": 2132304,
+      "sha256": "8f397c3ce4176aba4710f93824874a8505399c7b74c3ad2d05be964308f1c293"
+    },
+    {
+      "file": "research/dynamics/storm/raw/HS_H08_20220905_1130_B13_FLDK_R20_S0310.DAT.bz2",
+      "bytes": 2746519,
+      "sha256": "51b1083fc7b4e81fb58a86c482298ad41b46ba637806416ab33f7760a3c70878"
+    },
+    {
+      "file": "research/dynamics/storm/raw/HS_H08_20220905_1200_B13_FLDK_R20_S0210.DAT.bz2",
+      "bytes": 2133129,
+      "sha256": "366bd0d7f8e980cc6d2eb52c4eb89f96275a88060031f0625c146707f889cd97"
+    },
+    {
+      "file": "research/dynamics/storm/raw/HS_H08_20220905_1200_B13_FLDK_R20_S0310.DAT.bz2",
+      "bytes": 2745285,
+      "sha256": "020b6d53308dcd50e4dc27aba941664972c0b9145f303d55c4b77622aceca5b2"
+    },
+    {
+      "file": "research/dynamics/storm/raw/HS_H08_20220905_1230_B13_FLDK_R20_S0210.DAT.bz2",
+      "bytes": 2139809,
+      "sha256": "6e90793fb499901ab7fa436f4ad114d9c93911a51b489f8953350155e5fef0a3"
+    },
+    {
+      "file": "research/dynamics/storm/raw/HS_H08_20220905_1230_B13_FLDK_R20_S0310.DAT.bz2",
+      "bytes": 2745387,
+      "sha256": "f1ac47ff19de57b8075df1a3b707ec19bd66eb66e4635f2ff873b4cb3e74f727"
+    },
+    {
+      "file": "research/dynamics/storm/raw/HS_H08_20220905_1300_B13_FLDK_R20_S0210.DAT.bz2",
+      "bytes": 2137610,
+      "sha256": "24cfbd53cb10828f438287aa0aafe4ae0d0ff4fc7216e9de03e1d3d324c5d22c"
+    },
+    {
+      "file": "research/dynamics/storm/raw/HS_H08_20220905_1300_B13_FLDK_R20_S0310.DAT.bz2",
+      "bytes": 2746090,
+      "sha256": "e14ef0075468cd342bced51f6a77e67daf54f523b4f0c223e5b39ec1497bd8d9"
+    },
+    {
+      "file": "research/dynamics/storm/raw/HS_H08_20220905_1330_B13_FLDK_R20_S0210.DAT.bz2",
+      "bytes": 2140086,
+      "sha256": "3f136684f2b4272395021dec9326443a67fd12075df982aa1ef147d338c92777"
+    },
+    {
+      "file": "research/dynamics/storm/raw/HS_H08_20220905_1330_B13_FLDK_R20_S0310.DAT.bz2",
+      "bytes": 2747776,
+      "sha256": "a05c3c464b8fe883c8e49ca821724331400ca2b767e51bd86e6f04113d2a344a"
+    },
+    {
+      "file": "research/dynamics/storm/raw/HS_H08_20220905_1400_B13_FLDK_R20_S0210.DAT.bz2",
+      "bytes": 1883827,
+      "sha256": "d64bf3a277c8361096f5793b10b111d7b2265cfd048da061e5ccb9967a9c07ac"
+    },
+    {
+      "file": "research/dynamics/storm/raw/HS_H08_20220905_1400_B13_FLDK_R20_S0310.DAT.bz2",
+      "bytes": 2397518,
+      "sha256": "927be1a2f2dfa2ccdb42e11f552152721e5d8776725474d9b92dbe6d098149c7"
+    },
+    {
+      "file": "research/dynamics/storm/raw/HS_H08_20220905_1430_B13_FLDK_R20_S0210.DAT.bz2",
+      "bytes": 2149509,
+      "sha256": "9a96b100dd0c79e581ad03b20bde494d5eb50dc0060d096061d2da1471d9d337"
+    },
+    {
+      "file": "research/dynamics/storm/raw/HS_H08_20220905_1430_B13_FLDK_R20_S0310.DAT.bz2",
+      "bytes": 2757664,
+      "sha256": "33b850dfc18fc6cc8bf876800486331752a558c83d1b3cbfd3ad50416e30d7b2"
+    },
+    {
+      "file": "research/dynamics/storm/raw/HS_H08_20220905_1500_B13_FLDK_R20_S0210.DAT.bz2",
+      "bytes": 1524891,
+      "sha256": "1a5a509cb9cd306f7ef2d7652d0542834bc26eea4371be9ffe7eabc969b38f86"
+    },
+    {
+      "file": "research/dynamics/storm/raw/HS_H08_20220905_1500_B13_FLDK_R20_S0310.DAT.bz2",
+      "bytes": 2082114,
+      "sha256": "e4ccf769c6c341948b9da3455647876fd2ce67ab2b224b6b9126532fb6a5faea"
+    },
+    {
+      "file": "research/dynamics/storm/raw/HS_H08_20220905_1530_B13_FLDK_R20_S0210.DAT.bz2",
+      "bytes": 2156735,
+      "sha256": "dee1500b43e0caa0370cbc2ffbc6ee32956ce3e47e727e2ef8b9e2f3b7c1639e"
+    },
+    {
+      "file": "research/dynamics/storm/raw/HS_H08_20220905_1530_B13_FLDK_R20_S0310.DAT.bz2",
+      "bytes": 2756771,
+      "sha256": "b94910f7bd463066becfa85551f8a7fc28bef68e6a3ce9f0e067e43354a7211e"
+    },
+    {
+      "file": "research/dynamics/storm/raw/HS_H08_20220905_1600_B13_FLDK_R20_S0210.DAT.bz2",
+      "bytes": 2155248,
+      "sha256": "4b0b1a8b3b13b78875f10b9e4382c871190af79c1d60381171e266692d7df055"
+    },
+    {
+      "file": "research/dynamics/storm/raw/HS_H08_20220905_1600_B13_FLDK_R20_S0310.DAT.bz2",
+      "bytes": 2753269,
+      "sha256": "d2ab441eea1c6a69d885d454ab37d19b0c91167d2863165fe80aca4bc51889d1"
+    },
+    {
+      "file": "research/dynamics/storm/raw/HS_H08_20220905_1630_B13_FLDK_R20_S0210.DAT.bz2",
+      "bytes": 2154969,
+      "sha256": "a459d908d86eeb4f010261e8f34c730a4e7bfe140ac78b7a5ce3be184b2953a7"
+    },
+    {
+      "file": "research/dynamics/storm/raw/HS_H08_20220905_1630_B13_FLDK_R20_S0310.DAT.bz2",
+      "bytes": 2752535,
+      "sha256": "a815495db062ff74dae08fcb460a20cb6f515c407c5480500b9af197b87c9a13"
+    },
+    {
+      "file": "research/dynamics/storm/raw/HS_H08_20220905_1700_B13_FLDK_R20_S0210.DAT.bz2",
+      "bytes": 2157601,
+      "sha256": "3fff7311fec766e3e7e72437112bc4f7d228328b5c9ff3c675407b56fccfab56"
+    },
+    {
+      "file": "research/dynamics/storm/raw/HS_H08_20220905_1700_B13_FLDK_R20_S0310.DAT.bz2",
+      "bytes": 2755394,
+      "sha256": "38efbaadfc0d72b0ae9fe87364a9f284ade16ca393a2956b9db5442e7439e3be"
+    },
+    {
+      "file": "research/dynamics/storm/raw/HS_H08_20220905_1730_B13_FLDK_R20_S0210.DAT.bz2",
+      "bytes": 2153226,
+      "sha256": "befce419f0475114a7fd2d06a6e083f185894ed00475c13a9b776cdadb563151"
+    },
+    {
+      "file": "research/dynamics/storm/raw/HS_H08_20220905_1730_B13_FLDK_R20_S0310.DAT.bz2",
+      "bytes": 2751064,
+      "sha256": "2fab3be00b65f802f273b57896122cbdd5a6015488c7c7914fe8f3b4cb0b9416"
+    },
+    {
+      "file": "research/dynamics/storm/raw/HS_H08_20220905_1800_B13_FLDK_R20_S0210.DAT.bz2",
+      "bytes": 2156217,
+      "sha256": "2451699a239e5a6a30b47c5143e338155956cec843e4458cd272e9bfa838dcff"
+    },
+    {
+      "file": "research/dynamics/storm/raw/HS_H08_20220905_1800_B13_FLDK_R20_S0310.DAT.bz2",
+      "bytes": 2751903,
+      "sha256": "902aa4b0e7996dba37752c4c831c97d4d957f0242570e411e43919b182517428"
+    },
+    {
+      "file": "research/dynamics/storm/README.md",
+      "bytes": 5116,
+      "sha256": "6c9bf5ea6949460269126533adb2529020bc52d980c275760bc98ce25fbb6392"
+    },
+    {
+      "file": "research/dynamics/storm/s3-hour-09.xml",
+      "bytes": 274915,
+      "sha256": "72bc09cfddc68cafe34de1829b7833cce9cf7b59677a4ec96d91866d314b7cbb"
+    },
+    {
+      "file": "research/dynamics/storm/s3-hour-10.xml",
+      "bytes": 229115,
+      "sha256": "5c09cd65fc887bd353824009c211c54a482bd801b08f64826260a8175f7ff73a"
+    },
+    {
+      "file": "research/dynamics/storm/s3-hour-11.xml",
+      "bytes": 274836,
+      "sha256": "d1b17869a2db95d6be7b3d163ae417c3cd6a2391e4b4b540b53a77fde52f5fbb"
+    },
+    {
+      "file": "research/dynamics/storm/sample-manifest.json",
+      "bytes": 30817,
+      "sha256": "81e22e988cea7e256fb3e19abe8e6a5c9061e8eefba28e231c04ad192aecb0ed"
+    },
+    {
+      "file": "research/dynamics/storm/validation-report.json",
+      "bytes": 863,
+      "sha256": "2ca1ec398b4b9e3859a4212b02733ce30271f26b3f0b0cebc9368471e1712846"
+    },
+    {
+      "file": "research/dynamics/storm/verify_storm.py",
+      "bytes": 6415,
+      "sha256": "1796ad59738a705a370f251fc0d561b265b6f3e7ae2d485ef46f9c37449a1393"
+    },
+    {
+      "file": "research/dynamics/volcano/download-receipt.json",
+      "bytes": 22255,
+      "sha256": "682de674cd67917a1336a0ae800026c52a39057655fac80de3a9a25b1050c005"
+    },
+    {
+      "file": "research/dynamics/volcano/fetch-tonga.ps1",
+      "bytes": 3187,
+      "sha256": "c851878b4e6bfab2740be4742d4989ec3418d41f8cfbd0851000d99ff49ed1fc"
+    },
+    {
+      "file": "research/dynamics/volcano/listed-objects.json",
+      "bytes": 15505,
+      "sha256": "67203d3db14005214eea3fef516cabded3b2a0d990631e488022cb3d6cffef6e"
+    },
+    {
+      "file": "research/dynamics/volcano/manifest.json",
+      "bytes": 67295,
+      "sha256": "5121f814c47be6bc99a928bf4bcf959559c98e36ea07c1516e377859772a58b2"
+    },
+    {
+      "file": "research/dynamics/volcano/metadata/tonga-b13-20220115T0350Z.json",
+      "bytes": 8585,
+      "sha256": "50c6b8c6f7cd2194658f6837662b86164866404031742c999ef0aef97fd2893c"
+    },
+    {
+      "file": "research/dynamics/volcano/metadata/tonga-b13-20220115T0400Z.json",
+      "bytes": 8609,
+      "sha256": "9c3f4d0ac2b9f862aedd934fd420727da3ca6ba488e5347c686540aec2040a41"
+    },
+    {
+      "file": "research/dynamics/volcano/metadata/tonga-b13-20220115T0410Z.json",
+      "bytes": 8599,
+      "sha256": "7c3d7994adf083e27e087567d102790ea453a8e4cb4d8e86e702a22fb7d01993"
+    },
+    {
+      "file": "research/dynamics/volcano/metadata/tonga-b13-20220115T0420Z.json",
+      "bytes": 8598,
+      "sha256": "d7524506cd0a7e91a6666fb6cbae869ada304376ca9efd64225fc0ce471b3283"
+    },
+    {
+      "file": "research/dynamics/volcano/metadata/tonga-b13-20220115T0430Z.json",
+      "bytes": 8598,
+      "sha256": "57f5956f20d14d6e49e4f54311bd8bbb97417c8f5fd65a99dfa3c507a9154fc6"
+    },
+    {
+      "file": "research/dynamics/volcano/metadata/tonga-b13-20220115T0440Z.json",
+      "bytes": 8612,
+      "sha256": "d3d149e708c2415b740acfce0c6cf91215159f4f03037982a11fe632df948ce4"
+    },
+    {
+      "file": "research/dynamics/volcano/metadata/tonga-b13-20220115T0450Z.json",
+      "bytes": 8599,
+      "sha256": "8ace6d8394ad590d827cd41366031a906eda07742c0da4aaed05eeb14ced74c0"
+    },
+    {
+      "file": "research/dynamics/volcano/metadata/tonga-b13-20220115T0500Z.json",
+      "bytes": 8597,
+      "sha256": "3b4d51e33a65da0a445c16a7ab5403cbc1660c977a6b59487a381ef795aa9b81"
+    },
+    {
+      "file": "research/dynamics/volcano/metadata/tonga-b13-20220115T0510Z.json",
+      "bytes": 8612,
+      "sha256": "8bd42b4cec97f4031445a7550d5f7d0985b255e0b905249cf45a7bd2d6da7747"
+    },
+    {
+      "file": "research/dynamics/volcano/metadata/tonga-b13-20220115T0520Z.json",
+      "bytes": 8610,
+      "sha256": "c6199e55c87419933f30c2d764999919bacbc49ba77b8aa84d8a10c3a62a284d"
+    },
+    {
+      "file": "research/dynamics/volcano/metadata/tonga-b13-20220115T0530Z.json",
+      "bytes": 8600,
+      "sha256": "0861429b4d9f7224c667cb338a814f160150d7cc540e1bbeb390c9744fdeba35"
+    },
+    {
+      "file": "research/dynamics/volcano/metadata/tonga-b13-20220115T0540Z.json",
+      "bytes": 8598,
+      "sha256": "9b0ba808ee39aaad36269e5c8efdf8dcb5259fa58875315e94238aa9bbb66f4e"
+    },
+    {
+      "file": "research/dynamics/volcano/metadata/tonga-b13-20220115T0550Z.json",
+      "bytes": 8611,
+      "sha256": "67c61536fafc5ad7f66383f347f092f3d33067a930120a808ac7c7e04ee31623"
+    },
+    {
+      "file": "research/dynamics/volcano/metadata/tonga-b13-20220115T0600Z.json",
+      "bytes": 8636,
+      "sha256": "74e4a542772603a49634eca85c8008d382846f7692b56561e0a490cffbbc5e40"
+    },
+    {
+      "file": "research/dynamics/volcano/metadata/tonga-b13-20220115T0610Z.json",
+      "bytes": 8598,
+      "sha256": "5b04885b06d4af7166c3c344d33308d5648189058c501fe4fa3f91e2fff1a159"
+    },
+    {
+      "file": "research/dynamics/volcano/metadata/tonga-b13-20220115T0620Z.json",
+      "bytes": 8599,
+      "sha256": "28b2ed49c7f832017fc041e25af620b6dc144913a90ab2b915861375e6219699"
+    },
+    {
+      "file": "research/dynamics/volcano/metadata/tonga-b13-20220115T0630Z.json",
+      "bytes": 8635,
+      "sha256": "74c732af2949993072e86566f5444c7338512cdf72c6be5d91cd67624cb73373"
+    },
+    {
+      "file": "research/dynamics/volcano/metadata/tonga-b13-20220115T0640Z.json",
+      "bytes": 8597,
+      "sha256": "33e1fe517410560873f50ada591bd020113cccaf6d24158bc3cafd14f5e138d7"
+    },
+    {
+      "file": "research/dynamics/volcano/metadata/tonga-b13-20220115T0650Z.json",
+      "bytes": 8599,
+      "sha256": "5e350e48647c1effb204f56d4a06098ac572f54913793298f204fa19fc3f8d61"
+    },
+    {
+      "file": "research/dynamics/volcano/metadata/tonga-b13-20220115T0700Z.json",
+      "bytes": 8600,
+      "sha256": "1312aeca236885a52ae533618e7fa2977db0b17cc0b008c6ef40ef71f6bac9c7"
+    },
+    {
+      "file": "research/dynamics/volcano/metadata/tonga-b13-20220115T0710Z.json",
+      "bytes": 8600,
+      "sha256": "f7021e8cca800748431db2edb197b2fd2ff3570718c9c9f102129a41547cd4e0"
+    },
+    {
+      "file": "research/dynamics/volcano/metadata/tonga-b13-20220115T0720Z.json",
+      "bytes": 8597,
+      "sha256": "a09b7a0933ac20aad9bd895de06ef497d8f8f64150e89ff14c13ce083c499f38"
+    },
+    {
+      "file": "research/dynamics/volcano/metadata/tonga-b13-20220115T0730Z.json",
+      "bytes": 8609,
+      "sha256": "be28408d32e234d930f42bb5ceb891da89b886c4b9d02186d8dd350dddc0bd31"
+    },
+    {
+      "file": "research/dynamics/volcano/metadata/tonga-b13-20220115T0740Z.json",
+      "bytes": 8599,
+      "sha256": "60785ef4a05e38c2fcd92e77dc22a4d01b13bc8aca0044356d58c134f1198f74"
+    },
+    {
+      "file": "research/dynamics/volcano/metadata/tonga-b13-20220115T0750Z.json",
+      "bytes": 8599,
+      "sha256": "0fd0ffe795acd661495a04e535aa49cb8f4982d7e5d26dd548217c8078c9aa99"
+    },
+    {
+      "file": "research/dynamics/volcano/numeric/tonga-b13-20220115T0350Z-bt-centikelvin.png",
+      "bytes": 965300,
+      "sha256": "41c48411def7f792268c54462e1c08414610342e8ff0eb93255c1ee9e7001d1a"
+    },
+    {
+      "file": "research/dynamics/volcano/numeric/tonga-b13-20220115T0400Z-bt-centikelvin.png",
+      "bytes": 965447,
+      "sha256": "7fb7dc1cce9f381dc371da167b5ef156e30be4a70b953d73057f6c25c017420e"
+    },
+    {
+      "file": "research/dynamics/volcano/numeric/tonga-b13-20220115T0410Z-bt-centikelvin.png",
+      "bytes": 966323,
+      "sha256": "c7685f5478d84e192468dedfcda7ee869708a8380ad354a8eac2056ecaf484dd"
+    },
+    {
+      "file": "research/dynamics/volcano/numeric/tonga-b13-20220115T0420Z-bt-centikelvin.png",
+      "bytes": 967254,
+      "sha256": "45341499ff87b2ff2be32c75d62c7a74cf015f1ae43240fd703caca7c808a1e2"
+    },
+    {
+      "file": "research/dynamics/volcano/numeric/tonga-b13-20220115T0430Z-bt-centikelvin.png",
+      "bytes": 968287,
+      "sha256": "0e8af540e6fae931f4933ba6855d94e6f7859d750bc544fb2a357d90c587b648"
+    },
+    {
+      "file": "research/dynamics/volcano/numeric/tonga-b13-20220115T0440Z-bt-centikelvin.png",
+      "bytes": 970839,
+      "sha256": "4cb1db63e1f95c0aea9e51db8376c355f09c95661f7220ab58119dbe33be4c50"
+    },
+    {
+      "file": "research/dynamics/volcano/numeric/tonga-b13-20220115T0450Z-bt-centikelvin.png",
+      "bytes": 971948,
+      "sha256": "e94e6e0817731a1f52ffe9728d0e2e2a1092722ceae441269bc2a71fe09df7ab"
+    },
+    {
+      "file": "research/dynamics/volcano/numeric/tonga-b13-20220115T0500Z-bt-centikelvin.png",
+      "bytes": 977065,
+      "sha256": "4e55ea613673f6c9d8de62bee0a5e77406026eafbe6a09a5a7b7db8ea9881d91"
+    },
+    {
+      "file": "research/dynamics/volcano/numeric/tonga-b13-20220115T0510Z-bt-centikelvin.png",
+      "bytes": 978880,
+      "sha256": "04494e5576d0eda7b1fd7873af034fc84af13905d57c3f32079264c49178b801"
+    },
+    {
+      "file": "research/dynamics/volcano/numeric/tonga-b13-20220115T0520Z-bt-centikelvin.png",
+      "bytes": 978716,
+      "sha256": "95db416cd54fe392b8682b2a4394655403281a29dd7318060ff67aa834d94dc0"
+    },
+    {
+      "file": "research/dynamics/volcano/numeric/tonga-b13-20220115T0530Z-bt-centikelvin.png",
+      "bytes": 978169,
+      "sha256": "7ba8ee2e9f52437cf205472b5f5823be0cb89b890440d62b48c9d27f27119b60"
+    },
+    {
+      "file": "research/dynamics/volcano/numeric/tonga-b13-20220115T0540Z-bt-centikelvin.png",
+      "bytes": 978597,
+      "sha256": "2076bc5621e3bab73d17a41e53a5d0e5fdf51d39d3a7745b361e3b936d8e3882"
+    },
+    {
+      "file": "research/dynamics/volcano/numeric/tonga-b13-20220115T0550Z-bt-centikelvin.png",
+      "bytes": 980411,
+      "sha256": "868e114064c4f1f798d867b82ba9a89fdd138efb6e2c5319ea01e219cefe415a"
+    },
+    {
+      "file": "research/dynamics/volcano/numeric/tonga-b13-20220115T0600Z-bt-centikelvin.png",
+      "bytes": 981760,
+      "sha256": "c4c39613f1526b9a0713ed7cc269836d30d9fffefd8debb0f6b9bc1590311415"
+    },
+    {
+      "file": "research/dynamics/volcano/numeric/tonga-b13-20220115T0610Z-bt-centikelvin.png",
+      "bytes": 983223,
+      "sha256": "96128cf649e8b5f8726e60fa4f2603fb712579ce5fbb0d71f6f51bec81e3e916"
+    },
+    {
+      "file": "research/dynamics/volcano/numeric/tonga-b13-20220115T0620Z-bt-centikelvin.png",
+      "bytes": 983595,
+      "sha256": "ec35f5cf27da8c2d8891770188fd43a4486bfb8f767ded31b09f9ae46eca477a"
+    },
+    {
+      "file": "research/dynamics/volcano/numeric/tonga-b13-20220115T0630Z-bt-centikelvin.png",
+      "bytes": 983619,
+      "sha256": "b1d78dfc815646b93a14248572467cdc2f6aa533bd28fec418c4e7410d013ec5"
+    },
+    {
+      "file": "research/dynamics/volcano/numeric/tonga-b13-20220115T0640Z-bt-centikelvin.png",
+      "bytes": 983749,
+      "sha256": "ffe6b5f5f66d14f9f600274bb357d289774fd023bd402a45cc63cf0998b66385"
+    },
+    {
+      "file": "research/dynamics/volcano/numeric/tonga-b13-20220115T0650Z-bt-centikelvin.png",
+      "bytes": 984553,
+      "sha256": "9de6329c67c51879f5f32fdc7a6895002f9b1aa01c3cc0683c15bf489407e3a4"
+    },
+    {
+      "file": "research/dynamics/volcano/numeric/tonga-b13-20220115T0700Z-bt-centikelvin.png",
+      "bytes": 985561,
+      "sha256": "2c744eda115ab5de8664485fbe0ccb5f3c92e2f0708706cb403fd2cbd4c941e5"
+    },
+    {
+      "file": "research/dynamics/volcano/numeric/tonga-b13-20220115T0710Z-bt-centikelvin.png",
+      "bytes": 986593,
+      "sha256": "9dd8ec46b9e7369dd6a4026c8f9fe59ab15335834ff1275f0ee4912d72ad0a6c"
+    },
+    {
+      "file": "research/dynamics/volcano/numeric/tonga-b13-20220115T0720Z-bt-centikelvin.png",
+      "bytes": 986718,
+      "sha256": "206e71790d4c063aeb5222b05a637b022a600e1aba88ae5216f2178d5fd67610"
+    },
+    {
+      "file": "research/dynamics/volcano/numeric/tonga-b13-20220115T0730Z-bt-centikelvin.png",
+      "bytes": 986711,
+      "sha256": "0c81c51f71d6025e9e99738fd45ef5f070fbdeafff37be38db9a1d0dbde8a839"
+    },
+    {
+      "file": "research/dynamics/volcano/numeric/tonga-b13-20220115T0740Z-bt-centikelvin.png",
+      "bytes": 986616,
+      "sha256": "196713164e9c4b35711b279177566ce1521ccd8a015603c2711a9d77c47e3de3"
+    },
+    {
+      "file": "research/dynamics/volcano/numeric/tonga-b13-20220115T0750Z-bt-centikelvin.png",
+      "bytes": 986889,
+      "sha256": "d2fb0af21c86460b8a1d4c58bcb7936732cfabfcdf639bbacaacece019faeb69"
+    },
+    {
+      "file": "research/dynamics/volcano/process_volcano.py",
+      "bytes": 17023,
+      "sha256": "890a426fbfa320bfbffd82605c0e0fe258e8bba39771795321b64ab8a69a02b4"
+    },
+    {
+      "file": "research/dynamics/volcano/raw/HS_H08_20220115_0350_B13_FLDK_R20_S0710.DAT.bz2",
+      "bytes": 3044231,
+      "sha256": "873a2b664962eaf638e8cdee0880cd5ea180f59f823263ef5ca725ff3a1df9c1"
+    },
+    {
+      "file": "research/dynamics/volcano/raw/HS_H08_20220115_0350_B13_FLDK_R20_S0810.DAT.bz2",
+      "bytes": 2793197,
+      "sha256": "d648fcc6bbad0655a9b0b8d941302c9bd6a5bd40a3a5c0ed75374f8251dc87be"
+    },
+    {
+      "file": "research/dynamics/volcano/raw/HS_H08_20220115_0400_B13_FLDK_R20_S0710.DAT.bz2",
+      "bytes": 3043033,
+      "sha256": "76b0a58b7cb483b1b9347aee254fe5b373f85f2edcc102e7207a115a9de497d2"
+    },
+    {
+      "file": "research/dynamics/volcano/raw/HS_H08_20220115_0400_B13_FLDK_R20_S0810.DAT.bz2",
+      "bytes": 2799987,
+      "sha256": "d640cf3138e07fe9b3affefdec91f0ef2eec53aa5df3ac05584f6d2200cd8ff8"
+    },
+    {
+      "file": "research/dynamics/volcano/raw/HS_H08_20220115_0410_B13_FLDK_R20_S0710.DAT.bz2",
+      "bytes": 3042040,
+      "sha256": "eec0e45ea7fbc39bfa5af666bb26bc2901365a412053723ebcd047b4bc6639c3"
+    },
+    {
+      "file": "research/dynamics/volcano/raw/HS_H08_20220115_0410_B13_FLDK_R20_S0810.DAT.bz2",
+      "bytes": 2803964,
+      "sha256": "4778554544522814b8d4dd813bce5f58a8fe3066e3b6ada486f7aca635dcca8b"
+    },
+    {
+      "file": "research/dynamics/volcano/raw/HS_H08_20220115_0420_B13_FLDK_R20_S0710.DAT.bz2",
+      "bytes": 3039414,
+      "sha256": "b5545f9611472c74b826980d6cfb779a598de27d2600a4df5c7949fcbc3fe5b3"
+    },
+    {
+      "file": "research/dynamics/volcano/raw/HS_H08_20220115_0420_B13_FLDK_R20_S0810.DAT.bz2",
+      "bytes": 2808346,
+      "sha256": "08230b9aaa6852d6eca49229e6fd8408a5a69d351acff2378249b86255c4bc5d"
+    },
+    {
+      "file": "research/dynamics/volcano/raw/HS_H08_20220115_0430_B13_FLDK_R20_S0710.DAT.bz2",
+      "bytes": 3037885,
+      "sha256": "0fc68d2489bfe2db6bfdcf5efeccc8f1def63adc866713b768c048355de5b41f"
+    },
+    {
+      "file": "research/dynamics/volcano/raw/HS_H08_20220115_0430_B13_FLDK_R20_S0810.DAT.bz2",
+      "bytes": 2809126,
+      "sha256": "086f380d09f861d81dad82fa95dea32796bf5c66c1695574f57874cd1c714b09"
+    },
+    {
+      "file": "research/dynamics/volcano/raw/HS_H08_20220115_0440_B13_FLDK_R20_S0710.DAT.bz2",
+      "bytes": 3039006,
+      "sha256": "b425b7c9aafccdcc2f9ce97aa33e4b9ae4d6f7b1d9647f1dec9209708db6db09"
+    },
+    {
+      "file": "research/dynamics/volcano/raw/HS_H08_20220115_0440_B13_FLDK_R20_S0810.DAT.bz2",
+      "bytes": 2811979,
+      "sha256": "531d386a10beb0b87c6b19a4de2d0c43cfcbf6b788aeb4e0e896b3b7f9167231"
+    },
+    {
+      "file": "research/dynamics/volcano/raw/HS_H08_20220115_0450_B13_FLDK_R20_S0710.DAT.bz2",
+      "bytes": 3039033,
+      "sha256": "5e57fdc7c5a3dff93d399ffd32160ab09dd4f8049a6eefffd940aa1c333187c2"
+    },
+    {
+      "file": "research/dynamics/volcano/raw/HS_H08_20220115_0450_B13_FLDK_R20_S0810.DAT.bz2",
+      "bytes": 2812474,
+      "sha256": "b81e71faf3d4d125c970d39bcfca532329af1415475949833ef122301f96cf53"
+    },
+    {
+      "file": "research/dynamics/volcano/raw/HS_H08_20220115_0500_B13_FLDK_R20_S0710.DAT.bz2",
+      "bytes": 3039677,
+      "sha256": "44c8c832d4580517f8e07215dd92d6c5c9578bf649b8ae7d25b9113725342a0f"
+    },
+    {
+      "file": "research/dynamics/volcano/raw/HS_H08_20220115_0500_B13_FLDK_R20_S0810.DAT.bz2",
+      "bytes": 2815238,
+      "sha256": "99543e23594d6748d172e05611fd336cdaf0a4c6379a6679314702aebbe8670a"
+    },
+    {
+      "file": "research/dynamics/volcano/raw/HS_H08_20220115_0510_B13_FLDK_R20_S0710.DAT.bz2",
+      "bytes": 3040416,
+      "sha256": "3c0c6cfc2ad0f99451da67fef7c4382049c1da4b5eb03903e1cab93a15593115"
+    },
+    {
+      "file": "research/dynamics/volcano/raw/HS_H08_20220115_0510_B13_FLDK_R20_S0810.DAT.bz2",
+      "bytes": 2817789,
+      "sha256": "c74760238d7815357986e291fc2f7fd71651a5992d2dff14fed4af4643773c06"
+    },
+    {
+      "file": "research/dynamics/volcano/raw/HS_H08_20220115_0520_B13_FLDK_R20_S0710.DAT.bz2",
+      "bytes": 3038491,
+      "sha256": "087e26056c99805e3295ceaea6a5fa68160167267d02e7a8666462aada21b3a5"
+    },
+    {
+      "file": "research/dynamics/volcano/raw/HS_H08_20220115_0520_B13_FLDK_R20_S0810.DAT.bz2",
+      "bytes": 2819643,
+      "sha256": "623022faa90c269e7c8af9018e87f531f87cfe5f318b1d5b047bf0038e671c53"
+    },
+    {
+      "file": "research/dynamics/volcano/raw/HS_H08_20220115_0530_B13_FLDK_R20_S0710.DAT.bz2",
+      "bytes": 3036625,
+      "sha256": "c66646ba423c7c7646bc72ac51f465ae8efe117aab7742e137e32f268c84242f"
+    },
+    {
+      "file": "research/dynamics/volcano/raw/HS_H08_20220115_0530_B13_FLDK_R20_S0810.DAT.bz2",
+      "bytes": 2820797,
+      "sha256": "36d70310374a7b3703c3a9d01f097c7c6143e45a54d643fe696235e7f7c1e61e"
+    },
+    {
+      "file": "research/dynamics/volcano/raw/HS_H08_20220115_0540_B13_FLDK_R20_S0710.DAT.bz2",
+      "bytes": 3034871,
+      "sha256": "00c612e88d8853cd7a7213127c60baf0912faa44f5d677cc2e6a44edac567467"
+    },
+    {
+      "file": "research/dynamics/volcano/raw/HS_H08_20220115_0540_B13_FLDK_R20_S0810.DAT.bz2",
+      "bytes": 2821890,
+      "sha256": "b5e49c69662ab454d0e1f18d2f29fe0637d4cd5fa5a3589db0cfa5644d5b4a63"
+    },
+    {
+      "file": "research/dynamics/volcano/raw/HS_H08_20220115_0550_B13_FLDK_R20_S0710.DAT.bz2",
+      "bytes": 3032586,
+      "sha256": "571685dd91dd74b72b3773675ac17025228a6549db1bb77b2a4f66758f30b115"
+    },
+    {
+      "file": "research/dynamics/volcano/raw/HS_H08_20220115_0550_B13_FLDK_R20_S0810.DAT.bz2",
+      "bytes": 2819461,
+      "sha256": "6df5fc7f15986ee8820d0a1542d9302c63a84f5095e252b7b74cb7c0312d3fb9"
+    },
+    {
+      "file": "research/dynamics/volcano/raw/HS_H08_20220115_0600_B13_FLDK_R20_S0710.DAT.bz2",
+      "bytes": 3030926,
+      "sha256": "c97ecdf2c0e81756faa12fbd1c502c4b489f21bf571867e50eb6f30b80b2a6b5"
+    },
+    {
+      "file": "research/dynamics/volcano/raw/HS_H08_20220115_0600_B13_FLDK_R20_S0810.DAT.bz2",
+      "bytes": 2819422,
+      "sha256": "e3b569952d396f45f035540ac9a734ace3ea42aabdb1aed8e87f732e3820bea6"
+    },
+    {
+      "file": "research/dynamics/volcano/raw/HS_H08_20220115_0610_B13_FLDK_R20_S0710.DAT.bz2",
+      "bytes": 3029531,
+      "sha256": "cb6794a80bbf7150d64718aa7be7bd4abe149c589813fcdaebfdeda5cea44ae3"
+    },
+    {
+      "file": "research/dynamics/volcano/raw/HS_H08_20220115_0610_B13_FLDK_R20_S0810.DAT.bz2",
+      "bytes": 2818177,
+      "sha256": "80acde14e96849b65a14a95162b22131a950c93320336777b211f959bd8b70a8"
+    },
+    {
+      "file": "research/dynamics/volcano/raw/HS_H08_20220115_0620_B13_FLDK_R20_S0710.DAT.bz2",
+      "bytes": 3025916,
+      "sha256": "db36ab599805e7bc1c2051703051557d8dd05f61b1e635e66beb1f39bb637266"
+    },
+    {
+      "file": "research/dynamics/volcano/raw/HS_H08_20220115_0620_B13_FLDK_R20_S0810.DAT.bz2",
+      "bytes": 2816950,
+      "sha256": "b69a50669c86ceed487f0a8b8e88de8ce5aac2043b9d13a663a332019fdaea7b"
+    },
+    {
+      "file": "research/dynamics/volcano/raw/HS_H08_20220115_0630_B13_FLDK_R20_S0710.DAT.bz2",
+      "bytes": 3020573,
+      "sha256": "e53d69dbb58a5db1731268e1979dec1a39fe49d88ed8be3e64dbfc7026894fcb"
+    },
+    {
+      "file": "research/dynamics/volcano/raw/HS_H08_20220115_0630_B13_FLDK_R20_S0810.DAT.bz2",
+      "bytes": 2816811,
+      "sha256": "3f81070b925ebb6fafca56d4e8ae173cc0e471d3b295e8f6c40c31a0195fa268"
+    },
+    {
+      "file": "research/dynamics/volcano/raw/HS_H08_20220115_0640_B13_FLDK_R20_S0710.DAT.bz2",
+      "bytes": 3018067,
+      "sha256": "6903c320b1d5c94667c3f8e19b35699fc1aad5855c21e50178c6365eb113e4ad"
+    },
+    {
+      "file": "research/dynamics/volcano/raw/HS_H08_20220115_0640_B13_FLDK_R20_S0810.DAT.bz2",
+      "bytes": 2810727,
+      "sha256": "b532ef88437c1d723fc7eae425adfc6bc55aec1588d0e29e18ee41c63da75cb2"
+    },
+    {
+      "file": "research/dynamics/volcano/raw/HS_H08_20220115_0650_B13_FLDK_R20_S0710.DAT.bz2",
+      "bytes": 3016906,
+      "sha256": "e45dfb330f93360a1351e086b375714a04c6906bf47279bcfd6eb9b670c9f696"
+    },
+    {
+      "file": "research/dynamics/volcano/raw/HS_H08_20220115_0650_B13_FLDK_R20_S0810.DAT.bz2",
+      "bytes": 2809982,
+      "sha256": "6f1e7bba0e7dd3283e542e99174bd77bbef3a15768f96bbc107c309a11c184c2"
+    },
+    {
+      "file": "research/dynamics/volcano/raw/HS_H08_20220115_0700_B13_FLDK_R20_S0710.DAT.bz2",
+      "bytes": 3013603,
+      "sha256": "ba4acdc1b3dd803e8766403d5686990f910fbaae940ec9b62360f4931ffb4e18"
+    },
+    {
+      "file": "research/dynamics/volcano/raw/HS_H08_20220115_0700_B13_FLDK_R20_S0810.DAT.bz2",
+      "bytes": 2804307,
+      "sha256": "f87977ebcf18629a50d28b8bedf78b53917f9ba886012019b2d10d5740e203e2"
+    },
+    {
+      "file": "research/dynamics/volcano/raw/HS_H08_20220115_0710_B13_FLDK_R20_S0710.DAT.bz2",
+      "bytes": 3006631,
+      "sha256": "ee6a4a02365bab461f5b92a969cca5dadf5e15d45b3e599a1a53e8c1dc166c39"
+    },
+    {
+      "file": "research/dynamics/volcano/raw/HS_H08_20220115_0710_B13_FLDK_R20_S0810.DAT.bz2",
+      "bytes": 2797574,
+      "sha256": "3ca2f6721237ecd49dfc34743767543b7fa790b40447b6359d00fc537d4e1415"
+    },
+    {
+      "file": "research/dynamics/volcano/raw/HS_H08_20220115_0720_B13_FLDK_R20_S0710.DAT.bz2",
+      "bytes": 3003431,
+      "sha256": "7c36ff55d9725b4babcc0d614b540a45500c0b31819ccc0c0037d911f7885740"
+    },
+    {
+      "file": "research/dynamics/volcano/raw/HS_H08_20220115_0720_B13_FLDK_R20_S0810.DAT.bz2",
+      "bytes": 2790737,
+      "sha256": "ed62dffd3368e3f25e679de5e666e07144875b1c57804fb0b6b89af32b771e7c"
+    },
+    {
+      "file": "research/dynamics/volcano/raw/HS_H08_20220115_0730_B13_FLDK_R20_S0710.DAT.bz2",
+      "bytes": 2999995,
+      "sha256": "4e8c1bd053590b523c1ea2cbf74b657c92dee4408ce8c857f79c32c3d5393e37"
+    },
+    {
+      "file": "research/dynamics/volcano/raw/HS_H08_20220115_0730_B13_FLDK_R20_S0810.DAT.bz2",
+      "bytes": 2784452,
+      "sha256": "b269daedd57aa7c42b0e4a3e19549722f20f660b160e979d8b87ac6db12a51ea"
+    },
+    {
+      "file": "research/dynamics/volcano/raw/HS_H08_20220115_0740_B13_FLDK_R20_S0710.DAT.bz2",
+      "bytes": 3000368,
+      "sha256": "96521634a2bc83b39614e6980c8a113d8a34f499f7af6e63861fd8cbac0becf9"
+    },
+    {
+      "file": "research/dynamics/volcano/raw/HS_H08_20220115_0740_B13_FLDK_R20_S0810.DAT.bz2",
+      "bytes": 2776780,
+      "sha256": "65add423914f3add55e50024d0afae8c9ff41a3cba79b508220f6e794a556e15"
+    },
+    {
+      "file": "research/dynamics/volcano/raw/HS_H08_20220115_0750_B13_FLDK_R20_S0710.DAT.bz2",
+      "bytes": 2993395,
+      "sha256": "1e0f7b7a83be05f8f631c27912e4e3bffaff33d3d3e59692810c2240275ae68f"
+    },
+    {
+      "file": "research/dynamics/volcano/raw/HS_H08_20220115_0750_B13_FLDK_R20_S0810.DAT.bz2",
+      "bytes": 2765932,
+      "sha256": "c3a388671ca2146538625ac5d6dbac18b7c592b8e9f5b8e03198dc006e11cd77"
+    },
+    {
+      "file": "research/dynamics/volcano/s3-20220115T03-list.xml",
+      "bytes": 275278,
+      "sha256": "09cbbb036fe5ff17df2ceba2a4a443a6446e9f2cad18e50bfcf0f91b01602928"
+    },
+    {
+      "file": "research/dynamics/volcano/s3-20220115T04-list.xml",
+      "bytes": 275252,
+      "sha256": "c5f5d1292074f2c216fcf1b2b577e276f42d71961eefa4ff9c22604a52e0e7c4"
+    },
+    {
+      "file": "research/dynamics/volcano/s3-20220115T0420-list.xml",
+      "bytes": 46105,
+      "sha256": "7c8e3fd336a1fa425bea7c1c048c8d44ecc064de3126eaa68b6616d97bb20bb2"
+    },
+    {
+      "file": "research/dynamics/volcano/s3-20220115T05-list.xml",
+      "bytes": 275209,
+      "sha256": "d37d631eb07393fd779ca985859fc404e7c0f64d36ae917fcccde3072af41a20"
+    },
+    {
+      "file": "research/dynamics/volcano/s3-20220115T06-list.xml",
+      "bytes": 275116,
+      "sha256": "09bc03a8f967d899560c6066ff70d9916b7637024c8dafe3fe99e47f37e83833"
+    },
+    {
+      "file": "research/dynamics/volcano/s3-20220115T07-list.xml",
+      "bytes": 274992,
+      "sha256": "4f57a0b6f260e2d1f3b5a9bc66c8a7852f22688644d55270ecffd08d3ab430f1"
+    },
+    {
+      "file": "research/dynamics/volcano/source-notes.json",
+      "bytes": 5850,
+      "sha256": "8a8b3a2e1b42b204836a8ce8e3edb40c4df596c73045e2ef04ed2cca32aefe74"
+    },
+    {
+      "file": "research/dynamics/volcano/validation-report.json",
+      "bytes": 1427,
+      "sha256": "d0b7094216e7b116cf5487a7d6a0f36c84acf73588bd74d8537d67e48ab6a58d"
+    },
+    {
+      "file": "research/dynamics/volcano/verify_volcano.py",
+      "bytes": 7718,
+      "sha256": "eed60206b7ae26bdd8a054baa1eb8bbb341973b18bd6099fdb4b8b18d30d1503"
+    },
+    {
+      "file": "scripts/check-dynamics.mjs",
+      "bytes": 2634,
+      "sha256": "1ceb85714428b26ccad0ec5abefe76a4b0c5fcd08a7bdf36f6153636132c056c"
+    },
+    {
+      "file": "scripts/check.mjs",
+      "bytes": 12652,
+      "sha256": "20c911847cdca7016601924846de8d43c6db1ec54ca5b9931d090448bb51361f"
+    },
+    {
+      "file": "tests/dynamic-data.test.mjs",
+      "bytes": 5866,
+      "sha256": "f7c6804b7d9cda1db7918b74ff3ab2034ccbcc22346d8d58c2d0b0dc2d9f5230"
+    },
+    {
+      "file": "tests/dynamic-player.test.mjs",
+      "bytes": 6977,
+      "sha256": "3384658179db8cfecf8cd34530b50839fda2148c0fec201fb5535f5a4ce82d7b"
+    },
+    {
+      "file": "tests/dynamic-waveform.test.mjs",
+      "bytes": 6090,
+      "sha256": "bd184b6c0a7fe958eb43c935eb97253242703a833cfaf8ba8f363a8e6556b652"
+    },
+    {
+      "file": "tests/earth-event-layer.test.mjs",
+      "bytes": 15646,
+      "sha256": "dc5ac48477f76cfc38da17fef868d35170b8eb0d9b453a99012173afb1e263ae"
+    }
+  ],
+  "mangkhutBundlesUnchanged": {
+    "app/data/mangkhut-synchronized.json": "f6a7695c3281013ba257bc167453126234ca7ef3ffeebf26267129870e68dccc",
+    "app/data/mangkhut-cloud-changes.json": "83ba0dd5d420e8986a7933b1f23573f583864ef3ca01f2f4d2d714294c2a88b8",
+    "app/data/mangkhut-jma.json": "52551511a07386d7a016ee89ce5f55faf3e720a37c8df4e6d1114e66fb478c49",
+    "app/data/imagery-manifest.json": "c7680c81c2a5949d23ded34f90d89f603228ddf3d439427f65725b385f7bffd9"
+  },
+  "totalBytes": 392095634,
+  "scope": "Only v13 files in project 015; original raw observations and numerical evidence included. No deletion.",
+  "finalVerificationUtc": "2026-11-04T15:14:16.065352+00:00",
+  "screenshots": [
+    {
+      "file": "assets/images/dynamic-volcano-before-v13.png",
+      "sha256": "f6296aed5a50911156626fd8a09174d8928427b4ed8e4bbaf9aa771e1574fec8"
+    },
+    {
+      "file": "assets/images/dynamic-volcano-v13.png",
+      "sha256": "dd71f1d7acd108bc18495b5650a9060f3a777541005083918a5d0af51ba8a5d6"
+    },
+    {
+      "file": "assets/images/dynamic-globe-v13.png",
+      "sha256": "bed69f4f54bee000cbefe9677fd78aeae76b722e14362a366fd772e98448aa69"
+    },
+    {
+      "file": "assets/images/dynamic-quake-v13.png",
+      "sha256": "13eed6f4b08c1bbeb8a0db1245caa6b4080a6f781892018c9e3a88abf459f947"
+    },
+    {
+      "file": "assets/images/dynamic-storm-v13.png",
+      "sha256": "d3223863d0d9f93fe94ee1692dfb0367c14aa2eafdf6a9b33dcfe6d7e4dd7410"
+    },
+    {
+      "file": "assets/images/dynamic-mobile-v13.png",
+      "sha256": "b9efe34480d133f3237b3c326f716563180dac5c5cecf43757c38b3ed2df9633"
+    },
+    {
+      "file": "assets/images/mangkhut-retained-v13.png",
+      "sha256": "2bdaadf4db821a826bfbd31684f2b80b3708de7601585f5f12102662051f1eba"
+    }
+  ]
+}

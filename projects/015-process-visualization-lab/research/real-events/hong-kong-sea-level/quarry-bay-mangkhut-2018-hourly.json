@@ -1,0 +1,2572 @@
+{
+  "schemaVersion": 1,
+  "eventId": "jma-1822",
+  "kind": "observed-station-sea-level",
+  "station": {
+    "id": "hko-QUB",
+    "name": "鲗鱼涌",
+    "nameEn": "Quarry Bay",
+    "uhslcId": 329,
+    "seriesVersion": "B",
+    "lat": 22.291111111111114,
+    "lon": 114.21333333333334,
+    "coordinateSource": "https://www.hko.gov.hk/en/cis/stn.htm",
+    "coordinateSourceValue": "Tide Gauges: Quarry Bay (QUB), 22°17′28″N 114°12′48″E",
+    "coordinateNote": "HKO tide-gauge location; not the product's generic Hong Kong reference point. Older UHSLC/GLOSS catalogs contain coarser legacy coordinates."
+  },
+  "measurement": {
+    "quantity": "relative_sea_level",
+    "displayLabel": "鲗鱼涌整点观测海水位",
+    "classification": "quality-controlled-in-situ-observations",
+    "unit": "m",
+    "sourceUnit": "mm",
+    "sampleIntervalMinutes": 60,
+    "aggregation": "The one-minute average on the hour, according to station QA metadata; not a whole-hour average.",
+    "aggregationZh": "整点 1 分钟平均，每小时一条；不是整小时平均。",
+    "verticalDatum": {
+      "sourceName": "station zero",
+      "displayLabel": "UHSLC 站点零点",
+      "displayUnit": "m · UHSLC站点零点",
+      "source": "https://uhslc.soest.hawaii.edu/erddap/info/global_hourly_rqds/index.html",
+      "confirmedBy": "The downloaded same-station, same-version ERDDAP subset explicitly reports reference_datum=station zero.",
+      "chartDatumConversionApplied": false,
+      "historicalContext": "GLOSS station 077 handbook (last updated 1997-12-04) says TGZ equals Admiralty Chart Datum. This is historical station metadata, not a verified 2018 series-specific datum conversion. No datum shift or relabeling to CD is applied.",
+      "historicalContextSource": "https://www.bodc.ac.uk/resources/inventories/gloss_handbook/stations/77/"
+    },
+    "not": [
+      "astronomical tide prediction",
+      "storm-surge residual",
+      "wave height",
+      "inundation depth",
+      "sea level above mean sea level"
+    ]
+  },
+  "time": {
+    "sourceZone": "GMT/UTC",
+    "displayZone": "Asia/Hong_Kong",
+    "displayOffset": "+08:00",
+    "startTimeUtc": "2018-09-06T12:00:00Z",
+    "endTimeUtc": "2018-09-17T18:00:00Z",
+    "endInclusive": true,
+    "selection": "Hourly observations covering the complete 46-record JMA Mangkhut track already used by the app.",
+    "priorityWindow": {
+      "startTimeHkt": "2018-09-15T00:00:00+08:00",
+      "endTimeHktExclusive": "2018-09-18T00:00:00+08:00",
+      "recordCount": 72
+    }
+  },
+  "source": {
+    "agency": "University of Hawaii Sea Level Center / Joint Archive for Sea Level",
+    "originator": "Hong Kong Observatory",
+    "dataProduct": "Research Quality Data Set; station 329, version B",
+    "downloadUrl": "https://uhslc.soest.hawaii.edu/data/csv/rqds/pacific/hourly/h329b.csv",
+    "localOriginal": "uhslc-h329b.csv",
+    "sha256": "b9677903cbe7fc7904dcb800ab8265790267d2b596623ffb4325890c262047cc",
+    "bytes": 5936146,
+    "downloadedFileModifiedAtUtc": "2026-11-04T12:21:36Z",
+    "verifiedAtUtc": "2026-11-04T12:30:19Z",
+    "qaUrl": "https://uhslc.soest.hawaii.edu/rqds/pacific/doc/qa329b.dmt",
+    "localQa": "uhslc-qa329b.dmt",
+    "qaMetadataUpdated": "2019-08-09",
+    "qaSha256": "52060c630310cf26a45c073952235c009fb9c7b50aed9cb9859851efcf477e66",
+    "dataInfoUrl": "https://uhslc.soest.hawaii.edu/datainfo/",
+    "citation": "Caldwell, P. C., M. A. Merrifield, P. R. Thompson (2015), Sea level measured by tide gauges from global oceans — the Joint Archive for Sea Level holdings (NCEI Accession 0019568), Version 5.5, NOAA NCEI.",
+    "doi": "https://doi.org/10.7289/V5V40S7W",
+    "reuse": "The ERDDAP dataset metadata permits free use and redistribution with acknowledgement. Cite UHSLC/JASL, HKO originator, and the DOI. Metadata says not intended for legal use.",
+    "extraction": "Selected original hourly rows, preserved integer millimeters and 1-based source line; added UTC/HKT timestamps and meters by division by 1000. No interpolation, smoothing, model values, datum shift, or peak insertion.",
+    "missingPolicy": "Source flags 9999 and -9999 become null; no time or value is fabricated. Missing timestamps would fail extraction validation.",
+    "perRecordQuality": "The primary legacy CSV contains no per-record QC column; no QC code has been invented for it. This is the official Research Quality series."
+  },
+  "records": [
+    {
+      "timeUtc": "2018-09-06T12:00:00Z",
+      "timeHkt": "2018-09-06T20:00:00+08:00",
+      "seaLevelMm": 1440,
+      "seaLevelM": 1.44,
+      "status": "reported",
+      "sourceLine": 286477,
+      "sourceValueToken": "1440"
+    },
+    {
+      "timeUtc": "2018-09-06T13:00:00Z",
+      "timeHkt": "2018-09-06T21:00:00+08:00",
+      "seaLevelMm": 1390,
+      "seaLevelM": 1.39,
+      "status": "reported",
+      "sourceLine": 286478,
+      "sourceValueToken": "1390"
+    },
+    {
+      "timeUtc": "2018-09-06T14:00:00Z",
+      "timeHkt": "2018-09-06T22:00:00+08:00",
+      "seaLevelMm": 1290,
+      "seaLevelM": 1.29,
+      "status": "reported",
+      "sourceLine": 286479,
+      "sourceValueToken": "1290"
+    },
+    {
+      "timeUtc": "2018-09-06T15:00:00Z",
+      "timeHkt": "2018-09-06T23:00:00+08:00",
+      "seaLevelMm": 1280,
+      "seaLevelM": 1.28,
+      "status": "reported",
+      "sourceLine": 286480,
+      "sourceValueToken": "1280"
+    },
+    {
+      "timeUtc": "2018-09-06T16:00:00Z",
+      "timeHkt": "2018-09-07T00:00:00+08:00",
+      "seaLevelMm": 1420,
+      "seaLevelM": 1.42,
+      "status": "reported",
+      "sourceLine": 286481,
+      "sourceValueToken": "1420"
+    },
+    {
+      "timeUtc": "2018-09-06T17:00:00Z",
+      "timeHkt": "2018-09-07T01:00:00+08:00",
+      "seaLevelMm": 1620,
+      "seaLevelM": 1.62,
+      "status": "reported",
+      "sourceLine": 286482,
+      "sourceValueToken": "1620"
+    },
+    {
+      "timeUtc": "2018-09-06T18:00:00Z",
+      "timeHkt": "2018-09-07T02:00:00+08:00",
+      "seaLevelMm": 1890,
+      "seaLevelM": 1.89,
+      "status": "reported",
+      "sourceLine": 286483,
+      "sourceValueToken": "1890"
+    },
+    {
+      "timeUtc": "2018-09-06T19:00:00Z",
+      "timeHkt": "2018-09-07T03:00:00+08:00",
+      "seaLevelMm": 2060,
+      "seaLevelM": 2.06,
+      "status": "reported",
+      "sourceLine": 286484,
+      "sourceValueToken": "2060"
+    },
+    {
+      "timeUtc": "2018-09-06T20:00:00Z",
+      "timeHkt": "2018-09-07T04:00:00+08:00",
+      "seaLevelMm": 2140,
+      "seaLevelM": 2.14,
+      "status": "reported",
+      "sourceLine": 286485,
+      "sourceValueToken": "2140"
+    },
+    {
+      "timeUtc": "2018-09-06T21:00:00Z",
+      "timeHkt": "2018-09-07T05:00:00+08:00",
+      "seaLevelMm": 2270,
+      "seaLevelM": 2.27,
+      "status": "reported",
+      "sourceLine": 286486,
+      "sourceValueToken": "2270"
+    },
+    {
+      "timeUtc": "2018-09-06T22:00:00Z",
+      "timeHkt": "2018-09-07T06:00:00+08:00",
+      "seaLevelMm": 2270,
+      "seaLevelM": 2.27,
+      "status": "reported",
+      "sourceLine": 286487,
+      "sourceValueToken": "2270"
+    },
+    {
+      "timeUtc": "2018-09-06T23:00:00Z",
+      "timeHkt": "2018-09-07T07:00:00+08:00",
+      "seaLevelMm": 2180,
+      "seaLevelM": 2.18,
+      "status": "reported",
+      "sourceLine": 286488,
+      "sourceValueToken": "2180"
+    },
+    {
+      "timeUtc": "2018-09-07T00:00:00Z",
+      "timeHkt": "2018-09-07T08:00:00+08:00",
+      "seaLevelMm": 1950,
+      "seaLevelM": 1.95,
+      "status": "reported",
+      "sourceLine": 286489,
+      "sourceValueToken": "1950"
+    },
+    {
+      "timeUtc": "2018-09-07T01:00:00Z",
+      "timeHkt": "2018-09-07T09:00:00+08:00",
+      "seaLevelMm": 1560,
+      "seaLevelM": 1.56,
+      "status": "reported",
+      "sourceLine": 286490,
+      "sourceValueToken": "1560"
+    },
+    {
+      "timeUtc": "2018-09-07T02:00:00Z",
+      "timeHkt": "2018-09-07T10:00:00+08:00",
+      "seaLevelMm": 1140,
+      "seaLevelM": 1.14,
+      "status": "reported",
+      "sourceLine": 286491,
+      "sourceValueToken": "1140"
+    },
+    {
+      "timeUtc": "2018-09-07T03:00:00Z",
+      "timeHkt": "2018-09-07T11:00:00+08:00",
+      "seaLevelMm": 740,
+      "seaLevelM": 0.74,
+      "status": "reported",
+      "sourceLine": 286492,
+      "sourceValueToken": "740"
+    },
+    {
+      "timeUtc": "2018-09-07T04:00:00Z",
+      "timeHkt": "2018-09-07T12:00:00+08:00",
+      "seaLevelMm": 480,
+      "seaLevelM": 0.48,
+      "status": "reported",
+      "sourceLine": 286493,
+      "sourceValueToken": "480"
+    },
+    {
+      "timeUtc": "2018-09-07T05:00:00Z",
+      "timeHkt": "2018-09-07T13:00:00+08:00",
+      "seaLevelMm": 400,
+      "seaLevelM": 0.4,
+      "status": "reported",
+      "sourceLine": 286494,
+      "sourceValueToken": "400"
+    },
+    {
+      "timeUtc": "2018-09-07T06:00:00Z",
+      "timeHkt": "2018-09-07T14:00:00+08:00",
+      "seaLevelMm": 520,
+      "seaLevelM": 0.52,
+      "status": "reported",
+      "sourceLine": 286495,
+      "sourceValueToken": "520"
+    },
+    {
+      "timeUtc": "2018-09-07T07:00:00Z",
+      "timeHkt": "2018-09-07T15:00:00+08:00",
+      "seaLevelMm": 740,
+      "seaLevelM": 0.74,
+      "status": "reported",
+      "sourceLine": 286496,
+      "sourceValueToken": "740"
+    },
+    {
+      "timeUtc": "2018-09-07T08:00:00Z",
+      "timeHkt": "2018-09-07T16:00:00+08:00",
+      "seaLevelMm": 940,
+      "seaLevelM": 0.94,
+      "status": "reported",
+      "sourceLine": 286497,
+      "sourceValueToken": "940"
+    },
+    {
+      "timeUtc": "2018-09-07T09:00:00Z",
+      "timeHkt": "2018-09-07T17:00:00+08:00",
+      "seaLevelMm": 1160,
+      "seaLevelM": 1.16,
+      "status": "reported",
+      "sourceLine": 286498,
+      "sourceValueToken": "1160"
+    },
+    {
+      "timeUtc": "2018-09-07T10:00:00Z",
+      "timeHkt": "2018-09-07T18:00:00+08:00",
+      "seaLevelMm": 1340,
+      "seaLevelM": 1.34,
+      "status": "reported",
+      "sourceLine": 286499,
+      "sourceValueToken": "1340"
+    },
+    {
+      "timeUtc": "2018-09-07T11:00:00Z",
+      "timeHkt": "2018-09-07T19:00:00+08:00",
+      "seaLevelMm": 1480,
+      "seaLevelM": 1.48,
+      "status": "reported",
+      "sourceLine": 286500,
+      "sourceValueToken": "1480"
+    },
+    {
+      "timeUtc": "2018-09-07T12:00:00Z",
+      "timeHkt": "2018-09-07T20:00:00+08:00",
+      "seaLevelMm": 1580,
+      "seaLevelM": 1.58,
+      "status": "reported",
+      "sourceLine": 286501,
+      "sourceValueToken": "1580"
+    },
+    {
+      "timeUtc": "2018-09-07T13:00:00Z",
+      "timeHkt": "2018-09-07T21:00:00+08:00",
+      "seaLevelMm": 1530,
+      "seaLevelM": 1.53,
+      "status": "reported",
+      "sourceLine": 286502,
+      "sourceValueToken": "1530"
+    },
+    {
+      "timeUtc": "2018-09-07T14:00:00Z",
+      "timeHkt": "2018-09-07T22:00:00+08:00",
+      "seaLevelMm": 1390,
+      "seaLevelM": 1.39,
+      "status": "reported",
+      "sourceLine": 286503,
+      "sourceValueToken": "1390"
+    },
+    {
+      "timeUtc": "2018-09-07T15:00:00Z",
+      "timeHkt": "2018-09-07T23:00:00+08:00",
+      "seaLevelMm": 1270,
+      "seaLevelM": 1.27,
+      "status": "reported",
+      "sourceLine": 286504,
+      "sourceValueToken": "1270"
+    },
+    {
+      "timeUtc": "2018-09-07T16:00:00Z",
+      "timeHkt": "2018-09-08T00:00:00+08:00",
+      "seaLevelMm": 1220,
+      "seaLevelM": 1.22,
+      "status": "reported",
+      "sourceLine": 286505,
+      "sourceValueToken": "1220"
+    },
+    {
+      "timeUtc": "2018-09-07T17:00:00Z",
+      "timeHkt": "2018-09-08T01:00:00+08:00",
+      "seaLevelMm": 1370,
+      "seaLevelM": 1.37,
+      "status": "reported",
+      "sourceLine": 286506,
+      "sourceValueToken": "1370"
+    },
+    {
+      "timeUtc": "2018-09-07T18:00:00Z",
+      "timeHkt": "2018-09-08T02:00:00+08:00",
+      "seaLevelMm": 1620,
+      "seaLevelM": 1.62,
+      "status": "reported",
+      "sourceLine": 286507,
+      "sourceValueToken": "1620"
+    },
+    {
+      "timeUtc": "2018-09-07T19:00:00Z",
+      "timeHkt": "2018-09-08T03:00:00+08:00",
+      "seaLevelMm": 1890,
+      "seaLevelM": 1.89,
+      "status": "reported",
+      "sourceLine": 286508,
+      "sourceValueToken": "1890"
+    },
+    {
+      "timeUtc": "2018-09-07T20:00:00Z",
+      "timeHkt": "2018-09-08T04:00:00+08:00",
+      "seaLevelMm": 2190,
+      "seaLevelM": 2.19,
+      "status": "reported",
+      "sourceLine": 286509,
+      "sourceValueToken": "2190"
+    },
+    {
+      "timeUtc": "2018-09-07T21:00:00Z",
+      "timeHkt": "2018-09-08T05:00:00+08:00",
+      "seaLevelMm": 2240,
+      "seaLevelM": 2.24,
+      "status": "reported",
+      "sourceLine": 286510,
+      "sourceValueToken": "2240"
+    },
+    {
+      "timeUtc": "2018-09-07T22:00:00Z",
+      "timeHkt": "2018-09-08T06:00:00+08:00",
+      "seaLevelMm": 2300,
+      "seaLevelM": 2.3,
+      "status": "reported",
+      "sourceLine": 286511,
+      "sourceValueToken": "2300"
+    },
+    {
+      "timeUtc": "2018-09-07T23:00:00Z",
+      "timeHkt": "2018-09-08T07:00:00+08:00",
+      "seaLevelMm": 2420,
+      "seaLevelM": 2.42,
+      "status": "reported",
+      "sourceLine": 286512,
+      "sourceValueToken": "2420"
+    },
+    {
+      "timeUtc": "2018-09-08T00:00:00Z",
+      "timeHkt": "2018-09-08T08:00:00+08:00",
+      "seaLevelMm": 2280,
+      "seaLevelM": 2.28,
+      "status": "reported",
+      "sourceLine": 286513,
+      "sourceValueToken": "2280"
+    },
+    {
+      "timeUtc": "2018-09-08T01:00:00Z",
+      "timeHkt": "2018-09-08T09:00:00+08:00",
+      "seaLevelMm": 2000,
+      "seaLevelM": 2.0,
+      "status": "reported",
+      "sourceLine": 286514,
+      "sourceValueToken": "2000"
+    },
+    {
+      "timeUtc": "2018-09-08T02:00:00Z",
+      "timeHkt": "2018-09-08T10:00:00+08:00",
+      "seaLevelMm": 1540,
+      "seaLevelM": 1.54,
+      "status": "reported",
+      "sourceLine": 286515,
+      "sourceValueToken": "1540"
+    },
+    {
+      "timeUtc": "2018-09-08T03:00:00Z",
+      "timeHkt": "2018-09-08T11:00:00+08:00",
+      "seaLevelMm": 1100,
+      "seaLevelM": 1.1,
+      "status": "reported",
+      "sourceLine": 286516,
+      "sourceValueToken": "1100"
+    },
+    {
+      "timeUtc": "2018-09-08T04:00:00Z",
+      "timeHkt": "2018-09-08T12:00:00+08:00",
+      "seaLevelMm": 710,
+      "seaLevelM": 0.71,
+      "status": "reported",
+      "sourceLine": 286517,
+      "sourceValueToken": "710"
+    },
+    {
+      "timeUtc": "2018-09-08T05:00:00Z",
+      "timeHkt": "2018-09-08T13:00:00+08:00",
+      "seaLevelMm": 420,
+      "seaLevelM": 0.42,
+      "status": "reported",
+      "sourceLine": 286518,
+      "sourceValueToken": "420"
+    },
+    {
+      "timeUtc": "2018-09-08T06:00:00Z",
+      "timeHkt": "2018-09-08T14:00:00+08:00",
+      "seaLevelMm": 370,
+      "seaLevelM": 0.37,
+      "status": "reported",
+      "sourceLine": 286519,
+      "sourceValueToken": "370"
+    },
+    {
+      "timeUtc": "2018-09-08T07:00:00Z",
+      "timeHkt": "2018-09-08T15:00:00+08:00",
+      "seaLevelMm": 570,
+      "seaLevelM": 0.57,
+      "status": "reported",
+      "sourceLine": 286520,
+      "sourceValueToken": "570"
+    },
+    {
+      "timeUtc": "2018-09-08T08:00:00Z",
+      "timeHkt": "2018-09-08T16:00:00+08:00",
+      "seaLevelMm": 850,
+      "seaLevelM": 0.85,
+      "status": "reported",
+      "sourceLine": 286521,
+      "sourceValueToken": "850"
+    },
+    {
+      "timeUtc": "2018-09-08T09:00:00Z",
+      "timeHkt": "2018-09-08T17:00:00+08:00",
+      "seaLevelMm": 1090,
+      "seaLevelM": 1.09,
+      "status": "reported",
+      "sourceLine": 286522,
+      "sourceValueToken": "1090"
+    },
+    {
+      "timeUtc": "2018-09-08T10:00:00Z",
+      "timeHkt": "2018-09-08T18:00:00+08:00",
+      "seaLevelMm": 1340,
+      "seaLevelM": 1.34,
+      "status": "reported",
+      "sourceLine": 286523,
+      "sourceValueToken": "1340"
+    },
+    {
+      "timeUtc": "2018-09-08T11:00:00Z",
+      "timeHkt": "2018-09-08T19:00:00+08:00",
+      "seaLevelMm": 1530,
+      "seaLevelM": 1.53,
+      "status": "reported",
+      "sourceLine": 286524,
+      "sourceValueToken": "1530"
+    },
+    {
+      "timeUtc": "2018-09-08T12:00:00Z",
+      "timeHkt": "2018-09-08T20:00:00+08:00",
+      "seaLevelMm": 1690,
+      "seaLevelM": 1.69,
+      "status": "reported",
+      "sourceLine": 286525,
+      "sourceValueToken": "1690"
+    },
+    {
+      "timeUtc": "2018-09-08T13:00:00Z",
+      "timeHkt": "2018-09-08T21:00:00+08:00",
+      "seaLevelMm": 1660,
+      "seaLevelM": 1.66,
+      "status": "reported",
+      "sourceLine": 286526,
+      "sourceValueToken": "1660"
+    },
+    {
+      "timeUtc": "2018-09-08T14:00:00Z",
+      "timeHkt": "2018-09-08T22:00:00+08:00",
+      "seaLevelMm": 1490,
+      "seaLevelM": 1.49,
+      "status": "reported",
+      "sourceLine": 286527,
+      "sourceValueToken": "1490"
+    },
+    {
+      "timeUtc": "2018-09-08T15:00:00Z",
+      "timeHkt": "2018-09-08T23:00:00+08:00",
+      "seaLevelMm": 1370,
+      "seaLevelM": 1.37,
+      "status": "reported",
+      "sourceLine": 286528,
+      "sourceValueToken": "1370"
+    },
+    {
+      "timeUtc": "2018-09-08T16:00:00Z",
+      "timeHkt": "2018-09-09T00:00:00+08:00",
+      "seaLevelMm": 1250,
+      "seaLevelM": 1.25,
+      "status": "reported",
+      "sourceLine": 286529,
+      "sourceValueToken": "1250"
+    },
+    {
+      "timeUtc": "2018-09-08T17:00:00Z",
+      "timeHkt": "2018-09-09T01:00:00+08:00",
+      "seaLevelMm": 1240,
+      "seaLevelM": 1.24,
+      "status": "reported",
+      "sourceLine": 286530,
+      "sourceValueToken": "1240"
+    },
+    {
+      "timeUtc": "2018-09-08T18:00:00Z",
+      "timeHkt": "2018-09-09T02:00:00+08:00",
+      "seaLevelMm": 1430,
+      "seaLevelM": 1.43,
+      "status": "reported",
+      "sourceLine": 286531,
+      "sourceValueToken": "1430"
+    },
+    {
+      "timeUtc": "2018-09-08T19:00:00Z",
+      "timeHkt": "2018-09-09T03:00:00+08:00",
+      "seaLevelMm": 1700,
+      "seaLevelM": 1.7,
+      "status": "reported",
+      "sourceLine": 286532,
+      "sourceValueToken": "1700"
+    },
+    {
+      "timeUtc": "2018-09-08T20:00:00Z",
+      "timeHkt": "2018-09-09T04:00:00+08:00",
+      "seaLevelMm": 1940,
+      "seaLevelM": 1.94,
+      "status": "reported",
+      "sourceLine": 286533,
+      "sourceValueToken": "1940"
+    },
+    {
+      "timeUtc": "2018-09-08T21:00:00Z",
+      "timeHkt": "2018-09-09T05:00:00+08:00",
+      "seaLevelMm": 2170,
+      "seaLevelM": 2.17,
+      "status": "reported",
+      "sourceLine": 286534,
+      "sourceValueToken": "2170"
+    },
+    {
+      "timeUtc": "2018-09-08T22:00:00Z",
+      "timeHkt": "2018-09-09T06:00:00+08:00",
+      "seaLevelMm": 2300,
+      "seaLevelM": 2.3,
+      "status": "reported",
+      "sourceLine": 286535,
+      "sourceValueToken": "2300"
+    },
+    {
+      "timeUtc": "2018-09-08T23:00:00Z",
+      "timeHkt": "2018-09-09T07:00:00+08:00",
+      "seaLevelMm": 2530,
+      "seaLevelM": 2.53,
+      "status": "reported",
+      "sourceLine": 286536,
+      "sourceValueToken": "2530"
+    },
+    {
+      "timeUtc": "2018-09-09T00:00:00Z",
+      "timeHkt": "2018-09-09T08:00:00+08:00",
+      "seaLevelMm": 2620,
+      "seaLevelM": 2.62,
+      "status": "reported",
+      "sourceLine": 286537,
+      "sourceValueToken": "2620"
+    },
+    {
+      "timeUtc": "2018-09-09T01:00:00Z",
+      "timeHkt": "2018-09-09T09:00:00+08:00",
+      "seaLevelMm": 2470,
+      "seaLevelM": 2.47,
+      "status": "reported",
+      "sourceLine": 286538,
+      "sourceValueToken": "2470"
+    },
+    {
+      "timeUtc": "2018-09-09T02:00:00Z",
+      "timeHkt": "2018-09-09T10:00:00+08:00",
+      "seaLevelMm": 2130,
+      "seaLevelM": 2.13,
+      "status": "reported",
+      "sourceLine": 286539,
+      "sourceValueToken": "2130"
+    },
+    {
+      "timeUtc": "2018-09-09T03:00:00Z",
+      "timeHkt": "2018-09-09T11:00:00+08:00",
+      "seaLevelMm": 1570,
+      "seaLevelM": 1.57,
+      "status": "reported",
+      "sourceLine": 286540,
+      "sourceValueToken": "1570"
+    },
+    {
+      "timeUtc": "2018-09-09T04:00:00Z",
+      "timeHkt": "2018-09-09T12:00:00+08:00",
+      "seaLevelMm": 1100,
+      "seaLevelM": 1.1,
+      "status": "reported",
+      "sourceLine": 286541,
+      "sourceValueToken": "1100"
+    },
+    {
+      "timeUtc": "2018-09-09T05:00:00Z",
+      "timeHkt": "2018-09-09T13:00:00+08:00",
+      "seaLevelMm": 710,
+      "seaLevelM": 0.71,
+      "status": "reported",
+      "sourceLine": 286542,
+      "sourceValueToken": "710"
+    },
+    {
+      "timeUtc": "2018-09-09T06:00:00Z",
+      "timeHkt": "2018-09-09T14:00:00+08:00",
+      "seaLevelMm": 610,
+      "seaLevelM": 0.61,
+      "status": "reported",
+      "sourceLine": 286543,
+      "sourceValueToken": "610"
+    },
+    {
+      "timeUtc": "2018-09-09T07:00:00Z",
+      "timeHkt": "2018-09-09T15:00:00+08:00",
+      "seaLevelMm": 650,
+      "seaLevelM": 0.65,
+      "status": "reported",
+      "sourceLine": 286544,
+      "sourceValueToken": "650"
+    },
+    {
+      "timeUtc": "2018-09-09T08:00:00Z",
+      "timeHkt": "2018-09-09T16:00:00+08:00",
+      "seaLevelMm": 880,
+      "seaLevelM": 0.88,
+      "status": "reported",
+      "sourceLine": 286545,
+      "sourceValueToken": "880"
+    },
+    {
+      "timeUtc": "2018-09-09T09:00:00Z",
+      "timeHkt": "2018-09-09T17:00:00+08:00",
+      "seaLevelMm": 1150,
+      "seaLevelM": 1.15,
+      "status": "reported",
+      "sourceLine": 286546,
+      "sourceValueToken": "1150"
+    },
+    {
+      "timeUtc": "2018-09-09T10:00:00Z",
+      "timeHkt": "2018-09-09T18:00:00+08:00",
+      "seaLevelMm": 1400,
+      "seaLevelM": 1.4,
+      "status": "reported",
+      "sourceLine": 286547,
+      "sourceValueToken": "1400"
+    },
+    {
+      "timeUtc": "2018-09-09T11:00:00Z",
+      "timeHkt": "2018-09-09T19:00:00+08:00",
+      "seaLevelMm": 1670,
+      "seaLevelM": 1.67,
+      "status": "reported",
+      "sourceLine": 286548,
+      "sourceValueToken": "1670"
+    },
+    {
+      "timeUtc": "2018-09-09T12:00:00Z",
+      "timeHkt": "2018-09-09T20:00:00+08:00",
+      "seaLevelMm": 1940,
+      "seaLevelM": 1.94,
+      "status": "reported",
+      "sourceLine": 286549,
+      "sourceValueToken": "1940"
+    },
+    {
+      "timeUtc": "2018-09-09T13:00:00Z",
+      "timeHkt": "2018-09-09T21:00:00+08:00",
+      "seaLevelMm": 2070,
+      "seaLevelM": 2.07,
+      "status": "reported",
+      "sourceLine": 286550,
+      "sourceValueToken": "2070"
+    },
+    {
+      "timeUtc": "2018-09-09T14:00:00Z",
+      "timeHkt": "2018-09-09T22:00:00+08:00",
+      "seaLevelMm": 1920,
+      "seaLevelM": 1.92,
+      "status": "reported",
+      "sourceLine": 286551,
+      "sourceValueToken": "1920"
+    },
+    {
+      "timeUtc": "2018-09-09T15:00:00Z",
+      "timeHkt": "2018-09-09T23:00:00+08:00",
+      "seaLevelMm": 1610,
+      "seaLevelM": 1.61,
+      "status": "reported",
+      "sourceLine": 286552,
+      "sourceValueToken": "1610"
+    },
+    {
+      "timeUtc": "2018-09-09T16:00:00Z",
+      "timeHkt": "2018-09-10T00:00:00+08:00",
+      "seaLevelMm": 1370,
+      "seaLevelM": 1.37,
+      "status": "reported",
+      "sourceLine": 286553,
+      "sourceValueToken": "1370"
+    },
+    {
+      "timeUtc": "2018-09-09T17:00:00Z",
+      "timeHkt": "2018-09-10T01:00:00+08:00",
+      "seaLevelMm": 1240,
+      "seaLevelM": 1.24,
+      "status": "reported",
+      "sourceLine": 286554,
+      "sourceValueToken": "1240"
+    },
+    {
+      "timeUtc": "2018-09-09T18:00:00Z",
+      "timeHkt": "2018-09-10T02:00:00+08:00",
+      "seaLevelMm": 1240,
+      "seaLevelM": 1.24,
+      "status": "reported",
+      "sourceLine": 286555,
+      "sourceValueToken": "1240"
+    },
+    {
+      "timeUtc": "2018-09-09T19:00:00Z",
+      "timeHkt": "2018-09-10T03:00:00+08:00",
+      "seaLevelMm": 1480,
+      "seaLevelM": 1.48,
+      "status": "reported",
+      "sourceLine": 286556,
+      "sourceValueToken": "1480"
+    },
+    {
+      "timeUtc": "2018-09-09T20:00:00Z",
+      "timeHkt": "2018-09-10T04:00:00+08:00",
+      "seaLevelMm": 1750,
+      "seaLevelM": 1.75,
+      "status": "reported",
+      "sourceLine": 286557,
+      "sourceValueToken": "1750"
+    },
+    {
+      "timeUtc": "2018-09-09T21:00:00Z",
+      "timeHkt": "2018-09-10T05:00:00+08:00",
+      "seaLevelMm": 2040,
+      "seaLevelM": 2.04,
+      "status": "reported",
+      "sourceLine": 286558,
+      "sourceValueToken": "2040"
+    },
+    {
+      "timeUtc": "2018-09-09T22:00:00Z",
+      "timeHkt": "2018-09-10T06:00:00+08:00",
+      "seaLevelMm": 2270,
+      "seaLevelM": 2.27,
+      "status": "reported",
+      "sourceLine": 286559,
+      "sourceValueToken": "2270"
+    },
+    {
+      "timeUtc": "2018-09-09T23:00:00Z",
+      "timeHkt": "2018-09-10T07:00:00+08:00",
+      "seaLevelMm": 2450,
+      "seaLevelM": 2.45,
+      "status": "reported",
+      "sourceLine": 286560,
+      "sourceValueToken": "2450"
+    },
+    {
+      "timeUtc": "2018-09-10T00:00:00Z",
+      "timeHkt": "2018-09-10T08:00:00+08:00",
+      "seaLevelMm": 2680,
+      "seaLevelM": 2.68,
+      "status": "reported",
+      "sourceLine": 286561,
+      "sourceValueToken": "2680"
+    },
+    {
+      "timeUtc": "2018-09-10T01:00:00Z",
+      "timeHkt": "2018-09-10T09:00:00+08:00",
+      "seaLevelMm": 2730,
+      "seaLevelM": 2.73,
+      "status": "reported",
+      "sourceLine": 286562,
+      "sourceValueToken": "2730"
+    },
+    {
+      "timeUtc": "2018-09-10T02:00:00Z",
+      "timeHkt": "2018-09-10T10:00:00+08:00",
+      "seaLevelMm": 2580,
+      "seaLevelM": 2.58,
+      "status": "reported",
+      "sourceLine": 286563,
+      "sourceValueToken": "2580"
+    },
+    {
+      "timeUtc": "2018-09-10T03:00:00Z",
+      "timeHkt": "2018-09-10T11:00:00+08:00",
+      "seaLevelMm": 2140,
+      "seaLevelM": 2.14,
+      "status": "reported",
+      "sourceLine": 286564,
+      "sourceValueToken": "2140"
+    },
+    {
+      "timeUtc": "2018-09-10T04:00:00Z",
+      "timeHkt": "2018-09-10T12:00:00+08:00",
+      "seaLevelMm": 1610,
+      "seaLevelM": 1.61,
+      "status": "reported",
+      "sourceLine": 286565,
+      "sourceValueToken": "1610"
+    },
+    {
+      "timeUtc": "2018-09-10T05:00:00Z",
+      "timeHkt": "2018-09-10T13:00:00+08:00",
+      "seaLevelMm": 1160,
+      "seaLevelM": 1.16,
+      "status": "reported",
+      "sourceLine": 286566,
+      "sourceValueToken": "1160"
+    },
+    {
+      "timeUtc": "2018-09-10T06:00:00Z",
+      "timeHkt": "2018-09-10T14:00:00+08:00",
+      "seaLevelMm": 830,
+      "seaLevelM": 0.83,
+      "status": "reported",
+      "sourceLine": 286567,
+      "sourceValueToken": "830"
+    },
+    {
+      "timeUtc": "2018-09-10T07:00:00Z",
+      "timeHkt": "2018-09-10T15:00:00+08:00",
+      "seaLevelMm": 780,
+      "seaLevelM": 0.78,
+      "status": "reported",
+      "sourceLine": 286568,
+      "sourceValueToken": "780"
+    },
+    {
+      "timeUtc": "2018-09-10T08:00:00Z",
+      "timeHkt": "2018-09-10T16:00:00+08:00",
+      "seaLevelMm": 890,
+      "seaLevelM": 0.89,
+      "status": "reported",
+      "sourceLine": 286569,
+      "sourceValueToken": "890"
+    },
+    {
+      "timeUtc": "2018-09-10T09:00:00Z",
+      "timeHkt": "2018-09-10T17:00:00+08:00",
+      "seaLevelMm": 1160,
+      "seaLevelM": 1.16,
+      "status": "reported",
+      "sourceLine": 286570,
+      "sourceValueToken": "1160"
+    },
+    {
+      "timeUtc": "2018-09-10T10:00:00Z",
+      "timeHkt": "2018-09-10T18:00:00+08:00",
+      "seaLevelMm": 1460,
+      "seaLevelM": 1.46,
+      "status": "reported",
+      "sourceLine": 286571,
+      "sourceValueToken": "1460"
+    },
+    {
+      "timeUtc": "2018-09-10T11:00:00Z",
+      "timeHkt": "2018-09-10T19:00:00+08:00",
+      "seaLevelMm": 1720,
+      "seaLevelM": 1.72,
+      "status": "reported",
+      "sourceLine": 286572,
+      "sourceValueToken": "1720"
+    },
+    {
+      "timeUtc": "2018-09-10T12:00:00Z",
+      "timeHkt": "2018-09-10T20:00:00+08:00",
+      "seaLevelMm": 1940,
+      "seaLevelM": 1.94,
+      "status": "reported",
+      "sourceLine": 286573,
+      "sourceValueToken": "1940"
+    },
+    {
+      "timeUtc": "2018-09-10T13:00:00Z",
+      "timeHkt": "2018-09-10T21:00:00+08:00",
+      "seaLevelMm": 2130,
+      "seaLevelM": 2.13,
+      "status": "reported",
+      "sourceLine": 286574,
+      "sourceValueToken": "2130"
+    },
+    {
+      "timeUtc": "2018-09-10T14:00:00Z",
+      "timeHkt": "2018-09-10T22:00:00+08:00",
+      "seaLevelMm": 2130,
+      "seaLevelM": 2.13,
+      "status": "reported",
+      "sourceLine": 286575,
+      "sourceValueToken": "2130"
+    },
+    {
+      "timeUtc": "2018-09-10T15:00:00Z",
+      "timeHkt": "2018-09-10T23:00:00+08:00",
+      "seaLevelMm": 1930,
+      "seaLevelM": 1.93,
+      "status": "reported",
+      "sourceLine": 286576,
+      "sourceValueToken": "1930"
+    },
+    {
+      "timeUtc": "2018-09-10T16:00:00Z",
+      "timeHkt": "2018-09-11T00:00:00+08:00",
+      "seaLevelMm": 1610,
+      "seaLevelM": 1.61,
+      "status": "reported",
+      "sourceLine": 286577,
+      "sourceValueToken": "1610"
+    },
+    {
+      "timeUtc": "2018-09-10T17:00:00Z",
+      "timeHkt": "2018-09-11T01:00:00+08:00",
+      "seaLevelMm": 1350,
+      "seaLevelM": 1.35,
+      "status": "reported",
+      "sourceLine": 286578,
+      "sourceValueToken": "1350"
+    },
+    {
+      "timeUtc": "2018-09-10T18:00:00Z",
+      "timeHkt": "2018-09-11T02:00:00+08:00",
+      "seaLevelMm": 1190,
+      "seaLevelM": 1.19,
+      "status": "reported",
+      "sourceLine": 286579,
+      "sourceValueToken": "1190"
+    },
+    {
+      "timeUtc": "2018-09-10T19:00:00Z",
+      "timeHkt": "2018-09-11T03:00:00+08:00",
+      "seaLevelMm": 1210,
+      "seaLevelM": 1.21,
+      "status": "reported",
+      "sourceLine": 286580,
+      "sourceValueToken": "1210"
+    },
+    {
+      "timeUtc": "2018-09-10T20:00:00Z",
+      "timeHkt": "2018-09-11T04:00:00+08:00",
+      "seaLevelMm": 1410,
+      "seaLevelM": 1.41,
+      "status": "reported",
+      "sourceLine": 286581,
+      "sourceValueToken": "1410"
+    },
+    {
+      "timeUtc": "2018-09-10T21:00:00Z",
+      "timeHkt": "2018-09-11T05:00:00+08:00",
+      "seaLevelMm": 1700,
+      "seaLevelM": 1.7,
+      "status": "reported",
+      "sourceLine": 286582,
+      "sourceValueToken": "1700"
+    },
+    {
+      "timeUtc": "2018-09-10T22:00:00Z",
+      "timeHkt": "2018-09-11T06:00:00+08:00",
+      "seaLevelMm": 1990,
+      "seaLevelM": 1.99,
+      "status": "reported",
+      "sourceLine": 286583,
+      "sourceValueToken": "1990"
+    },
+    {
+      "timeUtc": "2018-09-10T23:00:00Z",
+      "timeHkt": "2018-09-11T07:00:00+08:00",
+      "seaLevelMm": 2190,
+      "seaLevelM": 2.19,
+      "status": "reported",
+      "sourceLine": 286584,
+      "sourceValueToken": "2190"
+    },
+    {
+      "timeUtc": "2018-09-11T00:00:00Z",
+      "timeHkt": "2018-09-11T08:00:00+08:00",
+      "seaLevelMm": 2380,
+      "seaLevelM": 2.38,
+      "status": "reported",
+      "sourceLine": 286585,
+      "sourceValueToken": "2380"
+    },
+    {
+      "timeUtc": "2018-09-11T01:00:00Z",
+      "timeHkt": "2018-09-11T09:00:00+08:00",
+      "seaLevelMm": 2570,
+      "seaLevelM": 2.57,
+      "status": "reported",
+      "sourceLine": 286586,
+      "sourceValueToken": "2570"
+    },
+    {
+      "timeUtc": "2018-09-11T02:00:00Z",
+      "timeHkt": "2018-09-11T10:00:00+08:00",
+      "seaLevelMm": 2570,
+      "seaLevelM": 2.57,
+      "status": "reported",
+      "sourceLine": 286587,
+      "sourceValueToken": "2570"
+    },
+    {
+      "timeUtc": "2018-09-11T03:00:00Z",
+      "timeHkt": "2018-09-11T11:00:00+08:00",
+      "seaLevelMm": 2370,
+      "seaLevelM": 2.37,
+      "status": "reported",
+      "sourceLine": 286588,
+      "sourceValueToken": "2370"
+    },
+    {
+      "timeUtc": "2018-09-11T04:00:00Z",
+      "timeHkt": "2018-09-11T12:00:00+08:00",
+      "seaLevelMm": 1970,
+      "seaLevelM": 1.97,
+      "status": "reported",
+      "sourceLine": 286589,
+      "sourceValueToken": "1970"
+    },
+    {
+      "timeUtc": "2018-09-11T05:00:00Z",
+      "timeHkt": "2018-09-11T13:00:00+08:00",
+      "seaLevelMm": 1470,
+      "seaLevelM": 1.47,
+      "status": "reported",
+      "sourceLine": 286590,
+      "sourceValueToken": "1470"
+    },
+    {
+      "timeUtc": "2018-09-11T06:00:00Z",
+      "timeHkt": "2018-09-11T14:00:00+08:00",
+      "seaLevelMm": 1080,
+      "seaLevelM": 1.08,
+      "status": "reported",
+      "sourceLine": 286591,
+      "sourceValueToken": "1080"
+    },
+    {
+      "timeUtc": "2018-09-11T07:00:00Z",
+      "timeHkt": "2018-09-11T15:00:00+08:00",
+      "seaLevelMm": 830,
+      "seaLevelM": 0.83,
+      "status": "reported",
+      "sourceLine": 286592,
+      "sourceValueToken": "830"
+    },
+    {
+      "timeUtc": "2018-09-11T08:00:00Z",
+      "timeHkt": "2018-09-11T16:00:00+08:00",
+      "seaLevelMm": 830,
+      "seaLevelM": 0.83,
+      "status": "reported",
+      "sourceLine": 286593,
+      "sourceValueToken": "830"
+    },
+    {
+      "timeUtc": "2018-09-11T09:00:00Z",
+      "timeHkt": "2018-09-11T17:00:00+08:00",
+      "seaLevelMm": 1050,
+      "seaLevelM": 1.05,
+      "status": "reported",
+      "sourceLine": 286594,
+      "sourceValueToken": "1050"
+    },
+    {
+      "timeUtc": "2018-09-11T10:00:00Z",
+      "timeHkt": "2018-09-11T18:00:00+08:00",
+      "seaLevelMm": 1360,
+      "seaLevelM": 1.36,
+      "status": "reported",
+      "sourceLine": 286595,
+      "sourceValueToken": "1360"
+    },
+    {
+      "timeUtc": "2018-09-11T11:00:00Z",
+      "timeHkt": "2018-09-11T19:00:00+08:00",
+      "seaLevelMm": 1640,
+      "seaLevelM": 1.64,
+      "status": "reported",
+      "sourceLine": 286596,
+      "sourceValueToken": "1640"
+    },
+    {
+      "timeUtc": "2018-09-11T12:00:00Z",
+      "timeHkt": "2018-09-11T20:00:00+08:00",
+      "seaLevelMm": 1820,
+      "seaLevelM": 1.82,
+      "status": "reported",
+      "sourceLine": 286597,
+      "sourceValueToken": "1820"
+    },
+    {
+      "timeUtc": "2018-09-11T13:00:00Z",
+      "timeHkt": "2018-09-11T21:00:00+08:00",
+      "seaLevelMm": 2050,
+      "seaLevelM": 2.05,
+      "status": "reported",
+      "sourceLine": 286598,
+      "sourceValueToken": "2050"
+    },
+    {
+      "timeUtc": "2018-09-11T14:00:00Z",
+      "timeHkt": "2018-09-11T22:00:00+08:00",
+      "seaLevelMm": 2150,
+      "seaLevelM": 2.15,
+      "status": "reported",
+      "sourceLine": 286599,
+      "sourceValueToken": "2150"
+    },
+    {
+      "timeUtc": "2018-09-11T15:00:00Z",
+      "timeHkt": "2018-09-11T23:00:00+08:00",
+      "seaLevelMm": 2090,
+      "seaLevelM": 2.09,
+      "status": "reported",
+      "sourceLine": 286600,
+      "sourceValueToken": "2090"
+    },
+    {
+      "timeUtc": "2018-09-11T16:00:00Z",
+      "timeHkt": "2018-09-12T00:00:00+08:00",
+      "seaLevelMm": 1840,
+      "seaLevelM": 1.84,
+      "status": "reported",
+      "sourceLine": 286601,
+      "sourceValueToken": "1840"
+    },
+    {
+      "timeUtc": "2018-09-11T17:00:00Z",
+      "timeHkt": "2018-09-12T01:00:00+08:00",
+      "seaLevelMm": 1500,
+      "seaLevelM": 1.5,
+      "status": "reported",
+      "sourceLine": 286602,
+      "sourceValueToken": "1500"
+    },
+    {
+      "timeUtc": "2018-09-11T18:00:00Z",
+      "timeHkt": "2018-09-12T02:00:00+08:00",
+      "seaLevelMm": 1240,
+      "seaLevelM": 1.24,
+      "status": "reported",
+      "sourceLine": 286603,
+      "sourceValueToken": "1240"
+    },
+    {
+      "timeUtc": "2018-09-11T19:00:00Z",
+      "timeHkt": "2018-09-12T03:00:00+08:00",
+      "seaLevelMm": 1040,
+      "seaLevelM": 1.04,
+      "status": "reported",
+      "sourceLine": 286604,
+      "sourceValueToken": "1040"
+    },
+    {
+      "timeUtc": "2018-09-11T20:00:00Z",
+      "timeHkt": "2018-09-12T04:00:00+08:00",
+      "seaLevelMm": 1130,
+      "seaLevelM": 1.13,
+      "status": "reported",
+      "sourceLine": 286605,
+      "sourceValueToken": "1130"
+    },
+    {
+      "timeUtc": "2018-09-11T21:00:00Z",
+      "timeHkt": "2018-09-12T05:00:00+08:00",
+      "seaLevelMm": 1380,
+      "seaLevelM": 1.38,
+      "status": "reported",
+      "sourceLine": 286606,
+      "sourceValueToken": "1380"
+    },
+    {
+      "timeUtc": "2018-09-11T22:00:00Z",
+      "timeHkt": "2018-09-12T06:00:00+08:00",
+      "seaLevelMm": 1710,
+      "seaLevelM": 1.71,
+      "status": "reported",
+      "sourceLine": 286607,
+      "sourceValueToken": "1710"
+    },
+    {
+      "timeUtc": "2018-09-11T23:00:00Z",
+      "timeHkt": "2018-09-12T07:00:00+08:00",
+      "seaLevelMm": 2060,
+      "seaLevelM": 2.06,
+      "status": "reported",
+      "sourceLine": 286608,
+      "sourceValueToken": "2060"
+    },
+    {
+      "timeUtc": "2018-09-12T00:00:00Z",
+      "timeHkt": "2018-09-12T08:00:00+08:00",
+      "seaLevelMm": 2180,
+      "seaLevelM": 2.18,
+      "status": "reported",
+      "sourceLine": 286609,
+      "sourceValueToken": "2180"
+    },
+    {
+      "timeUtc": "2018-09-12T01:00:00Z",
+      "timeHkt": "2018-09-12T09:00:00+08:00",
+      "seaLevelMm": 2310,
+      "seaLevelM": 2.31,
+      "status": "reported",
+      "sourceLine": 286610,
+      "sourceValueToken": "2310"
+    },
+    {
+      "timeUtc": "2018-09-12T02:00:00Z",
+      "timeHkt": "2018-09-12T10:00:00+08:00",
+      "seaLevelMm": 2480,
+      "seaLevelM": 2.48,
+      "status": "reported",
+      "sourceLine": 286611,
+      "sourceValueToken": "2480"
+    },
+    {
+      "timeUtc": "2018-09-12T03:00:00Z",
+      "timeHkt": "2018-09-12T11:00:00+08:00",
+      "seaLevelMm": 2490,
+      "seaLevelM": 2.49,
+      "status": "reported",
+      "sourceLine": 286612,
+      "sourceValueToken": "2490"
+    },
+    {
+      "timeUtc": "2018-09-12T04:00:00Z",
+      "timeHkt": "2018-09-12T12:00:00+08:00",
+      "seaLevelMm": 2340,
+      "seaLevelM": 2.34,
+      "status": "reported",
+      "sourceLine": 286613,
+      "sourceValueToken": "2340"
+    },
+    {
+      "timeUtc": "2018-09-12T05:00:00Z",
+      "timeHkt": "2018-09-12T13:00:00+08:00",
+      "seaLevelMm": 1970,
+      "seaLevelM": 1.97,
+      "status": "reported",
+      "sourceLine": 286614,
+      "sourceValueToken": "1970"
+    },
+    {
+      "timeUtc": "2018-09-12T06:00:00Z",
+      "timeHkt": "2018-09-12T14:00:00+08:00",
+      "seaLevelMm": 1580,
+      "seaLevelM": 1.58,
+      "status": "reported",
+      "sourceLine": 286615,
+      "sourceValueToken": "1580"
+    },
+    {
+      "timeUtc": "2018-09-12T07:00:00Z",
+      "timeHkt": "2018-09-12T15:00:00+08:00",
+      "seaLevelMm": 1180,
+      "seaLevelM": 1.18,
+      "status": "reported",
+      "sourceLine": 286616,
+      "sourceValueToken": "1180"
+    },
+    {
+      "timeUtc": "2018-09-12T08:00:00Z",
+      "timeHkt": "2018-09-12T16:00:00+08:00",
+      "seaLevelMm": 900,
+      "seaLevelM": 0.9,
+      "status": "reported",
+      "sourceLine": 286617,
+      "sourceValueToken": "900"
+    },
+    {
+      "timeUtc": "2018-09-12T09:00:00Z",
+      "timeHkt": "2018-09-12T17:00:00+08:00",
+      "seaLevelMm": 1060,
+      "seaLevelM": 1.06,
+      "status": "reported",
+      "sourceLine": 286618,
+      "sourceValueToken": "1060"
+    },
+    {
+      "timeUtc": "2018-09-12T10:00:00Z",
+      "timeHkt": "2018-09-12T18:00:00+08:00",
+      "seaLevelMm": 1360,
+      "seaLevelM": 1.36,
+      "status": "reported",
+      "sourceLine": 286619,
+      "sourceValueToken": "1360"
+    },
+    {
+      "timeUtc": "2018-09-12T11:00:00Z",
+      "timeHkt": "2018-09-12T19:00:00+08:00",
+      "seaLevelMm": 1720,
+      "seaLevelM": 1.72,
+      "status": "reported",
+      "sourceLine": 286620,
+      "sourceValueToken": "1720"
+    },
+    {
+      "timeUtc": "2018-09-12T12:00:00Z",
+      "timeHkt": "2018-09-12T20:00:00+08:00",
+      "seaLevelMm": 1910,
+      "seaLevelM": 1.91,
+      "status": "reported",
+      "sourceLine": 286621,
+      "sourceValueToken": "1910"
+    },
+    {
+      "timeUtc": "2018-09-12T13:00:00Z",
+      "timeHkt": "2018-09-12T21:00:00+08:00",
+      "seaLevelMm": 1980,
+      "seaLevelM": 1.98,
+      "status": "reported",
+      "sourceLine": 286622,
+      "sourceValueToken": "1980"
+    },
+    {
+      "timeUtc": "2018-09-12T14:00:00Z",
+      "timeHkt": "2018-09-12T22:00:00+08:00",
+      "seaLevelMm": 2120,
+      "seaLevelM": 2.12,
+      "status": "reported",
+      "sourceLine": 286623,
+      "sourceValueToken": "2120"
+    },
+    {
+      "timeUtc": "2018-09-12T15:00:00Z",
+      "timeHkt": "2018-09-12T23:00:00+08:00",
+      "seaLevelMm": 2160,
+      "seaLevelM": 2.16,
+      "status": "reported",
+      "sourceLine": 286624,
+      "sourceValueToken": "2160"
+    },
+    {
+      "timeUtc": "2018-09-12T16:00:00Z",
+      "timeHkt": "2018-09-13T00:00:00+08:00",
+      "seaLevelMm": 2060,
+      "seaLevelM": 2.06,
+      "status": "reported",
+      "sourceLine": 286625,
+      "sourceValueToken": "2060"
+    },
+    {
+      "timeUtc": "2018-09-12T17:00:00Z",
+      "timeHkt": "2018-09-13T01:00:00+08:00",
+      "seaLevelMm": 1730,
+      "seaLevelM": 1.73,
+      "status": "reported",
+      "sourceLine": 286626,
+      "sourceValueToken": "1730"
+    },
+    {
+      "timeUtc": "2018-09-12T18:00:00Z",
+      "timeHkt": "2018-09-13T02:00:00+08:00",
+      "seaLevelMm": 1400,
+      "seaLevelM": 1.4,
+      "status": "reported",
+      "sourceLine": 286627,
+      "sourceValueToken": "1400"
+    },
+    {
+      "timeUtc": "2018-09-12T19:00:00Z",
+      "timeHkt": "2018-09-13T03:00:00+08:00",
+      "seaLevelMm": 1090,
+      "seaLevelM": 1.09,
+      "status": "reported",
+      "sourceLine": 286628,
+      "sourceValueToken": "1090"
+    },
+    {
+      "timeUtc": "2018-09-12T20:00:00Z",
+      "timeHkt": "2018-09-13T04:00:00+08:00",
+      "seaLevelMm": 870,
+      "seaLevelM": 0.87,
+      "status": "reported",
+      "sourceLine": 286629,
+      "sourceValueToken": "870"
+    },
+    {
+      "timeUtc": "2018-09-12T21:00:00Z",
+      "timeHkt": "2018-09-13T05:00:00+08:00",
+      "seaLevelMm": 1010,
+      "seaLevelM": 1.01,
+      "status": "reported",
+      "sourceLine": 286630,
+      "sourceValueToken": "1010"
+    },
+    {
+      "timeUtc": "2018-09-12T22:00:00Z",
+      "timeHkt": "2018-09-13T06:00:00+08:00",
+      "seaLevelMm": 1230,
+      "seaLevelM": 1.23,
+      "status": "reported",
+      "sourceLine": 286631,
+      "sourceValueToken": "1230"
+    },
+    {
+      "timeUtc": "2018-09-12T23:00:00Z",
+      "timeHkt": "2018-09-13T07:00:00+08:00",
+      "seaLevelMm": 1570,
+      "seaLevelM": 1.57,
+      "status": "reported",
+      "sourceLine": 286632,
+      "sourceValueToken": "1570"
+    },
+    {
+      "timeUtc": "2018-09-13T00:00:00Z",
+      "timeHkt": "2018-09-13T08:00:00+08:00",
+      "seaLevelMm": 1790,
+      "seaLevelM": 1.79,
+      "status": "reported",
+      "sourceLine": 286633,
+      "sourceValueToken": "1790"
+    },
+    {
+      "timeUtc": "2018-09-13T01:00:00Z",
+      "timeHkt": "2018-09-13T09:00:00+08:00",
+      "seaLevelMm": 1820,
+      "seaLevelM": 1.82,
+      "status": "reported",
+      "sourceLine": 286634,
+      "sourceValueToken": "1820"
+    },
+    {
+      "timeUtc": "2018-09-13T02:00:00Z",
+      "timeHkt": "2018-09-13T10:00:00+08:00",
+      "seaLevelMm": 1960,
+      "seaLevelM": 1.96,
+      "status": "reported",
+      "sourceLine": 286635,
+      "sourceValueToken": "1960"
+    },
+    {
+      "timeUtc": "2018-09-13T03:00:00Z",
+      "timeHkt": "2018-09-13T11:00:00+08:00",
+      "seaLevelMm": 2050,
+      "seaLevelM": 2.05,
+      "status": "reported",
+      "sourceLine": 286636,
+      "sourceValueToken": "2050"
+    },
+    {
+      "timeUtc": "2018-09-13T04:00:00Z",
+      "timeHkt": "2018-09-13T12:00:00+08:00",
+      "seaLevelMm": 2010,
+      "seaLevelM": 2.01,
+      "status": "reported",
+      "sourceLine": 286637,
+      "sourceValueToken": "2010"
+    },
+    {
+      "timeUtc": "2018-09-13T05:00:00Z",
+      "timeHkt": "2018-09-13T13:00:00+08:00",
+      "seaLevelMm": 1810,
+      "seaLevelM": 1.81,
+      "status": "reported",
+      "sourceLine": 286638,
+      "sourceValueToken": "1810"
+    },
+    {
+      "timeUtc": "2018-09-13T06:00:00Z",
+      "timeHkt": "2018-09-13T14:00:00+08:00",
+      "seaLevelMm": 1450,
+      "seaLevelM": 1.45,
+      "status": "reported",
+      "sourceLine": 286639,
+      "sourceValueToken": "1450"
+    },
+    {
+      "timeUtc": "2018-09-13T07:00:00Z",
+      "timeHkt": "2018-09-13T15:00:00+08:00",
+      "seaLevelMm": 1220,
+      "seaLevelM": 1.22,
+      "status": "reported",
+      "sourceLine": 286640,
+      "sourceValueToken": "1220"
+    },
+    {
+      "timeUtc": "2018-09-13T08:00:00Z",
+      "timeHkt": "2018-09-13T16:00:00+08:00",
+      "seaLevelMm": 940,
+      "seaLevelM": 0.94,
+      "status": "reported",
+      "sourceLine": 286641,
+      "sourceValueToken": "940"
+    },
+    {
+      "timeUtc": "2018-09-13T09:00:00Z",
+      "timeHkt": "2018-09-13T17:00:00+08:00",
+      "seaLevelMm": 950,
+      "seaLevelM": 0.95,
+      "status": "reported",
+      "sourceLine": 286642,
+      "sourceValueToken": "950"
+    },
+    {
+      "timeUtc": "2018-09-13T10:00:00Z",
+      "timeHkt": "2018-09-13T18:00:00+08:00",
+      "seaLevelMm": 1170,
+      "seaLevelM": 1.17,
+      "status": "reported",
+      "sourceLine": 286643,
+      "sourceValueToken": "1170"
+    },
+    {
+      "timeUtc": "2018-09-13T11:00:00Z",
+      "timeHkt": "2018-09-13T19:00:00+08:00",
+      "seaLevelMm": 1480,
+      "seaLevelM": 1.48,
+      "status": "reported",
+      "sourceLine": 286644,
+      "sourceValueToken": "1480"
+    },
+    {
+      "timeUtc": "2018-09-13T12:00:00Z",
+      "timeHkt": "2018-09-13T20:00:00+08:00",
+      "seaLevelMm": 1790,
+      "seaLevelM": 1.79,
+      "status": "reported",
+      "sourceLine": 286645,
+      "sourceValueToken": "1790"
+    },
+    {
+      "timeUtc": "2018-09-13T13:00:00Z",
+      "timeHkt": "2018-09-13T21:00:00+08:00",
+      "seaLevelMm": 1910,
+      "seaLevelM": 1.91,
+      "status": "reported",
+      "sourceLine": 286646,
+      "sourceValueToken": "1910"
+    },
+    {
+      "timeUtc": "2018-09-13T14:00:00Z",
+      "timeHkt": "2018-09-13T22:00:00+08:00",
+      "seaLevelMm": 2010,
+      "seaLevelM": 2.01,
+      "status": "reported",
+      "sourceLine": 286647,
+      "sourceValueToken": "2010"
+    },
+    {
+      "timeUtc": "2018-09-13T15:00:00Z",
+      "timeHkt": "2018-09-13T23:00:00+08:00",
+      "seaLevelMm": 2090,
+      "seaLevelM": 2.09,
+      "status": "reported",
+      "sourceLine": 286648,
+      "sourceValueToken": "2090"
+    },
+    {
+      "timeUtc": "2018-09-13T16:00:00Z",
+      "timeHkt": "2018-09-14T00:00:00+08:00",
+      "seaLevelMm": 2030,
+      "seaLevelM": 2.03,
+      "status": "reported",
+      "sourceLine": 286649,
+      "sourceValueToken": "2030"
+    },
+    {
+      "timeUtc": "2018-09-13T17:00:00Z",
+      "timeHkt": "2018-09-14T01:00:00+08:00",
+      "seaLevelMm": 1860,
+      "seaLevelM": 1.86,
+      "status": "reported",
+      "sourceLine": 286650,
+      "sourceValueToken": "1860"
+    },
+    {
+      "timeUtc": "2018-09-13T18:00:00Z",
+      "timeHkt": "2018-09-14T02:00:00+08:00",
+      "seaLevelMm": 1570,
+      "seaLevelM": 1.57,
+      "status": "reported",
+      "sourceLine": 286651,
+      "sourceValueToken": "1570"
+    },
+    {
+      "timeUtc": "2018-09-13T19:00:00Z",
+      "timeHkt": "2018-09-14T03:00:00+08:00",
+      "seaLevelMm": 1320,
+      "seaLevelM": 1.32,
+      "status": "reported",
+      "sourceLine": 286652,
+      "sourceValueToken": "1320"
+    },
+    {
+      "timeUtc": "2018-09-13T20:00:00Z",
+      "timeHkt": "2018-09-14T04:00:00+08:00",
+      "seaLevelMm": 1060,
+      "seaLevelM": 1.06,
+      "status": "reported",
+      "sourceLine": 286653,
+      "sourceValueToken": "1060"
+    },
+    {
+      "timeUtc": "2018-09-13T21:00:00Z",
+      "timeHkt": "2018-09-14T05:00:00+08:00",
+      "seaLevelMm": 920,
+      "seaLevelM": 0.92,
+      "status": "reported",
+      "sourceLine": 286654,
+      "sourceValueToken": "920"
+    },
+    {
+      "timeUtc": "2018-09-13T22:00:00Z",
+      "timeHkt": "2018-09-14T06:00:00+08:00",
+      "seaLevelMm": 1060,
+      "seaLevelM": 1.06,
+      "status": "reported",
+      "sourceLine": 286655,
+      "sourceValueToken": "1060"
+    },
+    {
+      "timeUtc": "2018-09-13T23:00:00Z",
+      "timeHkt": "2018-09-14T07:00:00+08:00",
+      "seaLevelMm": 1260,
+      "seaLevelM": 1.26,
+      "status": "reported",
+      "sourceLine": 286656,
+      "sourceValueToken": "1260"
+    },
+    {
+      "timeUtc": "2018-09-14T00:00:00Z",
+      "timeHkt": "2018-09-14T08:00:00+08:00",
+      "seaLevelMm": 1540,
+      "seaLevelM": 1.54,
+      "status": "reported",
+      "sourceLine": 286657,
+      "sourceValueToken": "1540"
+    },
+    {
+      "timeUtc": "2018-09-14T01:00:00Z",
+      "timeHkt": "2018-09-14T09:00:00+08:00",
+      "seaLevelMm": 1650,
+      "seaLevelM": 1.65,
+      "status": "reported",
+      "sourceLine": 286658,
+      "sourceValueToken": "1650"
+    },
+    {
+      "timeUtc": "2018-09-14T02:00:00Z",
+      "timeHkt": "2018-09-14T10:00:00+08:00",
+      "seaLevelMm": 1740,
+      "seaLevelM": 1.74,
+      "status": "reported",
+      "sourceLine": 286659,
+      "sourceValueToken": "1740"
+    },
+    {
+      "timeUtc": "2018-09-14T03:00:00Z",
+      "timeHkt": "2018-09-14T11:00:00+08:00",
+      "seaLevelMm": 1870,
+      "seaLevelM": 1.87,
+      "status": "reported",
+      "sourceLine": 286660,
+      "sourceValueToken": "1870"
+    },
+    {
+      "timeUtc": "2018-09-14T04:00:00Z",
+      "timeHkt": "2018-09-14T12:00:00+08:00",
+      "seaLevelMm": 1900,
+      "seaLevelM": 1.9,
+      "status": "reported",
+      "sourceLine": 286661,
+      "sourceValueToken": "1900"
+    },
+    {
+      "timeUtc": "2018-09-14T05:00:00Z",
+      "timeHkt": "2018-09-14T13:00:00+08:00",
+      "seaLevelMm": 1850,
+      "seaLevelM": 1.85,
+      "status": "reported",
+      "sourceLine": 286662,
+      "sourceValueToken": "1850"
+    },
+    {
+      "timeUtc": "2018-09-14T06:00:00Z",
+      "timeHkt": "2018-09-14T14:00:00+08:00",
+      "seaLevelMm": 1710,
+      "seaLevelM": 1.71,
+      "status": "reported",
+      "sourceLine": 286663,
+      "sourceValueToken": "1710"
+    },
+    {
+      "timeUtc": "2018-09-14T07:00:00Z",
+      "timeHkt": "2018-09-14T15:00:00+08:00",
+      "seaLevelMm": 1480,
+      "seaLevelM": 1.48,
+      "status": "reported",
+      "sourceLine": 286664,
+      "sourceValueToken": "1480"
+    },
+    {
+      "timeUtc": "2018-09-14T08:00:00Z",
+      "timeHkt": "2018-09-14T16:00:00+08:00",
+      "seaLevelMm": 1280,
+      "seaLevelM": 1.28,
+      "status": "reported",
+      "sourceLine": 286665,
+      "sourceValueToken": "1280"
+    },
+    {
+      "timeUtc": "2018-09-14T09:00:00Z",
+      "timeHkt": "2018-09-14T17:00:00+08:00",
+      "seaLevelMm": 1170,
+      "seaLevelM": 1.17,
+      "status": "reported",
+      "sourceLine": 286666,
+      "sourceValueToken": "1170"
+    },
+    {
+      "timeUtc": "2018-09-14T10:00:00Z",
+      "timeHkt": "2018-09-14T18:00:00+08:00",
+      "seaLevelMm": 1240,
+      "seaLevelM": 1.24,
+      "status": "reported",
+      "sourceLine": 286667,
+      "sourceValueToken": "1240"
+    },
+    {
+      "timeUtc": "2018-09-14T11:00:00Z",
+      "timeHkt": "2018-09-14T19:00:00+08:00",
+      "seaLevelMm": 1420,
+      "seaLevelM": 1.42,
+      "status": "reported",
+      "sourceLine": 286668,
+      "sourceValueToken": "1420"
+    },
+    {
+      "timeUtc": "2018-09-14T12:00:00Z",
+      "timeHkt": "2018-09-14T20:00:00+08:00",
+      "seaLevelMm": 1710,
+      "seaLevelM": 1.71,
+      "status": "reported",
+      "sourceLine": 286669,
+      "sourceValueToken": "1710"
+    },
+    {
+      "timeUtc": "2018-09-14T13:00:00Z",
+      "timeHkt": "2018-09-14T21:00:00+08:00",
+      "seaLevelMm": 1940,
+      "seaLevelM": 1.94,
+      "status": "reported",
+      "sourceLine": 286670,
+      "sourceValueToken": "1940"
+    },
+    {
+      "timeUtc": "2018-09-14T14:00:00Z",
+      "timeHkt": "2018-09-14T22:00:00+08:00",
+      "seaLevelMm": 2030,
+      "seaLevelM": 2.03,
+      "status": "reported",
+      "sourceLine": 286671,
+      "sourceValueToken": "2030"
+    },
+    {
+      "timeUtc": "2018-09-14T15:00:00Z",
+      "timeHkt": "2018-09-14T23:00:00+08:00",
+      "seaLevelMm": 2110,
+      "seaLevelM": 2.11,
+      "status": "reported",
+      "sourceLine": 286672,
+      "sourceValueToken": "2110"
+    },
+    {
+      "timeUtc": "2018-09-14T16:00:00Z",
+      "timeHkt": "2018-09-15T00:00:00+08:00",
+      "seaLevelMm": 2200,
+      "seaLevelM": 2.2,
+      "status": "reported",
+      "sourceLine": 286673,
+      "sourceValueToken": "2200"
+    },
+    {
+      "timeUtc": "2018-09-14T17:00:00Z",
+      "timeHkt": "2018-09-15T01:00:00+08:00",
+      "seaLevelMm": 2080,
+      "seaLevelM": 2.08,
+      "status": "reported",
+      "sourceLine": 286674,
+      "sourceValueToken": "2080"
+    },
+    {
+      "timeUtc": "2018-09-14T18:00:00Z",
+      "timeHkt": "2018-09-15T02:00:00+08:00",
+      "seaLevelMm": 1900,
+      "seaLevelM": 1.9,
+      "status": "reported",
+      "sourceLine": 286675,
+      "sourceValueToken": "1900"
+    },
+    {
+      "timeUtc": "2018-09-14T19:00:00Z",
+      "timeHkt": "2018-09-15T03:00:00+08:00",
+      "seaLevelMm": 1580,
+      "seaLevelM": 1.58,
+      "status": "reported",
+      "sourceLine": 286676,
+      "sourceValueToken": "1580"
+    },
+    {
+      "timeUtc": "2018-09-14T20:00:00Z",
+      "timeHkt": "2018-09-15T04:00:00+08:00",
+      "seaLevelMm": 1330,
+      "seaLevelM": 1.33,
+      "status": "reported",
+      "sourceLine": 286677,
+      "sourceValueToken": "1330"
+    },
+    {
+      "timeUtc": "2018-09-14T21:00:00Z",
+      "timeHkt": "2018-09-15T05:00:00+08:00",
+      "seaLevelMm": 1160,
+      "seaLevelM": 1.16,
+      "status": "reported",
+      "sourceLine": 286678,
+      "sourceValueToken": "1160"
+    },
+    {
+      "timeUtc": "2018-09-14T22:00:00Z",
+      "timeHkt": "2018-09-15T06:00:00+08:00",
+      "seaLevelMm": 1140,
+      "seaLevelM": 1.14,
+      "status": "reported",
+      "sourceLine": 286679,
+      "sourceValueToken": "1140"
+    },
+    {
+      "timeUtc": "2018-09-14T23:00:00Z",
+      "timeHkt": "2018-09-15T07:00:00+08:00",
+      "seaLevelMm": 1260,
+      "seaLevelM": 1.26,
+      "status": "reported",
+      "sourceLine": 286680,
+      "sourceValueToken": "1260"
+    },
+    {
+      "timeUtc": "2018-09-15T00:00:00Z",
+      "timeHkt": "2018-09-15T08:00:00+08:00",
+      "seaLevelMm": 1380,
+      "seaLevelM": 1.38,
+      "status": "reported",
+      "sourceLine": 286681,
+      "sourceValueToken": "1380"
+    },
+    {
+      "timeUtc": "2018-09-15T01:00:00Z",
+      "timeHkt": "2018-09-15T09:00:00+08:00",
+      "seaLevelMm": 1520,
+      "seaLevelM": 1.52,
+      "status": "reported",
+      "sourceLine": 286682,
+      "sourceValueToken": "1520"
+    },
+    {
+      "timeUtc": "2018-09-15T02:00:00Z",
+      "timeHkt": "2018-09-15T10:00:00+08:00",
+      "seaLevelMm": 1650,
+      "seaLevelM": 1.65,
+      "status": "reported",
+      "sourceLine": 286683,
+      "sourceValueToken": "1650"
+    },
+    {
+      "timeUtc": "2018-09-15T03:00:00Z",
+      "timeHkt": "2018-09-15T11:00:00+08:00",
+      "seaLevelMm": 1750,
+      "seaLevelM": 1.75,
+      "status": "reported",
+      "sourceLine": 286684,
+      "sourceValueToken": "1750"
+    },
+    {
+      "timeUtc": "2018-09-15T04:00:00Z",
+      "timeHkt": "2018-09-15T12:00:00+08:00",
+      "seaLevelMm": 1930,
+      "seaLevelM": 1.93,
+      "status": "reported",
+      "sourceLine": 286685,
+      "sourceValueToken": "1930"
+    },
+    {
+      "timeUtc": "2018-09-15T05:00:00Z",
+      "timeHkt": "2018-09-15T13:00:00+08:00",
+      "seaLevelMm": 1920,
+      "seaLevelM": 1.92,
+      "status": "reported",
+      "sourceLine": 286686,
+      "sourceValueToken": "1920"
+    },
+    {
+      "timeUtc": "2018-09-15T06:00:00Z",
+      "timeHkt": "2018-09-15T14:00:00+08:00",
+      "seaLevelMm": 1860,
+      "seaLevelM": 1.86,
+      "status": "reported",
+      "sourceLine": 286687,
+      "sourceValueToken": "1860"
+    },
+    {
+      "timeUtc": "2018-09-15T07:00:00Z",
+      "timeHkt": "2018-09-15T15:00:00+08:00",
+      "seaLevelMm": 1650,
+      "seaLevelM": 1.65,
+      "status": "reported",
+      "sourceLine": 286688,
+      "sourceValueToken": "1650"
+    },
+    {
+      "timeUtc": "2018-09-15T08:00:00Z",
+      "timeHkt": "2018-09-15T16:00:00+08:00",
+      "seaLevelMm": 1540,
+      "seaLevelM": 1.54,
+      "status": "reported",
+      "sourceLine": 286689,
+      "sourceValueToken": "1540"
+    },
+    {
+      "timeUtc": "2018-09-15T09:00:00Z",
+      "timeHkt": "2018-09-15T17:00:00+08:00",
+      "seaLevelMm": 1470,
+      "seaLevelM": 1.47,
+      "status": "reported",
+      "sourceLine": 286690,
+      "sourceValueToken": "1470"
+    },
+    {
+      "timeUtc": "2018-09-15T10:00:00Z",
+      "timeHkt": "2018-09-15T18:00:00+08:00",
+      "seaLevelMm": 1490,
+      "seaLevelM": 1.49,
+      "status": "reported",
+      "sourceLine": 286691,
+      "sourceValueToken": "1490"
+    },
+    {
+      "timeUtc": "2018-09-15T11:00:00Z",
+      "timeHkt": "2018-09-15T19:00:00+08:00",
+      "seaLevelMm": 1670,
+      "seaLevelM": 1.67,
+      "status": "reported",
+      "sourceLine": 286692,
+      "sourceValueToken": "1670"
+    },
+    {
+      "timeUtc": "2018-09-15T12:00:00Z",
+      "timeHkt": "2018-09-15T20:00:00+08:00",
+      "seaLevelMm": 1820,
+      "seaLevelM": 1.82,
+      "status": "reported",
+      "sourceLine": 286693,
+      "sourceValueToken": "1820"
+    },
+    {
+      "timeUtc": "2018-09-15T13:00:00Z",
+      "timeHkt": "2018-09-15T21:00:00+08:00",
+      "seaLevelMm": 2020,
+      "seaLevelM": 2.02,
+      "status": "reported",
+      "sourceLine": 286694,
+      "sourceValueToken": "2020"
+    },
+    {
+      "timeUtc": "2018-09-15T14:00:00Z",
+      "timeHkt": "2018-09-15T22:00:00+08:00",
+      "seaLevelMm": 2120,
+      "seaLevelM": 2.12,
+      "status": "reported",
+      "sourceLine": 286695,
+      "sourceValueToken": "2120"
+    },
+    {
+      "timeUtc": "2018-09-15T15:00:00Z",
+      "timeHkt": "2018-09-15T23:00:00+08:00",
+      "seaLevelMm": 2220,
+      "seaLevelM": 2.22,
+      "status": "reported",
+      "sourceLine": 286696,
+      "sourceValueToken": "2220"
+    },
+    {
+      "timeUtc": "2018-09-15T16:00:00Z",
+      "timeHkt": "2018-09-16T00:00:00+08:00",
+      "seaLevelMm": 2380,
+      "seaLevelM": 2.38,
+      "status": "reported",
+      "sourceLine": 286697,
+      "sourceValueToken": "2380"
+    },
+    {
+      "timeUtc": "2018-09-15T17:00:00Z",
+      "timeHkt": "2018-09-16T01:00:00+08:00",
+      "seaLevelMm": 2410,
+      "seaLevelM": 2.41,
+      "status": "reported",
+      "sourceLine": 286698,
+      "sourceValueToken": "2410"
+    },
+    {
+      "timeUtc": "2018-09-15T18:00:00Z",
+      "timeHkt": "2018-09-16T02:00:00+08:00",
+      "seaLevelMm": 2450,
+      "seaLevelM": 2.45,
+      "status": "reported",
+      "sourceLine": 286699,
+      "sourceValueToken": "2450"
+    },
+    {
+      "timeUtc": "2018-09-15T19:00:00Z",
+      "timeHkt": "2018-09-16T03:00:00+08:00",
+      "seaLevelMm": 2220,
+      "seaLevelM": 2.22,
+      "status": "reported",
+      "sourceLine": 286700,
+      "sourceValueToken": "2220"
+    },
+    {
+      "timeUtc": "2018-09-15T20:00:00Z",
+      "timeHkt": "2018-09-16T04:00:00+08:00",
+      "seaLevelMm": 2060,
+      "seaLevelM": 2.06,
+      "status": "reported",
+      "sourceLine": 286701,
+      "sourceValueToken": "2060"
+    },
+    {
+      "timeUtc": "2018-09-15T21:00:00Z",
+      "timeHkt": "2018-09-16T05:00:00+08:00",
+      "seaLevelMm": 1890,
+      "seaLevelM": 1.89,
+      "status": "reported",
+      "sourceLine": 286702,
+      "sourceValueToken": "1890"
+    },
+    {
+      "timeUtc": "2018-09-15T22:00:00Z",
+      "timeHkt": "2018-09-16T06:00:00+08:00",
+      "seaLevelMm": 1770,
+      "seaLevelM": 1.77,
+      "status": "reported",
+      "sourceLine": 286703,
+      "sourceValueToken": "1770"
+    },
+    {
+      "timeUtc": "2018-09-15T23:00:00Z",
+      "timeHkt": "2018-09-16T07:00:00+08:00",
+      "seaLevelMm": 2010,
+      "seaLevelM": 2.01,
+      "status": "reported",
+      "sourceLine": 286704,
+      "sourceValueToken": "2010"
+    },
+    {
+      "timeUtc": "2018-09-16T00:00:00Z",
+      "timeHkt": "2018-09-16T08:00:00+08:00",
+      "seaLevelMm": 2410,
+      "seaLevelM": 2.41,
+      "status": "reported",
+      "sourceLine": 286705,
+      "sourceValueToken": "2410"
+    },
+    {
+      "timeUtc": "2018-09-16T01:00:00Z",
+      "timeHkt": "2018-09-16T09:00:00+08:00",
+      "seaLevelMm": 2660,
+      "seaLevelM": 2.66,
+      "status": "reported",
+      "sourceLine": 286706,
+      "sourceValueToken": "2660"
+    },
+    {
+      "timeUtc": "2018-09-16T02:00:00Z",
+      "timeHkt": "2018-09-16T10:00:00+08:00",
+      "seaLevelMm": 2900,
+      "seaLevelM": 2.9,
+      "status": "reported",
+      "sourceLine": 286707,
+      "sourceValueToken": "2900"
+    },
+    {
+      "timeUtc": "2018-09-16T03:00:00Z",
+      "timeHkt": "2018-09-16T11:00:00+08:00",
+      "seaLevelMm": 3210,
+      "seaLevelM": 3.21,
+      "status": "reported",
+      "sourceLine": 286708,
+      "sourceValueToken": "3210"
+    },
+    {
+      "timeUtc": "2018-09-16T04:00:00Z",
+      "timeHkt": "2018-09-16T12:00:00+08:00",
+      "seaLevelMm": 3510,
+      "seaLevelM": 3.51,
+      "status": "reported",
+      "sourceLine": 286709,
+      "sourceValueToken": "3510"
+    },
+    {
+      "timeUtc": "2018-09-16T05:00:00Z",
+      "timeHkt": "2018-09-16T13:00:00+08:00",
+      "seaLevelMm": 3700,
+      "seaLevelM": 3.7,
+      "status": "reported",
+      "sourceLine": 286710,
+      "sourceValueToken": "3700"
+    },
+    {
+      "timeUtc": "2018-09-16T06:00:00Z",
+      "timeHkt": "2018-09-16T14:00:00+08:00",
+      "seaLevelMm": 3730,
+      "seaLevelM": 3.73,
+      "status": "reported",
+      "sourceLine": 286711,
+      "sourceValueToken": "3730"
+    },
+    {
+      "timeUtc": "2018-09-16T07:00:00Z",
+      "timeHkt": "2018-09-16T15:00:00+08:00",
+      "seaLevelMm": 3580,
+      "seaLevelM": 3.58,
+      "status": "reported",
+      "sourceLine": 286712,
+      "sourceValueToken": "3580"
+    },
+    {
+      "timeUtc": "2018-09-16T08:00:00Z",
+      "timeHkt": "2018-09-16T16:00:00+08:00",
+      "seaLevelMm": 3190,
+      "seaLevelM": 3.19,
+      "status": "reported",
+      "sourceLine": 286713,
+      "sourceValueToken": "3190"
+    },
+    {
+      "timeUtc": "2018-09-16T09:00:00Z",
+      "timeHkt": "2018-09-16T17:00:00+08:00",
+      "seaLevelMm": 2870,
+      "seaLevelM": 2.87,
+      "status": "reported",
+      "sourceLine": 286714,
+      "sourceValueToken": "2870"
+    },
+    {
+      "timeUtc": "2018-09-16T10:00:00Z",
+      "timeHkt": "2018-09-16T18:00:00+08:00",
+      "seaLevelMm": 2680,
+      "seaLevelM": 2.68,
+      "status": "reported",
+      "sourceLine": 286715,
+      "sourceValueToken": "2680"
+    },
+    {
+      "timeUtc": "2018-09-16T11:00:00Z",
+      "timeHkt": "2018-09-16T19:00:00+08:00",
+      "seaLevelMm": 2340,
+      "seaLevelM": 2.34,
+      "status": "reported",
+      "sourceLine": 286716,
+      "sourceValueToken": "2340"
+    },
+    {
+      "timeUtc": "2018-09-16T12:00:00Z",
+      "timeHkt": "2018-09-16T20:00:00+08:00",
+      "seaLevelMm": 2450,
+      "seaLevelM": 2.45,
+      "status": "reported",
+      "sourceLine": 286717,
+      "sourceValueToken": "2450"
+    },
+    {
+      "timeUtc": "2018-09-16T13:00:00Z",
+      "timeHkt": "2018-09-16T21:00:00+08:00",
+      "seaLevelMm": 2300,
+      "seaLevelM": 2.3,
+      "status": "reported",
+      "sourceLine": 286718,
+      "sourceValueToken": "2300"
+    },
+    {
+      "timeUtc": "2018-09-16T14:00:00Z",
+      "timeHkt": "2018-09-16T22:00:00+08:00",
+      "seaLevelMm": 2540,
+      "seaLevelM": 2.54,
+      "status": "reported",
+      "sourceLine": 286719,
+      "sourceValueToken": "2540"
+    },
+    {
+      "timeUtc": "2018-09-16T15:00:00Z",
+      "timeHkt": "2018-09-16T23:00:00+08:00",
+      "seaLevelMm": 2490,
+      "seaLevelM": 2.49,
+      "status": "reported",
+      "sourceLine": 286720,
+      "sourceValueToken": "2490"
+    },
+    {
+      "timeUtc": "2018-09-16T16:00:00Z",
+      "timeHkt": "2018-09-17T00:00:00+08:00",
+      "seaLevelMm": 2580,
+      "seaLevelM": 2.58,
+      "status": "reported",
+      "sourceLine": 286721,
+      "sourceValueToken": "2580"
+    },
+    {
+      "timeUtc": "2018-09-16T17:00:00Z",
+      "timeHkt": "2018-09-17T01:00:00+08:00",
+      "seaLevelMm": 2450,
+      "seaLevelM": 2.45,
+      "status": "reported",
+      "sourceLine": 286722,
+      "sourceValueToken": "2450"
+    },
+    {
+      "timeUtc": "2018-09-16T18:00:00Z",
+      "timeHkt": "2018-09-17T02:00:00+08:00",
+      "seaLevelMm": 2360,
+      "seaLevelM": 2.36,
+      "status": "reported",
+      "sourceLine": 286723,
+      "sourceValueToken": "2360"
+    },
+    {
+      "timeUtc": "2018-09-16T19:00:00Z",
+      "timeHkt": "2018-09-17T03:00:00+08:00",
+      "seaLevelMm": 2270,
+      "seaLevelM": 2.27,
+      "status": "reported",
+      "sourceLine": 286724,
+      "sourceValueToken": "2270"
+    },
+    {
+      "timeUtc": "2018-09-16T20:00:00Z",
+      "timeHkt": "2018-09-17T04:00:00+08:00",
+      "seaLevelMm": 1940,
+      "seaLevelM": 1.94,
+      "status": "reported",
+      "sourceLine": 286725,
+      "sourceValueToken": "1940"
+    },
+    {
+      "timeUtc": "2018-09-16T21:00:00Z",
+      "timeHkt": "2018-09-17T05:00:00+08:00",
+      "seaLevelMm": 1700,
+      "seaLevelM": 1.7,
+      "status": "reported",
+      "sourceLine": 286726,
+      "sourceValueToken": "1700"
+    },
+    {
+      "timeUtc": "2018-09-16T22:00:00Z",
+      "timeHkt": "2018-09-17T06:00:00+08:00",
+      "seaLevelMm": 1370,
+      "seaLevelM": 1.37,
+      "status": "reported",
+      "sourceLine": 286727,
+      "sourceValueToken": "1370"
+    },
+    {
+      "timeUtc": "2018-09-16T23:00:00Z",
+      "timeHkt": "2018-09-17T07:00:00+08:00",
+      "seaLevelMm": 1180,
+      "seaLevelM": 1.18,
+      "status": "reported",
+      "sourceLine": 286728,
+      "sourceValueToken": "1180"
+    },
+    {
+      "timeUtc": "2018-09-17T00:00:00Z",
+      "timeHkt": "2018-09-17T08:00:00+08:00",
+      "seaLevelMm": 1150,
+      "seaLevelM": 1.15,
+      "status": "reported",
+      "sourceLine": 286729,
+      "sourceValueToken": "1150"
+    },
+    {
+      "timeUtc": "2018-09-17T01:00:00Z",
+      "timeHkt": "2018-09-17T09:00:00+08:00",
+      "seaLevelMm": 1200,
+      "seaLevelM": 1.2,
+      "status": "reported",
+      "sourceLine": 286730,
+      "sourceValueToken": "1200"
+    },
+    {
+      "timeUtc": "2018-09-17T02:00:00Z",
+      "timeHkt": "2018-09-17T10:00:00+08:00",
+      "seaLevelMm": 1230,
+      "seaLevelM": 1.23,
+      "status": "reported",
+      "sourceLine": 286731,
+      "sourceValueToken": "1230"
+    },
+    {
+      "timeUtc": "2018-09-17T03:00:00Z",
+      "timeHkt": "2018-09-17T11:00:00+08:00",
+      "seaLevelMm": 1330,
+      "seaLevelM": 1.33,
+      "status": "reported",
+      "sourceLine": 286732,
+      "sourceValueToken": "1330"
+    },
+    {
+      "timeUtc": "2018-09-17T04:00:00Z",
+      "timeHkt": "2018-09-17T12:00:00+08:00",
+      "seaLevelMm": 1330,
+      "seaLevelM": 1.33,
+      "status": "reported",
+      "sourceLine": 286733,
+      "sourceValueToken": "1330"
+    },
+    {
+      "timeUtc": "2018-09-17T05:00:00Z",
+      "timeHkt": "2018-09-17T13:00:00+08:00",
+      "seaLevelMm": 1290,
+      "seaLevelM": 1.29,
+      "status": "reported",
+      "sourceLine": 286734,
+      "sourceValueToken": "1290"
+    },
+    {
+      "timeUtc": "2018-09-17T06:00:00Z",
+      "timeHkt": "2018-09-17T14:00:00+08:00",
+      "seaLevelMm": 1420,
+      "seaLevelM": 1.42,
+      "status": "reported",
+      "sourceLine": 286735,
+      "sourceValueToken": "1420"
+    },
+    {
+      "timeUtc": "2018-09-17T07:00:00Z",
+      "timeHkt": "2018-09-17T15:00:00+08:00",
+      "seaLevelMm": 1500,
+      "seaLevelM": 1.5,
+      "status": "reported",
+      "sourceLine": 286736,
+      "sourceValueToken": "1500"
+    },
+    {
+      "timeUtc": "2018-09-17T08:00:00Z",
+      "timeHkt": "2018-09-17T16:00:00+08:00",
+      "seaLevelMm": 1650,
+      "seaLevelM": 1.65,
+      "status": "reported",
+      "sourceLine": 286737,
+      "sourceValueToken": "1650"
+    },
+    {
+      "timeUtc": "2018-09-17T09:00:00Z",
+      "timeHkt": "2018-09-17T17:00:00+08:00",
+      "seaLevelMm": 1610,
+      "seaLevelM": 1.61,
+      "status": "reported",
+      "sourceLine": 286738,
+      "sourceValueToken": "1610"
+    },
+    {
+      "timeUtc": "2018-09-17T10:00:00Z",
+      "timeHkt": "2018-09-17T18:00:00+08:00",
+      "seaLevelMm": 1630,
+      "seaLevelM": 1.63,
+      "status": "reported",
+      "sourceLine": 286739,
+      "sourceValueToken": "1630"
+    },
+    {
+      "timeUtc": "2018-09-17T11:00:00Z",
+      "timeHkt": "2018-09-17T19:00:00+08:00",
+      "seaLevelMm": 1610,
+      "seaLevelM": 1.61,
+      "status": "reported",
+      "sourceLine": 286740,
+      "sourceValueToken": "1610"
+    },
+    {
+      "timeUtc": "2018-09-17T12:00:00Z",
+      "timeHkt": "2018-09-17T20:00:00+08:00",
+      "seaLevelMm": 1680,
+      "seaLevelM": 1.68,
+      "status": "reported",
+      "sourceLine": 286741,
+      "sourceValueToken": "1680"
+    },
+    {
+      "timeUtc": "2018-09-17T13:00:00Z",
+      "timeHkt": "2018-09-17T21:00:00+08:00",
+      "seaLevelMm": 1820,
+      "seaLevelM": 1.82,
+      "status": "reported",
+      "sourceLine": 286742,
+      "sourceValueToken": "1820"
+    },
+    {
+      "timeUtc": "2018-09-17T14:00:00Z",
+      "timeHkt": "2018-09-17T22:00:00+08:00",
+      "seaLevelMm": 1970,
+      "seaLevelM": 1.97,
+      "status": "reported",
+      "sourceLine": 286743,
+      "sourceValueToken": "1970"
+    },
+    {
+      "timeUtc": "2018-09-17T15:00:00Z",
+      "timeHkt": "2018-09-17T23:00:00+08:00",
+      "seaLevelMm": 2080,
+      "seaLevelM": 2.08,
+      "status": "reported",
+      "sourceLine": 286744,
+      "sourceValueToken": "2080"
+    },
+    {
+      "timeUtc": "2018-09-17T16:00:00Z",
+      "timeHkt": "2018-09-18T00:00:00+08:00",
+      "seaLevelMm": 2110,
+      "seaLevelM": 2.11,
+      "status": "reported",
+      "sourceLine": 286745,
+      "sourceValueToken": "2110"
+    },
+    {
+      "timeUtc": "2018-09-17T17:00:00Z",
+      "timeHkt": "2018-09-18T01:00:00+08:00",
+      "seaLevelMm": 2060,
+      "seaLevelM": 2.06,
+      "status": "reported",
+      "sourceLine": 286746,
+      "sourceValueToken": "2060"
+    },
+    {
+      "timeUtc": "2018-09-17T18:00:00Z",
+      "timeHkt": "2018-09-18T02:00:00+08:00",
+      "seaLevelMm": 2100,
+      "seaLevelM": 2.1,
+      "status": "reported",
+      "sourceLine": 286747,
+      "sourceValueToken": "2100"
+    }
+  ],
+  "summary": {
+    "recordCount": 271,
+    "reportedCount": 271,
+    "missingCount": 0,
+    "maximumReportedSample": {
+      "timeUtc": "2018-09-16T06:00:00Z",
+      "timeHkt": "2018-09-16T14:00:00+08:00",
+      "seaLevelMm": 3730,
+      "seaLevelM": 3.73,
+      "sourceLine": 286711
+    },
+    "maximumNote": "Maximum among the extracted hourly samples, not the event's higher-frequency instantaneous maximum."
+  },
+  "validation": {
+    "hourlyTimestampContinuity": true,
+    "duplicateTimestamps": 0,
+    "exactJmaTimestampMatches": 46,
+    "jmaRecordCount": 46,
+    "exactMatchPolicy": "JMA's 6-hour analysis timestamps all have exact hourly station observations; no nearest-time substitution is required at those times.",
+    "secondaryErddapSource": "uhslc-erddap-quarry-bay-20180915-17-hkt.csv",
+    "secondaryErddapSha256": "9181fcbf9235b327d00550aa2e484e4ad10ff49dff3f49ee2da5f8008febf2b8",
+    "secondaryComparisonCount": 72,
+    "identicalValueCount": 71,
+    "secondaryQualityCodes": [
+      "4"
+    ],
+    "secondaryUnitsRow": {
+      "time": "UTC",
+      "sea_level": "millimeters",
+      "quality": "",
+      "reference_datum": "",
+      "station_name": "",
+      "version": ""
+    },
+    "differences": [
+      {
+        "timeUtc": "2018-09-15T23:00:00Z",
+        "primaryCsvMm": 2010,
+        "erddapMm": 2009
+      }
+    ],
+    "differencePolicy": "Preserve primary legacy CSV values. The one 1 mm discrepancy is documented; its cause has not been established. Sources are not blended."
+  },
+  "limitations": [
+    "This is observed total sea level at Quarry Bay relative to the archive's station zero, not astronomical tide prediction or storm-surge residual.",
+    "Do not call 3.73 m the official Mangkhut event peak. HKO reports 3.88 m above Chart Datum; the archive's hourly sampling and datum labeling must remain explicit.",
+    "Do not infer city-wide inundation, coastal height, offshore wave height or a storm-surge field from this one station.",
+    "Connecting hourly samples is a plotting aid, not evidence of measurements between samples. Show unavailable data as gaps and label differences as derived arithmetic.",
+    "A storm-surge residual would require a verified contemporaneous astronomical tide series, matching timestamps and vertical datum. No residual has been calculated here.",
+    "Historical station metadata may describe older instrumentation and coordinates. The product uses HKO's published tide-gauge coordinates and does not assert the old instrument description for 2018."
+  ]
+}

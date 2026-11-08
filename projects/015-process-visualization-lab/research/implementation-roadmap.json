@@ -1,0 +1,492 @@
+{
+  "title": "真实地球过程产品差距与实施顺序",
+  "date": "2026-11-05",
+  "status": "specified-pending-implementation",
+  "objective": "利用已有可靠数据与可复用工具，在统一地球、时间轴、图表和MiniMax讲解中理解真实变化；覆盖七个原定方向。",
+  "scope": [
+    "天体与潮汐",
+    "台风与天气",
+    "地震",
+    "火山",
+    "河流与污染迁移",
+    "电池",
+    "发动机"
+  ],
+  "current": {
+    "reusable": [
+      "同一地球及相机",
+      "UTC与影像就绪提交",
+      "观测栅格、点、路径和台站波形",
+      "来源与缺测处理",
+      "图表与MiniMax播放会话"
+    ],
+    "mainGaps": [
+      "视觉主次、相机叙事与标注遮挡",
+      "仅四个人工整理的历史动态案例",
+      "按类型写死文件、关键时刻和讲解",
+      "缺少统一获取、校验、转换、更新及事件注册",
+      "解释以读数为主，影响与结论不足",
+      "地月、河流和设备真实场景未完成"
+    ]
+  },
+  "sourcePolicy": {
+    "referenceLibrary": "50站分别登记数据、代码/工具、媒体、交互参考；不视为50个可调用接口。",
+    "evidenceTypes": [
+      "直接观测",
+      "遥感反演或派生",
+      "明确计算派生",
+      "官方分析",
+      "预报",
+      "教学或自建模型"
+    ],
+    "rules": [
+      "保存真实时间、位置、单位、采样窗口、来源版本、许可和缺测",
+      "历史样本用于复盘与回归，近期数据层声明覆盖、延迟、更新时间与质量",
+      "官方分析及预报保留类型，不能冒充仪器实测",
+      "没有真实设备位置时使用实验或设备入口，不虚构地球坐标"
+    ],
+    "verificationLevel": "官方文档已核实；七方向逐项核验具体文件、覆盖及可解析性。来源门槛按方向执行，不作为共同呈现的全局前置。"
+  },
+  "parallelWork": [
+    {
+      "from": 0,
+      "track": "七方向独立来源核验",
+      "deliverable": "每方向记录目标问题、现成入口、样本获取/解析状态、时空覆盖、使用条件、缺口与备选。任何单方向失败不阻塞公共呈现。"
+    },
+    {
+      "from": 1,
+      "track": "共用呈现与事件接入",
+      "deliverable": "使用现有台风栅格和地震台站资料验证，再按场景准入结果接新资料。"
+    },
+    {
+      "from": 1,
+      "track": "时间空间与设备日志适配",
+      "deliverable": "按operating-contracts支持absolute/elapsed/cycle及geographic/orbital/device；设备适配可由任一合格电池或发动机样本验证，不依赖电池场景先全部完成。"
+    }
+  ],
+  "phases": [
+    {
+      "order": 0,
+      "name": "锁定范围与核验真实来源",
+      "dependsOn": [],
+      "deliverable": "七方向场景与来源任务登记、50站能力映射、每方向准入状态；逐方向取样，不等待全部成功才推进共同呈现。",
+      "doneWhen": [
+        "七方向均有明确第一版任务、真实呈现形式和当前状态",
+        "每个来源有取样/解析/质量/许可核验任务与阻塞项",
+        "已验证样本与仅核实文档分开标明，样本未取得保持待验证"
+      ],
+      "blocksOtherPhases": false
+    },
+    {
+      "order": 1,
+      "name": "共同呈现与事件接入",
+      "dependsOn": [],
+      "deliverable": "地球定位到过程特写的连续视角；少量变化标注与1–2个主要指标；事件包注册、适配器、质量校验、缓存、来源和更新状态；MiniMax章节按事件配置与证据生成。",
+      "doneWhen": [
+        "台风与地震均能看懂位置、时刻、变化和依据",
+        "图表、过程与讲解同刻，关键区域不被标注遮挡",
+        "同类型新事件以数据包和配置接入，不再修改场景主干代码",
+        "现有四案例和六类原理入口保留；新数据不改旧记录",
+        "数字和引用核对后生成MiniMax音频并缓存；暂停、慢帧和缺测同步",
+        "absolute/elapsed/cycle和地理/轨道/设备空间在合同中可表达，禁止补造时间或位置",
+        "层加载状态、实际所见与导出一致，失败重播/重试可复现",
+        "按验收协议记录理解问题、录屏、来源抽检、慢网与小屏结果，未执行项保持待验收"
+      ],
+      "requiredGates": [
+        "existing-representative-fixtures"
+      ],
+      "workPackages": [
+        "FIX-PLAYBACK-EXPORT",
+        "CORE-PRESENTATION",
+        "TIME-SPACE",
+        "EVENT-REGISTRY",
+        "NARRATION-PIPELINE",
+        "SOURCE-OPERATIONS"
+      ],
+      "specificationRef": "research/operating-contracts.json"
+    },
+    {
+      "order": 2,
+      "name": "台风与天气从案例扩展为能力",
+      "dependsOn": [
+        1
+      ],
+      "deliverable": "先限东亚/西太平洋一个区域，接近期可用云图和当地站点；支持事件/日期选择；原山竹及轩岚诺作为复盘案例。",
+      "doneWhen": [
+        "新增一场事件通过统一流程接入",
+        "真实云系、官方中心、当地观测和简短解释对应",
+        "可刷新资料带有效时刻、获取时间与延迟；断流不伪装最新",
+        "风场或预报产品如接入，明确标为分析或预报"
+      ],
+      "requiredGates": [
+        "scenario-specific-source-admission"
+      ],
+      "status": "not-started-new-scope",
+      "scenarioIds": [
+        "weather"
+      ]
+    },
+    {
+      "order": 3,
+      "name": "地震与火山补全",
+      "dependsOn": [
+        1
+      ],
+      "deliverable": "地震支持更多事件的台站或官方震动分布；火山选择确有资料的新增事件，补一个红外之外的观测维度。两项数据处理可并行。",
+      "doneWhen": [
+        "地震可换事件/台站，保留仪器单位，校正后才显示物理振幅",
+        "官方震动估计与台站实测区分，不生成无依据波前",
+        "火山至少接一种已核验热异常、灰云或有出处高度产品",
+        "用户能区分云区、热异常、灰云及喷发高度，未知量不补造"
+      ],
+      "requiredGates": [
+        "scenario-specific-source-admission"
+      ],
+      "status": "not-started-new-scope",
+      "scenarioIds": [
+        "quake",
+        "volcano"
+      ]
+    },
+    {
+      "order": 4,
+      "name": "天体与真实潮汐",
+      "dependsOn": [
+        1
+      ],
+      "deliverable": "JPL星历驱动地月位置和月相几何；一个支持观测与预报的港口，同步显示实际水位、潮汐预报及各自基准。",
+      "doneWhen": [
+        "支持指定地点/日期并核对天体位置",
+        "参考系、时标和比例说明准确",
+        "实测与潮汐预报可比较，水位差不自动归因为单一天体因素",
+        "新增港口采用配置而非新做场景"
+      ],
+      "requiredGates": [
+        "scenario-specific-source-admission"
+      ],
+      "status": "not-started-new-scope",
+      "scenarioIds": [
+        "celestial-tide"
+      ]
+    },
+    {
+      "order": 5,
+      "name": "河流与水质观测到污染迁移",
+      "dependsOn": [
+        1
+      ],
+      "deliverable": "先一段有配对资料的河流，展示河网、上下游流量/水位/水质；边界条件与独立验证具备后再交付迁移推演。",
+      "doneWhen": [
+        "真实采样密度支持所述变化，缺测和检出限可见",
+        "可沿时钟核对各站实际观测，而非生成连续虚构羽流",
+        "迁移模型有排放、流量、边界与验证记录，明确为推算",
+        "只有站点展示时，状态标为水质观测可用、迁移待完成"
+      ],
+      "requiredGates": [
+        "scenario-specific-source-admission"
+      ],
+      "status": "not-started-new-scope",
+      "scenarioIds": [
+        "river-pollution"
+      ]
+    },
+    {
+      "order": 6,
+      "name": "电池真实运行",
+      "dependsOn": [
+        1
+      ],
+      "deliverable": "从公开实验证据或授权BMS日志接入电压、电流、温度、容量及循环；设备局部结构与日志联动。",
+      "doneWhen": [
+        "至少一种实测日志能完整回放、切循环或工况",
+        "局部着色仅对应有测点的部位，内部热场另标模型",
+        "SOC/SOH等估计与实测区分",
+        "可换第二份兼容日志，未知设备地理位置不虚构"
+      ],
+      "requiredGates": [
+        "scenario-specific-source-admission"
+      ],
+      "status": "not-started-new-scope",
+      "scenarioIds": [
+        "battery"
+      ],
+      "dependsOnPackages": [
+        "DEVICE-ADAPTER"
+      ]
+    },
+    {
+      "order": 7,
+      "name": "发动机真实运行",
+      "dependsOn": [
+        1
+      ],
+      "deliverable": "明确具体发动机类型和运行问题，取得合格实测日志与结构对应；复用公共设备日志适配，不要求电池场景全部完成。",
+      "doneWhen": [
+        "转速、负载、温度等实际通道能对应部件与时刻",
+        "围绕一次具体运行变化完成解释与证据核对",
+        "C-MAPSS等仿真数据只能作模型研究，不能计为真实设备场景完成",
+        "实测资料未取得时明确阻塞，同时推进其他方向"
+      ],
+      "requiredGates": [
+        "scenario-specific-source-admission"
+      ],
+      "status": "not-started-new-scope",
+      "scenarioIds": [
+        "engine"
+      ],
+      "dependsOnPackages": [
+        "DEVICE-ADAPTER"
+      ]
+    },
+    {
+      "order": 8,
+      "name": "新增候选方向",
+      "dependsOn": [
+        1
+      ],
+      "deliverable": "雷电、山火/森林变化、空气或海洋环境逐项登记；原七方向的合格任务优先，单个受阻方向不构成永久前置。航空与船舶按独立需求评估。",
+      "doneWhen": [
+        "复用现有场景接入流程并有明确用户问题",
+        "每个新方向达到真实来源、动态、图表、解释与更新同样门槛",
+        "七个原方向均能看到真实进度和阻塞，不把新候选替代原承诺"
+      ],
+      "requiredGates": [
+        "candidate-user-task-defined",
+        "candidate-source-admitted",
+        "priority-review-with-original-scope"
+      ]
+    }
+  ],
+  "priorityNotes": [
+    "首批修失败状态、导出、轮廓及语音重试，同时完成规格修订。",
+    "共同呈现使用已有台风与地震样本启动，不等待七方向全部取样。",
+    "共用能力完成后，台风、地震和火山可并行实现并按范围验收；天体、水环境和设备来源核验从阶段0开始。",
+    "设备公共适配由任一合格设备样本验证；发动机和电池场景分别准入，互不构成必须全部完成的前置。",
+    "每阶段以可见交付、来源证据和验收记录更新真实状态；受阻任务不使用模型冒充已完成。"
+  ],
+  "commonAcceptance": [
+    "首次使用者观看30–60秒后能说明哪里、何时、什么变化及其依据；这是待验证的产品验收目标。",
+    "桌面与手机都能同时看见主要过程和当前解释，原始资料按需展开。",
+    "有实测支持的过程动态随时钟改变；无资料时清晰缺失。",
+    "每场景有对应来源入口、默认主要指标、关键过程与有依据的简短结论。",
+    "新增同类事件能复用配置；更新失败、旧资料、缺测和数据修订可辨认。"
+  ],
+  "progressStates": [
+    "任务已登记",
+    "来源仅文档核实",
+    "来源小样本已核实",
+    "数据已接入",
+    "动态呈现可用",
+    "解读通过",
+    "可替换事件或更新",
+    "受阻并记录原因"
+  ],
+  "schedule": "按工作包记录未开始/进行中/可验收/已通过/受阻。各方向取得小样本后分别估算工作量；共同呈现基于已有代表资料启动，不以所有方向数据齐备作为排期门槛。具体日期由首批实现和来源核验结果校准。",
+  "sourcesChecked": [
+    {
+      "name": "JPL Horizons API",
+      "url": "https://ssd-api.jpl.nasa.gov/doc/horizons.html",
+      "supports": "星历查询；不同于逐帧仪器实测。"
+    },
+    {
+      "name": "NOAA CO-OPS API",
+      "url": "https://api.tidesandcurrents.noaa.gov/api/prod/",
+      "supports": "站点观测与预报；产品、时间和基准分开。"
+    },
+    {
+      "name": "USGS Earthquake Catalog",
+      "url": "https://earthquake.usgs.gov/fdsnws/event/1/",
+      "supports": "事件目录与查询；不等于每个事件都有波形和影响产品。"
+    },
+    {
+      "name": "NOAA/JMA Himawari AWS Registry",
+      "url": "https://registry.opendata.aws/noaa-himawari/",
+      "supports": "东亚/太平洋卫星资料与历史档案，具体文件覆盖待取样。"
+    },
+    {
+      "name": "Smithsonian/USGS Volcanic Activity Report",
+      "url": "https://volcano.si.edu/reports_weekly.cfm",
+      "supports": "火山活动报告，非全球所有喷发及连续监测清单。"
+    },
+    {
+      "name": "NASA FIRMS API",
+      "url": "https://firms.modaps.eosdis.nasa.gov/api/",
+      "supports": "热点查询候选；需MAP_KEY，热点不等于火山灰浓度或高度。"
+    },
+    {
+      "name": "USGS Water Data APIs",
+      "url": "https://api.waterdata.usgs.gov/docs/",
+      "supports": "连续测站、水质与监测位置。"
+    },
+    {
+      "name": "Water Quality Portal",
+      "url": "https://www.waterqualitydata.us/webservices_documentation/",
+      "supports": "离散水质；旧WQX2.2不含2024-03-11后新增USGS资料，应核验新接口和具体时窗。"
+    },
+    {
+      "name": "NASA PCoE Repository",
+      "url": "https://www.nasa.gov/intelligent-systems-division/discovery-and-systems-health/pcoe/pcoe-data-set-repository/",
+      "supports": "有电池实验资料；C-MAPSS为仿真；部分数据不可直接下载，具体文件待取样。"
+    }
+  ],
+  "repositoryEvidence": [
+    "app/dynamic-data.js",
+    "app/dynamic-player.js",
+    "app/observed-presentation.js",
+    "app/narration-script.js",
+    "research/real-events/extension-contract.md",
+    "research/audit-v16/findings.json",
+    "../014-web-product-reference-library/research/catalog.json"
+  ],
+  "revision": 2,
+  "revisionScope": "修订规划依赖并补七方向规格与运行合同；状态表示规格已写入，不表示新场景、数据或后台已接通。",
+  "specificationFiles": {
+    "scenarios": "research/scenario-specifications.json",
+    "operations": "research/operating-contracts.json",
+    "review": "research/roadmap-review.json"
+  },
+  "scopeBoundaries": {
+    "天体与潮汐": "首版为地月位置、月相与一个港口潮汐；行星、日月食、卫星轨道单列候选。",
+    "河流与污染迁移": "实测水质观察和迁移推演分别计进度；只有站点读数不算迁移完成。",
+    "电池与发动机": "传感器回放、状态估计和内部场重建分别计进度；真实地址缺失时使用实验台入口。"
+  },
+  "dependencyPolicy": {
+    "principle": "展示与接入共用工作使用已交付的代表资料启动；每个新场景单独通过自己的来源门槛。",
+    "sharedFixtureGate": {
+      "id": "existing-representative-fixtures",
+      "status": "available-from-current-project",
+      "evidence": [
+        "app/data/storm-dynamic.json",
+        "app/data/quake-dynamic.json"
+      ],
+      "meaning": "现有台风栅格和地震台站两种资料可用于开发；不代表新增来源已验证。"
+    },
+    "perScenarioGate": [
+      "确定用户问题与首版范围",
+      "取得有出处的小样本并实际解析",
+      "核对时间/坐标/单位/采样/质量/许可",
+      "确认资料能支持该场景可见过程"
+    ],
+    "blockedBehavior": "只阻塞该场景尚不具备证据的能力；记录缺口和备选来源，继续其余合格工作包。",
+    "candidatePolicy": "原七方向均保留任务与真实状态；新候选只依赖共用能力和自身数据门槛，原定可做任务优先，但不因某个长期缺数据方向永久等待。"
+  },
+  "workPackages": [
+    {
+      "id": "FIX-PLAYBACK-EXPORT",
+      "ownerRole": "前端状态与回归",
+      "status": "verified-local",
+      "dependsOn": [],
+      "input": "现有播放器失败复现与导出检查",
+      "output": "重播成功提交后才启动、导出实际显示状态及派生版本、轮廓与音轨失败可重试",
+      "acceptanceEvidence": [
+        "失败-重试回归结果",
+        "实际页面检查记录",
+        "导出样本"
+      ],
+      "completionRule": "以实际代码和验收记录确认，不以本规划文件计完成。",
+      "evidence": [
+        "research/qa-v17/storm-ready-export.json",
+        "research/verification-v17.json",
+        "tests/dynamic-player.test.mjs",
+        "tests/narration-guide.test.mjs",
+        "tests/observed-presentation.test.mjs"
+      ]
+    },
+    {
+      "id": "CORE-PRESENTATION",
+      "ownerRole": "呈现与交互",
+      "status": "specified-pending-implementation",
+      "dependsOn": [],
+      "requiredGates": [
+        "existing-representative-fixtures"
+      ],
+      "input": "scenario-specifications中的weather和quake规格",
+      "output": "定位-聚焦-过程-证据-结论连续体验，默认不超过两条主要指标曲线",
+      "acceptanceEvidence": [
+        "同状态参照/实机录屏",
+        "桌面/小屏截图",
+        "理解任务记录"
+      ]
+    },
+    {
+      "id": "TIME-SPACE",
+      "ownerRole": "数据合同与校验",
+      "status": "specified-pending-implementation",
+      "dependsOn": [],
+      "input": "三种时间与三种空间合同",
+      "output": "版本化时间/空间描述、单位基准和映射规则；旧四案例适配",
+      "acceptanceEvidence": [
+        "合同样例",
+        "非法映射拒绝样例",
+        "旧案例数据不变校验"
+      ]
+    },
+    {
+      "id": "EVENT-REGISTRY",
+      "ownerRole": "事件接入",
+      "status": "specified-pending-implementation",
+      "dependsOn": [
+        "TIME-SPACE"
+      ],
+      "input": "版本化事件包与来源/质量元数据",
+      "output": "按eventId读取配置，替代按kind写死文件/关键时刻；派生绑定原始版本与网格",
+      "acceptanceEvidence": [
+        "第二个同类事件仅用配置接入",
+        "同刻异事件派生不串用",
+        "缺图层能力声明"
+      ]
+    },
+    {
+      "id": "SOURCE-OPERATIONS",
+      "ownerRole": "资料处理与运行",
+      "status": "specified-pending-implementation",
+      "dependsOn": [
+        "TIME-SPACE"
+      ],
+      "input": "逐来源准入与有限资料窗口",
+      "output": "获取-校验-转换-版本化-发布；按来源更新，失败保留旧版及日期",
+      "acceptanceEvidence": [
+        "一源失败其余成功更新样例",
+        "完整receipt与重跑结果",
+        "旧版恢复记录"
+      ]
+    },
+    {
+      "id": "NARRATION-PIPELINE",
+      "ownerRole": "内容证据与语音",
+      "status": "specified-pending-implementation",
+      "dependsOn": [
+        "TIME-SPACE",
+        "EVENT-REGISTRY"
+      ],
+      "input": "结构化事实、证据记录、人工核对的来源解释和章节cue",
+      "output": "脚本验证、MiniMax音轨缓存/失效、迟到结果取消与字幕回退；首版不包含自由问答",
+      "acceptanceEvidence": [
+        "数字/单位/引用核对",
+        "数据修订后旧音轨不误用",
+        "快切/慢帧/语音失败恢复"
+      ]
+    },
+    {
+      "id": "DEVICE-ADAPTER",
+      "ownerRole": "设备数据与局部视图",
+      "status": "specified-pending-implementation",
+      "dependsOn": [
+        "TIME-SPACE",
+        "EVENT-REGISTRY"
+      ],
+      "anySampleGates": [
+        "battery-real-log-admitted",
+        "engine-real-log-admitted"
+      ],
+      "input": "任一已准入的实测设备日志",
+      "output": "相对时长/循环、通道、测点与设备局部坐标适配；可供电池和发动机分别实现",
+      "acceptanceEvidence": [
+        "日志解析与单位核对",
+        "无UTC/无地址不补造",
+        "第二份兼容日志导入"
+      ]
+    }
+  ],
+  "commonAcceptanceProtocolRef": "research/operating-contracts.json#/acceptanceProtocol"
+}

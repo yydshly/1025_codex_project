@@ -1,0 +1,368 @@
+{
+  "schemaVersion": 1,
+  "revision": 1,
+  "title": "真实场景接入 数据运行与讲解合同",
+  "date": "2026-11-05",
+  "status": "specified-pending-implementation",
+  "implementationBoundary": "本文件是待实现运行合同；不声明当前本地静态预览已具备后台、持久更新或动态音轨生成服务。",
+  "timeAndSpace": {
+    "time": {
+      "absolute": {
+        "required": [
+          "value/timeUtc或windowStart/windowEnd",
+          "timeScale",
+          "precision",
+          "meaning"
+        ],
+        "rules": [
+          "UTC日历时间可做共同显示时钟，发布时间、获取时间与有效时间分开。",
+          "星历UT/TDB等转换须记录算法/版本，不用字符串改名代替时标转换。",
+          "平均、累计、采样与扫描窗口保留，过期观测不延长成同刻测量。"
+        ]
+      },
+      "elapsed": {
+        "required": [
+          "value",
+          "unit",
+          "originDefinition",
+          "monotonicSegmentId"
+        ],
+        "rules": [
+          "适用于实验和设备时长，无真实起始UTC时不得虚构日历日期。",
+          "暂停、重置、采样缺段各有明确段标识。"
+        ]
+      },
+      "cycle": {
+        "required": [
+          "cycleId",
+          "cycleDefinition",
+          "withinCycleTime或sampleIndex"
+        ],
+        "rules": [
+          "循环为离散序号，不当作等距真实时间。",
+          "跨循环的容量/工况可比条件单列，未知间隔不补造。"
+        ]
+      },
+      "mapping": {
+        "rule": "不同时间基准只有来源给出或经核实的origin/转换时才同步；否则同页面并列但不称同一时钟。",
+        "displayClockVsObservation": "保存selectedClock、actualSampleTime/window、age、matchingRule和是否超过maxAge。"
+      }
+    },
+    "space": {
+      "geographic": {
+        "required": [
+          "geometry",
+          "CRS",
+          "axisOrder",
+          "units",
+          "locationMeaning"
+        ],
+        "rules": [
+          "经纬度、深度/海拔和高度基准分开。",
+          "栅格保留原投影、分辨率、重投影方法、覆盖与无效掩膜。",
+          "跨日界线、海岸线、无坐标和云视差须有测试/说明。"
+        ]
+      },
+      "orbital": {
+        "required": [
+          "origin/center",
+          "referenceFrame",
+          "distanceUnit",
+          "orientation/timeScale",
+          "ephemerisParameters"
+        ],
+        "rules": [
+          "地球表面站点与轨道坐标通过明确变换关联。",
+          "画面尺寸或距离放大只影响显示，不回写计算数据。"
+        ]
+      },
+      "device": {
+        "required": [
+          "deviceId/type",
+          "partId/channelId",
+          "coordinateSystem或明确部件关系",
+          "units",
+          "mappingEvidence"
+        ],
+        "rules": [
+          "没有真实测点坐标可显示部件/通道列表，不自行安排空间测点。",
+          "只有真实设施位置已知时才使用地球入口；实验台可直接进入局部视图。",
+          "内部场插值或模型单列，不能将少量传感器着色成完整实测场。"
+        ]
+      }
+    }
+  },
+  "eventPackage": {
+    "required": [
+      "stableEventOrExperimentId",
+      "schemaVersion",
+      "scenarioId",
+      "question",
+      "timeDescriptor",
+      "spaceDescriptor",
+      "sourceVersions",
+      "availableCapabilities",
+      "recordsOrAssets",
+      "qualityAndMissing",
+      "provenance",
+      "displayConfig",
+      "chapterConfig"
+    ],
+    "records": [
+      "originalRecordId",
+      "quantity",
+      "value/null",
+      "unit",
+      "actualTime/window",
+      "sourceVersion",
+      "qualityFlag"
+    ],
+    "capabilities": [
+      "available",
+      "partial",
+      "missing",
+      "blocked"
+    ],
+    "derivedBinding": [
+      "eventId",
+      "inputRecordIds/inputSHA256",
+      "sourceVersion",
+      "grid/CRS/bbox",
+      "ROI/threshold",
+      "algorithmVersion",
+      "processingParameters"
+    ],
+    "rules": [
+      "同kind、同UTC并不代表同一来源；派生轮廓、统计和音轨不得仅按时间串用。",
+      "新事件通过注册器读配置，核心播放器不按类型固定读取唯一文件。",
+      "旧版事件包只读保留，迁移用适配器，不篡改原记录。",
+      "显示导出包括所选时刻、已提交记录、实际显示帧、loading/ready/failed/missing状态及显示增强/派生版本。"
+    ]
+  },
+  "sourceAdmission": {
+    "stages": [
+      "documentation-only",
+      "sample-retrieved",
+      "sample-parsed",
+      "quality-and-rights-checked",
+      "admitted"
+    ],
+    "checklist": [
+      "具体文件/响应确实取得并可解析，保存原字节或可复现引用与SHA",
+      "时空覆盖和采样密度能支持场景问题",
+      "量、单位、时标、坐标、基准、缺测/质量码及修订明确",
+      "数据、代码、媒体和再展示条件分别确认",
+      "资料性质为观测/派生/分析/预报/模型之一",
+      "具备断流、撤回、更正和备选来源处理"
+    ],
+    "perScenario": "每方向独立准入；没有合格数据的子能力保持blocked，不隐藏原方向或标为完成。"
+  },
+  "dataOperations": {
+    "executionModel": {
+      "preview": "继续可使用现有本地静态已核验包。",
+      "candidateRuntime": "首版接入任务在本地Node/Python处理端按需运行并原子发布资料包，浏览器只读取适合显示的版本；未来部署再决定托管位置。",
+      "notAssumed": "本轮未新增常驻服务、自动定时任务、第三方账号或公网部署。"
+    },
+    "pipeline": [
+      {
+        "step": "discover",
+        "output": "候选事件、站点/日志与来源准入任务"
+      },
+      {
+        "step": "retrieve",
+        "output": "原响应/文件、来源、获取时刻、状态和哈希receipt"
+      },
+      {
+        "step": "validate",
+        "output": "领域schema、时间、单位、质量、坐标、覆盖和输入一致性报告"
+      },
+      {
+        "step": "transform",
+        "output": "适合网页的栅格/点/路径/波形与独立数值资料，算法参数及输入版本"
+      },
+      {
+        "step": "publish",
+        "output": "通过校验后原子替换该来源版本，并产生事件清单和可恢复旧版"
+      },
+      {
+        "step": "explain",
+        "output": "仅从通过校验的记录与来源说明生成章节事实和证据引用"
+      }
+    ],
+    "perSourceConfiguration": [
+      "coverage",
+      "requestedWindow",
+      "cadenceOrOnDemand",
+      "maxAge/staleAfter",
+      "expectedLatency",
+      "maximumBytes/records",
+      "processingLocation",
+      "timeout/retryBackoff",
+      "versionAndRevisionRule",
+      "cacheAndRetention",
+      "licenseAttribution",
+      "alternativeSource",
+      "failurePolicy"
+    ],
+    "updatePolicy": [
+      "每个来源独立保留成功版本与失败状态，单源失败不丢弃其他成功更新。",
+      "跨来源时刻不同可并列，界面显示各自有效时刻，不以单个总获取时间掩盖差异。",
+      "只有来源成功且通过质量检查才替换该来源有效包；失败保留旧版及真实日期并标过期。",
+      "按需刷新首版先可用；持续自动更新须有来源级周期、容量和维护策略后单独验收。"
+    ],
+    "cachePolicy": [
+      "原记录、派生包、纹理和音轨分别缓存，以稳定ID和内容版本为键。",
+      "原始研究资料保留可复现快照；浏览器缓存按场景窗口及设备预算有界。",
+      "大数据按区域、时间和分辨率分块；首屏不下载全球长期全量。",
+      "资料修订发布新版本，旧结论和音轨能识别使用旧版本；不得静默替换引用。"
+    ],
+    "failureStates": [
+      "source-unavailable",
+      "sample-missing",
+      "quality-rejected",
+      "processing-failed",
+      "asset-loading",
+      "asset-failed",
+      "stale",
+      "partial-capability"
+    ],
+    "uiRules": [
+      "主影像、派生轮廓、图表和音频状态独立显示。",
+      "图层失败后撤下该图层旧时刻内容及正常可用暗示，原真实读数保留实际记录时间。",
+      "重试只恢复成功提交的层；用户切换事件/时刻后迟到结果不得覆盖当前状态。",
+      "离线可读取明确标时的已核验缓存，不伪装当前资料。"
+    ]
+  },
+  "narration": {
+    "firstVersionScope": "有证据的配置式章节讲解与MiniMax语音；自由追问、任意因果解释和专业诊断不计入首版。",
+    "scriptSchema": [
+      "chapterId",
+      "eventPackageVersion",
+      "selectedRange",
+      "observationFacts(recordId,value,unit,window)",
+      "derivedChanges(formula,inputIds)",
+      "sourceInterpretation(citation,applicableRange)",
+      "unknowns",
+      "visualCues(frame/station/metricIds)",
+      "displayedText"
+    ],
+    "workflow": [
+      "从通过校验的资料选择背景、变化、后期等实际片段，缺失片段明确跳过。",
+      "事实和计算由记录生成；原因/影响解释只引用适用范围内的来源说明，走势相关不自行生成因果。",
+      "脚本先校验数字、单位、比较口径、时间、引用与未知边界；内容核对结果记录到该脚本版本，未通过时保持字幕/草稿且不生成音轨。",
+      "使用现有MiniMax音色设置生成或复用该脚本音轨，保存模型/音色/语速、文本、时长与SHA。",
+      "语音cue绑定片段和真实记录提交；画面等待时语音/章节暂停，用户操作可取消自动讲解。"
+    ],
+    "cacheKey": [
+      "eventPackageVersion",
+      "chapterScriptSHA256",
+      "language",
+      "provider/model",
+      "voiceId",
+      "voiceSettings"
+    ],
+    "invalidation": [
+      "数据、计算、解释引用或脚本文字改变时，不复用旧语义音轨；内容未变可复用。",
+      "清单请求暂时失败可重试；真实缺音轨明确字幕模式；缓存失败结果不应永久阻断网络恢复。",
+      "异步生成/加载携带会话token；切事件、改窗口或退出时取消旧任务，迟到结果只入对应版本缓存，不自动播放。"
+    ],
+    "costAndLimits": {
+      "mode": "优先播放既有缓存；新脚本校验通过且生成预算已配置后才进入生成队列。",
+      "requiredConfiguration": [
+        "maximumTextLengthPerChapter",
+        "maximumNewCharactersPerRun",
+        "maximumConcurrentJobs",
+        "timeout/retryLimit",
+        "maximumCostPerRun或等效可计算限额"
+      ],
+      "prices": "实施时读取供应商当期计价，当前规划不承诺价格。",
+      "unconfiguredBehavior": "只用已生成音轨和字幕，不发起无限制生成；失败不重复计费式重试。"
+    },
+    "evidence": [
+      "脚本文字与数字核对记录",
+      "音轨文本/设置/字节/时长/hash",
+      "引用适用范围",
+      "画面-图表-音频cue实际检查"
+    ]
+  },
+  "acceptanceProtocol": {
+    "workStatus": [
+      "not-started",
+      "in-progress",
+      "ready-for-review",
+      "accepted",
+      "blocked"
+    ],
+    "artifactStatus": "本合同与场景规格状态为specified，不能替代实际实现accepted。",
+    "perPackageEvidence": [
+      "范围与输入版本",
+      "原始记录抽检",
+      "自动化检查结果",
+      "同状态实机截图/录屏",
+      "失败/恢复检查",
+      "理解任务结果或明确待验收",
+      "阻塞与下一步"
+    ],
+    "understanding": {
+      "target": "首次使用者看30–60秒后能回答哪里/何时/什么变化/依据是什么。",
+      "method": "每个新场景至少3名未参与实现的试用者独立完成固定任务，逐题记录回答与对应证据；少于3人或未测时标待验证，不用开发者自述代替。",
+      "passRule": "每名试用者回答四题；至少3/4题正确且没有把模型/预报当成实测，未通过则调整表达再测。",
+      "questions": [
+        "变化发生在哪里或哪个设备/测点？",
+        "显示的是哪段真实时间、相对时长或循环？",
+        "关键对象或指标怎样变化？",
+        "哪条原始观测/分析支持该判断，哪里仍未知？"
+      ]
+    },
+    "visual": {
+      "method": "同事件、同一时刻、同一视口保存参考目标与实际录屏；核对关键对象、变化区域、镜头和图表，而非只检查页面有元素。",
+      "checks": [
+        "主过程可见且变化来自记录，不以镜头移动代替动态",
+        "关键区域不被标注遮挡，默认主要曲线不超过2条",
+        "视觉色标、单位、类型和时间可辨认",
+        "原始图/行核对入口可用",
+        "桌面1440×1000与窄屏390×844核验，产品实际窗口另抽查"
+      ]
+    },
+    "dataSampling": [
+      "每条主要曲线至少抽起点、关键变化、后期及缺测/失败时刻，对应原行或数值像元。",
+      "统计与轮廓核对事件、输入hash、网格、ROI、阈值和算法。",
+      "不同单位、平均窗、基准和参考系拒绝静默比较。",
+      "导出重读能区分记录值与当时实际显示状态。"
+    ],
+    "failureAndAccessibility": [
+      "慢网/加载失败/源缺测/质量拒绝/重试恢复",
+      "连续快切事件和时刻，无迟到数据或语音串入",
+      "暂停、逐步、键盘和减少动态偏好",
+      "小屏/缩放、焦点可见和标注不挡主体",
+      "颜色之外保留符号/文字，字体与对比实机核对；不据截图声称WCAG全面合规"
+    ],
+    "performance": {
+      "status": "measurement-pending",
+      "baselineRequired": [
+        "固定测试设备/浏览器/视口",
+        "有代表性的短/长事件包和同时图层数",
+        "冷缓存、热缓存、慢网条件",
+        "首帧耗时、预载命中拖动提交时延、FPS与内存/纹理数量"
+      ],
+      "proposedTargetsNotYetAccepted": {
+        "warmFirstUsableFrameSeconds": 3,
+        "preloadedSeekP95Milliseconds": 300,
+        "desktopRenderingFpsAtLeast": 30,
+        "mobileRenderingFpsAtLeast": 20,
+        "longReplayMinutes": 30
+      },
+      "targetPolicy": "先测基线与瓶颈，再确认适用设备和最终预算；未量测不宣称通过。",
+      "longReplayRule": "长回放与反复切场景后缓存/纹理数保持配置上限，失败恢复不累积活动任务。"
+    },
+    "completion": "观测接入、动态呈现、解释、模型和复用各自计状态；只有原始数据/动画/来源链接不算场景全部完成。"
+  },
+  "evidenceTypes": {
+    "observed": "直接仪器/人工观测",
+    "retrieved": "有产品方法的遥感反演或派生",
+    "derived": "由明确输入和公式计算",
+    "analysis": "官方或明确产品的分析/估计",
+    "forecast": "有发布时间与有效时间的预报",
+    "model": "教学或自建模型输出"
+  }
+}

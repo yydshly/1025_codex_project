@@ -1,0 +1,842 @@
+.tide-panel {
+  color: #eff5fc;
+  min-width: 0;
+  font-variant-numeric: tabular-nums;
+}
+
+body[data-dynamic-kind="tide"].observation-flow-active .tide-panel[data-observation-primary] {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: none;
+}
+
+.tide-kicker {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px 9px;
+  margin-bottom: 6px;
+  color: #b8c7df;
+  font-size: 10px;
+}
+
+.tide-kicker time {
+  padding: 3px 5px;
+  border: 1px solid #8396b66c;
+  border-radius: 4px;
+  background: #0a1425;
+  color: #f7f9ff;
+  white-space: nowrap;
+  font: 600 10px/1.3 ui-monospace, monospace;
+}
+
+.tide-heading,
+.tide-legend {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 4px 9px;
+}
+
+.tide-heading {
+  font-size: 13px;
+}
+
+.tide-heading > strong {
+  color: #eff5fc;
+  font-weight: 650;
+}
+
+.tide-heading > span,
+.tide-legend,
+.tide-footnote {
+  color: #c4d1e2;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.tide-footnote {
+  margin: 6px 0 0;
+}
+
+.tide-status {
+  display: inline-block;
+  margin: 7px 0 0;
+  padding: 3px 6px;
+  border: 1px solid #9180c28c;
+  border-radius: 3px;
+  background: #2c2546;
+  color: #ece1ff;
+  font-size: 11px;
+  line-height: 1.25;
+}
+
+.tide-status[data-state="below"],
+.tide-status[data-state="missing"] {
+  border-color: #7d8da085;
+  background: #1e2738;
+  color: #b9cadd;
+}
+
+.tide-compass,
+.tide-chart {
+  width: 100%;
+  display: block;
+  height: auto;
+  overflow: visible;
+}
+
+.tide-compass {
+  max-height: 103px;
+  margin: 3px auto 0;
+}
+
+.tide-compass-ring {
+  fill: #25284380;
+  stroke: #a48edb70;
+  stroke-width: .8;
+}
+
+.tide-compass-grid {
+  stroke: #9797c060;
+  stroke-width: .7;
+}
+
+.tide-compass text {
+  fill: #d1d9e7;
+  font: 9px ui-monospace, monospace;
+}
+
+.tide-chart text {
+  fill: #cad6e4;
+  font: 10px ui-monospace, monospace;
+}
+
+.tide-compass-bearing,
+.tide-compass-dot {
+  stroke: #d6c5ff;
+}
+
+.tide-compass-bearing {
+  stroke-width: 1.35;
+}
+
+.tide-compass-dot {
+  fill: #d6c5ff;
+  stroke-width: .75;
+}
+
+.tide-compass[data-state="below"] .tide-compass-bearing {
+  stroke-dasharray: 3 2;
+}
+
+.tide-compass[data-state="below"] .tide-compass-dot {
+  fill: #201c35;
+}
+
+.tide-measures {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6px;
+  margin: 8px 0 5px;
+}
+
+.tide-measure {
+  min-width: 0;
+  display: grid;
+  gap: 4px;
+  padding: 7px 6px;
+  border-top: 1px solid #6b87a25c;
+  background: #0d172a73;
+  color: #c3d1e2;
+  font-size: 11px;
+  line-height: 1.3;
+}
+
+.tide-measure strong {
+  color: var(--tide-ink, #d6c5ff);
+  font-family: ui-monospace, monospace;
+  font-size: clamp(14px, 1.45vw, 21px);
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+}
+
+.tide-measure small {
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+.tide-water-measures .tide-measure {
+  gap: 3px;
+  border: 1px solid #8496b049;
+  border-left: 2px solid var(--tide-ink);
+  border-radius: 4px;
+  padding: 7px 6px;
+}
+
+.tide-water-measures .tide-predicted {
+  border-style: dashed;
+}
+
+.tide-water-measures .tide-measure strong {
+  white-space: nowrap;
+  font-size: clamp(12px, 1.2vw, 17px);
+}
+
+.tide-measure .tide-measure-role {
+  color: #a5b8cc;
+  font-size: 10px;
+}
+
+.tide-delta {
+  --tide-delta-ink: #c8d6e9;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 8px;
+  margin-top: 6px;
+  padding: 6px 7px;
+  border: 1px solid #7893b34d;
+  border-radius: 5px;
+  background: #0c1728;
+  color: var(--tide-delta-ink);
+}
+
+.tide-delta[data-tide-comparison="above"] {
+  --tide-delta-ink: #87ecdf;
+}
+
+.tide-delta[data-tide-comparison="below"] {
+  --tide-delta-ink: #ffd298;
+}
+
+.tide-delta-label {
+  flex: 1 0 100%;
+  color: #c8d6e9;
+  font-size: 10px;
+}
+
+.tide-delta strong {
+  font: 650 clamp(15px, 1.45vw, 21px)/1.2 ui-monospace, monospace;
+  white-space: nowrap;
+}
+
+.tide-delta [data-tide-difference-relation] {
+  font-size: 10px;
+}
+
+.tide-chart-heading {
+  margin-top: 10px;
+}
+
+.tide-elevation-evidence {
+  border-radius: 4px;
+}
+
+.tide-crossings {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 5px;
+  margin-top: 4px;
+}
+
+.tide-crossings > div {
+  display: grid;
+  gap: 3px;
+  padding: 5px 6px;
+  border-top: 1px solid #a48edb70;
+  background: #231e39a8;
+  color: #e4d8ff;
+  font-size: 10px;
+}
+
+.tide-crossings strong {
+  font: 600 clamp(9px, .84vw, 11px)/1.3 ui-monospace, monospace;
+}
+.tide-crossings small {
+  color: #aee8e4;
+  font-size: 9px;
+}
+
+.tide-peaks {
+  margin-top: 4px;
+  padding: 6px 0 0;
+  border-top: 1px solid #8095b355;
+}
+
+.tide-peaks .tide-heading {
+  font-size: 11px;
+}
+
+.tide-peak-zoom {
+  display: none;
+  margin-top: 4px;
+  padding: 6px 7px 5px;
+  border: 1px solid #7893b378;
+  border-radius: 5px;
+  background: #0c192b;
+}
+
+.tide-peak-zoom .tide-heading {
+  font-size: 12px;
+}
+
+.tide-peak-zoom .tide-heading > span,
+.tide-peak-zoom .tide-footnote {
+  font-size: 10px;
+}
+
+.tide-peak-mark {
+  fill: #0c192b;
+  stroke: var(--tide-ink);
+  stroke-width: 1.9;
+}
+
+.tide-peak-mark.tide-predicted {
+  stroke-dasharray: 2.5 1;
+}
+
+.tide-peak-times {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 5px;
+  margin-top: 5px;
+}
+
+.tide-peak-times > div {
+  min-width: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 3px 6px;
+  padding: 5px 6px;
+  border-left: 2px solid var(--tide-ink);
+  border-radius: 3px;
+  background: #0d192b;
+  color: #cedaeb;
+  font-size: 10px;
+}
+
+.tide-peak-times > div > span {
+  flex: 1 0 100%;
+}
+
+.tide-peak-clocks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 5px;
+  font-variant-numeric: tabular-nums;
+}
+
+.tide-peak-clocks time + time::before {
+  content: "·";
+  margin-right: 5px;
+}
+
+.tide-peak-times time,
+.tide-peak-times strong {
+  color: var(--tide-ink);
+  white-space: nowrap;
+}
+
+.tide-peak-times .tide-predicted {
+  border-left-style: dashed;
+}
+
+.tide-observed {
+  --tide-ink: #68e0d4;
+}
+
+.tide-predicted {
+  --tide-ink: #f5ba70;
+}
+
+.tide-elevation {
+  --tide-ink: #d6c5ff;
+}
+
+.tide-legend {
+  justify-content: flex-start;
+  margin: 7px 0 4px;
+}
+
+.tide-legend > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.tide-legend i {
+  display: inline-block;
+  width: 15px;
+  border-top: 2px solid var(--tide-ink);
+}
+
+.tide-legend .tide-predicted i {
+  border-top-style: dashed;
+  border-top-width: 3px;
+}
+
+.tide-grid,
+.tide-horizon {
+  fill: none;
+  stroke: #637796;
+  stroke-width: .65;
+}
+
+.tide-grid {
+  stroke-opacity: .55;
+}
+
+.tide-horizon {
+  stroke: #b7c6de;
+  stroke-dasharray: 3 2;
+}
+
+.tide-below-area {
+  fill: #8674bd1d;
+}
+
+.tide-trace {
+  fill: none;
+  stroke: var(--tide-ink);
+  stroke-width: 1.65;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.tide-trace.tide-predicted {
+  stroke-width: 3.05;
+  stroke-dasharray: 4 3;
+  stroke-linecap: butt;
+}
+
+.tide-chart-history {
+  opacity: .52;
+}
+
+.tide-now-line {
+  stroke: #faf8f4;
+  stroke-dasharray: 2.5 2;
+  stroke-width: 1.25;
+}
+
+.tide-now-dot {
+  fill: var(--tide-ink);
+  stroke: #182334;
+  stroke-width: 1;
+}
+
+.tide-now-dot.tide-predicted {
+  fill: none;
+  stroke: var(--tide-ink);
+  stroke-width: 1.4;
+}
+
+body[data-dynamic-kind="tide"] .tide-panel .tide-chart + .tide-footnote {
+  margin-top: 3px;
+}
+
+body[data-dynamic-kind="tide"]:is([data-tide-focus="rise"], [data-tide-focus="set"]) .tide-elevation-evidence {
+  outline: 1px solid #c9b3f4;
+  outline-offset: 4px;
+  background: #241c3a78;
+}
+
+body[data-dynamic-kind="tide"][data-tide-focus="rise"] [data-tide-crossing="rise"],
+body[data-dynamic-kind="tide"][data-tide-focus="set"] [data-tide-crossing="set"] {
+  outline: 1px solid #d6c5ff;
+  outline-offset: -1px;
+  background: #443566;
+  color: #fff6ff;
+}
+
+body[data-dynamic-kind="tide"][data-tide-focus="peak"] .tide-delta {
+  border-color: #8ae7de8f;
+  background: #102333;
+}
+
+body[data-dynamic-kind="tide"][data-tide-focus="peak"] .tide-peak-zoom {
+  display: block;
+}
+
+@media (min-width: 1001px) {
+  body[data-mode="dynamic"][data-dynamic-kind="tide"].observation-flow-active:not(.focus-earth) .observatory {
+    grid-template-columns: clamp(168px, 13.4vw, 214px) minmax(0, 1fr) clamp(204px, 16.5vw, 260px);
+    gap: clamp(10px, 1.05vw, 18px);
+  }
+}
+
+@media (min-width: 1001px) and (max-width: 1450px) {
+  .tide-crossings {
+    grid-template-columns: 1fr;
+  }
+
+  .tide-crossings > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 4px;
+  }
+  .tide-crossings small { flex-basis: 100%; }
+}
+
+@media (max-width: 700px) {
+  body[data-dynamic-kind="tide"] #current-insight {
+    grid-column: 1 / -1;
+  }
+
+  .tide-crossings strong {
+    font-size: 11px;
+  }
+}
+body[data-dynamic-kind="tide"] .earth-view:has(#dynamic-close[aria-pressed="true"]) #rotate {
+  display: none;
+}
+
+body[data-dynamic-kind="tide"] #observed-keyframes:not([hidden]),
+body[data-dynamic-kind="tide"] .timeline {
+  margin: 0 0 7px;
+}
+
+body[data-dynamic-kind="tide"] #observed-keyframes button {
+  padding: 5px 7px;
+}
+
+body[data-dynamic-kind="tide"]:not(.demo-active) :is(.demo-catalog-section, .narration-entry) {
+  display: none;
+}
+
+body[data-dynamic-kind="tide"] #dynamic-toolbar {
+  flex-flow: row wrap;
+  align-items: baseline;
+  gap: 3px 16px;
+  margin-bottom: 10px;
+  padding-block: 5px;
+  background: #0a1422;
+}
+
+body[data-dynamic-kind="tide"] #dynamic-toolbar :is(strong, small) {
+  font-size: 10px;
+}
+
+body[data-dynamic-kind="tide"] .title-row {
+  padding-block: 11px 9px;
+}
+
+body[data-dynamic-kind="tide"] :is(#current-insight, .telemetry, .charts) {
+  padding: 10px;
+  border-color: #4b628051;
+  background: #0a1525;
+}
+
+body[data-dynamic-kind="tide"] :is(.telemetry, .charts) .panel-label {
+  margin-bottom: 7px;
+}
+
+body[data-dynamic-kind="tide"] #observation-flow-controls:not([hidden]) {
+  margin-bottom: 6px;
+  padding: 4px 8px;
+  gap: 5px 8px;
+  background: #0b1929;
+}
+
+body[data-dynamic-kind="tide"] #observed-story-band {
+  background: #101e30;
+}
+
+body[data-dynamic-kind="tide"] .timeline {
+  padding: 6px 9px;
+}
+
+body[data-dynamic-kind="tide"] #earth-view {
+  min-height: 0;
+  max-height: none;
+  overflow: hidden;
+  border: 1px solid #38516d;
+  border-radius: 6px;
+  background: #061020;
+  box-shadow: 0 12px 36px #0005;
+}
+
+body[data-dynamic-kind="tide"] #earth-view .view-tools {
+  z-index: 8;
+  pointer-events: none;
+}
+
+body[data-dynamic-kind="tide"] #earth-view .view-tools button {
+  pointer-events: auto;
+}
+
+body[data-dynamic-kind="tide"] #earth-view:not([data-observed-time]) canvas {
+  visibility: hidden;
+}
+
+@media (min-width: 701px) {
+  body[data-dynamic-kind="tide"] #earth-view {
+    height: clamp(390px, 54dvh, 590px);
+  }
+
+  body[data-dynamic-kind="tide"].narration-active #earth-view {
+    height: clamp(320px, calc(100dvh - 365px), 555px);
+  }
+
+  body[data-dynamic-kind="tide"] #narration-dock .narration-top {
+    padding-block: 9px 5px;
+  }
+
+  body[data-dynamic-kind="tide"] #narration-dock .narration-body {
+    padding-block: 3px 9px;
+  }
+
+  body[data-dynamic-kind="tide"] #narration-dock .narration-body p {
+    line-height: 1.65;
+  }
+
+  body[data-dynamic-kind="tide"] #narration-dock .narration-bottom {
+    padding-block: 7px 9px;
+  }
+}
+
+@media (max-width: 700px) {
+  body[data-dynamic-kind="tide"] #earth-view {
+    height: clamp(330px, 97vw, 490px);
+  }
+
+  body[data-dynamic-kind="tide"].narration-active #earth-view {
+    height: clamp(285px, calc(100dvh - 295px), 455px);
+  }
+
+  body[data-dynamic-kind="tide"] #observed-keyframes:not([hidden]) {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+#tide-lesson-entry { display:none; }
+body[data-dynamic-kind="tide"] #tide-lesson-entry {
+  display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:7px 16px;
+  margin-bottom:8px; padding:9px 12px; border:1px solid #426079; border-radius:5px; background:#102031;
+}
+.tide-entry-actions { display:flex; flex-wrap:wrap; gap:7px; }
+body[data-dynamic-kind="tide"]:not(.narration-active):not(.demo-active):has(#dynamic-full[aria-pressed="true"]) #observed-story-band { display:none; }
+body[data-dynamic-kind="tide"]:not(.narration-active):has(#dynamic-full[aria-pressed="true"]) #observation-watch { display:none; }
+#tide-lesson-entry strong { display:block; color:#f2e2ad; font-size:14px; }
+#tide-lesson-entry span { display:block; margin-top:3px; color:#c0d6e5; font-size:11px; line-height:1.45; }
+#tide-lesson-entry button, #tide-lesson-harbor {
+  padding:7px 9px; border:1px solid #8f815d; border-radius:4px;
+  background:#312b22; color:#ffe5ae; font-size:11px;
+}
+#tide-lesson-entry #tide-learn { background:#ffe1a5; color:#242218; font-weight:700; }
+#tide-lesson-entry #tide-watch-harbor { background:#111f30; color:#cde5f0; border-color:#55758c; }
+body[data-tide-lesson] .observatory { display:block; }
+body[data-tide-lesson] :is(.left-panels,.right-panels,#observed-story-band,#dynamic-toolbar,#observation-flow-controls,
+  #observed-keyframes,#observed-story-legend,#dynamic-controls,#visual-key,.scene-caption,.timeline,.earth-caption,#tide-lesson-entry) { display:none; }
+body[data-tide-lesson] #earth-view :is(.harbor-tide-overlay,.view-tools,.globe-coordinate,.north) { display:none; }
+body[data-dynamic-kind="tide"][data-tide-lesson] #earth-view {
+  --tide-lesson-side: clamp(242px,28%,350px);
+  height:clamp(320px,calc(100dvh - 210px),535px);
+  background:radial-gradient(ellipse at 37% 47%,#112740,#040914 73%);
+}
+body[data-tide-lesson] #earth-view #earth-canvas {
+  position:absolute; top:0; left:0; width:calc(100% - var(--tide-lesson-side));
+  height:100%; visibility:visible;
+}
+body[data-tide-lesson] #geo-labels { right:var(--tide-lesson-side); }
+.tide-teaching-label {
+  position:absolute; z-index:2; pointer-events:none; white-space:nowrap;
+  transform:translate(-50%,-115%); padding:4px 7px; border:1px solid #69dde28c;
+  border-radius:4px; color:#d0fffa; background:#081d2ded; font-size:11px;
+}
+.tide-teaching-label[data-tide-label="moon"] { transform:translate(-50%,73%); color:#f0e6ff; border-color:#ad9be28c; }
+.tide-teaching-label[data-tide-label="coast"] { color:#ffdf9f; border-color:#eac77a95; transform:translate(-50%,55%); }
+.tide-teaching-label[data-tide-label="coast"][data-behind="true"] { border-style:dashed; color:#e0caac; }
+.tide-lesson[hidden], .tide-lesson svg[hidden] { display:none; }
+.tide-shore-stage[hidden] { display:none; }
+.tide-shore-stage {
+  position:absolute; inset:0 var(--tide-lesson-side) 0 0; margin:0; z-index:3;
+  display:grid; grid-template-rows:auto minmax(0,1fr); gap:12px;
+  padding:clamp(12px,2vw,28px);
+  background:radial-gradient(ellipse at 35% 4%,#1b3e54,#091722 73%);
+}
+.tide-shore-stage figcaption { display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:7px 12px; }
+.tide-shore-stage figcaption span { color:#bed6e6; font-size:12px; }
+.tide-shore-stage figcaption strong { color:#ffe0a4; font-size:clamp(13px,1.5vw,20px); }
+.tide-shore-stage svg { width:100%; height:100%; }
+.tide-shore-stage svg text { fill:#fff2da; font:4.5px system-ui,sans-serif; paint-order:stroke; stroke:#10212b; stroke-width:1px; }
+.tide-shore-stage .tide-lesson-guide { stroke-width:.55; }
+body:is([data-tide-lesson="intro"],[data-tide-lesson="impact"]) #earth-view :is(#earth-canvas,#geo-labels) { visibility:hidden; }
+.tide-lesson {
+  position:absolute; inset:0 0 0 auto; width:var(--tide-lesson-side); z-index:6;
+  display:flex; flex-direction:column; justify-content:safe center; gap:clamp(5px,1.15vh,11px);
+  padding:clamp(11px,1.6vw,21px); background:#0c1a2b; border-left:1px solid #49677c;
+  overflow-y:auto;
+}
+.tide-lesson > * { flex:none; }
+.tide-lesson-heading span { color:#a2d8ec; font-size:10px; }
+.tide-lesson-heading h3 { margin:4px 0 0; font-size:clamp(16px,1.6vw,22px); color:#e9f5fb; line-height:1.2; }
+.tide-lesson-reading { display:grid; gap:3px; }
+.tide-lesson-reading strong { color:#ffda99; font-size:15px; }
+.tide-lesson-reading span,#tide-lesson-caption { color:#c1d6e4; font-size:11px; line-height:1.45; }
+.tide-lesson-diagrams { display:grid; gap:3px; }
+.tide-lesson svg { display:block; min-height:0; width:100%; max-height:113px; font:10px system-ui,sans-serif; }
+body[data-tide-lesson="impact"] #tide-lesson-curve { max-height:82px; }
+.tide-lesson svg text { fill:#d1e4ee; }
+.tide-lesson-cycle { display:none; }
+body[data-tide-lesson="impact"] .tide-lesson-cycle { display:block; }
+.tide-lesson-guide { fill:none; stroke:#85aab9; stroke-dasharray:3 4; stroke-opacity:.6; }
+#tide-lesson-caption { margin:0; }
+.tide-lesson-controls { display:grid; grid-template-columns:1fr auto; gap:5px; color:#c1d6e4; font-size:11px; }
+.tide-lesson-scrub-hint { color:#a2b7c9; font-size:10px; }
+.tide-lesson-controls input,.tide-lesson-compare { grid-column:1/-1; }
+.tide-lesson-controls input { width:100%; margin:2px 0; accent-color:#ffd79f; cursor:ew-resize; }
+.tide-lesson-compare { display:grid; grid-template-columns:1fr 1fr; gap:7px; }
+.tide-lesson-compare button {
+  padding:5px 7px; border:1px solid #4b6883; border-radius:4px; background:#172c42; color:#e0edf6; font-size:11px;
+}
+.tide-lesson-compare button:hover { border-color:#a4d3e7; background:#243f56; }
+.tide-lesson[data-water-state="低潮"] #tide-lesson-low,
+.tide-lesson[data-water-state="高潮"] #tide-lesson-high { border-color:#c5a675; color:#ffe0a4; background:#342e26; }
+.tide-lesson-actions { display:flex; flex-wrap:wrap; align-items:center; gap:6px 11px; }
+.tide-lesson-actions a { font-size:10px; }
+body[data-tide-recap] :is(#tide-lesson-entry,#observed-story-band,#observation-flow-controls) { display:none; }
+body[data-tide-recap] #narration-dock[data-status="ended"] .narration-body { display:none; }
+body[data-dynamic-kind="tide"] .narration-bottom nav { flex-wrap:wrap; }
+body[data-dynamic-kind="tide"] .narration-bottom nav button { font-family:inherit; }
+@media (max-width:700px) {
+  body[data-dynamic-kind="tide"][data-tide-lesson] #earth-view { height:auto; min-height:0; }
+  body[data-tide-lesson] #earth-view #earth-canvas { position:relative; width:100%; height:clamp(192px,61vw,285px); }
+  body[data-tide-lesson] #geo-labels { right:0; height:clamp(192px,61vw,285px); }
+  .tide-shore-stage { inset:0 0 auto; height:clamp(192px,61vw,285px); gap:6px; }
+  .tide-lesson { position:relative; width:100%; border:0; border-top:1px solid #49677c; gap:6px; }
+  .tide-lesson svg { max-height:82px; }
+}
+
+/* Keep the object of observation above the controls on the tide landing. */
+body[data-dynamic-kind="tide"]:not(.narration-active):has(#dynamic-full[aria-pressed="true"]) :is(.title-row, #start-narration, #dynamic-toolbar:not(:has(#observation-data-retry:not([hidden])))) {
+  display:none;
+}
+body[data-dynamic-kind="tide"]:not(.narration-active):not(.observation-detail-open):has(#dynamic-full[aria-pressed="true"]) .observatory,
+body[data-dynamic-kind="tide"]:not(.observation-detail-open):has(#tide-focus-evidence:not([hidden])) .observatory {
+  display:block;
+}
+body[data-dynamic-kind="tide"]:not(.narration-active):not(.observation-detail-open):has(#dynamic-full[aria-pressed="true"]) :is(.left-panels, .right-panels),
+body[data-dynamic-kind="tide"]:not(.observation-detail-open):has(#tide-focus-evidence:not([hidden])) :is(.left-panels, .right-panels) {
+  display:none;
+}
+body[data-dynamic-kind="tide"].narration-active #tide-lesson-entry { display:none; }
+#tide-lesson-entry .tide-entry-kicker { margin:0 0 3px; color:#a9c9d9; }
+#tide-lesson-entry h2 { margin:0; color:#fff2d0; font-size:clamp(15px,2vw,23px); line-height:1.35; }
+#tide-lesson-entry button { min-height:34px; }
+#tide-lesson-entry #tide-learn {
+  min-height:40px;
+  padding:7px 16px;
+  font-size:14px;
+  border-color:#ffe1a5;
+}
+body[data-dynamic-kind="tide"]:not(.narration-active):has(#dynamic-full[aria-pressed="true"]) #earth-view {
+  height:clamp(225px,calc(100dvh - 267px),530px);
+}
+body[data-dynamic-kind="tide"] #observation-stage + .timeline { margin-top:6px; }
+
+.observation-stage { min-width:0; scroll-margin-top:8px; }
+#tide-focus-evidence {
+  min-width:0;
+  padding:10px 12px;
+  border:1px solid #548198;
+  border-radius:6px;
+  background:#0e2032;
+  color:#e6f2fa;
+}
+#tide-focus-evidence p {
+  margin:7px 0 0;
+  color:#d5e9f6;
+  font-size:12px;
+  line-height:1.4;
+}
+.tide-focus-heading {
+  display:flex;
+  justify-content:space-between;
+  gap:6px;
+  align-items:baseline;
+}
+.tide-focus-heading strong { font-size:14px; }
+.tide-focus-heading span { color:#b1c9d8; font-size:11px; }
+.tide-focus-legend { gap:4px 10px; margin:5px 0 0; }
+.tide-focus-legend > span { column-gap:4px; }
+.tide-focus-legend .tide-set-key { width:7px; height:7px; background:#c6a9ff; border:0; }
+#tide-focus-evidence .tide-chart { width:100%; height:clamp(96px,20dvh,170px); margin:2px 0; }
+#tide-focus-evidence .tide-chart text { fill:#c9ddeb; }
+#tide-focus-evidence .tide-chart-history { opacity:.58; }
+.tide-set-band { fill:#ac91ed; fill-opacity:.42; }
+.tide-focus-frames {
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:4px;
+}
+.tide-focus-frames button {
+  min-height:36px;
+  padding:4px 2px;
+  border:1px solid #51718c;
+  border-radius:4px;
+  color:#e0edf6;
+  background:#152d43;
+  font-size:11px;
+  line-height:1.25;
+}
+.tide-focus-frames button[aria-pressed="true"] {
+  background:#ffe2a9;
+  border-color:#ffe2a9;
+  color:#19252e;
+}
+.tide-focus-frames time,.tide-focus-frames span { display:block; }
+.tide-focus-frames time { font-variant-numeric:tabular-nums; }
+
+@media(min-width:701px) {
+  .observation-stage:has(#tide-focus-evidence:not([hidden])) {
+    display:grid;
+    grid-template-columns:minmax(0,1fr) clamp(257px,34%,380px);
+    align-items:start;
+    gap:8px;
+  }
+  body[data-dynamic-kind="tide"] .observation-stage:has(#tide-focus-evidence:not([hidden])) #earth-view {
+    height:clamp(220px,calc(100dvh - var(--narration-dock-height,0px) - 26px),460px);
+  }
+}
+@media(max-width:700px) {
+  #tide-lesson-entry { padding:8px 10px; }
+  body[data-dynamic-kind="tide"]:not(.narration-active):has(#dynamic-full[aria-pressed="true"]) #earth-view {
+    height:clamp(215px,calc(100dvh - 300px),420px);
+  }
+  body[data-dynamic-kind="tide"] .observation-stage:has(#tide-focus-evidence:not([hidden])) #earth-view {
+    height:clamp(125px,calc(100dvh - var(--narration-dock-height,0px) - var(--tide-evidence-height,240px) - 26px),350px);
+  }
+  #tide-focus-evidence { margin-top:5px; padding:6px 9px; }
+  .observation-stage:has(#tide-focus-evidence:not([hidden])) .harbor-waterfront-label {
+    bottom:8px !important;
+    left:8px !important;
+    padding:5px 7px !important;
+  }
+  body[data-dynamic-kind="tide"] .observation-stage:has(#tide-focus-evidence:not([hidden])) #earth-view .view-tools {
+    left:auto;
+    right:8px;
+  }
+  .observation-stage:has(#tide-focus-evidence:not([hidden])) .view-tools :is(#reset-view,#focus) {
+    display:none;
+  }
+  #tide-focus-evidence .tide-chart { height:clamp(75px,12dvh,100px); }
+  #tide-focus-evidence p { margin-top:4px; font-size:11px; }
+  body:has(#tide-focus-evidence:not([hidden])) #narration-dock:is([data-status="playing"],[data-status="paused"]) #narration-status { display:none; }
+}
+
+
+@media(max-width:700px) and (max-height:700px) {
+  body:has(#tide-focus-evidence:not([hidden])) #narration-dock .narration-top { padding-block:5px 3px; }
+  body:has(#tide-focus-evidence:not([hidden])) #narration-dock .narration-body { padding-block:2px 5px; }
+  body:has(#tide-focus-evidence:not([hidden])) #narration-dock #narration-scene-time { display:none; }
+  body:has(#tide-focus-evidence:not([hidden])) #narration-dock .narration-body p { max-height:2.8em; line-height:1.4; }
+  body:has(#tide-focus-evidence:not([hidden])) #narration-dock .narration-bottom { padding-block:5px 6px; gap:5px; }
+}
