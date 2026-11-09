@@ -2,7 +2,7 @@
 
 从小樱分享的清单出发，按能力整理 50 个网站。每条记录都把具体入口、效果证据、可借鉴的机制和实现条件对应起来。历史截图用于核对当时的界面，实际操作以原站为准。公开浏览版保留 01–50 编号、八类能力、可搜索卡片、效果入口和借鉴机制，也保留五个优先方向与十个待验证方案。原帖配视频单列。
 
-[原始清单与地月配视频](https://x.com/xiaoying_eth/status/2116389253060190271) · [研究方法与五个产品方向](research/notes.md) · [返回总索引](../../README.md#项目索引)
+[在线浏览 50 站](https://yydshly.github.io/1025_codex_project/014-web-product-reference-library/) · [原始清单与地月配视频](https://x.com/xiaoying_eth/status/2116389253060190271) · [研究方法与五个产品方向](research/notes.md) · [返回总索引](../../README.md#项目索引)
 
 ## 公开媒体与复现
 
