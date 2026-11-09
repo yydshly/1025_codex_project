@@ -29,7 +29,7 @@
 | 011 | [姿势与衣装参考 · 能力、作用与产品探索](projects/011-pose-look-creation-atlas/README.md) | [POSE&#45;DB&#45;01姿势图库与COSTUME&#45;DB&#45;01衣装图库](<https://x.com/leo_xiaolei/status/2114971707962536302>) | 用姿势与衣装两个图库研究多参考生图。公开九格组合实测和六张写真候选，可看同一虚构人物怎样更换动作与衣装，以及哪些细节容易偏离。 | 研究中 | [在线访问](<https://yydshly.github.io/1025_codex_project/011-pose-look-creation-atlas/>) |
 | 012 | [学术研究 Skill · 能力与水生毒理学实测](projects/012-aquatic-toxicology-skill-lab/README.md) | [academic&#45;research&#45;skills](<https://github.com/Imbad0202/academic-research-skills>) | 以水生毒理学试题走一遍拆题、检索、文献筛选和证据分析，比较五种学术研究流程。公开报告、筛选表和核验记录，检索查全率与实际增益待验证。 | 研究中 | [在线访问](<https://yydshly.github.io/1025_codex_project/012-aquatic-toxicology-skill-lab/>) |
 | 013 | [景观奇旅 · AI影像创作实验室](projects/013-scenic-motion-lab/README.md) | [Personality 原参考视频（非源码仓库）](<https://x.com/hi_personality/status/2115567493565825244>) | 观看 11&#46;04 秒海湾骑行试片和两段原片，追踪首图、角色动作、运镜、环境响应与接缝。总结了可复用的导演方法，长片连续性待验证。 | 研究中 | [在线访问](<https://yydshly.github.io/1025_codex_project/013-scenic-motion-lab/>) |
-| 014 | [50 个网站的产品能力与实现参考库](projects/014-web-product-reference-library/README.md) | [小樱 50 个网站清单与各站官方资料](<https://x.com/xiaoying_eth/status/2116389253060190271>) | 把 50 个网站按能力整理，逐站记录入口、效果证据、可借鉴机制和实现条件。研究摘要列出五个优先验证的产品方向，完整交互索引保留在本地。 | 研究中 | — |
+| 014 | [50 个网站的产品能力与实现参考库](projects/014-web-product-reference-library/README.md) | [小樱 50 个网站清单与各站官方资料](<https://x.com/xiaoying_eth/status/2116389253060190271>) | 按原帖编号浏览 50 个网站和八类能力。每站都给出实际效果、具体原站入口、可借鉴机制与实现条件。可按类别与关键词查找，并对照其中的设计方法怎样延伸到 015「观象」。 | 研究中 | — |
 | 015 | [观象 · 地球过程与真实事件](projects/015-process-visualization-lab/README.md) | [研究起点 · 50 站清单与地月配视频](<https://x.com/xiaoying_eth/status/2116389253060190271>) | 用同一时间轴联动原理、真实资料、画面、曲线和中文讲解。公开八个地球历史案例及 NASA B0005 放电实验，可追溯关键时刻的观测来源。 | 实践中 | [在线访问](<https://yydshly.github.io/1025_codex_project/015-process-visualization-lab/>) |
 
 ## 项目速览
@@ -164,7 +164,7 @@
 
 ### 014 · 50 个网站的产品能力与实现参考库
 
-把 50 个网站按能力整理，逐站记录入口、效果证据、可借鉴机制和实现条件。研究摘要列出五个优先验证的产品方向，完整交互索引保留在本地。
+按原帖编号浏览 50 个网站和八类能力。每站都给出实际效果、具体原站入口、可借鉴机制与实现条件。可按类别与关键词查找，并对照其中的设计方法怎样延伸到 015「观象」。
 
 [研究说明](projects/014-web-product-reference-library/README.md) · 源库：[小樱 50 个网站清单与各站官方资料](<https://x.com/xiaoying_eth/status/2116389253060190271>)
 

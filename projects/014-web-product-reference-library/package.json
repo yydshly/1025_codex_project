@@ -1,0 +1,10 @@
+{
+  "name": "web-product-reference-library",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:site": "node scripts/build-site.mjs",
+    "check:public": "node scripts/build-site.mjs --check"
+  },
+  "engines": { "node": ">=22" }
+}

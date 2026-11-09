@@ -2,7 +2,7 @@
 
 ![观象研究总览：原库、探索流程、产品实拍和扩展方向](assets/images/guanxiang-research-overview.png)
 
-[线上研究总览](https://yydshly.github.io/1025_codex_project/015-process-visualization-lab/) · [地球实测回放](https://yydshly.github.io/1025_codex_project/015-process-visualization-lab/app/index.html) · [发布与验收记录](research/deployment.md)
+[线上研究总览](https://yydshly.github.io/1025_codex_project/015-process-visualization-lab/) · [地球实测回放](https://yydshly.github.io/1025_codex_project/015-process-visualization-lab/app/index.html) · [发布与验收记录](research/deployment.md) · [从 014 参考库到观象](https://yydshly.github.io/1025_codex_project/014-web-product-reference-library/#guanxiang)
 
 本研究从 50 站参考库和[原帖地月视频](https://x.com/xiaoying_eth/status/2116389253060190271)出发，探索如何用固定空间参照、共同时间轴和可追溯证据解释变化。先看原理示意，再用真实资料定格比较。地球、位置批注、读数、曲线与讲解对应同一观测时刻，观测与预报分别标注。
 
