@@ -6,7 +6,7 @@
 
 这里是研究入口。每个子项目都有固定编号、独立说明、研究记录与图片，也可以拥有自己的 Web 演示。
 
-[在线总入口与项目关联](https://yydshly.github.io/1025_codex_project/) · [项目索引](#项目索引) · [项目速览](#项目速览) · [新增项目](#新增一个研究项目) · [目录与编号约定](docs/CONVENTIONS.md) · [Web 部署约定](docs/DEPLOYMENT.md)
+[在线总入口与项目关联](https://yydshly.github.io/1025_codex_project/) · [项目索引](#项目索引) · [项目速览](#项目速览) · [014 / 015 能力提取](#014-与-015-能力提取索引) · [新增项目](#新增一个研究项目) · [目录与编号约定](docs/CONVENTIONS.md) · [Web 部署约定](docs/DEPLOYMENT.md)
 
 <!-- PROJECTS:START -->
 
@@ -181,6 +181,25 @@
 **阶段：** 实践中 · **标签：** 交互地球 / 过程可视化 / 真实事件 / 资料溯源
 
 <!-- PROJECTS:END -->
+
+## 014 与 015 能力提取索引
+
+遇到具体需求时，先在 014 找原站效果、入口和实现条件，再到 015 找能直接操作的案例。下表按任务列出可以提取的做法。
+
+| 遇到的需求 | 可以提取什么 | 对应案例与入口 |
+| --- | --- | --- |
+| 找产品参考、原始资料或现成效果 | 沿用「原站效果 → 具体入口 → 可借鉴机制 → 实现条件」的记录方式。按编号、关键词或八类能力筛选，逐项核对来源与授权。 | 014 [浏览 50 站](https://yydshly.github.io/1025_codex_project/014-web-product-reference-library/#library) · [原站效果](https://yydshly.github.io/1025_codex_project/014-web-product-reference-library/#effects) |
+| 从多个参考中选一个产品方向 | 提取用户任务、可借鉴的交互、首版范围和验收问题。五个优先方向和十个组合方案可用来做选题。 | 014 [五个优先方向](https://yydshly.github.io/1025_codex_project/014-web-product-reference-library/#top-five) · [十个组合方案](https://yydshly.github.io/1025_codex_project/014-web-product-reference-library/#directions) |
+| 把原理讲清，再带用户看实测 | 沿用「提问 → 原理示意 → 实测回放 → 回看证据」的讲解顺序。让字幕或旁白、镜头、批注和图表指向同一时刻，支持静音阅读和拖动后续播。 | 015 [旧金山港潮汐导览](https://yydshly.github.io/1025_codex_project/015-process-visualization-lab/app/index.html#dynamic-tide-san-francisco) · 014 [NASA Eyes 视角与时间控制](https://yydshly.github.io/1025_codex_project/014-web-product-reference-library/#showcase-site-21) |
+| 对齐不同来源的数据，区分实测与预报 | 提取统一时钟、采样时间与单位、同基准曲线、缺测标记和关键时刻跳转。潮汐同屏对照月球星历、港口实测与预报。 | 015 [旧金山港潮汐](https://yydshly.github.io/1025_codex_project/015-process-visualization-lab/app/index.html#dynamic-tide-san-francisco) · [共同时间轴实现](projects/015-process-visualization-lab/app/sync-timeline.js) |
+| 复盘台风或对照连续影像 | 提取固定取景、逐帧慢放、相邻扫描对照，以及卫星画面和地面读数联动。山竹串起云图、路径和香港风雨潮，轩岚诺可回看缺帧前后的原始扫描。 | 015 [山竹](https://yydshly.github.io/1025_codex_project/015-process-visualization-lab/app/index.html#typhoon-real) · [轩岚诺](https://yydshly.github.io/1025_codex_project/015-process-visualization-lab/app/index.html#dynamic-storm) · 014 [Zoom Earth 图层参考](https://yydshly.github.io/1025_codex_project/014-web-product-reference-library/#showcase-site-01) |
+| 回放多个台站的地震记录 | 提取台站定位、固定刻度、震前与当前波形对照和同刻游标。台站回放保留仪器原始计数，014 的 USGS 影片另作计算模拟参考。 | 015 [日本东北地震](https://yydshly.github.io/1025_codex_project/015-process-visualization-lab/app/index.html#dynamic-quake) · [花莲地震](https://yydshly.github.io/1025_codex_project/015-process-visualization-lab/app/index.html#dynamic-quake-hualien) · 014 [USGS 官方模拟](https://yydshly.github.io/1025_codex_project/014-web-product-reference-library/#showcase-site-06) |
+| 看地形变化或火山喷发 | 提取三维剖面、两期测绘差值、缺测标记和卫星扫描切换。汤加分别标记原理示意、海底测绘日期和红外扫描时刻。 | 015 [汤加火山](https://yydshly.github.io/1025_codex_project/015-process-visualization-lab/app/index.html#dynamic-volcano) |
+| 比较火区、洪水等范围的变化 | 提取多期边界差分、分层叠加和证据回看。Dixie 叠加航空红外边界、测站风、地形和火前植被。洪水应用需要另找有日期的淹没范围等资料。 | 015 [Dixie 山火](https://yydshly.github.io/1025_codex_project/015-process-visualization-lab/app/index.html#dynamic-wildfire-dixie) · [档案与图层复现](projects/015-process-visualization-lab/research/dynamics/dixie-fire/README.md) |
+| 追踪河流中的物质迁移 | 提取测点绑定、按断面比较到达时刻和浓度、选点联动曲线。Big Piney 的画面用实测点呈现染料信号，新河段或污染事件要另核对测点、采样间隔和判据。 | 015 [Big Piney 河示踪](https://yydshly.github.io/1025_codex_project/015-process-visualization-lab/app/index.html#dynamic-river-big-piney) · [示踪复现说明](projects/015-process-visualization-lab/research/dynamics/big-piney/README.md) |
+| 把设备数据做成可讲解的回放 | 提取结构示意与台架读数的联动、采样游标和关键工况跳转。电芯可在线回放，柴油机按说明在本地导入。 | 015 [NASA B0005 电芯](https://yydshly.github.io/1025_codex_project/015-process-visualization-lab/app/index.html#dynamic-battery-b0005) · [吉林大学柴油机本地复现](projects/015-process-visualization-lab/research/dynamics/jlu-diesel/README.md) |
+
+实际提取时，先选一个能用资料回答的问题，核对新场景的时间、位置、单位、缺测和授权，再从案例中提取需要的图层、图表或讲解流程。通用播放器与模块入口见 015 的「文件与实现」，新增数据包可按扩展约定核对。[014 与 015 的四组对照](https://yydshly.github.io/1025_codex_project/014-web-product-reference-library/#guanxiang) · [015 文件与实现](projects/015-process-visualization-lab/README.md#文件与实现) · [事件数据接入约定](projects/015-process-visualization-lab/research/real-events/extension-contract.md)
 
 ## 新增一个研究项目
 
